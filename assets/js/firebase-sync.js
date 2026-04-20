@@ -23,8 +23,11 @@
         getState: () => state,
         setState: (nextState) => { state = nextState; },
         hydrateStateFromRaw,
+        getStateSummary,
+        mergeStates: (localState, incomingState) => mergeImportedState(localState, incomingState),
         saveLocal: () => originalSaveState(),
-        render
+        render,
+        showToast
       });
     }
 

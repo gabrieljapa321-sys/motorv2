@@ -9,9 +9,12 @@
     const DATE_API = window.StudyDates;
     const BACKUP_API = window.StudyBackup;
     const THEME_API = window.StudyTheme;
+    const STUDY_DATA_API = window.StudyData || {};
     const STORAGE_KEY = STORE_API.STORAGE_KEY;
-    const APP_VERSION = "etapa1-v12";
-    const UI_CONFIG = globalThis.APP_CONFIG || {};
+    const SCHEMA_VERSION = STORE_API.SCHEMA_VERSION;
+    const APP_VERSION = "etapa1-v13";
+    const DATA = STUDY_DATA_API.data || globalThis.DATA || { subjects: [], tasks: [] };
+    const UI_CONFIG = STUDY_DATA_API.config || globalThis.APP_CONFIG || {};
     const PAGE_META = UI_CONFIG.pageMeta || {};
     const MODE_LABELS = (UI_CONFIG.modes && UI_CONFIG.modes.long) || {};
     const MODE_SHORT_LABELS = (UI_CONFIG.modes && UI_CONFIG.modes.short) || {};
@@ -65,8 +68,10 @@
       monthPrevBtn: document.getElementById("monthPrevBtn"),
       monthTodayBtn: document.getElementById("monthTodayBtn"),
       monthNextBtn: document.getElementById("monthNextBtn"),
+      calendarLegendToggleBtn: document.getElementById("calendarLegendToggleBtn"),
       calendarMonthTitle: document.getElementById("calendarMonthTitle"),
       calendarMonthSubtitle: document.getElementById("calendarMonthSubtitle"),
+      monthLegend: document.getElementById("monthLegend"),
       monthCalendarGrid: document.getElementById("monthCalendarGrid"),
       mainTaskCard: document.getElementById("mainTaskCard"),
       executiveSummary: document.getElementById("executiveSummary"),
@@ -99,6 +104,7 @@ function loadState() {
 }
 
 function saveState() {
+  state = hydrateStateFromRaw(state);
   STORE_API.saveState(state, STORAGE_KEY);
 }
 
@@ -124,6 +130,7 @@ function loadImportedState(candidate) {
 function getBackupContext() {
   return {
     appVersion: APP_VERSION,
+    schemaVersion: SCHEMA_VERSION,
     storageKey: STORAGE_KEY,
     getState: () => state,
     setState: (nextState) => { state = nextState; },
@@ -185,99 +192,23 @@ function setGradeTargets(primary, secondary) {
   render();
 }
 
-function downloadTextFile(filename, content, mimeType) {
-  const blob = new Blob([content], { type: mimeType || "text/plain;charset=utf-8" });
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = filename;
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-  URL.revokeObjectURL(url);
-}
-
-function exportStateBackup() {
-  const nowIso = new Date().toISOString();
-  state.backupMeta = {
-    ...sanitizeBackupMeta(state.backupMeta),
-    lastExportedAt: nowIso,
-    lastExportedVersion: APP_VERSION
-  };
+function setNotesSearchTerm(value) {
+  state.notesSearchTerm = typeof value === "string" ? value.slice(0, 120) : "";
   saveState();
-  const stamp = nowIso.replace(/[:.]/g, "-");
-  const payload = {
-    type: "motor-estudo-poli-backup",
-    schemaVersion: 2,
-    appVersion: APP_VERSION,
-    exportedAt: nowIso,
-    storageKey: STORAGE_KEY,
-    summary: getStateSummary(state),
-    state
-  };
-  downloadTextFile(`motor-estudo-poli-backup-${stamp}.json`, JSON.stringify(payload, null, 2), "application/json");
-  showToast("Backup exportado.");
   render();
 }
 
-function queueImportedBackup(parsedFile) {
-  const payload = parsedFile && parsedFile.state ? parsedFile : { state: parsedFile };
-  const importedState = loadImportedState(payload.state || {});
-  pendingImportPackage = {
-    meta: {
-      type: payload.type || "desconhecido",
-      schemaVersion: payload.schemaVersion || 1,
-      appVersion: payload.appVersion || "desconhecida",
-      exportedAt: payload.exportedAt || null,
-      storageKey: payload.storageKey || null,
-      summary: payload.summary || getStateSummary(importedState)
-    },
-    importedState,
-    summary: getStateSummary(importedState)
-  };
-  showToast("Backup carregado. Escolha substituir tudo ou mesclar.");
-  render();
-}
-
-function importStateBackupFromFile(file) {
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = () => {
-    try {
-      const parsed = JSON.parse(String(reader.result || "{}"));
-      if (!parsed || typeof parsed !== "object") throw new Error("invalid");
-      queueImportedBackup(parsed);
-    } catch (error) {
-      pendingImportPackage = null;
-      showToast("Arquivo de backup inválido.");
-      render();
-    }
-  };
-  reader.readAsText(file);
-}
-
-function cancelPendingImport() {
-  pendingImportPackage = null;
-  showToast("Importação cancelada.");
-  render();
-}
-
-function applyPendingImport(mode) {
-  if (!pendingImportPackage) return;
-  const imported = pendingImportPackage.importedState;
-  state = mode === "merge" ? mergeImportedState(state, imported) : loadImportedState(imported);
-  state.backupMeta = {
-    ...sanitizeBackupMeta(state.backupMeta),
-    lastImportedAt: new Date().toISOString(),
-    lastImportMode: mode,
-    lastImportedVersion: pendingImportPackage.meta.appVersion || "desconhecida"
-  };
-  state.editingDeadlineId = null;
-  state.editingGradeEntryId = null;
-  pendingImportPackage = null;
+function toggleCalendarLegend() {
+  state.calendarLegendVisible = !state.calendarLegendVisible;
   saveState();
-  showToast(mode === "merge" ? "Backup mesclado com os dados atuais." : "Backup importado substituindo os dados atuais.");
-  render(true);
+  render();
+}
+
+function toggleDashboardFocusMode() {
+  state.dashboardFocusMode = !state.dashboardFocusMode;
+  saveState();
+  showToast(state.dashboardFocusMode ? "Modo foco ativado." : "Modo foco desativado.");
+  render();
 }
 
 function getCalendarAnchorDate(referenceDate = today()) {
@@ -1382,6 +1313,7 @@ function renderDeadlineFormCard(referenceDate) {
       const onDashboard = currentPage === "dashboard";
 
       if (elements.dashboardPage) elements.dashboardPage.hidden = !onDashboard;
+      if (elements.dashboardPage) elements.dashboardPage.dataset.focusMode = onDashboard && state.dashboardFocusMode ? "true" : "false";
       if (elements.weekPage) elements.weekPage.hidden = !onWeek;
       if (elements.fcPage) elements.fcPage.hidden = !onFc;
       if (elements.calendarPage) elements.calendarPage.hidden = !onCalendar;
@@ -1529,6 +1461,7 @@ function safeRenderStep(label, fn) {
       });
       if (elements.monthPrevBtn) elements.monthPrevBtn.addEventListener("click", () => shiftCalendarMonth(today(), -1));
       if (elements.monthTodayBtn) elements.monthTodayBtn.addEventListener("click", () => resetCalendarMonth(today()));
+      if (elements.calendarLegendToggleBtn) elements.calendarLegendToggleBtn.addEventListener("click", toggleCalendarLegend);
       if (elements.monthNextBtn) elements.monthNextBtn.addEventListener("click", () => shiftCalendarMonth(today(), 1));
 
       const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -1551,6 +1484,22 @@ function safeRenderStep(label, fn) {
       window.addEventListener("error", (event) => {
         showCompatHint(`Erro de script: ${event.message}. Abra o console do navegador para detalhes.`);
       });
+      if (window.__studyDataLoadError) {
+        showCompatHint("Os dados do app não puderam ser carregados a partir dos arquivos JSON. Verifique se o site está sendo servido por HTTP e não aberto via file://.");
+      }
+      window.StudyApp = {
+        ...(window.StudyApp || {}),
+        openPage,
+        setStudyMode,
+        render,
+        exportStateBackup,
+        importStateBackupFromFile,
+        applyPendingImport,
+        cancelPendingImport,
+        toggleCalendarLegend,
+        toggleDashboardFocusMode,
+        setNotesSearchTerm
+      };
       window.openPage = openPage;
       window.setStudyMode = setStudyMode;
       window.render = render;

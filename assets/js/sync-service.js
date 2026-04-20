@@ -44,20 +44,98 @@
     );
   }
 
+  function getSummary(sourceState) {
+    if (appContext && typeof appContext.getStateSummary === "function") {
+      return appContext.getStateSummary(sourceState);
+    }
+    if (window.StudyStore && typeof window.StudyStore.getStateSummary === "function") {
+      return window.StudyStore.getStateSummary(sourceState);
+    }
+    return { touchedTasks: 0, logs: 0, deadlines: 0, deliveredDeadlines: 0, gradeEntries: 0, schemaVersion: 0 };
+  }
+
+  function renderSummary(summary) {
+    return [
+      `<div><strong>Schema:</strong> ${summary.schemaVersion || "?"}</div>`,
+      `<div><strong>Tarefas tocadas:</strong> ${summary.touchedTasks || 0}</div>`,
+      `<div><strong>Logs:</strong> ${summary.logs || 0}</div>`,
+      `<div><strong>Entregas:</strong> ${summary.deadlines || 0}</div>`,
+      `<div><strong>Entregues:</strong> ${summary.deliveredDeadlines || 0}</div>`,
+      `<div><strong>Notas:</strong> ${summary.gradeEntries || 0}</div>`
+    ].join("");
+  }
+
+  function requestConflictResolution(localState, cloudState) {
+    const backdrop = document.getElementById("syncConflictBackdrop");
+    const localSummary = document.getElementById("syncConflictLocalSummary");
+    const cloudSummary = document.getElementById("syncConflictCloudSummary");
+    const keepLocalBtn = document.getElementById("syncConflictKeepLocalBtn");
+    const mergeBtn = document.getElementById("syncConflictMergeBtn");
+    const useCloudBtn = document.getElementById("syncConflictUseCloudBtn");
+    const note = document.getElementById("syncConflictNote");
+
+    if (!backdrop || !localSummary || !cloudSummary || !keepLocalBtn || !mergeBtn || !useCloudBtn) {
+      return Promise.resolve("merge");
+    }
+
+    localSummary.innerHTML = renderSummary(getSummary(localState));
+    cloudSummary.innerHTML = renderSummary(getSummary(cloudState));
+    if (note) {
+      note.textContent = "Mesclar preserva o que for mais recente em cada lista e mantém preferências novas do schema atual.";
+    }
+
+    backdrop.dataset.open = "true";
+    backdrop.setAttribute("aria-hidden", "false");
+
+    return new Promise((resolve) => {
+      const cleanup = (choice) => {
+        keepLocalBtn.removeEventListener("click", onLocal);
+        mergeBtn.removeEventListener("click", onMerge);
+        useCloudBtn.removeEventListener("click", onCloud);
+        backdrop.dataset.open = "false";
+        backdrop.setAttribute("aria-hidden", "true");
+        resolve(choice);
+      };
+      const onLocal = () => cleanup("local");
+      const onMerge = () => cleanup("merge");
+      const onCloud = () => cleanup("cloud");
+      keepLocalBtn.addEventListener("click", onLocal, { once: true });
+      mergeBtn.addEventListener("click", onMerge, { once: true });
+      useCloudBtn.addEventListener("click", onCloud, { once: true });
+    });
+  }
+
+  async function writeCloudPayload(payload, reason) {
+    const cloudRef = provider.ref(provider.db, "users/" + currentUser.uid + "/appState");
+    await provider.set(cloudRef, {
+      payload,
+      updatedAt: new Date().toISOString(),
+      source: "motor-estudos-html",
+      reason: reason || "save"
+    });
+  }
+
   async function writeCloudState(reason) {
     if (!provider || !appContext || !currentUser || suppressCloudWrite) return;
     try {
-      const cloudRef = provider.ref(provider.db, "users/" + currentUser.uid + "/appState");
-      await provider.set(cloudRef, {
-        payload: appContext.getState(),
-        updatedAt: new Date().toISOString(),
-        source: "motor-estudos-html",
-        reason: reason || "save"
-      });
+      await writeCloudPayload(appContext.getState(), reason || "save");
       emitStatus("Nuvem sincronizada.", "success");
     } catch (error) {
       console.error("Erro ao enviar estado para a nuvem:", error);
       emitStatus("Erro ao sincronizar com a nuvem.", "danger");
+    }
+  }
+
+  async function applyChosenState(nextState, reason, message) {
+    appContext.setState(nextState);
+    appContext.saveLocal();
+    appContext.render();
+    if (reason) {
+      await writeCloudPayload(nextState, reason);
+    }
+    emitStatus(message, "success");
+    if (appContext.showToast) {
+      appContext.showToast(message);
     }
   }
 
@@ -92,34 +170,24 @@
 
         if (cloudHasData) {
           if (localHasData) {
-            const useCloud = confirm("Foram encontrados dados locais e dados na nuvem.\n\nOK = usar dados da nuvem\nCancelar = manter dados locais");
-            if (useCloud) {
-              appContext.setState(cloudState);
-              appContext.saveLocal();
-              appContext.render();
-              emitStatus("Dados da nuvem carregados.", "success");
+            const choice = await requestConflictResolution(localState, cloudState);
+            if (choice === "cloud") {
+              await applyChosenState(cloudState, null, "Dados da nuvem carregados.");
+            } else if (choice === "merge") {
+              const merged = typeof appContext.mergeStates === "function"
+                ? appContext.mergeStates(localState, cloudState)
+                : cloudState;
+              await applyChosenState(merged, "merge-conflict-resolution", "Dados locais e da nuvem foram mesclados.");
             } else {
-              await provider.set(cloudRef, {
-                payload: localState,
-                updatedAt: new Date().toISOString(),
-                source: "motor-estudos-html",
-                reason: "kept-local-version"
-              });
+              await writeCloudPayload(localState, "kept-local-version");
               emitStatus("Dados locais mantidos e enviados.", "success");
+              if (appContext.showToast) appContext.showToast("Dados locais mantidos.");
             }
           } else {
-            appContext.setState(cloudState);
-            appContext.saveLocal();
-            appContext.render();
-            emitStatus("Dados da nuvem carregados.", "success");
+            await applyChosenState(cloudState, null, "Dados da nuvem carregados.");
           }
         } else if (localHasData) {
-          await provider.set(cloudRef, {
-            payload: localState,
-            updatedAt: new Date().toISOString(),
-            source: "motor-estudos-html",
-            reason: "seed-from-local"
-          });
+          await writeCloudPayload(localState, "seed-from-local");
           emitStatus("Dados locais enviados para iniciar a nuvem.", "success");
         } else {
           emitStatus("Conta conectada. A nuvem será criada quando houver dados seus.", "neutral");
@@ -131,12 +199,7 @@
         const localState = appContext.getState();
         const localHasData = hasMeaningfulData(localState);
         if (localHasData) {
-          await provider.set(cloudRef, {
-            payload: localState,
-            updatedAt: new Date().toISOString(),
-            source: "motor-estudos-html",
-            reason: "first-cloud-save"
-          });
+          await writeCloudPayload(localState, "first-cloud-save");
           emitStatus("Nuvem criada com seus dados locais.", "success");
         } else {
           emitStatus("Conta conectada. A nuvem será criada quando você lançar notas, entregas ou progresso.", "neutral");

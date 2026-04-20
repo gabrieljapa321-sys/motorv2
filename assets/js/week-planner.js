@@ -875,6 +875,8 @@
           });
         }
       };
+      window.StudyApp = window.StudyApp || {};
+      window.StudyApp.addCurrentTaskToPlanner = window.addCurrentTaskToPlanner;
 
       // ── Init ──
       setupInteractionDelegation();

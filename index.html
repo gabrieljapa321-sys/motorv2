@@ -4,11 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motor de Estudo · Poli-USP</title>
+  <meta name="theme-color" content="#171717" />
+  <link rel="manifest" href="manifest.webmanifest?v=20260421-ship1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/app.css?v=20260421-ux2" />
-  <script charset="utf-8" src="assets/js/polyfills.js?v=20260421-ux2"></script>
+  <link rel="stylesheet" href="assets/css/app.css?v=20260421-ship1" />
+  <script charset="utf-8" src="assets/js/polyfills.js?v=20260421-ship1"></script>
 
 </head>
 <body data-layout="browser">
@@ -369,11 +371,12 @@
             <div class="month-controls">
               <button class="btn btn-ghost" id="monthPrevBtn">← Anterior</button>
               <button class="btn btn-soft" id="monthTodayBtn">Hoje</button>
+              <button class="btn btn-ghost" id="calendarLegendToggleBtn" aria-pressed="false">Mostrar legenda</button>
               <button class="btn btn-primary" id="monthNextBtn">Próximo →</button>
             </div>
           </div>
 
-          <div class="month-legend">
+          <div class="month-legend" id="monthLegend" hidden>
             <span class="chip accent">Estudo</span>
             <span class="chip warning">Prova</span>
             <span class="chip danger">Entrega</span>
@@ -645,22 +648,51 @@
     </div>
   </div>
 
+  <div class="modal-backdrop" id="syncConflictBackdrop" aria-hidden="true">
+    <div class="modal sync-conflict-modal" role="dialog" aria-labelledby="syncConflictTitle">
+      <h3 class="modal-title" id="syncConflictTitle">Escolher versão dos dados</h3>
+      <div class="modal-body">
+        <div class="session-hint">
+          Encontramos dados locais e dados na nuvem. Escolha como quer reconciliar antes de continuar.
+        </div>
+        <div class="sync-conflict-grid">
+          <article class="sync-conflict-card">
+            <div class="sync-conflict-card__label">Este dispositivo</div>
+            <div class="sync-conflict-card__summary" id="syncConflictLocalSummary"></div>
+          </article>
+          <article class="sync-conflict-card">
+            <div class="sync-conflict-card__label">Nuvem</div>
+            <div class="sync-conflict-card__summary" id="syncConflictCloudSummary"></div>
+          </article>
+        </div>
+        <div class="sync-conflict-note" id="syncConflictNote">
+          Mesclar preserva o que for mais recente em cada bloco de dados.
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-ghost" id="syncConflictKeepLocalBtn">Manter local</button>
+          <button type="button" class="btn btn-soft" id="syncConflictMergeBtn">Mesclar</button>
+          <button type="button" class="btn btn-primary" id="syncConflictUseCloudBtn">Usar nuvem</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   
-  <script charset="utf-8" src="assets/js/app-data.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/store.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/dates.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/theme.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/backup.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/sync-service.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/app-core.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/app-pages.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/week-planner.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/study-features.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/app-actions.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/app-init.js?v=20260421-arch2"></script>
-  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260421-arch2"></script>
-  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260421-arch2"></script>
+  <script charset="utf-8" src="assets/js/app-data.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/store.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/dates.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/theme.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/backup.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/sync-service.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/app-core.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/app-pages.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/week-planner.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/study-features.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/app-actions.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/app-init.js?v=20260421-ship1"></script>
+  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260421-ship1"></script>
 </body>
 </html>

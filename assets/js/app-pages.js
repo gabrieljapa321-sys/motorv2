@@ -1141,6 +1141,28 @@ function renderGradeComponentItem(component) {
 function renderGradeSubjectCard(model) {
 
   const { subject, status, targets, requiredPrimary, requiredSecondary, tonePrimary, toneSecondary, scenario, remainingLabels } = model;
+  const normalizedQuery = String(state.notesSearchTerm || "")
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+  const visibleComponents = !normalizedQuery
+    ? status.components
+    : status.components.filter((component) => {
+        const haystack = [
+          subject.name,
+          subject.shortName,
+          subject.code,
+          component.label,
+          component.type,
+          ...(component.entries || []).map((entry) => `${entry.title || ""} ${entry.entryType || ""} ${entry.label || ""}`)
+        ]
+          .join(" ")
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "");
+        return haystack.includes(normalizedQuery);
+      });
 
   return `
 
@@ -1165,8 +1187,6 @@ function renderGradeSubjectCard(model) {
         </div>
 
       </div>
-
-
 
       <div class="grade-meta-grid">
 
@@ -1212,8 +1232,6 @@ function renderGradeSubjectCard(model) {
 
       </div>
 
-
-
       <div class="grade-target-grid">
 
         <div class="grade-target">
@@ -1241,8 +1259,6 @@ function renderGradeSubjectCard(model) {
         </div>
 
       </div>
-
-
 
       <div class="grade-component-item">
 
@@ -1308,15 +1324,15 @@ function renderGradeSubjectCard(model) {
 
       </div>
 
-
-
       <div class="chip-row">${remainingLabels}</div>
 
-
+      ${normalizedQuery ? `<div class="grade-filter-hint">Filtro ativo: <strong>${escapeHtml(state.notesSearchTerm)}</strong> · ${visibleComponents.length} componente${visibleComponents.length === 1 ? "" : "s"} visível${visibleComponents.length === 1 ? "" : "is"}</div>` : ""}
 
       <div class="grade-component-list">
 
-        ${status.components.map((component) => renderGradeComponentItem(component)).join("")}
+        ${visibleComponents.length
+          ? visibleComponents.map((component) => renderGradeComponentItem(component)).join("")
+          : `<div class="grade-empty">Nenhum componente dessa matéria combina com o filtro atual.</div>`}
 
       </div>
 
@@ -1376,6 +1392,14 @@ function renderGradeOverviewHero(model) {
           <span>Meta secundária</span>
 
           <input type="number" name="secondaryTarget" min="0" max="10" step="0.1" value="${model.targets.secondary}" required />
+
+        </label>
+
+        <label class="field">
+
+          <span>Busca rápida</span>
+
+          <input type="search" id="gradeNotesSearchInput" value="${escapeHtml(state.notesSearchTerm || "")}" placeholder="Filtrar por componente, prova ou matéria" />
 
         </label>
 
@@ -1528,6 +1552,8 @@ function renderGradesPage(referenceDate) {
             ${pinned ? `<span class="chip warning">mantida por débito aberto</span>` : ""}
 
             ${sessionLabel ? `<span class="chip success">${escapeHtml(sessionLabel)}</span>` : ""}
+
+            <button class="btn btn-ghost btn-inline-toggle" type="button" data-action="toggle-dashboard-focus">${state.dashboardFocusMode ? "Sair do foco" : "Modo foco"}</button>
 
           </div>
 
@@ -2459,6 +2485,11 @@ function renderGradesPage(referenceDate) {
       elements.calendarMonthSubtitle.textContent = CALENDAR_UI.monthSubtitle || "Mostra o mês selecionado com blocos de estudo, provas oficiais e entregas.";
       elements.monthPrevBtn.disabled = monthStart <= currentMonth;
       elements.monthTodayBtn.disabled = monthStart.getTime() === currentMonth.getTime();
+      if (elements.monthLegend) elements.monthLegend.hidden = !state.calendarLegendVisible;
+      if (elements.calendarLegendToggleBtn) {
+        elements.calendarLegendToggleBtn.textContent = state.calendarLegendVisible ? "Ocultar legenda" : "Mostrar legenda";
+        elements.calendarLegendToggleBtn.setAttribute("aria-pressed", state.calendarLegendVisible ? "true" : "false");
+      }
 
       const cells = [];
       for (let i = 0; i < firstWeekday; i++) {

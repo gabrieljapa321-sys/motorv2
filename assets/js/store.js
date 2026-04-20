@@ -2,12 +2,17 @@
   "use strict";
 
   const STORAGE_KEY = "poli-study-motor-v1";
+  const SCHEMA_VERSION = 3;
 
   const DEFAULT_STATE = {
+    schemaVersion: SCHEMA_VERSION,
     theme: "auto",
     mode: "normal",
     currentPage: "dashboard",
     calendarMonthAnchor: null,
+    calendarLegendVisible: false,
+    dashboardFocusMode: false,
+    notesSearchTerm: "",
     taskMeta: {},
     logs: [],
     deadlines: [],
@@ -68,14 +73,47 @@
     return value === "comfortable" ? "comfortable" : "compact";
   }
 
+  function normalizeBoolean(value, fallback) {
+    return typeof value === "boolean" ? value : fallback;
+  }
+
+  function normalizeNotesSearchTerm(value) {
+    return typeof value === "string" ? value.slice(0, 120) : "";
+  }
+
+  function migrateState(candidate) {
+    const safe = candidate && typeof candidate === "object" ? cloneState(candidate) : {};
+    const version = Number.isFinite(Number(safe.schemaVersion)) ? Number(safe.schemaVersion) : 1;
+
+    if (version < 2) {
+      safe.gradeOverviewSubjectCode = safe.gradeOverviewSubjectCode || safe.gradeDraftSubjectCode || null;
+      safe.gradeScenarioDrafts = safe.gradeScenarioDrafts || {};
+      safe.weekDensity = safe.weekDensity || "compact";
+      safe.backupMeta = safe.backupMeta || {};
+    }
+
+    if (version < 3) {
+      safe.calendarLegendVisible = false;
+      safe.dashboardFocusMode = false;
+      safe.notesSearchTerm = "";
+    }
+
+    safe.schemaVersion = SCHEMA_VERSION;
+    return safe;
+  }
+
   function hydrateStateFromRaw(candidate, defaultState = DEFAULT_STATE) {
-    const parsed = candidate && typeof candidate === "object" ? candidate : {};
+    const parsed = migrateState(candidate);
     const targets = parsed.gradeTargets && typeof parsed.gradeTargets === "object" ? parsed.gradeTargets : {};
     const primary = Number(targets.primary);
     const secondary = Number(targets.secondary);
     return {
       ...cloneState(defaultState),
       ...parsed,
+      schemaVersion: SCHEMA_VERSION,
+      calendarLegendVisible: normalizeBoolean(parsed.calendarLegendVisible, defaultState.calendarLegendVisible),
+      dashboardFocusMode: normalizeBoolean(parsed.dashboardFocusMode, defaultState.dashboardFocusMode),
+      notesSearchTerm: normalizeNotesSearchTerm(parsed.notesSearchTerm),
       taskMeta: parsed.taskMeta || {},
       logs: Array.isArray(parsed.logs) ? parsed.logs : [],
       deadlines: Array.isArray(parsed.deadlines) ? parsed.deadlines : [],
@@ -105,7 +143,8 @@
   }
 
   function saveState(state, storageKey = STORAGE_KEY) {
-    localStorage.setItem(storageKey, JSON.stringify(state));
+    const hydrated = hydrateStateFromRaw(state);
+    localStorage.setItem(storageKey, JSON.stringify(hydrated));
   }
 
   function formatDateTimeShort(value) {
@@ -119,6 +158,7 @@
     const safeState = hydrateFn(sourceState || {});
     const deliveredDeadlines = safeState.deadlines.filter((item) => item && item.deliveredAt).length;
     return {
+      schemaVersion: safeState.schemaVersion || SCHEMA_VERSION,
       touchedTasks: Object.keys(safeState.taskMeta || {}).length,
       logs: safeState.logs.length,
       deadlines: safeState.deadlines.length,
@@ -153,8 +193,8 @@
         }
       });
     };
-    absorb(currentRecords, fallbackPrefix || "current");
-    absorb(incomingRecords, fallbackPrefix || "incoming");
+    absorb(currentRecords, `current-${fallbackPrefix || "record"}`);
+    absorb(incomingRecords, `incoming-${fallbackPrefix || "record"}`);
     return Array.from(map.values());
   }
 
@@ -175,6 +215,8 @@
       const current = currentMeta && currentMeta[key] ? currentMeta[key] : {};
       const incoming = incomingMeta && incomingMeta[key] ? incomingMeta[key] : {};
       merged[key] = {
+        ...current,
+        ...incoming,
         startedCount: Math.max(Number(current.startedCount || 0), Number(incoming.startedCount || 0)),
         skipCount: Math.max(Number(current.skipCount || 0), Number(incoming.skipCount || 0)),
         lightDelayCount: Math.max(Number(current.lightDelayCount || 0), Number(incoming.lightDelayCount || 0)),
@@ -193,6 +235,10 @@
     const incomingSafe = hydrateFn(importedState || {});
     return hydrateFn({
       ...currentSafe,
+      schemaVersion: SCHEMA_VERSION,
+      calendarLegendVisible: incomingSafe.calendarLegendVisible,
+      dashboardFocusMode: incomingSafe.dashboardFocusMode,
+      notesSearchTerm: incomingSafe.notesSearchTerm || currentSafe.notesSearchTerm,
       taskMeta: mergeTaskMeta(currentSafe.taskMeta, incomingSafe.taskMeta),
       logs: mergeRecordsById(currentSafe.logs, incomingSafe.logs, "log"),
       deadlines: mergeRecordsById(currentSafe.deadlines, incomingSafe.deadlines, "deadline"),
@@ -220,8 +266,10 @@
 
   window.StudyStore = {
     STORAGE_KEY,
+    SCHEMA_VERSION,
     DEFAULT_STATE,
     cloneState,
+    migrateState,
     sanitizeBackupMeta,
     sanitizeGradeScenarioDrafts,
     normalizeWeekDensity,

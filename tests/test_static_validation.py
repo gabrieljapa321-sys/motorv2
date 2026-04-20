@@ -1,6 +1,7 @@
 import pathlib
 import re
 import unittest
+import json
 
 import esprima
 
@@ -9,6 +10,9 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 INDEX_HTML = ROOT / "index.html"
 JS_DIR = ROOT / "assets" / "js"
 CSS_DIR = ROOT / "assets" / "css"
+DATA_DIR = ROOT / "assets" / "data"
+MANIFEST = ROOT / "manifest.webmanifest"
+SERVICE_WORKER = ROOT / "service-worker.js"
 
 
 class StaticValidationTests(unittest.TestCase):
@@ -47,6 +51,17 @@ class StaticValidationTests(unittest.TestCase):
         css = (CSS_DIR / "app.css").read_text(encoding="utf-8")
         for name in ["base.css", "dashboard.css", "calendar.css", "grades.css", "week.css", "flashcards.css"]:
             self.assertIn(name, css)
+
+    def test_json_data_files_exist_and_are_valid(self):
+        for name in ["study-data.json", "ui-config.json"]:
+            payload = json.loads((DATA_DIR / name).read_text(encoding="utf-8"))
+            self.assertIsInstance(payload, dict)
+
+    def test_manifest_and_service_worker_exist(self):
+        manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        self.assertEqual(manifest["start_url"], "./")
+        self.assertIn("icons", manifest)
+        esprima.parseScript(SERVICE_WORKER.read_text(encoding="utf-8"), {"tolerant": False})
 
     def test_all_js_files_parse(self):
         for path in sorted(JS_DIR.glob("*.js")):

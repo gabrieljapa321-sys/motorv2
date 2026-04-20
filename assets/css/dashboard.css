@@ -889,4 +889,16 @@
       border-left-color: var(--accent);
     }
 
+    #dashboardPage[data-focus-mode="true"] #subjectsCollapse,
+    #dashboardPage[data-focus-mode="true"] #sourcesCollapse,
+    #dashboardPage[data-focus-mode="true"] #dataCollapse,
+    #dashboardPage[data-focus-mode="true"] #notesCollapse {
+      display: none;
+    }
+
+    .btn-inline-toggle {
+      min-height: 32px;
+      padding: 6px 10px;
+    }
+
     /* ═══════════════════════════════════════════════════════════

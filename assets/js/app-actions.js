@@ -26,8 +26,17 @@
         return;
       }
       if (button.matches("[data-action='add-to-planner']")) {
-        if (typeof window.addCurrentTaskToPlanner === "function") {
-          window.addCurrentTaskToPlanner(button.dataset.taskId);
+        const addToPlanner = window.StudyApp && typeof window.StudyApp.addCurrentTaskToPlanner === "function"
+          ? window.StudyApp.addCurrentTaskToPlanner
+          : window.addCurrentTaskToPlanner;
+        if (typeof addToPlanner === "function") {
+          addToPlanner(button.dataset.taskId);
+        }
+        return;
+      }
+      if (button.matches("[data-action='toggle-dashboard-focus']")) {
+        if (window.StudyApp && typeof window.StudyApp.toggleDashboardFocusMode === "function") {
+          window.StudyApp.toggleDashboardFocusMode();
         }
         return;
       }
@@ -111,6 +120,22 @@
         state.gradeOverviewSubjectCode = target.value;
         saveState();
         render();
+        return;
+      }
+      if (target.id === "gradeNotesSearchInput") {
+        if (window.StudyApp && typeof window.StudyApp.setNotesSearchTerm === "function") {
+          window.StudyApp.setNotesSearchTerm(target.value);
+        }
+      }
+    });
+
+    document.addEventListener("input", (event) => {
+      const target = event.target;
+      if (!(target instanceof HTMLElement)) return;
+      if (target.id === "gradeNotesSearchInput") {
+        if (window.StudyApp && typeof window.StudyApp.setNotesSearchTerm === "function") {
+          window.StudyApp.setNotesSearchTerm(target.value);
+        }
       }
     });
 

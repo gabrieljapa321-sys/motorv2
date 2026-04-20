@@ -25,7 +25,7 @@
     const stamp = nowIso.replace(/[:.]/g, "-");
     const payload = {
       type: "motor-estudo-poli-backup",
-      schemaVersion: 2,
+      schemaVersion: ctx.schemaVersion,
       appVersion: ctx.appVersion,
       exportedAt: nowIso,
       storageKey: ctx.storageKey,
@@ -47,7 +47,7 @@
     return {
       meta: {
         type: payload.type || "desconhecido",
-        schemaVersion: payload.schemaVersion || 1,
+        schemaVersion: payload.schemaVersion || ctx.schemaVersion || 1,
         appVersion: payload.appVersion || "desconhecida",
         exportedAt: payload.exportedAt || null,
         storageKey: payload.storageKey || null,
