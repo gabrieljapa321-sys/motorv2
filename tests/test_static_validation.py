@@ -58,6 +58,7 @@ class StaticValidationTests(unittest.TestCase):
             "assets/js/app-actions.js",
             "assets/js/work-planner.js",
             "assets/js/news-feed.js",
+            "assets/js/ticker-tape.js",
             "assets/js/app-init.js",
             "assets/js/firebase-init.js",
             "assets/js/auth-panel.js",
@@ -68,11 +69,11 @@ class StaticValidationTests(unittest.TestCase):
 
     def test_app_css_imports_domain_files(self):
         css = (CSS_DIR / "app.css").read_text(encoding="utf-8")
-        for name in ["base.css", "dashboard.css", "calendar.css", "grades.css", "week.css", "flashcards.css", "news.css", "work.css"]:
+        for name in ["base.css", "dashboard.css", "calendar.css", "grades.css", "week.css", "flashcards.css", "news.css", "ticker.css", "work.css"]:
             self.assertIn(name, css)
 
     def test_json_data_files_exist_and_are_valid(self):
-        for name in ["study-data.json", "ui-config.json", "exercises.json", "news.json"]:
+        for name in ["study-data.json", "ui-config.json", "exercises.json", "news.json", "ticker-tape.json"]:
             payload = json.loads((DATA_DIR / name).read_text(encoding="utf-8"))
             self.assertIsInstance(payload, dict)
 

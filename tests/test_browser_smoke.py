@@ -167,6 +167,13 @@ class BrowserSmokeTests(unittest.TestCase):
         self.assertIn("#news", self.page.url)
         self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
 
+    def test_ticker_tape_loads_visible_items(self):
+        self._goto()
+        self.page.wait_for_selector("#tickerTapeShell:not([hidden])")
+        self.page.wait_for_selector("#tickerTapeTrack .ticker-tape-item")
+        self.assertGreater(self.page.locator("#tickerTapeTrack .ticker-tape-item").count(), 0)
+        self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
+
     def test_work_task_flow_company_filter_waiting_done_and_persistence(self):
         self._goto()
         self.page.click(".tb-nav-btn[data-nav-page='work']")

@@ -117,6 +117,8 @@
       id: idBase || `news-item-${index}`,
       title: typeof raw.title === "string" && raw.title.trim() ? raw.title.trim() : "Sem título",
       summary: typeof raw.summary === "string" ? raw.summary.trim().slice(0, 380) : "",
+      details: typeof raw.details === "string" ? raw.details.trim().slice(0, 420) : "",
+      imageUrl: typeof raw.imageUrl === "string" && raw.imageUrl.trim() ? raw.imageUrl.trim() : "",
       url: typeof raw.url === "string" && raw.url.trim() ? raw.url.trim() : "#",
       source,
       category,
@@ -148,6 +150,21 @@
           ],
       items
     };
+  }
+
+  function renderNewsMedia(item, className) {
+    if (item.imageUrl) {
+      return `
+        <div class="${className}">
+          <img src="${escapeHtml(item.imageUrl)}" alt="" loading="lazy" decoding="async" />
+        </div>
+      `;
+    }
+    return `
+      <div class="${className} ${className}--fallback" aria-hidden="true">
+        <span>${escapeHtml((item.source || item.category || "N").slice(0, 1).toUpperCase())}</span>
+      </div>
+    `;
   }
 
   function getUnreadItems(state = getState(), payload = runtime.payload) {
@@ -220,12 +237,13 @@
       return;
     }
     host.innerHTML = `
+      ${renderNewsMedia(item, "news-lead-media")}
       <div class="news-lead-top">
         <span class="chip accent">${escapeHtml(item.category === "latest" ? "Última hora" : item.category)}</span>
         <span class="chip neutral">${escapeHtml(item.source)}</span>
       </div>
       <h3>${escapeHtml(item.title)}</h3>
-      <p>${escapeHtml((item.summary || "Sem resumo curto disponível; abra a fonte para ver a íntegra.").slice(0, 140))}</p>
+      <p>${escapeHtml((item.details || item.summary || "Sem resumo curto disponível; abra a fonte para ver a íntegra.").slice(0, 220))}</p>
       <div class="news-meta-row">
         <span>${escapeHtml(formatRelativeTime(item.publishedAt))}</span>
         <span>${escapeHtml(formatDateTime(item.publishedAt))}</span>
@@ -259,7 +277,7 @@
           <span>${escapeHtml(formatRelativeTime(item.publishedAt))}</span>
         </div>
         <div class="chip-row">
-          <span class="chip neutral">${escapeHtml(item.category === "latest" ? "Última hora" : item.category)}</span>
+            <span class="chip neutral">${escapeHtml(item.category === "latest" ? "?ltima hora" : item.category)}</span>
           ${item.tags.slice(0, 2).map((tag) => `<span class="chip neutral">${escapeHtml(tag)}</span>`).join("")}
           ${item.premium ? '<span class="chip warning">Premium</span>' : ""}
         </div>
@@ -336,6 +354,75 @@
       </div>
       <div class="news-source-cloud">${latestSources || '<span class="chip neutral">Sem fontes carregadas</span>'}</div>
     `;
+  }
+
+  function renderLeadCard(items) {
+    const host = document.getElementById("newsLeadCard");
+    if (!host) return;
+    const item = items[0];
+    if (!item) {
+      host.innerHTML = '<div class="news-empty">Nenhuma not?cia dispon?vel para o filtro atual.</div>';
+      return;
+    }
+    host.innerHTML = `
+      ${renderNewsMedia(item, "news-lead-media")}
+      <div class="news-lead-top">
+        <span class="chip accent">${escapeHtml(item.category === "latest" ? "?ltima hora" : item.category)}</span>
+        <span class="chip neutral">${escapeHtml(item.source)}</span>
+      </div>
+      <h3>${escapeHtml(item.title)}</h3>
+      <p>${escapeHtml((item.details || item.summary || "Sem resumo curto dispon?vel; abra a fonte para ver a ?ntegra.").slice(0, 220))}</p>
+      <div class="news-meta-row">
+        <span>${escapeHtml(formatRelativeTime(item.publishedAt))}</span>
+        <span>${escapeHtml(formatDateTime(item.publishedAt))}</span>
+      </div>
+      <div class="news-action-row">
+        <a class="btn btn-primary" href="${escapeHtml(item.url)}" target="_blank" rel="noopener" data-news-open="${escapeHtml(item.id)}">Abrir fonte</a>
+        <button type="button" class="btn btn-ghost" data-news-mark-read="${escapeHtml(item.id)}">Marcar como lida</button>
+      </div>
+    `;
+  }
+
+  function renderFeedList(items) {
+    const host = document.getElementById("newsFeedList");
+    if (!host) return;
+    const unread = new Set(getUnreadItems().map((item) => item.id));
+    if (!items.length) {
+      host.innerHTML = '<div class="news-empty">Nenhuma manchete combinou com os filtros atuais.</div>';
+      return;
+    }
+    const visibleItems = items.slice(0, runtime.feedVisibleCount);
+    host.innerHTML = visibleItems.map((item) => `
+      <article class="news-item-card"${unread.has(item.id) ? ' data-unread="true"' : ""} data-news-item-id="${escapeHtml(item.id)}">
+        ${renderNewsMedia(item, "news-item-media")}
+        <div class="news-item-top">
+          <div class="news-item-headline">
+            <h4>${escapeHtml(item.title)}</h4>
+          </div>
+          ${unread.has(item.id) ? '<span class="news-dot" aria-label="N?o lida"></span>' : ""}
+        </div>
+        <div class="news-meta-row">
+          <span>${escapeHtml(item.source)}</span>
+          <span>${escapeHtml(formatRelativeTime(item.publishedAt))}</span>
+        </div>
+        <div class="news-item-detail">
+          <p class="news-item-summary">${escapeHtml((item.details || item.summary || "Abra a fonte para ver a matéria completa.").slice(0, 240))}</p>
+          <div class="chip-row">
+            <span class="chip neutral">${escapeHtml(item.category === "latest" ? "Última hora" : item.category)}</span>
+            ${item.tags.slice(0, 2).map((tag) => `<span class="chip neutral">${escapeHtml(tag)}</span>`).join("")}
+            ${item.premium ? '<span class="chip warning">Premium</span>' : ""}
+          </div>
+          <div class="news-action-row">
+            <a class="btn btn-soft" href="${escapeHtml(item.url)}" target="_blank" rel="noopener" data-news-open="${escapeHtml(item.id)}">Abrir</a>
+            <button type="button" class="btn btn-ghost" data-news-mark-read="${escapeHtml(item.id)}">Lida</button>
+          </div>
+        </div>
+      </article>
+    `).join("") + (items.length > runtime.feedVisibleCount ? `
+      <div class="news-feed-footer">
+        <button type="button" class="btn btn-ghost" data-news-show-more>Mostrar mais ${Math.min(6, items.length - runtime.feedVisibleCount)}</button>
+      </div>
+    ` : "");
   }
 
   function renderStatusChips() {
