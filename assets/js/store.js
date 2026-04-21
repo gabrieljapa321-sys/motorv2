@@ -2,13 +2,21 @@
   "use strict";
 
   const STORAGE_KEY = "poli-study-motor-v1";
-  const SCHEMA_VERSION = 5;
+  const SCHEMA_VERSION = 6;
+
+  const STUDY_SECTIONS = ["dashboard", "week", "fc", "calendar", "grades"];
+  const PRIMARY_PAGES = ["home", "studies", "work"];
+  const WORK_COMPANY_IDS = ["beneva", "tsea", "itamaraca-spe"];
+  const WORK_PRIORITIES = ["critical", "high", "medium", "low"];
+  const WORK_STATUSES = ["inbox", "planned", "doing", "waiting", "done"];
+  const WORK_AREAS = ["financeiro", "juridico", "operacional", "governanca", "auditoria", "compliance", "reuniao", "followup"];
 
   const DEFAULT_STATE = {
     schemaVersion: SCHEMA_VERSION,
     theme: "auto",
     mode: "normal",
-    currentPage: "dashboard",
+    currentPage: "home",
+    studySection: "dashboard",
     calendarMonthAnchor: null,
     calendarLegendVisible: false,
     dashboardFocusMode: false,
@@ -47,12 +55,6 @@
     lastAutoProcessedDate: null
   };
 
-  const NAV_PAGES = ["dashboard", "week", "fc", "calendar", "grades", "work"];
-  const WORK_COMPANY_IDS = ["beneva", "tsea", "itamaraca-spe"];
-  const WORK_PRIORITIES = ["critical", "high", "medium", "low"];
-  const WORK_STATUSES = ["inbox", "planned", "doing", "waiting", "done"];
-  const WORK_AREAS = ["financeiro", "juridico", "operacional", "governanca", "auditoria", "compliance", "reuniao", "followup"];
-
   function cloneState(value) {
     return JSON.parse(JSON.stringify(value));
   }
@@ -76,9 +78,7 @@
       const next = {};
       Object.entries(value).forEach(([componentKey, score]) => {
         const numeric = Number(score);
-        if (Number.isFinite(numeric) && numeric >= 0 && numeric <= 10) {
-          next[componentKey] = numeric;
-        }
+        if (Number.isFinite(numeric) && numeric >= 0 && numeric <= 10) next[componentKey] = numeric;
       });
       if (Object.keys(next).length) output[subjectCode] = next;
     });
@@ -127,8 +127,16 @@
     return typeof value === "string" ? value.slice(0, 120) : "";
   }
 
-  function normalizeCurrentPage(value) {
-    return NAV_PAGES.includes(value) ? value : "dashboard";
+  function normalizePrimaryPage(value) {
+    if (PRIMARY_PAGES.includes(value)) return value;
+    if (STUDY_SECTIONS.includes(value)) return "studies";
+    return "home";
+  }
+
+  function normalizeStudySection(value, fallback) {
+    if (STUDY_SECTIONS.includes(value)) return value;
+    if (STUDY_SECTIONS.includes(fallback)) return fallback;
+    return "dashboard";
   }
 
   function normalizeWorkFilter(value) {
@@ -210,11 +218,16 @@
     }
 
     if (version < 5) {
-      safe.currentPage = normalizeCurrentPage(safe.currentPage);
       safe.weeklyTodos = Array.isArray(safe.weeklyTodos) ? safe.weeklyTodos : [];
       safe.workTasks = Array.isArray(safe.workTasks) ? safe.workTasks : [];
       safe.workFilter = safe.workFilter || "all";
       safe.workWeekAnchor = safe.workWeekAnchor || null;
+    }
+
+    if (version < 6) {
+      const previousPage = safe.currentPage || "dashboard";
+      safe.studySection = normalizeStudySection(safe.studySection, previousPage);
+      safe.currentPage = PRIMARY_PAGES.includes(previousPage) ? previousPage : (previousPage === "work" ? "work" : (previousPage === "dashboard" ? "home" : "studies"));
     }
 
     safe.schemaVersion = SCHEMA_VERSION;
@@ -230,7 +243,8 @@
       ...cloneState(defaultState),
       ...parsed,
       schemaVersion: SCHEMA_VERSION,
-      currentPage: normalizeCurrentPage(parsed.currentPage),
+      currentPage: normalizePrimaryPage(parsed.currentPage),
+      studySection: normalizeStudySection(parsed.studySection, parsed.currentPage),
       calendarLegendVisible: normalizeBoolean(parsed.calendarLegendVisible, defaultState.calendarLegendVisible),
       dashboardFocusMode: normalizeBoolean(parsed.dashboardFocusMode, defaultState.dashboardFocusMode),
       notesSearchTerm: normalizeNotesSearchTerm(parsed.notesSearchTerm),
@@ -287,7 +301,8 @@
   function getStateSummary(sourceState, hydrateFn = hydrateStateFromRaw) {
     const safeState = hydrateFn(sourceState || {});
     const deliveredDeadlines = safeState.deadlines.filter((item) => item && item.deliveredAt).length;
-    const workTasks = safeState.workTasks || [];
+    const openWorkTasks = (safeState.workTasks || []).filter((item) => item && item.status !== "done").length;
+    const waitingWorkTasks = (safeState.workTasks || []).filter((item) => item && item.status === "waiting").length;
     return {
       schemaVersion: safeState.schemaVersion || SCHEMA_VERSION,
       touchedTasks: Object.keys(safeState.taskMeta || {}).length,
@@ -298,9 +313,9 @@
       weeklyTodos: (safeState.weeklyTodos || []).length,
       flashcards: safeState.flashcards.length,
       examSimulations: safeState.examSimulations.length,
-      workTasks: workTasks.length,
-      openWorkTasks: workTasks.filter((item) => item && item.status !== "done").length,
-      waitingWorkTasks: workTasks.filter((item) => item && item.status === "waiting").length
+      workTasks: (safeState.workTasks || []).length,
+      openWorkTasks,
+      waitingWorkTasks
     };
   }
 
@@ -410,11 +425,16 @@
       calendarLegendVisible: incomingSafe.calendarLegendVisible,
       dashboardFocusMode: incomingSafe.dashboardFocusMode,
       notesSearchTerm: incomingSafe.notesSearchTerm || currentSafe.notesSearchTerm,
+      currentPage: incomingSafe.currentPage || currentSafe.currentPage,
+      studySection: incomingSafe.studySection || currentSafe.studySection,
       taskMeta: mergeTaskMeta(currentSafe.taskMeta, incomingSafe.taskMeta),
       logs: mergeRecordsById(currentSafe.logs, incomingSafe.logs, "log"),
       deadlines: mergeRecordsById(currentSafe.deadlines, incomingSafe.deadlines, "deadline"),
       gradeEntries: mergeRecordsById(currentSafe.gradeEntries, incomingSafe.gradeEntries, "grade"),
       weeklyTodos: mergeRecordsById(currentSafe.weeklyTodos, incomingSafe.weeklyTodos, "weeklyTodo"),
+      flashcards: mergeRecordsById(currentSafe.flashcards, incomingSafe.flashcards, "flashcard"),
+      examSimulations: mergeRecordsById(currentSafe.examSimulations, incomingSafe.examSimulations, "exam"),
+      workTasks: mergeRecordsById(currentSafe.workTasks, incomingSafe.workTasks, "workTask"),
       gradeDraftSubjectCode: incomingSafe.gradeDraftSubjectCode || currentSafe.gradeDraftSubjectCode,
       gradeOverviewSubjectCode: incomingSafe.gradeOverviewSubjectCode || currentSafe.gradeOverviewSubjectCode,
       gradeTargets: incomingSafe.gradeTargets || currentSafe.gradeTargets,
@@ -423,13 +443,10 @@
         ...(incomingSafe.gradeScenarioDrafts || {})
       },
       weekDensity: incomingSafe.weekDensity || currentSafe.weekDensity,
-      flashcards: mergeRecordsById(currentSafe.flashcards, incomingSafe.flashcards, "flashcard"),
-      examSimulations: mergeRecordsById(currentSafe.examSimulations, incomingSafe.examSimulations, "exam"),
       fcSubview: normalizeFcSubview(incomingSafe.fcSubview || currentSafe.fcSubview),
       exerciseProgress: mergeExerciseProgress(currentSafe.exerciseProgress, incomingSafe.exerciseProgress),
       exerciseSubjectFilter: normalizeExerciseSubjectFilter(incomingSafe.exerciseSubjectFilter || currentSafe.exerciseSubjectFilter),
       currentExerciseId: incomingSafe.currentExerciseId || currentSafe.currentExerciseId,
-      workTasks: mergeRecordsById(currentSafe.workTasks, incomingSafe.workTasks, "workTask"),
       workFilter: incomingSafe.workFilter || currentSafe.workFilter,
       workWeekAnchor: incomingSafe.workWeekAnchor || currentSafe.workWeekAnchor,
       backupMeta: currentSafe.backupMeta
@@ -454,8 +471,6 @@
     sanitizeBackupMeta,
     sanitizeGradeScenarioDrafts,
     normalizeWeekDensity,
-    normalizeFcSubview,
-    sanitizeExerciseProgress,
     hydrateStateFromRaw,
     loadState,
     saveState,

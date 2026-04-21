@@ -12,7 +12,7 @@
     const STUDY_DATA_API = window.StudyData || {};
     const STORAGE_KEY = STORE_API.STORAGE_KEY;
     const SCHEMA_VERSION = STORE_API.SCHEMA_VERSION;
-    const APP_VERSION = "etapa1-v13";
+    const APP_VERSION = "etapa1-v15-shell";
     const DATA = STUDY_DATA_API.data || globalThis.DATA || { subjects: [], tasks: [] };
     const UI_CONFIG = STUDY_DATA_API.config || globalThis.APP_CONFIG || {};
     const PAGE_META = UI_CONFIG.pageMeta || {};
@@ -53,6 +53,8 @@
       importFileInput: document.getElementById("importFileInput"),
       modeSelect: document.getElementById("tbModeSelect"),
       navButtons: Array.from(document.querySelectorAll(".tb-nav-btn[data-nav-page]")),
+      studyNavBar: document.getElementById("studyNavBar"),
+      studyNavButtons: Array.from(document.querySelectorAll(".study-nav-btn[data-study-page]")),
       pageEyebrow: document.getElementById("pageEyebrow"),
       pageTitle: document.getElementById("pageTitle"),
       pageSubtitle: document.getElementById("pageSubtitle"),
@@ -60,6 +62,7 @@
       pageModeTxt: document.getElementById("pageModeTxt"),
       deadlinesCount: document.getElementById("deadlinesCount"),
       subjectsCount: document.getElementById("subjectsCount"),
+      homePage: document.getElementById("homePage"),
       dashboardPage: document.getElementById("dashboardPage"),
       weekPage: document.getElementById("weekPage"),
       fcPage: document.getElementById("fcPage"),
@@ -87,6 +90,13 @@
       subjectGrid: document.getElementById("subjectGrid"),
       sourcesBlock: document.getElementById("sourcesBlock"),
       notesBlock: document.getElementById("notesBlock"),
+      homeTodayCard: document.getElementById("homeTodayCard"),
+      homeWeekCard: document.getElementById("homeWeekCard"),
+      homeOverdueCard: document.getElementById("homeOverdueCard"),
+      homeWaitingCard: document.getElementById("homeWaitingCard"),
+      homeDeadlinesCard: document.getElementById("homeDeadlinesCard"),
+      homeCompaniesCard: document.getElementById("homeCompaniesCard"),
+      homeQuickCaptureCard: document.getElementById("homeQuickCaptureCard"),
       mobileFocusbar: document.getElementById("mobileFocusbar"),
       toast: document.getElementById("toast"),
       compatHint: document.getElementById("compatHint")
@@ -1253,7 +1263,19 @@ function renderDeadlineFormCard(referenceDate) {
             title: "Planner executivo de FIPs",
             subtitle: "Tarefas gerais e por empresa, com semana, atrasados e dependencias em destaque."
           }
-        : PAGE_META.dashboard || { eyebrow: "", title: "", subtitle: "" };
+        : pageKey === "home"
+          ? {
+              eyebrow: "Painel principal",
+              title: "Overview de estudos e trabalho",
+              subtitle: "Visao consolidada do que importa hoje e nesta semana."
+            }
+          : pageKey === "studies"
+            ? {
+                eyebrow: "Estudos",
+                title: "Motor de estudos",
+                subtitle: "Fluxo academico completo em uma area propria."
+              }
+            : PAGE_META.dashboard || { eyebrow: "", title: "", subtitle: "" };
       const meta = PAGE_META[pageKey] || fallbackMeta;
       if (elements.pageEyebrow) elements.pageEyebrow.textContent = meta.eyebrow;
       if (elements.pageTitle) elements.pageTitle.textContent = meta.title;
@@ -1312,35 +1334,178 @@ function renderDeadlineFormCard(referenceDate) {
         .replaceAll("'", "&#39;");
     }
 
-    function renderPageVisibility(referenceDate) {
-      const currentPage = ["week", "fc", "calendar", "grades", "work"].includes(state.currentPage) ? state.currentPage : "dashboard";
-      const onCalendar = currentPage === "calendar";
-      const onGrades = currentPage === "grades";
-      const onWeek = currentPage === "week";
-      const onFc = currentPage === "fc";
-      const onWork = currentPage === "work";
-      const onDashboard = currentPage === "dashboard";
+    const STUDY_SECTIONS = ["dashboard", "week", "fc", "calendar", "grades"];
+    const PRIMARY_PAGES = ["home", "studies", "work"];
 
-      if (elements.dashboardPage) elements.dashboardPage.hidden = !onDashboard;
-      if (elements.dashboardPage) elements.dashboardPage.dataset.focusMode = onDashboard && state.dashboardFocusMode ? "true" : "false";
+    function normalizePrimaryPage(value) {
+      if (PRIMARY_PAGES.includes(value)) return value;
+      if (STUDY_SECTIONS.includes(value)) return "studies";
+      return "home";
+    }
+
+    function normalizeStudySection(value, fallback) {
+      if (STUDY_SECTIONS.includes(value)) return value;
+      if (STUDY_SECTIONS.includes(fallback)) return fallback;
+      return "dashboard";
+    }
+
+    function getPrimaryPage() {
+      return normalizePrimaryPage(state.currentPage);
+    }
+
+    function getStudySection() {
+      return normalizeStudySection(state.studySection, state.currentPage);
+    }
+
+    function renderHomeList(items, emptyText) {
+      if (!items.length) return `<div class="empty-state">${escapeHtml(emptyText)}</div>`;
+      return `<div class="home-list">${items.map((item) => `
+        <div class="home-list-item">
+          <strong>${escapeHtml(item.title)}</strong>
+          <span>${escapeHtml(item.meta || "")}</span>
+        </div>
+      `).join("")}</div>`;
+    }
+
+    function formatWorkTaskMeta(task, todayIso) {
+      if (!task) return "";
+      const WD = window.WorkDomain;
+      const company = task.scope === "company" && WD ? WD.companyName(task.companyId) : "Geral";
+      const due = task.dueDate ? (task.dueDate < todayIso ? `atrasada desde ${task.dueDate}` : task.dueDate === todayIso ? "vence hoje" : `prazo ${task.dueDate}`) : "sem prazo";
+      const next = task.nextAction ? ` · ${task.nextAction}` : "";
+      return `${company} · ${due}${next}`;
+    }
+
+    function getStudyDeadlineItems(referenceDate) {
+      return (state.deadlines || [])
+        .filter((deadline) => deadline && !deadline.deliveredAt && deadline.dueDate)
+        .map((deadline) => {
+          const due = parseDate(deadline.dueDate);
+          const days = daysBetween(referenceDate, due);
+          return {
+            title: deadline.title || "Entrega",
+            meta: `${deadline.subjectCode || deadline.type || "Estudo"} · ${days < 0 ? "atrasada" : days === 0 ? "vence hoje" : `em ${days} dia${days === 1 ? "" : "s"}`}`,
+            dueDate: deadline.dueDate,
+            rank: days < 0 ? -10 + days : days
+          };
+        })
+        .sort((a, b) => a.rank - b.rank);
+    }
+
+    function renderHomeDashboard(plan, queue, referenceDate) {
+      const WD = window.WorkDomain;
+      const todayIso = toIsoDate(referenceDate);
+      const weekAnchor = state.workWeekAnchor || todayIso;
+      const buckets = WD ? WD.dashboardBuckets(state.workTasks || [], todayIso, weekAnchor) : { today: [], overdue: [], waiting: [], critical: [], companies: [] };
+      const studyFocus = plan ? `${plan.subject.shortName} · ${plan.task.title}` : "Sem tarefa academica pendente";
+      const workFocus = buckets.overdue[0] || buckets.today[0] || buckets.critical[0] || null;
+      const studyQueueItems = (queue || []).slice(0, 4).map((item) => ({
+        title: `${item.subject.shortName}: ${item.task.title}`,
+        meta: `${getTaskMinutes(item.task)} min · estudo`
+      }));
+      const workTodayItems = (buckets.today || []).slice(0, 5).map((task) => ({ title: task.title, meta: formatWorkTaskMeta(task, todayIso) }));
+      const overdueItems = (buckets.overdue || []).slice(0, 6).map((task) => ({ title: task.title, meta: formatWorkTaskMeta(task, todayIso) }));
+      const waitingItems = (buckets.waiting || []).slice(0, 6).map((task) => ({ title: task.title, meta: task.nextAction || "Aguardando retorno" }));
+      const studyDeadlines = getStudyDeadlineItems(referenceDate).slice(0, 4);
+      const workDeadlines = (buckets.critical || []).slice(0, 5).map((task) => ({ title: task.title, meta: formatWorkTaskMeta(task, todayIso), dueDate: task.dueDate || "9999-12-31" }));
+      const criticalItems = [...studyDeadlines, ...workDeadlines]
+        .sort((a, b) => String(a.dueDate || "9999-12-31").localeCompare(String(b.dueDate || "9999-12-31")))
+        .slice(0, 7);
+      const companyItems = (buckets.companies || []).map((summary) => ({
+        title: summary.company.name,
+        meta: `${summary.openCount} abertas · ${summary.weekCount} na semana · ${summary.overdueCount} atrasadas · ${summary.waitingCount} aguardando`,
+        id: summary.company.id
+      }));
+      const companyOptions = WD ? WD.COMPANIES.map((company) => `<option value="${company.id}">${escapeHtml(company.name)}</option>`).join("") : "";
+      const priorityOptions = WD ? WD.PRIORITIES.map((priority) => `<option value="${priority.value}"${priority.value === "medium" ? " selected" : ""}>${escapeHtml(priority.label)}</option>`).join("") : "";
+
+      if (elements.homeTodayCard) {
+        elements.homeTodayCard.innerHTML = `
+          <div class="home-card-header"><div><h3>Hoje</h3><p>Foco do dia, separando estudo e trabalho.</p></div><span class="chip accent">${formatDate(referenceDate)}</span></div>
+          <div class="home-focus-stack">
+            <div class="home-focus-item"><span>Estudo</span><strong>${escapeHtml(studyFocus)}</strong></div>
+            <div class="home-focus-item"><span>Trabalho</span><strong>${workFocus ? escapeHtml(workFocus.title) : "Sem foco critico de trabalho"}</strong><small>${workFocus ? escapeHtml(workFocus.nextAction || formatWorkTaskMeta(workFocus, todayIso)) : "Capture ou planeje uma proxima acao."}</small></div>
+          </div>
+          <div class="home-actions-row"><button class="btn btn-primary" type="button" data-open-work>Capturar trabalho</button><button class="btn btn-soft" type="button" data-home-open-studies>Ver estudos</button></div>`;
+      }
+      if (elements.homeWeekCard) {
+        elements.homeWeekCard.innerHTML = `<div class="home-card-header"><div><h3>Esta semana</h3><p>Proximos compromissos academicos e do portfolio.</p></div><span class="chip neutral">${criticalItems.length} itens</span></div>${renderHomeList([...workTodayItems.slice(0, 3), ...studyQueueItems.slice(0, 3)].slice(0, 6), "Nada planejado para hoje.")}`;
+      }
+      if (elements.homeOverdueCard) elements.homeOverdueCard.innerHTML = `<div class="home-card-header"><div><h3>Tarefas atrasadas</h3><p>O que precisa sair do vermelho.</p></div><span class="chip danger">${overdueItems.length}</span></div>${renderHomeList(overdueItems, "Sem tarefas de trabalho atrasadas.")}`;
+      if (elements.homeWaitingCard) elements.homeWaitingCard.innerHTML = `<div class="home-card-header"><div><h3>Aguardando terceiros</h3><p>Dependencias que nao podem sumir do radar.</p></div><span class="chip warning">${waitingItems.length}</span></div>${renderHomeList(waitingItems, "Nenhum item aguardando terceiros.")}`;
+      if (elements.homeDeadlinesCard) elements.homeDeadlinesCard.innerHTML = `<div class="home-card-header"><div><h3>Prazos criticos</h3><p>Entregas de estudo e prazos reais de trabalho.</p></div><span class="chip accent">semana</span></div>${renderHomeList(criticalItems, "Sem prazo critico nesta semana.")}`;
+      if (elements.homeCompaniesCard) {
+        elements.homeCompaniesCard.innerHTML = `<div class="home-card-header"><div><h3>Empresas em foco</h3><p>Resumo executivo por empresa investida.</p></div><span class="chip neutral">${companyItems.length} empresas</span></div><div class="home-company-list">${companyItems.map((item) => `<button type="button" class="home-company-row" data-home-work-filter="${item.id}"><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.meta)}</span></button>`).join("")}</div>`;
+      }
+      if (elements.homeQuickCaptureCard) {
+        elements.homeQuickCaptureCard.innerHTML = `
+          <div class="home-card-header"><div><h3>Captura rapida</h3><p>Transforme demanda solta em proxima acao objetiva.</p></div><span class="chip accent">Trabalho</span></div>
+          <form id="homeQuickCaptureForm" class="home-quick-form">
+            <input type="text" name="title" maxlength="180" placeholder="Titulo da tarefa" required />
+            <input type="text" name="nextAction" maxlength="220" placeholder="Proxima acao objetiva" />
+            <select name="companyId" aria-label="Empresa"><option value="">Geral</option>${companyOptions}</select>
+            <select name="target" aria-label="Destino"><option value="inbox">Inbox</option><option value="today">Hoje</option></select>
+            <input type="date" name="dueDate" aria-label="Prazo real" />
+            <select name="priority" aria-label="Prioridade">${priorityOptions}</select>
+            <button type="submit" class="btn btn-primary">Capturar</button>
+          </form>`;
+      }
+    }
+
+    function renderPageVisibility(referenceDate) {
+      const currentPage = getPrimaryPage();
+      const studySection = getStudySection();
+      const onHome = currentPage === "home";
+      const onStudies = currentPage === "studies";
+      const onWork = currentPage === "work";
+      const onStudyDashboard = onStudies && studySection === "dashboard";
+      const onWeek = onStudies && studySection === "week";
+      const onFc = onStudies && studySection === "fc";
+      const onCalendar = onStudies && studySection === "calendar";
+      const onGrades = onStudies && studySection === "grades";
+
+      if (elements.homePage) elements.homePage.hidden = !onHome;
+      if (elements.studyNavBar) elements.studyNavBar.hidden = !onStudies;
+      if (elements.workPage) elements.workPage.hidden = !onWork;
+      if (elements.dashboardPage) elements.dashboardPage.hidden = !onStudyDashboard;
+      if (elements.dashboardPage) elements.dashboardPage.dataset.focusMode = onStudyDashboard && state.dashboardFocusMode ? "true" : "false";
       if (elements.weekPage) elements.weekPage.hidden = !onWeek;
       if (elements.fcPage) elements.fcPage.hidden = !onFc;
       if (elements.calendarPage) elements.calendarPage.hidden = !onCalendar;
       if (elements.gradesPage) elements.gradesPage.hidden = !onGrades;
-      if (elements.workPage) elements.workPage.hidden = !onWork;
       elements.navButtons.forEach((button) => {
         button.classList.toggle("active", button.dataset.navPage === currentPage);
       });
-      updatePageHeader(currentPage, referenceDate);
+      elements.studyNavButtons.forEach((button) => {
+        button.classList.toggle("active", button.dataset.studyPage === studySection);
+        button.setAttribute("aria-selected", button.dataset.studyPage === studySection ? "true" : "false");
+      });
+      updatePageHeader(onStudies ? studySection : currentPage, referenceDate);
 
-      if (!onDashboard && elements.mobileFocusbar) {
+      if (!onStudyDashboard && elements.mobileFocusbar) {
         elements.mobileFocusbar.innerHTML = "";
         elements.mobileFocusbar.setAttribute("hidden", "");
       }
     }
 
     function openPage(page) {
-      state.currentPage = ["week", "fc", "calendar", "grades", "work"].includes(page) ? page : "dashboard";
+      if (STUDY_SECTIONS.includes(page)) {
+        state.currentPage = "studies";
+        state.studySection = page;
+      } else if (PRIMARY_PAGES.includes(page)) {
+        state.currentPage = page;
+        if (page === "studies") state.studySection = getStudySection();
+      } else {
+        state.currentPage = "home";
+      }
+      saveState();
+      render();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function openStudySection(section) {
+      state.currentPage = "studies";
+      state.studySection = normalizeStudySection(section, "dashboard");
       saveState();
       render();
       window.scrollTo({ top: 0, behavior: "smooth" });
@@ -1357,14 +1522,16 @@ function renderDeadlineFormCard(referenceDate) {
       const nextMonth = addMonths(getCalendarAnchorDate(referenceDate), delta);
       const safeMonth = nextMonth < currentMonth ? currentMonth : nextMonth;
       setCalendarAnchorDate(safeMonth);
-      state.currentPage = "calendar";
+      state.currentPage = "studies";
+      state.studySection = "calendar";
       saveState();
       render();
     }
 
     function resetCalendarMonth(referenceDate) {
       setCalendarAnchorDate(startOfMonth(referenceDate));
-      state.currentPage = "calendar";
+      state.currentPage = "studies";
+      state.studySection = "calendar";
       saveState();
       render();
     }
@@ -1394,6 +1561,35 @@ function safeRenderStep(label, fn) {
         queue = buildTodayQueue(referenceDate, ignorePinned);
       });
 
+      const primaryPage = getPrimaryPage();
+      const studySection = getStudySection();
+
+      if (primaryPage === "home") {
+        safeRenderStep("tela principal", () => renderHomeDashboard(plan, queue, referenceDate));
+        safeRenderStep("contadores", () => updateCollapseCounts());
+        if (elements.mobileFocusbar) {
+          elements.mobileFocusbar.innerHTML = "";
+          elements.mobileFocusbar.setAttribute("hidden", "");
+        }
+        return;
+      }
+
+      if (primaryPage === "work") {
+        safeRenderStep("trabalho", () => {
+          if (window.WorkPlanner && typeof window.WorkPlanner.render === "function") window.WorkPlanner.render();
+        });
+        safeRenderStep("contadores", () => updateCollapseCounts());
+        if (elements.mobileFocusbar) {
+          elements.mobileFocusbar.innerHTML = "";
+          elements.mobileFocusbar.setAttribute("hidden", "");
+        }
+        return;
+      }
+
+      const previousRenderPage = state.currentPage;
+      state.currentPage = studySection;
+      if (studySection !== "dashboard") plan = null;
+
       if (state.currentPage === "dashboard") {
         safeRenderStep("card principal", () => renderMainTask(plan, referenceDate));
         safeRenderStep("resumo executivo", () => renderExecutiveSummary(plan, referenceDate));
@@ -1418,6 +1614,7 @@ function safeRenderStep(label, fn) {
 
       safeRenderStep("barra de foco mobile", () => renderMobileFocusbar(plan));
       safeRenderStep("contadores", () => updateCollapseCounts());
+      state.currentPage = previousRenderPage;
     }
 
     function showCompatHint(message) {
@@ -1458,6 +1655,13 @@ function safeRenderStep(label, fn) {
 
       elements.navButtons.forEach((button) => {
         button.addEventListener("click", () => openPage(button.dataset.navPage));
+      });
+      elements.studyNavButtons.forEach((button) => {
+        button.addEventListener("click", () => openStudySection(button.dataset.studyPage));
+      });
+      document.addEventListener("click", (event) => {
+        const studyBtn = event.target && event.target.closest ? event.target.closest("[data-home-open-studies]") : null;
+        if (studyBtn) openPage("studies");
       });
 
       if (elements.themeToggle) elements.themeToggle.addEventListener("click", toggleTheme);
@@ -1500,6 +1704,7 @@ function safeRenderStep(label, fn) {
       window.StudyApp = {
         ...(window.StudyApp || {}),
         openPage,
+        openStudySection,
         setStudyMode,
         render,
         exportStateBackup,
@@ -1511,6 +1716,7 @@ function safeRenderStep(label, fn) {
         setNotesSearchTerm
       };
       window.openPage = openPage;
+      window.openStudySection = openStudySection;
       window.setStudyMode = setStudyMode;
       window.render = render;
       initEvents();

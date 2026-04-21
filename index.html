@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motor de Estudo · Poli-USP</title>
   <meta name="theme-color" content="#171717" />
-  <link rel="manifest" href="manifest.webmanifest?v=20260420-workmerge1" />
+  <link rel="manifest" href="manifest.webmanifest?v=20260420-shellsplit1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/app.css?v=20260420-workmerge1" />
-  <script charset="utf-8" src="assets/js/polyfills.js?v=20260420-workmerge1"></script>
+  <link rel="stylesheet" href="assets/css/app.css?v=20260420-shellsplit1" />
+  <script charset="utf-8" src="assets/js/polyfills.js?v=20260420-shellsplit1"></script>
 
 </head>
 <body data-layout="browser">
@@ -29,12 +29,9 @@
         <span class="tb-logo-text">Motor de Estudo</span>
       </div>
 
-      <nav class="tb-nav">
-        <button type="button" class="tb-nav-btn active" data-nav-page="dashboard">Painel</button>
-        <button type="button" class="tb-nav-btn" data-nav-page="week">Semana</button>
-        <button type="button" class="tb-nav-btn" data-nav-page="fc">Flashcards</button>
-        <button type="button" class="tb-nav-btn" data-nav-page="calendar">Calendário</button>
-        <button type="button" class="tb-nav-btn" data-nav-page="grades">Notas</button>
+      <nav class="tb-nav" aria-label="Navegacao principal">
+        <button type="button" class="tb-nav-btn active" data-nav-page="home">Painel principal</button>
+        <button type="button" class="tb-nav-btn" data-nav-page="studies">Estudos</button>
         <button type="button" class="tb-nav-btn" data-nav-page="work">Trabalho</button>
       </nav>
 
@@ -107,7 +104,27 @@
     </div>
 
     
-    <main id="dashboardPage">
+    <main id="homePage">
+      <section class="home-dashboard" aria-label="Tela principal executiva">
+        <article class="card home-card home-card--wide" id="homeTodayCard"></article>
+        <article class="card home-card" id="homeWeekCard"></article>
+        <article class="card home-card" id="homeOverdueCard"></article>
+        <article class="card home-card" id="homeWaitingCard"></article>
+        <article class="card home-card" id="homeDeadlinesCard"></article>
+        <article class="card home-card" id="homeCompaniesCard"></article>
+        <article class="card home-card home-card--capture" id="homeQuickCaptureCard"></article>
+      </section>
+    </main>
+
+    <section class="study-nav-shell" id="studyNavBar" hidden aria-label="Navegacao interna de estudos">
+      <button type="button" class="study-nav-btn active" data-study-page="dashboard" aria-selected="true">Painel</button>
+      <button type="button" class="study-nav-btn" data-study-page="week" aria-selected="false">Semana</button>
+      <button type="button" class="study-nav-btn" data-study-page="fc" aria-selected="false">Flashcards</button>
+      <button type="button" class="study-nav-btn" data-study-page="calendar" aria-selected="false">Calendario</button>
+      <button type="button" class="study-nav-btn" data-study-page="grades" aria-selected="false">Notas</button>
+    </section>
+
+    <main id="dashboardPage" hidden>
 
       
       <div class="retention-card" id="retentionCard" style="display:none;"></div>
@@ -844,23 +861,23 @@
   </div>
 
   
-  <script charset="utf-8" src="assets/js/app-data.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/store.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/dates.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/work-domain.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/theme.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/backup.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/sync-service.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/app-core.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/app-pages.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/week-planner.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/study-features.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/app-actions.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/work-planner.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/app-init.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260420-workmerge1"></script>
-  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/app-data.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/store.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/dates.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/work-domain.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/theme.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/backup.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/sync-service.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/app-core.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/app-pages.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/week-planner.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/study-features.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/app-actions.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/work-planner.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/app-init.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260420-shellsplit1"></script>
+  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260420-shellsplit1"></script>
 </body>
 </html>

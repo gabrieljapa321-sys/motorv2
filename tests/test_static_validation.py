@@ -30,6 +30,17 @@ class StaticValidationTests(unittest.TestCase):
         self.assertIn('aria-keyshortcuts="Alt+ArrowLeft"', html)
         self.assertIn('aria-keyshortcuts="Alt+ArrowRight"', html)
 
+    def test_navigation_is_split_between_primary_and_study_levels(self):
+        html = INDEX_HTML.read_text(encoding="utf-8")
+        main_nav_block = re.search(r'<nav class="tb-nav".*?</nav>', html, flags=re.S).group(0)
+        self.assertEqual(re.findall(r'data-nav-page="([^"]+)"', main_nav_block), ["home", "studies", "work"])
+        self.assertIn('id="studyNavBar"', html)
+        self.assertIn('data-study-page="dashboard"', html)
+        self.assertIn('data-study-page="week"', html)
+        self.assertIn('data-study-page="fc"', html)
+        self.assertIn('data-study-page="calendar"', html)
+        self.assertIn('data-study-page="grades"', html)
+
     def test_script_order_includes_new_architecture_layers(self):
         html = INDEX_HTML.read_text(encoding="utf-8")
         order = [

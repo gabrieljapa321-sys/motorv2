@@ -25,7 +25,7 @@ class BrowserSmokeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         if sync_playwright is None:
-            raise unittest.SkipTest("Playwright não está disponível.")
+            raise unittest.SkipTest("Playwright nao esta disponivel.")
 
         cls.port = _free_port()
         cls.server = subprocess.Popen(
@@ -44,7 +44,7 @@ class BrowserSmokeTests(unittest.TestCase):
                 time.sleep(0.2)
         else:
             cls.tearDownClass()
-            raise RuntimeError("Servidor local não respondeu a tempo.")
+            raise RuntimeError("Servidor local nao respondeu a tempo.")
 
         cls.playwright = sync_playwright().start()
         cls.browser = cls.playwright.chromium.launch()
@@ -77,28 +77,32 @@ class BrowserSmokeTests(unittest.TestCase):
 
     def _goto(self):
         self.page.goto(self.base_url, wait_until="domcontentloaded")
-        self.page.wait_for_selector(".tb-nav-btn[data-nav-page='dashboard']")
+        self.page.wait_for_selector(".tb-nav-btn[data-nav-page='home']")
         self.page.wait_for_timeout(800)
         self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
 
-    def test_tab_navigation_and_visibility(self):
+    def _open_studies_section(self, section):
+        self.page.click(".tb-nav-btn[data-nav-page='studies']")
+        self.page.wait_for_selector("#studyNavBar")
+        self.page.click(f".study-nav-btn[data-study-page='{section}']")
+        self.page.wait_for_timeout(250)
+
+    def test_primary_and_study_navigation_visibility(self):
         self._goto()
-        for target, selector in [
-            ("week", "#weekPage"),
-            ("calendar", "#calendarPage"),
-            ("grades", "#gradesPage"),
-            ("work", "#workPage"),
-            ("dashboard", "#dashboardPage"),
-        ]:
+        for target, selector in [("home", "#homePage"), ("studies", "#dashboardPage"), ("work", "#workPage")]:
             self.page.click(f".tb-nav-btn[data-nav-page='{target}']")
-            self.page.wait_for_timeout(200)
-            self.assertTrue(self.page.locator(selector).is_visible(), f"{selector} deveria estar visível")
+            self.page.wait_for_timeout(250)
+            self.assertTrue(self.page.locator(selector).is_visible(), f"{selector} deveria estar visivel")
+        self.page.click(".tb-nav-btn[data-nav-page='studies']")
+        for target, selector in [("week", "#weekPage"), ("fc", "#fcPage"), ("calendar", "#calendarPage"), ("grades", "#gradesPage"), ("dashboard", "#dashboardPage")]:
+            self.page.click(f".study-nav-btn[data-study-page='{target}']")
+            self.page.wait_for_timeout(250)
+            self.assertTrue(self.page.locator(selector).is_visible(), f"{selector} deveria estar visivel")
         self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
 
     def test_calendar_legend_toggle(self):
         self._goto()
-        self.page.click(".tb-nav-btn[data-nav-page='calendar']")
-        self.page.wait_for_timeout(200)
+        self._open_studies_section("calendar")
         toggle = self.page.locator("#calendarLegendToggleBtn")
         legend = self.page.locator("#monthLegend")
         initial_state = toggle.get_attribute("aria-pressed")
@@ -111,6 +115,7 @@ class BrowserSmokeTests(unittest.TestCase):
 
     def test_dashboard_focus_mode_toggle(self):
         self._goto()
+        self._open_studies_section("dashboard")
         toggle = self.page.locator("[data-action='toggle-dashboard-focus']").first
         toggle.click()
         self.page.wait_for_timeout(150)
@@ -118,7 +123,7 @@ class BrowserSmokeTests(unittest.TestCase):
 
     def test_grades_search_filter(self):
         self._goto()
-        self.page.click(".tb-nav-btn[data-nav-page='grades']")
+        self._open_studies_section("grades")
         self.page.wait_for_selector("#gradeNotesSearchInput")
         self.page.fill("#gradeNotesSearchInput", "P1")
         self.page.wait_for_timeout(250)
@@ -126,7 +131,7 @@ class BrowserSmokeTests(unittest.TestCase):
 
     def test_flashcards_exercises_viewer(self):
         self._goto()
-        self.page.click(".tb-nav-btn[data-nav-page='fc']")
+        self._open_studies_section("fc")
         self.page.wait_for_selector("#fcSubviewToggle")
         self.page.click("#fcSubviewToggle [data-fc-view='exercises']")
         self.page.wait_for_timeout(250)
@@ -146,7 +151,7 @@ class BrowserSmokeTests(unittest.TestCase):
         self.page.click(".tb-nav-btn[data-nav-page='work']")
         self.page.wait_for_selector("#workPage")
         self.page.fill("#workTaskTitle", "Revisar indicadores BENEVA")
-        self.page.fill("#workTaskNextAction", "Solicitar atualização do caixa")
+        self.page.fill("#workTaskNextAction", "Solicitar atualizacao do caixa")
         self.page.select_option("#workTaskScope", "company")
         self.page.select_option("#workTaskCompany", "beneva")
         first_day = self.page.eval_on_selector("#workTaskDay", "select => Array.from(select.options).find(option => option.value).value")
