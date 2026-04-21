@@ -14,7 +14,8 @@
     fetchPromise: null,
     initialized: false,
     lastNotifiedSignature: "",
-    lastFetchError: null
+    lastFetchError: null,
+    feedVisibleCount: 6
   };
 
   function getApp() {
@@ -199,11 +200,15 @@
         ${escapeHtml(item.label)}
       </button>
     `).join("");
-    sourceHost.innerHTML = getSourceOptions().map((item) => `
-      <button type="button" class="news-filter-chip" data-news-source="${escapeHtml(item.id)}"${state.newsSource === item.id ? ' data-active="true"' : ""}>
-        ${escapeHtml(item.label)}
-      </button>
-    `).join("");
+    sourceHost.innerHTML = `
+      <label class="news-source-select">
+        <select id="newsSourceSelect" class="news-source-select__control" aria-label="Fonte de notícias">
+          ${getSourceOptions().map((item) => `
+            <option value="${escapeHtml(item.id)}"${state.newsSource === item.id ? " selected" : ""}>${escapeHtml(item.label)}</option>
+          `).join("")}
+        </select>
+      </label>
+    `;
   }
 
   function renderLeadCard(items) {
@@ -220,7 +225,7 @@
         <span class="chip neutral">${escapeHtml(item.source)}</span>
       </div>
       <h3>${escapeHtml(item.title)}</h3>
-      <p>${escapeHtml(item.summary || "Sem resumo curto disponível; abra a fonte para ver a íntegra.")}</p>
+      <p>${escapeHtml((item.summary || "Sem resumo curto disponível; abra a fonte para ver a íntegra.").slice(0, 140))}</p>
       <div class="news-meta-row">
         <span>${escapeHtml(formatRelativeTime(item.publishedAt))}</span>
         <span>${escapeHtml(formatDateTime(item.publishedAt))}</span>
@@ -240,12 +245,12 @@
       host.innerHTML = '<div class="news-empty">Nenhuma manchete combinou com os filtros atuais.</div>';
       return;
     }
-    host.innerHTML = items.map((item) => `
+    const visibleItems = items.slice(0, runtime.feedVisibleCount);
+    host.innerHTML = visibleItems.map((item) => `
       <article class="news-item-card"${unread.has(item.id) ? ' data-unread="true"' : ""} data-news-item-id="${escapeHtml(item.id)}">
         <div class="news-item-top">
           <div class="news-item-headline">
             <h4>${escapeHtml(item.title)}</h4>
-            <p>${escapeHtml(item.summary || "Abra a fonte para ler a matéria.")}</p>
           </div>
           ${unread.has(item.id) ? '<span class="news-dot" aria-label="Não lida"></span>' : ""}
         </div>
@@ -255,7 +260,7 @@
         </div>
         <div class="chip-row">
           <span class="chip neutral">${escapeHtml(item.category === "latest" ? "Última hora" : item.category)}</span>
-          ${item.tags.map((tag) => `<span class="chip neutral">${escapeHtml(tag)}</span>`).join("")}
+          ${item.tags.slice(0, 2).map((tag) => `<span class="chip neutral">${escapeHtml(tag)}</span>`).join("")}
           ${item.premium ? '<span class="chip warning">Premium</span>' : ""}
         </div>
         <div class="news-action-row">
@@ -263,7 +268,11 @@
           <button type="button" class="btn btn-ghost" data-news-mark-read="${escapeHtml(item.id)}">Lida</button>
         </div>
       </article>
-    `).join("");
+    `).join("") + (items.length > runtime.feedVisibleCount ? `
+      <div class="news-feed-footer">
+        <button type="button" class="btn btn-ghost" data-news-show-more>Mostrar mais ${Math.min(6, items.length - runtime.feedVisibleCount)}</button>
+      </div>
+    ` : "");
   }
 
   function renderInboxCard() {
@@ -271,7 +280,7 @@
     if (!host) return;
     const state = getState();
     const config = getConfig();
-    const unreadItems = getUnreadItems(state).slice(0, config.maxInboxItems);
+    const unreadItems = getUnreadItems(state).slice(0, Math.min(config.maxInboxItems, 4));
     host.innerHTML = `
       <div class="news-inbox-header">
         <div>
@@ -321,9 +330,9 @@
         </div>
       </div>
       <div class="news-digest-grid">
-        <div class="metric"><div class="label">Itens no feed</div><div class="value">${items.length}</div><div class="subvalue">após filtros</div></div>
-        <div class="metric"><div class="label">Atualizado em</div><div class="value">${escapeHtml(updatedAt)}</div><div class="subvalue">news.json</div></div>
-        <div class="metric"><div class="label">Alertas</div><div class="value">${escapeHtml(browserStatus)}</div><div class="subvalue">browser</div></div>
+        <div class="metric"><div class="label">Feed</div><div class="value">${items.length}</div><div class="subvalue">itens visíveis</div></div>
+        <div class="metric"><div class="label">Atualização</div><div class="value">${escapeHtml(updatedAt)}</div><div class="subvalue">última coleta</div></div>
+        <div class="metric"><div class="label">Alertas</div><div class="value">${escapeHtml(browserStatus)}</div><div class="subvalue">navegador</div></div>
       </div>
       <div class="news-source-cloud">${latestSources || '<span class="chip neutral">Sem fontes carregadas</span>'}</div>
     `;
@@ -460,6 +469,7 @@
   }
 
   function setCategory(category) {
+    runtime.feedVisibleCount = 6;
     commitState((draft) => {
       draft.newsCategory = typeof category === "string" && category ? category : "all";
     }, { render: false });
@@ -467,6 +477,7 @@
   }
 
   function setSource(source) {
+    runtime.feedVisibleCount = 6;
     commitState((draft) => {
       draft.newsSource = typeof source === "string" && source ? source : "all";
     }, { render: false });
@@ -521,6 +532,13 @@
         return;
       }
 
+      const showMoreBtn = event.target.closest("[data-news-show-more]");
+      if (showMoreBtn) {
+        runtime.feedVisibleCount += 6;
+        render();
+        return;
+      }
+
       const openLink = event.target.closest("[data-news-open]");
       if (openLink) {
         handleOpenItem(openLink.getAttribute("data-news-open"), { openSource: openLink.tagName !== "A" });
@@ -552,6 +570,13 @@
         toggleBrowserAlerts();
       });
     }
+
+    page.addEventListener("change", (event) => {
+      const sourceSelect = event.target.closest ? event.target.closest("#newsSourceSelect") : null;
+      if (sourceSelect) {
+        setSource(sourceSelect.value);
+      }
+    });
 
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "visible") fetchFeed({ silent: true });
