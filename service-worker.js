@@ -1,4 +1,4 @@
-const CACHE_NAME = "motor-estudo-shell-v20260420-shellsplit1";
+const CACHE_NAME = "motor-estudo-shell-v20260420-worklayout1";
 const APP_SHELL = [
   "./",
   "./index.html",
