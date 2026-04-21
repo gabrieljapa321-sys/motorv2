@@ -232,7 +232,10 @@ html[data-theme="dark"] .news-filter-chip[data-active="true"] {
 }
 
 .news-item-media {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: auto;
+  height: 148px;
+  min-height: 148px;
+  transition: transform var(--motion-fast) ease;
 }
 
 .news-lead-media img,
@@ -291,15 +294,17 @@ html[data-theme="dark"] .news-filter-chip[data-active="true"] {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .news-item-card {
   position: relative;
   display: grid;
+  grid-template-rows: auto auto auto 1fr;
   align-content: start;
   gap: 8px;
-  min-height: 122px;
+  min-height: 316px;
+  height: 100%;
   padding: 14px;
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -353,15 +358,23 @@ html[data-theme="dark"] .news-filter-chip[data-active="true"] {
 }
 
 .news-item-detail {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
   display: grid;
   gap: 8px;
-  max-height: 0;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--line) 86%, var(--accent-soft));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--bg-elevated) 92%, var(--accent-soft));
+  backdrop-filter: blur(12px);
   opacity: 0;
-  overflow: hidden;
+  transform: translateY(10px);
   pointer-events: none;
   transition:
-    max-height var(--motion-base) ease,
-    opacity var(--motion-fast) ease;
+    opacity var(--motion-fast) ease,
+    transform var(--motion-fast) ease;
 }
 
 .news-item-summary {
@@ -391,9 +404,14 @@ html[data-theme="dark"] .news-filter-chip[data-active="true"] {
 
 .news-item-card:hover .news-item-detail,
 .news-item-card:focus-within .news-item-detail {
-  max-height: 220px;
   opacity: 1;
+  transform: translateY(0);
   pointer-events: auto;
+}
+
+.news-item-card:hover .news-item-media,
+.news-item-card:focus-within .news-item-media {
+  transform: scale(1.02);
 }
 
 .news-item-card .news-action-row .btn,
@@ -535,10 +553,17 @@ html[data-theme="dark"] .news-filter-chip[data-active="true"] {
 }
 
 @media (hover: none), (pointer: coarse) {
+  .news-item-card {
+    min-height: auto;
+  }
+
   .news-item-detail {
-    max-height: none;
+    position: static;
+    left: auto;
+    right: auto;
+    bottom: auto;
     opacity: 1;
-    overflow: visible;
+    transform: none;
     pointer-events: auto;
   }
 }
