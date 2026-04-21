@@ -155,6 +155,32 @@ class BrowserSmokeTests(unittest.TestCase):
         self.assertTrue(self.page.locator("#newsInboxCard").get_by_text("Caixa de entrada").is_visible())
         self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
 
+    def test_news_refresh_button_runs_manual_update(self):
+        self._goto()
+        self.page.click(".tb-nav-btn[data-nav-page='news']")
+        self.page.wait_for_selector("#newsRefreshBtn")
+        payload = (ROOT / "assets" / "data" / "news.json").read_text(encoding="utf-8")
+
+        def delayed_news_response(route):
+            time.sleep(0.35)
+            route.fulfill(
+                status=200,
+                content_type="application/json",
+                body=payload,
+            )
+
+        self.page.route("**/assets/data/news.json?*", delayed_news_response)
+        self.page.locator("#newsRefreshBtn").click()
+        self.page.wait_for_function(
+            "() => document.querySelector('#newsRefreshBtn') && document.querySelector('#newsRefreshBtn').textContent.includes('Atualizando')"
+        )
+        self.page.wait_for_function(
+            "() => document.querySelector('#newsRefreshBtn') && document.querySelector('#newsRefreshBtn').textContent.includes('Atualizar agora')",
+            timeout=10000
+        )
+        self.page.unroute("**/assets/data/news.json?*", delayed_news_response)
+        self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
+
     def test_news_page_persists_on_refresh_via_hash_route(self):
         self._goto()
         self.page.click(".tb-nav-btn[data-nav-page='news']")

@@ -15,7 +15,8 @@
     initialized: false,
     lastNotifiedSignature: "",
     lastFetchError: null,
-    feedVisibleCount: 6
+    feedVisibleCount: 6,
+    isRefreshing: false
   };
 
   function getApp() {
@@ -44,6 +45,20 @@
   function showToast(message) {
     const app = getApp();
     if (app && typeof app.showToast === "function") app.showToast(message);
+  }
+
+  function setRefreshButtonState(isRefreshing) {
+    runtime.isRefreshing = Boolean(isRefreshing);
+    const refreshBtn = document.getElementById("newsRefreshBtn");
+    const updatedAtChip = document.getElementById("newsUpdatedAtChip");
+    if (refreshBtn) {
+      refreshBtn.disabled = runtime.isRefreshing;
+      refreshBtn.setAttribute("aria-busy", runtime.isRefreshing ? "true" : "false");
+      refreshBtn.textContent = runtime.isRefreshing ? "Atualizando..." : "Atualizar agora";
+    }
+    if (updatedAtChip && runtime.isRefreshing) {
+      updatedAtChip.textContent = "Atualizando feed...";
+    }
   }
 
   function escapeHtml(value) {
@@ -154,9 +169,9 @@
 
   function renderNewsMedia(item, className) {
     if (item.imageUrl) {
+      const mediaUrl = encodeURI(item.imageUrl);
       return `
-        <div class="${className}">
-          <img src="${escapeHtml(item.imageUrl)}" alt="" loading="lazy" decoding="async" />
+        <div class="${className}" style="background-image:url('${escapeHtml(mediaUrl)}')" aria-hidden="true">
         </div>
       `;
     }
@@ -431,7 +446,11 @@
     const permissionBtn = document.getElementById("newsPermissionBtn");
     const unreadCount = getUnreadItems().length;
     if (updatedAtChip) {
-      const label = runtime.payload ? `Atualizado ${formatRelativeTime(runtime.payload.updatedAt)}` : "Sem feed";
+      const label = runtime.isRefreshing
+        ? "Atualizando feed..."
+        : runtime.payload
+          ? `Atualizado ${formatRelativeTime(runtime.payload.updatedAt)}`
+          : "Sem feed";
       updatedAtChip.textContent = label;
     }
     if (unreadChip) {
@@ -535,7 +554,13 @@
   }
 
   async function fetchFeed(options = {}) {
-    if (runtime.fetchPromise) return runtime.fetchPromise;
+    if (runtime.fetchPromise) {
+      if (options.force === true) {
+        return runtime.fetchPromise.finally(() => fetchFeed({ ...options, force: false }));
+      }
+      return runtime.fetchPromise;
+    }
+    setRefreshButtonState(true);
     runtime.fetchPromise = fetch(`${NEWS_PATH}?ts=${Date.now()}`, { cache: "no-store" })
       .then((response) => {
         if (!response.ok) throw new Error(`Falha ao carregar notícias (${response.status})`);
@@ -543,6 +568,9 @@
       })
       .then((payload) => {
         handleFetchedPayload(sanitizePayload(payload));
+        if (options.showSuccess) {
+          showToast("Feed de noticias atualizado.");
+        }
       })
       .catch((error) => {
         runtime.lastFetchError = error;
@@ -550,6 +578,7 @@
         render();
       })
       .finally(() => {
+        setRefreshButtonState(false);
         runtime.fetchPromise = null;
       });
     return runtime.fetchPromise;
@@ -647,7 +676,7 @@
     const refreshBtn = document.getElementById("newsRefreshBtn");
     if (refreshBtn) {
       refreshBtn.addEventListener("click", () => {
-        fetchFeed({ silent: false });
+        fetchFeed({ silent: false, force: true, showSuccess: true });
       });
     }
 
