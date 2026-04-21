@@ -1677,10 +1677,14 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
         return { label: "Sem prazo", tone: "accent", dueAtMs: Number.POSITIVE_INFINITY };
       }
       const safeTime = dueTime && /^\d{2}:\d{2}$/.test(dueTime) ? dueTime : "23:59";
+      const dueDay = parseDate(dueDate);
       const dueAt = new Date(`${dueDate}T${safeTime}:00`);
       const diffMs = dueAt.getTime() - referenceDate.getTime();
       const tone = diffMs < 0 ? "danger" : diffMs <= 24 * 60 * 60 * 1000 ? "warning" : "accent";
-      const label = diffMs < 0 ? `ha ${formatHomeDuration(Math.abs(diffMs))}` : `em ${formatHomeDuration(diffMs)}`;
+      let label = diffMs < 0 ? `ha ${formatHomeDuration(Math.abs(diffMs))}` : `em ${formatHomeDuration(diffMs)}`;
+      if (diffMs >= 0 && isSameDay(referenceDate, dueDay)) {
+        label = dueTime ? `hoje ${dueTime}` : "hoje";
+      }
       return { label, tone, dueAtMs: dueAt.getTime() };
     }
 
@@ -1987,6 +1991,9 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       const primary = decision.primary;
       const usefulWindow = getHomeUsefulWindow(referenceDate);
       const nextExamAcross = getHomeNextExamAcross(referenceDate);
+      const nextStudyDeadline = studyDeadlines[0] || null;
+      const nextOverdueTask = (buckets.overdue || [])[0] || null;
+      const nextWaitingTask = (buckets.waiting || [])[0] || null;
       const radarSubjects = getHomeRadarSubjects(referenceDate, studyDeadlines);
       const weekOpenTasks = workTasks.filter((task) => task && task.status !== "done" && task.scheduledDayIso && task.scheduledDayIso >= weekAnchor && task.scheduledDayIso <= toIsoDate(addDays(parseDate(weekAnchor), 6))).length;
       const timelineKeys = new Set(timelineTickets.map((item) => item.key));
@@ -2006,6 +2013,53 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
         count: summary.openCount
       })).filter((item) => item.count > 0);
 
+      const nextExamDays = nextExamAcross ? Math.max(0, daysBetween(referenceDate, nextExamAcross.dateObj)) : null;
+      const heroBriefItems = [
+        {
+          label: "Prova mais proxima",
+          value: nextExamAcross ? nextExamAcross.subject.shortName : "sem prova curta",
+          meta: nextExamAcross ? `${nextExamAcross.exam.label} em ${nextExamDays}d` : "nenhuma dentro do radar"
+        },
+        {
+          label: "Entrega mais proxima",
+          value: nextStudyDeadline ? nextStudyDeadline.prefix : "sem entrega curta",
+          meta: nextStudyDeadline ? `${nextStudyDeadline.title} · ${nextStudyDeadline.countdown}` : "nenhum prazo academico imediato"
+        },
+        {
+          label: "Trabalho no vermelho",
+          value: String((buckets.overdue || []).length),
+          meta: nextOverdueTask ? nextOverdueTask.title : "sem atraso relevante agora"
+        },
+        {
+          label: "Aguardando",
+          value: String((buckets.waiting || []).length),
+          meta: nextWaitingTask ? nextWaitingTask.title : "sem dependencia externa aberta"
+        }
+      ];
+
+      const supportList = decision.alternatives.length
+        ? decision.alternatives.map((item) => ({
+            label: item.prefix,
+            title: item.title,
+            meta: item.reason
+          }))
+        : [
+            nextStudyDeadline
+              ? {
+                  label: nextStudyDeadline.prefix,
+                  title: nextStudyDeadline.title,
+                  meta: nextStudyDeadline.countdown
+                }
+              : null,
+            nextOverdueTask
+              ? {
+                  label: nextOverdueTask.scope === "company" && WD ? WD.companyName(nextOverdueTask.companyId) : "Geral",
+                  title: nextOverdueTask.title,
+                  meta: nextOverdueTask.dueDate ? `Atrasada desde ${nextOverdueTask.dueDate}` : "Ja deveria ter andado"
+                }
+              : null
+          ].filter(Boolean);
+
       syncHomeCaptureModalOptions(WD);
       elements.homePage.dataset.homeMode = state.mode;
 
@@ -2014,16 +2068,6 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
         : state.mode === "foco"
           ? ""
           : (primary ? primary.reason : "Sem urgencia real agora. Use a home para manter clareza, nao para criar ansiedade.");
-      const altMarkup = decision.alternatives.length
-        ? `<div class="home-alt-list">${decision.alternatives.map((item) => `
-            <div class="home-alt-item">
-              <span>${escapeHtml(item.prefix)}</span>
-              <strong>${escapeHtml(item.title)}</strong>
-              <span>${escapeHtml(item.reason)}</span>
-            </div>
-          `).join("")}</div>`
-        : `<div class="home-empty">Sem segunda fila relevante agora.</div>`;
-
       root.innerHTML = `
         <section class="home-layer home-layer--hero">
           <article class="home-card home-hero-card">
@@ -2044,6 +2088,15 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
                     <button class="home-secondary-link" type="button" data-home-capture-open>Abrir captura rapida</button>
                   </div>
                 </div>
+                <div class="home-hero-brief">
+                  ${heroBriefItems.map((item) => `
+                    <article class="home-brief-card">
+                      <span class="home-brief-label">${escapeHtml(item.label)}</span>
+                      <strong class="home-brief-value">${escapeHtml(item.value)}</strong>
+                      <span class="home-brief-meta">${escapeHtml(item.meta)}</span>
+                    </article>
+                  `).join("")}
+                </div>
               </div>
               <div class="home-hero-side home-hero-support">
                 <div class="home-hero-meta">
@@ -2052,13 +2105,36 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
                     <strong class="home-metric-value">${escapeHtml(String(studyQueueItems.length))}</strong>
                     <span class="home-metric-copy">${escapeHtml(studyDeadlines.length ? `${studyDeadlines.length} prazo(s) em aberto` : "sem prazo academico aberto")}</span>
                   </div>
+                  <div class="home-metric" data-tone="study">
+                    <span class="home-metric-label">Proxima prova</span>
+                    <strong class="home-metric-value">${escapeHtml(nextExamAcross ? nextExamAcross.subject.shortName : "--")}</strong>
+                    <span class="home-metric-copy">${escapeHtml(nextExamAcross ? `${nextExamAcross.exam.label} em ${nextExamDays}d` : "nenhuma prova no curto prazo")}</span>
+                  </div>
                   <div class="home-metric" data-tone="work">
-                    <span class="home-metric-label">Trabalho</span>
+                    <span class="home-metric-label">Trabalho hoje</span>
                     <strong class="home-metric-value">${escapeHtml(String((buckets.overdue || []).length + (buckets.today || []).length))}</strong>
                     <span class="home-metric-copy">${escapeHtml((buckets.overdue || []).length ? `${(buckets.overdue || []).length} atrasada(s)` : "sem item no vermelho")}</span>
                   </div>
+                  <div class="home-metric" data-tone="work">
+                    <span class="home-metric-label">Aguardando</span>
+                    <strong class="home-metric-value">${escapeHtml(String((buckets.waiting || []).length))}</strong>
+                    <span class="home-metric-copy">${escapeHtml((buckets.waiting || []).length ? "dependencias externas abertas" : "caixa limpa")}</span>
+                  </div>
                 </div>
-                ${altMarkup}
+                <div class="home-side-panel">
+                  <div class="home-side-panel-top">
+                    <span class="home-card-eyebrow">Se nao for essa</span>
+                    <h3>Plano B imediato</h3>
+                    <p class="home-card-copy">Entradas curtas para voce nao perder o fio quando mudar de contexto.</p>
+                  </div>
+                  ${supportList.length ? `<div class="home-side-list">${supportList.map((item) => `
+                    <div class="home-side-item">
+                      <span class="home-side-item-label">${escapeHtml(item.label)}</span>
+                      <strong>${escapeHtml(item.title)}</strong>
+                      <span>${escapeHtml(item.meta)}</span>
+                    </div>
+                  `).join("")}</div>` : `<div class="home-empty">Sem segunda frente relevante agora.</div>`}
+                </div>
               </div>
             </div>
           </article>
@@ -2072,6 +2148,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
                 <h3>Proximas 72h</h3>
                 <p class="home-card-copy">Prazos, provas e frentes que entraram de vez no horizonte imediato.</p>
               </div>
+              <span class="chip accent">${escapeHtml(String(timelineTickets.filter((item) => item.key !== "timeline-overflow").length))}</span>
             </div>
             ${timelineTickets.length ? `<div class="home-ticket-list">${timelineTickets.map((item) => `
               <article class="home-ticket${item.key === "timeline-overflow" ? " home-ticket-overflow" : ""}" data-tone="${escapeHtml(item.tone || "accent")}">
@@ -2195,6 +2272,8 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       const onFc = onStudies && studySection === "fc";
       const onCalendar = onStudies && studySection === "calendar";
       const onGrades = onStudies && studySection === "grades";
+
+      document.body.setAttribute("data-primary-page", currentPage);
 
       if (elements.homePage) elements.homePage.hidden = !onHome;
       if (elements.homeCaptureFab) elements.homeCaptureFab.hidden = !onHome;
