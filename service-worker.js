@@ -1,10 +1,11 @@
-const CACHE_NAME = "motor-estudo-shell-v20260421";
+const CACHE_NAME = "motor-estudo-shell-v20260420-exercises2";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
   "./assets/data/study-data.json",
   "./assets/data/ui-config.json",
+  "./assets/data/exercises.json",
   "./assets/css/app.css",
   "./assets/css/base.css",
   "./assets/css/dashboard.css",
