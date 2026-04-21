@@ -13,7 +13,7 @@
 
   if ("serviceWorker" in navigator && /^https?:/i.test(window.location.protocol)) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./service-worker.js?v=20260421-syncsilent1").catch((error) => {
+      navigator.serviceWorker.register("./service-worker.js?v=20260421-homepanel1").catch((error) => {
         console.error("[pwa] falha ao registrar service worker:", error);
       });
     });

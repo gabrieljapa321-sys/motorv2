@@ -1411,6 +1411,25 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       `).join("")}</div>`;
     }
 
+    function renderHomeKpiGrid(items) {
+      return `<div class="home-kpi-grid">${items.map((item) => `
+        <div class="home-kpi">
+          <span class="home-kpi-label">${escapeHtml(item.label)}</span>
+          <strong class="home-kpi-value">${escapeHtml(String(item.value))}</strong>
+          <span class="home-kpi-subvalue">${escapeHtml(item.subvalue || "")}</span>
+        </div>
+      `).join("")}</div>`;
+    }
+
+    function renderHomeSectionMetrics(items) {
+      return `<div class="home-section-metrics">${items.map((item) => `
+        <div class="home-section-metric">
+          <span>${escapeHtml(item.label)}</span>
+          <strong>${escapeHtml(String(item.value))}</strong>
+        </div>
+      `).join("")}</div>`;
+    }
+
     function formatWorkTaskMeta(task, todayIso) {
       if (!task) return "";
       const WD = window.WorkDomain;
@@ -1441,11 +1460,11 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       const todayIso = toIsoDate(referenceDate);
       const weekAnchor = state.workWeekAnchor || todayIso;
       const buckets = WD ? WD.dashboardBuckets(state.workTasks || [], todayIso, weekAnchor) : { today: [], overdue: [], waiting: [], critical: [], companies: [] };
-      const studyFocus = plan ? `${plan.subject.shortName} · ${plan.task.title}` : "Sem tarefa academica pendente";
+      const studyFocus = plan ? `${plan.subject.shortName}: ${plan.task.title}` : "Sem tarefa academica pendente";
       const workFocus = buckets.overdue[0] || buckets.today[0] || buckets.critical[0] || null;
       const studyQueueItems = (queue || []).slice(0, 4).map((item) => ({
         title: `${item.subject.shortName}: ${item.task.title}`,
-        meta: `${getTaskMinutes(item.task)} min · estudo`
+        meta: `${getTaskMinutes(item.task)} min | estudo`
       }));
       const workTodayItems = (buckets.today || []).slice(0, 5).map((task) => ({ title: task.title, meta: formatWorkTaskMeta(task, todayIso) }));
       const overdueItems = (buckets.overdue || []).slice(0, 6).map((task) => ({ title: task.title, meta: formatWorkTaskMeta(task, todayIso) }));
@@ -1457,33 +1476,103 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
         .slice(0, 7);
       const companyItems = (buckets.companies || []).map((summary) => ({
         title: summary.company.name,
-        meta: `${summary.openCount} abertas · ${summary.weekCount} na semana · ${summary.overdueCount} atrasadas · ${summary.waitingCount} aguardando`,
+        meta: `${summary.openCount} abertas | ${summary.weekCount} na semana | ${summary.overdueCount} atrasadas | ${summary.waitingCount} aguardando`,
         id: summary.company.id
       }));
+      const studyOverviewItems = [...studyQueueItems, ...studyDeadlines].slice(0, 5);
+      const workOverviewItems = [...overdueItems, ...workTodayItems].slice(0, 5);
+      const nextCritical = criticalItems[0] || null;
+      const nextCompany = companyItems[0] || null;
       const companyOptions = WD ? WD.COMPANIES.map((company) => `<option value="${company.id}">${escapeHtml(company.name)}</option>`).join("") : "";
       const priorityOptions = WD ? WD.PRIORITIES.map((priority) => `<option value="${priority.value}"${priority.value === "medium" ? " selected" : ""}>${escapeHtml(priority.label)}</option>`).join("") : "";
 
       if (elements.homeTodayCard) {
+        const heroMetrics = [
+          { label: "Fila de estudo", value: studyQueueItems.length, subvalue: studyQueueItems.length ? "tarefas na fila curta" : "sem fila ativa" },
+          { label: "Prazos de estudo", value: studyDeadlines.length, subvalue: studyDeadlines.length ? "entregas abertas" : "sem entrega aberta" },
+          { label: "Trabalho hoje", value: workTodayItems.length, subvalue: workTodayItems.length ? "itens acionaveis" : "sem foco critico" },
+          { label: "Aguardando", value: waitingItems.length, subvalue: waitingItems.length ? "dependencias externas" : "caixa limpa" }
+        ];
         elements.homeTodayCard.innerHTML = `
-          <div class="home-card-header"><div><h3>Hoje</h3><p>Foco do dia, separando estudo e trabalho.</p></div><span class="chip accent">${formatDate(referenceDate)}</span></div>
-          <div class="home-focus-stack">
-            <div class="home-focus-item"><span>Estudo</span><strong>${escapeHtml(studyFocus)}</strong></div>
-            <div class="home-focus-item"><span>Trabalho</span><strong>${workFocus ? escapeHtml(workFocus.title) : "Sem foco critico de trabalho"}</strong><small>${workFocus ? escapeHtml(workFocus.nextAction || formatWorkTaskMeta(workFocus, todayIso)) : "Capture ou planeje uma proxima acao."}</small></div>
+          <div class="home-hero">
+            <div class="home-hero-top">
+              <div class="home-hero-copy">
+                <span class="home-hero-eyebrow">Painel do dia</span>
+                <h3>Hoje voce precisa manter estudo em movimento e trabalho fora do vermelho.</h3>
+                <p>Entrada unica para decidir rapido o que merece foco agora, sem misturar fila academica com demandas do portfolio.</p>
+              </div>
+              <span class="chip accent">${formatDate(referenceDate)}</span>
+            </div>
+            <div class="home-hero-grid">
+              <div class="home-focus-item" data-tone="study">
+                <span>Estudos</span>
+                <strong>${escapeHtml(studyFocus)}</strong>
+                <small>${studyDeadlines.length ? `${studyDeadlines.length} prazo${studyDeadlines.length === 1 ? "" : "s"} aberto${studyDeadlines.length === 1 ? "" : "s"} nesta janela.` : "Sem entrega academica critica agora."}</small>
+              </div>
+              <div class="home-focus-item" data-tone="work">
+                <span>Trabalho</span>
+                <strong>${workFocus ? escapeHtml(workFocus.title) : "Sem foco critico de trabalho"}</strong>
+                <small>${workFocus ? escapeHtml(workFocus.nextAction || formatWorkTaskMeta(workFocus, todayIso)) : "Capture ou planeje a proxima acao executiva."}</small>
+              </div>
+            </div>
+            ${renderHomeKpiGrid(heroMetrics)}
+            <div class="home-actions-row">
+              <button class="btn btn-primary" type="button" data-home-open-studies>Entrar em estudos</button>
+              <button class="btn btn-soft" type="button" data-open-work>Abrir trabalho</button>
+            </div>
           </div>
-          <div class="home-actions-row"><button class="btn btn-primary" type="button" data-open-work>Capturar trabalho</button><button class="btn btn-soft" type="button" data-home-open-studies>Ver estudos</button></div>`;
+        `;
       }
       if (elements.homeWeekCard) {
-        elements.homeWeekCard.innerHTML = `<div class="home-card-header"><div><h3>Esta semana</h3><p>Proximos compromissos academicos e do portfolio.</p></div><span class="chip neutral">${criticalItems.length} itens</span></div>${renderHomeList([...workTodayItems.slice(0, 3), ...studyQueueItems.slice(0, 3)].slice(0, 6), "Nada planejado para hoje.")}`;
+        const studyMetrics = [
+          { label: "Fila", value: studyQueueItems.length },
+          { label: "Entregas", value: studyDeadlines.length },
+          { label: "Critico", value: nextCritical && nextCritical.title ? nextCritical.title.slice(0, 18) : "estavel" }
+        ];
+        elements.homeWeekCard.innerHTML = `
+          <div class="home-section-stack">
+            <div class="home-card-header">
+              <div class="home-section-copy">
+                <span class="home-section-eyebrow">Estudos</span>
+                <h3>Visao academica</h3>
+                <p>Fila, entregas e o proximo ponto de tensao do semestre.</p>
+              </div>
+              <span class="chip neutral">${studyOverviewItems.length} itens</span>
+            </div>
+            ${renderHomeSectionMetrics(studyMetrics)}
+            ${renderHomeList(studyOverviewItems, "Sem demanda academica urgente agora.")}
+            <div class="home-actions-row"><button class="btn btn-soft" type="button" data-home-open-studies>Ir para estudos</button></div>
+          </div>`;
       }
-      if (elements.homeOverdueCard) elements.homeOverdueCard.innerHTML = `<div class="home-card-header"><div><h3>Tarefas atrasadas</h3><p>O que precisa sair do vermelho.</p></div><span class="chip danger">${overdueItems.length}</span></div>${renderHomeList(overdueItems, "Sem tarefas de trabalho atrasadas.")}`;
-      if (elements.homeWaitingCard) elements.homeWaitingCard.innerHTML = `<div class="home-card-header"><div><h3>Aguardando terceiros</h3><p>Dependencias que nao podem sumir do radar.</p></div><span class="chip warning">${waitingItems.length}</span></div>${renderHomeList(waitingItems, "Nenhum item aguardando terceiros.")}`;
-      if (elements.homeDeadlinesCard) elements.homeDeadlinesCard.innerHTML = `<div class="home-card-header"><div><h3>Prazos criticos</h3><p>Entregas de estudo e prazos reais de trabalho.</p></div><span class="chip accent">semana</span></div>${renderHomeList(criticalItems, "Sem prazo critico nesta semana.")}`;
+      if (elements.homeOverdueCard) {
+        const workMetrics = [
+          { label: "Hoje", value: workTodayItems.length },
+          { label: "Atrasadas", value: overdueItems.length },
+          { label: "Empresa", value: nextCompany ? nextCompany.title : "geral" }
+        ];
+        elements.homeOverdueCard.innerHTML = `
+          <div class="home-section-stack">
+            <div class="home-card-header">
+              <div class="home-section-copy">
+                <span class="home-section-eyebrow">Trabalho</span>
+                <h3>Visao executiva</h3>
+                <p>O que ja deveria ter andado, o que cabe hoje e onde voce precisa destravar.</p>
+              </div>
+              <span class="chip danger">${overdueItems.length}</span>
+            </div>
+            ${renderHomeSectionMetrics(workMetrics)}
+            ${renderHomeList(workOverviewItems, "Sem tarefa executiva critica agora.")}
+            <div class="home-actions-row"><button class="btn btn-soft" type="button" data-open-work>Abrir trabalho</button></div>
+          </div>`;
+      }
+      if (elements.homeWaitingCard) elements.homeWaitingCard.innerHTML = `<div class="home-card-header"><div class="home-section-copy"><span class="home-section-eyebrow">Dependencias</span><h3>Aguardando terceiros</h3><p>Itens que nao podem sumir do radar enquanto outra ponta responde.</p></div><span class="chip warning">${waitingItems.length}</span></div>${renderHomeList(waitingItems, "Nenhum item aguardando terceiros.")}`;
+      if (elements.homeDeadlinesCard) elements.homeDeadlinesCard.innerHTML = `<div class="home-card-header"><div class="home-section-copy"><span class="home-section-eyebrow">Agenda</span><h3>Prazos criticos</h3><p>Entregas e vencimentos que pressionam a semana atual.</p></div><span class="chip accent">${criticalItems.length}</span></div>${renderHomeList(criticalItems, "Sem prazo critico nesta semana.")}`;
       if (elements.homeCompaniesCard) {
-        elements.homeCompaniesCard.innerHTML = `<div class="home-card-header"><div><h3>Empresas em foco</h3><p>Resumo executivo por empresa investida.</p></div><span class="chip neutral">${companyItems.length} empresas</span></div><div class="home-company-list">${companyItems.map((item) => `<button type="button" class="home-company-row" data-home-work-filter="${item.id}"><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.meta)}</span></button>`).join("")}</div>`;
+        elements.homeCompaniesCard.innerHTML = `<div class="home-card-header"><div class="home-section-copy"><span class="home-section-eyebrow">Portfolio</span><h3>Empresas em foco</h3><p>Entrada rapida para filtrar o trabalho por empresa investida.</p></div><span class="chip neutral">${companyItems.length} empresas</span></div><div class="home-company-list">${companyItems.map((item) => `<button type="button" class="home-company-row" data-home-work-filter="${item.id}"><strong>${escapeHtml(item.title)}</strong><span>${escapeHtml(item.meta)}</span></button>`).join("")}</div>`;
       }
       if (elements.homeQuickCaptureCard) {
         elements.homeQuickCaptureCard.innerHTML = `
-          <div class="home-card-header"><div><h3>Captura rapida</h3><p>Transforme demanda solta em proxima acao objetiva.</p></div><span class="chip accent">Trabalho</span></div>
+          <div class="home-card-header"><div class="home-section-copy"><span class="home-section-eyebrow">Atalho</span><h3>Captura rapida</h3><p>Transforme demanda solta em proxima acao objetiva sem sair da home.</p></div><span class="chip accent">trabalho</span></div>
           <form id="homeQuickCaptureForm" class="home-quick-form">
             <input type="text" name="title" maxlength="180" placeholder="Titulo da tarefa" required />
             <input type="text" name="nextAction" maxlength="220" placeholder="Proxima acao objetiva" />
