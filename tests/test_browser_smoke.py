@@ -123,6 +123,23 @@ class BrowserSmokeTests(unittest.TestCase):
         self.page.wait_for_timeout(250)
         self.assertTrue(self.page.locator(".grade-filter-hint").is_visible())
 
+    def test_flashcards_exercises_viewer(self):
+        self._goto()
+        self.page.click(".tb-nav-btn[data-nav-page='fc']")
+        self.page.wait_for_selector("#fcSubviewToggle")
+        self.page.click("#fcSubviewToggle [data-fc-view='exercises']")
+        self.page.wait_for_timeout(250)
+        self.assertTrue(self.page.locator("#fcExercisesAside").is_visible())
+        self.assertGreater(self.page.locator("#fcExerciseList [data-exercise-id]").count(), 0)
+        self.page.locator("#fcExerciseList [data-exercise-id]").first.click()
+        self.page.wait_for_timeout(200)
+        self.assertTrue(self.page.locator("#fcStudyPanel").get_by_text("Enunciado", exact=True).is_visible())
+        hint_button = self.page.locator("#fcStudyPanel [data-exercise-action='reveal-hint']").first
+        hint_button.click()
+        self.page.wait_for_timeout(150)
+        self.assertTrue(self.page.locator("#fcStudyPanel").get_by_text("Pistas liberadas").is_visible())
+        self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
+
 
 if __name__ == "__main__":
     unittest.main()

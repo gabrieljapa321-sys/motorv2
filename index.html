@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motor de Estudo · Poli-USP</title>
   <meta name="theme-color" content="#171717" />
-  <link rel="manifest" href="manifest.webmanifest?v=20260421-ship1" />
+  <link rel="manifest" href="manifest.webmanifest?v=20260420-exercises1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/app.css?v=20260421-ship1" />
-  <script charset="utf-8" src="assets/js/polyfills.js?v=20260421-ship1"></script>
+  <link rel="stylesheet" href="assets/css/app.css?v=20260420-exercises1" />
+  <script charset="utf-8" src="assets/js/polyfills.js?v=20260420-exercises1"></script>
 
 </head>
 <body data-layout="browser">
@@ -289,13 +289,18 @@
     <main id="fcPage" hidden>
       <div class="fc-header">
         <div>
-          <h2>Flashcards</h2>
+          <h2 id="fcPageTitle">Flashcards</h2>
           <p>Memorização ativa com repetição espaçada (algoritmo SM-2). Crie cartões de conceitos pontuais, revise quando o app agendar. Só estude o que está "para hoje" — o resto já consolidou ou ainda é cedo.</p>
         </div>
       </div>
 
       
-      <div class="fc-stats">
+      <div class="fc-view-toggle" id="fcSubviewToggle" role="tablist" aria-label="Modo de estudo em flashcards">
+        <button type="button" class="fc-view-btn" data-fc-view="flashcards" aria-selected="true">Flashcards</button>
+        <button type="button" class="fc-view-btn" data-fc-view="exercises" aria-selected="false">Exercicios</button>
+      </div>
+
+      <div class="fc-stats" id="fcFlashcardsStats">
         <div class="fc-stat fc-stat--due">
           <div class="fc-stat-label">Para hoje</div>
           <span class="fc-stat-value" id="fcStatDue">0</span>
@@ -318,6 +323,29 @@
         </div>
       </div>
 
+      <div class="fc-stats" id="fcExerciseStats" hidden>
+        <div class="fc-stat fc-stat--due">
+          <div class="fc-stat-label">Para atacar</div>
+          <span class="fc-stat-value" id="fcExerciseStatTodo">0</span>
+          <div class="fc-stat-sub">ainda sem desfecho</div>
+        </div>
+        <div class="fc-stat">
+          <div class="fc-stat-label">Tentando</div>
+          <span class="fc-stat-value" id="fcExerciseStatTrying">0</span>
+          <div class="fc-stat-sub">com pistas ou travados</div>
+        </div>
+        <div class="fc-stat">
+          <div class="fc-stat-label">Resolvidos</div>
+          <span class="fc-stat-value" id="fcExerciseStatSolved">0</span>
+          <div class="fc-stat-sub">sozinho ou com ajuda</div>
+        </div>
+        <div class="fc-stat">
+          <div class="fc-stat-label">Total</div>
+          <span class="fc-stat-value" id="fcExerciseStatTotal">0</span>
+          <div class="fc-stat-sub">na base atual</div>
+        </div>
+      </div>
+
       <div class="fc-layout">
 
         
@@ -327,8 +355,8 @@
 
         
         <div class="fc-aside">
-
-          <div class="fc-create-panel">
+          <div id="fcFlashcardsAside">
+            <div class="fc-create-panel">
             <h3 class="fc-panel-title">Criar cartão</h3>
             <form id="fcCreateForm" style="display:grid;gap:8px;">
               <div class="field">
@@ -351,11 +379,27 @@
 
           <div class="fc-deck-panel">
             <h3 class="fc-panel-title">Deck por matéria</h3>
-            <div class="fc-deck-list" id="fcDeckList">
-              
-            </div>
+            <div class="fc-deck-list" id="fcDeckList"></div>
+          </div>
           </div>
 
+          <div id="fcExercisesAside" hidden>
+            <div class="fc-filter-panel">
+              <h3 class="fc-panel-title">Filtro</h3>
+              <div class="field">
+                <span>Materia</span>
+                <select id="fcExerciseSubject">
+                  <option value="ALL">Todas</option>
+                </select>
+              </div>
+              <p class="fc-panel-help">Leia primeiro o enunciado. Revele pistas so quando travar e deixe a resolucao completa para o fim.</p>
+            </div>
+
+            <div class="fc-deck-panel">
+              <h3 class="fc-panel-title">Fila de exercicios</h3>
+              <div class="fc-exercise-list" id="fcExerciseList"></div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -678,21 +722,21 @@
   </div>
 
   
-  <script charset="utf-8" src="assets/js/app-data.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/store.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/dates.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/theme.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/backup.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/sync-service.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/app-core.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/app-pages.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/week-planner.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/study-features.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/app-actions.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/app-init.js?v=20260421-ship1"></script>
-  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260421-ship1"></script>
-  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260421-ship1"></script>
+  <script charset="utf-8" src="assets/js/app-data.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/store.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/dates.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/theme.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/backup.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/sync-service.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/app-core.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/app-pages.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/week-planner.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/study-features.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/app-actions.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/app-init.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260420-exercises1"></script>
 </body>
 </html>

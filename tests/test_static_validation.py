@@ -53,7 +53,7 @@ class StaticValidationTests(unittest.TestCase):
             self.assertIn(name, css)
 
     def test_json_data_files_exist_and_are_valid(self):
-        for name in ["study-data.json", "ui-config.json"]:
+        for name in ["study-data.json", "ui-config.json", "exercises.json"]:
             payload = json.loads((DATA_DIR / name).read_text(encoding="utf-8"))
             self.assertIsInstance(payload, dict)
 
