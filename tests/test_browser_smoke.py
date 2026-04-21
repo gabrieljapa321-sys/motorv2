@@ -87,6 +87,7 @@ class BrowserSmokeTests(unittest.TestCase):
             ("week", "#weekPage"),
             ("calendar", "#calendarPage"),
             ("grades", "#gradesPage"),
+            ("work", "#workPage"),
             ("dashboard", "#dashboardPage"),
         ]:
             self.page.click(f".tb-nav-btn[data-nav-page='{target}']")
@@ -138,6 +139,38 @@ class BrowserSmokeTests(unittest.TestCase):
         hint_button.click()
         self.page.wait_for_timeout(150)
         self.assertTrue(self.page.locator("#fcStudyPanel").get_by_text("Pistas liberadas").is_visible())
+        self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
+
+    def test_work_task_flow_company_filter_waiting_done_and_persistence(self):
+        self._goto()
+        self.page.click(".tb-nav-btn[data-nav-page='work']")
+        self.page.wait_for_selector("#workPage")
+        self.page.fill("#workTaskTitle", "Revisar indicadores BENEVA")
+        self.page.fill("#workTaskNextAction", "Solicitar atualização do caixa")
+        self.page.select_option("#workTaskScope", "company")
+        self.page.select_option("#workTaskCompany", "beneva")
+        first_day = self.page.eval_on_selector("#workTaskDay", "select => Array.from(select.options).find(option => option.value).value")
+        self.page.select_option("#workTaskDay", first_day)
+        self.page.select_option("#workTaskPriority", "high")
+        self.page.select_option("#workTaskArea", "financeiro")
+        self.page.click("#workTaskForm button[type='submit']")
+        self.page.wait_for_selector(".work-task:has-text('Revisar indicadores BENEVA')")
+        self.assertTrue(self.page.locator(".work-task:has-text('BENEVA')").first.is_visible())
+        self.page.click(".work-filter-btn[data-work-filter='beneva']")
+        self.page.wait_for_timeout(200)
+        self.assertTrue(self.page.locator(".work-task:has-text('Revisar indicadores BENEVA')").first.is_visible())
+        self.page.click(".work-task:has-text('Revisar indicadores BENEVA') [data-work-status='waiting']")
+        self.page.wait_for_timeout(250)
+        self.assertTrue(self.page.locator("#workWaitingList .work-task:has-text('Revisar indicadores BENEVA')").first.is_visible())
+        self.page.locator("#workWaitingList .work-task:has-text('Revisar indicadores BENEVA') .work-task-check").first.click()
+        self.page.wait_for_timeout(250)
+        self.assertEqual(self.page.locator(".work-task:has-text('Revisar indicadores BENEVA')").count(), 0)
+        self.page.reload(wait_until="domcontentloaded")
+        self.page.wait_for_selector(".tb-nav-btn[data-nav-page='work']")
+        self.page.click(".tb-nav-btn[data-nav-page='work']")
+        self.page.wait_for_timeout(400)
+        done_count = self.page.evaluate("() => JSON.parse(localStorage.getItem('poli-study-motor-v1')).workTasks.filter(t => t.title === 'Revisar indicadores BENEVA' && t.status === 'done').length")
+        self.assertEqual(done_count, 1)
         self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
 
 

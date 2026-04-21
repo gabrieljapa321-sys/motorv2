@@ -65,6 +65,7 @@
       fcPage: document.getElementById("fcPage"),
       calendarPage: document.getElementById("calendarPage"),
       gradesPage: document.getElementById("gradesPage"),
+      workPage: document.getElementById("workPage"),
       monthPrevBtn: document.getElementById("monthPrevBtn"),
       monthTodayBtn: document.getElementById("monthTodayBtn"),
       monthNextBtn: document.getElementById("monthNextBtn"),
@@ -1246,7 +1247,14 @@ function renderDeadlineFormCard(referenceDate) {
     }
 
     function updatePageHeader(pageKey, referenceDate) {
-      const meta = PAGE_META[pageKey] || PAGE_META.dashboard || { eyebrow: "", title: "", subtitle: "" };
+      const fallbackMeta = pageKey === "work"
+        ? {
+            eyebrow: "Trabalho",
+            title: "Planner executivo de FIPs",
+            subtitle: "Tarefas gerais e por empresa, com semana, atrasados e dependencias em destaque."
+          }
+        : PAGE_META.dashboard || { eyebrow: "", title: "", subtitle: "" };
+      const meta = PAGE_META[pageKey] || fallbackMeta;
       if (elements.pageEyebrow) elements.pageEyebrow.textContent = meta.eyebrow;
       if (elements.pageTitle) elements.pageTitle.textContent = meta.title;
       if (elements.pageSubtitle) elements.pageSubtitle.textContent = meta.subtitle;
@@ -1305,11 +1313,12 @@ function renderDeadlineFormCard(referenceDate) {
     }
 
     function renderPageVisibility(referenceDate) {
-      const currentPage = ["week", "fc", "calendar", "grades"].includes(state.currentPage) ? state.currentPage : "dashboard";
+      const currentPage = ["week", "fc", "calendar", "grades", "work"].includes(state.currentPage) ? state.currentPage : "dashboard";
       const onCalendar = currentPage === "calendar";
       const onGrades = currentPage === "grades";
       const onWeek = currentPage === "week";
       const onFc = currentPage === "fc";
+      const onWork = currentPage === "work";
       const onDashboard = currentPage === "dashboard";
 
       if (elements.dashboardPage) elements.dashboardPage.hidden = !onDashboard;
@@ -1318,6 +1327,7 @@ function renderDeadlineFormCard(referenceDate) {
       if (elements.fcPage) elements.fcPage.hidden = !onFc;
       if (elements.calendarPage) elements.calendarPage.hidden = !onCalendar;
       if (elements.gradesPage) elements.gradesPage.hidden = !onGrades;
+      if (elements.workPage) elements.workPage.hidden = !onWork;
       elements.navButtons.forEach((button) => {
         button.classList.toggle("active", button.dataset.navPage === currentPage);
       });
@@ -1330,7 +1340,7 @@ function renderDeadlineFormCard(referenceDate) {
     }
 
     function openPage(page) {
-      state.currentPage = ["week", "fc", "calendar", "grades"].includes(page) ? page : "dashboard";
+      state.currentPage = ["week", "fc", "calendar", "grades", "work"].includes(page) ? page : "dashboard";
       saveState();
       render();
       window.scrollTo({ top: 0, behavior: "smooth" });

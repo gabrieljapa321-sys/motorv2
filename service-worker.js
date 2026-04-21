@@ -1,4 +1,4 @@
-const CACHE_NAME = "motor-estudo-shell-v20260420-exercises2";
+const CACHE_NAME = "motor-estudo-shell-v20260420-workmerge1";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -13,10 +13,12 @@ const APP_SHELL = [
   "./assets/css/grades.css",
   "./assets/css/week.css",
   "./assets/css/flashcards.css",
+  "./assets/css/work.css",
   "./assets/js/polyfills.js",
   "./assets/js/app-data.js",
   "./assets/js/store.js",
   "./assets/js/dates.js",
+  "./assets/js/work-domain.js",
   "./assets/js/theme.js",
   "./assets/js/backup.js",
   "./assets/js/sync-service.js",
@@ -26,6 +28,7 @@ const APP_SHELL = [
   "./assets/js/study-features.js",
   "./assets/js/flashcards-exams.js",
   "./assets/js/app-actions.js",
+  "./assets/js/work-planner.js",
   "./assets/js/app-init.js",
   "./assets/js/firebase-init.js",
   "./assets/js/auth-panel.js",

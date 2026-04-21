@@ -9,7 +9,7 @@
 
   if ("serviceWorker" in navigator && /^https?:/i.test(window.location.protocol)) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./service-worker.js?v=20260420-exercises2").catch((error) => {
+      navigator.serviceWorker.register("./service-worker.js?v=20260420-workmerge1").catch((error) => {
         console.error("[pwa] falha ao registrar service worker:", error);
       });
     });

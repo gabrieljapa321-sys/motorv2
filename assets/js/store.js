@@ -2,7 +2,7 @@
   "use strict";
 
   const STORAGE_KEY = "poli-study-motor-v1";
-  const SCHEMA_VERSION = 4;
+  const SCHEMA_VERSION = 5;
 
   const DEFAULT_STATE = {
     schemaVersion: SCHEMA_VERSION,
@@ -22,12 +22,16 @@
     gradeTargets: { primary: 5, secondary: 6 },
     gradeScenarioDrafts: {},
     weekDensity: "compact",
+    weeklyTodos: [],
     flashcards: [],
     examSimulations: [],
     fcSubview: "flashcards",
     exerciseProgress: {},
     exerciseSubjectFilter: "ALL",
     currentExerciseId: null,
+    workTasks: [],
+    workFilter: "all",
+    workWeekAnchor: null,
     backupMeta: {
       lastExportedAt: null,
       lastImportedAt: null,
@@ -42,6 +46,12 @@
     activeSession: null,
     lastAutoProcessedDate: null
   };
+
+  const NAV_PAGES = ["dashboard", "week", "fc", "calendar", "grades", "work"];
+  const WORK_COMPANY_IDS = ["beneva", "tsea", "itamaraca-spe"];
+  const WORK_PRIORITIES = ["critical", "high", "medium", "low"];
+  const WORK_STATUSES = ["inbox", "planned", "doing", "waiting", "done"];
+  const WORK_AREAS = ["financeiro", "juridico", "operacional", "governanca", "auditoria", "compliance", "reuniao", "followup"];
 
   function cloneState(value) {
     return JSON.parse(JSON.stringify(value));
@@ -117,6 +127,62 @@
     return typeof value === "string" ? value.slice(0, 120) : "";
   }
 
+  function normalizeCurrentPage(value) {
+    return NAV_PAGES.includes(value) ? value : "dashboard";
+  }
+
+  function normalizeWorkFilter(value) {
+    const allowed = ["all", "general", "today", "overdue", "waiting", ...WORK_COMPANY_IDS];
+    return allowed.includes(value) ? value : "all";
+  }
+
+  function normalizeIsoDate(value) {
+    if (typeof value !== "string") return null;
+    const clean = value.slice(0, 10);
+    return /^\d{4}-\d{2}-\d{2}$/.test(clean) ? clean : null;
+  }
+
+  function sanitizeWeeklyTodos(records) {
+    return Array.isArray(records) ? records.filter((item) => item && typeof item === "object") : [];
+  }
+
+  function sanitizeWorkTasks(records) {
+    if (!Array.isArray(records)) return [];
+    return records
+      .filter((item) => item && typeof item === "object")
+      .map((item, index) => {
+        const companyId = WORK_COMPANY_IDS.includes(item.companyId) ? item.companyId : null;
+        const scope = item.scope === "company" && companyId ? "company" : "general";
+        const scheduledDayIso = normalizeIsoDate(item.scheduledDayIso);
+        let status = WORK_STATUSES.includes(item.status) ? item.status : (scheduledDayIso ? "planned" : "inbox");
+        if (scheduledDayIso && status === "inbox") status = "planned";
+        if (!scheduledDayIso && status === "planned") status = "inbox";
+        const priority = WORK_PRIORITIES.includes(item.priority) ? item.priority : "medium";
+        const area = WORK_AREAS.includes(item.area) ? item.area : "followup";
+        const completedAt = status === "done"
+          ? (typeof item.completedAt === "string" ? item.completedAt : (typeof item.updatedAt === "string" ? item.updatedAt : null))
+          : null;
+        return {
+          id: typeof item.id === "string" && item.id ? item.id : `work-imported-${index}`,
+          title: typeof item.title === "string" ? item.title.slice(0, 180) : "Tarefa de trabalho",
+          description: typeof item.description === "string" ? item.description.slice(0, 1000) : "",
+          scope,
+          companyId: scope === "company" ? companyId : null,
+          scheduledDayIso,
+          dueDate: normalizeIsoDate(item.dueDate),
+          priority,
+          status,
+          area,
+          nextAction: typeof item.nextAction === "string" ? item.nextAction.slice(0, 300) : "Definir proxima acao objetiva",
+          notes: typeof item.notes === "string" ? item.notes.slice(0, 1000) : "",
+          waitingSince: status === "waiting" ? (typeof item.waitingSince === "string" ? item.waitingSince : (typeof item.updatedAt === "string" ? item.updatedAt : null)) : null,
+          createdAt: typeof item.createdAt === "string" ? item.createdAt : new Date(0).toISOString(),
+          updatedAt: typeof item.updatedAt === "string" ? item.updatedAt : (typeof item.createdAt === "string" ? item.createdAt : new Date(0).toISOString()),
+          completedAt
+        };
+      });
+  }
+
   function migrateState(candidate) {
     const safe = candidate && typeof candidate === "object" ? cloneState(candidate) : {};
     const version = Number.isFinite(Number(safe.schemaVersion)) ? Number(safe.schemaVersion) : 1;
@@ -143,6 +209,14 @@
       safe.currentExerciseId = safe.currentExerciseId || null;
     }
 
+    if (version < 5) {
+      safe.currentPage = normalizeCurrentPage(safe.currentPage);
+      safe.weeklyTodos = Array.isArray(safe.weeklyTodos) ? safe.weeklyTodos : [];
+      safe.workTasks = Array.isArray(safe.workTasks) ? safe.workTasks : [];
+      safe.workFilter = safe.workFilter || "all";
+      safe.workWeekAnchor = safe.workWeekAnchor || null;
+    }
+
     safe.schemaVersion = SCHEMA_VERSION;
     return safe;
   }
@@ -156,6 +230,7 @@
       ...cloneState(defaultState),
       ...parsed,
       schemaVersion: SCHEMA_VERSION,
+      currentPage: normalizeCurrentPage(parsed.currentPage),
       calendarLegendVisible: normalizeBoolean(parsed.calendarLegendVisible, defaultState.calendarLegendVisible),
       dashboardFocusMode: normalizeBoolean(parsed.dashboardFocusMode, defaultState.dashboardFocusMode),
       notesSearchTerm: normalizeNotesSearchTerm(parsed.notesSearchTerm),
@@ -171,12 +246,16 @@
       },
       gradeScenarioDrafts: sanitizeGradeScenarioDrafts(parsed.gradeScenarioDrafts),
       weekDensity: normalizeWeekDensity(parsed.weekDensity),
+      weeklyTodos: sanitizeWeeklyTodos(parsed.weeklyTodos),
       flashcards: Array.isArray(parsed.flashcards) ? parsed.flashcards : [],
       examSimulations: Array.isArray(parsed.examSimulations) ? parsed.examSimulations : [],
       fcSubview: normalizeFcSubview(parsed.fcSubview),
       exerciseProgress: sanitizeExerciseProgress(parsed.exerciseProgress),
       exerciseSubjectFilter: normalizeExerciseSubjectFilter(parsed.exerciseSubjectFilter),
       currentExerciseId: typeof parsed.currentExerciseId === "string" ? parsed.currentExerciseId : null,
+      workTasks: sanitizeWorkTasks(parsed.workTasks),
+      workFilter: normalizeWorkFilter(parsed.workFilter),
+      workWeekAnchor: normalizeIsoDate(parsed.workWeekAnchor),
       backupMeta: sanitizeBackupMeta(parsed.backupMeta),
       editingDeadlineId: parsed.editingDeadlineId || null,
       editingGradeEntryId: parsed.editingGradeEntryId || null
@@ -208,6 +287,7 @@
   function getStateSummary(sourceState, hydrateFn = hydrateStateFromRaw) {
     const safeState = hydrateFn(sourceState || {});
     const deliveredDeadlines = safeState.deadlines.filter((item) => item && item.deliveredAt).length;
+    const workTasks = safeState.workTasks || [];
     return {
       schemaVersion: safeState.schemaVersion || SCHEMA_VERSION,
       touchedTasks: Object.keys(safeState.taskMeta || {}).length,
@@ -215,14 +295,29 @@
       deadlines: safeState.deadlines.length,
       deliveredDeadlines,
       gradeEntries: safeState.gradeEntries.length,
+      weeklyTodos: (safeState.weeklyTodos || []).length,
       flashcards: safeState.flashcards.length,
-      examSimulations: safeState.examSimulations.length
+      examSimulations: safeState.examSimulations.length,
+      workTasks: workTasks.length,
+      openWorkTasks: workTasks.filter((item) => item && item.status !== "done").length,
+      waitingWorkTasks: workTasks.filter((item) => item && item.status === "waiting").length
     };
   }
 
   function getRecordTimestamp(record) {
     if (!record || typeof record !== "object") return 0;
-    const candidates = [record.updatedAt, record.deliveredAt, record.createdAt, record.entryDate, record.date, record.completedAt, record.lastTouched, record.lastOpenedAt, record.startedAt]
+    const candidates = [
+      record.updatedAt,
+      record.deliveredAt,
+      record.createdAt,
+      record.entryDate,
+      record.date,
+      record.completedAt,
+      record.waitingSince,
+      record.lastTouched,
+      record.lastOpenedAt,
+      record.startedAt
+    ]
       .filter(Boolean)
       .map((value) => new Date(value).getTime())
       .filter((value) => Number.isFinite(value));
@@ -319,6 +414,7 @@
       logs: mergeRecordsById(currentSafe.logs, incomingSafe.logs, "log"),
       deadlines: mergeRecordsById(currentSafe.deadlines, incomingSafe.deadlines, "deadline"),
       gradeEntries: mergeRecordsById(currentSafe.gradeEntries, incomingSafe.gradeEntries, "grade"),
+      weeklyTodos: mergeRecordsById(currentSafe.weeklyTodos, incomingSafe.weeklyTodos, "weeklyTodo"),
       gradeDraftSubjectCode: incomingSafe.gradeDraftSubjectCode || currentSafe.gradeDraftSubjectCode,
       gradeOverviewSubjectCode: incomingSafe.gradeOverviewSubjectCode || currentSafe.gradeOverviewSubjectCode,
       gradeTargets: incomingSafe.gradeTargets || currentSafe.gradeTargets,
@@ -333,6 +429,9 @@
       exerciseProgress: mergeExerciseProgress(currentSafe.exerciseProgress, incomingSafe.exerciseProgress),
       exerciseSubjectFilter: normalizeExerciseSubjectFilter(incomingSafe.exerciseSubjectFilter || currentSafe.exerciseSubjectFilter),
       currentExerciseId: incomingSafe.currentExerciseId || currentSafe.currentExerciseId,
+      workTasks: mergeRecordsById(currentSafe.workTasks, incomingSafe.workTasks, "workTask"),
+      workFilter: incomingSafe.workFilter || currentSafe.workFilter,
+      workWeekAnchor: incomingSafe.workWeekAnchor || currentSafe.workWeekAnchor,
       backupMeta: currentSafe.backupMeta
     });
   }

@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motor de Estudo · Poli-USP</title>
   <meta name="theme-color" content="#171717" />
-  <link rel="manifest" href="manifest.webmanifest?v=20260420-exercises1" />
+  <link rel="manifest" href="manifest.webmanifest?v=20260420-workmerge1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/app.css?v=20260420-exercises1" />
-  <script charset="utf-8" src="assets/js/polyfills.js?v=20260420-exercises1"></script>
+  <link rel="stylesheet" href="assets/css/app.css?v=20260420-workmerge1" />
+  <script charset="utf-8" src="assets/js/polyfills.js?v=20260420-workmerge1"></script>
 
 </head>
 <body data-layout="browser">
@@ -35,6 +35,7 @@
         <button type="button" class="tb-nav-btn" data-nav-page="fc">Flashcards</button>
         <button type="button" class="tb-nav-btn" data-nav-page="calendar">Calendário</button>
         <button type="button" class="tb-nav-btn" data-nav-page="grades">Notas</button>
+        <button type="button" class="tb-nav-btn" data-nav-page="work">Trabalho</button>
       </nav>
 
       <div class="tb-actions">
@@ -455,6 +456,127 @@
       </section>
     </main>
 
+    <main id="workPage" hidden>
+      <section class="work-shell" aria-label="Planner executivo de trabalho">
+        <div class="work-hero card">
+          <div>
+            <p class="eyebrow">Planner semanal de trabalho</p>
+            <h2>FIPs, empresas investidas e proximas acoes</h2>
+            <p>Capture rapido, planeje a semana e mantenha atrasados e dependencias de terceiros sempre visiveis.</p>
+            <div class="work-week-range" id="workWeekRange">—</div>
+          </div>
+          <div class="work-week-controls">
+            <button type="button" class="btn btn-ghost" id="workPrevBtn" aria-keyshortcuts="Alt+Shift+ArrowLeft">← Semana anterior</button>
+            <button type="button" class="btn btn-soft" id="workTodayBtn" aria-keyshortcuts="Alt+Shift+0">Esta semana</button>
+            <button type="button" class="btn btn-primary" id="workNextBtn" aria-keyshortcuts="Alt+Shift+ArrowRight">Proxima semana →</button>
+          </div>
+        </div>
+
+        <div class="work-stats" id="workStats"></div>
+        <div class="work-filters" id="workFilters" aria-label="Filtros rapidos de trabalho"></div>
+
+        <section class="work-layout">
+          <article class="card work-capture-panel">
+            <div class="work-panel-heading">
+              <div>
+                <h3>Captura rapida de trabalho</h3>
+                <p>Todo item deve virar uma proxima acao objetiva.</p>
+              </div>
+              <span class="chip accent">Novo</span>
+            </div>
+            <form id="workTaskForm" class="work-task-form">
+              <div class="field field-full">
+                <span>Titulo</span>
+                <input type="text" id="workTaskTitle" name="title" maxlength="180" autocomplete="off" placeholder="Ex.: Revisar covenant da BENEVA" required />
+              </div>
+              <div class="field field-full">
+                <span>Proxima acao</span>
+                <input type="text" id="workTaskNextAction" name="nextAction" maxlength="220" autocomplete="off" placeholder="Ex.: Solicitar memoria de calculo ao financeiro" />
+              </div>
+              <div class="field field-full">
+                <span>Descricao / observacoes</span>
+                <textarea id="workTaskDescription" name="description" rows="3" maxlength="1000" placeholder="Contexto minimo, links ou notas"></textarea>
+              </div>
+              <div class="deadline-form-grid">
+                <div class="field">
+                  <span>Tipo</span>
+                  <select id="workTaskScope" name="scope">
+                    <option value="general">Geral</option>
+                    <option value="company">Empresa</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <span>Empresa</span>
+                  <select id="workTaskCompany" name="companyId">
+                    <option value="">—</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <span>Dia da semana</span>
+                  <select id="workTaskDay" name="scheduledDayIso">
+                    <option value="">Inbox (sem dia)</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <span>Prazo real</span>
+                  <input type="date" id="workTaskDueDate" name="dueDate" />
+                </div>
+                <div class="field">
+                  <span>Prioridade</span>
+                  <select id="workTaskPriority" name="priority"></select>
+                </div>
+                <div class="field">
+                  <span>Status</span>
+                  <select id="workTaskStatus" name="status"></select>
+                </div>
+                <div class="field">
+                  <span>Area / tag</span>
+                  <select id="workTaskArea" name="area"></select>
+                </div>
+              </div>
+              <div class="form-actions compact-actions">
+                <button type="button" class="btn btn-ghost" id="workClearFormBtn">Limpar</button>
+                <button type="submit" class="btn btn-primary">Capturar tarefa</button>
+              </div>
+            </form>
+          </article>
+
+          <aside class="work-side-stack">
+            <article class="card work-inbox-panel">
+              <div class="work-panel-heading compact">
+                <h3>Inbox de trabalho</h3>
+                <span class="chip neutral" id="workInboxCount">0</span>
+              </div>
+              <div class="work-list work-drop-zone" id="workInboxList" data-work-drop="inbox"></div>
+            </article>
+            <article class="card work-waiting-panel">
+              <div class="work-panel-heading compact">
+                <h3>Aguardando terceiros</h3>
+                <span class="chip warning" id="workWaitingCount">0</span>
+              </div>
+              <div class="work-list" id="workWaitingList"></div>
+            </article>
+          </aside>
+        </section>
+
+        <section class="card work-planner-panel">
+          <div class="work-panel-heading">
+            <div>
+              <h3>Planner semanal consolidado</h3>
+              <p>Arraste cards para planejar a semana por dia.</p>
+            </div>
+            <span class="chip accent">Semana inteira</span>
+          </div>
+          <div class="work-week-planner" id="workWeekPlanner"></div>
+        </section>
+
+        <section class="work-bottom-grid">
+          <article class="card" id="workCriticalCard"></article>
+          <article class="card work-company-summary" id="workCompanySummary"></article>
+        </section>
+      </section>
+    </main>
+
   </div>
 
   <div class="mobile-focusbar" id="mobileFocusbar" hidden></div>
@@ -722,21 +844,23 @@
   </div>
 
   
-  <script charset="utf-8" src="assets/js/app-data.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/store.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/dates.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/theme.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/backup.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/sync-service.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/app-core.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/app-pages.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/week-planner.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/study-features.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/app-actions.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/app-init.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260420-exercises1"></script>
-  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260420-exercises1"></script>
+  <script charset="utf-8" src="assets/js/app-data.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/store.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/dates.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/work-domain.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/theme.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/backup.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/sync-service.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/app-core.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/app-pages.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/week-planner.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/study-features.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/app-actions.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/work-planner.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/app-init.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260420-workmerge1"></script>
+  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260420-workmerge1"></script>
 </body>
 </html>
