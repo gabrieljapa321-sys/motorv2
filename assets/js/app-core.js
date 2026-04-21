@@ -64,6 +64,12 @@
       deadlinesCount: document.getElementById("deadlinesCount"),
       subjectsCount: document.getElementById("subjectsCount"),
       homePage: document.getElementById("homePage"),
+      homeDashboardRoot: document.getElementById("homeDashboardRoot"),
+      homeCaptureFab: document.getElementById("homeCaptureFab"),
+      homeCaptureModalBackdrop: document.getElementById("homeCaptureModalBackdrop"),
+      homeCaptureCompany: document.getElementById("homeCaptureCompany"),
+      homeCapturePriority: document.getElementById("homeCapturePriority"),
+      homeCaptureCancel: document.getElementById("homeCaptureCancel"),
       newsPage: document.getElementById("newsPage"),
       dashboardPage: document.getElementById("dashboardPage"),
       weekPage: document.getElementById("weekPage"),
@@ -1588,6 +1594,578 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       }
     }
 
+    function renderHomeList(items, emptyText, options = {}) {
+      if (!items.length) return `<div class="home-empty">${escapeHtml(emptyText)}</div>`;
+      const itemClass = options.itemClass ? ` ${options.itemClass}` : "";
+      return `<div class="home-list-card">${items.map((item) => `
+        <div class="home-list-item${itemClass}">
+          ${item.stamp ? `<span class="home-pulse-stamp">${escapeHtml(item.stamp)}</span>` : ""}
+          <strong>${escapeHtml(item.title)}</strong>
+          <span>${escapeHtml(item.meta || "")}</span>
+        </div>
+      `).join("")}</div>`;
+    }
+
+    function renderHomeSectionMetrics(items) {
+      return `<div class="home-metric-row">${items.map((item) => `
+        <div class="home-section-metric">
+          <span class="home-metric-label">${escapeHtml(item.label)}</span>
+          <strong>${escapeHtml(String(item.value))}</strong>
+        </div>
+      `).join("")}</div>`;
+    }
+
+    function getHomeRecordTimestamp(record) {
+      if (!record || typeof record !== "object") return 0;
+      return [
+        record.updatedAt,
+        record.createdAt,
+        record.deliveredAt,
+        record.waitingSince,
+        record.completedAt
+      ]
+        .filter(Boolean)
+        .map((value) => new Date(value).getTime())
+        .filter((value) => Number.isFinite(value))
+        .sort((a, b) => b - a)[0] || 0;
+    }
+
+    function formatHomeDuration(ms) {
+      const totalMinutes = Math.max(0, Math.round(ms / 60000));
+      const days = Math.floor(totalMinutes / (60 * 24));
+      const hours = Math.floor((totalMinutes % (60 * 24)) / 60);
+      const minutes = totalMinutes % 60;
+      if (days > 0) return hours > 0 ? `${days}d ${hours}h` : `${days}d`;
+      if (hours > 0) return minutes > 0 ? `${hours}h${String(minutes).padStart(2, "0")}` : `${hours}h`;
+      return `${Math.max(1, minutes)}min`;
+    }
+
+    function getHomeUsefulWindow(referenceDate) {
+      const startHour = 7;
+      const endHour = 22;
+      const now = new Date(referenceDate);
+      const windowStart = new Date(now);
+      const windowEnd = new Date(now);
+      windowStart.setHours(startHour, 0, 0, 0);
+      windowEnd.setHours(endHour, 0, 0, 0);
+
+      if (now >= windowEnd) {
+        return {
+          label: "Fora da janela util",
+          detail: "Feche o dia sem abrir novas frentes."
+        };
+      }
+
+      if (now < windowStart) {
+        return {
+          label: `${formatHomeDuration(windowEnd - windowStart)} de janela util hoje`,
+          detail: "O dia ainda esta inteiro para escolher com calma."
+        };
+      }
+
+      return {
+        label: `${formatHomeDuration(windowEnd - now)} de janela util restante`,
+        detail: "Proteja uma unica frente principal."
+      };
+    }
+
+    function getHomeDueMeta(dueDate, dueTime, referenceDate) {
+      if (!dueDate) {
+        return { label: "Sem prazo", tone: "accent", dueAtMs: Number.POSITIVE_INFINITY };
+      }
+      const safeTime = dueTime && /^\d{2}:\d{2}$/.test(dueTime) ? dueTime : "23:59";
+      const dueAt = new Date(`${dueDate}T${safeTime}:00`);
+      const diffMs = dueAt.getTime() - referenceDate.getTime();
+      const tone = diffMs < 0 ? "danger" : diffMs <= 24 * 60 * 60 * 1000 ? "warning" : "accent";
+      const label = diffMs < 0 ? `ha ${formatHomeDuration(Math.abs(diffMs))}` : `em ${formatHomeDuration(diffMs)}`;
+      return { label, tone, dueAtMs: dueAt.getTime() };
+    }
+
+    function formatWorkTaskMeta(task, todayIso) {
+      if (!task) return "";
+      const WD = window.WorkDomain;
+      const company = task.scope === "company" && WD ? WD.companyName(task.companyId) : "Geral";
+      const due = task.dueDate
+        ? (task.dueDate < todayIso ? `atrasada desde ${task.dueDate}` : task.dueDate === todayIso ? "vence hoje" : `prazo ${task.dueDate}`)
+        : "sem prazo";
+      const next = task.nextAction ? ` | ${task.nextAction}` : "";
+      return `${company} | ${due}${next}`;
+    }
+
+    function getStudyDeadlineItems(referenceDate) {
+      return (state.deadlines || [])
+        .filter((deadline) => deadline && !deadline.deliveredAt && deadline.dueDate)
+        .map((deadline) => {
+          const subject = deadline.subjectCode ? getSubject(deadline.subjectCode) : null;
+          const dueMeta = getHomeDueMeta(deadline.dueDate, deadline.dueTime, referenceDate);
+          return {
+            key: `study-deadline-${deadline.id}`,
+            kind: "study-deadline",
+            title: deadline.title || "Entrega",
+            prefix: subject ? subject.shortName : (deadline.type || "Estudo"),
+            subjectCode: subject ? subject.code : (deadline.subjectCode || null),
+            meta: `${subject ? subject.shortName : (deadline.type || "Estudo")} | ${dueMeta.label}`,
+            dueDate: deadline.dueDate,
+            dueTime: deadline.dueTime || null,
+            dueAtMs: dueMeta.dueAtMs,
+            countdown: dueMeta.label,
+            tone: dueMeta.tone
+          };
+        })
+        .sort((a, b) => a.dueAtMs - b.dueAtMs);
+    }
+
+    function getHomeTimelineTickets(referenceDate, studyDeadlines, workTasks) {
+      const horizonMs = 72 * 60 * 60 * 1000;
+      const studyTickets = studyDeadlines.map((item) => ({
+        key: item.key,
+        label: item.prefix,
+        title: item.title,
+        meta: item.meta,
+        countdown: item.countdown,
+        tone: item.tone,
+        dueAtMs: item.dueAtMs
+      }));
+      const workTickets = (workTasks || [])
+        .filter((task) => task && task.status !== "done" && task.dueDate)
+        .map((task) => {
+          const dueMeta = getHomeDueMeta(task.dueDate, null, referenceDate);
+          return {
+            key: `work-deadline-${task.id}`,
+            label: task.scope === "company" && window.WorkDomain ? window.WorkDomain.companyName(task.companyId) : "Geral",
+            title: task.title,
+            meta: task.nextAction || formatWorkTaskMeta(task, toIsoDate(referenceDate)),
+            countdown: dueMeta.label,
+            tone: dueMeta.tone,
+            dueAtMs: dueMeta.dueAtMs
+          };
+        })
+        .filter((item) => item.dueAtMs - referenceDate.getTime() <= horizonMs);
+
+      const merged = [...studyTickets, ...workTickets].sort((a, b) => a.dueAtMs - b.dueAtMs);
+      if (merged.length <= 6) return merged;
+      return [...merged.slice(0, 5), {
+        key: "timeline-overflow",
+        label: "Mais",
+        title: `+ ${merged.length - 5} itens no horizonte`,
+        meta: "Abra estudos e trabalho para ver o restante.",
+        countdown: "overflow",
+        tone: "accent",
+        dueAtMs: Number.POSITIVE_INFINITY
+      }];
+    }
+
+    function getHomeChangesSinceLastSeen(referenceDate, lastSeenAt, workTasks) {
+      const fallbackCutoff = referenceDate.getTime() - (24 * 60 * 60 * 1000);
+      const lastSeenMs = new Date(lastSeenAt).getTime();
+      const cutoffMs = Number.isFinite(lastSeenMs) ? lastSeenMs : fallbackCutoff;
+      const changes = [];
+
+      (state.deadlines || []).forEach((deadline) => {
+        const timestamp = getHomeRecordTimestamp(deadline);
+        if (timestamp <= cutoffMs) return;
+        const subject = deadline.subjectCode ? getSubject(deadline.subjectCode) : null;
+        const action = deadline.createdAt && new Date(deadline.createdAt).getTime() > cutoffMs
+          ? "Novo prazo"
+          : deadline.deliveredAt && new Date(deadline.deliveredAt).getTime() > cutoffMs
+            ? "Entrega concluida"
+            : "Prazo atualizado";
+        changes.push({
+          title: `${subject ? subject.shortName : (deadline.type || "Estudo")}: ${deadline.title || "Entrega"}`,
+          meta: `${action} | ${deadline.dueDate ? formatDateLong(parseDate(deadline.dueDate)) : "sem data"}`,
+          stamp: formatDateTimeShort(new Date(timestamp).toISOString()),
+          timestamp
+        });
+      });
+
+      (workTasks || []).forEach((task) => {
+        const timestamp = getHomeRecordTimestamp(task);
+        if (timestamp <= cutoffMs) return;
+        const company = task.scope === "company" && window.WorkDomain ? window.WorkDomain.companyName(task.companyId) : "Geral";
+        const action = task.createdAt && new Date(task.createdAt).getTime() > cutoffMs
+          ? "Nova tarefa"
+          : task.status === "done"
+            ? "Concluida"
+            : task.status === "waiting"
+              ? "Aguardando retorno"
+              : "Atualizada";
+        changes.push({
+          title: `${company}: ${task.title}`,
+          meta: `${action} | ${task.nextAction || "sem proxima acao registrada"}`,
+          stamp: formatDateTimeShort(new Date(timestamp).toISOString()),
+          timestamp
+        });
+      });
+
+      return changes.sort((a, b) => b.timestamp - a.timestamp).slice(0, 4);
+    }
+
+    function getHomeStuckItems(referenceDate, workTasks) {
+      const cutoffMs = referenceDate.getTime() - (7 * 24 * 60 * 60 * 1000);
+      return (workTasks || [])
+        .filter((task) => task && (task.status === "inbox" || task.status === "waiting"))
+        .map((task) => {
+          const timestamp = getHomeRecordTimestamp(task);
+          const company = task.scope === "company" && window.WorkDomain ? window.WorkDomain.companyName(task.companyId) : "Geral";
+          const days = Math.max(7, Math.floor((referenceDate.getTime() - timestamp) / (24 * 60 * 60 * 1000)));
+          return {
+            title: `${company}: ${task.title}`,
+            meta: `${task.status === "waiting" ? "Aguardando" : "Inbox"} | parado ha ${days} dias`,
+            stamp: task.status === "waiting" ? "waiting" : "inbox",
+            timestamp
+          };
+        })
+        .filter((item) => item.timestamp <= cutoffMs)
+        .sort((a, b) => a.timestamp - b.timestamp)
+        .slice(0, 4);
+    }
+
+    function getHomeNextExamAcross(referenceDate) {
+      return DATA.subjects
+        .map((subject) => {
+          const exam = getNextExam(subject, referenceDate);
+          if (!exam) return null;
+          return { subject, exam, dateObj: parseDate(exam.examDate) };
+        })
+        .filter(Boolean)
+        .sort((a, b) => a.dateObj - b.dateObj)[0] || null;
+    }
+
+    function getHomeRadarSubjects(referenceDate, studyDeadlines) {
+      const deadlineSubjects = new Set(studyDeadlines.map((item) => item.subjectCode).filter(Boolean));
+      return DATA.subjects.filter((subject) => {
+        if (deadlineSubjects.has(subject.code)) return true;
+        const exam = getNextExam(subject, referenceDate);
+        return exam ? daysBetween(referenceDate, parseDate(exam.examDate)) <= 45 : false;
+      }).length;
+    }
+
+    function buildHomePrimaryDecision(plan, studyDeadlines, buckets, referenceDate) {
+      const candidates = [];
+      const activeTask = state.activeSession ? getTask(state.activeSession.taskId) : null;
+      const activeSubject = activeTask ? getSubject(activeTask.subjectCode) : null;
+
+      if (activeTask && activeSubject) {
+        candidates.push({
+          key: `study-task-${activeTask.id}`,
+          type: "study",
+          prefix: activeSubject.shortName,
+          title: activeTask.title,
+          reason: "Sessao ja iniciada. Continue a frente aberta antes de trocar de contexto.",
+          actionLabel: "Continuar sessao",
+          actionAttrs: `data-home-open-studies`,
+          score: 999
+        });
+      }
+
+      if (plan) {
+        const studyMinutes = getTaskMinutes(plan.task);
+        const studyDeadline = studyDeadlines.find((item) => item.subjectCode === plan.subject.code) || null;
+        const nextExam = getNextExam(plan.subject, referenceDate);
+        let score = 62;
+        let reason = studyMinutes <= 30
+          ? `Fila curta: ${studyMinutes} min de friccao baixa.`
+          : "Mantem a materia andando antes de virar urgencia.";
+        if (studyDeadline) {
+          const deadlineDays = daysBetween(referenceDate, parseDate(studyDeadline.dueDate));
+          if (deadlineDays <= 1) {
+            score += 24;
+            reason = `${studyDeadline.title} vence ${studyDeadline.countdown}.`;
+          } else if (deadlineDays <= 3) {
+            score += 12;
+            reason = `${studyDeadline.title} entra na janela curta em ${deadlineDays} dias.`;
+          }
+        } else if (nextExam) {
+          const examDays = daysBetween(referenceDate, parseDate(nextExam.examDate));
+          if (examDays <= 7) {
+            score += 10;
+            reason = `${nextExam.label} em ${Math.max(0, examDays)} dias.`;
+          }
+        }
+        if (state.mode === "m30") score += studyMinutes <= 30 ? 22 : -12;
+        if (state.mode === "exausto") score += studyMinutes <= 30 ? 8 : -6;
+        candidates.push({
+          key: `study-task-${plan.task.id}`,
+          type: "study",
+          prefix: plan.subject.shortName,
+          title: plan.task.title,
+          reason,
+          actionLabel: state.mode === "m30" ? "Iniciar pomodoro curto" : "Iniciar pomodoro (25 min)",
+          actionAttrs: `data-home-start-task="${escapeHtml(plan.task.id)}"`,
+          score
+        });
+      }
+
+      const overdueTask = (buckets.overdue || [])[0] || null;
+      if (overdueTask) {
+        const company = overdueTask.scope === "company" && window.WorkDomain ? window.WorkDomain.companyName(overdueTask.companyId) : "Geral";
+        candidates.push({
+          key: `work-task-${overdueTask.id}`,
+          type: "work",
+          prefix: company,
+          title: overdueTask.title,
+          reason: overdueTask.dueDate ? `Atrasada ${getHomeDueMeta(overdueTask.dueDate, null, referenceDate).label}.` : "Ja deveria ter andado e ainda esta aberta.",
+          actionLabel: "Marcar como concluida",
+          actionAttrs: `data-home-complete-work="${escapeHtml(overdueTask.id)}"`,
+          score: state.mode === "exausto" ? 80 : 92
+        });
+      }
+
+      const dueSoonTask = (buckets.critical || []).find((task) => task && task.dueDate) || null;
+      if (dueSoonTask) {
+        const company = dueSoonTask.scope === "company" && window.WorkDomain ? window.WorkDomain.companyName(dueSoonTask.companyId) : "Geral";
+        candidates.push({
+          key: `work-task-${dueSoonTask.id}`,
+          type: "work",
+          prefix: company,
+          title: dueSoonTask.title,
+          reason: `Prazo ${getHomeDueMeta(dueSoonTask.dueDate, null, referenceDate).label}.`,
+          actionLabel: "Marcar como concluida",
+          actionAttrs: `data-home-complete-work="${escapeHtml(dueSoonTask.id)}"`,
+          score: state.mode === "exausto" ? 70 : 82
+        });
+      }
+
+      const todayTask = (buckets.today || [])[0] || null;
+      if (todayTask) {
+        const company = todayTask.scope === "company" && window.WorkDomain ? window.WorkDomain.companyName(todayTask.companyId) : "Geral";
+        candidates.push({
+          key: `work-task-${todayTask.id}`,
+          type: "work",
+          prefix: company,
+          title: todayTask.title,
+          reason: todayTask.nextAction || "Ja cabe hoje, sem depender de outra frente.",
+          actionLabel: "Marcar como concluida",
+          actionAttrs: `data-home-complete-work="${escapeHtml(todayTask.id)}"`,
+          score: state.mode === "m30" ? 74 : 68
+        });
+      }
+
+      const sorted = candidates.sort((a, b) => b.score - a.score);
+      return {
+        primary: sorted[0] || null,
+        alternatives: sorted.slice(1, 3)
+      };
+    }
+
+    function syncHomeCaptureModalOptions(WD) {
+      if (!WD) return;
+      if (elements.homeCaptureCompany) {
+        const companyOptions = WD.COMPANIES.map((company) => `<option value="${company.id}">${escapeHtml(company.name)}</option>`).join("");
+        elements.homeCaptureCompany.innerHTML = `<option value="">Geral</option>${companyOptions}`;
+      }
+      if (elements.homeCapturePriority) {
+        elements.homeCapturePriority.innerHTML = WD.PRIORITIES.map((priority) => `
+          <option value="${priority.value}"${priority.value === "medium" ? " selected" : ""}>${escapeHtml(priority.label)}</option>
+        `).join("");
+      }
+    }
+
+    function renderHomeDashboard(plan, queue, referenceDate) {
+      const WD = window.WorkDomain;
+      const root = elements.homeDashboardRoot || elements.homePage;
+      if (!root) return;
+
+      const todayIso = toIsoDate(referenceDate);
+      const weekAnchor = state.workWeekAnchor || todayIso;
+      const workTasks = state.workTasks || [];
+      const buckets = WD ? WD.dashboardBuckets(workTasks, todayIso, weekAnchor) : { today: [], overdue: [], waiting: [], critical: [], companies: [] };
+      const studyDeadlines = getStudyDeadlineItems(referenceDate);
+      const studyQueueItems = (queue || []).slice(0, 6).map((item) => ({
+        key: `study-task-${item.task.id}`,
+        title: `${item.subject.shortName}: ${item.task.title}`,
+        meta: `${getTaskMinutes(item.task)} min | fila de hoje`
+      }));
+      const timelineTickets = getHomeTimelineTickets(referenceDate, studyDeadlines, workTasks);
+      const lastHomeOpenAt = state.lastHomeOpenAt;
+      const changesSinceLastSeen = getHomeChangesSinceLastSeen(referenceDate, lastHomeOpenAt, workTasks);
+      const stuckItems = getHomeStuckItems(referenceDate, workTasks);
+      const decision = buildHomePrimaryDecision(plan, studyDeadlines, buckets, referenceDate);
+      const primary = decision.primary;
+      const usefulWindow = getHomeUsefulWindow(referenceDate);
+      const nextExamAcross = getHomeNextExamAcross(referenceDate);
+      const radarSubjects = getHomeRadarSubjects(referenceDate, studyDeadlines);
+      const weekOpenTasks = workTasks.filter((task) => task && task.status !== "done" && task.scheduledDayIso && task.scheduledDayIso >= weekAnchor && task.scheduledDayIso <= toIsoDate(addDays(parseDate(weekAnchor), 6))).length;
+      const timelineKeys = new Set(timelineTickets.map((item) => item.key));
+      const primaryKey = primary ? primary.key : null;
+      const studyScopeItems = [
+        ...studyQueueItems,
+        ...studyDeadlines.map((item) => ({ key: item.key, title: `${item.prefix}: ${item.title}`, meta: item.meta }))
+      ].filter((item) => item.key !== primaryKey && !timelineKeys.has(item.key)).slice(0, 4);
+      const workScopeItems = [
+        ...(buckets.overdue || []).map((task) => ({ key: `work-task-${task.id}`, title: task.title, meta: formatWorkTaskMeta(task, todayIso) })),
+        ...(buckets.today || []).map((task) => ({ key: `work-task-${task.id}`, title: task.title, meta: formatWorkTaskMeta(task, todayIso) })),
+        ...(buckets.waiting || []).map((task) => ({ key: `work-task-${task.id}`, title: task.title, meta: task.nextAction || "Aguardando retorno" }))
+      ].filter((item) => item.key !== primaryKey && !timelineKeys.has(item.key)).slice(0, 4);
+      const companyChips = (buckets.companies || []).map((summary) => ({
+        id: summary.company.id,
+        title: summary.company.name,
+        count: summary.openCount
+      })).filter((item) => item.count > 0);
+
+      syncHomeCaptureModalOptions(WD);
+      elements.homePage.dataset.homeMode = state.mode;
+
+      const heroCopy = state.mode === "exausto"
+        ? (primary ? "Proteja energia. Resolva apenas uma frente com o menor atrito possivel." : "Hoje a regra e simplificar, nao expandir.")
+        : state.mode === "foco"
+          ? ""
+          : (primary ? primary.reason : "Sem urgencia real agora. Use a home para manter clareza, nao para criar ansiedade.");
+      const altMarkup = decision.alternatives.length
+        ? `<div class="home-alt-list">${decision.alternatives.map((item) => `
+            <div class="home-alt-item">
+              <span>${escapeHtml(item.prefix)}</span>
+              <strong>${escapeHtml(item.title)}</strong>
+              <span>${escapeHtml(item.reason)}</span>
+            </div>
+          `).join("")}</div>`
+        : `<div class="home-empty">Sem segunda fila relevante agora.</div>`;
+
+      root.innerHTML = `
+        <section class="home-layer home-layer--hero">
+          <article class="home-card home-hero-card">
+            <div class="home-hero-shell">
+              <div class="home-hero-main">
+                <span class="home-window-pill">${escapeHtml(usefulWindow.label)}</span>
+                <div class="home-hero-title">
+                  <span class="home-hero-prefix">${escapeHtml(primary ? primary.prefix : "Painel principal")}</span>
+                  <h2>${escapeHtml(primary ? primary.title : "Nenhuma frente critica por enquanto.")}</h2>
+                </div>
+                <p class="home-hero-reason">${escapeHtml(heroCopy || usefulWindow.detail)}</p>
+                <div class="home-hero-actions">
+                  ${primary ? `<button class="btn btn-primary home-primary-action" type="button" ${primary.actionAttrs}>${escapeHtml(primary.actionLabel)}</button>` : `<button class="btn btn-primary home-primary-action" type="button" data-home-open-studies>Revisar fila academica</button>`}
+                  <button class="home-secondary-link" type="button" data-home-capture-open>Abrir captura rapida</button>
+                </div>
+              </div>
+              <div class="home-hero-side home-hero-support">
+                <div class="home-hero-meta">
+                  <div class="home-metric" data-tone="study">
+                    <span class="home-metric-label">Estudos</span>
+                    <strong class="home-metric-value">${escapeHtml(String(studyQueueItems.length))}</strong>
+                    <span class="home-metric-copy">${escapeHtml(studyDeadlines.length ? `${studyDeadlines.length} prazo(s) em aberto` : "sem prazo academico aberto")}</span>
+                  </div>
+                  <div class="home-metric" data-tone="work">
+                    <span class="home-metric-label">Trabalho</span>
+                    <strong class="home-metric-value">${escapeHtml(String((buckets.overdue || []).length + (buckets.today || []).length))}</strong>
+                    <span class="home-metric-copy">${escapeHtml((buckets.overdue || []).length ? `${(buckets.overdue || []).length} atrasada(s)` : "sem item no vermelho")}</span>
+                  </div>
+                </div>
+                ${altMarkup}
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="home-layer home-layer--timeline">
+          ${timelineTickets.length ? `<div class="home-ticket-list">${timelineTickets.map((item) => `
+            <article class="home-ticket${item.key === "timeline-overflow" ? " home-ticket-overflow" : ""}" data-tone="${escapeHtml(item.tone || "accent")}">
+              ${item.key === "timeline-overflow"
+                ? `<strong>${escapeHtml(item.title)}</strong><span class="home-ticket-meta">${escapeHtml(item.meta)}</span>`
+                : `<div class="home-ticket-top"><span class="home-ticket-label">${escapeHtml(item.label)}</span><span class="home-ticket-countdown">${escapeHtml(item.countdown)}</span></div><strong>${escapeHtml(item.title)}</strong><p class="home-ticket-meta">${escapeHtml(item.meta)}</p>`}
+            </article>
+          `).join("")}</div>` : `<div class="home-empty">Nada pressiona as proximas 72h.</div>`}
+        </section>
+
+        <section class="home-layer home-layer--pulse-new">
+          <article class="home-card home-section-card">
+            <div class="home-card-top">
+              <div>
+                <span class="home-card-eyebrow">Pulse</span>
+                <h3>Desde a ultima abertura</h3>
+                <p class="home-card-copy">${escapeHtml(lastHomeOpenAt ? "So o que entrou ou mudou desde a sua ultima leitura." : "Primeira leitura desta versao. A partir de agora o app marca so mudancas novas.")}</p>
+              </div>
+              <span class="chip accent">${escapeHtml(String(changesSinceLastSeen.length))}</span>
+            </div>
+            ${renderHomeList(changesSinceLastSeen, "Nada novo. Sem surpresas desde a ultima abertura.", { itemClass: "home-list-item--pulse" })}
+          </article>
+        </section>
+
+        <section class="home-layer home-layer--pulse-stuck">
+          <article class="home-card home-section-card">
+            <div class="home-card-top">
+              <div>
+                <span class="home-card-eyebrow">Higiene</span>
+                <h3>Parado ha 7 dias</h3>
+                <p class="home-card-copy">Inbox e aguardando que ficaram velhos demais para continuar invisiveis.</p>
+              </div>
+              <span class="chip warning">${escapeHtml(String(stuckItems.length))}</span>
+            </div>
+            ${renderHomeList(stuckItems, "Inbox limpa. Nenhum item envelhecendo sem toque.", { itemClass: "home-list-item--stuck" })}
+          </article>
+        </section>
+
+        <section class="home-layer home-layer--study">
+          <article class="home-card home-section-card">
+            <div class="home-card-top">
+              <div>
+                <span class="home-card-eyebrow">Estudos</span>
+                <h3>Escopo academico</h3>
+                <p class="home-card-copy">Fila curta, prova mais proxima e materias que seguem no radar.</p>
+              </div>
+            </div>
+            ${renderHomeSectionMetrics([
+              { label: "Materias no radar", value: radarSubjects || 0 },
+              { label: "Fila de hoje", value: studyQueueItems.length },
+              { label: "Proxima prova", value: nextExamAcross ? nextExamAcross.subject.shortName : "--" }
+            ])}
+            ${renderHomeList(studyScopeItems, "Sem acao academica alem da decisao principal.")}
+          </article>
+        </section>
+
+        <section class="home-layer home-layer--work">
+          <article class="home-card home-section-card">
+            <div class="home-card-top">
+              <div>
+                <span class="home-card-eyebrow">Trabalho</span>
+                <h3>Escopo executivo</h3>
+                <p class="home-card-copy">Semana aberta, pendencias atrasadas e pontos travados fora de voce.</p>
+              </div>
+            </div>
+            ${renderHomeSectionMetrics([
+              { label: "Abertas na semana", value: weekOpenTasks },
+              { label: "Atrasadas", value: (buckets.overdue || []).length },
+              { label: "Aguardando", value: (buckets.waiting || []).length }
+            ])}
+            ${renderHomeList(workScopeItems, "Sem outra frente executiva puxando prioridade agora.")}
+          </article>
+        </section>
+
+        <section class="home-layer home-layer--portfolio">
+          <article class="home-card home-portfolio-card">
+            <div class="home-portfolio-intro">
+              <span class="home-card-eyebrow">Portfolio</span>
+              <h3>Empresas em foco</h3>
+            </div>
+            ${companyChips.length ? companyChips.map((item) => `
+              <button type="button" class="home-portfolio-chip" data-home-work-filter="${escapeHtml(item.id)}">
+                <span>${escapeHtml(item.title)}</span>
+                <span class="home-portfolio-chip-count">${escapeHtml(String(item.count))}</span>
+              </button>
+            `).join("") : `<div class="home-empty">Nenhuma empresa com demanda aberta agora.</div>`}
+          </article>
+        </section>
+      `;
+
+      state.lastHomeOpenAt = new Date().toISOString();
+      saveState();
+    }
+
+    function openHomeCaptureModal() {
+      if (!elements.homeCaptureModalBackdrop) return;
+      elements.homeCaptureModalBackdrop.setAttribute("data-open", "true");
+      elements.homeCaptureModalBackdrop.setAttribute("aria-hidden", "false");
+      const input = elements.homeCaptureModalBackdrop.querySelector('input[name="title"]');
+      if (input) setTimeout(() => input.focus(), 20);
+    }
+
+    function closeHomeCaptureModal() {
+      if (!elements.homeCaptureModalBackdrop) return;
+      elements.homeCaptureModalBackdrop.removeAttribute("data-open");
+      elements.homeCaptureModalBackdrop.setAttribute("aria-hidden", "true");
+      const form = elements.homeCaptureModalBackdrop.querySelector("#homeQuickCaptureForm");
+      if (form) form.reset();
+    }
+
     function renderPageVisibility(referenceDate) {
       const currentPage = getPrimaryPage();
       const studySection = getStudySection();
@@ -1602,6 +2180,8 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       const onGrades = onStudies && studySection === "grades";
 
       if (elements.homePage) elements.homePage.hidden = !onHome;
+      if (elements.homeCaptureFab) elements.homeCaptureFab.hidden = !onHome;
+      if (!onHome) closeHomeCaptureModal();
       if (elements.newsPage) elements.newsPage.hidden = !onNews;
       if (elements.studyNavBar) elements.studyNavBar.hidden = !onStudies;
       if (elements.workPage) elements.workPage.hidden = !onWork;
@@ -1814,6 +2394,32 @@ function safeRenderStep(label, fn) {
       document.addEventListener("click", (event) => {
         const studyBtn = event.target && event.target.closest ? event.target.closest("[data-home-open-studies]") : null;
         if (studyBtn) openPage("studies");
+        const startStudyBtn = event.target && event.target.closest ? event.target.closest("[data-home-start-task]") : null;
+        if (startStudyBtn) {
+          startTask(startStudyBtn.getAttribute("data-home-start-task"));
+          openStudySection("dashboard");
+        }
+        const completeWorkBtn = event.target && event.target.closest ? event.target.closest("[data-home-complete-work]") : null;
+        if (completeWorkBtn && window.WorkPlanner && typeof window.WorkPlanner.updateTask === "function") {
+          window.WorkPlanner.updateTask(completeWorkBtn.getAttribute("data-home-complete-work"), { status: "done" }, "Tarefa concluida.");
+        }
+        const homeCaptureOpenBtn = event.target && event.target.closest ? event.target.closest("[data-home-capture-open]") : null;
+        if (homeCaptureOpenBtn) openHomeCaptureModal();
+      });
+
+      if (elements.homeCaptureFab) elements.homeCaptureFab.addEventListener("click", openHomeCaptureModal);
+      if (elements.homeCaptureCancel) elements.homeCaptureCancel.addEventListener("click", closeHomeCaptureModal);
+      if (elements.homeCaptureModalBackdrop) {
+        elements.homeCaptureModalBackdrop.addEventListener("click", (event) => {
+          if (event.target === elements.homeCaptureModalBackdrop) closeHomeCaptureModal();
+        });
+      }
+      document.addEventListener("submit", (event) => {
+        const captureForm = event.target && event.target.closest ? event.target.closest("#homeQuickCaptureForm") : null;
+        if (captureForm) closeHomeCaptureModal();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeHomeCaptureModal();
       });
 
       if (elements.themeToggle) elements.themeToggle.addEventListener("click", toggleTheme);
