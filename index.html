@@ -118,8 +118,8 @@
     </div>
 
     
-    <main id="homePage">
-      <section class="home-dashboard" aria-label="Tela principal executiva">
+    <main id="homePage" data-home-mode="normal">
+      <section class="home-dashboard" id="homeDashboardRoot" aria-label="Painel principal">
         <!-- Linha 1: FOCO DO DIA (hero, full width) -->
         <article class="card home-card home-card--hero" id="homeTodayCard"></article>
 
@@ -132,8 +132,7 @@
         <article class="card home-card home-card--work" id="homeOverdueCard"></article>
 
         <!-- Linha 4: NAVEGAÇÃO + AÇÃO (empresas + captura rápida) -->
-        <article class="card home-card home-card--companies" id="homeCompaniesCard"></article>
-        <article class="card home-card home-card--capture" id="homeQuickCaptureCard"></article>
+        
       </section>
     </main>
 
@@ -684,9 +683,55 @@
   <div class="mobile-focusbar" id="mobileFocusbar" hidden></div>
   <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-  
+  <button class="home-capture-fab" id="homeCaptureFab" type="button" aria-controls="homeCaptureModalBackdrop" aria-haspopup="dialog" aria-label="Capturar tarefa de trabalho" hidden>
+    <span aria-hidden="true">+</span>
+  </button>
 
-  
+  <div class="modal-backdrop" id="homeCaptureModalBackdrop" aria-hidden="true">
+    <div class="modal home-capture-modal" role="dialog" aria-labelledby="homeCaptureModalTitle">
+      <h3 class="modal-title" id="homeCaptureModalTitle">Captura rápida de trabalho</h3>
+      <form id="homeQuickCaptureForm" class="modal-body home-capture-form">
+        <div class="field">
+          <span>O que precisa andar?</span>
+          <input type="text" name="title" maxlength="180" autocomplete="off" placeholder="Ex: validar retorno do jurídico" required />
+        </div>
+        <div class="field">
+          <span>Próxima ação objetiva</span>
+          <input type="text" name="nextAction" maxlength="220" autocomplete="off" placeholder="Ex: cobrar minuta e revisar pendências" />
+        </div>
+        <div class="deadline-form-grid">
+          <div class="field">
+            <span>Empresa</span>
+            <select name="companyId" id="homeCaptureCompany">
+              <option value="">Geral</option>
+            </select>
+          </div>
+          <div class="field">
+            <span>Destino</span>
+            <select name="target" id="homeCaptureTarget">
+              <option value="inbox">Inbox</option>
+              <option value="today">Hoje</option>
+            </select>
+          </div>
+        </div>
+        <div class="deadline-form-grid">
+          <div class="field">
+            <span>Prazo real</span>
+            <input type="date" name="dueDate" />
+          </div>
+          <div class="field">
+            <span>Prioridade</span>
+            <select name="priority" id="homeCapturePriority"></select>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-ghost" id="homeCaptureCancel">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar tarefa</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <div class="modal-backdrop" id="todoModalBackdrop" aria-hidden="true">
     <div class="modal" role="dialog" aria-labelledby="todoModalTitle">
       <h3 class="modal-title" id="todoModalTitle">Nova tarefa</h3>

@@ -2,7 +2,7 @@
   "use strict";
 
   const STORAGE_KEY = "poli-study-motor-v1";
-  const SCHEMA_VERSION = 7;
+  const SCHEMA_VERSION = 8;
 
   const STUDY_SECTIONS = ["dashboard", "week", "fc", "calendar", "grades"];
 const PRIMARY_PAGES = ["home", "studies", "news", "work"];
@@ -43,6 +43,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
     newsKnownIds: [],
     newsBrowserNotificationsEnabled: false,
     newsLastSyncAt: null,
+    lastHomeOpenAt: null,
     workTasks: [],
     workFilter: "all",
     workWeekAnchor: null,
@@ -263,6 +264,10 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       safe.newsLastSyncAt = typeof safe.newsLastSyncAt === "string" ? safe.newsLastSyncAt : null;
     }
 
+    if (version < 8) {
+      safe.lastHomeOpenAt = typeof safe.lastHomeOpenAt === "string" ? safe.lastHomeOpenAt : null;
+    }
+
     safe.schemaVersion = SCHEMA_VERSION;
     return safe;
   }
@@ -306,6 +311,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       newsKnownIds: sanitizeNewsIds(parsed.newsKnownIds),
       newsBrowserNotificationsEnabled: normalizeBoolean(parsed.newsBrowserNotificationsEnabled, defaultState.newsBrowserNotificationsEnabled),
       newsLastSyncAt: typeof parsed.newsLastSyncAt === "string" ? parsed.newsLastSyncAt : null,
+      lastHomeOpenAt: typeof parsed.lastHomeOpenAt === "string" ? parsed.lastHomeOpenAt : null,
       workTasks: sanitizeWorkTasks(parsed.workTasks),
       workFilter: normalizeWorkFilter(parsed.workFilter),
       workWeekAnchor: normalizeIsoDate(parsed.workWeekAnchor),
@@ -494,6 +500,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       newsKnownIds: sanitizeNewsIds([...(currentSafe.newsKnownIds || []), ...(incomingSafe.newsKnownIds || [])]),
       newsBrowserNotificationsEnabled: Boolean(currentSafe.newsBrowserNotificationsEnabled || incomingSafe.newsBrowserNotificationsEnabled),
       newsLastSyncAt: pickLatestIso(currentSafe.newsLastSyncAt, incomingSafe.newsLastSyncAt),
+      lastHomeOpenAt: pickLatestIso(currentSafe.lastHomeOpenAt, incomingSafe.lastHomeOpenAt),
       workFilter: incomingSafe.workFilter || currentSafe.workFilter,
       workWeekAnchor: incomingSafe.workWeekAnchor || currentSafe.workWeekAnchor,
       backupMeta: currentSafe.backupMeta
