@@ -123,11 +123,24 @@
     function renderBrandStrip() {
       const el = document.getElementById("workBrandStrip");
       if (!el) return;
-      el.innerHTML = WD.COMPANIES.map((company) =>
-        '<article class="work-brand-card" data-company-id="' + company.id + '">' +
-          renderCompanyIdentity(company, { size: "lg", role: "Investida do portfolio" }) +
-        '</article>'
-      ).join("");
+      const summaries = WD.companySummaries(state.workTasks || [], WD.todayIso(), currentWeekIsos());
+      el.innerHTML = summaries.map((summary) => {
+        const badgeTone = summary.overdueCount ? "danger" : (summary.waitingCount ? "warning" : "success");
+        const badgeLabel = summary.overdueCount
+          ? summary.overdueCount + " em atraso"
+          : (summary.waitingCount ? summary.waitingCount + " aguardando" : "sem pressao");
+        return '<article class="work-brand-card" data-company-id="' + summary.company.id + '">' +
+          '<div class="work-brand-card-top">' +
+            renderCompanyIdentity(summary.company, { size: "lg", role: "Investida do portfolio" }) +
+            '<span class="work-state-pill work-state-pill--' + badgeTone + '">' + escapeHtml(badgeLabel) + '</span>' +
+          '</div>' +
+          '<div class="work-brand-metrics">' +
+            '<div class="work-brand-metric"><strong>' + summary.openCount + '</strong><span>abertas</span></div>' +
+            '<div class="work-brand-metric"><strong>' + summary.weekCount + '</strong><span>na semana</span></div>' +
+            '<div class="work-brand-metric"><strong>' + summary.waitingCount + '</strong><span>aguardando</span></div>' +
+          '</div>' +
+        '</article>';
+      }).join("");
     }
 
     function renderStats() {
@@ -302,6 +315,38 @@
               '<span><strong>' + summary.waitingCount + '</strong> aguardando</span>' +
             '</div>' +
             '<div class="work-company-actions"><span>Próximas ações</span>' + actions + '</div>' +
+          '</article>';
+        }).join("") + '</div>';
+    }
+
+    function renderCompanySummary() {
+      const el = document.getElementById("workCompanySummary");
+      if (!el) return;
+      const summaries = WD.companySummaries(state.workTasks || [], WD.todayIso(), currentWeekIsos());
+      el.innerHTML = '<div class="work-panel-heading compact"><h3>Resumo por empresa</h3><span class="chip neutral">FIPs</span></div>' +
+        '<div class="work-company-grid">' + summaries.map((summary) => {
+          const actions = summary.nextActions.length
+            ? '<ul>' + summary.nextActions.map((action) => '<li>' + escapeHtml(action) + '</li>').join("") + '</ul>'
+            : '<div class="mini muted">Sem proxima acao aberta.</div>';
+          const badgeTone = summary.overdueCount ? "danger" : (summary.waitingCount ? "warning" : "success");
+          const badgeLabel = summary.overdueCount
+            ? summary.overdueCount + " atrasada(s)"
+            : (summary.waitingCount ? summary.waitingCount + " aguardando" : "fluxo limpo");
+          return '<article class="work-company-card" data-company-id="' + summary.company.id + '">' +
+            '<div class="work-company-top">' +
+              renderCompanyIdentity(summary.company, { size: "sm", compact: true, role: "Investida" }) +
+              '<div class="work-company-top-actions">' +
+                '<span class="work-state-pill work-state-pill--' + badgeTone + '">' + escapeHtml(badgeLabel) + '</span>' +
+                '<button type="button" data-work-filter="' + summary.company.id + '" data-company-id="' + summary.company.id + '">Filtrar</button>' +
+              '</div>' +
+            '</div>' +
+            '<div class="work-company-metrics">' +
+              '<span><strong>' + summary.openCount + '</strong> abertas</span>' +
+              '<span><strong>' + summary.weekCount + '</strong> semana</span>' +
+              '<span><strong>' + summary.overdueCount + '</strong> atrasadas</span>' +
+              '<span><strong>' + summary.waitingCount + '</strong> aguardando</span>' +
+            '</div>' +
+            '<div class="work-company-actions"><span>Proximas acoes</span>' + actions + '</div>' +
           '</article>';
         }).join("") + '</div>';
     }

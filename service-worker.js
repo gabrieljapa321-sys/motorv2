@@ -1,4 +1,4 @@
-const CACHE_NAME = "motor-estudo-shell-v20260421-companylogos1";
+﻿const CACHE_NAME = "motor-estudo-shell-v20260421-workredo1";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -111,3 +111,5 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
+
+

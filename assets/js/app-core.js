@@ -2079,29 +2079,43 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
           <article class="home-card home-hero-card">
             <div class="home-hero-shell">
               <div class="home-hero-main">
-                <div class="home-window-pill">
-                  <span class="home-window-kicker">${escapeHtml(usefulWindow.label)}</span>
-                  <strong class="home-window-value">${escapeHtml(usefulWindow.value || usefulWindow.label)}</strong>
-                </div>
-                <div class="home-hero-spotlight">
-                  <div class="home-hero-title">
-                    <span class="home-hero-prefix"${primary && primary.companyId ? ` data-company-id="${escapeHtml(primary.companyId)}"` : ""}>${escapeHtml(primary ? primary.prefix : "Painel principal")}</span>
-                    <h2>${escapeHtml(primary ? primary.title : "Nenhuma frente critica por enquanto.")}</h2>
+                <div class="home-focus-board">
+                  <div class="home-focus-head">
+                    <div class="home-window-pill">
+                      <span class="home-window-kicker">${escapeHtml(usefulWindow.label)}</span>
+                      <strong class="home-window-value">${escapeHtml(usefulWindow.value || usefulWindow.label)}</strong>
+                    </div>
+                    <span class="home-focus-kicker">Foco central</span>
                   </div>
-                  <p class="home-hero-reason">${escapeHtml(heroCopy || usefulWindow.detail)}</p>
-                  <div class="home-hero-actions">
-                    ${primary ? `<button class="btn btn-primary home-primary-action" type="button" ${primary.actionAttrs}>${escapeHtml(primary.actionLabel)}</button>` : `<button class="btn btn-primary home-primary-action" type="button" data-home-open-studies>Revisar fila academica</button>`}
-                    <button class="home-secondary-link" type="button" data-home-capture-open>Abrir captura rapida</button>
+                  <div class="home-focus-body">
+                    <div class="home-focus-meta">
+                      <span class="home-hero-prefix"${primary && primary.companyId ? ` data-company-id="${escapeHtml(primary.companyId)}"` : ""}>${escapeHtml(primary ? primary.prefix : "Painel principal")}</span>
+                      <span class="home-focus-context">${escapeHtml(primary ? "frente que mais importa agora" : "estado geral do dia")}</span>
+                    </div>
+                    <div class="home-focus-copy">
+                      <h2>${escapeHtml(primary ? primary.title : "Nenhuma frente critica por enquanto.")}</h2>
+                      <p class="home-hero-reason">${escapeHtml(heroCopy || usefulWindow.detail)}</p>
+                    </div>
+                    <div class="home-hero-actions">
+                      ${primary ? `<button class="btn btn-primary home-primary-action" type="button" ${primary.actionAttrs}>${escapeHtml(primary.actionLabel)}</button>` : `<button class="btn btn-primary home-primary-action" type="button" data-home-open-studies>Revisar fila academica</button>`}
+                      <button class="home-secondary-link" type="button" data-home-capture-open>Abrir captura rapida</button>
+                    </div>
                   </div>
                 </div>
-                <div class="home-hero-brief">
-                  ${heroBriefItems.map((item) => `
-                    <article class="home-brief-card">
-                      <span class="home-brief-label">${escapeHtml(item.label)}</span>
-                      <strong class="home-brief-value">${escapeHtml(item.value)}</strong>
-                      <span class="home-brief-meta">${escapeHtml(item.meta)}</span>
-                    </article>
-                  `).join("")}
+                <div class="home-brief-ribbon">
+                  <div class="home-brief-ribbon-top">
+                    <span class="home-card-eyebrow">Leitura rapida</span>
+                    <span class="home-brief-ribbon-copy">4 sinais para decidir sem abrir outras abas.</span>
+                  </div>
+                  <div class="home-hero-brief">
+                    ${heroBriefItems.map((item) => `
+                      <article class="home-brief-card">
+                        <span class="home-brief-label">${escapeHtml(item.label)}</span>
+                        <strong class="home-brief-value">${escapeHtml(item.value)}</strong>
+                        <span class="home-brief-meta">${escapeHtml(item.meta)}</span>
+                      </article>
+                    `).join("")}
+                  </div>
                 </div>
               </div>
               <div class="home-hero-side home-hero-support">

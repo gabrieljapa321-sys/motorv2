@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   "use strict";
 
   if (typeof window.bootStudyApp === "function") {
@@ -13,9 +13,11 @@
 
   if ("serviceWorker" in navigator && /^https?:/i.test(window.location.protocol)) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./service-worker.js?v=20260421-companylogos1").catch((error) => {
+      navigator.serviceWorker.register("./service-worker.js?v=20260421-workredo1").catch((error) => {
         console.error("[pwa] falha ao registrar service worker:", error);
       });
     });
   }
 })();
+
+
