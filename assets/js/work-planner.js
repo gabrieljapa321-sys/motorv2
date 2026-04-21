@@ -48,6 +48,28 @@
       return date ? formatDateShort(date) : "—";
     }
 
+    function renderCompanyMark(company, options) {
+      const meta = WD.companyMeta(company.id) || company;
+      const opts = options || {};
+      const sizeClass = opts.size ? " work-brand-mark--" + opts.size : "";
+      const mixBlend = meta.logoBlend && meta.logoBlend !== "normal"
+        ? ' style="mix-blend-mode:' + escapeHtml(meta.logoBlend) + ';"'
+        : "";
+      return '<div class="work-brand-mark work-brand-mark--' + escapeHtml(meta.logoSurface || "brand-light") + sizeClass + '" data-company-id="' + company.id + '">' +
+        '<img src="' + escapeHtml(meta.logoPath) + '" alt="' + escapeHtml(meta.logoAlt || ("Logo da " + company.name)) + '"' + mixBlend + ' loading="lazy" decoding="async" />' +
+      '</div>';
+    }
+
+    function renderCompanyIdentity(company, options) {
+      const opts = options || {};
+      const compactClass = opts.compact ? " work-company-brand--compact" : "";
+      const role = opts.role ? '<span>' + escapeHtml(opts.role) + '</span>' : "";
+      return '<div class="work-company-brand' + compactClass + '" data-company-id="' + company.id + '">' +
+        renderCompanyMark(company, { size: opts.size || "md" }) +
+        '<div class="work-company-brand-copy"><strong>' + escapeHtml(company.name) + '</strong>' + role + '</div>' +
+      '</div>';
+    }
+
     function getFilter() {
       const allowed = WD.FILTERS.map((item) => item.value);
       return allowed.indexOf(state.workFilter) === -1 ? "all" : state.workFilter;
@@ -82,6 +104,7 @@
     function renderWorkPlanner() {
       renderHeader();
       renderFormOptions();
+      renderBrandStrip();
       renderStats();
       renderFilters();
       renderPlanner();
@@ -95,6 +118,16 @@
       const start = currentWeekStart;
       const end = WD.addDays(start, 6);
       setText("workWeekRange", formatDateShort(start) + " - " + formatDateShort(end) + " · " + WEEKDAY_FULL[start.getDay()] + " a " + WEEKDAY_FULL[end.getDay()]);
+    }
+
+    function renderBrandStrip() {
+      const el = document.getElementById("workBrandStrip");
+      if (!el) return;
+      el.innerHTML = WD.COMPANIES.map((company) =>
+        '<article class="work-brand-card" data-company-id="' + company.id + '">' +
+          renderCompanyIdentity(company, { size: "lg", role: "Investida do portfolio" }) +
+        '</article>'
+      ).join("");
     }
 
     function renderStats() {
@@ -258,7 +291,10 @@
             ? '<ul>' + summary.nextActions.map((action) => '<li>' + escapeHtml(action) + '</li>').join("") + '</ul>'
             : '<div class="mini muted">Sem próxima ação aberta.</div>';
           return '<article class="work-company-card" data-company-id="' + summary.company.id + '">' +
-            '<div class="work-company-top"><strong>' + escapeHtml(summary.company.name) + '</strong><button type="button" data-work-filter="' + summary.company.id + '" data-company-id="' + summary.company.id + '">Filtrar</button></div>' +
+            '<div class="work-company-top">' +
+              renderCompanyIdentity(summary.company, { size: "sm", compact: true, role: "Investida" }) +
+              '<button type="button" data-work-filter="' + summary.company.id + '" data-company-id="' + summary.company.id + '">Filtrar</button>' +
+            '</div>' +
             '<div class="work-company-metrics">' +
               '<span><strong>' + summary.openCount + '</strong> abertas</span>' +
               '<span><strong>' + summary.weekCount + '</strong> semana</span>' +

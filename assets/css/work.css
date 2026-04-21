@@ -54,6 +54,90 @@
 .work-hero > div:first-child { max-width: 760px; }
 .work-hero h2 { margin: 2px 0 0; }
 .work-week-range { margin-top: 10px; font-size: 0.95rem; font-weight: 800; color: var(--accent, #2563eb); }
+.work-brand-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.work-brand-card {
+  border: 1px solid color-mix(in srgb, var(--company-accent) 16%, var(--line));
+  border-radius: var(--radius-lg);
+  padding: 12px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--company-accent) 7%, var(--bg-elevated)) 0%, var(--bg-elevated) 100%);
+  min-width: 0;
+}
+.work-company-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.work-company-brand-copy {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+.work-company-brand-copy strong {
+  font-size: 0.95rem;
+  line-height: 1.1;
+  color: color-mix(in srgb, var(--company-accent) 88%, var(--text));
+}
+.work-company-brand-copy span {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted, #6b7280);
+}
+.work-company-brand--compact {
+  gap: 10px;
+}
+.work-company-brand--compact .work-company-brand-copy strong {
+  font-size: 0.88rem;
+}
+.work-company-brand--compact .work-company-brand-copy span {
+  font-size: 0.68rem;
+}
+.work-brand-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-width: 124px;
+  border-radius: 16px;
+  padding: 10px 16px;
+  background: #fff;
+  overflow: hidden;
+}
+.work-brand-mark img {
+  display: block;
+  max-width: 100%;
+  max-height: 28px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.work-brand-mark--brand-dark {
+  background: #00524C;
+}
+.work-brand-mark--brand-light {
+  background: #fff;
+}
+.work-brand-mark--lg {
+  min-height: 62px;
+}
+.work-brand-mark--md {
+  min-height: 52px;
+}
+.work-brand-mark--sm {
+  min-width: 104px;
+  min-height: 44px;
+  padding: 8px 12px;
+}
+.work-brand-mark--sm img {
+  max-height: 22px;
+}
 .work-week-controls {
   display: flex;
   gap: 8px;
@@ -287,6 +371,9 @@
   background: color-mix(in srgb, var(--company-accent) 14%, white);
   color: var(--company-accent);
 }
+.work-company-top .work-company-brand {
+  flex: 1;
+}
 .work-company-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
 .work-company-metrics span {
   border-radius: var(--radius-md);
@@ -312,6 +399,7 @@
   .work-bottom-grid { grid-template-columns: 1fr; }
   .work-stats { grid-template-columns: repeat(3, minmax(140px, 1fr)); }
   .work-week-planner { grid-template-columns: repeat(7, minmax(190px, 1fr)); }
+  .work-brand-strip { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
   .work-hero,
@@ -320,6 +408,14 @@
   .work-week-controls { justify-content: flex-start; max-width: none; width: 100%; }
   .work-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .work-company-metrics { grid-template-columns: repeat(2, 1fr); }
+  .work-brand-card,
+  .work-company-top { align-items: flex-start; }
+  .work-company-top {
+    gap: 10px;
+  }
+  .work-company-top button {
+    align-self: flex-start;
+  }
 }
 @media (max-width: 520px) {
   .work-stats { grid-template-columns: 1fr; }

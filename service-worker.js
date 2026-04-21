@@ -1,4 +1,4 @@
-const CACHE_NAME = "motor-estudo-shell-v20260421-companycolors1";
+const CACHE_NAME = "motor-estudo-shell-v20260421-companylogos1";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -8,6 +8,9 @@ const APP_SHELL = [
   "./assets/data/exercises.json",
   "./assets/data/news.json",
   "./assets/data/ticker-tape.json",
+  "./assets/brand-logos/logo-beneva.png",
+  "./assets/brand-logos/logo-itamaraca.png",
+  "./assets/brand-logos/logo-tsea.webp",
   "./assets/css/app.css",
   "./assets/css/base.css",
   "./assets/css/dashboard.css",

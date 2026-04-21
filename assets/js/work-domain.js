@@ -2,9 +2,33 @@
   "use strict";
 
   const COMPANIES = Object.freeze([
-    { id: "beneva", name: "BENEVA" },
-    { id: "tsea", name: "TSEA" },
-    { id: "itamaraca-spe", name: "ITAMARACÁ SPE" }
+    {
+      id: "beneva",
+      name: "BENEVA",
+      accent: "#00524C",
+      logoPath: "assets/brand-logos/logo-beneva.png",
+      logoAlt: "Logo da BENEVA",
+      logoSurface: "brand-dark",
+      logoBlend: "normal"
+    },
+    {
+      id: "tsea",
+      name: "TSEA",
+      accent: "#FF000D",
+      logoPath: "assets/brand-logos/logo-tsea.webp",
+      logoAlt: "Logo da TSEA",
+      logoSurface: "brand-light",
+      logoBlend: "normal"
+    },
+    {
+      id: "itamaraca-spe",
+      name: "ITAMARACÁ SPE",
+      accent: "#13407F",
+      logoPath: "assets/brand-logos/logo-itamaraca.png",
+      logoAlt: "Logo da ITAMARACÁ",
+      logoSurface: "brand-light",
+      logoBlend: "multiply"
+    }
   ]);
 
   const PRIORITIES = Object.freeze([
@@ -101,6 +125,10 @@
   function companyName(companyId) {
     const company = COMPANIES.find((item) => item.id === companyId);
     return company ? company.name : "Geral";
+  }
+
+  function companyMeta(companyId) {
+    return COMPANIES.find((item) => item.id === companyId) || null;
   }
 
   function priorityLabel(value) {
@@ -285,6 +313,7 @@
     normalizeIso,
     hasCompany,
     companyName,
+    companyMeta,
     priorityLabel,
     priorityRank,
     statusLabel,
