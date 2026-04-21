@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motor de Estudo · Poli-USP</title>
   <meta name="theme-color" content="#171717" />
-  <link rel="manifest" href="manifest.webmanifest?v=20260420-worklayout1" />
+  <link rel="manifest" href="manifest.webmanifest?v=20260420-news2" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/app.css?v=20260420-worklayout1" />
-  <script charset="utf-8" src="assets/js/polyfills.js?v=20260420-worklayout1"></script>
+  <link rel="stylesheet" href="assets/css/app.css?v=20260420-news2" />
+  <script charset="utf-8" src="assets/js/polyfills.js?v=20260420-news2"></script>
 
 </head>
 <body data-layout="browser">
@@ -32,6 +32,7 @@
       <nav class="tb-nav" aria-label="Navegacao principal">
         <button type="button" class="tb-nav-btn active" data-nav-page="home">Painel principal</button>
         <button type="button" class="tb-nav-btn" data-nav-page="studies">Estudos</button>
+        <button type="button" class="tb-nav-btn" data-nav-page="news">Notícias <span class="tb-nav-badge" id="newsNavBadge" hidden>0</span></button>
         <button type="button" class="tb-nav-btn" data-nav-page="work">Trabalho</button>
       </nav>
 
@@ -113,6 +114,50 @@
         <article class="card home-card" id="homeDeadlinesCard"></article>
         <article class="card home-card" id="homeCompaniesCard"></article>
         <article class="card home-card home-card--capture" id="homeQuickCaptureCard"></article>
+      </section>
+    </main>
+
+    <main id="newsPage" hidden>
+      <section class="news-shell" aria-label="Notícias de mercado e investimentos">
+        <section class="card news-toolbar">
+          <div class="news-toolbar-main">
+            <div>
+              <p class="eyebrow">Caixa de entrada de mercado</p>
+              <h2>Últimas atualizações</h2>
+              <p>O feed é atualizado por arquivo externo e o app destaca o que chegou desde a última leitura.</p>
+            </div>
+            <div class="news-toolbar-actions">
+              <button type="button" class="btn btn-ghost" id="newsPermissionBtn">Ativar alertas</button>
+              <button type="button" class="btn btn-soft" id="newsRefreshBtn">Atualizar agora</button>
+            </div>
+          </div>
+          <div class="news-status-row">
+            <span class="chip neutral" id="newsUpdatedAtChip">Atualizando…</span>
+            <span class="chip accent" id="newsUnreadChip">0 novas</span>
+          </div>
+          <div class="news-filter-row" id="newsCategoryFilters" aria-label="Categorias de notícias"></div>
+          <div class="news-filter-row" id="newsSourceFilters" aria-label="Fontes de notícias"></div>
+        </section>
+
+        <section class="news-layout">
+          <div class="news-main-stack">
+            <article class="card news-lead-card" id="newsLeadCard"></article>
+            <article class="card news-feed-card">
+              <div class="news-feed-header">
+                <div>
+                  <h3>Feed</h3>
+                  <p>Manchetes recentes, ordenadas por horário de publicação.</p>
+                </div>
+              </div>
+              <div class="news-feed-list" id="newsFeedList"></div>
+            </article>
+          </div>
+
+          <aside class="news-side-stack">
+            <article class="card news-inbox-card" id="newsInboxCard"></article>
+            <article class="card news-digest-card" id="newsDigestCard"></article>
+          </aside>
+        </section>
       </section>
     </main>
 
@@ -861,23 +906,24 @@
   </div>
 
   
-  <script charset="utf-8" src="assets/js/app-data.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/store.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/dates.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/work-domain.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/theme.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/backup.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/sync-service.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/app-core.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/app-pages.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/week-planner.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/study-features.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/app-actions.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/work-planner.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/app-init.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260420-worklayout1"></script>
-  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260420-worklayout1"></script>
+  <script charset="utf-8" src="assets/js/app-data.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/store.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/dates.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/work-domain.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/theme.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/backup.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/sync-service.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/app-core.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/app-pages.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/week-planner.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/study-features.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/app-actions.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/work-planner.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/news-feed.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/app-init.js?v=20260420-news2"></script>
+  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260420-news2"></script>
+  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260420-news2"></script>
 </body>
 </html>

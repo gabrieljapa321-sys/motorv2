@@ -2,10 +2,10 @@
   "use strict";
 
   const STORAGE_KEY = "poli-study-motor-v1";
-  const SCHEMA_VERSION = 6;
+  const SCHEMA_VERSION = 7;
 
   const STUDY_SECTIONS = ["dashboard", "week", "fc", "calendar", "grades"];
-  const PRIMARY_PAGES = ["home", "studies", "work"];
+const PRIMARY_PAGES = ["home", "studies", "news", "work"];
   const WORK_COMPANY_IDS = ["beneva", "tsea", "itamaraca-spe"];
   const WORK_PRIORITIES = ["critical", "high", "medium", "low"];
   const WORK_STATUSES = ["inbox", "planned", "doing", "waiting", "done"];
@@ -37,6 +37,12 @@
     exerciseProgress: {},
     exerciseSubjectFilter: "ALL",
     currentExerciseId: null,
+    newsCategory: "all",
+    newsSource: "all",
+    newsSeenIds: [],
+    newsKnownIds: [],
+    newsBrowserNotificationsEnabled: false,
+    newsLastSyncAt: null,
     workTasks: [],
     workFilter: "all",
     workWeekAnchor: null,
@@ -144,6 +150,24 @@
     return allowed.includes(value) ? value : "all";
   }
 
+  function normalizeNewsFilter(value) {
+    return typeof value === "string" && value.trim() ? value.slice(0, 80) : "all";
+  }
+
+  function sanitizeNewsIds(values) {
+    if (!Array.isArray(values)) return [];
+    const seen = new Set();
+    const output = [];
+    values.forEach((value) => {
+      if (typeof value !== "string") return;
+      const clean = value.trim().slice(0, 160);
+      if (!clean || seen.has(clean)) return;
+      seen.add(clean);
+      output.push(clean);
+    });
+    return output.slice(0, 600);
+  }
+
   function normalizeIsoDate(value) {
     if (typeof value !== "string") return null;
     const clean = value.slice(0, 10);
@@ -230,6 +254,15 @@
       safe.currentPage = PRIMARY_PAGES.includes(previousPage) ? previousPage : (previousPage === "work" ? "work" : (previousPage === "dashboard" ? "home" : "studies"));
     }
 
+    if (version < 7) {
+      safe.newsCategory = safe.newsCategory || "all";
+      safe.newsSource = safe.newsSource || "all";
+      safe.newsSeenIds = Array.isArray(safe.newsSeenIds) ? safe.newsSeenIds : [];
+      safe.newsKnownIds = Array.isArray(safe.newsKnownIds) ? safe.newsKnownIds : [];
+      safe.newsBrowserNotificationsEnabled = Boolean(safe.newsBrowserNotificationsEnabled);
+      safe.newsLastSyncAt = typeof safe.newsLastSyncAt === "string" ? safe.newsLastSyncAt : null;
+    }
+
     safe.schemaVersion = SCHEMA_VERSION;
     return safe;
   }
@@ -267,6 +300,12 @@
       exerciseProgress: sanitizeExerciseProgress(parsed.exerciseProgress),
       exerciseSubjectFilter: normalizeExerciseSubjectFilter(parsed.exerciseSubjectFilter),
       currentExerciseId: typeof parsed.currentExerciseId === "string" ? parsed.currentExerciseId : null,
+      newsCategory: normalizeNewsFilter(parsed.newsCategory),
+      newsSource: normalizeNewsFilter(parsed.newsSource),
+      newsSeenIds: sanitizeNewsIds(parsed.newsSeenIds),
+      newsKnownIds: sanitizeNewsIds(parsed.newsKnownIds),
+      newsBrowserNotificationsEnabled: normalizeBoolean(parsed.newsBrowserNotificationsEnabled, defaultState.newsBrowserNotificationsEnabled),
+      newsLastSyncAt: typeof parsed.newsLastSyncAt === "string" ? parsed.newsLastSyncAt : null,
       workTasks: sanitizeWorkTasks(parsed.workTasks),
       workFilter: normalizeWorkFilter(parsed.workFilter),
       workWeekAnchor: normalizeIsoDate(parsed.workWeekAnchor),
@@ -313,6 +352,8 @@
       weeklyTodos: (safeState.weeklyTodos || []).length,
       flashcards: safeState.flashcards.length,
       examSimulations: safeState.examSimulations.length,
+      newsKnownItems: (safeState.newsKnownIds || []).length,
+      newsSeenItems: (safeState.newsSeenIds || []).length,
       workTasks: (safeState.workTasks || []).length,
       openWorkTasks,
       waitingWorkTasks
@@ -447,6 +488,12 @@
       exerciseProgress: mergeExerciseProgress(currentSafe.exerciseProgress, incomingSafe.exerciseProgress),
       exerciseSubjectFilter: normalizeExerciseSubjectFilter(incomingSafe.exerciseSubjectFilter || currentSafe.exerciseSubjectFilter),
       currentExerciseId: incomingSafe.currentExerciseId || currentSafe.currentExerciseId,
+      newsCategory: incomingSafe.newsCategory || currentSafe.newsCategory,
+      newsSource: incomingSafe.newsSource || currentSafe.newsSource,
+      newsSeenIds: sanitizeNewsIds([...(currentSafe.newsSeenIds || []), ...(incomingSafe.newsSeenIds || [])]),
+      newsKnownIds: sanitizeNewsIds([...(currentSafe.newsKnownIds || []), ...(incomingSafe.newsKnownIds || [])]),
+      newsBrowserNotificationsEnabled: Boolean(currentSafe.newsBrowserNotificationsEnabled || incomingSafe.newsBrowserNotificationsEnabled),
+      newsLastSyncAt: pickLatestIso(currentSafe.newsLastSyncAt, incomingSafe.newsLastSyncAt),
       workFilter: incomingSafe.workFilter || currentSafe.workFilter,
       workWeekAnchor: incomingSafe.workWeekAnchor || currentSafe.workWeekAnchor,
       backupMeta: currentSafe.backupMeta

@@ -89,7 +89,7 @@ class BrowserSmokeTests(unittest.TestCase):
 
     def test_primary_and_study_navigation_visibility(self):
         self._goto()
-        for target, selector in [("home", "#homePage"), ("studies", "#dashboardPage"), ("work", "#workPage")]:
+        for target, selector in [("home", "#homePage"), ("studies", "#dashboardPage"), ("news", "#newsPage"), ("work", "#workPage")]:
             self.page.click(f".tb-nav-btn[data-nav-page='{target}']")
             self.page.wait_for_timeout(250)
             self.assertTrue(self.page.locator(selector).is_visible(), f"{selector} deveria estar visivel")
@@ -144,6 +144,15 @@ class BrowserSmokeTests(unittest.TestCase):
         hint_button.click()
         self.page.wait_for_timeout(150)
         self.assertTrue(self.page.locator("#fcStudyPanel").get_by_text("Pistas liberadas").is_visible())
+        self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
+
+    def test_news_feed_page_loads_items_and_updates_inbox(self):
+        self._goto()
+        self.page.click(".tb-nav-btn[data-nav-page='news']")
+        self.page.wait_for_selector("#newsPage")
+        self.page.wait_for_selector("#newsFeedList .news-item-card")
+        self.assertGreater(self.page.locator("#newsFeedList .news-item-card").count(), 0)
+        self.assertTrue(self.page.locator("#newsInboxCard").get_by_text("Caixa de entrada").is_visible())
         self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
 
     def test_work_task_flow_company_filter_waiting_done_and_persistence(self):

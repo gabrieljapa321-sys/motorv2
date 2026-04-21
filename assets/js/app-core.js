@@ -21,6 +21,7 @@
     const CALENDAR_UI = UI_CONFIG.calendar || {};
     const GRADE_UI = UI_CONFIG.grades || {};
     const NOTES_UI = UI_CONFIG.notes || {};
+    const NEWS_UI = UI_CONFIG.news || {};
     const DEFAULT_STATE = STORE_API.DEFAULT_STATE;
 
     const {
@@ -63,6 +64,7 @@
       deadlinesCount: document.getElementById("deadlinesCount"),
       subjectsCount: document.getElementById("subjectsCount"),
       homePage: document.getElementById("homePage"),
+      newsPage: document.getElementById("newsPage"),
       dashboardPage: document.getElementById("dashboardPage"),
       weekPage: document.getElementById("weekPage"),
       fcPage: document.getElementById("fcPage"),
@@ -1263,6 +1265,12 @@ function renderDeadlineFormCard(referenceDate) {
             title: "Planner executivo de FIPs",
             subtitle: "Tarefas gerais e por empresa, com semana, atrasados e dependencias em destaque."
           }
+        : pageKey === "news"
+          ? {
+              eyebrow: "Notícias",
+              title: "Mercado em tempo quase real",
+              subtitle: "Fluxo contínuo de manchetes com caixa de entrada para novidades."
+            }
         : pageKey === "home"
           ? {
               eyebrow: "Painel principal",
@@ -1335,7 +1343,7 @@ function renderDeadlineFormCard(referenceDate) {
     }
 
     const STUDY_SECTIONS = ["dashboard", "week", "fc", "calendar", "grades"];
-    const PRIMARY_PAGES = ["home", "studies", "work"];
+const PRIMARY_PAGES = ["home", "studies", "news", "work"];
 
     function normalizePrimaryPage(value) {
       if (PRIMARY_PAGES.includes(value)) return value;
@@ -1458,6 +1466,7 @@ function renderDeadlineFormCard(referenceDate) {
       const onHome = currentPage === "home";
       const onStudies = currentPage === "studies";
       const onWork = currentPage === "work";
+      const onNews = currentPage === "news";
       const onStudyDashboard = onStudies && studySection === "dashboard";
       const onWeek = onStudies && studySection === "week";
       const onFc = onStudies && studySection === "fc";
@@ -1465,6 +1474,7 @@ function renderDeadlineFormCard(referenceDate) {
       const onGrades = onStudies && studySection === "grades";
 
       if (elements.homePage) elements.homePage.hidden = !onHome;
+      if (elements.newsPage) elements.newsPage.hidden = !onNews;
       if (elements.studyNavBar) elements.studyNavBar.hidden = !onStudies;
       if (elements.workPage) elements.workPage.hidden = !onWork;
       if (elements.dashboardPage) elements.dashboardPage.hidden = !onStudyDashboard;
@@ -1586,6 +1596,18 @@ function safeRenderStep(label, fn) {
         return;
       }
 
+      if (primaryPage === "news") {
+        safeRenderStep("notícias", () => {
+          if (window.NewsFeed && typeof window.NewsFeed.render === "function") window.NewsFeed.render();
+        });
+        safeRenderStep("contadores", () => updateCollapseCounts());
+        if (elements.mobileFocusbar) {
+          elements.mobileFocusbar.innerHTML = "";
+          elements.mobileFocusbar.setAttribute("hidden", "");
+        }
+        return;
+      }
+
       const previousRenderPage = state.currentPage;
       state.currentPage = studySection;
       if (studySection !== "dashboard") plan = null;
@@ -1689,6 +1711,21 @@ function safeRenderStep(label, fn) {
       }
     }
 
+    function getStateSnapshot() {
+      return STORE_API.cloneState(state);
+    }
+
+    function commitState(updater, options = {}) {
+      if (typeof updater === "function") {
+        updater(state);
+      } else if (updater && typeof updater === "object") {
+        Object.assign(state, updater);
+      }
+      if (options.persist !== false) saveState();
+      if (options.render !== false) render();
+      return getStateSnapshot();
+    }
+
     function bootStudyApp() {
       if (window.__studyAppBooted) return;
       window.__studyAppBooted = true;
@@ -1707,13 +1744,21 @@ function safeRenderStep(label, fn) {
         openStudySection,
         setStudyMode,
         render,
+        getStateSnapshot,
+        commitState,
         exportStateBackup,
         importStateBackupFromFile,
         applyPendingImport,
         cancelPendingImport,
         toggleCalendarLegend,
         toggleDashboardFocusMode,
-        setNotesSearchTerm
+        setNotesSearchTerm,
+        showToast,
+        newsConfig: {
+          pollMinutes: Number(NEWS_UI.defaultPollMinutes || 5),
+          newWindowMinutes: Number(NEWS_UI.newWindowMinutes || 180),
+          maxInboxItems: Number(NEWS_UI.maxInboxItems || 12)
+        }
       };
       window.openPage = openPage;
       window.openStudySection = openStudySection;
@@ -1721,6 +1766,7 @@ function safeRenderStep(label, fn) {
       window.render = render;
       initEvents();
       if (typeof setupAppActionDelegation === "function") setupAppActionDelegation();
+      if (window.NewsFeed && typeof window.NewsFeed.init === "function") window.NewsFeed.init();
       render();
     }
 

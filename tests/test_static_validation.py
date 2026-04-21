@@ -33,7 +33,7 @@ class StaticValidationTests(unittest.TestCase):
     def test_navigation_is_split_between_primary_and_study_levels(self):
         html = INDEX_HTML.read_text(encoding="utf-8")
         main_nav_block = re.search(r'<nav class="tb-nav".*?</nav>', html, flags=re.S).group(0)
-        self.assertEqual(re.findall(r'data-nav-page="([^"]+)"', main_nav_block), ["home", "studies", "work"])
+        self.assertEqual(re.findall(r'data-nav-page="([^"]+)"', main_nav_block), ["home", "studies", "news", "work"])
         self.assertIn('id="studyNavBar"', html)
         self.assertIn('data-study-page="dashboard"', html)
         self.assertIn('data-study-page="week"', html)
@@ -57,6 +57,7 @@ class StaticValidationTests(unittest.TestCase):
             "assets/js/flashcards-exams.js",
             "assets/js/app-actions.js",
             "assets/js/work-planner.js",
+            "assets/js/news-feed.js",
             "assets/js/app-init.js",
             "assets/js/firebase-init.js",
             "assets/js/auth-panel.js",
@@ -67,11 +68,11 @@ class StaticValidationTests(unittest.TestCase):
 
     def test_app_css_imports_domain_files(self):
         css = (CSS_DIR / "app.css").read_text(encoding="utf-8")
-        for name in ["base.css", "dashboard.css", "calendar.css", "grades.css", "week.css", "flashcards.css", "work.css"]:
+        for name in ["base.css", "dashboard.css", "calendar.css", "grades.css", "week.css", "flashcards.css", "news.css", "work.css"]:
             self.assertIn(name, css)
 
     def test_json_data_files_exist_and_are_valid(self):
-        for name in ["study-data.json", "ui-config.json", "exercises.json"]:
+        for name in ["study-data.json", "ui-config.json", "exercises.json", "news.json"]:
             payload = json.loads((DATA_DIR / name).read_text(encoding="utf-8"))
             self.assertIsInstance(payload, dict)
 
