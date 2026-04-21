@@ -39,13 +39,14 @@
 .work-hero p { margin: 4px 0 0; color: var(--text-muted, #6b7280); }
 .work-shell {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(320px, 0.82fr);
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "hero hero"
-    "stats stats"
-    "filters filters"
-    "planner side"
-    "bottom bottom";
+    "hero"
+    "stats"
+    "filters"
+    "planner"
+    "side"
+    "bottom";
   gap: 18px;
   align-items: start;
 }
@@ -355,11 +356,15 @@
 .work-layout {
   grid-area: side;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
+  grid-template-columns: minmax(320px, 0.85fr) minmax(0, 1fr);
+  gap: 16px;
   align-items: start;
 }
-.work-side-stack { display: grid; gap: 14px; }
+.work-side-stack {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 .work-panel-heading.compact { align-items: center; }
 .work-task-form { display: grid; gap: 10px; }
 .work-task-form input,
@@ -367,16 +372,20 @@
 .work-task-form select {
   width: 100%;
 }
+.work-capture-panel {
+  position: sticky;
+  top: 102px;
+}
 .field-full { grid-column: 1 / -1; }
 .compact-actions { display: flex; justify-content: flex-end; gap: 8px; }
 .work-list { display: grid; gap: 9px; min-height: 64px; }
 .work-list--compact .work-task { padding: 11px; }
 .work-week-planner {
   display: grid;
-  grid-template-columns: repeat(7, minmax(150px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(7, minmax(172px, 1fr));
+  gap: 12px;
   overflow-x: auto;
-  padding-bottom: 4px;
+  padding: 4px 2px 8px;
 }
 .work-planner-panel {
   grid-area: planner;
@@ -386,10 +395,10 @@
 }
 .work-planner-panel .work-panel-heading { align-items: center; }
 .work-day-col {
-  min-height: 228px;
+  min-height: 256px;
   border: 1px solid color-mix(in srgb, var(--line-strong) 42%, transparent);
   border-radius: var(--radius-xl);
-  padding: 12px;
+  padding: 14px;
   background: linear-gradient(180deg, color-mix(in srgb, var(--bg-elevated) 94%, white) 0%, var(--bg-soft) 100%);
 }
 .work-day-col[data-today="true"] { border-color: var(--accent, #2563eb); }
@@ -408,6 +417,10 @@
   font-size: 0.78rem;
 }
 .work-day-list { display: grid; gap: 9px; margin-top: 10px; }
+.work-inbox-panel,
+.work-waiting-panel {
+  min-width: 0;
+}
 .work-empty-drop,
 .empty-state {
   color: var(--text-muted, #6b7280);
@@ -420,10 +433,11 @@
   position: relative;
   border: 1px solid color-mix(in srgb, var(--line-strong) 28%, transparent);
   border-radius: var(--radius-lg);
-  padding: 11px 12px;
+  padding: 12px 13px;
   background: linear-gradient(180deg, color-mix(in srgb, var(--bg-elevated) 96%, white) 0%, var(--bg-elevated) 100%);
   box-shadow: var(--shadow-sm);
   transition: border-color var(--motion-fast) var(--ease-out), box-shadow var(--motion-fast) var(--ease-out);
+  min-width: 0;
 }
 .work-task[data-company-id]:not([data-overdue="true"]) {
   border-color: color-mix(in srgb, var(--company-accent) 38%, transparent);
@@ -447,6 +461,11 @@
 .work-task-check-wrap { padding-top: 2px; }
 .work-task-body { flex: 1; min-width: 0; }
 .work-task-title { font-weight: 800; }
+.work-task-title,
+.work-task-action,
+.work-task-notes {
+  overflow-wrap: anywhere;
+}
 .work-task-action { margin-top: 4px; color: var(--text-muted, #6b7280); font-size: 0.86rem; }
 .work-task-meta { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
 .work-chip {
@@ -548,17 +567,8 @@
 @media (max-width: 1100px) {
   .home-dashboard,
   .work-bottom-grid { grid-template-columns: 1fr; }
-  .work-shell {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "hero"
-      "stats"
-      "filters"
-      "planner"
-      "side"
-      "bottom";
-  }
-  .work-layout { grid-template-columns: 1fr; }
+  .work-layout,
+  .work-side-stack { grid-template-columns: 1fr; }
   .work-hero {
     grid-template-columns: 1fr;
   }
@@ -571,6 +581,10 @@
     justify-content: flex-start;
     min-width: 0;
     max-width: none;
+  }
+  .work-capture-panel {
+    position: static;
+    top: auto;
   }
 }
 @media (max-width: 720px) {
@@ -594,6 +608,9 @@
   }
   .work-filters {
     padding: 10px;
+  }
+  .work-week-planner {
+    grid-template-columns: repeat(7, minmax(174px, 1fr));
   }
 }
 @media (max-width: 520px) {
