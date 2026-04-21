@@ -113,6 +113,15 @@
 
       --topbar-h: 52px;
       --max: 1180px;
+      --page-max-home: 1320px;
+      --page-max-news: 1420px;
+      --page-max-work: 1460px;
+      --page-max-studies-dashboard: 1240px;
+      --page-max-studies-week: 1480px;
+      --page-max-studies-fc: 1320px;
+      --page-max-studies-calendar: 1360px;
+      --page-max-studies-grades: 1280px;
+      --page-max-active: var(--max);
 
       --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
       --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
@@ -171,6 +180,15 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
+
+    body[data-page-shell="home"] { --page-max-active: var(--page-max-home); }
+    body[data-page-shell="news"] { --page-max-active: var(--page-max-news); }
+    body[data-page-shell="work"] { --page-max-active: var(--page-max-work); }
+    body[data-page-shell="studies-dashboard"] { --page-max-active: var(--page-max-studies-dashboard); }
+    body[data-page-shell="studies-week"] { --page-max-active: var(--page-max-studies-week); }
+    body[data-page-shell="studies-fc"] { --page-max-active: var(--page-max-studies-fc); }
+    body[data-page-shell="studies-calendar"] { --page-max-active: var(--page-max-studies-calendar); }
+    body[data-page-shell="studies-grades"] { --page-max-active: var(--page-max-studies-grades); }
 
     button, input, select, textarea { font: inherit; color: inherit; }
     a { color: inherit; text-decoration: none; }
@@ -464,7 +482,7 @@
        ═══════════════════════════════════════════════════════════ */
 
     .shell {
-      max-width: var(--max);
+      max-width: var(--page-max-active, var(--max));
       margin: 0 auto;
       padding: var(--space-8) 24px 120px;
     }

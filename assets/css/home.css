@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-body[data-primary-page="home"] .shell {
-  max-width: 1308px;
-}
-
 .home-dashboard {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -825,10 +821,6 @@ body[data-primary-page="home"] .shell {
 }
 
 @media (max-width: 1120px) {
-  body[data-primary-page="home"] .shell {
-    max-width: var(--max);
-  }
-
   .home-dashboard {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

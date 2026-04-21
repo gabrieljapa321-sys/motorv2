@@ -123,7 +123,7 @@
           : (summary.waitingCount ? summary.waitingCount + " aguardando" : "sem pressao");
         return '<article class="work-brand-card" data-company-id="' + summary.company.id + '">' +
           '<div class="work-brand-card-top">' +
-            renderCompanyIdentity(summary.company, { size: "lg", role: "Investida do portfolio" }) +
+            renderCompanyIdentity(summary.company, { size: "lg", role: "Portfolio" }) +
             '<span class="work-state-pill work-state-pill--' + badgeTone + '">' + escapeHtml(badgeLabel) + '</span>' +
           '</div>' +
           '<div class="work-brand-metrics">' +

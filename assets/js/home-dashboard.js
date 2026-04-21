@@ -760,8 +760,15 @@ function renderHomeList(items, emptyText, options = {}) {
       const onFc = onStudies && studySection === "fc";
       const onCalendar = onStudies && studySection === "calendar";
       const onGrades = onStudies && studySection === "grades";
+      const shellFrame = onStudies ? `studies-${studySection}` : currentPage;
 
       document.body.setAttribute("data-primary-page", currentPage);
+      document.body.setAttribute("data-page-shell", shellFrame);
+      if (onStudies) {
+        document.body.setAttribute("data-study-page", studySection);
+      } else {
+        document.body.removeAttribute("data-study-page");
+      }
 
       if (elements.homePage) elements.homePage.hidden = !onHome;
       if (elements.homeCaptureFab) elements.homeCaptureFab.hidden = !onHome;
