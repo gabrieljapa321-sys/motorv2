@@ -247,7 +247,7 @@
     }
     const visibleItems = items.slice(0, runtime.feedVisibleCount);
     host.innerHTML = visibleItems.map((item) => `
-      <article class="news-item-card"${unread.has(item.id) ? ' data-unread="true"' : ""} data-news-item-id="${escapeHtml(item.id)}">
+      <article class="news-item-card"${unread.has(item.id) ? ' data-unread="true"' : ""} data-news-item-id="${escapeHtml(item.id)}" data-news-summary="${escapeHtml((item.summary || "Abra a fonte para ver a matéria completa.").slice(0, 220))}">
         <div class="news-item-top">
           <div class="news-item-headline">
             <h4>${escapeHtml(item.title)}</h4>

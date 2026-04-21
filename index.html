@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motor de Estudo · Poli-USP</title>
   <meta name="theme-color" content="#171717" />
-  <link rel="manifest" href="manifest.webmanifest?v=20260421-newscompact2" />
+  <link rel="manifest" href="manifest.webmanifest?v=20260421-newshover1" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/app.css?v=20260421-newscompact2" />
-  <script charset="utf-8" src="assets/js/polyfills.js?v=20260421-newscompact2"></script>
+  <link rel="stylesheet" href="assets/css/app.css?v=20260421-newshover1" />
+  <script charset="utf-8" src="assets/js/polyfills.js?v=20260421-newshover1"></script>
 
 </head>
 <body data-layout="browser">
@@ -135,19 +135,30 @@
             <span class="chip neutral" id="newsUpdatedAtChip">Atualizando…</span>
             <span class="chip accent" id="newsUnreadChip">0 novas</span>
           </div>
-          <div class="news-filter-grid">
-            <div class="news-filter-block">
-              <span class="news-filter-label">Categoria</span>
-              <div class="news-filter-row" id="newsCategoryFilters" aria-label="Categorias de notícias"></div>
-            </div>
-            <div class="news-filter-block">
-              <span class="news-filter-label">Fontes</span>
-              <div class="news-filter-row" id="newsSourceFilters" aria-label="Fontes de notícias"></div>
-            </div>
-          </div>
         </section>
 
         <section class="news-layout">
+          <aside class="news-side-stack">
+            <article class="card news-filter-card">
+              <div class="news-side-heading">
+                <h3>Filtros</h3>
+                <p>Refine o fluxo por categoria e fonte.</p>
+              </div>
+              <div class="news-filter-grid">
+                <div class="news-filter-block">
+                  <span class="news-filter-label">Categoria</span>
+                  <div class="news-filter-row" id="newsCategoryFilters" aria-label="Categorias de notícias"></div>
+                </div>
+                <div class="news-filter-block">
+                  <span class="news-filter-label">Fontes</span>
+                  <div class="news-filter-row" id="newsSourceFilters" aria-label="Fontes de notícias"></div>
+                </div>
+              </div>
+            </article>
+            <article class="card news-inbox-card" id="newsInboxCard"></article>
+            <article class="card news-digest-card" id="newsDigestCard"></article>
+          </aside>
+
           <div class="news-main-stack">
             <article class="card news-lead-card" id="newsLeadCard"></article>
             <article class="card news-feed-card">
@@ -160,11 +171,6 @@
               <div class="news-feed-list" id="newsFeedList"></div>
             </article>
           </div>
-
-          <aside class="news-side-stack">
-            <article class="card news-inbox-card" id="newsInboxCard"></article>
-            <article class="card news-digest-card" id="newsDigestCard"></article>
-          </aside>
         </section>
       </section>
     </main>
@@ -914,24 +920,24 @@
   </div>
 
   
-  <script charset="utf-8" src="assets/js/app-data.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/store.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/dates.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/work-domain.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/theme.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/backup.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/sync-service.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/app-core.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/app-pages.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/week-planner.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/study-features.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/app-actions.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/work-planner.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/news-feed.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/app-init.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260421-newscompact2"></script>
-  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260421-newscompact2"></script>
+  <script charset="utf-8" src="assets/js/app-data.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/store.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/dates.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/work-domain.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/theme.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/backup.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/sync-service.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/app-core.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/app-pages.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/week-planner.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/study-features.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/flashcards-exams.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/app-actions.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/work-planner.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/news-feed.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/app-init.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" type="module" src="assets/js/firebase-init.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/auth-panel.js?v=20260421-newshover1"></script>
+  <script charset="utf-8" src="assets/js/firebase-sync.js?v=20260421-newshover1"></script>
 </body>
 </html>

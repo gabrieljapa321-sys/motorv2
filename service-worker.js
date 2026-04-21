@@ -1,4 +1,4 @@
-const CACHE_NAME = "motor-estudo-shell-v20260421-newscompact2";
+const CACHE_NAME = "motor-estudo-shell-v20260421-newshover1";
 const APP_SHELL = [
   "./",
   "./index.html",
