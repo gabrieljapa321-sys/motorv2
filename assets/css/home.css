@@ -171,6 +171,11 @@ body[data-primary-page="home"] .shell {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+.home-hero-prefix[data-company-id] {
+  border: 1px solid color-mix(in srgb, var(--company-accent) 22%, transparent);
+  background: color-mix(in srgb, var(--company-accent) 12%, white);
+  color: var(--company-accent);
+}
 
 .home-hero-title h2 {
   margin: 0;
@@ -331,6 +336,9 @@ body[data-primary-page="home"] .shell {
   text-transform: uppercase;
   color: var(--muted);
 }
+.home-side-item-label[data-company-id] {
+  color: var(--company-accent);
+}
 
 .home-side-item strong {
   font-size: var(--text-sm);
@@ -376,6 +384,9 @@ body[data-primary-page="home"] .shell {
     box-shadow var(--motion-fast) var(--ease-out),
     transform var(--motion-fast) var(--ease-out);
 }
+.home-ticket[data-company-id] {
+  border-color: color-mix(in srgb, var(--company-accent) 24%, transparent);
+}
 
 .home-ticket:hover {
   border-color: var(--line-strong);
@@ -410,6 +421,11 @@ body[data-primary-page="home"] .shell {
   border-radius: var(--radius-full);
   background: color-mix(in srgb, var(--bg-elevated) 92%, white);
   color: var(--muted-strong);
+}
+.home-ticket-label[data-company-id] {
+  border: 1px solid color-mix(in srgb, var(--company-accent) 22%, transparent);
+  background: color-mix(in srgb, var(--company-accent) 12%, white);
+  color: var(--company-accent);
 }
 
 .home-ticket-title {
@@ -555,11 +571,20 @@ body[data-primary-page="home"] .shell {
     background var(--motion-fast) var(--ease-out),
     transform var(--motion-fast) var(--ease-out);
 }
+.home-portfolio-chip[data-company-id] {
+  border-color: color-mix(in srgb, var(--company-accent) 24%, transparent);
+  background: color-mix(in srgb, var(--company-accent) 10%, var(--bg-soft));
+  color: var(--company-accent);
+}
 
 .home-portfolio-chip:hover {
   border-color: var(--line-strong);
   background: var(--bg-elevated);
   transform: translateY(-1px);
+}
+.home-portfolio-chip[data-company-id]:hover {
+  border-color: color-mix(in srgb, var(--company-accent) 34%, transparent);
+  background: color-mix(in srgb, var(--company-accent) 14%, var(--bg-elevated));
 }
 
 .home-portfolio-chip-count {

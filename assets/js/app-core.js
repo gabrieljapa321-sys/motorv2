@@ -1740,6 +1740,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
           return {
             key: `work-deadline-${task.id}`,
             label: task.scope === "company" && window.WorkDomain ? window.WorkDomain.companyName(task.companyId) : "Geral",
+            companyId: task.scope === "company" ? task.companyId : null,
             title: task.title,
             meta: task.nextAction || formatWorkTaskMeta(task, toIsoDate(referenceDate)),
             countdown: dueMeta.label,
@@ -1910,6 +1911,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
           key: `work-task-${overdueTask.id}`,
           type: "work",
           prefix: company,
+          companyId: overdueTask.scope === "company" ? overdueTask.companyId : null,
           title: overdueTask.title,
           reason: overdueTask.dueDate ? `Atrasada ${getHomeDueMeta(overdueTask.dueDate, null, referenceDate).label}.` : "Ja deveria ter andado e ainda esta aberta.",
           actionLabel: "Marcar como concluida",
@@ -1925,6 +1927,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
           key: `work-task-${dueSoonTask.id}`,
           type: "work",
           prefix: company,
+          companyId: dueSoonTask.scope === "company" ? dueSoonTask.companyId : null,
           title: dueSoonTask.title,
           reason: `Prazo ${getHomeDueMeta(dueSoonTask.dueDate, null, referenceDate).label}.`,
           actionLabel: "Marcar como concluida",
@@ -1940,6 +1943,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
           key: `work-task-${todayTask.id}`,
           type: "work",
           prefix: company,
+          companyId: todayTask.scope === "company" ? todayTask.companyId : null,
           title: todayTask.title,
           reason: todayTask.nextAction || "Ja cabe hoje, sem depender de outra frente.",
           actionLabel: "Marcar como concluida",
@@ -2040,6 +2044,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       const supportList = decision.alternatives.length
         ? decision.alternatives.map((item) => ({
             label: item.prefix,
+            companyId: item.companyId || null,
             title: item.title,
             meta: item.reason
           }))
@@ -2054,6 +2059,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
             nextOverdueTask
               ? {
                   label: nextOverdueTask.scope === "company" && WD ? WD.companyName(nextOverdueTask.companyId) : "Geral",
+                  companyId: nextOverdueTask.scope === "company" ? nextOverdueTask.companyId : null,
                   title: nextOverdueTask.title,
                   meta: nextOverdueTask.dueDate ? `Atrasada desde ${nextOverdueTask.dueDate}` : "Ja deveria ter andado"
                 }
@@ -2079,7 +2085,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
                 </div>
                 <div class="home-hero-spotlight">
                   <div class="home-hero-title">
-                    <span class="home-hero-prefix">${escapeHtml(primary ? primary.prefix : "Painel principal")}</span>
+                    <span class="home-hero-prefix"${primary && primary.companyId ? ` data-company-id="${escapeHtml(primary.companyId)}"` : ""}>${escapeHtml(primary ? primary.prefix : "Painel principal")}</span>
                     <h2>${escapeHtml(primary ? primary.title : "Nenhuma frente critica por enquanto.")}</h2>
                   </div>
                   <p class="home-hero-reason">${escapeHtml(heroCopy || usefulWindow.detail)}</p>
@@ -2129,7 +2135,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
                   </div>
                   ${supportList.length ? `<div class="home-side-list">${supportList.map((item) => `
                     <div class="home-side-item">
-                      <span class="home-side-item-label">${escapeHtml(item.label)}</span>
+                      <span class="home-side-item-label"${item.companyId ? ` data-company-id="${escapeHtml(item.companyId)}"` : ""}>${escapeHtml(item.label)}</span>
                       <strong>${escapeHtml(item.title)}</strong>
                       <span>${escapeHtml(item.meta)}</span>
                     </div>
@@ -2151,10 +2157,10 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
               <span class="chip accent">${escapeHtml(String(timelineTickets.filter((item) => item.key !== "timeline-overflow").length))}</span>
             </div>
             ${timelineTickets.length ? `<div class="home-ticket-list">${timelineTickets.map((item) => `
-              <article class="home-ticket${item.key === "timeline-overflow" ? " home-ticket-overflow" : ""}" data-tone="${escapeHtml(item.tone || "accent")}">
+              <article class="home-ticket${item.key === "timeline-overflow" ? " home-ticket-overflow" : ""}" data-tone="${escapeHtml(item.tone || "accent")}"${item.companyId ? ` data-company-id="${escapeHtml(item.companyId)}"` : ""}>
                 ${item.key === "timeline-overflow"
                   ? `<strong class="home-ticket-title">${escapeHtml(item.title)}</strong><span class="home-ticket-meta">${escapeHtml(item.meta)}</span>`
-                  : `<div class="home-ticket-top"><span class="home-ticket-label">${escapeHtml(item.label)}</span><span class="home-ticket-countdown">${escapeHtml(item.countdown)}</span></div><strong class="home-ticket-title">${escapeHtml(item.title)}</strong><p class="home-ticket-meta">${escapeHtml(item.meta)}</p>`}
+                  : `<div class="home-ticket-top"><span class="home-ticket-label"${item.companyId ? ` data-company-id="${escapeHtml(item.companyId)}"` : ""}>${escapeHtml(item.label)}</span><span class="home-ticket-countdown">${escapeHtml(item.countdown)}</span></div><strong class="home-ticket-title">${escapeHtml(item.title)}</strong><p class="home-ticket-meta">${escapeHtml(item.meta)}</p>`}
               </article>
             `).join("")}</div>` : `<div class="home-empty">Nada pressiona as proximas 72h.</div>`}
           </article>
@@ -2231,7 +2237,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
               <h3>Empresas em foco</h3>
             </div>
             ${companyChips.length ? companyChips.map((item) => `
-              <button type="button" class="home-portfolio-chip" data-home-work-filter="${escapeHtml(item.id)}">
+              <button type="button" class="home-portfolio-chip" data-home-work-filter="${escapeHtml(item.id)}" data-company-id="${escapeHtml(item.id)}">
                 <span>${escapeHtml(item.title)}</span>
                 <span class="home-portfolio-chip-count">${escapeHtml(String(item.count))}</span>
               </button>

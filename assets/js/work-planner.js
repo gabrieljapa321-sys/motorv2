@@ -142,7 +142,10 @@
       const active = getFilter();
       el.innerHTML = WD.FILTERS.map((filter) => {
         const count = counts[filter.value] || 0;
-        return '<button type="button" class="work-filter-btn" data-work-filter="' + filter.value + '"' + (active === filter.value ? ' data-active="true"' : '') + '>' +
+        const companyAttr = WD.COMPANIES.some((company) => company.id === filter.value)
+          ? ' data-company-id="' + filter.value + '"'
+          : '';
+        return '<button type="button" class="work-filter-btn" data-work-filter="' + filter.value + '"' + companyAttr + (active === filter.value ? ' data-active="true"' : '') + '>' +
           '<span>' + escapeHtml(filter.label) + '</span>' +
           '<strong>' + count + '</strong>' +
         '</button>';
@@ -255,7 +258,7 @@
             ? '<ul>' + summary.nextActions.map((action) => '<li>' + escapeHtml(action) + '</li>').join("") + '</ul>'
             : '<div class="mini muted">Sem próxima ação aberta.</div>';
           return '<article class="work-company-card" data-company-id="' + summary.company.id + '">' +
-            '<div class="work-company-top"><strong>' + escapeHtml(summary.company.name) + '</strong><button type="button" data-work-filter="' + summary.company.id + '">Filtrar</button></div>' +
+            '<div class="work-company-top"><strong>' + escapeHtml(summary.company.name) + '</strong><button type="button" data-work-filter="' + summary.company.id + '" data-company-id="' + summary.company.id + '">Filtrar</button></div>' +
             '<div class="work-company-metrics">' +
               '<span><strong>' + summary.openCount + '</strong> abertas</span>' +
               '<span><strong>' + summary.weekCount + '</strong> semana</span>' +
@@ -272,12 +275,13 @@
       const overdue = WD.isOverdue(task, todayIso);
       const due = task.dueDate ? 'Prazo ' + formatIsoShort(task.dueDate) : 'Sem prazo';
       const company = task.scope === "company" ? WD.companyName(task.companyId) : "Geral";
+      const companyAttr = task.scope === "company" && task.companyId ? ' data-company-id="' + task.companyId + '"' : "";
       const status = WD.statusLabel(task.status);
       const priority = WD.priorityLabel(task.priority);
       const statusAction = task.status === "waiting"
         ? '<button type="button" data-work-status="planned">Retomar</button>'
         : '<button type="button" data-work-status="waiting">Aguardar</button>';
-      return '<article class="work-task" draggable="true" data-work-task-id="' + task.id + '" data-priority="' + task.priority + '"' + (overdue ? ' data-overdue="true"' : '') + '>' +
+      return '<article class="work-task" draggable="true" data-work-task-id="' + task.id + '" data-priority="' + task.priority + '"' + companyAttr + (overdue ? ' data-overdue="true"' : '') + '>' +
         '<div class="work-task-main">' +
           '<label class="work-task-check-wrap"><input type="checkbox" class="work-task-check"' + (task.status === "done" ? ' checked' : '') + ' aria-label="Concluir tarefa" /></label>' +
           '<div class="work-task-body">' +
@@ -286,7 +290,7 @@
           '</div>' +
         '</div>' +
         '<div class="work-task-meta">' +
-          '<span class="work-chip">' + escapeHtml(company) + '</span>' +
+          '<span class="work-chip"' + companyAttr + '>' + escapeHtml(company) + '</span>' +
           '<span class="work-chip work-chip--' + task.priority + '">' + escapeHtml(priority) + '</span>' +
           '<span class="work-chip' + (overdue ? ' work-chip--danger' : '') + '">' + escapeHtml(due) + '</span>' +
           '<span class="work-chip">' + escapeHtml(WD.areaLabel(task.area)) + '</span>' +

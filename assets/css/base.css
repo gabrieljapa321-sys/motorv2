@@ -36,6 +36,11 @@
       --accent-soft: #eef2ff;
       --accent-text: #3730a3;
 
+      /* Investidas */
+      --company-tsea: #FF000D;
+      --company-beneva: #00524C;
+      --company-itamaraca: #13407F;
+
       /* Estados — laranja só para warning, pra não brigar com acento */
       --success: #15803d;
       --success-soft: #f0fdf4;
@@ -192,6 +197,10 @@
     }
 
     ::selection { background: var(--accent); color: white; }
+
+    [data-company-id="tsea"] { --company-accent: var(--company-tsea); }
+    [data-company-id="beneva"] { --company-accent: var(--company-beneva); }
+    [data-company-id="itamaraca-spe"] { --company-accent: var(--company-itamaraca); }
 
     .mono, code, kbd {
       font-family: var(--font-mono);
