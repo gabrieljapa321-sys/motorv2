@@ -472,6 +472,52 @@ function renderHomeList(items, emptyText, options = {}) {
               : null
           ].filter(Boolean);
 
+      const currentModeLabel = typeof modeLabel === "function" ? modeLabel() : "Normal";
+      const modeMeta = state.mode === "foco"
+        ? "sem troca de contexto"
+        : state.mode === "exausto"
+          ? "energia preservada"
+          : state.mode === "m30"
+            ? "janela curta de execucao"
+            : "ritmo normal do dia";
+      const supportLead = supportList[0] || null;
+      const pressureCard = nextStudyDeadline
+        ? {
+            label: "Pressao academica",
+            value: nextStudyDeadline.prefix,
+            meta: `${nextStudyDeadline.title} · ${nextStudyDeadline.countdown}`
+          }
+        : nextExamAcross
+          ? {
+              label: "Proxima prova",
+              value: nextExamAcross.subject.shortName,
+              meta: `${nextExamAcross.exam.label} em ${nextExamDays}d`
+            }
+          : {
+              label: "Radar academico",
+              value: `${radarSubjects} materia(s)`,
+              meta: "em horizonte curto"
+            };
+      const focusInsights = [
+        {
+          label: "Janela",
+          value: usefulWindow.value || usefulWindow.label,
+          meta: usefulWindow.detail
+        },
+        pressureCard,
+        supportLead
+          ? {
+              label: "Plano B",
+              value: supportLead.label,
+              meta: supportLead.title
+            }
+          : {
+              label: "Ritmo",
+              value: currentModeLabel,
+              meta: modeMeta
+            }
+      ];
+
       syncHomeCaptureModalOptions(WD);
       elements.homePage.dataset.homeMode = state.mode;
 
@@ -494,17 +540,33 @@ function renderHomeList(items, emptyText, options = {}) {
                     <span class="home-focus-kicker">Foco central</span>
                   </div>
                   <div class="home-focus-body">
-                    <div class="home-focus-meta">
-                      <span class="home-hero-prefix"${primary && primary.companyId ? ` data-company-id="${escapeHtml(primary.companyId)}"` : ""}>${escapeHtml(primary ? primary.prefix : "Painel principal")}</span>
-                      <span class="home-focus-context">${escapeHtml(primary ? "frente que mais importa agora" : "estado geral do dia")}</span>
-                    </div>
-                    <div class="home-focus-copy">
-                      <h2>${escapeHtml(primary ? primary.title : "Nenhuma frente critica por enquanto.")}</h2>
-                      <p class="home-hero-reason">${escapeHtml(heroCopy || usefulWindow.detail)}</p>
-                    </div>
-                    <div class="home-hero-actions">
-                      ${primary ? `<button class="btn btn-primary home-primary-action" type="button" ${primary.actionAttrs}>${escapeHtml(primary.actionLabel)}</button>` : `<button class="btn btn-primary home-primary-action" type="button" data-home-open-studies>Revisar fila academica</button>`}
-                      <button class="home-secondary-link" type="button" data-home-capture-open>Abrir captura rapida</button>
+                    <div class="home-focus-grid">
+                      <div class="home-focus-copy">
+                        <div class="home-focus-meta">
+                          <span class="home-hero-prefix"${primary && primary.companyId ? ` data-company-id="${escapeHtml(primary.companyId)}"` : ""}>${escapeHtml(primary ? primary.prefix : "Painel principal")}</span>
+                          <span class="home-focus-context">${escapeHtml(primary ? "frente que mais importa agora" : "estado geral do dia")}</span>
+                        </div>
+                        <h2>${escapeHtml(primary ? primary.title : "Nenhuma frente critica por enquanto.")}</h2>
+                        <p class="home-hero-reason">${escapeHtml(heroCopy || usefulWindow.detail)}</p>
+                        <div class="home-hero-actions">
+                          ${primary ? `<button class="btn btn-primary home-primary-action" type="button" ${primary.actionAttrs}>${escapeHtml(primary.actionLabel)}</button>` : `<button class="btn btn-primary home-primary-action" type="button" data-home-open-studies>Revisar fila academica</button>`}
+                          <button class="home-secondary-link" type="button" data-home-capture-open>Abrir captura rapida</button>
+                        </div>
+                      </div>
+                      <div class="home-focus-rail">
+                        ${focusInsights.map((item) => `
+                          <article class="home-focus-insight">
+                            <span class="home-focus-insight-label">${escapeHtml(item.label)}</span>
+                            <strong class="home-focus-insight-value">${escapeHtml(item.value)}</strong>
+                            <span class="home-focus-insight-meta">${escapeHtml(item.meta)}</span>
+                          </article>
+                        `).join("")}
+                        <article class="home-focus-insight home-focus-insight--mode">
+                          <span class="home-focus-insight-label">Ritmo</span>
+                          <strong class="home-focus-insight-value">${escapeHtml(currentModeLabel)}</strong>
+                          <span class="home-focus-insight-meta">${escapeHtml(modeMeta)}</span>
+                        </article>
+                      </div>
                     </div>
                   </div>
                 </div>

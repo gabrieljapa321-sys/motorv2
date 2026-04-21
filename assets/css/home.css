@@ -99,11 +99,12 @@ body[data-primary-page="home"] .shell {
 
 .home-focus-board {
   display: grid;
-  gap: var(--space-4);
-  padding: clamp(var(--space-4), 2.2vw, var(--space-6));
+  gap: var(--space-5);
+  padding: clamp(var(--space-5), 2.6vw, var(--space-7));
   border: 1px solid color-mix(in srgb, var(--line-strong) 42%, transparent);
   border-radius: calc(var(--radius-xl) + 0.1rem);
   background:
+    radial-gradient(circle at top right, color-mix(in srgb, var(--accent-soft) 34%, transparent) 0, transparent 42%),
     linear-gradient(180deg, color-mix(in srgb, var(--bg-soft) 78%, white) 0%, color-mix(in srgb, var(--bg-elevated) 92%, white) 100%);
   box-shadow:
     inset 0 1px 0 color-mix(in srgb, white 34%, transparent),
@@ -136,11 +137,13 @@ body[data-primary-page="home"] .shell {
 .home-focus-body {
   display: grid;
   gap: var(--space-4);
-  padding: clamp(var(--space-4), 2vw, var(--space-5));
-  border: 1px solid color-mix(in srgb, var(--line-strong) 56%, transparent);
-  border-radius: calc(var(--radius-xl) - 0.2rem);
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--bg-elevated) 92%, white) 0%, color-mix(in srgb, var(--bg-soft) 96%, white) 100%);
+}
+
+.home-focus-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(14rem, 0.8fr);
+  gap: var(--space-4);
+  align-items: start;
 }
 
 .home-focus-meta {
@@ -160,20 +163,66 @@ body[data-primary-page="home"] .shell {
 .home-focus-copy {
   display: grid;
   gap: var(--space-3);
+  min-width: 0;
+  padding: clamp(var(--space-4), 1.8vw, var(--space-5));
+  border: 1px solid color-mix(in srgb, var(--line-strong) 40%, transparent);
+  border-radius: calc(var(--radius-xl) - 0.2rem);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-elevated) 96%, white) 0%, color-mix(in srgb, var(--bg-soft) 98%, white) 100%);
 }
 
 .home-focus-copy h2 {
   margin: 0;
-  font-size: clamp(1.95rem, 3vw, 2.6rem);
-  line-height: 0.97;
+  font-size: clamp(1.95rem, 2.9vw, 2.8rem);
+  line-height: 0.94;
   letter-spacing: -0.055em;
-  max-width: 12ch;
+  max-width: 14ch;
+}
+
+.home-focus-rail {
+  display: grid;
+  gap: var(--space-2);
+  min-width: 0;
+}
+
+.home-focus-insight {
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  border: 1px solid color-mix(in srgb, var(--line-strong) 28%, transparent);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--bg-elevated) 90%, white);
+}
+
+.home-focus-insight--mode {
+  background: color-mix(in srgb, var(--accent-soft) 16%, var(--bg-elevated));
+}
+
+.home-focus-insight-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.home-focus-insight-value {
+  font-size: var(--text-lg);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.home-focus-insight-meta {
+  color: var(--muted);
+  font-size: var(--text-xs);
+  line-height: 1.45;
 }
 
 .home-brief-ribbon {
   display: grid;
   gap: var(--space-3);
-  padding: var(--space-4);
+  padding: var(--space-3);
   border: 1px solid color-mix(in srgb, var(--line-strong) 30%, transparent);
   border-radius: var(--radius-xl);
   background: color-mix(in srgb, var(--bg-elevated) 88%, white);
@@ -311,13 +360,13 @@ body[data-primary-page="home"] .shell {
 .home-hero-brief {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: var(--space-3);
+  gap: var(--space-2);
 }
 
 .home-brief-card {
   display: grid;
   gap: var(--space-2);
-  padding: var(--space-4);
+  padding: var(--space-3);
   border: 1px solid color-mix(in srgb, var(--line-strong) 34%, transparent);
   border-radius: var(--radius-lg);
   background: color-mix(in srgb, var(--bg-elevated) 90%, white);
@@ -809,6 +858,14 @@ body[data-primary-page="home"] .shell {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .home-focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-focus-rail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .home-focus-copy h2,
   .home-hero-reason {
     max-width: none;
@@ -820,7 +877,8 @@ body[data-primary-page="home"] .shell {
   .home-ticket-list,
   .home-metric-row,
   .home-hero-meta,
-  .home-hero-brief {
+  .home-hero-brief,
+  .home-focus-rail {
     grid-template-columns: 1fr;
   }
 

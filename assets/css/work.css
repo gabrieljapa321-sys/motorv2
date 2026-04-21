@@ -38,18 +38,25 @@
 .work-panel-heading p,
 .work-hero p { margin: 4px 0 0; color: var(--text-muted, #6b7280); }
 .work-shell {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(320px, 0.82fr);
+  grid-template-areas:
+    "hero hero"
+    "stats stats"
+    "filters filters"
+    "planner side"
+    "bottom bottom";
   gap: 18px;
+  align-items: start;
 }
 .work-hero {
-  order: 1;
+  grid-area: hero;
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) auto;
+  grid-template-columns: minmax(0, 1.2fr) auto;
   align-items: start;
   justify-content: space-between;
-  gap: 20px;
-  padding: 22px 24px;
+  gap: 24px;
+  padding: 26px 28px;
   border-color: color-mix(in srgb, var(--line-strong) 58%, transparent);
   background:
     radial-gradient(circle at top right, color-mix(in srgb, var(--accent-soft) 60%, transparent) 0, transparent 34%),
@@ -66,7 +73,7 @@
   font-size: clamp(2rem, 3vw, 2.7rem);
   line-height: 0.98;
   letter-spacing: -0.05em;
-  max-width: 14ch;
+  max-width: 16ch;
 }
 .work-week-range {
   display: inline-flex;
@@ -83,7 +90,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  margin-top: 2px;
+  margin-top: 6px;
 }
 .work-brand-card {
   display: grid;
@@ -240,15 +247,16 @@
 .work-week-controls {
   display: flex;
   gap: 8px;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: stretch;
   justify-content: flex-end;
-  max-width: 360px;
+  min-width: 220px;
+  max-width: 260px;
 }
 .work-stats {
-  order: 3;
+  grid-area: stats;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
   gap: 12px;
 }
 .work-stat {
@@ -299,11 +307,15 @@
   color: var(--text-muted, #6b7280);
 }
 .work-filters {
-  order: 4;
+  grid-area: filters;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding-bottom: 4px;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--line-strong) 30%, transparent);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bg-elevated) 96%, white) 0%, var(--bg-soft) 100%);
+  box-shadow: var(--shadow-xs);
 }
 .work-filter-btn {
   display: inline-flex;
@@ -341,13 +353,13 @@
   color: inherit;
 }
 .work-layout {
-  order: 6;
+  grid-area: side;
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 14px;
   align-items: start;
 }
-.work-side-stack { display: grid; gap: 12px; }
+.work-side-stack { display: grid; gap: 14px; }
 .work-panel-heading.compact { align-items: center; }
 .work-task-form { display: grid; gap: 10px; }
 .work-task-form input,
@@ -367,9 +379,10 @@
   padding-bottom: 4px;
 }
 .work-planner-panel {
-  order: 2;
+  grid-area: planner;
   border-color: color-mix(in srgb, var(--line-strong) 42%, transparent);
   background: linear-gradient(180deg, color-mix(in srgb, var(--bg-elevated) 96%, white) 0%, var(--bg-soft) 100%);
+  min-width: 0;
 }
 .work-planner-panel .work-panel-heading { align-items: center; }
 .work-day-col {
@@ -476,9 +489,9 @@
   font-size: 0.78rem;
 }
 .work-bottom-grid {
-  order: 5;
+  grid-area: bottom;
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
   gap: 16px;
 }
 .work-company-grid { display: grid; gap: 12px; }
@@ -534,14 +547,31 @@
 }
 @media (max-width: 1100px) {
   .home-dashboard,
-  .work-layout,
   .work-bottom-grid { grid-template-columns: 1fr; }
+  .work-shell {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "stats"
+      "filters"
+      "planner"
+      "side"
+      "bottom";
+  }
+  .work-layout { grid-template-columns: 1fr; }
   .work-hero {
     grid-template-columns: 1fr;
   }
   .work-stats { grid-template-columns: repeat(3, minmax(140px, 1fr)); }
   .work-week-planner { grid-template-columns: repeat(7, minmax(190px, 1fr)); }
   .work-brand-strip { grid-template-columns: 1fr; }
+  .work-week-controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-width: 0;
+    max-width: none;
+  }
 }
 @media (max-width: 720px) {
   .work-hero,
@@ -561,6 +591,9 @@
   }
   .work-company-top button {
     align-self: flex-start;
+  }
+  .work-filters {
+    padding: 10px;
   }
 }
 @media (max-width: 520px) {
