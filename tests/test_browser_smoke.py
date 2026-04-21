@@ -155,6 +155,18 @@ class BrowserSmokeTests(unittest.TestCase):
         self.assertTrue(self.page.locator("#newsInboxCard").get_by_text("Caixa de entrada").is_visible())
         self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
 
+    def test_news_page_persists_on_refresh_via_hash_route(self):
+        self._goto()
+        self.page.click(".tb-nav-btn[data-nav-page='news']")
+        self.page.wait_for_timeout(300)
+        self.assertIn("#news", self.page.url)
+        self.page.reload(wait_until="domcontentloaded")
+        self.page.wait_for_timeout(500)
+        self.assertTrue(self.page.locator("#newsPage").is_visible())
+        self.assertFalse(self.page.locator("#homePage").is_visible())
+        self.assertIn("#news", self.page.url)
+        self.assertFalse(self.page_errors, f"Erros de runtime: {self.page_errors}")
+
     def test_work_task_flow_company_filter_waiting_done_and_persistence(self):
         self._goto()
         self.page.click(".tb-nav-btn[data-nav-page='work']")

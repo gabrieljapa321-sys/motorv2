@@ -1344,6 +1344,7 @@ function renderDeadlineFormCard(referenceDate) {
 
     const STUDY_SECTIONS = ["dashboard", "week", "fc", "calendar", "grades"];
 const PRIMARY_PAGES = ["home", "studies", "news", "work"];
+    let routeHashLock = false;
 
     function normalizePrimaryPage(value) {
       if (PRIMARY_PAGES.includes(value)) return value;
@@ -1363,6 +1364,41 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
 
     function getStudySection() {
       return normalizeStudySection(state.studySection, state.currentPage);
+    }
+
+    function buildRouteHash(primaryPage = getPrimaryPage(), studySection = getStudySection()) {
+      if (primaryPage === "studies") return `#studies/${normalizeStudySection(studySection, "dashboard")}`;
+      return `#${normalizePrimaryPage(primaryPage)}`;
+    }
+
+    function syncHashFromState(options = {}) {
+      const nextHash = buildRouteHash();
+      if (window.location.hash === nextHash) return;
+      routeHashLock = true;
+      if (options.replace) {
+        window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}${nextHash}`);
+      } else {
+        window.location.hash = nextHash;
+      }
+      window.setTimeout(() => {
+        routeHashLock = false;
+      }, 0);
+    }
+
+    function applyRouteFromHash() {
+      const raw = String(window.location.hash || "").replace(/^#/, "").trim();
+      if (!raw) return false;
+      const [primary, section] = raw.split("/");
+      if (primary === "studies") {
+        state.currentPage = "studies";
+        state.studySection = normalizeStudySection(section, "dashboard");
+        return true;
+      }
+      if (PRIMARY_PAGES.includes(primary)) {
+        state.currentPage = primary;
+        return true;
+      }
+      return false;
     }
 
     function renderHomeList(items, emptyText) {
@@ -1510,6 +1546,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       }
       saveState();
       render();
+      syncHashFromState();
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
@@ -1518,6 +1555,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       state.studySection = normalizeStudySection(section, "dashboard");
       saveState();
       render();
+      syncHashFromState();
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
@@ -1709,6 +1747,12 @@ function safeRenderStep(label, fn) {
       } else if (typeof mediaQuery.addListener === "function") {
         mediaQuery.addListener(handleThemeChange);
       }
+      window.addEventListener("hashchange", () => {
+        if (routeHashLock) return;
+        if (!applyRouteFromHash()) return;
+        saveState();
+        render();
+      });
     }
 
     function getStateSnapshot() {
@@ -1765,6 +1809,11 @@ function safeRenderStep(label, fn) {
       window.setStudyMode = setStudyMode;
       window.render = render;
       initEvents();
+      if (applyRouteFromHash()) {
+        saveState();
+      } else {
+        syncHashFromState({ replace: true });
+      }
       if (typeof setupAppActionDelegation === "function") setupAppActionDelegation();
       if (window.NewsFeed && typeof window.NewsFeed.init === "function") window.NewsFeed.init();
       render();
