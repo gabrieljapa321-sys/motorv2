@@ -1295,6 +1295,9 @@ function renderDeadlineFormCard(referenceDate) {
       if (elements.modeSelect && elements.modeSelect.value !== state.mode) {
         elements.modeSelect.value = state.mode;
       }
+      if (elements.modeSelect) {
+        elements.modeSelect.dataset.modeActive = state.mode && state.mode !== "normal" ? "true" : "false";
+      }
       if (elements.pageModeTxt) {
         elements.pageModeTxt.textContent = MODE_LABELS[state.mode] || MODE_LABELS.normal || "Modo Normal";
       }
