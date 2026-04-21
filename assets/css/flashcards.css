@@ -346,6 +346,13 @@
       gap: var(--space-4);
     }
 
+    #fcFlashcardsAside[hidden],
+    #fcExercisesAside[hidden],
+    #fcFlashcardsStats[hidden],
+    #fcExerciseStats[hidden] {
+      display: none !important;
+    }
+
     .fc-create-panel,
     .fc-filter-panel,
     .fc-deck-panel {
