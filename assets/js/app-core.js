@@ -2027,14 +2027,16 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
             <div class="home-hero-shell">
               <div class="home-hero-main">
                 <span class="home-window-pill">${escapeHtml(usefulWindow.label)}</span>
-                <div class="home-hero-title">
-                  <span class="home-hero-prefix">${escapeHtml(primary ? primary.prefix : "Painel principal")}</span>
-                  <h2>${escapeHtml(primary ? primary.title : "Nenhuma frente critica por enquanto.")}</h2>
-                </div>
-                <p class="home-hero-reason">${escapeHtml(heroCopy || usefulWindow.detail)}</p>
-                <div class="home-hero-actions">
-                  ${primary ? `<button class="btn btn-primary home-primary-action" type="button" ${primary.actionAttrs}>${escapeHtml(primary.actionLabel)}</button>` : `<button class="btn btn-primary home-primary-action" type="button" data-home-open-studies>Revisar fila academica</button>`}
-                  <button class="home-secondary-link" type="button" data-home-capture-open>Abrir captura rapida</button>
+                <div class="home-hero-spotlight">
+                  <div class="home-hero-title">
+                    <span class="home-hero-prefix">${escapeHtml(primary ? primary.prefix : "Painel principal")}</span>
+                    <h2>${escapeHtml(primary ? primary.title : "Nenhuma frente critica por enquanto.")}</h2>
+                  </div>
+                  <p class="home-hero-reason">${escapeHtml(heroCopy || usefulWindow.detail)}</p>
+                  <div class="home-hero-actions">
+                    ${primary ? `<button class="btn btn-primary home-primary-action" type="button" ${primary.actionAttrs}>${escapeHtml(primary.actionLabel)}</button>` : `<button class="btn btn-primary home-primary-action" type="button" data-home-open-studies>Revisar fila academica</button>`}
+                    <button class="home-secondary-link" type="button" data-home-capture-open>Abrir captura rapida</button>
+                  </div>
                 </div>
               </div>
               <div class="home-hero-side home-hero-support">

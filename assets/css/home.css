@@ -83,6 +83,11 @@
   gap: var(--space-3);
 }
 
+.home-hero-main {
+  min-width: 0;
+  align-content: start;
+}
+
 .home-hero-side {
   align-self: stretch;
 }
@@ -104,16 +109,34 @@
 .home-window-pill {
   display: inline-flex;
   align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: var(--space-2);
-  width: fit-content;
+  width: auto;
+  max-inline-size: min(100%, 28rem);
   padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-full);
   background: color-mix(in srgb, var(--bg-elevated) 72%, var(--accent-soft));
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.home-hero-spotlight {
+  display: grid;
+  gap: var(--space-4);
+  padding: clamp(var(--space-4), 2vw, var(--space-5));
+  border: 1px solid color-mix(in srgb, var(--line-strong) 56%, transparent);
+  border-radius: calc(var(--radius-xl) - 0.25rem);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-elevated) 90%, var(--accent-soft)) 0%, color-mix(in srgb, var(--bg-soft) 92%, white) 100%);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, white 34%, transparent),
+    0 1.25rem 2.75rem -2rem color-mix(in srgb, var(--accent-soft) 46%, transparent);
 }
 
 .home-hero-title {
   display: grid;
-  gap: var(--space-2);
+  gap: var(--space-3);
 }
 
 .home-hero-prefix {
@@ -135,8 +158,9 @@
 .home-hero-title h2 {
   margin: 0;
   font-size: clamp(2rem, 3.2vw, 2.75rem);
-  line-height: 0.98;
+  line-height: 0.94;
   letter-spacing: -0.05em;
+  max-width: 14ch;
 }
 
 .home-hero-reason,
@@ -151,15 +175,28 @@
   line-height: 1.55;
 }
 
+.home-hero-reason {
+  color: var(--muted-strong);
+  font-size: var(--text-base);
+  line-height: 1.65;
+  max-width: 60ch;
+}
+
 .home-hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
   align-items: center;
+  padding-top: var(--space-1);
 }
 
 .home-primary-action {
   min-width: 15rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.home-primary-action:hover {
+  box-shadow: var(--shadow);
 }
 
 .home-secondary-link {
@@ -528,6 +565,11 @@
 
   .home-ticket-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .home-hero-title h2,
+  .home-hero-reason {
+    max-width: none;
   }
 }
 
