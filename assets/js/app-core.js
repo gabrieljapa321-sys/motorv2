@@ -1651,20 +1651,23 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
 
       if (now >= windowEnd) {
         return {
-          label: "Fora da janela util",
+          label: "Janela util",
+          value: "encerrada hoje",
           detail: "Feche o dia sem abrir novas frentes."
         };
       }
 
       if (now < windowStart) {
         return {
-          label: `${formatHomeDuration(windowEnd - windowStart)} de janela util hoje`,
+          label: "Janela util",
+          value: `${formatHomeDuration(windowEnd - windowStart)} hoje`,
           detail: "O dia ainda esta inteiro para escolher com calma."
         };
       }
 
       return {
-        label: `${formatHomeDuration(windowEnd - now)} de janela util restante`,
+        label: "Janela util",
+        value: `${formatHomeDuration(windowEnd - now)} restante`,
         detail: "Proteja uma unica frente principal."
       };
     }
@@ -2026,7 +2029,10 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
           <article class="home-card home-hero-card">
             <div class="home-hero-shell">
               <div class="home-hero-main">
-                <span class="home-window-pill">${escapeHtml(usefulWindow.label)}</span>
+                <div class="home-window-pill">
+                  <span class="home-window-kicker">${escapeHtml(usefulWindow.label)}</span>
+                  <strong class="home-window-value">${escapeHtml(usefulWindow.value || usefulWindow.label)}</strong>
+                </div>
                 <div class="home-hero-spotlight">
                   <div class="home-hero-title">
                     <span class="home-hero-prefix">${escapeHtml(primary ? primary.prefix : "Painel principal")}</span>
@@ -2059,13 +2065,22 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
         </section>
 
         <section class="home-layer home-layer--timeline">
-          ${timelineTickets.length ? `<div class="home-ticket-list">${timelineTickets.map((item) => `
-            <article class="home-ticket${item.key === "timeline-overflow" ? " home-ticket-overflow" : ""}" data-tone="${escapeHtml(item.tone || "accent")}">
-              ${item.key === "timeline-overflow"
-                ? `<strong>${escapeHtml(item.title)}</strong><span class="home-ticket-meta">${escapeHtml(item.meta)}</span>`
-                : `<div class="home-ticket-top"><span class="home-ticket-label">${escapeHtml(item.label)}</span><span class="home-ticket-countdown">${escapeHtml(item.countdown)}</span></div><strong>${escapeHtml(item.title)}</strong><p class="home-ticket-meta">${escapeHtml(item.meta)}</p>`}
-            </article>
-          `).join("")}</div>` : `<div class="home-empty">Nada pressiona as proximas 72h.</div>`}
+          <article class="home-card home-timeline-card">
+            <div class="home-card-top">
+              <div>
+                <span class="home-card-eyebrow">Radar curto</span>
+                <h3>Proximas 72h</h3>
+                <p class="home-card-copy">Prazos, provas e frentes que entraram de vez no horizonte imediato.</p>
+              </div>
+            </div>
+            ${timelineTickets.length ? `<div class="home-ticket-list">${timelineTickets.map((item) => `
+              <article class="home-ticket${item.key === "timeline-overflow" ? " home-ticket-overflow" : ""}" data-tone="${escapeHtml(item.tone || "accent")}">
+                ${item.key === "timeline-overflow"
+                  ? `<strong class="home-ticket-title">${escapeHtml(item.title)}</strong><span class="home-ticket-meta">${escapeHtml(item.meta)}</span>`
+                  : `<div class="home-ticket-top"><span class="home-ticket-label">${escapeHtml(item.label)}</span><span class="home-ticket-countdown">${escapeHtml(item.countdown)}</span></div><strong class="home-ticket-title">${escapeHtml(item.title)}</strong><p class="home-ticket-meta">${escapeHtml(item.meta)}</p>`}
+              </article>
+            `).join("")}</div>` : `<div class="home-empty">Nada pressiona as proximas 72h.</div>`}
+          </article>
         </section>
 
         <section class="home-layer home-layer--pulse-new">
