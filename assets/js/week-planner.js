@@ -6,43 +6,19 @@
   */
   (function () {
     'use strict';
+    function initWeekPlanner(app) {
+      if (window.__weekPlannerInitialized) return;
+      window.__weekPlannerInitialized = true;
+      const appApi = app || window.StudyApp || {};
 
-    function waitForApp(fn, tries) {
-      tries = tries || 0;
-      if (typeof state !== 'undefined' &&
-          typeof saveState === 'function' &&
-          typeof hydrateStateFromRaw === 'function') {
-        fn();
-      } else if (tries < 40) {
-        setTimeout(function () { waitForApp(fn, tries + 1); }, 100);
-      } else {
-        console.error('[weekPlanner] app principal não carregou');
-      }
-    }
-
-    waitForApp(function () {
       // ── Garantir weeklyTodos ──
       if (!Array.isArray(state.weeklyTodos)) state.weeklyTodos = [];
 
-      // Wrap hydrateStateFromRaw pra preservar weeklyTodos E re-renderizar após load da nuvem
-      const originalHydrate = hydrateStateFromRaw;
-      hydrateStateFromRaw = function (raw) {
-        const result = originalHydrate(raw);
-        result.weeklyTodos = Array.isArray(raw && raw.weeklyTodos) ? raw.weeklyTodos : [];
-        // Agenda render pra depois de state ser reatribuído
-        setTimeout(function () {
-          const weekPage = document.getElementById('weekPage');
-          if (weekPage && !weekPage.hasAttribute('hidden')) render();
-        }, 50);
-        return result;
-      };
-
-      // ── Helpers de data ──
-      const WEEKDAY_NAMES = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
-      const WEEKDAY_FULL = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+      const WEEKDAY_NAMES = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'S??b'];
+      const WEEKDAY_FULL = ['Domingo', 'Segunda', 'Ter??a', 'Quarta', 'Quinta', 'Sexta', 'S??bado'];
       const MONTH_NAMES = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
 
-      function toIso(date) {
+function toIso(date) {
         const y = date.getFullYear();
         const m = String(date.getMonth() + 1).padStart(2, '0');
         const d = String(date.getDate()).padStart(2, '0');
@@ -875,8 +851,7 @@
           });
         }
       };
-      window.StudyApp = window.StudyApp || {};
-      window.StudyApp.addCurrentTaskToPlanner = window.addCurrentTaskToPlanner;
+      appApi.addCurrentTaskToPlanner = window.addCurrentTaskToPlanner;
 
       // ── Init ──
       setupInteractionDelegation();
@@ -886,6 +861,20 @@
       setupMoveMenuBindings();
       render();
 
+      if (typeof appApi.onStateReplaced === 'function') {
+        appApi.onStateReplaced(function () {
+          if (!Array.isArray(state.weeklyTodos)) state.weeklyTodos = [];
+          const weekPage = document.getElementById('weekPage');
+          if (weekPage && !weekPage.hasAttribute('hidden')) render();
+        });
+      }
+
       console.log('[weekPlanner v2] inicializado');
-    });
+    }
+
+    if (window.StudyApp && typeof window.StudyApp.onReady === 'function') {
+      window.StudyApp.onReady(initWeekPlanner);
+    } else {
+      setTimeout(function () { initWeekPlanner(window.StudyApp); }, 0);
+    }
   })();

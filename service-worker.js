@@ -1,4 +1,8 @@
-﻿const CACHE_NAME = "motor-estudo-shell-v20260421-workredo1";
+const SHELL_CACHE = "motor-shell";
+const DATA_CACHE = "motor-data";
+const RUNTIME_CACHE = "motor-runtime";
+const CACHE_PREFIX = "motor-";
+
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -30,7 +34,9 @@ const APP_SHELL = [
   "./assets/js/backup.js",
   "./assets/js/sync-service.js",
   "./assets/js/app-core.js",
+  "./assets/js/home-dashboard.js",
   "./assets/js/app-pages.js",
+  "./assets/js/grades-page.js",
   "./assets/js/week-planner.js",
   "./assets/js/study-features.js",
   "./assets/js/flashcards-exams.js",
@@ -46,16 +52,66 @@ const APP_SHELL = [
   "./assets/pwa/icon-512.svg"
 ];
 
+function toLocalKey(url) {
+  if (url.pathname === "/" || /\/index\.html$/i.test(url.pathname)) return "./index.html";
+  return `.${url.pathname}`;
+}
+
+async function networkFirst(request, cacheName, fallbackKey) {
+  const cache = await caches.open(cacheName);
+  try {
+    const response = await fetch(request, { cache: "no-store" });
+    if (response && response.status === 200) {
+      cache.put(fallbackKey || request, response.clone());
+    }
+    return response;
+  } catch (error) {
+    const fallback = await cache.match(fallbackKey || request);
+    if (fallback) return fallback;
+    throw error;
+  }
+}
+
+async function cacheFirst(request, cacheName, fallbackKey) {
+  const cache = await caches.open(cacheName);
+  const cached = await cache.match(fallbackKey || request);
+  if (cached) return cached;
+  const response = await fetch(request);
+  if (response && response.status === 200) {
+    cache.put(fallbackKey || request, response.clone());
+  }
+  return response;
+}
+
+async function staleWhileRevalidate(request, cacheName, fallbackKey) {
+  const cache = await caches.open(cacheName);
+  const cached = await cache.match(fallbackKey || request);
+  const networkPromise = fetch(request)
+    .then((response) => {
+      if (response && response.status === 200) {
+        cache.put(fallbackKey || request, response.clone());
+      }
+      return response;
+    })
+    .catch(() => cached);
+  return cached || networkPromise;
+}
+
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)).then(() => self.skipWaiting())
+    caches.open(SHELL_CACHE).then((cache) => cache.addAll(APP_SHELL)).then(() => self.skipWaiting())
   );
 });
 
 self.addEventListener("activate", (event) => {
+  const keep = new Set([SHELL_CACHE, DATA_CACHE, RUNTIME_CACHE]);
   event.waitUntil(
     caches.keys().then((keys) =>
-      Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))
+      Promise.all(
+        keys
+          .filter((key) => key.startsWith(CACHE_PREFIX) && !keep.has(key))
+          .map((key) => caches.delete(key))
+      )
     ).then(() => self.clients.claim())
   );
 });
@@ -67,49 +123,27 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
+  const localKey = toLocalKey(url);
+
   if (request.mode === "navigate") {
-    event.respondWith(
-      fetch(request).catch(() => caches.match("./index.html"))
-    );
+    event.respondWith(networkFirst(request, SHELL_CACHE, "./index.html"));
     return;
   }
 
-  const isNetworkFirstDataRequest =
-    /\/assets\/data\/news\.json$/i.test(url.pathname) ||
-    /\/assets\/data\/ticker-tape\.json$/i.test(url.pathname);
-  if (isNetworkFirstDataRequest) {
-    const cacheKey = /\/assets\/data\/ticker-tape\.json$/i.test(url.pathname)
-      ? "./assets/data/ticker-tape.json"
-      : "./assets/data/news.json";
-    event.respondWith(
-      fetch(request, { cache: "no-store" })
-        .then((response) => {
-          if (response && response.status === 200) {
-            const responseClone = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(cacheKey, responseClone));
-          }
-          return response;
-        })
-        .catch(() => caches.match(cacheKey))
-    );
+  if (/^\.\/assets\/data\/.+\.json$/i.test(localKey)) {
+    event.respondWith(networkFirst(request, DATA_CACHE, localKey));
     return;
   }
 
-  event.respondWith(
-    caches.match(request, { ignoreSearch: true }).then((cached) => {
-      const network = fetch(request)
-        .then((response) => {
-          if (response && response.status === 200) {
-            const responseClone = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(request, responseClone));
-          }
-          return response;
-        })
-        .catch(() => cached);
+  if (/\.(?:css|js|webmanifest)$/i.test(url.pathname)) {
+    event.respondWith(networkFirst(request, SHELL_CACHE, localKey));
+    return;
+  }
 
-      return cached || network;
-    })
-  );
+  if (/\.(?:png|svg|webp|jpg|jpeg|gif|ico)$/i.test(url.pathname)) {
+    event.respondWith(staleWhileRevalidate(request, RUNTIME_CACHE, localKey));
+    return;
+  }
+
+  event.respondWith(cacheFirst(request, RUNTIME_CACHE, localKey));
 });
-
-

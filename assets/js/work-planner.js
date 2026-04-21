@@ -1,18 +1,10 @@
 (function () {
   "use strict";
 
-  function waitForApp(fn, tries) {
-    tries = tries || 0;
-    if (typeof state !== "undefined" && typeof saveState === "function" && window.WorkDomain) {
-      fn();
-    } else if (tries < 50) {
-      setTimeout(function () { waitForApp(fn, tries + 1); }, 100);
-    } else {
-      console.error("[workPlanner] app principal não carregou");
-    }
-  }
-
-  waitForApp(function () {
+  function initWorkPlanner(app) {
+    if (window.__workPlannerInitialized) return;
+    window.__workPlannerInitialized = true;
+    const appApi = app || window.StudyApp || {};
     const WD = window.WorkDomain;
     const WEEKDAY_NAMES = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
     const WEEKDAY_FULL = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
@@ -96,8 +88,8 @@
       saveState();
       if (message && typeof showToast === "function") showToast(message);
       renderWorkPlanner();
-      if (state.currentPage !== "work" && typeof window.render === "function") {
-        window.render();
+      if (state.currentPage !== "work" && typeof appApi.requestRender === "function") {
+        appApi.requestRender();
       }
     }
 
@@ -292,31 +284,6 @@
       const critical = buckets.critical.slice(0, 8);
       el.innerHTML = '<div class="work-panel-heading compact"><h3>Prazos críticos</h3><span class="chip danger">' + critical.length + '</span></div>' +
         (critical.length ? '<div class="work-list work-list--compact">' + critical.map(renderTaskCard).join("") + '</div>' : '<div class="empty-state">Sem prazo crítico nesta semana.</div>');
-    }
-
-    function renderCompanySummary() {
-      const el = document.getElementById("workCompanySummary");
-      if (!el) return;
-      const summaries = WD.companySummaries(state.workTasks || [], WD.todayIso(), currentWeekIsos());
-      el.innerHTML = '<div class="work-panel-heading compact"><h3>Resumo por empresa</h3><span class="chip neutral">FIPs</span></div>' +
-        '<div class="work-company-grid">' + summaries.map((summary) => {
-          const actions = summary.nextActions.length
-            ? '<ul>' + summary.nextActions.map((action) => '<li>' + escapeHtml(action) + '</li>').join("") + '</ul>'
-            : '<div class="mini muted">Sem próxima ação aberta.</div>';
-          return '<article class="work-company-card" data-company-id="' + summary.company.id + '">' +
-            '<div class="work-company-top">' +
-              renderCompanyIdentity(summary.company, { size: "sm", compact: true, role: "Investida" }) +
-              '<button type="button" data-work-filter="' + summary.company.id + '" data-company-id="' + summary.company.id + '">Filtrar</button>' +
-            '</div>' +
-            '<div class="work-company-metrics">' +
-              '<span><strong>' + summary.openCount + '</strong> abertas</span>' +
-              '<span><strong>' + summary.weekCount + '</strong> semana</span>' +
-              '<span><strong>' + summary.overdueCount + '</strong> atrasadas</span>' +
-              '<span><strong>' + summary.waitingCount + '</strong> aguardando</span>' +
-            '</div>' +
-            '<div class="work-company-actions"><span>Próximas ações</span>' + actions + '</div>' +
-          '</article>';
-        }).join("") + '</div>';
     }
 
     function renderCompanySummary() {
@@ -633,7 +600,7 @@
         if (!String(payload.title || "").trim()) return;
         addTask(payload, "Captura de trabalho adicionada.");
         form.reset();
-        if (typeof window.render === "function") window.render();
+        if (typeof appApi.requestRender === "function") appApi.requestRender();
       });
       document.addEventListener("click", function (event) {
         const openWork = event.target.closest("[data-open-work]");
@@ -669,6 +636,21 @@
 
     setupEvents();
     renderWorkPlanner();
+    if (typeof appApi.onStateReplaced === "function") {
+      appApi.onStateReplaced(function () {
+        if (!Array.isArray(state.workTasks)) state.workTasks = [];
+        if (!state.workFilter) state.workFilter = "all";
+        const workPage = document.getElementById("workPage");
+        if (workPage && !workPage.hasAttribute("hidden")) renderWorkPlanner();
+      });
+    }
+
     console.log("[workPlanner] inicializado");
-  });
+  }
+
+  if (window.StudyApp && typeof window.StudyApp.onReady === "function") {
+    window.StudyApp.onReady(initWorkPlanner);
+  } else {
+    setTimeout(function () { initWorkPlanner(window.StudyApp); }, 0);
+  }
 })();

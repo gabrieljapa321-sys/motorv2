@@ -1,35 +1,44 @@
-  (function () {
-    function waitForAppReady() {
-      const appReady =
-        window.StudySync &&
-        typeof state !== "undefined" &&
-        typeof saveState === "function" &&
-        typeof hydrateStateFromRaw === "function" &&
-        typeof render === "function";
+(function () {
+  function attachFirebaseSync() {
+    const appReady =
+      window.StudySync &&
+      typeof saveState === "function" &&
+      typeof hydrateStateFromRaw === "function" &&
+      typeof render === "function";
 
-      if (!appReady) {
-        setTimeout(waitForAppReady, 400);
-        return;
-      }
-
-      const originalSaveState = saveState;
-
-      saveState = function () {
-        originalSaveState();
-        window.StudySync.scheduleCloudWrite("auto-save");
-      };
-
-      window.StudySync.attachApp({
-        getState: () => state,
-        setState: (nextState) => { state = nextState; },
-        hydrateStateFromRaw,
-        getStateSummary,
-        mergeStates: (localState, incomingState) => mergeImportedState(localState, incomingState),
-        saveLocal: () => originalSaveState(),
-        render,
-        showToast
-      });
+    if (!appReady) {
+      console.error("[firebase-sync] dependencias do app nao encontradas");
+      return;
     }
 
-    waitForAppReady();
-  })();
+    const originalSaveState = saveState;
+
+    saveState = function () {
+      originalSaveState();
+      window.StudySync.scheduleCloudWrite("auto-save");
+    };
+
+    window.StudySync.attachApp({
+      getState: () => state,
+      setState: (nextState) => {
+        if (window.StudyApp && typeof window.StudyApp.replaceState === "function") {
+          window.StudyApp.replaceState(nextState, "cloud-sync");
+        } else {
+          state = nextState;
+        }
+      },
+      hydrateStateFromRaw,
+      getStateSummary,
+      mergeStates: (localState, incomingState) => mergeImportedState(localState, incomingState),
+      saveLocal: () => originalSaveState(),
+      render,
+      showToast
+    });
+  }
+
+  if (window.StudyApp && typeof window.StudyApp.onReady === "function") {
+    window.StudyApp.onReady(attachFirebaseSync);
+  } else {
+    setTimeout(attachFirebaseSync, 0);
+  }
+})();

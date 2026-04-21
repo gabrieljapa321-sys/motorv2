@@ -54,12 +54,65 @@
     return { touchedTasks: 0, logs: 0, deadlines: 0, deliveredDeadlines: 0, gradeEntries: 0, schemaVersion: 0 };
   }
 
-  function requestConflictResolution(localState, cloudState) {
-    console.info("[sync] conflito detectado; usando mesclagem silenciosa.", {
-      localSummary: getSummary(localState),
-      cloudSummary: getSummary(cloudState)
+  function summarizeForComparison(sourceState) {
+    const summary = getSummary(sourceState);
+    return JSON.stringify({
+      touchedTasks: summary.touchedTasks || 0,
+      logs: summary.logs || 0,
+      deadlines: summary.deadlines || 0,
+      deliveredDeadlines: summary.deliveredDeadlines || 0,
+      gradeEntries: summary.gradeEntries || 0,
+      weeklyTodos: summary.weeklyTodos || 0,
+      workTasks: summary.workTasks || 0,
+      waitingWorkTasks: summary.waitingWorkTasks || 0,
+      flashcards: summary.flashcards || 0,
+      exerciseProgress: summary.exerciseProgress || 0,
+      schemaVersion: summary.schemaVersion || 0
     });
-    return Promise.resolve("merge");
+  }
+
+  function resolveConflictSilently(localState, cloudState) {
+    const localSummary = getSummary(localState);
+    const cloudSummary = getSummary(cloudState);
+    const mergedState = typeof appContext.mergeStates === "function"
+      ? appContext.mergeStates(localState, cloudState)
+      : cloudState;
+    const mergedSummary = getSummary(mergedState);
+
+    console.info("[sync] conflito detectado; conciliando automaticamente.", {
+      localSummary,
+      cloudSummary,
+      mergedSummary
+    });
+
+    const localKey = summarizeForComparison(localState);
+    const cloudKey = summarizeForComparison(cloudState);
+    const mergedKey = summarizeForComparison(mergedState);
+
+    if (mergedKey === localKey && mergedKey !== cloudKey) {
+      return {
+        nextState: localState,
+        writeBack: true,
+        reason: "kept-local-version",
+        message: "Dados locais mantidos e reenviados para a nuvem."
+      };
+    }
+
+    if (mergedKey === cloudKey && mergedKey !== localKey) {
+      return {
+        nextState: cloudState,
+        writeBack: false,
+        reason: null,
+        message: "Dados da nuvem carregados."
+      };
+    }
+
+    return {
+      nextState: mergedState,
+      writeBack: true,
+      reason: "silent-merge-resolution",
+      message: "Dados locais e da nuvem foram conciliados automaticamente."
+    };
   }
 
   async function writeCloudPayload(payload, reason) {
@@ -83,7 +136,7 @@
     }
   }
 
-  async function applyChosenState(nextState, reason, message) {
+  async function applyChosenState(nextState, reason, message, options = {}) {
     appContext.setState(nextState);
     appContext.saveLocal();
     appContext.render();
@@ -91,7 +144,7 @@
       await writeCloudPayload(nextState, reason);
     }
     emitStatus(message, "success");
-    if (appContext.showToast) {
+    if (options.toast !== false && appContext.showToast) {
       appContext.showToast(message);
     }
   }
@@ -127,21 +180,15 @@
 
         if (cloudHasData) {
           if (localHasData) {
-            const choice = await requestConflictResolution(localState, cloudState);
-            if (choice === "cloud") {
-              await applyChosenState(cloudState, null, "Dados da nuvem carregados.");
-            } else if (choice === "merge") {
-              const merged = typeof appContext.mergeStates === "function"
-                ? appContext.mergeStates(localState, cloudState)
-                : cloudState;
-              await applyChosenState(merged, "merge-conflict-resolution", "Dados locais e da nuvem foram mesclados.");
-            } else {
-              await writeCloudPayload(localState, "kept-local-version");
-              emitStatus("Dados locais mantidos e enviados.", "success");
-              if (appContext.showToast) appContext.showToast("Dados locais mantidos.");
-            }
+            const resolution = resolveConflictSilently(localState, cloudState);
+            await applyChosenState(
+              resolution.nextState,
+              resolution.writeBack ? resolution.reason : null,
+              resolution.message,
+              { toast: false }
+            );
           } else {
-            await applyChosenState(cloudState, null, "Dados da nuvem carregados.");
+            await applyChosenState(cloudState, null, "Dados da nuvem carregados.", { toast: false });
           }
         } else if (localHasData) {
           await writeCloudPayload(localState, "seed-from-local");
