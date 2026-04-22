@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-22T04:22:35Z",
-  "generatedAt": "2026-04-22T04:22:35Z",
+  "updatedAt": "2026-04-22T06:17:02Z",
+  "generatedAt": "2026-04-22T06:17:02Z",
   "categories": [
     {
       "id": "all",
@@ -25,6 +25,10 @@
   ],
   "sources": [
     {
+      "id": "a-gazeta",
+      "label": "A Gazeta"
+    },
+    {
       "id": "agenda-capital",
       "label": "Agenda Capital"
     },
@@ -41,16 +45,8 @@
       "label": "Blog do Amarildo"
     },
     {
-      "id": "blog-do-dina",
-      "label": "Blog do Dina"
-    },
-    {
       "id": "blog-do-esmael",
       "label": "Blog do Esmael"
-    },
-    {
-      "id": "bora-investir",
-      "label": "Bora Investir"
     },
     {
       "id": "broadcast",
@@ -75,6 +71,14 @@
     {
       "id": "di-rio-do-estado",
       "label": "DIÁRIO DO ESTADO"
+    },
+    {
+      "id": "ebc-financial-group",
+      "label": "EBC Financial Group"
+    },
+    {
+      "id": "estado-de-minas",
+      "label": "Estado de Minas"
     },
     {
       "id": "estad-o",
@@ -109,20 +113,12 @@
       "label": "Guarulhos Online"
     },
     {
-      "id": "icl-not-cias",
-      "label": "ICL Notícias"
-    },
-    {
       "id": "imirante-com",
       "label": "Imirante.com"
     },
     {
       "id": "investing-com-brasil-finan-as-c-mbio-e-investimentos",
       "label": "Investing.com Brasil - Finanças, Câmbio e Investimentos"
-    },
-    {
-      "id": "investnews",
-      "label": "InvestNews"
     },
     {
       "id": "jornal-ggn",
@@ -157,8 +153,8 @@
       "label": "O Cafezinho"
     },
     {
-      "id": "o-povo",
-      "label": "O POVO"
+      "id": "o-liberal",
+      "label": "O Liberal"
     },
     {
       "id": "o-tempo",
@@ -201,6 +197,10 @@
       "label": "Terra Brasil Notícias"
     },
     {
+      "id": "the-detroit-bureau",
+      "label": "The Detroit Bureau"
+    },
+    {
       "id": "tikr-com",
       "label": "TIKR.com"
     },
@@ -217,6 +217,10 @@
       "label": "Tribuna do Agreste"
     },
     {
+      "id": "tribuna-do-sert-o",
+      "label": "Tribuna do Sertão"
+    },
+    {
       "id": "tribut-rio",
       "label": "Tributário"
     },
@@ -225,16 +229,16 @@
       "label": "UOL Notícias"
     },
     {
+      "id": "vaiparaty-com-br",
+      "label": "vaiparaty.com.br"
+    },
+    {
       "id": "valor-econ-mico",
       "label": "Valor Econômico"
     },
     {
       "id": "valoremercadoro-com-br",
       "label": "valoremercadoro.com.br"
-    },
-    {
-      "id": "veja",
-      "label": "VEJA"
     },
     {
       "id": "viva-com-br",
@@ -247,11 +251,85 @@
   ],
   "items": [
     {
+      "id": "macro-03130e4a0822fd4c0357dea8",
+      "title": "A inflação no Reino Unido salta para 3,3% em março, à medida que os preços dos combustíveis aumentam em meio à guerra com o Irã",
+      "summary": "Para o empresariado, o tema central não deveria ser preferência partidária, mas continuidade, previsibilidade e capacidade de execução",
+      "details": "Para o empresariado, o tema central não deveria ser preferência partidária, mas continuidade, previsibilidade e capacidade de execução",
+      "url": "https://www.em.com.br/opiniao/2026/04/7402754-a-janela-que-a-nova-geopolitica-abre-para-empresas-brasileiras.html",
+      "source": "vaiparaty.com.br",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-22T06:11:08Z",
+      "updatedAt": "2026-04-22T06:11:08Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.em.com.br/static/placeholder.png"
+    },
+    {
+      "id": "latest-b687e70f43adbb8e92997336",
+      "title": "Escândalo no Banco Master: de crescimento exponencial a fraude financeira",
+      "summary": "Banco Master cresceu 2.123% em ativos sob Daniel Vorcaro, antes de escândalo por fraudes e liquidação. Entenda o impacto.",
+      "details": "Banco Master cresceu 2.123% em ativos sob Daniel Vorcaro, antes de escândalo por fraudes e liquidação. Entenda o impacto.",
+      "url": "https://diariodoestadogo.com.br/escandalo-no-banco-master-de-crescimento-exponencial-a-fraude-financeira-696993/",
+      "source": "DIÁRIO DO ESTADO",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-04-22T05:27:39Z",
+      "updatedAt": "2026-04-22T05:27:39Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "companies-6f680ef4cda082d9020322b5",
+      "title": "A janela que a nova geopolítica abre para empresas brasileiras",
+      "summary": "Atualizacao de empresas capturada em Estado de Minas.",
+      "details": "",
+      "url": "https://vaiparaty.com.br/noticias/a-inflacao-no-reino-unido-salta-para-33-em-marco-a-medida-que-os-precos-dos-combustiveis-aumentam-em-meio-a-guerra-com-o-ira/73521/",
+      "source": "Estado de Minas",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-04-22T05:00:00Z",
+      "updatedAt": "2026-04-22T05:00:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "macro-3c667c67034cfa712bf938e5",
+      "title": "Por que o PIB é ajustado pela inflação? Crescimento real explicado.",
+      "summary": "Por que o PIB é ajustado pela inflação? Porque o crescimento nem sempre é real; veja como a inflação distorce os dados e a verdadeira expansão econômica.",
+      "details": "Por que o PIB é ajustado pela inflação? Porque o crescimento nem sempre é real; veja como a inflação distorce os dados e a verdadeira expansão econômica.",
+      "url": "https://www.ebc.com/pt/forex/por-que-o-pib-e-ajustado-pela-inflacao-crescimento-real-explicado",
+      "source": "EBC Financial Group",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-22T04:26:00Z",
+      "updatedAt": "2026-04-22T04:26:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.ebc.com/upload/portal/20260422/2333061b5876fe2f416685891bbcee64.png"
+    },
+    {
       "id": "macro-d2b7e18b91d2cc33d064f682",
       "title": "Gleisi Hoffmann denuncia terrorismo fiscal da Folha em editorial sobre dívida pública",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSk9Odll3c2RqU3c0dl82d1FZc3JOWWp4amgydl8zS0lpMFpZU3JzY19SWERZLS1GQU9lUkFpSDhyU3ZGbFN6VnhqMnh1QWFlcE50NjBydTRTbUd2VkZ2dEtfMXZMbEJmdXpVOFBDZTRXYzExalUtUjRUUTZfcm1tbnl4VlFCeVBKNlpkSnk1Sml3WVh2aXR1WFE1ZFVldlE1RndMVlBkN0pPbkw0U3NDLUZpeTJTZEtCOEs1LVVCcGdDZ9IBxwFBVV95cUxOYU9PVHdpMDVHcXdSbzBubWpfbDRDeGtPTXJsclo4Sk8yVjRUTDRvYVZsVmQxZFYxNWhfT3dTMGJUY3FLVXdhZ1ZYUVVxU0hmYjM3VWowNzdJekxaY2pWWVByMjhEOUY4WExKbTlUMGg5SG44dHJFbXJjM0VIOFFOWVNUQkl4aXhhejFGZktXcllvZTIyQmVETndmOEdYS25vS2N2OFo0UmFfT2JNM19IZ2ZIWENVWDNqWGl5RGVHU3I3aHprTmxn?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Gleisi Hoffmann discursa segurando um microfone em evento. (Foto: diariodocentrodomundo.com.br)A ministra da Secretaria de Relações Institucionais, Gleisi",
+      "details": "Gleisi Hoffmann discursa segurando um microfone em evento. (Foto: diariodocentrodomundo.com.br)A ministra da Secretaria de Relações Institucionais, Gleisi",
+      "url": "https://www.ocafezinho.com/2026/04/22/gleisi-hoffmann-denuncia-terrorismo-fiscal-da-folha-em-editorial-sobre-divida-publica/",
       "source": "O Cafezinho",
       "category": "macro",
       "tags": [
@@ -262,15 +340,14 @@
       "publishedAt": "2026-04-22T04:12:00Z",
       "updatedAt": "2026-04-22T04:12:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "macro-b025bdba24e582119f6b0a1d",
-      "title": "Concursos Fiscais 2026: salários acima dos R$ 30 mil!",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0zbm9FOXg1ZFNRZkQ0ZUFxQUs4UWxIaFRkekpkanRZeEplWXpSZlZQV2VwQVZ5V2MzV2NMZ05VeGMyVmM0X2p3US0ySXpBRVNVbEpXU190Y2M5c0FLUG95Wm5VQ2o3Sm5NbVc5Q0tINNIBdEFVX3lxTFBTMVhIVGRBZzFHOW44cldkTEdqdGctUzM1a3JwaVotOGtCQTlpMldSODUyM2J0cllNemd6c3NwZTV6WHJLd0U3N25HdFFVRUxDdFFVRllwRWNfbWJ0RWpNMzNkTURQbWtsc01qOXQtbXRLQzFj?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "id": "macro-7a69f809c3a74095bad11322",
+      "title": "Concursos 2026: mais de 160 mil vagas; salários de até R$ 30 mil!",
+      "summary": "Fique por dentro dos Concursos 2026: mais de 10 mil vagas previstas para as áreas fiscal, de controle, tribunais, policial, saúde e etc...",
+      "details": "Fique por dentro dos Concursos 2026: mais de 10 mil vagas previstas para as áreas fiscal, de controle, tribunais, policial, saúde e etc...",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concursos-2026/",
       "source": "Estratégia Concursos",
       "category": "macro",
       "tags": [
@@ -278,18 +355,18 @@
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-04-22T02:47:59Z",
-      "updatedAt": "2026-04-22T02:47:59Z",
+      "publishedAt": "2026-04-22T03:12:20Z",
+      "updatedAt": "2026-04-22T03:12:20Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2025/05/05161312/concursos-2026.jpg"
     },
     {
       "id": "companies-8e6321a117c5f133b1ae4874",
       "title": "Lula defende empresas brasileiras em Portugal",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTnAtaDNRZ3lTekx3bFdIMUotUjBZLUNrZHktM3dXZkluNjQwQkwwQjVLYmdqU2dBamNnSlVVMXg0TElsRTA2ZFZTUUxQYldlZXRwNXZ6MWt4OW80X1F3dXc2RTA0RUQ4WS01WldnclZvUDBLOEdIaElKRzRqcVotTTNET1A?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Em Lisboa, Lula defendeu que Portugal pode ser a principal porta de entrada para empresas brasileiras na Europa e citou a Embraer como exemplo.",
+      "details": "Em Lisboa, Lula defendeu que Portugal pode ser a principal porta de entrada para empresas brasileiras na Europa e citou a Embraer como exemplo.",
+      "url": "https://www.esmaelmorais.com.br/lula-defende-empresas-brasileiras-em-portugal/",
       "source": "Blog do Esmael",
       "category": "companies",
       "tags": [
@@ -301,14 +378,33 @@
       "updatedAt": "2026-04-22T02:45:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://www.esmaelmorais.com.br/wp-content/uploads/2026/04/Lula-defende-que-empresas-brasileiras-atuem-em-Portugal.jpg"
+    },
+    {
+      "id": "funds-bf66de08d48da3370457f5a5",
+      "title": "5 Common Misconceptions About Small Business 6 Million Asset Test Worth Knowing",
+      "summary": "Atualizacao de fundos capturada em The Detroit Bureau.",
+      "details": "",
+      "url": "https://tributario.com.br/a/prejuizo-fiscal-e-base-de-calculo-negativa-na-transacao-tributaria-uma-janela-estrategica-que-o-contribuinte-nao-pode-ignorar",
+      "source": "The Detroit Bureau",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-04-22T02:15:14Z",
+      "updatedAt": "2026-04-22T02:15:14Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4298c917-e797-4eda-a317-e0a76bb1f4b1/id-preview-1eb7f740--f818e43a-8ffa-4999-bc4f-03d66094c7f8.lovable.app-1776830901534.png"
     },
     {
       "id": "macro-c440a2d7b51023700c9ceac4",
       "title": "Prejuízo Fiscal e Base de Cálculo Negativa na Transação Tributária: uma janela estratégica que o contribuinte não pode ignorar",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQaFlZQk9KVEZlaTFkRzFfbWpOOTRHa1NTbGFxWWpGOUpPVzlBSWlGTzE4Y1lWSGZzMWZKUE0wUU5WWE4xNVlGTlpLQUhvT01md240QklaRGlZQmZoQU9sNkc0V05uM2pHdnNUWVhLcUY5QnptLWhWV3VVdlpoTllJRFJrRGFEY2NWREZ2TTFNRXNrMGdvcnZCVHdsRVdfd0hpV3RXajRZSDN5Y3BrZTNuVHotRWczN09MX09ETmhqZWcwWGw4cTNGV2EwX0dZRllZNUZHWFFQNGpyenhEQ2g2M21ScFp4WTNB?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Everything you need to know about small business 6 million asset test — explained clearly. Check the numbers and the context here. — Thedetroitbureau",
+      "details": "Everything you need to know about small business 6 million asset test — explained clearly. Check the numbers and the context here. — Thedetroitbureau",
+      "url": "https://www.thedetroitbureau.com/www-news/5-common-misconceptions-about-small-business-6-million-asset-test-worth-knowing-dhzbkxfeubdh",
       "source": "Tributário",
       "category": "macro",
       "tags": [
@@ -320,14 +416,14 @@
       "updatedAt": "2026-04-22T02:13:28Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://www.thedetroitbureau.com/images/5%20Common%20Misconceptions%20About%20Small%20Business%206%20Million%20Asset%20Test%20Worth%20Knowing.jpg"
     },
     {
       "id": "macro-ad03144009854a3a3d08714a",
       "title": "Flávio planeja reajustar aposentadorias e despesas com saúde e educação só pela inflação",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOazdraVpxbl9qUHBxcS1Nd1c2RWd5TjJER1FjazdmdlJ2MXVPRnc3TldfN0IwVkgyeTJQaDVQanBQbGtKOUtOOGVfVjlqeVlVc1lTX19pektXbW1LLXhLSXRwbE1jY0dTVEEwVWFpSm15WXlqMjBCZXpzNXlhLXZSNHpGT1NEemxja0RKb012cTM5MVc0X0xKY0VVTHJzQUlBT1NhVGpMZmIxLXBjV0l0Z1ZOdEs1Tkt3YXJRbzk2aHduZ3U0NkpuN1Z5a1ZxZmY1Y1lwOU1XQTh6bllM0gHcAUFVX3lxTE5rN2tpWnFuX2pQcHFxLU13VzZFZ3lOMkRHUWNrN2Z2UnYxdU9GdzdOV183QjBWSDJ5MlBoNVBqcFBsa0o5S044ZV9WOWp5WVVzWVNfX2l6S1dtbUsteEtJdHBsTWNjR1NUQTBVYWlKbXlZeWoyMEJlenM1eWEtdlI0ekZPU0R6bGNrREpvTXZxMzkxVzRfTEpjRVVMcnNBSUFPU2FUakxmYjEtcGNXSXRnVk50SzVOS3dhclFvOTZod25ndTQ2Sm43VnlrVnFmZjVjWXA5TVdBOHpuWUw?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Atualizacao de macro capturada em Folha de S.Paulo.",
+      "details": "",
+      "url": "https://www1.folha.uol.com.br/amp/mercado/2026/04/flavio-planeja-reajustar-aposentadorias-e-despesas-com-saude-e-educacao-so-pela-inflacao.shtml",
       "source": "Folha de S.Paulo",
       "category": "macro",
       "tags": [
@@ -338,15 +434,14 @@
       "publishedAt": "2026-04-22T02:00:00Z",
       "updatedAt": "2026-04-22T02:00:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-ab004861dea1c796867bb525",
       "title": "Desastres climáticos fazem Brasil perder R$ 110 bilhões do PIB por ano",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdnpldXVLRFp1Nk4zV2p6UHR4NzNTUzI0V3dIMmRaRThNOWJMbzVsQVJHd3hYdEI0Q2xza1RjNmlnbUk4cm55djZDcHpvVkd1dnVBVllOVzFaWUpMcjVsa0dDcHpnTEtHRWM0Rkl3XzFjYXFuTUExTDg3NWR6NEV0U3pzVG13Q0RJTXhXQktQWFk1R2xjVWZBQ3JpOHBHbXlHazVKRmdxZWZJZw?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Atualizacao de macro capturada em ClimaInfo.",
+      "details": "",
+      "url": "https://noticias.uol.com.br/ultimas-noticias/afp/2026/04/21/kevin-warsh-de-linha-dura-contra-a-inflacao-a-aliado-de-trump.htm",
       "source": "ClimaInfo",
       "category": "macro",
       "tags": [
@@ -357,15 +452,14 @@
       "publishedAt": "2026-04-22T01:44:40Z",
       "updatedAt": "2026-04-22T01:44:40Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-f02c0bd2a220cb26c29c3c39",
       "title": "Custo de vida: projeção para a inflação brasileira acumulada em 12 meses indica que a taxa deve ficar acima",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNX2lqai1XSUFGVjlwcTRNcEpFQWc5N0ZwZk5YRFNudUNVYWtHbmtuY3FBV1lZSHd3d1hwOE9FRWlqQVRTWm5kZnV1Nk1la3JHWkZINDNSNGVNT3Fabjh5WW1VaWN0Vy10eTdwcXVXaVo1VERiQkdTdFJoNFN0RlRGU1FlRFVTWGtreG5EWXhBUmtuS0ZNTDJBZUpmbjBWenRIUWY3YnV2dzZ4eHRsV3ZSUWlfc2Jibi1OU1ctMTZCb0U0ajRWTG1JdUl5VDE3dGJfYm45UF9QWktGTEJLYXM5VndmRG9nN0xVMHBKb1Z3cEd2dm_SAfgBQVVfeXFMUERHTS1BX0dqV1JJQzl6c0lkYVVmRnlXdFNpSUEwZEVHNEo4OTZkZURPMVFwaXlXMXZkd3diWm5kcVhRR2RYOHRNVUhFV1VEZWdrM1AweXFZUFNNWnVvQkZsVUp2LXQtMWgxaUs4TkhDUGFMSjlFTjJJQWQyUDI0RDlUOHk0X3V4RTBNUDhBMkMyYVhCM0V2RG9Yem5tUW9lT1V1VHByVmY4WGs0MncyNzlJMEU4S3VSWHhUOUJEN3I2cWJYaGk4WmRDTW5FWkQtME4xNGFiclB4QzF3azNMV3FtYXFKTXhGNGtUVW5SNUZvbmwtTS1hdXU?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Em 1991, o Brasil era a 10ª maior economia do mundo. A Índia era a 17ª. Naquele ano, a Índia estava a 2 semanas de dar calote na dívida externa. Com reservas zeradas e o FMI batendo na porta. Foi quando ela resolveu adotar várias reformas e abrir a economia.",
+      "details": "Em 1991, o Brasil era a 10ª maior economia do mundo. A Índia era a 17ª. Naquele ano, a Índia estava a 2 semanas de dar calote na dívida externa. Com reservas zeradas e o FMI batendo na porta. Foi quando ela resolveu adotar várias reformas e abrir a economia.",
+      "url": "https://www.band.com.br/noticias/jornal-da-band/ultimas/oinegue-india-tinha-metade-do-pib-brasileiro-e-hoje-tem-quase-o-dobro-202604212150",
       "source": "Jornal O Sul",
       "category": "macro",
       "tags": [
@@ -377,14 +471,14 @@
       "updatedAt": "2026-04-22T01:06:10Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://img.band.com.br/image/2026/01/26/oinegue-como-o-banco-central-ajudou-o-banco-master-a-crescer-tanto-201138.png"
     },
     {
       "id": "macro-48053fe49d7b2a8aa133cb0b",
       "title": "Oinegue: Índia tinha metade do PIB brasileiro e hoje tem quase o dobro",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOaThkcWF6RWhlSEM5MHRURThkM0IycGhLRDNJM3VTLUhiUVYyay1mcHh2SHhPbUhobi15UW51bEc3SC1zR0RrMjg0Q2xNLWtqaHdfdnVCUjBweEMtMTJoT0I2X25sLXhuNVJpaDVIWlBJRjFJa0FSQW5Vc3FmWlA0ZldfcVlBZGpTOUNfQjFLempkUzZ5UmxTelRzZmNadUo5empmTjF2b0FyWFR1Vk04aU13cEx0d3NlMXdjYk1BdHhhbFBIRzI5U0Q3M3MzSUVuSkRLbw?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Custo de vida: projeção para a inflação brasileira acumulada em 12 meses indica que a taxa deve ficar acima do teto até fevereiro de 2027 - Jornal O Sul",
+      "details": "Custo de vida: projeção para a inflação brasileira acumulada em 12 meses indica que a taxa deve ficar acima do teto até fevereiro de 2027 - Jornal O Sul",
+      "url": "https://www.osul.com.br/custo-de-vida-projecao-para-a-inflacao-brasileira-acumulada-em-12-meses-indica-que-a-taxa-deve-ficar-acima-do-teto-ate-fevereiro-de-2027/",
       "source": "band.com.br",
       "category": "macro",
       "tags": [
@@ -396,14 +490,14 @@
       "updatedAt": "2026-04-22T00:50:59Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://www.osul.com.br/wp-content/uploads/2026/03/inflacao-supermercado.jpg"
     },
     {
       "id": "companies-d7d799178a58b6f89b72ff2c",
       "title": "Portugal: porta de entrada para empresas brasileiras na Europa",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQ0NjOHhfMTlBMHNLU1RiT1lGYndCOV9zaE9meUUyWmRzc2VwYlRua1JiVWlHcDJxMzBEUlFpLWw4ekk3cjBqWW5zRm9XTG9TWHZJcVJtbk1hX2E1YnpmZGZBMTJXd1BNdnZLS0cxQWtmbENGSUlGeUFWOFBwTmxsUTl5Q0ttdHpIMUxxNkpjSHVnNHFKaHBjY0RwdXIxYUE3SVFBd2wwMEhDYjlnVGgwRnlvNlQ0Q3c?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Em declaração conjunta com o primeiro-ministro Luís Montenegro, presidente destacou o fortalecimento da parceria bilateral e defendeu que o avanço do Acordo Mercosul–União Europeia amplia oportunidades de investimentos entre Brasil e Portugal",
+      "details": "Em declaração conjunta com o primeiro-ministro Luís Montenegro, presidente destacou o fortalecimento da parceria bilateral e defendeu que o avanço do Acordo Mercosul–União Europeia amplia oportunidades de investimentos entre Brasil e Portugal",
+      "url": "https://www.jornaldacidade.net/mundo/2026/04/349657/portugal-porta-de-entrada-para-empresas-brasileiras-na-euro.html",
       "source": "jornaldacidade.net",
       "category": "companies",
       "tags": [
@@ -415,14 +509,14 @@
       "updatedAt": "2026-04-22T00:40:24Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "http://jornaldacidade.net/uploads/2026/04/21/noticias/349657.jpg"
     },
     {
       "id": "macro-3e1a4e23df5b0fae328702dc",
       "title": "Governo de Goiás alcança 1 milhão de inscritos no Nota Fiscal Goiana",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOODU4ZFJ6OFZxaUtHY25RSmdWY0Y3SFdmN0lkT2NNN0tweFlFMFkyb0NvWmZvd3hGcjRGVTQ5b05EQU9vNkY5NV9qd0p6YzJIbTFkZHkyaVVTbDE1N0Vla3ZoSFlCbUtyaDZaamg5ZEw1MDBSU0kwdDhKTUFzaExNV1pGSVh3SkRDWE9HR2Jaa3ZKNkg3WjNOeGFhUDlGZ01W?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Pesquisadores mostram que secas extremas são devastadoras para os municípios e que o gasto climático federal foi apenas 1% do orçamento.",
+      "details": "Pesquisadores mostram que secas extremas são devastadoras para os municípios e que o gasto climático federal foi apenas 1% do orçamento.",
+      "url": "https://climainfo.org.br/2026/04/21/desastres-climaticos-fazem-brasil-perder-r-110-bilhoes-do-pib-por-ano/",
       "source": "Blog do Amarildo",
       "category": "macro",
       "tags": [
@@ -434,14 +528,14 @@
       "updatedAt": "2026-04-22T00:35:06Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://climainfo.org.br/wp-content/uploads/2024/07/perdas-superacao-historias-sobreviventes-desastres-climaticos-Brasil.webp"
     },
     {
       "id": "macro-d936b66666d8b31e2226774c",
       "title": "Tensão no Estreito de Ormuz pressiona fretes e pode impactar inflação no Brasil",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOQTJ2ZkJFT2diLVlRNm9xcC02UnBpTHc1dEV0R1VFbEtYM0JVYVpNSGVRYUluMWRQQlhPYS1sRGw0TDVhSFREdFBqNlNlVmJjdDFxQVF4ZFR5TG5RNEtvTHNFVTRvT2VvTFlxaWNROHRpRXZJY2E4dmxZLVVXMEtaaGRtVG1seUZxOWRUSlBJQ0xfRjJxdGF2VHh1MnV0OVNIQng3SmllZDZoOXE5OXd3SHdheFlKNWc5a1h4dXlwdVhQT1lZR1VNVFV1UTNfUWs?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "O bloqueio recorrente do Estreito de Ormuz tem provocado uma quebra severa na previsibilidade do comércio global, elevando drasticamente os custos logísticos e pressionando a inflação interna, disse Sidnei Rosa.",
+      "details": "O bloqueio recorrente do Estreito de Ormuz tem provocado uma quebra severa na previsibilidade do comércio global, elevando drasticamente os custos logísticos e pressionando a inflação interna, disse Sidnei Rosa.",
+      "url": "https://timesbrasil.com.br/brasil/economia-brasileira/tensao-no-estreito-de-ormuz-pressiona-fretes-e-pode-impactar-inflacao-no-brasil/",
       "source": "Times Brasil",
       "category": "macro",
       "tags": [
@@ -453,14 +547,14 @@
       "updatedAt": "2026-04-22T00:30:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/04/3061e3c6-estreito-ormuz.webp"
     },
     {
       "id": "latest-7111d1fea53329f0e8c1692a",
       "title": "BRB anuncia acordo bilionário para aliviar crise provocada pelo Banco Master",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNm5oMU0tN1F3cXdGYTRaMUN3dXZMbVJFM2dNQmFBZ09tcDBHQzNEV3g2WXFKdTBVWXZ6S0hydGJpMl9KVGctQlloM21FWjJpUmJwN1lLSFJyUnp2bzB1Wk5SWXY3a0lXM21JQUFmdUk5ZHV5YmVLeTAwbmZBdkFiN2tLYkctcWZKRkZ4LUVBMm1uRW9VU1J6eTM1RnIzenl3cDBKR2h2d3FFWlNrWFR6cWpBa3VzRlhXcDcwbVJQajVlbjJMRzU3aThmZ0VsUQ?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Marca reforça adesão da população ao programa, que distribui R$ 200 mil em prêmios mensais, estimula a cidadania fiscal e realiza novo sorteio em 30 de abril Somente em 2026, mais de 18 mil novos cadastros foram realizados para os sorteios do programa Nota Fiscal Goiana Idealizad",
+      "details": "Marca reforça adesão da população ao programa, que distribui R$ 200 mil em prêmios mensais, estimula a cidadania fiscal e realiza novo sorteio em 30 de abril Somente em 2026, mais de 18 mil novos cadastros foram realizados para os sorteios do programa Nota Fiscal Goiana Idealizado pelo Governo de Goiás, o programa Nota",
+      "url": "https://blogdoamarildo.com.br/governo-de-goias-alcanca-1-milhao-de-inscritos-no-nota-fiscal-goiana/",
       "source": "Portal Tela",
       "category": "latest",
       "tags": [
@@ -472,33 +566,14 @@
       "updatedAt": "2026-04-22T00:19:02Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-    },
-    {
-      "id": "macro-ae3211ddb1080ca8893c4f07",
-      "title": "Concursos 2026: mais de 160 mil vagas; salários de até R$ 30 mil!",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5iLUJTOXJENkVDSTBLc2tSZnZRY3FFd1JOVlYxcUpISkF2eFlmOEZiUDMxZ3lmaUVlUndvb0swSmUtUTZSREk5akVwWHV2NEZ0WDNlc0YtbXZrbnA2SkhVYUE1UUZJcmZXZk1j0gFwQVVfeXFMTS0tZkFJRWxPWXFoYXlyNFBOZ2JwLWpXRkRzalhVX0FVc0hydWFpOFRKNnJPdFRvN0tVZmJ5ekEtSUh3V0ZBV1ZlU0pVZVZMcWJBaEtzZENuNUNocFF2WTlSbjJBSXdlaGRmS25uTWpibA?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
-      "source": "Estratégia Concursos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-22T00:10:00Z",
-      "updatedAt": "2026-04-22T00:10:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://blogdoamarildo.com.br/wp-content/uploads/2026/04/IMG-20260421-WA0198.jpg"
     },
     {
       "id": "latest-f6771394afb4c1b9cb429a13",
       "title": "TCE quer saber do Iperon critério que embasou credenciar empresa investigada pela PF",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbFpwLWZQNVhvbnZQdVJxY3B0RnUzaWUyNUd2V3BleDZCWTdtSTB1TFlhZlNTVnN4WjVkZ0dQVFU3VjBDbjdSUTRLR2IweVdGeWx6aTdrbV9tOWlwYk81b0xTSUp6SXd3WVJCbmliQkFvQzBsZlMxdW5OWW4xaEo4elNiNGs0aDVWYWo5ZzgtWjI5emUwN3FPT1pqeEVJNnh2Mm8wWUMwc3lVOG9Kck1ocGlzaWpIdS1aS2tKaQ?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "BRB anunciou acordo bilionário com o Banco Master para aliviar a crise no setor bancário local. A operação prevê injeção de recursos significativos que permitem ampliar as operações do BRB e melhorar a liquidez. A ação faz parte da estratégia de fortalecimento do banco público e ",
+      "details": "BRB anunciou acordo bilionário com o Banco Master para aliviar a crise no setor bancário local. A operação prevê injeção de recursos significativos que permitem ampliar as operações do BRB e melhorar a liquidez. A ação faz parte da estratégia de fortalecimento do banco público e de expansão nacional. O presidente do BR",
+      "url": "https://www.portaltela.com/noticias/economia/2026/04/21/brb-anuncia-acordo-bilionario-para-aliviar-crise-provocada-pelo-banco-master/",
       "source": "valoremercadoro.com.br",
       "category": "latest",
       "tags": [
@@ -509,34 +584,14 @@
       "publishedAt": "2026-04-22T00:05:30Z",
       "updatedAt": "2026-04-22T00:05:30Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-    },
-    {
-      "id": "macro-a15637289cd5919548536f48",
-      "title": "Kevin Warsh, de linha-dura contra a inflação a aliado de Trump",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUkJPZU9FVXoxOF9pSzFDRTlFaUNIamw1TmVSbHBUUTlVOWRzb1RfdXdlVVd6RWVZaElGZWxkT0NXOGx3UWt2ZFVidHlrdVF5eVdSLXFJeG9yWG0tZkU3MzJnYlBJeG1YMHc4VW94RVhZSTJzVWhiRnFPSmlGbE5ybk9JOVBUVlowTnN0eEtwSWhVUWx4aklfVk5xQ1p0a2pZU1J5M19WbThJVE51WDdGbUUxX2J2ektE?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
-      "source": "O POVO",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-21T23:57:48Z",
-      "updatedAt": "2026-04-21T23:57:48Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-6c4a157643e0ab3fe42e915d",
       "title": "Lula defende atuação de empresas brasileiras em Portugal",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbXJxQy1lZDVEWGMyRHY3QjhRNTVTWVZkWjJpaGF2Mno1cnNvQ3psVzVTQzRpNEpSWmJoV0tzQURaaE8tdjVJaUdGVnJHVGxjV21pSEVuczFDNTYwXzE1TC1vVGh0MDdlUjVjU0NaMUtUTjRoSzU0WFFaSWpOTzNsTWxjOUc0VkRrY2FsZmZ5ONIBlAFBVV95cUxNaEN3WDNEX3BONU1UQ09TbEUwNWhCZXJ2TFBxbHh1cFlYUE1zdWR6YmFBcy13TnpYdFIyR0tCcldVZnN3UGUwdWFTTFVNclZWdzNqeTVZMFlDZTRhbml3V0dZM08zUFZacmJCZnhvYUo0bTF2N3BDU3VSbXlwVmZxNUVOUlYyMnpKYUQxS0FnR1JKaGZz?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "O Tribunal de Contas do Estado de Rondônia (TCE-RO) expediu documentação ao Instituto de Previdência do Estado (Iperon), para explicar qual análise que embasou o credenciamento da REAG Gestora de Recursos Ltda. e a decisão inicial de investimento no fundo. O órgão, que cuida da a",
+      "details": "O Tribunal de Contas do Estado de Rondônia (TCE-RO) expediu documentação ao Instituto de Previdência do Estado (Iperon), para explicar qual análise que embasou o credenciamento da REAG Gestora de Recursos Ltda. e a decisão inicial de investimento no fundo. O órgão, que cuida da aposentadoria dos servidores públicos do ",
+      "url": "https://www.valoremercadoro.com.br/tce-quer-saber-do-iperon-criterio-que-embasou-credenciar-empresa-investigada-pela-pf/",
       "source": "YacoNews",
       "category": "companies",
       "tags": [
@@ -548,14 +603,14 @@
       "updatedAt": "2026-04-21T23:37:06Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://www.valoremercadoro.com.br/wp-content/uploads/2020/07/iperon.jpg"
     },
     {
       "id": "macro-a5e55c356b722265de720eae",
       "title": "Kevin Warsh, de linha-dura contra a inflação a aliado de Trump",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdDQwX0NSSFQ0Y3NMempZRkFBckYzNkhtN01HQUg2WE5tdXFGVUstUG5pbi11UEctTE9jMDBscEE2d0taczRrOFVESThpVGFRRE5nVy1ybnZmTjJRRDE2b1VPZVY5R2JqME5FUVVQcU5PcFA2QXFfZnlUNi1ZZkF5V3ZBa0FoTkRfVE1hVVNTaXdBUWE1RkVzU2FObEs1SlEtU1lkbmxwbzF1OFNaeE9kSHMwaUxEcUNOSVlqTGNMcXlsY1E?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "O presidente Luiz Inácio Lula da Silva afirmou nesta terça-feira (21), em Lisboa, que Portugal pode se tornar a principal porta de entrada para empresas",
+      "details": "O presidente Luiz Inácio Lula da Silva afirmou nesta terça-feira (21), em Lisboa, que Portugal pode se tornar a principal porta de entrada para empresas",
+      "url": "https://yaconews.com/2026/04/lula-defende-atuacao-de-empresas-brasileiras-em-portugal/",
       "source": "UOL Notícias",
       "category": "macro",
       "tags": [
@@ -567,14 +622,14 @@
       "updatedAt": "2026-04-21T23:36:11Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://yaconews.com/wp-content/uploads/2026/04/55221588351_3a6240f274_o.webp"
     },
     {
       "id": "macro-8a9d7b74d65dab768d261a28",
       "title": "Carf vai inaugurar sala dedicada à advocacia no próximo dia 28",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZmliX2lWQWZMZW9iYzNkWmxLd09aYlVKUmhMaThmV1VGNFFmYlB2QkVFdGYxYjN5LWk1VmdvZTl4M2xiY3VkWVFEWWVnRVNFcXQtamJFZE41SzRJSGw2RVZnaHFDU2wxampmRTVIbXZod2k0LUwxNnVoVVZCZ1h3TmxjS3F0eHlJOEFSRkROTFk4cUVvM2lsbmJCTmg0cUdsSWVB?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Presidente destacou oportunidades com acordo Mercosul-UE e citou presença da Embraer no país europeu",
+      "details": "Presidente destacou oportunidades com acordo Mercosul-UE e citou presença da Embraer no país europeu",
+      "url": "https://francesnews.com.br/post/2026/04/26/21879-lula-defende-atuacao-de-empresas-brasileiras-em-portugal-como-porta-de-entrada-para-a-europa",
       "source": "Consultor Jurídico",
       "category": "macro",
       "tags": [
@@ -586,14 +641,14 @@
       "updatedAt": "2026-04-21T23:30:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://img.dhost.cloud/yW8JJGBjNG5iIA3s-Bx9_DFTmhA=/1200x630/smart/https://fcomunic.s3.us-west-004.backblazeb2.com/images/70725/430b425b677d3304efad1eaf5d5706522be.jpg?name=a-agenda-tambem-abordou-a-presenca-de-brasileiros-em-portugal-que-ja-ultrapassa-500-mil-pessoas.jpg"
     },
     {
       "id": "companies-5abca7a77583753e169b9d25",
       "title": "Lula defende atuação de empresas brasileiras em Portugal como porta de entrada para a Europa",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOelI4SjFua0gzcHRwU1J4ZnpkTkRxRHFLX3lQd1c3NmduRldVNlI5cW1WT2VneGdtdGw4SzRDZFdLLXU2eEcwVlZTWnM4aWthaHoxaUxkY0w3bmNHUzZSc05GNUZQYkltalduMkExYldwRk5KcU9GSG9kUGpPV2hNU29YOXF2WjNsOFgyN0tOTWxGbHFoZXUzcDd6VUFMRzVHbUpuNzNreGVEQzM5WUVHUmxORndaSEhTeFMwaHJGRm9GVnZES3hlWldndkxUOEV1RFFMb1dEbFM?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Inauguração da sala, que ficará no terceiro andar da sede do Carf, ocorre no dia 28. OAB-RJ havia solicitado espaço para advogados",
+      "details": "Inauguração da sala, que ficará no terceiro andar da sede do Carf, ocorre no dia 28. OAB-RJ havia solicitado espaço para advogados",
+      "url": "https://www.conjur.com.br/2026-abr-21/carf-vai-inaugurar-sala-dedicada-a-advocacia-no-proximo-dia-28/",
       "source": "Francês News",
       "category": "companies",
       "tags": [
@@ -605,33 +660,14 @@
       "updatedAt": "2026-04-21T23:15:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-    },
-    {
-      "id": "companies-94e79ec31b11908be5896970",
-      "title": "Lula defende que empresas brasileiras atuem em Portugal",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5lSDYwS2ktRGpnamRUOUtOQ3BRQmNXWFVqZDNwNDlUV3NOdEwySDRSWjZYS2U2cHJKU21Yd0Zndm1ubVVXd1FBSUl1UExuT0ZtQXg4ZFNoQ3lGOUFOWXpPcEh2dURKcXlPRldzT2hnbXIzTjBrU2xwV2RETWU1QQ?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
-      "source": "ICL Notícias",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-04-21T23:08:19Z",
-      "updatedAt": "2026-04-21T23:08:19Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://www.conjur.com.br/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-17-at-13.25.28.jpeg"
     },
     {
       "id": "latest-d7e478b3783a1bda6ea8905e",
       "title": "Mercado automotivo: financiamentos de veículos atingem recorde de 18 anos no Brasil",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPcWN6cHVHekJSYmZEYkN5TWZCcDVidXhmaDNrTXlTOGcxN1dYNnlDaklHeW1VYWc3U3BfckEtN3pzWmx4SjNqRHJpd1pVdExLeElSdzVmX3czYXlaaGJFVUJVMG5TNC1VQk02T0dudkVsdTk2aXplRGJlVmI4QUlmUzVGQVRFcXlYbjA2cWZYcWdLeTdkYlAyeVlpcS1JVkUxa0stT01hUVZBbDhiSkdZdm4xbXloSVB4Q0JnTmFR?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "O mercado de crédito automotivo no Brasil alcançou, no primeiro trimestre de 2026, seu melhor desempenho desde 2008, com 1,89 milhão de veículos financiados. Segundo dados da B3, o crescimento foi impulsionado pela facilidade de acesso ao crédito, resultando em uma alta de 12,4% ",
+      "details": "O mercado de crédito automotivo no Brasil alcançou, no primeiro trimestre de 2026, seu melhor desempenho desde 2008, com 1,89 milhão de veículos financiados. Segundo dados da B3, o crescimento foi impulsionado pela facilidade de acesso ao crédito, resultando em uma alta de 12,4% para veículos leves e 18,1% para motocic",
+      "url": "https://mecanicaonline.com.br/2026/04/mercado-automotivo-financiamentos-de-veiculos-atingem-recorde-de-18-anos-no-brasil/",
       "source": "Mecânica Online",
       "category": "latest",
       "tags": [
@@ -643,14 +679,14 @@
       "updatedAt": "2026-04-21T23:05:44Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://mecanicaonline.com.br/wp-content/uploads/2025/07/B3-Consorcio-Vendas.jpg"
     },
     {
       "id": "latest-fee2e47969ac338d1e6ed484",
       "title": "Warsh evita cravar trajetória de juros do Fed e descarta inflação alta por tarifas",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbFJ5TU5IZnY4SEJWZ2V0dlNBQkpzVURtai12ZTd0WG9PQXc4NWlmTGkydFFmRFlHclAwRjcxWTlpUldWTTB4eXVLZlVEWVhJMjN6Qi04dmR5ckVtR2xBRnFla0JtZTlLblh1Sm42NjdpVjdWbU43LU85X3ZxTnR6ckpTdUFzTHBpN2pQUTc2bU5WWFlQckxXVTFXZnRlSmlZY0s5SlpERG9jNEx4ZHVrQmIweGJoQ3pFeGpv0gG7AUFVX3lxTFBsUnlNTkhmdjhIQlZnZXR2U0FCSnNVRG1qLXZlN3RYb09Bdzg1aWZMaTJ0UWZEWUdyUDBGNzFZOWlSV1ZNMHh5dUtmVURZWEkyM3pCLTh2ZHlyRW1HbEFGcWVrQm1lOUtuWHVKbjY2N2lWN1ZtTjctTzlfdnFOdHpySlN1QXNMcGk3alBRNzZtTlZYWVByTFdVMVdmdGVKaVljSzlKWkREb2M0THhkdWtCYjB4YmhDekV4am8?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Braskem troca de comando, vendendo controle para Fundo Shine I e escolhendo Helcio Tokeshi como novo CEO. Descubra os desdobramentos e impactos.",
+      "details": "Braskem troca de comando, vendendo controle para Fundo Shine I e escolhendo Helcio Tokeshi como novo CEO. Descubra os desdobramentos e impactos.",
+      "url": "https://diariodoestadogo.com.br/braskem-tem-novo-ceo-e-mudanca-de-controle-acionario-entenda-o-impacto-no-mercado-695141/",
       "source": "Estadão E-Investidor",
       "category": "latest",
       "tags": [
@@ -661,15 +697,14 @@
       "publishedAt": "2026-04-21T23:04:10Z",
       "updatedAt": "2026-04-21T23:04:10Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-689b3af70e923c6a206e3d2c",
       "title": "Braskem tem novo CEO e mudança de controle acionário: entenda o impacto no mercado",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVmJhS3M1cndhUjV4NnFOZ0JhTVpSU0FnZWhtcm9MTk0xMkFkT0Y5M012XzMtTzFWaExKZURiS3JXeFVmYV9sS0phTHdPbGhXcEtyNDlib1VEcUo1TmdjdElqZDJTelZwTWZOOEtEa0VEeXZRNEpNam03cXpmN2xOelkxOXZabjRVUU9JRTlWbEEwdVozR2FFdnV4SVc0S1gwcXlGbDk3akk2c1VYZEx1RXVKOENDYW9ubmhOelJ3?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Lula defende Portugal como porta de entrada para empresas brasileiras na Europa, destacando o acordo Mercosul-UE, integração produtiva e cooperação estratégica em visita oficial a Lisboa.",
+      "details": "Lula defende Portugal como porta de entrada para empresas brasileiras na Europa, destacando o acordo Mercosul-UE, integração produtiva e cooperação estratégica em visita oficial a Lisboa.",
+      "url": "https://jornalgrandebahia.com.br/2026/04/presidente-lula-defende-portugal-como-porta-de-entrada-para-empresas-brasileiras-na-europa-e-reforca-aposta-no-acordo-mercosul-ue/",
       "source": "DIÁRIO DO ESTADO",
       "category": "latest",
       "tags": [
@@ -681,14 +716,14 @@
       "updatedAt": "2026-04-21T23:01:04Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://i0.wp.com/jornalgrandebahia.com.br/wp-content/uploads/2026/04/Presidente-Lula-defende-Portugal-como-porta-de-entrada-para-empresas-brasileiras-na-Europa.jpg?fit=1200%2C800&quality=30&ssl=1"
     },
     {
       "id": "companies-7ca966c95d8de1372917f977",
       "title": "Presidente Lula defende Portugal como porta de entrada para empresas brasileiras na Europa e reforça aposta no acordo Mercosul-UE",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQQWVCS3htSnNzVmllRWJjb2kwVEdkU0RCeEVLYlJGRUxpb1RjdFQtVjJITWFBTlpUSGFHeFV0aHBBME1EbkM3QXR5bGFDUlp1N3dHMFVZVHI3ZUJ0LWhXcW9aUjYtX1dLb25JUGV0Wm1RbHNUMXFXNGUyRzFtaW9ZQ3UxaU5CY3QxUDdib1ZIbWx3Z0lhaXpwYURpbjJfQ3NWTVM0Sk82UXVWQjVXSDZvWWV6REo3T0xudmVPMTdYLWtVZG1ubndLR01wNi1lcHhiTWpWRHZKTjlVbHJSVlcwVTRMLVlJOTZhcF9vbGE4dkU1R005Y204Y3dWUjR2cGdH?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Durante sua visita, Lula teve seu primeiro encontro com o presidente português, António José Seguro, empossado em 9 de março, no Palácio Nacional de Belém.",
+      "details": "Durante sua visita, Lula teve seu primeiro encontro com o presidente português, António José Seguro, empossado em 9 de março, no Palácio Nacional de Belém.",
+      "url": "https://www.jornalfolhadoestado.com/politica/lula-defende-portugal-como-porta-de-acesso-para-empresas/",
       "source": "Jornal Grande Bahia",
       "category": "companies",
       "tags": [
@@ -700,14 +735,14 @@
       "updatedAt": "2026-04-21T23:00:50Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://uploads.jornalfolhadoestado.com/2026/04/seox-cover-1776806094005.jpg"
     },
     {
       "id": "companies-fd7206cddb16c8f73837f616",
       "title": "Lula em Portugal: por que o país é a chave para empresas brasileiras na Europa?",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORzJ6cGk1OWRfS2lTY3FZaXdLSl8tSVJYem5DMk42dFV5eUxsQjJfYnZGWV9FMzNjTm4xaDFkaV90YWJuTDlIWjRRejZ5aTVvSHpDLWFDZVZPd2VobXBwTFg4ZGthZE91MGUydjI0Y3djQzZKMzF6NUVHN1NwNjJSZjJjeUNZREVOalhhU2xQMUkxelEwN0RSc0VGT0x3MS1yajNOWA?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Em visita a Lisboa, o presidente Luiz Inácio Lula da Silva afirmou nesta terça-feira (21) que Portugal pode ser a principal porta de acesso dos interesses",
+      "details": "Em visita a Lisboa, o presidente Luiz Inácio Lula da Silva afirmou nesta terça-feira (21) que Portugal pode ser a principal porta de acesso dos interesses",
+      "url": "https://www.ocafezinho.com/2026/04/21/lula-defende-que-empresas-brasileiras-atuem-em-portugal/",
       "source": "Folha do Estado da Bahia",
       "category": "companies",
       "tags": [
@@ -719,14 +754,33 @@
       "updatedAt": "2026-04-21T23:00:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://www.ocafezinho.com/wp-content/uploads/2026/04/trend-art-5bc30c7836-1.webp"
+    },
+    {
+      "id": "companies-193ac2ecc613c04d0656559a",
+      "title": "Lula defende que empresas brasileiras atuem em Portugal",
+      "summary": "Fique por dentro das últimas notícias sobre a Bolsa, Mercado Financeiro e dinheiro. Confira também dicas de investimentos e educação financeira no E-Investidor.",
+      "details": "Fique por dentro das últimas notícias sobre a Bolsa, Mercado Financeiro e dinheiro. Confira também dicas de investimentos e educação financeira no E-Investidor.",
+      "url": "https://einvestidor.estadao.com.br/ultimas/warsh-defende-reformas-politicas-fed-critica-longa-duracao-previsoes-bc/?amp",
+      "source": "O Cafezinho",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-04-21T22:51:00Z",
+      "updatedAt": "2026-04-21T22:51:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://einvestidor.estadao.com.br/wp-content/themes/e-investidor/assets/img/card-share-large-1200x631.jpg"
     },
     {
       "id": "companies-63188018edd275056d7ac138",
       "title": "Lula aposta em Portugal como porta de entrada para empresas brasileiras na Europa",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSkwtWTZ0NW81SENvYmttY1d5aFY1MW1vMEVQczNWSkk3UGVCNHFIOVRWX3hkZkw3SEhYenRBU3FWeTZiVW1nTWExTFFiX3M0b042enUtSEU2R1hJZDVtT2NiWHpjSWxoajhiZUxIcmpCYkZhTTlBdVJVN0hGVHBYaWQ1OVVhTlZOYnRmVzJockswRE1VSFlXemk2eTRGR3ZQRFpOVFFtOHY2bGQwZUdZYg?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Atualizacao de empresas capturada em Agenda Capital.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSkwtWTZ0NW81SENvYmttY1d5aFY1MW1vMEVQczNWSkk3UGVCNHFIOVRWX3hkZkw3SEhYenRBU3FWeTZiVW1nTWExTFFiX3M0b042enUtSEU2R1hJZDVtT2NiWHpjSWxoajhiZUxIcmpCYkZhTTlBdVJVN0hGVHBYaWQ1OVVhTlZOYnRmVzJockswRE1VSFlXemk2eTRGR3ZQRFpOVFFtOHY2bGQwZUdZYg?oc=5",
       "source": "Agenda Capital",
       "category": "companies",
       "tags": [
@@ -737,15 +791,14 @@
       "publishedAt": "2026-04-21T22:30:53Z",
       "updatedAt": "2026-04-21T22:30:53Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "latest-d879d7df5824850e075ba729",
       "title": "Wall Street Journal destaca poderio organizacional e financeiro do PCC: ‘Buscam fortuna, e não fama’",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWWFha1U3aXU3UG1GdFowNU1PeFZmVzFXanZ3ZUEwVmpGcVVwN2R2akNrRUhvVlFSZ2RsSUdxTk9VQ015b2ppWmhaWmJrMnZhbXAtLTdVa3M1TlRaMXhvR1ZVMGFPTk9JVkd1THZBLTk5WDhCMVlYOUFQRVNKTXM5WHdlcDljNHRLNklfUHNiQ1FGQk5YTndWRElWSjBOTGJDcEVBemdhTjcyaFdWdUt0R3c4QmxlNXM2U3dxZndmMFp1WmdsQy03U3BBc9IB0AFBVV95cUxORFlkRUxIalVWZG9HWGRzdi1IaDVqMHp4NTFXR1ZCTlFSV0NCa0JLX0RORVFtZC1iNktHWm51bFpYVWFxbVRKOGVaYmZOTzhGQ3ZPNjJkZ09PM1Q2RWRUeUpnbW50SmFZQVF6eXRmd1hBQ0FBOHRRZlBSdmU0YlR0TWlpdkdsQ05oSU9kR09KR2Jjd2pOLWd5VVBQN1Z4SDJwOGZtQ2E3a05iU0c5WGRrTDZzNDRpLUlVSldBMUQ1ek5CUGRvWndkVHRCMV9RaURT?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWWFha1U3aXU3UG1GdFowNU1PeFZmVzFXanZ3ZUEwVmpGcVVwN2R2akNrRUhvVlFSZ2RsSUdxTk9VQ015b2ppWmhaWmJrMnZhbXAtLTdVa3M1TlRaMXhvR1ZVMGFPTk9JVkd1THZBLTk5WDhCMVlYOUFQRVNKTXM5WHdlcDljNHRLNklfUHNiQ1FGQk5YTndWRElWSjBOTGJDcEVBemdhTjcyaFdWdUt0R3c4QmxlNXM2U3dxZndmMFp1WmdsQy03U3BBc9IB0AFBVV95cUxORFlkRUxIalVWZG9HWGRzdi1IaDVqMHp4NTFXR1ZCTlFSV0NCa0JLX0RORVFtZC1iNktHWm51bFpYVWFxbVRKOGVaYmZOTzhGQ3ZPNjJkZ09PM1Q2RWRUeUpnbW50SmFZQVF6eXRmd1hBQ0FBOHRRZlBSdmU0YlR0TWlpdkdsQ05oSU9kR09KR2Jjd2pOLWd5VVBQN1Z4SDJwOGZtQ2E3a05iU0c5WGRrTDZzNDRpLUlVSldBMUQ1ek5CUGRvWndkVHRCMV9RaURT?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -756,15 +809,32 @@
       "publishedAt": "2026-04-21T22:18:00Z",
       "updatedAt": "2026-04-21T22:18:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "macro-c596d33453782c52cde1319e",
+      "title": "Lula enfatiza que dados bons de inflação e emprego ainda são pouco para o povo | Política | O Liberal",
+      "summary": "Atualizacao de macro capturada em O Liberal.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYjBacjdoRjhwZFA3UGpRS2U3RE1wOWdCLWx5WWFyaEp4R3ZPcE5fRjNBaHhpQnM2VWFZY04xcV95M3RkNUlyMDJoRmJNSndjZHp4TFQwdExlMUdwRmJ1QVA1NlhLY1B0MzB5cU1FZjJTLXRZTjBYa1FMUFNNa1VZTlBmYnctWlBWemxCYkpVS1Z5M0g4SzBxRmUzYnRKSUVtVGhIc25CLWpPdU1IUW8xYWN0X1pQVkdqcGRCd1F3b0NGeWZL0gHEAUFVX3lxTE9iMFpyN2hGOHBkUDdQalFLZTdETXA5Z0ItbHlZYXJoSnhHdk9wTl9GM0FoeGlCczZVYVljTjFxX3kzdGQ1SXIwMmhGYk1Kd2NkenhMVDB0TGUxR3BGYnVBUDU2WEtjUHQzMHlxTUVmMlMtdFlOMFhrUUxQU01rVVlOUGZidy1aUFZ6bEJiSlVLVnkzSDhLMHFGZTNidEpJRW1UaEhzbkItak91TUhRbzFhY3RfWlBWR2pwZEJ3UXdvQ0Z5Zks?oc=5",
+      "source": "O Liberal",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-21T22:17:27Z",
+      "updatedAt": "2026-04-21T22:17:27Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-69510383836e108a91f73804",
       "title": "Lula fala sobre inflação, emprego e regularização das Big Techs",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOenR3enFQdVZ2WjIxNnBuUl9DZWduTzlnNkNIaGFnbnEtRjROazF4MUxMR2dqUmtPaFFNZWFCeHZfNzhGZnJLaVZ0cnl5NERTUzk2UVVIc1hFNGhZQXo5eThFczNZdVpJVkx3djhlNHhkZ2xPLUhpYzlIeUhHT210SWRxRUZnbGVhYjh0Zk1NWkM4OHJhRkEzNVdmS2c?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Atualizacao de macro capturada em viva.com.br.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOenR3enFQdVZ2WjIxNnBuUl9DZWduTzlnNkNIaGFnbnEtRjROazF4MUxMR2dqUmtPaFFNZWFCeHZfNzhGZnJLaVZ0cnl5NERTUzk2UVVIc1hFNGhZQXo5eThFczNZdVpJVkx3djhlNHhkZ2xPLUhpYzlIeUhHT210SWRxRUZnbGVhYjh0Zk1NWkM4OHJhRkEzNVdmS2c?oc=5",
       "source": "viva.com.br",
       "category": "macro",
       "tags": [
@@ -775,8 +845,7 @@
       "publishedAt": "2026-04-21T22:14:19Z",
       "updatedAt": "2026-04-21T22:14:19Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "funds-617dbd37f0d88469dbd60299",
@@ -803,6 +872,24 @@
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPeUZRbGpEaVBhb25HVlNjbHg2RFNoYlQ4RVB5SVUzY3BWM2I0bjVsaFJXSHRiUFRpby01UEdGbHd1YXU0UEZ0ZjZiZmtSX1Fqc0hoMVZDRElwRlhIMkw5a2lWa1BoNXZJbTJyR19nS3haRzgwUzJvNFBIaThnSVZyUVAxR3lFc0tGZGQ2VWpRMGJ1RzZ3VGNhd2Z5WW85bFZyMFQtMEJseFZ4TDZOTVFZNnZQUElZTDRLVE5lVWdtejgyTy1rWlV6LVBfZFFtR0tKc2hkeEloRlA1X0FTMzRYUEVIcXdUUDNu?oc=5",
       "source": "UOL Notícias",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-21T22:03:00Z",
+      "updatedAt": "2026-04-21T22:03:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-f15fb38f28c90e2b2b5ef257",
+      "title": "Lula diz que avanços em inflação e emprego ainda são insuficientes para a população",
+      "summary": "Atualizacao de macro capturada em Tribuna do Sertão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZ1Bwd2JmYXlEVWlFVHFLNGYtNWdQbzVFOWhIWXRTdnlBTHJHckt1VVRoU2R0LVhkV2VhRmdHM1JnNTlCTS10OHF2LVN1MlF6T09sM1luTUkzd0lSSlVRcEh3WTVHUzFHUUp0VzZrc0NGRFFwX0JxLTBqQlBFSWY1TTh4b1R0WEtaZVlPWGVqMG9mYW9YM1lrbUFfZUJKbjM4YXY1ZHBUVVlyUHF4QjR3eFpaR09HUEpCNC1rTGlaUkF0THRzNVIwaG94dmdzcXdQbDU2TVFsZzJNMnlGU3c?oc=5",
+      "source": "Tribuna do Sertão",
       "category": "macro",
       "tags": [
         "macro",
@@ -1049,42 +1136,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "companies-cbcd91d394ab16ca37b34440",
-      "title": "Lula defende acordo UE-Mercosul e propõe Portugal como porta de entrada para empresas brasileiras",
-      "summary": "Atualizacao de empresas capturada em Folha de S.Paulo.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQNkdiRmJiS0N6c3had0FfZEpWeUhQbXFsa0RSTjZrakMyLVB3dTVuTWVwVTZLbXNFcUZ4WVBKQkUzWWk2YzQyX0ZVUjJvRGFqMUNXMGtnQXIxWlE1XzRiNXpMWllfOVk4OTFPcVBsMGJpYnRVUUttX01ZUDRma2dFTlZmZ3QyQjhDRVh1WGdlbGttTE5RUUE1XzhnaklaNEI4VUlscnpGX1RKWnJYcGxjVnRZNlNiOEZFbWgtM2VndUtQeFVQb0lsVGdGQ0NoYWF0VHozaFozNDBFY0hhUlJoTjlUc9IB6AFBVV95cUxNWW5FTzhubUhCUUN4UmVrME1rZUxOOWYxMDZmb2tmM056V1RVQjJzNndOY19BYmZEZFNFSTRZOWtXN2xJRUkzcTRhZ25JcmpzUlVraGpodUNqdk9YLU1pcGk5akVrYkpCVEI3d3RqQ0dpRXBnXzNMelhLS2liVnBKYzhGNzZJa0tzQmZlaGhnM1NzLWhoSEViNW1DNF9LWjF6LUxJUWxZZ0pMN2lhWkxRQlhNQWx4WjVLZ19tcmVHWDBSa2dpazlNYlFRS3RBb2Y0UzNnWnBYSzZOZG9HNkNENWVNMHVGWWFp?oc=5",
-      "source": "Folha de S.Paulo",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-04-21T20:24:00Z",
-      "updatedAt": "2026-04-21T20:24:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "macro-3470bd8c87b642b9e14961b3",
-      "title": "Indicado ao Fed, Warsh diz que não é fantoche de Trump, mas evita falar sobre juros - InvestNews",
-      "summary": "Atualizacao de macro capturada em InvestNews.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE54ek9yZkdNOWI4Rjc1T3k5d3ZNdDhwazJqMVpzTk82UE9iRHBSbEhZMlZwY21mMXNlY0VsejJUb3BuUW4yY0p4bVJMeWo1SlY1VzFfSDRlWEh1OGF1MDlNaTNPNTc2QUdsaFRnQ0ZtOHJvVUhwUDFpaTN30gF_QVVfeXFMTktIU0hRSWZwdnU4Rmc3NU5oOEgtV1piSGNBa1dDSDA4NXZJTnBOMHJENjZyMFhCbXNnR05qcXRaeHNXcVo4OHlVQVlsOG9WYWhMRjNxbzRUNFVQZHU4SXB3VWZ1bld0R1dRMi05OUc3TWxaQkNFREZSX2dxb0Q1VQ?oc=5",
-      "source": "InvestNews",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-21T20:02:37Z",
-      "updatedAt": "2026-04-21T20:02:37Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "latest-13c394aa4bd27cedf7645730",
       "title": "Crédito rural com juros de 3% ao ano: veja como funciona a nova linha de crédito",
       "summary": "Atualizacao de ultima hora capturada em CompreRural.",
@@ -1101,24 +1152,6 @@
       "updatedAt": "2026-04-21T19:59:08Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-1e2d66b8c40512a7ca72af55",
-      "title": "Stifel vê pressão nos preços das ações da Whirlpool devido à inflação",
-      "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZUwwWWpBcDZ5a29IenNJWVk3bDkwMDNSTDc4WFh0VVA0U1FCM2d6U0stdHlsTmhoU1RXMjNKTXJJSlRtV1lMSnNJNzhlMjFXc0w4THVTakllM2d2YkwxRE92UG1IdC1ZZHFnc0FieGpFNUJjZm9fcXA5dWo0R3lBN3JNcmZqN2tDRXhNcXFURDV4a1phSTMzZG5rVGhtWl8xTDA5eklwLVpYQWg3U1JoaVAtVXlaUFNhVjVfZWsydEJXbHBlWkdn?oc=5",
-      "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-21T19:59:00Z",
-      "updatedAt": "2026-04-21T19:59:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-092af41398037226727f5c98",
@@ -1211,6 +1244,24 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
+      "id": "funds-66be8e24215d0d5952ed1f70",
+      "title": "Como lucrar com a logística no Espírito Santo",
+      "summary": "Atualizacao de fundos capturada em A Gazeta.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONFBacDMtLW4yM3ZNWG1SYUwwb1d2eWZySnJlZXR3bzE4WTlZOTdJWFZvaTI3aXA2MHdWUDB6RU9UTkIyZ29iYnN3LVRZRnZ3dlc1UnlsbDBxQVI2S1hNNlg1MDVHLUhSYXQwNERucDRQT1FXeHh0QjI1U2ZycFJmM1gwd0lPLXVjV3FHX2pWbjRvWEtFQnoyQlFQVkNhUzJBcE9J?oc=5",
+      "source": "A Gazeta",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-04-21T17:52:00Z",
+      "updatedAt": "2026-04-21T17:52:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
       "id": "funds-00167dec85e67f5d38dcfd60",
       "title": "Fundo administrado por Augusto Lima, ex-CEO do Master, investiu R$ 45 milhões em refúgio de luxo em ilha de Candeias",
       "summary": "Atualizacao de fundos capturada em PrimeiroJornal.",
@@ -1243,6 +1294,42 @@
       ],
       "publishedAt": "2026-04-21T17:31:57Z",
       "updatedAt": "2026-04-21T17:31:57Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-678f46a847d3bdc074c38d3f",
+      "title": "Resgate bilionário do Master pode afetar seu bolso; entenda os riscos",
+      "summary": "Atualizacao de ultima hora capturada em DIÁRIO DO ESTADO.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSHZxV2xoM2U0NkNkTEdnalNPSy1kd25NeEhJbmtEeHN0X0d1OTNxc2Rjdk5TN2haYUwwRzVLRXJ1SnVESzZaM2JjV3BGV3ZPYk9BaklRR0xnZXJrTk9hZ0FWNkgzMWY3U01ReFlXVGt5WjNUQnNrS2FReE5yVlNwdTRJYUxFazVDZ0RPU2N0QmtkU20xLXFXSHdLWWUxLUZmN3RxdjUwSzM2Skhh?oc=5",
+      "source": "DIÁRIO DO ESTADO",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-04-21T17:05:23Z",
+      "updatedAt": "2026-04-21T17:05:23Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-7af9dec92ef3b3896b4e61e3",
+      "title": "Saiba por que a confiança empresarial desaba antes das eleições 2026",
+      "summary": "Atualizacao de ultima hora capturada em DIÁRIO DO ESTADO.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaU50MjBpS193elpHenB4anYtYlRJby1ob01wUUdFUl91UTFkcHMwbnpqdWEzUDdONWZ5UzNLeUk4NnY5NlNITllMbU5scGY2S0k2bVQ5dWFCRld4MnhvV3Z2WGY4Z3NxMllkQ1U4QW9fanNkRHFMeFBqcVR0R0x1WXZCX2RQRTloRjZSWS13VVM4SUctZFpGTTBCMXktVGR5Tm5nWE9zaDVnYXM0?oc=5",
+      "source": "DIÁRIO DO ESTADO",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-04-21T17:02:16Z",
+      "updatedAt": "2026-04-21T17:02:16Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -1281,60 +1368,6 @@
       "updatedAt": "2026-04-21T16:44:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "latest-00f3994a15df667910b593f4",
-      "title": "Custo bilionário para recuperar ativos do Master ameaça caixa do BRB",
-      "summary": "Atualizacao de ultima hora capturada em DIÁRIO DO ESTADO.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdW9vVXY2cFZCUGJWY3E3SnBpTU1ObHZfSU8zdzhsVEZPX3lfRUJUbnFuSFNrbWJ6c3JBOEFKZzlER3ZyOHo3bGtLM25fZVdHektzRzhRQ0hPSmhLVmhmcXRmWjVFSDZ2SXh6dXYwRGcxLU1oM0thaG90RzVITUcwYWxwWC12SE44MXZVbUFDVFMxMThSNVRPc1FfVE9oTnREZG9LZTFPRGVYem95?oc=5",
-      "source": "DIÁRIO DO ESTADO",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-04-21T16:24:47Z",
-      "updatedAt": "2026-04-21T16:24:47Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-290cdcc1d6f1af513d1d25d6",
-      "title": "Bancos testam Haddad nas pesquisas e resultado surpreende",
-      "summary": "Atualizacao de ultima hora capturada em Blog do Dina.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE10YVhfRHJWMUpETm9VUk5kOGpOc2x4WXJiRk1aS0t6UjloaDZiVWtjYTFOT1BJRkxCakdXazI5d01rdk9Sc25Vc2hrWW1FSXJnam45Y01helZqV3RzaElWV0pIQkNXZkhBWndrbFdIcy00bDBrQTh3?oc=5",
-      "source": "Blog do Dina",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-04-21T16:19:01Z",
-      "updatedAt": "2026-04-21T16:19:01Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-dbb2b48142a183dcd1675b11",
-      "title": "Crise no K-pop: criador da agência do BTS pode ser preso por esquema financeiro",
-      "summary": "Atualizacao de ultima hora capturada em VEJA.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSGc3Z29qbk8wc0VKSGd2bVFLcGpTQS1GVWtocXBhV2JKWEtBNjI3ZzhfOEcxSUM3MU5mczJLZjZmQ0FUUlNqTDBGUHRXTkM3bjJROEY1X1NLZTZkOGJKQnlwWndjUGdLQVN5TFgzUWNnS19nZ1g5Rjc4VmVCVU93NnNTZGluX1JDSE8zR0hGc2pUTERGcUUwelJIUF82Zl9uc2pRbmh5bU1rb2M4dnlFS2otbkg?oc=5",
-      "source": "VEJA",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-04-21T15:53:45Z",
-      "updatedAt": "2026-04-21T15:53:45Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "funds-ef5dcc912407a8f04000d90c",
@@ -1387,42 +1420,6 @@
       ],
       "publishedAt": "2026-04-21T12:31:00Z",
       "updatedAt": "2026-04-21T12:31:00Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-303986aaae859da63b51de3f",
-      "title": "Associação Faisão BJJ de Amarante conquista título nacional nas categorias de formação",
-      "summary": "Atualizacao de fundos capturada em averdade.com.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbzJRbUxFSWROSkl0ZVpVblZ5NGV2NWxuS21OQURqSUR4Q1NFWlh4SHM0VUNjdUF2dEJWeUlLNHU2dzZjVy1naV9mTTBfMWhoclkxX1pBUHp2X2Zpdk9aYUN2cjJuWGZCb3Y5T0hJeG16LWlCS0lGQm4tQXNQY2dyU2E1eU5yVnhUTGRQZDNicmRkMlJMNWE1TkEzZk00X2UzakFqMmk5bUZmYUh6OUNvcXE3clNBY2FMOVpJ?oc=5",
-      "source": "averdade.com",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-04-21T12:11:30Z",
-      "updatedAt": "2026-04-21T12:11:30Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-708adaed16540448bf5e0c97",
-      "title": "FIIs de papel x tijolo: Migrar neste novo ciclo de juros?",
-      "summary": "Atualizacao de fundos capturada em Bora Investir.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPc3lNTGl0WGVPc2FxWklDVUFjMXFWTFFPS0JoR3QxUmlseFUwd3l4SUM5Q3dlby0zVFBueE9zdGZIM2QyekFpaEZ3S0xKYlA0dHo2YW42blNQZENWaHgwa0JkRGJXVElIZDBFaWZSUll5U3VjajdwN3dlRWRHVjBlRU9BNnRWTTU2TU9fb2xPZ0ZaS2U0QXVOaTRZX0sxU2dXZkM4U0t1bFZKMmo1ZEhsTnF1b0YzY01ZSWIwaU5QVzJPZGIwQi1UdHZ4NE81T0pSWlhvNlBObGFnN0xIRWc?oc=5",
-      "source": "Bora Investir",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-04-21T12:00:00Z",
-      "updatedAt": "2026-04-21T12:00:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
