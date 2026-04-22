@@ -396,12 +396,12 @@
 
       const companySelectHtml = company
         ? ''
-        : '<label class="wk-cap-field"><span>Empresa</span><select name="companyId">' +
+        : '<label class="wk-cap-field"><span>Empresa</span><select id="workTaskCompany" name="companyId">' +
             '<option value="">Geral</option>' +
             WD.COMPANIES.map((c) => '<option value="' + esc(c.id) + '">' + esc(c.name) + '</option>').join("") +
           '</select></label>';
 
-      const daySelectHtml = '<label class="wk-cap-field"><span>Quando</span><select name="scheduledDayIso">' +
+      const daySelectHtml = '<label class="wk-cap-field"><span>Quando</span><select id="workTaskDay" name="scheduledDayIso">' +
         '<option value="">Inbox (sem dia)</option>' +
         WD.getWeekDays(currentWeekStart).map((d) =>
           '<option value="' + d.iso + '"' + (d.iso === WD.todayIso() ? ' selected' : '') + '>' +
@@ -410,25 +410,29 @@
         ).join("") +
       '</select></label>';
 
-      const prioritySelectHtml = '<label class="wk-cap-field"><span>Prioridade</span><select name="priority">' +
+      const prioritySelectHtml = '<label class="wk-cap-field"><span>Prioridade</span><select id="workTaskPriority" name="priority">' +
         WD.PRIORITIES.map((p) => '<option value="' + esc(p.value) + '"' + (p.value === "medium" ? ' selected' : '') + '>' + esc(p.label) + '</option>').join("") +
       '</select></label>';
 
-      const areaSelectHtml = '<label class="wk-cap-field"><span>Area</span><select name="area">' +
+      const areaSelectHtml = '<label class="wk-cap-field"><span>Area</span><select id="workTaskArea" name="area">' +
         WD.AREAS.map((a) => '<option value="' + esc(a.value) + '"' + (a.value === "followup" ? ' selected' : '') + '>' + esc(a.label) + '</option>').join("") +
       '</select></label>';
 
       el.innerHTML =
-        '<form id="workCaptureForm" class="wk-cap-form" autocomplete="off">' +
+        '<form id="workTaskForm" class="wk-cap-form" data-work-capture-form="true" autocomplete="off">' +
           (company ? '<input type="hidden" name="companyId" value="' + esc(company.id) + '" />' : '') +
+          '<select id="workTaskScope" name="scope" hidden>' +
+            '<option value="general"' + (company ? '' : ' selected') + '>Geral</option>' +
+            '<option value="company"' + (company ? ' selected' : '') + '>Empresa</option>' +
+          '</select>' +
           companyLockedHtml +
           '<div class="wk-cap-main">' +
-            '<input type="text" class="wk-cap-title" name="title" maxlength="180" required autofocus placeholder="O que precisa andar? (Enter para capturar)" />' +
+            '<input type="text" id="workTaskTitle" class="wk-cap-title" name="title" maxlength="180" required autofocus placeholder="O que precisa andar? (Enter para capturar)" />' +
             '<button class="wk-btn wk-btn--primary" type="submit">Capturar</button>' +
             '<button class="wk-btn wk-btn--ghost" type="button" data-work-capture-toggle="true">Cancelar</button>' +
           '</div>' +
           '<div class="wk-cap-next">' +
-            '<input type="text" name="nextAction" maxlength="220" placeholder="Proxima acao concreta (opcional)" />' +
+            '<input type="text" id="workTaskNextAction" name="nextAction" maxlength="220" placeholder="Proxima acao concreta (opcional)" />' +
           '</div>' +
           '<div class="wk-cap-grid">' +
             companySelectHtml +
@@ -682,16 +686,19 @@
 
     function collectForm(form) {
       const data = new FormData(form);
+      const scopeValue = data.get("scope") || (data.get("companyId") ? "company" : "general");
+      const companyId = scopeValue === "company" ? (data.get("companyId") || null) : null;
+      const scheduledDayIso = data.get("scheduledDayIso") || "";
       return {
         title: data.get("title"),
         nextAction: data.get("nextAction") || data.get("title"),
         description: data.get("description") || "",
-        scope: data.get("companyId") ? "company" : "general",
-        companyId: data.get("companyId") || null,
-        scheduledDayIso: data.get("scheduledDayIso") || "",
+        scope: companyId ? "company" : "general",
+        companyId: companyId,
+        scheduledDayIso: scheduledDayIso,
         dueDate: data.get("dueDate") || "",
         priority: data.get("priority") || "medium",
-        status: data.get("scheduledDayIso") ? "planned" : "inbox",
+        status: scheduledDayIso ? "planned" : "inbox",
         area: data.get("area") || "followup"
       };
     }
@@ -759,7 +766,7 @@
       });
 
       page.addEventListener("submit", function (event) {
-        const form = event.target.closest("#workCaptureForm");
+        const form = event.target.closest("[data-work-capture-form='true']");
         if (!form) return;
         event.preventDefault();
         const payload = collectForm(form);
