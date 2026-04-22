@@ -301,6 +301,28 @@
   // Override da funcao global definida em home-dashboard.js
   window.renderHomeDashboard = renderHomeDashboardV2;
 
+  // -----------------------------------------------------------------
+  // Listener delegado para botões do próprio Painel
+  // (home-dashboard.js registra data-nav-page só em .tb-nav-btn; aqui
+  //  cuidamos dos nossos hp-btn/hp-kpi dentro de #homePage)
+  // -----------------------------------------------------------------
+  function setupHomePanelEvents() {
+    if (document.body.getAttribute("data-home-panel-bound") === "true") return;
+    document.body.setAttribute("data-home-panel-bound", "true");
+    document.addEventListener("click", function (event) {
+      const page = document.getElementById("homePage");
+      if (!page) return;
+      const target = event.target && event.target.closest ? event.target.closest("[data-nav-page]") : null;
+      if (!target) return;
+      if (!page.contains(target)) return; // só captura cliques dentro do Painel
+      if (target.classList.contains("tb-nav-btn")) return; // deixa o listener oficial cuidar
+      const pageName = target.getAttribute("data-nav-page");
+      if (!pageName) return;
+      if (typeof window.openPage === "function") window.openPage(pageName);
+    });
+  }
+  setupHomePanelEvents();
+
   // Re-render quando o state for substituido (ex.: sync Firebase)
   if (window.StudyApp && typeof window.StudyApp.onStateReplaced === "function") {
     window.StudyApp.onStateReplaced(function () {
