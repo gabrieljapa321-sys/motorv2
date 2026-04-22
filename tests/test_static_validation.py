@@ -70,6 +70,7 @@ class StaticValidationTests(unittest.TestCase):
             "assets/js/sync-service.js",
             "assets/js/app-core.js",
             "assets/js/home-dashboard.js",
+            "assets/js/home-panel.js",
             "assets/js/app-pages.js",
             "assets/js/grades-page.js",
             "assets/js/week-planner.js",
