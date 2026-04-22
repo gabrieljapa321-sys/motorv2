@@ -1,5 +1,133 @@
 @charset "UTF-8";
 
+/* ==========================================================================
+   HOME PANEL v2 · prefix hp-*
+   Passo 1: skeleton + tipografia. Conteudo virá nos próximos passos.
+   ========================================================================== */
+
+.hp-shell {
+  display: grid;
+  gap: 16px;
+  font-variant-numeric: tabular-nums;
+}
+
+.hp-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-xs);
+}
+.hp-header-copy { display: grid; gap: 4px; min-width: 0; }
+.hp-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.hp-title {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  line-height: 1.05;
+}
+.hp-sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.hp-header-actions {
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hp-kpis {
+  min-height: 96px;
+}
+
+.hp-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 16px;
+  align-items: start;
+}
+
+.hp-focus,
+.hp-aside {
+  min-height: 240px;
+}
+
+/* Botões base do painel */
+.hp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--bg-elevated);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.86rem;
+  cursor: pointer;
+  transition: background 120ms var(--ease-out, ease);
+}
+.hp-btn:hover { background: var(--bg-soft); }
+.hp-btn--ghost {
+  background: transparent;
+  border-color: transparent;
+  color: var(--muted);
+}
+.hp-btn--ghost:hover { color: var(--text); background: var(--bg-soft); }
+.hp-btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--text-inverse, #fff);
+}
+
+/* Placeholder visual (Passo 1) */
+.hp-placeholder {
+  display: grid;
+  gap: 4px;
+  place-content: center;
+  text-align: center;
+  padding: 28px 18px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--bg-soft) 50%, transparent);
+  color: var(--muted);
+  min-height: inherit;
+}
+.hp-placeholder-label {
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--text);
+}
+.hp-placeholder-hint {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+@media (max-width: 1024px) {
+  .hp-main { grid-template-columns: 1fr; }
+}
+@media (max-width: 720px) {
+  .hp-header { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   Legacy home.css (v1) - será limpo no Passo 5
+   ========================================================================== */
+
 .home-dashboard {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));

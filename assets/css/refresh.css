@@ -1,0 +1,1012 @@
+@charset "UTF-8";
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MOTOR DE ESTUDO · REFRESH LAYER
+   Camada visual carregada por ULTIMO em app.css.
+   Objetivo: dar ar de "dashboard denso pro" (Stripe/Linear/Bloomberg):
+   - Paleta com mais contraste (slate frio, borda mais firme)
+   - Tipografia com mais hierarquia (peso+tracking)
+   - Cards com topo em gradiente sutil, borda solida, canto mais sobrio
+   - Chips e KPIs com numerica monoespacada dominante
+   - Topbar mais "app shell", page-header mais enxuto
+   - Inputs/botoes unificados, com foco visivel
+   Nao altera HTML nem JS (exceto ajustes pontuais de marcador no HTML).
+   Para desligar: comentar o @import em app.css.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────────────
+   1. TOKENS (overrides de base.css)
+   ───────────────────────────────────────────────────────────────────── */
+:root {
+  /* Superficies - slate frio, mais profissional */
+  --bg: #f6f7f9;
+  --bg-elevated: #ffffff;
+  --bg-soft: #eef0f3;
+  --bg-softer: #f2f3f6;
+  --bg-topbar: #ffffff;
+  --bg-translucent: rgba(255, 255, 255, 0.88);
+
+  /* Texto - mais contraste */
+  --text: #0b0d12;
+  --muted: #5a6170;
+  --muted-strong: #2a2f3a;
+
+  /* Linhas - mais firme */
+  --line: #e1e4ea;
+  --line-strong: #c8cdd6;
+
+  /* Acento indigo um tom mais vivo */
+  --accent: #4338ca;
+  --accent-strong: #3730a3;
+  --accent-soft: #eef0ff;
+  --accent-text: #2e2a9c;
+
+  /* Estados */
+  --success: #15803d;
+  --success-soft: #e8f7ee;
+  --warning: #a3520a;
+  --warning-soft: #fdf3e4;
+  --danger:  #b42318;
+  --danger-soft:  #fdecec;
+
+  /* Sombras mais presentes mas sem exagero */
+  --shadow-sm: 0 1px 2px rgba(13, 17, 23, 0.05);
+  --shadow:    0 1px 2px rgba(13, 17, 23, 0.06), 0 4px 12px rgba(13, 17, 23, 0.05);
+  --shadow-lg: 0 4px 8px rgba(13, 17, 23, 0.06), 0 12px 28px rgba(13, 17, 23, 0.08);
+
+  /* Raios mais contidos */
+  --radius-xl: 12px;
+  --radius-lg: 10px;
+  --radius-md: 8px;
+  --radius-sm: 6px;
+
+  /* Topbar um pouco mais alta para respirar */
+  --topbar-h: 56px;
+}
+
+html[data-theme="dark"] {
+  --bg: #0b0d12;
+  --bg-elevated: #12151c;
+  --bg-soft: #181c25;
+  --bg-softer: #141821;
+  --bg-topbar: #0f1219;
+  --bg-translucent: rgba(15, 18, 25, 0.85);
+
+  --text: #f5f6f8;
+  --muted: #9aa3b2;
+  --muted-strong: #c7cdd8;
+
+  --line: #242936;
+  --line-strong: #364055;
+
+  --accent: #818cf8;
+  --accent-strong: #a5b4fc;
+  --accent-soft: rgba(129, 140, 248, 0.14);
+  --accent-text: #c7d2fe;
+
+  --success-soft: rgba(74, 222, 128, 0.12);
+  --warning-soft: rgba(251, 146, 60, 0.12);
+  --danger-soft:  rgba(248, 113, 113, 0.12);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.45);
+  --shadow:    0 1px 3px rgba(0, 0, 0, 0.5), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 4px 10px rgba(0, 0, 0, 0.55), 0 20px 44px rgba(0, 0, 0, 0.4);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   2. BASE GLOBAL
+   ───────────────────────────────────────────────────────────────────── */
+body {
+  font-size: 13.5px;
+  letter-spacing: -0.005em;
+}
+
+::selection { background: var(--accent); color: #fff; }
+
+/* Labels mono (eyebrows) com mais corpo */
+.page-eyebrow,
+.collapse-divider-label,
+.auth-panel-title,
+.mobile-focusbar__eyebrow,
+.home-focus-insight-label,
+.home-focus-context,
+.home-portfolio-chip,
+.work-state-pill,
+.news-hero-eyebrow,
+.news-filter-label {
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10.5px;
+}
+
+/* Numerica tabular global (KPIs pro) */
+.home-metric-value,
+.home-brief-value,
+.home-section-metric strong,
+.home-window-value,
+.work-brand-metric strong,
+.work-stat strong,
+.grades-kpi-value,
+.ticker-tape-price,
+.ticker-tape-change,
+.flash-stat-value,
+.calendar-day-number,
+.home-ticket-countdown {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum", "zero", "ss01";
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   3. TOPBAR
+   ───────────────────────────────────────────────────────────────────── */
+.topbar-new {
+  border-bottom-color: var(--line);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.84));
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  box-shadow: 0 1px 0 rgba(13, 17, 23, 0.02);
+}
+html[data-theme="dark"] .topbar-new {
+  background: linear-gradient(180deg, rgba(15,18,25,0.92), rgba(15,18,25,0.78));
+}
+
+.topbar-inner { max-width: 1480px; padding: 0 28px; gap: 22px; }
+@media (max-width: 768px) { .topbar-inner { padding: 0 16px; } }
+
+.tb-logo { gap: 10px; font-size: 13.5px; }
+.tb-logo-mark {
+  width: 26px; height: 26px;
+  background: linear-gradient(135deg, var(--text) 0%, var(--muted-strong) 100%);
+  color: #fff;
+  font-size: 13px;
+  border-radius: 7px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.15);
+}
+.tb-logo-text { letter-spacing: -0.01em; font-weight: 650; }
+
+.tb-nav { gap: 4px; margin-left: 8px; }
+.tb-nav-btn {
+  font-size: 12.5px;
+  font-weight: 550;
+  padding: 6px 12px;
+  border-radius: 7px;
+  color: var(--muted);
+  min-height: 30px;
+  letter-spacing: -0.005em;
+}
+.tb-nav-btn:hover { background: var(--bg-soft); color: var(--text); }
+.tb-nav-btn.active {
+  background: var(--text);
+  color: var(--bg-elevated);
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(13,17,23,0.12);
+}
+html[data-theme="dark"] .tb-nav-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.tb-actions .tb-btn {
+  width: 30px; height: 30px;
+  border-radius: 7px;
+}
+.tb-actions .tb-btn-group {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  padding: 2px;
+  border-radius: 8px;
+}
+.tb-sep { height: 22px; background: var(--line); }
+
+.tb-mode-select,
+.tb-auth-btn {
+  min-height: 30px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px 4px 12px;
+  border-radius: 7px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  transition: all var(--motion-fast) var(--ease-out);
+}
+.tb-mode-select:hover, .tb-auth-btn:hover {
+  border-color: var(--line-strong);
+  background: var(--bg-soft);
+}
+.tb-mode-select[data-mode-active="true"] {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  font-weight: 700;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   4. PAGE HEADER
+   ───────────────────────────────────────────────────────────────────── */
+.shell { padding-top: 28px; padding-bottom: 120px; }
+
+.page-header { margin-bottom: 22px; align-items: center; }
+.page-title {
+  font-size: clamp(22px, 2.4vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.028em;
+  line-height: 1.15;
+}
+.page-subtitle {
+  font-size: 13.5px;
+  color: var(--muted);
+  max-width: 64ch;
+}
+.page-eyebrow {
+  margin-bottom: 6px;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+.page-header-meta strong { font-size: 12.5px; }
+
+/* Linha divisoria abaixo do header quando a pagina tem muito conteudo */
+.page-header::after {
+  content: "";
+  flex-basis: 100%;
+  height: 0;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   5. CARDS (unificado)
+   Pega home-card, home-section-card, home-timeline-card, home-portfolio-card,
+   home-list-card, news-feed-card, news-digest-card, work-company-card, etc.
+   ───────────────────────────────────────────────────────────────────── */
+.home-card,
+.home-section-card,
+.home-timeline-card,
+.home-portfolio-card,
+.home-list-card,
+.home-side-panel,
+.news-feed-card,
+.news-digest-card,
+.news-lead-card,
+.work-capture-panel,
+.work-planner-panel,
+.work-waiting-panel,
+.work-company-card,
+.auth-panel {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: clip;
+}
+.home-card:hover,
+.home-section-card:hover,
+.home-timeline-card:hover,
+.home-list-card:hover,
+.news-feed-card:hover,
+.work-company-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+  transform: none;
+}
+
+/* Faixa de topo sutil nos cards principais (sinal visual "de cima pra baixo") */
+.home-section-card::before,
+.home-timeline-card::before,
+.home-list-card::before,
+.work-company-card::before,
+.news-feed-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line-strong) 20%, var(--line-strong) 80%, transparent);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Padding padronizado */
+.home-card,
+.home-section-card,
+.home-list-card,
+.home-portfolio-card,
+.home-timeline-card,
+.home-side-panel,
+.news-feed-card,
+.news-digest-card,
+.work-capture-panel,
+.work-planner-panel,
+.work-waiting-panel,
+.work-company-card {
+  padding: 20px;
+  gap: 14px;
+}
+
+/* Hero do painel - menos "bolha colorida", mais "cockpit" */
+.home-hero-card {
+  padding: 24px;
+  background:
+    radial-gradient(1200px 260px at 90% -20%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 60%),
+    linear-gradient(180deg, var(--bg-elevated), var(--bg-elevated));
+  border-color: var(--line-strong);
+}
+.home-focus-board {
+  padding: 20px;
+  border-radius: var(--radius-xl);
+  border-color: var(--line);
+  background: var(--bg-softer);
+  box-shadow: none;
+}
+.home-focus-copy {
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  border-color: var(--line);
+}
+.home-focus-copy h2 {
+  font-size: clamp(1.55rem, 2.2vw, 2.15rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+}
+.home-focus-kicker {
+  padding: 5px 10px;
+  background: var(--text);
+  color: #fff;
+  font-size: 10px;
+  border-radius: 6px;
+  letter-spacing: 0.12em;
+}
+.home-focus-insight {
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--bg-elevated);
+  border-color: var(--line);
+}
+.home-focus-insight--mode {
+  background: color-mix(in srgb, var(--accent) 6%, var(--bg-elevated));
+  border-color: color-mix(in srgb, var(--accent) 22%, var(--line));
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   6. KPIs, BRIEFS, METRICAS
+   ───────────────────────────────────────────────────────────────────── */
+.home-metric,
+.home-brief-card,
+.home-section-metric,
+.work-stat,
+.work-brand-metric,
+.grades-kpi,
+.flash-stat {
+  border: 1px solid var(--line);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  gap: 4px;
+}
+.home-metric-value,
+.home-brief-value,
+.home-section-metric strong,
+.work-brand-metric strong,
+.work-stat strong,
+.grades-kpi-value,
+.flash-stat-value {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--text);
+}
+.home-metric-copy,
+.home-brief-label,
+.work-brand-metric-label,
+.work-stat-label,
+.grades-kpi-label,
+.flash-stat-label {
+  color: var(--muted);
+  font-size: 10.5px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+/* Stat em estado ruim */
+.work-stat--danger { border-left: 3px solid var(--danger); }
+.work-stat--warning { border-left: 3px solid var(--warning); }
+
+/* ─────────────────────────────────────────────────────────────────────
+   7. CHIPS & PILLS
+   ───────────────────────────────────────────────────────────────────── */
+.work-chip,
+.home-portfolio-chip,
+.news-filter-chip,
+.work-state-pill,
+.home-focus-context,
+.collapse-count {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: 999px;
+  padding: 4px 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+  color: var(--muted-strong);
+  line-height: 1.2;
+}
+.work-chip--danger,
+.work-state-pill--danger {
+  background: var(--danger-soft);
+  color: var(--danger);
+  border-color: color-mix(in srgb, var(--danger) 24%, var(--line));
+}
+.work-chip--high,
+.work-state-pill--warning {
+  background: var(--warning-soft);
+  color: var(--warning);
+  border-color: color-mix(in srgb, var(--warning) 22%, var(--line));
+}
+.work-chip--medium {
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  border-color: color-mix(in srgb, var(--accent) 25%, var(--line));
+}
+.work-state-pill--success {
+  background: var(--success-soft);
+  color: var(--success);
+  border-color: color-mix(in srgb, var(--success) 22%, var(--line));
+}
+.news-filter-chip {
+  background: var(--bg-elevated);
+}
+.news-filter-chip.active,
+.news-filter-chip[aria-pressed="true"] {
+  background: var(--text);
+  color: var(--bg-elevated);
+  border-color: var(--text);
+}
+.home-portfolio-chip {
+  padding: 6px 10px;
+  font-size: 11.5px;
+}
+.home-portfolio-chip-count {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  margin-left: 4px;
+  font-weight: 700;
+}
+.collapse-count {
+  padding: 1px 7px;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  color: var(--muted-strong);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   8. BOTOES
+   ───────────────────────────────────────────────────────────────────── */
+.btn,
+.home-primary-action,
+.home-secondary-link,
+.auth-btn,
+.auth-btn-primary,
+.auth-btn-secondary {
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: -0.005em;
+  transition: all var(--motion-fast) var(--ease-out);
+  min-height: 34px;
+  padding: 7px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+}
+.home-primary-action,
+.auth-btn-primary,
+.btn-primary {
+  background: var(--text);
+  color: var(--bg-elevated);
+  border: 1px solid var(--text);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 1px 2px rgba(13,17,23,0.12);
+}
+.home-primary-action:hover,
+.auth-btn-primary:hover,
+.btn-primary:hover {
+  background: var(--muted-strong);
+  border-color: var(--muted-strong);
+  transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 3px 8px rgba(13,17,23,0.15);
+}
+.home-secondary-link,
+.auth-btn-secondary,
+.btn-ghost {
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+.home-secondary-link:hover,
+.auth-btn-secondary:hover,
+.btn-ghost:hover {
+  border-color: var(--line-strong);
+  background: var(--bg-soft);
+}
+.btn-accent {
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid var(--accent);
+}
+.btn-accent:hover { background: var(--accent-strong); border-color: var(--accent-strong); }
+
+/* ─────────────────────────────────────────────────────────────────────
+   9. INPUTS
+   ───────────────────────────────────────────────────────────────────── */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+select,
+textarea {
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 7px 10px;
+  font-size: 13px;
+  color: var(--text);
+  min-height: 34px;
+  transition: border-color var(--motion-fast) var(--ease-out),
+              box-shadow var(--motion-fast) var(--ease-out);
+}
+textarea { min-height: 68px; line-height: 1.45; }
+input:hover, select:hover, textarea:hover { border-color: var(--line-strong); }
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+input::placeholder, textarea::placeholder { color: var(--muted); opacity: 0.7; }
+
+/* ─────────────────────────────────────────────────────────────────────
+   10. COLLAPSE (divisor do painel)
+   ───────────────────────────────────────────────────────────────────── */
+.collapse-section {
+  border-top-color: var(--line);
+}
+.collapse-section:last-child { border-bottom-color: var(--line); }
+.collapse-toggle { padding: 16px 4px; }
+.collapse-title h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text);
+}
+.collapse-hint {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.collapse-divider-label {
+  color: var(--muted);
+  letter-spacing: 0.12em;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   11. TICKER TAPE (topo do app)
+   ───────────────────────────────────────────────────────────────────── */
+.ticker-tape-bar {
+  border-bottom: 1px solid var(--line);
+  background: var(--text);
+  color: #f5f6f8;
+}
+html[data-theme="dark"] .ticker-tape-bar {
+  background: #000;
+  border-bottom-color: var(--line-strong);
+}
+.ticker-tape-item {
+  color: #dfe2ea;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 0 14px;
+  border-right: 1px solid rgba(255,255,255,0.06);
+  gap: 8px;
+}
+.ticker-tape-symbol {
+  color: #fff;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.ticker-tape-price {
+  color: #fff;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+.ticker-tape-change {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 10.5px;
+}
+.ticker-tape-change[data-direction="up"] { color: #4ade80; background: rgba(74,222,128,0.12); }
+.ticker-tape-change[data-direction="down"] { color: #fb7185; background: rgba(251,113,133,0.12); }
+
+/* ─────────────────────────────────────────────────────────────────────
+   12. WORK (PLANNER EXECUTIVO)
+   ───────────────────────────────────────────────────────────────────── */
+.work-hero {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(1100px 220px at 96% -20%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 60%),
+    linear-gradient(180deg, var(--bg-elevated), var(--bg-elevated));
+  box-shadow: var(--shadow-sm);
+}
+.work-brand-card {
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--bg-elevated);
+}
+.work-brand-card:hover { border-color: var(--line-strong); box-shadow: var(--shadow-sm); }
+
+.work-brand-metric {
+  padding: 10px 12px;
+  background: var(--bg-softer);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.work-brand-metric strong { font-size: 18px; }
+
+.work-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+.work-stat {
+  padding: 10px 12px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.work-stat strong { font-size: 20px; }
+
+.work-filter-btn {
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg-elevated);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--muted-strong);
+  min-height: 28px;
+}
+.work-filter-btn:hover { border-color: var(--line-strong); background: var(--bg-soft); }
+.work-filter-btn[aria-pressed="true"],
+.work-filter-btn.active {
+  background: var(--text);
+  color: var(--bg-elevated);
+  border-color: var(--text);
+}
+
+.work-day-col {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+}
+.work-day-col:hover { border-color: var(--line-strong); }
+
+.work-task {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-sm);
+}
+.work-task:hover { border-color: var(--line-strong); box-shadow: var(--shadow); }
+.work-task-title { font-size: 13.5px; font-weight: 650; letter-spacing: -0.01em; color: var(--text); }
+.work-task-notes { color: var(--muted); font-size: 12.5px; line-height: 1.5; }
+
+.work-company-card {
+  padding: 16px;
+}
+.work-company-metrics {
+  gap: 6px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   13. WEEK PLANNER (estudo)
+   ───────────────────────────────────────────────────────────────────── */
+.week-board,
+.week-column {
+  /* Atinge a maioria dos contextos. */
+  border-radius: var(--radius-lg);
+}
+.week-column {
+  border: 1px solid var(--line);
+  background: var(--bg-elevated);
+  padding: 12px;
+}
+.week-column:hover { border-color: var(--line-strong); }
+
+.week-day-head {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+}
+.week-card,
+.week-task {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg-elevated);
+  padding: 10px 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--motion-fast) var(--ease-out);
+}
+.week-card:hover,
+.week-task:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   14. CALENDARIO
+   ───────────────────────────────────────────────────────────────────── */
+.calendar-grid,
+.month-calendar,
+.month-grid {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  overflow: hidden;
+}
+.calendar-cell,
+.month-cell,
+.day-cell {
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--bg-elevated);
+  transition: background var(--motion-fast) var(--ease-out);
+  min-height: 96px;
+  padding: 8px 10px;
+}
+.calendar-cell:hover,
+.month-cell:hover,
+.day-cell:hover {
+  background: var(--bg-softer);
+}
+.calendar-cell.today,
+.month-cell.today,
+.day-cell.today,
+[data-today="true"] {
+  background: color-mix(in srgb, var(--accent) 6%, var(--bg-elevated));
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+.calendar-day-number,
+.month-day-number,
+.day-number {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--muted-strong);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   15. FLASHCARDS
+   ───────────────────────────────────────────────────────────────────── */
+.flash-deck,
+.flash-card,
+.fc-deck,
+.fc-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-sm);
+  padding: 20px;
+  transition: all var(--motion-fast) var(--ease-out);
+}
+.flash-card:hover, .fc-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+}
+.flash-stat,
+.fc-stat {
+  border: 1px solid var(--line);
+  background: var(--bg-elevated);
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+.flash-stat-value { font-size: 22px; font-weight: 700; }
+
+/* ─────────────────────────────────────────────────────────────────────
+   16. NOTAS (grades)
+   ───────────────────────────────────────────────────────────────────── */
+.grades-kpi { padding: 14px 16px; }
+.grades-kpi-value { font-size: 24px; font-weight: 700; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 12.5px;
+}
+thead th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+  padding: 10px 12px;
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--line);
+}
+tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
+}
+tbody tr:hover td { background: var(--bg-softer); }
+tbody tr:last-child td { border-bottom: 0; }
+
+/* ─────────────────────────────────────────────────────────────────────
+   17. NEWS
+   ───────────────────────────────────────────────────────────────────── */
+.news-hero {
+  padding: 22px;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(900px 220px at 96% -20%, color-mix(in srgb, var(--accent) 7%, transparent), transparent 60%),
+    linear-gradient(180deg, var(--bg-elevated), var(--bg-elevated));
+  box-shadow: var(--shadow-sm);
+}
+.news-hero-title,
+.news-hero h1 {
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+.news-feed-card,
+.news-digest-card,
+.news-lead-card {
+  padding: 18px;
+}
+.news-item-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+  padding: 14px;
+  transition: all var(--motion-fast) var(--ease-out);
+}
+.news-item-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+.news-item-headline,
+.news-item-card h3,
+.news-item-card a {
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  line-height: 1.35;
+}
+.news-item-summary {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.news-meta-row,
+.news-item-card time,
+.news-item-card .news-dot {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   18. TOAST, FOCUSBAR, FAB
+   ───────────────────────────────────────────────────────────────────── */
+.toast {
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-lg);
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 12.5px;
+}
+
+.mobile-focusbar {
+  border-radius: 10px;
+  box-shadow: var(--shadow-lg);
+  border-color: var(--line);
+}
+
+.home-capture-fab {
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--bg-elevated);
+  box-shadow: var(--shadow-lg);
+}
+.home-capture-fab:hover { background: var(--muted-strong); transform: translateY(-2px); }
+
+/* ─────────────────────────────────────────────────────────────────────
+   19. SCROLLBAR (afina ainda mais)
+   ───────────────────────────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-thumb {
+    background: var(--line-strong);
+    border: 2px solid var(--bg);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   20. AJUSTES FINOS DE HIERARQUIA
+   ───────────────────────────────────────────────────────────────────── */
+h1 { font-weight: 700; letter-spacing: -0.03em; }
+h2 { font-weight: 650; letter-spacing: -0.02em; }
+h3 { font-weight: 600; letter-spacing: -0.015em; }
+strong, b { font-weight: 650; }
+
+/* Fix: quando ha muitos cards pequenos lado a lado, evita borda dupla feia */
+.work-brand-strip,
+.home-metric-row,
+.work-stats { gap: 10px; }
+
+/* Fix visual: capture-panel do work ficava solto, agora tem cabecalho */
+.work-capture-panel h2,
+.work-planner-panel h2,
+.work-waiting-panel h2 {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* Nos cards de empresa: os pills "SEM PRAZOS" ficavam pastel demais */
+.work-state-pill {
+  padding: 3px 8px;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+/* Garante que a home nao deixe cards parecerem "flutuando perdidos" */
+.home-dashboard { gap: 16px; }
+.home-hero-shell { gap: 22px; }
+
+/* Auth panel mais compacto */
+.auth-panel { padding: 14px 16px; gap: 10px; }
+.auth-panel-title { color: var(--muted); }
+.auth-panel-status { font-size: 13px; font-weight: 600; }
+
+/* Foco global mais visivel */
+:where(button, input, select, textarea, a, [role="button"], [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 20%, transparent);
+}

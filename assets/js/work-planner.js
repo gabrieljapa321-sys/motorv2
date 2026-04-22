@@ -1,22 +1,43 @@
 (function () {
   "use strict";
 
+  /* ═══════════════════════════════════════════════════════════════════
+     WORK PLANNER v2 · Hub por empresa
+     - Lista lateral de empresas (+ visao "Todas")
+     - Workspace focado na empresa selecionada
+     - Captura inline com 1 campo + expansao opcional
+     - Board semanal drag-and-drop por dia
+     - Prazos criticos, aguardando e notas por empresa
+     Preserva o contrato: state.workTasks, state.workFilter,
+     state.workWeekAnchor, WorkDomain, hooks StudyApp e globais do app-core.
+     ═══════════════════════════════════════════════════════════════════ */
+
   function initWorkPlanner(app) {
     if (window.__workPlannerInitialized) return;
     window.__workPlannerInitialized = true;
     const appApi = app || window.StudyApp || {};
     const WD = window.WorkDomain;
-    const WEEKDAY_NAMES = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
-    const WEEKDAY_FULL = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+    const WEEKDAY_NAMES = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
+    const WEEKDAY_FULL = ["Domingo", "Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado"];
     const MONTH_NAMES = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+
+    const SCOPE_FILTERS = ["today", "overdue", "waiting", "general"];
+    const COMPANY_IDS = WD.COMPANIES.map((c) => c.id);
+
     let draggingId = null;
+    let captureOpen = false;
+    let captureCompanyLock = null;
 
     if (!Array.isArray(state.workTasks)) state.workTasks = [];
     if (!state.workFilter) state.workFilter = "all";
 
     let currentWeekStart = WD.getWeekStart(state.workWeekAnchor || new Date());
 
-    function escapeHtml(value) {
+    /* ─────────────────────────────────────────────────────────────── */
+    /* Helpers                                                         */
+    /* ─────────────────────────────────────────────────────────────── */
+
+    function esc(value) {
       if (value == null) return "";
       return String(value)
         .replace(/&/g, "&amp;")
@@ -26,62 +47,64 @@
         .replace(/'/g, "&#39;");
     }
 
-    function setText(id, value) {
-      const el = document.getElementById(id);
-      if (el) el.textContent = String(value);
-    }
-
-    function formatDateShort(date) {
+    function fmtDateShort(date) {
       return date.getDate() + " " + MONTH_NAMES[date.getMonth()];
     }
 
-    function formatIsoShort(iso) {
-      const date = WD.parseIso(iso);
-      return date ? formatDateShort(date) : "—";
+    function fmtIsoShort(iso) {
+      const d = WD.parseIso(iso);
+      return d ? fmtDateShort(d) : "sem prazo";
     }
 
-    function renderCompanyMark(company, options) {
-      const meta = WD.companyMeta(company.id) || company;
-      const opts = options || {};
-      const sizeClass = opts.size ? " work-brand-mark--" + opts.size : "";
-      const mixBlend = meta.logoBlend && meta.logoBlend !== "normal"
-        ? ' style="mix-blend-mode:' + escapeHtml(meta.logoBlend) + ';"'
-        : "";
-      return '<div class="work-brand-mark work-brand-mark--' + escapeHtml(meta.logoSurface || "brand-light") + sizeClass + '" data-company-id="' + company.id + '">' +
-        '<img src="' + escapeHtml(meta.logoPath) + '" alt="' + escapeHtml(meta.logoAlt || ("Logo da " + company.name)) + '"' + mixBlend + ' loading="lazy" decoding="async" />' +
-      '</div>';
-    }
-
-    function renderCompanyIdentity(company, options) {
-      const opts = options || {};
-      const compactClass = opts.compact ? " work-company-brand--compact" : "";
-      const role = opts.role ? '<span>' + escapeHtml(opts.role) + '</span>' : "";
-      return '<div class="work-company-brand' + compactClass + '" data-company-id="' + company.id + '">' +
-        renderCompanyMark(company, { size: opts.size || "md" }) +
-        '<div class="work-company-brand-copy"><strong>' + escapeHtml(company.name) + '</strong>' + role + '</div>' +
-      '</div>';
-    }
-
-    function getFilter() {
-      const allowed = WD.FILTERS.map((item) => item.value);
-      return allowed.indexOf(state.workFilter) === -1 ? "all" : state.workFilter;
+    function relativeDueLabel(iso) {
+      if (!iso) return "Sem prazo";
+      const today = WD.parseIso(WD.todayIso());
+      const due = WD.parseIso(iso);
+      if (!today || !due) return "Sem prazo";
+      const diff = Math.round((due - today) / 86400000);
+      if (diff === 0) return "Hoje";
+      if (diff === 1) return "Amanha";
+      if (diff === -1) return "Ontem";
+      if (diff < 0) return Math.abs(diff) + " dias atras";
+      if (diff < 7) return "em " + diff + " dias";
+      return fmtDateShort(due);
     }
 
     function currentWeekIsos() {
-      return WD.getWeekDays(currentWeekStart).map((day) => day.iso);
+      return WD.getWeekDays(currentWeekStart).map((d) => d.iso);
+    }
+
+    function currentFilter() {
+      const allowed = ["all"].concat(SCOPE_FILTERS).concat(COMPANY_IDS);
+      return allowed.indexOf(state.workFilter) === -1 ? "all" : state.workFilter;
+    }
+
+    function currentCompanyMeta() {
+      const f = currentFilter();
+      return WD.companyMeta(f);
+    }
+
+    function isCompanyFilter() {
+      return !!currentCompanyMeta();
+    }
+
+    function logoMarkHtml(company, size) {
+      const meta = WD.companyMeta(company.id) || company;
+      const sz = size || "md";
+      const blend = meta.logoBlend && meta.logoBlend !== "normal"
+        ? ' style="mix-blend-mode:' + esc(meta.logoBlend) + ';"'
+        : "";
+      return '<span class="wk-logo wk-logo--' + sz + ' wk-logo--' + esc(meta.logoSurface || "brand-light") + '" data-company-id="' + esc(company.id) + '">' +
+        '<img src="' + esc(meta.logoPath) + '" alt="" aria-hidden="true"' + blend + ' loading="lazy" decoding="async" />' +
+        '</span>';
+    }
+
+    function visibleTasksFor(filterKey) {
+      return WD.applyFilter(state.workTasks || [], filterKey || currentFilter(), WD.todayIso());
     }
 
     function openTasks() {
       return (state.workTasks || []).filter(WD.isOpen);
-    }
-
-    function visibleTasks() {
-      return WD.applyFilter(state.workTasks || [], getFilter(), WD.todayIso());
-    }
-
-    function persistWeekAnchor() {
-      state.workWeekAnchor = WD.toIsoDate(currentWeekStart);
-      saveState();
     }
 
     function saveAndRefresh(message) {
@@ -93,301 +116,558 @@
       }
     }
 
-    function renderWorkPlanner() {
-      renderHeader();
-      renderFormOptions();
-      renderBrandStrip();
-      renderStats();
-      renderFilters();
-      renderPlanner();
-      renderInbox();
-      renderWaiting();
-      renderCritical();
-      renderCompanySummary();
+    function persistWeekAnchor() {
+      state.workWeekAnchor = WD.toIsoDate(currentWeekStart);
+      saveState();
     }
 
-    function renderHeader() {
-      const start = currentWeekStart;
-      const end = WD.addDays(start, 6);
-      setText("workWeekRange", formatDateShort(start) + " - " + formatDateShort(end) + " · " + WEEKDAY_FULL[start.getDay()] + " a " + WEEKDAY_FULL[end.getDay()]);
+    function taskIdFrom(event) {
+      const card = event.target && event.target.closest ? event.target.closest("[data-work-task-id]") : null;
+      return card ? card.getAttribute("data-work-task-id") : null;
     }
 
-    function renderBrandStrip() {
-      const el = document.getElementById("workBrandStrip");
-      if (!el) return;
-      const summaries = WD.companySummaries(state.workTasks || [], WD.todayIso(), currentWeekIsos());
-      el.innerHTML = summaries.map((summary) => {
-        const badgeTone = summary.overdueCount ? "danger" : (summary.waitingCount ? "warning" : "success");
-        const badgeLabel = summary.overdueCount
-          ? summary.overdueCount + " em atraso"
-          : (summary.waitingCount ? summary.waitingCount + " aguardando" : "sem pressao");
-        return '<article class="work-brand-card" data-company-id="' + summary.company.id + '">' +
-          '<div class="work-brand-card-top">' +
-            renderCompanyIdentity(summary.company, { size: "lg", role: "Portfolio" }) +
-            '<span class="work-state-pill work-state-pill--' + badgeTone + '">' + escapeHtml(badgeLabel) + '</span>' +
+    function applyFilterChange(next) {
+      state.workFilter = next || "all";
+      captureOpen = false;
+      captureCompanyLock = null;
+      saveState();
+      renderWorkPlanner();
+    }
+
+    /* ─────────────────────────────────────────────────────────────── */
+    /* Task card                                                       */
+    /* ─────────────────────────────────────────────────────────────── */
+
+    function taskCardHtml(task, opts) {
+      const options = opts || {};
+      const today = WD.todayIso();
+      const overdue = WD.isOverdue(task, today);
+      const due = task.dueDate ? relativeDueLabel(task.dueDate) : "Sem prazo";
+      const hasCompany = task.scope === "company" && task.companyId;
+      const companyName = hasCompany ? WD.companyName(task.companyId) : "Geral";
+      const prio = WD.priorityLabel(task.priority);
+      const statusLabel = WD.statusLabel(task.status);
+      const area = WD.areaLabel(task.area);
+      const draggable = options.draggable !== false;
+      const density = options.density || "normal";
+
+      const chipsHtml =
+        (options.hideCompanyChip || !hasCompany
+          ? ""
+          : '<span class="wk-chip wk-chip--company" data-company-id="' + esc(task.companyId) + '">' +
+              logoMarkHtml({ id: task.companyId }, "xs") +
+              '<span>' + esc(companyName) + '</span>' +
+            '</span>') +
+        '<span class="wk-chip wk-chip--prio wk-chip--' + esc(task.priority) + '">' + esc(prio) + '</span>' +
+        '<span class="wk-chip wk-chip--due' + (overdue ? ' wk-chip--danger' : '') + '">' + esc(due) + '</span>' +
+        (area && task.area ? '<span class="wk-chip wk-chip--area">' + esc(area) + '</span>' : '') +
+        (task.status && task.status !== "inbox" && task.status !== "planned"
+          ? '<span class="wk-chip wk-chip--status wk-chip--' + esc(task.status) + '">' + esc(statusLabel) + '</span>'
+          : '');
+
+      const statusButton = task.status === "waiting"
+        ? '<button class="wk-btn wk-btn--mini" type="button" data-work-status="planned" title="Retomar">Retomar</button>'
+        : '<button class="wk-btn wk-btn--mini" type="button" data-work-status="waiting" title="Aguardar terceiros">Aguardar</button>';
+
+      return '<article class="wk-task wk-task--' + density +
+        '" data-work-task-id="' + esc(task.id) +
+        '" data-priority="' + esc(task.priority) + '"' +
+        (hasCompany ? ' data-company-id="' + esc(task.companyId) + '"' : '') +
+        (overdue ? ' data-overdue="true"' : '') +
+        (task.status === "done" ? ' data-done="true"' : '') +
+        (draggable ? ' draggable="true"' : '') +
+        '>' +
+          '<label class="wk-task-check">' +
+            '<input type="checkbox" class="wk-task-checkbox"' + (task.status === "done" ? ' checked' : '') + ' aria-label="Concluir tarefa" />' +
+          '</label>' +
+          '<div class="wk-task-body">' +
+            '<div class="wk-task-title">' + esc(task.title) + '</div>' +
+            (task.nextAction && task.nextAction !== task.title
+              ? '<div class="wk-task-next"><span aria-hidden="true">→</span>' + esc(task.nextAction) + '</div>'
+              : '') +
+            (task.description
+              ? '<div class="wk-task-notes">' + esc(task.description) + '</div>'
+              : '') +
+            '<div class="wk-task-chips">' + chipsHtml + '</div>' +
           '</div>' +
-          '<div class="work-brand-metrics">' +
-            '<div class="work-brand-metric"><strong>' + summary.openCount + '</strong><span>abertas</span></div>' +
-            '<div class="work-brand-metric"><strong>' + summary.weekCount + '</strong><span>na semana</span></div>' +
-            '<div class="work-brand-metric"><strong>' + summary.waitingCount + '</strong><span>aguardando</span></div>' +
+          '<div class="wk-task-actions">' +
+            statusButton +
+            (task.status !== "inbox"
+              ? '<button class="wk-btn wk-btn--mini" type="button" data-work-move-inbox="true" title="Mover para inbox">Inbox</button>'
+              : '') +
+            '<button class="wk-btn wk-btn--mini wk-btn--danger" type="button" data-work-delete="true" aria-label="Excluir tarefa" title="Excluir">×</button>' +
           '</div>' +
         '</article>';
-      }).join("");
     }
 
-    function renderStats() {
-      const el = document.getElementById("workStats");
+    /* ─────────────────────────────────────────────────────────────── */
+    /* Sidebar                                                         */
+    /* ─────────────────────────────────────────────────────────────── */
+
+    function renderSidebar() {
+      const el = document.getElementById("workSidebar");
       if (!el) return;
-      const todayIso = WD.todayIso();
-      const weekSet = new Set(currentWeekIsos());
-      const open = openTasks();
-      const week = open.filter((task) => weekSet.has(task.scheduledDayIso) || weekSet.has(task.dueDate));
-      const today = open.filter((task) => WD.isToday(task, todayIso));
-      const overdue = open.filter((task) => WD.isOverdue(task, todayIso));
-      const waiting = open.filter(WD.isWaiting);
-      el.innerHTML = [
-        statHTML("Abertas", open.length, "tarefas de trabalho"),
-        statHTML("Semana", week.length, "planejadas ou com prazo"),
-        statHTML("Hoje", today.length, "ações do dia"),
-        statHTML("Atrasadas", overdue.length, "prazo vencido", overdue.length ? "danger" : ""),
-        statHTML("Aguardando", waiting.length, "terceiros", waiting.length ? "warning" : "")
+      const today = WD.todayIso();
+      const tasks = state.workTasks || [];
+      const active = currentFilter();
+
+      const counts = {
+        all: tasks.filter(WD.isOpen).length,
+        today: tasks.filter((t) => WD.isToday(t, today)).length,
+        overdue: tasks.filter((t) => WD.isOverdue(t, today)).length,
+        waiting: tasks.filter(WD.isWaiting).length,
+        general: tasks.filter((t) => WD.isOpen(t) && t.scope === "general").length
+      };
+
+      const globalFiltersHtml = [
+        scopeBtnHtml("all", "Todas as tarefas", counts.all, active === "all"),
+        scopeBtnHtml("today", "Hoje", counts.today, active === "today"),
+        scopeBtnHtml("overdue", "Atrasadas", counts.overdue, active === "overdue"),
+        scopeBtnHtml("waiting", "Aguardando", counts.waiting, active === "waiting"),
+        scopeBtnHtml("general", "Geral", counts.general, active === "general")
       ].join("");
+
+      const companiesHtml = WD.COMPANIES.map((company) => {
+        const s = WD.companySummaries(tasks, today, currentWeekIsos())
+          .find((item) => item.company.id === company.id) || { openCount: 0, overdueCount: 0, waitingCount: 0 };
+        const isActive = active === company.id;
+        const tone = s.overdueCount ? "danger" : (s.waitingCount ? "warning" : "quiet");
+        const badge = s.overdueCount
+          ? '<span class="wk-pill wk-pill--danger">' + s.overdueCount + ' atraso</span>'
+          : (s.waitingCount ? '<span class="wk-pill wk-pill--warning">' + s.waitingCount + ' aguard.</span>' : '');
+        return '<button type="button" class="wk-company-row" data-work-filter="' + esc(company.id) + '" data-tone="' + tone + '"' + (isActive ? ' data-active="true"' : '') + '>' +
+          logoMarkHtml(company, "md") +
+          '<span class="wk-company-row-body">' +
+            '<span class="wk-company-row-name">' + esc(company.name) + '</span>' +
+            '<span class="wk-company-row-sub">' +
+              '<span class="wk-company-row-count">' + s.openCount + ' abertas</span>' +
+              badge +
+            '</span>' +
+          '</span>' +
+        '</button>';
+      }).join("");
+
+      el.innerHTML =
+        '<div class="wk-side-header">' +
+          '<span class="wk-side-eyebrow">Portfolio FIPs</span>' +
+          '<h2 class="wk-side-title">Motor executivo</h2>' +
+        '</div>' +
+        '<button type="button" class="wk-capture-trigger" data-work-capture-toggle="true">' +
+          '<span class="wk-capture-trigger-icon" aria-hidden="true">+</span>' +
+          '<span>Capturar tarefa</span>' +
+          '<kbd>N</kbd>' +
+        '</button>' +
+        '<div class="wk-side-group">' +
+          '<div class="wk-side-group-label">Visoes</div>' +
+          globalFiltersHtml +
+        '</div>' +
+        '<div class="wk-side-group">' +
+          '<div class="wk-side-group-label">Empresas</div>' +
+          companiesHtml +
+        '</div>';
     }
 
-    function statHTML(label, value, subvalue, tone) {
-      return '<div class="work-stat' + (tone ? ' work-stat--' + tone : '') + '">' +
-        '<div class="week-stat-label">' + escapeHtml(label) + '</div>' +
-        '<span class="week-stat-value">' + value + '</span>' +
-        '<div class="week-stat-subvalue">' + escapeHtml(subvalue) + '</div>' +
+    function scopeBtnHtml(key, label, count, isActive) {
+      return '<button type="button" class="wk-side-link" data-work-filter="' + esc(key) + '"' + (isActive ? ' data-active="true"' : '') + '>' +
+        '<span>' + esc(label) + '</span>' +
+        '<span class="wk-count">' + count + '</span>' +
+      '</button>';
+    }
+
+    /* ─────────────────────────────────────────────────────────────── */
+    /* Workspace header                                                */
+    /* ─────────────────────────────────────────────────────────────── */
+
+    function renderWorkspaceHeader() {
+      const el = document.getElementById("workWorkspaceHeader");
+      if (!el) return;
+      const today = WD.todayIso();
+      const filter = currentFilter();
+      const company = currentCompanyMeta();
+      const weekStart = currentWeekStart;
+      const weekEnd = WD.addDays(weekStart, 6);
+      const weekLabel = fmtDateShort(weekStart) + " - " + fmtDateShort(weekEnd) + " · " + WEEKDAY_FULL[weekStart.getDay()] + " a " + WEEKDAY_FULL[weekEnd.getDay()];
+
+      let eyebrow = "Todas as tarefas";
+      let title = "Centro de comando do portfolio";
+      let subtitle = "Uma visao consolidada das 3 investidas e tarefas gerais.";
+      let logoHtml = "";
+      let accentStyle = "";
+      let pillHtml = "";
+
+      const tasks = state.workTasks || [];
+      const open = tasks.filter(WD.isOpen);
+      const weekSet = new Set(currentWeekIsos());
+
+      let openCount, weekCount, overdueCount, waitingCount, todayCount;
+      let scoped;
+
+      if (company) {
+        scoped = tasks.filter((t) => t.companyId === company.id);
+        eyebrow = "Investida";
+        title = company.name;
+        subtitle = "Tocando o dia a dia. Prazos, proximas acoes e aguardos.";
+        logoHtml = logoMarkHtml(company, "xl");
+        accentStyle = ' style="--wk-accent: ' + esc(company.accent) + '"';
+        const openS = scoped.filter(WD.isOpen);
+        openCount = openS.length;
+        todayCount = openS.filter((t) => WD.isToday(t, today)).length;
+        weekCount = openS.filter((t) => weekSet.has(t.scheduledDayIso) || weekSet.has(t.dueDate)).length;
+        overdueCount = openS.filter((t) => WD.isOverdue(t, today)).length;
+        waitingCount = openS.filter(WD.isWaiting).length;
+        pillHtml = overdueCount
+          ? '<span class="wk-state-pill wk-state-pill--danger">' + overdueCount + ' em atraso</span>'
+          : (waitingCount
+              ? '<span class="wk-state-pill wk-state-pill--warning">' + waitingCount + ' aguardando</span>'
+              : '<span class="wk-state-pill wk-state-pill--success">sem pressao</span>');
+      } else {
+        if (filter === "today") { eyebrow = "Visao"; title = "Foco de hoje"; subtitle = "Tudo que precisa sair hoje."; }
+        else if (filter === "overdue") { eyebrow = "Visao"; title = "Atrasadas"; subtitle = "Prazos estourados. Fechar ou replanejar."; }
+        else if (filter === "waiting") { eyebrow = "Visao"; title = "Aguardando terceiros"; subtitle = "Dependencias externas em andamento."; }
+        else if (filter === "general") { eyebrow = "Visao"; title = "Tarefas gerais"; subtitle = "Sem empresa associada."; }
+        openCount = open.length;
+        todayCount = open.filter((t) => WD.isToday(t, today)).length;
+        weekCount = open.filter((t) => weekSet.has(t.scheduledDayIso) || weekSet.has(t.dueDate)).length;
+        overdueCount = open.filter((t) => WD.isOverdue(t, today)).length;
+        waitingCount = open.filter(WD.isWaiting).length;
+      }
+
+      el.innerHTML =
+        '<div class="wk-ws-head"' + accentStyle + '>' +
+          '<div class="wk-ws-head-left">' +
+            (logoHtml ? '<div class="wk-ws-head-logo">' + logoHtml + '</div>' : '') +
+            '<div class="wk-ws-head-copy">' +
+              '<span class="wk-eyebrow">' + esc(eyebrow) + '</span>' +
+              '<h1 class="wk-ws-title">' + esc(title) + '</h1>' +
+              '<p class="wk-ws-sub">' + esc(subtitle) + '</p>' +
+            '</div>' +
+          '</div>' +
+          '<div class="wk-ws-head-right">' +
+            '<div class="wk-ws-week">' +
+              '<span class="wk-eyebrow">Semana</span>' +
+              '<span class="wk-ws-week-label">' + esc(weekLabel) + '</span>' +
+              '<div class="wk-ws-week-ctrls">' +
+                '<button class="wk-btn wk-btn--ghost" type="button" id="workPrevBtn" aria-keyshortcuts="Alt+Shift+ArrowLeft" title="Semana anterior">‹</button>' +
+                '<button class="wk-btn wk-btn--ghost" type="button" id="workTodayBtn" aria-keyshortcuts="Alt+Shift+0">Hoje</button>' +
+                '<button class="wk-btn wk-btn--ghost" type="button" id="workNextBtn" aria-keyshortcuts="Alt+Shift+ArrowRight" title="Proxima semana">›</button>' +
+              '</div>' +
+            '</div>' +
+            (pillHtml ? '<div class="wk-ws-state">' + pillHtml + '</div>' : '') +
+          '</div>' +
+        '</div>' +
+        '<div class="wk-kpis">' +
+          kpiHtml("Abertas", openCount, "ativas") +
+          kpiHtml("Hoje", todayCount, "no foco") +
+          kpiHtml("Semana", weekCount, "planejadas") +
+          kpiHtml("Atrasadas", overdueCount, "prazo vencido", overdueCount ? "danger" : "") +
+          kpiHtml("Aguardando", waitingCount, "terceiros", waitingCount ? "warning" : "") +
+        '</div>';
+    }
+
+    function kpiHtml(label, value, sub, tone) {
+      return '<div class="wk-kpi' + (tone ? ' wk-kpi--' + tone : '') + '">' +
+        '<div class="wk-kpi-value">' + value + '</div>' +
+        '<div class="wk-kpi-label">' + esc(label) + '</div>' +
+        '<div class="wk-kpi-sub">' + esc(sub) + '</div>' +
       '</div>';
     }
 
-    function renderFilters() {
-      const el = document.getElementById("workFilters");
+    /* ─────────────────────────────────────────────────────────────── */
+    /* Captura inline                                                  */
+    /* ─────────────────────────────────────────────────────────────── */
+
+    function renderCapture() {
+      const el = document.getElementById("workCapture");
       if (!el) return;
-      const todayIso = WD.todayIso();
-      const tasks = state.workTasks || [];
-      const counts = {
-        all: tasks.filter(WD.isOpen).length,
-        general: tasks.filter((task) => WD.isOpen(task) && task.scope === "general").length,
-        today: tasks.filter((task) => WD.isToday(task, todayIso)).length,
-        overdue: tasks.filter((task) => WD.isOverdue(task, todayIso)).length,
-        waiting: tasks.filter(WD.isWaiting).length
-      };
-      WD.COMPANIES.forEach((company) => {
-        counts[company.id] = tasks.filter((task) => WD.isOpen(task) && task.companyId === company.id).length;
-      });
-      const active = getFilter();
-      el.innerHTML = WD.FILTERS.map((filter) => {
-        const count = counts[filter.value] || 0;
-        const companyAttr = WD.COMPANIES.some((company) => company.id === filter.value)
-          ? ' data-company-id="' + filter.value + '"'
-          : '';
-        return '<button type="button" class="work-filter-btn" data-work-filter="' + filter.value + '"' + companyAttr + (active === filter.value ? ' data-active="true"' : '') + '>' +
-          '<span>' + escapeHtml(filter.label) + '</span>' +
-          '<strong>' + count + '</strong>' +
-        '</button>';
-      }).join("");
-    }
+      if (!captureOpen) {
+        el.innerHTML = '';
+        el.dataset.open = "false";
+        return;
+      }
+      el.dataset.open = "true";
+      const company = captureCompanyLock || currentCompanyMeta();
+      const companyLockedHtml = company
+        ? '<div class="wk-cap-lock">' +
+            logoMarkHtml(company, "sm") +
+            '<span>' + esc(company.name) + '</span>' +
+            '<button class="wk-btn wk-btn--mini wk-btn--ghost" type="button" data-work-unlock-company="true">trocar empresa</button>' +
+          '</div>'
+        : '';
 
-    function renderFormOptions() {
-      renderCompanySelect("workTaskCompany");
-      renderDaySelect("workTaskDay");
-      renderOptionSelect("workTaskPriority", WD.PRIORITIES, "medium");
-      renderOptionSelect("workTaskStatus", WD.STATUSES, "inbox");
-      renderOptionSelect("workTaskArea", WD.AREAS, "followup");
-      updateCompanyFieldState();
-    }
+      const companySelectHtml = company
+        ? ''
+        : '<label class="wk-cap-field"><span>Empresa</span><select name="companyId">' +
+            '<option value="">Geral</option>' +
+            WD.COMPANIES.map((c) => '<option value="' + esc(c.id) + '">' + esc(c.name) + '</option>').join("") +
+          '</select></label>';
 
-    function renderCompanySelect(id) {
-      const select = document.getElementById(id);
-      if (!select) return;
-      const current = select.value;
-      select.innerHTML = '<option value="">—</option>' + WD.COMPANIES.map((company) =>
-        '<option value="' + company.id + '">' + escapeHtml(company.name) + '</option>'
-      ).join("");
-      if (current) select.value = current;
-    }
+      const daySelectHtml = '<label class="wk-cap-field"><span>Quando</span><select name="scheduledDayIso">' +
+        '<option value="">Inbox (sem dia)</option>' +
+        WD.getWeekDays(currentWeekStart).map((d) =>
+          '<option value="' + d.iso + '"' + (d.iso === WD.todayIso() ? ' selected' : '') + '>' +
+            WEEKDAY_FULL[d.date.getDay()] + ' · ' + fmtDateShort(d.date) +
+          '</option>'
+        ).join("") +
+      '</select></label>';
 
-    function renderDaySelect(id) {
-      const select = document.getElementById(id);
-      if (!select) return;
-      const current = select.value;
-      const options = ['<option value="">Inbox (sem dia)</option>'];
-      WD.getWeekDays(currentWeekStart).forEach((day) => {
-        options.push('<option value="' + day.iso + '">' + WEEKDAY_FULL[day.date.getDay()] + ' · ' + formatDateShort(day.date) + '</option>');
-      });
-      select.innerHTML = options.join("");
-      if (current && Array.from(select.options).some((option) => option.value === current)) select.value = current;
-    }
+      const prioritySelectHtml = '<label class="wk-cap-field"><span>Prioridade</span><select name="priority">' +
+        WD.PRIORITIES.map((p) => '<option value="' + esc(p.value) + '"' + (p.value === "medium" ? ' selected' : '') + '>' + esc(p.label) + '</option>').join("") +
+      '</select></label>';
 
-    function renderOptionSelect(id, options, fallback) {
-      const select = document.getElementById(id);
-      if (!select) return;
-      const current = select.value || fallback;
-      select.innerHTML = options.map((option) =>
-        '<option value="' + option.value + '">' + escapeHtml(option.label) + '</option>'
-      ).join("");
-      select.value = current;
-    }
+      const areaSelectHtml = '<label class="wk-cap-field"><span>Area</span><select name="area">' +
+        WD.AREAS.map((a) => '<option value="' + esc(a.value) + '"' + (a.value === "followup" ? ' selected' : '') + '>' + esc(a.label) + '</option>').join("") +
+      '</select></label>';
 
-    function updateCompanyFieldState() {
-      const scopeSelect = document.getElementById("workTaskScope");
-      const companySelect = document.getElementById("workTaskCompany");
-      if (!scopeSelect || !companySelect) return;
-      const isCompany = scopeSelect.value === "company";
-      companySelect.disabled = !isCompany;
-      if (!isCompany) companySelect.value = "";
-    }
-
-    function renderPlanner() {
-      const el = document.getElementById("workWeekPlanner");
-      if (!el) return;
-      const todayIso = WD.todayIso();
-      const tasks = visibleTasks().filter(WD.isOpen);
-      el.innerHTML = WD.getWeekDays(currentWeekStart).map((day) => {
-        const dayTasks = WD.sortTasks(tasks.filter((task) => task.scheduledDayIso === day.iso), todayIso);
-        const pendingCount = dayTasks.length;
-        const isToday = day.iso === todayIso;
-        return '<div class="work-day-col work-drop-zone" data-work-drop="day" data-day-iso="' + day.iso + '"' + (isToday ? ' data-today="true"' : '') + '>' +
-          '<div class="work-day-header">' +
-            '<span class="work-day-weekday">' + WEEKDAY_NAMES[day.date.getDay()] + '</span>' +
-            '<span class="work-day-date">' + formatDateShort(day.date) + '<strong>' + pendingCount + '</strong></span>' +
+      el.innerHTML =
+        '<form id="workCaptureForm" class="wk-cap-form" autocomplete="off">' +
+          (company ? '<input type="hidden" name="companyId" value="' + esc(company.id) + '" />' : '') +
+          companyLockedHtml +
+          '<div class="wk-cap-main">' +
+            '<input type="text" class="wk-cap-title" name="title" maxlength="180" required autofocus placeholder="O que precisa andar? (Enter para capturar)" />' +
+            '<button class="wk-btn wk-btn--primary" type="submit">Capturar</button>' +
+            '<button class="wk-btn wk-btn--ghost" type="button" data-work-capture-toggle="true">Cancelar</button>' +
           '</div>' +
-          '<div class="work-day-list">' + (dayTasks.length ? dayTasks.map(renderTaskCard).join("") : '<div class="work-empty-drop">Arraste uma tarefa para este dia.</div>') + '</div>' +
+          '<div class="wk-cap-next">' +
+            '<input type="text" name="nextAction" maxlength="220" placeholder="Proxima acao concreta (opcional)" />' +
+          '</div>' +
+          '<div class="wk-cap-grid">' +
+            companySelectHtml +
+            daySelectHtml +
+            '<label class="wk-cap-field"><span>Prazo real</span><input type="date" name="dueDate" /></label>' +
+            prioritySelectHtml +
+            areaSelectHtml +
+          '</div>' +
+          '<details class="wk-cap-more"><summary>Notas</summary>' +
+            '<textarea name="description" rows="2" maxlength="1000" placeholder="Contexto minimo, links ou observacoes"></textarea>' +
+          '</details>' +
+        '</form>';
+
+      // Auto-foco
+      const titleInput = el.querySelector(".wk-cap-title");
+      if (titleInput) setTimeout(() => titleInput.focus(), 10);
+    }
+
+    function openCapture(forCompany) {
+      captureOpen = true;
+      captureCompanyLock = forCompany ? (WD.companyMeta(forCompany) || null) : currentCompanyMeta();
+      renderCapture();
+    }
+
+    function closeCapture() {
+      captureOpen = false;
+      captureCompanyLock = null;
+      renderCapture();
+    }
+
+    /* ─────────────────────────────────────────────────────────────── */
+    /* Board semanal + listas                                          */
+    /* ─────────────────────────────────────────────────────────────── */
+
+    function renderBoard() {
+      const el = document.getElementById("workBoard");
+      if (!el) return;
+      const today = WD.todayIso();
+      const company = currentCompanyMeta();
+      const scoped = company
+        ? (state.workTasks || []).filter((t) => t.companyId === company.id)
+        : visibleTasksFor(currentFilter());
+      const openScoped = scoped.filter(WD.isOpen);
+
+      const days = WD.getWeekDays(currentWeekStart);
+      const dayColsHtml = days.map((day) => {
+        const dayTasks = WD.sortTasks(openScoped.filter((t) => t.scheduledDayIso === day.iso), today);
+        const isToday = day.iso === today;
+        const count = dayTasks.length;
+        const weekday = WEEKDAY_NAMES[day.date.getDay()];
+        return '<div class="wk-day wk-drop-zone" data-work-drop="day" data-day-iso="' + day.iso + '"' + (isToday ? ' data-today="true"' : '') + '>' +
+          '<div class="wk-day-head">' +
+            '<div class="wk-day-head-main">' +
+              '<span class="wk-day-weekday">' + esc(weekday) + '</span>' +
+              '<span class="wk-day-date">' + fmtDateShort(day.date) + '</span>' +
+            '</div>' +
+            '<span class="wk-day-count">' + count + '</span>' +
+          '</div>' +
+          '<div class="wk-day-list">' +
+            (dayTasks.length
+              ? dayTasks.map((t) => taskCardHtml(t, { density: "compact", hideCompanyChip: !!company })).join("")
+              : '<div class="wk-day-empty">arraste aqui</div>') +
+          '</div>' +
         '</div>';
       }).join("");
+
+      // Pool de nao-agendadas (substitui inbox em workspace por empresa)
+      const unscheduled = WD.sortTasks(openScoped.filter((t) => !t.scheduledDayIso), today);
+      const unschedHtml = unscheduled.length
+        ? unscheduled.map((t) => taskCardHtml(t, { density: "compact", hideCompanyChip: !!company })).join("")
+        : '<div class="wk-day-empty wk-day-empty--lg">Nenhuma tarefa nao planejada. Use <strong>Capturar tarefa</strong> para adicionar.</div>';
+
+      el.innerHTML =
+        '<div class="wk-board-head">' +
+          '<h2 class="wk-section-title">Planner da semana</h2>' +
+          '<span class="wk-muted">Arraste cards entre os dias. ' + (company ? esc(company.name) : "Visao: " + esc(scopeLabel(currentFilter()))) + '</span>' +
+        '</div>' +
+        '<div class="wk-board">' + dayColsHtml + '</div>' +
+        '<div class="wk-unsched">' +
+          '<div class="wk-unsched-head">' +
+            '<h3 class="wk-section-title wk-section-title--sm">Nao planejadas</h3>' +
+            '<span class="wk-muted">' + unscheduled.length + ' abertas sem dia · arraste para um dia da semana</span>' +
+          '</div>' +
+          '<div class="wk-unsched-list wk-drop-zone" data-work-drop="inbox">' + unschedHtml + '</div>' +
+        '</div>';
     }
 
-    function renderInbox() {
-      const el = document.getElementById("workInboxList");
-      if (!el) return;
-      const todayIso = WD.todayIso();
-      const tasks = WD.sortTasks(visibleTasks().filter((task) => WD.isOpen(task) && (!task.scheduledDayIso || task.status === "inbox")), todayIso);
-      setText("workInboxCount", tasks.length);
-      el.innerHTML = tasks.length ? tasks.map(renderTaskCard).join("") : '<div class="work-empty-drop">Inbox vazia. Capture acima ou arraste cards para cá.</div>';
+    function scopeLabel(key) {
+      if (key === "today") return "Hoje";
+      if (key === "overdue") return "Atrasadas";
+      if (key === "waiting") return "Aguardando";
+      if (key === "general") return "Gerais";
+      return "todas";
     }
 
-    function renderWaiting() {
-      const el = document.getElementById("workWaitingList");
+    /* ─────────────────────────────────────────────────────────────── */
+    /* Prazos criticos + aguardando (aside)                            */
+    /* ─────────────────────────────────────────────────────────────── */
+
+    function renderAside() {
+      const el = document.getElementById("workAside");
       if (!el) return;
-      const todayIso = WD.todayIso();
-      const tasks = WD.sortTasks(visibleTasks().filter(WD.isWaiting), todayIso);
-      setText("workWaitingCount", tasks.length);
-      el.innerHTML = tasks.length ? tasks.map(renderTaskCard).join("") : '<div class="empty-state">Nada aguardando terceiros.</div>';
+      const today = WD.todayIso();
+      const company = currentCompanyMeta();
+      const base = company
+        ? (state.workTasks || []).filter((t) => t.companyId === company.id)
+        : (state.workTasks || []);
+      const buckets = WD.dashboardBuckets(base, today, currentWeekStart);
+
+      const criticalList = buckets.critical.slice(0, 8);
+      const waitingList = buckets.waiting.slice(0, 8);
+
+      const criticalHtml = criticalList.length
+        ? criticalList.map((t) => taskCardHtml(t, { density: "compact", draggable: false, hideCompanyChip: !!company })).join("")
+        : '<div class="wk-empty">Sem prazo critico.</div>';
+
+      const waitingHtml = waitingList.length
+        ? waitingList.map((t) => {
+            const since = t.waitingSince ? new Date(t.waitingSince) : null;
+            const daysAgo = since ? Math.max(0, Math.round((Date.now() - since.getTime()) / 86400000)) : null;
+            const ageChip = daysAgo !== null
+              ? '<span class="wk-chip wk-chip--age">' + (daysAgo === 0 ? "hoje" : daysAgo + "d aguard.") + '</span>'
+              : '';
+            return '<article class="wk-mini-task" data-work-task-id="' + esc(t.id) + '">' +
+              '<div class="wk-mini-task-title">' + esc(t.title) + '</div>' +
+              '<div class="wk-mini-task-meta">' +
+                (!company && t.companyId ? '<span class="wk-chip wk-chip--company">' + esc(WD.companyName(t.companyId)) + '</span>' : '') +
+                ageChip +
+                (t.nextAction ? '<span class="wk-mini-task-next">→ ' + esc(t.nextAction) + '</span>' : '') +
+              '</div>' +
+              '<div class="wk-mini-task-actions">' +
+                '<button class="wk-btn wk-btn--mini" type="button" data-work-status="planned">Retomar</button>' +
+                '<button class="wk-btn wk-btn--mini" type="button" data-work-status="done">Resolvido</button>' +
+              '</div>' +
+            '</article>';
+          }).join("")
+        : '<div class="wk-empty">Nada aguardando.</div>';
+
+      const nextActionsHtml = company
+        ? renderNextActionsForCompany(company, base.filter(WD.isOpen), today)
+        : renderPortfolioResume(today);
+
+      el.innerHTML =
+        '<section class="wk-aside-card">' +
+          '<div class="wk-aside-head">' +
+            '<h3 class="wk-section-title wk-section-title--sm">Prazos criticos</h3>' +
+            '<span class="wk-count wk-count--danger">' + buckets.critical.length + '</span>' +
+          '</div>' +
+          '<div class="wk-aside-list">' + criticalHtml + '</div>' +
+        '</section>' +
+        '<section class="wk-aside-card">' +
+          '<div class="wk-aside-head">' +
+            '<h3 class="wk-section-title wk-section-title--sm">Aguardando terceiros</h3>' +
+            '<span class="wk-count wk-count--warning">' + buckets.waiting.length + '</span>' +
+          '</div>' +
+          '<div class="wk-aside-list">' + waitingHtml + '</div>' +
+        '</section>' +
+        nextActionsHtml;
     }
 
-    function renderCritical() {
-      const el = document.getElementById("workCriticalCard");
-      if (!el) return;
-      const buckets = WD.dashboardBuckets(state.workTasks || [], WD.todayIso(), currentWeekStart);
-      const critical = buckets.critical.slice(0, 8);
-      el.innerHTML = '<div class="work-panel-heading compact"><h3>Prazos críticos</h3><span class="chip danger">' + critical.length + '</span></div>' +
-        (critical.length ? '<div class="work-list work-list--compact">' + critical.map(renderTaskCard).join("") + '</div>' : '<div class="empty-state">Sem prazo crítico nesta semana.</div>');
+    function renderNextActionsForCompany(company, openTasks, today) {
+      const top = WD.sortTasks(openTasks, today).slice(0, 6);
+      const list = top.length
+        ? '<ol class="wk-next-list">' + top.map((t) =>
+            '<li>' +
+              '<div class="wk-next-text">' + esc(t.nextAction || t.title) + '</div>' +
+              '<div class="wk-next-meta">' +
+                '<span>' + esc(t.dueDate ? relativeDueLabel(t.dueDate) : "sem prazo") + '</span>' +
+                '<span>·</span>' +
+                '<span>' + esc(WD.priorityLabel(t.priority)) + '</span>' +
+                '<span>·</span>' +
+                '<span>' + esc(WD.statusLabel(t.status)) + '</span>' +
+              '</div>' +
+            '</li>'
+          ).join("") + '</ol>'
+        : '<div class="wk-empty">Nenhuma proxima acao ativa.</div>';
+      return '<section class="wk-aside-card">' +
+        '<div class="wk-aside-head">' +
+          '<h3 class="wk-section-title wk-section-title--sm">Proximas acoes · ' + esc(company.name) + '</h3>' +
+        '</div>' +
+        list +
+      '</section>';
     }
 
-    function renderCompanySummary() {
-      const el = document.getElementById("workCompanySummary");
-      if (!el) return;
-      const summaries = WD.companySummaries(state.workTasks || [], WD.todayIso(), currentWeekIsos());
-      el.innerHTML = '<div class="work-panel-heading compact"><h3>Resumo por empresa</h3><span class="chip neutral">FIPs</span></div>' +
-        '<div class="work-company-grid">' + summaries.map((summary) => {
-          const actions = summary.nextActions.length
-            ? '<ul>' + summary.nextActions.map((action) => '<li>' + escapeHtml(action) + '</li>').join("") + '</ul>'
-            : '<div class="mini muted">Sem proxima acao aberta.</div>';
-          const badgeTone = summary.overdueCount ? "danger" : (summary.waitingCount ? "warning" : "success");
-          const badgeLabel = summary.overdueCount
-            ? summary.overdueCount + " atrasada(s)"
-            : (summary.waitingCount ? summary.waitingCount + " aguardando" : "fluxo limpo");
-          return '<article class="work-company-card" data-company-id="' + summary.company.id + '">' +
-            '<div class="work-company-top">' +
-              renderCompanyIdentity(summary.company, { size: "sm", compact: true, role: "Investida" }) +
-              '<div class="work-company-top-actions">' +
-                '<span class="work-state-pill work-state-pill--' + badgeTone + '">' + escapeHtml(badgeLabel) + '</span>' +
-                '<button type="button" data-work-filter="' + summary.company.id + '" data-company-id="' + summary.company.id + '">Filtrar</button>' +
+    function renderPortfolioResume(today) {
+      const summaries = WD.companySummaries(state.workTasks || [], today, currentWeekIsos());
+      return '<section class="wk-aside-card">' +
+        '<div class="wk-aside-head">' +
+          '<h3 class="wk-section-title wk-section-title--sm">Resumo do portfolio</h3>' +
+        '</div>' +
+        '<div class="wk-portfolio">' + summaries.map((s) => {
+          const tone = s.overdueCount ? "danger" : (s.waitingCount ? "warning" : "success");
+          const stateLabel = s.overdueCount
+            ? s.overdueCount + " em atraso"
+            : (s.waitingCount ? s.waitingCount + " aguardando" : "fluxo limpo");
+          return '<button type="button" class="wk-portfolio-row" data-work-filter="' + esc(s.company.id) + '" data-tone="' + tone + '">' +
+            logoMarkHtml(s.company, "sm") +
+            '<div class="wk-portfolio-row-body">' +
+              '<div class="wk-portfolio-row-top">' +
+                '<strong>' + esc(s.company.name) + '</strong>' +
+                '<span class="wk-pill wk-pill--' + tone + '">' + esc(stateLabel) + '</span>' +
+              '</div>' +
+              '<div class="wk-portfolio-row-nums">' +
+                '<span><strong>' + s.openCount + '</strong> abertas</span>' +
+                '<span><strong>' + s.weekCount + '</strong> semana</span>' +
+                '<span><strong>' + s.overdueCount + '</strong> atrasadas</span>' +
+                '<span><strong>' + s.waitingCount + '</strong> aguard.</span>' +
               '</div>' +
             '</div>' +
-            '<div class="work-company-metrics">' +
-              '<span><strong>' + summary.openCount + '</strong> abertas</span>' +
-              '<span><strong>' + summary.weekCount + '</strong> semana</span>' +
-              '<span><strong>' + summary.overdueCount + '</strong> atrasadas</span>' +
-              '<span><strong>' + summary.waitingCount + '</strong> aguardando</span>' +
-            '</div>' +
-            '<div class="work-company-actions"><span>Proximas acoes</span>' + actions + '</div>' +
-          '</article>';
-        }).join("") + '</div>';
+          '</button>';
+        }).join("") + '</div>' +
+      '</section>';
     }
 
-    function renderTaskCard(task) {
-      const todayIso = WD.todayIso();
-      const overdue = WD.isOverdue(task, todayIso);
-      const due = task.dueDate ? 'Prazo ' + formatIsoShort(task.dueDate) : 'Sem prazo';
-      const company = task.scope === "company" ? WD.companyName(task.companyId) : "Geral";
-      const companyAttr = task.scope === "company" && task.companyId ? ' data-company-id="' + task.companyId + '"' : "";
-      const status = WD.statusLabel(task.status);
-      const priority = WD.priorityLabel(task.priority);
-      const statusAction = task.status === "waiting"
-        ? '<button type="button" data-work-status="planned">Retomar</button>'
-        : '<button type="button" data-work-status="waiting">Aguardar</button>';
-      return '<article class="work-task" draggable="true" data-work-task-id="' + task.id + '" data-priority="' + task.priority + '"' + companyAttr + (overdue ? ' data-overdue="true"' : '') + '>' +
-        '<div class="work-task-main">' +
-          '<label class="work-task-check-wrap"><input type="checkbox" class="work-task-check"' + (task.status === "done" ? ' checked' : '') + ' aria-label="Concluir tarefa" /></label>' +
-          '<div class="work-task-body">' +
-            '<div class="work-task-title">' + escapeHtml(task.title) + '</div>' +
-            '<div class="work-task-action">' + escapeHtml(task.nextAction || 'Definir próxima ação objetiva') + '</div>' +
-          '</div>' +
-        '</div>' +
-        '<div class="work-task-meta">' +
-          '<span class="work-chip"' + companyAttr + '>' + escapeHtml(company) + '</span>' +
-          '<span class="work-chip work-chip--' + task.priority + '">' + escapeHtml(priority) + '</span>' +
-          '<span class="work-chip' + (overdue ? ' work-chip--danger' : '') + '">' + escapeHtml(due) + '</span>' +
-          '<span class="work-chip">' + escapeHtml(WD.areaLabel(task.area)) + '</span>' +
-          '<span class="work-chip">' + escapeHtml(status) + '</span>' +
-        '</div>' +
-        (task.description ? '<div class="work-task-notes">' + escapeHtml(task.description) + '</div>' : '') +
-        '<div class="work-task-actions">' +
-          '<button type="button" data-work-status="doing">Fazer</button>' +
-          statusAction +
-          '<button type="button" data-work-move-inbox="true">Inbox</button>' +
-          '<button type="button" data-work-delete="true" aria-label="Excluir tarefa">Excluir</button>' +
-        '</div>' +
-      '</article>';
+    /* ─────────────────────────────────────────────────────────────── */
+    /* Render root                                                     */
+    /* ─────────────────────────────────────────────────────────────── */
+
+    function renderWorkPlanner() {
+      renderSidebar();
+      renderWorkspaceHeader();
+      renderCapture();
+      renderBoard();
+      renderAside();
     }
 
-    function collectWorkForm(form) {
-      const data = new FormData(form);
-      return {
-        title: data.get("title"),
-        nextAction: data.get("nextAction"),
-        description: data.get("description"),
-        scope: data.get("scope"),
-        companyId: data.get("companyId"),
-        scheduledDayIso: data.get("scheduledDayIso"),
-        dueDate: data.get("dueDate"),
-        priority: data.get("priority"),
-        status: data.get("status"),
-        area: data.get("area")
-      };
-    }
-
-    function resetWorkForm() {
-      const form = document.getElementById("workTaskForm");
-      if (!form) return;
-      form.reset();
-      renderFormOptions();
-      const title = document.getElementById("workTaskTitle");
-      if (title) title.focus();
-    }
+    /* ─────────────────────────────────────────────────────────────── */
+    /* CRUD                                                             */
+    /* ─────────────────────────────────────────────────────────────── */
 
     function addTask(input, message) {
       const task = WD.createTask(input || {});
       state.workTasks.push(task);
-      saveAndRefresh(message || "Tarefa de trabalho criada.");
+      saveAndRefresh(message || "Tarefa capturada.");
       return task;
     }
 
     function updateTask(id, patch, message) {
-      const idx = (state.workTasks || []).findIndex((task) => task.id === id);
+      const idx = (state.workTasks || []).findIndex((t) => t.id === id);
       if (idx === -1) return null;
       state.workTasks[idx] = WD.patchTask(state.workTasks[idx], patch || {});
       saveAndRefresh(message || "Tarefa atualizada.");
@@ -396,183 +676,172 @@
 
     function deleteTask(id) {
       const before = state.workTasks.length;
-      state.workTasks = state.workTasks.filter((task) => task.id !== id);
+      state.workTasks = state.workTasks.filter((t) => t.id !== id);
       if (state.workTasks.length !== before) saveAndRefresh("Tarefa removida.");
     }
 
-    function taskIdFromEvent(event) {
-      const card = event.target && event.target.closest ? event.target.closest(".work-task") : null;
-      return card ? card.getAttribute("data-work-task-id") : null;
+    function collectForm(form) {
+      const data = new FormData(form);
+      return {
+        title: data.get("title"),
+        nextAction: data.get("nextAction") || data.get("title"),
+        description: data.get("description") || "",
+        scope: data.get("companyId") ? "company" : "general",
+        companyId: data.get("companyId") || null,
+        scheduledDayIso: data.get("scheduledDayIso") || "",
+        dueDate: data.get("dueDate") || "",
+        priority: data.get("priority") || "medium",
+        status: data.get("scheduledDayIso") ? "planned" : "inbox",
+        area: data.get("area") || "followup"
+      };
     }
+
+    /* ─────────────────────────────────────────────────────────────── */
+    /* Eventos                                                          */
+    /* ─────────────────────────────────────────────────────────────── */
 
     function setupEvents() {
-      const workPage = document.getElementById("workPage");
-      if (workPage && workPage.getAttribute("data-work-bound") !== "true") {
-        workPage.setAttribute("data-work-bound", "true");
+      const page = document.getElementById("workPage");
+      if (!page || page.getAttribute("data-work-bound") === "true") return;
+      page.setAttribute("data-work-bound", "true");
 
-        workPage.addEventListener("click", function (event) {
-          const filterBtn = event.target.closest("[data-work-filter]");
-          if (filterBtn) {
-            state.workFilter = filterBtn.getAttribute("data-work-filter") || "all";
-            saveState();
-            renderWorkPlanner();
-            return;
-          }
+      page.addEventListener("click", function (event) {
+        const filterBtn = event.target.closest("[data-work-filter]");
+        if (filterBtn) {
+          applyFilterChange(filterBtn.getAttribute("data-work-filter"));
+          return;
+        }
+        const toggleCapture = event.target.closest("[data-work-capture-toggle]");
+        if (toggleCapture) {
+          captureOpen ? closeCapture() : openCapture();
+          return;
+        }
+        const unlock = event.target.closest("[data-work-unlock-company]");
+        if (unlock) {
+          captureCompanyLock = null;
+          renderCapture();
+          return;
+        }
+        const statusBtn = event.target.closest("[data-work-status]");
+        if (statusBtn) {
+          const id = taskIdFrom(event);
+          if (id) updateTask(id, { status: statusBtn.getAttribute("data-work-status") });
+          return;
+        }
+        const inboxBtn = event.target.closest("[data-work-move-inbox]");
+        if (inboxBtn) {
+          const id = taskIdFrom(event);
+          if (id) updateTask(id, { scheduledDayIso: null, status: "inbox" }, "Tarefa movida para inbox.");
+          return;
+        }
+        const deleteBtn = event.target.closest("[data-work-delete]");
+        if (deleteBtn) {
+          const id = taskIdFrom(event);
+          if (id) deleteTask(id);
+          return;
+        }
+        const prevBtn = event.target.closest("#workPrevBtn");
+        if (prevBtn) { currentWeekStart = WD.addDays(currentWeekStart, -7); persistWeekAnchor(); renderWorkPlanner(); return; }
+        const todayBtn = event.target.closest("#workTodayBtn");
+        if (todayBtn) { currentWeekStart = WD.getWeekStart(new Date()); persistWeekAnchor(); renderWorkPlanner(); return; }
+        const nextBtn = event.target.closest("#workNextBtn");
+        if (nextBtn) { currentWeekStart = WD.addDays(currentWeekStart, 7); persistWeekAnchor(); renderWorkPlanner(); return; }
+      });
 
-          const statusBtn = event.target.closest("[data-work-status]");
-          if (statusBtn) {
-            const id = taskIdFromEvent(event);
-            if (id) updateTask(id, { status: statusBtn.getAttribute("data-work-status") });
-            return;
-          }
+      page.addEventListener("change", function (event) {
+        const cb = event.target.closest(".wk-task-checkbox");
+        if (!cb) return;
+        const id = taskIdFrom(event);
+        if (!id) return;
+        const task = state.workTasks.find((t) => t.id === id);
+        const fallback = task && task.scheduledDayIso ? "planned" : "inbox";
+        updateTask(id, { status: cb.checked ? "done" : fallback }, cb.checked ? "Tarefa concluida." : "Tarefa reaberta.");
+      });
 
-          const inboxBtn = event.target.closest("[data-work-move-inbox]");
-          if (inboxBtn) {
-            const id = taskIdFromEvent(event);
-            if (id) updateTask(id, { scheduledDayIso: null, status: "inbox" }, "Tarefa movida para inbox.");
-            return;
-          }
+      page.addEventListener("submit", function (event) {
+        const form = event.target.closest("#workCaptureForm");
+        if (!form) return;
+        event.preventDefault();
+        const payload = collectForm(form);
+        if (!String(payload.title || "").trim()) return;
+        addTask(payload, "Tarefa capturada.");
+        closeCapture();
+      });
 
-          const deleteBtn = event.target.closest("[data-work-delete]");
-          if (deleteBtn) {
-            const id = taskIdFromEvent(event);
-            if (id) deleteTask(id);
-          }
-        });
-
-        workPage.addEventListener("change", function (event) {
-          if (event.target && event.target.id === "workTaskScope") {
-            updateCompanyFieldState();
-            return;
-          }
-          const checkbox = event.target.closest(".work-task-check");
-          if (!checkbox) return;
-          const id = taskIdFromEvent(event);
-          if (!id) return;
-          const task = state.workTasks.find((item) => item.id === id);
-          const fallbackStatus = task && task.scheduledDayIso ? "planned" : "inbox";
-          updateTask(id, { status: checkbox.checked ? "done" : fallbackStatus }, checkbox.checked ? "Tarefa concluída." : "Tarefa reaberta.");
-        });
-
-        workPage.addEventListener("submit", function (event) {
-          const form = event.target.closest("#workTaskForm");
-          if (!form) return;
+      page.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && captureOpen) {
           event.preventDefault();
-          const payload = collectWorkForm(form);
-          if (!String(payload.title || "").trim()) return;
-          addTask(payload, "Tarefa de trabalho criada.");
-          resetWorkForm();
-        });
-
-        workPage.addEventListener("dragstart", function (event) {
-          const card = event.target.closest(".work-task");
-          if (!card) return;
-          draggingId = card.getAttribute("data-work-task-id");
-          event.dataTransfer.effectAllowed = "move";
-          event.dataTransfer.setData("text/plain", draggingId);
-          card.setAttribute("data-dragging", "true");
-        });
-
-        workPage.addEventListener("dragend", function () {
-          draggingId = null;
-          document.querySelectorAll(".work-task[data-dragging], .work-drop-zone[data-drag-over]").forEach((el) => {
-            el.removeAttribute("data-dragging");
-            el.removeAttribute("data-drag-over");
-          });
-        });
-
-        workPage.addEventListener("dragover", function (event) {
-          const target = event.target.closest(".work-drop-zone");
-          if (!target || !draggingId) return;
+          closeCapture();
+          return;
+        }
+        const target = event.target;
+        const isEditable = target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.tagName === "SELECT" || target.isContentEditable);
+        if (!isEditable && (event.key === "n" || event.key === "N")) {
           event.preventDefault();
-          target.setAttribute("data-drag-over", "true");
-        });
+          openCapture();
+        }
+      });
 
-        workPage.addEventListener("dragleave", function (event) {
-          const target = event.target.closest(".work-drop-zone");
-          if (target) target.removeAttribute("data-drag-over");
+      // Drag & drop
+      page.addEventListener("dragstart", function (event) {
+        const card = event.target.closest("[data-work-task-id]");
+        if (!card || card.getAttribute("draggable") !== "true") return;
+        draggingId = card.getAttribute("data-work-task-id");
+        event.dataTransfer.effectAllowed = "move";
+        event.dataTransfer.setData("text/plain", draggingId);
+        card.setAttribute("data-dragging", "true");
+      });
+      page.addEventListener("dragend", function () {
+        draggingId = null;
+        document.querySelectorAll("[data-dragging], .wk-drop-zone[data-drag-over]").forEach((el) => {
+          el.removeAttribute("data-dragging");
+          el.removeAttribute("data-drag-over");
         });
+      });
+      page.addEventListener("dragover", function (event) {
+        const zone = event.target.closest(".wk-drop-zone");
+        if (!zone || !draggingId) return;
+        event.preventDefault();
+        zone.setAttribute("data-drag-over", "true");
+      });
+      page.addEventListener("dragleave", function (event) {
+        const zone = event.target.closest(".wk-drop-zone");
+        if (zone) zone.removeAttribute("data-drag-over");
+      });
+      page.addEventListener("drop", function (event) {
+        const zone = event.target.closest(".wk-drop-zone");
+        if (!zone) return;
+        event.preventDefault();
+        const id = draggingId || event.dataTransfer.getData("text/plain");
+        if (!id) return;
+        if (zone.getAttribute("data-work-drop") === "inbox") {
+          updateTask(id, { scheduledDayIso: null, status: "inbox" }, "Movida para nao planejadas.");
+        } else {
+          const dayIso = zone.getAttribute("data-day-iso");
+          updateTask(id, { scheduledDayIso: dayIso, status: "planned" }, "Agendada para " + fmtIsoShort(dayIso) + ".");
+        }
+        draggingId = null;
+      });
 
-        workPage.addEventListener("drop", function (event) {
-          const target = event.target.closest(".work-drop-zone");
-          if (!target) return;
-          event.preventDefault();
-          const id = draggingId || event.dataTransfer.getData("text/plain");
-          if (!id) return;
-          if (target.getAttribute("data-work-drop") === "inbox") {
-            updateTask(id, { scheduledDayIso: null, status: "inbox" }, "Tarefa movida para inbox.");
-          } else {
-            const dayIso = target.getAttribute("data-day-iso");
-            updateTask(id, { scheduledDayIso: dayIso, status: "planned" }, "Tarefa agendada.");
-          }
-          draggingId = null;
-        });
-      }
-
-      const clearBtn = document.getElementById("workClearFormBtn");
-      if (clearBtn && clearBtn.getAttribute("data-bound") !== "true") {
-        clearBtn.setAttribute("data-bound", "true");
-        clearBtn.addEventListener("click", resetWorkForm);
-      }
-
-      setupWeekControls();
-      setupHomeQuickCapture();
-      setupObserver();
-    }
-
-    function setupWeekControls() {
-      const prev = document.getElementById("workPrevBtn");
-      const today = document.getElementById("workTodayBtn");
-      const next = document.getElementById("workNextBtn");
-      if (prev && prev.getAttribute("data-bound") !== "true") {
-        prev.setAttribute("data-bound", "true");
-        prev.addEventListener("click", function () {
-          currentWeekStart = WD.addDays(currentWeekStart, -7);
-          persistWeekAnchor();
-          renderWorkPlanner();
-        });
-      }
-      if (today && today.getAttribute("data-bound") !== "true") {
-        today.setAttribute("data-bound", "true");
-        today.addEventListener("click", function () {
-          currentWeekStart = WD.getWeekStart(new Date());
-          persistWeekAnchor();
-          renderWorkPlanner();
-        });
-      }
-      if (next && next.getAttribute("data-bound") !== "true") {
-        next.setAttribute("data-bound", "true");
-        next.addEventListener("click", function () {
-          currentWeekStart = WD.addDays(currentWeekStart, 7);
-          persistWeekAnchor();
-          renderWorkPlanner();
-        });
-      }
+      // Atalhos globais Alt+Shift+Arrows funcionam so no workPage visivel
       if (!document.body.getAttribute("data-work-shortcuts-bound")) {
         document.body.setAttribute("data-work-shortcuts-bound", "true");
         document.addEventListener("keydown", function (event) {
-          const page = document.getElementById("workPage");
           if (!page || page.hasAttribute("hidden")) return;
-          const target = event.target;
-          if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA" || target.tagName === "SELECT" || target.isContentEditable)) return;
+          const t = event.target;
+          if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.tagName === "SELECT" || t.isContentEditable)) return;
           if (event.altKey && event.shiftKey && event.key === "ArrowLeft") {
-            event.preventDefault();
-            currentWeekStart = WD.addDays(currentWeekStart, -7);
-            persistWeekAnchor();
-            renderWorkPlanner();
+            event.preventDefault(); currentWeekStart = WD.addDays(currentWeekStart, -7); persistWeekAnchor(); renderWorkPlanner();
           } else if (event.altKey && event.shiftKey && event.key === "ArrowRight") {
-            event.preventDefault();
-            currentWeekStart = WD.addDays(currentWeekStart, 7);
-            persistWeekAnchor();
-            renderWorkPlanner();
+            event.preventDefault(); currentWeekStart = WD.addDays(currentWeekStart, 7); persistWeekAnchor(); renderWorkPlanner();
           } else if (event.altKey && event.shiftKey && event.key === "0") {
-            event.preventDefault();
-            currentWeekStart = WD.getWeekStart(new Date());
-            persistWeekAnchor();
-            renderWorkPlanner();
+            event.preventDefault(); currentWeekStart = WD.getWeekStart(new Date()); persistWeekAnchor(); renderWorkPlanner();
           }
         });
       }
+
+      setupHomeQuickCapture();
+      setupObserver();
     }
 
     function setupHomeQuickCapture() {
@@ -598,7 +867,7 @@
           description: ""
         };
         if (!String(payload.title || "").trim()) return;
-        addTask(payload, "Captura de trabalho adicionada.");
+        addTask(payload, "Captura rapida adicionada.");
         form.reset();
         if (typeof appApi.requestRender === "function") appApi.requestRender();
       });
@@ -617,35 +886,44 @@
     }
 
     function setupObserver() {
-      const workPage = document.getElementById("workPage");
-      if (!workPage || workPage.getAttribute("data-observer-bound") === "true") return;
-      workPage.setAttribute("data-observer-bound", "true");
+      const page = document.getElementById("workPage");
+      if (!page || page.getAttribute("data-observer-bound") === "true") return;
+      page.setAttribute("data-observer-bound", "true");
       const observer = new MutationObserver(function () {
-        if (!workPage.hasAttribute("hidden")) renderWorkPlanner();
+        if (!page.hasAttribute("hidden")) renderWorkPlanner();
       });
-      observer.observe(workPage, { attributes: true, attributeFilter: ["hidden"] });
+      observer.observe(page, { attributes: true, attributeFilter: ["hidden"] });
     }
+
+    /* ─────────────────────────────────────────────────────────────── */
+    /* API publica                                                      */
+    /* ─────────────────────────────────────────────────────────────── */
 
     window.WorkPlanner = {
       render: renderWorkPlanner,
-      addTask,
-      updateTask,
-      deleteTask,
+      addTask: addTask,
+      updateTask: updateTask,
+      deleteTask: deleteTask,
+      openCapture: openCapture,
+      closeCapture: closeCapture,
+      setFilter: applyFilterChange,
       getCurrentWeekStart: function () { return new Date(currentWeekStart.getTime()); }
     };
 
     setupEvents();
     renderWorkPlanner();
+
     if (typeof appApi.onStateReplaced === "function") {
       appApi.onStateReplaced(function () {
         if (!Array.isArray(state.workTasks)) state.workTasks = [];
         if (!state.workFilter) state.workFilter = "all";
-        const workPage = document.getElementById("workPage");
-        if (workPage && !workPage.hasAttribute("hidden")) renderWorkPlanner();
+        const page = document.getElementById("workPage");
+        if (page && !page.hasAttribute("hidden")) renderWorkPlanner();
+        if (typeof appApi.requestRender === "function") appApi.requestRender();
       });
     }
 
-    console.log("[workPlanner] inicializado");
+    console.log("[workPlanner] v2 inicializado");
   }
 
   if (window.StudyApp && typeof window.StudyApp.onReady === "function") {
