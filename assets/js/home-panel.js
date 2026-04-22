@@ -508,6 +508,155 @@
       "</div>";
   }
 
+  function renderScopes(plan, queue, referenceDate) {
+    const el = document.getElementById("hpScopes");
+    if (!el) return;
+
+    const now = referenceDate || new Date();
+    const todayIso = toIso(now);
+    const WD = window.WorkDomain;
+    const workTasks = Array.isArray(state && state.workTasks) ? state.workTasks : [];
+    const weekAnchor = state && state.workWeekAnchor ? state.workWeekAnchor : todayIso;
+    const buckets = WD ? WD.dashboardBuckets(workTasks, todayIso, weekAnchor) : { open: [], overdue: [], waiting: [], today: [] };
+    const studyDeadlines = getStudyDeadlineItems(now);
+    const queueItems = Array.isArray(queue) ? queue : [];
+    const nextExam = getNextExamAcross(now);
+    const radarSubjects = computeKpiMetrics(now).study.radar;
+
+    const studyItems = queueItems.slice(0, 3).map(function (item) {
+      return {
+        title: item.subject.shortName + ": " + item.task.title,
+        meta: getTaskMinutes(item.task) + " min"
+      };
+    }).concat(
+      studyDeadlines.slice(0, 2).map(function (item) {
+        return {
+          title: item.prefix + ": " + item.title,
+          meta: item.countdown
+        };
+      })
+    ).slice(0, 4);
+
+    const weekDays = new Set((WD ? WD.weekIsos(weekAnchor) : []).concat([todayIso]));
+    const weekOpenTasks = (buckets.open || []).filter(function (task) {
+      return weekDays.has(task.scheduledDayIso) || weekDays.has(task.dueDate);
+    }).length;
+
+    const workItems = []
+      .concat((buckets.overdue || []).slice(0, 2).map(function (task) {
+        return {
+          title: task.title,
+          meta: task.nextAction || "atrasada"
+        };
+      }))
+      .concat((buckets.today || []).slice(0, 1).map(function (task) {
+        return {
+          title: task.title,
+          meta: task.nextAction || "planejada para hoje"
+        };
+      }))
+      .concat((buckets.waiting || []).slice(0, 1).map(function (task) {
+        return {
+          title: task.title,
+          meta: "aguardando terceiros"
+        };
+      }))
+      .slice(0, 4);
+
+    el.innerHTML =
+      '<article class="hp-scope-card" data-scope="study">' +
+        '<div class="hp-scope-head">' +
+          '<div>' +
+            '<span class="hp-scope-eyebrow">Estudos</span>' +
+            '<h3 class="hp-scope-title">Escopo academico</h3>' +
+            '<p class="hp-scope-copy">Fila curta, prova mais proxima e materias que seguem no radar.</p>' +
+          "</div>" +
+        "</div>" +
+        '<div class="hp-scope-metrics">' +
+          scopeMetric("Materias no radar", String(radarSubjects)) +
+          scopeMetric("Fila de hoje", String(queueItems.length)) +
+          scopeMetric("Proxima prova", nextExam ? nextExam.subject.shortName : "--") +
+        "</div>" +
+        renderScopeList(studyItems, "Sem acao academica alem da decisao principal.") +
+      "</article>" +
+
+      '<article class="hp-scope-card" data-scope="work">' +
+        '<div class="hp-scope-head">' +
+          '<div>' +
+            '<span class="hp-scope-eyebrow">Trabalho</span>' +
+            '<h3 class="hp-scope-title">Escopo executivo</h3>' +
+            '<p class="hp-scope-copy">Semana aberta, pendencias atrasadas e pontos travados fora de voce.</p>' +
+          "</div>" +
+        "</div>" +
+        '<div class="hp-scope-metrics">' +
+          scopeMetric("Abertas na semana", String(weekOpenTasks)) +
+          scopeMetric("Atrasadas", String((buckets.overdue || []).length)) +
+          scopeMetric("Aguardando", String((buckets.waiting || []).length)) +
+        "</div>" +
+        renderScopeList(workItems, "Sem outra frente executiva puxando prioridade agora.") +
+      "</article>";
+  }
+
+  function scopeMetric(label, value) {
+    return '<div class="hp-scope-metric">' +
+      '<span class="hp-scope-metric-label">' + escapeText(label) + "</span>" +
+      '<strong class="hp-scope-metric-value">' + escapeText(value) + "</strong>" +
+    "</div>";
+  }
+
+  function renderScopeList(items, emptyText) {
+    if (!items.length) {
+      return '<div class="hp-scope-empty">' + escapeText(emptyText) + "</div>";
+    }
+    return '<div class="hp-scope-list">' + items.map(function (item) {
+      return '<article class="hp-scope-item">' +
+        '<strong>' + escapeText(item.title) + "</strong>" +
+        '<span>' + escapeText(item.meta || "") + "</span>" +
+      "</article>";
+    }).join("") + "</div>";
+  }
+
+  function renderPortfolio(referenceDate) {
+    const el = document.getElementById("hpPortfolio");
+    if (!el) return;
+
+    const now = referenceDate || new Date();
+    const todayIso = toIso(now);
+    const WD = window.WorkDomain;
+    const workTasks = Array.isArray(state && state.workTasks) ? state.workTasks : [];
+    const weekAnchor = state && state.workWeekAnchor ? state.workWeekAnchor : todayIso;
+    const summaries = WD ? WD.dashboardBuckets(workTasks, todayIso, weekAnchor).companies : [];
+
+    el.innerHTML =
+      '<div class="hp-portfolio-head">' +
+        '<div>' +
+          '<span class="hp-portfolio-eyebrow">Portfolio</span>' +
+          '<h3 class="hp-portfolio-title">Empresas em foco</h3>' +
+        "</div>" +
+      "</div>" +
+      (summaries.length
+        ? '<div class="hp-portfolio-row">' + summaries.map(function (summary) {
+            return '<button type="button" class="hp-portfolio-chip" data-home-work-filter="' + escapeText(summary.company.id) + '" style="--hp-company-accent:' + escapeText(summary.company.accent || "#171717") + '">' +
+              '<span class="hp-portfolio-chip-name">' + escapeText(summary.company.name) + "</span>" +
+              '<span class="hp-portfolio-chip-count">' + escapeText(String(summary.openCount)) + "</span>" +
+              '<span class="hp-portfolio-chip-meta">' + escapeText(summary.overdueCount ? (summary.overdueCount + " atrasadas") : (summary.waitingCount ? (summary.waitingCount + " aguardando") : "fluxo limpo")) + "</span>" +
+            "</button>";
+          }).join("") + "</div>"
+        : '<div class="hp-portfolio-empty">Nenhuma empresa com demanda aberta agora.</div>');
+  }
+
+  function getNextExamAcross(referenceDate) {
+    if (!window.DATA || !Array.isArray(window.DATA.subjects)) return null;
+    return window.DATA.subjects
+      .map(function (subject) {
+        const exam = getNextExamForSubject(subject, referenceDate);
+        if (!exam) return null;
+        return { subject: subject, examDate: exam.examDate };
+      })
+      .filter(Boolean)
+      .sort(function (a, b) { return a.examDate < b.examDate ? -1 : a.examDate > b.examDate ? 1 : 0; })[0] || null;
+  }
+
   function renderTicketList(items) {
     if (!items.length) {
       return '<div class="hp-ticket-empty">Nada pressiona as proximas 72h.</div>';
@@ -682,6 +831,8 @@
     renderKpis(safeReferenceDate);
     renderFocus(lastHomePlan, lastHomeQueue, safeReferenceDate);
     renderAside(safeReferenceDate);
+    renderScopes(lastHomePlan, lastHomeQueue, safeReferenceDate);
+    renderPortfolio(safeReferenceDate);
     markHomeOpenAfterRender();
   }
 
