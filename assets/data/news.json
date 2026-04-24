@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-24T19:26:11Z",
-  "generatedAt": "2026-04-24T19:26:11Z",
+  "updatedAt": "2026-04-24T20:05:30Z",
+  "generatedAt": "2026-04-24T20:05:30Z",
   "categories": [
     {
       "id": "all",
@@ -97,10 +97,6 @@
       "label": "G1"
     },
     {
-      "id": "gazeta-brazilian-news",
-      "label": "Gazeta Brazilian News"
-    },
-    {
       "id": "gazeta-mercantil",
       "label": "Gazeta Mercantil"
     },
@@ -113,12 +109,20 @@
       "label": "InfoMoney"
     },
     {
+      "id": "jornal-conquista",
+      "label": "Jornal Conquista"
+    },
+    {
       "id": "jornal-correio",
       "label": "Jornal Correio"
     },
     {
       "id": "jornal-do-brasil",
       "label": "Jornal do Brasil"
+    },
+    {
+      "id": "jurinews",
+      "label": "Jurinews"
     },
     {
       "id": "lerunica-com-br",
@@ -141,6 +145,10 @@
       "label": "MSN"
     },
     {
+      "id": "mundogeo",
+      "label": "MundoGEO"
+    },
+    {
       "id": "novarejo",
       "label": "novarejo"
     },
@@ -157,8 +165,16 @@
       "label": "RADAR DIGITAL BRASÍLIA"
     },
     {
+      "id": "regi-o-noroeste",
+      "label": "Região Noroeste"
+    },
+    {
       "id": "rep-rter-macei",
       "label": "Repórter Maceió"
+    },
+    {
+      "id": "revista-f-rum",
+      "label": "Revista Fórum"
     },
     {
       "id": "seu-cr-dito-digital",
@@ -169,8 +185,12 @@
       "label": "suno.com.br"
     },
     {
-      "id": "times-brasil",
-      "label": "Times Brasil"
+      "id": "s-o-roque-not-cias",
+      "label": "São Roque Notícias"
+    },
+    {
+      "id": "times-brasil-cnbc",
+      "label": "Times Brasil | CNBC"
     },
     {
       "id": "tradingview",
@@ -203,12 +223,68 @@
   ],
   "items": [
     {
-      "id": "macro-c6019ef6044bad6aa764082f",
+      "id": "companies-c52f7e474cb965ada69f40c8",
+      "title": "STF mantém restrições para compra de terras brasileiras por empresas controladas por estrangeiros",
+      "summary": "O Supremo Tribunal Federal (STF) decidiu, por unanimidade, nesta quinta-feira (23), manter a validade das regras que limitam a aquisição e o uso de imóveis rurais por empresas brasileiras que possuem a maior parte de seu capital nas mãos de estrangeiros. Com essa decisão, a Corte",
+      "details": "O Supremo Tribunal Federal (STF) decidiu, por unanimidade, nesta quinta-feira (23), manter a validade das regras que limitam a aquisição e o uso de imóveis rurais por empresas brasileiras que possuem a maior parte de seu capital nas mãos de estrangeiros. Com essa decisão, a Corte reafirmou que cabe exclusivamente ao Go",
+      "url": "https://regiaonoroeste.com/stf-mantem-restricoes-para-compra-de-terras-brasileiras-por-empresas-controladas-por-estrangeiros/",
+      "source": "Região Noroeste",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-04-24T19:58:00Z",
+      "updatedAt": "2026-04-24T19:58:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://regiaonoroeste.com/wp-content/uploads/2026/04/Screenshot-9-6.webp"
+    },
+    {
+      "id": "macro-69841381d11e563ff29cf36d",
+      "title": "Juíza suspende decisão da Receita e garante certidão fiscal a empresa por erro do órgão",
+      "summary": "Atualizacao de macro capturada em Jurinews.",
+      "details": "",
+      "url": "https://revistaforum.com.br/global/china-em-foco/crescimento-xizang/",
+      "source": "Jurinews",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T19:43:00Z",
+      "updatedAt": "2026-04-24T19:43:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-131447d8e19cb8854e5330f7",
+      "title": "Essa é a região que mais cresce em PIB per capita na China, com alto desenvolvimento econômico",
+      "summary": "Justiça Federal de Curitiba protege contribuinte de falha da Receita Federal. Saiba como a juíza Vera Lúcia Feil garantiu direitos em transação",
+      "details": "Justiça Federal de Curitiba protege contribuinte de falha da Receita Federal. Saiba como a juíza Vera Lúcia Feil garantiu direitos em transação",
+      "url": "https://jurinews.com.br/destaque-nacional/juiza-de-curitiba-protege-contribuinte-de-falha-da-receita",
+      "source": "Revista Fórum",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T19:41:19Z",
+      "updatedAt": "2026-04-24T19:41:19Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://jurinews.com.br/storage/uploads/featured-image-cropped-1777059810.jpg"
+    },
+    {
+      "id": "macro-c4487cb90a7ca35f1745b023",
       "title": "EUA encerram investigação sobre Powell e Casa Branca prevê aprovação rápida de Warsh no Fed",
-      "summary": "A partir de maio, o Brasil implementará uma nova regra que proíbe apostas em temas como esportes, política e entretenimento em plataformas de mercado de previsões. Essa decisão, aprovada pelo Conselho Monetário Nacional (CMN), visa fechar lacunas regulatórias e estabelecer diretr",
-      "details": "A partir de maio, o Brasil implementará uma nova regra que proíbe apostas em temas como esportes, política e entretenimento em plataformas de mercado de previsões. Essa decisão, aprovada pelo Conselho Monetário Nacional (CMN), visa fechar lacunas regulatórias e estabelecer diretrizes mais claras para essa atividade. Co",
-      "url": "https://portalnovarejo.com.br/economia/proibicao-de-apostas-nao-financeiras-em-plataformas-de-previsoes-no-brasil/",
-      "source": "Times Brasil",
+      "summary": "Na prática, a Corte confirmou a constitucionalidade do art. 1º, § 1º, da Lei nº 5.709/1971, dispositivo que equipara empresas nacionais com maioria de capital estrangeiro a empresas estrangeiras propriamente ditas para fins de aquisição de terras.",
+      "details": "Na prática, a Corte confirmou a constitucionalidade do art. 1º, § 1º, da Lei nº 5.709/1971, dispositivo que equipara empresas nacionais com maioria de capital estrangeiro a empresas estrangeiras propriamente ditas para fins de aquisição de terras.",
+      "url": "https://vbso.com.br/stf-ratifica-restricoes-para-empresas-brasileiras-controladas-por-capital-estrangeiro-comprarem-terras/",
+      "source": "Times Brasil | CNBC",
       "category": "macro",
       "tags": [
         "macro",
@@ -219,14 +295,14 @@
       "updatedAt": "2026-04-24T19:14:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://portalnovarejo.com.br/wp-content/uploads/2025/09/imagem-padrao-post.png"
+      "imageUrl": "https://vbso.com.br/wp-content/uploads/2026/04/BOLETIM-AGRO-AdobeStock_559784520.jpg"
     },
     {
       "id": "companies-63e2d7ef6d1ba4f72eb550c7",
       "title": "STF ratifica restrições para empresas brasileiras controladas por capital estrangeiro comprarem terras",
-      "summary": "Ao mesmo tempo, coloca limites em eventuais ambições das instituições financeiras de atuarem com contratos relacionados a evento real de temática esportivas e diversas",
-      "details": "Ao mesmo tempo, coloca limites em eventuais ambições das instituições financeiras de atuarem com contratos relacionados a evento real de temática esportivas e diversas",
-      "url": "https://valor.globo.com/financas/noticia/2026/04/24/decisao-do-cmn-impoe-limite-a-empresas-no-mercado-preditivo-fora-do-universo-financeiro.ghtml",
+      "summary": "O Departamento de Justiça dos Estados Unidos (DoJ) decidiu encerrar a investigação que mirava a reforma do edifício do Federal Reserve (Fed), em Washington, e também o presidente da instituição, Jerome Powell. A informação foi divulgada na sexta-feira (24) pela procuradora norte-",
+      "details": "O Departamento de Justiça dos Estados Unidos (DoJ) decidiu encerrar a investigação que mirava a reforma do edifício do Federal Reserve (Fed), em Washington, e também o presidente da instituição, Jerome Powell. A informação foi divulgada na sexta-feira (24) pela procuradora norte-americana Jeanine Pirro. O Departamento ",
+      "url": "https://timesbrasil.com.br/mundo/eua-encerram-investigacao-sobre-powell-e-casa-branca-preve-aprovacao-rapida-de-warsh-no-fed/",
       "source": "VBSO Advogados",
       "category": "companies",
       "tags": [
@@ -238,14 +314,14 @@
       "updatedAt": "2026-04-24T19:06:15Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/tbuZ7W3dk6Rcjv3qf34ovKuoXNg=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2025/r/h/9gzUA2SBu2fB72q630zA/game-289470-1920.jpg"
+      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/04/d403059c-08a.webp"
     },
     {
       "id": "latest-70c9f30485976b3f3cbddc81",
       "title": "Proibição de Apostas Não Financeiras em Plataformas de Previsões no Brasil",
-      "summary": "Notícias industrie : Os exportadores chineses estão começando a aumentar os preços de tudo, desde trajes de banho a aparelhos de ar-condicionado, à medida que a guerra com o Irã eleva os custos de insumos ligados ao petróleo",
-      "details": "Notícias industrie : Os exportadores chineses estão começando a aumentar os preços de tudo, desde trajes de banho a aparelhos de ar-condicionado, à medida que a guerra com o Irã eleva os custos de insumos ligados ao petróleo",
-      "url": "https://br.fashionnetwork.com/news/Inflacao-se-aproxima-a-medida-que-os-exportadores-chineses-aumentam-os-precos-devido-aos-custos-relacionados-com-o-ira,1826981.html",
+      "summary": "A partir de maio, o Brasil implementará uma nova regra que proíbe apostas em temas como esportes, política e entretenimento em plataformas de mercado de previsões. Essa decisão, aprovada pelo Conselho Monetário Nacional (CMN), visa fechar lacunas regulatórias e estabelecer diretr",
+      "details": "A partir de maio, o Brasil implementará uma nova regra que proíbe apostas em temas como esportes, política e entretenimento em plataformas de mercado de previsões. Essa decisão, aprovada pelo Conselho Monetário Nacional (CMN), visa fechar lacunas regulatórias e estabelecer diretrizes mais claras para essa atividade. Co",
+      "url": "https://portalnovarejo.com.br/economia/proibicao-de-apostas-nao-financeiras-em-plataformas-de-previsoes-no-brasil/",
       "source": "novarejo",
       "category": "latest",
       "tags": [
@@ -257,14 +333,14 @@
       "updatedAt": "2026-04-24T19:04:06Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://media.fashionnetwork.com/cdn-cgi/image/fit=cover,width=600,height=600,format=auto/m/62af/df2f/99b8/c0ad/7372/254a/39e8/fb8d/4382/79c2/79c2.jpg"
+      "imageUrl": "https://portalnovarejo.com.br/wp-content/uploads/2025/09/imagem-padrao-post.png"
     },
     {
       "id": "latest-60f7fdf56f385b8668a488cc",
       "title": "Leilão de dólar do Banco Central fracassa e surpreende mercado financeiro nesta sexta-feira",
-      "summary": "Na prática, a Corte confirmou a constitucionalidade do art. 1º, § 1º, da Lei nº 5.709/1971, dispositivo que equipara empresas nacionais com maioria de capital estrangeiro a empresas estrangeiras propriamente ditas para fins de aquisição de terras.",
-      "details": "Na prática, a Corte confirmou a constitucionalidade do art. 1º, § 1º, da Lei nº 5.709/1971, dispositivo que equipara empresas nacionais com maioria de capital estrangeiro a empresas estrangeiras propriamente ditas para fins de aquisição de terras.",
-      "url": "https://vbso.com.br/stf-ratifica-restricoes-para-empresas-brasileiras-controladas-por-capital-estrangeiro-comprarem-terras/",
+      "summary": "Leilão de dólar do Banco Central não aceita propostas e surpreende o mercado, levantando dúvidas sobre liquidez e estratégia cambial no Brasil.",
+      "details": "Leilão de dólar do Banco Central não aceita propostas e surpreende o mercado, levantando dúvidas sobre liquidez e estratégia cambial no Brasil.",
+      "url": "https://gazetamercantil.com/leilao-dolar-banco-central-fracasso-swap-cambial-2026",
       "source": "Gazeta Mercantil",
       "category": "latest",
       "tags": [
@@ -276,14 +352,14 @@
       "updatedAt": "2026-04-24T19:03:35Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://vbso.com.br/wp-content/uploads/2026/04/BOLETIM-AGRO-AdobeStock_559784520.jpg"
+      "imageUrl": "https://gazetamercantil.com/wp-content/uploads/2026/04/Banco-Central-decreta-liquidacao-extrajudicial-de-cooperativa-de-credito-entenda.jpg"
     },
     {
       "id": "latest-e64d8fc68fafbf3cec3f304c",
       "title": "Decisão do CMN impõe limite a empresas no mercado preditivo fora do universo financeiro",
-      "summary": "O Departamento de Justiça dos Estados Unidos (DoJ) decidiu encerrar a investigação que mirava a reforma do edifício do Federal Reserve (Fed), em Washington, e também o presidente da instituição, Jerome Powell. A informação foi divulgada na sexta-feira (24) pela procuradora norte-",
-      "details": "O Departamento de Justiça dos Estados Unidos (DoJ) decidiu encerrar a investigação que mirava a reforma do edifício do Federal Reserve (Fed), em Washington, e também o presidente da instituição, Jerome Powell. A informação foi divulgada na sexta-feira (24) pela procuradora norte-americana Jeanine Pirro. O Departamento ",
-      "url": "https://timesbrasil.com.br/mundo/eua-encerram-investigacao-sobre-powell-e-casa-branca-preve-aprovacao-rapida-de-warsh-no-fed/",
+      "summary": "Ao mesmo tempo, coloca limites em eventuais ambições das instituições financeiras de atuarem com contratos relacionados a evento real de temática esportivas e diversas",
+      "details": "Ao mesmo tempo, coloca limites em eventuais ambições das instituições financeiras de atuarem com contratos relacionados a evento real de temática esportivas e diversas",
+      "url": "https://valor.globo.com/financas/noticia/2026/04/24/decisao-do-cmn-impoe-limite-a-empresas-no-mercado-preditivo-fora-do-universo-financeiro.ghtml",
       "source": "Valor Econômico",
       "category": "latest",
       "tags": [
@@ -295,14 +371,14 @@
       "updatedAt": "2026-04-24T18:54:21Z",
       "premium": true,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/04/d403059c-08a.webp"
+      "imageUrl": "https://s2-valor.glbimg.com/tbuZ7W3dk6Rcjv3qf34ovKuoXNg=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2025/r/h/9gzUA2SBu2fB72q630zA/game-289470-1920.jpg"
     },
     {
       "id": "macro-59ac8874f2c5fe981011d97c",
       "title": "Inflação se aproxima à medida que os exportadores chineses aumentam os preços devido aos custos relacionados com o Irã",
-      "summary": "A Assembleia Legislativa do Estado do Ceará (Alece) segue se destacando entre os órgãos da gestão pública estadual. Desta vez, o reconhecimento veio por meio do Fundo de Previdência Parlamentar, que c...",
-      "details": "A Assembleia Legislativa do Estado do Ceará (Alece) segue se destacando entre os órgãos da gestão pública estadual. Desta vez, o reconhecimento veio por meio do Fundo de Previdência Parlamentar, que c...",
-      "url": "https://portaldoservidor.al.ce.gov.br/noticias/fundo-de-previdencia-parlamentar-da-alece-conquista-selo-a-de-conformidade-fiscal",
+      "summary": "Notícias industrie : Os exportadores chineses estão começando a aumentar os preços de tudo, desde trajes de banho a aparelhos de ar-condicionado, à medida que a guerra com o Irã eleva os custos de insumos ligados ao petróleo",
+      "details": "Notícias industrie : Os exportadores chineses estão começando a aumentar os preços de tudo, desde trajes de banho a aparelhos de ar-condicionado, à medida que a guerra com o Irã eleva os custos de insumos ligados ao petróleo",
+      "url": "https://br.fashionnetwork.com/news/Inflacao-se-aproxima-a-medida-que-os-exportadores-chineses-aumentam-os-precos-devido-aos-custos-relacionados-com-o-ira,1826981.html",
       "source": "FashionNetwork Brasil",
       "category": "macro",
       "tags": [
@@ -314,14 +390,33 @@
       "updatedAt": "2026-04-24T18:46:16Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://portaldoservidor.al.ce.gov.br/storage/noticias/9557/imagem/LAnFIBfZdWrKExVogaP4quua2dTrokmgCRgrwlMN.jpg"
+      "imageUrl": "https://media.fashionnetwork.com/cdn-cgi/image/fit=cover,width=600,height=600,format=auto/m/62af/df2f/99b8/c0ad/7372/254a/39e8/fb8d/4382/79c2/79c2.jpg"
+    },
+    {
+      "id": "latest-59ad9841285a48010ff2c77b",
+      "title": "MedSeg está contratando para Setor Financeiro em Vitória da Conquista",
+      "summary": "Atualizacao de ultima hora capturada em Jornal Conquista.",
+      "details": "",
+      "url": "https://jornalconquista.com.br/2026/04/24/medseg-esta-contratando-para-setor-financeiro-em-vitoria-da-conquista/",
+      "source": "Jornal Conquista",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-04-24T18:45:57Z",
+      "updatedAt": "2026-04-24T18:45:57Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://cdn-jc.s3.us-east-2.amazonaws.com/wp-content/uploads/2025/12/19132815/pessoal-de-negocios-hispanico-de-meia-idade-scaled-e1766161728991.jpg"
     },
     {
       "id": "macro-8c38da873e9de6b077e7d78d",
       "title": "Economista classifica situação fiscal como \"calcanhar de Aquiles\" do Brasil",
-      "summary": "Entenda os motivos pelos quais o Brasil é considerado um mercado emergente atraente segundo o UBS, com fundamentos e oportunidades sólidas",
-      "details": "Entenda os motivos pelos quais o Brasil é considerado um mercado emergente atraente segundo o UBS, com fundamentos e oportunidades sólidas",
-      "url": "https://www.moneytimes.com.br/destaque-entre-emergentes-ubs-wm-menciona-3-fatores-que-fortalecem-o-brasil-apsa/",
+      "summary": "Em entrevista ao CNN Money, Gabriel Barros afirmou que a dívida brasileira é 25 pontos percentuais do PIB acima da média dos países emergentes, limitando ações contra inadimplência",
+      "details": "Em entrevista ao CNN Money, Gabriel Barros afirmou que a dívida brasileira é 25 pontos percentuais do PIB acima da média dos países emergentes, limitando ações contra inadimplência",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/economista-classifica-situacao-fiscal-como-calcanhar-de-aquiles-do-brasil/",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -333,14 +428,14 @@
       "updatedAt": "2026-04-24T18:42:56Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/10/brasil.jpg"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/04/Captura-de-tela-2026-04-24-154022.png?w=1064&h=509&crop=1"
     },
     {
       "id": "macro-61048acbad77dcfae744bba0",
       "title": "Fundo de Previdência Parlamentar da Alece conquista Selo A de conformidade fiscal",
-      "summary": "Em entrevista ao CNN Money, Gabriel Barros afirmou que a dívida brasileira é 25 pontos percentuais do PIB acima da média dos países emergentes, limitando ações contra inadimplência",
-      "details": "Em entrevista ao CNN Money, Gabriel Barros afirmou que a dívida brasileira é 25 pontos percentuais do PIB acima da média dos países emergentes, limitando ações contra inadimplência",
-      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/economista-classifica-situacao-fiscal-como-calcanhar-de-aquiles-do-brasil/",
+      "summary": "Entenda os motivos pelos quais o Brasil é considerado um mercado emergente atraente segundo o UBS, com fundamentos e oportunidades sólidas",
+      "details": "Entenda os motivos pelos quais o Brasil é considerado um mercado emergente atraente segundo o UBS, com fundamentos e oportunidades sólidas",
+      "url": "https://www.moneytimes.com.br/destaque-entre-emergentes-ubs-wm-menciona-3-fatores-que-fortalecem-o-brasil-apsa/",
       "source": "Portal do Servidor - ALECE",
       "category": "macro",
       "tags": [
@@ -352,14 +447,14 @@
       "updatedAt": "2026-04-24T18:38:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/04/Captura-de-tela-2026-04-24-154022.png?w=1064&h=509&crop=1"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/10/brasil.jpg"
     },
     {
       "id": "macro-03fd2ec33fd5d76891521e21",
       "title": "Brilhou entre os emergentes: UBS WM destaca 3 fatores que fortalecem o Brasil; confira",
-      "summary": "Déficit em conta corrente do Brasil supera expectativas em março e acende alerta no mercado. Entenda os números, causas e impactos na economia.",
-      "details": "Déficit em conta corrente do Brasil supera expectativas em março e acende alerta no mercado. Entenda os números, causas e impactos na economia.",
-      "url": "https://gazetamercantil.com/deficit-em-conta-corrente-brasil-marco-2026",
+      "summary": "Fundos da Suno Asset distribuem rendimentos nesta sexta (24), com yields anualizados de até 15% e isenção de IR para pessoas físicas.",
+      "details": "Fundos da Suno Asset distribuem rendimentos nesta sexta (24), com yields anualizados de até 15% e isenção de IR para pessoas físicas.",
+      "url": "https://www.suno.com.br/noticias/fundos-suno-asset-rendimentos-ate-15-isencao-ir/",
       "source": "Money Times",
       "category": "macro",
       "tags": [
@@ -371,14 +466,14 @@
       "updatedAt": "2026-04-24T18:37:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://gazetamercantil.com/wp-content/uploads/2026/04/1776468669_Real-e-a-moeda-que-mais-valoriza-em-2026-Dolar.webp"
+      "imageUrl": "http://files.sunoresearch.com.br/n/uploads/2026/04/153_Detalhe_de_gr_fico_f_1_2026017_173633-3-jpg.webp"
     },
     {
       "id": "latest-14514e833602345e5d7bd2c1",
       "title": "Déficit em conta corrente do Brasil supera projeções e acende alerta no mercado financeiro",
-      "summary": "Leilão de dólar do Banco Central não aceita propostas e surpreende o mercado, levantando dúvidas sobre liquidez e estratégia cambial no Brasil.",
-      "details": "Leilão de dólar do Banco Central não aceita propostas e surpreende o mercado, levantando dúvidas sobre liquidez e estratégia cambial no Brasil.",
-      "url": "https://gazetamercantil.com/leilao-dolar-banco-central-fracasso-swap-cambial-2026",
+      "summary": "Déficit em conta corrente do Brasil supera expectativas em março e acende alerta no mercado. Entenda os números, causas e impactos na economia.",
+      "details": "Déficit em conta corrente do Brasil supera expectativas em março e acende alerta no mercado. Entenda os números, causas e impactos na economia.",
+      "url": "https://gazetamercantil.com/deficit-em-conta-corrente-brasil-marco-2026",
       "source": "Gazeta Mercantil",
       "category": "latest",
       "tags": [
@@ -390,14 +485,14 @@
       "updatedAt": "2026-04-24T18:35:08Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://gazetamercantil.com/wp-content/uploads/2026/04/Banco-Central-decreta-liquidacao-extrajudicial-de-cooperativa-de-credito-entenda.jpg"
+      "imageUrl": "https://gazetamercantil.com/wp-content/uploads/2026/04/1776468669_Real-e-a-moeda-que-mais-valoriza-em-2026-Dolar.webp"
     },
     {
       "id": "funds-b98bf5c96174477b54af59d7",
       "title": "Fundos da Suno Asset pagam rendimentos e mantêm isenção",
-      "summary": "Concursos Abertos: oportunidades em todo o país! Milhares de vagas em diversas áreas. Confira os editais, requisitos e inscreva-se já!",
-      "details": "Concursos Abertos: oportunidades em todo o país! Milhares de vagas em diversas áreas. Confira os editais, requisitos e inscreva-se já!",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concursos-abertos/",
+      "summary": "Campanhas de saúde deixam de ser opcionais e passam a integrar as responsabilidades legais das empresas brasileiras Entrou em vigor em abril de 2026 a Lei nº 15.377/2026, que atualiza…",
+      "details": "Campanhas de saúde deixam de ser opcionais e passam a integrar as responsabilidades legais das empresas brasileiras Entrou em vigor em abril de 2026 a Lei nº 15.377/2026, que atualiza…",
+      "url": "https://www.saoroquenoticias.com.br/agora-e-lei-empresas-devem-promover-campanhas-de-saude-e-vacinacao-para-colaboradores/",
       "source": "suno.com.br",
       "category": "funds",
       "tags": [
@@ -409,14 +504,33 @@
       "updatedAt": "2026-04-24T18:35:07Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2024/10/04165957/concursos-abertos.jpg"
+      "imageUrl": "https://www.saoroquenoticias.com.br/wp-content/uploads/2026/04/IMG_5205-scaled.jpeg"
+    },
+    {
+      "id": "companies-9bd78770c91d92b9dbbe0d6e",
+      "title": "Agora é lei: empresas devem promover campanhas de saúde e vacinação para colaboradores",
+      "summary": "A Assembleia Legislativa do Estado do Ceará (Alece) segue se destacando entre os órgãos da gestão pública estadual. Desta vez, o reconhecimento veio por meio do Fundo de Previdência Parlamentar, que c...",
+      "details": "A Assembleia Legislativa do Estado do Ceará (Alece) segue se destacando entre os órgãos da gestão pública estadual. Desta vez, o reconhecimento veio por meio do Fundo de Previdência Parlamentar, que c...",
+      "url": "https://portaldoservidor.al.ce.gov.br/noticias/fundo-de-previdencia-parlamentar-da-alece-conquista-selo-a-de-conformidade-fiscal",
+      "source": "São Roque Notícias",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-04-24T18:32:29Z",
+      "updatedAt": "2026-04-24T18:32:29Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://portaldoservidor.al.ce.gov.br/storage/noticias/9557/imagem/LAnFIBfZdWrKExVogaP4quua2dTrokmgCRgrwlMN.jpg"
     },
     {
       "id": "macro-3e4d50b59544c38f91fa3701",
       "title": "Inflação elevada faz confiança do consumidor nos EUA atingir menor nível desde 1978",
-      "summary": "Atualização amplia as formas disponíveis para envio da declaração.",
-      "details": "Atualização amplia as formas disponíveis para envio da declaração.",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/copy_of_receita-federal-orienta-sobre-novas-formas-de-assinatura-e-transmissao-da-dctfweb",
+      "summary": "Expectativa é que preços subam 4,7% ao ano, maior salto mensal desde tarifas de Trump em 2023",
+      "details": "Expectativa é que preços subam 4,7% ao ano, maior salto mensal desde tarifas de Trump em 2023",
+      "url": "https://www.tribunadosertao.com.br/financas/2026/04/24/891872-inflacao-elevada-faz-confianca-do-consumidor-nos-eua-atingir-menor-nivel-desde-1978",
       "source": "Tribuna do Sertão",
       "category": "macro",
       "tags": [
@@ -428,33 +542,14 @@
       "updatedAt": "2026-04-24T18:29:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/copy_of_receita-federal-orienta-sobre-novas-formas-de-assinatura-e-transmissao-da-dctfweb/dctfweb.jpg/@@images/4145720c-d5d4-408d-9b8d-95b4b6ce0fe5.jpeg"
-    },
-    {
-      "id": "macro-a8567d376ac33fcbd09597ac",
-      "title": "Concursos Abertos: milhares de vagas e inicial até R$ 32 mil",
-      "summary": "Decisão remove um obstáculo à confirmação da nomeação de Kevin Warsh, indicado pelo presidente Donald Trump para liderar o banco central americano",
-      "details": "Decisão remove um obstáculo à confirmação da nomeação de Kevin Warsh, indicado pelo presidente Donald Trump para liderar o banco central americano",
-      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/departamento-de-justica-dos-eua-encerra-investigacao-sobre-chair-do-fed/",
-      "source": "Estratégia Concursos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T18:26:34Z",
-      "updatedAt": "2026-04-24T18:26:34Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/01/jerome-powell-fed.jpg?w=1200&h=630&crop=1"
+      "imageUrl": "https://img.dhost.cloud/x68Q4AojjxBbqPz2dbki6TKJjH8=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/f5f9f/caa6869fb46d9d25b4478a06d4e8c637cb9.png"
     },
     {
       "id": "macro-af6058dbaa1def37187d6866",
       "title": "Receita Federal retém 22 quilos de cocaína em Paranaguá",
-      "summary": "Fundos da Suno Asset distribuem rendimentos nesta sexta (24), com yields anualizados de até 15% e isenção de IR para pessoas físicas.",
-      "details": "Fundos da Suno Asset distribuem rendimentos nesta sexta (24), com yields anualizados de até 15% e isenção de IR para pessoas físicas.",
-      "url": "https://www.suno.com.br/noticias/fundos-suno-asset-rendimentos-ate-15-isencao-ir/",
+      "summary": "Para operações distribuídas em áreas remotas, em segmentos tais como agronegócio, mineração, logística e energia, a conectividade satelital de baixa órbita adicionou uma camada de resiliência antes inexistente",
+      "details": "Para operações distribuídas em áreas remotas, em segmentos tais como agronegócio, mineração, logística e energia, a conectividade satelital de baixa órbita adicionou uma camada de resiliência antes inexistente",
+      "url": "https://mundogeo.com/2026/04/24/artigo-a-nova-dependencia-das-empresas-brasileiras-a-conectividade-critica/",
       "source": "www.gov.br",
       "category": "macro",
       "tags": [
@@ -466,14 +561,14 @@
       "updatedAt": "2026-04-24T18:20:05Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "http://files.sunoresearch.com.br/n/uploads/2026/04/153_Detalhe_de_gr_fico_f_1_2026017_173633-3-jpg.webp"
+      "imageUrl": "https://mundogeo.com/wp-content/uploads/2025/09/10101715/IoT-e-conectividade-avancada-fortalecem-a-gestao-de-infraestrutura-no-setor-de-Utilities.jpg"
     },
     {
       "id": "latest-5d64aef14bad5d4a53bcccd0",
       "title": "Resolução proíbe negociar derivativos ligados a esportes e política",
-      "summary": "Inconsistência no sistema levou, de forma indevida, ao reconhecimento de intempestividade de pedido de transação tributária.",
-      "details": "Inconsistência no sistema levou, de forma indevida, ao reconhecimento de intempestividade de pedido de transação tributária.",
-      "url": "https://www.migalhas.com.br/quentes/454598/falha-da-receita-nao-pode-prejudicar-contribuinte-decide-jf",
+      "summary": "CMN fixou princípios de funcionamento do mercado e ampliou atuação da CVM na regulamentação.",
+      "details": "CMN fixou princípios de funcionamento do mercado e ampliou atuação da CVM na regulamentação.",
+      "url": "https://www.migalhas.com.br/quentes/454619/resolucao-proibe-negociar-derivativos-ligados-a-esportes-e-politica",
       "source": "Migalhas",
       "category": "latest",
       "tags": [
@@ -485,14 +580,52 @@
       "updatedAt": "2026-04-24T18:17:42Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://medproc.migalhas.com.br/https__img5.migalhas.com.br__SL__gf_base__SL__empresas__SL__MIGA__SL__imagens__SL__2025__SL__05__SL__12__SL__cropped_ges5wctk.2a3.jpg._PROC_CP75CCH31622400.jpg"
+      "imageUrl": "https://medproc.migalhas.com.br/https__img5.migalhas.com.br__SL__gf_base__SL__empresas__SL__miga__SL__imagens__SL__2026__SL__04__SL__24__SL__cropped_zn3oz0pk.oxc.png._PROC_CP75CCH31622400.png"
+    },
+    {
+      "id": "companies-9a23bcb7379ce9585bcc24a8",
+      "title": "Artigo: A nova dependência das empresas brasileiras à conectividade crítica",
+      "summary": "A droga foi localizada com uso de scanner, em um contêiner refrigerado com uma carga lícita de peito de frango.",
+      "details": "A droga foi localizada com uso de scanner, em um contêiner refrigerado com uma carga lícita de peito de frango.",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/receita-federal-retem-22-quilos-de-cocaina-em-paranagua",
+      "source": "MundoGEO",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-04-24T18:10:00Z",
+      "updatedAt": "2026-04-24T18:10:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/receita-federal-retem-22-quilos-de-cocaina-em-paranagua/apreensao-drogas-2.jpeg/@@images/89791ec1-486d-4710-b448-407315002c6e.jpeg"
+    },
+    {
+      "id": "macro-d2e8a8dfa0a2e6a318f0ad02",
+      "title": "Falha da Receita não pode prejudicar contribuinte, decide Justiça Federal",
+      "summary": "Decisão remove um obstáculo à confirmação da nomeação de Kevin Warsh, indicado pelo presidente Donald Trump para liderar o banco central americano",
+      "details": "Decisão remove um obstáculo à confirmação da nomeação de Kevin Warsh, indicado pelo presidente Donald Trump para liderar o banco central americano",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/departamento-de-justica-dos-eua-encerra-investigacao-sobre-chair-do-fed/",
+      "source": "Migalhas",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T18:06:39Z",
+      "updatedAt": "2026-04-24T18:06:39Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/01/jerome-powell-fed.jpg?w=1200&h=630&crop=1"
     },
     {
       "id": "macro-be4bfd6c75caafbb26a0ebba",
       "title": "Receita Federal orienta sobre novas formas de assinatura e transmissão da DCTFWeb",
-      "summary": "A droga foi localizada com uso de scanner, em um contêiner refrigerado com uma carga lícita de peito de frango.",
-      "details": "A droga foi localizada com uso de scanner, em um contêiner refrigerado com uma carga lícita de peito de frango.",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/receita-federal-retem-22-quilos-de-cocaina-em-paranagua",
+      "summary": "Cida Renault foi alvo de críticas ao postar de uma praia do Rio de Janeiro",
+      "details": "Cida Renault foi alvo de críticas ao postar de uma praia do Rio de Janeiro",
+      "url": "https://extra.globo.com/famosos/noticia/2026/04/campea-do-bbb-26-ana-paula-sai-em-defesa-da-irma-fiscal-de-luto-tem-carteira-de-trabalho-assinada.ghtml",
       "source": "www.gov.br",
       "category": "macro",
       "tags": [
@@ -504,33 +637,14 @@
       "updatedAt": "2026-04-24T18:02:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/receita-federal-retem-22-quilos-de-cocaina-em-paranagua/apreensao-drogas-2.jpeg/@@images/89791ec1-486d-4710-b448-407315002c6e.jpeg"
-    },
-    {
-      "id": "macro-e2b977fd642492b058eea090",
-      "title": "Falha da Receita não pode prejudicar contribuinte, decide JF",
-      "summary": "Economia da Argentina tem inflação de 3,4% em março, preços em alta e desafio maior para o plano de Milei.",
-      "details": "Economia da Argentina tem inflação de 3,4% em março, preços em alta e desafio maior para o plano de Milei.",
-      "url": "https://clickpetroleoegas.com.br/economia-da-argentina-vira-dor-de-cabeca-para-milei-com-comida-combustivel-e-contas-mais-caras-enquanto-a-inflacao-insiste-em-nao-cair-flpc96/",
-      "source": "Migalhas",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T18:01:00Z",
-      "updatedAt": "2026-04-24T18:01:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://clickpetroleoegas.com.br/wp-content/uploads/2026/04/argentina-1.jpg"
+      "imageUrl": "https://s2-extra.glbimg.com/xWf_eiQjvOn3xUrJrfjFxdAXfhA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_1f551ea7087a47f39ead75f64041559a/internal_photos/bs/2026/s/e/xJSchKRUavGxevpJAv8g/abre-ana.jpg"
     },
     {
       "id": "macro-7d79f91d61a6eda6d45ec3b6",
       "title": "Campeã do 'BBB 26', Ana Paula sai em defesa da irmã: 'Fiscal de luto tem carteira de trabalho assinada?'",
-      "summary": "CMN fixou princípios de funcionamento do mercado e ampliou atuação da CVM na regulamentação.",
-      "details": "CMN fixou princípios de funcionamento do mercado e ampliou atuação da CVM na regulamentação.",
-      "url": "https://www.migalhas.com.br/quentes/454619/resolucao-proibe-negociar-derivativos-ligados-a-esportes-e-politica",
+      "summary": "Economia da Argentina tem inflação de 3,4% em março, preços em alta e desafio maior para o plano de Milei.",
+      "details": "Economia da Argentina tem inflação de 3,4% em março, preços em alta e desafio maior para o plano de Milei.",
+      "url": "https://clickpetroleoegas.com.br/economia-da-argentina-vira-dor-de-cabeca-para-milei-com-comida-combustivel-e-contas-mais-caras-enquanto-a-inflacao-insiste-em-nao-cair-flpc96/",
       "source": "Extra online",
       "category": "macro",
       "tags": [
@@ -542,14 +656,14 @@
       "updatedAt": "2026-04-24T17:48:57Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://medproc.migalhas.com.br/https__img5.migalhas.com.br__SL__gf_base__SL__empresas__SL__miga__SL__imagens__SL__2026__SL__04__SL__24__SL__cropped_zn3oz0pk.oxc.png._PROC_CP75CCH31622400.png"
+      "imageUrl": "https://clickpetroleoegas.com.br/wp-content/uploads/2026/04/argentina-1.jpg"
     },
     {
       "id": "macro-661758a4a93b9cd4c591e7dc",
       "title": "Departamento de Justiça dos EUA encerra investigação sobre chair do Fed",
-      "summary": "Expectativa é que preços subam 4,7% ao ano, maior salto mensal desde tarifas de Trump em 2023",
-      "details": "Expectativa é que preços subam 4,7% ao ano, maior salto mensal desde tarifas de Trump em 2023",
-      "url": "https://www.tribunadosertao.com.br/financas/2026/04/24/891872-inflacao-elevada-faz-confianca-do-consumidor-nos-eua-atingir-menor-nivel-desde-1978",
+      "summary": "Entenda as novas regras do Banco Central sobre o mercado preditivo e a proibição de apostas em eventos diversos.",
+      "details": "Entenda as novas regras do Banco Central sobre o mercado preditivo e a proibição de apostas em eventos diversos.",
+      "url": "https://www.moneytimes.com.br/regra-do-banco-central-limita-atuacao-do-mercado-preditivo-no-brasil-veja-como-fica-a-partir-de-agora-rens/",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -561,14 +675,14 @@
       "updatedAt": "2026-04-24T17:48:07Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://img.dhost.cloud/x68Q4AojjxBbqPz2dbki6TKJjH8=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/f5f9f/caa6869fb46d9d25b4478a06d4e8c637cb9.png"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/09/banco-central-selic.jpg"
     },
     {
       "id": "macro-96c69725dfac839c164e68b8",
       "title": "Economia da Argentina vira dor de cabeça para Milei, com comida, combustível e contas mais caras enquanto a inflação insiste em não cair",
-      "summary": "Cida Renault foi alvo de críticas ao postar de uma praia do Rio de Janeiro",
-      "details": "Cida Renault foi alvo de críticas ao postar de uma praia do Rio de Janeiro",
-      "url": "https://extra.globo.com/famosos/noticia/2026/04/campea-do-bbb-26-ana-paula-sai-em-defesa-da-irma-fiscal-de-luto-tem-carteira-de-trabalho-assinada.ghtml",
+      "summary": "Atualização amplia as formas disponíveis para envio da declaração.",
+      "details": "Atualização amplia as formas disponíveis para envio da declaração.",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/copy_of_receita-federal-orienta-sobre-novas-formas-de-assinatura-e-transmissao-da-dctfweb",
       "source": "CPG Click Petróleo e Gás",
       "category": "macro",
       "tags": [
@@ -580,14 +694,14 @@
       "updatedAt": "2026-04-24T17:47:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-extra.glbimg.com/xWf_eiQjvOn3xUrJrfjFxdAXfhA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_1f551ea7087a47f39ead75f64041559a/internal_photos/bs/2026/s/e/xJSchKRUavGxevpJAv8g/abre-ana.jpg"
+      "imageUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/copy_of_receita-federal-orienta-sobre-novas-formas-de-assinatura-e-transmissao-da-dctfweb/dctfweb.jpg/@@images/4145720c-d5d4-408d-9b8d-95b4b6ce0fe5.jpeg"
     },
     {
       "id": "latest-8276056297aca963e495b1d1",
       "title": "Regra do Banco Central limita atuação do mercado preditivo no Brasil; veja como fica a partir de agora",
-      "summary": "Investigação sobre Powell no Fed EUA chega ao fim. Descubra o que isso significa para o banco central e sua liderança.",
-      "details": "Investigação sobre Powell no Fed EUA chega ao fim. Descubra o que isso significa para o banco central e sua liderança.",
-      "url": "https://www.moneytimes.com.br/departamento-de-justica-dos-eua-abandona-investigacao-sobre-powell-chair-do-fed-removendo-obstaculo-para-warsh/",
+      "summary": "Inconsistência no sistema levou, de forma indevida, ao reconhecimento de intempestividade de pedido de transação tributária.",
+      "details": "Inconsistência no sistema levou, de forma indevida, ao reconhecimento de intempestividade de pedido de transação tributária.",
+      "url": "https://www.migalhas.com.br/amp/quentes/454598/falha-da-receita-nao-pode-prejudicar-contribuinte-decide-jf",
       "source": "Money Times",
       "category": "latest",
       "tags": [
@@ -599,33 +713,14 @@
       "updatedAt": "2026-04-24T17:37:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2021/10/departamento-de-justica-eua.jpg"
-    },
-    {
-      "id": "macro-ec5b35c51877c3e0b6ab22df",
-      "title": "Departamento de Justiça dos EUA abandona investigação sobre Powell, chair do Fed, removendo obstáculo para Warsh",
-      "summary": "Fique por dentro das últimas notícias sobre a Bolsa, Mercado Financeiro e dinheiro. Confira também dicas de investimentos e educação financeira no E-Investidor.",
-      "details": "Fique por dentro das últimas notícias sobre a Bolsa, Mercado Financeiro e dinheiro. Confira também dicas de investimentos e educação financeira no E-Investidor.",
-      "url": "https://einvestidor.estadao.com.br/videos/ibovespa-hoje-queda-usiminas-alta-petrobras-pressao-petroleo-volatil/",
-      "source": "Money Times",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T17:35:00Z",
-      "updatedAt": "2026-04-24T17:35:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://einvestidor.estadao.com.br/wp-content/themes/e-investidor/assets/img/card-share-large-1200x631.jpg"
+      "imageUrl": "https://www.migalhas.com.br/amp/quentes/454598/gf_Base/empresas/miga/imagens/2025/05/12/34169c67-8086-4a21-a76c-750d8f8598d7.jpg"
     },
     {
       "id": "macro-8d1545ec728ab14ba772cdc3",
       "title": "Inflação pelo IPC-S subiu 0,90% na 3ª quadrissemana de abril",
-      "summary": "Entenda as novas regras do Banco Central sobre o mercado preditivo e a proibição de apostas em eventos diversos.",
-      "details": "Entenda as novas regras do Banco Central sobre o mercado preditivo e a proibição de apostas em eventos diversos.",
-      "url": "https://www.moneytimes.com.br/regra-do-banco-central-limita-atuacao-do-mercado-preditivo-no-brasil-veja-como-fica-a-partir-de-agora-rens/",
+      "summary": "Atualizacao de macro capturada em Monitor Mercantil.",
+      "details": "",
+      "url": "https://monitormercantil.com.br/inflacao-pelo-ipc-s-subiu-090-na-terceira-quadrissemana-de-abril/",
       "source": "Monitor Mercantil",
       "category": "macro",
       "tags": [
@@ -636,15 +731,33 @@
       "publishedAt": "2026-04-24T17:32:23Z",
       "updatedAt": "2026-04-24T17:32:23Z",
       "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-796b83f35efaa5a7fada2dca",
+      "title": "Concursos Abertos: milhares de vagas e inicial até R$ 32 mil",
+      "summary": "Concursos Abertos: oportunidades em todo o país! Milhares de vagas em diversas áreas. Confira os editais, requisitos e inscreva-se já!",
+      "details": "Concursos Abertos: oportunidades em todo o país! Milhares de vagas em diversas áreas. Confira os editais, requisitos e inscreva-se já!",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concursos-abertos/",
+      "source": "Estratégia Concursos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T17:28:06Z",
+      "updatedAt": "2026-04-24T17:28:06Z",
+      "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/09/banco-central-selic.jpg"
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2024/10/04165957/concursos-abertos.jpg"
     },
     {
       "id": "latest-7dd6336a03ad6f68f8da26c7",
       "title": "Ibovespa recua com exterior instável, enquanto Usiminas dispara e Petrobras cai com pressão do petróleo volátil",
-      "summary": "Confira qual a cotação do dólar hoje, 24 de abril, e veja indicadores da economia: euro, Ibovespa e preço do petróleo, com a TVT News",
-      "details": "Confira qual a cotação do dólar hoje, 24 de abril, e veja indicadores da economia: euro, Ibovespa e preço do petróleo, com a TVT News",
-      "url": "https://tvtnews.com.br/qual-a-cotacao-do-dolar-hoje-24-de-abril/",
+      "summary": "Atualizacao de ultima hora capturada em Estadão E-Investidor.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOHQ3WktISnRFZTZ5OXQyVDVJSUtLZ1hlWkZyZXI4a3hSQURSS19XZjY5d0M0el94bmthZ3NSMjRiV19RV2lMTEtnRVNUd25GZVRDVnBIRGphRFBCeWN6dnVwUTJzeVl5LUwxQzc3OHRVc2Nkb0RBanBkV1JPd0xjdjh5aF9SOTlydjBndHBjV1V0dVM3TlcxVVNLQ2xnZzZ0enV5MHhoTVRWSU8yLVBhNNIBtgFBVV95cUxQWktpMmRhU3hDN1ZJUlRfbGFiZFd4bFdWUllZZXBVM1JyMUROb0theUNfXzFxQUd2eUFZRkZ1c050U0lGVXJJQm9PekxsblBYejNMZDd4Z1FDZHRIblBhWTlXWFo3Z1pTTDc4d0hnM21PdW42S0JMZjdDWWh6bl8tZlZhVF9CV0lqVi1EcFJPXzJmbDVDNGFseGpTMFBSWlpRVmlPUC1fRVYyamU2VWwxai1HdER3UQ?oc=5",
       "source": "Estadão E-Investidor",
       "category": "latest",
       "tags": [
@@ -655,15 +768,14 @@
       "publishedAt": "2026-04-24T17:26:31Z",
       "updatedAt": "2026-04-24T17:26:31Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://tvtnews.com.br/wp-content/uploads/2026/04/dolar_moeda_3.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-fc8be8d44802868ec72c8cee",
       "title": "Participação da Embrapa no PIB agropecuário chegou a 16% em 2025",
-      "summary": "Foram gerados mais de 132 mil empregos no ano passado por meio do aumento da adoção das soluções tecnológicas da estatal",
-      "details": "Foram gerados mais de 132 mil empregos no ano passado por meio do aumento da adoção das soluções tecnológicas da estatal",
-      "url": "https://globorural.globo.com/economia/noticia/2026/04/participacao-da-embrapa-no-pib-agropecuario-chegou-a-16percent-em-2025.ghtml",
+      "summary": "Atualizacao de macro capturada em Globo Rural.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNN0drNlZ4RmtDeGdLLUtla2NNbjllQWxCSl9HTVZrTDU1ZEZlaVl1Z2RCLXQzN3Y0UU9qQnpVY3NnSkpoTDFsQTFMVXBHTXVhMDRZckpaYi03WXhUZ01hcWJoMkxjemFQbURDMjc2eWt6d3FGYkQ0empGRHU4VWU0YjhRMFU0a3o2dDdPT2RVY1hWV0hZWVZqSWdqV1NJQTNKa0FmemlMUW5wc1BWTGVxZjM2YXJpVTZidVRrLWlid3NCMnBXMjNRT3l30gHYAUFVX3lxTE5EbHRKVUVFLWJzRjlaQXRELXFEV3BkR2tQWWd5Ylh1bjhkMkotcEVwZk50eDNFMTRoNHM1ak1OU3Y2eVZIRXZORlMyVWp4NU9ieU8tRllRQzRUY1Ffc2JNMTlaejZ5cXlXelkyd19MQXBEVDNqbFhfN2tITVRHUUZTczcycndwN09Mdmk0UkRvQjNCOUoxc1RETzgxRUpfbW9OcHhJMU1ua2dmcUlPa2Y1czRsMmtjUVI1dHozamJrdEdzdU1sdWZpRVZwQml3SS1BQlpqU0RocA?oc=5",
       "source": "Globo Rural",
       "category": "macro",
       "tags": [
@@ -674,15 +786,14 @@
       "publishedAt": "2026-04-24T17:24:30Z",
       "updatedAt": "2026-04-24T17:24:30Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-globorural.glbimg.com/x3WEvsjcXKNoOFUyr0Al8qwNjLc=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_afe5c125c3bb42f0b5ae633b58923923/internal_photos/bs/2025/m/C/bheQAwQeSizjsN9PVA6Q/foto14agr-101-embrapa-b8.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-3f0fe653c14e421a4b217862",
       "title": "Renda fixa: como o crédito pode desencadear crises no sistema financeiro",
-      "summary": "Acompanhe a movimentação do mercado: Ibovespa cai, dólar sobe e após resultados da Usiminas, ações disparam 9%.",
-      "details": "Acompanhe a movimentação do mercado: Ibovespa cai, dólar sobe e após resultados da Usiminas, ações disparam 9%.",
-      "url": "https://diariodoestadogo.com.br/bolsa-de-valores-usiminas-se-destaca-em-meio-a-queda-do-ibovespa-e-aumento-do-dolar-702144/",
+      "summary": "Atualizacao de ultima hora capturada em BM&C News.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPb243OFZqSUVlWmc3bHkxRmRRRFZwXzZyTXhjSlhRTk5OZ0M1bkQ1YmQzZ1VvbDE0V0UweHZiS1dmOUdTTXBFTjZqWU1TTGpZODVwS0NFQzQxaDF6aE9VMXlQSlBjaVpXVVZNUGZhNUVVXzFQT1Y1Wk9KeS03aERYcVJUelpUX19ZYnpaQUlHRWlHYW1VOVlNWkhwanZ2b21aUDRlZ19jU2k3emp2TFJBVnVGVVJCa2pkNGhRNWp4c3dDaGt2?oc=5",
       "source": "BM&C News",
       "category": "latest",
       "tags": [
@@ -693,15 +804,14 @@
       "publishedAt": "2026-04-24T17:21:53Z",
       "updatedAt": "2026-04-24T17:21:53Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/04/bolsa-de-valores3A-usiminas-se-destaca-em-meio-a-queda-do-ibovespa-e-aumento-do-dolar.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-27a3ba0b22b9457ccef760cd",
       "title": "Confira qual a cotação do dólar hoje, 24 de abril",
       "summary": "Atualizacao de ultima hora capturada em TVT News.",
       "details": "",
-      "url": "https://monitormercantil.com.br/inflacao-pelo-ipc-s-subiu-090-na-terceira-quadrissemana-de-abril/",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tX3Z2NkN4LTIxb3g1VG1YUkNobHRaWXp4cVJrelpqOWhabmVSWWdFT19UNENETTE5a1lZVlFGNDZLcXBGN3BuanBiYjgzc21FNDJ2c3ZPZXI3Y2Rvc1hSRE55c2hRTW9CQmNWV2hhU25VQQ?oc=5",
       "source": "TVT News",
       "category": "latest",
       "tags": [
@@ -717,9 +827,9 @@
     {
       "id": "latest-6ce4085a7fbecb73119c98c2",
       "title": "Bolsa de Valores: Usiminas se destaca em meio a queda do Ibovespa e aumento do dólar",
-      "summary": "Especialistas explicam como a renda fixa influencia crises financeiras, o papel do crédito e os riscos no cenário de juros altos.",
-      "details": "Especialistas explicam como a renda fixa influencia crises financeiras, o papel do crédito e os riscos no cenário de juros altos.",
-      "url": "https://bmcnews.com.br/programas-bmc/wall-street-cast/renda-fixa-como-o-credito-pode-desencadear-crises-no-sistema-financeiro/",
+      "summary": "Atualizacao de ultima hora capturada em DIÁRIO DO ESTADO.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNekpMWkkwNFJ6NTViRUxuV012NFVsZ1ByRDhCZmRWaWJ4VWlKck9QcFFsUURCQ09iMk1qM05zb1pFSjltVkVkcDFYSFprYllCZWRMWEoxa3B2LWlFSmZ0bGtQZlF0Mm0zSm9kMnVEb1MydF9yM0R6OHhVOXFtNkVjX0t3NURwLWtXUmViNHFPVXItS2tFRFNZeHE4MXUtTl9jLUoxZVJQZldPLVNEMzJSRFJCLVRGVHJTUnJ2TVktWWU?oc=5",
       "source": "DIÁRIO DO ESTADO",
       "category": "latest",
       "tags": [
@@ -730,8 +840,7 @@
       "publishedAt": "2026-04-24T17:04:47Z",
       "updatedAt": "2026-04-24T17:04:47Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://bmcnews.com.br/wp-content/uploads/2026/04/WALL-STREET-CAST.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-f88208fde6f44ae796103023",
@@ -788,22 +897,22 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-31ef19f8d512ed4833bff81c",
+      "id": "latest-8d0c44b9adc820942b1e4e50",
       "title": "Juros altos turbinam Tesouro Direto — IPCA+ já paga 7,63%",
-      "summary": "Atualizacao de macro capturada em Estadão E-Investidor.",
+      "summary": "Atualizacao de ultima hora capturada em Estadão E-Investidor.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOXlhTFhOc1IzQ3dVZGp3RFp5eXpVaGFYSWhzQjdJSndKVE1BR3h6UEJPSVppV1hRLThSc3NpZFBPbFdtNldaYWY0ZHp1Rk9JUTcwQ3hFLW01LUZHQWxleFZtRUFFdzViSmJfcF94bFFRWWE0a2xaREE1TS1qZzBsYk51TEd2RVduU3BGTTR0TVJZVGNCTlJadnlVbWduNUFuQU1KMU9rcUfSAa4BQVVfeXFMTWRKWWw4bGYtWjlhRFZ4SmtoZVVpaF9mY0p6ZUpCVnFSU3hLeGxGQTBaY2tGYU8yQmlMeC1IemgwUkxma2VRS0lfX2Vtd2pGMEUtOGJDTFAxOUR5V0xuQUNRSXNySERtMU1lWVhpeGdYUmMwMS1nSEhOYm52MXBnVHpHVmhQOXRyUnRZWHpnU3Zab3l5WjVTa1lPaGZuMzA5TmdDMk93bWIzWWpmQUtn?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZEpZbDhsZi1aOWFEVnhKa2hlVWloX2ZjSnplSkJWcVJTeEt4bEZBMFpja0ZhTzJCaUx4LUh6aDBSTGZrZVFLSV9fZW13akYwRS04YkNMUDE5RHlXTG5BQ1FJc3JIRG0xTWVZWGl4Z1hSYzAxLWdISE5ibnYxcGdUekdWaFA5dHJSdFlYemdTdlpveXlaNVNrWU9oZm4zMDlOZ0MyT3dtYjNZamZBS2fSAa4BQVVfeXFMTWRKWWw4bGYtWjlhRFZ4SmtoZVVpaF9mY0p6ZUpCVnFSU3hLeGxGQTBaY2tGYU8yQmlMeC1IemgwUkxma2VRS0lfX2Vtd2pGMEUtOGJDTFAxOUR5V0xuQUNRSXNySERtMU1lWVhpeGdYUmMwMS1nSEhOYm52MXBnVHpHVmhQOXRyUnRZWHpnU3Zab3l5WjVTa1lPaGZuMzA5TmdDMk93bWIzWWpmQUtn?oc=5",
       "source": "Estadão E-Investidor",
-      "category": "macro",
+      "category": "latest",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
+        "mercado",
+        "bolsa",
+        "macro"
       ],
       "publishedAt": "2026-04-24T16:51:53Z",
       "updatedAt": "2026-04-24T16:51:53Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-14873636b0b53be9778560a9",
@@ -846,7 +955,7 @@
       "title": "Gasolina opõe Tesouro ao mercado",
       "summary": "Atualizacao de ultima hora capturada em Jornal do Brasil.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPY3REcVhoN0lRM2FYZWdXY21JOXNsNlpRbkR5Q25Pc0dmNi1pd2pMMmZENFE1QTdMbm9jRV9uV0o4aGY5YnRYdWRwTFNwSUo1THJZM2Z6VkF6NTlxUWlGNmxva0lhcGN3MlAtaC1vMkxVaHJ3TlUxSm8xSV9MM1NnTkFPS093bGotUEFwUnBTbTlzRnR2Z2x5eUx6QjFxUUZvVkNfRmFFUFQwUUN6?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORjN0a0VWb3BpdXUwMEhKc3Q1ajRxSzI3eEJSalAxNG1lRVFFMXUxWFdzM2FjdmZwRFd1aTBIelBqMXJTRGl5SGR2M0hEN0lWNWxNX3hlWi1HYXRLcnZ6MDdoa0JtUE1zaU9VTEhieFltdXVNeVc5bktmRV8wRmRpUllmZXJKLVg1YmZkQVVuYS10aDcxRHJJT1BOTFlUS2prQVZrRWd0cEIwR2NVYjBKQWpn?oc=5",
       "source": "Jornal do Brasil",
       "category": "latest",
       "tags": [
@@ -860,8 +969,8 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-706b5839a0309fb696c1328f",
-      "title": "BC barra no Brasil plataformas de previsões em política e esporte; decisão não afeta bets",
+      "id": "latest-51cfb76bb21f3d313dea49f0",
+      "title": "Brasil barra plataformas de previsões em política e esporte; decisão não afeta bets",
       "summary": "Atualizacao de ultima hora capturada em G1.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOY0dtRnc3c2ZUMTJueVYwaGMtaGR0LXlmYUVVYkV2VGd0RkNlNFNSYi1fdHlUS0w2S21UTFVfRDFRTld4djkyR25hdktOcGt6cUI5WUtwQ1lPSU9aazhDaGlVTE4xQzQ1azlHOC1qRkhRdzZaQ1hGZnl2VEhBdmdPV0RLYmZ0WXZlLUp4Mm1FUXMzdTducjVqTldTQ1NHVjNJWFczM0QyLS1nbTJLbGlvQXM4Q0pRUnZhcEJpWEtzcUNyQ1BMcUVnMkI0QTAzQdIB3AFBVV95cUxOZ0J2YldZREtpRnJWVjJRWDVGR25RdVJ0SzhaQVRaU2VwRFVIeEJENHc1amcwS2pZZXU1SnpSZTBpVnh5ZGhsQjhWMHBhYkNrVXM2WXlteGtMdTVsRG5kbmhXT3gzNXNzbS1SblRNUTBfVnRFWnRWWFRqNUFfeVd5Si1MelZvempqbGQ5bXJNNHBVZGtvM1pPS182OEtyQ0R0clhFOHNfSTFtUDBXWGRfdS1sRVAwdm9mdXBpdFFwSGhBLUxoQWRyMHZDd1UtcGxNYmdkOHlNWWZ5LTNZ?oc=5",
@@ -874,42 +983,6 @@
       ],
       "publishedAt": "2026-04-24T16:19:11Z",
       "updatedAt": "2026-04-24T16:19:11Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-4c14e93af4077681d9d61b80",
-      "title": "Apostas não financeiras em plataformas de previsões são proibidas",
-      "summary": "Atualizacao de ultima hora capturada em Gazeta Brazilian News.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNREpGMVZka3RTREprcERTRmpFX080V2F3QTdqRG04YzlFS0NEN2R3VHl0QVpyYmNKY3lkbzN4X3ZHX3d0enBwWlUzU1QyRTN6cUhBNEp5aUpyMUFPSnRkc3JzSktUZFZPWXA4YmxKeXdyMmc0c2RuYk9vLXRQdWhOaVRiMjEwbjFlSENmSkJxaUE2QUpuMGxvS0dzR0hDQlRZajVVN1l3cEtzaHlnTDd1RjdUZXNZZlBFSEVIMHFYeGdMM1E2WXJMZmJ3?oc=5",
-      "source": "Gazeta Brazilian News",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-04-24T16:06:31Z",
-      "updatedAt": "2026-04-24T16:06:31Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-7bd374b7981172ff078ac173",
-      "title": "Atualizações da Bolsa: Ibovespa, Dólar e Ações em Foco",
-      "summary": "Atualizacao de ultima hora capturada em DIÁRIO DO ESTADO.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOeDZJa0tnVFZGSlVDQ3pRR3hlTE9vd0JEU0dOMkpyZVV1TURXeXJvTnlld2RQWG5BRU1ZZm5ZaVAxUlRrTVZNUG1ZRTNhbHh6ZnZXT3VXNGpZRVZSNnJFT3htQ05aellocTRMLUFFemV4MEFrT2RGaFBCNHM4SnVTd3MxY0c4ZmdlbWFzWHlUMWdwWkdHT0hn?oc=5",
-      "source": "DIÁRIO DO ESTADO",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-04-24T16:04:43Z",
-      "updatedAt": "2026-04-24T16:04:43Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -1004,12 +1077,12 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "companies-3ebbd7677a18005cc7675e5d",
+      "id": "companies-b2c0a2a1ab9be117d4ff8135",
       "title": "Mercado brasileiro perde atratividade com avanço dos IPOs reversos, segundo economista",
-      "summary": "Atualizacao de empresas capturada em Times Brasil.",
+      "summary": "Atualizacao de empresas capturada em Times Brasil | CNBC.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPd1I0Mjhnb0NtMlU2QjU1N25Pd2dMdnBrTFp1ai1sV2lfazhPaDlHLUw1Zm02NG1hOTZibnB3ekIwN25Zc3hHaHExUmw0b0xLTmZaNFB0OEZvblJSbXF6MERHOXRZN0VhZkd1VFVUZEZuY2JqazVVcmVLUFpUVmRHblNaQ1RyUUU4elBETFJjN2J1M08xcmVqcFZVTkN2WEdPYTIzNjlMUzFGUUQ1eDRROFB4NXphQlJFa1d4V2NWbDctZW93RzBiWjhKN3p5dw?oc=5",
-      "source": "Times Brasil",
+      "source": "Times Brasil | CNBC",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1072,24 +1145,6 @@
       ],
       "publishedAt": "2026-04-24T13:00:09Z",
       "updatedAt": "2026-04-24T13:00:09Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-5c50a3019e888f45c7a497e6",
-      "title": "Investimento em ações brasileiras é positivo em US$ 138 milhões em março, afirma BC",
-      "summary": "Atualizacao de fundos capturada em InfoMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNa3FxX3pUTW1QcHF4N3VDdHpiekppZkJhdkl1N0daWDE4aFdJQkFScDVxcmFBeHlENlVucnhIS05PWEdBVXVpQUZ5QnNDRG4xS0c2V3g0UGEzMGZTR2ZmWVJvblhDZHM1dGpMV3czT3F1Y1hjc0luMkwtOC00Tk12SEdRN01IS19JcG1XLXZZT1laZ1dlYTdmRXFFTmZSQUdVa2FfYW5KM0YwWTRDLXRCUmcxRGJOSUczMTNMNtIBwgFBVV95cUxQbkpiYlhfa1ZzeTZMR3lHTXpqMk1XQzNVMkpfb1RzbTdiR1dIaVRISFJxSU9lazlrM1FqMUdDRDJPaXVoRWZHUmZ6QTB0RmZfelJhU2lCSFBERFlFX1NEenljTVRBU3JtS1hwWWZQVDJXTGJDWV81S3BDZmZ2cFNRVlpRSnRjU1dEdm9mUmhGNGJ4eEhocm1VRVM5WDM0OU5aelNZQU05aElJcFA4dTQ2aHZnMFhJSG54V1NHQWJYWklPdw?oc=5",
-      "source": "InfoMoney",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-04-24T12:59:26Z",
-      "updatedAt": "2026-04-24T12:59:26Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
@@ -1164,24 +1219,6 @@
       "updatedAt": "2026-04-24T11:42:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "funds-4ebc4a8449396496e8b7709d",
-      "title": "Metaplanet raises $50M in zero-interest bonds to buy more Bitcoin",
-      "summary": "Atualizacao de fundos capturada em TradingView.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZV9zVXBXT0oxOExYZzZaT1BOZ0w1WkJmZHh4MUw5NVk2bS1xVnhMdWJZMjc5dmhPTXdiRXByemptemtfQmtsZmhNU05Wd3hVUlp2Xy0tbHpLYk5CanVUY2VnUEdhMXNnTUhtTjNMOG1RdWRsN1NoTEh3a2EtWlJ5cnAwRC1jTW1WQ0ZEVGl6NDhEdkhKN043Sjl5X2hEVVAwal9maExVWS1nNUpSdG51bE95TkM2clJtQndjUVRmeFA4SFBObU1QN1pjVQ?oc=5",
-      "source": "TradingView",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-04-24T11:33:22Z",
-      "updatedAt": "2026-04-24T11:33:22Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "funds-babde01fd060ed8341d4d503",
@@ -1351,24 +1388,6 @@
       "summary": "Atualizacao de fundos capturada em Bolsamania.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTEtMVUI0Ul9LbnQ4X2dzWXZXS2QtbWdvZG1HUXU3MVYwdzl5MjJwUkxXcG5SM3JDRVpTQVdhYkpNWkFVMkRFNGFLZGV5QmVpRGJxLVdTMUZXWWtuRFZlekl3cmlUYmdWXzJfUHBucTFySGZGNUt5TWRwcWQ4V09VOXl3MmdVdzloNDZIRE93WjhkWk5JWXRnUGtGR242UU9KZktVcmtGc1hMY2R3cUw0NlBqSXdlMm4zQ2tuZTJXLWQwM3Nm0gHCAUFVX3lxTE5aZzFOdEp3a2xpcTlSYXR3N3ZWdmhsRnpvbGl6MHl1WVhzY1NXN1hjZFdBc2xDams1VUtRcXZxSjZWZVp1cXRtbFF5X185SUZYVDJtYmZ6WVBWSmVVZUxRd0JXRHVFc1BWNEVrTllLRGFSUjVDc1lpMTVaUGxWLWpwMkh6b0ZLZ3hucmhMNFQySG1WcTZ1MlZpTTVQb3kxWlZxUk1TbUFtOGR2dXptQ2VJZVkybU5pZkNMemNNNXBhY1Zn?oc=5",
-      "source": "Bolsamania",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-04-24T06:07:00Z",
-      "updatedAt": "2026-04-24T06:07:00Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-12e791dec6265203bff50b24",
-      "title": "Fidelity EM Quality Income $ FEME - Net Asset Value(s)",
-      "summary": "Atualizacao de fundos capturada em Bolsamania.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOS2s1OWoybnRDeHRlUGhHUGpUdGc1NDF2d3MzWnVSUHRnaEJta3ZpbHd5OHZ2ZEo2akF6UEh6TXRPZ1k4alJCOTZIRExxNWhJZm5FdnRpaENJRFRfZ2RsX3BBemtDVk0yNEc3RURjaUpkM0tFS0g5NzlUOTNYYkRsd1BzVlQzaWRaMTZ3aHJpclNXbVBPYXYyXzJSNG50ZHFVZ0NFZHowdHE4bnNwSzdhUzl4YVVFLVhSQ3p0RjFKc9IBvAFBVV95cUxQcy0wOGtiSm1UQVJhUzNJNlpVMHMxX2hyc3lsS2FWV1I4WHpSZnZ5SmlrTnAtaXpEN1M3WFVQRkpiSTBBWFVOUmJjNUFXT3dDaTgzMDJIQWczWHdBaUIycGZuLTRrUE5nU2NRanNNVHVJa214Z3NMTk5Qd0UyZDloc0dySzZDNHFpTU9RY25JV29Vd1ZydGFFZVI3eDAtNjgtSmI3Q0lxVVBmak9aNlA1ZFQzSmwzbDhDTnFsZA?oc=5",
       "source": "Bolsamania",
       "category": "funds",
       "tags": [
