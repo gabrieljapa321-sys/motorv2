@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-24T15:43:43Z",
-  "generatedAt": "2026-04-24T15:43:43Z",
+  "updatedAt": "2026-04-24T16:39:04Z",
+  "generatedAt": "2026-04-24T16:39:04Z",
   "categories": [
     {
       "id": "all",
@@ -24,10 +24,6 @@
     }
   ],
   "sources": [
-    {
-      "id": "advfn",
-      "label": "ADVFN"
-    },
     {
       "id": "bnamericas",
       "label": "BNamericas"
@@ -57,16 +53,16 @@
       "label": "ConvergenciaDigital"
     },
     {
-      "id": "cqcs",
-      "label": "CQCS"
-    },
-    {
       "id": "crypto-id",
       "label": "Crypto ID"
     },
     {
-      "id": "es-brasil",
-      "label": "ES Brasil"
+      "id": "di-rio-do-estado",
+      "label": "DIÁRIO DO ESTADO"
+    },
+    {
+      "id": "exame",
+      "label": "Exame"
     },
     {
       "id": "extra-classe",
@@ -81,16 +77,20 @@
       "label": "Finsiders Brasil"
     },
     {
+      "id": "folha-de-s-paulo",
+      "label": "Folha de S.Paulo"
+    },
+    {
       "id": "funds-society",
       "label": "Funds Society"
     },
     {
-      "id": "infomoney",
-      "label": "InfoMoney"
+      "id": "gazeta-do-povo",
+      "label": "Gazeta do Povo"
     },
     {
-      "id": "investing-com-brasil-finan-as-c-mbio-e-investimentos",
-      "label": "Investing.com Brasil - Finanças, Câmbio e Investimentos"
+      "id": "infomoney",
+      "label": "InfoMoney"
     },
     {
       "id": "jornal-correio",
@@ -105,8 +105,24 @@
       "label": "Jornal do Comércio"
     },
     {
+      "id": "jornal-dois-irm-os",
+      "label": "Jornal Dois Irmãos"
+    },
+    {
+      "id": "lerunica-com-br",
+      "label": "lerunica.com.br"
+    },
+    {
       "id": "magistrar",
       "label": "Magistrar"
+    },
+    {
+      "id": "metr-poles",
+      "label": "Metrópoles"
+    },
+    {
+      "id": "monitor-mercantil",
+      "label": "Monitor Mercantil"
     },
     {
       "id": "msn",
@@ -115,10 +131,6 @@
     {
       "id": "o-globo",
       "label": "O GLOBO"
-    },
-    {
-      "id": "paipee",
-      "label": "PaiPee"
     },
     {
       "id": "portal-98-fm-natal",
@@ -133,6 +145,10 @@
       "label": "portal24.com.br"
     },
     {
+      "id": "r7",
+      "label": "R7"
+    },
+    {
       "id": "radar-digital-bras-lia",
       "label": "RADAR DIGITAL BRASÍLIA"
     },
@@ -145,24 +161,24 @@
       "label": "saolourencoreporter.com"
     },
     {
-      "id": "sounews-com-br",
-      "label": "sounews.com.br"
+      "id": "sindireceita",
+      "label": "Sindireceita"
     },
     {
-      "id": "spacemoney",
-      "label": "SpaceMoney"
+      "id": "sounews-com-br",
+      "label": "sounews.com.br"
     },
     {
       "id": "times-brasil-cnbc",
       "label": "Times Brasil | CNBC"
     },
     {
-      "id": "tnh1",
-      "label": "TNH1"
-    },
-    {
       "id": "tradingview",
       "label": "TradingView"
+    },
+    {
+      "id": "tribuna-do-agreste",
+      "label": "Tribuna do Agreste"
     },
     {
       "id": "tribuna-do-sert-o",
@@ -199,11 +215,307 @@
   ],
   "items": [
     {
+      "id": "latest-e2a6a650d27899adce1672f7",
+      "title": "Banco Central proíbe especulação em eventos esportivos e políticos no Brasil",
+      "summary": "Atualizacao de ultima hora capturada em DIÁRIO DO ESTADO.",
+      "details": "",
+      "url": "https://noticias.uol.com.br/ultimas-noticias/afp/2026/04/24/departamento-de-justica-dos-eua-arquiva-investigacao-contra-presidente-do-fed.htm",
+      "source": "DIÁRIO DO ESTADO",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-04-24T16:29:52Z",
+      "updatedAt": "2026-04-24T16:29:52Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "macro-6afef3ab48e29da3b1192dc4",
+      "title": "Bitcoin versus inflação: iPhone já custou 277 bitcoins, hoje é 0,014",
+      "summary": "Atualizacao de macro capturada em Exame.",
+      "details": "",
+      "url": "https://exame.com/future-of-money/bitcoin-versus-inflacao-iphone-ja-custou-277-bitcoins-hoje-e-0014/",
+      "source": "Exame",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T16:27:37Z",
+      "updatedAt": "2026-04-24T16:27:37Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-82cb6ba3a86ec31fdbd8d790",
+      "title": "Departamento de Justiça dos EUA arquiva investigação contra presidente do Fed",
+      "summary": "O Banco Central do Brasil proíbe derivativos ligados a eventos esportivos e políticos. Saiba como a nova resolução impacta investidores e mercado financeiro.",
+      "details": "O Banco Central do Brasil proíbe derivativos ligados a eventos esportivos e políticos. Saiba como a nova resolução impacta investidores e mercado financeiro.",
+      "url": "https://diariodoestadogo.com.br/banco-central-proibe-especulacao-em-eventos-esportivos-e-politicos-no-brasil-702086/",
+      "source": "UOL Notícias",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T16:23:50Z",
+      "updatedAt": "2026-04-24T16:23:50Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-c5a4151d9f0fb350be173665",
+      "title": "EUA: Departamento de Justiça encerra investigação sobre Jerome Powell",
+      "summary": "Decisão abre caminho para troca no comando do banco central dos EUA em meio a debate sobre pressão política nos juros",
+      "details": "Decisão abre caminho para troca no comando do banco central dos EUA em meio a debate sobre pressão política nos juros",
+      "url": "https://veja.abril.com.br/economia/governo-trump-recua-e-encerra-investigacao-contra-o-federal-reserve/",
+      "source": "Monitor Mercantil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T16:07:26Z",
+      "updatedAt": "2026-04-24T16:07:26Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://veja.abril.com.br/wp-content/uploads/2025/12/GettyImages-2242714888.jpg?quality=70&strip=info&resize=1080,565&crop=1"
+    },
+    {
+      "id": "latest-7bd374b7981172ff078ac173",
+      "title": "Atualizações da Bolsa: Ibovespa, Dólar e Ações em Foco",
+      "summary": "Atualizacao de ultima hora capturada em DIÁRIO DO ESTADO.",
+      "details": "",
+      "url": "https://monitormercantil.com.br/eua-departamento-de-justica-encerra-investigacao-sobre-jerome-powell/",
+      "source": "DIÁRIO DO ESTADO",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-04-24T16:04:43Z",
+      "updatedAt": "2026-04-24T16:04:43Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "macro-b61aaeb91b458df135db11ba",
+      "title": "EUA: procuradora encerra investigação contra Powell, presidente do Fed",
+      "summary": "O Departamento de Indústria e Comércio de Dois Irmãos divulgou os ganhadores dos sorteios municipais do programa Nota Fiscal Ga&u...",
+      "details": "O Departamento de Indústria e Comércio de Dois Irmãos divulgou os ganhadores dos sorteios municipais do programa Nota Fiscal Ga&u...",
+      "url": "https://jornaldoisirmaos.com.br/noticia/24042026-departamento-de-industria-e-comercio-divulga-ganhadores-do-nota-fiscal-gaucha",
+      "source": "Metrópoles",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T15:59:06Z",
+      "updatedAt": "2026-04-24T15:59:06Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.jornaldoisirmaos.com.br/images/pequenas/departamento-de-industria-e-comercio-divulga-ganhadores-do-nota-fiscal-gaucha-1777046129.jpg"
+    },
+    {
+      "id": "macro-89ed7ceffbb9e6841155ef28",
+      "title": "Governo Trump recua e encerra investigação contra o Federal Reserve",
+      "summary": "Implementação do NPI amplia controle, exige consistência de dados e impõe nova lógica operacional no comércio exterior",
+      "details": "Implementação do NPI amplia controle, exige consistência de dados e impõe nova lógica operacional no comércio exterior",
+      "url": "https://lerunica.com.br/regiao-sul/novo-processo-de-importacao-eleva-exigencia-tecnica-e-muda-rotina-das-empresas-brasileiras-15009",
+      "source": "VEJA",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T15:58:44Z",
+      "updatedAt": "2026-04-24T15:58:44Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://lerunica.com.br//img/lerunica/noticias/15009/destaque-G.v1777046438.jpg?v=815881583"
+    },
+    {
+      "id": "companies-3ad78d7fb9b11adbd5f7abe6",
+      "title": "Novo processo de importação eleva exigência técnica e muda rotina das empresas brasileiras",
+      "summary": "Ibovespa cai, dólar sobe e Usiminas se destaca com forte lucro; veja as novidades do mercado.",
+      "details": "Ibovespa cai, dólar sobe e Usiminas se destaca com forte lucro; veja as novidades do mercado.",
+      "url": "https://diariodoestadogo.com.br/atualizacoes-da-bolsa-ibovespa-dolar-e-acoes-em-foco-702065/",
+      "source": "lerunica.com.br",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-04-24T15:58:00Z",
+      "updatedAt": "2026-04-24T15:58:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "macro-0628712c86cc05eb92b44a7e",
+      "title": "Departamento de Indústria e Comércio divulga ganhadores do Nota Fiscal Gaúcha",
+      "summary": "Atualizacao de macro capturada em Jornal Dois Irmãos.",
+      "details": "",
+      "url": "https://www.msn.com/pt-br/dinheiro/economia-e-negocios/%C3%ADndice-de-atividade-nacional-dos-eua-cai-em-mar%C3%A7o-aponta-fed-de-chicago/ar-AA21zDRi?ocid=finance-verthp-feeds",
+      "source": "Jornal Dois Irmãos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T15:57:31Z",
+      "updatedAt": "2026-04-24T15:57:31Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-383c17969c50c72c5109090a",
+      "title": "Índice de atividade nacional dos EUA cai em março, aponta Fed de Chicago",
+      "summary": "Atualizacao de macro capturada em MSN.",
+      "details": "",
+      "url": "https://www.metropoles.com/negocios/eua-procuradora-encerra-investigacao-contra-powell-presidente-do-fed",
+      "source": "MSN",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T15:54:00Z",
+      "updatedAt": "2026-04-24T15:54:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "latest-33d5f2e06514b61d18d3b417",
+      "title": "Ibovespa: mercado eleva projeções, mas não vê mais “pechincha”; o que fazer?",
+      "summary": "As restrições também dizem respeito às ofertas, em território nacional, de derivativos negociados no exterior",
+      "details": "As restrições também dizem respeito às ofertas, em território nacional, de derivativos negociados no exterior",
+      "url": "https://noticias.r7.com/brasilia/governo-proibe-negociacoes-de-apostas-esportivas-em-contratos-do-mercado-financeiro-24042026/",
+      "source": "InfoMoney",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-04-24T15:50:16Z",
+      "updatedAt": "2026-04-24T15:50:16Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/LIFWUGRW4VB3NMYUSWKWC57NLQ.png?smart=true&auth=b4306b8898e7d8c8f1472db61ef5bef21ec9c303f3d5b4dbe4c7062419e0a1cc&width=1200&height=630"
+    },
+    {
+      "id": "latest-56ec3f213bcf9a8c229c0d26",
+      "title": "Governo proíbe negociações de apostas esportivas em contratos do mercado financeiro",
+      "summary": "Analistas destacam que movimento é de maior seletividade em ações e diversificação de carteira",
+      "details": "Analistas destacam que movimento é de maior seletividade em ações e diversificação de carteira",
+      "url": "https://www.infomoney.com.br/mercados/ibovespa-mercado-eleva-projecoes-mas-nao-ve-mais-pechincha-o-que-fazer/",
+      "source": "R7",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-04-24T15:47:07Z",
+      "updatedAt": "2026-04-24T15:47:07Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/03/EspacoB3_03.jpg?quality=70"
+    },
+    {
+      "id": "macro-006d56c265647b82c2957ca1",
+      "title": "Governo Trump arquiva investigação contra presidente do Fed",
+      "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
+      "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
+      "url": "https://www.tribunadoagreste.com.br/geral/2026/04/24/891874-departamento-de-justica-dos-eua-encerra-investigacao-sobre-fed-e-powell",
+      "source": "Gazeta do Povo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T15:43:00Z",
+      "updatedAt": "2026-04-24T15:43:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://img.dhost.cloud/r6tnxyKCWswxCBEvMTOHdnQVgNg=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/2f6b6/1602a17bce8810f64ad7d4cdec49202245c.png"
+    },
+    {
+      "id": "macro-60b3e1b31e2610687d011640",
+      "title": "Nos EUA, DoJ encerra investigação sobre Fed e Powell; Senado confirmará Warsh, diz Casa Branca",
+      "summary": "Governo Trump adotou manobra para que indicado para suceder Jerome Powell seja confirmado pelo Senado dos EUA. Leia na Gazeta do Povo",
+      "details": "Governo Trump adotou manobra para que indicado para suceder Jerome Powell seja confirmado pelo Senado dos EUA. Leia na Gazeta do Povo",
+      "url": "https://www.gazetadopovo.com.br/mundo/governo-trump-arquiva-investigacao-contra-presidente-do-fed/",
+      "source": "UOL Economia",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T15:43:00Z",
+      "updatedAt": "2026-04-24T15:43:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://media.gazetadopovo.com.br/2026/04/24124233/fed.arquiva.jpg"
+    },
+    {
+      "id": "macro-f975b4d6945e3c0f63c1bbf2",
+      "title": "Departamento de Justiça dos EUA encerra investigação sobre Fed e Powell",
+      "summary": "Jeanine Pirro, aliada de Trump, diz que cabe ao escritório do inspetor-geral avaliar se houve irregularidade em reforma da sede",
+      "details": "Jeanine Pirro, aliada de Trump, diz que cabe ao escritório do inspetor-geral avaliar se houve irregularidade em reforma da sede",
+      "url": "https://www1.folha.uol.com.br/mercado/2026/04/procuradora-dos-eua-encerra-investigacao-sobre-presidente-do-fed-e-repassa-caso-a-fiscalizacao-interna.shtml",
+      "source": "Tribuna do Agreste",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T15:43:00Z",
+      "updatedAt": "2026-04-24T15:43:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://f.i.uol.com.br/fotografia/2026/04/24/177704493169eb8dc3417f2_1777044931_3x2_rt.jpg"
+    },
+    {
+      "id": "macro-705b434a7d81f720b7b7ab98",
+      "title": "Procuradora dos EUA encerra investigação sobre presidente do Fed e repassa caso à fiscalização interna",
+      "summary": "Atualizacao de macro capturada em Folha de S.Paulo.",
+      "details": "",
+      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/04/24/nos-eua-doj-encerra-investigacao-sobre-fed-e-powell-senado-confirmara-warsh-diz-casa-branca.htm",
+      "source": "Folha de S.Paulo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T15:42:00Z",
+      "updatedAt": "2026-04-24T15:42:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
       "id": "latest-d73db067be88622b302ba6bd",
       "title": "CMN proíbe derivativos de apostas esportivas e freia mercado preditivo",
-      "summary": "Atualizacao de ultima hora capturada em Finsiders Brasil.",
-      "details": "",
-      "url": "https://cryptoid.com.br/dinamo-networks/nova-resolucao-do-banco-central-eleva-exigencias-de-seguranca-e-acelera-investimentos-em-protecao-digital-no-setor-financeiro/",
+      "summary": "Contratos só poderão ter como referência variáveis de natureza econômico-financeira, como índices de preços, juros e commodities",
+      "details": "Contratos só poderão ter como referência variáveis de natureza econômico-financeira, como índices de preços, juros e commodities",
+      "url": "https://finsidersbrasil.com.br/regulamentacao/cmn-proibe-derivativos-de-apostas-esportivas-e-freia-mercado-preditivo/",
       "source": "Finsiders Brasil",
       "category": "latest",
       "tags": [
@@ -214,7 +526,8 @@
       "publishedAt": "2026-04-24T15:35:41Z",
       "updatedAt": "2026-04-24T15:35:41Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://finsidersbrasil.com.br/wp-content/uploads/2025/04/0N8ScCGv-DESTAQUE-bolsa-de-valores-2.webp"
     },
     {
       "id": "latest-f380edbf76ff64c48e88682c",
@@ -256,9 +569,9 @@
     {
       "id": "macro-ca78bd7c2c5ebb9caded792f",
       "title": "COMUNIDADE JÁ PODE APOIAR A CORRENTE DO BEM PELA NOTA FISCAL GAÚCHA",
-      "summary": "Pesquisadores da empresa de segurança digital ESET identificaram uma nova campanha de fraude digital",
-      "details": "Pesquisadores da empresa de segurança digital ESET identificaram uma nova campanha de fraude digital",
-      "url": "https://convergenciadigital.com.br/seguranca/novo-golpe-usa-site-fake-da-receita-federal-para-cobrar-falsa-divida-por-pix/",
+      "summary": "Atualizacao de macro capturada em saolourencoreporter.com.",
+      "details": "",
+      "url": "https://cryptoid.com.br/dinamo-networks/nova-resolucao-do-banco-central-eleva-exigencias-de-seguranca-e-acelera-investimentos-em-protecao-digital-no-setor-financeiro/",
       "source": "saolourencoreporter.com",
       "category": "macro",
       "tags": [
@@ -269,15 +582,14 @@
       "publishedAt": "2026-04-24T15:24:40Z",
       "updatedAt": "2026-04-24T15:24:40Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://convergenciadigital.com.br/wp-content/uploads/2023/07/golpe-online.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-1f6f7f1d41846ddb9d41e797",
       "title": "Receita Federal alerta sobre sites que simulam o leilão de mercadorias apreendidas",
-      "summary": "SEFAZ DF e SEFAZ CE estão com publicação iminente; ISS Porto Velho e ISS Manaus também avançam e podem divulgar editais nas próximas semanas",
-      "details": "SEFAZ DF e SEFAZ CE estão com publicação iminente; ISS Porto Velho e ISS Manaus também avançam e podem divulgar editais nas próximas semanas",
-      "url": "https://magistrarcursos.com.br/blog/concursos-fiscais-quatro-editais-podem-sair-ainda-em-abril-de-2026/",
+      "summary": "Iniciativa é destinada a coordenadores pedagógicos de escolas de Ensino Fundamental da rede pública e a formadores da Semed.",
+      "details": "Iniciativa é destinada a coordenadores pedagógicos de escolas de Ensino Fundamental da rede pública e a formadores da Semed.",
+      "url": "https://sindireceita.org.br/noticias/2026/04/24/analistas-tributarias-e-analistas-tributarios-participam-de-formacao-em-cidadania-e-educacao-fiscal-em-aracajuse",
       "source": "www.gov.br",
       "category": "macro",
       "tags": [
@@ -289,14 +601,14 @@
       "updatedAt": "2026-04-24T15:23:51Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://magistrarcursos.com.br/blog/wp-content/uploads/2026/04/concurseiro.webp"
+      "imageUrl": "https://sindireceita.org.br/api/site/media/0W5jIauC-THbk8VFsSGBq"
     },
     {
       "id": "latest-77bcb3911a3de9b32ad71311",
       "title": "Ibovespa recua em meio a incertezas EUA-Irã e cautela com decisões de BCs",
-      "summary": "Uso indiscriminado de defensivos agrícolas gera impactos ambientais e pode levar à morte",
-      "details": "Uso indiscriminado de defensivos agrícolas gera impactos ambientais e pode levar à morte",
-      "url": "https://www.gov.br/prf/pt-br/noticias/estaduais/sao-paulo/prf-apreende-aproximadamente-50-kg-de-agrotoxicos-sem-documentacao-fiscal-na-dutra",
+      "summary": "No radar está a desconfiança de investidores em meio ao vai e vem de notícias desencontradas sobre as tensões entre Estados Unidos, Israel e Irã",
+      "details": "No radar está a desconfiança de investidores em meio ao vai e vem de notícias desencontradas sobre as tensões entre Estados Unidos, Israel e Irã",
+      "url": "https://www.jornaldocomercio.com/economia/2026/04/1246115-ibovespa-recua-em-meio-a-incertezas-eua-ira-e-cautela-com-decisoes-de-bcs.html",
       "source": "Jornal do Comércio",
       "category": "latest",
       "tags": [
@@ -308,14 +620,33 @@
       "updatedAt": "2026-04-24T15:22:30Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.gov.br/prf/pt-br/noticias/estaduais/sao-paulo/prf-apreende-aproximadamente-50-kg-de-agrotoxicos-sem-documentacao-fiscal-na-dutra/image-4.png/@@images/cf522c81-7f79-4eab-a279-e37559968bb6.png"
+      "imageUrl": "https://www.jornaldocomercio.com/_midias/jpg/2023/12/19/artes_materias_site_brasil-10420954.jpg"
+    },
+    {
+      "id": "macro-edb6a1f6fc185f9097001a5d",
+      "title": "Analistas-Tributárias e Analistas-Tributários participam de Formação em Cidadania e Educação Fiscal em Aracaju/SE",
+      "summary": "Pesquisadores da empresa de segurança digital ESET identificaram uma nova campanha de fraude digital",
+      "details": "Pesquisadores da empresa de segurança digital ESET identificaram uma nova campanha de fraude digital",
+      "url": "https://convergenciadigital.com.br/seguranca/novo-golpe-usa-site-fake-da-receita-federal-para-cobrar-falsa-divida-por-pix/",
+      "source": "Sindireceita",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-24T15:17:00Z",
+      "updatedAt": "2026-04-24T15:17:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://convergenciadigital.com.br/wp-content/uploads/2023/07/golpe-online.jpg"
     },
     {
       "id": "macro-89bfa3c6e5599149ddd3a528",
       "title": "PRF apreende aproximadamente 50 kg de agrotóxicos sem documentação fiscal na Dutra",
-      "summary": "No radar está a desconfiança de investidores em meio ao vai e vem de notícias desencontradas sobre as tensões entre Estados Unidos, Israel e Irã",
-      "details": "No radar está a desconfiança de investidores em meio ao vai e vem de notícias desencontradas sobre as tensões entre Estados Unidos, Israel e Irã",
-      "url": "https://www.jornaldocomercio.com/economia/2026/04/1246115-ibovespa-recua-em-meio-a-incertezas-eua-ira-e-cautela-com-decisoes-de-bcs.html",
+      "summary": "Sites utilizam de forma indevida o logotipo do órgão.",
+      "details": "Sites utilizam de forma indevida o logotipo do órgão.",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/receita-federal-alerta-sobre-sites-que-simulam-o-leilao-de-mercadorias-apreendidas",
       "source": "www.gov.br",
       "category": "macro",
       "tags": [
@@ -327,14 +658,14 @@
       "updatedAt": "2026-04-24T15:16:07Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.jornaldocomercio.com/_midias/jpg/2023/12/19/artes_materias_site_brasil-10420954.jpg"
+      "imageUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/receita-federal-alerta-sobre-sites-que-simulam-o-leilao-de-mercadorias-apreendidas/fraudes-leilao.png/@@images/c073612e-cc85-4e1a-8017-e49d278a6ca6.png"
     },
     {
       "id": "macro-89a0443534163e9872fe4ddb",
       "title": "Concursos fiscais: quatro editais podem sair ainda em abril de 2026",
-      "summary": "Dólar hoje abre a R$ 5,01 no Brasil com mercado atento à tensão no Oriente Médio e cenário global de risco",
-      "details": "Dólar hoje abre a R$ 5,01 no Brasil com mercado atento à tensão no Oriente Médio e cenário global de risco",
-      "url": "https://sounews.com.br/dolar-hoje-abre-a-r-501-no-brasil-com-mercado-atento-a-tensao-no-oriente-medio-e-cenario-global-de-risco/",
+      "summary": "Uso indiscriminado de defensivos agrícolas gera impactos ambientais e pode levar à morte",
+      "details": "Uso indiscriminado de defensivos agrícolas gera impactos ambientais e pode levar à morte",
+      "url": "https://www.gov.br/prf/pt-br/noticias/estaduais/sao-paulo/prf-apreende-aproximadamente-50-kg-de-agrotoxicos-sem-documentacao-fiscal-na-dutra",
       "source": "Magistrar",
       "category": "macro",
       "tags": [
@@ -346,14 +677,14 @@
       "updatedAt": "2026-04-24T15:09:13Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://sounews.com.br/wp-content/uploads/2026/04/18e61ffc6c7af5e1b7cde32cd0c29871.jpeg"
+      "imageUrl": "https://www.gov.br/prf/pt-br/noticias/estaduais/sao-paulo/prf-apreende-aproximadamente-50-kg-de-agrotoxicos-sem-documentacao-fiscal-na-dutra/image-4.png/@@images/cf522c81-7f79-4eab-a279-e37559968bb6.png"
     },
     {
       "id": "latest-6282e5ee11e0c0df948cbb83",
       "title": "Dólar hoje abre a R$ 5,01 no Brasil com mercado atento à tensão no Oriente Médio e cenário global de risco",
-      "summary": "Contratos só poderão ter como referência variáveis de natureza econômico-financeira, como índices de preços, juros e commodities",
-      "details": "Contratos só poderão ter como referência variáveis de natureza econômico-financeira, como índices de preços, juros e commodities",
-      "url": "https://finsidersbrasil.com.br/regulamentacao/cmn-proibe-derivativos-de-apostas-esportivas-e-freia-mercado-preditivo/",
+      "summary": "Dólar hoje abre a R$ 5,01 no Brasil com mercado atento à tensão no Oriente Médio e cenário global de risco",
+      "details": "Dólar hoje abre a R$ 5,01 no Brasil com mercado atento à tensão no Oriente Médio e cenário global de risco",
+      "url": "https://sounews.com.br/dolar-hoje-abre-a-r-501-no-brasil-com-mercado-atento-a-tensao-no-oriente-medio-e-cenario-global-de-risco/",
       "source": "sounews.com.br",
       "category": "latest",
       "tags": [
@@ -365,14 +696,14 @@
       "updatedAt": "2026-04-24T15:07:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://finsidersbrasil.com.br/wp-content/uploads/2025/04/0N8ScCGv-DESTAQUE-bolsa-de-valores-2.webp"
+      "imageUrl": "https://sounews.com.br/wp-content/uploads/2026/04/18e61ffc6c7af5e1b7cde32cd0c29871.jpeg"
     },
     {
       "id": "macro-ea468a650c946af8f0c12a56",
       "title": "Novo golpe usa site fake da Receita Federal para cobrar falsa dívida por PIX",
-      "summary": "Sites utilizam de forma indevida o logotipo do órgão.",
-      "details": "Sites utilizam de forma indevida o logotipo do órgão.",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/receita-federal-alerta-sobre-sites-que-simulam-o-leilao-de-mercadorias-apreendidas",
+      "summary": "SEFAZ DF e SEFAZ CE estão com publicação iminente; ISS Porto Velho e ISS Manaus também avançam e podem divulgar editais nas próximas semanas",
+      "details": "SEFAZ DF e SEFAZ CE estão com publicação iminente; ISS Porto Velho e ISS Manaus também avançam e podem divulgar editais nas próximas semanas",
+      "url": "https://magistrarcursos.com.br/blog/concursos-fiscais-quatro-editais-podem-sair-ainda-em-abril-de-2026/",
       "source": "ConvergenciaDigital",
       "category": "macro",
       "tags": [
@@ -384,13 +715,13 @@
       "updatedAt": "2026-04-24T15:01:57Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/abril/receita-federal-alerta-sobre-sites-que-simulam-o-leilao-de-mercadorias-apreendidas/fraudes-leilao.png/@@images/c073612e-cc85-4e1a-8017-e49d278a6ca6.png"
+      "imageUrl": "https://magistrarcursos.com.br/blog/wp-content/uploads/2026/04/concurseiro.webp"
     },
     {
       "id": "latest-43b9e76783d329a0d0156d09",
       "title": "Portabilidade de Crédito Pessoal Sem Garantia: A Revolução que Promete Dar Mobilidade ao Consumidor no Mercado Financeiro",
-      "summary": "A portabilidade de crédito pessoal via Open Finance permite reavaliar empréstimos já contratados, oferecendo melhores condições e maior mobilidade ao cliente. A mudança facilita a competição e a escolha consciente, transformando a relação com instituições financeiras.",
-      "details": "A portabilidade de crédito pessoal via Open Finance permite reavaliar empréstimos já contratados, oferecendo melhores condições e maior mobilidade ao cliente. A mudança facilita a competição e a escolha consciente, transformando a relação com instituições financeiras.",
+      "summary": "Atualizacao de ultima hora capturada em Repórter Maceió.",
+      "details": "",
       "url": "https://reportermaceio.com.br/portabilidade-de-credito-pessoal-sem-garantia-a-revolucao-que-promete-dar-mobilidade-ao-consumidor-no-mercado-financeiro/",
       "source": "Repórter Maceió",
       "category": "latest",
@@ -402,51 +733,14 @@
       "publishedAt": "2026-04-24T14:58:00Z",
       "updatedAt": "2026-04-24T14:58:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://reportermaceio.com.br/wp-content/uploads/2026/04/1777042740_cbp6aEpt-open_adobe_-jpeg.webp"
-    },
-    {
-      "id": "macro-0e8e3eef8a2ecd2c83ad2614",
-      "title": "Procuradora encerra investigação criminal contra presidente do Fed",
-      "summary": "Atualizacao de macro capturada em UOL Economia.",
-      "details": "",
-      "url": "https://noticias.uol.com.br/ultimas-noticias/afp/2026/04/24/procuradora-dos-eua-encerra-investigacao-contra-presidente-do-fed.htm",
-      "source": "UOL Economia",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:57:30Z",
-      "updatedAt": "2026-04-24T14:57:30Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-c52f66886d455f30d91cf05a",
-      "title": "Procuradora dos EUA encerra investigação contra presidente do Fed",
-      "summary": "Atualizacao de macro capturada em UOL Notícias.",
-      "details": "",
-      "url": "https://economia.uol.com.br/noticias/redacao/2026/04/24/procuradora-encerra-investigacao-criminal-contra-presidente-do-fed.ghtm",
-      "source": "UOL Notícias",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:52:47Z",
-      "updatedAt": "2026-04-24T14:52:47Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-f6128ab7c68d64a4d289d9a6",
       "title": "Novo processo de importação eleva exigência técnica e muda rotina das empresas brasileiras",
-      "summary": "Promotores dos EUA encerraram a investigação criminal contra o presidente do Federal Reserve, Jerome Powell, medida que pode facilitar a confirmação de Kevin Warsh pelo Senado como próximo presidente do Federal Reserve.Jeanine Pirro, procuradora dos EUA para o Distrito de Columbi",
-      "details": "Promotores dos EUA encerraram a investigação criminal contra o presidente do Federal Reserve, Jerome Powell, medida que pode facilitar a confirmação de Kevin Warsh pelo Senado como próximo presidente do Federal Reserve.Jeanine Pirro, procuradora dos EUA para o Distrito de Columbia, disse na sexta-f…",
-      "url": "https://br.tradingview.com/news/invezz:c1909a341bc81:0/",
+      "summary": "Atualizacao de empresas capturada em uaaau.com.br.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxObmtHRFlnSXVmNEZFdWI1amxxa0tqUHV4Q3ZVa0dLU0cwdGFVOThoNmxXN1ExYzFvVzFWcGZValVOMnlEWGpYNjBELTFLQURwc0xwX0pxX0I2b2VYVV8zVFR3NmhjZ08zRFVyelpMVHgyQWc0MUIxcGJoOW1UUnJmQWxyby03SlpwNEFZUVdmUnpPZTVlelZMOU5vdXo1MTF2R01wUUlGVGFCanYtc09pcm5TRHJjUktnOVRhanVwbjhTM2FjWXREaUJ3?oc=5",
       "source": "uaaau.com.br",
       "category": "companies",
       "tags": [
@@ -457,34 +751,14 @@
       "publishedAt": "2026-04-24T14:50:28Z",
       "updatedAt": "2026-04-24T14:50:28Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
-    },
-    {
-      "id": "macro-c4a78919e3d9cf26fbc0f564",
-      "title": "DOJ encerra investigação sobre Powell e abre caminho para indicação de Warsh ao Fed",
-      "summary": "Implementação do NPI amplia controle, exige consistência de dados e impõe nova lógica operacional no comércio exterior O Novo Processo de Importação (NPI) marca uma mudança estrutural no com&ea...",
-      "details": "Implementação do NPI amplia controle, exige consistência de dados e impõe nova lógica operacional no comércio exterior O Novo Processo de Importação (NPI) marca uma mudança estrutural no com&ea...",
-      "url": "https://www.uaaau.com.br/imprensa-livre/novo-processo-de-importacao-eleva-exigencia-tecnica-e-muda-rotina-das-empresas-brasileiras",
-      "source": "TradingView",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:50:18Z",
-      "updatedAt": "2026-04-24T14:50:18Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.uaaau.com.br/imagens/blog_28071/1777041818_c7347734-ebad-47ea-890c-ea82582e5808.jpg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "latest-3246ae2d78ae91ebcc86b58d",
       "title": "CMN proíbe derivativos ligados a apostas esportivas e eventos políticos no Brasil",
-      "summary": "Segundo informações publicadas pelo jornal Folha de S.Paulo, a equipe encarregada do programa econômico do pré-candidato à Presidência Flávio Bolsonaro",
-      "details": "Segundo informações publicadas pelo jornal Folha de S.Paulo, a equipe encarregada do programa econômico do pré-candidato à Presidência Flávio Bolsonaro",
-      "url": "https://www.tnh1.com.br/variedades/brasil-pode-mudar-regra-apos-2026-e-travar-aumento-de-aposentadorias/",
+      "summary": "Atualizacao de ultima hora capturada em BNLData.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQXzlvNzBiQU9lNWZGWldVQjczOWRmNVloYThaN1I0cUUtMko3ZzlLSTc0NWo5cUw2RU5CVDQ3RTVFeDNTNEdFa1hJUzlOYnNwazVXUnp5SjUyNGN1a05HTGhXRVRqYVRnanhyS3k0QU8tV0x3cmpzdzM1Vng0QVg4RDJ2TExOUUh6U0hxRWVVMm8xMHNNSzVlYnNzVDZPcGkzV0dncHU5Nkg?oc=5",
       "source": "BNLData",
       "category": "latest",
       "tags": [
@@ -495,34 +769,14 @@
       "publishedAt": "2026-04-24T14:48:54Z",
       "updatedAt": "2026-04-24T14:48:54Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.tnh1.com.br/variedades/wp-content/uploads/2025/12/economia-previdencia-social-inss-20170317-001.webp"
-    },
-    {
-      "id": "macro-32d60984b3b39961e7037d50",
-      "title": "Brasil pode mudar regra após 2026 e travar aumento de aposentadorias",
-      "summary": "CMN proíbe derivativos ligados a eventos esportivos, jogos online e políticos no Brasil. Resolução 5.298 entra em vigor dia 4 de maio.",
-      "details": "CMN proíbe derivativos ligados a eventos esportivos, jogos online e políticos no Brasil. Resolução 5.298 entra em vigor dia 4 de maio.",
-      "url": "https://bnldata.com.br/cmn-proibe-derivativos-ligados-a-apostas-esportivas-e-eventos-politicos-no-brasil/",
-      "source": "TNH1",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:48:01Z",
-      "updatedAt": "2026-04-24T14:48:01Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://bnldata.com.br/wp-content/uploads/2025/07/banco-central-suspende-arranjo-de-pix-de-seis-instituicoes-de-pagamentos.png"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-40028de8f99b0ba369f3bd32",
       "title": "CMN proíbe negociações de apostas esportivas e de outras naturezas no mercado de derivativos",
       "summary": "Atualizacao de ultima hora capturada em Tribuna do Sertão.",
       "details": "",
-      "url": "https://noticias.uol.com.br/ultimas-noticias/deutschewelle/2026/04/24/alemanha-corta-pela-metade-previsao-de-crescimento-do-pib.htm?uol_app=placaruol%3F%3Ft",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQOEVwRkVLdDVJNWdXMUp4cXdZSXkyMGNpS3pMT05WZ0NuNWZPemtQVVJuMnB5WERCZDdQVGljaVBqd2tVdlo1c255UWVmQjkzX2NrY2RIZGFjN21XUTRRWWI4dFJnczhPWUM4OEk0bWZJOHdrR3JabWl2VTJVRXpUblhwaWFSRV9mRVFzbDFxcWpPYnI5NUU5dmdoSmUxaGNmTkpSa1Y4eG4zalpSVzcyZDhWTFZ3Y0o3ek05TmhlY0swT0I3WEFUUTd2cERETFozUlZQdVozLWtublZjU1FhVzBTRnpzQQ?oc=5",
       "source": "Tribuna do Sertão",
       "category": "latest",
       "tags": [
@@ -536,162 +790,11 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-2653c7750c95299b8f40e0ec",
-      "title": "A P&G alerta para um impacto de US$ 1 bilhão em seus lucros no ano fiscal de 2027 devido ao aumento dos preços do petróleo.",
-      "summary": "Por Alexander Marrow e Juveria TabassumA gigante norte-americana de bens de consumo Procter & Gamble NYSE:PG alertou na sexta-feira para um impacto negativo de aproximadamente US$ 1 bilhão em seu lucro líquido de 2027 devido à alta dos preços do petróleo, juntando-se a uma série ",
-      "details": "Por Alexander Marrow e Juveria TabassumA gigante norte-americana de bens de consumo Procter & Gamble NYSE:PG alertou na sexta-feira para um impacto negativo de aproximadamente US$ 1 bilhão em seu lucro líquido de 2027 devido à alta dos preços do petróleo, juntando-se a uma série de empresas globais…",
-      "url": "https://br.tradingview.com/news/reuters.com,2026:newsml_L1N4170QJ:0/",
-      "source": "TradingView",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:45:18Z",
-      "updatedAt": "2026-04-24T14:45:18Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
-    },
-    {
-      "id": "macro-85f5dcdcc75223ac09a5fa72",
-      "title": "Alemanha corta pela metade previsão de crescimento do PIB",
-      "summary": "Nova resolução restringe operações a contratos ligados apenas a índices e ativos financeiros tradicionais.",
-      "details": "Nova resolução restringe operações a contratos ligados apenas a índices e ativos financeiros tradicionais.",
-      "url": "https://www.tribunadosertao.com.br/geral/2026/04/24/891848-cmn-proibe-negociacoes-de-apostas-esportivas-e-de-outras-naturezas-no-mercado-de-derivativos",
-      "source": "UOL Notícias",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:44:00Z",
-      "updatedAt": "2026-04-24T14:44:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://img.dhost.cloud/fnjpcZ0DkWxInNzjr1efudThPNo=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/27b2a/e336b9c73f93c0e271b4c16b0cd0690935b.png"
-    },
-    {
-      "id": "macro-5969fa314a14d3119d5ec975",
-      "title": "TCU revisa entendimento sobre prejuízo fiscal e reforça segurança em transações tributárias",
-      "summary": "Decisão atende recurso da Procuradoria-Geral da Fazenda Nacional e restabelece distinção entre descontos e formas de quitação de dívidas com a União",
-      "details": "Decisão atende recurso da Procuradoria-Geral da Fazenda Nacional e restabelece distinção entre descontos e formas de quitação de dívidas com a União",
-      "url": "https://veja.abril.com.br/economia/tcu-revisa-entendimento-sobre-prejuizo-fiscal-e-reforca-seguranca-em-transacoes-tributarias/",
-      "source": "VEJA",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:43:29Z",
-      "updatedAt": "2026-04-24T14:43:29Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://veja.abril.com.br/wp-content/uploads/2022/06/TCU-TRIBUNAL-DE-CONTAS-DA-UNIAO-FACHADA_1.jpg?quality=70&strip=info&resize=1080,565&crop=1"
-    },
-    {
-      "id": "macro-793afbb554ce5feefa177d37",
-      "title": "Departamento de Justiça dos EUA encerra investigação criminal contra presidente do Fed",
-      "summary": "O Departamento de Justiça dos Estados Unidos retirou nesta sexta-feira (24) a investigação criminal contra o presidente do Federal Reserve, Jerome Powell.",
-      "details": "O Departamento de Justiça dos Estados Unidos retirou nesta sexta-feira (24) a investigação criminal contra o presidente do Federal Reserve, Jerome Powell.",
-      "url": "https://timesbrasil.com.br/mundo/departamento-de-justica-dos-eua-encerra-investigacao-criminal-contra-presidente-do-fed/",
-      "source": "Times Brasil | CNBC",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:31:00Z",
-      "updatedAt": "2026-04-24T14:31:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2025/04/d7e17a5c-apf20250416098-scaled.jpg"
-    },
-    {
-      "id": "macro-a4c796672719a6318166a953",
-      "title": "Trump admite alternativa para investigar presidente do Fed e abre saída para impasse no BC",
-      "summary": "Ideia pode destravar uma disputa na Justiça que hoje trava aprovação do indicado para chefiar a instituição",
-      "details": "Ideia pode destravar uma disputa na Justiça que hoje trava aprovação do indicado para chefiar a instituição",
-      "url": "https://oglobo.globo.com/economia/noticia/2026/04/24/trump-admite-alternativa-para-investigar-presidente-do-fed-e-abre-saida-para-impasse-no-bc.ghtml",
-      "source": "O GLOBO",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:29:24Z",
-      "updatedAt": "2026-04-24T14:29:24Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-oglobo.glbimg.com/xkJSr1rhVk65sWZ_wxInn61wb10=/4000x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/U/T/2xFzE4TOay8wJAjKqXJQ/powell-nova-bloomberg.jpg"
-    },
-    {
-      "id": "macro-c326f349b9ab18356fa0dd04",
-      "title": "EUA: Departamento de Justiça encerra investigação contra Powell, presidente do Fed",
-      "summary": "A portabilidade de crédito pessoal via Open Finance permite reavaliar empréstimos, oferecendo alternativas melhores e maior mobilidade ao cliente, rompendo a rigidez do mercado antigo.",
-      "details": "A portabilidade de crédito pessoal via Open Finance permite reavaliar empréstimos, oferecendo alternativas melhores e maior mobilidade ao cliente, rompendo a rigidez do mercado antigo.",
-      "url": "https://reportermaceio.com.br/portabilidade-de-credito-pessoal-por-open-finance-transformando-relacao-cliente-instituicao-e-aumentando-a-concorrencia-no-mercado-financeiro/",
-      "source": "InfoMoney",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:28:05Z",
-      "updatedAt": "2026-04-24T14:28:05Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://reportermaceio.com.br/wp-content/uploads/2026/04/cbp6aEpt-open_adobe_-jpeg.webp"
-    },
-    {
-      "id": "macro-3788bf98f31b4d93ea79a27f",
-      "title": "Governo dos EUA deve abandonar investigação criminal contra Powell, do Fed, diz TV",
-      "summary": "Atualizacao de macro capturada em Valor Econômico.",
-      "details": "",
-      "url": "https://br.investing.com/news/politics-news/departamento-de-justica-deve-encerrar-investigacao-criminal-sobre-presidente-do-fed-powell-1909685",
-      "source": "Valor Econômico",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:27:02Z",
-      "updatedAt": "2026-04-24T14:27:02Z",
-      "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-f78430c3919f6e090ef5d652",
-      "title": "Departamento de Justiça deve encerrar investigação criminal sobre presidente do Fed, Powell",
-      "summary": "Possível encerramento ocorre em meio a pressões políticas e críticas a aliados de Donald Trump, que vinham usando a investigação para atacar o Fed",
-      "details": "Possível encerramento ocorre em meio a pressões políticas e críticas a aliados de Donald Trump, que vinham usando a investigação para atacar o Fed",
-      "url": "https://valor.globo.com/financas/noticia/2026/04/24/governo-dos-eua-deve-abandonar-investigacao-criminal-contra-powell-do-fed-diz-tv.ghtml",
-      "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-24T14:24:00Z",
-      "updatedAt": "2026-04-24T14:24:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/WNEoBSY2dAsO8H2e_Xol86jdhrA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2023/U/0/AdAA9eSKaBkxfw6ktreg/402212727.jpg"
-    },
-    {
       "id": "latest-4591dbe737586d672f628efa",
       "title": "Portabilidade de Crédito Pessoal por Open Finance: Transformando Relação Cliente-Instituição e Aumentando a Concorrência no Mercado Financeiro",
-      "summary": "Jeanine Pirro, procuradora federal-chefe do Distrito de Columbia, anunciou a decisão de encerrar a investigação sobre Powell",
-      "details": "Jeanine Pirro, procuradora federal-chefe do Distrito de Columbia, anunciou a decisão de encerrar a investigação sobre Powell",
-      "url": "https://www.infomoney.com.br/mundo/eua-departamento-de-justica-encerra-investigacao-contra-powell-presidente-do-fed/",
+      "summary": "Atualizacao de ultima hora capturada em Repórter Maceió.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOYW9LMmt5MjcyX3BzUkpmQWZXNDhrb2RtbmdyUl9mWkFxelQyTE9sa0hRVW1ZVmt1S2o5di1XT1VWYVNqa3FaYVBBTjVuZUVJLUEtRWdsU2ZjWEI3aWpCZnlWMGZqWGFaRmZXVDhLWkdnOUY1TlNrZ2VOd19qZ1ozUU0zNEExclRMMGs4V2JnYkRJaUE4aHpLR1UxOU1wZkJGOFBCZHBBWTlqWmxXamJuOHZWM3JpQ2ItOWhWRDBsMS0ydzJvQmNXNndZM0lsLWlnRU53YklOT3BaVWFLNzM3THFkTmtPTjJna3pnMW9UdjczcjNDQ3c5S0lvWkJZVnJWYWc?oc=5",
       "source": "Repórter Maceió",
       "category": "latest",
       "tags": [
@@ -702,15 +805,14 @@
       "publishedAt": "2026-04-24T14:23:00Z",
       "updatedAt": "2026-04-24T14:23:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2025/10/2025-10-14T165019Z_1_LYNXNPEL9D0YG_RTROPTP_4_USA-FED-SHUTDOWN.jpg?quality=70"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-8f5127e47fe88a3b179e188e",
       "title": "Sexta-feira, 24/04/2026 - Noticias sobre o mercado financeiro, com Álvaro Bandeira",
-      "summary": "Assista ao vídeo com comentários do economista, de segunda a sexta-feira, no YouTube ou no portal do JORNAL DO BRASIL.",
-      "details": "Assista ao vídeo com comentários do economista, de segunda a sexta-feira, no YouTube ou no portal do JORNAL DO BRASIL.",
-      "url": "https://www.jb.com.br/economia/2026/04/1059393-sexta-feira-24-04-2026-noticias-sobre-o-mercado-financeiro-com-alvaro-bandeira.html",
+      "summary": "Atualizacao de ultima hora capturada em Jornal do Brasil.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNSXF4VXVFdHF2b2IwelU3QzlyOXBZazhfZkhCSXUtNld1V2FLT29heEhfTUoydjFxWXFXY1hvRVdpNk5mLTNBb0R1N1FDd2p1cEdnX2d6dXNUMUdreFAyU2t0dzRGYVlmcVRXTndscG42YjgtejBydUt5eHBCbUpTaWo2R1FZYXFFdjRhcEw1b3AwVG15dHVHQWdVRGQyUFJ4Qm5FQV96dmlnU3pmNzRtS1ZseXBNdzluTWxwQ1UzbldJTzhCSGVZazlPT1lIQ2c?oc=5",
       "source": "Jornal do Brasil",
       "category": "latest",
       "tags": [
@@ -721,8 +823,25 @@
       "publishedAt": "2026-04-24T14:18:00Z",
       "updatedAt": "2026-04-24T14:18:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.youtube.com/watch?v=RWMYnoVXb48"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-39ed12969afce17c43fdc16f",
+      "title": "Ibovespa Hoje Ao Vivo: Bolsa cai e tenta manter os 191 mil pontos",
+      "summary": "Atualizacao de ultima hora capturada em InfoMoney.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVnNwRThTNTczTlRPMUFMLVJ3MzlRQlR6dGdEd3JjRUZlMjlyYmdOZ3pQTkx5Yzh6czNGRENSQ2lHaUZuSnNHcmZEWE5nZGQ0OU85ZUdMVXBKYkc2SWtsWlMxcUFOWWwzZGRsRXpiMkVRakJNTHhweTRTVDlPLWpRVHZEYTJfdkVuZjhwT0Q4UQ?oc=5",
+      "source": "InfoMoney",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-04-24T14:10:25Z",
+      "updatedAt": "2026-04-24T14:10:25Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-c3d03ba1b59cc933cac15baa",
@@ -747,7 +866,7 @@
       "title": "STF valida restrições à compra de terras por estrangeiros; entenda o que muda",
       "summary": "Atualizacao de empresas capturada em CompreRural.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVGl0c2Q2STRFZjZoVl9PNXlsbC1qVkVIZldyTzZWUlJQVnJsS2FjTnRtbkZRbElDN19CTTgtMlRhYkMtZFdyblItcW02eDJHdnlVTE90d2psVHB4d3VmbmZTa3UzSVdSQmFnY2txOGVIYTZ1VVFBaXBlOGViSU5BMExWT01JSmVMQnpEMUlMYjE2Y091bTBVcmZaTjk3cHVkaDQxZmw2VXg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPTGM0X3I1Ym9yOTVWQ0t6OWFQaURuWHdpdldvZVZBcS00Zm85djdqSUwxNmRoSWFwWmVKWDAwT1FnMVYyTGlHelRKVkU4NnRjanJyX3d3ZHJkaXFEYlp0d2RwbmdWSEtaZV9WSkZMb2xYNm1rbWxLMmpELTV0WS1nSmpPMU52bFFWUXdsSVAxMm5yYV8wbDNwemRXR3c0N051dGJj?oc=5",
       "source": "CompreRural",
       "category": "companies",
       "tags": [
@@ -851,42 +970,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-1e97c155483a0833540616d6",
-      "title": "Meio-Dia Mercado: O Ibovespa operava instável, seguindo a cautela global diante das tensões no Oriente Médio",
-      "summary": "Atualizacao de ultima hora capturada em ADVFN.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZUVzdEt5dHM0UHVTWTdNeGJtbHFGQUg0SnNJVGFsaFpxNDV1LVpEOEtKMnRmMjZJY1NsOU52MFFia0RmT0txT1pZUkd6WUhHSlRuZkgxREo4bE5YMVBNZlozRlVXZEpianhUUWRpSV9QUTBYa2tfc2diRVFFczF5WTRhaUNxeFFESmlrTmhPQXBEVl91OGlSbnp0bU9lbnRZeE54T1ZqWWprYi1za29YNFZNOXBYU2dUTEpUaXlGdXdWSjJUM0JsV0tSTXdnV19EaG1XTXNNX0ItZw?oc=5",
-      "source": "ADVFN",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-04-24T13:46:17Z",
-      "updatedAt": "2026-04-24T13:46:17Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-124c7cbd064a4b228a11ad4f",
-      "title": "Ibovespa abre fraco com tensão no Oriente Médio",
-      "summary": "Atualizacao de ultima hora capturada em SpaceMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRVNidjlHaEJadUtoR3M0UTFSSGtKNlpVWVlieWREMnFIckJVQjlSdXlGN3I5RlY5X3NNeV80anNrVmFCMUdzZy1BdjNKWkxSbEdWeGZuMUlpUTkwb3JVQXp1RFg4STQ0cEVLMW1TZ2NzSE1VVDdfQ1JDbTRUc3k1Nzkxa09QM3BXODRWbkhfeTFLQkNHeWZ4eFoyeHlqeWR1M3hzR2k1Tks?oc=5",
-      "source": "SpaceMoney",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-04-24T13:44:14Z",
-      "updatedAt": "2026-04-24T13:44:14Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "companies-cbb1d7ba0a30d1e4a9d568fe",
       "title": "Superávit no comércio exterior cresce, mas pressão sobre margens exige novas estratégias das empresas brasileiras",
       "summary": "Atualizacao de empresas capturada em RADAR DIGITAL BRASÍLIA.",
@@ -903,60 +986,6 @@
       "updatedAt": "2026-04-24T13:34:20Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "latest-2680f63293d9ae5abff29ee9",
-      "title": "Núclea se filia à ANCORD e reforça expansão da associação no mercado financeiro",
-      "summary": "Atualizacao de ultima hora capturada em CQCS.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdi1jLTF3aERFRE5vZTJYckVEbjcyaG5ibE5xTkFxOW9tWnh2d210cXBVLTNWMGFncmU5SzZ1VkNLSG1VUVlOMjVQVmZxWkljb0RkU2FfUkFwV1d3LVZ1RWlJUUVrTHNvRHhRV05ydzJKNDFyVF9rMk5wakhBSkkyTDdDeU5GTl9OMlpQYXpIcDFHVXd5dml4R1NlWW9yMm1qZ2Vra19mbVVYUGN3?oc=5",
-      "source": "CQCS",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-04-24T13:25:29Z",
-      "updatedAt": "2026-04-24T13:25:29Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-675d4e65768ec764b5037a79",
-      "title": "Juros sobem com tensão e forte emissão do Tesouro",
-      "summary": "Atualizacao de ultima hora capturada em ES Brasil.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBuZHVVVDVqWnhMc2JFWlBlSURabTFxdER2WXMwVHhXMTlMWEd1dllCTVJIOWNfNFRFeFJZbzJuckFSdzh4SVdOUm5mOHVBYTVfbG5lYXRUSHRMSWJqNUwyRjdOY0RxSTFlS2ItcktUaGMwdU9xYnFDOGhOS25wRlU?oc=5",
-      "source": "ES Brasil",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-04-24T13:25:25Z",
-      "updatedAt": "2026-04-24T13:25:25Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-285bfa799af5ff120347d595",
-      "title": "Ibovespa cai ao menor nível desde abril com NY em baixa",
-      "summary": "Atualizacao de ultima hora capturada em ES Brasil.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1Xb2pCN1V5bEUyaFhkLS1kempKcWJ0NTNVLVlJZGNVcjlwWHRrelN5N01HTUZ3bWtyRUZrRnRvTjdFU2JwMHcyZmREMlVxdjc3WUJkeFJhN055aVZhQVI0M0VJeVNiT3lseXo5NVBETm1DZw?oc=5",
-      "source": "ES Brasil",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-04-24T13:06:42Z",
-      "updatedAt": "2026-04-24T13:06:42Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "funds-dc4047bd974dec53cafa0502",
@@ -1117,24 +1146,6 @@
       ],
       "publishedAt": "2026-04-24T09:00:26Z",
       "updatedAt": "2026-04-24T09:00:26Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-9838466f07db16fc529e44c8",
-      "title": "Fundos de investimento no Brasil crescem e revelam sistema paralelo",
-      "summary": "Atualizacao de fundos capturada em PaiPee.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVFl3VjFpS25fQTdzcnUtMWtPMDhFdjV0OEUyU29OdmhHZEF5bjYyZlVoUERMYkVIQ1d0ZHA4bXNEVWU1TzE5V2hxXzBtcGZpU0JkZjUyVmlObUJTWEgxS0pQaUFnLXo1ZGxEOE1EVTBuQUtMTDZMc3JBSnhJc0tIa2FNN1VCZ25lSDdZeWZLbjlPb1pxcldDdkctYjlubDBUNmdn?oc=5",
-      "source": "PaiPee",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-04-24T08:30:04Z",
-      "updatedAt": "2026-04-24T08:30:04Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
