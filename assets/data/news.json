@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-25T14:34:36Z",
-  "generatedAt": "2026-04-25T14:34:36Z",
+  "updatedAt": "2026-04-25T15:25:05Z",
+  "generatedAt": "2026-04-25T15:25:05Z",
   "categories": [
     {
       "id": "all",
@@ -39,6 +39,10 @@
     {
       "id": "band-com-br",
       "label": "band.com.br"
+    },
+    {
+      "id": "bpmoney",
+      "label": "BPMoney"
     },
     {
       "id": "brasil-247",
@@ -97,14 +101,6 @@
       "label": "FashionNetwork Brasil"
     },
     {
-      "id": "foco-mt",
-      "label": "FOCO MT"
-    },
-    {
-      "id": "folha-de-s-paulo",
-      "label": "Folha de S.Paulo"
-    },
-    {
       "id": "folhamax",
       "label": "FOLHAMAX"
     },
@@ -113,12 +109,16 @@
       "label": "G1"
     },
     {
+      "id": "gazeta-do-paran",
+      "label": "Gazeta do Paraná"
+    },
+    {
       "id": "infomoney",
       "label": "InfoMoney"
     },
     {
-      "id": "investidor10",
-      "label": "Investidor10"
+      "id": "investalk",
+      "label": "InvesTalk"
     },
     {
       "id": "investing-com-brasil-finan-as-c-mbio-e-investimentos",
@@ -129,8 +129,16 @@
       "label": "ISTOÉ DINHEIRO"
     },
     {
+      "id": "jornal-bras-lia-capital",
+      "label": "Jornal Brasília Capital"
+    },
+    {
       "id": "jornaldearuja-com",
       "label": "jornaldearuja.com"
+    },
+    {
+      "id": "lerunica-com-br",
+      "label": "lerunica.com.br"
     },
     {
       "id": "magistrar",
@@ -223,11 +231,30 @@
   ],
   "items": [
     {
-      "id": "macro-6649d9e85bdbdc214035dd5c",
-      "title": "Calendário Econômico: Copom, Fed, BCE, BoJ decidem juros em semana com feriado",
+      "id": "macro-eac134d73bf65397d3116285",
+      "title": "A alta do petróleo impacta o Bitcoin? Entenda por que a commodity pode mexer com o mercado cripto",
       "summary": "A reforma tributária do consumo impõe maior rigor na consistência de dados fiscais com a obrigatoriedade da NFS-e nacional a partir de 2026.",
       "details": "A reforma tributária do consumo impõe maior rigor na consistência de dados fiscais com a obrigatoriedade da NFS-e nacional a partir de 2026.",
       "url": "https://www.contabeis.com.br/noticias/76346/reforma-expoe-risco-fiscal-entre-entrada-e-saida-de-documentos/",
+      "source": "BPMoney",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-25T15:00:00Z",
+      "updatedAt": "2026-04-25T15:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.contabeis.com.br/assets/img/news/inbound-e-outbound-fiscal-o-risco-invisivel-que-a-reforma-tributaria-esta-expondo-nas-operacoes.png"
+    },
+    {
+      "id": "macro-6649d9e85bdbdc214035dd5c",
+      "title": "Calendário Econômico: Copom, Fed, BCE, BoJ decidem juros em semana com feriado",
+      "summary": "Os reflexos vão além da economia tradicional e também alcançam o mercado de criptomoedas, especialmente o Bitcoin",
+      "details": "Os reflexos vão além da economia tradicional e também alcançam o mercado de criptomoedas, especialmente o Bitcoin",
+      "url": "https://bpmoney.com.br/noticias/a-alta-do-petroleo-impacta-o-bitcoin-entenda-por-que-a-commodity-pode-mexer-com-o-mercado-cripto/",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -239,14 +266,14 @@
       "updatedAt": "2026-04-25T14:21:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.contabeis.com.br/assets/img/news/inbound-e-outbound-fiscal-o-risco-invisivel-que-a-reforma-tributaria-esta-expondo-nas-operacoes.png"
+      "imageUrl": "https://uploads.bpmoney.com.br/2026/04/Design-sem-nome-2.png"
     },
     {
       "id": "macro-0acc7c25c874a8bc159f5e5d",
       "title": "“Taxa das blusinhas só gerou inflação e arrecadação”, alerta economista",
-      "summary": "Audiência marcada para a próxima semana discutirá efeitos da contratação como PJ e julgamento no STF",
-      "details": "Audiência marcada para a próxima semana discutirá efeitos da contratação como PJ e julgamento no STF",
-      "url": "https://www.contabeis.com.br/noticias/76365/camara-debatera-pejotizacao-e-impacto-fiscal-e-trabalhista/",
+      "summary": "Atualizacao de macro capturada em tmc.com.br.",
+      "details": "",
+      "url": "https://br.investing.com/news/economic-indicators/calendario-economico-copom-fed-bce-boj-decidem-juros-em-semana-com-feriado-1910351",
       "source": "tmc.com.br",
       "category": "macro",
       "tags": [
@@ -257,15 +284,14 @@
       "publishedAt": "2026-04-25T14:14:59Z",
       "updatedAt": "2026-04-25T14:14:59Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.contabeis.com.br/assets/img/news/camara-debatera-pejotizacao-e-impacto-fiscal-e-trabalhista.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-fe27c7b8a457c7302452a616",
       "title": "Proposta prorroga benefício fiscal até dezembro e busca reduzir impacto no custo de alimentos em Santa Catarina",
-      "summary": "Produtores rurais participaram de uma capacitação sobre Nota Fiscal Eletrônica, realizada na última quarta e quinta-feira. A iniciativa buscou qualificar os participantes quanto ao uso da NF-e (Nota Fiscal Eletrônica) ou NFP-e, documento digital que substitui as antigas notas em ",
-      "details": "Produtores rurais participaram de uma capacitação sobre Nota Fiscal Eletrônica, realizada na última quarta e quinta-feira. A iniciativa buscou qualificar os participantes quanto ao uso da NF-e (Nota Fiscal Eletrônica) ou NFP-e, documento digital que substitui as antigas notas em papel. Durante a capacitação, foram abor",
-      "url": "https://radioaltouruguai.com.br/curso-de-nota-fiscal-eletronica-para-produtores-rurais-e-realizado-em-humaita/",
+      "summary": "Nova pesquisa aponta que demanda por compras internacionais de até US$ 50 caiu 19,4% após a implementação da taxa. Confira na íntegra.",
+      "details": "Nova pesquisa aponta que demanda por compras internacionais de até US$ 50 caiu 19,4% após a implementação da taxa. Confira na íntegra.",
+      "url": "https://tmc.com.br/economia/taxa-das-blusinhas-so-gerou-inflacao-e-arrecadacao-alerta-economista/",
       "source": "Rádio Araranguá FM 95.5",
       "category": "macro",
       "tags": [
@@ -277,7 +303,7 @@
       "updatedAt": "2026-04-25T14:02:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://radioaltouruguai.com.br/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-25-at-09.28.16-900x900.jpeg"
+      "imageUrl": "https://tmc.com.br/wp-content/uploads/2026/04/close-up-view-online-shopping-concept-scaled.jpg.optimal.jpg"
     },
     {
       "id": "companies-6925ec1a1c73d44e5d479141",
@@ -301,9 +327,9 @@
     {
       "id": "macro-c909ef0c128393992da8d19c",
       "title": "Câmara debaterá pejotização e impacto fiscal e trabalhista",
-      "summary": "Nova pesquisa aponta que demanda por compras internacionais de até US$ 50 caiu 19,4% após a implementação da taxa. Confira na íntegra.",
-      "details": "Nova pesquisa aponta que demanda por compras internacionais de até US$ 50 caiu 19,4% após a implementação da taxa. Confira na íntegra.",
-      "url": "https://tmc.com.br/economia/taxa-das-blusinhas-so-gerou-inflacao-e-arrecadacao-alerta-economista/",
+      "summary": "Parceria que batiza novo estádio do clube da MLS reforça movimento de expansão de marcas brasileiras e presença crescente de empreendedores do país no mercado norte-americano",
+      "details": "Parceria que batiza novo estádio do clube da MLS reforça movimento de expansão de marcas brasileiras e presença crescente de empreendedores do país no mercado norte-americano",
+      "url": "https://www.braziliantimes.com/business/empresas-brasileiras-avancam-nos-eua-e-encontram-na-florida-porta-de-entrada-para-expansao-2/",
       "source": "Portal Contabeis",
       "category": "macro",
       "tags": [
@@ -315,14 +341,14 @@
       "updatedAt": "2026-04-25T14:00:02Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://tmc.com.br/wp-content/uploads/2026/04/close-up-view-online-shopping-concept-scaled.jpg.optimal.jpg"
+      "imageUrl": "https://www.braziliantimes.com/wp-content/uploads/2025/04/sem-imagem-bt.jpg"
     },
     {
       "id": "macro-6ec4926263a5e967ee2a4607",
       "title": "Curso de Nota Fiscal Eletrônica para produtores Rurais é realizado em Humaitá",
-      "summary": "Atualizacao de macro capturada em Rádio Alto Uruguai.",
-      "details": "",
-      "url": "https://br.investing.com/news/economic-indicators/calendario-economico-copom-fed-bce-boj-decidem-juros-em-semana-com-feriado-1910351",
+      "summary": "Audiência marcada para a próxima semana discutirá efeitos da contratação como PJ e julgamento no STF",
+      "details": "Audiência marcada para a próxima semana discutirá efeitos da contratação como PJ e julgamento no STF",
+      "url": "https://www.contabeis.com.br/noticias/76365/camara-debatera-pejotizacao-e-impacto-fiscal-e-trabalhista/",
       "source": "Rádio Alto Uruguai",
       "category": "macro",
       "tags": [
@@ -333,14 +359,15 @@
       "publishedAt": "2026-04-25T13:30:51Z",
       "updatedAt": "2026-04-25T13:30:51Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.contabeis.com.br/assets/img/news/camara-debatera-pejotizacao-e-impacto-fiscal-e-trabalhista.jpg"
     },
     {
       "id": "macro-4729394748479740ec88f99a",
       "title": "Selic cai, mas crédito imobiliário continua caro. O que falta para as taxas caírem?",
-      "summary": "Parceria que batiza novo estádio do clube da MLS reforça movimento de expansão de marcas brasileiras e presença crescente de empreendedores do país no mercado norte-americano",
-      "details": "Parceria que batiza novo estádio do clube da MLS reforça movimento de expansão de marcas brasileiras e presença crescente de empreendedores do país no mercado norte-americano",
-      "url": "https://www.braziliantimes.com/business/empresas-brasileiras-avancam-nos-eua-e-encontram-na-florida-porta-de-entrada-para-expansao-2/",
+      "summary": "Atualizacao de macro capturada em ISTOÉ DINHEIRO.",
+      "details": "",
+      "url": "https://dgrj.com.br/politica/alerj-quer-ampliar-verba-de-deputados-mesmo-com-crise-fiscal-no-rio",
       "source": "ISTOÉ DINHEIRO",
       "category": "macro",
       "tags": [
@@ -351,8 +378,7 @@
       "publishedAt": "2026-04-25T13:00:31Z",
       "updatedAt": "2026-04-25T13:00:31Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.braziliantimes.com/wp-content/uploads/2025/04/sem-imagem-bt.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-43b2ea5e9dd60979c654d631",
@@ -374,30 +400,11 @@
       "imageUrl": "https://istoedinheiro.com.br/wp-content/uploads/sites/17/2025/09/hand-holding-key-outdoors.jpg"
     },
     {
-      "id": "macro-808c7b9b8866a658f9833e8b",
-      "title": "Cidades com pior IDH do Brasil recebem menos verba federal e estadual do que a média nacional",
-      "summary": "Segundo especialistas, principal distorção se deve aos repasses de fundo que inflam receita per capita de municípios menores",
-      "details": "Segundo especialistas, principal distorção se deve aos repasses de fundo que inflam receita per capita de municípios menores",
-      "url": "https://www1.folha.uol.com.br/cotidiano/2026/04/cidades-com-pior-idh-do-brasil-recebem-menos-verba-federal-e-estadual-do-que-a-media-nacional.shtml",
-      "source": "Folha de S.Paulo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-25T13:00:00Z",
-      "updatedAt": "2026-04-25T13:00:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://f.i.uol.com.br/fotografia/2026/03/26/177455380569c58acd7ae92_1774553805_3x2_lg.jpg"
-    },
-    {
       "id": "macro-f60d45af3a645886e61a95e8",
       "title": "Alerj quer ampliar verba de deputados mesmo com crise fiscal no Rio",
-      "summary": "Atualizacao de macro capturada em Diário da Guanabara.",
-      "details": "",
-      "url": "https://dgrj.com.br/politica/alerj-quer-ampliar-verba-de-deputados-mesmo-com-crise-fiscal-no-rio",
+      "summary": "Produtores rurais participaram de uma capacitação sobre Nota Fiscal Eletrônica, realizada na última quarta e quinta-feira. A iniciativa buscou qualificar os participantes quanto ao uso da NF-e (Nota Fiscal Eletrônica) ou NFP-e, documento digital que substitui as antigas notas em ",
+      "details": "Produtores rurais participaram de uma capacitação sobre Nota Fiscal Eletrônica, realizada na última quarta e quinta-feira. A iniciativa buscou qualificar os participantes quanto ao uso da NF-e (Nota Fiscal Eletrônica) ou NFP-e, documento digital que substitui as antigas notas em papel. Durante a capacitação, foram abor",
+      "url": "https://radioaltouruguai.com.br/curso-de-nota-fiscal-eletronica-para-produtores-rurais-e-realizado-em-humaita/",
       "source": "Diário da Guanabara",
       "category": "macro",
       "tags": [
@@ -408,14 +415,15 @@
       "publishedAt": "2026-04-25T12:49:11Z",
       "updatedAt": "2026-04-25T12:49:11Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://radioaltouruguai.com.br/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-25-at-09.28.16-900x900.jpeg"
     },
     {
       "id": "macro-e334299fab08c4b7b188af17",
       "title": "Sefaz publica edital de concurso para auditor-fiscal com 100 vagas e salário de R$ 16 mil no Ceará",
-      "summary": "Conquistar uma vaga de estágio em grandes bancos de investimento, como o BTG Pactual, Itaú BBA e XP Investimentos, é",
-      "details": "Conquistar uma vaga de estágio em grandes bancos de investimento, como o BTG Pactual, Itaú BBA e XP Investimentos, é",
-      "url": "https://www.correiobraziliense.com.br/aqui/2026/04/25/como-conseguir-um-estagio-no-btg-pactual-e-outros-bancos/",
+      "summary": "São 100 vagas imediatas e 200 vagas para cadastro de reserva. A salário inicial para os convocados será de R$ 16.136,64. O edital foi publicado Diário Oficial do Estado (DOE).",
+      "details": "São 100 vagas imediatas e 200 vagas para cadastro de reserva. A salário inicial para os convocados será de R$ 16.136,64. O edital foi publicado Diário Oficial do Estado (DOE).",
+      "url": "https://g1.globo.com/ce/ceara/suachance/noticia/2026/04/25/sefaz-publica-edital-de-concurso-para-auditor-fiscal-com-100-vagas-e-salario-de-r-16-mil-no-ceara.ghtml",
       "source": "G1",
       "category": "macro",
       "tags": [
@@ -427,14 +435,52 @@
       "updatedAt": "2026-04-25T12:48:08Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.correiobraziliense.com.br/aqui/wp-content/uploads/2026/04/jovem-entrevista_1776949533663.jpg"
+      "imageUrl": "https://s2-g1.glbimg.com/7quPaaAApTnQvFvNZLI0brnPyGY=/1600x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/Q/t/iM1T0pRmmWAAYzwwmFuw/concurso-da-sefaz-tem-mais-de-100-vagas.jpg"
+    },
+    {
+      "id": "macro-641336992c8c39b59d01895d",
+      "title": "Sefaz abre concurso para auditor-fiscal com 100 vagas e salário de R$ 16 mil",
+      "summary": "Regulamento fecha o cerco contra nova modalidade de apostas ilegais",
+      "details": "Regulamento fecha o cerco contra nova modalidade de apostas ilegais",
+      "url": "https://gazetadoparana.com.br/artigo/governo-anuncia-bloqueio-de-27-plataformas-de-mercado-preditivo",
+      "source": "G1",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-25T12:40:36Z",
+      "updatedAt": "2026-04-25T12:40:36Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://gazetadoparana.com.br/images/20260405152556_ogImage_36.jpg"
+    },
+    {
+      "id": "latest-af2c9a7535868d1798813871",
+      "title": "Governo anuncia bloqueio de 27 plataformas de mercado preditivo",
+      "summary": "Candidatos podem pedir isenção da taxa de inscrição; provas acontecem nos dias 1º e 2 de agosto.",
+      "details": "Candidatos podem pedir isenção da taxa de inscrição; provas acontecem nos dias 1º e 2 de agosto.",
+      "url": "https://g1.globo.com/mundo/videos/video/sefaz-abre-concurso-para-auditor-fiscal-com-100-vagas-e-salario-de-r-16-mil-14557410.ghtml",
+      "source": "Gazeta do Paraná",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-04-25T12:08:58Z",
+      "updatedAt": "2026-04-25T12:08:58Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://s03.video.glbimg.com/x720/14557410.jpg"
     },
     {
       "id": "companies-482cf0c1af71f96a43d2603f",
       "title": "STF proíbe compra de terras por empresas estrangeiras",
-      "summary": "São 100 vagas imediatas e 200 vagas para cadastro de reserva. A salário inicial para os convocados será de R$ 16.136,64. O edital foi publicado Diário Oficial do Estado (DOE).",
-      "details": "São 100 vagas imediatas e 200 vagas para cadastro de reserva. A salário inicial para os convocados será de R$ 16.136,64. O edital foi publicado Diário Oficial do Estado (DOE).",
-      "url": "https://g1.globo.com/ce/ceara/suachance/noticia/2026/04/25/sefaz-publica-edital-de-concurso-para-auditor-fiscal-com-100-vagas-e-salario-de-r-16-mil-no-ceara.ghtml",
+      "summary": "Espera-se amplamente que o Federal Reserve dos EUA mantenha as taxas de juros inalteradas em sua reunião de 28–29 de abril, enquanto os formuladores de política avaliam os efeitos econômicos de um aumento nos preços da energia diante de sinais de resiliência no mercado de trabalh",
+      "details": "Espera-se amplamente que o Federal Reserve dos EUA mantenha as taxas de juros inalteradas em sua reunião de 28–29 de abril, enquanto os formuladores de política avaliam os efeitos econômicos de um aumento nos preços da energia diante de sinais de resiliência no mercado de trabalho.A decisão ocorre…",
+      "url": "https://br.tradingview.com/news/invezz:355f3d7d2bc81:0/",
       "source": "FOLHAMAX",
       "category": "companies",
       "tags": [
@@ -446,14 +492,14 @@
       "updatedAt": "2026-04-25T12:03:48Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://s2-g1.glbimg.com/7quPaaAApTnQvFvNZLI0brnPyGY=/1600x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/Q/t/iM1T0pRmmWAAYzwwmFuw/concurso-da-sefaz-tem-mais-de-100-vagas.jpg"
+      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
     },
     {
       "id": "latest-1243aadf373a9bd8ee19ee74",
       "title": "Como conseguir um estágio no BTG Pactual e outros bancos",
-      "summary": "Atualizacao de ultima hora capturada em Correio Braziliense.",
-      "details": "",
-      "url": "https://www.folhamax.com/amp/mundo/stf-proibe-compra-de-terras-por-empresas-estrangeiras/549154",
+      "summary": "Conquistar uma vaga de estágio em grandes bancos de investimento, como o BTG Pactual, Itaú BBA e XP Investimentos, é",
+      "details": "Conquistar uma vaga de estágio em grandes bancos de investimento, como o BTG Pactual, Itaú BBA e XP Investimentos, é",
+      "url": "https://www.correiobraziliense.com.br/aqui/2026/04/25/como-conseguir-um-estagio-no-btg-pactual-e-outros-bancos/",
       "source": "Correio Braziliense",
       "category": "latest",
       "tags": [
@@ -464,14 +510,33 @@
       "publishedAt": "2026-04-25T12:00:00Z",
       "updatedAt": "2026-04-25T12:00:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.correiobraziliense.com.br/aqui/wp-content/uploads/2026/04/jovem-entrevista_1776949533663.jpg"
+    },
+    {
+      "id": "macro-d88c1fab074a5dce1b07204a",
+      "title": "Decisão do Fed sobre juros na próxima semana: o que esperar",
+      "summary": "Atualizacao de macro capturada em TradingView.",
+      "details": "",
+      "url": "https://www.folhamax.com/amp/mundo/stf-proibe-compra-de-terras-por-empresas-estrangeiras/549154",
+      "source": "TradingView",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-25T11:55:04Z",
+      "updatedAt": "2026-04-25T11:55:04Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-0a9b440fd2490b549bd294e2",
       "title": "O que provocou a queda mais acentuada da rúpia indiana em anos? 5 motivos principais",
-      "summary": "Com investimentos globais projetados em US$ 53 trilhões, empresas enfrentam o desafio de transformar iniciativas socioambientais em dados auditáveis para garantir acesso a capital",
-      "details": "Com investimentos globais projetados em US$ 53 trilhões, empresas enfrentam o desafio de transformar iniciativas socioambientais em dados auditáveis para garantir acesso a capital",
-      "url": "https://www.band.com.br/economia/noticias/regulacao-e-mercado-financeiro-exigem-provas-de-impacto-das-empresas-202604241722",
+      "summary": "A valorização da rúpia indiana frente às principais moedas globais caiu ao seu nível mais baixo em mais de uma década, pressionada pela alta dos preços do petróleo bruto e por persistentes saídas de capitais estrangeiros.Dados do último boletim do Reserve Bank of India mostraram ",
+      "details": "A valorização da rúpia indiana frente às principais moedas globais caiu ao seu nível mais baixo em mais de uma década, pressionada pela alta dos preços do petróleo bruto e por persistentes saídas de capitais estrangeiros.Dados do último boletim do Reserve Bank of India mostraram que a taxa de câmbi…",
+      "url": "https://br.tradingview.com/news/invezz:61dfe9ba8bc81:0/",
       "source": "TradingView",
       "category": "macro",
       "tags": [
@@ -483,14 +548,32 @@
       "updatedAt": "2026-04-25T11:55:01Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://img.band.com.br/image/2026/04/24/esg-pressao-do-mercado-financeiro-e-novas-regulacoes-aceleram-fim-da-era-das-boas-intencoes-172235.jpg"
+      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
+    },
+    {
+      "id": "macro-ff8c746dd67764ad4955f77b",
+      "title": "Desafios do PIB da Cultura: Diálogos SNIIC e Novos Dados do MinC",
+      "summary": "No dia 24 de abril de 2026, à tarde, aconteceu a 7ª edição dos Diálogos SNIIC, um evento que trouxe à tona a discussão sobre a mensuração do Produto Interno Bru...",
+      "details": "No dia 24 de abril de 2026, à tarde, aconteceu a 7ª edição dos Diálogos SNIIC, um evento que trouxe à tona a discussão sobre a mensuração do Produto Interno Bru...",
+      "url": "https://bsbcapital.com.br/desafios-do-pib-da-cultura-dialogos-sniic-e-novos-dados-do-minc/",
+      "source": "Jornal Brasília Capital",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-25T11:40:00Z",
+      "updatedAt": "2026-04-25T11:40:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-e44a225d29eb012162486d68",
       "title": "Regulação e mercado financeiro exigem provas de impacto das empresas",
-      "summary": "A valorização da rúpia indiana frente às principais moedas globais caiu ao seu nível mais baixo em mais de uma década, pressionada pela alta dos preços do petróleo bruto e por persistentes saídas de capitais estrangeiros.Dados do último boletim do Reserve Bank of India mostraram ",
-      "details": "A valorização da rúpia indiana frente às principais moedas globais caiu ao seu nível mais baixo em mais de uma década, pressionada pela alta dos preços do petróleo bruto e por persistentes saídas de capitais estrangeiros.Dados do último boletim do Reserve Bank of India mostraram que a taxa de câmbi…",
-      "url": "https://br.tradingview.com/news/invezz:61dfe9ba8bc81:0/",
+      "summary": "Com investimentos globais projetados em US$ 53 trilhões, empresas enfrentam o desafio de transformar iniciativas socioambientais em dados auditáveis para garantir acesso a capital",
+      "details": "Com investimentos globais projetados em US$ 53 trilhões, empresas enfrentam o desafio de transformar iniciativas socioambientais em dados auditáveis para garantir acesso a capital",
+      "url": "https://www.band.com.br/economia/noticias/regulacao-e-mercado-financeiro-exigem-provas-de-impacto-das-empresas-202604241722",
       "source": "band.com.br",
       "category": "latest",
       "tags": [
@@ -502,7 +585,7 @@
       "updatedAt": "2026-04-25T11:00:03Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
+      "imageUrl": "https://img.band.com.br/image/2026/04/24/esg-pressao-do-mercado-financeiro-e-novas-regulacoes-aceleram-fim-da-era-das-boas-intencoes-172235.jpg"
     },
     {
       "id": "macro-59e88c034c4f3abe5dabc5a1",
@@ -545,9 +628,9 @@
     {
       "id": "macro-bc296f87ace0cdffe2bd226d",
       "title": "Concurso Sefaz CE: SAIU! 100 vagas para Auditor; R$ 16,1 mil",
-      "summary": "Concurso Sefaz CE 2026: edital publicado com 300 vagas para Auditor Fiscal e inicial de R$ 16,1 mil. Confira os detalhes!",
-      "details": "Concurso Sefaz CE 2026: edital publicado com 300 vagas para Auditor Fiscal e inicial de R$ 16,1 mil. Confira os detalhes!",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-sefaz-ce/",
+      "summary": "Fique por dentro das últimas notícias sobre a Bolsa, Mercado Financeiro e dinheiro. Confira também dicas de investimentos e educação financeira no E-Investidor.",
+      "details": "Fique por dentro das últimas notícias sobre a Bolsa, Mercado Financeiro e dinheiro. Confira também dicas de investimentos e educação financeira no E-Investidor.",
+      "url": "https://einvestidor.estadao.com.br/comportamento/dolar-abaixo-5-comprar-ou-esperar-viagem-estrategia-cambio/?amp",
       "source": "Estratégia Concursos",
       "category": "macro",
       "tags": [
@@ -559,7 +642,7 @@
       "updatedAt": "2026-04-25T10:53:31Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2021/03/22154714/sefaz-ce_2.jpg"
+      "imageUrl": "https://einvestidor.estadao.com.br/wp-content/themes/e-investidor/assets/img/card-share-large-1200x631.jpg"
     },
     {
       "id": "latest-a61751d25e965ca47220e37c",
@@ -600,68 +683,11 @@
       "imageUrl": "https://magistrarcursos.com.br/blog/wp-content/uploads/2026/02/sefin-ro.webp"
     },
     {
-      "id": "macro-de24bc88062dc351cf147c46",
-      "title": "Concursos Federais 2026: panorama dos próximos editais",
-      "summary": "Geralmente, quando os juros sobem, os investidores tiram recursos da Bolsa",
-      "details": "Geralmente, quando os juros sobem, os investidores tiram recursos da Bolsa",
-      "url": "https://www.atribuna.com.br/opiniao/marcelo-santos/juros-e-ac-es-para-ficar-rico-as-dicas-de-ouro-para-voce-ter-sucesso-no-mundo-dos-investimentos-1.511366",
-      "source": "Estratégia Concursos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-25T10:16:20Z",
-      "updatedAt": "2026-04-25T10:16:20Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.atribuna.com.br/image/policy:1.511368:1777082984/image.jpg?f=3x2"
-    },
-    {
-      "id": "macro-650c921b0c6a8115064da137",
-      "title": "Concurso Público: confira a programação das aulas de hoje!",
-      "summary": "Concurso Público: confira diariamente as aulas gratuitas, simulados, revisões e maratonas dos principais concursos e reforce os estudos!",
-      "details": "Concurso Público: confira diariamente as aulas gratuitas, simulados, revisões e maratonas dos principais concursos e reforce os estudos!",
-      "url": "https://www.estrategiaconcursos.com.br/blog/agenda-do-dia/",
-      "source": "Estratégia Concursos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-25T10:12:18Z",
-      "updatedAt": "2026-04-25T10:12:18Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2021/07/28150440/aulas-do-dia.jpeg"
-    },
-    {
-      "id": "macro-9827831959830b50380e9797",
-      "title": "Concurso Carlos Barbosa RS: edital traz iniciais até R$ 14 mil",
-      "summary": "Saiba tudo sobre o concurso Carlos Barbosa com salários de até R$ 14,4 mil e vagas para níveis médio e superior.",
-      "details": "Saiba tudo sobre o concurso Carlos Barbosa com salários de até R$ 14,4 mil e vagas para níveis médio e superior.",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-prefeitura-carlos-barbosa/",
-      "source": "Estratégia Concursos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-25T10:11:51Z",
-      "updatedAt": "2026-04-25T10:11:51Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2025/11/03180018/prefeitura-de-carlos-barbosa.jpg"
-    },
-    {
       "id": "latest-78a82a9899acb449351f721d",
       "title": "Juros e ações para ficar rico: as dicas de ouro para você ter sucesso no mundo dos investimentos",
-      "summary": "Classe registrou a segunda maior entrada de recursos no início de 2026; gestoras ampliam prateleira e veem veículo como o grande vencedor do próximo ciclo de alta da Bolsa",
-      "details": "Classe registrou a segunda maior entrada de recursos no início de 2026; gestoras ampliam prateleira e veem veículo como o grande vencedor do próximo ciclo de alta da Bolsa",
-      "url": "https://www.infomoney.com.br/onde-investir/bons-e-baratos-etfs-crescem-70-e-viram-a-nova-febre-do-mercado-brasileiro/",
+      "summary": "Dólar e Bolsa: Um Resumo do Pregão de Sexta-feira Em um pregão marcado pela cautela global, o dólar comercial encerrou o dia abaixo da marca de R$ 5, registrando uma leve queda de 0,1% e sendo negociado a R$ 4,998. Apesar desse alívio momentâneo, a bolsa de valores brasileira, re",
+      "details": "Dólar e Bolsa: Um Resumo do Pregão de Sexta-feira Em um pregão marcado pela cautela global, o dólar comercial encerrou o dia abaixo da marca de R$ 5, registrando uma leve queda de 0,1% e sendo negociado a R$ 4,998. Apesar desse alívio momentâneo, a bolsa de valores brasileira, representada pelo Ibovespa, continuou a tr",
+      "url": "https://jornaldearuja.com/dolar-recua-para-abaixo-de-r-5-com-cautela-global-enquanto-ibovespa-sente-o-peso-de-realizacoes-de-lucros/",
       "source": "A Tribuna",
       "category": "latest",
       "tags": [
@@ -672,15 +698,14 @@
       "publishedAt": "2026-04-25T09:36:00Z",
       "updatedAt": "2026-04-25T09:36:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/04/markus-winkler-smW1-JkTsxo-unsplash.jpg?quality=70"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-d9b607e4bdf4a72851dfb174",
       "title": "Dólar recua para abaixo de R$ 5 com cautela global, enquanto Ibovespa sente o peso de realizações de lucros",
-      "summary": "Novas oportunidades em Concursos Federais para 2026! Confira os editais previstos, autorizados, solicitados, com banca ou comissão.",
-      "details": "Novas oportunidades em Concursos Federais para 2026! Confira os editais previstos, autorizados, solicitados, com banca ou comissão.",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concursos-federais/",
+      "summary": "Concurso Sefaz CE 2026: edital publicado com 300 vagas para Auditor Fiscal e inicial de R$ 16,1 mil. Confira os detalhes!",
+      "details": "Concurso Sefaz CE 2026: edital publicado com 300 vagas para Auditor Fiscal e inicial de R$ 16,1 mil. Confira os detalhes!",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-sefaz-ce/",
       "source": "jornaldearuja.com",
       "category": "latest",
       "tags": [
@@ -692,14 +717,14 @@
       "updatedAt": "2026-04-25T09:05:10Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2023/05/02151653/concursos-federais.jpg"
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2021/03/22154714/sefaz-ce_2.jpg"
     },
     {
       "id": "latest-df3652215099d79ccfcfc681",
       "title": "Dólar abaixo de R$ 5 pela primeira vez em dois anos: viajar agora ou esperar? Veja se vale a pena comprar",
-      "summary": "Dólar e Bolsa: Um Resumo do Pregão de Sexta-feira Em um pregão marcado pela cautela global, o dólar comercial encerrou o dia abaixo da marca de R$ 5, registrando uma leve queda de 0,1% e sendo negociado a R$ 4,998. Apesar desse alívio momentâneo, a bolsa de valores brasileira, re",
-      "details": "Dólar e Bolsa: Um Resumo do Pregão de Sexta-feira Em um pregão marcado pela cautela global, o dólar comercial encerrou o dia abaixo da marca de R$ 5, registrando uma leve queda de 0,1% e sendo negociado a R$ 4,998. Apesar desse alívio momentâneo, a bolsa de valores brasileira, representada pelo Ibovespa, continuou a tr",
-      "url": "https://jornaldearuja.com/dolar-recua-para-abaixo-de-r-5-com-cautela-global-enquanto-ibovespa-sente-o-peso-de-realizacoes-de-lucros/",
+      "summary": "Geralmente, quando os juros sobem, os investidores tiram recursos da Bolsa",
+      "details": "Geralmente, quando os juros sobem, os investidores tiram recursos da Bolsa",
+      "url": "https://www.atribuna.com.br/opiniao/marcelo-santos/juros-e-ac-es-para-ficar-rico-as-dicas-de-ouro-para-voce-ter-sucesso-no-mundo-dos-investimentos-1.511366",
       "source": "Estadão E-Investidor",
       "category": "latest",
       "tags": [
@@ -710,14 +735,15 @@
       "publishedAt": "2026-04-25T08:30:55Z",
       "updatedAt": "2026-04-25T08:30:55Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.atribuna.com.br/image/policy:1.511368:1777082984/image.jpg?f=3x2"
     },
     {
       "id": "companies-c1b3df621cb69467e07de486",
       "title": "Sebrae e Senai preparam pequenas indústrias brasileiras para acessar mercados internacionais",
-      "summary": "Fique por dentro das últimas notícias sobre a Bolsa, Mercado Financeiro e dinheiro. Confira também dicas de investimentos e educação financeira no E-Investidor.",
-      "details": "Fique por dentro das últimas notícias sobre a Bolsa, Mercado Financeiro e dinheiro. Confira também dicas de investimentos e educação financeira no E-Investidor.",
-      "url": "https://einvestidor.estadao.com.br/comportamento/dolar-abaixo-5-comprar-ou-esperar-viagem-estrategia-cambio/?amp",
+      "summary": "Atualizacao de empresas capturada em Diplomacia Business.",
+      "details": "",
+      "url": "https://www.diplomaciabusiness.com/sebrae-e-senai-preparam-pequenas-industrias-brasileiras-para-acessar-mercados-internacionais/?amp=1",
       "source": "Diplomacia Business",
       "category": "companies",
       "tags": [
@@ -728,15 +754,14 @@
       "publishedAt": "2026-04-25T08:05:54Z",
       "updatedAt": "2026-04-25T08:05:54Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://einvestidor.estadao.com.br/wp-content/themes/e-investidor/assets/img/card-share-large-1200x631.jpg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "funds-065f1878e7fd31ba53fd43d3",
       "title": "Bons e baratos: ETFs crescem 70% e viram a nova febre do mercado brasileiro",
       "summary": "Atualizacao de fundos capturada em InfoMoney.",
       "details": "",
-      "url": "https://www.diplomaciabusiness.com/sebrae-e-senai-preparam-pequenas-industrias-brasileiras-para-acessar-mercados-internacionais/?amp=1",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPSWNwQ2VKdXlUc3RuLTlZSXZHdUl1djNjUGkxNEl5LXJvaEpvR2szT2p4aGRQUDdYTjVPSlZpakxad2JmWXRxUDZfdFd4bDZMWlpYVEV0QUllaDVZR0xNT0FiNUdSNVJtMGV4amIxNXFRQ3hza0NRTGxfbWVfTS1CUGViQm42S0RXNERHQkZqR3RQZ1hqNV9HdlZYdEZPZnRmTVNzUk9fMHVSQWI3VDhCNEpaR25JXy1lSERQWFp30gG-AUFVX3lxTE9JY3BDZUp1eVRzdG4tOVlJdkd1SXV2M2NQaTE0SXktcm9oSm9HazNPanhoZFBQN1hONU9KVmlqTFp3YmZZdHFQNl90V3hsNkxaWlhURXRBSWVoNVlHTE1PQWI1R1I1Um0wZXhqYjE1cVFDeHNrQ1FMbF9tZV9NLUJQZWJCbjZLRFc0REdCRmpHdFBnWGo1X0d2Vlh0Rk9mdGZNU3NST18wdVJBYjdUOEI0SlpHbklfLWVIRFBYWnc?oc=5",
       "source": "InfoMoney",
       "category": "funds",
       "tags": [
@@ -912,24 +937,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "companies-30d9d3a7bbdd16d13e3616d2",
-      "title": "STF confirma restrições à compra de terras por estrangeiros e empresas com capital externo no Brasil",
-      "summary": "Atualizacao de empresas capturada em FOCO MT.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSTh1cmduOFprZU9XdjJBM1V4T2d2QUFHZTlVUGV6YTlCSUMtaV9NQlVPQWgxTDBleUVyRndvXzdsNE1wZTEwcGtXdEppd1Zta3p5UHlzeVFObVo2dnFzaEhxQ0VtUGxIYks3Z0tmWDRCcWIzTGdNVlhQTXJCYzlKTk9pSTY1TzFTTW5femJDbHp2cEhRdTBDbF9XWERuTVJHdm9Yem9TYjlCYTFaZkJCOUdHY09yNkdhLWtJSHo1cW8?oc=5",
-      "source": "FOCO MT",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-04-25T00:32:00Z",
-      "updatedAt": "2026-04-25T00:32:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
       "id": "latest-d2e2ce24c60fcd379fb71bac",
       "title": "Setor financeiro debate competitividade e alocação de capital em evento",
       "summary": "Atualizacao de ultima hora capturada em CNN Brasil.",
@@ -1056,24 +1063,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-64ba1bdd4369d1d705ae760f",
-      "title": "Selic: Quanto dinheiro a mãe da renda fixa gira por dia no Brasil?",
-      "summary": "Atualizacao de ultima hora capturada em Investidor10.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdlozZHdBUzRzVV9KS2ZuNGNqZjlQT2NFUVZaMjI3UUJ0N3lMZTJtdmNhWGhSZUpqZzl6Um5aNkVaY3ZCTHNmRjQ1TFgyUFNIdFR6RXI1RnZ3VFgwREZLUlZBQzBQajNLVVRBMmhfcmRfTmc4dlQyWkQxUFFGQnAzYTZMRUY1YUJCWmRYT3gxeXhhNkhFNTdubHRNSno0Zks3VXN3U1FuRzFHSVFnRjVObGpMQdIBswFBVV95cUxOdlozZHdBUzRzVV9KS2ZuNGNqZjlQT2NFUVZaMjI3UUJ0N3lMZTJtdmNhWGhSZUpqZzl6Um5aNkVaY3ZCTHNmRjQ1TFgyUFNIdFR6RXI1RnZ3VFgwREZLUlZBQzBQajNLVVRBMmhfcmRfTmc4dlQyWkQxUFFGQnAzYTZMRUY1YUJCWmRYT3gxeXhhNkhFNTdubHRNSno0Zks3VXN3U1FuRzFHSVFnRjVObGpMQQ?oc=5",
-      "source": "Investidor10",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-04-24T23:12:00Z",
-      "updatedAt": "2026-04-24T23:12:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "companies-20911491d7f68bc0efacaf56",
       "title": "Empresas brasileiras projetam mais de 15 milhões de dólares em negócios após feira global de cosméticos",
       "summary": "Atualizacao de empresas capturada em FashionNetwork Brasil.",
@@ -1180,6 +1169,24 @@
       "updatedAt": "2026-04-24T19:58:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "funds-0f1fb4dbdf3ecd4f95d193e8",
+      "title": "BB Asset - Destaques do mês de março 2026",
+      "summary": "Atualizacao de fundos capturada em InvesTalk.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQb3hCbjFZYlEzbXVJWWtrM0FCNTZ1QVpCQ2V6TmN6R25oNGt1YVViWWhpNUdlVV9USXFwQ19hVzBXWkNZNHcydlhnQm9HQ1dQVVhKNkJWZEVoZTNSSFBpTWlwOVh0VGU0aGNqWmZ3SWoyWHpodnViNjdXdmxjSHZuTldtaw?oc=5",
+      "source": "InvesTalk",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-04-24T19:32:00Z",
+      "updatedAt": "2026-04-24T19:32:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "companies-e99dacafa38327f8fbe537a8",
@@ -1362,11 +1369,11 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "funds-0859bc9a04c73d3f2f9339bd",
-      "title": "XRP On Verge of 10% Sharp Price Spike: Analyst",
+      "id": "funds-765b4dd58092636d705718a5",
+      "title": "Bitcoin stays 'stalled' at $78K as oil threatens new risk-asset squeeze",
       "summary": "Atualizacao de fundos capturada em TradingView.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOaERfWmdOeDdHU2NBUVhSWDNZbFN0VXhNOEYwYW1CX3ppNUo1aGdjcEZvNFFEOW5EYU1oY3JHaGMycFoyc2lxQ2hQb1RGV0t4M3h6QkZwV3hMekJ6NEsxY0Zhb2puaU5IMlVTT1p3MmlXbllhX0s3OV9RZEhub3ZyWkx0a1BBdGdjZjk3c0Ntc0xIOWhFVWVmRlBTOV9qTVNqUjFZZzQ2VnY?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQc3V3MWtlandrdGxOQ0Zid2psU0JmX0VvWDREQkdwNE12Skc4Z1JsX2pzY01ZTEhnLXVQazl1RmJQc2dfT0dWTXQ2c3hfMk00VElKMk14U1gzdVF4N3lmX0pJRkhoWG8yTVZjcjJfZEFZMXRhaVpwdzJKaHhYUko3VFpkUzNCWHROMmZFakhLTl9uLV9hMDhrZlhYWWlaWHMxRG13SDFUQjJkVm82TTRlQ2MxMFI5Q3VGcC1iWC1ibjJWNUdHVVRDMnEydGVvdlRW?oc=5",
       "source": "TradingView",
       "category": "funds",
       "tags": [
@@ -1374,28 +1381,28 @@
         "asset",
         "fiis"
       ],
-      "publishedAt": "2026-04-24T15:56:10Z",
-      "updatedAt": "2026-04-24T15:56:10Z",
+      "publishedAt": "2026-04-24T16:55:44Z",
+      "updatedAt": "2026-04-24T16:55:44Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-3beb148eaa682b7791adce2c",
-      "title": "South Africa draft bill would tighten crypto capital controls",
-      "summary": "Atualizacao de fundos capturada em TradingView.",
+      "id": "companies-3ad78d7fb9b11adbd5f7abe6",
+      "title": "Novo processo de importação eleva exigência técnica e muda rotina das empresas brasileiras",
+      "summary": "Atualizacao de empresas capturada em lerunica.com.br.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPT1FPTzljTnhWcU51dWlpYkE2SllwVmdNMTJfS3NoX3h0Z1hKcDRJMDU3TFJvUGxwMjE3eENJekVqWlNvU0FzNVVkUkhXaWtVclhybDhiQTB2NmpiV202QTFFSUh3U2JfdDNZczdFN2lELVVzYi1uOWtqYk1JLU56RDcxNzc3N0NCSFJMZENQU3dZSDBuWGplTjFEUkJBVktpQnVxbWNaRmxIOWtrZVEwTnJZLUV5SENGbzRFVlN4OWdHVXJnXzRR?oc=5",
-      "source": "TradingView",
-      "category": "funds",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQeTkwS3Z2eEhQTUdkUkk1OVMzWTJQd1QtOHBVb3RPQ25TblpYUHZ5SjhxbnRXMXQzZEdfMDhRQmhnNmZ2UlM3VkRVSTA1b19pZXNTMFdmVjR6QlY0cjVqX2JvM2UydmlmWl9GSXJtYS1URURvTWRJX1hZT3dXdFdHVnBYSXBaUHZTVzBKZGw1ZmhDR0M4bGpfdTY5aVpiZVlRY2Nnam1Hd3A3TS1QYmpXZElGZ294MnBELVp0Z0JRMmZERk44TndPNzVHSQ?oc=5",
+      "source": "lerunica.com.br",
+      "category": "companies",
       "tags": [
-        "fundos",
-        "asset",
-        "fiis"
+        "empresas",
+        "resultados",
+        "m&a"
       ],
-      "publishedAt": "2026-04-24T15:20:19Z",
-      "updatedAt": "2026-04-24T15:20:19Z",
+      "publishedAt": "2026-04-24T15:58:00Z",
+      "updatedAt": "2026-04-24T15:58:00Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     }
   ]
 }
