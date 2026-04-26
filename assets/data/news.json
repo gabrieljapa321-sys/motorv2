@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-04-25T23:53:13Z",
-  "generatedAt": "2026-04-25T23:53:13Z",
+  "updatedAt": "2026-04-26T01:20:08Z",
+  "generatedAt": "2026-04-26T01:20:08Z",
   "categories": [
     {
       "id": "all",
@@ -78,7 +78,7 @@
     },
     {
       "id": "di-rio-do-estado",
-      "label": "DIÁRIO DO ESTADO"
+      "label": "Diário do Estado"
     },
     {
       "id": "economic-news-brasil",
@@ -125,8 +125,8 @@
       "label": "jornaldearuja.com"
     },
     {
-      "id": "lerunica-com-br",
-      "label": "lerunica.com.br"
+      "id": "leouve",
+      "label": "Leouve"
     },
     {
       "id": "money-times",
@@ -153,6 +153,10 @@
       "label": "No Vale Notícias"
     },
     {
+      "id": "novidades-mt",
+      "label": "NOVIDADES MT"
+    },
+    {
       "id": "o-chef-o-da-not-cia",
       "label": "O Chefão da Notícia"
     },
@@ -177,12 +181,12 @@
       "label": "Região Noroeste"
     },
     {
-      "id": "segs-portal-nacional",
-      "label": "SEGS Portal Nacional"
+      "id": "revista-f-rum",
+      "label": "Revista Fórum"
     },
     {
-      "id": "segundabase-com-br",
-      "label": "segundabase.com.br"
+      "id": "segs-portal-nacional",
+      "label": "SEGS Portal Nacional"
     },
     {
       "id": "seu-dinheiro",
@@ -201,12 +205,16 @@
       "label": "São Roque Notícias"
     },
     {
-      "id": "tmc-com-br",
-      "label": "tmc.com.br"
-    },
-    {
       "id": "tradingview",
       "label": "TradingView"
+    },
+    {
+      "id": "tribuna-do-sert-o",
+      "label": "Tribuna do Sertão"
+    },
+    {
+      "id": "uol-economia",
+      "label": "UOL Economia"
     },
     {
       "id": "vaiparaty-com-br",
@@ -223,30 +231,104 @@
   ],
   "items": [
     {
-      "id": "macro-5787be8ec7fb3a1809f76481",
-      "title": "Trump diz que ainda quer respostas sobre os custos de criação do Fed após investigação do DOJ",
+      "id": "macro-977e4f88de2bed28d98eb62a",
+      "title": "Comitê do Senado dos EUA deve votar nomeação de Warsh ao Fed na quarta-feira, 29",
       "summary": "Leia esta notícia no OneFootball.",
       "details": "Leia esta notícia no OneFootball.",
       "url": "https://onefootball.com/pt-br/noticias/corinthians-fiscal-council-recommends-2025-accounts-be-approved-with-reservations-42768924",
-      "source": "segundabase.com.br",
+      "source": "UOL Economia",
       "category": "macro",
       "tags": [
         "macro",
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-04-25T22:57:02Z",
-      "updatedAt": "2026-04-25T22:57:02Z",
+      "publishedAt": "2026-04-26T00:14:00Z",
+      "updatedAt": "2026-04-26T00:14:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://photobooth-api.onefootball.com/api/screenshot/%2Fv2%2Fphotobooth%2Fcms%2Fpt-br%2F42768924%3Fdate=2026-04-25"
+      "imageUrl": "https://photobooth-api.onefootball.com/api/screenshot/%2Fv2%2Fphotobooth%2Fcms%2Fpt-br%2F42768924%3Fdate=2026-04-26"
+    },
+    {
+      "id": "macro-63e32d6322e137122a6e7ea0",
+      "title": "Comitê do Senado dos EUA vota indicação de Warsh ao Fed nesta quarta-feira",
+      "summary": "Atualizacao de macro capturada em Tribuna do Sertão.",
+      "details": "",
+      "url": "https://revistaforum.com.br/politica/governo-lula-licitacao-rodovia-sudeste/",
+      "source": "Tribuna do Sertão",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-26T00:14:00Z",
+      "updatedAt": "2026-04-26T00:14:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-61a847c58981ae2c041f49a6",
+      "title": "Nota fiscal eletrônica passa a ser obrigatória para produtores rurais no RS a partir de maio",
+      "summary": "Atualizacao de macro capturada em Leouve.",
+      "details": "",
+      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/04/25/comite-do-senado-dos-eua-deve-votar-nomeacao-de-warsh-ao-fed-na-quarta-feira-29.htm",
+      "source": "Leouve",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-26T00:00:00Z",
+      "updatedAt": "2026-04-26T00:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-2b53af394f721f7e9a20244f",
+      "title": "Governo Lula vai abrir licitação para concessão de rodovia vital para estados do Sudeste",
+      "summary": "Votação ocorre após encerramento de investigação sobre Jerome Powell; Warsh foi indicado por Trump para comandar o banco central americano.",
+      "details": "Votação ocorre após encerramento de investigação sobre Jerome Powell; Warsh foi indicado por Trump para comandar o banco central americano.",
+      "url": "https://www.tribunadosertao.com.br/geral/2026/04/25/892375-comite-do-senado-dos-eua-vota-indicacao-de-warsh-ao-fed-nesta-quarta-feira",
+      "source": "Revista Fórum",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-25T23:55:47Z",
+      "updatedAt": "2026-04-25T23:55:47Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://img.dhost.cloud/BOBkeItg4ooRv9lcUmr1WiDtOBA=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/d359e/9d0c49b3c5544a4c9ee9f66395d8d640d0c.webp?name=comite-do-senado-dos-eua-vota-indicacao-de-warsh-ao-fed-nesta-quarta-feira.webp"
+    },
+    {
+      "id": "macro-c0e6ddb408cc7aad6da089f3",
+      "title": "Concursos Abertos: milhares de vagas e inicial até R$ 32 mil",
+      "summary": "Produtores rurais do RS devem emitir nota fiscal eletrônica a partir de maio; talão em papel deixa de ser válido e uso do app NFF cresce no estado.",
+      "details": "Produtores rurais do RS devem emitir nota fiscal eletrônica a partir de maio; talão em papel deixa de ser válido e uso do app NFF cresce no estado.",
+      "url": "https://leouve.com.br/producao-rural/nota-fiscal-eletronica-passa-a-ser-obrigatoria-para-produtores-rurais-no-rs-a-partir-de-maio/",
+      "source": "Estratégia Concursos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-04-25T22:58:49Z",
+      "updatedAt": "2026-04-25T22:58:49Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://uploads.leouve.com.br/2026/04/04115218_2188408_GD.jpg"
     },
     {
       "id": "macro-20193a9e9756a7c2549de6bb",
       "title": "R$ 377,8 mil por habitante: a cidade de Minas com 53 mil moradores tem o 10º maior PIB per capita do Brasil sem precisar de petróleo",
-      "summary": "Encontrar profissionais qualificados virou um dos maiores desafios do mercado de trabalho brasileiro. Diante disso, empresas de setores como logística, construção civil, tecnologia, mineração e mercado financeiro pararam de esperar o profissional pronto e passaram a formá-lo do z",
-      "details": "Encontrar profissionais qualificados virou um dos maiores desafios do mercado de trabalho brasileiro. Diante disso, empresas de setores como logística, construção civil, tecnologia, mineração e mercado financeiro pararam de esperar o profissional pronto e passaram a formá-lo do zero. A resposta mais concreta a esse pro",
-      "url": "https://crusoe.com.br/variedades/a-decisao-tomada-pelas-empresas-para-reagir-a-falta-de-mao-de-obra-no-brasil/",
+      "summary": "Concursos Abertos: oportunidades em todo o país! Milhares de vagas em diversas áreas. Confira os editais, requisitos e inscreva-se já!",
+      "details": "Concursos Abertos: oportunidades em todo o país! Milhares de vagas em diversas áreas. Confira os editais, requisitos e inscreva-se já!",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concursos-abertos/",
       "source": "Estado de Minas",
       "category": "macro",
       "tags": [
@@ -258,13 +340,13 @@
       "updatedAt": "2026-04-25T22:55:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://cdn.crusoe.com.br/uploads/2026/04/kaja-sariwating-BZ5CKvk1hwE-unsplash.jpg"
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2024/10/04165957/concursos-abertos.jpg"
     },
     {
       "id": "macro-b8404179ad49f536eaa66533",
       "title": "Corinthians Fiscal Council recommends 2025 accounts be approved with reservations",
-      "summary": "Atualizacao de macro capturada em OneFootball.",
-      "details": "",
+      "summary": "No extremo sul de Minas Gerais, na divisa com São Paulo, Extrema tinha 53.482 habitantes no Censo 2022 e fechou",
+      "details": "No extremo sul de Minas Gerais, na divisa com São Paulo, Extrema tinha 53.482 habitantes no Censo 2022 e fechou",
       "url": "https://www.em.com.br/emfoco/2026/04/25/r-3778-mil-por-habitante-a-cidade-de-minas-com-53-mil-moradores-tem-o-10o-maior-pib-per-capita-do-brasil-sem-precisar-de-petroleo/",
       "source": "OneFootball",
       "category": "macro",
@@ -276,14 +358,15 @@
       "publishedAt": "2026-04-25T22:44:18Z",
       "updatedAt": "2026-04-25T22:44:18Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.em.com.br/emfoco/wp-content/uploads/2026/04/Aerial_photograph_of_202604251925.jpg"
     },
     {
       "id": "macro-6a7e6a6c72ef12960b58f41d",
       "title": "Trump promete ‘chegar ao fundo’ da reforma multibilionária de edifícios do Fed após mudança na investigação",
       "summary": "Atualizacao de macro capturada em vaiparaty.com.br.",
       "details": "",
-      "url": "https://www.segundabase.com.br/noticias/trump-diz-que-ainda-quer-respostas-sobre-os-custos-de-criacao-do-fed-apos-investigacao-do-doj/250890/",
+      "url": "https://vaiparaty.com.br/noticias/trump-promete-chegar-ao-fundo-da-reforma-multibilionaria-de-edificios-do-fed-apos-mudanca-na-investigacao/82624/",
       "source": "vaiparaty.com.br",
       "category": "macro",
       "tags": [
@@ -299,9 +382,9 @@
     {
       "id": "latest-a85cfd9b476c0c58ab299de6",
       "title": "A decisão tomada pelas empresas para reagir à falta de mão de obra no Brasil",
-      "summary": "Concursos Abertos: oportunidades em todo o país! Milhares de vagas em diversas áreas. Confira os editais, requisitos e inscreva-se já!",
-      "details": "Concursos Abertos: oportunidades em todo o país! Milhares de vagas em diversas áreas. Confira os editais, requisitos e inscreva-se já!",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concursos-abertos/",
+      "summary": "Fique por dentro dos Concursos 2026: mais de 10 mil vagas previstas para as áreas fiscal, de controle, tribunais, policial, saúde e etc...",
+      "details": "Fique por dentro dos Concursos 2026: mais de 10 mil vagas previstas para as áreas fiscal, de controle, tribunais, policial, saúde e etc...",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concursos-2026/",
       "source": "Crusoé",
       "category": "latest",
       "tags": [
@@ -313,33 +396,14 @@
       "updatedAt": "2026-04-25T22:37:12Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2024/10/04165957/concursos-abertos.jpg"
-    },
-    {
-      "id": "macro-5a8c109a356f39906a58f535",
-      "title": "Concursos Abertos: milhares de vagas e inicial até R$ 32 mil",
-      "summary": "Fique por dentro dos Concursos 2026: mais de 10 mil vagas previstas para as áreas fiscal, de controle, tribunais, policial, saúde e etc...",
-      "details": "Fique por dentro dos Concursos 2026: mais de 10 mil vagas previstas para as áreas fiscal, de controle, tribunais, policial, saúde e etc...",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concursos-2026/",
-      "source": "Estratégia Concursos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-25T21:58:45Z",
-      "updatedAt": "2026-04-25T21:58:45Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2025/05/05161312/concursos-2026.jpg"
     },
     {
       "id": "macro-9bda72dd8a9d92e4fb98f5da",
       "title": "Concursos 2026: mais de 160 mil vagas; salários de até R$ 30 mil!",
-      "summary": "Atualizacao de macro capturada em Estratégia Concursos.",
-      "details": "",
-      "url": "https://vaiparaty.com.br/noticias/trump-promete-chegar-ao-fundo-da-reforma-multibilionaria-de-edificios-do-fed-apos-mudanca-na-investigacao/82624/",
+      "summary": "Encontrar profissionais qualificados virou um dos maiores desafios do mercado de trabalho brasileiro. Diante disso, empresas de setores como logística, construção civil, tecnologia, mineração e mercado financeiro pararam de esperar o profissional pronto e passaram a formá-lo do z",
+      "details": "Encontrar profissionais qualificados virou um dos maiores desafios do mercado de trabalho brasileiro. Diante disso, empresas de setores como logística, construção civil, tecnologia, mineração e mercado financeiro pararam de esperar o profissional pronto e passaram a formá-lo do zero. A resposta mais concreta a esse pro",
+      "url": "https://crusoe.com.br/variedades/a-decisao-tomada-pelas-empresas-para-reagir-a-falta-de-mao-de-obra-no-brasil/",
       "source": "Estratégia Concursos",
       "category": "macro",
       "tags": [
@@ -350,14 +414,15 @@
       "publishedAt": "2026-04-25T21:52:50Z",
       "updatedAt": "2026-04-25T21:52:50Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://cdn.crusoe.com.br/uploads/2026/04/kaja-sariwating-BZ5CKvk1hwE-unsplash.jpg"
     },
     {
       "id": "macro-1f6b39bd1be51a696a6bba34",
       "title": "EBITDA do Casino Group dispara 14% no ano fiscal de 2025 em meio à reestruturação",
-      "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
-      "details": "",
-      "url": "https://br.investing.com/news/company-news/ebitda-do-casino-group-dispara-14-no-ano-fiscal-de-2025-em-meio-a-reestruturacao-93CH-1910407",
+      "summary": "Uma proposta em análise por integrantes da equipe econômica ligada ao senador Flávio Bolsonaro pode alterar a forma de reajuste",
+      "details": "Uma proposta em análise por integrantes da equipe econômica ligada ao senador Flávio Bolsonaro pode alterar a forma de reajuste",
+      "url": "https://diariodocomercio.com.br/mix/reducao-da-aposentadoria-pode-ser-confirmada-logo-as-apos-eleicoes-no-brasil/",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -368,14 +433,15 @@
       "publishedAt": "2026-04-25T21:31:00Z",
       "updatedAt": "2026-04-25T21:31:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://diariodocomercio.com.br/mix/wp-content/uploads/2025/04/idade-minima-aposentadoria-brasil-pode-subir.webp"
     },
     {
       "id": "macro-0aaf689c378dd885250889fb",
       "title": "Redução da aposentadoria pode ser confirmada logo após eleições no Brasil",
-      "summary": "Uma proposta em análise por integrantes da equipe econômica ligada ao senador Flávio Bolsonaro pode alterar a forma de reajuste",
-      "details": "Uma proposta em análise por integrantes da equipe econômica ligada ao senador Flávio Bolsonaro pode alterar a forma de reajuste",
-      "url": "https://diariodocomercio.com.br/mix/reducao-da-aposentadoria-pode-ser-confirmada-logo-as-apos-eleicoes-no-brasil/",
+      "summary": "Atualizacao de macro capturada em Diário do Comércio.",
+      "details": "",
+      "url": "https://br.investing.com/news/company-news/ebitda-do-casino-group-dispara-14-no-ano-fiscal-de-2025-em-meio-a-reestruturacao-93CH-1910407",
       "source": "Diário do Comércio",
       "category": "macro",
       "tags": [
@@ -386,15 +452,14 @@
       "publishedAt": "2026-04-25T20:42:00Z",
       "updatedAt": "2026-04-25T20:42:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diariodocomercio.com.br/mix/wp-content/uploads/2025/04/idade-minima-aposentadoria-brasil-pode-subir.webp"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-a79b3bf774e2d97a06c3b606",
       "title": "KNCR11 mantém rendimento elevado mesmo com Selic em ajuste: fundo ainda vale a pena em 2026?",
-      "summary": "KNCR11 mantém bons dividendos com Selic alta, mas excesso de caixa e cenário de juros trazem novos desafios ao fundo",
-      "details": "KNCR11 mantém bons dividendos com Selic alta, mas excesso de caixa e cenário de juros trazem novos desafios ao fundo",
-      "url": "https://arevista.com.br/investimentos/kncr11-mantem-rendimento-elevado-mesmo-com-selic-em-ajuste-fundo-ainda-vale-a-pena-em-2026/",
+      "summary": "Decreto da governadora trava novos cargos e mira economia de até 25% Por Delmo Menezes A governadora do Distrito Federal, Celina Leão, deu início a um pacote de medidas para conter despesas públicas e preservar o equilíbrio fiscal do DF. As ações foram formalizadas por meio do De",
+      "details": "Decreto da governadora trava novos cargos e mira economia de até 25% Por Delmo Menezes A governadora do Distrito Federal, Celina Leão, deu início a um pacote de medidas para conter despesas públicas e preservar o equilíbrio fiscal do DF. As ações foram formalizadas por meio do Decreto nº 48.509/2026, publicado em ediçã",
+      "url": "https://agendacapital.com.br/celina-leao-corta-gastos-suspende-nomeacoes-e-impoe-ajuste-fiscal-no-df/",
       "source": "arevista.com.br",
       "category": "macro",
       "tags": [
@@ -406,14 +471,14 @@
       "updatedAt": "2026-04-25T20:26:07Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://arevista.com.br/wp-content/uploads/2026/04/ChatGPT-Image-25-de-abr.-de-2026-17_25_16-1024x576.png"
+      "imageUrl": "https://agendacapital.com.br/wp-content/uploads/2025/12/Palácio-do-Buriti-Brasília.jpg"
     },
     {
       "id": "macro-379453c8f46d70bd08c68655",
       "title": "Análise: Bandeira amarela na conta de luz em maio pressionará inflação",
-      "summary": "Aneel anunciou mudança na bandeira tarifária para maio, com previsão de impactos ainda maiores em junho. A analista Lucinda Pinto alerta para pressão inflacionária e peso no orçamento familiar",
-      "details": "Aneel anunciou mudança na bandeira tarifária para maio, com previsão de impactos ainda maiores em junho. A analista Lucinda Pinto alerta para pressão inflacionária e peso no orçamento familiar",
-      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/analise-bandeira-amarela-em-maio-pressionara-inflacao/",
+      "summary": "KNCR11 mantém bons dividendos com Selic alta, mas excesso de caixa e cenário de juros trazem novos desafios ao fundo",
+      "details": "KNCR11 mantém bons dividendos com Selic alta, mas excesso de caixa e cenário de juros trazem novos desafios ao fundo",
+      "url": "https://arevista.com.br/investimentos/kncr11-mantem-rendimento-elevado-mesmo-com-selic-em-ajuste-fundo-ainda-vale-a-pena-em-2026/",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -425,15 +490,15 @@
       "updatedAt": "2026-04-25T20:07:43Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/03/Linhao3_Robson_Rodrigues.jpg?w=1200&h=630&crop=1"
+      "imageUrl": "https://arevista.com.br/wp-content/uploads/2026/04/ChatGPT-Image-25-de-abr.-de-2026-17_25_16-1024x576.png"
     },
     {
-      "id": "latest-feb72c62353a1322391500be",
+      "id": "latest-914ef03a8890f394839da81f",
       "title": "Ações seguem Trump: o que explica essa influência no mercado?",
-      "summary": "‘Creio porque é absurdo’ pode funcionar como formulação teológica; não serve, porém, para cobrir o buraco das contas públicas nos próximos anos",
-      "details": "‘Creio porque é absurdo’ pode funcionar como formulação teológica; não serve, porém, para cobrir o buraco das contas públicas nos próximos anos",
-      "url": "https://www.estadao.com.br/economia/alexandre-schwartsman/credo-quia-absurdum-o-projeto-de-lei-de-diretrizes-orcamentarias-se-tornou-um-salto-de-fe/",
-      "source": "DIÁRIO DO ESTADO",
+      "summary": "Aneel anunciou mudança na bandeira tarifária para maio, com previsão de impactos ainda maiores em junho. A analista Lucinda Pinto alerta para pressão inflacionária e peso no orçamento familiar",
+      "details": "Aneel anunciou mudança na bandeira tarifária para maio, com previsão de impactos ainda maiores em junho. A analista Lucinda Pinto alerta para pressão inflacionária e peso no orçamento familiar",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/analise-bandeira-amarela-em-maio-pressionara-inflacao/",
+      "source": "Diário do Estado",
       "category": "latest",
       "tags": [
         "mercado",
@@ -444,14 +509,14 @@
       "updatedAt": "2026-04-25T20:04:22Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/SDW2HER6WVGENJ4WYD5JIYMEY4.jpg?quality=80&auth=c3fd8a7dcad11e9fbf1e1fed75e69431ebf3d4490bc373fc66fe19b76167a21f&width=1200&height=630&smart=true"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/03/Linhao3_Robson_Rodrigues.jpg?w=1200&h=630&crop=1"
     },
     {
       "id": "macro-3365cb333089b05afb0afd53",
       "title": "‘Credo quia absurdum’: o Projeto de Lei de Diretrizes Orçamentárias se tornou um salto de fé",
-      "summary": "Mercado financeiro é impactado por Trump, com altos e baixos relacionados a suas postagens. Entenda o porquê.",
-      "details": "Mercado financeiro é impactado por Trump, com altos e baixos relacionados a suas postagens. Entenda o porquê.",
-      "url": "https://diariodoestadogo.com.br/acoes-seguem-trump-o-que-explica-essa-influencia-no-mercado/",
+      "summary": "‘Creio porque é absurdo’ pode funcionar como formulação teológica; não serve, porém, para cobrir o buraco das contas públicas nos próximos anos",
+      "details": "‘Creio porque é absurdo’ pode funcionar como formulação teológica; não serve, porém, para cobrir o buraco das contas públicas nos próximos anos",
+      "url": "https://www.estadao.com.br/economia/alexandre-schwartsman/credo-quia-absurdum-o-projeto-de-lei-de-diretrizes-orcamentarias-se-tornou-um-salto-de-fe/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -463,14 +528,14 @@
       "updatedAt": "2026-04-25T20:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/04/acoes-seguem-trump3A-o-que-explica-essa-influencia-no-mercado3F-1200x795.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/SDW2HER6WVGENJ4WYD5JIYMEY4.jpg?quality=80&auth=c3fd8a7dcad11e9fbf1e1fed75e69431ebf3d4490bc373fc66fe19b76167a21f&width=1200&height=630&smart=true"
     },
     {
       "id": "latest-4885b9e2ea26e1650c5d111d",
       "title": "‘Ele mantém o mercado sob controle total’: ações seguem ritmo das postagens de Trump",
-      "summary": "Mercado financeiro mundial tem se guiado pelo humor repentino do presidente americano; uma publicação pode causar perdas bilionárias",
-      "details": "Mercado financeiro mundial tem se guiado pelo humor repentino do presidente americano; uma publicação pode causar perdas bilionárias",
-      "url": "https://oglobo.globo.com/economia/financas/noticia/2026/04/25/ele-mantem-o-mercado-sob-controle-total-acoes-seguem-ritmo-das-postagens-de-trump.ghtml",
+      "summary": "Mercado financeiro é impactado por Trump, com altos e baixos relacionados a suas postagens. Entenda o porquê.",
+      "details": "Mercado financeiro é impactado por Trump, com altos e baixos relacionados a suas postagens. Entenda o porquê.",
+      "url": "https://diariodoestadogo.com.br/acoes-seguem-trump-o-que-explica-essa-influencia-no-mercado/",
       "source": "O Globo",
       "category": "latest",
       "tags": [
@@ -482,14 +547,14 @@
       "updatedAt": "2026-04-25T19:38:11Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s2-oglobo.glbimg.com/NtpNg_a5Bgg5vGL9ylYiynP4YPM=/3684x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2025/n/N/SQHUbmQcGJZBWC8Bapcg/300421743.jpg"
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/04/acoes-seguem-trump3A-o-que-explica-essa-influencia-no-mercado3F-1200x795.jpg"
     },
     {
       "id": "macro-99de9f95e1c735d93b719144",
       "title": "Celina Leão corta gastos, suspende nomeações e impõe ajuste fiscal no DF",
-      "summary": "Decreto da governadora trava novos cargos e mira economia de até 25% Por Delmo Menezes A governadora do Distrito Federal, Celina Leão, deu início a um pacote de medidas para conter despesas públicas e preservar o equilíbrio fiscal do DF. As ações foram formalizadas por meio do De",
-      "details": "Decreto da governadora trava novos cargos e mira economia de até 25% Por Delmo Menezes A governadora do Distrito Federal, Celina Leão, deu início a um pacote de medidas para conter despesas públicas e preservar o equilíbrio fiscal do DF. As ações foram formalizadas por meio do Decreto nº 48.509/2026, publicado em ediçã",
-      "url": "https://agendacapital.com.br/celina-leao-corta-gastos-suspende-nomeacoes-e-impoe-ajuste-fiscal-no-df/",
+      "summary": "Aumento nos preços de alimentos essenciais e crescimento do consumo são destacados por pesquisa",
+      "details": "Aumento nos preços de alimentos essenciais e crescimento do consumo são destacados por pesquisa",
+      "url": "https://noticias.r7.com/brasilia/df-record/video/inflacao-impacta-consumo-das-familias-brasileiras-25042026/",
       "source": "Agenda Capital",
       "category": "macro",
       "tags": [
@@ -501,14 +566,14 @@
       "updatedAt": "2026-04-25T19:21:50Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://agendacapital.com.br/wp-content/uploads/2025/12/Palácio-do-Buriti-Brasília.jpg"
+      "imageUrl": "https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/https%3A%2F%2Fd22yf0mxeu0gma.cloudfront.net%2F04-25-2026%2Ft_81e2465bde824c30a4e99f02e76e4f13_name_file_960x540_1600_v4_.jpg?smart=true&auth=0af638da9e7e70d9b0ee59b78e1a8285838f9dd56fb7794b8e3d9ca8173637a6&width=1200&height=630"
     },
     {
       "id": "latest-d09a7b61948557368a1c643f",
       "title": "Mercado financeiro: Confira as cotações do dia",
-      "summary": "Atualizacao de ultima hora capturada em No Vale Notícias.",
-      "details": "",
-      "url": "https://novalenoticias.com.br/mercado-financeiro-confira-as-cotacoes-do-dia/",
+      "summary": "Mercado financeiro mundial tem se guiado pelo humor repentino do presidente americano; uma publicação pode causar perdas bilionárias",
+      "details": "Mercado financeiro mundial tem se guiado pelo humor repentino do presidente americano; uma publicação pode causar perdas bilionárias",
+      "url": "https://oglobo.globo.com/economia/financas/noticia/2026/04/25/ele-mantem-o-mercado-sob-controle-total-acoes-seguem-ritmo-das-postagens-de-trump.ghtml",
       "source": "No Vale Notícias",
       "category": "latest",
       "tags": [
@@ -520,14 +585,14 @@
       "updatedAt": "2026-04-25T18:50:29Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://novalenoticias.com.br/wp-content/uploads/2026/04/cotacos-agricolas-2026-1.jpg"
+      "imageUrl": "https://s2-oglobo.glbimg.com/NtpNg_a5Bgg5vGL9ylYiynP4YPM=/3684x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2025/n/N/SQHUbmQcGJZBWC8Bapcg/300421743.jpg"
     },
     {
       "id": "macro-b1523f6e0be45f7930632574",
       "title": "Inflação impacta consumo das famílias brasileiras",
-      "summary": "Aumento nos preços de alimentos essenciais e crescimento do consumo são destacados por pesquisa",
-      "details": "Aumento nos preços de alimentos essenciais e crescimento do consumo são destacados por pesquisa",
-      "url": "https://noticias.r7.com/brasilia/df-record/video/inflacao-impacta-consumo-das-familias-brasileiras-25042026/",
+      "summary": "Atualizacao de macro capturada em R7.",
+      "details": "",
+      "url": "https://novalenoticias.com.br/mercado-financeiro-confira-as-cotacoes-do-dia/",
       "source": "R7",
       "category": "macro",
       "tags": [
@@ -539,25 +604,7 @@
       "updatedAt": "2026-04-25T18:24:04Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/https%3A%2F%2Fd22yf0mxeu0gma.cloudfront.net%2F04-25-2026%2Ft_81e2465bde824c30a4e99f02e76e4f13_name_file_960x540_1600_v4_.jpg?smart=true&auth=0af638da9e7e70d9b0ee59b78e1a8285838f9dd56fb7794b8e3d9ca8173637a6&width=1200&height=630"
-    },
-    {
-      "id": "macro-bb0dcb5241d06c48474b4e05",
-      "title": "Redução de impostos sobre combustíveis não burla responsabilidade fiscal, afirma ministro",
-      "summary": "Atualizacao de macro capturada em MSN.",
-      "details": "",
-      "url": "https://www.msn.com/pt-br/dinheiro/economia-e-negocios/redu%C3%A7%C3%A3o-de-impostos-sobre-combust%C3%ADveis-n%C3%A3o-burla-responsabilidade-fiscal-afirma-ministro/ar-AA21DiFS?ocid=finance-verthp-feeds",
-      "source": "MSN",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-25T17:53:10Z",
-      "updatedAt": "2026-04-25T17:53:10Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "imageUrl": "https://novalenoticias.com.br/wp-content/uploads/2026/04/cotacos-agricolas-2026-1.jpg"
     },
     {
       "id": "macro-aa0f76fda3e3cf2277a91918",
@@ -581,9 +628,9 @@
     {
       "id": "macro-679cd608d7f3e54548c02eba",
       "title": "Ganhos extras com petróleo exigem cautela fiscal, diz Jeferson Bittencourt",
-      "summary": "Atualizacao de macro capturada em MSN.",
-      "details": "",
-      "url": "https://www.msn.com/pt-br/dinheiro/economia-e-negocios/ganhos-extras-com-petr%C3%B3leo-exigem-cautela-fiscal-diz-jeferson-bittencourt/ar-AA21FmvH?ocid=finance-verthp-feeds",
+      "summary": "Os reflexos vão além da economia tradicional e também alcançam o mercado de criptomoedas, especialmente o Bitcoin",
+      "details": "Os reflexos vão além da economia tradicional e também alcançam o mercado de criptomoedas, especialmente o Bitcoin",
+      "url": "https://bpmoney.com.br/noticias/a-alta-do-petroleo-impacta-o-bitcoin-entenda-por-que-a-commodity-pode-mexer-com-o-mercado-cripto/",
       "source": "MSN",
       "category": "macro",
       "tags": [
@@ -594,14 +641,15 @@
       "publishedAt": "2026-04-25T16:39:02Z",
       "updatedAt": "2026-04-25T16:39:02Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://uploads.bpmoney.com.br/2026/04/Design-sem-nome-2.png"
     },
     {
       "id": "latest-c94cbcd265b471cc6cc494bf",
       "title": "Horoscopo Financeiro de 25/04/2026 - Previsoes para seu dinheiro",
-      "summary": "Atualizacao de ultima hora capturada em SpaceMoney.",
-      "details": "",
-      "url": "https://br.investing.com/news/economic-indicators/calendario-economico-copom-fed-bce-boj-decidem-juros-em-semana-com-feriado-1910351",
+      "summary": "Confira as previsoes financeiras para todos os signos hoje, 25 de abril de 2026, com analises de investimentos, alertas de gastos e oportunidades do dia sob a influencia de Saturno em conjuncao com Mercurio e a Lua em Capricornio.",
+      "details": "Confira as previsoes financeiras para todos os signos hoje, 25 de abril de 2026, com analises de investimentos, alertas de gastos e oportunidades do dia sob a influencia de Saturno em conjuncao com Mercurio e a Lua em Capricornio.",
+      "url": "https://www.spacemoney.com.br/horoscopo/horoscopo-financeiro-25-04-2026/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -612,7 +660,8 @@
       "publishedAt": "2026-04-25T15:01:42Z",
       "updatedAt": "2026-04-25T15:01:42Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/04/pexels-photo-10780188-8.jpg"
     },
     {
       "id": "latest-62a5a4c8eb60c07a80135782",
@@ -634,30 +683,11 @@
       "imageUrl": "https://economicnewsbrasil.com.br/wp-content/uploads/2026/04/temporada_de_resultados_1t26.jpg"
     },
     {
-      "id": "macro-6649d9e85bdbdc214035dd5c",
-      "title": "Calendário Econômico: Copom, Fed, BCE, BoJ decidem juros em semana com feriado",
-      "summary": "Confira as previsoes financeiras para todos os signos hoje, 25 de abril de 2026, com analises de investimentos, alertas de gastos e oportunidades do dia sob a influencia de Saturno em conjuncao com Mercurio e a Lua em Capricornio.",
-      "details": "Confira as previsoes financeiras para todos os signos hoje, 25 de abril de 2026, com analises de investimentos, alertas de gastos e oportunidades do dia sob a influencia de Saturno em conjuncao com Mercurio e a Lua em Capricornio.",
-      "url": "https://www.spacemoney.com.br/horoscopo/horoscopo-financeiro-25-04-2026/",
-      "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-25T14:21:00Z",
-      "updatedAt": "2026-04-25T14:21:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/04/pexels-photo-10780188-8.jpg"
-    },
-    {
       "id": "latest-c897e72cc1994f44fe8ec0ef",
       "title": "Temporada de resultados 1T26 expõe quem ganha e quem perde com juros altos",
-      "summary": "Os reflexos vão além da economia tradicional e também alcançam o mercado de criptomoedas, especialmente o Bitcoin",
-      "details": "Os reflexos vão além da economia tradicional e também alcançam o mercado de criptomoedas, especialmente o Bitcoin",
-      "url": "https://bpmoney.com.br/noticias/a-alta-do-petroleo-impacta-o-bitcoin-entenda-por-que-a-commodity-pode-mexer-com-o-mercado-cripto/",
+      "summary": "Parceria que batiza novo estádio do clube da MLS reforça movimento de expansão de marcas brasileiras e presença crescente de empreendedores do país no mercado norte-americano",
+      "details": "Parceria que batiza novo estádio do clube da MLS reforça movimento de expansão de marcas brasileiras e presença crescente de empreendedores do país no mercado norte-americano",
+      "url": "https://www.braziliantimes.com/business/empresas-brasileiras-avancam-nos-eua-e-encontram-na-florida-porta-de-entrada-para-expansao-2/",
       "source": "Economic News Brasil",
       "category": "latest",
       "tags": [
@@ -669,14 +699,14 @@
       "updatedAt": "2026-04-25T14:19:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://uploads.bpmoney.com.br/2026/04/Design-sem-nome-2.png"
+      "imageUrl": "https://www.braziliantimes.com/wp-content/uploads/2025/04/sem-imagem-bt.jpg"
     },
     {
       "id": "latest-e1d6f7345044b88d7f94bd90",
       "title": "Dólar fecha abaixo de R$ 5, e bolsa cai com cautela global",
-      "summary": "Governo federal anunciou bloqueio de empresas que atuam no mercado preditivo",
-      "details": "Governo federal anunciou bloqueio de empresas que atuam no mercado preditivo",
-      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/proibicao-de-plataformas-preditivas-protege-mercado-dizem-bets/",
+      "summary": "Atualizacao de ultima hora capturada em O Chefão da Notícia.",
+      "details": "",
+      "url": "https://www.msn.com/pt-br/dinheiro/economia-e-negocios/ganhos-extras-com-petr%C3%B3leo-exigem-cautela-fiscal-diz-jeferson-bittencourt/ar-AA21FmvH?ocid=finance-verthp-feeds",
       "source": "O Chefão da Notícia",
       "category": "latest",
       "tags": [
@@ -687,33 +717,14 @@
       "publishedAt": "2026-04-25T14:17:15Z",
       "updatedAt": "2026-04-25T14:17:15Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/22736_BB4717835D26D21F-3.jpg?w=1200&h=630&crop=1"
-    },
-    {
-      "id": "macro-0acc7c25c874a8bc159f5e5d",
-      "title": "“Taxa das blusinhas só gerou inflação e arrecadação”, alerta economista",
-      "summary": "Atualizacao de macro capturada em tmc.com.br.",
-      "details": "",
-      "url": "https://ochefaodanoticia.com.br/economia/dolar-fecha-abaixo-de-r-5-e-bolsa-cai-com-cautela-global/",
-      "source": "tmc.com.br",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-04-25T14:14:59Z",
-      "updatedAt": "2026-04-25T14:14:59Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-6925ec1a1c73d44e5d479141",
       "title": "Empresas brasileiras avançam nos EUA e encontram na Flórida porta de entrada para expansão",
-      "summary": "Nova pesquisa aponta que demanda por compras internacionais de até US$ 50 caiu 19,4% após a implementação da taxa. Confira na íntegra.",
-      "details": "Nova pesquisa aponta que demanda por compras internacionais de até US$ 50 caiu 19,4% após a implementação da taxa. Confira na íntegra.",
-      "url": "https://tmc.com.br/economia/taxa-das-blusinhas-so-gerou-inflacao-e-arrecadacao-alerta-economista/",
+      "summary": "Governo federal anunciou bloqueio de empresas que atuam no mercado preditivo",
+      "details": "Governo federal anunciou bloqueio de empresas que atuam no mercado preditivo",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/proibicao-de-plataformas-preditivas-protege-mercado-dizem-bets/",
       "source": "Brazilian Times",
       "category": "companies",
       "tags": [
@@ -725,14 +736,14 @@
       "updatedAt": "2026-04-25T14:01:45Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://tmc.com.br/wp-content/uploads/2026/04/close-up-view-online-shopping-concept-scaled.jpg.optimal.jpg"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/22736_BB4717835D26D21F-3.jpg?w=1200&h=630&crop=1"
     },
     {
       "id": "latest-fa0babbc02bf95b3f8a1faf3",
       "title": "Proibição de plataformas preditivas protege mercado, dizem bets",
-      "summary": "Parceria que batiza novo estádio do clube da MLS reforça movimento de expansão de marcas brasileiras e presença crescente de empreendedores do país no mercado norte-americano",
-      "details": "Parceria que batiza novo estádio do clube da MLS reforça movimento de expansão de marcas brasileiras e presença crescente de empreendedores do país no mercado norte-americano",
-      "url": "https://www.braziliantimes.com/business/empresas-brasileiras-avancam-nos-eua-e-encontram-na-florida-porta-de-entrada-para-expansao-2/",
+      "summary": "Atualizacao de ultima hora capturada em CNN Brasil.",
+      "details": "",
+      "url": "https://ochefaodanoticia.com.br/economia/dolar-fecha-abaixo-de-r-5-e-bolsa-cai-com-cautela-global/",
       "source": "CNN Brasil",
       "category": "latest",
       "tags": [
@@ -743,16 +754,15 @@
       "publishedAt": "2026-04-25T13:47:48Z",
       "updatedAt": "2026-04-25T13:47:48Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.braziliantimes.com/wp-content/uploads/2025/04/sem-imagem-bt.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-6db6fbf146ec603d1ed30c66",
+      "id": "latest-a4b042dc64ac307c3a8c8f70",
       "title": "Gorete é Show! Revela o Encanto do Mercado Elias Mansour em Rio Branco",
-      "summary": "Atualizacao de ultima hora capturada em DIÁRIO DO ESTADO.",
+      "summary": "Atualizacao de ultima hora capturada em Diário do Estado.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNT3VJT3NBMHZIQVhmUUU5am4tb0JEYVUydXhObDhKVEpKaXBOWC1DOVEzUVM1MFhJOEJ0cFMtSV9RRGxzenNMQ3BrOUw4ZmJNZ2ZGc0FzRy1ScmZNVTdKdFV6NHdKcmNIajZtcTRnWTA5ZElJQ05xVW9ZUU90RGw0MnhKY01xN21nanVZVEFoZENWMTFlTWpPV1NxeXBrakxnSXNrSA?oc=5",
-      "source": "DIÁRIO DO ESTADO",
+      "source": "Diário do Estado",
       "category": "latest",
       "tags": [
         "mercado",
@@ -1013,6 +1023,24 @@
       ],
       "publishedAt": "2026-04-25T00:05:31Z",
       "updatedAt": "2026-04-25T00:05:31Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "companies-6a9c90ddc1705186be7f366e",
+      "title": "STF confirma restrições à compra de terras por estrangeiros e empresas com capital externo no Brasil",
+      "summary": "Atualizacao de empresas capturada em NOVIDADES MT.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOS29Tc3R0V3RhcFpzTF9DdFJSM19JZ3ZrekI3Vl8zZFV5TC1DbXhEbVVtWkQ0b1FmUm0yLWU4RklGYzdUTEVaQ0VwazZQOFdYMTZSMGFqa3duTDF2WlZRSXpTcjNqbVFSaDV1aVZLREF5OHVweUxaUTZGUmhyYnI1b2k0ZGowa25zX2R0U1NoYmhTN1dOMmhzMWROWDFEWjZtT21ieE5VNHhNdnNGZndaSWZFWlNXTXNTWlZhREdhZm1ISlVPbkxvd2RsSk1VWUxzN2Raem45TQ?oc=5",
+      "source": "NOVIDADES MT",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-04-25T00:04:00Z",
+      "updatedAt": "2026-04-25T00:04:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
@@ -1375,24 +1403,6 @@
       "updatedAt": "2026-04-24T16:55:44Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "companies-3ad78d7fb9b11adbd5f7abe6",
-      "title": "Novo processo de importação eleva exigência técnica e muda rotina das empresas brasileiras",
-      "summary": "Atualizacao de empresas capturada em lerunica.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQeTkwS3Z2eEhQTUdkUkk1OVMzWTJQd1QtOHBVb3RPQ25TblpYUHZ5SjhxbnRXMXQzZEdfMDhRQmhnNmZ2UlM3VkRVSTA1b19pZXNTMFdmVjR6QlY0cjVqX2JvM2UydmlmWl9GSXJtYS1URURvTWRJX1hZT3dXdFdHVnBYSXBaUHZTVzBKZGw1ZmhDR0M4bGpfdTY5aVpiZVlRY2Nnam1Hd3A3TS1QYmpXZElGZ294MnBELVp0Z0JRMmZERk44TndPNzVHSQ?oc=5",
-      "source": "lerunica.com.br",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-04-24T15:58:00Z",
-      "updatedAt": "2026-04-24T15:58:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     }
   ]
 }
