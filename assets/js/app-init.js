@@ -17,9 +17,8 @@
     console.error("[app-init] bootStudyApp nao encontrado");
   }
 
-  if (window.TickerTape && typeof window.TickerTape.init === "function") {
-    window.TickerTape.init();
-  }
+  // Ticker de mercado removido no passo 2 — tinha vibe de Bloomberg e poluía a tela.
+  // (TickerTape ainda existe como módulo no projeto mas não é mais inicializado.)
 
   if ("serviceWorker" in navigator && /^https?:/i.test(window.location.protocol)) {
     window.addEventListener("load", () => {

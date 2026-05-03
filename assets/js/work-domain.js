@@ -5,7 +5,8 @@
     {
       id: "beneva",
       name: "BENEVA",
-      accent: "#00524C",
+      accent: "#3a5a52",        // verde-musgo rebaixado (era #00524C)
+      brandColor: "#00524C",     // mantida para uso eventual em logo/branding
       logoPath: "assets/brand-logos/logo-beneva.png",
       logoAlt: "Logo da BENEVA",
       logoSurface: "brand-dark",
@@ -14,7 +15,8 @@
     {
       id: "tsea",
       name: "TSEA",
-      accent: "#FF000D",
+      accent: "#a8392a",        // terracota rebaixada (era #FF000D — vermelho 100% que brigava com 'atrasado')
+      brandColor: "#FF000D",
       logoPath: "assets/brand-logos/logo-tsea.webp",
       logoAlt: "Logo da TSEA",
       logoSurface: "brand-light",
@@ -23,7 +25,8 @@
     {
       id: "itamaraca-spe",
       name: "ITAMARACÁ SPE",
-      accent: "#13407F",
+      accent: "#2c4566",        // azul-ardósia rebaixado (era #13407F)
+      brandColor: "#13407F",
       logoPath: "assets/brand-logos/logo-itamaraca.png",
       logoAlt: "Logo da ITAMARACÁ",
       logoSurface: "brand-light",
@@ -37,6 +40,23 @@
     { value: "medium", label: "Média", rank: 2 },
     { value: "low", label: "Baixa", rank: 3 }
   ]);
+
+  // P3a: Tipos de item de trabalho. Cada tipo tem affordance e fluxo proprios.
+  const ITEM_KINDS = Object.freeze([
+    { value: "task",     label: "Tarefa",     short: "Tarefa",   icon: "check",   verb: "Resolver",      glyph: "■" },
+    { value: "followup", label: "Follow-up",  short: "Follow",   icon: "loop",    verb: "Cobrar",        glyph: "↻" },
+    { value: "email",    label: "E-mail",     short: "E-mail",   icon: "mail",    verb: "Responder",     glyph: "✉" },
+    { value: "meeting",  label: "Reunião",    short: "Reunião",  icon: "calendar",verb: "Comparecer",    glyph: "◆" },
+    { value: "document", label: "Documento",  short: "Doc",      icon: "file",    verb: "Revisar",       glyph: "▤" }
+  ]);
+
+  function getKindMeta(value) {
+    return ITEM_KINDS.find((k) => k.value === value) || ITEM_KINDS[0];
+  }
+
+  function isKind(task, kind) {
+    return !!task && (task.itemKind || "task") === kind;
+  }
 
   const STATUSES = Object.freeze([
     { value: "inbox", label: "Inbox" },
@@ -168,6 +188,27 @@
     return isOpen(task) && !!task.dueDate && task.dueDate < ref;
   }
 
+  // P3a: gradacao de atraso. Retorna 0 (em dia/futuro) ate 3 (atraso grave).
+  // 0 = sem atraso. 1 = 1d. 2 = 2-3d. 3 = 7d+ (bola murcha).
+  function overdueLevel(task, referenceIso) {
+    if (!isOverdue(task, referenceIso)) return 0;
+    const ref = referenceIso || todayIso();
+    const refDate = parseIso(ref);
+    const dueDate = parseIso(task.dueDate);
+    if (!refDate || !dueDate) return 0;
+    const days = Math.round((refDate - dueDate) / 86400000);
+    if (days <= 1) return 1;     // soft
+    if (days <= 6) return 2;     // medium
+    return 3;                    // hard (>=7d)
+  }
+
+  function overdueLabel(level) {
+    if (level === 1) return "soft";
+    if (level === 2) return "medium";
+    if (level === 3) return "hard";
+    return "none";
+  }
+
   function isToday(task, referenceIso) {
     const ref = referenceIso || todayIso();
     return isOpen(task) && (task.scheduledDayIso === ref || task.dueDate === ref);
@@ -183,10 +224,23 @@
     if (!scheduledDayIso && status === "planned") status = "inbox";
     const title = String(input.title || "").trim();
     const nextAction = String(input.nextAction || "").trim();
+    const itemKind = ITEM_KINDS.some((k) => k.value === input.itemKind) ? input.itemKind : "task";
+
+    // Heuristicas suaves: se o usuario nao escolheu kind e marcou waiting, vira followup.
+    let kind = itemKind;
+    if (!input.itemKind && status === "waiting") kind = "followup";
+
+    // Prefixo padrao do nextAction por tipo, se ausente.
+    let nextActionFinal = nextAction;
+    if (!nextActionFinal) {
+      const meta = ITEM_KINDS.find((k) => k.value === kind);
+      nextActionFinal = (meta && meta.verb ? meta.verb + " — " : "") + (title || "definir próxima ação");
+    }
 
     return {
       id: uid("work_"),
-      title: title || "Tarefa de trabalho",
+      itemKind: kind,
+      title: title || (getKindMeta(kind).label + " de trabalho"),
       description: String(input.description || "").trim(),
       scope,
       companyId: scope === "company" ? companyId : null,
@@ -195,9 +249,14 @@
       priority: PRIORITIES.some((item) => item.value === input.priority) ? input.priority : "medium",
       status,
       area: AREAS.some((item) => item.value === input.area) ? input.area : "followup",
-      nextAction: nextAction || "Definir próxima ação objetiva",
+      nextAction: nextActionFinal,
       notes: String(input.notes || "").trim(),
       waitingSince: status === "waiting" ? now : null,
+      // Campos opcionais por tipo
+      lastInteractionAt: typeof input.lastInteractionAt === "string" ? input.lastInteractionAt : null,
+      meetingTime: typeof input.meetingTime === "string" && /^\d{2}:\d{2}$/.test(input.meetingTime) ? input.meetingTime : null,
+      documentUrl: typeof input.documentUrl === "string" ? input.documentUrl : null,
+      emailFrom: typeof input.emailFrom === "string" ? input.emailFrom : null,
       createdAt: now,
       updatedAt: now,
       completedAt: status === "done" ? now : null
@@ -303,6 +362,7 @@
     STATUSES,
     AREAS,
     FILTERS,
+    ITEM_KINDS,
     toIsoDate,
     todayIso,
     parseIso,
@@ -318,11 +378,15 @@
     priorityRank,
     statusLabel,
     areaLabel,
+    getKindMeta,
+    isKind,
     isDone,
     isOpen,
     isWaiting,
     isOverdue,
     isToday,
+    overdueLevel,
+    overdueLabel,
     createTask,
     patchTask,
     sortTasks,

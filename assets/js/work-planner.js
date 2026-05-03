@@ -2,14 +2,28 @@
   "use strict";
 
   /* ═══════════════════════════════════════════════════════════════════
-     WORK PLANNER v2 · Hub por empresa
-     - Lista lateral de empresas (+ visao "Todas")
-     - Workspace focado na empresa selecionada
-     - Captura inline com 1 campo + expansao opcional
-     - Board semanal drag-and-drop por dia
-     - Prazos criticos, aguardando e notas por empresa
-     Preserva o contrato: state.workTasks, state.workFilter,
-     state.workWeekAnchor, WorkDomain, hooks StudyApp e globais do app-core.
+     WORK PLANNER v3 · Estilo Linear / Asana
+     ─────────────────────────────────────────────────────────────────
+     Layout:
+       sidebar  — visões fixas (hoje, semana, atrasadas, aguardando,
+                  inbox, todas) + lista de empresas + tags
+       header   — título da visão + contador + busca + botão "Nova"
+       capture  — formulário inline expansível (slide-down)
+       board    — lista densa por seção (atrasadas, hoje, próximas);
+                  na visão "semana" vira kanban de 7 colunas
+       aside    — resumo: prazos críticos + aguardando + inbox
+
+     Contratos preservados:
+       state.workTasks, state.workFilter, state.workWeekAnchor
+       window.WorkPlanner.{render, addTask, updateTask, deleteTask,
+                          openCapture, closeCapture, setFilter,
+                          getCurrentWeekStart}
+       IDs: workPage, workSidebar, workWorkspaceHeader, workCapture,
+            workBoard, workAside, homeQuickCaptureForm
+       Lifecycle: StudyApp.onReady / onStateReplaced
+       Atalhos: n (nova), Alt+Shift+←/→/0 (semana ant/prox/atual)
+     Dependências globais: state, WorkDomain (WD), saveState, showToast,
+       openPage, StudyApp.
      ═══════════════════════════════════════════════════════════════════ */
 
   function initWorkPlanner(app) {
@@ -17,25 +31,33 @@
     window.__workPlannerInitialized = true;
     const appApi = app || window.StudyApp || {};
     const WD = window.WorkDomain;
-    const WEEKDAY_NAMES = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"];
-    const WEEKDAY_FULL = ["Domingo", "Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado"];
+    if (!WD) {
+      console.error("[work-planner] WorkDomain ausente");
+      return;
+    }
+
+    const WEEKDAY_FULL = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+    const WEEKDAY_SHORT = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
     const MONTH_NAMES = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
 
-    const SCOPE_FILTERS = ["today", "overdue", "waiting", "general"];
+    // visões aceitas (não-empresa)
+    const VIEWS = ["today", "week", "overdue", "waiting", "inbox", "all"];
+    // empresas vêm de WD.COMPANIES
     const COMPANY_IDS = WD.COMPANIES.map((c) => c.id);
 
     let draggingId = null;
     let captureOpen = false;
-    let captureCompanyLock = null;
+    let searchTerm = "";
 
     if (!Array.isArray(state.workTasks)) state.workTasks = [];
-    if (!state.workFilter) state.workFilter = "all";
+    if (!state.workFilter) state.workFilter = "today";
+
+    // backwards compat: se vier filtro antigo ("general"), re-mapeia
+    if (state.workFilter === "general") state.workFilter = "all";
 
     let currentWeekStart = WD.getWeekStart(state.workWeekAnchor || new Date());
 
-    /* ─────────────────────────────────────────────────────────────── */
-    /* Helpers                                                         */
-    /* ─────────────────────────────────────────────────────────────── */
+    /* ─────────────── Helpers ─────────────── */
 
     function esc(value) {
       if (value == null) return "";
@@ -53,7 +75,7 @@
 
     function fmtIsoShort(iso) {
       const d = WD.parseIso(iso);
-      return d ? fmtDateShort(d) : "sem prazo";
+      return d ? fmtDateShort(d) : "—";
     }
 
     function relativeDueLabel(iso) {
@@ -63,57 +85,112 @@
       if (!today || !due) return "Sem prazo";
       const diff = Math.round((due - today) / 86400000);
       if (diff === 0) return "Hoje";
-      if (diff === 1) return "Amanha";
+      if (diff === 1) return "Amanhã";
       if (diff === -1) return "Ontem";
-      if (diff < 0) return Math.abs(diff) + " dias atras";
-      if (diff < 7) return "em " + diff + " dias";
+      if (diff < 0) return Math.abs(diff) + "d atrás";
+      if (diff < 7) return "em " + diff + "d";
       return fmtDateShort(due);
     }
 
-    function currentWeekIsos() {
-      return WD.getWeekDays(currentWeekStart).map((d) => d.iso);
+    function dueTone(iso) {
+      if (!iso) return "quiet";
+      const today = WD.parseIso(WD.todayIso());
+      const due = WD.parseIso(iso);
+      if (!today || !due) return "quiet";
+      const diff = Math.round((due - today) / 86400000);
+      if (diff < 0) return "danger";
+      if (diff <= 1) return "warning";
+      if (diff <= 3) return "accent";
+      return "quiet";
     }
+
+    // P3a — filtros tambem aceitam "kind:<value>"
+    const KIND_FILTERS = ["kind:task", "kind:followup", "kind:email", "kind:meeting", "kind:document"];
 
     function currentFilter() {
-      const allowed = ["all"].concat(SCOPE_FILTERS).concat(COMPANY_IDS);
-      return allowed.indexOf(state.workFilter) === -1 ? "all" : state.workFilter;
+      const allowed = VIEWS.concat(COMPANY_IDS).concat(KIND_FILTERS);
+      return allowed.indexOf(state.workFilter) === -1 ? "today" : state.workFilter;
     }
 
-    function currentCompanyMeta() {
-      const f = currentFilter();
-      return WD.companyMeta(f);
+    function isCompanyFilter(f) {
+      return COMPANY_IDS.indexOf(f || currentFilter()) !== -1;
     }
 
-    function isCompanyFilter() {
-      return !!currentCompanyMeta();
+    function isKindFilter(f) {
+      const k = f || currentFilter();
+      return typeof k === "string" && k.indexOf("kind:") === 0;
     }
 
-    function logoMarkHtml(company, size) {
-      const meta = WD.companyMeta(company.id) || company;
-      const sz = size || "md";
-      const blend = meta.logoBlend && meta.logoBlend !== "normal"
-        ? ' style="mix-blend-mode:' + esc(meta.logoBlend) + ';"'
-        : "";
-      return '<span class="wk-logo wk-logo--' + sz + ' wk-logo--' + esc(meta.logoSurface || "brand-light") + '" data-company-id="' + esc(company.id) + '">' +
-        '<img src="' + esc(meta.logoPath) + '" alt="" aria-hidden="true"' + blend + ' loading="lazy" decoding="async" />' +
-        '</span>';
+    function kindFromFilter(f) {
+      const k = f || currentFilter();
+      if (!isKindFilter(k)) return null;
+      return k.slice(5);
     }
 
-    function visibleTasksFor(filterKey) {
-      return WD.applyFilter(state.workTasks || [], filterKey || currentFilter(), WD.todayIso());
+    function viewMeta(filter) {
+      const f = filter || currentFilter();
+      switch (f) {
+        case "today":    return { title: "Hoje",         hint: "Itens marcados para hoje e atrasados" };
+        case "week":     return { title: "Semana",       hint: "Distribuição por dia da semana" };
+        case "overdue":  return { title: "Atrasadas",    hint: "Em aberto com prazo vencido" };
+        case "waiting":  return { title: "Aguardando",   hint: "Bloqueadas por terceiros" };
+        case "inbox":    return { title: "Inbox",        hint: "Sem dia atribuído" };
+        case "all":      return { title: "Todas",        hint: "Tudo em aberto, sem filtro" };
+        default: {
+          if (isKindFilter(f)) {
+            const meta = WD.getKindMeta ? WD.getKindMeta(kindFromFilter(f)) : null;
+            return {
+              title: meta ? meta.label + "s" : "Tipo",
+              hint: meta ? "Apenas itens deste tipo" : "Filtro por tipo"
+            };
+          }
+          const co = WD.companyMeta(f);
+          if (co) return { title: co.name, hint: "Itens vinculados a esta investida", company: co };
+          return { title: "Hoje", hint: "Itens para hoje" };
+        }
+      }
     }
+
+    function todayIso() { return WD.todayIso(); }
 
     function openTasks() {
       return (state.workTasks || []).filter(WD.isOpen);
+    }
+
+    function applySearch(list) {
+      const q = (searchTerm || "").trim().toLowerCase();
+      if (!q) return list;
+      return list.filter((t) => {
+        return (t.title || "").toLowerCase().indexOf(q) !== -1
+          || (t.nextAction || "").toLowerCase().indexOf(q) !== -1
+          || (t.notes || "").toLowerCase().indexOf(q) !== -1;
+      });
+    }
+
+    function filterTasks(filter) {
+      const f = filter || currentFilter();
+      const ref = todayIso();
+      const open = openTasks();
+      let list;
+      if (f === "today") list = open.filter((t) => WD.isToday(t, ref) || WD.isOverdue(t, ref));
+      else if (f === "week") {
+        const weekSet = new Set(WD.getWeekDays(currentWeekStart).map((d) => d.iso));
+        list = open.filter((t) => weekSet.has(t.scheduledDayIso) || (t.dueDate && weekSet.has(t.dueDate)));
+      }
+      else if (f === "overdue") list = open.filter((t) => WD.isOverdue(t, ref));
+      else if (f === "waiting") list = open.filter(WD.isWaiting);
+      else if (f === "inbox")   list = open.filter((t) => !t.scheduledDayIso && t.status === "inbox");
+      else if (f === "all")     list = open;
+      else if (isCompanyFilter(f)) list = open.filter((t) => t.companyId === f);
+      else if (isKindFilter(f))    list = open.filter((t) => (t.itemKind || "task") === kindFromFilter(f));
+      else list = open;
+      return WD.sortTasks(applySearch(list), ref);
     }
 
     function saveAndRefresh(message) {
       saveState();
       if (message && typeof showToast === "function") showToast(message);
       renderWorkPlanner();
-      if (state.currentPage !== "work" && typeof appApi.requestRender === "function") {
-        appApi.requestRender();
-      }
     }
 
     function persistWeekAnchor() {
@@ -121,543 +198,823 @@
       saveState();
     }
 
-    function taskIdFrom(event) {
-      const card = event.target && event.target.closest ? event.target.closest("[data-work-task-id]") : null;
-      return card ? card.getAttribute("data-work-task-id") : null;
-    }
-
     function applyFilterChange(next) {
-      state.workFilter = next || "all";
-      captureOpen = false;
-      captureCompanyLock = null;
+      if (next === state.workFilter) return;
+      state.workFilter = next;
       saveState();
       renderWorkPlanner();
     }
 
-    /* ─────────────────────────────────────────────────────────────── */
-    /* Task card                                                       */
-    /* ─────────────────────────────────────────────────────────────── */
-
-    function taskCardHtml(task, opts) {
-      const options = opts || {};
-      const today = WD.todayIso();
-      const overdue = WD.isOverdue(task, today);
-      const due = task.dueDate ? relativeDueLabel(task.dueDate) : "Sem prazo";
-      const hasCompany = task.scope === "company" && task.companyId;
-      const companyName = hasCompany ? WD.companyName(task.companyId) : "Geral";
-      const prio = WD.priorityLabel(task.priority);
-      const statusLabel = WD.statusLabel(task.status);
-      const area = WD.areaLabel(task.area);
-      const draggable = options.draggable !== false;
-      const density = options.density || "normal";
-
-      const chipsHtml =
-        (options.hideCompanyChip || !hasCompany
-          ? ""
-          : '<span class="wk-chip wk-chip--company" data-company-id="' + esc(task.companyId) + '">' +
-              logoMarkHtml({ id: task.companyId }, "xs") +
-              '<span>' + esc(companyName) + '</span>' +
-            '</span>') +
-        '<span class="wk-chip wk-chip--prio wk-chip--' + esc(task.priority) + '">' + esc(prio) + '</span>' +
-        '<span class="wk-chip wk-chip--due' + (overdue ? ' wk-chip--danger' : '') + '">' + esc(due) + '</span>' +
-        (area && task.area ? '<span class="wk-chip wk-chip--area">' + esc(area) + '</span>' : '') +
-        (task.status && task.status !== "inbox" && task.status !== "planned"
-          ? '<span class="wk-chip wk-chip--status wk-chip--' + esc(task.status) + '">' + esc(statusLabel) + '</span>'
-          : '');
-
-      const statusButton = task.status === "waiting"
-        ? '<button class="wk-btn wk-btn--mini" type="button" data-work-status="planned" title="Retomar">Retomar</button>'
-        : '<button class="wk-btn wk-btn--mini" type="button" data-work-status="waiting" title="Aguardar terceiros">Aguardar</button>';
-
-      return '<article class="wk-task wk-task--' + density +
-        '" data-work-task-id="' + esc(task.id) +
-        '" data-priority="' + esc(task.priority) + '"' +
-        (hasCompany ? ' data-company-id="' + esc(task.companyId) + '"' : '') +
-        (overdue ? ' data-overdue="true"' : '') +
-        (task.status === "done" ? ' data-done="true"' : '') +
-        (draggable ? ' draggable="true"' : '') +
-        '>' +
-          '<label class="wk-task-check">' +
-            '<input type="checkbox" class="wk-task-checkbox"' + (task.status === "done" ? ' checked' : '') + ' aria-label="Concluir tarefa" />' +
-          '</label>' +
-          '<div class="wk-task-body">' +
-            '<div class="wk-task-title">' + esc(task.title) + '</div>' +
-            (task.nextAction && task.nextAction !== task.title
-              ? '<div class="wk-task-next"><span aria-hidden="true">→</span>' + esc(task.nextAction) + '</div>'
-              : '') +
-            (task.description
-              ? '<div class="wk-task-notes">' + esc(task.description) + '</div>'
-              : '') +
-            '<div class="wk-task-chips">' + chipsHtml + '</div>' +
-          '</div>' +
-          '<div class="wk-task-actions">' +
-            statusButton +
-            (task.status !== "inbox"
-              ? '<button class="wk-btn wk-btn--mini" type="button" data-work-move-inbox="true" title="Mover para inbox">Inbox</button>'
-              : '') +
-            '<button class="wk-btn wk-btn--mini wk-btn--danger" type="button" data-work-delete="true" aria-label="Excluir tarefa" title="Excluir">×</button>' +
-          '</div>' +
-        '</article>';
-    }
-
-    /* ─────────────────────────────────────────────────────────────── */
-    /* Sidebar                                                         */
-    /* ─────────────────────────────────────────────────────────────── */
+    /* ─────────────── Sidebar ─────────────── */
 
     function renderSidebar() {
       const el = document.getElementById("workSidebar");
       if (!el) return;
-      const today = WD.todayIso();
-      const tasks = state.workTasks || [];
-      const active = currentFilter();
+      const f = currentFilter();
+      const open = openTasks();
+      const ref = todayIso();
 
-      const counts = {
-        all: tasks.filter(WD.isOpen).length,
-        today: tasks.filter((t) => WD.isToday(t, today)).length,
-        overdue: tasks.filter((t) => WD.isOverdue(t, today)).length,
-        waiting: tasks.filter(WD.isWaiting).length,
-        general: tasks.filter((t) => WD.isOpen(t) && t.scope === "general").length
+      function count(filter) { return filterTasks(filter).length; }
+
+      const today = open.filter((t) => WD.isToday(t, ref) || WD.isOverdue(t, ref)).length;
+      const overdue = open.filter((t) => WD.isOverdue(t, ref)).length;
+      const waiting = open.filter(WD.isWaiting).length;
+      const inbox = open.filter((t) => !t.scheduledDayIso && t.status === "inbox").length;
+
+      const view = (key, label, icon, n, hint) => {
+        const active = f === key ? ' aria-current="page"' : '';
+        const cls = "wk-side-item" + (f === key ? " is-active" : "");
+        const dot = n > 0 ? '<span class="wk-side-count">' + esc(n) + '</span>' : '';
+        const aria = hint ? ' title="' + esc(hint) + '"' : '';
+        return (
+          '<button type="button" class="' + cls + '" data-work-filter="' + esc(key) + '"' + active + aria + '>' +
+            '<span class="wk-side-icon" aria-hidden="true">' + icon + '</span>' +
+            '<span class="wk-side-label">' + esc(label) + '</span>' +
+            dot +
+          '</button>'
+        );
       };
 
-      const globalFiltersHtml = [
-        scopeBtnHtml("all", "Todas as tarefas", counts.all, active === "all"),
-        scopeBtnHtml("today", "Hoje", counts.today, active === "today"),
-        scopeBtnHtml("overdue", "Atrasadas", counts.overdue, active === "overdue"),
-        scopeBtnHtml("waiting", "Aguardando", counts.waiting, active === "waiting"),
-        scopeBtnHtml("general", "Geral", counts.general, active === "general")
-      ].join("");
+      const companyItem = (co) => {
+        const n = open.filter((t) => t.companyId === co.id).length;
+        const active = f === co.id ? ' aria-current="page"' : '';
+        const cls = "wk-side-item wk-side-item--co" + (f === co.id ? " is-active" : "");
+        const dot = n > 0 ? '<span class="wk-side-count">' + esc(n) + '</span>' : '';
+        return (
+          '<button type="button" class="' + cls + '" data-work-filter="' + esc(co.id) + '"' + active + ' style="--co-accent: ' + esc(co.accent) + '">' +
+            '<span class="wk-side-co-mark" aria-hidden="true"></span>' +
+            '<span class="wk-side-label">' + esc(co.name) + '</span>' +
+            dot +
+          '</button>'
+        );
+      };
 
-      const companiesHtml = WD.COMPANIES.map((company) => {
-        const s = WD.companySummaries(tasks, today, currentWeekIsos())
-          .find((item) => item.company.id === company.id) || { openCount: 0, overdueCount: 0, waitingCount: 0 };
-        const isActive = active === company.id;
-        const tone = s.overdueCount ? "danger" : (s.waitingCount ? "warning" : "quiet");
-        const badge = s.overdueCount
-          ? '<span class="wk-pill wk-pill--danger">' + s.overdueCount + ' atraso</span>'
-          : (s.waitingCount ? '<span class="wk-pill wk-pill--warning">' + s.waitingCount + ' aguard.</span>' : '');
-        return '<button type="button" class="wk-company-row" data-work-filter="' + esc(company.id) + '" data-tone="' + tone + '"' + (isActive ? ' data-active="true"' : '') + '>' +
-          logoMarkHtml(company, "md") +
-          '<span class="wk-company-row-body">' +
-            '<span class="wk-company-row-name">' + esc(company.name) + '</span>' +
-            '<span class="wk-company-row-sub">' +
-              '<span class="wk-company-row-count">' + s.openCount + ' abertas</span>' +
-              badge +
-            '</span>' +
-          '</span>' +
-        '</button>';
-      }).join("");
+      // P3a — contadores por tipo
+      const kindCounts = {};
+      WD.ITEM_KINDS.forEach((k) => {
+        kindCounts[k.value] = open.filter((t) => (t.itemKind || "task") === k.value).length;
+      });
+
+      const kindItem = (k) => {
+        const filterKey = "kind:" + k.value;
+        const n = kindCounts[k.value] || 0;
+        const active = f === filterKey ? ' aria-current="page"' : '';
+        const cls = "wk-side-item" + (f === filterKey ? " is-active" : "");
+        const dot = n > 0 ? '<span class="wk-side-count">' + esc(n) + '</span>' : '';
+        const icon = svgKind(k.value);
+        return (
+          '<button type="button" class="' + cls + '" data-work-filter="' + esc(filterKey) + '"' + active + '>' +
+            '<span class="wk-side-icon" aria-hidden="true">' + icon + '</span>' +
+            '<span class="wk-side-label">' + esc(k.label) + 's</span>' +
+            dot +
+          '</button>'
+        );
+      };
 
       el.innerHTML =
-        '<div class="wk-side-header">' +
-          '<span class="wk-side-eyebrow">Portfolio FIPs</span>' +
-          '<h2 class="wk-side-title">Motor executivo</h2>' +
+        '<div class="wk-side-section">' +
+          '<button type="button" class="wk-side-new" data-work-capture-toggle>' +
+            '<span class="wk-side-new-plus" aria-hidden="true">+</span>' +
+            'Novo item' +
+            '<kbd class="wk-side-kbd">N</kbd>' +
+          '</button>' +
         '</div>' +
-        '<button type="button" class="wk-capture-trigger" data-work-capture-toggle="true">' +
-          '<span class="wk-capture-trigger-icon" aria-hidden="true">+</span>' +
-          '<span>Capturar tarefa</span>' +
-          '<kbd>N</kbd>' +
-        '</button>' +
-        '<div class="wk-side-group">' +
-          '<div class="wk-side-group-label">Visoes</div>' +
-          globalFiltersHtml +
-        '</div>' +
-        '<div class="wk-side-group">' +
-          '<div class="wk-side-group-label">Empresas</div>' +
-          companiesHtml +
-        '</div>';
+        '<nav class="wk-side-section" aria-label="Visões">' +
+          '<span class="wk-side-heading">Visões</span>' +
+          view("today",   "Hoje",       svgFlame(),  today,   "Hoje + atrasadas") +
+          view("week",    "Semana",     svgGrid(),   '',      "Kanban semanal") +
+          view("overdue", "Atrasadas",  svgClock(),  overdue, "Vencidas em aberto") +
+          view("waiting", "Aguardando", svgPause(),  waiting, "Bloqueadas por terceiros") +
+          view("inbox",   "Inbox",      svgInbox(),  inbox,   "Sem dia atribuído") +
+          view("all",     "Todas",      svgList(),   open.length, "Tudo em aberto") +
+        '</nav>' +
+        '<nav class="wk-side-section" aria-label="Tipos">' +
+          '<span class="wk-side-heading">Tipo</span>' +
+          WD.ITEM_KINDS.map(kindItem).join("") +
+        '</nav>' +
+        '<nav class="wk-side-section" aria-label="Investidas">' +
+          '<span class="wk-side-heading">Investidas</span>' +
+          WD.COMPANIES.map(companyItem).join("") +
+        '</nav>';
     }
 
-    function scopeBtnHtml(key, label, count, isActive) {
-      return '<button type="button" class="wk-side-link" data-work-filter="' + esc(key) + '"' + (isActive ? ' data-active="true"' : '') + '>' +
-        '<span>' + esc(label) + '</span>' +
-        '<span class="wk-count">' + count + '</span>' +
-      '</button>';
+    function svgKind(kind) {
+      switch (kind) {
+        case "followup": return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>';
+        case "email":    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 7 12 13 2 7"/></svg>';
+        case "meeting":  return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg>';
+        case "document": return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg>';
+        default:         return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+      }
     }
 
-    /* ─────────────────────────────────────────────────────────────── */
-    /* Workspace header                                                */
-    /* ─────────────────────────────────────────────────────────────── */
+    /* SVGs minimalistas inline (linha 1.6) */
+    function svgFlame() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c2 4 5 5 5 9a5 5 0 1 1-10 0c0-2 1-3 1-5 1 1 2 1 2 3 0-3 1-5 2-7z"/></svg>';
+    }
+    function svgGrid() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>';
+    }
+    function svgClock() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+    }
+    function svgPause() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+    }
+    function svgInbox() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l3-8h12l3 8"/><path d="M3 13v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6"/><path d="M3 13h5l1 2h6l1-2h5"/></svg>';
+    }
+    function svgList() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>';
+    }
 
-    function renderWorkspaceHeader() {
+    /* ─────────────── Header ─────────────── */
+
+    function renderHeader() {
       const el = document.getElementById("workWorkspaceHeader");
       if (!el) return;
-      const today = WD.todayIso();
-      const filter = currentFilter();
-      const company = currentCompanyMeta();
-      const weekStart = currentWeekStart;
-      const weekEnd = WD.addDays(weekStart, 6);
-      const weekLabel = fmtDateShort(weekStart) + " - " + fmtDateShort(weekEnd) + " · " + WEEKDAY_FULL[weekStart.getDay()] + " a " + WEEKDAY_FULL[weekEnd.getDay()];
+      const f = currentFilter();
+      const meta = viewMeta(f);
+      const list = filterTasks(f);
+      const subline = list.length === 1
+        ? "1 item nesta visão"
+        : list.length + " itens nesta visão";
 
-      let eyebrow = "Todas as tarefas";
-      let title = "Centro de comando do portfolio";
-      let subtitle = "Uma visao consolidada das 3 investidas e tarefas gerais.";
-      let logoHtml = "";
-      let accentStyle = "";
-      let pillHtml = "";
-
-      const tasks = state.workTasks || [];
-      const open = tasks.filter(WD.isOpen);
-      const weekSet = new Set(currentWeekIsos());
-
-      let openCount, weekCount, overdueCount, waitingCount, todayCount;
-      let scoped;
-
-      if (company) {
-        scoped = tasks.filter((t) => t.companyId === company.id);
-        eyebrow = "Investida";
-        title = company.name;
-        subtitle = "Tocando o dia a dia. Prazos, proximas acoes e aguardos.";
-        logoHtml = logoMarkHtml(company, "xl");
-        accentStyle = ' style="--wk-accent: ' + esc(company.accent) + '"';
-        const openS = scoped.filter(WD.isOpen);
-        openCount = openS.length;
-        todayCount = openS.filter((t) => WD.isToday(t, today)).length;
-        weekCount = openS.filter((t) => weekSet.has(t.scheduledDayIso) || weekSet.has(t.dueDate)).length;
-        overdueCount = openS.filter((t) => WD.isOverdue(t, today)).length;
-        waitingCount = openS.filter(WD.isWaiting).length;
-        pillHtml = overdueCount
-          ? '<span class="wk-state-pill wk-state-pill--danger">' + overdueCount + ' em atraso</span>'
-          : (waitingCount
-              ? '<span class="wk-state-pill wk-state-pill--warning">' + waitingCount + ' aguardando</span>'
-              : '<span class="wk-state-pill wk-state-pill--success">sem pressao</span>');
-      } else {
-        if (filter === "today") { eyebrow = "Visao"; title = "Foco de hoje"; subtitle = "Tudo que precisa sair hoje."; }
-        else if (filter === "overdue") { eyebrow = "Visao"; title = "Atrasadas"; subtitle = "Prazos estourados. Fechar ou replanejar."; }
-        else if (filter === "waiting") { eyebrow = "Visao"; title = "Aguardando terceiros"; subtitle = "Dependencias externas em andamento."; }
-        else if (filter === "general") { eyebrow = "Visao"; title = "Tarefas gerais"; subtitle = "Sem empresa associada."; }
-        openCount = open.length;
-        todayCount = open.filter((t) => WD.isToday(t, today)).length;
-        weekCount = open.filter((t) => weekSet.has(t.scheduledDayIso) || weekSet.has(t.dueDate)).length;
-        overdueCount = open.filter((t) => WD.isOverdue(t, today)).length;
-        waitingCount = open.filter(WD.isWaiting).length;
-      }
-
-      el.innerHTML =
-        '<div class="wk-ws-head"' + accentStyle + '>' +
-          '<div class="wk-ws-head-left">' +
-            (logoHtml ? '<div class="wk-ws-head-logo">' + logoHtml + '</div>' : '') +
-            '<div class="wk-ws-head-copy">' +
-              '<span class="wk-eyebrow">' + esc(eyebrow) + '</span>' +
-              '<h1 class="wk-ws-title">' + esc(title) + '</h1>' +
-              '<p class="wk-ws-sub">' + esc(subtitle) + '</p>' +
-            '</div>' +
-          '</div>' +
-          '<div class="wk-ws-head-right">' +
-            '<div class="wk-ws-week">' +
-              '<span class="wk-eyebrow">Semana</span>' +
-              '<span class="wk-ws-week-label">' + esc(weekLabel) + '</span>' +
-              '<div class="wk-ws-week-ctrls">' +
-                '<button class="wk-btn wk-btn--ghost" type="button" id="workPrevBtn" aria-keyshortcuts="Alt+Shift+ArrowLeft" title="Semana anterior">‹</button>' +
-                '<button class="wk-btn wk-btn--ghost" type="button" id="workTodayBtn" aria-keyshortcuts="Alt+Shift+0">Hoje</button>' +
-                '<button class="wk-btn wk-btn--ghost" type="button" id="workNextBtn" aria-keyshortcuts="Alt+Shift+ArrowRight" title="Proxima semana">›</button>' +
-              '</div>' +
-            '</div>' +
-            (pillHtml ? '<div class="wk-ws-state">' + pillHtml + '</div>' : '') +
-          '</div>' +
-        '</div>' +
-        '<div class="wk-kpis">' +
-          kpiHtml("Abertas", openCount, "ativas") +
-          kpiHtml("Hoje", todayCount, "no foco") +
-          kpiHtml("Semana", weekCount, "planejadas") +
-          kpiHtml("Atrasadas", overdueCount, "prazo vencido", overdueCount ? "danger" : "") +
-          kpiHtml("Aguardando", waitingCount, "terceiros", waitingCount ? "warning" : "") +
-        '</div>';
-    }
-
-    function kpiHtml(label, value, sub, tone) {
-      return '<div class="wk-kpi' + (tone ? ' wk-kpi--' + tone : '') + '">' +
-        '<div class="wk-kpi-value">' + value + '</div>' +
-        '<div class="wk-kpi-label">' + esc(label) + '</div>' +
-        '<div class="wk-kpi-sub">' + esc(sub) + '</div>' +
-      '</div>';
-    }
-
-    /* ─────────────────────────────────────────────────────────────── */
-    /* Captura inline                                                  */
-    /* ─────────────────────────────────────────────────────────────── */
-
-    function renderCapture() {
-      const el = document.getElementById("workCapture");
-      if (!el) return;
-      if (!captureOpen) {
-        el.innerHTML = '';
-        el.dataset.open = "false";
-        return;
-      }
-      el.dataset.open = "true";
-      const company = captureCompanyLock || currentCompanyMeta();
-      const companyLockedHtml = company
-        ? '<div class="wk-cap-lock">' +
-            logoMarkHtml(company, "sm") +
-            '<span>' + esc(company.name) + '</span>' +
-            '<button class="wk-btn wk-btn--mini wk-btn--ghost" type="button" data-work-unlock-company="true">trocar empresa</button>' +
+      const weekControls = f === "week"
+        ? '<div class="wk-head-week">' +
+            '<button type="button" class="wk-icon-btn" id="workPrevBtn" title="Semana anterior" aria-label="Semana anterior">' + svgChevronLeft() + '</button>' +
+            '<span class="wk-head-week-label">' + esc(weekRangeLabel()) + '</span>' +
+            '<button type="button" class="wk-icon-btn" id="workNextBtn" title="Próxima semana" aria-label="Próxima semana">' + svgChevronRight() + '</button>' +
+            '<button type="button" class="wk-text-btn" id="workTodayBtn">Hoje</button>' +
           '</div>'
         : '';
 
-      const companySelectHtml = company
-        ? ''
-        : '<label class="wk-cap-field"><span>Empresa</span><select name="companyId">' +
-            '<option value="">Geral</option>' +
-            WD.COMPANIES.map((c) => '<option value="' + esc(c.id) + '">' + esc(c.name) + '</option>').join("") +
-          '</select></label>';
+      const searchAndCapture =
+        '<div class="wk-head-search">' +
+          '<span class="wk-head-search-icon" aria-hidden="true">' + svgSearch() + '</span>' +
+          '<input type="search" id="workSearchInput" class="wk-head-search-input" placeholder="Buscar item…" value="' + esc(searchTerm) + '" autocomplete="off" />' +
+        '</div>' +
+        '<button type="button" class="wk-btn wk-btn--primary" data-work-capture-toggle>' +
+          '<span aria-hidden="true">+</span> Novo item' +
+        '</button>';
 
-      const daySelectHtml = '<label class="wk-cap-field"><span>Quando</span><select name="scheduledDayIso">' +
-        '<option value="">Inbox (sem dia)</option>' +
-        WD.getWeekDays(currentWeekStart).map((d) =>
-          '<option value="' + d.iso + '"' + (d.iso === WD.todayIso() ? ' selected' : '') + '>' +
-            WEEKDAY_FULL[d.date.getDay()] + ' · ' + fmtDateShort(d.date) +
-          '</option>'
-        ).join("") +
-      '</select></label>';
+      // Pagina de Investida (P3a): header expandido quando filtro é empresa
+      if (meta.company) {
+        el.innerHTML = renderCompanyPageHeader(meta.company) +
+          '<div class="wk-head-actions">' + weekControls + searchAndCapture + '</div>';
+        return;
+      }
 
-      const prioritySelectHtml = '<label class="wk-cap-field"><span>Prioridade</span><select name="priority">' +
-        WD.PRIORITIES.map((p) => '<option value="' + esc(p.value) + '"' + (p.value === "medium" ? ' selected' : '') + '>' + esc(p.label) + '</option>').join("") +
-      '</select></label>';
-
-      const areaSelectHtml = '<label class="wk-cap-field"><span>Area</span><select name="area">' +
-        WD.AREAS.map((a) => '<option value="' + esc(a.value) + '"' + (a.value === "followup" ? ' selected' : '') + '>' + esc(a.label) + '</option>').join("") +
-      '</select></label>';
-
+      const titleAccent = '';
       el.innerHTML =
-        '<form id="workCaptureForm" class="wk-cap-form" autocomplete="off">' +
-          (company ? '<input type="hidden" name="companyId" value="' + esc(company.id) + '" />' : '') +
-          companyLockedHtml +
-          '<div class="wk-cap-main">' +
-            '<input type="text" class="wk-cap-title" name="title" maxlength="180" required autofocus placeholder="O que precisa andar? (Enter para capturar)" />' +
-            '<button class="wk-btn wk-btn--primary" type="submit">Capturar</button>' +
-            '<button class="wk-btn wk-btn--ghost" type="button" data-work-capture-toggle="true">Cancelar</button>' +
-          '</div>' +
-          '<div class="wk-cap-next">' +
-            '<input type="text" name="nextAction" maxlength="220" placeholder="Proxima acao concreta (opcional)" />' +
-          '</div>' +
-          '<div class="wk-cap-grid">' +
-            companySelectHtml +
-            daySelectHtml +
-            '<label class="wk-cap-field"><span>Prazo real</span><input type="date" name="dueDate" /></label>' +
-            prioritySelectHtml +
-            areaSelectHtml +
-          '</div>' +
-          '<details class="wk-cap-more"><summary>Notas</summary>' +
-            '<textarea name="description" rows="2" maxlength="1000" placeholder="Contexto minimo, links ou observacoes"></textarea>' +
-          '</details>' +
-        '</form>';
-
-      // Auto-foco
-      const titleInput = el.querySelector(".wk-cap-title");
-      if (titleInput) setTimeout(() => titleInput.focus(), 10);
+        '<div class="wk-head-text">' +
+          '<h1 class="wk-head-title">' + titleAccent + esc(meta.title) + '</h1>' +
+          '<p class="wk-head-sub">' + esc(meta.hint) + ' · ' + esc(subline) + '</p>' +
+        '</div>' +
+        '<div class="wk-head-actions">' +
+          weekControls +
+          searchAndCapture +
+        '</div>';
     }
+
+    // P3a — header da página de Investida.
+    function renderCompanyPageHeader(company) {
+      const ref = todayIso();
+      const all = (state.workTasks || []).filter((t) => t.companyId === company.id);
+      const open = all.filter(WD.isOpen);
+      const overdue = open.filter((t) => WD.isOverdue(t, ref));
+      const today = open.filter((t) => WD.isToday(t, ref) && !WD.isOverdue(t, ref));
+      const waiting = open.filter(WD.isWaiting);
+      const sorted = WD.sortTasks(open, ref);
+      const topNext = sorted[0];
+
+      // Última interação: maior lastInteractionAt OU updatedAt entre os abertos
+      let lastIso = null;
+      let lastTitle = "";
+      open.forEach((t) => {
+        const cand = t.lastInteractionAt || t.updatedAt || t.createdAt;
+        if (cand && (!lastIso || cand > lastIso)) {
+          lastIso = cand;
+          lastTitle = t.title;
+        }
+      });
+      const lastLabel = lastIso ? formatRelativeFromIso(lastIso) : "—";
+
+      // Próxima ação primária
+      const nextAction = topNext
+        ? (topNext.nextAction && topNext.nextAction !== topNext.title ? topNext.nextAction : topNext.title)
+        : "Sem próxima ação definida";
+
+      const nextDueLabel = topNext && topNext.dueDate ? relativeDueLabel(topNext.dueDate) : "";
+
+      const stats = [
+        '<div class="wk-co-stat"><span class="wk-co-stat-num">' + open.length + '</span><span class="wk-co-stat-lab">abertas</span></div>',
+        '<div class="wk-co-stat"' + (today.length ? ' data-tone="accent"' : '') + '><span class="wk-co-stat-num">' + today.length + '</span><span class="wk-co-stat-lab">hoje</span></div>',
+        '<div class="wk-co-stat"' + (overdue.length ? ' data-tone="danger"' : '') + '><span class="wk-co-stat-num">' + overdue.length + '</span><span class="wk-co-stat-lab">atrasadas</span></div>',
+        '<div class="wk-co-stat"' + (waiting.length ? ' data-tone="warning"' : '') + '><span class="wk-co-stat-num">' + waiting.length + '</span><span class="wk-co-stat-lab">aguardando</span></div>'
+      ].join("");
+
+      return (
+        '<div class="wk-co-page" style="--co-accent: ' + esc(company.accent) + '">' +
+          '<div class="wk-co-page-top">' +
+            '<div class="wk-co-page-mark" aria-hidden="true"></div>' +
+            '<div class="wk-co-page-id">' +
+              '<span class="wk-co-page-eyebrow">Investida</span>' +
+              '<h1 class="wk-co-page-name">' + esc(company.name) + '</h1>' +
+            '</div>' +
+            '<div class="wk-co-page-stats">' + stats + '</div>' +
+          '</div>' +
+          '<div class="wk-co-page-meta">' +
+            '<div class="wk-co-page-block">' +
+              '<span class="wk-co-page-label">Próxima ação</span>' +
+              '<span class="wk-co-page-value">' + esc(nextAction) + (nextDueLabel ? ' <em class="wk-co-page-when">· ' + esc(nextDueLabel) + '</em>' : '') + '</span>' +
+            '</div>' +
+            '<div class="wk-co-page-block">' +
+              '<span class="wk-co-page-label">Última interação</span>' +
+              '<span class="wk-co-page-value">' + esc(lastLabel) + (lastTitle ? ' <em class="wk-co-page-when">· ' + esc(lastTitle) + '</em>' : '') + '</span>' +
+            '</div>' +
+          '</div>' +
+        '</div>'
+      );
+    }
+
+    // Helper: relativa "há X dias" / "agora" / "ontem" para timestamps ISO completos
+    function formatRelativeFromIso(iso) {
+      const d = new Date(iso);
+      if (isNaN(d.getTime())) return "—";
+      const diffMs = Date.now() - d.getTime();
+      const mins = Math.floor(diffMs / 60000);
+      if (mins < 1) return "agora";
+      if (mins < 60) return mins + " min atrás";
+      const hrs = Math.floor(mins / 60);
+      if (hrs < 24) return hrs + "h atrás";
+      const days = Math.floor(hrs / 24);
+      if (days === 1) return "ontem";
+      if (days < 7) return days + " dias atrás";
+      return fmtDateShort(d);
+    }
+
+    function weekRangeLabel() {
+      const days = WD.getWeekDays(currentWeekStart);
+      const first = days[0].date;
+      const last = days[6].date;
+      const sameMonth = first.getMonth() === last.getMonth();
+      if (sameMonth) {
+        return first.getDate() + "–" + last.getDate() + " " + MONTH_NAMES[last.getMonth()];
+      }
+      return first.getDate() + " " + MONTH_NAMES[first.getMonth()] + " – " + last.getDate() + " " + MONTH_NAMES[last.getMonth()];
+    }
+
+    function svgChevronLeft()  { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>'; }
+    function svgChevronRight() { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>'; }
+    function svgSearch() { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>'; }
+
+    /* ─────────────── Capture (slide-down) ─────────────── */
 
     function openCapture(forCompany) {
       captureOpen = true;
-      captureCompanyLock = forCompany ? (WD.companyMeta(forCompany) || null) : currentCompanyMeta();
-      renderCapture();
+      renderCapture(forCompany || null);
+      const slot = document.getElementById("workCapture");
+      if (slot) {
+        if (window.Anim && typeof window.Anim.captureSlide === "function") {
+          window.Anim.captureSlide(slot, true);
+        } else {
+          slot.setAttribute("data-open", "true");
+        }
+      }
+      setTimeout(() => {
+        const titleField = document.getElementById("workCaptureTitle");
+        if (titleField) titleField.focus();
+      }, 60);
     }
 
     function closeCapture() {
       captureOpen = false;
-      captureCompanyLock = null;
-      renderCapture();
+      const slot = document.getElementById("workCapture");
+      if (!slot) return;
+      if (window.Anim && typeof window.Anim.captureSlide === "function") {
+        window.Anim.captureSlide(slot, false);
+        // espera animação para limpar HTML
+        setTimeout(() => { if (!captureOpen) slot.innerHTML = ""; }, 220);
+      } else {
+        slot.setAttribute("data-open", "false");
+        slot.innerHTML = "";
+      }
     }
 
-    /* ─────────────────────────────────────────────────────────────── */
-    /* Board semanal + listas                                          */
-    /* ─────────────────────────────────────────────────────────────── */
+    function renderCapture(prefill) {
+      const slot = document.getElementById("workCapture");
+      if (!slot) return;
+      if (!captureOpen) {
+        slot.innerHTML = "";
+        return;
+      }
+
+      const f = currentFilter();
+      const presetCompany = prefill && prefill.companyId ? prefill.companyId : (isCompanyFilter(f) ? f : "");
+      const presetTarget = f === "today" || f === "week" ? "today" : "inbox";
+
+      const companyOpts =
+        '<option value="">Geral</option>' +
+        WD.COMPANIES.map((co) => {
+          const sel = co.id === presetCompany ? ' selected' : '';
+          return '<option value="' + esc(co.id) + '"' + sel + '>' + esc(co.name) + '</option>';
+        }).join("");
+
+      const priorityOpts = WD.PRIORITIES.map((p) => {
+        const sel = p.value === "medium" ? ' selected' : '';
+        return '<option value="' + esc(p.value) + '"' + sel + '>' + esc(p.label) + '</option>';
+      }).join("");
+
+      const presetKind = isKindFilter(f) ? kindFromFilter(f) : "task";
+      const kindOpts = WD.ITEM_KINDS.map((k) => {
+        const sel = k.value === presetKind ? ' selected' : '';
+        return '<option value="' + esc(k.value) + '"' + sel + '>' + esc(k.label) + '</option>';
+      }).join("");
+
+      slot.innerHTML =
+        '<form id="workCaptureForm" class="wk-capture" autocomplete="off">' +
+          '<div class="wk-capture-row wk-capture-row--main">' +
+            '<input type="text" id="workCaptureTitle" name="title" class="wk-capture-title" placeholder="O que precisa andar? (ex: cobrar minuta TSEA)" maxlength="180" required />' +
+            '<button type="submit" class="wk-btn wk-btn--primary wk-capture-save">Salvar</button>' +
+            '<button type="button" class="wk-btn wk-btn--ghost wk-capture-cancel" data-work-capture-toggle>Cancelar</button>' +
+          '</div>' +
+          '<div class="wk-capture-row wk-capture-row--meta">' +
+            '<label class="wk-capture-field">' +
+              '<span>Próxima ação</span>' +
+              '<input type="text" name="nextAction" class="wk-capture-input" placeholder="Ex: revisar com financeiro" maxlength="220" />' +
+            '</label>' +
+          '</div>' +
+          '<div class="wk-capture-row wk-capture-row--grid">' +
+            '<label class="wk-capture-field">' +
+              '<span>Tipo</span>' +
+              '<select name="itemKind" class="wk-capture-input">' + kindOpts + '</select>' +
+            '</label>' +
+            '<label class="wk-capture-field">' +
+              '<span>Empresa</span>' +
+              '<select name="companyId" class="wk-capture-input">' + companyOpts + '</select>' +
+            '</label>' +
+            '<label class="wk-capture-field">' +
+              '<span>Prioridade</span>' +
+              '<select name="priority" class="wk-capture-input">' + priorityOpts + '</select>' +
+            '</label>' +
+            '<label class="wk-capture-field">' +
+              '<span>Prazo</span>' +
+              '<input type="date" name="dueDate" class="wk-capture-input" />' +
+            '</label>' +
+            '<label class="wk-capture-field">' +
+              '<span>Destino</span>' +
+              '<select name="target" class="wk-capture-input">' +
+                '<option value="today"' + (presetTarget === "today" ? " selected" : "") + '>Hoje</option>' +
+                '<option value="inbox"' + (presetTarget === "inbox" ? " selected" : "") + '>Inbox</option>' +
+              '</select>' +
+            '</label>' +
+          '</div>' +
+        '</form>';
+    }
+
+    /* ─────────────── Board ─────────────── */
 
     function renderBoard() {
       const el = document.getElementById("workBoard");
       if (!el) return;
-      const today = WD.todayIso();
-      const company = currentCompanyMeta();
-      const scoped = company
-        ? (state.workTasks || []).filter((t) => t.companyId === company.id)
-        : visibleTasksFor(currentFilter());
-      const openScoped = scoped.filter(WD.isOpen);
+      const f = currentFilter();
+      if (f === "week") {
+        renderWeekBoard(el);
+        return;
+      }
+      renderListBoard(el, f);
+    }
 
-      const days = WD.getWeekDays(currentWeekStart);
-      const dayColsHtml = days.map((day) => {
-        const dayTasks = WD.sortTasks(openScoped.filter((t) => t.scheduledDayIso === day.iso), today);
-        const isToday = day.iso === today;
-        const count = dayTasks.length;
-        const weekday = WEEKDAY_NAMES[day.date.getDay()];
-        return '<div class="wk-day wk-drop-zone" data-work-drop="day" data-day-iso="' + day.iso + '"' + (isToday ? ' data-today="true"' : '') + '>' +
-          '<div class="wk-day-head">' +
-            '<div class="wk-day-head-main">' +
-              '<span class="wk-day-weekday">' + esc(weekday) + '</span>' +
-              '<span class="wk-day-date">' + fmtDateShort(day.date) + '</span>' +
+    function renderListBoard(el, f) {
+      const list = filterTasks(f);
+      const ref = todayIso();
+
+      if (!list.length) {
+        el.innerHTML = renderEmptyState(f);
+        return;
+      }
+
+      // Em "today" e "all", agrupamos por bucket; nas outras, lista plana.
+      let html = "";
+      if (f === "today") {
+        const overdue = list.filter((t) => WD.isOverdue(t, ref));
+        const today = list.filter((t) => WD.isToday(t, ref) && !WD.isOverdue(t, ref));
+        if (overdue.length) html += renderListSection("Atrasadas", overdue, { tone: "danger" });
+        if (today.length)   html += renderListSection("Hoje", today, { tone: "accent" });
+      } else if (f === "all") {
+        const overdue = list.filter((t) => WD.isOverdue(t, ref));
+        const today = list.filter((t) => WD.isToday(t, ref) && !WD.isOverdue(t, ref));
+        const upcoming = list.filter((t) => !WD.isOverdue(t, ref) && !WD.isToday(t, ref) && t.scheduledDayIso);
+        const inbox = list.filter((t) => !t.scheduledDayIso && t.status === "inbox");
+        const waiting = list.filter(WD.isWaiting);
+        if (overdue.length)  html += renderListSection("Atrasadas", overdue, { tone: "danger" });
+        if (today.length)    html += renderListSection("Hoje", today, { tone: "accent" });
+        if (upcoming.length) html += renderListSection("Próximas", upcoming);
+        if (waiting.length)  html += renderListSection("Aguardando", waiting, { tone: "warning" });
+        if (inbox.length)    html += renderListSection("Inbox", inbox);
+      } else if (isCompanyFilter(f)) {
+        // P3c — timeline cronologica mista por investida.
+        html += renderCompanyTimeline(list, ref);
+      } else {
+        html += renderListSection(viewMeta(f).title, list);
+      }
+
+      el.innerHTML = html;
+    }
+
+    // P3c — timeline cronologica por investida (atrasadas no topo, depois hoje, futuras)
+    function renderCompanyTimeline(list, ref) {
+      // Agrupa por bucket cronologico
+      const overdue = list.filter((t) => WD.isOverdue(t, ref));
+      const today = list.filter((t) => WD.isToday(t, ref) && !WD.isOverdue(t, ref));
+      const future = list.filter((t) => !WD.isOverdue(t, ref) && !WD.isToday(t, ref));
+
+      function timelineGroup(label, tone, rows) {
+        if (!rows.length) return "";
+        return (
+          '<div class="wk-timeline-group" data-tone="' + esc(tone) + '">' +
+            '<div class="wk-timeline-label">' + esc(label) + '</div>' +
+            '<ul class="wk-timeline-list" role="list">' +
+              rows.map(timelineRow).join("") +
+            '</ul>' +
+          '</div>'
+        );
+      }
+
+      return (
+        '<section class="wk-timeline" aria-label="Linha do tempo da investida">' +
+          timelineGroup("Atrasadas", "danger", overdue) +
+          timelineGroup("Hoje",      "accent", today) +
+          timelineGroup("Próximas",  "quiet",  future) +
+        '</section>'
+      );
+    }
+
+    function timelineRow(task) {
+      const ref = todayIso();
+      const overdue = WD.isOverdue(task, ref);
+      const overdueLvl = WD.overdueLevel ? WD.overdueLevel(task, ref) : (overdue ? 1 : 0);
+      const waiting = WD.isWaiting(task);
+      const kindMeta = WD.getKindMeta ? WD.getKindMeta(task.itemKind) : null;
+      const kind = task.itemKind || "task";
+      const dueLabel = task.dueDate ? relativeDueLabel(task.dueDate) : "";
+      const dueClass = task.dueDate ? ' data-tone="' + dueTone(task.dueDate) + '"' : '';
+
+      // Dado especifico por tipo
+      let typeDetail = "";
+      if (kind === "meeting" && task.meetingTime) {
+        typeDetail = '<span class="wk-tl-detail wk-tl-detail--time">' + esc(task.meetingTime) + '</span>';
+      } else if (kind === "email" && task.emailFrom) {
+        typeDetail = '<span class="wk-tl-detail wk-tl-detail--from">de ' + esc(task.emailFrom) + '</span>';
+      } else if (kind === "document" && task.documentUrl) {
+        typeDetail = '<a class="wk-tl-detail wk-tl-detail--link" href="' + esc(task.documentUrl) + '" target="_blank" rel="noopener noreferrer" data-stop-row="true">abrir documento ↗</a>';
+      } else if (kind === "followup" && task.lastInteractionAt) {
+        const rel = formatRelativeFromIso(task.lastInteractionAt);
+        typeDetail = '<span class="wk-tl-detail wk-tl-detail--last">último contato ' + esc(rel) + '</span>';
+      }
+
+      const tags = [];
+      if (overdueLvl === 3) tags.push('<span class="wk-tag" data-tone="danger">atrasada 7d+</span>');
+      else if (overdueLvl === 2) tags.push('<span class="wk-tag" data-tone="danger">atrasada</span>');
+      else if (overdueLvl === 1) tags.push('<span class="wk-tag" data-tone="warning">atrasada 1d</span>');
+      else if (waiting) tags.push('<span class="wk-tag" data-tone="warning">aguardando</span>');
+      if (task.priority === "critical") tags.push('<span class="wk-tag" data-tone="danger">crítica</span>');
+      else if (task.priority === "high") tags.push('<span class="wk-tag" data-tone="accent">alta</span>');
+
+      const next = task.nextAction && task.nextAction !== task.title
+        ? '<span class="wk-tl-next">' + esc(task.nextAction) + '</span>'
+        : "";
+
+      return (
+        '<li class="wk-tl-item" data-work-task-id="' + esc(task.id) + '" data-overdue-level="' + overdueLvl + '" data-kind="' + esc(kind) + '" draggable="true">' +
+          '<span class="wk-tl-marker" aria-hidden="true">' + (kindMeta ? esc(kindMeta.glyph) : "■") + '</span>' +
+          '<div class="wk-tl-body">' +
+            '<div class="wk-tl-line">' +
+              '<span class="wk-tl-kind">' + (kindMeta ? esc(kindMeta.label) : "Tarefa") + '</span>' +
+              '<span class="wk-tl-title">' + esc(task.title) + '</span>' +
+              tags.join("") +
             '</div>' +
-            '<span class="wk-day-count">' + count + '</span>' +
+            '<div class="wk-tl-meta">' +
+              (typeDetail || next || '<span class="wk-tl-muted">—</span>') +
+            '</div>' +
           '</div>' +
-          '<div class="wk-day-list">' +
-            (dayTasks.length
-              ? dayTasks.map((t) => taskCardHtml(t, { density: "compact", hideCompanyChip: !!company })).join("")
-              : '<div class="wk-day-empty">arraste aqui</div>') +
+          (dueLabel ? '<span class="wk-row-due"' + dueClass + '>' + esc(dueLabel) + '</span>' : '') +
+        '</li>'
+      );
+    }
+
+    function renderListSection(title, list, opts) {
+      const tone = opts && opts.tone ? opts.tone : "quiet";
+      const rows = list.map(taskRow).join("");
+      return (
+        '<section class="wk-list-section" data-tone="' + esc(tone) + '">' +
+          '<header class="wk-list-section-head">' +
+            '<h2 class="wk-list-section-title">' + esc(title) + '</h2>' +
+            '<span class="wk-list-section-count">' + list.length + '</span>' +
+          '</header>' +
+          '<ul class="wk-list" role="list">' + rows + '</ul>' +
+        '</section>'
+      );
+    }
+
+    function taskRow(task) {
+      const ref = todayIso();
+      const overdue = WD.isOverdue(task, ref);
+      const overdueLvl = WD.overdueLevel ? WD.overdueLevel(task, ref) : (overdue ? 1 : 0);
+      const waiting = WD.isWaiting(task);
+      const co = task.companyId ? WD.companyMeta(task.companyId) : null;
+      const accent = co ? co.accent : "var(--muted)";
+      const dueLabel = task.dueDate ? relativeDueLabel(task.dueDate) : "";
+      const dueClass = task.dueDate ? ' data-tone="' + dueTone(task.dueDate) + '"' : '';
+      const kindMeta = WD.getKindMeta ? WD.getKindMeta(task.itemKind) : null;
+      const kindAttr = task.itemKind && task.itemKind !== "task" ? ' data-kind="' + esc(task.itemKind) + '"' : '';
+
+      const tags = [];
+      if (kindMeta && task.itemKind && task.itemKind !== "task") {
+        tags.push('<span class="wk-tag wk-tag--kind" data-kind="' + esc(task.itemKind) + '">' + esc(kindMeta.short) + '</span>');
+      }
+      if (overdueLvl === 3) tags.push('<span class="wk-tag" data-tone="danger">atrasada 7d+</span>');
+      else if (overdueLvl === 2) tags.push('<span class="wk-tag" data-tone="danger">atrasada</span>');
+      else if (overdueLvl === 1) tags.push('<span class="wk-tag" data-tone="warning">atrasada 1d</span>');
+      else if (waiting) tags.push('<span class="wk-tag" data-tone="warning">aguardando</span>');
+      if (task.priority === "critical") tags.push('<span class="wk-tag" data-tone="danger">crítica</span>');
+      else if (task.priority === "high") tags.push('<span class="wk-tag" data-tone="accent">alta</span>');
+
+      const next = task.nextAction && task.nextAction !== task.title
+        ? '<span class="wk-row-next">' + esc(task.nextAction) + '</span>'
+        : '';
+
+      const company = co
+        ? '<span class="wk-row-company"><span class="wk-row-co-dot" style="--co-accent: ' + esc(co.accent) + '"></span>' + esc(co.name) + '</span>'
+        : '<span class="wk-row-company wk-row-company--general">Geral</span>';
+
+      return (
+        '<li class="wk-row" data-work-task-id="' + esc(task.id) + '" data-overdue-level="' + overdueLvl + '"' + kindAttr + ' draggable="true">' +
+          '<label class="wk-row-check">' +
+            '<input type="checkbox" class="wk-task-checkbox" data-work-task-id="' + esc(task.id) + '" />' +
+            '<span class="wk-row-check-mark" aria-hidden="true">' + svgCheck() + '</span>' +
+          '</label>' +
+          '<span class="wk-row-accent" style="--row-accent: ' + esc(accent) + '" aria-hidden="true"></span>' +
+          '<div class="wk-row-body">' +
+            '<div class="wk-row-line">' +
+              '<span class="wk-row-title">' + esc(task.title) + '</span>' +
+              tags.join("") +
+            '</div>' +
+            '<div class="wk-row-meta">' +
+              company +
+              next +
+            '</div>' +
           '</div>' +
-        '</div>';
+          (dueLabel ? '<span class="wk-row-due"' + dueClass + '>' + esc(dueLabel) + '</span>' : '<span class="wk-row-due wk-row-due--empty">—</span>') +
+          '<div class="wk-row-actions">' +
+            (task.status !== "waiting"
+              ? '<button type="button" class="wk-row-act" data-work-status="waiting" data-work-task-id="' + esc(task.id) + '" title="Marcar como aguardando">' + svgPauseSm() + '</button>'
+              : '<button type="button" class="wk-row-act" data-work-status="planned" data-work-task-id="' + esc(task.id) + '" title="Reativar">' + svgPlay() + '</button>'
+            ) +
+            '<button type="button" class="wk-row-act" data-work-move-inbox data-work-task-id="' + esc(task.id) + '" title="Mover para inbox">' + svgInboxSm() + '</button>' +
+            '<button type="button" class="wk-row-act wk-row-act--danger" data-work-delete data-work-task-id="' + esc(task.id) + '" title="Excluir">' + svgTrash() + '</button>' +
+          '</div>' +
+        '</li>'
+      );
+    }
+
+    function svgCheck()    { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>'; }
+    function svgPauseSm()  { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>'; }
+    function svgPlay()     { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"/></svg>'; }
+    function svgInboxSm()  { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l3-8h12l3 8"/><path d="M3 13v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6"/><path d="M3 13h5l1 2h6l1-2h5"/></svg>'; }
+    function svgTrash()    { return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>'; }
+
+    function renderEmptyState(f) {
+      const meta = viewMeta(f);
+      const now = new Date();
+      const hour = now.getHours();
+      const day = now.getDay();
+      const date = now.getDate();
+      const lastDay = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+      const isMonthEnd = lastDay - date <= 2;
+      let title, body;
+
+      if (f === "today") {
+        if (day === 5 && hour >= 17) { title = "Sexta de fim de tarde."; body = "Sem pendências. Bom fechamento de semana — pode fechar."; }
+        else if (day === 0)          { title = "Domingo."; body = hour < 12 ? "Aproveite o descanso. Trabalho dorme até segunda." : "Sem nada marcado. Segunda começa amanhã."; }
+        else if (day === 6)          { title = "Sábado livre."; body = "Sem pendências de trabalho. Aproveite."; }
+        else if (isMonthEnd && hour >= 16) { title = "Final de mês limpo."; body = "Sem pendências. Bom indicador de organização."; }
+        else if (hour < 8)           { title = "Madrugada."; body = "Dia ainda não começou. Capture o que pintar mais tarde."; }
+        else if (hour < 12)          { title = "Manhã limpa."; body = "Sem atrasadas, nada marcado ainda. Bom momento pra capturar."; }
+        else if (hour < 14)          { title = "Hora do almoço."; body = "Sem pendências. Pode respirar."; }
+        else if (hour >= 19)         { title = "Dia encerrado."; body = "Sem pendências em aberto. Pode fechar o laptop."; }
+        else                         { title = "Tudo no controle."; body = "Sem atrasadas nem tarefas pra hoje neste momento."; }
+      }
+      else if (f === "week") {
+        title = (day === 0 || day === 6) ? "Semana ainda não começou." : "Semana em branco.";
+        body = "Nada distribuído pelos dias ainda. Arraste da inbox pra começar.";
+      }
+      else if (f === "overdue") {
+        title = "Nada atrasado.";
+        body = "Você está em dia com os prazos. Bom estado pra acumular gás pro próximo ciclo.";
+      }
+      else if (f === "waiting") {
+        title = "Sem pendências externas.";
+        body = "Nenhuma tarefa bloqueada por terceiros agora.";
+      }
+      else if (f === "inbox") {
+        title = "Inbox limpa.";
+        body = "Toda tarefa em aberto já tem um dia atribuído. Inbox-zero raro de ver.";
+      }
+      else if (f === "all") {
+        title = "Sem tarefas em aberto.";
+        body = "Capture algo pra começar — atalho N ou ⌘K abre a captura rápida.";
+      }
+      else if (isKindFilter(f)) {
+        const kindMeta = WD.getKindMeta ? WD.getKindMeta(kindFromFilter(f)) : null;
+        const label = kindMeta ? kindMeta.label.toLowerCase() : "item";
+        title = "Sem " + label + "s em aberto.";
+        body = "Nenhum " + label + " registrado neste momento.";
+      }
+      else if (meta.company) {
+        title = "Sem itens em " + meta.company.name + ".";
+        body = "Nenhuma demanda registrada pra essa investida agora. Bom estado.";
+      }
+      else { title = "Sem itens em " + meta.title + "."; body = "Nada cadastrado nesta visão."; }
+
+      return (
+        '<div class="wk-empty">' +
+          '<div class="wk-empty-glyph" aria-hidden="true">○</div>' +
+          '<h3 class="wk-empty-title">' + esc(title) + '</h3>' +
+          '<p class="wk-empty-body">' + esc(body) + '</p>' +
+          '<button type="button" class="wk-btn wk-btn--primary" data-work-capture-toggle>+ Novo item</button>' +
+        '</div>'
+      );
+    }
+
+    /* ─────────────── Week board (kanban) ─────────────── */
+
+    function renderWeekBoard(el) {
+      const days = WD.getWeekDays(currentWeekStart);
+      const ref = todayIso();
+      const open = openTasks();
+      const filtered = applySearch(open);
+
+      // inbox lateral (não planejadas)
+      const inbox = WD.sortTasks(filtered.filter((t) => !t.scheduledDayIso), ref);
+
+      const dayCols = days.map((day) => {
+        const dayTasks = WD.sortTasks(filtered.filter((t) => t.scheduledDayIso === day.iso), ref);
+        const isToday = day.iso === ref;
+        const cls = "wk-week-col" + (isToday ? " is-today" : "");
+        return (
+          '<section class="' + cls + '">' +
+            '<header class="wk-week-col-head">' +
+              '<span class="wk-week-col-day">' + esc(WEEKDAY_SHORT[day.date.getDay()]) + '</span>' +
+              '<span class="wk-week-col-date">' + esc(day.date.getDate()) + '</span>' +
+              '<span class="wk-week-col-count">' + dayTasks.length + '</span>' +
+            '</header>' +
+            '<div class="wk-week-col-body wk-drop-zone" data-work-drop="day" data-day-iso="' + esc(day.iso) + '">' +
+              dayTasks.map(weekCard).join("") +
+              (dayTasks.length === 0 ? '<div class="wk-week-empty">—</div>' : '') +
+            '</div>' +
+          '</section>'
+        );
       }).join("");
 
-      // Pool de nao-agendadas (substitui inbox em workspace por empresa)
-      const unscheduled = WD.sortTasks(openScoped.filter((t) => !t.scheduledDayIso), today);
-      const unschedHtml = unscheduled.length
-        ? unscheduled.map((t) => taskCardHtml(t, { density: "compact", hideCompanyChip: !!company })).join("")
-        : '<div class="wk-day-empty wk-day-empty--lg">Nenhuma tarefa nao planejada. Use <strong>Capturar tarefa</strong> para adicionar.</div>';
+      const inboxCol =
+        '<section class="wk-week-col wk-week-col--inbox">' +
+          '<header class="wk-week-col-head">' +
+            '<span class="wk-week-col-day">Inbox</span>' +
+            '<span class="wk-week-col-count">' + inbox.length + '</span>' +
+          '</header>' +
+          '<div class="wk-week-col-body wk-drop-zone" data-work-drop="inbox">' +
+            inbox.map(weekCard).join("") +
+            (inbox.length === 0 ? '<div class="wk-week-empty">vazio</div>' : '') +
+          '</div>' +
+        '</section>';
 
       el.innerHTML =
-        '<div class="wk-board-head">' +
-          '<h2 class="wk-section-title">Planner da semana</h2>' +
-          '<span class="wk-muted">Arraste cards entre os dias. ' + (company ? esc(company.name) : "Visao: " + esc(scopeLabel(currentFilter()))) + '</span>' +
-        '</div>' +
-        '<div class="wk-board">' + dayColsHtml + '</div>' +
-        '<div class="wk-unsched">' +
-          '<div class="wk-unsched-head">' +
-            '<h3 class="wk-section-title wk-section-title--sm">Nao planejadas</h3>' +
-            '<span class="wk-muted">' + unscheduled.length + ' abertas sem dia · arraste para um dia da semana</span>' +
-          '</div>' +
-          '<div class="wk-unsched-list wk-drop-zone" data-work-drop="inbox">' + unschedHtml + '</div>' +
+        '<div class="wk-week-grid">' +
+          inboxCol +
+          dayCols +
         '</div>';
     }
 
-    function scopeLabel(key) {
-      if (key === "today") return "Hoje";
-      if (key === "overdue") return "Atrasadas";
-      if (key === "waiting") return "Aguardando";
-      if (key === "general") return "Gerais";
-      return "todas";
+    function weekCard(task) {
+      const ref = todayIso();
+      const overdue = WD.isOverdue(task, ref);
+      const waiting = WD.isWaiting(task);
+      const co = task.companyId ? WD.companyMeta(task.companyId) : null;
+      const accent = co ? co.accent : "var(--muted)";
+      const tag = overdue ? '<span class="wk-tag wk-tag--xs" data-tone="danger">atrasada</span>'
+        : waiting ? '<span class="wk-tag wk-tag--xs" data-tone="warning">aguardando</span>'
+        : task.priority === "critical" ? '<span class="wk-tag wk-tag--xs" data-tone="danger">crítica</span>'
+        : task.priority === "high" ? '<span class="wk-tag wk-tag--xs" data-tone="accent">alta</span>'
+        : '';
+      const due = task.dueDate ? '<span class="wk-week-card-due" data-tone="' + dueTone(task.dueDate) + '">' + esc(relativeDueLabel(task.dueDate)) + '</span>' : '';
+      return (
+        '<article class="wk-week-card" data-work-task-id="' + esc(task.id) + '" draggable="true" style="--co-accent: ' + esc(accent) + '">' +
+          '<div class="wk-week-card-line">' +
+            (co ? '<span class="wk-week-card-co" title="' + esc(co.name) + '">' + esc(co.name) + '</span>' : '') +
+            tag +
+          '</div>' +
+          '<div class="wk-week-card-title">' + esc(task.title) + '</div>' +
+          (task.nextAction && task.nextAction !== task.title
+            ? '<div class="wk-week-card-next">' + esc(task.nextAction) + '</div>'
+            : '') +
+          (due ? '<footer class="wk-week-card-foot">' + due + '</footer>' : '') +
+        '</article>'
+      );
     }
 
-    /* ─────────────────────────────────────────────────────────────── */
-    /* Prazos criticos + aguardando (aside)                            */
-    /* ─────────────────────────────────────────────────────────────── */
+    /* ─────────────── Aside ─────────────── */
 
     function renderAside() {
       const el = document.getElementById("workAside");
       if (!el) return;
-      const today = WD.todayIso();
-      const company = currentCompanyMeta();
-      const base = company
-        ? (state.workTasks || []).filter((t) => t.companyId === company.id)
-        : (state.workTasks || []);
-      const buckets = WD.dashboardBuckets(base, today, currentWeekStart);
+      const f = currentFilter();
 
-      const criticalList = buckets.critical.slice(0, 8);
-      const waitingList = buckets.waiting.slice(0, 8);
+      // Esconde o aside se a vista já é especificamente um dos blocos (waiting/overdue/inbox)
+      if (f === "waiting" || f === "overdue" || f === "inbox" || f === "week") {
+        el.innerHTML = "";
+        el.setAttribute("hidden", "");
+        return;
+      }
+      el.removeAttribute("hidden");
 
-      const criticalHtml = criticalList.length
-        ? criticalList.map((t) => taskCardHtml(t, { density: "compact", draggable: false, hideCompanyChip: !!company })).join("")
-        : '<div class="wk-empty">Sem prazo critico.</div>';
-
-      const waitingHtml = waitingList.length
-        ? waitingList.map((t) => {
-            const since = t.waitingSince ? new Date(t.waitingSince) : null;
-            const daysAgo = since ? Math.max(0, Math.round((Date.now() - since.getTime()) / 86400000)) : null;
-            const ageChip = daysAgo !== null
-              ? '<span class="wk-chip wk-chip--age">' + (daysAgo === 0 ? "hoje" : daysAgo + "d aguard.") + '</span>'
-              : '';
-            return '<article class="wk-mini-task" data-work-task-id="' + esc(t.id) + '">' +
-              '<div class="wk-mini-task-title">' + esc(t.title) + '</div>' +
-              '<div class="wk-mini-task-meta">' +
-                (!company && t.companyId ? '<span class="wk-chip wk-chip--company">' + esc(WD.companyName(t.companyId)) + '</span>' : '') +
-                ageChip +
-                (t.nextAction ? '<span class="wk-mini-task-next">→ ' + esc(t.nextAction) + '</span>' : '') +
-              '</div>' +
-              '<div class="wk-mini-task-actions">' +
-                '<button class="wk-btn wk-btn--mini" type="button" data-work-status="planned">Retomar</button>' +
-                '<button class="wk-btn wk-btn--mini" type="button" data-work-status="done">Resolvido</button>' +
-              '</div>' +
-            '</article>';
-          }).join("")
-        : '<div class="wk-empty">Nada aguardando.</div>';
-
-      const nextActionsHtml = company
-        ? renderNextActionsForCompany(company, base.filter(WD.isOpen), today)
-        : renderPortfolioResume(today);
+      const ref = todayIso();
+      const open = openTasks();
+      const overdue = WD.sortTasks(open.filter((t) => WD.isOverdue(t, ref)), ref).slice(0, 5);
+      const waiting = WD.sortTasks(open.filter(WD.isWaiting), ref).slice(0, 5);
+      const inbox = WD.sortTasks(open.filter((t) => !t.scheduledDayIso && t.status === "inbox"), ref).slice(0, 5);
 
       el.innerHTML =
-        '<section class="wk-aside-card">' +
-          '<div class="wk-aside-head">' +
-            '<h3 class="wk-section-title wk-section-title--sm">Prazos criticos</h3>' +
-            '<span class="wk-count wk-count--danger">' + buckets.critical.length + '</span>' +
-          '</div>' +
-          '<div class="wk-aside-list">' + criticalHtml + '</div>' +
-        '</section>' +
-        '<section class="wk-aside-card">' +
-          '<div class="wk-aside-head">' +
-            '<h3 class="wk-section-title wk-section-title--sm">Aguardando terceiros</h3>' +
-            '<span class="wk-count wk-count--warning">' + buckets.waiting.length + '</span>' +
-          '</div>' +
-          '<div class="wk-aside-list">' + waitingHtml + '</div>' +
-        '</section>' +
-        nextActionsHtml;
+        renderAsideBlock("Atrasadas",  overdue, "overdue", "danger") +
+        renderAsideBlock("Aguardando", waiting, "waiting", "warning") +
+        renderAsideBlock("Inbox",      inbox,   "inbox",   "quiet");
     }
 
-    function renderNextActionsForCompany(company, openTasks, today) {
-      const top = WD.sortTasks(openTasks, today).slice(0, 6);
-      const list = top.length
-        ? '<ol class="wk-next-list">' + top.map((t) =>
-            '<li>' +
-              '<div class="wk-next-text">' + esc(t.nextAction || t.title) + '</div>' +
-              '<div class="wk-next-meta">' +
-                '<span>' + esc(t.dueDate ? relativeDueLabel(t.dueDate) : "sem prazo") + '</span>' +
-                '<span>·</span>' +
-                '<span>' + esc(WD.priorityLabel(t.priority)) + '</span>' +
-                '<span>·</span>' +
-                '<span>' + esc(WD.statusLabel(t.status)) + '</span>' +
-              '</div>' +
-            '</li>'
-          ).join("") + '</ol>'
-        : '<div class="wk-empty">Nenhuma proxima acao ativa.</div>';
-      return '<section class="wk-aside-card">' +
-        '<div class="wk-aside-head">' +
-          '<h3 class="wk-section-title wk-section-title--sm">Proximas acoes · ' + esc(company.name) + '</h3>' +
-        '</div>' +
-        list +
-      '</section>';
+    function renderAsideBlock(title, list, jumpFilter, tone) {
+      if (!list.length) {
+        return (
+          '<section class="wk-aside-block">' +
+            '<header class="wk-aside-head" data-tone="' + esc(tone || "quiet") + '">' +
+              '<h3 class="wk-aside-title">' + esc(title) + '</h3>' +
+              '<span class="wk-aside-count">0</span>' +
+            '</header>' +
+            '<p class="wk-aside-empty">—</p>' +
+          '</section>'
+        );
+      }
+      const items = list.map((t) => {
+        const co = t.companyId ? WD.companyMeta(t.companyId) : null;
+        const due = t.dueDate ? relativeDueLabel(t.dueDate) : "";
+        return (
+          '<li class="wk-aside-item" data-work-filter="' + esc(jumpFilter) + '" role="button" tabindex="0">' +
+            '<span class="wk-aside-item-title">' + esc(t.title) + '</span>' +
+            '<span class="wk-aside-item-meta">' +
+              (co ? esc(co.name) : "Geral") +
+              (due ? ' · ' + esc(due) : '') +
+            '</span>' +
+          '</li>'
+        );
+      }).join("");
+      return (
+        '<section class="wk-aside-block">' +
+          '<header class="wk-aside-head" data-tone="' + esc(tone || "quiet") + '">' +
+            '<h3 class="wk-aside-title">' + esc(title) + '</h3>' +
+            '<span class="wk-aside-count">' + list.length + '</span>' +
+          '</header>' +
+          '<ul class="wk-aside-list">' + items + '</ul>' +
+          '<button type="button" class="wk-aside-more" data-work-filter="' + esc(jumpFilter) + '">Ver todas</button>' +
+        '</section>'
+      );
     }
 
-    function renderPortfolioResume(today) {
-      const summaries = WD.companySummaries(state.workTasks || [], today, currentWeekIsos());
-      return '<section class="wk-aside-card">' +
-        '<div class="wk-aside-head">' +
-          '<h3 class="wk-section-title wk-section-title--sm">Resumo do portfolio</h3>' +
-        '</div>' +
-        '<div class="wk-portfolio">' + summaries.map((s) => {
-          const tone = s.overdueCount ? "danger" : (s.waitingCount ? "warning" : "success");
-          const stateLabel = s.overdueCount
-            ? s.overdueCount + " em atraso"
-            : (s.waitingCount ? s.waitingCount + " aguardando" : "fluxo limpo");
-          return '<button type="button" class="wk-portfolio-row" data-work-filter="' + esc(s.company.id) + '" data-tone="' + tone + '">' +
-            logoMarkHtml(s.company, "sm") +
-            '<div class="wk-portfolio-row-body">' +
-              '<div class="wk-portfolio-row-top">' +
-                '<strong>' + esc(s.company.name) + '</strong>' +
-                '<span class="wk-pill wk-pill--' + tone + '">' + esc(stateLabel) + '</span>' +
-              '</div>' +
-              '<div class="wk-portfolio-row-nums">' +
-                '<span><strong>' + s.openCount + '</strong> abertas</span>' +
-                '<span><strong>' + s.weekCount + '</strong> semana</span>' +
-                '<span><strong>' + s.overdueCount + '</strong> atrasadas</span>' +
-                '<span><strong>' + s.waitingCount + '</strong> aguard.</span>' +
-              '</div>' +
-            '</div>' +
-          '</button>';
-        }).join("") + '</div>' +
-      '</section>';
-    }
-
-    /* ─────────────────────────────────────────────────────────────── */
-    /* Render root                                                     */
-    /* ─────────────────────────────────────────────────────────────── */
+    /* ─────────────── Render principal ─────────────── */
 
     function renderWorkPlanner() {
-      renderSidebar();
-      renderWorkspaceHeader();
-      renderCapture();
-      renderBoard();
-      renderAside();
+      try { renderSidebar(); } catch (e) { console.error("[work-planner] sidebar", e); }
+      try { renderHeader();  } catch (e) { console.error("[work-planner] header", e); }
+      try { renderCapture(); } catch (e) { console.error("[work-planner] capture", e); }
+      try { renderBoard();   } catch (e) { console.error("[work-planner] board", e); }
+      try { renderAside();   } catch (e) { console.error("[work-planner] aside", e); }
+      try { animateBoard();  } catch (e) { /* ignore */ }
     }
 
-    /* ─────────────────────────────────────────────────────────────── */
-    /* CRUD                                                             */
-    /* ─────────────────────────────────────────────────────────────── */
+    function animateBoard() {
+      if (!window.Anim) return;
+      const board = document.getElementById("workBoard");
+      if (!board) return;
+      // Anima cada section + linhas internas com stagger curto
+      const sections = board.querySelectorAll(".wk-list-section, .wk-empty, .wk-week-grid");
+      if (sections.length) {
+        window.Anim.fadeUpStagger(sections, { duration: 0.36, stagger: 0.04 });
+      }
+      // Hover lift nos cards do kanban
+      if (typeof window.Anim.bindHoverLiftAll === "function") {
+        window.Anim.bindHoverLiftAll(".wk-week-card", board, { y: -2 });
+      }
+    }
+
+    /* ─────────────── CRUD ─────────────── */
 
     function addTask(input, message) {
       const task = WD.createTask(input || {});
@@ -682,23 +1039,31 @@
 
     function collectForm(form) {
       const data = new FormData(form);
+      const target = String(data.get("target") || "today");
+      const companyId = String(data.get("companyId") || "");
+      const itemKind = String(data.get("itemKind") || "task");
+      const dayIso = target === "today" ? todayIso() : "";
       return {
         title: data.get("title"),
+        itemKind,
         nextAction: data.get("nextAction") || data.get("title"),
-        description: data.get("description") || "",
-        scope: data.get("companyId") ? "company" : "general",
-        companyId: data.get("companyId") || null,
-        scheduledDayIso: data.get("scheduledDayIso") || "",
+        description: "",
+        scope: companyId ? "company" : "general",
+        companyId: companyId || null,
+        scheduledDayIso: dayIso,
         dueDate: data.get("dueDate") || "",
         priority: data.get("priority") || "medium",
-        status: data.get("scheduledDayIso") ? "planned" : "inbox",
-        area: data.get("area") || "followup"
+        status: dayIso ? "planned" : "inbox",
+        area: itemKind === "meeting" ? "reuniao" : (itemKind === "followup" ? "followup" : "operacional")
       };
     }
 
-    /* ─────────────────────────────────────────────────────────────── */
-    /* Eventos                                                          */
-    /* ─────────────────────────────────────────────────────────────── */
+    /* ─────────────── Eventos ─────────────── */
+
+    function taskIdFrom(event) {
+      const card = event.target && event.target.closest ? event.target.closest("[data-work-task-id]") : null;
+      return card ? card.getAttribute("data-work-task-id") : null;
+    }
 
     function setupEvents() {
       const page = document.getElementById("workPage");
@@ -711,15 +1076,9 @@
           applyFilterChange(filterBtn.getAttribute("data-work-filter"));
           return;
         }
-        const toggleCapture = event.target.closest("[data-work-capture-toggle]");
-        if (toggleCapture) {
+        const captureToggle = event.target.closest("[data-work-capture-toggle]");
+        if (captureToggle) {
           captureOpen ? closeCapture() : openCapture();
-          return;
-        }
-        const unlock = event.target.closest("[data-work-unlock-company]");
-        if (unlock) {
-          captureCompanyLock = null;
-          renderCapture();
           return;
         }
         const statusBtn = event.target.closest("[data-work-status]");
@@ -748,6 +1107,16 @@
         if (nextBtn) { currentWeekStart = WD.addDays(currentWeekStart, 7); persistWeekAnchor(); renderWorkPlanner(); return; }
       });
 
+      page.addEventListener("keydown", function (event) {
+        if (event.target && event.target.matches && event.target.matches(".wk-aside-item")) {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            const f = event.target.getAttribute("data-work-filter");
+            if (f) applyFilterChange(f);
+          }
+        }
+      });
+
       page.addEventListener("change", function (event) {
         const cb = event.target.closest(".wk-task-checkbox");
         if (!cb) return;
@@ -755,7 +1124,7 @@
         if (!id) return;
         const task = state.workTasks.find((t) => t.id === id);
         const fallback = task && task.scheduledDayIso ? "planned" : "inbox";
-        updateTask(id, { status: cb.checked ? "done" : fallback }, cb.checked ? "Tarefa concluida." : "Tarefa reaberta.");
+        updateTask(id, { status: cb.checked ? "done" : fallback }, cb.checked ? "Tarefa concluída." : "Tarefa reaberta.");
       });
 
       page.addEventListener("submit", function (event) {
@@ -766,6 +1135,15 @@
         if (!String(payload.title || "").trim()) return;
         addTask(payload, "Tarefa capturada.");
         closeCapture();
+      });
+
+      page.addEventListener("input", function (event) {
+        const input = event.target.closest("#workSearchInput");
+        if (!input) return;
+        searchTerm = input.value;
+        // Re-render só do board e aside pra não roubar foco do input
+        try { renderBoard(); } catch (e) { /* ignore */ }
+        try { renderAside(); } catch (e) { /* ignore */ }
       });
 
       page.addEventListener("keydown", function (event) {
@@ -815,7 +1193,7 @@
         const id = draggingId || event.dataTransfer.getData("text/plain");
         if (!id) return;
         if (zone.getAttribute("data-work-drop") === "inbox") {
-          updateTask(id, { scheduledDayIso: null, status: "inbox" }, "Movida para nao planejadas.");
+          updateTask(id, { scheduledDayIso: null, status: "inbox" }, "Movida para inbox.");
         } else {
           const dayIso = zone.getAttribute("data-day-iso");
           updateTask(id, { scheduledDayIso: dayIso, status: "planned" }, "Agendada para " + fmtIsoShort(dayIso) + ".");
@@ -823,7 +1201,7 @@
         draggingId = null;
       });
 
-      // Atalhos globais Alt+Shift+Arrows funcionam so no workPage visivel
+      // Atalhos globais Alt+Shift+Arrows: navegar semana
       if (!document.body.getAttribute("data-work-shortcuts-bound")) {
         document.body.setAttribute("data-work-shortcuts-bound", "true");
         document.addEventListener("keydown", function (event) {
@@ -867,21 +1245,9 @@
           description: ""
         };
         if (!String(payload.title || "").trim()) return;
-        addTask(payload, "Captura rapida adicionada.");
+        addTask(payload, "Tarefa capturada.");
         form.reset();
         if (typeof appApi.requestRender === "function") appApi.requestRender();
-      });
-      document.addEventListener("click", function (event) {
-        const openWork = event.target.closest("[data-open-work]");
-        if (openWork && typeof openPage === "function") {
-          openPage("work");
-        }
-        const filter = event.target.closest("[data-home-work-filter]");
-        if (filter && typeof openPage === "function") {
-          state.workFilter = filter.getAttribute("data-home-work-filter") || "all";
-          saveState();
-          openPage("work");
-        }
       });
     }
 
@@ -895,9 +1261,7 @@
       observer.observe(page, { attributes: true, attributeFilter: ["hidden"] });
     }
 
-    /* ─────────────────────────────────────────────────────────────── */
-    /* API publica                                                      */
-    /* ─────────────────────────────────────────────────────────────── */
+    /* ─────────────── API pública ─────────────── */
 
     window.WorkPlanner = {
       render: renderWorkPlanner,
@@ -916,14 +1280,15 @@
     if (typeof appApi.onStateReplaced === "function") {
       appApi.onStateReplaced(function () {
         if (!Array.isArray(state.workTasks)) state.workTasks = [];
-        if (!state.workFilter) state.workFilter = "all";
+        if (!state.workFilter) state.workFilter = "today";
+        if (state.workFilter === "general") state.workFilter = "all";
         const page = document.getElementById("workPage");
         if (page && !page.hasAttribute("hidden")) renderWorkPlanner();
         if (typeof appApi.requestRender === "function") appApi.requestRender();
       });
     }
 
-    console.log("[workPlanner] v2 inicializado");
+    console.log("[work-planner] v3 inicializado (Linear/Asana)");
   }
 
   if (window.StudyApp && typeof window.StudyApp.onReady === "function") {

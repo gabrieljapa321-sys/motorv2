@@ -2,7 +2,7 @@
   "use strict";
 
   const STORAGE_KEY = "poli-study-motor-v1";
-  const SCHEMA_VERSION = 8;
+  const SCHEMA_VERSION = 9;
 
   const STUDY_SECTIONS = ["dashboard", "week", "fc", "calendar", "grades"];
 const PRIMARY_PAGES = ["home", "studies", "news", "work"];
@@ -10,11 +10,13 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
   const WORK_PRIORITIES = ["critical", "high", "medium", "low"];
   const WORK_STATUSES = ["inbox", "planned", "doing", "waiting", "done"];
   const WORK_AREAS = ["financeiro", "juridico", "operacional", "governanca", "auditoria", "compliance", "reuniao", "followup"];
+  const WORK_ITEM_KINDS = ["task", "followup", "email", "meeting", "document"];
 
   const DEFAULT_STATE = {
     schemaVersion: SCHEMA_VERSION,
     theme: "auto",
     mode: "normal",
+    appContext: "work",          // P2: contexto ativo (work | school)
     currentPage: "home",
     studySection: "dashboard",
     calendarMonthAnchor: null,
@@ -192,11 +194,13 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
         if (!scheduledDayIso && status === "planned") status = "inbox";
         const priority = WORK_PRIORITIES.includes(item.priority) ? item.priority : "medium";
         const area = WORK_AREAS.includes(item.area) ? item.area : "followup";
+        const itemKind = WORK_ITEM_KINDS.includes(item.itemKind) ? item.itemKind : "task";
         const completedAt = status === "done"
           ? (typeof item.completedAt === "string" ? item.completedAt : (typeof item.updatedAt === "string" ? item.updatedAt : null))
           : null;
         return {
           id: typeof item.id === "string" && item.id ? item.id : `work-imported-${index}`,
+          itemKind,
           title: typeof item.title === "string" ? item.title.slice(0, 180) : "Tarefa de trabalho",
           description: typeof item.description === "string" ? item.description.slice(0, 1000) : "",
           scope,
@@ -209,6 +213,11 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
           nextAction: typeof item.nextAction === "string" ? item.nextAction.slice(0, 300) : "Definir proxima acao objetiva",
           notes: typeof item.notes === "string" ? item.notes.slice(0, 1000) : "",
           waitingSince: status === "waiting" ? (typeof item.waitingSince === "string" ? item.waitingSince : (typeof item.updatedAt === "string" ? item.updatedAt : null)) : null,
+          // Campos novos por tipo (opcionais)
+          lastInteractionAt: typeof item.lastInteractionAt === "string" ? item.lastInteractionAt : null,
+          meetingTime: typeof item.meetingTime === "string" && /^\d{2}:\d{2}$/.test(item.meetingTime) ? item.meetingTime : null,
+          documentUrl: typeof item.documentUrl === "string" ? item.documentUrl.slice(0, 500) : null,
+          emailFrom: typeof item.emailFrom === "string" ? item.emailFrom.slice(0, 200) : null,
           createdAt: typeof item.createdAt === "string" ? item.createdAt : new Date(0).toISOString(),
           updatedAt: typeof item.updatedAt === "string" ? item.updatedAt : (typeof item.createdAt === "string" ? item.createdAt : new Date(0).toISOString()),
           completedAt
@@ -268,6 +277,23 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       safe.lastHomeOpenAt = typeof safe.lastHomeOpenAt === "string" ? safe.lastHomeOpenAt : null;
     }
 
+    if (version < 9) {
+      // P3a: tipos novos. Preenche itemKind padrao em workTasks legados.
+      // Heuristicas: status "waiting" + area "followup" -> followup;
+      //              area "reuniao" -> meeting; resto -> task.
+      if (Array.isArray(safe.workTasks)) {
+        safe.workTasks = safe.workTasks.map((t) => {
+          if (!t || typeof t !== "object") return t;
+          if (typeof t.itemKind === "string" && WORK_ITEM_KINDS.includes(t.itemKind)) return t;
+          let kind = "task";
+          if (t.area === "reuniao") kind = "meeting";
+          else if (t.area === "followup" || t.status === "waiting") kind = "followup";
+          return Object.assign({}, t, { itemKind: kind });
+        });
+      }
+      safe.appContext = safe.appContext === "school" ? "school" : "work";
+    }
+
     safe.schemaVersion = SCHEMA_VERSION;
     return safe;
   }
@@ -281,6 +307,7 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
       ...cloneState(defaultState),
       ...parsed,
       schemaVersion: SCHEMA_VERSION,
+      appContext: parsed.appContext === "school" ? "school" : "work",
       currentPage: normalizePrimaryPage(parsed.currentPage),
       studySection: normalizeStudySection(parsed.studySection, parsed.currentPage),
       calendarLegendVisible: normalizeBoolean(parsed.calendarLegendVisible, defaultState.calendarLegendVisible),

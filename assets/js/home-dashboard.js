@@ -770,6 +770,24 @@ function renderHomeList(items, emptyText, options = {}) {
         document.body.removeAttribute("data-study-page");
       }
 
+      // P2 — modo de contexto: deriva da pagina ativa (work/studies),
+      // mantem state.appContext sticky no Painel/Noticias.
+      let ctx = state.appContext === "school" ? "school" : "work";
+      if (onWork) ctx = "work";
+      else if (onStudies) ctx = "school";
+      if (state.appContext !== ctx) {
+        state.appContext = ctx;
+        try { saveState(); } catch (e) { /* ignore */ }
+      }
+      document.body.setAttribute("data-context", ctx);
+
+      // P2 — sincroniza aria-selected dos botoes de contexto
+      document.querySelectorAll("[data-context-pick]").forEach((btn) => {
+        const pick = btn.getAttribute("data-context-pick");
+        const active = pick === ctx && (onWork || onStudies);
+        btn.setAttribute("aria-selected", active ? "true" : "false");
+      });
+
       if (elements.homePage) elements.homePage.hidden = !onHome;
       if (elements.homeCaptureFab) elements.homeCaptureFab.hidden = !onHome;
       if (!onHome) closeHomeCaptureModal();
@@ -811,6 +829,24 @@ function renderHomeList(items, emptyText, options = {}) {
       render();
       syncHashFromState();
       window.scrollTo({ top: 0, behavior: "smooth" });
+      // Animação de entrada da página
+      if (window.Anim && typeof window.Anim.pageEnter === "function") {
+        const map = {
+          home: "homePage",
+          studies: "dashboardPage",
+          news: "newsPage",
+          work: "workPage"
+        };
+        const id = map[state.currentPage];
+        if (id) {
+          requestAnimationFrame(() => {
+            const main = document.getElementById(id);
+            if (main && !main.hasAttribute("hidden")) {
+              try { window.Anim.pageEnter(main); } catch (e) { /* ignore */ }
+            }
+          });
+        }
+      }
     }
 
     function openStudySection(section) {

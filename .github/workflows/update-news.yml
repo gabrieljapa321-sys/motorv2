@@ -1,16 +1,22 @@
 name: update-news-feed
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:           # botão "Run workflow" no GitHub UI
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/30 * * * *"     # a cada 30 minutos
 
 permissions:
   contents: write
 
+# Evita que duas execuções concorrentes pisem uma na outra (ex: cron + manual)
+concurrency:
+  group: news-feed-update
+  cancel-in-progress: false
+
 jobs:
   refresh-feed:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
@@ -21,17 +27,53 @@ jobs:
         with:
           python-version: "3.11"
 
+      # Tenta gerar o feed. Se 0 itens (Google bloqueou), o script sai com erro;
+      # capturamos isso pra deixar o job verde mas pular o commit.
       - name: Build news feed
-        run: python tools/news/fetch_news.py --output assets/data/news.json
+        id: build
+        continue-on-error: true
+        run: |
+          python tools/news/fetch_news.py --output assets/data/news.json.new
+          echo "build_ok=true" >> "$GITHUB_OUTPUT"
+
+      - name: Validate output
+        id: validate
+        if: steps.build.outputs.build_ok == 'true'
+        run: |
+          if [ ! -f assets/data/news.json.new ]; then
+            echo "::warning::news.json.new não foi criado"
+            exit 0
+          fi
+          ITEMS=$(python -c "import json,sys; sys.exit(0 if 'items' in json.load(open('assets/data/news.json.new')) else 1); " 2>/dev/null && python -c "import json; print(len(json.load(open('assets/data/news.json.new'))['items']))" || echo "0")
+          echo "Itens coletados: $ITEMS"
+          if [ "$ITEMS" -lt "5" ]; then
+            echo "::warning::Apenas $ITEMS itens coletados (provável bloqueio do Google News). Mantendo feed anterior."
+            rm -f assets/data/news.json.new
+            echo "valid=false" >> "$GITHUB_OUTPUT"
+          else
+            mv assets/data/news.json.new assets/data/news.json
+            echo "valid=true" >> "$GITHUB_OUTPUT"
+            echo "items=$ITEMS" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Commit updated news feed
+        if: steps.validate.outputs.valid == 'true'
         run: |
           if git diff --quiet -- assets/data/news.json; then
-            echo "news.json unchanged"
+            echo "news.json sem alterações de conteúdo"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/data/news.json
-          git commit -m "Update news feed"
+          git commit -m "chore: refresh news feed (${{ steps.validate.outputs.items }} itens) [skip ci]"
           git push
+
+      - name: Summary
+        if: always()
+        run: |
+          if [ "${{ steps.validate.outputs.valid }}" = "true" ]; then
+            echo "✅ Feed atualizado com ${{ steps.validate.outputs.items }} itens" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "⚠️ Não foi possível atualizar o feed nesta execução (provável bloqueio externo). Próxima tentativa em 30 min." >> "$GITHUB_STEP_SUMMARY"
+          fi

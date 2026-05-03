@@ -51,7 +51,14 @@ class StaticValidationTests(unittest.TestCase):
     def test_navigation_is_split_between_primary_and_study_levels(self):
         html = INDEX_HTML.read_text(encoding="utf-8")
         main_nav_block = re.search(r'<nav class="tb-nav".*?</nav>', html, flags=re.S).group(0)
-        self.assertEqual(re.findall(r'data-nav-page="([^"]+)"', main_nav_block), ["home", "studies", "news", "work"])
+        # P2 — topbar reestruturada: switch Trabalho/Faculdade primario,
+        # Painel e Noticias secundarios. Garantimos que as 4 paginas existem,
+        # sem exigir uma ordem especifica.
+        nav_pages = re.findall(r'data-nav-page="([^"]+)"', main_nav_block)
+        self.assertEqual(set(nav_pages), {"home", "studies", "news", "work"})
+        self.assertIn('class="tb-context"', main_nav_block)
+        self.assertIn('data-context-pick="work"', main_nav_block)
+        self.assertIn('data-context-pick="school"', main_nav_block)
         self.assertIn('id="studyNavBar"', html)
         self.assertIn('data-study-page="dashboard"', html)
         self.assertIn('data-study-page="week"', html)

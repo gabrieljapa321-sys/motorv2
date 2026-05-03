@@ -350,7 +350,18 @@ def build_payload() -> dict[str, object]:
 
     items = dedupe_items(items)
     if not items:
-        raise SystemExit("Nenhuma noticia foi coletada.")
+        # Falha graciosa: nao morre, devolve payload vazio para o workflow decidir.
+        # O workflow usa "Validate output" para ignorar quando ha menos de 5 itens.
+        print("[news] AVISO: nenhuma noticia foi coletada (provavel bloqueio do Google News).", file=sys.stderr)
+        now_iso = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+        return {
+            "updatedAt": now_iso,
+            "generatedAt": now_iso,
+            "categories": [{"id": "all", "label": "Tudo"}]
+            + [{"id": definition["id"], "label": definition["label"]} for definition in QUERY_DEFINITIONS],
+            "sources": [],
+            "items": [],
+        }
 
     try:
         items = enrich_items(items)

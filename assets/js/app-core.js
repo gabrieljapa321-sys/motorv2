@@ -136,7 +136,7 @@
       importBtn: document.getElementById("tbImportBtn"),
       importFileInput: document.getElementById("importFileInput"),
       modeSelect: document.getElementById("tbModeSelect"),
-      navButtons: Array.from(document.querySelectorAll(".tb-nav-btn[data-nav-page]")),
+      navButtons: Array.from(document.querySelectorAll(".tb-nav-btn[data-nav-page], .tb-context-btn[data-nav-page]")),
       studyNavBar: document.getElementById("studyNavBar"),
       studyNavButtons: Array.from(document.querySelectorAll(".study-nav-btn[data-study-page]")),
       pageEyebrow: document.getElementById("pageEyebrow"),
@@ -1297,9 +1297,17 @@ function renderDeadlineFormCard(referenceDate) {
     function showToast(message) {
       elements.toast.textContent = message;
       elements.toast.classList.add("show");
+      // Animação de entrada com GSAP, se disponível
+      if (window.Anim && typeof window.Anim.toastIn === "function") {
+        try { window.Anim.toastIn(elements.toast); } catch (e) { /* ignore */ }
+      }
       clearTimeout(showToast._timer);
       showToast._timer = setTimeout(() => {
-        elements.toast.classList.remove("show");
+        if (window.Anim && typeof window.Anim.toastOut === "function") {
+          try { window.Anim.toastOut(elements.toast); } catch (e) { /* ignore */ }
+        }
+        // remove a classe um pouco depois pra dar tempo da saida animar
+        setTimeout(() => { elements.toast.classList.remove("show"); }, 180);
       }, 2000);
     }
 
