@@ -810,6 +810,20 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.wk-row-body:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .wk-row-line {
@@ -1500,13 +1514,275 @@
 .wk-aside-more:hover { background: var(--accent-soft); }
 .wk-aside-more:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
+/* ─────────────── Tarefa selecionada (Quick Win) ─────────────── */
+
+.wk-row[data-selected="true"] {
+  background: var(--accent-soft);
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.wk-tl-item[data-selected="true"] {
+  background: var(--accent-soft);
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  border-radius: var(--radius-md);
+}
+
+/* Linha de tarefa concluida — cinza, riscada */
+.wk-row[data-status="done"] .wk-row-title {
+  color: var(--muted);
+  text-decoration: line-through;
+  text-decoration-color: var(--muted);
+}
+
+.wk-row[data-status="done"] .wk-row-accent { opacity: 0.4; }
+
+/* ─────────────── Modal de edicao (Quick Win) ─────────────── */
+
+.wk-edit-modal-backdrop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 6vh 16px 16px;
+}
+
+.wk-edit-modal {
+  width: min(640px, 96vw);
+  max-height: 88vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 24px 60px -12px rgba(0,0,0,0.28), 0 1px 2px rgba(0,0,0,0.06);
+}
+
+.wk-edit-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.wk-edit-head .modal-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: -0.012em;
+  margin: 0;
+  color: var(--text);
+}
+
+.wk-edit-close {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 22px;
+  line-height: 1;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background var(--motion-fast) var(--ease-out),
+              color var(--motion-fast) var(--ease-out);
+}
+
+.wk-edit-close:hover { background: var(--bg-soft); color: var(--text); }
+.wk-edit-close:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wk-edit-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px 24px 0;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.wk-edit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.wk-edit-field > span {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.wk-edit-field input[type="text"],
+.wk-edit-field input[type="date"],
+.wk-edit-field select,
+.wk-edit-field textarea {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--bg-elevated);
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--text);
+  width: 100%;
+  transition: border-color var(--motion-fast) var(--ease-out),
+              box-shadow var(--motion-fast) var(--ease-out);
+}
+
+.wk-edit-field textarea {
+  resize: vertical;
+  min-height: 70px;
+  line-height: 1.5;
+}
+
+.wk-edit-field input:focus-visible,
+.wk-edit-field select:focus-visible,
+.wk-edit-field textarea:focus-visible {
+  outline: 0;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.wk-edit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 540px) {
+  .wk-edit-grid { grid-template-columns: 1fr; }
+}
+
+.wk-edit-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 24px 22px;
+  border-top: 1px solid var(--line);
+  background: var(--bg-elevated);
+  position: sticky;
+  bottom: 0;
+  margin: 14px -24px 0;
+  margin-top: auto;
+}
+
+.wk-edit-foot-right { display: inline-flex; gap: 8px; }
+
+#wkEditDeleteBtn {
+  color: var(--danger);
+  border: 1px solid color-mix(in srgb, var(--danger) 28%, var(--line));
+  background: transparent;
+}
+
+#wkEditDeleteBtn:hover {
+  background: var(--danger-soft);
+  border-color: color-mix(in srgb, var(--danger) 40%, var(--line));
+}
+
+/* ─────────────── Overlay de atalhos (Quick Win) ─────────────── */
+
+.wk-shortcuts-backdrop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8vh 16px 16px;
+}
+
+.wk-shortcuts-modal {
+  width: min(560px, 96vw);
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 24px 60px -12px rgba(0,0,0,0.28);
+}
+
+.wk-shortcuts-body {
+  padding: 18px 24px 22px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.wk-shortcuts-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wk-shortcuts-group-title {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.wk-shortcuts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.wk-shortcuts-list li {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 14px;
+  align-items: baseline;
+  padding: 7px 4px;
+  border-bottom: 1px dotted var(--line);
+}
+
+.wk-shortcuts-list li:last-child { border-bottom: 0; }
+
+.wk-shortcuts-list kbd {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 2px 7px;
+  background: var(--bg-soft);
+  color: var(--muted-strong);
+  margin-right: 4px;
+}
+
+.wk-shortcuts-list span {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.4;
+}
+
 /* ─────────────── Mobile polish ─────────────── */
+
+@media (max-width: 960px) {
+  /* QW: acoes sempre visiveis em mobile/touch */
+  .wk-row-actions { opacity: 1; }
+}
 
 @media (max-width: 720px) {
   .wk-head { padding: 14px 16px 10px; }
   .wk-head-search { width: 100%; }
   .wk-board { padding: 14px 16px 24px; }
-  .wk-row { grid-template-columns: auto auto minmax(0, 1fr) auto; gap: 8px; }
-  .wk-row-actions { display: none; }
+  .wk-row { grid-template-columns: auto auto minmax(0, 1fr) auto auto; gap: 8px; }
   .wk-capture { padding: 14px 16px; }
 }

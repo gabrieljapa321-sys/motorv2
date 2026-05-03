@@ -740,7 +740,97 @@
     </div>
   </div>
 
-  
+  <!-- Modal de edicao de tarefa de Trabalho (Quick Win) -->
+  <div class="modal-backdrop wk-edit-modal-backdrop" id="wkEditBackdrop" aria-hidden="true">
+    <div class="modal wk-edit-modal" role="dialog" aria-modal="true" aria-labelledby="wkEditTitle">
+      <header class="wk-edit-head">
+        <h3 class="modal-title" id="wkEditTitle">Editar tarefa</h3>
+        <button type="button" class="wk-edit-close" id="wkEditCloseBtn" aria-label="Fechar edição">×</button>
+      </header>
+      <form id="wkEditForm" class="wk-edit-body" autocomplete="off">
+        <input type="hidden" name="id" id="wkEditId" />
+        <label class="wk-edit-field">
+          <span>Título</span>
+          <input type="text" id="wkEditTitleInput" name="title" maxlength="180" required />
+        </label>
+        <label class="wk-edit-field">
+          <span>Próxima ação</span>
+          <input type="text" name="nextAction" maxlength="220" />
+        </label>
+        <div class="wk-edit-grid">
+          <label class="wk-edit-field">
+            <span>Tipo</span>
+            <select name="itemKind" id="wkEditKind"></select>
+          </label>
+          <label class="wk-edit-field">
+            <span>Empresa</span>
+            <select name="companyId" id="wkEditCompany"></select>
+          </label>
+          <label class="wk-edit-field">
+            <span>Prioridade</span>
+            <select name="priority" id="wkEditPriority"></select>
+          </label>
+          <label class="wk-edit-field">
+            <span>Status</span>
+            <select name="status" id="wkEditStatus"></select>
+          </label>
+          <label class="wk-edit-field">
+            <span>Prazo</span>
+            <input type="date" name="dueDate" id="wkEditDue" />
+          </label>
+          <label class="wk-edit-field">
+            <span>Dia agendado</span>
+            <input type="date" name="scheduledDayIso" id="wkEditDay" />
+          </label>
+        </div>
+        <label class="wk-edit-field">
+          <span>Notas</span>
+          <textarea name="notes" rows="3" maxlength="1000"></textarea>
+        </label>
+        <footer class="wk-edit-foot">
+          <button type="button" class="wk-btn wk-btn--ghost" id="wkEditDeleteBtn" aria-label="Excluir tarefa">Excluir</button>
+          <div class="wk-edit-foot-right">
+            <button type="button" class="wk-btn wk-btn--ghost" id="wkEditCancelBtn">Cancelar</button>
+            <button type="submit" class="wk-btn wk-btn--primary">Salvar</button>
+          </div>
+        </footer>
+      </form>
+    </div>
+  </div>
+
+  <!-- Overlay de atalhos de teclado (Quick Win) -->
+  <div class="modal-backdrop wk-shortcuts-backdrop" id="wkShortcutsBackdrop" aria-hidden="true">
+    <div class="modal wk-shortcuts-modal" role="dialog" aria-modal="true" aria-labelledby="wkShortcutsTitle">
+      <header class="wk-edit-head">
+        <h3 class="modal-title" id="wkShortcutsTitle">Atalhos de teclado · Trabalho</h3>
+        <button type="button" class="wk-edit-close" id="wkShortcutsCloseBtn" aria-label="Fechar">×</button>
+      </header>
+      <div class="wk-shortcuts-body">
+        <section class="wk-shortcuts-group">
+          <h4 class="wk-shortcuts-group-title">Navegação</h4>
+          <ul class="wk-shortcuts-list">
+            <li><kbd>j</kbd> / <kbd>↓</kbd><span>Próxima tarefa</span></li>
+            <li><kbd>k</kbd> / <kbd>↑</kbd><span>Tarefa anterior</span></li>
+            <li><kbd>1</kbd>..<kbd>6</kbd><span>Mudar visão (Hoje, Semana, Atrasadas, Aguardando, Inbox, Todas)</span></li>
+            <li><kbd>/</kbd><span>Focar busca</span></li>
+          </ul>
+        </section>
+        <section class="wk-shortcuts-group">
+          <h4 class="wk-shortcuts-group-title">Ações</h4>
+          <ul class="wk-shortcuts-list">
+            <li><kbd>n</kbd><span>Novo item</span></li>
+            <li><kbd>Enter</kbd><span>Editar tarefa selecionada</span></li>
+            <li><kbd>Space</kbd><span>Concluir / reabrir tarefa</span></li>
+            <li><kbd>Backspace</kbd><span>Excluir (com desfazer)</span></li>
+            <li><kbd>Esc</kbd><span>Fechar modal / cancelar captura</span></li>
+            <li><kbd>?</kbd><span>Mostrar esta ajuda</span></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
   <div class="toast-undo" id="toastUndo" role="status" aria-live="polite">
     <span id="toastUndoText">Item excluído</span>
     <button class="toast-undo-btn" id="toastUndoBtn">Desfazer</button>

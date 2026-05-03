@@ -41,13 +41,17 @@
     const MONTH_NAMES = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
 
     // visões aceitas (não-empresa)
-    const VIEWS = ["today", "week", "overdue", "waiting", "inbox", "all"];
+    const VIEWS = ["today", "week", "overdue", "waiting", "inbox", "all", "done"];
     // empresas vêm de WD.COMPANIES
     const COMPANY_IDS = WD.COMPANIES.map((c) => c.id);
 
     let draggingId = null;
     let captureOpen = false;
     let searchTerm = "";
+    let selectedTaskId = null;          // QW: linha selecionada para keyboard nav
+    let editingTaskId = null;           // QW: tarefa aberta no modal de edicao
+    let undoBuffer = null;              // QW: { task, timer }
+    let undoTimer = null;
 
     if (!Array.isArray(state.workTasks)) state.workTasks = [];
     if (!state.workFilter) state.workFilter = "today";
@@ -136,6 +140,7 @@
         case "waiting":  return { title: "Aguardando",   hint: "Bloqueadas por terceiros" };
         case "inbox":    return { title: "Inbox",        hint: "Sem dia atribuído" };
         case "all":      return { title: "Todas",        hint: "Tudo em aberto, sem filtro" };
+        case "done":     return { title: "Concluídas",   hint: "Histórico do que foi fechado" };
         default: {
           if (isKindFilter(f)) {
             const meta = WD.getKindMeta ? WD.getKindMeta(kindFromFilter(f)) : null;
@@ -170,6 +175,15 @@
     function filterTasks(filter) {
       const f = filter || currentFilter();
       const ref = todayIso();
+      // Visao "done" usa state.workTasks (inclui done) — nao openTasks
+      if (f === "done") {
+        const all = (state.workTasks || []).filter((t) => t.status === "done");
+        return applySearch(all).sort((a, b) => {
+          const da = a.completedAt || a.updatedAt || "";
+          const db = b.completedAt || b.updatedAt || "";
+          return db.localeCompare(da);
+        });
+      }
       const open = openTasks();
       let list;
       if (f === "today") list = open.filter((t) => WD.isToday(t, ref) || WD.isOverdue(t, ref));
@@ -287,6 +301,7 @@
           view("waiting", "Aguardando", svgPause(),  waiting, "Bloqueadas por terceiros") +
           view("inbox",   "Inbox",      svgInbox(),  inbox,   "Sem dia atribuído") +
           view("all",     "Todas",      svgList(),   open.length, "Tudo em aberto") +
+          view("done",    "Concluídas", svgCheckSm(), '',         "Histórico de concluídas") +
         '</nav>' +
         '<nav class="wk-side-section" aria-label="Tipos">' +
           '<span class="wk-side-heading">Tipo</span>' +
@@ -326,6 +341,9 @@
     }
     function svgList() {
       return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>';
+    }
+    function svgCheckSm() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
     }
 
     /* ─────────────── Header ─────────────── */
@@ -613,6 +631,9 @@
         if (upcoming.length) html += renderListSection("Próximas", upcoming);
         if (waiting.length)  html += renderListSection("Aguardando", waiting, { tone: "warning" });
         if (inbox.length)    html += renderListSection("Inbox", inbox);
+      } else if (f === "done") {
+        // QW: agrupa concluidas por periodo
+        html += renderDoneGroups(list, ref);
       } else if (isCompanyFilter(f)) {
         // P3c — timeline cronologica mista por investida.
         html += renderCompanyTimeline(list, ref);
@@ -621,6 +642,22 @@
       }
 
       el.innerHTML = html;
+    }
+
+    function renderDoneGroups(list, ref) {
+      const today = [], thisWeek = [], older = [];
+      const weekStart = WD.toIsoDate(WD.getWeekStart(new Date()));
+      list.forEach((t) => {
+        const d = (t.completedAt || t.updatedAt || "").slice(0, 10);
+        if (d === ref) today.push(t);
+        else if (d >= weekStart && d < ref) thisWeek.push(t);
+        else older.push(t);
+      });
+      let html = "";
+      if (today.length)    html += renderListSection("Concluídas hoje", today, { tone: "accent" });
+      if (thisWeek.length) html += renderListSection("Esta semana", thisWeek);
+      if (older.length)    html += renderListSection("Mais antigas", older);
+      return html;
     }
 
     // P3c — timeline cronologica por investida (atrasadas no topo, depois hoje, futuras)
@@ -749,14 +786,18 @@
         ? '<span class="wk-row-company"><span class="wk-row-co-dot" style="--co-accent: ' + esc(co.accent) + '"></span>' + esc(co.name) + '</span>'
         : '<span class="wk-row-company wk-row-company--general">Geral</span>';
 
+      const isDone = task.status === "done";
+      const isSelected = selectedTaskId === task.id;
+      const checkedAttr = isDone ? ' checked' : '';
+      const titleLabel = task.title || "Tarefa";
       return (
-        '<li class="wk-row" data-work-task-id="' + esc(task.id) + '" data-overdue-level="' + overdueLvl + '"' + kindAttr + ' draggable="true">' +
-          '<label class="wk-row-check">' +
-            '<input type="checkbox" class="wk-task-checkbox" data-work-task-id="' + esc(task.id) + '" />' +
+        '<li class="wk-row" data-work-task-id="' + esc(task.id) + '" data-overdue-level="' + overdueLvl + '" data-status="' + esc(task.status) + '"' + (isSelected ? ' data-selected="true"' : '') + kindAttr + ' draggable="true">' +
+          '<label class="wk-row-check" aria-label="' + esc(isDone ? "Reabrir tarefa" : "Concluir tarefa") + '">' +
+            '<input type="checkbox" class="wk-task-checkbox" data-work-task-id="' + esc(task.id) + '"' + checkedAttr + ' />' +
             '<span class="wk-row-check-mark" aria-hidden="true">' + svgCheck() + '</span>' +
           '</label>' +
           '<span class="wk-row-accent" style="--row-accent: ' + esc(accent) + '" aria-hidden="true"></span>' +
-          '<div class="wk-row-body">' +
+          '<button type="button" class="wk-row-body" data-work-edit data-work-task-id="' + esc(task.id) + '" aria-label="Editar tarefa: ' + esc(titleLabel) + '">' +
             '<div class="wk-row-line">' +
               '<span class="wk-row-title">' + esc(task.title) + '</span>' +
               tags.join("") +
@@ -765,15 +806,15 @@
               company +
               next +
             '</div>' +
-          '</div>' +
+          '</button>' +
           (dueLabel ? '<span class="wk-row-due"' + dueClass + '>' + esc(dueLabel) + '</span>' : '<span class="wk-row-due wk-row-due--empty">—</span>') +
           '<div class="wk-row-actions">' +
             (task.status !== "waiting"
-              ? '<button type="button" class="wk-row-act" data-work-status="waiting" data-work-task-id="' + esc(task.id) + '" title="Marcar como aguardando">' + svgPauseSm() + '</button>'
-              : '<button type="button" class="wk-row-act" data-work-status="planned" data-work-task-id="' + esc(task.id) + '" title="Reativar">' + svgPlay() + '</button>'
+              ? '<button type="button" class="wk-row-act" data-work-status="waiting" data-work-task-id="' + esc(task.id) + '" aria-label="Marcar como aguardando" title="Marcar como aguardando">' + svgPauseSm() + '</button>'
+              : '<button type="button" class="wk-row-act" data-work-status="planned" data-work-task-id="' + esc(task.id) + '" aria-label="Reativar tarefa" title="Reativar">' + svgPlay() + '</button>'
             ) +
-            '<button type="button" class="wk-row-act" data-work-move-inbox data-work-task-id="' + esc(task.id) + '" title="Mover para inbox">' + svgInboxSm() + '</button>' +
-            '<button type="button" class="wk-row-act wk-row-act--danger" data-work-delete data-work-task-id="' + esc(task.id) + '" title="Excluir">' + svgTrash() + '</button>' +
+            '<button type="button" class="wk-row-act" data-work-move-inbox data-work-task-id="' + esc(task.id) + '" aria-label="Mover para inbox" title="Mover para inbox">' + svgInboxSm() + '</button>' +
+            '<button type="button" class="wk-row-act wk-row-act--danger" data-work-delete data-work-task-id="' + esc(task.id) + '" aria-label="Excluir tarefa" title="Excluir">' + svgTrash() + '</button>' +
           '</div>' +
         '</li>'
       );
@@ -826,6 +867,10 @@
         title = "Sem tarefas em aberto.";
         body = "Capture algo pra começar — atalho N ou ⌘K abre a captura rápida.";
       }
+      else if (f === "done") {
+        title = "Nada concluído ainda.";
+        body = "Quando você marcar tarefas como feitas, elas aparecem aqui.";
+      }
       else if (isKindFilter(f)) {
         const kindMeta = WD.getKindMeta ? WD.getKindMeta(kindFromFilter(f)) : null;
         const label = kindMeta ? kindMeta.label.toLowerCase() : "item";
@@ -838,12 +883,13 @@
       }
       else { title = "Sem itens em " + meta.title + "."; body = "Nada cadastrado nesta visão."; }
 
+      const showNewBtn = f !== "done";
       return (
         '<div class="wk-empty">' +
           '<div class="wk-empty-glyph" aria-hidden="true">○</div>' +
           '<h3 class="wk-empty-title">' + esc(title) + '</h3>' +
           '<p class="wk-empty-body">' + esc(body) + '</p>' +
-          '<button type="button" class="wk-btn wk-btn--primary" data-work-capture-toggle>+ Novo item</button>' +
+          (showNewBtn ? '<button type="button" class="wk-btn wk-btn--primary" data-work-capture-toggle>+ Novo item</button>' : '') +
         '</div>'
       );
     }
@@ -1031,10 +1077,128 @@
       return state.workTasks[idx];
     }
 
-    function deleteTask(id) {
+    function deleteTask(id, options) {
       const before = state.workTasks.length;
+      const removed = state.workTasks.find((t) => t.id === id);
       state.workTasks = state.workTasks.filter((t) => t.id !== id);
-      if (state.workTasks.length !== before) saveAndRefresh("Tarefa removida.");
+      if (state.workTasks.length === before) return;
+
+      // QW: armazena pra desfazer (a menos que o caller diga skipUndo)
+      if (!options || options.skipUndo !== true) {
+        scheduleUndo(removed);
+      }
+
+      // Refresh sem toast normal (mostraremos undo toast em vez disso)
+      saveState();
+      renderWorkPlanner();
+    }
+
+    /* QW — Undo de delete via toastUndo HTML */
+    function scheduleUndo(task) {
+      if (!task) return;
+      undoBuffer = task;
+      const toast = document.getElementById("toastUndo");
+      const text = document.getElementById("toastUndoText");
+      if (text) text.textContent = "Tarefa excluída · " + (task.title || "").slice(0, 40);
+      if (toast) toast.classList.add("show");
+      if (undoTimer) clearTimeout(undoTimer);
+      undoTimer = setTimeout(() => {
+        undoBuffer = null;
+        if (toast) toast.classList.remove("show");
+      }, 5000);
+    }
+
+    function performUndo() {
+      if (!undoBuffer) return;
+      state.workTasks.push(undoBuffer);
+      undoBuffer = null;
+      const toast = document.getElementById("toastUndo");
+      if (toast) toast.classList.remove("show");
+      if (undoTimer) { clearTimeout(undoTimer); undoTimer = null; }
+      saveState();
+      renderWorkPlanner();
+      if (typeof showToast === "function") showToast("Tarefa restaurada.");
+    }
+
+    /* QW — Modal de edicao */
+    function openEditModal(taskId) {
+      const task = (state.workTasks || []).find((t) => t.id === taskId);
+      if (!task) return;
+      editingTaskId = taskId;
+
+      const backdrop = document.getElementById("wkEditBackdrop");
+      const form = document.getElementById("wkEditForm");
+      if (!backdrop || !form) return;
+
+      // Popula selects
+      const kindSel = document.getElementById("wkEditKind");
+      if (kindSel) {
+        kindSel.innerHTML = WD.ITEM_KINDS.map((k) =>
+          '<option value="' + esc(k.value) + '"' + (k.value === (task.itemKind || "task") ? " selected" : "") + '>' + esc(k.label) + '</option>'
+        ).join("");
+      }
+      const coSel = document.getElementById("wkEditCompany");
+      if (coSel) {
+        coSel.innerHTML = '<option value="">Geral</option>' + WD.COMPANIES.map((c) =>
+          '<option value="' + esc(c.id) + '"' + (c.id === task.companyId ? " selected" : "") + '>' + esc(c.name) + '</option>'
+        ).join("");
+      }
+      const prioSel = document.getElementById("wkEditPriority");
+      if (prioSel) {
+        prioSel.innerHTML = WD.PRIORITIES.map((p) =>
+          '<option value="' + esc(p.value) + '"' + (p.value === task.priority ? " selected" : "") + '>' + esc(p.label) + '</option>'
+        ).join("");
+      }
+      const statusSel = document.getElementById("wkEditStatus");
+      if (statusSel) {
+        statusSel.innerHTML = WD.STATUSES.map((s) =>
+          '<option value="' + esc(s.value) + '"' + (s.value === task.status ? " selected" : "") + '>' + esc(s.label) + '</option>'
+        ).join("");
+      }
+
+      form.querySelector("#wkEditId").value = task.id;
+      form.querySelector("#wkEditTitleInput").value = task.title || "";
+      form.querySelector('[name="nextAction"]').value = task.nextAction || "";
+      form.querySelector("#wkEditDue").value = task.dueDate || "";
+      form.querySelector("#wkEditDay").value = task.scheduledDayIso || "";
+      form.querySelector('[name="notes"]').value = task.notes || "";
+
+      backdrop.setAttribute("data-open", "true");
+      backdrop.removeAttribute("aria-hidden");
+      setTimeout(() => {
+        const titleInput = form.querySelector("#wkEditTitleInput");
+        if (titleInput) titleInput.focus();
+      }, 60);
+    }
+
+    function closeEditModal() {
+      editingTaskId = null;
+      const backdrop = document.getElementById("wkEditBackdrop");
+      if (backdrop) {
+        backdrop.setAttribute("data-open", "false");
+        backdrop.setAttribute("aria-hidden", "true");
+      }
+    }
+
+    function saveEditModal(form) {
+      const id = form.querySelector("#wkEditId").value;
+      if (!id) return;
+      const data = new FormData(form);
+      const companyId = String(data.get("companyId") || "");
+      const patch = {
+        title: String(data.get("title") || "").trim(),
+        nextAction: String(data.get("nextAction") || "").trim() || (data.get("title") || ""),
+        itemKind: String(data.get("itemKind") || "task"),
+        scope: companyId ? "company" : "general",
+        companyId: companyId || null,
+        priority: String(data.get("priority") || "medium"),
+        status: String(data.get("status") || "planned"),
+        dueDate: String(data.get("dueDate") || "") || null,
+        scheduledDayIso: String(data.get("scheduledDayIso") || "") || null,
+        notes: String(data.get("notes") || "")
+      };
+      updateTask(id, patch, "Tarefa atualizada.");
+      closeEditModal();
     }
 
     function collectForm(form) {
@@ -1097,6 +1261,16 @@
         if (deleteBtn) {
           const id = taskIdFrom(event);
           if (id) deleteTask(id);
+          return;
+        }
+        // QW: click no body da linha abre edicao
+        const editBtn = event.target.closest("[data-work-edit]");
+        if (editBtn) {
+          const id = taskIdFrom(event);
+          if (id) {
+            selectedTaskId = id;
+            openEditModal(id);
+          }
           return;
         }
         const prevBtn = event.target.closest("#workPrevBtn");
@@ -1220,6 +1394,198 @@
 
       setupHomeQuickCapture();
       setupObserver();
+      setupEditModalEvents();
+      setupUndoEvents();
+      setupKeyboardShortcuts();
+    }
+
+    /* QW — Modal de edicao: eventos */
+    function setupEditModalEvents() {
+      if (document.body.getAttribute("data-wk-edit-bound") === "true") return;
+      document.body.setAttribute("data-wk-edit-bound", "true");
+
+      const backdrop = document.getElementById("wkEditBackdrop");
+      if (!backdrop) return;
+
+      const close = () => closeEditModal();
+
+      const closeBtn = document.getElementById("wkEditCloseBtn");
+      const cancelBtn = document.getElementById("wkEditCancelBtn");
+      const deleteBtn = document.getElementById("wkEditDeleteBtn");
+      const form = document.getElementById("wkEditForm");
+
+      if (closeBtn) closeBtn.addEventListener("click", close);
+      if (cancelBtn) cancelBtn.addEventListener("click", close);
+
+      backdrop.addEventListener("click", (e) => {
+        if (e.target === backdrop) close();
+      });
+
+      if (form) form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        saveEditModal(form);
+      });
+
+      if (deleteBtn) deleteBtn.addEventListener("click", () => {
+        if (!editingTaskId) return;
+        const id = editingTaskId;
+        close();
+        deleteTask(id);
+      });
+
+      // Esc fecha o modal de edicao (capture pra ter prioridade sobre outros listeners)
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && backdrop.getAttribute("data-open") === "true") {
+          e.preventDefault();
+          close();
+        }
+      }, true);
+    }
+
+    /* QW — Undo via toastUndo */
+    function setupUndoEvents() {
+      if (document.body.getAttribute("data-wk-undo-bound") === "true") return;
+      document.body.setAttribute("data-wk-undo-bound", "true");
+      const btn = document.getElementById("toastUndoBtn");
+      if (btn) btn.addEventListener("click", performUndo);
+    }
+
+    /* QW — Pacote completo de keyboard shortcuts */
+    function setupKeyboardShortcuts() {
+      if (document.body.getAttribute("data-wk-shortcuts-bound") === "true") return;
+      document.body.setAttribute("data-wk-shortcuts-bound", "true");
+
+      const VIEW_BY_NUM = { "1": "today", "2": "week", "3": "overdue", "4": "waiting", "5": "inbox", "6": "all" };
+
+      document.addEventListener("keydown", (event) => {
+        const page = document.getElementById("workPage");
+        if (!page || page.hasAttribute("hidden")) return;
+
+        // Quando o modal de edicao ou de atalhos esta aberto, deixa eles tratarem
+        const editOpen = document.getElementById("wkEditBackdrop");
+        const shortcutsOpen = document.getElementById("wkShortcutsBackdrop");
+        if (editOpen && editOpen.getAttribute("data-open") === "true") return;
+        if (shortcutsOpen && shortcutsOpen.getAttribute("data-open") === "true") {
+          if (event.key === "Escape") {
+            event.preventDefault();
+            shortcutsOpen.setAttribute("data-open", "false");
+            shortcutsOpen.setAttribute("aria-hidden", "true");
+          }
+          return;
+        }
+
+        const t = event.target;
+        const isEditable = t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.tagName === "SELECT" || t.isContentEditable);
+        if (isEditable) {
+          if (event.key === "/" && t.id !== "workSearchInput") {
+            // Allow / in editable fields
+          }
+          return;
+        }
+
+        // ? abre overlay de atalhos
+        if (event.key === "?" || (event.shiftKey && event.key === "/")) {
+          event.preventDefault();
+          openShortcutsOverlay();
+          return;
+        }
+
+        // / focus search
+        if (event.key === "/") {
+          event.preventDefault();
+          const input = document.getElementById("workSearchInput");
+          if (input) input.focus();
+          return;
+        }
+
+        // 1..6 muda visao
+        if (VIEW_BY_NUM[event.key]) {
+          event.preventDefault();
+          applyFilterChange(VIEW_BY_NUM[event.key]);
+          return;
+        }
+
+        // n nova tarefa
+        if (event.key === "n" || event.key === "N") {
+          event.preventDefault();
+          openCapture();
+          return;
+        }
+
+        // j/ArrowDown / k/ArrowUp navegam selecao
+        if (event.key === "j" || event.key === "ArrowDown") {
+          event.preventDefault();
+          moveSelection(1);
+          return;
+        }
+        if (event.key === "k" || event.key === "ArrowUp") {
+          event.preventDefault();
+          moveSelection(-1);
+          return;
+        }
+
+        // Acoes sobre selecao
+        if (!selectedTaskId) return;
+
+        if (event.key === "Enter") {
+          event.preventDefault();
+          openEditModal(selectedTaskId);
+          return;
+        }
+        if (event.key === " " || event.key === "Spacebar") {
+          event.preventDefault();
+          const task = (state.workTasks || []).find((t) => t.id === selectedTaskId);
+          if (!task) return;
+          const fallback = task.scheduledDayIso ? "planned" : "inbox";
+          updateTask(selectedTaskId, { status: task.status === "done" ? fallback : "done" }, task.status === "done" ? "Tarefa reaberta." : "Tarefa concluída.");
+          return;
+        }
+        if (event.key === "Backspace" || event.key === "Delete") {
+          event.preventDefault();
+          deleteTask(selectedTaskId);
+          return;
+        }
+      });
+    }
+
+    function moveSelection(delta) {
+      const rows = Array.from(document.querySelectorAll("#workBoard [data-work-task-id]"));
+      if (!rows.length) return;
+      const ids = rows.map((r) => r.getAttribute("data-work-task-id"));
+      let idx = ids.indexOf(selectedTaskId);
+      if (idx < 0) idx = delta > 0 ? -1 : 0;
+      idx = Math.max(0, Math.min(rows.length - 1, idx + delta));
+      selectedTaskId = ids[idx];
+      // Atualiza atributos sem re-render completo
+      rows.forEach((r) => {
+        if (r.getAttribute("data-work-task-id") === selectedTaskId) {
+          r.setAttribute("data-selected", "true");
+          r.scrollIntoView({ block: "nearest" });
+        } else {
+          r.removeAttribute("data-selected");
+        }
+      });
+    }
+
+    function openShortcutsOverlay() {
+      const backdrop = document.getElementById("wkShortcutsBackdrop");
+      if (!backdrop) return;
+      backdrop.setAttribute("data-open", "true");
+      backdrop.removeAttribute("aria-hidden");
+      const closeBtn = document.getElementById("wkShortcutsCloseBtn");
+      if (closeBtn && !closeBtn._bound) {
+        closeBtn._bound = true;
+        closeBtn.addEventListener("click", () => {
+          backdrop.setAttribute("data-open", "false");
+          backdrop.setAttribute("aria-hidden", "true");
+        });
+        backdrop.addEventListener("click", (e) => {
+          if (e.target === backdrop) {
+            backdrop.setAttribute("data-open", "false");
+            backdrop.setAttribute("aria-hidden", "true");
+          }
+        });
+      }
     }
 
     function setupHomeQuickCapture() {
