@@ -122,20 +122,48 @@
       });
     }
 
-    // Visões de trabalho
+    // Visões de trabalho (incluindo as ocultas da sidebar)
     [
+      { id: "agenda", label: "Agenda (4 colunas)" },
       { id: "today", label: "Hoje (Trabalho)" },
-      { id: "week", label: "Semana (Trabalho)" },
+      { id: "week", label: "Semana — kanban" },
       { id: "overdue", label: "Atrasadas" },
-      { id: "waiting", label: "Aguardando" },
-      { id: "inbox", label: "Inbox de Trabalho" }
+      { id: "waiting", label: "Aguardando terceiros" },
+      { id: "inbox", label: "Inbox de Trabalho" },
+      { id: "all", label: "Todas em aberto" },
+      { id: "done", label: "Concluídas" }
     ].forEach(function (v) {
       items.push({
         group: "Visão de Trabalho",
         label: v.label,
         hint: "Abrir filtro",
         icon: svg("arrow"),
-        keywords: "visao trabalho " + v.label,
+        keywords: "visao trabalho filtro " + v.label,
+        run: function () {
+          try {
+            if (window.WorkPlanner && typeof window.WorkPlanner.setFilter === "function") {
+              window.WorkPlanner.setFilter(v.id);
+            }
+            if (typeof window.openPage === "function") window.openPage("work");
+          } catch (e) {}
+        }
+      });
+    });
+
+    // Filtros por tipo (Follow-ups, E-mails, Reuniões, Documentos)
+    [
+      { id: "kind:task",     label: "Só Tarefas" },
+      { id: "kind:followup", label: "Só Follow-ups" },
+      { id: "kind:email",    label: "Só E-mails" },
+      { id: "kind:meeting",  label: "Só Reuniões" },
+      { id: "kind:document", label: "Só Documentos" }
+    ].forEach(function (v) {
+      items.push({
+        group: "Filtro por tipo",
+        label: v.label,
+        hint: "Apenas itens deste tipo",
+        icon: svg("circle"),
+        keywords: "tipo kind filtro " + v.label,
         run: function () {
           try {
             if (window.WorkPlanner && typeof window.WorkPlanner.setFilter === "function") {

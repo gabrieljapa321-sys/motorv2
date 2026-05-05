@@ -88,6 +88,29 @@
               border-color var(--motion-fast, 120ms) var(--ease-out, cubic-bezier(0.2, 0.9, 0.3, 1));
 }
 
+.wk-side-foot { margin-top: auto; padding-top: 12px; }
+
+.wk-side-more {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background var(--motion-fast) var(--ease-out),
+              color var(--motion-fast) var(--ease-out);
+}
+
+.wk-side-more:hover { background: var(--bg-soft); color: var(--text); }
+.wk-side-more:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
 .wk-side-new:hover {
   background: var(--bg-elevated);
   border-color: var(--line-strong);

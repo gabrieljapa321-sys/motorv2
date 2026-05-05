@@ -300,23 +300,18 @@
         '</div>' +
         '<nav class="wk-side-section" aria-label="Visões">' +
           '<span class="wk-side-heading">Visões</span>' +
-          view("agenda",  "Agenda",     svgCols(),   '',      "Investidas e Geral lado a lado") +
-          view("today",   "Hoje",       svgFlame(),  today,   "Hoje + atrasadas") +
-          view("week",    "Semana",     svgGrid(),   '',      "Kanban semanal") +
-          view("overdue", "Atrasadas",  svgClock(),  overdue, "Vencidas em aberto") +
-          view("waiting", "Aguardando", svgPause(),  waiting, "Bloqueadas por terceiros") +
-          view("inbox",   "Inbox",      svgInbox(),  inbox,   "Sem dia atribuído") +
-          view("all",     "Todas",      svgList(),   open.length, "Tudo em aberto") +
-          view("done",    "Concluídas", svgCheckSm(), '',         "Histórico de concluídas") +
-        '</nav>' +
-        '<nav class="wk-side-section" aria-label="Tipos">' +
-          '<span class="wk-side-heading">Tipo</span>' +
-          WD.ITEM_KINDS.map(kindItem).join("") +
+          view("agenda",  "Agenda",     svgCols(),    '',      "Investidas e Geral lado a lado") +
+          view("done",    "Concluídas", svgCheckSm(), '',      "Histórico de concluídas") +
+          // "Atrasadas" so aparece quando ha atraso real
+          (overdue > 0 ? view("overdue", "Atrasadas", svgClock(), overdue, "Vencidas em aberto") : "") +
         '</nav>' +
         '<nav class="wk-side-section" aria-label="Investidas">' +
           '<span class="wk-side-heading">Investidas</span>' +
           WD.COMPANIES.map(companyItem).join("") +
-        '</nav>';
+        '</nav>' +
+        '<div class="wk-side-section wk-side-foot">' +
+          '<button type="button" class="wk-side-more" data-cmdk-open aria-label="Mais filtros">⌘K · mais filtros</button>' +
+        '</div>';
     }
 
     function svgKind(kind) {
@@ -1521,6 +1516,15 @@
         }
 
         // Agenda — abrir investida em modo detalhado
+        // Sidebar: botao "⌘K · mais filtros" abre o command palette
+        const cmdkOpen = event.target.closest("[data-cmdk-open]");
+        if (cmdkOpen) {
+          if (window.CommandPalette && typeof window.CommandPalette.open === "function") {
+            window.CommandPalette.open();
+          }
+          return;
+        }
+
         const agendaDetail = event.target.closest("[data-agenda-open-detail]");
         if (agendaDetail) {
           const id = agendaDetail.getAttribute("data-agenda-open-detail");
