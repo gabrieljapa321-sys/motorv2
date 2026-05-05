@@ -2,7 +2,7 @@
   "use strict";
 
   const STORAGE_KEY = "poli-study-motor-v1";
-  const SCHEMA_VERSION = 9;
+  const SCHEMA_VERSION = 10;
 
   const STUDY_SECTIONS = ["dashboard", "week", "fc", "calendar", "grades"];
 const PRIMARY_PAGES = ["home", "studies", "news", "work"];
@@ -218,6 +218,15 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
           meetingTime: typeof item.meetingTime === "string" && /^\d{2}:\d{2}$/.test(item.meetingTime) ? item.meetingTime : null,
           documentUrl: typeof item.documentUrl === "string" ? item.documentUrl.slice(0, 500) : null,
           emailFrom: typeof item.emailFrom === "string" ? item.emailFrom.slice(0, 200) : null,
+          subtasks: Array.isArray(item.subtasks) ? item.subtasks
+            .filter((s) => s && typeof s === "object" && typeof s.text === "string")
+            .map((s, i) => ({
+              id: typeof s.id === "string" && s.id ? s.id : `sub-${index}-${i}`,
+              text: s.text.slice(0, 200),
+              done: Boolean(s.done),
+              completedAt: s.done && typeof s.completedAt === "string" ? s.completedAt : null
+            }))
+            .slice(0, 50) : [],
           createdAt: typeof item.createdAt === "string" ? item.createdAt : new Date(0).toISOString(),
           updatedAt: typeof item.updatedAt === "string" ? item.updatedAt : (typeof item.createdAt === "string" ? item.createdAt : new Date(0).toISOString()),
           completedAt
@@ -292,6 +301,21 @@ const PRIMARY_PAGES = ["home", "studies", "news", "work"];
         });
       }
       safe.appContext = safe.appContext === "school" ? "school" : "work";
+    }
+
+    if (version < 10) {
+      // Agenda: garante array subtasks em todas as tarefas (vazio para legados).
+      if (Array.isArray(safe.workTasks)) {
+        safe.workTasks = safe.workTasks.map((t) => {
+          if (!t || typeof t !== "object") return t;
+          if (Array.isArray(t.subtasks)) return t;
+          return Object.assign({}, t, { subtasks: [] });
+        });
+      }
+      // Filtro padrao migra para "agenda" so se ja era "today" (mantem outros)
+      if (safe.workFilter === "today" || !safe.workFilter) {
+        safe.workFilter = "agenda";
+      }
     }
 
     safe.schemaVersion = SCHEMA_VERSION;

@@ -41,7 +41,11 @@
     const MONTH_NAMES = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
 
     // visões aceitas (não-empresa)
-    const VIEWS = ["today", "week", "overdue", "waiting", "inbox", "all", "done"];
+    const VIEWS = ["agenda", "today", "week", "overdue", "waiting", "inbox", "all", "done"];
+
+    // Cor do "Geral" — azul empresarial neutro
+    const GENERAL_ACCENT = "#2c4566";
+    const GENERAL_NAME   = "Geral";
     // empresas vêm de WD.COMPANIES
     const COMPANY_IDS = WD.COMPANIES.map((c) => c.id);
 
@@ -113,7 +117,7 @@
 
     function currentFilter() {
       const allowed = VIEWS.concat(COMPANY_IDS).concat(KIND_FILTERS);
-      return allowed.indexOf(state.workFilter) === -1 ? "today" : state.workFilter;
+      return allowed.indexOf(state.workFilter) === -1 ? "agenda" : state.workFilter;
     }
 
     function isCompanyFilter(f) {
@@ -134,6 +138,7 @@
     function viewMeta(filter) {
       const f = filter || currentFilter();
       switch (f) {
+        case "agenda":   return { title: "Agenda",       hint: "Sua agenda pessoal — investidas e geral lado a lado" };
         case "today":    return { title: "Hoje",         hint: "Itens marcados para hoje e atrasados" };
         case "week":     return { title: "Semana",       hint: "Distribuição por dia da semana" };
         case "overdue":  return { title: "Atrasadas",    hint: "Em aberto com prazo vencido" };
@@ -295,6 +300,7 @@
         '</div>' +
         '<nav class="wk-side-section" aria-label="Visões">' +
           '<span class="wk-side-heading">Visões</span>' +
+          view("agenda",  "Agenda",     svgCols(),   '',      "Investidas e Geral lado a lado") +
           view("today",   "Hoje",       svgFlame(),  today,   "Hoje + atrasadas") +
           view("week",    "Semana",     svgGrid(),   '',      "Kanban semanal") +
           view("overdue", "Atrasadas",  svgClock(),  overdue, "Vencidas em aberto") +
@@ -344,6 +350,18 @@
     }
     function svgCheckSm() {
       return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+    }
+    function svgCols() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="4" height="18" rx="1"/><rect x="10" y="3" width="4" height="18" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/></svg>';
+    }
+    function svgPlus() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>';
+    }
+    function svgChevDown() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';
+    }
+    function svgExpand() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>';
     }
 
     /* ─────────────── Header ─────────────── */
@@ -597,11 +615,180 @@
       const el = document.getElementById("workBoard");
       if (!el) return;
       const f = currentFilter();
+      if (f === "agenda") {
+        renderAgendaBoard(el);
+        return;
+      }
       if (f === "week") {
         renderWeekBoard(el);
         return;
       }
       renderListBoard(el, f);
+    }
+
+    /* ─────────────── Agenda (4 colunas paralelas) ─────────────── */
+
+    let agendaCaptureCompany = null; // qual coluna está com input de captura aberto
+    let agendaExpanded = new Set();  // ids de tarefas com subtasks expandidas
+
+    function renderAgendaBoard(el) {
+      const ref = todayIso();
+      const weekAgo = WD.toIsoDate(WD.addDays(WD.parseIso(ref), -7));
+      const tasks = state.workTasks || [];
+
+      // 4 colunas: 3 investidas + Geral
+      const cols = WD.COMPANIES.map((co) => ({
+        id: co.id,
+        name: co.name,
+        accent: co.accent,
+        filter: (t) => t.companyId === co.id
+      }));
+      cols.push({
+        id: "general",
+        name: GENERAL_NAME,
+        accent: GENERAL_ACCENT,
+        filter: (t) => !t.companyId
+      });
+
+      const html =
+        '<div class="wk-agenda" role="region" aria-label="Agenda de trabalho">' +
+          cols.map((c) => renderAgendaColumn(c, tasks, ref, weekAgo)).join("") +
+        '</div>';
+
+      el.innerHTML = html;
+    }
+
+    function renderAgendaColumn(col, tasks, ref, weekAgo) {
+      const all = tasks.filter(col.filter);
+      const open = all.filter(WD.isOpen);
+      const recentDone = all
+        .filter((t) => t.status === "done")
+        .filter((t) => {
+          const d = (t.completedAt || t.updatedAt || "").slice(0, 10);
+          return d && d >= weekAgo && d <= ref;
+        })
+        .sort((a, b) => (b.completedAt || "").localeCompare(a.completedAt || ""));
+
+      // Ordena abertas: atrasadas primeiro, depois hoje, depois futuras
+      const sortedOpen = WD.sortTasks(open, ref);
+      const captureOpen = agendaCaptureCompany === col.id;
+
+      const captureField = captureOpen
+        ? '<form class="wk-ag-capture" data-agenda-capture-form data-company="' + esc(col.id === "general" ? "" : col.id) + '" autocomplete="off">' +
+            '<input type="text" class="wk-ag-capture-input" data-agenda-capture-input placeholder="Nova tarefa para ' + esc(col.name) + '… (Enter pra salvar, Esc pra cancelar)" maxlength="180" required />' +
+          '</form>'
+        : '';
+
+      const empty = !sortedOpen.length && !recentDone.length
+        ? '<div class="wk-ag-empty">Nada por aqui ainda. Use + Nova pra registrar.</div>'
+        : '';
+
+      return (
+        '<section class="wk-ag-col" data-company="' + esc(col.id) + '" style="--co-accent:' + esc(col.accent) + '">' +
+          '<header class="wk-ag-col-head">' +
+            '<button type="button" class="wk-ag-col-title" data-agenda-open-detail="' + esc(col.id) + '" title="Abrir ' + esc(col.name) + ' em detalhe">' +
+              '<span class="wk-ag-col-mark" aria-hidden="true"></span>' +
+              '<span class="wk-ag-col-name">' + esc(col.name) + '</span>' +
+              (open.length ? '<span class="wk-ag-col-count">' + open.length + '</span>' : '') +
+            '</button>' +
+            '<div class="wk-ag-col-actions">' +
+              '<button type="button" class="wk-ag-col-act" data-agenda-add="' + esc(col.id) + '" aria-label="Nova tarefa em ' + esc(col.name) + '" title="Nova tarefa">' + svgPlus() + '</button>' +
+              '<button type="button" class="wk-ag-col-act" data-agenda-open-detail="' + esc(col.id) + '" aria-label="Abrir ' + esc(col.name) + ' em detalhe" title="Ver detalhes">' + svgExpand() + '</button>' +
+            '</div>' +
+          '</header>' +
+          captureField +
+          '<ul class="wk-ag-list" role="list">' +
+            sortedOpen.map((t) => agendaItem(t, ref, false)).join("") +
+            recentDone.map((t) => agendaItem(t, ref, true)).join("") +
+          '</ul>' +
+          empty +
+        '</section>'
+      );
+    }
+
+    function agendaItem(task, ref, isDone) {
+      const overdueLvl = WD.overdueLevel ? WD.overdueLevel(task, ref) : 0;
+      const subs = Array.isArray(task.subtasks) ? task.subtasks : [];
+      const totalSubs = subs.length;
+      const doneSubs = subs.filter((s) => s.done).length;
+      const expanded = agendaExpanded.has(task.id);
+
+      const dueLabel = task.dueDate ? relativeDueLabel(task.dueDate) : "";
+      const completedLabel = isDone && task.completedAt
+        ? formatCompletedTime(task.completedAt, ref)
+        : "";
+
+      const tag = !isDone && overdueLvl >= 2 ? '<span class="wk-ag-tag" data-tone="danger">atrasada</span>'
+        : !isDone && overdueLvl === 1 ? '<span class="wk-ag-tag" data-tone="warning">1d</span>'
+        : !isDone && task.priority === "critical" ? '<span class="wk-ag-tag" data-tone="danger">crítica</span>'
+        : '';
+
+      const subsBadge = totalSubs > 0
+        ? '<button type="button" class="wk-ag-sub-toggle" data-agenda-toggle-subs="' + esc(task.id) + '" aria-label="' + (expanded ? "Recolher" : "Expandir") + ' subtarefas" aria-expanded="' + (expanded ? "true" : "false") + '">' +
+            '<span>' + doneSubs + '/' + totalSubs + '</span>' + svgChevDown() +
+          '</button>'
+        : '';
+
+      const subList = (expanded && totalSubs > 0)
+        ? renderSubtasks(task)
+        : '';
+
+      const addSubInput = expanded
+        ? '<form class="wk-ag-sub-add" data-agenda-add-sub-form="' + esc(task.id) + '" autocomplete="off">' +
+            '<input type="text" class="wk-ag-sub-input" data-agenda-add-sub-input="' + esc(task.id) + '" placeholder="+ subtarefa" maxlength="160" required />' +
+          '</form>'
+        : '';
+
+      return (
+        '<li class="wk-ag-item' + (isDone ? ' is-done' : '') + (overdueLvl >= 2 ? ' is-overdue' : '') + '" data-work-task-id="' + esc(task.id) + '" data-overdue-level="' + overdueLvl + '">' +
+          '<div class="wk-ag-row">' +
+            '<label class="wk-ag-check" aria-label="' + (isDone ? "Reabrir" : "Concluir") + '">' +
+              '<input type="checkbox" class="wk-task-checkbox" data-work-task-id="' + esc(task.id) + '"' + (isDone ? ' checked' : '') + ' />' +
+              '<span class="wk-ag-check-mark" aria-hidden="true">' + svgCheck() + '</span>' +
+            '</label>' +
+            '<button type="button" class="wk-ag-text" data-work-edit data-work-task-id="' + esc(task.id) + '" aria-label="Editar tarefa: ' + esc(task.title || "Tarefa") + '">' +
+              '<span class="wk-ag-title">' + esc(task.title || "Tarefa") + '</span>' +
+              (tag ? ' ' + tag : '') +
+              (dueLabel && !isDone ? '<span class="wk-ag-due" data-tone="' + dueTone(task.dueDate) + '">' + esc(dueLabel) + '</span>' : '') +
+              (completedLabel ? '<span class="wk-ag-completed">' + esc(completedLabel) + '</span>' : '') +
+            '</button>' +
+            subsBadge +
+          '</div>' +
+          subList +
+          addSubInput +
+        '</li>'
+      );
+    }
+
+    function renderSubtasks(task) {
+      const subs = task.subtasks || [];
+      return (
+        '<ul class="wk-ag-subs" role="list">' +
+          subs.map((s) => (
+            '<li class="wk-ag-sub' + (s.done ? ' is-done' : '') + '" data-subtask-id="' + esc(s.id) + '">' +
+              '<label class="wk-ag-sub-check" aria-label="' + (s.done ? "Reabrir subtarefa" : "Concluir subtarefa") + '">' +
+                '<input type="checkbox" data-agenda-toggle-sub data-task-id="' + esc(task.id) + '" data-sub-id="' + esc(s.id) + '"' + (s.done ? ' checked' : '') + ' />' +
+                '<span class="wk-ag-sub-mark" aria-hidden="true">' + svgCheck() + '</span>' +
+              '</label>' +
+              '<span class="wk-ag-sub-text">' + esc(s.text) + '</span>' +
+              '<button type="button" class="wk-ag-sub-del" data-agenda-delete-sub data-task-id="' + esc(task.id) + '" data-sub-id="' + esc(s.id) + '" aria-label="Remover subtarefa">×</button>' +
+            '</li>'
+          )).join("") +
+        '</ul>'
+      );
+    }
+
+    function formatCompletedTime(iso, ref) {
+      const d = new Date(iso);
+      if (isNaN(d.getTime())) return "";
+      const dayIso = WD.toIsoDate(d);
+      if (dayIso === ref) {
+        return d.getHours().toString().padStart(2, "0") + ":" + d.getMinutes().toString().padStart(2, "0");
+      }
+      const days = Math.round((WD.parseIso(ref) - d) / 86400000);
+      if (days === 1) return "ontem";
+      if (days <= 7) return days + "d atrás";
+      return fmtDateShort(d);
     }
 
     function renderListBoard(el, f) {
@@ -1077,6 +1264,47 @@
       return state.workTasks[idx];
     }
 
+    /* Agenda — helpers de subtasks */
+    function addSubtask(taskId, text) {
+      const idx = (state.workTasks || []).findIndex((t) => t.id === taskId);
+      if (idx === -1) return;
+      const t = state.workTasks[idx];
+      const subs = Array.isArray(t.subtasks) ? t.subtasks.slice() : [];
+      subs.push({
+        id: "sub_" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+        text: String(text).slice(0, 200),
+        done: false,
+        completedAt: null
+      });
+      state.workTasks[idx] = Object.assign({}, t, { subtasks: subs, updatedAt: new Date().toISOString() });
+      saveState();
+      // Mantem expandido (já estava)
+      if (!agendaExpanded.has(taskId)) agendaExpanded.add(taskId);
+      renderWorkPlanner();
+    }
+
+    function toggleSubtask(taskId, subId, done) {
+      const idx = (state.workTasks || []).findIndex((t) => t.id === taskId);
+      if (idx === -1) return;
+      const t = state.workTasks[idx];
+      const subs = (t.subtasks || []).map((s) => s.id === subId
+        ? Object.assign({}, s, { done: !!done, completedAt: done ? new Date().toISOString() : null })
+        : s);
+      state.workTasks[idx] = Object.assign({}, t, { subtasks: subs, updatedAt: new Date().toISOString() });
+      saveState();
+      renderWorkPlanner();
+    }
+
+    function deleteSubtask(taskId, subId) {
+      const idx = (state.workTasks || []).findIndex((t) => t.id === taskId);
+      if (idx === -1) return;
+      const t = state.workTasks[idx];
+      const subs = (t.subtasks || []).filter((s) => s.id !== subId);
+      state.workTasks[idx] = Object.assign({}, t, { subtasks: subs, updatedAt: new Date().toISOString() });
+      saveState();
+      renderWorkPlanner();
+    }
+
     function deleteTask(id, options) {
       const before = state.workTasks.length;
       const removed = state.workTasks.find((t) => t.id === id);
@@ -1279,6 +1507,45 @@
         if (todayBtn) { currentWeekStart = WD.getWeekStart(new Date()); persistWeekAnchor(); renderWorkPlanner(); return; }
         const nextBtn = event.target.closest("#workNextBtn");
         if (nextBtn) { currentWeekStart = WD.addDays(currentWeekStart, 7); persistWeekAnchor(); renderWorkPlanner(); return; }
+
+        // Agenda — abrir captura inline na coluna
+        const agendaAdd = event.target.closest("[data-agenda-add]");
+        if (agendaAdd) {
+          agendaCaptureCompany = agendaAdd.getAttribute("data-agenda-add");
+          renderBoard();
+          setTimeout(() => {
+            const input = document.querySelector("[data-agenda-capture-input]");
+            if (input) input.focus();
+          }, 30);
+          return;
+        }
+
+        // Agenda — abrir investida em modo detalhado
+        const agendaDetail = event.target.closest("[data-agenda-open-detail]");
+        if (agendaDetail) {
+          const id = agendaDetail.getAttribute("data-agenda-open-detail");
+          if (id === "general") applyFilterChange("inbox");  // "Geral" detalhado = inbox + sem-empresa
+          else applyFilterChange(id);
+          return;
+        }
+
+        // Agenda — toggle expandir/recolher subtasks
+        const subToggle = event.target.closest("[data-agenda-toggle-subs]");
+        if (subToggle) {
+          const id = subToggle.getAttribute("data-agenda-toggle-subs");
+          if (agendaExpanded.has(id)) agendaExpanded.delete(id);
+          else agendaExpanded.add(id);
+          renderBoard();
+          return;
+        }
+
+        // Agenda — deletar subtask
+        const subDel = event.target.closest("[data-agenda-delete-sub]");
+        if (subDel) {
+          event.preventDefault();
+          deleteSubtask(subDel.getAttribute("data-task-id"), subDel.getAttribute("data-sub-id"));
+          return;
+        }
       });
 
       page.addEventListener("keydown", function (event) {
@@ -1292,6 +1559,15 @@
       });
 
       page.addEventListener("change", function (event) {
+        // Subtask checkbox
+        const subCb = event.target.closest("[data-agenda-toggle-sub]");
+        if (subCb) {
+          const taskId = subCb.getAttribute("data-task-id");
+          const subId = subCb.getAttribute("data-sub-id");
+          toggleSubtask(taskId, subId, subCb.checked);
+          return;
+        }
+
         const cb = event.target.closest(".wk-task-checkbox");
         if (!cb) return;
         const id = taskIdFrom(event);
@@ -1302,6 +1578,45 @@
       });
 
       page.addEventListener("submit", function (event) {
+        // Captura inline da Agenda
+        const agForm = event.target.closest("[data-agenda-capture-form]");
+        if (agForm) {
+          event.preventDefault();
+          const input = agForm.querySelector("[data-agenda-capture-input]");
+          const title = input ? input.value.trim() : "";
+          if (!title) return;
+          const companyId = agForm.getAttribute("data-company") || "";
+          const todayIsoStr = todayIso();
+          addTask({
+            title,
+            itemKind: "task",
+            scope: companyId ? "company" : "general",
+            companyId: companyId || null,
+            scheduledDayIso: todayIsoStr,
+            status: "planned",
+            priority: "medium",
+            area: "operacional",
+            nextAction: title,
+            subtasks: []
+          }, "Tarefa registrada em " + (companyId ? (WD.companyMeta(companyId).name) : GENERAL_NAME) + ".");
+          // Mantem aberto pra captura sequencial — limpa input
+          if (input) { input.value = ""; input.focus(); }
+          return;
+        }
+
+        // Add subtask
+        const subForm = event.target.closest("[data-agenda-add-sub-form]");
+        if (subForm) {
+          event.preventDefault();
+          const taskId = subForm.getAttribute("data-agenda-add-sub-form");
+          const input = subForm.querySelector("[data-agenda-add-sub-input]");
+          const text = input ? input.value.trim() : "";
+          if (!text) return;
+          addSubtask(taskId, text);
+          if (input) { input.value = ""; input.focus(); }
+          return;
+        }
+
         const form = event.target.closest("#workCaptureForm");
         if (!form) return;
         event.preventDefault();
@@ -1309,6 +1624,17 @@
         if (!String(payload.title || "").trim()) return;
         addTask(payload, "Tarefa capturada.");
         closeCapture();
+      });
+
+      // Esc fecha captura inline da Agenda
+      page.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          if (event.target && event.target.closest && event.target.closest("[data-agenda-capture-input]")) {
+            event.preventDefault();
+            agendaCaptureCompany = null;
+            renderBoard();
+          }
+        }
       });
 
       page.addEventListener("input", function (event) {
