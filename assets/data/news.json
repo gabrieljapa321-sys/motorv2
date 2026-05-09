@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-09T15:47:02Z",
-  "generatedAt": "2026-05-09T15:47:02Z",
+  "updatedAt": "2026-05-09T16:51:22Z",
+  "generatedAt": "2026-05-09T16:51:22Z",
   "categories": [
     {
       "id": "all",
@@ -25,12 +25,20 @@
   ],
   "sources": [
     {
+      "id": "a-tarde",
+      "label": "A TARDE"
+    },
+    {
       "id": "abrapp",
       "label": "Abrapp"
     },
     {
-      "id": "acionista-com-br",
-      "label": "Acionista.com.br"
+      "id": "agorams-com-br",
+      "label": "agorams.com.br"
+    },
+    {
+      "id": "ag-ncia-sert-o",
+      "label": "Agência Sertão"
     },
     {
       "id": "araraquara-news",
@@ -63,6 +71,10 @@
     {
       "id": "cen-riomt",
       "label": "CenárioMT"
+    },
+    {
+      "id": "coindesk",
+      "label": "CoinDesk"
     },
     {
       "id": "cointelegraph-com-br",
@@ -101,12 +113,12 @@
       "label": "Folha do Estado da Bahia"
     },
     {
-      "id": "folha-pe",
-      "label": "Folha PE"
-    },
-    {
       "id": "g1",
       "label": "G1"
+    },
+    {
+      "id": "gazeta-do-povo",
+      "label": "Gazeta do Povo"
     },
     {
       "id": "gazeta-mercantil",
@@ -115,10 +127,6 @@
     {
       "id": "hora-hiper",
       "label": "Hora Hiper"
-    },
-    {
-      "id": "infomoney",
-      "label": "InfoMoney"
     },
     {
       "id": "instituto-humanitas-unisinos-ihu",
@@ -161,16 +169,12 @@
       "label": "MSN"
     },
     {
+      "id": "o-dia",
+      "label": "O Dia"
+    },
+    {
       "id": "o-matogrossense",
       "label": "O Matogrossense"
-    },
-    {
-      "id": "portal-93",
-      "label": "Portal 93"
-    },
-    {
-      "id": "portal-agora-tocantins",
-      "label": "Portal Agora Tocantins"
     },
     {
       "id": "portal-do-agroneg-cio",
@@ -223,11 +227,68 @@
   ],
   "items": [
     {
-      "id": "macro-6193213fabf6ccf4d0c6e828",
-      "title": "Entenda a nova realidade dos investimentos com a Selic a 14,5%",
+      "id": "macro-80bbdf98534b42253507baed",
+      "title": "Fim da trava: Governo quer reajuste anual do teto do MEI pela inflação",
       "summary": "Especialistas discutem o impacto da Selic a 14,5% nos investimentos e os riscos associados.",
       "details": "Especialistas discutem o impacto da Selic a 14,5% nos investimentos e os riscos associados.",
       "url": "https://diariodoestadogo.com.br/entenda-a-nova-realidade-dos-investimentos-com-a-selic-a-145/",
+      "source": "A TARDE",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-09T16:31:56Z",
+      "updatedAt": "2026-05-09T16:31:56Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/05/entenda-a-nova-realidade-dos-investimentos-com-a-selic-a-142C525.jpg"
+    },
+    {
+      "id": "macro-8b876f62e06b09c471cf8a44",
+      "title": "Conselho Fiscal do Senac conhece estrutura e projetos da regional de MS em reunião itinerante",
+      "summary": "overno estuda reajuste anual do teto do MEI pela inflação. Entenda o plano de aumento gradual do faturamento e as novas regras para microempresas",
+      "details": "overno estuda reajuste anual do teto do MEI pela inflação. Entenda o plano de aumento gradual do faturamento e as novas regras para microempresas",
+      "url": "https://atarde.com.br/economia/fim-da-trava-governo-quer-reajuste-anual-do-teto-do-mei-pela-inflacao-1388377",
+      "source": "agorams.com.br",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-09T16:03:08Z",
+      "updatedAt": "2026-05-09T16:03:08Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://cdn.atarde.com.br/img/Artigo-Destaque/1380000/fim-da-trava-governo-quer-reajuste-anual-do-teto-d0138837700202605091331.png?xid=7072283"
+    },
+    {
+      "id": "funds-5efb500b0e1fabc87f3d70b0",
+      "title": "Indústria cripto celebra data de votação do Senate Clarity Act enquanto avanço na estrutura de mercado é retomado",
+      "summary": "As mais recentes projeções do Fundo Monetário Internacional (FMI) para 2030 indicam mudanças significativas nas maiores economias do mundo. De",
+      "details": "As mais recentes projeções do Fundo Monetário Internacional (FMI) para 2030 indicam mudanças significativas nas maiores economias do mundo. De",
+      "url": "https://diariodocomercio.com.br/mix/fundo-monetario-internacional-crava-brasil-como-uma-das-10-potencias-mundiais-em-2030/",
+      "source": "CoinDesk",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-05-09T16:01:40Z",
+      "updatedAt": "2026-05-09T16:01:40Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://diariodocomercio.com.br/mix/wp-content/uploads/2026/01/brazil-1581233_1280.jpg"
+    },
+    {
+      "id": "macro-6193213fabf6ccf4d0c6e828",
+      "title": "Entenda a nova realidade dos investimentos com a Selic a 14,5%",
+      "summary": "O andamento do projeto de lei segue as discussões sobre jurisdição, proteções para consumidores/desenvolvedores e recompensas de stablecoin, com empresas de criptomoedas apoiando um compromisso sobre rendimentos.",
+      "details": "O andamento do projeto de lei segue as discussões sobre jurisdição, proteções para consumidores/desenvolvedores e recompensas de stablecoin, com empresas de criptomoedas apoiando um compromisso sobre rendimentos.",
+      "url": "https://www.coindesk.com/pt-br/policy/2026/05/09/crypto-industry-cheers-senate-clarity-act-markup-date-as-market-structure-push-resumes",
       "source": "diário do estado",
       "category": "macro",
       "tags": [
@@ -239,14 +300,14 @@
       "updatedAt": "2026-05-09T15:35:39Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/05/entenda-a-nova-realidade-dos-investimentos-com-a-selic-a-142C525.jpg"
+      "imageUrl": "https://cdn.sanity.io/images/s3y3vcno/production/e7a96fe3976c9a072d7edd2ee0e738cfc2ba95a3-2048x1152.jpg?auto=format&w=960&h=540&crop=focalpoint&fit=clip&q=75&fm=jpg"
     },
     {
       "id": "macro-4d44802515f9eaedf88df980",
       "title": "Fundo Monetário Internacional crava Brasil como uma das 10 potências mundiais em 2030",
-      "summary": "Atualizacao de macro capturada em Diário do Comércio.",
-      "details": "",
-      "url": "https://exame.com/brasil/parques-nacionais-ja-movimentam-r-20-bilhoes-no-pib/",
+      "summary": "Os conselheiros foram recepcionados pelo presidente do Sistema Comércio MS, Edison Araújo, que acompanhou a agenda institucional realizada em Mato Grosso do Sul. O Senac MS recebeu nesta sexta-feira (8), no Senac Hub Academy, em Campo Grande, representantes do Conselho Fiscal do ",
+      "details": "Os conselheiros foram recepcionados pelo presidente do Sistema Comércio MS, Edison Araújo, que acompanhou a agenda institucional realizada em Mato Grosso do Sul. O Senac MS recebeu nesta sexta-feira (8), no Senac Hub Academy, em Campo Grande, representantes do Conselho Fiscal do Senac para uma reunião itinerante do col",
+      "url": "https://www.agorams.com.br/conselho-fiscal-do-senac-conhece-estrutura-e-projetos-da-regional-de-ms-em-reuniao-itinerante/",
       "source": "Diário do Comércio",
       "category": "macro",
       "tags": [
@@ -257,14 +318,15 @@
       "publishedAt": "2026-05-09T15:35:00Z",
       "updatedAt": "2026-05-09T15:35:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.agorams.com.br/wp-content/uploads/2026/05/Conselho.jpeg"
     },
     {
       "id": "macro-241d6d95f7267a9dcb84e979",
       "title": "Além de viagem a paraíso fiscal, Ciro Nogueira passou carnaval na Indonésia com empresário do Tigrinho",
-      "summary": "As mais recentes projeções do Fundo Monetário Internacional (FMI) para 2030 indicam mudanças significativas nas maiores economias do mundo. De",
-      "details": "As mais recentes projeções do Fundo Monetário Internacional (FMI) para 2030 indicam mudanças significativas nas maiores economias do mundo. De",
-      "url": "https://diariodocomercio.com.br/mix/fundo-monetario-internacional-crava-brasil-como-uma-das-10-potencias-mundiais-em-2030/",
+      "summary": "Atualizacao de macro capturada em Revista Fórum.",
+      "details": "",
+      "url": "https://exame.com/brasil/parques-nacionais-ja-movimentam-r-20-bilhoes-no-pib/",
       "source": "Revista Fórum",
       "category": "macro",
       "tags": [
@@ -275,15 +337,14 @@
       "publishedAt": "2026-05-09T15:25:50Z",
       "updatedAt": "2026-05-09T15:25:50Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diariodocomercio.com.br/mix/wp-content/uploads/2026/01/brazil-1581233_1280.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-aa543bf030656f268aa8c04c",
       "title": "Parques nacionais já movimentam R$ 20 bilhões no PIB",
-      "summary": "A breve pausa do Bitcoin perto dos US$ 80 mil pode não significar nada, considerando que o Fed pode estar prestes a se tornar pró-cripto.",
-      "details": "A breve pausa do Bitcoin perto dos US$ 80 mil pode não significar nada, considerando que o Fed pode estar prestes a se tornar pró-cripto.",
-      "url": "https://cointelegraph.com.br/markets/bitcoin-stalls-as-btc-etf-outflows-hit-268m-will-new-fed-chair-restore-the-rally",
+      "summary": "Atualizacao de macro capturada em Exame.",
+      "details": "",
+      "url": "https://revistaforum.com.br/politica/ciro-nogueira-carnaval-tigrinho/",
       "source": "Exame",
       "category": "macro",
       "tags": [
@@ -294,15 +355,14 @@
       "publishedAt": "2026-05-09T14:33:28Z",
       "updatedAt": "2026-05-09T14:33:28Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https://s3.cointelegraph.com/uploads/2026-05/019e09d0-17f1-7ecb-9e86-46c71c79c24e.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-8c8b870974db7be6dc614086",
       "title": "Choque de oferta? Alta do petróleo é responsável por avanço de 60% da inflação no 1T26, diz Daycoval",
-      "summary": "Atualizacao de macro capturada em Money Times.",
-      "details": "",
-      "url": "https://revistaforum.com.br/politica/ciro-nogueira-carnaval-tigrinho/",
+      "summary": "Saiba como a inflação tem se comportado e quais fatores, como o choque do petróleo, influenciam o aumento dos preços.",
+      "details": "Saiba como a inflação tem se comportado e quais fatores, como o choque do petróleo, influenciam o aumento dos preços.",
+      "url": "https://www.moneytimes.com.br/choque-de-oferta-alta-do-petroleo-e-responsavel-por-avanco-de-60-da-inflacao-ate-marco-diz-daycoval-apsa/",
       "source": "Money Times",
       "category": "macro",
       "tags": [
@@ -313,14 +373,15 @@
       "publishedAt": "2026-05-09T14:01:00Z",
       "updatedAt": "2026-05-09T14:01:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/11/inflacao-ipca-15.jpg"
     },
     {
       "id": "macro-b3426cc7aac82c2fc2fc5b0e",
       "title": "Bitcoin perde força nos US$ 80 mil, mas touros apostam em Fed pró-cripto",
-      "summary": "Saiba como a inflação tem se comportado e quais fatores, como o choque do petróleo, influenciam o aumento dos preços.",
-      "details": "Saiba como a inflação tem se comportado e quais fatores, como o choque do petróleo, influenciam o aumento dos preços.",
-      "url": "https://www.moneytimes.com.br/choque-de-oferta-alta-do-petroleo-e-responsavel-por-avanco-de-60-da-inflacao-ate-marco-diz-daycoval-apsa/",
+      "summary": "A inteligência artificial corporativa entrou em uma nova fase dentro das empresas brasileiras. O Google Cloud passou a defender a chamada “era agêntica”, modelo em que sistemas de IA deixam de funcionar apenas como assistentes de texto para assumir tarefas contínuas, acessar banc",
+      "details": "A inteligência artificial corporativa entrou em uma nova fase dentro das empresas brasileiras. O Google Cloud passou a defender a chamada “era agêntica”, modelo em que sistemas de IA deixam de funcionar apenas como assistentes de texto para assumir tarefas contínuas, acessar bancos de dados, automatizar processos e ope",
+      "url": "https://falaregional.com.br/google-ja-esta-substituindo-tarefas-humanas-executiva-milena-leal-revela-como-empresas-brasileiras-entraram-na-era-agentica.html?tipo=amp",
       "source": "cointelegraph.com.br",
       "category": "macro",
       "tags": [
@@ -332,14 +393,14 @@
       "updatedAt": "2026-05-09T14:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/11/inflacao-ipca-15.jpg"
+      "imageUrl": "https://falaregional.com.br/wp-content/uploads/2026/05/Milena-Leal-800x480.webp"
     },
     {
       "id": "companies-043571b053f724c40eedd309",
       "title": "Google já está substituindo tarefas humanas? Executiva Milena Leal revela como empresas brasileiras entraram na “era agêntica”",
-      "summary": "A inteligência artificial corporativa entrou em uma nova fase dentro das empresas brasileiras. O Google Cloud passou a defender a chamada “era agêntica”, modelo em que sistemas de IA deixam de funcionar apenas como assistentes de texto para assumir tarefas contínuas, acessar banc",
-      "details": "A inteligência artificial corporativa entrou em uma nova fase dentro das empresas brasileiras. O Google Cloud passou a defender a chamada “era agêntica”, modelo em que sistemas de IA deixam de funcionar apenas como assistentes de texto para assumir tarefas contínuas, acessar bancos de dados, automatizar processos e ope",
-      "url": "https://falaregional.com.br/google-ja-esta-substituindo-tarefas-humanas-executiva-milena-leal-revela-como-empresas-brasileiras-entraram-na-era-agentica.html?tipo=amp",
+      "summary": "A breve pausa do Bitcoin perto dos US$ 80 mil pode não significar nada, considerando que o Fed pode estar prestes a se tornar pró-cripto.",
+      "details": "A breve pausa do Bitcoin perto dos US$ 80 mil pode não significar nada, considerando que o Fed pode estar prestes a se tornar pró-cripto.",
+      "url": "https://cointelegraph.com.br/markets/bitcoin-stalls-as-btc-etf-outflows-hit-268m-will-new-fed-chair-restore-the-rally",
       "source": "Fala Regional",
       "category": "companies",
       "tags": [
@@ -351,7 +412,7 @@
       "updatedAt": "2026-05-09T13:56:05Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://falaregional.com.br/wp-content/uploads/2026/05/Milena-Leal-800x480.webp"
+      "imageUrl": "https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https://s3.cointelegraph.com/uploads/2026-05/019e09d0-17f1-7ecb-9e86-46c71c79c24e.jpg"
     },
     {
       "id": "macro-76b7daf82d2eeb92bc98e50a",
@@ -374,9 +435,9 @@
     {
       "id": "macro-47b05e44f7c9cc8100df1b0f",
       "title": "Pré-balanço da Vivo (VIVT3): Salto no lucro e gatilho fiscal no radar",
-      "summary": "Visitação recorde em parques nacionais injeta R$ 20 bilhões no PIB do Brasil - Jornal O Sul",
-      "details": "Visitação recorde em parques nacionais injeta R$ 20 bilhões no PIB do Brasil - Jornal O Sul",
-      "url": "https://www.osul.com.br/visitacao-recorde-em-parques-nacionais-injeta-r-20-bilhoes-no-pib-do-brasil/amp/",
+      "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
+      "details": "",
+      "url": "https://www.portalgiro.com/noticia/24631/petropolis/giro/visitacao-recorde-em-parques-nacionais-movimentou-r-20-bilhoes-no-pib-brasileiro.html",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -387,8 +448,7 @@
       "publishedAt": "2026-05-09T13:49:00Z",
       "updatedAt": "2026-05-09T13:49:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.osul.com.br/wp-content/uploads/2026/05/parque.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-a00c199df3b1158be64ae70e",
@@ -412,9 +472,9 @@
     {
       "id": "macro-2266e83604624dc15c8eaf97",
       "title": "Visitação recorde em parques nacionais movimentou R$ 20 bilhões no PIB brasileiro",
-      "summary": "Com Selic em 14,5% e spreads bancários elevados, o governo lança programa para renegociar dívidas de famílias, estudantes e pequenos empreendedores",
-      "details": "Com Selic em 14,5% e spreads bancários elevados, o governo lança programa para renegociar dívidas de famílias, estudantes e pequenos empreendedores",
-      "url": "https://jornaldebrasilia.com.br/noticias/economia/endividamento-familiar-atinge-80-e-impulsiona-novo-desenrola/",
+      "summary": "Atualizacao de macro capturada em portalgiro.com.",
+      "details": "",
+      "url": "https://pagina3.com.br/entrevista/presidente-da-camara-de-comercio-brasil-paraguai-fala-sobre-a-instalacao-de-empresas-brasileiras-no-vizinho-pais/",
       "source": "portalgiro.com",
       "category": "macro",
       "tags": [
@@ -426,14 +486,14 @@
       "updatedAt": "2026-05-09T13:04:43Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2026/02/03165915/real_moedadinheiro_jfcrz_abr_1701220042_1.jpg"
+      "imageUrl": "https://pagina3.com.br/wp-content/uploads/2026/05/maxresdefault-1.jpg"
     },
     {
       "id": "companies-460d25b5f1a80c9903eb842c",
       "title": "Presidente da Câmara de Comércio Brasil Paraguai fala sobre a instalação de empresas brasileiras no vizinho país",
-      "summary": "Atualizacao de empresas capturada em Página 3 - Notícias de Balneário Camboriú.",
-      "details": "",
-      "url": "https://www.portalgiro.com/noticia/24631/petropolis/giro/visitacao-recorde-em-parques-nacionais-movimentou-r-20-bilhoes-no-pib-brasileiro.html",
+      "summary": "Visitação recorde em parques nacionais injeta R$ 20 bilhões no PIB do Brasil - Jornal O Sul",
+      "details": "Visitação recorde em parques nacionais injeta R$ 20 bilhões no PIB do Brasil - Jornal O Sul",
+      "url": "https://www.osul.com.br/visitacao-recorde-em-parques-nacionais-injeta-r-20-bilhoes-no-pib-do-brasil/amp/",
       "source": "Página 3 - Notícias de Balneário Camboriú",
       "category": "companies",
       "tags": [
@@ -444,14 +504,15 @@
       "publishedAt": "2026-05-09T13:00:00Z",
       "updatedAt": "2026-05-09T13:00:00Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://www.osul.com.br/wp-content/uploads/2026/05/parque.jpg"
     },
     {
       "id": "macro-cd28e076c06f60e4b8d0fa39",
       "title": "Novo Desenrola: elevada taxa Selic impulsiona o endividamento das famílias no Brasil",
-      "summary": "Atualizacao de macro capturada em Araraquara News.",
-      "details": "",
-      "url": "https://pagina3.com.br/entrevista/presidente-da-camara-de-comercio-brasil-paraguai-fala-sobre-a-instalacao-de-empresas-brasileiras-no-vizinho-pais/",
+      "summary": "Turismo em unidades de conservação gerou 332 mil empregos em 2025",
+      "details": "Turismo em unidades de conservação gerou 332 mil empregos em 2025",
+      "url": "https://odia.ig.com.br/brasil/2026/05/7248098-visitacao-recorde-em-parques-nacionais-injeta-rs-20-bilhoes-no-pib.html",
       "source": "Araraquara News",
       "category": "macro",
       "tags": [
@@ -463,7 +524,25 @@
       "updatedAt": "2026-05-09T12:44:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://pagina3.com.br/wp-content/uploads/2026/05/maxresdefault-1.jpg"
+      "imageUrl": "https://odia.ig.com.br/_midias/jpg/2026/05/09/123-38648504.jpg"
+    },
+    {
+      "id": "macro-cb5fa6c07fdd5b19efee84df",
+      "title": "Visitação recorde em parques nacionais injeta R$ 20 bilhões no PIB",
+      "summary": "Atualizacao de macro capturada em O Dia.",
+      "details": "",
+      "url": "https://revistaforum.com.br/turismo/visitacao-parques-nacionais-recorde/",
+      "source": "O Dia",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-09T12:42:46Z",
+      "updatedAt": "2026-05-09T12:42:46Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-b5ec1ffaae4f167f17d19f92",
@@ -487,9 +566,9 @@
     {
       "id": "latest-576929a778771aca8f678556",
       "title": "Ibovespa: Smart Fit dispara e Magazine Luiza lidera perdas na semana; veja maiores altas e baixas",
-      "summary": "Smart Fit liderou as altas do Ibovespa na semana, enquanto Magazine Luiza ficou entre as maiores quedas em meio à temporada de balanços.",
-      "details": "Smart Fit liderou as altas do Ibovespa na semana, enquanto Magazine Luiza ficou entre as maiores quedas em meio à temporada de balanços.",
-      "url": "https://bpmoney.com.br/mercado/ibovespa-smart-fit-dispara-e-magazine-luiza-lidera-perdas-na-semana-veja-maiores-altas-e-baixas/",
+      "summary": "O Instituto Humanitas Unisinos - IHU - um órgão transdisciplinar da Unisinos, que visa apontar novas questões e buscar respostas para os desafios de nossa época. Parte da visão do humanismo social cristão, debatendo a sociedade do futuro.",
+      "details": "O Instituto Humanitas Unisinos - IHU - um órgão transdisciplinar da Unisinos, que visa apontar novas questões e buscar respostas para os desafios de nossa época. Parte da visão do humanismo social cristão, debatendo a sociedade do futuro.",
+      "url": "https://ihu.unisinos.br/665700-orcamento-2027-a-insistencia-pelo-ajuste-fiscal-artigo-de-paulo-rubem-santiago-ferreira",
       "source": "BPMoney",
       "category": "latest",
       "tags": [
@@ -501,14 +580,14 @@
       "updatedAt": "2026-05-09T12:05:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://bpmoney.com.br/wp-content/uploads/2024/12/DAstZ7nJ-NOTAS-24.png"
+      "imageUrl": "https://www.ihu.unisinos.br/images/ihu/2026/05/07_05_dinheiro_canva.png"
     },
     {
       "id": "macro-6f252143c74908290a77ea08",
       "title": "Orçamento 2027: a insistência pelo ajuste fiscal. Artigo de Paulo Rubem Santiago Ferreira",
-      "summary": "O Instituto Humanitas Unisinos - IHU - um órgão transdisciplinar da Unisinos, que visa apontar novas questões e buscar respostas para os desafios de nossa época. Parte da visão do humanismo social cristão, debatendo a sociedade do futuro.",
-      "details": "O Instituto Humanitas Unisinos - IHU - um órgão transdisciplinar da Unisinos, que visa apontar novas questões e buscar respostas para os desafios de nossa época. Parte da visão do humanismo social cristão, debatendo a sociedade do futuro.",
-      "url": "https://www.ihu.unisinos.br/665700-orcamento-2027-a-insistencia-pelo-ajuste-fiscal-artigo-de-paulo-rubem-santiago-ferreira",
+      "summary": "Smart Fit liderou as altas do Ibovespa na semana, enquanto Magazine Luiza ficou entre as maiores quedas em meio à temporada de balanços.",
+      "details": "Smart Fit liderou as altas do Ibovespa na semana, enquanto Magazine Luiza ficou entre as maiores quedas em meio à temporada de balanços.",
+      "url": "https://bpmoney.com.br/mercado/ibovespa-smart-fit-dispara-e-magazine-luiza-lidera-perdas-na-semana-veja-maiores-altas-e-baixas/",
       "source": "Instituto Humanitas Unisinos - IHU",
       "category": "macro",
       "tags": [
@@ -520,14 +599,14 @@
       "updatedAt": "2026-05-09T12:04:25Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.ihu.unisinos.br/images/ihu/2026/05/07_05_dinheiro_canva.png"
+      "imageUrl": "https://bpmoney.com.br/wp-content/uploads/2024/12/DAstZ7nJ-NOTAS-24.png"
     },
     {
       "id": "macro-62988ea5831e200c2351f38e",
       "title": "Endividamento familiar atinge 80% e impulsiona Novo Desenrola",
-      "summary": "Atualizacao de macro capturada em Jornal de Brasília.",
-      "details": "",
-      "url": "https://revistaforum.com.br/turismo/visitacao-parques-nacionais-recorde/",
+      "summary": "Entenda as travas do crescimento econômico e por que o Brasil perdeu a corrida para outos países. Leia mais na Gazeta do Povo;",
+      "details": "Entenda as travas do crescimento econômico e por que o Brasil perdeu a corrida para outos países. Leia mais na Gazeta do Povo;",
+      "url": "https://www.gazetadopovo.com.br/economia/estagnacao-economia-brasileira-40-anos-pib/",
       "source": "Jornal de Brasília",
       "category": "macro",
       "tags": [
@@ -538,14 +617,15 @@
       "publishedAt": "2026-05-09T12:02:52Z",
       "updatedAt": "2026-05-09T12:02:52Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://media.gazetadopovo.com.br/2026/04/18111808/estagnacao-crescimento-economico-brasil-40-anos-abismo.jpg"
     },
     {
       "id": "macro-4257e16ce28efc413ac684d5",
       "title": "Pacote de R$ 143,7 bi do governo Lula gera críticas sobre inflação",
-      "summary": "Governo Lula anuncia medidas de R$ 143,7 bilhões em ano eleitoral e enfrenta críticas de economistas sobre impacto fiscal, inflação e juros",
-      "details": "Governo Lula anuncia medidas de R$ 143,7 bilhões em ano eleitoral e enfrenta críticas de economistas sobre impacto fiscal, inflação e juros",
-      "url": "https://www.dm.com.br/politica/pacote-de-r-1437-bi-do-governo-lula-gera-criticas-sobre-inflacao/",
+      "summary": "As empresas financeiras tradicionais estão se expandindo para os mercados de previsão de criptomoedas, à medida que os contratos baseados em eventos atraem maior liquidez. A Chainalysis informou que os influxos aumentaram",
+      "details": "As empresas financeiras tradicionais estão se expandindo para os mercados de previsão de criptomoedas, à medida que os contratos baseados em eventos atraem maior liquidez. A Chainalysis informou que os influxos aumentaram",
+      "url": "https://news.bitcoin.com/pt/os-mercados-de-previsao-de-criptomoedas-ganham-espaco-no-setor-financeiro-convencional-a-medida-que-cresce-o-interesse-das-instituicoes/",
       "source": "Diário da Manhã",
       "category": "macro",
       "tags": [
@@ -557,81 +637,26 @@
       "updatedAt": "2026-05-09T12:02:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://static.news.bitcoin.com/wp-content/uploads/2026/05/prediction-markets-go-mainstream.jpg"
+    },
+    {
+      "id": "macro-73f96a9b13cbceca815363e5",
+      "title": "Crescimento econômico: por que o Brasil está estagnado",
+      "summary": "Governo Lula anuncia medidas de R$ 143,7 bilhões em ano eleitoral e enfrenta críticas de economistas sobre impacto fiscal, inflação e juros",
+      "details": "Governo Lula anuncia medidas de R$ 143,7 bilhões em ano eleitoral e enfrenta críticas de economistas sobre impacto fiscal, inflação e juros",
+      "url": "https://www.dm.com.br/politica/pacote-de-r-1437-bi-do-governo-lula-gera-criticas-sobre-inflacao/",
+      "source": "Gazeta do Povo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-09T12:00:00Z",
+      "updatedAt": "2026-05-09T12:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://www.dm.com.br/wp-content/uploads/2026/05/lula_ricardo-stuckert_pr.jpg"
-    },
-    {
-      "id": "macro-4de8f0be52d05f15b331c47c",
-      "title": "Novo Desenrola: juros altos pressionam endividamento das famílias",
-      "summary": "Atualizacao de macro capturada em Folha PE.",
-      "details": "",
-      "url": "https://www.folhape.com.br/noticia/amp/486258/novo-desenrola-juros-altos-pressionam-endividamento-das-familias/",
-      "source": "Folha PE",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-09T11:40:00Z",
-      "updatedAt": "2026-05-09T11:40:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-248a083c3c1701cad298bff1",
-      "title": "XP revisa cenário macro e prevê três cortes na Selic; veja os destaques da semana",
-      "summary": "A XP atualizou seu Brasil Macro Mensal de maio com uma combinação pouco usual: real mais forte e inflação pressionada ao mesmo tempo.",
-      "details": "A XP atualizou seu Brasil Macro Mensal de maio com uma combinação pouco usual: real mais forte e inflação pressionada ao mesmo tempo.",
-      "url": "https://www.infomoney.com.br/onde-investir/xp-revisa-cenario-macro-e-preve-tres-cortes-na-selic-veja-os-destaques-da-semana/",
-      "source": "InfoMoney",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-09T11:15:00Z",
-      "updatedAt": "2026-05-09T11:15:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2025/12/2148783033.jpg?fit=1000%2C563&quality=70&strip=all"
-    },
-    {
-      "id": "macro-676273a5ba35f909b2b5e5b4",
-      "title": "FIIs com desconto atraem atenção após Selic",
-      "summary": "Atualizacao de macro capturada em Acionista.com.br.",
-      "details": "",
-      "url": "https://acionista.com.br/fiis-com-desconto-atraem-atencao-apos-selic/",
-      "source": "Acionista.com.br",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-09T11:05:57Z",
-      "updatedAt": "2026-05-09T11:05:57Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-19a6e90c23247e4968cdc618",
-      "title": "Novo Desenrola: juros altos pressionam endividamento das famílias",
-      "summary": "Economistas indicam que a elevada taxa básica de juros – a taxa Selic – praticada no Brasil, somada aos altos spreads bancários aplicados pelas instituições financeiras, têm contribuído para o aumento do endividamento das famílias, o que levou o governo a lançar nesta semana o No",
-      "details": "Economistas indicam que a elevada taxa básica de juros – a taxa Selic – praticada no Brasil, somada aos altos spreads bancários aplicados pelas instituições financeiras, têm contribuído para o aumento do endividamento das famílias, o que levou o governo a lançar nesta semana o Novo Desenrola. O spread bancário é a dife",
-      "url": "https://agora-to.com.br/novo-desenrola-juros-altos-pressionam-endividamento-das-familias/",
-      "source": "Portal Agora Tocantins",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-09T11:00:05Z",
-      "updatedAt": "2026-05-09T11:00:05Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://agora-to.com.br/wp-content/uploads/2026/05/zxzzxxxx.webp"
     },
     {
       "id": "companies-8b52434b5c663a59b2f0c83f",
@@ -673,9 +698,9 @@
     {
       "id": "latest-56634871ae93a4e3fd8b3d19",
       "title": "Os mercados de previsão de criptomoedas ganham espaço no setor financeiro convencional à medida que cresce o interesse das instituições",
-      "summary": "As empresas financeiras tradicionais estão se expandindo para os mercados de previsão de criptomoedas, à medida que os contratos baseados em eventos atraem maior liquidez. A Chainalysis informou que os influxos aumentaram",
-      "details": "As empresas financeiras tradicionais estão se expandindo para os mercados de previsão de criptomoedas, à medida que os contratos baseados em eventos atraem maior liquidez. A Chainalysis informou que os influxos aumentaram",
-      "url": "https://news.bitcoin.com/pt/os-mercados-de-previsao-de-criptomoedas-ganham-espaco-no-setor-financeiro-convencional-a-medida-que-cresce-o-interesse-das-instituicoes/",
+      "summary": "O Brasil ainda tem baixa participação de PMEs no comércio exterior, com apenas cerca de 11 mil empresas exportando entre 360 mil, o que indica grande potencial de crescimento por meio da internacionalização e do uso de tecnologias digitais.",
+      "details": "O Brasil ainda tem baixa participação de PMEs no comércio exterior, com apenas cerca de 11 mil empresas exportando entre 360 mil, o que indica grande potencial de crescimento por meio da internacionalização e do uso de tecnologias digitais.",
+      "url": "https://timesbrasil.com.br/brasil/pmes-brasileiras-tem-grande-potencial-de-expansao-internacional-aponta-especialista/",
       "source": "Bitcoin News",
       "category": "latest",
       "tags": [
@@ -686,15 +711,14 @@
       "publishedAt": "2026-05-09T09:45:16Z",
       "updatedAt": "2026-05-09T09:45:16Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://static.news.bitcoin.com/wp-content/uploads/2026/05/prediction-markets-go-mainstream.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-cc87516795ddb7e2ddae5b51",
       "title": "PMEs brasileiras apresentam grande potencial de expansão internacional, aponta especialista",
-      "summary": "O Brasil ainda tem baixa participação de PMEs no comércio exterior, com apenas cerca de 11 mil empresas exportando entre 360 mil, o que indica grande potencial de crescimento por meio da internacionalização e do uso de tecnologias digitais.",
-      "details": "O Brasil ainda tem baixa participação de PMEs no comércio exterior, com apenas cerca de 11 mil empresas exportando entre 360 mil, o que indica grande potencial de crescimento por meio da internacionalização e do uso de tecnologias digitais.",
-      "url": "https://timesbrasil.com.br/brasil/pmes-brasileiras-tem-grande-potencial-de-expansao-internacional-aponta-especialista/",
+      "summary": "Bolsa brasileira voltou ao campo positivo.Ações de bancos ajudaram avanço do índice.Mercado externo também operou em alta. Um cenário de...",
+      "details": "Bolsa brasileira voltou ao campo positivo.Ações de bancos ajudaram avanço do índice.Mercado externo também operou em alta. Um cenário de...",
+      "url": "https://omatogrossense.com/reacao-no-mercado-ibovespa-sobe-e-bancos-puxam-alta-da-bolsa-nesta-sexta/",
       "source": "Times Brasil | CNBC",
       "category": "companies",
       "tags": [
@@ -705,14 +729,15 @@
       "publishedAt": "2026-05-09T09:15:00Z",
       "updatedAt": "2026-05-09T09:15:00Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://omatogrossense.nyc3.digitaloceanspaces.com/app/uploads/2026/05/08105704/ap20157601385944.jpg"
     },
     {
       "id": "latest-0ed8ab2aeade370759e7358e",
       "title": "REAÇÃO NO MERCADO: Ibovespa sobe e bancos puxam alta da Bolsa nesta sexta",
-      "summary": "Governança e sustentabilidade se tornam fatores decisivos para pequenas empresas acessarem crédito verde e crescerem no mercado.",
-      "details": "Governança e sustentabilidade se tornam fatores decisivos para pequenas empresas acessarem crédito verde e crescerem no mercado.",
-      "url": "https://diariodocomercio.com.br/mm2032/credito-verde-sustentabilidade-pmes/",
+      "summary": "Com Selic em 14,5% e spreads bancários elevados, o governo lança programa para renegociar dívidas de famílias, estudantes e pequenos empreendedores",
+      "details": "Com Selic em 14,5% e spreads bancários elevados, o governo lança programa para renegociar dívidas de famílias, estudantes e pequenos empreendedores",
+      "url": "https://jornaldebrasilia.com.br/noticias/economia/endividamento-familiar-atinge-80-e-impulsiona-novo-desenrola/",
       "source": "O Matogrossense",
       "category": "latest",
       "tags": [
@@ -724,14 +749,14 @@
       "updatedAt": "2026-05-09T09:00:05Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://diariodocomercio.com.br/wp-content/uploads/2026/05/sustentabilidade.jpg"
+      "imageUrl": "https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2026/02/03165915/real_moedadinheiro_jfcrz_abr_1701220042_1.jpg"
     },
     {
       "id": "latest-f39a7c6feb19262fc810dcbc",
       "title": "Governança e sustentabilidade ampliam acesso ao crédito verde",
-      "summary": "Bolsa brasileira voltou ao campo positivo.Ações de bancos ajudaram avanço do índice.Mercado externo também operou em alta. Um cenário de...",
-      "details": "Bolsa brasileira voltou ao campo positivo.Ações de bancos ajudaram avanço do índice.Mercado externo também operou em alta. Um cenário de...",
-      "url": "https://omatogrossense.com/reacao-no-mercado-ibovespa-sobe-e-bancos-puxam-alta-da-bolsa-nesta-sexta/",
+      "summary": "Atualizacao de ultima hora capturada em Diário do Comércio.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNREk4cFdaak1PZmFXaEZZMThiTVN5WnRjbVU0TVFfcVY2OUJma1pCRkdSVW5Bams1bk9rN1oySXd3aU1YallVVS1aQVhlbzF5R3A4RHVodTFQU1FTMnd3N1hKMGdzYllpYTV1ZU1YOV9oSXI0ZlBVS25xNHltLWdxcQ?oc=5",
       "source": "Diário do Comércio",
       "category": "latest",
       "tags": [
@@ -742,8 +767,7 @@
       "publishedAt": "2026-05-09T08:00:00Z",
       "updatedAt": "2026-05-09T08:00:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://omatogrossense.nyc3.digitaloceanspaces.com/app/uploads/2026/05/08105704/ap20157601385944.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-d354963134b265a1d2e98c2a",
@@ -762,24 +786,6 @@
       "updatedAt": "2026-05-09T07:01:50Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "latest-5352872378bf26be30544f19",
-      "title": "Dólar cai para R$ 4,89 com dados positivos dos EUA e alívio no Oriente Médio",
-      "summary": "Atualizacao de ultima hora capturada em diário do estado.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQTNVcGgzQnV1VFJVR2pRSm12Wlg2ZUxRWmFjVFVxY3AwcE5vMXNsQXU0dWlJRWhsLUY5N0tBS051V1hsX3NnWDdXZERCZUEwWTlGS3U2aFAxX1Z1anFQSHg4OFFCd0FSUXpodUhfZkp6X0ZuVWIzeTh3UXZuRWFYMkctZWtNUzBSQXJpVkwwMFVLUDRMRjI5NkV2LU94RDdlX1RCaEhlcmoyQ00?oc=5",
-      "source": "diário do estado",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-09T06:48:38Z",
-      "updatedAt": "2026-05-09T06:48:38Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "funds-e4f885935f2b3e55ed8c0b20",
@@ -908,24 +914,6 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "latest-5ab429134a23728b206e729d",
-      "title": "Bolsa brasileira despenca 2,38%,atingindo menor patamar desde março",
-      "summary": "Atualizacao de ultima hora capturada em Portal 93.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSjdkWjQzRXE0a0xIdktMSlM5TEtNV3k0bUhKM2JyaDNkRm9SZ0RUOUYyRVNONjRRWjZFcHkwVW1wcWNxLUxFdG5fSXV5UlJhcmhBOW9IQ2doUzJnWlA0VmRkbEREWVlEZWRwOUJDZWUxWXBXcmVrY01vNmFQOWUtLXp6NENqcWY3RXZCMHJaT1lSZ2N5?oc=5",
-      "source": "Portal 93",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-09T00:31:53Z",
-      "updatedAt": "2026-05-09T00:31:53Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "latest-2c129d29946dcf8af71c41c3",
       "title": "Dólar fecha abaixo de R$ 4,90 pela primeira vez em dois anos",
       "summary": "Atualizacao de ultima hora capturada em Diário do Sudoeste.",
@@ -1048,6 +1036,42 @@
       ],
       "publishedAt": "2026-05-08T23:00:00Z",
       "updatedAt": "2026-05-08T23:00:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-340e0b705cad44cd5a879386",
+      "title": "Dólar fecha abaixo de R$ 4,90 pela primeira vez em mais de dois anos; Ibovespa encerra em alta - Jornal O Sul",
+      "summary": "Atualizacao de ultima hora capturada em Jornal O Sul.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVkdSY0ZqeURxdzFzZGZlN0NkRTRqMHNRMzBERTJQN3VOWkJUUkRDZmJhYXBuYTFqWGgtdV82ajB2TmhfdDJ1LWIyOUE4TXdmS3U3MU14Z2FqeGdmTTJFLUNQQXNJWFlLM3ZDYU5hUWszemxOV0FyZ2xkdEpaY1hkZW5LYTZjdjNjd1JnVHc4VUVRcGhDUXV6RV9tTkdZT3piY0VwZXdfWk0xVEpiT0tORm96TjZobU1tSWVXeNIBvAFBVV95cUxNVkdSY0ZqeURxdzFzZGZlN0NkRTRqMHNRMzBERTJQN3VOWkJUUkRDZmJhYXBuYTFqWGgtdV82ajB2TmhfdDJ1LWIyOUE4TXdmS3U3MU14Z2FqeGdmTTJFLUNQQXNJWFlLM3ZDYU5hUWszemxOV0FyZ2xkdEpaY1hkZW5LYTZjdjNjd1JnVHc4VUVRcGhDUXV6RV9tTkdZT3piY0VwZXdfWk0xVEpiT0tORm96TjZobU1tSWVXeA?oc=5",
+      "source": "Jornal O Sul",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-08T22:59:03Z",
+      "updatedAt": "2026-05-08T22:59:03Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-a99fec9ac278b6adca4f87a8",
+      "title": "Dólar encerra abaixo de R$ 4,90 pela primeira vez em 28 meses",
+      "summary": "Atualizacao de ultima hora capturada em Agência Sertão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1vOExuQ2stVlhqLXYxTkNlWmRfWW5pTmxWSTZTSHRCR29CQ0NjaFZmMm9kOG0tTTlmUkZ6RS1idnFiNWpPNVdFb0diNUR4VFlDZ1BaS1VRZnFqZHQ1aDJpMkxBWjlWWVBSQXfSAWpBVV95cUxNbzhMbkNrLVZYai12MU5DZVpkX1luaU5sVkk2U0h0QkdvQkNDY2hWZjJvZDhtLU05ZlJGekUtYnZxYjVqTzVXRW9HYjVEeFRZQ2dQWktVUWZxamR0NWgyaTJMQVo5VllQUkF3?oc=5",
+      "source": "Agência Sertão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-08T22:52:25Z",
+      "updatedAt": "2026-05-08T22:52:25Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -1374,24 +1398,6 @@
       "updatedAt": "2026-05-08T14:15:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "funds-9621428d7ac2c703558cc98f",
-      "title": "CEO da Tatton Asset Management transfere ações para conta de pensão",
-      "summary": "Atualizacao de fundos capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdjA2M2V6cWR1M3F3ZUMtYkRXVDhNeTFid2FZeWozcWZHNXBVeFd3NnBtSFJ2ZkVzYy1WWVZhTFMtQ05rZUpTeGg3aHpEY05HSEhWUWVuOGFTSl8tSnZkSzFVbk8ydTNqNjRrTFowYVI5X3FDYjlyNU9KdHdESE1DcFlGTDJzZ3I4WGVrN0RiV3phUE0xTzdoLXlSclp0cFd5Mk4wMlh5SE9pQkx2dVczVUN3a0pxLWd2YktDeDJtamg?oc=5",
-      "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-05-08T13:26:00Z",
-      "updatedAt": "2026-05-08T13:26:00Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
   ]
 }
