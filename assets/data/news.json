@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-10T11:56:28Z",
-  "generatedAt": "2026-05-10T11:56:28Z",
+  "updatedAt": "2026-05-10T13:14:19Z",
+  "generatedAt": "2026-05-10T13:14:19Z",
   "categories": [
     {
       "id": "all",
@@ -25,16 +25,16 @@
   ],
   "sources": [
     {
-      "id": "a-tribuna",
-      "label": "A Tribuna"
-    },
-    {
       "id": "acionista-com-br",
       "label": "Acionista.com.br"
     },
     {
       "id": "aeroin",
       "label": "AEROIN"
+    },
+    {
+      "id": "agorams-com-br",
+      "label": "agorams.com.br"
     },
     {
       "id": "arena-de-not-cias",
@@ -49,8 +49,16 @@
       "label": "BeInCrypto"
     },
     {
+      "id": "bitcoin-news",
+      "label": "Bitcoin News"
+    },
+    {
       "id": "bitget",
       "label": "Bitget"
+    },
+    {
+      "id": "bm-c-news",
+      "label": "BM&C News"
     },
     {
       "id": "brasil-61",
@@ -65,12 +73,16 @@
       "label": "CoinDesk"
     },
     {
-      "id": "di-rio-do-estado",
-      "label": "diário do estado"
+      "id": "cpg-click-petr-leo-e-g-s",
+      "label": "CPG Click Petróleo e Gás"
     },
     {
-      "id": "economic-news-brasil",
-      "label": "Economic News Brasil"
+      "id": "diario-de-pernambuco",
+      "label": "Diario de Pernambuco"
+    },
+    {
+      "id": "di-rio-do-estado",
+      "label": "diário do estado"
     },
     {
       "id": "estad-o",
@@ -121,16 +133,12 @@
       "label": "Jornal O Sul"
     },
     {
-      "id": "jornal-primeira-p-gina",
-      "label": "Jornal Primeira Página"
-    },
-    {
       "id": "lamilano-it",
       "label": "lamilano.it"
     },
     {
-      "id": "mirian-gasparin",
-      "label": "Mirian Gasparin"
+      "id": "money-times",
+      "label": "Money Times"
     },
     {
       "id": "msn",
@@ -139,6 +147,10 @@
     {
       "id": "mt-econ-mico",
       "label": "MT Econômico"
+    },
+    {
+      "id": "o-bom-da-not-cia",
+      "label": "O Bom da Notícia"
     },
     {
       "id": "partiurolecwb-com-br",
@@ -173,6 +185,10 @@
       "label": "SpaceMoney"
     },
     {
+      "id": "tecmundo",
+      "label": "TecMundo"
+    },
+    {
       "id": "times-brasil-cnbc",
       "label": "Times Brasil | CNBC"
     },
@@ -195,11 +211,238 @@
   ],
   "items": [
     {
+      "id": "macro-975877ceb4d82053bdd5ba22",
+      "title": "Planos de saúde coletivos têm reajuste médio de quase 10% no País, mais do que o dobro da inflação - Jornal",
+      "summary": "O empresário Luciano Hang, dono da Havan, é um dos nomes mais conhecidos do varejo nacional e acumula um faturamento",
+      "details": "O empresário Luciano Hang, dono da Havan, é um dos nomes mais conhecidos do varejo nacional e acumula um faturamento",
+      "url": "https://diariodepernambuco.com.br/dpmais/enquanto-dono-da-havan-fatura-r-11-bilhoes-homem-mais-rico-do-pais-embolsa-muito-mais/",
+      "source": "Jornal O Sul",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-10T12:51:41Z",
+      "updatedAt": "2026-05-10T12:51:41Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://diariodepernambuco.com.br/dpmais/wp-content/uploads/2026/01/Eduardo-Saverin-e1767621336121.webp"
+    },
+    {
+      "id": "macro-374823f22ebceec7e94a2b8d",
+      "title": "Moradora da região do Porto fatura mais de R$ 50 mil na Nota Cuiabana Premiada",
+      "summary": "Planos de saúde coletivos têm reajuste médio de quase 10% no País, mais do que o dobro da inflação - Jornal O Sul",
+      "details": "Planos de saúde coletivos têm reajuste médio de quase 10% no País, mais do que o dobro da inflação - Jornal O Sul",
+      "url": "https://www.osul.com.br/planos-de-saude-coletivos-tem-reajuste-medio-de-quase-10-no-pais-mais-do-que-o-dobro-da-inflacao/",
+      "source": "O Bom da Notícia",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-10T12:41:00Z",
+      "updatedAt": "2026-05-10T12:41:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.osul.com.br/wp-content/uploads/2026/05/PLAno-saude.jpg"
+    },
+    {
+      "id": "latest-0e57112ff543679ba39c8b4b",
+      "title": "Enquanto dono da Havan fatura R$ 11 bilhões, homem mais rico do país embolsa muito mais",
+      "summary": "Atualizacao de ultima hora capturada em Diario de Pernambuco.",
+      "details": "",
+      "url": "https://www.obomdanoticia.com.br/cidades/moradora-da-regiao-do-porto-fatura-mais-de-r-50-mil-na-nota-cuiabana-premiada/240431",
+      "source": "Diario de Pernambuco",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-10T12:40:00Z",
+      "updatedAt": "2026-05-10T12:40:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "macro-c3a352b65df1d165ed171580",
+      "title": "FMI mostra realidade do Brasil nos próximos anos e projeta país de volta ao top 10 das maiores economias do mundo até 2030, com PIB de US$ 3,20 trilhões e salto de US$ 560 bilhões em cinco anos",
+      "summary": "FMI projeta Brasil entre as 10 maiores economias do mundo até 2030, com PIB de US$ 3,20 trilhões e avanço global.",
+      "details": "FMI projeta Brasil entre as 10 maiores economias do mundo até 2030, com PIB de US$ 3,20 trilhões e avanço global.",
+      "url": "https://clickpetroleoegas.com.br/fmi-mostra-realidade-do-brasil-nos-proximos-anos-e-projeta-pais-de-volta-ao-top-10-das-maiores-economias-do-mundo-ate-2030-com-pib-de-us-320-trilhoes-e-salto-de-us-560-bilhoes-em-cinco-afch/",
+      "source": "CPG Click Petróleo e Gás",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-10T12:30:00Z",
+      "updatedAt": "2026-05-10T12:30:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://clickpetroleoegas.com.br/wp-content/uploads/2026/05/Imagem-CPG-redimencionada-para-google-discovery-5-6.jpg"
+    },
+    {
+      "id": "macro-86cf1da8ace8fca9ca7d6d74",
+      "title": "Gastos essenciais no lar superam inflação desde 2020",
+      "summary": "Desde 2020, alimentação, aluguel e saúde superam a inflação oficial. Veja o impacto no seu orçamento familiar.",
+      "details": "Desde 2020, alimentação, aluguel e saúde superam a inflação oficial. Veja o impacto no seu orçamento familiar.",
+      "url": "https://diario.dopovo.com.br/2026/05/10/gastos-essenciais-em-casa-superam-inflacao-desde-2020-7/",
+      "source": "Jornal Diário do Povo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-10T12:26:53Z",
+      "updatedAt": "2026-05-10T12:26:53Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://diario.dopovo.com.br/i/media/2026/05/d90602efa023ed2c.gastos-essenciais-em-casa-superam-inflacao-desde-2020-7"
+    },
+    {
+      "id": "macro-513361b23a1282ef261cab7a",
+      "title": "Gastos fixos em casa superam inflação desde 2020",
+      "summary": "Aluguel, comida e saúde no Brasil acumulam alta acima da inflação oficial desde 2020. Descubra como isso afeta seu orçamento.",
+      "details": "Aluguel, comida e saúde no Brasil acumulam alta acima da inflação oficial desde 2020. Descubra como isso afeta seu orçamento.",
+      "url": "https://diario.dopovo.com.br/2026/05/10/gastos-essenciais-no-lar-superam-inflacao-desde-2020-5/",
+      "source": "Jornal Diário do Povo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-10T12:26:53Z",
+      "updatedAt": "2026-05-10T12:26:53Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://diario.dopovo.com.br/i/media/2026/05/97bb35b6bb945e26.gastos-essenciais-no-lar-superam-inflacao-desde-2020-5"
+    },
+    {
+      "id": "macro-124bb8cd3d17963e36ba0f33",
+      "title": "Gastos essenciais superam inflação e apertam orçamento familiar",
+      "summary": "Desde 2020, alimentação, aluguel e saúde sobem mais que a inflação oficial no Brasil. Veja o impacto no seu orçamento.",
+      "details": "Desde 2020, alimentação, aluguel e saúde sobem mais que a inflação oficial no Brasil. Veja o impacto no seu orçamento.",
+      "url": "https://diario.dopovo.com.br/2026/05/10/gastos-fixos-em-casa-superam-inflacao-desde-2020/",
+      "source": "Jornal Diário do Povo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-10T12:26:53Z",
+      "updatedAt": "2026-05-10T12:26:53Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://diario.dopovo.com.br/i/media/2026/05/ccb6708112a83656.gastos-fixos-em-casa-superam-inflacao-desde-2020"
+    },
+    {
+      "id": "macro-eea1557b588fb6d9c422aa3a",
+      "title": "Gastos essenciais em casa superam inflação desde 2020",
+      "summary": "O grande sucesso de Demon Slayer: Castelo Infinito ajudou a Sony Pictures a compensar várias perdas e erros.",
+      "details": "O grande sucesso de Demon Slayer: Castelo Infinito ajudou a Sony Pictures a compensar várias perdas e erros.",
+      "url": "https://www.tecmundo.com.br/minha-serie/603777-demon-slayer-castelo-infinito-salva-ano-fiscal-da-sony-pictures.htm",
+      "source": "Jornal Diário do Povo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-10T12:26:53Z",
+      "updatedAt": "2026-05-10T12:26:53Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://tm.ibxk.com.br/2026/05/08/Demon_Slayer_Castelo_Sony_Pictures_98b913c6fc.jpeg?ims=1600x900/filters:format(jpg)"
+    },
+    {
+      "id": "macro-d6f7b5eb26b11e4d86f8415f",
+      "title": "Demon Slayer: Castelo Infinito salva ano fiscal da Sony Pictures",
+      "summary": "Alimentação, aluguel e saúde sobem acima da inflação desde 2020, impactando o bolso dos brasileiros. Veja os detalhes e como o orçamento familiar é afetado.",
+      "details": "Alimentação, aluguel e saúde sobem acima da inflação desde 2020, impactando o bolso dos brasileiros. Veja os detalhes e como o orçamento familiar é afetado.",
+      "url": "https://diario.dopovo.com.br/2026/05/10/gastos-essenciais-superam-inflacao-e-apertam-orcamento-familiar-2/",
+      "source": "TecMundo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-10T12:15:00Z",
+      "updatedAt": "2026-05-10T12:15:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://diario.dopovo.com.br/i/media/2026/05/5526aaf4d96ff7b1.gastos-essenciais-superam-inflacao-e-apertam-orcamento-familiar-2"
+    },
+    {
+      "id": "macro-88faf3abc1690a5540c1546b",
+      "title": "Tempestade perfeita nos alimentos preocupa mercado e já ameaça inflação de 2027",
+      "summary": "Para além do choque dos efeitos da guerra, principalmente nos combustíveis, outro grupo começa a aparecer no radar.",
+      "details": "Para além do choque dos efeitos da guerra, principalmente nos combustíveis, outro grupo começa a aparecer no radar.",
+      "url": "https://www.moneytimes.com.br/tempestade-perfeita-nos-alimentos-preocupa-mercado-e-ja-ameaca-inflacao-de-2027-jcav/",
+      "source": "Money Times",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-10T12:12:35Z",
+      "updatedAt": "2026-05-10T12:12:35Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/04/inflacao-ipca-marco-juros.jpg"
+    },
+    {
+      "id": "latest-2e52118d4b5f587fad37f0e9",
+      "title": "Investigação da PF: Daniel Vorcaro e sua influência no Congresso",
+      "summary": "Semana de 11 a 15 de maio aponta inflação no Brasil e nos EUA como principal tema, com os preços do petróleo ainda elevados. No Brasil, dados de atividade re...",
+      "details": "Semana de 11 a 15 de maio aponta inflação no Brasil e nos EUA como principal tema, com os preços do petróleo ainda elevados. No Brasil, dados de atividade re...",
+      "url": "https://www.portaltela.com/noticias/economia/2026/05/10/inflacao-domina-agendas-de-mercados-no-brasil-e-nos-eua/",
+      "source": "diário do estado",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-10T12:00:51Z",
+      "updatedAt": "2026-05-10T12:00:51Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/05/fb_investe-2.jpg"
+    },
+    {
+      "id": "macro-795492e0f9f32ec7380cfc66",
+      "title": "Conselho Fiscal do Senac conhece estrutura e projetos da regional de MS em reunião itinerante",
+      "summary": "A PF investiga Daniel Vorcaro por suposta influência em propostas no Congresso que impactam o mercado de carbono e o FGC.",
+      "details": "A PF investiga Daniel Vorcaro por suposta influência em propostas no Congresso que impactam o mercado de carbono e o FGC.",
+      "url": "https://diariodoestadogo.com.br/investigacao-da-pf-daniel-vorcaro-e-sua-influencia-no-congresso/",
+      "source": "agorams.com.br",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-10T11:58:15Z",
+      "updatedAt": "2026-05-10T11:58:15Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/05/investigacao-da-pf3A-daniel-vorcaro-e-sua-influencia-no-congresso.png"
+    },
+    {
       "id": "latest-91c2447caae2235b9f29f9aa",
       "title": "Valor de mercado da Samsung bate US$ 1 trilhão",
-      "summary": "Samsung entra no grupo de empresas trilionárias impulsionada por inteligência artificial, chips e tecnologia global.",
-      "details": "Samsung entra no grupo de empresas trilionárias impulsionada por inteligência artificial, chips e tecnologia global.",
-      "url": "https://seucreditodigital.com.br/samsung-valor-trilionario-tecnologia/",
+      "summary": "Os conselheiros foram recepcionados pelo presidente do Sistema Comércio MS, Edison Araújo, que acompanhou a agenda institucional realizada em Mato Grosso do Sul. O Senac MS recebeu nesta sexta-feira (8), no Senac Hub Academy, em Campo Grande, representantes do Conselho Fiscal do ",
+      "details": "Os conselheiros foram recepcionados pelo presidente do Sistema Comércio MS, Edison Araújo, que acompanhou a agenda institucional realizada em Mato Grosso do Sul. O Senac MS recebeu nesta sexta-feira (8), no Senac Hub Academy, em Campo Grande, representantes do Conselho Fiscal do Senac para uma reunião itinerante do col",
+      "url": "https://www.agorams.com.br/conselho-fiscal-do-senac-conhece-estrutura-e-projetos-da-regional-de-ms-em-reuniao-itinerante/",
       "source": "Seu Crédito Digital",
       "category": "latest",
       "tags": [
@@ -211,14 +454,14 @@
       "updatedAt": "2026-05-10T11:40:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://seucreditodigital.com.br/wp-content/uploads/2026/05/Samsung.jpg"
+      "imageUrl": "https://www.agorams.com.br/wp-content/uploads/2026/05/Conselho.jpeg"
     },
     {
       "id": "macro-a5e981d7b642590cce59d238",
       "title": "Inflação domina agendas de mercados no Brasil e nos EUA",
-      "summary": "Semana de 11 a 15 de maio aponta inflação no Brasil e nos EUA como principal tema, com os preços do petróleo ainda elevados. No Brasil, dados de atividade re...",
-      "details": "Semana de 11 a 15 de maio aponta inflação no Brasil e nos EUA como principal tema, com os preços do petróleo ainda elevados. No Brasil, dados de atividade re...",
-      "url": "https://www.portaltela.com/noticias/economia/2026/05/10/inflacao-domina-agendas-de-mercados-no-brasil-e-nos-eua/",
+      "summary": "Copom reduziu a Selic em 0,25 ponto percentual no fim de abril, mesmo com a inflação projetada para o horizonte relevante piorando. Este é o primeiro movimen...",
+      "details": "Copom reduziu a Selic em 0,25 ponto percentual no fim de abril, mesmo com a inflação projetada para o horizonte relevante piorando. Este é o primeiro movimen...",
+      "url": "https://www.portaltela.com/noticias/economia/2026/05/10/mercado-ve-aposta-do-copom-em-cortar-selic-mesmo-com-inflacao-em-alta/",
       "source": "Portal Tela",
       "category": "macro",
       "tags": [
@@ -230,14 +473,14 @@
       "updatedAt": "2026-05-10T11:36:47Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/05/fb_investe-2.jpg"
+      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/05/422450043.jpg"
     },
     {
       "id": "macro-3657d345a025406aa3c5b686",
       "title": "Alta de juros do Fed é o catalisador que falta ao dólar? BofA analisa",
-      "summary": "Desde 2020, alimentação, aluguel e saúde sobem mais que a inflação oficial no Brasil. Veja como isso afeta seu orçamento e o que fazer.",
-      "details": "Desde 2020, alimentação, aluguel e saúde sobem mais que a inflação oficial no Brasil. Veja como isso afeta seu orçamento e o que fazer.",
-      "url": "https://diario.dopovo.com.br/2026/05/10/gastos-essenciais-superam-inflacao-no-brasil-desde-2020/",
+      "summary": "Norges Bank elevou a taxa básica de juros de 4% para 4,25% na semana passada, surpreendendo o mercado. A decisão contrariou a expectativa da maioria, que esp...",
+      "details": "Norges Bank elevou a taxa básica de juros de 4% para 4,25% na semana passada, surpreendendo o mercado. A decisão contrariou a expectativa da maioria, que esp...",
+      "url": "https://www.portaltela.com/noticias/economia/2026/05/10/mercado-teme-juros-mais-altos-apos-aperto-monetario-surpresa-na-noruega/",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -249,51 +492,14 @@
       "updatedAt": "2026-05-10T11:33:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diario.dopovo.com.br/i/media/2026/05/8c03f70dd7710dec.gastos-essenciais-superam-inflacao-no-brasil-desde-2020"
-    },
-    {
-      "id": "macro-5e2e70b8e564759e6c5993cf",
-      "title": "Gastos essenciais em casa superam inflação desde 2020",
-      "summary": "Alimentação, aluguel e saúde custam mais que a inflação oficial desde 2020. Veja o impacto no seu bolso.",
-      "details": "Alimentação, aluguel e saúde custam mais que a inflação oficial desde 2020. Veja o impacto no seu bolso.",
-      "url": "https://diario.dopovo.com.br/2026/05/10/gastos-essenciais-em-casa-superam-inflacao-desde-2020-6/",
-      "source": "Jornal Diário do Povo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-10T11:26:52Z",
-      "updatedAt": "2026-05-10T11:26:52Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diario.dopovo.com.br/i/media/2026/05/567bca8b871c4cca.gastos-essenciais-em-casa-superam-inflacao-desde-2020-6"
-    },
-    {
-      "id": "macro-0bc5a7cb7907cedeb222c520",
-      "title": "Gastos essenciais superam inflação e apertam orçamento familiar",
-      "summary": "Atualizacao de macro capturada em Jornal Diário do Povo.",
-      "details": "",
-      "url": "https://br.investing.com/news/economy-news/alta-de-juros-do-fed-e-o-catalisador-que-falta-ao-dolar-bofa-analisa-1931884",
-      "source": "Jornal Diário do Povo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-10T11:26:52Z",
-      "updatedAt": "2026-05-10T11:26:52Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/05/452688163.jpg"
     },
     {
       "id": "macro-b603f91279c6a12fd72af754",
       "title": "Gastos essenciais superam inflação no Brasil desde 2020",
-      "summary": "Alimentação, aluguel e saúde sobem mais que a inflação oficial desde 2020. Descubra como isso afeta seu orçamento familiar.",
-      "details": "Alimentação, aluguel e saúde sobem mais que a inflação oficial desde 2020. Descubra como isso afeta seu orçamento familiar.",
-      "url": "https://diario.dopovo.com.br/2026/05/10/gastos-essenciais-superam-inflacao-e-apertam-orcamento-familiar/",
+      "summary": "Confira as previsões financeiras para todos os signos hoje, 10 de maio de 2026. Mercúrio em trígono com Júpiter e a Lua em Capricórnio definem um dia de clareza estratégica e oportunidades seletivas nos mercados.",
+      "details": "Confira as previsões financeiras para todos os signos hoje, 10 de maio de 2026. Mercúrio em trígono com Júpiter e a Lua em Capricórnio definem um dia de clareza estratégica e oportunidades seletivas nos mercados.",
+      "url": "https://www.spacemoney.com.br/horoscopo/horoscopo-financeiro-10-05-2026/",
       "source": "Jornal Diário do Povo",
       "category": "macro",
       "tags": [
@@ -305,14 +511,14 @@
       "updatedAt": "2026-05-10T11:26:52Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diario.dopovo.com.br/i/media/2026/05/03ea38dfb9006ab9.gastos-essenciais-superam-inflacao-e-apertam-orcamento-familiar"
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/05/pexels-photo-7222052-9.jpg"
     },
     {
       "id": "macro-2789f2eed1318feb802d5071",
       "title": "Mercado vê aposta do Copom em cortar Selic mesmo com inflação em alta",
-      "summary": "Copom reduziu a Selic em 0,25 ponto percentual no fim de abril, mesmo com a inflação projetada para o horizonte relevante piorando. Este é o primeiro movimen...",
-      "details": "Copom reduziu a Selic em 0,25 ponto percentual no fim de abril, mesmo com a inflação projetada para o horizonte relevante piorando. Este é o primeiro movimen...",
-      "url": "https://www.portaltela.com/noticias/economia/2026/05/10/mercado-ve-aposta-do-copom-em-cortar-selic-mesmo-com-inflacao-em-alta/",
+      "summary": "A semana de 11 a 15 de maio traz como destaque a inflação: no Brasil sai o Índice Nacional de Preços ao Consumidor Amplo (IPCA) e, nos Estados Unidos, os...",
+      "details": "A semana de 11 a 15 de maio traz como destaque a inflação: no Brasil sai o Índice Nacional de Preços ao Consumidor Amplo (IPCA) e, nos Estados Unidos, os...",
+      "url": "https://www.portaltela.com/noticias/economia/2026/05/10/inflacao-e-destaque-nos-mercados-do-brasil-e-dos-eua/",
       "source": "Portal Tela",
       "category": "macro",
       "tags": [
@@ -324,14 +530,14 @@
       "updatedAt": "2026-05-10T11:22:48Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/05/422450043.jpg"
+      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/05/430581522.jpg"
     },
     {
       "id": "latest-3774bbf102604b5f43598ef3",
       "title": "Mercado teme juros mais altos após aperto monetário surpresa na Noruega",
-      "summary": "Norges Bank elevou a taxa básica de juros de 4% para 4,25% na semana passada, surpreendendo o mercado. A decisão contrariou a expectativa da maioria, que esp...",
-      "details": "Norges Bank elevou a taxa básica de juros de 4% para 4,25% na semana passada, surpreendendo o mercado. A decisão contrariou a expectativa da maioria, que esp...",
-      "url": "https://www.portaltela.com/noticias/economia/2026/05/10/mercado-teme-juros-mais-altos-apos-aperto-monetario-surpresa-na-noruega/",
+      "summary": "Samsung entra no grupo de empresas trilionárias impulsionada por inteligência artificial, chips e tecnologia global.",
+      "details": "Samsung entra no grupo de empresas trilionárias impulsionada por inteligência artificial, chips e tecnologia global.",
+      "url": "https://seucreditodigital.com.br/samsung-valor-trilionario-tecnologia/",
       "source": "Portal Tela",
       "category": "latest",
       "tags": [
@@ -343,14 +549,14 @@
       "updatedAt": "2026-05-10T11:22:27Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/05/452688163.jpg"
+      "imageUrl": "https://seucreditodigital.com.br/wp-content/uploads/2026/05/Samsung.jpg"
     },
     {
       "id": "macro-c9b2b833494372d2485511ed",
       "title": "Inflação é destaque nos mercados do Brasil e dos EUA",
-      "summary": "Confira as previsões financeiras para todos os signos hoje, 10 de maio de 2026. Mercúrio em trígono com Júpiter e a Lua em Capricórnio definem um dia de clareza estratégica e oportunidades seletivas nos mercados.",
-      "details": "Confira as previsões financeiras para todos os signos hoje, 10 de maio de 2026. Mercúrio em trígono com Júpiter e a Lua em Capricórnio definem um dia de clareza estratégica e oportunidades seletivas nos mercados.",
-      "url": "https://www.spacemoney.com.br/horoscopo/horoscopo-financeiro-10-05-2026/",
+      "summary": "Desde 2020, alimentação, aluguel e saúde sobem mais que a inflação oficial no Brasil. Veja como isso afeta seu orçamento e o que fazer.",
+      "details": "Desde 2020, alimentação, aluguel e saúde sobem mais que a inflação oficial no Brasil. Veja como isso afeta seu orçamento e o que fazer.",
+      "url": "https://diario.dopovo.com.br/2026/05/10/gastos-essenciais-superam-inflacao-no-brasil-desde-2020/",
       "source": "Portal Tela",
       "category": "macro",
       "tags": [
@@ -362,14 +568,14 @@
       "updatedAt": "2026-05-10T11:21:45Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/05/pexels-photo-7222052-9.jpg"
+      "imageUrl": "https://diario.dopovo.com.br/i/media/2026/05/8c03f70dd7710dec.gastos-essenciais-superam-inflacao-no-brasil-desde-2020"
     },
     {
       "id": "latest-49ba194906b97ae461be170e",
       "title": "Horóscopo Financeiro de 10/05/2026 - Previsões para seu dinheiro",
-      "summary": "A semana de 11 a 15 de maio traz como destaque a inflação: no Brasil sai o Índice Nacional de Preços ao Consumidor Amplo (IPCA) e, nos Estados Unidos, os...",
-      "details": "A semana de 11 a 15 de maio traz como destaque a inflação: no Brasil sai o Índice Nacional de Preços ao Consumidor Amplo (IPCA) e, nos Estados Unidos, os...",
-      "url": "https://www.portaltela.com/noticias/economia/2026/05/10/inflacao-e-destaque-nos-mercados-do-brasil-e-dos-eua/",
+      "summary": "Atualizacao de ultima hora capturada em SpaceMoney.",
+      "details": "",
+      "url": "https://br.investing.com/news/economy-news/alta-de-juros-do-fed-e-o-catalisador-que-falta-ao-dolar-bofa-analisa-1931884",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -380,34 +586,14 @@
       "publishedAt": "2026-05-10T11:15:12Z",
       "updatedAt": "2026-05-10T11:15:12Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/05/430581522.jpg"
-    },
-    {
-      "id": "macro-b0fafa4ecb12c5744c7c20c3",
-      "title": "Calendário Econômico: Inflação no Brasil, EUA e China e encontro Trump-Xi",
-      "summary": "Economistas acreditam que Copom tenta ganhar tempo diante do choque do petróleo, mesmo com desancoragem das expectativas",
-      "details": "Economistas acreditam que Copom tenta ganhar tempo diante do choque do petróleo, mesmo com desancoragem das expectativas",
-      "url": "https://valor.globo.com/financas/intraday/post/2026/05/para-o-mercado-copom-faz-aposta-ao-cortar-selic-mesmo-com-piora-da-inflacao.ghtml",
-      "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-10T11:13:00Z",
-      "updatedAt": "2026-05-10T11:13:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/6qSKHenJbl_T-JbKEHP7rFhhXH8=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2025/K/T/wMeCSwT8A9N8BdOZp00A/422450043.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-774d24c4e5a184a914f417d8",
       "title": "Juros já consomem 8,35% do PIB e mantêm crédito seletivo no país",
       "summary": "Atualizacao de ultima hora capturada em MT Econômico.",
       "details": "",
-      "url": "https://br.investing.com/news/economic-indicators/calendario-economico-inflacao-no-brasil-eua-e-china-e-encontro-trumpxi-1931878",
+      "url": "https://matogrossoeconomico.com.br/economia/juros-ja-consomem-835-do-pib-e-mantem-credito-seletivo-no-pais/",
       "source": "MT Econômico",
       "category": "latest",
       "tags": [
@@ -419,44 +605,6 @@
       "updatedAt": "2026-05-10T11:10:13Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-7e3592201d105ec13b497ed1",
-      "title": "TJSP afasta responsabilidade de herdeiro em execução fiscal",
-      "summary": "Augusto Fauvel de Moraes*",
-      "details": "Augusto Fauvel de Moraes*",
-      "url": "https://jornalpp.com.br/noticias/economia/tjsp-afasta-responsabilidade-de-herdeiro-em-execucao-fiscal/",
-      "source": "Jornal Primeira Página",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-10T11:09:20Z",
-      "updatedAt": "2026-05-10T11:09:20Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://jornalpp.com.br/wp-content/uploads/2026/04/Design-sem-nome-92.jpg"
-    },
-    {
-      "id": "macro-074be0aaa3db49250c578ae0",
-      "title": "Para o mercado, Copom faz ‘aposta’ ao cortar Selic mesmo com piora da inflação",
-      "summary": "Os juros nominais do setor público brasileiro atingiram R$ 1 trilhão em 12 meses até março, equivalente a 8,35% do PIB segundo Banco Central",
-      "details": "Os juros nominais do setor público brasileiro atingiram R$ 1 trilhão em 12 meses até março, equivalente a 8,35% do PIB segundo Banco Central",
-      "url": "https://matogrossoeconomico.com.br/economia/juros-ja-consomem-835-do-pib-e-mantem-credito-seletivo-no-pais/",
-      "source": "Valor Econômico",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-10T11:05:34Z",
-      "updatedAt": "2026-05-10T11:05:34Z",
-      "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://matogrossoeconomico.com.br/wp-content/uploads/2026/05/JUROS-1-TOP-ONE.jpg"
     },
     {
       "id": "latest-052241df236541f9d5d83f51",
@@ -496,68 +644,30 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-f69c3151edfa93c818f87be1",
-      "title": "Agenda de mercados: inflação é destaque no Brasil e nos EUA",
-      "summary": "Descubra como alimentação, aluguel e saúde subiram mais que a inflação oficial desde 2020 no Brasil. Veja o impacto no seu orçamento.",
-      "details": "Descubra como alimentação, aluguel e saúde subiram mais que a inflação oficial desde 2020 no Brasil. Veja o impacto no seu orçamento.",
-      "url": "https://diario.dopovo.com.br/2026/05/10/gastos-essenciais-superam-inflacao-desde-2020/",
-      "source": "Valor Econômico",
-      "category": "macro",
+      "id": "companies-27248fbd92d5ab997261b913",
+      "title": "Com R$ 189 milhões e 10 empresas brasileiras, Brasil desenvolve foguete nacional de 12 metros para lançar satélites de até 30 kg em Alcântara e tentar conquistar a “chave para o espaço” sem depender de potências como EUA, Rússia, China e Índia",
+      "summary": "Entenda como o Pix pode ser crucial no combate ao mercado ilegal de apostas.",
+      "details": "Entenda como o Pix pode ser crucial no combate ao mercado ilegal de apostas.",
+      "url": "https://diariodoestadogo.com.br/pix-a-ferramenta-que-pode-combater-apostas-ilegais-no-brasil/",
+      "source": "CPG Click Petróleo e Gás",
+      "category": "companies",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
+        "empresas",
+        "resultados",
+        "m&a"
       ],
-      "publishedAt": "2026-05-10T10:50:34Z",
-      "updatedAt": "2026-05-10T10:50:34Z",
-      "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diario.dopovo.com.br/i/media/2026/05/d834bec016bcd43a.gastos-essenciais-superam-inflacao-desde-2020"
-    },
-    {
-      "id": "macro-c0bb52a958e40b7e895a7899",
-      "title": "Gastos essenciais superam inflação desde 2020",
-      "summary": "IPCA no Brasil e CPI e PPI nos EUA serão divulgados ao longo da semana",
-      "details": "IPCA no Brasil e CPI e PPI nos EUA serão divulgados ao longo da semana",
-      "url": "https://valor.globo.com/financas/noticia/2026/05/10/agenda-de-mercados-inflacao-e-destaque-no-brasil-e-nos-eua.ghtml",
-      "source": "Jornal Diário do Povo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-10T10:27:13Z",
-      "updatedAt": "2026-05-10T10:27:13Z",
+      "publishedAt": "2026-05-10T10:08:00Z",
+      "updatedAt": "2026-05-10T10:08:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/Y5p3by8tiPQthL14CHhOqAqdmSM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2025/S/5/6IGvWpQz27unxW0AQBDg/430581522.jpg"
-    },
-    {
-      "id": "macro-674d2437b84dbedf1b10a231",
-      "title": "Gastos essenciais no lar superam inflação desde 2020",
-      "summary": "Descubra como alimentação, aluguel e saúde superaram a inflação oficial desde 2020 e impactaram seu bolso. Entenda o levantamento.",
-      "details": "Descubra como alimentação, aluguel e saúde superaram a inflação oficial desde 2020 e impactaram seu bolso. Entenda o levantamento.",
-      "url": "https://diario.dopovo.com.br/2026/05/10/gastos-essenciais-no-lar-superam-inflacao-desde-2020-4/",
-      "source": "Jornal Diário do Povo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-10T10:26:51Z",
-      "updatedAt": "2026-05-10T10:26:51Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diario.dopovo.com.br/i/media/2026/05/59d6d69e65849e5f.gastos-essenciais-no-lar-superam-inflacao-desde-2020-4"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/05/pix3A-a-ferramenta-que-pode-combater-apostas-ilegais-no-brasil.jpg"
     },
     {
       "id": "latest-dc61089cdfd176eb319a7203",
       "title": "Mercado fracionado de imóveis amadurece e reduz estoques",
-      "summary": "Há 224 empreendimentos do gênero em 99 cidades, apenas 4% mais que em 2025",
-      "details": "Há 224 empreendimentos do gênero em 99 cidades, apenas 4% mais que em 2025",
-      "url": "https://www.estadao.com.br/economia/coluna-do-broad/mercado-fracionado-de-imoveis-amadurece-e-reduz-estoques/",
+      "summary": "Entrada em vigor do acordo abre acesso imediato ao mercado europeu, reduzindo ou eliminando tarifas sobre milhares de produtos e aumentando a competitividade das exportações brasileiras na Europa",
+      "details": "Entrada em vigor do acordo abre acesso imediato ao mercado europeu, reduzindo ou eliminando tarifas sobre milhares de produtos e aumentando a competitividade das exportações brasileiras na Europa",
+      "url": "https://brasil61.com/n/acordo-mercosul-ue-deve-impulsionar-exportacoes-brasileiras-em-us-1-bilhao-no-primeiro-ano-projeta-apexbrasil-apex260127",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -569,14 +679,14 @@
       "updatedAt": "2026-05-10T09:50:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/JUPHB2I4VZBQ7LRE4RKJBXJKFE.jpg?quality=80&auth=5afa5f69230b65686a3848c5667731ac575ceef962dc5a415a3e10d26be9cf8f&width=1200&height=630&focal=2181,949"
+      "imageUrl": "https://cdn.brasil61.com/r/1400x900/B61anW3enPm9ZDfR96M7tC7C.webp?q=70"
     },
     {
       "id": "latest-39938d916519852f995fc07a",
       "title": "Pix: A Ferramenta Que Pode Combater Apostas Ilegais no Brasil",
-      "summary": "Entenda como o Pix pode ser crucial no combate ao mercado ilegal de apostas.",
-      "details": "Entenda como o Pix pode ser crucial no combate ao mercado ilegal de apostas.",
-      "url": "https://diariodoestadogo.com.br/pix-a-ferramenta-que-pode-combater-apostas-ilegais-no-brasil/",
+      "summary": "Brasil desenvolve foguete nacional de 12 metros para lançar pequenos satélites em Alcântara e reduzir dependência externa.",
+      "details": "Brasil desenvolve foguete nacional de 12 metros para lançar pequenos satélites em Alcântara e reduzir dependência externa.",
+      "url": "https://clickpetroleoegas.com.br/com-r-189-milhoes-e-10-empresas-brasileiras-brasil-desenvolve-foguete-nacional-de-12-metros-para-lancar-satelites-de-ate-40-kg-em-alcantara-e-tentar-conquistar-a-chave-para-o-espaco-asaf04/",
       "source": "diário do estado",
       "category": "latest",
       "tags": [
@@ -588,33 +698,14 @@
       "updatedAt": "2026-05-10T09:46:01Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/05/pix3A-a-ferramenta-que-pode-combater-apostas-ilegais-no-brasil.jpg"
-    },
-    {
-      "id": "macro-c162e4fca50edc4893ae2c84",
-      "title": "Gastos essenciais superam inflação e apertam orçamento familiar desde 2020",
-      "summary": "Tudo sobre as ações CSMG3 - Copasa, resultados, dividendos (Dividend Yield - DY), cotação, indicadores fundamentalistas, balanços, gráficos e muito mais.",
-      "details": "Tudo sobre as ações CSMG3 - Copasa, resultados, dividendos (Dividend Yield - DY), cotação, indicadores fundamentalistas, balanços, gráficos e muito mais.",
-      "url": "https://investidor10.com.br/acoes/csmg3/",
-      "source": "Jornal Diário do Povo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-10T09:27:10Z",
-      "updatedAt": "2026-05-10T09:27:10Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://investidor10.com.br/images/logo_share.jpg"
+      "imageUrl": "https://clickpetroleoegas.com.br/wp-content/uploads/2026/05/Design-sem-nome-2026-05-10T072738.620.jpg"
     },
     {
       "id": "latest-7c4edee8d44b5c809f0cffe4",
       "title": "CSMG3 - Copasa - Resultados, Dividendos, Cotação e Indicadores",
-      "summary": "Entrada em vigor do acordo abre acesso imediato ao mercado europeu, reduzindo ou eliminando tarifas sobre milhares de produtos e aumentando a competitividade das exportações brasileiras na Europa",
-      "details": "Entrada em vigor do acordo abre acesso imediato ao mercado europeu, reduzindo ou eliminando tarifas sobre milhares de produtos e aumentando a competitividade das exportações brasileiras na Europa",
-      "url": "https://brasil61.com/n/acordo-mercosul-ue-deve-impulsionar-exportacoes-brasileiras-em-us-1-bilhao-no-primeiro-ano-projeta-apexbrasil-apex260127",
+      "summary": "Tudo sobre as ações CSMG3 - Copasa, resultados, dividendos (Dividend Yield - DY), cotação, indicadores fundamentalistas, balanços, gráficos e muito mais.",
+      "details": "Tudo sobre as ações CSMG3 - Copasa, resultados, dividendos (Dividend Yield - DY), cotação, indicadores fundamentalistas, balanços, gráficos e muito mais.",
+      "url": "https://investidor10.com.br/acoes/csmg3/",
       "source": "Investidor10",
       "category": "latest",
       "tags": [
@@ -626,14 +717,14 @@
       "updatedAt": "2026-05-10T07:57:49Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://cdn.brasil61.com/r/1400x900/B61anW3enPm9ZDfR96M7tC7C.webp?q=70"
+      "imageUrl": "https://investidor10.com.br/images/logo_share.jpg"
     },
     {
       "id": "companies-ccc566709fe01ce56d6efabf",
       "title": "Acordo Mercosul–UE deve impulsionar exportações brasileiras em US$ 1 bilhão no primeiro ano, projeta ApexBr...",
-      "summary": "Descubra o que vem depois do Pix e como será o futuro dos pagamentos digitais no Brasil.",
-      "details": "Descubra o que vem depois do Pix e como será o futuro dos pagamentos digitais no Brasil.",
-      "url": "https://seucreditodigital.com.br/o-que-vem-depois-do-pix-pagamentos/",
+      "summary": "Há 224 empreendimentos do gênero em 99 cidades, apenas 4% mais que em 2025",
+      "details": "Há 224 empreendimentos do gênero em 99 cidades, apenas 4% mais que em 2025",
+      "url": "https://www.estadao.com.br/amp/economia/coluna-do-broad/mercado-fracionado-de-imoveis-amadurece-e-reduz-estoques/",
       "source": "Brasil 61",
       "category": "companies",
       "tags": [
@@ -645,14 +736,14 @@
       "updatedAt": "2026-05-10T07:55:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://seucreditodigital.com.br/wp-content/uploads/2026/05/Pix-5.png"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/JUPHB2I4VZBQ7LRE4RKJBXJKFE.jpg?quality=80&auth=5afa5f69230b65686a3848c5667731ac575ceef962dc5a415a3e10d26be9cf8f&width=1200"
     },
     {
       "id": "latest-7690494e1fdefc429bda7d6e",
       "title": "Pix muda mercado financeiro e abre caminho para novas tecnologias",
-      "summary": "Desde 2020, alimentos, aluguel e saúde custam mais que a inflação oficial. Saiba como a alta pressiona o orçamento familiar brasileiro.",
-      "details": "Desde 2020, alimentos, aluguel e saúde custam mais que a inflação oficial. Saiba como a alta pressiona o orçamento familiar brasileiro.",
-      "url": "https://diario.dopovo.com.br/2026/05/10/gastos-essenciais-superam-inflacao-e-apertam-orcamento-familiar-desde-2020/",
+      "summary": "Atualizacao de ultima hora capturada em Seu Crédito Digital.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB0SnBzZ3lZRE1yYWdvaFJqY3UyUVpkRHJIdXhxaS12VlFwR3I3UXlaSE9paEZ1ZXhKX1g5TExWWmo4c3IxTHpOMVN3YUtKcTNnTFhOY2Z4OTF2Rjk4d244cTIxc0d1MnI1d25VTVJSUkVIZlhycEZn?oc=5",
       "source": "Seu Crédito Digital",
       "category": "latest",
       "tags": [
@@ -663,15 +754,14 @@
       "publishedAt": "2026-05-10T04:40:00Z",
       "updatedAt": "2026-05-10T04:40:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://diario.dopovo.com.br/i/media/2026/05/3e54c7023682283d.gastos-essenciais-superam-inflacao-e-apertam-orcamento-familiar-desde-2020"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-617f6e9a6ae5504e6c37a54d",
       "title": "Acordo Mercosul-União Europeia entra em vigor e amplia exportações brasileiras com redução de tarifas e acesso a 720 milhões de consumidores",
-      "summary": "Bolsa brasileira termina com ganhos, mas tem 4ª semana negativa; dólar fica abaixo de R$ 4,90 - Jornal O Sul",
-      "details": "Bolsa brasileira termina com ganhos, mas tem 4ª semana negativa; dólar fica abaixo de R$ 4,90 - Jornal O Sul",
-      "url": "https://www.osul.com.br/bolsa-brasileira-termina-com-ganhos-mas-tem-4a-semana-negativa-dolar-fica-abaixo-de-r-490/amp/",
+      "summary": "Atualizacao de empresas capturada em Jornal Grande Bahia.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQRkQyTDV3cDlWS0tVRVRuN2VfWEZTRkhDZHZRdTVGNEtYSzFmd1pVQnV0N0p5TXVBZENuNFlzSzJsT2N5RXl2UWZyUW1yd2E4Q25JZnZ1LTVxM01ZWnp3LVNad3JVSllmMHVVc013U0hGRklOek5TVzVfS3hUdUFZTVU5MHF1RlpLeDkyMjlDV3dqOGdwQ09ZWk9hcUlIZlZrVGtJQWdsTFNwajJWVkNMNjZNbTBBYWdDaWM4cW0yeUUzbFFuekhzdDgzN1FNMEkybXA4aXZFdmNWazZ5VFRfbGY3QzFyQnVpdWEtVVo0ZndUdXpLNEhuTjY5Nmg5Mk9lbER2eHd0M25HWHZqSU5Z?oc=5",
       "source": "Jornal Grande Bahia",
       "category": "companies",
       "tags": [
@@ -682,15 +772,32 @@
       "publishedAt": "2026-05-10T04:00:04Z",
       "updatedAt": "2026-05-10T04:00:04Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://www.osul.com.br/wp-content/uploads/2026/04/bolsa-ibovespa.jpg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "latest-171d9c330365114e909a4b2e",
+      "title": "Pesquisa do Fed revela aumento das preocupações com a IA nos mercados, no setor de crédito e no mercado de trabalho",
+      "summary": "Atualizacao de ultima hora capturada em Bitcoin News.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNb2ZmUUM1TGxzN3UzN1l4UTVsSl9hUnlsMlNpaldNMGlObG5QVTdhS2xYcENtMDluQXNyMEJGaWhkMDU5eHVFMmUtVlVyRXRWVnEtU3dUaFZBazZiNEtaZUREdktUVkZsNk16THhJa0RVVVcwcC1yQVBLX1loLWE4VWc4REdaaVd0X3FNWlM4UU9kNEhZSU92VlI1b0d3Nk9XNzlDcE0yRGN6MUxXdzhwME9rbXltNVpQRFlUQ3E3YTVlbEFSR3pXLUdGZDZpYXZPZ09mLURlTG5TM2c?oc=5",
+      "source": "Bitcoin News",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-10T03:52:22Z",
+      "updatedAt": "2026-05-10T03:52:22Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-66366366ed9a8f3efaa14601",
       "title": "Consumo sem freio: aplicativos e parcelamentos alimentam ciclo de endividamento",
-      "summary": "Acordo Mercosul-UE entra em vigor e amplia exportações brasileiras com redução de tarifas e acesso ao mercado europeu.",
-      "details": "Acordo Mercosul-UE entra em vigor e amplia exportações brasileiras com redução de tarifas e acesso ao mercado europeu.",
-      "url": "https://jornalgrandebahia.com.br/2026/05/acordo-mercosul-uniao-europeia-entra-em-vigor-e-amplia-exportacoes-brasileiras-com-reducao-de-tarifas-e-acesso-a-720-milhoes-de-consumidores/",
+      "summary": "Atualizacao de ultima hora capturada em Grupo Jota Sidney.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNWTJIeVk0QmtiUWJxWk1CZDJKc1daeWhLTmEzS1lZZnV3ZVRuOXM4bTVCN3YycjhMM3R6anJ3NmFUR000VFpaODFpWldnTzVSd2hEMWxPX0Nnbm5kSzNUODZuSnphTE5YZHhYU1ZLcUhoZFk0VldaYTh1M3hnTC1yQjlvck0xZ0hKWmg5OXI4aEZVZjZ3Sk9ERWpNWTM3c1hzSnBud2p2bFY4djhZcE4ycF8xUnFHcnZCNHhzU3VSQzIycUNVVkRKd1VQbGpGUlAwV0NUaUE4Y1BXSWxfRkpyVzhISDVWbmREOHZuM1N6ZWVYSk0?oc=5",
       "source": "Grupo Jota Sidney",
       "category": "latest",
       "tags": [
@@ -701,15 +808,14 @@
       "publishedAt": "2026-05-10T03:20:16Z",
       "updatedAt": "2026-05-10T03:20:16Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://i0.wp.com/jornalgrandebahia.com.br/wp-content/uploads/2026/05/Acordo-Mercosul-Uniao-Europeia-entra-em-vigor-e-amplia-exportacoes-brasileiras-com-reducao-de-tarifas-20260506.jpg?fit=1200%2C800&quality=100&ssl=1"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-a8d131f46fb6a0cb9143fd7b",
       "title": "Bolsa brasileira termina com ganhos, mas tem 4ª semana negativa; dólar fica abaixo de R$ 4,90 - Jornal O Sul",
-      "summary": "Mãos mulher telefone celular smartphone em mãos fazendo compras Freepik A crise do endividamento no Brasil levanta a questão sobre o papel das compras por impulso no comércio online, muitas vezes as...",
-      "details": "Mãos mulher telefone celular smartphone em mãos fazendo compras Freepik A crise do endividamento no Brasil levanta a questão sobre o papel das compras por impulso no comércio online, muitas vezes as...",
-      "url": "https://www.irecelider.com.br/noticias-do-mundo/i/ce851162ddb836b20a619cfb833ccec5/consumo-sem-freio-aplicativos-e-parcelamentos-alimentam-ciclo-de-endividamento",
+      "summary": "Atualizacao de ultima hora capturada em Jornal O Sul.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdnFxdk9BRDREZkZ5M3JhOTF5UGhQZ3hHRDlQMnNQMDJadTR1V0FNV1BkWXBWWXhWSGJ3VjMwcHIxR2FOVHRMWG9WdjNRQVhUTE1oSVJHVHFqYzBZWDlzenB4VjY3R2FMR01rVUc5NHdUTTQtc2t2b2RidGhMVm9sNXdUWWxKYlNXaUJ2ZGJhVE53RnB1OUpoMkN1U3FuNVFZdjlDUjZxMU5fN0dMS2hWRnE2R3I4Qnk3bmfSAboBQVVfeXFMTXZxcXZPQUQ0RGZGeTNyYTkxeVBoUGd4R0Q5UDJzUDAyWnU0dVdBTVdQZFlwVll4Vkhid1YzMHByMUdhTlR0TFhvVnYzUUFYVExNaElSR1RxamMwWVg5c3pweFY2N0dhTEdNa1VHOTR3VE00LXNrdm9kYnRoTFZvbDV3VFlsSmJTV2lCdmRiYVROd0ZwdTlKaDJDdVNxbjVRWXY5Q1I2cTFOXzdHTEtoVkZxNkdyOEJ5N25n?oc=5",
       "source": "Jornal O Sul",
       "category": "latest",
       "tags": [
@@ -720,8 +826,7 @@
       "publishedAt": "2026-05-10T00:50:37Z",
       "updatedAt": "2026-05-10T00:50:37Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://back.ww-cdn.com/resizeapi/e489934c16a139b45e33ab26105bc9144bbece7814bcd5449a2439fe873662b0/750/-1/"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-4cfcd7c2a49ce9590bb4b0d3",
@@ -778,58 +883,22 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-e5dcd0de0a784addc134e0ec",
-      "title": "Linha da casa própria com recursos da poupança movimenta R$ 42 bi",
-      "summary": "Atualizacao de ultima hora capturada em A Tribuna.",
+      "id": "funds-560b5091171bc2abef281fbc",
+      "title": "Despesas públicas caem 3,9 por cento até Abril",
+      "summary": "Atualizacao de fundos capturada em 澳門廣播電視股份有限公司.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQYUZHamF0UVVCaTVYdExGaE5Qdm5yaUlkY250SHVPVGFZNC1pY2JzT05nWlhmRVpOY2NSbVVwU29OX21QVndmb1luQklXb21USk1Yd0Z1NFJsY2lfb2RrNlJWNTlXQTdtYlNDVWZLS0FUdjUyd0Y2bnB4S1ZjQ2xuQzF5M2xjUzlhbmVpZjdkNHNRODI4b0NoVWJQUUhKMmMtMVZvOWR1ekJDb3FoNEkySjU5ZWh5Tm15UnRKMUNyX3lnNXhVam5r?oc=5",
-      "source": "A Tribuna",
-      "category": "latest",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNZEpOYlFLOFU3T2VYc00zSkd1UEZOQXRUTm5ZeE9JdE9BNzVQcHk2MF8wbndhT3IyeUxaRm4ySEZubkQtcWtMX29WMGhuVXhaY3BwRnB3NTgyZkkwenBuakIwbnJkQUZ3NE01WkMtSVlTZGtyZ214eExwcVNkckN2UGd2LU5aLVAtekFTUXQwMXpzUQ?oc=5",
+      "source": "澳門廣播電視股份有限公司",
+      "category": "funds",
       "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
+        "fundos",
+        "asset",
+        "fiis"
       ],
-      "publishedAt": "2026-05-09T23:46:00Z",
-      "updatedAt": "2026-05-09T23:46:00Z",
+      "publishedAt": "2026-05-09T23:22:19Z",
+      "updatedAt": "2026-05-09T23:22:19Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-ec67e3c073d41dafb75aed69",
-      "title": "Selic recua, mas manutenção de elevadores continua cara",
-      "summary": "Atualizacao de ultima hora capturada em Seu Crédito Digital.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ITGNhZVhoSU5jbllMcVJjRlZoM050TkRuQThGVENFSjR6QnVhbld5eTk0el82c0JqcXU5N0hsQ2FqdUp6bWlQdnJGNndGQU1kdFhObm90aS05OXhUdXF2TzQtSDN2Tnl0YnBCdGdPZk1KSUJG?oc=5",
-      "source": "Seu Crédito Digital",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-09T23:40:00Z",
-      "updatedAt": "2026-05-09T23:40:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-83577b15fc8d543d8b80701b",
-      "title": "Bolsa de Nova York recria clube exclusivo para bilionários",
-      "summary": "Atualizacao de ultima hora capturada em Jornal Diário do Povo.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcmNCOGJCUGFMaUVSWU43RFY3THBJRW1lX1JxVmR5cWxZY0g4c21zbjREV2lHS2tJNnJoTktSc3R6TUU0dnloM3kwZE1kQ19wVXBiRWczVFNTLU5EYXFUdC1yQ0pOSURnTzJ6cGVIb2dhZ0NVTDdZc25hLVRjTFRlNmZaMHZFMXFsSkxFOVhqX2lNZE1JQ2NMTTJvamNrTXBa?oc=5",
-      "source": "Jornal Diário do Povo",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-09T23:21:42Z",
-      "updatedAt": "2026-05-09T23:21:42Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "companies-75047337fbf122595158aa1f",
@@ -936,24 +1005,6 @@
       ],
       "publishedAt": "2026-05-09T15:21:01Z",
       "updatedAt": "2026-05-09T15:21:01Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-6cc6e4bc1ce5678371b09e65",
-      "title": "Despesas públicas caem 3,9 por cento até Abril",
-      "summary": "Atualizacao de fundos capturada em 澳門廣播電視股份有限公司.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE54WnVmNTI2eE0yNGlkYnZBZTRWOGdXdnJ5QjdKNUxOMXMtME4ybXdkTzBDUUNWTXc5Q2d2aEItcllnWkRZbWdaZ25OZEZkLTdwbzhuY2tKYVU?oc=5",
-      "source": "澳門廣播電視股份有限公司",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-05-09T14:53:40Z",
-      "updatedAt": "2026-05-09T14:53:40Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
@@ -1124,7 +1175,7 @@
       "title": "A JBS de Joesley Batista é alvo de megainvestigação do governo Trump: 'Devemos nos preocupar com a influência de estrangeiros'",
       "summary": "Atualizacao de empresas capturada em G1.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOYWVzUHd0aEdQaXpnRXFpTnFoY1R4VkhZR2tiZ1BzNzhlOHdBNjlLUkFISXFnT2lCQ25YLTk4RjB0R0pxMzBpdUJjOWtfRzVSbjRYU1FDT1JfQVY5Q0Q4Mnp0ZmczdGViZGI5U1JpT2toaEZDdEgyMWxReEl0Q0kwVmhvbkUzWHE5VDBSSDNxOWxrWjR6aDRKTXc4c0xkaS04MWZQTHNRRVo1THhwWXN2ckRSZHFkdkZ2YjFLbXhvYmNpekJ2TmRqQk1zT0otaXM4YVNWOWlEaEZkeHVzVFQ3V0RlQnUxS2xWak1wTk1zV09DbGFJRXZZR1dJUHVRdWJzMlNyVnRyUmR4NC1VUnFCTUNNbmN4R2FLbmJJ0gGqAkFVX3lxTE1HMnNoZjdmS29FRVhuNDNGWXEtWmZNRFRNdTVpZ1JROG1mZzh1b0NMa2VENHZFWXpJSTlYd3VBVWRNWGVpTTktQWZlVi0tb29LNjNQbHR1TnFNOGtrSHYzaDRTVWdlMVNjeDNTdlNReWs3ZFFaR1VQLVpuclY5RTVoSU56bWRidGZGSlk1UWVIWE9NU0hXbUdSMXZUclMtZzgyMTdvR20ta0F5Q0J4LTA1VlBkWGNwS2N4MnBhTU9WM3VvYjRrNUViN3d0SkpNWFlPY25BX25MTGh5YlBMSE9qUFVSTklxSlV6SDBSazFnaEM0M3JmZGxUaWRpb0lkaDNpalVmN0FORDFidGlMZDNfUzNCVE9qU1Q5OUdQQmxtVFN0WGx2QnNiTEE?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNRzJzaGY3ZktvRUVYbjQzRllxLVpmTURUTXU1aWdSUThtZmc4dW9DTGtlRDR2RVl6SUk5WHd1QVVkTVhlaU05LUFmZVYtLW9vSzYzUGx0dU5xTThra0h2M2g0U1VnZTFTY3gzU3ZTUXlrN2RRWkdVUC1abnJWOUU1aElOem1kYnRmRkpZNVFlSFhPTVNIV21HUjF2VHJTLWc4MjE3b0dtLWtBeUNCeC0wNVZQZFhjcEtjeDJwYU1PVjN1b2I0azVFYjd3dEpKTVhZT2NuQV9uTExoeWJQTEhPalBVUk5JcUpVekgwUmsxZ2hDNDNyZmRsVGlkaW9JZGgzaWpVZjdBTkQxYnRpTGQzX1MzQlRPalNUOTlHUEJsbVRTdFhsdkJzYkxB0gGqAkFVX3lxTE1HMnNoZjdmS29FRVhuNDNGWXEtWmZNRFRNdTVpZ1JROG1mZzh1b0NMa2VENHZFWXpJSTlYd3VBVWRNWGVpTTktQWZlVi0tb29LNjNQbHR1TnFNOGtrSHYzaDRTVWdlMVNjeDNTdlNReWs3ZFFaR1VQLVpuclY5RTVoSU56bWRidGZGSlk1UWVIWE9NU0hXbUdSMXZUclMtZzgyMTdvR20ta0F5Q0J4LTA1VlBkWGNwS2N4MnBhTU9WM3VvYjRrNUViN3d0SkpNWFlPY25BX25MTGh5YlBMSE9qUFVSTklxSlV6SDBSazFnaEM0M3JmZGxUaWRpb0lkaDNpalVmN0FORDFidGlMZDNfUzNCVE9qU1Q5OUdQQmxtVFN0WGx2QnNiTEE?oc=5",
       "source": "G1",
       "category": "companies",
       "tags": [
@@ -1174,24 +1225,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "companies-ec2633ced81b310fffb5f381",
-      "title": "Reforma tributária expõe empresas despreparadas para decisões que afetam caixa e margem",
-      "summary": "Atualizacao de empresas capturada em Mirian Gasparin.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTVYwZU9ld2NWMEV0OTR6TWVobHhTV2c0LVl2OHRqZ2FENndLcDllRFozeXRhRk1rV2cwMjh1YXF0SWU0b0FMSFdQVmZMbE5GdkI2UFcycUdYelZlcnBPNzlocjdJbEdnd2lIUXIzX3lMbE4yX1RwUlhUWXJXbDVWMTlOU256cHgzdEd1RTR1Zm9WSUdRZ1M0SHN3czlvVV9WZWpFY1Jxb2VKY05nWnl2ZG0waWdrZ3ZIbG4xZ0I2TXQ0b1J2?oc=5",
-      "source": "Mirian Gasparin",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-05-09T00:14:45Z",
-      "updatedAt": "2026-05-09T00:14:45Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
       "id": "funds-8714c0a254d3196316427998",
       "title": "Paredes aprova 2.ª fase das obras do Campo do Futebol Clube de Cête por 655 mil euros",
       "summary": "Atualizacao de fundos capturada em averdade.com.",
@@ -1228,40 +1261,22 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "companies-b324f45eee5bb8b9caafc723",
-      "title": "Macke completa 17 anos e avança com nova onda de funding",
-      "summary": "Atualizacao de empresas capturada em Valor Econômico.",
+      "id": "funds-e306f4f4aca0361190d6cd92",
+      "title": "Gestoras de FIDCs ampliam espaço no mercado de crédito e avançam sobre domínio dos bancos",
+      "summary": "Atualizacao de fundos capturada em BM&C News.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNamdZdUhSZ3ZOTEhRSmRybElJTHNfdkZpR0JsaWFKRDh1THdiVVZPaUItZ2dXM1VnUWNoUkJyWjBrMWJDQXVmYUVuMEN6UUF1dlVHa2h5NXJJTkFTeFlRcjNIYlBucGRjX0NKRXNScm94MXg4UFo2LVhTRGNoMnkyY0lTSzRFaWF0eDVVal9KMW8zVS1ia1FMZVFzYzV2eE05enFfdHl4a2F5blNtbE52cHhLYUs1dDZVSW5qXzJJYk5uaVFhWUJxbnB5OEpvdEpz0gHQAUFVX3lxTE1qZ1l1SFJndk5MSFFKZHJsSUlMc192RmlHQmxpYUpEOHVMd2JVVk9pQi1nZ1czVWdRY2hSQnJaMGsxYkNBdWZhRW4wQ3pRQXV2VUdraHk1cklOQVN4WVFyM0hiUG5wZGNfQ0pFc1Jyb3gxeDhQWjYtWFNEY2gyeTJjSVNLNEVpYXR4NVVqX0oxbzNVLWJrUUxlUXNjNXZ4TTl6cV90eXhrYXluU21sTnZweEthSzV0NlVJbmpfMkliTm5pUWFZQnFucHk4Sm90SnM?oc=5",
-      "source": "Valor Econômico",
-      "category": "companies",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObXF1OVNPYTZQUjVyN3FfQkRUQmQwejRxRDVDOXJMdTNvT0E0MlBsTmJubm9fMW9iQUpnVmxJZUlUbWY3VzhjMWFUYXc5X3FZRjNGV3laUGdmeVk4MVFJMkwyaHZobkJybWdWTXhLMXU1TGxaVzRFWElYX0VYTF9RNG9wVEU2LXRnU1dJaWtSS29HU2RtVUF2NWZESVZRQmdjQmJGSk9fWnl3Z19EeWdBRV9DdmlpV3gxMXp5LVVhSQ?oc=5",
+      "source": "BM&C News",
+      "category": "funds",
       "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
+        "fundos",
+        "asset",
+        "fiis"
       ],
-      "publishedAt": "2026-05-08T22:46:07Z",
-      "updatedAt": "2026-05-08T22:46:07Z",
-      "premium": true,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-e3f8ac41193f077034ad7690",
-      "title": "Unicórnios brasileiros crescem, mas falta capital trava nova geração bilionária",
-      "summary": "Atualizacao de empresas capturada em Economic News Brasil.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcXNMVVlyVTc4VTBxbTBlMTY0SkNNYmRDd1FRZTdEbWU2X3JNRkk3M0hZWmtNRThMLXU4QTNLeVN1TWZGZkRjZEd3ZlEzNTU5X3JZTkN5YzgxTHpOUkFuUklucWhMYzF5SGFadDV6YmdDY3d0WkN6VG0tS1lTeXRWQ2NoTnBpQzF6Sm0wbWJMQ2htWDVaWHZZ?oc=5",
-      "source": "Economic News Brasil",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-05-08T22:00:00Z",
-      "updatedAt": "2026-05-08T22:00:00Z",
+      "publishedAt": "2026-05-08T22:40:46Z",
+      "updatedAt": "2026-05-08T22:40:46Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "companies-67de3a8ee3c5453e9bb5f48f",
@@ -1318,6 +1333,24 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
+      "id": "companies-36f26fb992bc3044ecaea39d",
+      "title": "Macke completa 17 anos e avança com nova onda de funding",
+      "summary": "Atualizacao de empresas capturada em Portal Uai.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOOGRRSjJWOG5maGg2RHFvekcyM3FQU2ZTOWxEc2pDVkIwdGZadzZXS0FVS1g0Nk9SLVotWXo0N1BZSDYyZklLT1c5V0U1eXkyTmIwWFpob3lKX2VobDNMN3dvQ1QtVmVST2FScDRfRHphMVBmWjcwSGc1cHZybmZlNklVWXNnTUtQOWFpeHFzZmlBQXlqak1IUEtZc3lHcVNuaUlqQlJHejZVcjRVLWpsa1pmVkxCdXh0WmtWbkdhZU9PVmNISnNJUFVPbzBvaUhwb0ZYU2N5YmppYXNfZjQxM3JVbEF2M1llX0NxOVl6SmXSAfABQVVfeXFMUHpkcjQ4dktvVGVYczk2NWJRUE8weDN4akVnWE5uUUpmS05jNTBwRDBCRWk4U29yZzF2QURKZnpCYWhOczNQcGpSTUhYakJHZzFZTVB4M2ZMTUxrczdMS0ZDa3l6azlBWWxmamNUYXdXYWVEVV9NOFFPdUJmdG5fVDc5SmVLS2ZBRWZ0eWI5bUZPU3d0OUlQaGhQSS10QV91WFVBclQ1RDVsMVl3STlwSjlYVlpoRlJzeGhYVDNKWDhWZm5sQkdpa1ZzRGJFOEVGM0dqOGRiMXpxUlNTWkZ4dmNDa2JhaFdxallxVkt0dEJN?oc=5",
+      "source": "Portal Uai",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-05-08T20:42:00Z",
+      "updatedAt": "2026-05-08T20:42:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
       "id": "companies-227a26f100aa37673baa3700",
       "title": "Società Italiana fortalece ponte de negócios com Itália; Entenda",
       "summary": "Atualizacao de empresas capturada em sampi.net.br.",
@@ -1350,24 +1383,6 @@
       ],
       "publishedAt": "2026-05-08T20:30:40Z",
       "updatedAt": "2026-05-08T20:30:40Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-a20806172fc51c3c07423b06",
-      "title": "Fundos afiliados à JW Asset Management vendem US$ 4,5 mi em ações da Establishment Labs",
-      "summary": "Atualizacao de fundos capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNSzFqODlnLXpOWGRISGRBRkxVUlZnRkZ5R1UyZkVVSkxLc256V0E4LWpxaVFCOUxFVVFITVlaSk1DYlNNUzgzN09xNGZaMzI5R2MyNXRzQ1JWLVhPRS0yRkoyMlFNQ0hzU3g1MXZqc0FhcXNyNGRMUm5FblJwMl9YWmJUVTRHUGVIYUtOVC14eG95V3YxbVk0c2JNcWhpXzhWN3RKT0wzU2I4bkVhd1ZRSkszLTFRU1ZPSW5qckYzN1l5Nkx1T3FuTDB2SVpiLVdZRTBsamJQVDFHZXEyandOalREUQ?oc=5",
-      "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-05-08T20:08:00Z",
-      "updatedAt": "2026-05-08T20:08:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
