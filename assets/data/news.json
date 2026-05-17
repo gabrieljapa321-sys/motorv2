@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-16T23:14:36Z",
-  "generatedAt": "2026-05-16T23:14:36Z",
+  "updatedAt": "2026-05-17T00:13:39Z",
+  "generatedAt": "2026-05-17T00:13:39Z",
   "categories": [
     {
       "id": "all",
@@ -53,8 +53,8 @@
       "label": "BPMoney"
     },
     {
-      "id": "campo-grande-news",
-      "label": "Campo Grande News"
+      "id": "broadcast",
+      "label": "Broadcast"
     },
     {
       "id": "capitalnews-com-br",
@@ -71,10 +71,6 @@
     {
       "id": "coindesk",
       "label": "CoinDesk"
-    },
-    {
-      "id": "colatina-em-a-o",
-      "label": "Colatina em Ação"
     },
     {
       "id": "coluna-olavo-dutra",
@@ -103,10 +99,6 @@
     {
       "id": "estad-o-e-investidor",
       "label": "Estadão E-Investidor"
-    },
-    {
-      "id": "expresso-360",
-      "label": "Expresso 360"
     },
     {
       "id": "fiis",
@@ -145,16 +137,16 @@
       "label": "jornalcruzeiro.com.br"
     },
     {
-      "id": "jurinews",
-      "label": "Jurinews"
-    },
-    {
       "id": "livecoins",
       "label": "Livecoins"
     },
     {
       "id": "metr-poles",
       "label": "Metrópoles"
+    },
+    {
+      "id": "mix-vale",
+      "label": "Mix Vale"
     },
     {
       "id": "money-report",
@@ -193,10 +185,6 @@
       "label": "Portal Tela"
     },
     {
-      "id": "radiosobradinho-com-br",
-      "label": "radiosobradinho.com.br"
-    },
-    {
       "id": "ro-acontece",
       "label": "RO Acontece"
     },
@@ -207,6 +195,14 @@
     {
       "id": "suno-com-br",
       "label": "suno.com.br"
+    },
+    {
+      "id": "s-o-bento-em-foco",
+      "label": "São Bento em Foco"
+    },
+    {
+      "id": "teres-polis-jornal",
+      "label": "Teresópolis Jornal"
     },
     {
       "id": "times-brasil-cnbc",
@@ -229,21 +225,55 @@
       "label": "turbo.pt"
     },
     {
-      "id": "valor-econ-mico",
-      "label": "Valor Econômico"
-    },
-    {
       "id": "wscom",
       "label": "WSCOM"
     }
   ],
   "items": [
     {
-      "id": "latest-8700fe4db736a40c5f708f90",
-      "title": "Após o Copom, mercado vê ciclo de queda acabando antes e com juro mais alto",
+      "id": "macro-36b97909c18ac6dde234ca59",
+      "title": "Realidade enfraquece o discurso",
+      "summary": "Fique ligado com as últimas notícias de Sorocaba e região. Siga informações de esporte, a cobertura completa do São Bento, trânsito, previsão do tempo, eventos culturais e especiais de toda a região.",
+      "details": "Fique ligado com as últimas notícias de Sorocaba e região. Siga informações de esporte, a cobertura completa do São Bento, trânsito, previsão do tempo, eventos culturais e especiais de toda a região.",
+      "url": "https://www.jornalcruzeiro.com.br/opiniao/editorial/2026/05/760526-realidade-enfraquece-o-discurso.html",
+      "source": "jornalcruzeiro.com.br",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-16T23:54:00Z",
+      "updatedAt": "2026-05-16T23:54:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.jornalcruzeiro.com.br/img/logo-800x600.png"
+    },
+    {
+      "id": "latest-91607c96064ac4c29139526c",
+      "title": "Dólar sobe a R$ 5,06 e pressiona Ibovespa em sessão marcada por volatilidade",
       "summary": "Parte dos especialistas já abandonam expectativa de juros em 13% no fim do ciclo",
       "details": "Parte dos especialistas já abandonam expectativa de juros em 13% no fim do ciclo",
       "url": "https://www.cnnbrasil.com.br/economia/mercado/apos-o-copom-mercado-ve-ciclo-de-queda-acabando-antes-e-com-juro-mais-alto/",
+      "source": "Mix Vale",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-16T23:18:50Z",
+      "updatedAt": "2026-05-16T23:18:50Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXNPEL8S0GQ-BASEIMAGE.jpg?w=800&h=533&crop=1"
+    },
+    {
+      "id": "latest-8700fe4db736a40c5f708f90",
+      "title": "Após o Copom, mercado vê ciclo de queda acabando antes e com juro mais alto",
+      "summary": "Fórum institucional acontece em 11 de agosto de 2026, no Museu do Amanhã, e reúne instituições financeiras, reguladores, provedores de infraestrutura e lideranças estratégicas do mercado.",
+      "details": "Fórum institucional acontece em 11 de agosto de 2026, no Museu do Amanhã, e reúne instituições financeiras, reguladores, provedores de infraestrutura e lideranças estratégicas do mercado.",
+      "url": "https://livecoins.com.br/blockchain-rio-lanca-financial-infrastructure-forum-latam-para-debater-a-nova-infraestrutura-financeira-digital-da-america-latina/",
       "source": "CNN Brasil",
       "category": "latest",
       "tags": [
@@ -255,14 +285,14 @@
       "updatedAt": "2026-05-16T22:40:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXNPEL8S0GQ-BASEIMAGE.jpg?w=800&h=533&crop=1"
+      "imageUrl": "https://livecoins.com.br/wp-content/uploads/2026/05/Blockchain-Rio-em-Sao-Paulo.jpg"
     },
     {
       "id": "latest-40bd099613d497ee8ce0af87",
       "title": "Blockchain Rio lança Financial Infrastructure Forum LATAM para debater a nova infraestrutura financeira digital da América Latina",
-      "summary": "Prefeito de Diadema faz balanço e cita avanços também nas áreas de segurança e infraestrutura",
-      "details": "Prefeito de Diadema faz balanço e cita avanços também nas áreas de segurança e infraestrutura",
-      "url": "https://www.dgabc.com.br/Noticia/4319567/ajuste-fiscal-creches-sem-fila-e-investimentos-na-saude-sao-celebrados-por-taka-apos-500-dias",
+      "summary": "Atualizacao de ultima hora capturada em Livecoins.",
+      "details": "",
+      "url": "https://www.mixvale.com.br/2026/05/16/dolar-sobe-a-r-506-e-pressiona-ibovespa-em-sessao-marcada-por-volatilidade/",
       "source": "Livecoins",
       "category": "latest",
       "tags": [
@@ -273,15 +303,14 @@
       "publishedAt": "2026-05-16T22:35:00Z",
       "updatedAt": "2026-05-16T22:35:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.dgabc.com.br/img/2026516193614.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-94fee67b72f7a4131da97b5b",
       "title": "Ajuste fiscal, creches sem fila e investimentos na saúde são celebrados por Taka após 500 dias",
-      "summary": "Fórum institucional acontece em 11 de agosto de 2026, no Museu do Amanhã, e reúne instituições financeiras, reguladores, provedores de infraestrutura e lideranças estratégicas do mercado.",
-      "details": "Fórum institucional acontece em 11 de agosto de 2026, no Museu do Amanhã, e reúne instituições financeiras, reguladores, provedores de infraestrutura e lideranças estratégicas do mercado.",
-      "url": "https://livecoins.com.br/blockchain-rio-lanca-financial-infrastructure-forum-latam-para-debater-a-nova-infraestrutura-financeira-digital-da-america-latina/",
+      "summary": "Instrumento é aposta do governo para atrair pequenos investidores Aposta do governo para atrair pequenos investidores e estimular a poupança, o Tesouro Reserva, lançado nesta segunda-feira (11), tem como alvo quem busca guardar dinheiro com segurança, liquidez e simplicidade. A a",
+      "details": "Instrumento é aposta do governo para atrair pequenos investidores Aposta do governo para atrair pequenos investidores e estimular a poupança, o Tesouro Reserva, lançado nesta segunda-feira (11), tem como alvo quem busca guardar dinheiro com segurança, liquidez e simplicidade. A aplicação começa com valor mínimo de R$ 1",
+      "url": "https://teresopolisjornal.com.br/entenda-como-funciona-investir-no-tesouro-reserva/",
       "source": "Diário do Grande ABC",
       "category": "macro",
       "tags": [
@@ -293,32 +322,14 @@
       "updatedAt": "2026-05-16T22:26:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://livecoins.com.br/wp-content/uploads/2026/05/Blockchain-Rio-em-Sao-Paulo.jpg"
+      "imageUrl": "https://teresopolisjornal.com.br/wp-content/uploads/2026/05/image-5.png"
     },
     {
       "id": "macro-94cd2206ce29afefc37552b8",
       "title": "São Paulo prosecutors probe Corinthians fiscal council over alleged ideological falsehood",
-      "summary": "Atualizacao de macro capturada em OneFootball.",
-      "details": "",
-      "url": "https://www.capitalnews.com.br/internacional/acordo-mercosulue-deve-impulsionar-exportacoes-brasileiras-em-us-1-bilhao-no-primeiro-ano-projeta-apexbrasil/440629",
-      "source": "OneFootball",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-16T22:13:31Z",
-      "updatedAt": "2026-05-16T22:13:31Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-19cd83dbff4a07429f442ee3",
-      "title": "Fiscales SP indagan junta fiscal de Corinthians por falsedad ideológica",
-      "summary": "A secretária da Mulher de Caruaru, Luana Marabuco, tomou posse de forma online, na última quinta-feira (14), como conselheira fiscal do Fórum Nacional de Gestoras de Políticas para as Mulheres da Frente Nacional de Prefeitas e Prefeitos (FNP), para a gestão 2026/2027. Atualmente ",
-      "details": "A secretária da Mulher de Caruaru, Luana Marabuco, tomou posse de forma online, na última quinta-feira (14), como conselheira fiscal do Fórum Nacional de Gestoras de Políticas para as Mulheres da Frente Nacional de Prefeitas e Prefeitos (FNP), para a gestão 2026/2027. Atualmente em licença-maternidade, Luana foi indica",
-      "url": "https://acessacaruaru.com/2026/secretaria-da-mulher-de-caruaru-e-eleita-conselheira-fiscal-do-forum-nacional-de-gestoras-da-fnp/",
+      "summary": "Prefeito de Diadema faz balanço e cita avanços também nas áreas de segurança e infraestrutura",
+      "details": "Prefeito de Diadema faz balanço e cita avanços também nas áreas de segurança e infraestrutura",
+      "url": "https://www.dgabc.com.br/Noticia/4319567/ajuste-fiscal-creches-sem-fila-e-investimentos-na-saude-sao-celebrados-por-taka-apos-500-dias",
       "source": "OneFootball",
       "category": "macro",
       "tags": [
@@ -330,14 +341,90 @@
       "updatedAt": "2026-05-16T22:13:31Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://acessacaruaru.com/wp-content/uploads/2026/05/IMG-20260516-WA0590.jpg"
+      "imageUrl": "https://www.dgabc.com.br/img/2026516193614.jpg"
+    },
+    {
+      "id": "macro-19cd83dbff4a07429f442ee3",
+      "title": "Fiscales SP indagan junta fiscal de Corinthians por falsedad ideológica",
+      "summary": "Meta é de 3%, com intervalo de tolerância de 1,5 ponto percentual A previsão do mercado financeiro para o Índice Nacional de Preços ao Consumidor Amplo (IPCA), referência oficial da inflação no país, passou de 4,89% para 4,91% este ano. A estimativa está no Boletim Focus desta se",
+      "details": "Meta é de 3%, com intervalo de tolerância de 1,5 ponto percentual A previsão do mercado financeiro para o Índice Nacional de Preços ao Consumidor Amplo (IPCA), referência oficial da inflação no país, passou de 4,89% para 4,91% este ano. A estimativa está no Boletim Focus desta segunda-feira (11), pesquisa divulgada sem",
+      "url": "https://teresopolisjornal.com.br/mercado-eleva-previsao-da-inflacao-para-491-este-ano/",
+      "source": "OneFootball",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-16T22:13:31Z",
+      "updatedAt": "2026-05-16T22:13:31Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://teresopolisjornal.com.br/wp-content/uploads/2026/05/image-4.png"
+    },
+    {
+      "id": "macro-20cff1808f10fbc354f57d37",
+      "title": "Entenda como funciona investir no Tesouro Reserva",
+      "summary": "Real brasileiro lidera valorização frente ao dólar em 2026 e impacta inflação, viagens e investimentos.",
+      "details": "Real brasileiro lidera valorização frente ao dólar em 2026 e impacta inflação, viagens e investimentos.",
+      "url": "https://seucreditodigital.com.br/real-lidera-valorizacao-frente-dolar/",
+      "source": "Teresópolis Jornal",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-16T22:02:33Z",
+      "updatedAt": "2026-05-16T22:02:33Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://seucreditodigital.com.br/wp-content/uploads/2026/05/real-dolar.jpg"
+    },
+    {
+      "id": "macro-eaa83c443ae0c5d5884a788e",
+      "title": "Mercado eleva previsão da inflação para 4,91% este ano",
+      "summary": "Leia esta notícia no OneFootball.",
+      "details": "Leia esta notícia no OneFootball.",
+      "url": "https://onefootball.com/pt-br/noticias/sao-paulo-prosecutors-probe-corinthians-fiscal-council-over-alleged-ideological-falsehood-42877775",
+      "source": "Teresópolis Jornal",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-16T22:02:32Z",
+      "updatedAt": "2026-05-16T22:02:32Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://photobooth-api.onefootball.com/api/screenshot/%2Fv2%2Fphotobooth%2Fcms%2Fpt-br%2F42877775%3Fdate=2026-05-17"
+    },
+    {
+      "id": "latest-560435a56789279f46403aa4",
+      "title": "Levantamento coloca real na liderança entre moedas frente ao dólar em 2026",
+      "summary": "Leia esta notícia no OneFootball.",
+      "details": "Leia esta notícia no OneFootball.",
+      "url": "https://onefootball.com/pt-br/noticias/fiscales-sp-indagan-junta-fiscal-de-corinthians-por-falsedad-ideologica-42877776",
+      "source": "Seu Crédito Digital",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-16T21:40:00Z",
+      "updatedAt": "2026-05-16T21:40:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://photobooth-api.onefootball.com/api/screenshot/%2Fv2%2Fphotobooth%2Fcms%2Fpt-br%2F42877776%3Fdate=2026-05-17"
     },
     {
       "id": "macro-e6e4067507a56d34085d9921",
       "title": "Secretária da Mulher de Caruaru é eleita conselheira fiscal do Fórum Nacional de Gestoras da FNP",
-      "summary": "Leia esta notícia no OneFootball.",
-      "details": "Leia esta notícia no OneFootball.",
-      "url": "https://onefootball.com/pt-br/noticias/fiscales-sp-indagan-junta-fiscal-de-corinthians-por-falsedad-ideologica-42877776",
+      "summary": "A secretária da Mulher de Caruaru, Luana Marabuco, tomou posse de forma online, na última quinta-feira (14), como conselheira fiscal do Fórum Nacional de Gestoras de Políticas para as Mulheres da Frente Nacional de Prefeitas e Prefeitos (FNP), para a gestão 2026/2027. Atualmente ",
+      "details": "A secretária da Mulher de Caruaru, Luana Marabuco, tomou posse de forma online, na última quinta-feira (14), como conselheira fiscal do Fórum Nacional de Gestoras de Políticas para as Mulheres da Frente Nacional de Prefeitas e Prefeitos (FNP), para a gestão 2026/2027. Atualmente em licença-maternidade, Luana foi indica",
+      "url": "https://acessacaruaru.com/2026/secretaria-da-mulher-de-caruaru-e-eleita-conselheira-fiscal-do-forum-nacional-de-gestoras-da-fnp/",
       "source": "Acessa Caruaru",
       "category": "macro",
       "tags": [
@@ -349,14 +436,14 @@
       "updatedAt": "2026-05-16T21:20:04Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://photobooth-api.onefootball.com/api/screenshot/%2Fv2%2Fphotobooth%2Fcms%2Fpt-br%2F42877776%3Fdate=2026-05-16"
+      "imageUrl": "https://acessacaruaru.com/wp-content/uploads/2026/05/IMG-20260516-WA0590.jpg"
     },
     {
       "id": "companies-7c93d71561de460a5d797d34",
       "title": "Acordo Mercosul–UE deve impulsionar exportações brasileiras em US$ 1 bilhão no primeiro ano, projeta ApexBrasil",
-      "summary": "Leia esta notícia no OneFootball.",
-      "details": "Leia esta notícia no OneFootball.",
-      "url": "https://onefootball.com/pt-br/noticias/sao-paulo-prosecutors-probe-corinthians-fiscal-council-over-alleged-ideological-falsehood-42877775",
+      "summary": "Atualizacao de empresas capturada em capitalnews.com.br.",
+      "details": "",
+      "url": "https://www.capitalnews.com.br/internacional/acordo-mercosulue-deve-impulsionar-exportacoes-brasileiras-em-us-1-bilhao-no-primeiro-ano-projeta-apexbrasil/440629",
       "source": "capitalnews.com.br",
       "category": "companies",
       "tags": [
@@ -367,8 +454,7 @@
       "publishedAt": "2026-05-16T21:20:00Z",
       "updatedAt": "2026-05-16T21:20:00Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://photobooth-api.onefootball.com/api/screenshot/%2Fv2%2Fphotobooth%2Fcms%2Fpt-br%2F42877775%3Fdate=2026-05-16"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "latest-1a0e0abdb4a2d324b1da68a4",
@@ -394,7 +480,7 @@
       "title": "Campinas supera capital paulista e registra valorização imobiliária acima da inflação",
       "summary": "Atualizacao de macro capturada em ACidade ON.",
       "details": "",
-      "url": "https://www.abcdacomunicacao.com.br/wana-reduz-em-70-o-tempo-de-fechamento-fiscal-com-uso-de-solucoes-da-totvs/",
+      "url": "https://www.metropoles.com/negocios/eua-powell-seguira-interino-no-fed-ate-a-posse-de-indicado-por-trump",
       "source": "ACidade ON",
       "category": "macro",
       "tags": [
@@ -410,9 +496,9 @@
     {
       "id": "macro-d07225ab7a182534ba69664e",
       "title": "WANA reduz em 70% o tempo de fechamento fiscal com uso de soluções da TOTVS",
-      "summary": "Atualizacao de macro capturada em ABC da Comunicação.",
-      "details": "",
-      "url": "https://www.acidadeon.com/campinas/economia/campinas-registra-valorizacao-imobiliaria-acima-da-inflacao-e-supera-capital-paulista/",
+      "summary": "A inteligência artificial começou a transformar de forma acelerada a rotina das empresas brasileiras. Ferramentas automatizadas passaram a integrar setores como atendimento, finanças, logística, ma…",
+      "details": "A inteligência artificial começou a transformar de forma acelerada a rotina das empresas brasileiras. Ferramentas automatizadas passaram a integrar setores como atendimento, finanças, logística, ma…",
+      "url": "https://cartadenoticias.com.br/2026/economia/inteligencia-artificial-muda-rotina-de-empresas-brasileiras/",
       "source": "ABC da Comunicação",
       "category": "macro",
       "tags": [
@@ -423,7 +509,8 @@
       "publishedAt": "2026-05-16T20:53:56Z",
       "updatedAt": "2026-05-16T20:53:56Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://i0.wp.com/cartadenoticias.com.br/wp-content/uploads/2026/05/IA-nas-empresas.jpg?fit=959%2C537&ssl=1"
     },
     {
       "id": "latest-b65dfe969fb1f75d7aee103b",
@@ -447,9 +534,9 @@
     {
       "id": "companies-f0f085b66d2f64eeca6e156d",
       "title": "Inteligência artificial muda rotina de empresas brasileiras",
-      "summary": "Os ministros também rejeitaram um pedido de modulação para que a Selic só fosse aplicada depois da publicação da ata do julgamento",
-      "details": "Os ministros também rejeitaram um pedido de modulação para que a Selic só fosse aplicada depois da publicação da ata do julgamento",
-      "url": "https://www.conjur.com.br/2026-mai-16/tese-sobre-selic-em-casos-da-fazenda-publica-so-vale-ate-2025-diz-stf/",
+      "summary": "A marca que dá nome ao Grupo Geely acaba de entrar no mercado português com dois SUV: o elétrico E5 e o híbrido plug-in Starray EM-I. Fique a conhecer os seus preços.",
+      "details": "A marca que dá nome ao Grupo Geely acaba de entrar no mercado português com dois SUV: o elétrico E5 e o híbrido plug-in Starray EM-I. Fique a conhecer os seus preços.",
+      "url": "https://www.turbo.pt/geely-chega-a-portugal-com-dois-suv-eletrificados/",
       "source": "Carta de Notícias",
       "category": "companies",
       "tags": [
@@ -461,14 +548,14 @@
       "updatedAt": "2026-05-16T20:03:07Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://www.conjur.com.br/wp-content/uploads/2026/04/55114939935_0c13faf912_k.jpg"
+      "imageUrl": "https://asset.skoiy.com/tbowjqdgqpxirbte/sx6m7bgxgglg.jpg"
     },
     {
       "id": "macro-965fba6c0bda4c026e00ab2c",
       "title": "Tese sobre Selic em casos da Fazenda Pública só vale até 2025, diz STF",
       "summary": "Atualizacao de macro capturada em Consultor Jurídico.",
       "details": "",
-      "url": "https://www.metropoles.com/negocios/eua-powell-seguira-interino-no-fed-ate-a-posse-de-indicado-por-trump",
+      "url": "https://www.abcdacomunicacao.com.br/wana-reduz-em-70-o-tempo-de-fechamento-fiscal-com-uso-de-solucoes-da-totvs/",
       "source": "Consultor Jurídico",
       "category": "macro",
       "tags": [
@@ -484,9 +571,9 @@
     {
       "id": "funds-165493345fe767b478fabd68",
       "title": "Geely estreia gama eletrificada em Portugal com autonomia até 1055 km",
-      "summary": "A inteligência artificial começou a transformar de forma acelerada a rotina das empresas brasileiras. Ferramentas automatizadas passaram a integrar setores como atendimento, finanças, logística, ma…",
-      "details": "A inteligência artificial começou a transformar de forma acelerada a rotina das empresas brasileiras. Ferramentas automatizadas passaram a integrar setores como atendimento, finanças, logística, ma…",
-      "url": "https://cartadenoticias.com.br/2026/economia/inteligencia-artificial-muda-rotina-de-empresas-brasileiras/",
+      "summary": "Os ministros também rejeitaram um pedido de modulação para que a Selic só fosse aplicada depois da publicação da ata do julgamento",
+      "details": "Os ministros também rejeitaram um pedido de modulação para que a Selic só fosse aplicada depois da publicação da ata do julgamento",
+      "url": "https://www.conjur.com.br/2026-mai-16/tese-sobre-selic-em-casos-da-fazenda-publica-so-vale-ate-2025-diz-stf/",
       "source": "turbo.pt",
       "category": "funds",
       "tags": [
@@ -498,14 +585,14 @@
       "updatedAt": "2026-05-16T18:48:29Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://i0.wp.com/cartadenoticias.com.br/wp-content/uploads/2026/05/IA-nas-empresas.jpg?fit=959%2C537&ssl=1"
+      "imageUrl": "https://www.conjur.com.br/wp-content/uploads/2026/04/55114939935_0c13faf912_k.jpg"
     },
     {
       "id": "macro-08aa6c635d81b060b0e9b130",
       "title": "EUA: Powell seguirá interino no Fed até a posse de indicado por Trump",
-      "summary": "A marca que dá nome ao Grupo Geely acaba de entrar no mercado português com dois SUV: o elétrico E5 e o híbrido plug-in Starray EM-I. Fique a conhecer os seus preços.",
-      "details": "A marca que dá nome ao Grupo Geely acaba de entrar no mercado português com dois SUV: o elétrico E5 e o híbrido plug-in Starray EM-I. Fique a conhecer os seus preços.",
-      "url": "https://www.turbo.pt/geely-chega-a-portugal-com-dois-suv-eletrificados/",
+      "summary": "Atualizacao de macro capturada em Metrópoles.",
+      "details": "",
+      "url": "https://www.acidadeon.com/campinas/economia/campinas-registra-valorizacao-imobiliaria-acima-da-inflacao-e-supera-capital-paulista/",
       "source": "Metrópoles",
       "category": "macro",
       "tags": [
@@ -516,8 +603,7 @@
       "publishedAt": "2026-05-16T18:34:54Z",
       "updatedAt": "2026-05-16T18:34:54Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://asset.skoiy.com/tbowjqdgqpxirbte/sx6m7bgxgglg.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-4d46169ecb8a4bf9680855b8",
@@ -559,9 +645,9 @@
     {
       "id": "macro-6dc8a1cd41633608416ae002",
       "title": "Preso com 65 celulares também estava com notebooks e videogame sem nota fiscal",
-      "summary": "A aversão a risco global, diante da falta de solução para o conflito no Oriente Médio e da contradição de narrativas entre Estados Unidos e China, penalizou o Ibovespa e propiciou a retirada de recursos da renda variável brasileira desde a abertura nesta sexta-feira, 15. À tarde,",
-      "details": "A aversão a risco global, diante da falta de solução para o conflito no Oriente Médio e da contradição de narrativas entre Estados Unidos e China, penalizou o Ibovespa e propiciou a retirada de recursos da renda variável brasileira desde a abertura nesta sexta-feira, 15. À tarde, houve mal-estar tam...",
-      "url": "https://esbrasil.com.br/ibovespa-cai-quase-4-por-cento-incertezas-globais-eleitorais/",
+      "summary": "Acusado não apresentou notas fiscais dos aparelhos e foi levado para a Central de Flagrantes",
+      "details": "Acusado não apresentou notas fiscais dos aparelhos e foi levado para a Central de Flagrantes",
+      "url": "https://www.tnh1.com.br/noticia/nid/preso-com-65-celulares-tambem-estava-com-notebooks-e-videogame-sem-nota-fiscal/",
       "source": "TNH1",
       "category": "macro",
       "tags": [
@@ -573,14 +659,14 @@
       "updatedAt": "2026-05-16T18:09:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://cdn.esbrasil.com.br/wp-content/uploads/2026/05/article_154809_74685443.webp"
+      "imageUrl": "https://www.tnh1.com.br/media/_versions/2026/05/homem-e-preso-com-65-celulares-arma-de-fogo-e-eletronicos-na-feirinha-do-tabuleiro_widelg.jpeg"
     },
     {
       "id": "funds-a1fb132698e622a505cc457c",
       "title": "#Eleições2026: Vorcaro também teria participação financeira em filmes sobre Lula e Temer, revela O Globo",
-      "summary": "Acusado não apresentou notas fiscais dos aparelhos e foi levado para a Central de Flagrantes",
-      "details": "Acusado não apresentou notas fiscais dos aparelhos e foi levado para a Central de Flagrantes",
-      "url": "https://www.tnh1.com.br/noticia/nid/preso-com-65-celulares-tambem-estava-com-notebooks-e-videogame-sem-nota-fiscal/",
+      "summary": "Estudo global aponta Brasil como líder das Américas em expansão de identidade de IA, mas 91% das empresas já sofreram ataques",
+      "details": "Estudo global aponta Brasil como líder das Américas em expansão de identidade de IA, mas 91% das empresas já sofreram ataques",
+      "url": "https://timesbrasil.com.br/empresas-e-negocios/inteligencia-artificial/empresas-brasileiras-lideranca-ia-americas-ataques-identidade-ciberseguranca/",
       "source": "Jornal da Chapada",
       "category": "funds",
       "tags": [
@@ -592,14 +678,14 @@
       "updatedAt": "2026-05-16T18:08:18Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.tnh1.com.br/media/_versions/2026/05/homem-e-preso-com-65-celulares-arma-de-fogo-e-eletronicos-na-feirinha-do-tabuleiro_widelg.jpeg"
+      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2025/09/ee242be6-projeto-de-colagem-de-conceitos-de-ciberseguranca.webp"
     },
     {
       "id": "latest-75d0517f8609f0156b1961f4",
       "title": "Ibovespa cai quase 4% com incertezas globais",
-      "summary": "No rastro da turbulência do pedido de dinheiro feito por Flávio Bolsonaro (PL-RJ) a Daniel Vorcaro, surgiram rumores de que o banqueiro teria financiado também o documentário ‘Lula’, de…",
-      "details": "No rastro da turbulência do pedido de dinheiro feito por Flávio Bolsonaro (PL-RJ) a Daniel Vorcaro, surgiram rumores de que o banqueiro teria financiado também o documentário ‘Lula’, de…",
-      "url": "https://jornaldachapada.com.br/2026/05/16/eleicoes2026-vorcaro-tambem-teria-participacao-financeira-em-filmes-sobre-lula-e-temer-revela-o-globo/amp/",
+      "summary": "A deputada federal Coronel Fernanda (PL) vai reunir representantes do setor energ&eacute;tico, especialistas e autoridades em uma audi&ecirc;ncia p&uacute;blica para discutir os impactos da alta dos combust&iacute;veis na infla&ccedil;&atilde;o e no abastecimento nacional. O deba",
+      "details": "A deputada federal Coronel Fernanda (PL) vai reunir representantes do setor energ&eacute;tico, especialistas e autoridades em uma audi&ecirc;ncia p&uacute;blica para discutir os impactos da alta dos combust&iacute;veis na infla&ccedil;&atilde;o e no abastecimento nacional. O debate ser&aacute; realizado no pr&oacute;xi",
+      "url": "https://www.gazetadigital.com.br/editorias/politica-de-mt/coronel-fernanda-articula-debate-sobre-combustiveis-e-inflacao-em-audiencia-publica/846943",
       "source": "ES Brasil",
       "category": "latest",
       "tags": [
@@ -611,14 +697,14 @@
       "updatedAt": "2026-05-16T18:00:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://i0.wp.com/jornaldachapada.com.br/wp-content/uploads/2026/05/IMG-20260516-WA0020.jpg?fit=800%2C400&ssl=1"
+      "imageUrl": "https://www.gazetadigital.com.br/storage/webdisco/2026/05/16/475x210/9259af64a1768baa99256e1ea30aaf69.jpg"
     },
     {
       "id": "companies-e54c56dc5d06edd7239f3740",
       "title": "Empresas brasileiras lideram expansão de IA nas Américas, mas 91% já sofreram ataques de identidade",
-      "summary": "Estudo global aponta Brasil como líder das Américas em expansão de identidade de IA, mas 91% das empresas já sofreram ataques",
-      "details": "Estudo global aponta Brasil como líder das Américas em expansão de identidade de IA, mas 91% das empresas já sofreram ataques",
-      "url": "https://timesbrasil.com.br/empresas-e-negocios/inteligencia-artificial/empresas-brasileiras-lideranca-ia-americas-ataques-identidade-ciberseguranca/",
+      "summary": "A aversão a risco global, diante da falta de solução para o conflito no Oriente Médio e da contradição de narrativas entre Estados Unidos e China, penalizou o Ibovespa e propiciou a retirada de recursos da renda variável brasileira desde a abertura nesta sexta-feira, 15. À tarde,",
+      "details": "A aversão a risco global, diante da falta de solução para o conflito no Oriente Médio e da contradição de narrativas entre Estados Unidos e China, penalizou o Ibovespa e propiciou a retirada de recursos da renda variável brasileira desde a abertura nesta sexta-feira, 15. À tarde, houve mal-estar tam...",
+      "url": "https://esbrasil.com.br/ibovespa-cai-quase-4-por-cento-incertezas-globais-eleitorais/",
       "source": "Times Brasil | CNBC",
       "category": "companies",
       "tags": [
@@ -630,14 +716,14 @@
       "updatedAt": "2026-05-16T17:00:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2025/09/ee242be6-projeto-de-colagem-de-conceitos-de-ciberseguranca.webp"
+      "imageUrl": "https://cdn.esbrasil.com.br/wp-content/uploads/2026/05/article_154809_74685443.webp"
     },
     {
       "id": "macro-1294b4e53fbc58d06f4b3052",
       "title": "Coronel Fernanda articula debate sobre combustíveis e inflação em audiência pública",
-      "summary": "A deputada federal Coronel Fernanda (PL) vai reunir representantes do setor energ&eacute;tico, especialistas e autoridades em uma audi&ecirc;ncia p&uacute;blica para discutir os impactos da alta dos combust&iacute;veis na infla&ccedil;&atilde;o e no abastecimento nacional. O deba",
-      "details": "A deputada federal Coronel Fernanda (PL) vai reunir representantes do setor energ&eacute;tico, especialistas e autoridades em uma audi&ecirc;ncia p&uacute;blica para discutir os impactos da alta dos combust&iacute;veis na infla&ccedil;&atilde;o e no abastecimento nacional. O debate ser&aacute; realizado no pr&oacute;xi",
-      "url": "https://www.gazetadigital.com.br/editorias/politica-de-mt/coronel-fernanda-articula-debate-sobre-combustiveis-e-inflacao-em-audiencia-publica/846943",
+      "summary": "“Tudo está muito caro; os preços estão nas alturas; só o governo acredita na queda da inflação.” Essas frases são comuns em filas de supermercados, feiras, padarias e farmácias. Elas refletem a frustração de quem, ao pagar as compras, percebe que o dinheiro não compra a mesma qua",
+      "details": "“Tudo está muito caro; os preços estão nas alturas; só o governo acredita na queda da inflação.” Essas frases são comuns em filas de supermercados, feiras, padarias e farmácias. Elas refletem a frustração de quem, ao pagar as compras, percebe que o dinheiro não compra a mesma quantidade de produtos e serviços de antes ",
+      "url": "https://noticiasdoplanalto.com.br/alto-custo-de-vida-dificulta-controle-da-inflacao/",
       "source": "Gazeta Digital",
       "category": "macro",
       "tags": [
@@ -649,14 +735,14 @@
       "updatedAt": "2026-05-16T17:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.gazetadigital.com.br/storage/webdisco/2026/05/16/475x210/9259af64a1768baa99256e1ea30aaf69.jpg"
+      "imageUrl": "https://noticiasdoplanalto.com.br/wp-content/uploads/2026/05/irok_1.jpg-1000x600.jpg"
     },
     {
       "id": "macro-e1fe38cfaf1363a1982e9f56",
       "title": "Alto custo de vida dificulta controle da inflação",
-      "summary": "“Tudo está muito caro; os preços estão nas alturas; só o governo acredita na queda da inflação.” Essas frases são comuns em filas de supermercados, feiras, padarias e farmácias. Elas refletem a frustração de quem, ao pagar as compras, percebe que o dinheiro não compra a mesma qua",
-      "details": "“Tudo está muito caro; os preços estão nas alturas; só o governo acredita na queda da inflação.” Essas frases são comuns em filas de supermercados, feiras, padarias e farmácias. Elas refletem a frustração de quem, ao pagar as compras, percebe que o dinheiro não compra a mesma quantidade de produtos e serviços de antes ",
-      "url": "https://noticiasdoplanalto.com.br/alto-custo-de-vida-dificulta-controle-da-inflacao/",
+      "summary": "No rastro da turbulência do pedido de dinheiro feito por Flávio Bolsonaro (PL-RJ) a Daniel Vorcaro, surgiram rumores de que o banqueiro teria financiado também o documentário ‘Lula’, de…",
+      "details": "No rastro da turbulência do pedido de dinheiro feito por Flávio Bolsonaro (PL-RJ) a Daniel Vorcaro, surgiram rumores de que o banqueiro teria financiado também o documentário ‘Lula’, de…",
+      "url": "https://jornaldachapada.com.br/2026/05/16/eleicoes2026-vorcaro-tambem-teria-participacao-financeira-em-filmes-sobre-lula-e-temer-revela-o-globo/amp/",
       "source": "noticiasdoplanalto.com.br",
       "category": "macro",
       "tags": [
@@ -668,14 +754,14 @@
       "updatedAt": "2026-05-16T16:58:10Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://noticiasdoplanalto.com.br/wp-content/uploads/2026/05/irok_1.jpg-1000x600.jpg"
+      "imageUrl": "https://i0.wp.com/jornaldachapada.com.br/wp-content/uploads/2026/05/IMG-20260516-WA0020.jpg?fit=800%2C400&ssl=1"
     },
     {
       "id": "macro-057fdc858bc8481f6303eb8a",
       "title": "Custo de vida alto enfraquece discurso de inflação sob controle",
       "summary": "Atualizacao de macro capturada em Folha PE.",
       "details": "",
-      "url": "https://www.folhape.com.br/noticia/amp/487831/custo-de-vida-alto-enfraquece-discurso-de-inflacao-sob-controle/",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxON3RIWUxpM2hncURJR0J0Tm9HZHpVYUJRMDhyZEd5RnpGd2hOODlaMDE2VTdRMW9aSXdHT2lVWXJ5ZzQ1dTlBdVVwQzdVMWhseWc0WWxFZFM5SHRFM2x1WDJCYjRtc3FmSnBSb0dfOXBmOXF6RFlaMmRvbHdKc0lnRExTWThIQ29FNk9HR2JpNk03bno2b01ULTJWN1BPcTd6N01ZQUxLM0dfdDFoak5n0gGvAUFVX3lxTE43dEhZTGkzaGdxRElHQnROb0dkelVhQlEwOHJkR3lGekZ3aE44OVowMTZVN1Exb1pJd0dPaVVZcnlnNDV1OUF1VXBDN1UxaGx5ZzRZbEVkUzlIdEUzbHVYMkJiNG1zcWZKcFJvR185cGY5cXpEWVoyZG9sd0pzSWdETFNZOEhDb0U2T0dHYmk2TTduejZvTVQtMlY3UE9xN3o3TVlBTEszR190MWhqTmc?oc=5",
       "source": "Folha PE",
       "category": "macro",
       "tags": [
@@ -689,68 +775,29 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "macro-730d0bfc264d218f0c2c5950",
-      "title": "Títulos globais caem com temores crescentes sobre inflação",
-      "summary": "Mercado se prepara para maior alta nas taxas de juros em décadas",
-      "details": "Mercado se prepara para maior alta nas taxas de juros em décadas",
-      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/titulos-globais-caem-com-temores-crescentes-sobre-inflacao/",
-      "source": "CNN Brasil",
+      "id": "macro-3f6c489e5fe136d38f80ca09",
+      "title": "Renda sobe no Brasil, mas não consegue acompanhar custo de vida",
+      "summary": "Atualizacao de macro capturada em Folha PE.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNGltdW41WThLcXFzbmROX0x1MXBYTGsxSFZTX1ptTUVoNUN1S0NoaGJsZEhZLXUtd0NhcklhQVdpTnpjMjVTZUx3MjVSRzJUbDl2TkxxMThhTjJNSVZya0l0X2dhd3BWY0NMZ2U3Ynl1LXB1elZnVlp4ZDAxNTZvQ3VYSWVyd0JfNUxDdVBzOFd2cEhKbTN4a196ckJKQXZrZlZYTERBXzljanR2VVHSAa4BQVVfeXFMUDRpbXVuNVk4S3Fxc25kTl9MdTFwWExrMUhWU19abU1FaDVDdUtDaGhibGRIWS11LXdDYXJJYUFXaU56YzI1U2VMdzI1UkcyVGw5dk5McTE4YU4yTUlWcmtJdF9nYXdwVmNDTGdlN2J5dS1wdXpWZ1ZaeGQwMTU2b0N1WEllcndCXzVMQ3VQczhXdnBISm0zeGtfenJCSkF2a2ZWWExEQV85Y2p0dlVR?oc=5",
+      "source": "Folha PE",
       "category": "macro",
       "tags": [
         "macro",
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-05-16T16:06:30Z",
-      "updatedAt": "2026-05-16T16:06:30Z",
+      "publishedAt": "2026-05-16T16:18:53Z",
+      "updatedAt": "2026-05-16T16:18:53Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/03/pexels-monstera-7412098.jpg?w=1200&h=630&crop=1"
-    },
-    {
-      "id": "macro-3f72e0f332a766256866ea41",
-      "title": "Provas do concurso para auditor fiscal da Receita Estadual ocorrem neste domingo (17/5)",
-      "summary": "Expresso 360 – Todos os ângulos da notícia.",
-      "details": "Expresso 360 – Todos os ângulos da notícia.",
-      "url": "https://expresso360.com.br/provas-do-concurso-para-auditor-fiscal-da-receita-estadual-ocorrem-neste-domingo-17-5/",
-      "source": "Expresso 360",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-16T16:02:00Z",
-      "updatedAt": "2026-05-16T16:02:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://expresso360.com.br/wp-content/uploads/2026/05/img_1874-1024x667.jpg"
-    },
-    {
-      "id": "macro-7518fab0b61a7a1a00fa608f",
-      "title": "OAB/MS suspende registro de Alcides Bernal após homicídio",
-      "summary": "A OAB/MS suspendeu preventivamente por 90 dias o registro do ex-prefeito Alcides Bernal, preso após matar fiscal tributário em Campo Grande.",
-      "details": "A OAB/MS suspendeu preventivamente por 90 dias o registro do ex-prefeito Alcides Bernal, preso após matar fiscal tributário em Campo Grande.",
-      "url": "https://www.campograndenews.com.br/brasil/cidades/preso-por-assassinato-de-fiscal-bernal-tem-registro-suspenso-pela-oab",
-      "source": "Campo Grande News",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-16T15:57:00Z",
-      "updatedAt": "2026-05-16T15:57:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://cdn6.campograndenews.com.br/uploads/noticias/2026/05/15/3n135kfgoosg8.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-a7e89e158341f01c3aa448d7",
       "title": "Invest Paraná fortalece relações com mercado financeiro durante Brazil Week em Nova York",
-      "summary": "Invest Paraná apresentou o Fundo Estratégico do Paraná a investidores internacionais durante a Brazil Week, visando ampliar investimentos e parcerias.",
-      "details": "Invest Paraná apresentou o Fundo Estratégico do Paraná a investidores internacionais durante a Brazil Week, visando ampliar investimentos e parcerias.",
-      "url": "https://politizabrasil.com.br/invest-parana-relacionamento-mercado-financeiro-brazil-week-ny/",
+      "summary": "Atualizacao de ultima hora capturada em politiza brasil.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRlJGa0w0TXJzbk1JbzgwY1JGa01paXRXaTVqZVc5aDFmM2dTa0JUTlRjRmluVjA3empLaDJhRjE1M29UWlI2M1AwTXVCNjVYZ3VKTmc1TWVWZkZkdDN1VVNfaGZ0eWlwYy1CZHd6UWltS1U2NjA1ZGlhUlBGcGxsRDluMlFlZkVvT0o0UTdmM1dGczc4dVdfeA?oc=5",
       "source": "politiza brasil",
       "category": "latest",
       "tags": [
@@ -761,26 +808,25 @@
       "publishedAt": "2026-05-16T15:53:43Z",
       "updatedAt": "2026-05-16T15:53:43Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://politizabrasil.com.br/wp-content/uploads/2026/02/whatsapp_image_2026-05-15_at_09.31.04.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-fe31630f742761dc7c2048ae",
-      "title": "Nota Fiscal Gaúcha gera recursos para os Bombeiros Voluntários de Sobradinho",
-      "summary": "Atualizacao de macro capturada em radiosobradinho.com.br.",
+      "id": "latest-a39a8487e0ed26d9e2861c53",
+      "title": "De Copacabana aos negócios",
+      "summary": "Atualizacao de ultima hora capturada em Broadcast.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcDNjWG01SERqcHJxMmpua2lZcElMR1g1Wllnb0E2Zk4wUktCLTRZak5XQjBGbEJlZ2tEWV9OQ2JQNjdMQnVHN21RTXBadFRobU16Q0huWS10TWpodV9Wem5yNzlibElqUUdOWS1STk9wN3dQeXRLTG5PMVNmNmt0S1F0UzM0azEzbzFCR19hYVRWV0MzNkNaU2tjaXItb1dRTkU1clBmUWFlcDlYbGlPOEpB?oc=5",
-      "source": "radiosobradinho.com.br",
-      "category": "macro",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13VmkwTF80U1RuQjZUZzhPUTItSWhpX2RsWTBWUzNOVEczNUVRd1Y2QWtJeDdkUzBodnpCRm9sSEFaUHBZX2JEWUYyYjI5R210UzdUV01jeWpuZmJjV2R6QkljVmEzaloyZ2RoUU53?oc=5",
+      "source": "Broadcast",
+      "category": "latest",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
+        "mercado",
+        "bolsa",
+        "macro"
       ],
-      "publishedAt": "2026-05-16T15:24:43Z",
-      "updatedAt": "2026-05-16T15:24:43Z",
+      "publishedAt": "2026-05-16T15:25:54Z",
+      "updatedAt": "2026-05-16T15:25:54Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-ba4c75edde442ce34b9082a9",
@@ -853,24 +899,6 @@
       "updatedAt": "2026-05-16T14:38:45Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "latest-b5a33a1d135078b3296789a9",
-      "title": "Dólar Dispara Acima de R$ 5 e Bolsa Cai: Tensão Global e Ruído Político Sacodem Mercados",
-      "summary": "Atualizacao de ultima hora capturada em Colatina em Ação.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRzRkWldWYnhaX1l1NDBBNHlGOURVeTFqLUx3SDhPYVFFVzg5a0xubTJ1QVNmTTE5ZkxJaHYtRDkwb1o3MWVtUTZwNDFYb0NobWpGdlROS29BWXFsWlVQbEZUbmVqOUVhVFFyQ0VqbGl0c3lmdkR2VzY3dkVpcWZKQkxQVDV6dzRQTFM3NUNrQzVzazdYSmstTk1vTjluMF9HUDBNRC1FZzdENUxDM1ZWUXF5UDdXSkNFUFZWSEJ4aTB4WlRNWEI4?oc=5",
-      "source": "Colatina em Ação",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-16T14:15:42Z",
-      "updatedAt": "2026-05-16T14:15:42Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-ebec03534d268072dc0dc5e7",
@@ -963,8 +991,8 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "funds-a1034d7c5f2c2925099ab978",
-      "title": "XRP superou os ganhos do bitcoin com o avanço do CLARITY Act, mas uma verdadeira alta ainda depende do Congresso",
+      "id": "funds-dec731cfea35e5e225b6d874",
+      "title": "XRP superou os ganhos do bitcoin com o avanço da CLARITY Act, mas uma verdadeira bullrun ainda depende do Congresso",
       "summary": "Atualizacao de fundos capturada em CoinDesk.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTnh6c3ByRlNBZmo0djBNTjZ1YkRKTGlzci1lUDNyTDB6T1gxMlhZOFk3RnA0WFNNdHpjYWJEeGhHVHQwa2NVZWhkZ3F5RkFUUk43d0pGVEZiOHU0SktpbEhYRkV0UDRQeWJiTS04RHlLb0dxQlNJWFJBdkNRZUIzcVFlamxKRmhwOU1VV1k2QlREdl80Qjgwd0hiQ3UyRFVWY0kyNVI4ZjhkN0g0WVYzY0ktZFgtMTFhZDJMaDgxWEliSi1rOGt1Z00zdzdYM3R0eWc?oc=5",
@@ -977,6 +1005,24 @@
       ],
       "publishedAt": "2026-05-16T11:34:11Z",
       "updatedAt": "2026-05-16T11:34:11Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "funds-15d3a4a4aa137e13dfabc39d",
+      "title": "SNID11 anuncia R$ 0,12 por cota e alta de 2,4% na bolsa",
+      "summary": "Atualizacao de fundos capturada em suno.com.br.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWWlnN19jWHFyRDUzUkZPdUpYcXlrY0dvcGRxTGR0eXRTSm54dllObHlZaWE3dmFBd1BGXzVqTGJrWTN1bTlzc0FqNHQ5YXR5SlFsa1BHUUhPX1BneVBiRU5MdGgwRVNrTnFhLXJwckFjX1E1b3dUcVZXbk1LdVV6REJVNNIBgwFBVV95cUxNWWlnN19jWHFyRDUzUkZPdUpYcXlrY0dvcGRxTGR0eXRTSm54dllObHlZaWE3dmFBd1BGXzVqTGJrWTN1bTlzc0FqNHQ5YXR5SlFsa1BHUUhPX1BneVBiRU5MdGgwRVNrTnFhLXJwckFjX1E1b3dUcVZXbk1LdVV6REJVNA?oc=5",
+      "source": "suno.com.br",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-05-16T11:25:05Z",
+      "updatedAt": "2026-05-16T11:25:05Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
@@ -1013,42 +1059,6 @@
       ],
       "publishedAt": "2026-05-16T11:18:57Z",
       "updatedAt": "2026-05-16T11:18:57Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-9cfb5295a47a7517d2ec15e4",
-      "title": "Em momento político sensível, mercado de juros segue ‘refém’ do petróleo",
-      "summary": "Atualizacao de ultima hora capturada em Valor Econômico.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQ3NIQWFHVGRvTTVTTG9Vem5uTzhfa3EyWkRDMGFoMU5QR1VweXhobjE3dDYtdXdlc2FwbGdCaHBGZGV1cnVQOEZVcHVwdmlVSmVZRVM3dnFlbGRqR25ocmY2YnoyVVZSdlVrU01LbmdubXBCRGZVTW1uQ2Uta0x2ak5sMDV0QXBlemg4R2VBSndMblhjSEM0VzZRcm9tWjVnVk9Bb1RsdXo3d1V0d3NVUVZad00zcUZLaG5yNHZqcFIzdjNZekVNVDBR0gHYAUFVX3lxTE40Q3Q2RDNkNU5PbGt6dDRrckVJbFBKS1F2SmQzeno1ZDVGOVdTeUFzZE9UZDBUY0dQdnNveGhLdG9lODRLV1pEQnl5UXI0MGZQNjlpMHRrZ3RNd3ozWUpuRU1SbFB5NWF1WGtRaDJ6QzVkSXd5ZnEtUEVQSmVlRmUwTDA0U0F6NjFJNENhTGxZNGJZUjE5VkluT1d6bEtNNTNJbHpZSFFFN2ZLcWlqYXpQRlllLS1GWDM2V3U3U084X245WHZjb282OXJLaXZzUDJEY2pVeEIwTw?oc=5",
-      "source": "Valor Econômico",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-16T11:02:34Z",
-      "updatedAt": "2026-05-16T11:02:34Z",
-      "premium": true,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-f2c9a1e7bfc300bb19d3921e",
-      "title": "Selic a 14,5%: o que muda para quem investe e para quem deve",
-      "summary": "Atualizacao de ultima hora capturada em BPMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9KZkNkY291OGV5VmsyRjdyLUo1eF9DdkZQaHRkQ0FWVHdrNWJXajlHbGp6V2EwZi0ySXRLdDFTaF9NclZfcTFRM1lKSDBMMDEtU1YzaFVoTEw2RngtbGZiV01ueTdVMV8zaU5tZFNISHk2bk9K?oc=5",
-      "source": "BPMoney",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-16T11:00:00Z",
-      "updatedAt": "2026-05-16T11:00:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -1143,11 +1153,11 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "funds-b1e0747b9fb27c963520a346",
-      "title": "Tokenização acelera no Brasil com projeto da Anbima para debêntures e fundos",
+      "id": "funds-510279821bdf31a713975c92",
+      "title": "Tokenização sai do discurso e ganha força em teste com debêntures e fundos no Brasil",
       "summary": "Atualizacao de fundos capturada em Estadão E-Investidor.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbU1adno5WjFHX3lKSjBXWW9QVG9pVm50VDVWNXV2U1dyYmdKazZURGV3RmVSY1EzdElIbFd1QUZtWEg3UkFWcmlEcmdLZ3VMYzNZQm5wc3NkSng2RG9GMEcwZTZUS0IzOURON3Q4OHlMeTBnMmhPME1oMGJhYVB6Q2FXVHlLU1M2RTFyXzlvdUNPQWJVTXVrblVtLVNiemowWFhnc01qN0ZoZFZJOGV2NzFLRFZLMGc4cmdhONIBvAFBVV95cUxPbU1adno5WjFHX3lKSjBXWW9QVG9pVm50VDVWNXV2U1dyYmdKazZURGV3RmVSY1EzdElIbFd1QUZtWEg3UkFWcmlEcmdLZ3VMYzNZQm5wc3NkSng2RG9GMEcwZTZUS0IzOURON3Q4OHlMeTBnMmhPME1oMGJhYVB6Q2FXVHlLU1M2RTFyXzlvdUNPQWJVTXVrblVtLVNiemowWFhnc01qN0ZoZFZJOGV2NzFLRFZLMGc4cmdhOA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUFY0S1VMeU9ZMzdfbVFPQ21BNzZKQVQtTzFSVG9ZaG5kM29SeXFWSzVaOTA2VThEWVZzMTl3akl2VkY0aXprejBaT055Z0lCTWFWVDZzakNoMi1MSmVaYjBUSlluSVp4cVJxM2lmMXI1cTJJVFdrUTBidUFybThXdGc1R2QxSVJxd3o0dkdjUXpHVFdzWjV6aXJMVmNHc1ptalFUdkNrYkY3ZGd3ZGI0YVhmN2tpWnfSAbwBQVVfeXFMT21NWnZ6OVoxR195SkowV1lvUFRvaVZudFQ1VjV1dlNXcmJnSms2VERld0ZlUmNRM3RJSGxXdUFGbVhIN1JBVnJpRHJnS2d1TGMzWUJucHNzZEp4NkRvRjBHMGU2VEtCMzlETjd0ODh5THkwZzJoTzBNaDBiYWFQekNhV1R5S1NTNkUxcl85b3VDT0FiVU11a25VbS1TYnpqMFhYZ3NNajdGaGRWSThldjcxS0RWSzBnOHJnYTg?oc=5",
       "source": "Estadão E-Investidor",
       "category": "funds",
       "tags": [
@@ -1305,6 +1315,24 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
+      "id": "funds-afa2f3e9e0629dc77648416f",
+      "title": "Preços da soja recuam em Chicago com estagnação nas negociações comerciais entre Estados Unidos e China",
+      "summary": "Atualizacao de fundos capturada em São Bento em Foco.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE50c29mN3FYakV5QWF4aEhiUEE1bkhCazBuQUpiWW1BdXZLWmZjTm9WcVpzZ0hTOXN0ZWlodl83N2hxUzNYbTVWNG50bUhjTEUyYWhRaFZXdG5mYnZWZ3lVUm5HVC1XZHM4MlZoUUhJaFd6cXV4WUp3VQ?oc=5",
+      "source": "São Bento em Foco",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-05-15T20:13:32Z",
+      "updatedAt": "2026-05-15T20:13:32Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
       "id": "funds-9c508c16a96806bf00736fdb",
       "title": "Brookfield cresce no 1T26 com avanço em Asset Management",
       "summary": "Atualizacao de fundos capturada em Nord Investimentos.",
@@ -1319,24 +1347,6 @@
       ],
       "publishedAt": "2026-05-15T20:01:00Z",
       "updatedAt": "2026-05-15T20:01:00Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-9f13bc2a7f8169e2b5b3fd61",
-      "title": "STJ afasta responsabilidade solidária em prejuízos causados por fundos de investimento",
-      "summary": "Atualizacao de fundos capturada em Jurinews.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZmlpdGJ6dUMyS2xhSm1XSEp4MGI4Y0hOcDYwQjhpX1BxS1FjX1E2ZVJvWWNRZ3dpX05EWlBvOE9QWDI5Rm5OeUt4eU4tTlVFMFRLM1B2amU1NUJ2czdJMzJyTTFvRXJlaHM4OUNRM0YwQ1hEU1dPNHRpWWNrOXQ5eVptRE9UNzE3TUljeHNtZm1PcS14UFpCeEZpbzdKUER6dlJfSjkyS3VYRWtlMF81YUxlMUtUSzkwbnRRaUdKRzdMZ3oydkFB?oc=5",
-      "source": "Jurinews",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-05-15T19:54:00Z",
-      "updatedAt": "2026-05-15T19:54:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
@@ -1357,24 +1367,6 @@
       "updatedAt": "2026-05-15T19:37:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "funds-2eee9029bdd7986f6ec51c01",
-      "title": "STF autoriza prisão de dono da Refit e afastamento de agentes",
-      "summary": "Atualizacao de fundos capturada em Consultor Jurídico.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSEtzUkJlTE91UTFUWVdBTEx2TldFZVFYLXg5aFRtNW1nSUZNYUF0YWpTYk5ZUmdEa21aOFEtN3IzZzFlMGdIUF9ib3lpVHZxZm9CRlNrQ05VRGE4Q0I2NUp1a3JZZllCWFY1ZE9Ic2VWeVc5bUs2NzlveGUzdkV3Q3ZuQVdjemVnTjBPSnFfaENzdlRLbjZrZzNNM3Q0SGFXZTRTdmY1V3JZdWZTc2c?oc=5",
-      "source": "Consultor Jurídico",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-05-15T18:47:00Z",
-      "updatedAt": "2026-05-15T18:47:00Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "companies-3767ec6acdef05f55ee8ffc6",
@@ -1399,7 +1391,7 @@
       "title": "Brasil Soberano 2 amplia crédito para R$ 21 bilhões e transforma crise externa em política industrial",
       "summary": "Atualizacao de empresas capturada em O Cafezinho.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSmplU1BVSEIxY01UbjU3Y3FEQmtTdEhhYVBUUEtMTG94SC1qcjk0dnI0Y3psZnZhN1JiM2pDWHR2M0ZFc3h5VzZfSDJUcTFaYV8yR2MtQUlzcm1ZTUE2WlA5NGJFemFJdG4zTlVETjVsT1Z0SzZkZGdteC1DelQ4RU9RbHRTeVEyQXhRTUttYXJ6SGdadjFxN0VranJHRlh4eXQ1OTk5N1BFemNtQTNaWXhqcmxPMXNyY09rVUF6M21mUzZQejFJUU5Ed2o1eU9ndFVwd1dn0gHbAUFVX3lxTE5YNWV6d0d5ZElWckJXdVI1RnZCTWtBcVdIdnpwRUNsTjFseF9mcTlsa1RWdGYxbFJFMjZjT3FNdTdlb3Q4Q0h0NmJ6RmY1V0VxbkFHeWNfR3JrZVYxRG0wQ3lSMkVqNVcydUlUWmtFWXhNLW53bHRKa0ZUSnRLSm1DTE16NjhWNVg5WUZrelk5OEtHRVNacXo5cGFvdjZsVXJnSnQtekZHVmhfRGxFRmVUdzFvbWR0bGRlWDNydTBQU2xxUG9oOXdsSUlYS0tsQVdlOExoZWZlN2V3cw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOWDVlendHeWRJVnJCV3VSNUZ2Qk1rQXFXSHZ6cEVDbE4xbHhfZnE5bGtUVnRmMWxSRTI2Y09xTXU3ZW90OENIdDZiekZmNVdFcW5BR3ljX0dya2VWMURtMEN5UjJFajVXMnVJVFprRVl4TS1ud2x0SmtGVEp0S0ptQ0xNejY4VjVYOVlGa3pZOThLR0VTWnF6OXBhb3Y2bFVyZ0p0LXpGR1ZoX0RsRUZlVHcxb21kdGxkZVgzcnUwUFNscVBvaDl3bElJWEtLbEFXZThMaGVmZTdld3PSAdsBQVVfeXFMTlg1ZXp3R3lkSVZyQld1UjVGdkJNa0FxV0h2enBFQ2xOMWx4X2ZxOWxrVFZ0ZjFsUkUyNmNPcU11N2VvdDhDSHQ2YnpGZjVXRXFuQUd5Y19HcmtlVjFEbTBDeVIyRWo1VzJ1SVRaa0VZeE0tbndsdEprRlRKdEtKbUNMTXo2OFY1WDlZRmt6WTk4S0dFU1pxejlwYW92NmxVcmdKdC16RkdWaF9EbEVGZVR3MW9tZHRsZGVYM3J1MFBTbHFQb2g5d2xJSVhLS2xBV2U4TGhlZmU3ZXdz?oc=5",
       "source": "O Cafezinho",
       "category": "companies",
       "tags": [
