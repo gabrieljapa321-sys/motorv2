@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-24T05:42:14Z",
-  "generatedAt": "2026-05-24T05:42:14Z",
+  "updatedAt": "2026-05-24T08:25:05Z",
+  "generatedAt": "2026-05-24T08:25:05Z",
   "categories": [
     {
       "id": "all",
@@ -85,6 +85,10 @@
       "label": "diário do estado"
     },
     {
+      "id": "di-rio-ind-stria-com-rcio",
+      "label": "Diário Indústria & Comércio"
+    },
+    {
       "id": "economic-news-brasil",
       "label": "Economic News Brasil"
     },
@@ -95,6 +99,10 @@
     {
       "id": "estad-o-e-investidor",
       "label": "Estadão E-Investidor"
+    },
+    {
+      "id": "estrat-gia-concursos",
+      "label": "Estratégia Concursos"
     },
     {
       "id": "express-o-rond-nia",
@@ -117,6 +125,10 @@
       "label": "Gazeta do Povo"
     },
     {
+      "id": "gazeta-mercantil",
+      "label": "Gazeta Mercantil"
+    },
+    {
       "id": "infomoney",
       "label": "InfoMoney"
     },
@@ -135,6 +147,10 @@
     {
       "id": "mercado-consumo",
       "label": "Mercado&Consumo"
+    },
+    {
+      "id": "money-times",
+      "label": "Money Times"
     },
     {
       "id": "msn",
@@ -163,10 +179,6 @@
     {
       "id": "portal-tela",
       "label": "Portal Tela"
-    },
-    {
-      "id": "revista-empreende",
-      "label": "Revista Empreende"
     },
     {
       "id": "revista-f-rum",
@@ -205,10 +217,6 @@
       "label": "tmc.com.br"
     },
     {
-      "id": "tradingview",
-      "label": "TradingView"
-    },
-    {
       "id": "tribuna-da-internet",
       "label": "Tribuna da Internet"
     },
@@ -221,8 +229,8 @@
       "label": "UOL Economia"
     },
     {
-      "id": "uol-not-cias",
-      "label": "UOL Notícias"
+      "id": "valor-investe",
+      "label": "Valor Investe"
     },
     {
       "id": "vero-not-cias",
@@ -239,11 +247,68 @@
   ],
   "items": [
     {
+      "id": "macro-395e230850ebcd9cf135ecfc",
+      "title": "Mercado vê efeito \"mínimo\" do bloqueio no problema das contas públicas",
+      "summary": "Segundo economistas, congelamento é necessário para compensar piora das despesas obrigatórias, mas não resolve desequilíbrio estrutural",
+      "details": "Segundo economistas, congelamento é necessário para compensar piora das despesas obrigatórias, mas não resolve desequilíbrio estrutural",
+      "url": "https://www.cnnbrasil.com.br/economia/mercado/mercado-ve-efeito-minimo-do-bloqueio-no-problema-das-contas-publicas/",
+      "source": "CNN Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-24T06:47:26Z",
+      "updatedAt": "2026-05-24T06:47:26Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/05/ChatGPT-Image-20-de-mai.-de-2026-21_23_33.png?w=1200&h=630&crop=1"
+    },
+    {
+      "id": "macro-4d8c11325a745654db8c1b6a",
+      "title": "Salários reais no Japão sofrem queda pelo 4º ano fiscal consecutivo",
+      "summary": "Salários reais no Japão sofrem queda pelo 4º ano fiscal consecutivo",
+      "details": "Salários reais no Japão sofrem queda pelo 4º ano fiscal consecutivo",
+      "url": "https://www.diarioinduscom.com.br/Noticias/883739/salarios_reais_no_japao_sofrem_queda_pelo_4%C2%BA_ano_fiscal_consecutivo",
+      "source": "Diário Indústria & Comércio",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-24T06:10:00Z",
+      "updatedAt": "2026-05-24T06:10:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://adm.diarioinduscom.com.br/ged///2026_24_05_3_5_4424275d413c932efb42a548d809942e44.jpg"
+    },
+    {
+      "id": "macro-f3fe8ceb1a875492c836d377",
+      "title": "Concursos Abertos: milhares de vagas e inicial até R$ 32 mil",
+      "summary": "Concursos Abertos: oportunidades em todo o país! Milhares de vagas em diversas áreas. Confira os editais, requisitos e inscreva-se já!",
+      "details": "Concursos Abertos: oportunidades em todo o país! Milhares de vagas em diversas áreas. Confira os editais, requisitos e inscreva-se já!",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concursos-abertos/",
+      "source": "Estratégia Concursos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-24T04:47:25Z",
+      "updatedAt": "2026-05-24T04:47:25Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2024/10/04165957/concursos-abertos.jpg"
+    },
+    {
       "id": "funds-14e2fdb0aed4730d9c6ad8c9",
       "title": "Coreia do Sul libera ETFs 2x de Samsung e SK Hynix",
-      "summary": "Dólar em queda com avanço das negociações comerciais Brasil-EUA e otimismo global. Entenda como acordos e dados de inflação impactam o mercado financeiro - Foto: Reprodução",
-      "details": "Dólar em queda com avanço das negociações comerciais Brasil-EUA e otimismo global. Entenda como acordos e dados de inflação impactam o mercado financeiro - Foto: Reprodução",
-      "url": "https://comunhao.com.br/dolarmoeda0803221206-2/",
+      "summary": "Coreia do Sul lança ETFs 2x focados em Samsung, ampliando oportunidades e riscos para investidores no mercado local.",
+      "details": "Coreia do Sul lança ETFs 2x focados em Samsung, ampliando oportunidades e riscos para investidores no mercado local.",
+      "url": "https://webitcoin.com.br/coreia-do-sul-libera-etfs-2x-de-samsung-e-sk-hynix/",
       "source": "Webitcoin",
       "category": "funds",
       "tags": [
@@ -255,14 +320,14 @@
       "updatedAt": "2026-05-24T03:58:35Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://cdn.comunhao.com.br/wp-content/uploads/2025/10/dolarmoeda0803221206-2.jpg"
+      "imageUrl": "https://webitcoin.b-cdn.net/wp-content/uploads/2026/05/230882-coreia-do-sul-libera-etfs-2x-de-samsung-e-sk-hynix-scaled.jpeg"
     },
     {
       "id": "macro-36b004577845297e6cf3d6fe",
       "title": "SAÚDE. Entenda o que pode ou não ser deduzido como uma despesa médica no Imposto de Renda",
-      "summary": "O pacote de medidas adotadas pelo governo Luiz Inácio Lula da Silva para turbinar a popularidade de olho na reeleição totaliza, pelo menos, R$ 221,2 bilhões.",
-      "details": "O pacote de medidas adotadas pelo governo Luiz Inácio Lula da Silva para turbinar a popularidade de olho na reeleição totaliza, pelo menos, R$ 221,2 bilhões.",
-      "url": "https://platobr.com.br/pacote-eleitoral-bondades-de-lula-ultrapassam-r-221-bilhoes-de-olho-na-reeleicao",
+      "summary": "Por Patrícia Serrão e Raíssa Saraiva / Da Agência Brasil",
+      "details": "Por Patrícia Serrão e Raíssa Saraiva / Da Agência Brasil",
+      "url": "https://claudemirpereira.com.br/2026/05/saude-entenda-o-que-pode-ou-nao-ser-deduzido-como-uma-despesa-medica-no-imposto-de-renda/",
       "source": "Claudemir Pereira",
       "category": "macro",
       "tags": [
@@ -274,14 +339,14 @@
       "updatedAt": "2026-05-24T03:09:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://platobr.com.br/wp-content/uploads/2026/05/55266172355-a8ecf946a2-o-1200x630.jpg"
+      "imageUrl": "https://img.claudemirpereira.com.br/2026/05/int5710.jpg.jpeg"
     },
     {
       "id": "macro-6550efae24c91e3676c97e46",
       "title": "Pacote eleitoral: ‘bondades’ de Lula ultrapassam R$ 221 bilhões de olho na reeleição",
-      "summary": "Coreia do Sul lança ETFs 2x focados em Samsung, ampliando oportunidades e riscos para investidores no mercado local.",
-      "details": "Coreia do Sul lança ETFs 2x focados em Samsung, ampliando oportunidades e riscos para investidores no mercado local.",
-      "url": "https://webitcoin.com.br/coreia-do-sul-libera-etfs-2x-de-samsung-e-sk-hynix/",
+      "summary": "O pacote de medidas adotadas pelo governo Luiz Inácio Lula da Silva para turbinar a popularidade de olho na reeleição totaliza, pelo menos, R$ 221,2 bilhões.",
+      "details": "O pacote de medidas adotadas pelo governo Luiz Inácio Lula da Silva para turbinar a popularidade de olho na reeleição totaliza, pelo menos, R$ 221,2 bilhões.",
+      "url": "https://platobr.com.br/pacote-eleitoral-bondades-de-lula-ultrapassam-r-221-bilhoes-de-olho-na-reeleicao",
       "source": "PlatôBR",
       "category": "macro",
       "tags": [
@@ -293,14 +358,14 @@
       "updatedAt": "2026-05-24T03:07:48Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://webitcoin.b-cdn.net/wp-content/uploads/2026/05/230882-coreia-do-sul-libera-etfs-2x-de-samsung-e-sk-hynix-scaled.jpeg"
+      "imageUrl": "https://platobr.com.br/wp-content/uploads/2026/05/55266172355-a8ecf946a2-o-1200x630.jpg"
     },
     {
       "id": "latest-65af0c7cd18f44083282bc4a",
       "title": "Dólar em queda com avanço das negociações comerciais Brasil-EUA e otimismo global. Entenda como acordos e dados de inflação impactam o mercado financeiro - Foto: Reprodução",
-      "summary": "Por Patrícia Serrão e Raíssa Saraiva / Da Agência Brasil",
-      "details": "Por Patrícia Serrão e Raíssa Saraiva / Da Agência Brasil",
-      "url": "https://claudemirpereira.com.br/2026/05/saude-entenda-o-que-pode-ou-nao-ser-deduzido-como-uma-despesa-medica-no-imposto-de-renda/",
+      "summary": "Dólar em queda com avanço das negociações comerciais Brasil-EUA e otimismo global. Entenda como acordos e dados de inflação impactam o mercado financeiro - Foto: Reprodução",
+      "details": "Dólar em queda com avanço das negociações comerciais Brasil-EUA e otimismo global. Entenda como acordos e dados de inflação impactam o mercado financeiro - Foto: Reprodução",
+      "url": "https://comunhao.com.br/dolarmoeda0803221206-2/",
       "source": "comunhao.com.br",
       "category": "latest",
       "tags": [
@@ -312,7 +377,7 @@
       "updatedAt": "2026-05-24T03:03:25Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://img.claudemirpereira.com.br/2026/05/int5710.jpg.jpeg"
+      "imageUrl": "https://cdn.comunhao.com.br/wp-content/uploads/2025/10/dolarmoeda0803221206-2.jpg"
     },
     {
       "id": "latest-c07da9972550db65b0d79307",
@@ -336,9 +401,9 @@
     {
       "id": "companies-9720d8380ecbbae6a4aa2ceb",
       "title": "Paraguai atrai fábricas brasileiras com menos encargos e impostos",
-      "summary": "O Paraguai tem atraído fábricas brasileiras com um regime de menos encargos e impostos. Clique aqui e saiba mais",
-      "details": "O Paraguai tem atraído fábricas brasileiras com um regime de menos encargos e impostos. Clique aqui e saiba mais",
-      "url": "https://revistaoeste.com/economia/paraguai-atrai-fabricas-brasileiras-com-menos-encargos-e-impostos/",
+      "summary": "Atualizacao de empresas capturada em Revista Oeste.",
+      "details": "",
+      "url": "https://tribunadainternet.com.br/2026/05/23/mercado-financeiro-evita-associacao-publica-com-flavio-bolsonaro-apos-caso-vorcaro/",
       "source": "Revista Oeste",
       "category": "companies",
       "tags": [
@@ -349,15 +414,14 @@
       "publishedAt": "2026-05-24T01:00:00Z",
       "updatedAt": "2026-05-24T01:00:00Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://medias.revistaoeste.com/wp-content/uploads/2025/11/shutterstock_2478312083.jpg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "latest-ee1ac7941242ada22c0fe0ac",
       "title": "Mercado financeiro evita associação pública com Flávio Bolsonaro após caso Vorcaro",
-      "summary": "Atualizacao de ultima hora capturada em Tribuna da Internet.",
-      "details": "",
-      "url": "https://tribunadainternet.com.br/2026/05/23/mercado-financeiro-evita-associacao-publica-com-flavio-bolsonaro-apos-caso-vorcaro/",
+      "summary": "O Paraguai tem atraído fábricas brasileiras com um regime de menos encargos e impostos. Clique aqui e saiba mais",
+      "details": "O Paraguai tem atraído fábricas brasileiras com um regime de menos encargos e impostos. Clique aqui e saiba mais",
+      "url": "https://revistaoeste.com/economia/paraguai-atrai-fabricas-brasileiras-com-menos-encargos-e-impostos/",
       "source": "Tribuna da Internet",
       "category": "latest",
       "tags": [
@@ -368,14 +432,15 @@
       "publishedAt": "2026-05-24T00:09:30Z",
       "updatedAt": "2026-05-24T00:09:30Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://medias.revistaoeste.com/wp-content/uploads/2025/11/shutterstock_2478312083.jpg"
     },
     {
       "id": "macro-8b0efa2ac442dae19078d5a0",
       "title": "Juiz manda Estado comprovar penhora de salário de fiscal da Sefaz",
-      "summary": "Atualizacao de macro capturada em FOLHAMAX.",
-      "details": "",
-      "url": "https://www.folhamax.com/economia/juiz-manda-estado-comprovar-penhora-de-salario-de-fiscal-da-sefaz/553267",
+      "summary": "A Comissão de Assuntos Econômicos (CAE) do Senado vai analisar nesta quarta-feira (20) a indicação de Otto Lobo para a presidência da Comissão de Valores Mobiliários (CVM). 🔎A Comissão de Valores Mobi",
+      "details": "A Comissão de Assuntos Econômicos (CAE) do Senado vai analisar nesta quarta-feira (20) a indicação de Otto Lobo para a presidência da Comissão de Valores Mobiliários (CVM). 🔎A Comissão de Valores Mobi",
+      "url": "https://expressaorondonia.com.br/senado-analisa-indicados-para-autarquia-que-regula-fundos-de-investimento-nesta-quarta/",
       "source": "FOLHAMAX",
       "category": "macro",
       "tags": [
@@ -386,14 +451,15 @@
       "publishedAt": "2026-05-24T00:03:00Z",
       "updatedAt": "2026-05-24T00:03:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://expressaorondonia.com.br/wp-content/uploads/2026/05/992055h072905-1024x573.jpg"
     },
     {
       "id": "macro-796361a5755d788af6abe25a",
       "title": "Saiba por quais motivos o PIB brasileiro está na UTI... desde que a esquerda chegou ao poder",
-      "summary": "Brasil fica para trás e amplia distância de PIB per capita em relação ao Mundo. Enquanto a renda média mundial crescia em 675%, de 1980 até 2025, a do Brasil aumentava em 428%",
-      "details": "Brasil fica para trás e amplia distância de PIB per capita em relação ao Mundo. Enquanto a renda média mundial crescia em 675%, de 1980 até 2025, a do Brasil aumentava em 428%",
-      "url": "https://www.jornalopcao.com.br/colunas-e-blogs/contraponto/saiba-por-quais-motivos-o-pib-brasileiro-esta-na-uti-desde-que-a-esquerda-chegou-ao-poder-827715/",
+      "summary": "Atualizacao de macro capturada em Jornal Opção.",
+      "details": "",
+      "url": "https://www.folhamax.com/economia/juiz-manda-estado-comprovar-penhora-de-salario-de-fiscal-da-sefaz/553267",
       "source": "Jornal Opção",
       "category": "macro",
       "tags": [
@@ -404,15 +470,14 @@
       "publishedAt": "2026-05-24T00:00:00Z",
       "updatedAt": "2026-05-24T00:00:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://cdn.jornalopcao.com.br/assets/2026/05/20131547/1779282946-pib-no-brasil-no-mundo-3.webp"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "funds-84635f5ed6a3fa52e2479196",
       "title": "Senado analisa indicados para autarquia que regula fundos de investimento nesta quarta",
-      "summary": "A Comissão de Assuntos Econômicos (CAE) do Senado vai analisar nesta quarta-feira (20) a indicação de Otto Lobo para a presidência da Comissão de Valores Mobiliários (CVM). 🔎A Comissão de Valores Mobi",
-      "details": "A Comissão de Assuntos Econômicos (CAE) do Senado vai analisar nesta quarta-feira (20) a indicação de Otto Lobo para a presidência da Comissão de Valores Mobiliários (CVM). 🔎A Comissão de Valores Mobi",
-      "url": "https://expressaorondonia.com.br/senado-analisa-indicados-para-autarquia-que-regula-fundos-de-investimento-nesta-quarta/",
+      "summary": "Atualizacao de fundos capturada em Expressão Rondônia.",
+      "details": "",
+      "url": "https://www1.folha.uol.com.br/amp/mercado/2026/05/caneta-emagrecedora-deve-elevar-o-pib-da-dinamarca-sede-da-novo-nordisk.shtml",
       "source": "Expressão Rondônia",
       "category": "funds",
       "tags": [
@@ -423,15 +488,14 @@
       "publishedAt": "2026-05-23T23:29:01Z",
       "updatedAt": "2026-05-23T23:29:01Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://expressaorondonia.com.br/wp-content/uploads/2026/05/992055h072905-1024x573.jpg"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "companies-64edd23161cd2409f62ffd5d",
       "title": "Mais de 200 empresas brasileiras migram para o Paraguai e reduzem custos em até 40%",
-      "summary": "Atualizacao de empresas capturada em Times Brasil | CNBC.",
-      "details": "",
-      "url": "https://www.folhadoestado.com.br/economia/carga-tributaria-empurra-232-empresas-brasileiras-para-o-paraguai/638229",
+      "summary": "Kevin Warsh assume o Fed e analista prevê corte de juros, contrariando o consenso do mercado.",
+      "details": "Kevin Warsh assume o Fed e analista prevê corte de juros, contrariando o consenso do mercado.",
+      "url": "https://www.spacemoney.com.br/investimentos/criptomoeda/novo-presidente-fed-cortar-juros-2026-mercado-cripto/",
       "source": "Times Brasil | CNBC",
       "category": "companies",
       "tags": [
@@ -442,14 +506,15 @@
       "publishedAt": "2026-05-23T21:54:00Z",
       "updatedAt": "2026-05-23T21:54:00Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/05/pexels-photo-10149296-4.jpg"
     },
     {
       "id": "latest-d60183fc6b9d534b113ddd12",
       "title": "Novo presidente do FED deve cortar juros em 2026",
-      "summary": "Ministério da Economia revisou estimativa de crescimento da economia, citando impacto da indústria farmacêutica",
-      "details": "Ministério da Economia revisou estimativa de crescimento da economia, citando impacto da indústria farmacêutica",
-      "url": "https://www.infomoney.com.br/mundo/canetas-emagrecedoras-devem-impulsionar-o-pib-da-dinamarca-em-2026/",
+      "summary": "Brasil fica para trás e amplia distância de PIB per capita em relação ao Mundo. Enquanto a renda média mundial crescia em 675%, de 1980 até 2025, a do Brasil aumentava em 428%",
+      "details": "Brasil fica para trás e amplia distância de PIB per capita em relação ao Mundo. Enquanto a renda média mundial crescia em 675%, de 1980 até 2025, a do Brasil aumentava em 428%",
+      "url": "https://www.jornalopcao.com.br/colunas-e-blogs/contraponto/saiba-por-quais-motivos-o-pib-brasileiro-esta-na-uti-desde-que-a-esquerda-chegou-ao-poder-827715/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -461,14 +526,14 @@
       "updatedAt": "2026-05-23T21:48:51Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2025/05/432234992_red.jpg?quality=70"
+      "imageUrl": "https://cdn.jornalopcao.com.br/assets/2026/05/20131547/1779282946-pib-no-brasil-no-mundo-3.webp"
     },
     {
       "id": "macro-2bcd45174c5c4f930eaf9d67",
       "title": "Canetas emagrecedoras devem impulsionar o PIB da Dinamarca em 2026",
-      "summary": "Kevin Warsh assume o Fed e analista prevê corte de juros, contrariando o consenso do mercado.",
-      "details": "Kevin Warsh assume o Fed e analista prevê corte de juros, contrariando o consenso do mercado.",
-      "url": "https://www.spacemoney.com.br/investimentos/criptomoeda/novo-presidente-fed-cortar-juros-2026-mercado-cripto/",
+      "summary": "Ministério da Economia revisou estimativa de crescimento da economia, citando impacto da indústria farmacêutica",
+      "details": "Ministério da Economia revisou estimativa de crescimento da economia, citando impacto da indústria farmacêutica",
+      "url": "https://www.infomoney.com.br/mundo/canetas-emagrecedoras-devem-impulsionar-o-pib-da-dinamarca-em-2026/",
       "source": "InfoMoney",
       "category": "macro",
       "tags": [
@@ -480,7 +545,7 @@
       "updatedAt": "2026-05-23T21:29:41Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/05/pexels-photo-10149296-4.jpg"
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2025/05/432234992_red.jpg?quality=70"
     },
     {
       "id": "macro-b42b7bad53ec6e548324c1e7",
@@ -504,9 +569,9 @@
     {
       "id": "companies-46578fb6044605abba16bf58",
       "title": "Carga tributária empurra 232 empresas brasileiras para o Paraguai",
-      "summary": "Segundo um analista de mercado, o novo presidente do Federal Reserve, Kevin Warsh, provavelmente reduzirá as taxas de juros, apesar da maioria dos investidores prever um aumento.",
-      "details": "Segundo um analista de mercado, o novo presidente do Federal Reserve, Kevin Warsh, provavelmente reduzirá as taxas de juros, apesar da maioria dos investidores prever um aumento.",
-      "url": "https://cointelegraph.com.br/news/warsh-cut-rate-despite-consensus-rate-hikes",
+      "summary": "Atualizacao de empresas capturada em Folha do Estado.",
+      "details": "",
+      "url": "https://www.folhadoestado.com.br/economia/carga-tributaria-empurra-232-empresas-brasileiras-para-o-paraguai/638229",
       "source": "Folha do Estado",
       "category": "companies",
       "tags": [
@@ -517,15 +582,14 @@
       "publishedAt": "2026-05-23T20:51:00Z",
       "updatedAt": "2026-05-23T20:51:00Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https://s3.cointelegraph.com/uploads/2026-05/019e55da-1518-7e6d-8920-0b776b64879a.jpg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "latest-3dd40de4c1dd614c4ba0134d",
       "title": "Escândalo do Banco Master: Impactos em Fundos de Investimento",
-      "summary": "Daniel Vorcaro oferece devolver R$ 60 bilhões à PGR após a PF rejeitar sua delação. O número é até 15 vezes maior que toda a Lava Jato e revela a dimensão de…",
-      "details": "Daniel Vorcaro oferece devolver R$ 60 bilhões à PGR após a PF rejeitar sua delação. O número é até 15 vezes maior que toda a Lava Jato e revela a dimensão de…",
-      "url": "https://revistaempreende.com.br/banco-master-o-maior-escandalo-financeiro-da-historia-recente-do-brasil-e-a-proposta-de-r-60-bilhoes-que-testa-o-limite-da-delacao-premiada/?v=3cb56c81f4b8",
+      "summary": "Mercadante alerta sobre novos riscos financeiros após escândalo do Banco Master.",
+      "details": "Mercadante alerta sobre novos riscos financeiros após escândalo do Banco Master.",
+      "url": "https://diariodoestadogo.com.br/escandalo-do-banco-master-impactos-em-fundos-de-investimento/",
       "source": "diário do estado",
       "category": "latest",
       "tags": [
@@ -537,33 +601,14 @@
       "updatedAt": "2026-05-23T20:21:14Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://i0.wp.com/revistaempreende.com.br/wp-content/uploads/2026/05/banco-master-fraude-vorcaro-investigacao-pf-2026.png?fit=1024%2C1024&ssl=1"
-    },
-    {
-      "id": "latest-ec4f370d81b6208b42e0c72c",
-      "title": "Banco Master: o maior escândalo financeiro da história recente do Brasil e a proposta de R$ 60 bilhões que testa o limite da delação premiada",
-      "summary": "Mercadante alerta sobre novos riscos financeiros após escândalo do Banco Master.",
-      "details": "Mercadante alerta sobre novos riscos financeiros após escândalo do Banco Master.",
-      "url": "https://diariodoestadogo.com.br/escandalo-do-banco-master-impactos-em-fundos-de-investimento/",
-      "source": "Revista Empreende",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-23T20:21:00Z",
-      "updatedAt": "2026-05-23T20:21:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
       "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/05/escandalo-do-banco-master3A-impactos-em-fundos-de-investimento.jpeg"
     },
     {
       "id": "macro-d155f0b6b5050541608a876a",
       "title": "PIB da Dinamarca deve crescer com Ozempic e Wegovy - 23/05/2026 - Economia",
-      "summary": "Atualizacao de macro capturada em Folha de S.Paulo.",
-      "details": "",
-      "url": "https://www1.folha.uol.com.br/amp/mercado/2026/05/caneta-emagrecedora-deve-elevar-o-pib-da-dinamarca-sede-da-novo-nordisk.shtml",
+      "summary": "Segundo um analista de mercado, o novo presidente do Federal Reserve, Kevin Warsh, provavelmente reduzirá as taxas de juros, apesar da maioria dos investidores prever um aumento.",
+      "details": "Segundo um analista de mercado, o novo presidente do Federal Reserve, Kevin Warsh, provavelmente reduzirá as taxas de juros, apesar da maioria dos investidores prever um aumento.",
+      "url": "https://cointelegraph.com.br/news/warsh-cut-rate-despite-consensus-rate-hikes",
       "source": "Folha de S.Paulo",
       "category": "macro",
       "tags": [
@@ -574,14 +619,15 @@
       "publishedAt": "2026-05-23T20:01:00Z",
       "updatedAt": "2026-05-23T20:01:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://images.cointelegraph.com/cdn-cgi/image/f=auto,onerror=redirect,w=1200/https://s3.cointelegraph.com/uploads/2026-05/019e55da-1518-7e6d-8920-0b776b64879a.jpg"
     },
     {
       "id": "macro-544b85254b88563714d574ac",
       "title": "Flávio Rocha, dono da Riachuelo, diz que escala 6×1 vai elevar preços e gerar inflação",
-      "summary": "O empresário Flávio Rocha, presidente do Conselho de Administração do Grupo Guararapes, dono da Riachuelo, afirmou neste sábado, 23, que",
-      "details": "O empresário Flávio Rocha, presidente do Conselho de Administração do Grupo Guararapes, dono da Riachuelo, afirmou neste sábado, 23, que",
-      "url": "https://mercadoeconsumo.com.br/23/05/2026/estadao-conteudo/flavio-rocha-dono-da-riachuelo-diz-que-escala-6x1-vai-elevar-precos-e-gerar-inflacao/",
+      "summary": "Atualizacao de macro capturada em Mercado&Consumo.",
+      "details": "",
+      "url": "https://www.diariodecuiaba.com.br/cuiaba-urgente/janaina-segue-taques-e-denuncia-suposto-esquema-de-desvio-de-r-308-milhoes/736395",
       "source": "Mercado&Consumo",
       "category": "macro",
       "tags": [
@@ -592,15 +638,14 @@
       "publishedAt": "2026-05-23T20:00:57Z",
       "updatedAt": "2026-05-23T20:00:57Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://mercadoeconsumo.com.br/wp-content/uploads/2021/09/flavio-rocha-1.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "funds-26ab0480b0c8d8712bd69951",
       "title": "Janaína segue Taques e denúncia suposto esquema de desvio de R$ 308 milhões",
-      "summary": "Atualizacao de fundos capturada em Diario de Cuiabá.",
-      "details": "",
-      "url": "https://www.diariodecuiaba.com.br/cuiaba-urgente/janaina-segue-taques-e-denuncia-suposto-esquema-de-desvio-de-r-308-milhoes/736395",
+      "summary": "O líder do partido Missão defendeu mudanças em regras de benefícios sociais e previdenciários para conter despesas automáticas.",
+      "details": "O líder do partido Missão defendeu mudanças em regras de benefícios sociais e previdenciários para conter despesas automáticas.",
+      "url": "https://veronoticias.com/politica/pre-candidatos-divergem-sobre-ajuste-fiscal/",
       "source": "Diario de Cuiabá",
       "category": "funds",
       "tags": [
@@ -611,14 +656,15 @@
       "publishedAt": "2026-05-23T20:00:00Z",
       "updatedAt": "2026-05-23T20:00:00Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://veronoticias.com/wp-content/uploads/2025/11/renan-santos.jpg"
     },
     {
       "id": "macro-281581e1721b45c906ac74af",
       "title": "Pré-candidatos divergem sobre ajuste fiscal",
-      "summary": "Atualizacao de macro capturada em Vero Notícias.",
-      "details": "",
-      "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/05/23/luis-fabiano-anuncia-pre-candidatura-a-deputado-federal-por-sp.ghtm",
+      "summary": "A Ajinomoto de Limeira propôs um reajuste de 4,11% e um piso salarial, mas os trabalhadores exigem aumento real nos salários.",
+      "details": "A Ajinomoto de Limeira propôs um reajuste de 4,11% e um piso salarial, mas os trabalhadores exigem aumento real nos salários.",
+      "url": "https://radiopeaobrasil.com.br/ajinomoto-de-limeira-oferece-so-reposicao-da-inflacao-e-trabalhadores-rejeitam/",
       "source": "Vero Notícias",
       "category": "macro",
       "tags": [
@@ -629,14 +675,15 @@
       "publishedAt": "2026-05-23T20:00:00Z",
       "updatedAt": "2026-05-23T20:00:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://radiopeaobrasil.com.br/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-22-at-16.44.34.jpeg"
     },
     {
       "id": "companies-1f0081182145b56b7e21dc85",
       "title": "Mais de 230 empresas brasileiras já produzem no Paraguai atraídas por carga tributária menor",
-      "summary": "Atualizacao de empresas capturada em Blog do Valente.",
-      "details": "",
-      "url": "https://blogdovalente.com.br/economia/2026/05/mais-de-230-empresas-brasileiras-ja-produzem-no-paraguai-atraidas-por-carga-tributaria-menor/",
+      "summary": "O empresário Flávio Rocha, presidente do Conselho de Administração do Grupo Guararapes, dono da Riachuelo, afirmou neste sábado, 23, que",
+      "details": "O empresário Flávio Rocha, presidente do Conselho de Administração do Grupo Guararapes, dono da Riachuelo, afirmou neste sábado, 23, que",
+      "url": "https://mercadoeconsumo.com.br/23/05/2026/estadao-conteudo/flavio-rocha-dono-da-riachuelo-diz-que-escala-6x1-vai-elevar-precos-e-gerar-inflacao/",
       "source": "Blog do Valente",
       "category": "companies",
       "tags": [
@@ -647,33 +694,15 @@
       "publishedAt": "2026-05-23T19:53:59Z",
       "updatedAt": "2026-05-23T19:53:59Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "macro-90e9c025adbb908144300ba2",
-      "title": "Luís Fabiano anuncia pré-candidatura a deputado federal por SP",
-      "summary": "Associação beneficiada pela Nota Fiscal Cidadã acolhe famílias alagoanas com ações de cuidado, inclusão e desenvolvimento social",
-      "details": "Associação beneficiada pela Nota Fiscal Cidadã acolhe famílias alagoanas com ações de cuidado, inclusão e desenvolvimento social",
-      "url": "https://tribunahoje.com/noticias/economia/2026/05/23/185702-nota-fiscal-cidada-apoia-maes-que-encontram-motivos-para-recomecar-todos-os-dias",
-      "source": "UOL Notícias",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-23T19:25:19Z",
-      "updatedAt": "2026-05-23T19:25:19Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://img.tribunahoje.com/DdRwcyfHiBa7UQrk_BGfmRAL-Ms=/300x300/smart/s3.tribunahoje.com/uploads/imagens/nota-fiscal-cidada-apoia-maes-que-encontram-motvos-para-recomecar-todos-os-dias.jpeg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://mercadoeconsumo.com.br/wp-content/uploads/2021/09/flavio-rocha-1.jpg"
     },
     {
       "id": "macro-439aa080ff32db9a86d00591",
       "title": "Nota Fiscal Cidadã apoia mães que encontram motivos para recomeçar todos os dias",
-      "summary": "O presidente do BNDES, Aloizio Mercadante, comentou o caso envolvendo o Banco Master no Forúm Esfera e defendeu mudanças estruturais em órgãos de fiscalização do sistema financeiro brasileiro. Confira na íntegra.",
-      "details": "O presidente do BNDES, Aloizio Mercadante, comentou o caso envolvendo o Banco Master no Forúm Esfera e defendeu mudanças estruturais em órgãos de fiscalização do sistema financeiro brasileiro. Confira na íntegra.",
-      "url": "https://tmc.com.br/brasil/aloizio-mercadante-defende-reestruturacao-do-banco-central-e-da-cvm-apos-caso-banco-master/",
+      "summary": "Atualizacao de macro capturada em tribunahoje.com.",
+      "details": "",
+      "url": "https://blogdovalente.com.br/economia/2026/05/mais-de-230-empresas-brasileiras-ja-produzem-no-paraguai-atraidas-por-carga-tributaria-menor/",
       "source": "tribunahoje.com",
       "category": "macro",
       "tags": [
@@ -684,15 +713,14 @@
       "publishedAt": "2026-05-23T19:21:00Z",
       "updatedAt": "2026-05-23T19:21:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://tmc.com.br/wp-content/uploads/2026/05/Captura-de-tela-2026-05-23-160310.png"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-886c7242a75651d363be3cc2",
       "title": "Ajinomoto de Limeira oferece só reposição da inflação, e trabalhadores rejeitam",
-      "summary": "A Ajinomoto de Limeira propôs um reajuste de 4,11% e um piso salarial, mas os trabalhadores exigem aumento real nos salários.",
-      "details": "A Ajinomoto de Limeira propôs um reajuste de 4,11% e um piso salarial, mas os trabalhadores exigem aumento real nos salários.",
-      "url": "https://radiopeaobrasil.com.br/ajinomoto-de-limeira-oferece-so-reposicao-da-inflacao-e-trabalhadores-rejeitam/",
+      "summary": "Associação beneficiada pela Nota Fiscal Cidadã acolhe famílias alagoanas com ações de cuidado, inclusão e desenvolvimento social",
+      "details": "Associação beneficiada pela Nota Fiscal Cidadã acolhe famílias alagoanas com ações de cuidado, inclusão e desenvolvimento social",
+      "url": "https://tribunahoje.com/noticias/economia/2026/05/23/185702-nota-fiscal-cidada-apoia-maes-que-encontram-motivos-para-recomecar-todos-os-dias",
       "source": "Rádio Peão Brasil",
       "category": "macro",
       "tags": [
@@ -704,14 +732,14 @@
       "updatedAt": "2026-05-23T19:17:06Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://radiopeaobrasil.com.br/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-22-at-16.44.34.jpeg"
+      "imageUrl": "https://img.tribunahoje.com/DdRwcyfHiBa7UQrk_BGfmRAL-Ms=/300x300/smart/s3.tribunahoje.com/uploads/imagens/nota-fiscal-cidada-apoia-maes-que-encontram-motvos-para-recomecar-todos-os-dias.jpeg"
     },
     {
       "id": "latest-d419dc0cc5475581906154ef",
       "title": "Aloizio Mercadante defende reestruturação do Banco Central e da CVM após caso Banco Master",
-      "summary": "Atualizacao de ultima hora capturada em tmc.com.br.",
-      "details": "",
-      "url": "https://www.contacto.lu/luxemburgo/ate-280-mil-euros-por-ano.-saiba-os-salarios-incriveis-do-setor-financeiro-no-luxemburgo/152881614.html",
+      "summary": "O presidente do BNDES, Aloizio Mercadante, comentou o caso envolvendo o Banco Master no Forúm Esfera e defendeu mudanças estruturais em órgãos de fiscalização do sistema financeiro brasileiro. Confira na íntegra.",
+      "details": "O presidente do BNDES, Aloizio Mercadante, comentou o caso envolvendo o Banco Master no Forúm Esfera e defendeu mudanças estruturais em órgãos de fiscalização do sistema financeiro brasileiro. Confira na íntegra.",
+      "url": "https://tmc.com.br/brasil/aloizio-mercadante-defende-reestruturacao-do-banco-central-e-da-cvm-apos-caso-banco-master/",
       "source": "tmc.com.br",
       "category": "latest",
       "tags": [
@@ -722,33 +750,15 @@
       "publishedAt": "2026-05-23T19:09:54Z",
       "updatedAt": "2026-05-23T19:09:54Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-87ed3868f649dc071c593edc",
-      "title": "Fim da escala 6x1 vai elevar inflação ou reduzir empregos, diz dono da Riachuelo",
-      "summary": "O líder do partido Missão defendeu mudanças em regras de benefícios sociais e previdenciários para conter despesas automáticas.",
-      "details": "O líder do partido Missão defendeu mudanças em regras de benefícios sociais e previdenciários para conter despesas automáticas.",
-      "url": "https://veronoticias.com/politica/pre-candidatos-divergem-sobre-ajuste-fiscal/",
-      "source": "MSN",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-23T19:08:30Z",
-      "updatedAt": "2026-05-23T19:08:30Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://veronoticias.com/wp-content/uploads/2025/11/renan-santos.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://tmc.com.br/wp-content/uploads/2026/05/Captura-de-tela-2026-05-23-160310.png"
     },
     {
       "id": "latest-41685277f28461c4b98449be",
       "title": "Até 280 mil euros por ano. Saiba os salários incríveis do setor financeiro no Luxemburgo",
       "summary": "Atualizacao de ultima hora capturada em contacto.lu.",
       "details": "",
-      "url": "https://www.msn.com/pt-br/noticias/brasil/fim-da-escala-6x1-vai-elevar-infla%C3%A7%C3%A3o-ou-reduzir-empregos-diz-dono-da-riachuelo/ar-AA23Tpj5",
+      "url": "https://www.contacto.lu/luxemburgo/ate-280-mil-euros-por-ano.-saiba-os-salarios-incriveis-do-setor-financeiro-no-luxemburgo/152881614.html",
       "source": "contacto.lu",
       "category": "latest",
       "tags": [
@@ -778,42 +788,6 @@
       "updatedAt": "2026-05-23T18:34:07Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "macro-69c46763bb00c698cfbdd81a",
-      "title": "Brasil cumpre meta que não estabiliza dívida, diz Srour",
-      "summary": "Atualizacao de macro capturada em CNN Brasil.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNjcyc3EzcGJJdENMOUNJM3FoZm9wWEppWm5WVC1CR0lOYjZ0a29rZld4SmZNMWRqcEt1RmJvYVozUzdmS2hfQndlYk9OX19icXNwamhjVGZwZVNyUjY3bHZibE9jbG4xVWhneEZ6clVHOTJEUGtIbFZRSDB5YVNoTERkb3VWTl9zbnJrc20yUjRFdmpRbjJnemk0dHc5NDRrNE9CSG9aU2ZCdW8?oc=5",
-      "source": "CNN Brasil",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-23T18:30:21Z",
-      "updatedAt": "2026-05-23T18:30:21Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-977c5734600dc22873946f11",
-      "title": "Ata do Fed mostra que mais diretores alertam para alta de juros",
-      "summary": "Atualizacao de macro capturada em MSN.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVGQyeDZpbVYtTzdjaGYyNkZBajVTNVdwV2thWW93dFpVX2E3ZXBrX2d2QVFQRGNiM2NEZnplemZmOXNoQUdiVHM4S1NIYktONHBkbUM5dDN4MHJqOXROTUNsTHp4Z1A2d1lfRUN1QlNLZmp5c3lpVjJQU0pMN29QYnoxNmRWcjhaeWJMbWhCa0lUa282MHVieEpwVTUzMGR0dzdOcjlPeU82ZXZROWt1bF9hT0UyZTlmNlA2dC1oTHRsQVZ2RDJISWlZUHMyVjhqV0VFMDNzRjlOQmtwR29kZndBcEVvdGlGYVlXcQ?oc=5",
-      "source": "MSN",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-23T18:30:00Z",
-      "updatedAt": "2026-05-23T18:30:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-233358162a9a422ae8d81003",
@@ -850,6 +824,24 @@
       "updatedAt": "2026-05-23T18:04:06Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "latest-a4f6819299f90eb6dcdaaf50",
+      "title": "Romanée-Conti 1945: O que fez uma garrafa de vinho bater recorde mundial e ser arrematada por R$ 4 milhões",
+      "summary": "Atualizacao de ultima hora capturada em Money Times.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSmJ6N3FfR2NjVGx2R1ZkTlhxRlcwZzJUUGhaeEdhOWxCZUdLNlJhNzFpYklDT0xqMmpmOWNVYV8wNm9WeFQtTnRRLU1naVZXWUoyRDZkM3NaVV93S2dPeHAxa2tpbjk2ZnlqMjFNTElYcUlJRzZmRUVVMzN3VUI4QnRwWlNycF94Sjk4ODdlbDFORUJIS1BDVVFHc1BiQ3VuRVJjOXRnM05ucFk5ZUJWX1FCOXFBRlRkT0FpZDlXeldodVhSTUg5YVB3ajJVT0wy?oc=5",
+      "source": "Money Times",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-23T18:02:10Z",
+      "updatedAt": "2026-05-23T18:02:10Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-992e54414936564938936857",
@@ -1122,6 +1114,24 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
+      "id": "macro-90b736a11ba1ed23a99fa04a",
+      "title": "Do churrasco à cerveja: 'cesta da Copa' sobe mais que a inflação desde 2022; veja as altas",
+      "summary": "Atualizacao de macro capturada em Valor Investe.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOTTZFalVsVEZVN1BROFktdjAxdjV2T1k4SmZqdTVQSG5TYWJoRzViTV96RkxxcFJDamRZOTJxMFlHSWNUWkE1U0p4eWJEZ1UwOVAxYlAyVmFhTFY4eW1FNWZzcDZsTUFEVk9kQ2hVS250VmRlcHhYRVpoTlFJbENzRWVNSlk3TUozNFl5dFpheTA0NGo3Vi1GMUhuM0NieTEyTG9fQTc2eFRKTXFDdmlfOTNYQ0pyV05zV3paV0l5QlBVclF4NEF6V1otQWtuWUJZblY3N0VpLWhiRU5NX2Y4N0JWYkt0VXVJUklpYUxkQVc3Y0NV0gGDAkFVX3lxTE5YZ0hCN21sbnRYSFZNaUFoSE5ZM3NNR050Z1lHN3BhUTNzaUxWam5qYkYydW1vdXEzZC1BZEtsRzJqS0ZLWE1rUmtmR0k4Zi1BNlNZcHV3M1BJZXdCRXRvdmVsODlTTEtELVNMVXozWl92NVhCWHItV2ZGbW9qcEFoX2xHUmxFQ1oxOGZIRW1aZWZYSC1tOXRnaDJlaU5rR3lWZ1Rlc25Bck5GM3Y2QkU2bENzaWZpaEFHUG5hdHk2cWhDUlhtSFF3UWlGbDJjMEg4UFlISjJLR2lvM0o4SXVFSVdhNHFocndIem9HRTNsY1FBSVJTaXI2MzRBeU1aRzk4U00?oc=5",
+      "source": "Valor Investe",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-23T15:00:36Z",
+      "updatedAt": "2026-05-23T15:00:36Z",
+      "premium": true,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
       "id": "funds-9981809eaf0561147285fef8",
       "title": "Novo ETF faz criptomoeda alternativa subir 33% na semana e infla demanada",
       "summary": "Atualizacao de fundos capturada em Investidor10.",
@@ -1392,20 +1402,20 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-5f574512e7101ccbdaee4466",
-      "title": "Bitcoin 'Pizza Day' was 16 years ago, here's how much that BTC is worth today",
-      "summary": "Atualizacao de fundos capturada em TradingView.",
+      "id": "funds-e44b84b731429db84c86c721",
+      "title": "SNAG11 sobe com soja forte e captação de R$ 301 milhões em quinta emissão",
+      "summary": "Atualizacao de fundos capturada em Gazeta Mercantil.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWTRyZDVfeGNvMGpzZHQyM0JFbVB0d1pKbDhKZy1icnV2cTFJQXE5amNXUHBFQ19pZ3A5OXFkV3NiTGtYM3ZUUWh2VDdWdkNCUTVuSTlKVnY2TmlNbWZCOXhfTkd3WlRxMEl3a1pRczlyVEVSVlMteHNWOVJ3MEI1SjVOcU1rQUxkU0ZveV92bExwVGhhVEJBN1R6WkhfNlo5Tm5iYjU5RkxaTW1Wa1ZiY2FOUUdnOVVEeUxzLTZrODJSNUxnR0FOLUQ3SHNucGtpVzdRYnJuajE?oc=5",
-      "source": "TradingView",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1oNGVIMm1hYlRSdFpXcndSYUV5TDluUG1QRFN2WDFjS3NtTWJZZHhSamZMYnV0YUppS1BsNk5aS2tkUmZvcnBjUHNDNVVLeXBEanZBdW1yZUZmcXB3THRJZm9Wa2lxdEtFZ05VOTBIeEgzOElJ?oc=5",
+      "source": "Gazeta Mercantil",
       "category": "funds",
       "tags": [
         "fundos",
         "asset",
         "fiis"
       ],
-      "publishedAt": "2026-05-22T23:16:38Z",
-      "updatedAt": "2026-05-22T23:16:38Z",
+      "publishedAt": "2026-05-23T02:00:49Z",
+      "updatedAt": "2026-05-23T02:00:49Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
