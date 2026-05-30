@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-30T07:38:20Z",
-  "generatedAt": "2026-05-30T07:38:20Z",
+  "updatedAt": "2026-05-30T09:56:32Z",
+  "generatedAt": "2026-05-30T09:56:32Z",
   "categories": [
     {
       "id": "all",
@@ -25,8 +25,8 @@
   ],
   "sources": [
     {
-      "id": "ag-ncia-brasil",
-      "label": "Agência Brasil"
+      "id": "am-post",
+      "label": "AM POST"
     },
     {
       "id": "arede",
@@ -45,20 +45,12 @@
       "label": "Broadcast"
     },
     {
-      "id": "campo-grande-news",
-      "label": "Campo Grande News"
-    },
-    {
-      "id": "canal-rural",
-      "label": "Canal Rural"
-    },
-    {
-      "id": "clientesa",
-      "label": "ClienteSA"
-    },
-    {
       "id": "cnn-brasil",
       "label": "CNN Brasil"
+    },
+    {
+      "id": "correio-do-povo",
+      "label": "Correio do Povo"
     },
     {
       "id": "cpg-click-petr-leo-e-g-s",
@@ -67,14 +59,6 @@
     {
       "id": "c-mara-municipal-de-araraquara",
       "label": "Câmara Municipal de Araraquara"
-    },
-    {
-      "id": "di-rio-do-centro-do-mundo",
-      "label": "Diário do Centro do Mundo"
-    },
-    {
-      "id": "di-rio-do-estado",
-      "label": "diário do estado"
     },
     {
       "id": "di-rio-imobili-rio",
@@ -89,6 +73,10 @@
       "label": "Estratégia Concursos"
     },
     {
+      "id": "exame",
+      "label": "Exame"
+    },
+    {
       "id": "g1",
       "label": "G1"
     },
@@ -101,16 +89,12 @@
       "label": "InfoMoney"
     },
     {
+      "id": "jornal-da-cidade-online",
+      "label": "Jornal da Cidade Online"
+    },
+    {
       "id": "jornal-do-com-rcio",
       "label": "Jornal do Comércio"
-    },
-    {
-      "id": "migalhas",
-      "label": "Migalhas"
-    },
-    {
-      "id": "money-times",
-      "label": "Money Times"
     },
     {
       "id": "novojornal-com-br",
@@ -125,12 +109,12 @@
       "label": "O POVO+"
     },
     {
-      "id": "pleno-news",
-      "label": "Pleno.News"
-    },
-    {
       "id": "portal-revista-kdea-360",
       "label": "Portal Revista Kdea 360"
+    },
+    {
+      "id": "portal-tela",
+      "label": "Portal Tela"
     },
     {
       "id": "rep-rter-macei",
@@ -149,10 +133,6 @@
       "label": "Tribuna do Sertão"
     },
     {
-      "id": "valor-econ-mico",
-      "label": "Valor Econômico"
-    },
-    {
       "id": "vero-not-cias",
       "label": "Vero Notícias"
     },
@@ -167,11 +147,162 @@
   ],
   "items": [
     {
-      "id": "latest-311b35b9131364af48c75e25",
-      "title": "Ibovespa tomba em maio com saída de estrangeiros, juros altos e eleição",
+      "id": "companies-e6b8615681d1748a6f385251",
+      "title": "Presidente do PT diz que ação dos EUA prejudica empresas brasileiras e Flávio dá resposta desmoralizante",
+      "summary": "Edinho Silva, o delirante presidente do Partido dos Trabalhadores (PT), acusou a família Bolsonaro de prejudicar investidores e empresas no Brasil. Edinho simplesmente ignora a escalada da violência, ...",
+      "details": "Edinho Silva, o delirante presidente do Partido dos Trabalhadores (PT), acusou a família Bolsonaro de prejudicar investidores e empresas no Brasil. Edinho simplesmente ignora a escalada da violência, ...",
+      "url": "https://www.jornaldacidadeonline.com.br/noticias/83625/presidente-do-pt-diz-que-acao-dos-eua-prejudica-empresas-brasileiras-e-flavio-da-resposta-desmoralizante",
+      "source": "Jornal da Cidade Online",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-05-30T09:12:00Z",
+      "updatedAt": "2026-05-30T09:12:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://fotos.jornaldacidadeonline.com.br/uploads/fotos/1300x0_1780132327_6a1aa9e79087b.jpeg"
+    },
+    {
+      "id": "macro-1ed1afa3d126b80f4afd08a1",
+      "title": "Pequenas no PIB, gigantes em relevância",
+      "summary": "O Ibovespa, principal referência do mercado financeiro, aparece na sexta colocação em meio à invasão de estrangeiros, com alta de 10,26%",
+      "details": "O Ibovespa, principal referência do mercado financeiro, aparece na sexta colocação em meio à invasão de estrangeiros, com alta de 10,26%",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/indices-b3-agro-estatais-lideram-ganhos-2026/",
+      "source": "Correio do Povo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-30T09:03:09Z",
+      "updatedAt": "2026-05-30T09:03:09Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/RTZBDQ5NPRJQXHRR7LYXBU67EY.png?quality=80&auth=a6ca0e95fc1675dc12968edd5af1195f7508fb749f5d49150a23a53577b2a05e&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "latest-915d6c93e83419d8268515d4",
+      "title": "Ibovespa hoje cai com impasse das negociações no Oriente Médio; dólar vai a R$ 5,06",
+      "summary": "Potência agropecuária gaúcha é forjada por uma preciosa diversificação de atividades, sobretudo empreendida na produção familiar",
+      "details": "Potência agropecuária gaúcha é forjada por uma preciosa diversificação de atividades, sobretudo empreendida na produção familiar",
+      "url": "https://www.correiodopovo.com.br/not%C3%ADcias/rural/pequenas-no-pib-gigantes-em-relevancia-1.1717949",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-30T08:31:57Z",
+      "updatedAt": "2026-05-30T08:31:57Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.correiodopovo.com.br/image/contentid/policy:1.1717962:1780088919/IMG_4528%20(1).jpg?a=191%3A100&q=0.6&w=1200&$p$a$q$w=7612f64"
+    },
+    {
+      "id": "latest-0ccacd2d3a2f64e1fee7937d",
+      "title": "Agro e estatais roubam a cena na Bolsa em 2026; veja os índices campeões do ano",
+      "summary": "IPCA-15 acima do esperado não provocou alterações relevantes nas expectativas de inflação; perdas da Petrobras limitaram Bolsa",
+      "details": "IPCA-15 acima do esperado não provocou alterações relevantes nas expectativas de inflação; perdas da Petrobras limitaram Bolsa",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-ipca15-oriente-medio-dolar-bolsas-internacionais/",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-30T08:26:15Z",
+      "updatedAt": "2026-05-30T08:26:15Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/FJW7A32BUJNSRHOZEHXFGDP55M.png?quality=80&auth=f9c54eee930e3887755df8651c7c925fcc6d309b1b96ecc9c72c0fee34d95c37&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "companies-be25c384f3e0be026707ae37",
+      "title": "Automação com IA: como implementar e exemplos reais no Brasil",
+      "summary": "A automação com IA já está em operações de empresas brasileiras de diversos portes, reduzindo tarefas repetitivas e aumentando a produtividade. A IA difere d...",
+      "details": "A automação com IA já está em operações de empresas brasileiras de diversos portes, reduzindo tarefas repetitivas e aumentando a produtividade. A IA difere d...",
+      "url": "https://www.portaltela.com/noticias/economia/2026/05/30/automacao-com-ia-como-implementar-e-exemplos-reais-no-brasil/",
+      "source": "Portal Tela",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-05-30T08:20:44Z",
+      "updatedAt": "2026-05-30T08:20:44Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/05/GettyImages-1387147112-e1704300327558.webp"
+    },
+    {
+      "id": "companies-bd3a77e151fe5dee45cb7020",
+      "title": "Automação com IA: o que é, como implementar e exemplos reais em empresas brasileiras",
+      "summary": "Atualizacao de empresas capturada em Exame.",
+      "details": "",
+      "url": "https://exame.com/inteligencia-artificial/automacao-com-ia-o-que-e-como-implementar-e-exemplos-reais-em-empresas-brasileiras/",
+      "source": "Exame",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-05-30T08:07:29Z",
+      "updatedAt": "2026-05-30T08:07:29Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "macro-6d90263a8c5bb35d4f10ae9b",
+      "title": "Quanto investir para se aposentar com um salário mínimo extra batendo a inflação?",
       "summary": "Estrategistas apontam que desempenho reflete rotação de capital de volta para setor de tecnologia, assim como perspectiva de cortes da Selic mais lenta e incertezas com cenário político",
       "details": "Estrategistas apontam que desempenho reflete rotação de capital de volta para setor de tecnologia, assim como perspectiva de cortes da Selic mais lenta e incertezas com cenário político",
       "url": "https://www.cnnbrasil.com.br/economia/mercado/ibovespa-tomba-em-maio-com-saida-de-estrangeiros-juros-altos-e-eleicao/",
+      "source": "InfoMoney",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-30T08:00:00Z",
+      "updatedAt": "2026-05-30T08:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/03/ChatGPT-Image-3-de-mar.-de-2026-20_42_03.png?w=1200&h=630&crop=1"
+    },
+    {
+      "id": "macro-841d3a90f4b4f5a2319a79f0",
+      "title": "Economistas apontam que PIB deve desacelerar nos próximos meses",
+      "summary": "Para os mais jovens, investir para o futuro pode custar menos que um plano de celular ou uma mensalidade de streaming; veja os valores",
+      "details": "Para os mais jovens, investir para o futuro pode custar menos que um plano de celular ou uma mensalidade de streaming; veja os valores",
+      "url": "https://www.infomoney.com.br/onde-investir/salario-minimo-extra-aposentadoria-simulacao-tesouro-direto-2026/",
+      "source": "CNN Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-30T07:33:14Z",
+      "updatedAt": "2026-05-30T07:33:14Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/05/aaron-burden-cEukkv42O40-unsplash.jpg?fit=1920%2C1442&quality=70&strip=all"
+    },
+    {
+      "id": "latest-311b35b9131364af48c75e25",
+      "title": "Ibovespa tomba em maio com saída de estrangeiros, juros altos e eleição",
+      "summary": "Apesar do baixo desemprego, renda per capita brasileira avança em ritmo inferior ao de países desenvolvidos desde os anos 1980",
+      "details": "Apesar do baixo desemprego, renda per capita brasileira avança em ritmo inferior ao de países desenvolvidos desde os anos 1980",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/pib-per-capita-brasil-cresce-menos-e-amplia-distancia-de-paises/",
       "source": "CNN Brasil",
       "category": "latest",
       "tags": [
@@ -183,14 +314,14 @@
       "updatedAt": "2026-05-30T07:22:07Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/03/ChatGPT-Image-3-de-mar.-de-2026-20_42_03.png?w=1200&h=630&crop=1"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXNPEL990ZU-BASEIMAGE.jpg?w=800&h=533&crop=1"
     },
     {
       "id": "macro-4b3a51f369cecb94785be632",
       "title": "PIB per capita: Brasil cresce menos e amplia distância de países",
-      "summary": "Nos primeiros cinco meses de 2026, a taxa de desembolso de capital de investimento público na cidade de Hai Phong atingiu quase 33%, quase o dobro da média nacional.",
-      "details": "Nos primeiros cinco meses de 2026, a taxa de desembolso de capital de investimento público na cidade de Hai Phong atingiu quase 33%, quase o dobro da média nacional.",
-      "url": "https://www.vietnam.vn/pt/giai-ngan-von-dau-tu-cong-hai-phong-gan-gap-doi-binh-quan-ca-nuoc",
+      "summary": "Especialistas avaliam que desempenho do primeiro trimestre está ligado a uma série de fatores de estímulo fiscal concentrados no início do ano",
+      "details": "Especialistas avaliam que desempenho do primeiro trimestre está ligado a uma série de fatores de estímulo fiscal concentrados no início do ano",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/economistas-apontam-que-pib-deve-desacelerar-nos-proximos-meses/",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -202,14 +333,14 @@
       "updatedAt": "2026-05-30T07:11:47Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/30/1780123827325_du-an-3.jpeg"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/10/real_moedadinheiro_jfcrz_abr_1701220044_1.jpg?w=1200&h=630&crop=1"
     },
     {
       "id": "funds-2b053f34e9b02dd281d142c9",
       "title": "O desembolso de fundos de investimento público em Hai Phong é quase o dobro da média nacional.",
-      "summary": "Apesar do baixo desemprego, renda per capita brasileira avança em ritmo inferior ao de países desenvolvidos desde os anos 1980",
-      "details": "Apesar do baixo desemprego, renda per capita brasileira avança em ritmo inferior ao de países desenvolvidos desde os anos 1980",
-      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/pib-per-capita-brasil-cresce-menos-e-amplia-distancia-de-paises/",
+      "summary": "Economista-chefe para a América Latina do banco francês BNP Paribas e ex-diretora do Banco Central (BC), Fernanda Guardado chama a atenção para a fraqueza dos investimentos",
+      "details": "Economista-chefe para a América Latina do banco francês BNP Paribas e ex-diretora do Banco Central (BC), Fernanda Guardado chama a atenção para a fraqueza dos investimentos",
+      "url": "https://oglobo.globo.com/economia/noticia/2026/05/30/composicao-do-pib-e-preocupante-e-juro-podera-cair-menos-diz-ex-diretora-do-bc.ghtml",
       "source": "Vietnam.vn",
       "category": "funds",
       "tags": [
@@ -221,14 +352,14 @@
       "updatedAt": "2026-05-30T07:08:24Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXNPEL990ZU-BASEIMAGE.jpg?w=800&h=533&crop=1"
+      "imageUrl": "https://s2-oglobo.glbimg.com/yQDtNeOWJFghFqV7AbyMd4GC3A0=/875x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/j/H/EBnYLbSsmDFD3BQvJ7fw/111274529-data-29-05-2025-local-sao-paulosp-editoria-brasil-reporter-anais-fernandes-setor-macro-1-.jpg"
     },
     {
       "id": "macro-8dad76bf1ccebd584aa6fe91",
       "title": "Composição do PIB é preocupante, e juro poderá cair menos, diz ex-diretora do BC",
-      "summary": "Mercado ficou de olho no cenário eleitoral doméstico enquanto investidores repercutiram projeções do Boletim Focus",
-      "details": "Mercado ficou de olho no cenário eleitoral doméstico enquanto investidores repercutiram projeções do Boletim Focus",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-boletim-focus-geopolitica-oriente-medio-mercados-globais-volatilidade-petroleo-dolar/",
+      "summary": "Advogado especialista em compliance aponta risco de empresas sofrerem morte financeira",
+      "details": "Advogado especialista em compliance aponta risco de empresas sofrerem morte financeira",
+      "url": "https://oglobo.globo.com/economia/noticia/2026/05/30/depois-da-classificacao-de-pcc-e-cv-como-terroristas-o-que-empresas-brasileiras-podem-fazer-e-quais-os-seus-desafios.ghtml",
       "source": "O Globo",
       "category": "macro",
       "tags": [
@@ -240,14 +371,14 @@
       "updatedAt": "2026-05-30T07:01:12Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/A66IE2Q3WBJUJCIEIBG7VM7XEI.png?quality=80&auth=886eb6b59c5f51619fb29283408d9c12483919a683c814f07a5bf40dad1fdf57&width=1200&height=630&smart=true"
+      "imageUrl": "https://s2-oglobo.glbimg.com/mKiji5movG6CNFEz_lBpJRsXPhM=/1536x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/D/P/q7nIHBSbStYx6ZASHBNQ/5c96d6d6-76d1-46e5-a7af-5af6d7e08614.jpg"
     },
     {
       "id": "companies-8f9ee00ca3fa08793665797d",
       "title": "Depois da classificação de PCC e CV como terroristas, o que empresas brasileiras podem fazer e quais os seus desafios",
-      "summary": "VTV.vn - O investimento público na comuna está se tornando uma força motriz para o desenvolvimento econômico, expandindo o espaço industrial e atraindo investimentos.",
-      "details": "VTV.vn - O investimento público na comuna está se tornando uma força motriz para o desenvolvimento econômico, expandindo o espaço industrial e atraindo investimentos.",
-      "url": "https://www.vietnam.vn/pt/xa-xuan-truc-day-manh-giai-ngan-von-dau-tu-cong-tao-dong-luc-phat-trien-moi",
+      "summary": "Nos primeiros cinco meses de 2026, a taxa de desembolso de capital de investimento público na cidade de Hai Phong atingiu quase 33%, quase o dobro da média nacional.",
+      "details": "Nos primeiros cinco meses de 2026, a taxa de desembolso de capital de investimento público na cidade de Hai Phong atingiu quase 33%, quase o dobro da média nacional.",
+      "url": "https://www.vietnam.vn/pt/giai-ngan-von-dau-tu-cong-hai-phong-gan-gap-doi-binh-quan-ca-nuoc",
       "source": "O Globo",
       "category": "companies",
       "tags": [
@@ -259,14 +390,14 @@
       "updatedAt": "2026-05-30T07:00:36Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/30/1780120286773_picture7-05227380795887576794067-96025920744943696645730.webp"
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/30/1780123827325_du-an-3.jpeg"
     },
     {
       "id": "latest-ff2ded70b35fb4d8aaea41c7",
       "title": "Ibovespa sobe com alívio global após avanço nas nеgociações entre EUA e Irã; dólar cai",
-      "summary": "Advogado especialista em compliance aponta risco de empresas sofrerem morte financeira",
-      "details": "Advogado especialista em compliance aponta risco de empresas sofrerem morte financeira",
-      "url": "https://oglobo.globo.com/economia/noticia/2026/05/30/depois-da-classificacao-de-pcc-e-cv-como-terroristas-o-que-empresas-brasileiras-podem-fazer-e-quais-os-seus-desafios.ghtml",
+      "summary": "Mercado ficou de olho no cenário eleitoral doméstico enquanto investidores repercutiram projeções do Boletim Focus",
+      "details": "Mercado ficou de olho no cenário eleitoral doméstico enquanto investidores repercutiram projeções do Boletim Focus",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-boletim-focus-geopolitica-oriente-medio-mercados-globais-volatilidade-petroleo-dolar/",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -278,14 +409,33 @@
       "updatedAt": "2026-05-30T06:28:03Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s2-oglobo.glbimg.com/mKiji5movG6CNFEz_lBpJRsXPhM=/1536x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/D/P/q7nIHBSbStYx6ZASHBNQ/5c96d6d6-76d1-46e5-a7af-5af6d7e08614.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/A66IE2Q3WBJUJCIEIBG7VM7XEI.png?quality=80&auth=886eb6b59c5f51619fb29283408d9c12483919a683c814f07a5bf40dad1fdf57&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "macro-73340f9a14022b7895aeb41c",
+      "title": "Rússia: PIB recua 4,0% no 2° trimestre, na comparação anual",
+      "summary": "No 1º trimestre o PIB russo foi de 3,5%",
+      "details": "No 1º trimestre o PIB russo foi de 3,5%",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/russia-pib-recua-40-no-2-trimestre-na-comparacao-anual/",
+      "source": "Estadão",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-30T06:07:21Z",
+      "updatedAt": "2026-05-30T06:07:21Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/HCZ3PE73EZITNE3BGQATTZOEIQ.jpg?quality=80&auth=c50bdcb153afd6fdd4ca3fc9019dc26f45734dc6ffe2baf457ea43d1958b5b7a&width=1200&height=630&smart=true"
     },
     {
       "id": "funds-2079a621a20055b879bfdbcd",
       "title": "A comuna de Xuan Truc acelera a liberação de fundos de investimento público, criando um novo ímpeto para o desenvolvimento.",
-      "summary": "Resultado teve ainda influência positiva da Indústria e dos Serviços, que também apresentaram crescimento no período",
-      "details": "Resultado teve ainda influência positiva da Indústria e dos Serviços, que também apresentaram crescimento no período",
-      "url": "https://mais.opovo.com.br/jornal/economia/2026/05/30/puxado-pelo-agro-pib-brasil-soma-rs-33-trilhoes-e-cresce-11-no-primeiro-trimestre-de-2026.html",
+      "summary": "VTV.vn - O investimento público na comuna está se tornando uma força motriz para o desenvolvimento econômico, expandindo o espaço industrial e atraindo investimentos.",
+      "details": "VTV.vn - O investimento público na comuna está se tornando uma força motriz para o desenvolvimento econômico, expandindo o espaço industrial e atraindo investimentos.",
+      "url": "https://www.vietnam.vn/pt/xa-xuan-truc-day-manh-giai-ngan-von-dau-tu-cong-tao-dong-luc-phat-trien-moi",
       "source": "Vietnam.vn",
       "category": "funds",
       "tags": [
@@ -297,14 +447,33 @@
       "updatedAt": "2026-05-30T06:04:28Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/30/1780120286773_picture7-05227380795887576794067-96025920744943696645730.webp"
+    },
+    {
+      "id": "latest-d533cf492f19e4c85211ff02",
+      "title": "Ibovespa hoje: Minerva (BEEF3) lidera altas; Braskem (BRKM5) tomba quase 6%",
+      "summary": "Resultado teve ainda influência positiva da Indústria e dos Serviços, que também apresentaram crescimento no período",
+      "details": "Resultado teve ainda influência positiva da Indústria e dos Serviços, que também apresentaram crescimento no período",
+      "url": "https://mais.opovo.com.br/jornal/economia/2026/05/30/puxado-pelo-agro-pib-brasil-soma-rs-33-trilhoes-e-cresce-11-no-primeiro-trimestre-de-2026.html",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-30T06:04:17Z",
+      "updatedAt": "2026-05-30T06:04:17Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
       "imageUrl": "https://www.opovo.com.br/_midias/jpg/2026/05/29/1200x675/1_pib-40921646.jpg"
     },
     {
       "id": "latest-c3cd4667bb22f5efdf44bd18",
       "title": "Carteira favorita do investidor pessoa física rende menos que o Ibovespa em 12 meses",
-      "summary": "Levantamento da Grana Capital mostra que ações de Banco do Brasil e BB Seguridade pesaram sobre a rentabilidade da carteira mais popular entre investidores de varejo",
-      "details": "Levantamento da Grana Capital mostra que ações de Banco do Brasil e BB Seguridade pesaram sobre a rentabilidade da carteira mais popular entre investidores de varejo",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/carteira-favorita-investidor-pessoa-fisica-rende-menos-que-ibovespa/",
+      "summary": "Ações da Petrobras (PETR3;PETR4) se recuperaram de perdas da véspera e fecharam em alta, com valorização do petróleo Brent",
+      "details": "Ações da Petrobras (PETR3;PETR4) se recuperaram de perdas da véspera e fecharam em alta, com valorização do petróleo Brent",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-minerva-beef3-lidera-altas-braskem-brkm5-tomba/",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -316,14 +485,14 @@
       "updatedAt": "2026-05-30T05:08:01Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/S6O6V4BWKFITRFQX2UVN34PUCU.png?quality=80&auth=962611b56a118c7eedf343e04cc03b613dd02d0d2a8d6729549784e3a9ac3f30&width=1200&height=630&smart=true"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/2G5MHFLPZRMGRKYPR37RXKLYHA.png?quality=80&auth=0ad418d740e5c5e6a448b31feac336d7785c6071737c3f79504d00dabc51a742&width=1200&height=630&smart=true"
     },
     {
       "id": "macro-f1f4c00b5196c28ed45cb77e",
       "title": "Puxado pelo Agro, PIB Brasil soma R$ 3,3 trilhões e cresce 1,1% no primeiro trimestre de 2026",
-      "summary": "Economista-chefe para a América Latina do banco francês BNP Paribas e ex-diretora do Banco Central (BC), Fernanda Guardado chama a atenção para a fraqueza dos investimentos",
-      "details": "Economista-chefe para a América Latina do banco francês BNP Paribas e ex-diretora do Banco Central (BC), Fernanda Guardado chama a atenção para a fraqueza dos investimentos",
-      "url": "https://oglobo.globo.com/economia/noticia/2026/05/30/composicao-do-pib-e-preocupante-e-juro-podera-cair-menos-diz-ex-diretora-do-bc.ghtml",
+      "summary": "Levantamento da Grana Capital mostra que ações de Banco do Brasil e BB Seguridade pesaram sobre a rentabilidade da carteira mais popular entre investidores de varejo",
+      "details": "Levantamento da Grana Capital mostra que ações de Banco do Brasil e BB Seguridade pesaram sobre a rentabilidade da carteira mais popular entre investidores de varejo",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/carteira-favorita-investidor-pessoa-fisica-rende-menos-que-ibovespa/",
       "source": "O POVO+",
       "category": "macro",
       "tags": [
@@ -335,7 +504,7 @@
       "updatedAt": "2026-05-30T04:15:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-oglobo.glbimg.com/yQDtNeOWJFghFqV7AbyMd4GC3A0=/875x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/j/H/EBnYLbSsmDFD3BQvJ7fw/111274529-data-29-05-2025-local-sao-paulosp-editoria-brasil-reporter-anais-fernandes-setor-macro-1-.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/S6O6V4BWKFITRFQX2UVN34PUCU.png?quality=80&auth=962611b56a118c7eedf343e04cc03b613dd02d0d2a8d6729549784e3a9ac3f30&width=1200&height=630&smart=true"
     },
     {
       "id": "companies-4e410f11c6d371321f754487",
@@ -359,9 +528,9 @@
     {
       "id": "macro-2b8e1e7050f95bc2678e465c",
       "title": "PIB do Brasil cresce 1,1% no 1º trimestre de 2026, com avanço do agro e consumo",
-      "summary": "Bruno Carazza analisa como, mergulhando um pouco nos números, a economia dá sinais claros de perda de força.",
-      "details": "Bruno Carazza analisa como, mergulhando um pouco nos números, a economia dá sinais claros de perda de força.",
-      "url": "https://g1.globo.com/google/amp/jornal-da-globo/video/pib-do-brasil-cresce-11-no-1o-trimestre-de-2026-com-avanco-do-agro-e-consumo-14658742.ghtml",
+      "summary": "A transição planejada de liderança posiciona a Avalara para acelerar e dimensionar sua inovação assistida por IA",
+      "details": "A transição planejada de liderança posiciona a Avalara para acelerar e dimensionar sua inovação assistida por IA",
+      "url": "https://www.broadcast.com.br/pr-newswire/avalara-nomeia-hugo-sarrazin-ceo/",
       "source": "G1",
       "category": "macro",
       "tags": [
@@ -373,14 +542,14 @@
       "updatedAt": "2026-05-30T03:54:15Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s03.video.glbimg.com/x720/14658742.jpg"
+      "imageUrl": "https://mmx.prnewswire.com/media/MS1850023/Avalara_Inc-CEO-Photo.jpg?id=OA2643208"
     },
     {
       "id": "latest-ce42fa11738e8222d7bc81c3",
       "title": "Avalara nomeia Hugo Sarrazin CEO",
-      "summary": "A transição planejada de liderança posiciona a Avalara para acelerar e dimensionar sua inovação assistida por IA",
-      "details": "A transição planejada de liderança posiciona a Avalara para acelerar e dimensionar sua inovação assistida por IA",
-      "url": "https://www.broadcast.com.br/pr-newswire/avalara-nomeia-hugo-sarrazin-ceo/",
+      "summary": "No pregão, mercado acompanhou ata do Copom, queda do petróleo e dólar no menor nível desde janeiro de 2024",
+      "details": "No pregão, mercado acompanhou ata do Copom, queda do petróleo e dólar no menor nível desde janeiro de 2024",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-ambev-abev3-salta-balanco-braskem-brkm5-lidera-quedas/",
       "source": "Broadcast",
       "category": "latest",
       "tags": [
@@ -392,14 +561,14 @@
       "updatedAt": "2026-05-30T03:47:30Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://mmx.prnewswire.com/media/MS1850023/Avalara_Inc-CEO-Photo.jpg?id=OA2643208"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/2G5MHFLPZRMGRKYPR37RXKLYHA.png?quality=80&auth=0ad418d740e5c5e6a448b31feac336d7785c6071737c3f79504d00dabc51a742&width=1200&height=630&smart=true"
     },
     {
       "id": "latest-7aa4584eecd509a66b3361d3",
       "title": "Ibovespa hoje: Ambev (ABEV3) salta 15% após balanço; Braskem (BRKM5) lidera quedas",
-      "summary": "Rafaela Vitória, economista-chefe do Inter, avalia que estímulos ao consumo das famílias não são sustentáveis e que o PIB deve crescer menos ao longo de 2026",
-      "details": "Rafaela Vitória, economista-chefe do Inter, avalia que estímulos ao consumo das famílias não são sustentáveis e que o PIB deve crescer menos ao longo de 2026",
-      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/economista-chefe-do-inter-expectativa-e-que-pib-cresca-menos-neste-ano/",
+      "summary": "Aproveite o simulado gratuito para o Concurso Sefaz CE e prepare-se desde já para as provas. São 160 questões além de uma parte discursiva!",
+      "details": "Aproveite o simulado gratuito para o Concurso Sefaz CE e prepare-se desde já para as provas. São 160 questões além de uma parte discursiva!",
+      "url": "https://www.estrategiaconcursos.com.br/blog/simulado-especial-concurso-sefaz-ce-2026/amp/",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -411,14 +580,14 @@
       "updatedAt": "2026-05-30T03:33:58Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/05/Rafaela-Vitoria.jpeg?w=1200&h=630&crop=1"
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2026/03/30213639/imunidades-tributarias-para-o-concurso-da-sefaz-ce.png"
     },
     {
       "id": "macro-259b451176fa80fb1dda8bac",
       "title": "Simulado Especial Concurso Sefaz CE 2026 – Auditor Fiscal",
-      "summary": "No pregão, mercado acompanhou ata do Copom, queda do petróleo e dólar no menor nível desde janeiro de 2024",
-      "details": "No pregão, mercado acompanhou ata do Copom, queda do petróleo e dólar no menor nível desde janeiro de 2024",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-ambev-abev3-salta-balanco-braskem-brkm5-lidera-quedas/",
+      "summary": "Câmara de Comércio Exterior vê prática de dumping em bebida da Argentina e do Uruguai, mas aplicará medida apenas após apuração do potencial impacto inflacionário",
+      "details": "Câmara de Comércio Exterior vê prática de dumping em bebida da Argentina e do Uruguai, mas aplicará medida apenas após apuração do potencial impacto inflacionário",
+      "url": "https://www.estadao.com.br/economia/agronegocios/com-temor-da-inflacao-governo-lula-suspende-antidumping-sobre-leite-em-po-importado-do-mercosul/",
       "source": "Estratégia Concursos",
       "category": "macro",
       "tags": [
@@ -430,14 +599,14 @@
       "updatedAt": "2026-05-30T02:46:29Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/2G5MHFLPZRMGRKYPR37RXKLYHA.png?quality=80&auth=0ad418d740e5c5e6a448b31feac336d7785c6071737c3f79504d00dabc51a742&width=1200&height=630&smart=true"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/C5VOKNP7CJCGJO6AGHT3W65DBM.jpeg?quality=80&auth=e48668afc4d70a2472ed10ac8afb92fcfca9302b1c8002eecb9fe15114adbbce&width=1200&height=630&smart=true"
     },
     {
       "id": "latest-b860aa8f185fdc04992c27fd",
       "title": "Agenda de dividendos da semana de 6 a 10/04: 9 ações pagam até R$ 0,76 por ação aos investidores",
-      "summary": "Aproveite o simulado gratuito para o Concurso Sefaz CE e prepare-se desde já para as provas. São 160 questões além de uma parte discursiva!",
-      "details": "Aproveite o simulado gratuito para o Concurso Sefaz CE e prepare-se desde já para as provas. São 160 questões além de uma parte discursiva!",
-      "url": "https://www.estrategiaconcursos.com.br/blog/simulado-especial-concurso-sefaz-ce-2026/amp/",
+      "summary": "Confira o calendário completo, os retornos para o acionista (dividend yield) e quem tem direito ao recebimento",
+      "details": "Confira o calendário completo, os retornos para o acionista (dividend yield) e quem tem direito ao recebimento",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/dividendos-jcp-semana-acoes-pagamentos/",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -449,14 +618,33 @@
       "updatedAt": "2026-05-30T02:29:01Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2026/03/30213639/imunidades-tributarias-para-o-concurso-da-sefaz-ce.png"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/5U7DVAF5XBKA7M4GWWO2O42EAA.png?quality=80&auth=a95950fb32d9e300f80284450413c291441a29463b26f8cb24d4656992abd5e1&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "macro-3d340ee16e8bbb6ade47fb7e",
+      "title": "Fazenda mantém previsão de PIB e prevê desaceleração",
+      "summary": "Rafaela Vitória, economista-chefe do Inter, avalia que estímulos ao consumo das famílias não são sustentáveis e que o PIB deve crescer menos ao longo de 2026",
+      "details": "Rafaela Vitória, economista-chefe do Inter, avalia que estímulos ao consumo das famílias não são sustentáveis e que o PIB deve crescer menos ao longo de 2026",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/economista-chefe-do-inter-expectativa-e-que-pib-cresca-menos-neste-ano/",
+      "source": "Vero Notícias",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-30T02:00:00Z",
+      "updatedAt": "2026-05-30T02:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/05/Rafaela-Vitoria.jpeg?w=1200&h=630&crop=1"
     },
     {
       "id": "macro-96abb5a4f35e0f1f17f1da07",
       "title": "Com temor da inflação, governo Lula suspende antidumping sobre leite em pó importado do Mercosul",
-      "summary": "Câmara de Comércio Exterior vê prática de dumping em bebida da Argentina e do Uruguai, mas aplicará medida apenas após apuração do potencial impacto inflacionário",
-      "details": "Câmara de Comércio Exterior vê prática de dumping em bebida da Argentina e do Uruguai, mas aplicará medida apenas após apuração do potencial impacto inflacionário",
-      "url": "https://www.estadao.com.br/economia/agronegocios/com-temor-da-inflacao-governo-lula-suspende-antidumping-sobre-leite-em-po-importado-do-mercosul/",
+      "summary": "Bruno Carazza analisa como, mergulhando um pouco nos números, a economia dá sinais claros de perda de força.",
+      "details": "Bruno Carazza analisa como, mergulhando um pouco nos números, a economia dá sinais claros de perda de força.",
+      "url": "https://g1.globo.com/jornal-da-globo/video/pib-do-brasil-cresce-11-no-1o-trimestre-de-2026-com-avanco-do-agro-e-consumo-14658742.ghtml",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -468,14 +656,14 @@
       "updatedAt": "2026-05-30T01:57:46Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/C5VOKNP7CJCGJO6AGHT3W65DBM.jpeg?quality=80&auth=e48668afc4d70a2472ed10ac8afb92fcfca9302b1c8002eecb9fe15114adbbce&width=1200&height=630&smart=true"
+      "imageUrl": "https://s03.video.glbimg.com/x720/14658742.jpg"
     },
     {
-      "id": "macro-a95f0b58a6a2b602f718a4ea",
-      "title": "Economista-chefe do Inter: Expectativa é que PIB cresça menos neste ano",
-      "summary": "Confira o calendário completo, os retornos para o acionista (dividend yield) e quem tem direito ao recebimento",
-      "details": "Confira o calendário completo, os retornos para o acionista (dividend yield) e quem tem direito ao recebimento",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/dividendos-jcp-semana-acoes-pagamentos/",
+      "id": "macro-860a8090ce2ee57d0f4bc591",
+      "title": "Economista-chefe do Inter: Expectativa é de que PIB cresça menos neste ano",
+      "summary": "O Ministério da Fazenda manteve em 2,3% a projeção de crescimento do PIB brasileiro em 2026, apesar de prever uma desaceleração da atividade econômica.",
+      "details": "O Ministério da Fazenda manteve em 2,3% a projeção de crescimento do PIB brasileiro em 2026, apesar de prever uma desaceleração da atividade econômica.",
+      "url": "https://veronoticias.com/economia/fazenda-mantem-previsao-de-pib-e-preve-desaceleracao/",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -487,33 +675,32 @@
       "updatedAt": "2026-05-30T01:53:37Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/5U7DVAF5XBKA7M4GWWO2O42EAA.png?quality=80&auth=a95950fb32d9e300f80284450413c291441a29463b26f8cb24d4656992abd5e1&width=1200&height=630&smart=true"
+      "imageUrl": "https://veronoticias.com/wp-content/uploads/2024/10/Ministerio-da-Fazenda.webp"
     },
     {
-      "id": "macro-125f3f53efc8510bc6aa9242",
-      "title": "Dólar sobe e Bolsa recua após alta do PIB brasileiro",
-      "summary": "O ministro da Fazenda comparou a decisão desta sexta-feira dos EUA ao tarifaço no ano passado",
-      "details": "O ministro da Fazenda comparou a decisão desta sexta-feira dos EUA ao tarifaço no ano passado",
-      "url": "https://www.infomoney.com.br/politica/durigan-decisao-dos-eua-vai-prejudicar-familias-e-organizacoes-brasileiras/",
-      "source": "Vero Notícias",
-      "category": "macro",
+      "id": "latest-8f02097404b7b72ee3082b2e",
+      "title": "Ibovespa hoje fecha em alta com dólar a R$ 4,91, petróleo em forte queda e impacto de balanços",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOWFnc2drekVQN2tRcmtOeGNIdG1rTFlFVHI1NDBYYnFZS0pxbWt4Q0J3dFk1YU9qSHlOc1NoX1MxRDhKNE9sRm40bVdiTmJqak5paElPUnlRUU81a09wSHVTREw5anhwdHBYTmpaQnBqV3pKZk83aDhXZi1qMGJsbTQ3X1h1MDZzSkRNV2czQkVTeDIwWWFiS09Jd1BqZlRIVDlaRHZPcDNtOHFsR094cHNFbnJpM1l0UU5LQkV6RUlvTUFMY0HSAcsBQVVfeXFMT25XMU1lTXZBbGFXOW5GOUhoUnpJcDlTNzExYTV5dzk5OHdkR0JaazlaT3FQRHhacHRXTlFDVzVvOXFYMDM0TUxuZ25UQVJRdldjTGZKckdWcnFwUWJvVDB2NW1fcS1MYnFFVmlFbl9yTjFhdVlGRzUxVjEtYWNXd1k5TVMxMGpPcEJqMmdMcWxpck5QY3lqa01VVU5qY0Z2RjNKT252TzhSUmRRZGpfU1pWSWpHa09GZzRTV2dtRUd4cDBrNmppbk5uM0E?oc=5",
+      "source": "Estadão",
+      "category": "latest",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
+        "mercado",
+        "bolsa",
+        "macro"
       ],
-      "publishedAt": "2026-05-30T01:15:00Z",
-      "updatedAt": "2026-05-30T01:15:00Z",
+      "publishedAt": "2026-05-30T01:13:49Z",
+      "updatedAt": "2026-05-30T01:13:49Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/05/Captura-de-tela-2026-05-06-121113.png?quality=70"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-a65b8a4a40a73d1131d55879",
       "title": "Durigan: Decisão dos EUA vai prejudicar famílias e organizações brasileiras",
-      "summary": "O dólar encerrou a sexta-feira em alta de 0,21%, cotado a R$ 5,04, enquanto o Ibovespa caiu 0,73%, aos 173,8 mil pontos.",
-      "details": "O dólar encerrou a sexta-feira em alta de 0,21%, cotado a R$ 5,04, enquanto o Ibovespa caiu 0,73%, aos 173,8 mil pontos.",
-      "url": "https://veronoticias.com/economia/dolar-sobe-e-bolsa-recua-apos-alta-do-pib-brasileiro/",
+      "summary": "Atualizacao de empresas capturada em InfoMoney.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdGpNQ0ZkeWt6ZS05YldwT2p1LWttY1luaEpmM2FNaDJGMm5Lam1KVGRub01HRXhnNnh6VEYxNExVckMyck5POVgwN0VoTy1EelBwVkJvTFVmelg2MWlwQmNBX3NzaHgwXzFIVjBxbnphc0FoSkVtcl90ellhMUsyMmxsNVhmMFNOUVBneGpuTi04eEs5YllTQmhxeVVzRVZnemZHN2wxTU8zVnRCRTk3U3B2Y9IBuAFBVV95cUxORFZ2VzNfTmFsb251UmRISVNuOGRlbzc2M1pIa01BWTRlamFXY1FNQ0pHaWxXOE01cllzWWprWTRHY05kd3JmaFc5MS1GOTM0S2prd0VQQS1KcFJuZGM2MFVnSlVsVGExYXllZnFPc3dpSWxxN1U4Y3o5X0FTVVppVVZjVE1EcW9lYnJ5Ul9iVDcxVlMzVEtmZG5tT3VYQUN3Qi05QVJ4M0Y2MmFwUktxVHVtejF3MF9n?oc=5",
       "source": "InfoMoney",
       "category": "companies",
       "tags": [
@@ -524,15 +711,14 @@
       "publishedAt": "2026-05-30T01:09:37Z",
       "updatedAt": "2026-05-30T01:09:37Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://veronoticias.com/wp-content/uploads/2024/09/Money_Dolar-cai-a-casa-de-R-501-com-Brasil-continuando-a-atrair-capital-estrangeiro-768x512-1.jpg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "companies-b849a8da8cb4c76d56560b2f",
       "title": "Durigan diz que decisão dos EUA sobre PCC e CV pode prejudicar famílias e empresas brasileiras",
-      "summary": "Ministro da Fazenda diz que plataforma de pagamentos brasileira é alvo de críticas de empresas estrangeiras e rejeita associação entre o Pix e atividades criminosas",
-      "details": "Ministro da Fazenda diz que plataforma de pagamentos brasileira é alvo de críticas de empresas estrangeiras e rejeita associação entre o Pix e atividades criminosas",
-      "url": "https://www.itatiaia.com.br/politica/durigan-diz-que-decisao-dos-eua-sobre-pcc-e-cv-pode-prejudicar-familias-e-empresas-brasileiras/",
+      "summary": "Atualizacao de empresas capturada em Rádio Itatiaia.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNd2E2ZUlBb0F4Q2VSaXhhdXZETGF4X2Q5elhLWnc3bkNQT2pjRjJKOV9pXzJvdjcyM2FTSFVULThvT0N3cDNlcFJTazNnOWJDSFRpbUZCc2JUbXh1b3FxSUpCR3hiRkxLRkI3eDNFZzVVa0J2Q3cxWGZRUDMwWk56endnbExHc1puMFFYTzk1Mk56ZlprM1RaUnUybW9FNnRRcFd4WTFaUzZ1RkRGSktHWDJKTDZJd3BSRWNfZHhCQnZBaDBCMkZMb0pYLWg?oc=5",
       "source": "Rádio Itatiaia",
       "category": "companies",
       "tags": [
@@ -543,15 +729,14 @@
       "publishedAt": "2026-05-30T00:52:37Z",
       "updatedAt": "2026-05-30T00:52:37Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://admin.itatiaia.com.br/wp-content/uploads/sites/27/2026/02/dario-durigan.jpg?resize=1280%2C720&w=1280&h=720&quality=50&crop=1"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "companies-8fb225e9771ae25d05db9715",
       "title": "Entenda por que a decisão dos EUA de classificar PCC e CV como terroristas preocupa o sistema financeiro brasileiro",
-      "summary": "Medida anunciada pelos Estados Unidos amplia o monitoramento sobre movimentações financeiras e pode aumentar a pressão sobre bancos, empresas e operações via PIX no Brasil O governo dos Estados Unidos, liderado por Donald Trump, anunciou que as facções brasileiras Primeiro Comand",
-      "details": "Medida anunciada pelos Estados Unidos amplia o monitoramento sobre movimentações financeiras e pode aumentar a pressão sobre bancos, empresas e operações via PIX no Brasil O governo dos Estados Unidos, liderado por Donald Trump, anunciou que as facções brasileiras Primeiro Comando da Capital (PCC) e Comando Vermelho (C",
-      "url": "https://ricardobanana.com.br/entenda-por-que-a-decisao-dos-eua-de-classificar-pcc-e-cv-como-terroristas-preocupa-o-sistema-financeiro-brasileiro/",
+      "summary": "Atualizacao de empresas capturada em Blog do Banana.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxONUV3Z1pSTnFvV3ZvMHIyYkZRN2JxSjJiMnpPWjUtZ0s2NGZra2dJeEMwM2JXTm1lMnljN2R2WENCZmtDZ25VTFJoQ3RxVHZaM1FIellnWDBTVGR4OTM3REw3cFBzclhmekNPYjU1N1MwNVhZZHRJYUNDRzlMWHd2NERZOGdMbll3UGpOZGNxWG5PUVMwb2F6SkFOcWxwVVh3OTVDdTJzUUhNbklCeHM1VmxhQWZOX2F4X19xOWV4cEQySTB6eldDY2RqMnFLYjllb3RsNUlrSDNtZElXOFE?oc=5",
       "source": "Blog do Banana",
       "category": "companies",
       "tags": [
@@ -562,15 +747,32 @@
       "publishedAt": "2026-05-30T00:45:59Z",
       "updatedAt": "2026-05-30T00:45:59Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://ricardobanana.com.br/wp-content/uploads/2026/05/183307entenda-por-que-a-decisao-dos-eua-de-classificar-pcc-e-cv-como-terroristas-preocupa-o-sistema-financeiro-brasileiro-3-e1780099986506.jpg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "funds-93cf16f8958ecd6941f98c51",
+      "title": "A província de Nghe An estabeleceu cinco grupos de trabalho para inspecionar, supervisionar, resolver obstáculos e acelerar o desembolso de fundos de investimento público em 2026.",
+      "summary": "Atualizacao de fundos capturada em Vietnam.vn.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxORS1ndlE1N05yblVRLWNDbnk0eE1weVNvZG1mVG5NYjhtTjNucWhqRlE0Q3E3LUNEN0JEZFV2cUFiSGNQeUx6VFFRdllReDdMemdrU1JReU1VOEpPTVoxYWdOZFdYVXJwTF9UZUgzUkxLXzRab1VLTzByTmZHLVR4MTRTeVJTbjhBLWhGQWVHRDdRSEdXLUVBR0NReUw5RVFBaDJEdjhqaUJROFIteUdXSjFmREZqaEhEZm1KMk1QZjVjXzZoVENnMWYxYlNRZ0FTa0E?oc=5",
+      "source": "Vietnam.vn",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-05-30T00:44:11Z",
+      "updatedAt": "2026-05-30T00:44:11Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "macro-69ddc168cb20f2906f914ddf",
       "title": "No cálculo do PIB, construção civil é um dos destaques do primeiro trimestre de 2026",
-      "summary": "O presidente Luiz Inácio Lula da Silva afirmou nesta sexta-feira (29), durante agenda em Sergipe, que ainda mantém o desejo de reverter a privatização",
-      "details": "O presidente Luiz Inácio Lula da Silva afirmou nesta sexta-feira (29), durante agenda em Sergipe, que ainda mantém o desejo de reverter a privatização",
-      "url": "https://www.novojornal.com.br/lula-diz-sonhar-com-retomada-estatal-de-empresas-estrategicas-brasileiras/",
+      "summary": "Atualizacao de macro capturada em G1.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPd0I2OTY4cTJ5WHNzTmlhNi1yNm9mY041RXBxSEJYcUV1QkpsWjE2VGFhOWkwOUFJeDY4Ql9DVDdyN29Xb1J6QmstS29YbWE1eldFRzFaLTkybGtHR2M3SmN0QWFPU3NvTFRJVWF1UVh1a0ZxTkZUSHdHQm9va1hjTFRIREtHaFNwd1VZdXFwTWJVWEVpcF9PcWxBX1luVU1xZVk5cHUtbXJDS1QxRlI0bkRTTVZxTk5XMENnLXhKc3l1MWpPMlpDbi15V045MUpGWFM4Xy1vNU1vcV9XYy1GZFFtYWlPb0VacTdpMdIB7AFBVV95cUxPd0I2OTY4cTJ5WHNzTmlhNi1yNm9mY041RXBxSEJYcUV1QkpsWjE2VGFhOWkwOUFJeDY4Ql9DVDdyN29Xb1J6QmstS29YbWE1eldFRzFaLTkybGtHR2M3SmN0QWFPU3NvTFRJVWF1UVh1a0ZxTkZUSHdHQm9va1hjTFRIREtHaFNwd1VZdXFwTWJVWEVpcF9PcWxBX1luVU1xZVk5cHUtbXJDS1QxRlI0bkRTTVZxTk5XMENnLXhKc3l1MWpPMlpDbi15V045MUpGWFM4Xy1vNU1vcV9XYy1GZFFtYWlPb0VacTdpMQ?oc=5",
       "source": "G1",
       "category": "macro",
       "tags": [
@@ -581,15 +783,32 @@
       "publishedAt": "2026-05-30T00:43:50Z",
       "updatedAt": "2026-05-30T00:43:50Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.novojornal.com.br/wp-content/uploads/2026/05/Lula-diz-sonhar-com-retomada-estatal-de-empresas-estrategicas-brasileiras.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "latest-26483b3562bc0ac33584c7d6",
+      "title": "Ibovespa hoje: decisão de juros na Europa impacta abertura do índice",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORVpsYUdZZ3R1cUstTlNSU3FQRlUwLXN2VlduT2lQN2pkamRSRHVqcnI3d19uYlg2NGozcWkyaVVUOV9aRnpVcExhaW5jQmFESTA5WVpmWTMzTjg2V1ZMc0NpUVhQY01VTGdqdHBNZEtHWDVLM1lENzJkUzZzZndMZDBxZjF3dHVNZkJCTUFscWVEcHZad3pMdjI0ckdQc1Nl0gGmAUFVX3lxTE9JbHhVSUg0YkNGRTlBTS1LVDcybVc2WExVd0s1aE41ei01Zm1xVldob3VVdWJYMjBCOExINWFUamlSSkE0WEYza01wQ2FhVU0wZEZsZExaeC1ESU9nTkZfemxlTnVPaE4ycHNCMXcxQnN0WG9IcEpBZ3JxN0R5V1VQbm41bFFVTDUteUphQmZzMGZuaEFPMEtNU1ZqdlZ4X0J2LWNLTFE?oc=5",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-30T00:43:28Z",
+      "updatedAt": "2026-05-30T00:43:28Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-f38465d3a9d10c1b86703996",
       "title": "Mercado financeiro hoje reage à guerra comercial de Trump com a China; ata do Copom revela os próximos passos do BC",
-      "summary": "Um dos setores que enfrentam desafios é o automotivo. Embora as vendas tenham aumentado no primeiro trimestre no mercado interno, as exportações caíram na comparação com o mesmo período de 2025, segundo a associação dos fabricantes.",
-      "details": "Um dos setores que enfrentam desafios é o automotivo. Embora as vendas tenham aumentado no primeiro trimestre no mercado interno, as exportações caíram na comparação com o mesmo período de 2025, segundo a associação dos fabricantes.",
-      "url": "https://g1.globo.com/google/amp/jornal-nacional/noticia/2026/05/29/no-calculo-do-pib-construcao-civil-e-um-dos-destaques-do-primeiro-trimestre-de-2026.ghtml",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUVhyVy1IUUxCSkt1azVUbzREN1FTcVJKSG50YnotekVFdkZuNkJTbnUwbjI1dVByNE9sZDZjdDYwQ0Vja2RJWUFXUk9zQ2ZpTU9ueVRXLWJXUUp3djE2TG9Tb28yRVhJUVpkMnMyaTg4V0ViUERIWlNRV2N5X1FWUnVBanV1aHVVYmhvM0ZObFMwTmwxZlVZR3RObGt0bFg0dm9YN0hVUDh1Ny0tR2p3amc3SlY2NjRiSE5aYnRYMnlzQdIBxwFBVV95cUxNNkdzbjFySjNWNXNXSlRfblB3RmdYSExlbml2MlBTRjFzN2c5WE5SaVpKdERTWkxTSkRYMWU4RlFpOTc4Y24zQW1jNkE4cXg2VlpxcmY0WmFYa0hlcE1WUjlUVnRDQ0REYnpJeDA1cnFhVjBPYmVaTlJxM2VZcnBHN0w1VC05YmhBU1h6TkIwVVZ6V0Y3eXMxUzdYUDIwdll4RnRuTGlrbFRQanZyR2NFQ0hWVjFxZ0o3cDd0Mk5ZckVzZ0s4UnFz?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -600,15 +819,32 @@
       "publishedAt": "2026-05-30T00:35:12Z",
       "updatedAt": "2026-05-30T00:35:12Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s2-g1.glbimg.com/MNksUep6Mo2gNFb0BYHWRnXYUew=/3840x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/e/b/25qvRYRACMYQLTBqTetg/globo-canal-4-20260529-2000-frame-107807.jpeg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-0263a6b3ccb6d63c5c3c40ed",
+      "title": "Ibovespa hoje: Petrobras (PETR3;PETR4) derrete e Embraer (EMBR3) salta 12%",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPN3ZLS2kwN2tEaFF6WnVVbktoWmNGNVhXQkhWcDdUMXV4QmdnLXdXUnRIaDVnbTBSR2RlLWJWejdPR3hGUXotaEFrRklQMnkzZGVIMEN5MmxVa3JzUlJLM0NyM1pmS2ZKLXJkeHJaeG9MOXExQjNlNGlxSFVxbmNEN2dlNExLc20xZnMzaVV2M21QWnhoUC02eU55eUVGdVc2Q0NibFhCWGhYRDYyR1V1alFpUzZ5S2FVTUo5VkZ0Y9IBxAFBVV95cUxPRGs5ck1nTURrNG1fY09UUVZWNUF6VVhQSUZUc00zOGM1aDlUTDRfYVJETmlUdm5zVTdBSnNfQWRFVTJEeFNGTVV5a1RjSVVySzBYa3JNeHBMazlrUGUxNlZtU21vNEM4UTYxTDJQYV9hMlF0TEYteXJLX2I3MDRKZGFBeDJMRVZEeXpTYmhkVm0zdEJlajV4elJmZ2JtTkw3aGtDWEZEcEtMYzgydVFaSVdLYkplSFF1clhrQnU4cWJxYVBh?oc=5",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-30T00:32:11Z",
+      "updatedAt": "2026-05-30T00:32:11Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-e16918be2d628958c87b4fec",
       "title": "Lula diz sonhar com retomada estatal de empresas estratégicas brasileiras",
       "summary": "Atualizacao de empresas capturada em novojornal.com.br.",
       "details": "",
-      "url": "https://visitebrasilia.com.br/noticias/senac-apoia-empresas-com-capacitacoes-gratuitas-sobre-a-nr-2",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxON3VNRDNKV05PRTEwdDBXUWJjNFNYam5XWXZrYmJ2TlVNVFhwUTVHNzN1VHFLSzJ6X1Z2TDdNdXlMTEtjbGV4dkdKb2dWeTZsbDAxbzN0ZDhtbTlDODBBbGVINnNrMm9jRUt2TG9mLV9FQXZ6Vmx5VE5WVWQ0bkJhbXFVMHdfdmhzeEdteWpMRHR0X1czanNwMDIzeUEya3ViVkthRWtWSQ?oc=5",
       "source": "novojornal.com.br",
       "category": "companies",
       "tags": [
@@ -619,15 +855,14 @@
       "publishedAt": "2026-05-30T00:28:30Z",
       "updatedAt": "2026-05-30T00:28:30Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://visitebrasilia.com.br/images/2026/05/20260529141210_s_saudemental-NR-1.jpg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "companies-6f8a6026ff6e16c7155943a1",
       "title": "Senac apoia empresas com capacitações gratuitas sobre a NR-1",
-      "summary": "A maior preocupação é de que bancos e empresas do Brasil fiquem sob suspeita e passem a enfrentar exigências por atuarem no mesmo país ondem existem grupos que agora americanos consideram terroristas.",
-      "details": "A maior preocupação é de que bancos e empresas do Brasil fiquem sob suspeita e passem a enfrentar exigências por atuarem no mesmo país ondem existem grupos que agora americanos consideram terroristas.",
-      "url": "https://g1.globo.com/jornal-nacional/noticia/2026/05/29/com-decisao-dos-estados-unidos-sobre-pcc-e-cv-setor-financeiro-enxerga-aumento-de-custos-e-impacto-em-operacoes-no-brasil.ghtml",
+      "summary": "Atualizacao de empresas capturada em Visite Brasília.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNVzJ6YVBKcXF3RWhsa3dGc0xvNlpDcWJNbjZZV3NGc1BKWXhuTV9KOThWT3ZiVURlQ3NxMC1Vd0t6YU0wVGpQNS1fSGtnekpOZkM2NFhGNURyMjVxTFRWQ0JJbUpBQ2h1UlZ6WkxONFdwWkQwNmw0NkpYWk1vdWtITmpDZDRLMTVVX2Y1X1puTVhxVWRIY3JoX2F4cXFNbG8t?oc=5",
       "source": "Visite Brasília",
       "category": "companies",
       "tags": [
@@ -638,15 +873,14 @@
       "publishedAt": "2026-05-30T00:13:13Z",
       "updatedAt": "2026-05-30T00:13:13Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://s2-g1.glbimg.com/HwMrl4B5PvjbjTPjthJ6v54e-sw=/3840x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/B/t/qTYbQzTIa0HYXl3XAkWQ/globo-canal-4-20260529-2000-frame-71811.jpeg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "latest-f33912df60e5768afb2e8714",
       "title": "Com decisão dos Estados Unidos sobre PCC e CV, setor financeiro enxerga aumento de custos e impacto em operações no Brasil",
-      "summary": "No cálculo do produto interno bruto, a Construção Civil é considerada uma das atividades industriais da economia.",
-      "details": "No cálculo do produto interno bruto, a Construção Civil é considerada uma das atividades industriais da economia.",
-      "url": "https://g1.globo.com/google/amp/jornal-nacional/video/construcao-civil-e-um-dos-destaques-do-pib-do-1o-trimestre-14658520.ghtml",
+      "summary": "Atualizacao de ultima hora capturada em G1.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPUzFnbzF0V0lxM1pMcDB6S2MyX0J1eTRsWnRVcmVReWRhMUlVRTU1V3NmNTJCbzNoQlMtVkhZV3FoZnJNUURraWFnMlJZUDhWdXRLQk1wMGpCQWVyaVZZM0pQalAwUWVoLWZMYnRkVXRnNzFLSDlEREg4Y1o0NWNCWHNJelpRZTBCVUZHQldjOExXdDRpMjJlZFppc05fcVl0RjkwQnRndDV1NjRCVk5hSTlPMDY2ejR0QlhJa3hZenhJczliUFZ1dV81TTJ4eVZTOVZlSGllaDg0RGdlUmFEZWtSdVdMS2ZWUlk4TFlIQzZzcUp4ZFEyZ2w1U01xWV83Vk5jbEN2LUFiNU1ZYXJXRNIBnwJBVV95cUxPZGtLOHd2N1YxVkFQeUNzS2hkWThzanRqalJDbmlvcldhUkVlRG41TThDNDZCV3BsenJCZnNNYnhXNDNoTXlBU0xRQmttNXc1am9RbkZBU09RRjgzOWk1N0ZPTTNZZGdEd1V0RDVxcU85WFVHRmY2SVJlaGdyeWEyS29lSXVYcEY0cDhzOGJwQllEbmhLQ0hCVnM1d1NLZHlpaVlMWHlhVDJGV1BaeERYRzZpVmZBTVlxLVJudzJlQUxBRlNLNFU5V2dJTExPZ254R1NNcWl0NUVPSGNuYXowVnFxUEpJU3FsM2tnMmh3MUM0LXdmYmlTU0pkdjNZeWo4MlBEWHc0X21YTndBOGNWTzZxUlN2dW1ncUhaXzBqcw?oc=5",
       "source": "G1",
       "category": "latest",
       "tags": [
@@ -657,15 +891,14 @@
       "publishedAt": "2026-05-30T00:10:59Z",
       "updatedAt": "2026-05-30T00:10:59Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s01.video.glbimg.com/x720/14658520.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-4ef8482b27736e957dce21e7",
       "title": "Construção Civil é um dos destaques do PIB do 1º trimestre",
-      "summary": "Queda expressiva do petróleo e encontro do presidente Lula com o ministro Fernando Haddad tendem a movimentar os negócios no Brasil",
-      "details": "Queda expressiva do petróleo e encontro do presidente Lula com o ministro Fernando Haddad tendem a movimentar os negócios no Brasil",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/mercado-financeiro-hoje-ata-copom-trump-tarifas-china-dolar-juros/",
+      "summary": "Atualizacao de macro capturada em G1.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQUjBqUm1CZm9fQ2xPODhlMHBSTm9SUVg5M2o3Y29OT0MtVkZlYTk2MXFwZi02REw3cExBOTlRLURqSlJJLUpFRGhTVk0tZVowVHRQTmFtRWdBR2JVbjdKa1BaeWVEalFXUHYzTVh4Tk5pQ01xR3REYXRfWmp0NTFpUHpwcTZNbnhoWVphR3l5Sk9UMVNpX1lVSWt0VHlRVjZuOGk0RTdTZ2hsbGFqeE1VNUYwb05kSThOdzJVbnJ6eU0yckdpWFHSAcYBQVVfeXFMUFIwalJtQmZvX0NsTzg4ZTBwUk5vUlFYOTNqN2NvTk9DLVZGZWE5NjFxcGYtNkRMN3BMQTk5US1EakpSSS1KRURoU1ZNLWVaMFR0UE5hbUVnQUdiVW43SmtQWnllRGpRV1B2M01YeE5OaUNNcUd0RGF0X1pqdDUxaVB6cHE2TW54aFlaYUd5eUpPVDFTaV9ZVUlrdFR5UVY2bjhpNEU3U2dobGxhanhNVTVGMG9OZEk4TncyVW5yenlNMnJHaVhR?oc=5",
       "source": "G1",
       "category": "macro",
       "tags": [
@@ -676,27 +909,25 @@
       "publishedAt": "2026-05-30T00:06:20Z",
       "updatedAt": "2026-05-30T00:06:20Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/3ZCCHZ3FZFO5DNKIWRHNPHKWTY.png?quality=80&auth=4abc2f7c2a7c110348acce1048c3309b901376f4f526267163eed754270d937f&width=1200&height=630&smart=true"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "latest-32f7ddfe0765658afbe1b29a",
-      "title": "Dólar sobe e Ibovespa cai com acordo EUA-Irã e PIB",
-      "summary": "Dólar fechou a R$ 5,04 e Ibovespa recuou 0,73% nesta sexta (29), impactados por negociações EUA-Irã, queda do petróleo e divulgação do PIB brasileiro.",
-      "details": "Dólar fechou a R$ 5,04 e Ibovespa recuou 0,73% nesta sexta (29), impactados por negociações EUA-Irã, queda do petróleo e divulgação do PIB brasileiro.",
-      "url": "https://www.campograndenews.com.br/economia/dolar-fecha-acima-de-r-5-e-bolsa-cai-com-tensao-no-oriente-medio",
-      "source": "Campo Grande News",
-      "category": "latest",
+      "id": "companies-a43ef7e00fa5f21748c2d774",
+      "title": "Decisão dos EUA sobre PCC e CV gera alerta para turismo e investimentos no Brasil",
+      "summary": "Atualizacao de empresas capturada em AM POST.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSVBkejFiQUJMU0pKejhSNEtZbjBEQzY4RWxWdjJvZFFKSDhNYlllY2NwNGdKSTBQSW1fbTFoeXZodEFqT2FGWVpoWTlKRTdZek0xZjhXWkhkOHZMaVN3X1FwX1UzakNRRi1DTkZzcXJWZmdFN2ZYLTRLMUFHcmx5b0NaNVcydFB4R0FXNGs3VEFBVDVQMV9zbVR1SjlJRHhfNFRYQlFGNUVhTFBxZENpWA?oc=5",
+      "source": "AM POST",
+      "category": "companies",
       "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
+        "empresas",
+        "resultados",
+        "m&a"
       ],
-      "publishedAt": "2026-05-29T23:42:00Z",
-      "updatedAt": "2026-05-29T23:42:00Z",
+      "publishedAt": "2026-05-29T23:37:31Z",
+      "updatedAt": "2026-05-29T23:37:31Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://cdn6.campograndenews.com.br/uploads/noticias/2026/05/29/m2vedf9wy9yz.png"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "companies-33006c0a7d0a9c76fc6dcbe6",
@@ -715,24 +946,6 @@
       "updatedAt": "2026-05-29T23:34:23Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "latest-2571f46a0f0a922038ac13b8",
-      "title": "Ibovespa engata 3ª queda consecutiva em maio e tem o pior saldo mensal desde fevereiro de 2023",
-      "summary": "Atualizacao de ultima hora capturada em Money Times.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5sXzBjMFVVdjZTaHJCODk5ZzFKS2lEeXZzMXUtSkZweW9RZDJIci1FWENJbGZwSVBfTURhV2ZuUjdmdlVxYVlGWV91ZjRHYVRhUWozTDFLMU5NOFJRVDI1RXptX3pXUERZd3hj?oc=5",
-      "source": "Money Times",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-29T23:25:00Z",
-      "updatedAt": "2026-05-29T23:25:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-e2cacbe2ce7f4569a231ce15",
@@ -843,6 +1056,42 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
+      "id": "macro-131c32e0a9a617ddf6405551",
+      "title": "Choque prolongado pode exigir política monetária mais restritiva, diz Fed",
+      "summary": "Atualizacao de macro capturada em CNN Brasil.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZjdETnIxbDB1cDFqUU45SVZzQjlyOGNnV0haZWNIVjVjZVEzbGhnSjJwWHJEOEZYVkx2aDY0ckoyUC1xVTB2STJ0bjgzU1kwbEoxeXBnbkx0d0lyN2RhWXU0aWI0NjZQTURKV3JaMzNzbElFaWtYZXEwVmtKR2VKZ3lPVXdWRHFOWHRJVjc2RUk0RHpwQ3V0aFhwMmxROF9Panp2SWNGRWZuU1l3ZmFCV0hIWkltSkV4RHgzN1BNWjgteFB2Q094SmlIcmw1a3NJNy02YQ?oc=5",
+      "source": "CNN Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-29T22:58:51Z",
+      "updatedAt": "2026-05-29T22:58:51Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "latest-870b27f3f6e6d474b0fee1dc",
+      "title": "Calendário econômico da semana: ata do Copom e dados de serviços nos EUA movimentam a agenda",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSk5UYUszOFctaW9kY1V1bGxidVBsbVBJYkdETmgyRFJaLTA4Z1UtYkZuNDQ1cmhUMDVuWkoxUEdpWEFvWWVUNmdQMkd0aElPSGFaUDhqMllpVE9rcTRIMVdDUC0xaTNvdFBfUUFUcGVqdk51eWxpdXNaWDN2YmxmTUhzTzlEZFhSWGtZQVZsREtzblM3RUZLSGQ2TGQxQTdiX1pUOVZ3Xy1ZSVFrTDV4T0h3RmJkbDZhWU9uanNabWvSAcYBQVVfeXFMTjV5VUZWaXZBZVAtZE1ON3J4bGVXWEJrX0I2SVJvcGlzMWd3T213TzhrUGNFT0xLc2Vib1RCcHJnMGk2RnBLYVRDLWJPa2M4QXc1YVNxck1GbHdIaVowTXJKNjgwZERVb3V4MXhEVUQtcmVpZXNBaXoza01KbnpuLVJtTjRxNHJhc1Q1eTdaQndHODhLV2NpN2E1MG9zVFVoMjF6OWJ0WkR6SUoxeFhRWDlmVWxySjQ0akZDcVYwM0FYUFJ4ZWpB?oc=5",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-29T22:54:30Z",
+      "updatedAt": "2026-05-29T22:54:30Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
       "id": "macro-ca1e92669293dec44f5248bc",
       "title": "Macrorregião Norte é a segunda em participação no PIB do Rio Grande do Sul",
       "summary": "Atualizacao de macro capturada em Jornal do Comércio.",
@@ -879,42 +1128,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "latest-f4438b1c31df32219685483a",
-      "title": "Ibovespa hoje fecha em queda em meio a temor global sobre a autonomia do Fed após acusação a Powell",
-      "summary": "Atualizacao de ultima hora capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQTFjUmV5TXN6WTBoVWh0Zmh0YWlfeHJXSWtRVWVQdmJjQVprbGlYbWtJV1ZyS2NGazZMbnFqY3J4WlFPbFY2MURsRFZaaVczc3FKSHB6MmhNS0l6N0NibnVPWmdrb0F5TVFaQjUxdUNkVkxEZ3VPRHZuUzM4ZnZ6QklPVl9nb0h1MnA0ZTVEWlYyVHcyTThwNGE3NkpxNHZuUS1fYk10UjRuclFOaVNGMFVpRlRkenBJ0gG-AUFVX3lxTE1LOXRfWk9mV19JbDhldWxINHlUUGFrYWJWaHJ3T0p4VDJjalR1bFpWWUcwdzZNSXBKSWZYLW91RFRXRzVBbTFVV0ExVzlZOThEOUJ3UGJKY2hJbjhkWEZxRmVDb0EzdmpKRkhXdy1KR1J1LTFaR2IxLTd6V21TVXBBVWRHbkxHcjQ2Wl9md1pMSnI4VkhzeTBfanIzNWdQNlRlV0oteVJiTTdIV0dKOVphbFRJQnJoenJuTTdoemc?oc=5",
-      "source": "Estadão",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-29T22:43:30Z",
-      "updatedAt": "2026-05-29T22:43:30Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-92f86bb801ca9c47568f3e1a",
-      "title": "PIB do Brasil cresce 1,1% no primeiro trimestre de 2026",
-      "summary": "Atualizacao de macro capturada em Canal Rural.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWFpwdWdTTFJ0MHN1aVhHM3l1NjY0TmFseDNPMzBNTmFfaGlhNlZZMUh4MW9fMFRGZnpGNWlJOFZvbG5ybm1HR3lkbmpxbklxeG8zSWIwM0ZzUTRFdVlOQ2l0UnRsMEZTSmg4b0NQT0NMajBhNFNydWU1emtEV0loTUpXN0kzMk5RcVZkOXJXNndjMVpTeXM2dA?oc=5",
-      "source": "Canal Rural",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-29T22:43:08Z",
-      "updatedAt": "2026-05-29T22:43:08Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "funds-72d70b7c26d046830c34b866",
       "title": "Criptomoedas voltam a decepcionar em agosto; veja as maiores quedas",
       "summary": "Atualizacao de fundos capturada em Estadão.",
@@ -931,42 +1144,6 @@
       "updatedAt": "2026-05-29T22:32:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "macro-0bc49bfc008cd05b5c820027",
-      "title": "O que esperar do bitcoin em dólar com a decisão do Fed sobre juros americanos?",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaVB3M05ZQ2xKZy1qOC00dW5PNDJ2eVphYXdteS1UNUFQR2tZSE9DVmFkUDJQM0xVZVphWnp1UnpPb25QNFdwU3RNa2dKQmxITHpBQ0tTR041cUNES0pUSlNVQmppamZYRkZQblNpclNGNXE1NTZ3SlM1M3RmWUdoOWFHeG5xXzV5bUFQdWJB0gGTAUFVX3lxTFB2YWh0R1dXSWEwa0RLTWFLS05fdU1ScXI3b2RwdEN2Nm5lMmxibUVIRFRhZW54SkdDQmpIQWN2N0l4TVNWQmdsTlZZQmRudTV4SDNZS212V3JOemE1Y1hJSVlQUzNtSnRJRFJGWUxhVUlnUmdkbWtHNjNQQmhQN1U1YV84NjNYRnpKQ2lNSHdPZXJFNA?oc=5",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-29T22:32:00Z",
-      "updatedAt": "2026-05-29T22:32:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "latest-1aa7bea9c2086e022676cde0",
-      "title": "Ibovespa hoje: Totvs (TOTS3) e Usiminas (USIM5) saltam; Minerva (BEEF3) lidera perdas",
-      "summary": "Atualizacao de ultima hora capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcDRUbDc3dUg2YUFVaGx0OGNXVGdsRW1aWHBfYWFad2Jnc1BSMEpEc2NKdnhoYnFmTVVVbWVpSEk3dldOeFRibXRJamFSMU5uS2JUUThha012Q0s5ZEY1MXBiSkg2U0tCamsxekRSNWZBMF9oeDBQcjZ3ZUVkY296SEJUMlpsSE5UaHpEZnd1MVpSdTh3RlJqTzNfV0FfR0pteFk5TlRfR1MwVDJvWUlHSW5BSERUSXpzdXNodmZKalFjYUQ1ZVVOQi1rNjJMTGg3elHSAdcBQVVfeXFMT2QyaHBxdlhsVF9PMm9VTUR3SnlINGU2T0RMOUx6MG03U1ZnVmVWMUtwTWM5cGFWdjIzZkduOFBaRXg4dDJ6UU5JWUN2ejlRaUxYWHBpdkkyckotWW15aGo3ZnlyRExtUGJxbDlpdTVybVdLSFpmeXFmUlotam1DcmJuUnlLLV9hTzNkU1Q2aHR1V3dvLUFPc1duY2FiLUpBWVBpQ3QtV1lGS2libkRJVGhVX3M5S1R3czkxX2FzQ05tOXNfLVJGQWFvc2JFWk1oRjZBQVFXMVU?oc=5",
-      "source": "Estadão",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-29T22:29:00Z",
-      "updatedAt": "2026-05-29T22:29:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-4ed4226679869849ddc8e91c",
@@ -987,76 +1164,22 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "macro-e7aab7d74c333401bc9ae1ca",
-      "title": "PIB confirma força da economia e juros futuros fecham em alta",
-      "summary": "Atualizacao de macro capturada em Valor Econômico.",
+      "id": "companies-a3c488475824838b42db93e9",
+      "title": "Decisão dos EUA de designar PCC e CV como terroristas impõe riscos jurídico e bancário a empresas brasileiras",
+      "summary": "Atualizacao de empresas capturada em Tribuna do Sertão.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZTNGMUNSWWZpbk1OMHB6V08ybDlkcXRybTN5dW1MLUxSc1NZMjdabEtuVy1LdElEWTFYS1diNDJzc2Z4bnVfVkVJbVdpWGxZYzVEX1oydjA5MUtzYW16RW5qVC1ubU04MTVqWjJRdUhfak1zaDVBX25YbEtsSjAzbmRuSHRDLS1Vd3RsUlExb0hEZ2JZU2oyb0tROEE1MktQZVdRQl9DSjM0OU9STFZFaEd5c0VoOW9iTUc4X0Zn0gHMAUFVX3lxTE5RX09jSjJTR1U2bGRfLTlGRVRqX2o0VUtUblYtYXdzRUdUVUoxNXdBUmNRYWpuM3ZCTGZtRWdkQTRzNU1qNmZJUlNkaEVBblZHcmtaSXJHS1RpclJmeVpxTDdLY2Y3NHktT3V5clFaaTFsLWNQVGZNM2xDMTI0UFBwS2N4MGd6WmFEWHl5QTR3N0xpNFh2TVN2VFFJWVJnSlJGcVViWi1lTFlkZ0oyX2dmMk5qSkN6RTBIYUFmWU9yTlhGN1lab0JkTWdNdA?oc=5",
-      "source": "Valor Econômico",
-      "category": "macro",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQOGhLQlJIMnhrTHRxSW44MWNjaHk0MEtnSEtPRk0zWm1YQ29hVnNrdU1EbTNPdmNidnZsbVYzd1hPd042aWNONWdlQU5JXzlYM2V4S3FzdGVBaGhFQXRJMl9DQ3dKdnVQZXFvMmRtSmNMcGFmcjBpZUFSc2Vyck0zYkp4ZXBXOU8xWHhTNFdZZWdaUGo0a2JKX0FkalkzWjhadEJXNVF1QlI2bURfdm95azdTSWRIMWlQVlJwWkM0bXRNM1c4NERzNVd5LVBkVGVscXdwRUd0OUdSN0p6NlZfU0dNSGdIaElfWUhkUUl1dTZSWExRdU9RUExKbDhmRzZf?oc=5",
+      "source": "Tribuna do Sertão",
+      "category": "companies",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-29T22:28:25Z",
-      "updatedAt": "2026-05-29T22:28:25Z",
-      "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "latest-f6771281d9950c3941f8d21c",
-      "title": "Bolsa tem pior mês desde 2023, e dólar sobe 1,82% em maio",
-      "summary": "Atualizacao de ultima hora capturada em Agência Brasil.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbENNbVdsY0N4dEo1ajZNRnd0SW9INVR6R05nOTZhbHZMWDlYbEZRZzJySlhUWi1YbUo4MWZfVXh1dTlwODJfVk1YLWxvSVJ5OHpSMURTNjQ3cVNCbTk4WVNra1ZFajZYX19nYnBXRU5TUi1tdUJVbGs3MnVhbmVmR1BPRU9udm1WUG5JOG16MjQ0U3ducEx3RF9EalBabTZqWWdxdE1HMmJveW9PTlZmVTh3?oc=5",
-      "source": "Agência Brasil",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-29T22:26:00Z",
-      "updatedAt": "2026-05-29T22:26:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-29a550ba2e4fe43b797a1d1f",
-      "title": "Ibovespa hoje: Assaí (ASAI3) salta e Prio (PRIO3) tomba com queda do petróleo",
-      "summary": "Atualizacao de ultima hora capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNEpBRnA1SzZuX2YwcWdyM0ZiTUNCYlZ0eFpLY3pxZERLU1lzQ0wwUDF1RENKQUlVTFVESG5FWXhTcjFKd0wzNzBPTEVOZlZTVnZkdmVCX1dhLTZsaHJVQXl1Wm9XU3RYZWhQakFrZlBUemFud25pTmFWNmx6WUhBMThwY0NEMEpWc21aMUQ4RlpuUWo1dVB3TkpIeEtaVTNudUZ0RGZZVjBDakNBd2g1clBEVnp3ZW1PMkZLWGR1d9IBxAFBVV95cUxQU3hDdWFlY3lDSlVvTGdqQ3ZONm5NR0tKM2JVUi00ZEdmdWtFRFVvZ1FtWmFUWkl1R2R3SXVnWTQxQ2J1bTRlOW1HLWFoTVh6XzFvbFl3MV9yNmhRcHVPQkZuWHd0MU9HTzJTWmxBdG5XT0ZyZDZsY1Y2U3lfTzFuMFZjY2pRTmNaVWRiWU12OG9LRURqYzVxZ1JNMGI5ZkNEbURlN2U4QjF5MVlHdE9zdVVHWFFZUXhyZDhoZjRWRDRudXBf?oc=5",
-      "source": "Estadão",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
+        "empresas",
+        "resultados",
+        "m&a"
       ],
       "publishedAt": "2026-05-29T22:25:00Z",
       "updatedAt": "2026-05-29T22:25:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-d7ba3fbc901d742f3ca261fa",
-      "title": "Ibovespa cai pela sétima semana seguida; Usiminas avança 7% e Braskem despenca 12,61%",
-      "summary": "Atualizacao de ultima hora capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPUUFiRW1iRUdqb2FrOHpMMzhVbFlTdVg4TnNjNXNQY054MlJ0MFlYLXVIdFIwXzlXTlJlWnB4WGxQWTBLV0J1U2VtODFMOFh2dzZzNm1tVWZ0ZjA1c2dnQXNwU1doY25JNTk4V2F5aUFsR1k2YkhGVFJBTnJVWUhFTWFqUHRFWEd5SW16S3c0LUVhZ21NZVJYUDlHVjk0SnhVcGhGVWxFUXpBd3plcXd0YXZDVGNyT19OZG9EM2hvZWpaWk0wN1RTNWNGY3A2Sy1lVTdNVk9XRdIB3AFBVV95cUxNVlI2SjNRdnE5Wm5iYlNQNmJfMDRCcm4yandqeTZnQmh3cF9SOGw1d3oyUzN6VEZZY2NYVUlUbG16RURmOVZremlWcGxPQXFSSVBkbUtocHpnLWRIckthTXZDX1p5UF9QYm50cmhjd1phQjg4bUJaTTJSeXY1cTl6SVlpUmZod2VURG9DM09PYy01Z081WjdnaDEwTTFkaTJMVWxSUGhqNG1LaGZrdS1MZEVDeHZoOC1UdHRDMkxmRVJuanpoQjVlclJOd2MwSDlFSWlFUGdJdjd6RnE0?oc=5",
-      "source": "Estadão",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-29T22:16:00Z",
-      "updatedAt": "2026-05-29T22:16:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "companies-691973ac405863fbd296e21c",
@@ -1077,42 +1200,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "macro-56b94354a83e95f4b0a52e9d",
-      "title": "Fed vê risco de recessão de mais de 50% nos próximos trimestres",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQd0o5cEtscjVuSmZKeEQ4OVFrb0ZwWm0xWTlYY0FQbjFLMmdnYkVNRWZ0dk96WU1HOVpzb1dzRXhmZU92dzFPanBCeUV1QUd3aXhpR1JURFJXRVlQbTFVdzRQOHAxWkE4TXdRbmVxLXJPbFlZdUNQcHJVNGc0LV9QRjduVlZiYndab1hsQmpGSUhaaEFKTmfSAZsBQVVfeXFMUHFKbExKeG1TbV9tRHdpTXdTODRCUDlhT0FleTRGT3Z0by0tc3lKa19OckZwdTZQMDdRNXpvcG1Oc3htQnpadUloUXZFcEdXdDVFR0J0TjJMaFhoV1JMWnFCYXQxZWthYjd2R2h5Z3lBdEl6cDNrd3RiQ0tRN2JkYmtGOUVGTXMwbjVZRURUN29Zb3I4MlFpR2dmWHc?oc=5",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-29T22:16:00Z",
-      "updatedAt": "2026-05-29T22:16:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-1bb2ce219f002227151d8808",
-      "title": "Dólar fecha em alta após dados do PIB brasileiro e receio de nova retaliação de Trump ao julgamento de Bolsonaro",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUjZYbEZwZnVhWkhGSHlLVFBQRmJVN0ZsWFY5T2VISzNndUJUWUhmTEFGLVJBRHp2MWZPS3VxclIwZm1waWFIMU9XZXBQNGZsSXhDNElPbEtSX2ZaS05LX1lhSE9IVk9SWkxvMGZ5YXd5VERRM1hxVGZ5ZHNRZE1vd0U5SG96X25XS0lHUEE1a2VXRnI4OXktbXlKN0d5NGQ1YUNLazFmYTkwQmdwV2JQY2dxdTbSAboBQVVfeXFMUGt5WElENmNpY3RJbFpqX1dQMEg3OHI3UXFUNWxXUGhPcVh2NnZETGo0VjYwbGtpWVBiSTRvYkR5dlVwd2RfaVpGR1dkNjFlRGpiY01XbGdIdXpNa0Y4dnIyUjJzVjdvY1Z2WEFKR3lDRlpaQzJhWkl2SG5ZSWJLcGY4SDRUdUExWFlBeU1VVUdWVTFQcUFfSzZwc3YweDEycmJaRnN4ZS1NR29YUGV0bUVNdGkyZWxoZWxR?oc=5",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-29T22:16:00Z",
-      "updatedAt": "2026-05-29T22:16:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "companies-89703596ded5e8c6d59a2456",
       "title": "Acidentes de trânsito no trabalho acendem alerta para empresas brasileiras - aRede",
       "summary": "Atualizacao de empresas capturada em aRede.",
@@ -1127,42 +1214,6 @@
       ],
       "publishedAt": "2026-05-29T22:00:00Z",
       "updatedAt": "2026-05-29T22:00:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-9ad4bb5ef6526f95dca68beb",
-      "title": "Classificação de facções brasileiras como terroristas afeta economia",
-      "summary": "Atualizacao de empresas capturada em diário do estado.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRTl6VmtfQnFKSHlDdFFJajg3M0hIcWdoVWJkMjlxOWNaMnkyNmFZT3prVnp1OEFRQ19CRDh5M2NveWs3V2NJRnNHOXQ1aHh4dC1tblY0UC03N21IcExWMFViVFB4UE9hLXFlcFJ5NkJseXhPRlpER0Z1bXRMWHF0WWs5Z1dEclRfZFRkVEg0dTFkWUpMQ2tCOGtkUlBZVmlHNG9J?oc=5",
-      "source": "diário do estado",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-05-29T21:48:43Z",
-      "updatedAt": "2026-05-29T21:48:43Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-51d0d4de70e0b4e968a0ecf0",
-      "title": "Mais de 230 empresas brasileiras levam produção ao Paraguai, pagam carga próxima de 12%, contra cerca de 80% no Brasil, e usam o Mercosul para vender de volta ao mercado nacional sem imposto de importação",
-      "summary": "Atualizacao de empresas capturada em CPG Click Petróleo e Gás.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNYmtZR05RcUFibDZKUktTcHVvYnNMU0hsaVNQLURUNFdxMTFsZkJlOWhmdkRCMFpqSW9faGYwcDFjeGw4LUxaRHRJYTNmS3NFLWFpUWhsWTRnd0NSQ0VaOW8yTzFnMHZ4UW5aTjJEeGpSVi1QSm85c0lObk5mUC1UcnpZem03YkpwTEtadmdiTWJidDl0TEZlbm1WT0twTlZROGdwSlBEZjlJT3MxMWpDWmtRWklMeXRvZ2hNWEgxdEptUm1uUEZWWkV5d2xNbl9GbzFrd2tuZ3AyNFdITF8xT2p2VXBodHZ6blBsRGt1ZjZjYnRZZUNucW5Gei1UNW5sMTg4Z2MwenVGTnVhYlNaV1JYMUx0YUNlWDhILXdfUFNHQ3V0ZW92a0szSHNwNXJZSlZyeHNZQ2dNZVhNbVE?oc=5",
-      "source": "CPG Click Petróleo e Gás",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-05-29T21:37:00Z",
-      "updatedAt": "2026-05-29T21:37:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
@@ -1183,60 +1234,6 @@
       "updatedAt": "2026-05-29T20:52:06Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "companies-0e64ea0749bda8ef72489b14",
-      "title": "PCC e CV: como decisão de Trump afeta Pix, bancos e empresas no Brasil",
-      "summary": "Atualizacao de empresas capturada em Diário do Centro do Mundo.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdWZOQjFTN1pzNmNuRThoYWlvVXZWTXVMQko1a3dZcW1ORVJ3WGFGWHZWeHJYb3VuaE5PWlQxTEF1ZkVzaEFtTWFHMEtRTVhCbjJjOUxyX19nV0xvMl84ZEluVU4zYkVyaEVVMTA2VzZ2YkxHd1h2NjBvVnBuZ3VvOHlJZHBfelNDaVlWYmVMTjFaeFljZVJFT1FWTDR6OG4wOUtpX0hzdDM1STJpTzdj?oc=5",
-      "source": "Diário do Centro do Mundo",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-05-29T20:45:00Z",
-      "updatedAt": "2026-05-29T20:45:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-1063b45267f3a2829cccf858",
-      "title": "O país que fala por mensagens: o que isso ensina às marcas brasileiras",
-      "summary": "Atualizacao de empresas capturada em ClienteSA.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPREhieHpKU3hlbmtWbXc0c21DNHJWQkg4aFQ4cW5rdkF6ZHZQOWNzdnVod3ltZmhqNU5zcDJHTzA2WU1vaVRacUxqaGVJM3ZMM0o2OFBSZG94Ui1iQm5IcUNSRDlqY0tFVjNncGpqWHRDUlpDZmczSUZpR0RtU1NNQllJSEs1UEtOSXpFYzJ3eWMwNDBFbVBua19qbEFobVhPU21hUg?oc=5",
-      "source": "ClienteSA",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-05-29T20:27:24Z",
-      "updatedAt": "2026-05-29T20:27:24Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-3b45b206babec5ab82d97f1f",
-      "title": "Hang prevê “quebradeira” de empresas com fim da escala 6×1",
-      "summary": "Atualizacao de empresas capturada em Pleno.News.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNlhRc3NyNzZCcFMydTNEN3djOUNPaGllVjgtMHBaSVhGUUp2dTRoQ2UxX18tWjNEMWxhYVltaDFvakFkWkp2MG9QRGhUa2NBaFV1LVhxSkVyeFlYRExBOFpjYXdaQ25SVzE4UlkyVUhmR0s0RVFIVmtYVVJnVmU5VFN1RXQteWVqRHFSM19MRDZNYmQ3TVoza3Y2N1FTaUdjclplQWVXclHSAbABQVVfeXFMTUJQdVl2aks0cHBDMUpCMG1vdkwxdFBtVk9UdDJFQ0o4QnpyOXhhOXA4bG51Y0hZcDgtcTY2VGJQc2Y3SDEyejRVbWJTQkJkeVdPM0JmWURqVUNyNXV1XzBOR0txa3djY01BbngxRFcwMTRmbjBkQWVCNXpXdUJXclo1Rk53ZlQwaXhqVE4zNTlXNktVdVZRRU1nemxPclZzdVhQRHFEOVhFMlpUdFJJblU?oc=5",
-      "source": "Pleno.News",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-05-29T19:50:00Z",
-      "updatedAt": "2026-05-29T19:50:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "funds-53e944935fc915d4faa31cac",
@@ -1325,24 +1322,6 @@
       ],
       "publishedAt": "2026-05-29T10:22:29Z",
       "updatedAt": "2026-05-29T10:22:29Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-1e64d11d1d0678b871ebb15d",
-      "title": "Quando a segurança jurídica nos fundos de investimento é posta à prova, quem paga a conta?",
-      "summary": "Atualizacao de fundos capturada em Migalhas.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVTQ0TVVscUZZZ0VqYnMzSGdSNXVfbFE0QzFSbHlQZVZ6RV9tSEJqeXo0M2NIeTBhVk4xM0oxbkx0dHBDU0N2WW01aUNuVXJ6ZU9tSmRJaC1sWDJpdXV4WEtMajZVRkZESzk2QUVySFZ0VDhNNDk2Zm5pbHlTU3RQUVhGZml6czZDNENpU0s3OVo4MFFCTWN2NnZwS0JMMENkQWstd1hvT1RoVURLY3pzYzVB?oc=5",
-      "source": "Migalhas",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-05-29T10:16:58Z",
-      "updatedAt": "2026-05-29T10:16:58Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
