@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-31T10:29:11Z",
-  "generatedAt": "2026-05-31T10:29:11Z",
+  "updatedAt": "2026-05-31T12:00:19Z",
+  "generatedAt": "2026-05-31T12:00:19Z",
   "categories": [
     {
       "id": "all",
@@ -25,16 +25,20 @@
   ],
   "sources": [
     {
+      "id": "a-tarde",
+      "label": "A TARDE"
+    },
+    {
+      "id": "a-tribuna",
+      "label": "A Tribuna"
+    },
+    {
       "id": "acionista-com-br",
       "label": "Acionista.com.br"
     },
     {
       "id": "agenda-do-poder",
       "label": "Agenda do Poder"
-    },
-    {
-      "id": "agronews-tv-br",
-      "label": "agronews.tv.br"
     },
     {
       "id": "ag-ncia-brasil",
@@ -53,16 +57,12 @@
       "label": "Blog do Gustavo Negreiros"
     },
     {
+      "id": "brazil-journal",
+      "label": "Brazil Journal"
+    },
+    {
       "id": "carta-campinas",
       "label": "Carta Campinas"
-    },
-    {
-      "id": "cn7",
-      "label": "CN7"
-    },
-    {
-      "id": "cnn-brasil",
-      "label": "CNN Brasil"
     },
     {
       "id": "consultor-jur-dico",
@@ -101,6 +101,10 @@
       "label": "Exame"
     },
     {
+      "id": "express-o-rond-nia",
+      "label": "Expressão Rondônia"
+    },
+    {
       "id": "feed-food",
       "label": "Feed&Food"
     },
@@ -115,6 +119,10 @@
     {
       "id": "gazeta-do-povo",
       "label": "Gazeta do Povo"
+    },
+    {
+      "id": "grupo-lomes-de-comunica-o",
+      "label": "Grupo Lomes de Comunicação"
     },
     {
       "id": "investidor-sardinha",
@@ -137,6 +145,10 @@
       "label": "jornaldearuja.com"
     },
     {
+      "id": "livecoins",
+      "label": "Livecoins"
+    },
+    {
       "id": "monitor-mercantil",
       "label": "Monitor Mercantil"
     },
@@ -157,16 +169,28 @@
       "label": "PaiPee"
     },
     {
+      "id": "portal-piau-hoje",
+      "label": "Portal Piauí Hoje"
+    },
+    {
       "id": "portal-tela",
       "label": "Portal Tela"
+    },
+    {
+      "id": "prefeitura-de-cuiab",
+      "label": "Prefeitura de Cuiabá"
+    },
+    {
+      "id": "pressreader",
+      "label": "PressReader"
     },
     {
       "id": "rep-rtermt",
       "label": "RepórterMT"
     },
     {
-      "id": "seu-dinheiro",
-      "label": "Seu Dinheiro"
+      "id": "r-dio-pampa",
+      "label": "Rádio Pampa"
     },
     {
       "id": "spacemoney",
@@ -181,12 +205,12 @@
       "label": "Times Brasil | CNBC"
     },
     {
-      "id": "tradingkey",
-      "label": "TradingKey"
-    },
-    {
       "id": "tradingview",
       "label": "TradingView"
+    },
+    {
+      "id": "turbo-pt",
+      "label": "turbo.pt"
     },
     {
       "id": "tv-foco",
@@ -199,11 +223,67 @@
   ],
   "items": [
     {
+      "id": "macro-1ca2e6af26ce33ca6b14b42f",
+      "title": "Prévia da inflação de maio na região de Salvador fica em 0,69%; alimentos têm maior aumento",
+      "summary": "Índice Nacional de Preços ao Consumidor Amplo 15 (IPCA-15), calculado pelo IBGE, ficou em 0,69% na Região Metropolitana de Salvador",
+      "details": "Índice Nacional de Preços ao Consumidor Amplo 15 (IPCA-15), calculado pelo IBGE, ficou em 0,69% na Região Metropolitana de Salvador",
+      "url": "https://glomes.com.br/previa-da-inflacao-de-maio-na-regiao-de-salvador-fica-em-069-alimentos-tem-maior-aumento/",
+      "source": "Grupo Lomes de Comunicação",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-31T11:29:00Z",
+      "updatedAt": "2026-05-31T11:29:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://glomes.com.br/wp-content/uploads/2024/11/IMG_9363site.jpg"
+    },
+    {
+      "id": "macro-7915a709eeaff042000dfb77",
+      "title": "PIB moderado",
+      "summary": "O Brasil segue com baixo investimento em bens de produção, de 16,5% sobre o PIB, inferior aos 30% na China e Índia, e não consegue melhorar a produtividade",
+      "details": "O Brasil segue com baixo investimento em bens de produção, de 16,5% sobre o PIB, inferior aos 30% na China e Índia, e não consegue melhorar a produtividade",
+      "url": "https://www.atribuna.com.br/opiniao/editorial-atribuna/pib-moderado-1.516100",
+      "source": "A Tribuna",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-31T10:45:00Z",
+      "updatedAt": "2026-05-31T10:45:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.atribuna.com.br/image/policy:1.333177:1736203187/image.jpg?f=3x2"
+    },
+    {
+      "id": "funds-c76cf229ffd4219c778351b5",
+      "title": "Porque quase desapareceram as “portas suicidas” nos automóveis",
+      "summary": "Atualizacao de fundos capturada em turbo.pt.",
+      "details": "",
+      "url": "https://www.turbo.pt/porque-quase-desapareceram-as-portas-suicidas-nos-automoveis/",
+      "source": "turbo.pt",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-05-31T10:01:29Z",
+      "updatedAt": "2026-05-31T10:01:29Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
       "id": "latest-2552754a6566427cabd0d362",
       "title": "Horoscopo Financeiro de 31/05/2026 - Previsoes para seu dinheiro",
-      "summary": "O Ministério das Mulheres reconheceu 80 empresas por iniciativas que beneficiaram 660 mil trabalhadores. Saiba mais sobre o impacto!",
-      "details": "O Ministério das Mulheres reconheceu 80 empresas por iniciativas que beneficiaram 660 mil trabalhadores. Saiba mais sobre o impacto!",
-      "url": "https://diariodoestadogo.com.br/empresas-brasileiras-recebem-selo-de-equidade-de-genero-e-raca/",
+      "summary": "Confira as previsoes financeiras para todos os signos hoje, 31/05/2026, com dicas sobre investimentos, alertas de gastos e oportunidades do dia alinhadas aos astros e ao mercado financeiro.",
+      "details": "Confira as previsoes financeiras para todos os signos hoje, 31/05/2026, com dicas sobre investimentos, alertas de gastos e oportunidades do dia alinhadas aos astros e ao mercado financeiro.",
+      "url": "https://www.spacemoney.com.br/horoscopo/horoscopo-financeiro-31-05-2026/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -215,14 +295,52 @@
       "updatedAt": "2026-05-31T10:01:12Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/05/empresas-brasileiras-recebem-selo-de-equidade-de-genero-e-raca.jpg"
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/05/pexels-photo-7222052-33.jpg"
+    },
+    {
+      "id": "latest-1087d9a9b5de58b10f3f1f92",
+      "title": "Famílias brasileiras enfrentam recorde de dívidas, aponta pesquisa",
+      "summary": "Estudo revela aumento preocupante das dívidas em todas as faixas de renda",
+      "details": "Estudo revela aumento preocupante das dívidas em todas as faixas de renda",
+      "url": "https://piauihoje.com/noticias/economia/familias-brasileiras-enfrentam-recorde-de-dividas-aponta-pesquisa-454583.html",
+      "source": "Portal Piauí Hoje",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-31T09:58:56Z",
+      "updatedAt": "2026-05-31T09:58:56Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://piauihoje.com/social-image/post/454583?v=1780222719"
+    },
+    {
+      "id": "latest-bc78e64caa34733df1b3f180",
+      "title": "Os 11 banqueiros e advogados que inventaram o mercado de M&A",
+      "summary": "O mercado de M&A, com bancos de investimento mantendo times especializados em fusões e aquisições e boutiques que fazem assessoria, é algo relativamente",
+      "details": "O mercado de M&A, com bancos de investimento mantendo times especializados em fusões e aquisições e boutiques que fazem assessoria, é algo relativamente",
+      "url": "https://braziljournal.com/os-11-banqueiros-e-advogados-que-inventaram-o-mercado-de-ma/",
+      "source": "Brazil Journal",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-31T09:50:37Z",
+      "updatedAt": "2026-05-31T09:50:37Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://braziljournal.com/wp-content/uploads/2026/04/livro-1-635x357.jpg"
     },
     {
       "id": "companies-4776d94e55e4fa4f9b0adb86",
       "title": "Empresas brasileiras recebem selo de equidade de gênero e raça",
-      "summary": "Confira as previsoes financeiras para todos os signos hoje, 31/05/2026, com dicas sobre investimentos, alertas de gastos e oportunidades do dia alinhadas aos astros e ao mercado financeiro.",
-      "details": "Confira as previsoes financeiras para todos os signos hoje, 31/05/2026, com dicas sobre investimentos, alertas de gastos e oportunidades do dia alinhadas aos astros e ao mercado financeiro.",
-      "url": "https://www.spacemoney.com.br/horoscopo/horoscopo-financeiro-31-05-2026/",
+      "summary": "O Ministério das Mulheres reconheceu 80 empresas por iniciativas que beneficiaram 660 mil trabalhadores. Saiba mais sobre o impacto!",
+      "details": "O Ministério das Mulheres reconheceu 80 empresas por iniciativas que beneficiaram 660 mil trabalhadores. Saiba mais sobre o impacto!",
+      "url": "https://diariodoestadogo.com.br/empresas-brasileiras-recebem-selo-de-equidade-de-genero-e-raca/",
       "source": "diário do estado",
       "category": "companies",
       "tags": [
@@ -234,14 +352,14 @@
       "updatedAt": "2026-05-31T09:48:32Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/05/pexels-photo-7222052-33.jpg"
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/05/empresas-brasileiras-recebem-selo-de-equidade-de-genero-e-raca.jpg"
     },
     {
       "id": "funds-e2dde214487304b5e14ded0f",
       "title": "Treze ministérios e agências desembolsaram menos de 1% dos fundos de investimento público.",
-      "summary": "Atualizacao de fundos capturada em Vietnam.vn.",
-      "details": "",
-      "url": "https://www.msn.com/pt-br/dinheiro/economia-e-negocios/ipca-15-acima-do-esperado-mant%C3%A9m-mercado-cauteloso-com-juros/ar-AA24cazV?ocid=finance-verthp-feeds",
+      "summary": "Após quase cinco meses, o desembolso de investimentos públicos atingiu apenas 18% do plano estabelecido pelo Primeiro-Ministro. Notavelmente, 13 ministérios e agências não desembolsaram nenhum recurso ou desembolsaram menos de 1%.",
+      "details": "Após quase cinco meses, o desembolso de investimentos públicos atingiu apenas 18% do plano estabelecido pelo Primeiro-Ministro. Notavelmente, 13 ministérios e agências não desembolsaram nenhum recurso ou desembolsaram menos de 1%.",
+      "url": "https://www.vietnam.vn/pt/13-bo-co-quan-giai-ngan-dau-tu-cong-duoi-1",
       "source": "Vietnam.vn",
       "category": "funds",
       "tags": [
@@ -252,14 +370,15 @@
       "publishedAt": "2026-05-31T09:17:22Z",
       "updatedAt": "2026-05-31T09:17:22Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/31/1780218669487_712dt.jpeg"
     },
     {
       "id": "latest-d5e353cca1d792a570c2a841",
       "title": "IPCA-15 acima do esperado mantém mercado cauteloso com juros",
-      "summary": "Após quase cinco meses, o desembolso de investimentos públicos atingiu apenas 18% do plano estabelecido pelo Primeiro-Ministro. Notavelmente, 13 ministérios e agências não desembolsaram nenhum recurso ou desembolsaram menos de 1%.",
-      "details": "Após quase cinco meses, o desembolso de investimentos públicos atingiu apenas 18% do plano estabelecido pelo Primeiro-Ministro. Notavelmente, 13 ministérios e agências não desembolsaram nenhum recurso ou desembolsaram menos de 1%.",
-      "url": "https://www.vietnam.vn/pt/13-bo-co-quan-giai-ngan-dau-tu-cong-duoi-1",
+      "summary": "Atualizacao de ultima hora capturada em MSN.",
+      "details": "",
+      "url": "https://www.msn.com/pt-br/dinheiro/economia-e-negocios/ipca-15-acima-do-esperado-mant%C3%A9m-mercado-cauteloso-com-juros/ar-AA24cazV?ocid=finance-verthp-feeds",
       "source": "MSN",
       "category": "latest",
       "tags": [
@@ -270,8 +389,7 @@
       "publishedAt": "2026-05-31T09:08:52Z",
       "updatedAt": "2026-05-31T09:08:52Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/31/1780218669487_712dt.jpeg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-096af676a237ef79313df5d9",
@@ -295,9 +413,9 @@
     {
       "id": "latest-e93a69ac955d19fc21f29584",
       "title": "Preço do cobre: futuros oscilam com guerra EUA-Irã e afetam o sentimento",
-      "summary": "O aumento do crédito direcionado durante o governo Lula impacta a economia e a taxa Selic. Economistas alertam para riscos e desafios enfrentados.",
-      "details": "O aumento do crédito direcionado durante o governo Lula impacta a economia e a taxa Selic. Economistas alertam para riscos e desafios enfrentados.",
-      "url": "https://diariodoestadogo.com.br/sao-paulo-sp-guerra-freou-queda-dos-juros-com-credito-direcionado-crescente/",
+      "summary": "Considerando que, até o final de abril, a taxa de desembolso de capital público para investimentos por departamentos, agências, distritos, comunas e conselhos de gestão de projetos na cidade havia atingido apenas 10,5% do plano de capital alocado, inferior à média nacional, o Pre",
+      "details": "Considerando que, até o final de abril, a taxa de desembolso de capital público para investimentos por departamentos, agências, distritos, comunas e conselhos de gestão de projetos na cidade havia atingido apenas 10,5% do plano de capital alocado, inferior à média nacional, o Presidente do Comitê Popular da Cidade de H",
+      "url": "https://www.vietnam.vn/pt/thay-the-dieu-chuyen-lanh-dao-cham-giai-ngan-von-dau-tu-cong",
       "source": "TradingView",
       "category": "latest",
       "tags": [
@@ -309,14 +427,14 @@
       "updatedAt": "2026-05-31T08:24:20Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/05/sao-paulo-sp3A-guerra-freou-queda-dos-juros-com-credito-direcionado-crescente.jpg"
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/31/1780214163965_cong-trinh-tu-nguoi-dan-thao-do-ban-giao-mat-bang-jpg.webp"
     },
     {
       "id": "latest-5f096c05097fda35e4bfb650",
       "title": "São Paulo (SP): Guerra freou queda dos juros com crédito direcionado crescente",
-      "summary": "O preço do cobre continuou a oscilar entre leves ganhos e perdas na quinta-feira, enquanto investidores ponderam as ameaças de idas e vindas entre os EUA e a República Islâmica do Irã. Por um lado, a perspectiva de longo prazo estável continua a oferecer suporte ao metal industri",
-      "details": "O preço do cobre continuou a oscilar entre leves ganhos e perdas na quinta-feira, enquanto investidores ponderam as ameaças de idas e vindas entre os EUA e a República Islâmica do Irã. Por um lado, a perspectiva de longo prazo estável continua a oferecer suporte ao metal industrial. No entanto, com…",
-      "url": "https://br.tradingview.com/news/invezz:7aadef679bc81:0/",
+      "summary": "O aumento do crédito direcionado durante o governo Lula impacta a economia e a taxa Selic. Economistas alertam para riscos e desafios enfrentados.",
+      "details": "O aumento do crédito direcionado durante o governo Lula impacta a economia e a taxa Selic. Economistas alertam para riscos e desafios enfrentados.",
+      "url": "https://diariodoestadogo.com.br/sao-paulo-sp-guerra-freou-queda-dos-juros-com-credito-direcionado-crescente/",
       "source": "diário do estado",
       "category": "latest",
       "tags": [
@@ -328,14 +446,14 @@
       "updatedAt": "2026-05-31T08:19:46Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/05/sao-paulo-sp3A-guerra-freou-queda-dos-juros-com-credito-direcionado-crescente.jpg"
     },
     {
       "id": "funds-28a2a7abee65a84c7b6a87f6",
       "title": "Substituir ou transferir líderes que sejam lentos na liberação de fundos de investimento público.",
-      "summary": "A ampliação do crédito direcionado e juros subsidiados pelo governo Lula pressiona o Banco Central a manter a taxa Selic em patamares elevados para conter a inflação.",
-      "details": "A ampliação do crédito direcionado e juros subsidiados pelo governo Lula pressiona o Banco Central a manter a taxa Selic em patamares elevados para conter a inflação.",
-      "url": "https://g1.globo.com/google/amp/economia/noticia/2026/05/31/lula-amplia-credito-com-taxas-favorecidas-em-terceiro-mandato-preocupa-bc-e-pressiona-juros.ghtml",
+      "summary": "O preço do cobre continuou a oscilar entre leves ganhos e perdas na quinta-feira, enquanto investidores ponderam as ameaças de idas e vindas entre os EUA e a República Islâmica do Irã. Por um lado, a perspectiva de longo prazo estável continua a oferecer suporte ao metal industri",
+      "details": "O preço do cobre continuou a oscilar entre leves ganhos e perdas na quinta-feira, enquanto investidores ponderam as ameaças de idas e vindas entre os EUA e a República Islâmica do Irã. Por um lado, a perspectiva de longo prazo estável continua a oferecer suporte ao metal industrial. No entanto, com…",
+      "url": "https://br.tradingview.com/news/invezz:7aadef679bc81:0/",
       "source": "Vietnam.vn",
       "category": "funds",
       "tags": [
@@ -347,14 +465,14 @@
       "updatedAt": "2026-05-31T08:16:20Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://s2-g1.glbimg.com/YuCqdHa0yViGDNOkKFx2shGtDec=/2048x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/j/f/jlaaayRoOaVwVczht0qg/53833626013-12668eb15b-k.jpg"
+      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
     },
     {
       "id": "companies-516547825f91c545059a4572",
       "title": "Lei entra em vigor no Brasil e empresas devem cumprir nova obrigação",
-      "summary": "Considerando que, até o final de abril, a taxa de desembolso de capital público para investimentos por departamentos, agências, distritos, comunas e conselhos de gestão de projetos na cidade havia atingido apenas 10,5% do plano de capital alocado, inferior à média nacional, o Pre",
-      "details": "Considerando que, até o final de abril, a taxa de desembolso de capital público para investimentos por departamentos, agências, distritos, comunas e conselhos de gestão de projetos na cidade havia atingido apenas 10,5% do plano de capital alocado, inferior à média nacional, o Presidente do Comitê Popular da Cidade de H",
-      "url": "https://www.vietnam.vn/pt/thay-the-dieu-chuyen-lanh-dao-cham-giai-ngan-von-dau-tu-cong",
+      "summary": "Cuidar da saúde mental dos funcionários deixou de ser apenas uma recomendação e passou a integrar obrigações legais para empresas",
+      "details": "Cuidar da saúde mental dos funcionários deixou de ser apenas uma recomendação e passou a integrar obrigações legais para empresas",
+      "url": "https://correiodoestado.com.br/mix/lei-entra-em-vigor-no-brasil-e-empresas-devem-cumprir-nova-obrigacao/",
       "source": "Correio do Estado",
       "category": "companies",
       "tags": [
@@ -366,14 +484,33 @@
       "updatedAt": "2026-05-31T08:06:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/31/1780214163965_cong-trinh-tu-nguoi-dan-thao-do-ban-giao-mat-bang-jpg.webp"
+      "imageUrl": "https://correiodoestado.com.br/mix/wp-content/uploads/2026/05/Capa-JBr-12-1.png"
+    },
+    {
+      "id": "funds-065dc264c09ef7baa1e1edc2",
+      "title": "Eliminar os entraves relacionados à posse de terras e acelerar o desembolso de fundos de investimento público.",
+      "summary": "(Baohatinh.vn) - No contexto da necessidade de acelerar o desembolso de capital de investimento público, Ha Tinh está se concentrando com grande determinação no trabalho de desapropriação de terras, criando um impulso para promover o desenvolvimento socioeconômico.",
+      "details": "(Baohatinh.vn) - No contexto da necessidade de acelerar o desembolso de capital de investimento público, Ha Tinh está se concentrando com grande determinação no trabalho de desapropriação de terras, criando um impulso para promover o desenvolvimento socioeconômico.",
+      "url": "https://www.vietnam.vn/pt/go-diem-nghen-mat-bang-day-nhanh-giai-ngan-von-dau-tu-cong",
+      "source": "Vietnam.vn",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-05-31T07:34:01Z",
+      "updatedAt": "2026-05-31T07:34:01Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/31/1780207555149_fb_10-jpg.webp"
     },
     {
       "id": "macro-61471d615fb688d4bb7c35c4",
       "title": "Lula amplia crédito com taxas favorecidas em terceiro mandato, preocupa BC e pressiona juros",
-      "summary": "Cuidar da saúde mental dos funcionários deixou de ser apenas uma recomendação e passou a integrar obrigações legais para empresas",
-      "details": "Cuidar da saúde mental dos funcionários deixou de ser apenas uma recomendação e passou a integrar obrigações legais para empresas",
-      "url": "https://correiodoestado.com.br/mix/lei-entra-em-vigor-no-brasil-e-empresas-devem-cumprir-nova-obrigacao/",
+      "summary": "A ampliação do crédito direcionado e juros subsidiados pelo governo Lula pressiona o Banco Central a manter a taxa Selic em patamares elevados para conter a inflação.",
+      "details": "A ampliação do crédito direcionado e juros subsidiados pelo governo Lula pressiona o Banco Central a manter a taxa Selic em patamares elevados para conter a inflação.",
+      "url": "https://g1.globo.com/google/amp/economia/noticia/2026/05/31/lula-amplia-credito-com-taxas-favorecidas-em-terceiro-mandato-preocupa-bc-e-pressiona-juros.ghtml",
       "source": "G1",
       "category": "macro",
       "tags": [
@@ -385,14 +522,14 @@
       "updatedAt": "2026-05-31T07:01:36Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://correiodoestado.com.br/mix/wp-content/uploads/2026/05/Capa-JBr-12-1.png"
+      "imageUrl": "https://s2-g1.glbimg.com/YuCqdHa0yViGDNOkKFx2shGtDec=/2048x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/j/f/jlaaayRoOaVwVczht0qg/53833626013-12668eb15b-k.jpg"
     },
     {
       "id": "latest-b73e241bb77d35aa51b905f6",
       "title": "Intervenção do Banco Central: Um dos maiores bancos do Brasil foi à falência após 49 anos",
-      "summary": "Relatório do Banco Central aponta que liquidação do Banco Master não gerou riscos sistêmicos e confirma resiliência do sistema financeiro.",
-      "details": "Relatório do Banco Central aponta que liquidação do Banco Master não gerou riscos sistêmicos e confirma resiliência do sistema financeiro.",
-      "url": "https://saobentoemfoco.com.br/banco-central-confirma-solidez-sistema-financeiro-master/",
+      "summary": "Escândalo financeiro: Entenda como um esquema oculto levou um gigante banco brasileiro à falência e o desfecho recente no mercado.",
+      "details": "Escândalo financeiro: Entenda como um esquema oculto levou um gigante banco brasileiro à falência e o desfecho recente no mercado.",
+      "url": "https://tvfoco.uai.com.br/um-dos-maiores-bancos-falencia-intervencao-do-bc",
       "source": "TV Foco",
       "category": "latest",
       "tags": [
@@ -404,52 +541,70 @@
       "updatedAt": "2026-05-31T07:00:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://saobentoemfoco.com.br/wp-content/uploads/2026/05/image_1780207224184.jpg"
+      "imageUrl": "https://statics.otvfoco.com.br/2025/11/Banco-Central-banco-montagem-lennita-tv-foco.jpg"
     },
     {
-      "id": "funds-1f2e307e4d40ebb88f15c4a3",
-      "title": "Ha Tinh elimina os entraves relacionados à posse de terras e acelera o desembolso de fundos de investimento público.",
-      "summary": "Escândalo financeiro: Entenda como um esquema oculto levou um gigante banco brasileiro à falência e o desfecho recente no mercado.",
-      "details": "Escândalo financeiro: Entenda como um esquema oculto levou um gigante banco brasileiro à falência e o desfecho recente no mercado.",
-      "url": "https://tvfoco.uai.com.br/um-dos-maiores-bancos-falencia-intervencao-do-bc",
-      "source": "Vietnam.vn",
+      "id": "funds-0e6ab31fc58d01dd634bfc41",
+      "title": "Villas-Boas dá nega à entrada de fundos estrangeir­os na SAD",
+      "summary": "Atualizacao de fundos capturada em PressReader.",
+      "details": "",
+      "url": "https://www.pressreader.com/portugal/jornal-de-noticias/20260531/282497190330746",
+      "source": "PressReader",
       "category": "funds",
       "tags": [
         "fundos",
         "asset",
         "fiis"
       ],
-      "publishedAt": "2026-05-31T06:54:28Z",
-      "updatedAt": "2026-05-31T06:54:28Z",
+      "publishedAt": "2026-05-31T05:49:14Z",
+      "updatedAt": "2026-05-31T05:49:14Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://statics.otvfoco.com.br/2025/11/Banco-Central-banco-montagem-lennita-tv-foco.jpg"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "latest-11b7d449ccc47528487a2918",
-      "title": "Banco Central confirma solidez do sistema financeiro após liquidação do Banco Master",
-      "summary": "(Baohatinh.vn) - No contexto da necessidade de acelerar o desembolso de capital de investimento público, Ha Tinh está se concentrando com grande determinação no trabalho de desapropriação de terras, criando um impulso para promover o desenvolvimento socioeconômico.",
-      "details": "(Baohatinh.vn) - No contexto da necessidade de acelerar o desembolso de capital de investimento público, Ha Tinh está se concentrando com grande determinação no trabalho de desapropriação de terras, criando um impulso para promover o desenvolvimento socioeconômico.",
-      "url": "https://www.vietnam.vn/pt/ha-tinh-thao-go-diem-nghen-mat-bang-day-nhanh-giai-ngan-von-dau-tu-cong",
-      "source": "São Bento em Foco",
+      "id": "latest-b75108e15f79d4c145383fba",
+      "title": "Cheque especial, consignado ou empréstimo pessoal? Veja qual faz mais sentido para você",
+      "summary": "No g1 Explica, a repórter Renata Ribeiro explica e simplifica os temas que dominam o noticiário econômico e mexem diretamente com o nosso bolso.",
+      "details": "No g1 Explica, a repórter Renata Ribeiro explica e simplifica os temas que dominam o noticiário econômico e mexem diretamente com o nosso bolso.",
+      "url": "https://g1.globo.com/google/amp/g1-explica/noticia/2026/05/31/cheque-especial-consignado-ou-emprestimo-pessoal-veja-qual-faz-mais-sentido-para-voce.ghtml",
+      "source": "G1",
       "category": "latest",
       "tags": [
         "mercado",
         "bolsa",
         "macro"
       ],
-      "publishedAt": "2026-05-31T06:02:03Z",
-      "updatedAt": "2026-05-31T06:02:03Z",
+      "publishedAt": "2026-05-31T05:00:42Z",
+      "updatedAt": "2026-05-31T05:00:42Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/31/1780207555149_fb_10-jpg.webp"
+      "imageUrl": "https://s2-g1.glbimg.com/siCvE6z5wGrB_jSe7H1dzHo7jr8=/1920x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/L/j/P0TPdFQWaz7zGndiBI1w/thumb-horizontal-g1-explica-economia-09.jpg"
+    },
+    {
+      "id": "latest-f69bd0a6048a44a163af4e01",
+      "title": "BC publica novas regras para evitar que bancos usem FGC como estratégia para captar recursos",
+      "summary": "BC aprova regras mais rígidas para o FGC após crise com Master O Banco Central publicou nesta sexta-feira (30) o detalhamento das novas regras que tornam mais difícil para bancos usarem a proteção do",
+      "details": "BC aprova regras mais rígidas para o FGC após crise com Master O Banco Central publicou nesta sexta-feira (30) o detalhamento das novas regras que tornam mais difícil para bancos usarem a proteção do",
+      "url": "https://expressaorondonia.com.br/bc-publica-novas-regras-para-evitar-que-bancos-usem-fgc-como-estrategia-para-captar-recursos/",
+      "source": "Expressão Rondônia",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-31T04:18:57Z",
+      "updatedAt": "2026-05-31T04:18:57Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://expressaorondonia.com.br/wp-content/uploads/2026/05/14555714-1024x576.jpeg"
     },
     {
       "id": "macro-4e54aed21bdb0e5488314b4c",
       "title": "Agropecuária puxa crescimento do PIB no primeiro trimestre de 2026 no cenário de alto endividamento das famílias",
-      "summary": "Impulso fiscal faz economia testar os limites de sua capacidade produtiva",
-      "details": "Impulso fiscal faz economia testar os limites de sua capacidade produtiva",
-      "url": "https://www1.folha.uol.com.br/colunas/samuelpessoa/2026/05/numeros-do-pib-refletem-o-ciclo-eleitoral.shtml",
+      "summary": "Em um contexto de desaceleração do crescimento econômico, mercados fragmentados e crescente pressão competitiva dos EUA e da China, as seis principais economias da União Europeia (UE) – Alemanha, França, Itália, Polônia, Espanha e Holanda – chegaram a um consenso crucial sobre a ",
+      "details": "Em um contexto de desaceleração do crescimento econômico, mercados fragmentados e crescente pressão competitiva dos EUA e da China, as seis principais economias da União Europeia (UE) – Alemanha, França, Itália, Polônia, Espanha e Holanda – chegaram a um consenso crucial sobre a reforma do sistema financeiro da região.",
+      "url": "https://www.vietnam.vn/pt/buoc-dot-pha-nham-tang-suc-canh-tranh-toan-cau-cua-eu",
       "source": "JC",
       "category": "macro",
       "tags": [
@@ -461,14 +616,33 @@
       "updatedAt": "2026-05-31T03:05:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/31/1780188353382_thi-truong.jpeg"
+    },
+    {
+      "id": "latest-d9f6a999f30992aa894cfbfe",
+      "title": "Resultado da Mega-Sena: Prêmio acumula em R$ 16 milhões",
+      "summary": "Impulso fiscal faz economia testar os limites de sua capacidade produtiva",
+      "details": "Impulso fiscal faz economia testar os limites de sua capacidade produtiva",
+      "url": "https://www1.folha.uol.com.br/colunas/samuelpessoa/2026/05/numeros-do-pib-refletem-o-ciclo-eleitoral.shtml",
+      "source": "diário do estado",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-31T03:03:10Z",
+      "updatedAt": "2026-05-31T03:03:10Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
       "imageUrl": "https://f.i.uol.com.br/fotografia/2026/02/18/177146200569965d75d67ac_1771462005_3x2_rt.jpg"
     },
     {
       "id": "macro-1957576495bb9d0cb8cca39f",
       "title": "Opinião - Samuel Pessôa: Números do PIB refletem o ciclo eleitoral",
-      "summary": "Atualizacao de macro capturada em Folha de S.Paulo.",
-      "details": "",
-      "url": "https://br.investing.com/news/economy-news/pereira-do-bce-diz-que-inflacao-exige-acao-sem-demora-1957242",
+      "summary": "Comércio puxa crescimento em período que construção civil mostrou recuperação anterior embora não garanta números iguais de abril a junho",
+      "details": "Comércio puxa crescimento em período que construção civil mostrou recuperação anterior embora não garanta números iguais de abril a junho",
+      "url": "https://jc.uol.com.br/colunas/jc-negocios/2026/05/31/agropecuaria-puxa-crescimento-do-pib-no-primeiro-trimestre-de-2026-no-cenario-de-alto-endividamento-das-familias.html",
       "source": "Folha de S.Paulo",
       "category": "macro",
       "tags": [
@@ -479,14 +653,15 @@
       "publishedAt": "2026-05-31T02:00:00Z",
       "updatedAt": "2026-05-31T02:00:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://imagens.ne10.uol.com.br/veiculos/_midias/jpg/2022/07/24/1224x674/1_maquinas_colheitadeiras02-21414792.jpg?20260531000733"
     },
     {
       "id": "latest-c8765216c1a7731908d3e2a6",
       "title": "Uma inovação que visa aumentar a competitividade global da UE.",
-      "summary": "Em um contexto de desaceleração do crescimento econômico, mercados fragmentados e crescente pressão competitiva dos EUA e da China, as seis principais economias da União Europeia (UE) – Alemanha, França, Itália, Polônia, Espanha e Holanda – chegaram a um consenso crucial sobre a ",
-      "details": "Em um contexto de desaceleração do crescimento econômico, mercados fragmentados e crescente pressão competitiva dos EUA e da China, as seis principais economias da União Europeia (UE) – Alemanha, França, Itália, Polônia, Espanha e Holanda – chegaram a um consenso crucial sobre a reforma do sistema financeiro da região.",
-      "url": "https://www.vietnam.vn/pt/buoc-dot-pha-nham-tang-suc-canh-tranh-toan-cau-cua-eu",
+      "summary": "Ninguém acertou as dezenas da Mega-Sena e prêmio acumula para R$ 16 milhões. Veja o rendimento e detalhes dos ganhadores da quina.",
+      "details": "Ninguém acertou as dezenas da Mega-Sena e prêmio acumula para R$ 16 milhões. Veja o rendimento e detalhes dos ganhadores da quina.",
+      "url": "https://diariodoestadogo.com.br/resultado-da-mega-sena-premio-acumula-em-r-16-milhoes/",
       "source": "Vietnam.vn",
       "category": "latest",
       "tags": [
@@ -498,14 +673,14 @@
       "updatedAt": "2026-05-31T00:51:58Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/05/31/1780188353382_thi-truong.jpeg"
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/05/resultado-da-mega-sena3A-premio-acumula-em-r24-16-milhoes.webp"
     },
     {
       "id": "latest-4f4304b44af2845f7feed059",
       "title": "O verdadeiro custo da maternidade no mercado de trabalho vai te surpreender",
-      "summary": "Cenário econômico mais desafiador leva relatório do Banco Pine a elevar projeções de inflação e reduzir cortes da Selic.",
-      "details": "Cenário econômico mais desafiador leva relatório do Banco Pine a elevar projeções de inflação e reduzir cortes da Selic.",
-      "url": "https://economicnewsbrasil.com.br/2026/05/30/cenario-economico-relatorio-banco-pine-inflacao-selic/",
+      "summary": "Desigualdade salarial entre homens e mulheres é agravada com a \"penalidade pela maternidade\"",
+      "details": "Desigualdade salarial entre homens e mulheres é agravada com a \"penalidade pela maternidade\"",
+      "url": "https://www.estadao.com.br/einvestidor/financas-pessoais/custo-da-maternidade-no-mercado-de-trabalho-salarios-mulheres/",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -517,14 +692,33 @@
       "updatedAt": "2026-05-30T23:35:29Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://economicnewsbrasil.com.br/wp-content/uploads/2026/05/nilton-david-politica-monetaria-pine-macro-day-banco-pine.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/YFEH4ZCU2BPE5AU6OOKHMHMMV4.png?quality=80&auth=c8189ed62423103b6e1d196721449cf2945446dd7b64884d4aad438425471979&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "macro-ced5a681a26bd460c19d9aee",
+      "title": "Previsão de crescimento do PIB do Brasil é de 1,9% para este ano",
+      "summary": "A alta de 1,1% do PIB no primeiro trimestre, em linha com as estimativas do mercado, confirmou o reaquecimento da atividade doméstica e o crescimento",
+      "details": "A alta de 1,1% do PIB no primeiro trimestre, em linha com as estimativas do mercado, confirmou o reaquecimento da atividade doméstica e o crescimento",
+      "url": "https://www.radiopampa.com.br/previsao-de-crescimento-do-pib-do-brasil-e-de-19-para-este-ano/",
+      "source": "Rádio Pampa",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-30T23:30:46Z",
+      "updatedAt": "2026-05-30T23:30:46Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.radiopampa.com.br/wp-content/uploads/2026/05/jpibssshy.jpg"
     },
     {
       "id": "macro-28d28259b75c8d967541e804",
       "title": "Pereira, do BCE, diz que inflação exige ação sem demora",
-      "summary": "A freguesia de Alpendorada, Várzea e Torrão (concelho do Marco de Canaveses) viveu este sábado, 30 de maio, um momento marcante para o setor do mobiliário e design de interiores com a inauguração da Domus Interiores, novo espaço idealizado por Valdemar Monteiro.",
-      "details": "A freguesia de Alpendorada, Várzea e Torrão (concelho do Marco de Canaveses) viveu este sábado, 30 de maio, um momento marcante para o setor do mobiliário e design de interiores com a inauguração da Domus Interiores, novo espaço idealizado por Valdemar Monteiro.",
-      "url": "https://averdade.com/5436421650/domus/",
+      "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
+      "details": "",
+      "url": "https://br.investing.com/news/economy-news/pereira-do-bce-diz-que-inflacao-exige-acao-sem-demora-1957242",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -535,15 +729,33 @@
       "publishedAt": "2026-05-30T23:15:00Z",
       "updatedAt": "2026-05-30T23:15:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://asset.skoiy.com/averl1d84frvz2zb/mcgunndfzwu1.jpg?crop=6000,3375,0,625"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "latest-e82a0d3c1d768a12ce079f5f",
+      "title": "Decisão dos EUA contra PCC e CV pode atingir PIX e bancos; entenda",
+      "summary": "Especialistas avaliam que medida dos EUA deve ampliar fiscalização sobre transações financeiras e elevar exigências para bancos",
+      "details": "Especialistas avaliam que medida dos EUA deve ampliar fiscalização sobre transações financeiras e elevar exigências para bancos",
+      "url": "https://atarde.com.br/economia/decisao-dos-eua-contra-pcc-e-cv-pode-atingir-pix-e-bancos-entenda-1390524",
+      "source": "A TARDE",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-30T23:08:41Z",
+      "updatedAt": "2026-05-30T23:08:41Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://cdn.atarde.com.br/img/Artigo-Destaque/1390000/decisao-dos-eua-contra-pcc-e-cv-pode-atingir-pix-e0139052400202605302008.jpg?xid=7096379"
     },
     {
       "id": "macro-da3fdc886800fa8001298720",
       "title": "Relatório do Banco Pine vê cenário econômico mais complexo e reduz espaço para queda da Selic",
-      "summary": "Desigualdade salarial entre homens e mulheres é agravada com a \"penalidade pela maternidade\"",
-      "details": "Desigualdade salarial entre homens e mulheres é agravada com a \"penalidade pela maternidade\"",
-      "url": "https://www.estadao.com.br/einvestidor/financas-pessoais/custo-da-maternidade-no-mercado-de-trabalho-salarios-mulheres/",
+      "summary": "Atualizacao de macro capturada em Economic News Brasil.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYldIYVdYVFNrTUJxeEtBRXBUdEx1YVkxMXZLNkRsNWVuN3FHdjRCTjJEc09kbFotaDhKYklmNWNKRGpIelROTlA0anNkWl9CX2xSN3RXQ3VRSXpGVmNsd1AzNHN5djRfMnMtd3NBZjJMUm5KSVY1QjdjWWFPMlFFX1l2SFI4T3RHRWNMc0lxRVc5SkhqeFA0MzRQMTFtR1Vj?oc=5",
       "source": "Economic News Brasil",
       "category": "macro",
       "tags": [
@@ -554,15 +766,14 @@
       "publishedAt": "2026-05-30T22:19:00Z",
       "updatedAt": "2026-05-30T22:19:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/YFEH4ZCU2BPE5AU6OOKHMHMMV4.png?quality=80&auth=c8189ed62423103b6e1d196721449cf2945446dd7b64884d4aad438425471979&width=1200&height=630&smart=true"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "funds-fb9776eb9e4f4e82d5370d0e",
       "title": "Domus Interiores abre portas em Alpendorada com conceito diferenciador assinado por Valdemar Monteiro",
-      "summary": "Comércio puxa crescimento em período que construção civil mostrou recuperação anterior embora não garanta números iguais de abril a junho",
-      "details": "Comércio puxa crescimento em período que construção civil mostrou recuperação anterior embora não garanta números iguais de abril a junho",
-      "url": "https://jc.uol.com.br/colunas/jc-negocios/2026/05/31/agropecuaria-puxa-crescimento-do-pib-no-primeiro-trimestre-de-2026-no-cenario-de-alto-endividamento-das-familias.html",
+      "summary": "Atualizacao de fundos capturada em averdade.com.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8yOXZ2XzY3WVlLZk9IVEVQSVlwOS1lUkltcjFEZWZxOU9ORVpLWUoxZ2tXc0RYWjZJcHBnN2lCOUk4QWJfalB1N1E1Y0JXSGc?oc=5",
       "source": "averdade.com",
       "category": "funds",
       "tags": [
@@ -573,34 +784,14 @@
       "publishedAt": "2026-05-30T21:58:08Z",
       "updatedAt": "2026-05-30T21:58:08Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://imagens.ne10.uol.com.br/veiculos/_midias/jpg/2022/07/24/1224x674/1_maquinas_colheitadeiras02-21414792.jpg?20260531000733"
-    },
-    {
-      "id": "macro-19dde86476bd90fa796bd8c8",
-      "title": "Como investir em renda fixa com Selic a 13,75%",
-      "summary": "Saiba como investir em renda fixa com Selic a 13,75%",
-      "details": "Saiba como investir em renda fixa com Selic a 13,75%",
-      "url": "https://www.estadao.com.br/web-stories/einvestidor/como-investir-em-renda-fixa-com-selic-a-1375/",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-30T21:49:04Z",
-      "updatedAt": "2026-05-30T21:49:04Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/J5EGRQHFUFJSDMD45XBW5ZYQ2Y.png?quality=80&auth=e69e73f1a0417577e4925c26e82862bbc54e6746477c4fa12347e248f851df24&width=1200"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "latest-74e3ba5bb3a66406975cea12",
       "title": "Confira 5 termos que todo investidor deve saber",
-      "summary": "Confira 5 termos que todo investidor deve saber",
-      "details": "Confira 5 termos que todo investidor deve saber",
-      "url": "https://www.estadao.com.br/web-stories/einvestidor/confira-5-termos-que-todo-investidor-deve-saber/",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTDNWdVNoT3VVcks5d01ySEM5bWxPTDNHc3k5X2M1NHFzd3Yta3BfX3Y4bThKQmMxNGJaelBSSFVDWDRCM2F2bGVPME9hQVExcEFpb0RjVGt4RlpnN2Q1NlR1eV9VRVhRQVVkUFIxczlzRGpncHZaRnBRR2FUNzktMFBOVkhqTnV4dnF0ZzNYLXdwaFBPZHpiSEttZl9SdUFw0gGgAUFVX3lxTE9MM1Z1U2hPdVVySzl3TXJIQzltbE9MM0dzeTlfYzU0cXN3di1rcF9fdjhtOEpCYzE0Ylp6UFJIVUNYNEIzYXZsZU8wT2FBUTFwQWlvRGNUa3hGWmc3ZDU2VHV5X1VFWFFBVWRQUjFzOXNEamdwdlpGcFFHYVQ3OS0wUE5WSGpOdXh2cXRnM1gtd3BoUE9kemJIS21mX1J1QXA?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -611,15 +802,32 @@
       "publishedAt": "2026-05-30T21:44:47Z",
       "updatedAt": "2026-05-30T21:44:47Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/GCHXLEC3NZPNJAIQTKK3SZ5PDQ.png?quality=80&auth=ec24ca778be7df72dbc71f9696afb2b52c69776911b888b50487e003f3df3153&width=1200"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-1df7df9475e19daea5d22e1a",
+      "title": "Mercado Bitcoin anuncia parceria com o Grupo Primo",
+      "summary": "Atualizacao de ultima hora capturada em Livecoins.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOXpWM1R6SFVReXo1djR3NXkwVlJJU3BwVnM3NHhfNUx0TzhZVU9XZzVlZjY1NlV3WmlCeklOcFliVDZMbDJBRlhJMTZ1Sl9BUWJBRnhxbjlhMDExYlVEQjFjZm4tTWpJWC1fTEViV0loajJBc0RFb2ZUY1FmSWZiMGlB?oc=5",
+      "source": "Livecoins",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-05-30T21:19:13Z",
+      "updatedAt": "2026-05-30T21:19:13Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-57134dd6cbf35c4400affe5f",
       "title": "Investimento em IA está só começando nas empresas, afirma gestor",
-      "summary": "A designação do PCC e do CV como organizações terroristas pelos Estados Unidos não é apenas simbólica — ela aciona um arsenal jurídico-financeiro de alcance global. A classificação combina duas figuras legais: a FTO (Organização Terrorista Estrangeira) e a SDGT (Terrorista Global",
-      "details": "A designação do PCC e do CV como organizações terroristas pelos Estados Unidos não é apenas simbólica — ela aciona um arsenal jurídico-financeiro de alcance global. A classificação combina duas figuras legais: a FTO (Organização Terrorista Estrangeira) e a SDGT (Terrorista Global Especialmente Designado), cada uma com ",
-      "url": "https://gustavonegreiros.com.br/2026/5/30/o-cerco-financeiro-as-faccoes-por-que-a-decisao-dos-eua-pode-atingir-bancos-brasileiros/162094",
+      "summary": "Atualizacao de ultima hora capturada em Acionista.com.br.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNaWZ0YUpxcTl3S0dIWk4zYmJESWVoTWl2LVBmS1hpcDBxOTAzWVp6LTB6eTBPbHhnWG9hRUJrWkxKZ3N1QkNJOE9lZ0xtVmVFVjBuZ3huU2pHVkRFWEpSVjhZeDhpZ0tSQ2lhZjVYcDNRUVB3dzlmQmFHY001Vk05aTdLck9wSUNLSGF1Z0tCNjd3cWs?oc=5",
       "source": "Acionista.com.br",
       "category": "latest",
       "tags": [
@@ -630,15 +838,14 @@
       "publishedAt": "2026-05-30T21:16:01Z",
       "updatedAt": "2026-05-30T21:16:01Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://gustavonegreiros.com.br/storage/2024/11/04/385x230-01JBW83ECXM1Q2M4ZKGMXDRQRR.avif"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "funds-ff0cccfe5ca5a98814d8d601",
       "title": "Crime organizado teria usado fintechs para movimentar bilhões",
       "summary": "Atualizacao de fundos capturada em Diário da Guanabara.",
       "details": "",
-      "url": "https://acionista.com.br/investimento-em-ia-esta-so-comecando-nas-empresas-afirma-gestor/",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBibF9fUnFidUJJa19ndEtCX2NmdFNsNW5SUGxTaHpac2ZLZDFoRDZ2TlkyUzlfdGluZW1lSjl0RWQ0eGR2akE?oc=5",
       "source": "Diário da Guanabara",
       "category": "funds",
       "tags": [
@@ -656,7 +863,7 @@
       "title": "O cerco financeiro às facções: por que a decisão dos EUA pode atingir bancos brasileiros",
       "summary": "Atualizacao de ultima hora capturada em Blog do Gustavo Negreiros.",
       "details": "",
-      "url": "https://dgrj.com.br/dnews/36419",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNFZwdmNuRTFUZ2syVXd4WFdXbzNHYlFxcG5fa1ZtZVlmVFNwcTJNOGJOLUUwRjVvcVZhZDc3WHlyaUpDU3BaVDlCSmFKaU51bGhkUjVhZGN4d3F0eDJ2WEowcWpCUGJGTXlmcVBvcmtWVnpGcHJMbVpmU0o4b2MwS280dVhxUmxCa01qVmtqcHZ1dEIyYjhfeXoya2Vzd2xOM29GZTY0VmgzLXo2NFdWTk5LOF9faktMeEJaQ3NaUlBnVzd2SkxOcHVXTE0yakZpY3c?oc=5",
       "source": "Blog do Gustavo Negreiros",
       "category": "latest",
       "tags": [
@@ -674,7 +881,7 @@
       "title": "Kevin Warsh: o novo presidente do Fed é hawkish ou dovish?",
       "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
       "details": "",
-      "url": "https://br.investing.com/news/economy-news/kevin-warsh-o-novo-presidente-do-fed-e-hawkish-ou-dovish-1957225",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUW51aWR3OFFMMjNRWHFkS1BEOWE1RWdFQUZaQVZYejFMLWx1ekxiMzJGQjZyR0lPd3RBQmRLcDFTYjRsOFcyZkJwUzRhOHVzWnNzelVFb3dWdlJ6Z0R3ZVNjTkVKX2t4bFpIQ0hTZWx0VWFZeG80SXFkdU4zMDlOYTVlZjYybmtPZzdkYmluc3RQM3dOdl8wdHNVbF9ZVEhpcjdXaHBmeWQxWE0?oc=5",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -690,9 +897,9 @@
     {
       "id": "companies-42742a68429cdb2e5b2bddca",
       "title": "PCC x CV: empresas deverão reforçar controles internos, afirma especialista",
-      "summary": "Ao ser parado, o motorista do veículo onde a mercadoria estava afirmou que transportava a carga como favor a um amigo após um suposto acidente de trânsito em Sidrolândia (MS).",
-      "details": "Ao ser parado, o motorista do veículo onde a mercadoria estava afirmou que transportava a carga como favor a um amigo após um suposto acidente de trânsito em Sidrolândia (MS).",
-      "url": "https://g1.globo.com/mt/mato-grosso/noticia/2026/05/30/prf-apreende-perfumes-sem-nota-fiscal-em-mt-e-suspeito-alega-que-fazia-favor-para-amigo-apos-acidente.ghtml",
+      "summary": "Atualizacao de empresas capturada em Portal Tela.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPdFppaDBVU19FOEd1REtmell1VkxmYkR4eW5RdXdacFZDU0p1Mng1dUJGOU83Zk53NVl3VXdCS2UyNTNLanVIQVhhaXJIcUdLenhsNFl3V2lJN0J0NnozZlZlRmVDSkxFVGctdm04QzZHOHFLUnhQRjhCUDZhZi0weFplWFZkajZJeTF6WGktNnVmdWp1a2cyN0lnbFZJSlRBU2VsdVNuRWxRSENKMldkVFBEcG5GVkkxampPWDMxcDAwdU1rcFBwOHR3?oc=5",
       "source": "Portal Tela",
       "category": "companies",
       "tags": [
@@ -703,15 +910,14 @@
       "publishedAt": "2026-05-30T20:22:46Z",
       "updatedAt": "2026-05-30T20:22:46Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://s2-g1.glbimg.com/QQRyeytfXvm8ilR5_5eWWNyevPc=/1200x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/G/g/zaJL7zTlWoyLGoaFtmxg/foto-g1-25-.jpg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "macro-b254ed4e827b5fe06dfb2472",
       "title": "PM apreende perfumes sem nota fiscal em MT e suspeito alega que fazia favor a amigo",
-      "summary": "O Departamento de Estado dos Estados Unidos classificou o Primeiro Comando da Capital e o Comando Vermelho como Terroristas Globais Especialmente Designados,...",
-      "details": "O Departamento de Estado dos Estados Unidos classificou o Primeiro Comando da Capital e o Comando Vermelho como Terroristas Globais Especialmente Designados,...",
-      "url": "https://www.portaltela.com/noticias/economia/2026/05/30/pcc-x-cv-empresas-deverao-reforcar-controles-internos-afirma-especialista/",
+      "summary": "Atualizacao de macro capturada em G1.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQbEl2WFJHX016ME1qQVpvZVllY0s5X2pLS0lBSTZlcHVBUXVuV1lrdzFrU3BwcWR1dU5tUDM0UjJLeTgzN3JQOWtfNmNHcV8zZTVoMFlwM3JPUUljZ3RCVEk2LVlEMlZpMlVFc3I1aU5HS21hTHVFRHNORHJQSjBfVVNHalBESEdfSXk3ZnJ2Ny1rUG84SVN6VGNUTXhpaUVzdVdLNjNPd05HMTZpeVJLekV5d3lsRno0cks5d25sU2Y5VXF1azR4eTAyUHdmVnR6VVAyN080blgwckRfdmMwMkRXZ0tkUjk5SWU3VXgtaXpmcnQ20gGDAkFVX3lxTE1jSFpRZEF4RGkxZWx1amhDeFFaRlNPQU9QeGZLTl9DR29YamF3enJ6Z1NfSVBSbFdXN2E0OTR0VVJnVkpOSHR1R2JTaGp6ZTVaZFhKYjdkNmQ4UFI2WFhvVS1oN0J4RWJ2YUt1UDgwcDB3WmtQSDFyVFlzdUtpZm1ybTM5VENPOG11UWtDVDdORHBZWWNDNDR4MVdRRHZ3Ml94b2ZQZEpsbXR1SlZKZEV5LVNObW9pbWFMcnNNU2Q3YW5ZbTVINzFVYnQtM1NxWVZQZjhwa2FLLUh5ckFlTDQtcHVNdTlPMF9Ja3BlR3JRQXljR3FnUWZCX055UW1JaUtvS1U?oc=5",
       "source": "G1",
       "category": "macro",
       "tags": [
@@ -721,25 +927,6 @@
       ],
       "publishedAt": "2026-05-30T20:09:40Z",
       "updatedAt": "2026-05-30T20:09:40Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/05/PCCxCV-Thiago-Jabor-Pinheiro-socio-do-Mattos-Filho-explica-cuidados-de-empresas.jpg"
-    },
-    {
-      "id": "macro-3fe7e80d94d515046102ea2a",
-      "title": "Quais estados têm programa de CPF na nota fiscal?",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNcGI3ZFRXaUZhM0daUldDTGZmZGUyQUdGWHBwaHZUcWlBTWN4VV9vUjVXWld4SmJrOXJNU2pQc3VjeHp3Zzh5NGczQ2JZbUs1akZEaGZNbzlHNDNQRGlZN0l0eTZiQk9weW9vSXhJR0N6ZmY5WkRKQVFZdW5yMUpteWstV0c0OTczTmY4NnlJUFdGbmpQcjlyZDlR0gGaAUFVX3lxTE1wYjdkVFdpRmEzR1pSV0NMZmZkZTJBR0ZYcHBodlRxaUFNY3hVX29SNVdaV3hKYms5ck1TalBzdWN4endnOHk0ZzNDYlltSzVqRkRoZk1vOUc0M1BEaVk3SXR5NmJCT3B5b29JeElHQ3pmZjlaREpBUVl1bnIxSm15ay1XRzQ5NzNOZjg2eUlQV0ZualByOXJkOVE?oc=5",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-30T19:53:44Z",
-      "updatedAt": "2026-05-30T19:53:44Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
@@ -762,6 +949,24 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
+      "id": "companies-2734076ae89723dbb1eb2543",
+      "title": "Liberalismo paraguaio atrai empresas: vantagens que atravessam a fronteira",
+      "summary": "Atualizacao de empresas capturada em Portal Tela.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNdDVPc1JuRDdNT2pYLXZmVTJIZ0RWeXI2cTkzVk1wczNDSU1UWVZvcTBsY09LT0lsMXZ5dVBVMjlTQVdINDdtOFBxN2NYQVhZcWFnSDZVYVZEVkR5MTZQVGljOWQwaGlDQ1Z4ZlJFV3pycVJQM05aN3VtZEFCTzhGeFRLQVE3MFIya0x6T3FrOVVBUVo5NlhUMzlaSGxucGhQRHRWRmQwLW9nMXJqV19Scml0NkhtbVRQbnc1U2RHbDF0NERpLUE2ZENR?oc=5",
+      "source": "Portal Tela",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-05-30T19:22:14Z",
+      "updatedAt": "2026-05-30T19:22:14Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
       "id": "companies-1b651d2e9033b552c61e50be",
       "title": "Liberalismo no Paraguai atrai empresas brasileiras em busca de competitividade",
       "summary": "Atualizacao de empresas capturada em São Bento em Foco.",
@@ -778,24 +983,6 @@
       "updatedAt": "2026-05-30T19:20:30Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "macro-27014a8d75056af2778b6988",
-      "title": "Selic a 11,75%: como fica a rentabilidade do Tesouro em 1 ano?",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQazZ1VXlHamhQc3JacXJ0ZkFTWkFabXpYQkJhUG5wWnBkUUE0bjRONFdsMjJLSTdLU29PZDRxOEhZU0hfUk9pOXp0emhHc25UczJFbERTMFFkbGhCanY2WTljTjM4Y3NNX1Z1SUpOZlB0Z2tfNFNjVVhpTUF2bVlhcllDNUhXSnN0VmdYMW1OYzBKNWfSAZMBQVVfeXFMUGs2dVV5R2poUHNyWnFydGZBU1pBWm16WEJCYVBucFpwZFFBNG40TjRXbDIyS0k3S1NvT2Q0cThIWVNIX1JPaTl6dHpoR3NuVHMyRWxEUzBRZGxoQmp2Nlk5Y04zOGNzTV9WdUlKTmZQdGdrXzRTY1VYaU1Bdm1ZYXJZQzVIV0pzdFZnWDFtTmMwSjVn?oc=5",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-30T19:08:08Z",
-      "updatedAt": "2026-05-30T19:08:08Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "companies-2d614d66e2e3fb9acecddc8b",
@@ -852,24 +1039,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "latest-494a8f52bf1c5d4ba67d7345",
-      "title": "Bolsonarismo precifica desgaste com mercado ao defender pauta anti-facções",
-      "summary": "Atualizacao de ultima hora capturada em CNN Brasil.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONkFMcnY5d1VEa1ZYZjdHaXMwYTk5Nk1ITXBLa3Q0V2dMdFlWQ1dIM1NmbU5iRDdud3EwTUlyMzc5b3FEQmU2UHMzZ3E5U05WcnctQkxnR29POHQ4bHhucEJtZWg5d2JmYlNOMlhEcDdqTWRpbmJ1YUU2LUhBUGVYdDUwUWtfNWNWSDREZ05xYUlPRlFkd1ZlTTFyU2Y1M3RYU1JUbm9UbE9NbTJoQ3p3cllzRQ?oc=5",
-      "source": "CNN Brasil",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-30T18:15:17Z",
-      "updatedAt": "2026-05-30T18:15:17Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "funds-8e93f31daaba9521c3846ba9",
       "title": "Esquema ligado ao PCC movimentou R$ 205 milhões com combustíveis e fintechs",
       "summary": "Atualizacao de fundos capturada em RepórterMT.",
@@ -886,24 +1055,6 @@
       "updatedAt": "2026-05-30T17:43:53Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "latest-82b1a41d88b71a8944298b4a",
-      "title": "Ibovespa amarga queda de cerca de 6% em maio, no pior mês desde 2023; entenda os fatores e o que esperar de junho",
-      "summary": "Atualizacao de ultima hora capturada em Seu Dinheiro.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNUkJLVmtGNVNOcHhTRzZ0dVljeU1GN190M0FseE9iaW5XQlhOVHJhZ0hvTXFidHlzMzNTZG96SkJOM25xSUdSdU9SbnRHZ3JSQ25ud2dDbDloYml4U3E5UUJJbmRMUTFWWWFqWjdkZTRDaG9QZ2IzMWFLMXBMU3l2TXk3RFpHY3h5WXRTSU02Y1dlX21DZl90cU1ONXZmcTktR0huMG4yZmdmLW16cFpqNG5BOFVEOWRnUk1aSlV0amRqVTRuOFJCUkRUN0dxV21OenUtUlk3TExfaU85eGJPT1Rfbk5yeThPRmY1Wk1qZjhCVUxqM2ZaYXNQT090LU9XaDBHOWFUWkZhd1FMNFE?oc=5",
-      "source": "Seu Dinheiro",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-30T17:04:16Z",
-      "updatedAt": "2026-05-30T17:04:16Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-57eb40ccb72631191bcd9bc9",
@@ -924,42 +1075,6 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "latest-6d2fdcd2dde08f45bb88c79e",
-      "title": "Soja disponível sobe em todas as praças de MT com alta moderada nos preços",
-      "summary": "Atualizacao de ultima hora capturada em agronews.tv.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQWRJRW8yNWR1SmtPLTc1VjVieC1xaGxnTEJ5UndPanhTWXY4UlpwaXNKcVpIakUxS0NpaC01ZGQ5OUtQSkJsV0g4UDFoWjJ0Rktudm9qd09iR2ZVUld6Yl9pSWtSTTZvamNfQnpoVVl1WVMtRlhjdm8yLUhPbENhSlJFTXZEYl9zSVRuZENFZmh4eXpsNEVQSWI1ZEdBclRCUkxn?oc=5",
-      "source": "agronews.tv.br",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-30T16:18:00Z",
-      "updatedAt": "2026-05-30T16:18:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-972d77096364a4dc3e66a606",
-      "title": "O Que São Mercados de Previsão? Por Que Trump Está Determinando Jurisdição Exclusiva para a CFTC",
-      "summary": "Atualizacao de ultima hora capturada em TradingKey.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPM3VHTzd4WUVJdUtWMkRvMU9Ga3RtdHFCZXg1bGc0dWpzRGtFS0t0aFVuVmtUXy1maXRDUTJpUV9jSFBKT21kaFV0OE9EZnRBV2VZd3l0UEFKNVlKSGxMbUI1bUJZa0xjcXBfdjZxNDRabG9XX0xLR1Fzd3FWTWpZU0Rsa09jS2plWXQ0WHhKWHBZWk12cFoyemtrR28zbV9iSmJVdWpSNTQwWFUzNUFuMUxhUGU5SDIwM2Vsb0tQcG00VUtMNnBtdTNwamprdWZKSnFwY010YVJNOU5tWHJPSXo4dHNCdkYxc3c?oc=5",
-      "source": "TradingKey",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-30T16:11:30Z",
-      "updatedAt": "2026-05-30T16:11:30Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "macro-c4067a578a9616882ade8742",
       "title": "GDF adota ajuste fiscal rigoroso para cobrir rombo bilionário",
       "summary": "Atualizacao de macro capturada em G1.",
@@ -974,24 +1089,6 @@
       ],
       "publishedAt": "2026-05-30T15:44:22Z",
       "updatedAt": "2026-05-30T15:44:22Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-f6960d4f436d63ff5eaacdb6",
-      "title": "Prévia da inflação afeta rendimento dos FIIs; o que fazer agora?",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQU93bkxSMGRBdXRkMzgydzk3d1h1S1A0TFQyNkF6TmExVGg5d0ZkUXRWQ3l5UkFTcDZlaDNkM2NVWW95V2tNc0tDRW1JeDVzcWxaRXN3MXhPTGduY3NPcVJMSDNKQUR0OWVSekxCQVl1WWpEM3VtREg1SHB4S1V0QjVlcXV0d2ZWWDQyNE1BY2hSVWdQWXlnODRBVmR3WFF1ZTMwQmhxcmwtYXU3N09lb21aRGPSAbQBQVVfeXFMT0FPd25MUjBkQXV0ZDM4Mnc5N3dYdUtQNExUMjZBek5hMVRoOXdGZFF0VkN5eVJBU3A2ZWgzZDNjVVlveVdrTXNLQ0VtSXg1c3FsWkVzdzF4T0xnbmNzT3FSTEgzSkFEdDllUnpMQkFZdVlqRDN1bURINUhweEtVdEI1ZXF1dHdmVlg0MjRNQWNoUlVnUFl5Zzg0QVZkd1hRdWUzMEJocXJsLWF1NzdPZW9tWkRj?oc=5",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-05-30T15:17:05Z",
-      "updatedAt": "2026-05-30T15:17:05Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
@@ -1012,24 +1109,6 @@
       "updatedAt": "2026-05-30T15:16:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "latest-18bfd535e6e6de55dab14e02",
-      "title": "Bolsa de Valores em Queda Livre: Ibovespa Registra Pior Desempenho Mensal Desde Fevereiro de 2023, Dólar Ultrapassa R$ 5",
-      "summary": "Atualizacao de ultima hora capturada em jornaldearuja.com.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNTVNDdVM2dHJkUWN2RFJWLWNieHdNV2N5U0doS2FtVGRtWUdueU9sVzZpZEJIdllvMjFHUGZYMWk2R3llTFNsdkFka2dmRDNDVFhsbUhFSnFCeDV3c1J5ZkRyMFU0YUV4bVd2QWNWaGUwR2dFLUYtMHlha3hiaGIxVUFhY01DYTMzTlR4UjhjcXJiMGdWRFN4cXVvbXN0dkZGMnJpSmMzTV94ZE50TzRxczlJaXYybWdyajFnYksxZzFiLVpOeXhHVW9FZzhoTlZDVWk2QW1qUHZnalA3?oc=5",
-      "source": "jornaldearuja.com",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-30T15:05:53Z",
-      "updatedAt": "2026-05-30T15:05:53Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-aa26ef779b91e4794ade411b",
@@ -1068,24 +1147,6 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "latest-b0e25af14237bf8a356f6bc5",
-      "title": "Nova colaboração premiada de Vorcaro pode ampliar pressão sobre contratos ligados ao BNB",
-      "summary": "Atualizacao de ultima hora capturada em CN7.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaU4yeUlsZ1daMXhFUEluUGJoWWFUbm8xMVJTM2xuR0lNdzVtc0JYUnNTLXFPSGtGR2o1TGxhT2tYYXpab0lSN2tGVnJJeHBoRjFiS1kwc2gwc09OekZlZEpvTC14N25YeXNaTTczTldSeHhPSk1RWGlCdlFmZjlUd1RZcVJ3YmZiX29BZUVZb0FLMDVmNzE2bS1hbUZuVVcySzZrcEZMVWNfVFFt?oc=5",
-      "source": "CN7",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-05-30T14:56:00Z",
-      "updatedAt": "2026-05-30T14:56:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "macro-ca7d8a291d4feea4b19b7295",
       "title": "Governo bloqueia quase R$ 5 bi em emendas para cumprir meta fiscal",
       "summary": "Atualizacao de macro capturada em Agência Brasil.",
@@ -1120,6 +1181,24 @@
       "updatedAt": "2026-05-30T13:03:17Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "macro-e4b9e5c39abc0f9829a12b46",
+      "title": "Secretário esclarece aplicação de 26% na Educação e explica diferença entre restos a pagar e pedalada fiscal",
+      "summary": "Atualizacao de macro capturada em Prefeitura de Cuiabá.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcmxEY00wZ25TTGh2VXZ4VVBsX3hCWkhjRGZLVHI3NHM3YW9QWml4b3V5X2pkXzNLZGdITjhhcFU5aGFrZXo1bnM2RFdMMVh1RDh6cFhLTHk3NUFJRVV6YlpTU1cxLV9OV0g1dmJJOHRndHNKWWdUdDhaOWtYcEdyTmdWZUk4NVlfdlJKWmU0bm9QVjlITXk2b1hyUFVJVmJEU3RCLTdEWVA0XzdMWnQ1ckFadVprZGY3WmNWZUQ4YXhvUWE2OGJBMnhPTndjRDVBaWoxVmNFOXdUM3dfU0E?oc=5",
+      "source": "Prefeitura de Cuiabá",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-05-30T13:00:00Z",
+      "updatedAt": "2026-05-30T13:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "funds-04b55921457872f151ded48c",
@@ -1316,60 +1395,6 @@
       ],
       "publishedAt": "2026-05-30T06:35:28Z",
       "updatedAt": "2026-05-30T06:35:28Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-2079a621a20055b879bfdbcd",
-      "title": "A comuna de Xuan Truc acelera a liberação de fundos de investimento público, criando um novo ímpeto para o desenvolvimento.",
-      "summary": "Atualizacao de fundos capturada em Vietnam.vn.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT0ZIVElCVEx3cXFQX1V3bUZZejd1VXR4Sk5XNFZ4b2VQNEFlelo1Q3h2RWJyMjR1azVYenFJQVZnT3NhWU92aWFLLVVKc1lNRTk0cTZ3UTNqczRKX0FmbHhzNlhqNlljdVh3TDZwYlZ4ZEJWaWpjM1JSWkJnNHdsMVh4VHVaZzRtd0wtWEw5SG1MbndmNVhaT1RVNFBsWWVabE5j?oc=5",
-      "source": "Vietnam.vn",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-05-30T06:04:28Z",
-      "updatedAt": "2026-05-30T06:04:28Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-52d0d3e4cfa34f1c90d1aa7b",
-      "title": "Nghe An estabelece 5 grupos de trabalho para gerir a distribuição dos fundos de investimento público.",
-      "summary": "Atualizacao de fundos capturada em Vietnam.vn.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQT2x0UlBJMWc5MGZMMktRSElVSHg0MmMzYmVaSEtsLXpyV2hyamo4MkE2bWk2REQyTUEzYUtoMEF5OHdLQmQwQkd6MFhLS1haSUhuT0JDNVNINDVfVksxNTk2Q2M5cjRiWmd6UWJCR1M1bVhsLVJQQmRJb25udUg1bVlGb3p1eDVNTTVzVDFfWW9GZFk?oc=5",
-      "source": "Vietnam.vn",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-05-30T05:46:26Z",
-      "updatedAt": "2026-05-30T05:46:26Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-48392d7cef697a3179d2fc96",
-      "title": "Estrangeiros acionam gestoras no Brasil, e nova onda de capital deve inundar a Bolsa",
-      "summary": "Atualizacao de fundos capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWG5aS0E1eXV4eFdFNmh6Y3oxS1ZqUUtESzNfM2Z4blRFS1dHUlVRODNRUFdiTG5SQUtCMTdodWJON3ZtU1BMUnRfczRrd1JkWlJOODlGeU95LTlpWl9FYmNjaXp6TmFHem5GeGpPZS11ZXRIc1UwbDNBeWRoU2VoZ1pRNmZlS0o0THNXWFpwdWhMZWNLS1dTc3NlaTVuSlNKWTVRaUxJWWItZUdtNXV0RnZJZUZzMjN2TmNST0xRZFhjblXSAcgBQVVfeXFMUFMtbzhBaDBUd251N0dqYkktNjd1amxDSk1ZamhTUm1BdHAzTWYwaHo1MTUzVUNQdTczUVVHMnB3QWdGaEk1Qy13SUx6VkVFekZjVldQM243eGlKTm5oaWh3OFNUTk5ZRnBfSkNoZmZBWUN0R2Zaa2ZTZVVRbkRzbUphN0Y5TmlsQmtVZkNoV3hRUElxUXE2eTAxMWU3U2ZPb1JFOVVYLUs3RVhqSUl6R1EwbzdRQ3ZrOU1tNFBnNVRtcjVkaWMxUno?oc=5",
-      "source": "Estadão",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-05-30T05:20:32Z",
-      "updatedAt": "2026-05-30T05:20:32Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
