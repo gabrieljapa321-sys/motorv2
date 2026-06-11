@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-10T23:56:31Z",
-  "generatedAt": "2026-06-10T23:56:31Z",
+  "updatedAt": "2026-06-11T03:42:20Z",
+  "generatedAt": "2026-06-11T03:42:20Z",
   "categories": [
     {
       "id": "all",
@@ -25,6 +25,10 @@
   ],
   "sources": [
     {
+      "id": "ag-ncia-brasil",
+      "label": "Agência Brasil"
+    },
+    {
       "id": "ametropolesorocabana-com-br",
       "label": "ametropolesorocabana.com.br"
     },
@@ -33,12 +37,24 @@
       "label": "Aqui Notícias"
     },
     {
-      "id": "bpmoney",
-      "label": "BPMoney"
+      "id": "arena-de-not-cias",
+      "label": "Arena de Notícias"
+    },
+    {
+      "id": "bdm-bom-dia-mercado",
+      "label": "BDM - Bom Dia Mercado"
+    },
+    {
+      "id": "brazileconomy-com-br",
+      "label": "brazileconomy.com.br"
     },
     {
       "id": "business-moment",
       "label": "Business Moment"
+    },
+    {
+      "id": "campo-grande-news",
+      "label": "Campo Grande News"
     },
     {
       "id": "capital-aberto",
@@ -69,6 +85,14 @@
       "label": "fenati.org.br"
     },
     {
+      "id": "folha-de-s-paulo",
+      "label": "Folha de S.Paulo"
+    },
+    {
+      "id": "folha-pe",
+      "label": "Folha PE"
+    },
+    {
       "id": "g1",
       "label": "G1"
     },
@@ -97,14 +121,6 @@
       "label": "Jornal do Comércio"
     },
     {
-      "id": "jurinews",
-      "label": "Jurinews"
-    },
-    {
-      "id": "migalhas",
-      "label": "Migalhas"
-    },
-    {
       "id": "money-times",
       "label": "Money Times"
     },
@@ -121,12 +137,12 @@
       "label": "O TEMPO"
     },
     {
-      "id": "opera-mundi",
-      "label": "Opera Mundi"
+      "id": "opini-oce",
+      "label": "OpiniãoCE"
     },
     {
-      "id": "poder360",
-      "label": "Poder360"
+      "id": "pe-not-cias",
+      "label": "PE Notícias"
     },
     {
       "id": "portal-contabeis",
@@ -137,12 +153,8 @@
       "label": "Portal do Agronegócio"
     },
     {
-      "id": "portal-vv8",
-      "label": "Portal VV8"
-    },
-    {
-      "id": "radar-digital-bras-lia",
-      "label": "RADAR DIGITAL BRASÍLIA"
+      "id": "portal-tcu",
+      "label": "Portal TCU"
     },
     {
       "id": "rdmonline-com-br",
@@ -163,10 +175,6 @@
     {
       "id": "suno-com-br",
       "label": "suno.com.br"
-    },
-    {
-      "id": "ti-inside-online",
-      "label": "TI INSIDE Online"
     },
     {
       "id": "times-brasil-cnbc",
@@ -215,11 +223,198 @@
   ],
   "items": [
     {
+      "id": "latest-97a72efe6837bf59ceb479e1",
+      "title": "Renan Santos acena a Caiado, mira mercado financeiro e chama apoio a Flávio de ‘voto em bandido’",
+      "summary": "Atualizacao de ultima hora capturada em PE Notícias.",
+      "details": "",
+      "url": "https://brazileconomy.com.br/internacional/2026/06/precos-disparam-nos-eua-endossam-criticas-do-brasil-e-trump-diz-adorar-inflacao/",
+      "source": "PE Notícias",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-06-11T03:04:45Z",
+      "updatedAt": "2026-06-11T03:04:45Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "macro-54d4cfcb1de1fe0221213e3e",
+      "title": "Eurasia: Cenário externo, com guerra e inflação, pode ser um risco à Lula",
+      "summary": "Ao WW, Christopher Garman, diretor-executivo do Eurasia Group, aponta que guerra no Oriente Médio, El Niño e câmbio desvalorizado podem elevar inflação e custo de vida no Brasil",
+      "details": "Ao WW, Christopher Garman, diretor-executivo do Eurasia Group, aponta que guerra no Oriente Médio, El Niño e câmbio desvalorizado podem elevar inflação e custo de vida no Brasil",
+      "url": "https://www.cnnbrasil.com.br/politica/eurasia-cenario-externo-com-guerra-e-inflacao-pode-ser-um-risco-a-lula/",
+      "source": "CNN Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-11T02:49:45Z",
+      "updatedAt": "2026-06-11T02:49:45Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/55301596958_8f84d4c51c_o.jpg?w=1200&h=630&crop=1"
+    },
+    {
+      "id": "macro-c03c710b9df75ddb4626e15c",
+      "title": "Preços disparam nos EUA, endossam críticas do Brasil e Trump diz “adorar inflação”",
+      "summary": "Ministro disse que as despesas ou renúncias de receitas devem levar em conta o impacto econômico.",
+      "details": "Ministro disse que as despesas ou renúncias de receitas devem levar em conta o impacto econômico.",
+      "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-06/stf-pode-barrar-medidas-do-congresso-para-aumentar-gastos-diz-gilmar",
+      "source": "brazileconomy.com.br",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-11T02:40:48Z",
+      "updatedAt": "2026-06-11T02:40:48Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://imagens.ebc.com.br/BEIoxLyH1rWtEjO5N2V1Dgi7RJU=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/01/08/gilmar-mendes03.jpg?itok=snCc8MqN"
+    },
+    {
+      "id": "macro-e6a02749ebcaa5f48115866a",
+      "title": "Choque inflacionário nos EUA vai afetar inflação no Brasil, diz economista",
+      "summary": "O pré-candidato à Presidência Renan Santos (Missão) sinalizou abertura para alianças com o ex-governador de Goiás, Ronaldo Caiado (União Brasil), e afirmou que o resultado da pesquisa divulgada nesta quarta-feira (10), reforça sua viabilidade eleitoral. Em evento com investidores",
+      "details": "O pré-candidato à Presidência Renan Santos (Missão) sinalizou abertura para alianças com o ex-governador de Goiás, Ronaldo Caiado (União Brasil), e afirmou que o resultado da pesquisa divulgada nesta quarta-feira (10), reforça sua viabilidade eleitoral. Em evento com investidores, em São Paulo, ele também fez críticas ",
+      "url": "https://penoticias.com.br/blog/renan-santos-acena-a-caiado-mira-mercado-financeiro-e-chama-apoio-a-flavio-de-voto-em-bandido/",
+      "source": "CNN Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-11T02:38:58Z",
+      "updatedAt": "2026-06-11T02:38:58Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/C5LZZ3DUWZHAJKYLLRAO7KBJLI.JPG?quality=80&auth=c55e641f65c55bbf0f03667ef83f8d0d5e4cbab5eb3e6e4ca4f779a44ce27bdb&width=347&height=195&smart=true"
+    },
+    {
+      "id": "macro-70f21286f6bbcda0374f2250",
+      "title": "SP cria cadastro positivo para incentivar pagamento de dívidas tributárias por empresas",
+      "summary": "Contas do presidente da República relativas ao exercício financeiro de 2025 foram aprovadas pelo TCU, mas com ressalvas",
+      "details": "Contas do presidente da República relativas ao exercício financeiro de 2025 foram aprovadas pelo TCU, mas com ressalvas",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/relator-de-contas-do-governo-lula-destaca-preocupacao-com-gestao-fiscal/",
+      "source": "Folha de S.Paulo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-11T02:00:00Z",
+      "updatedAt": "2026-06-11T02:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/Benjamin-Zymler.jpg?w=1200&h=630&crop=1"
+    },
+    {
+      "id": "macro-0abb541301351515eb8a9a16",
+      "title": "Análise: Mudança acelerada da 6x1 impactará inflação; entenda",
+      "summary": "Atualizacao de macro capturada em CNN Brasil.",
+      "details": "",
+      "url": "https://www.opiniaoce.com.br/politica/2026/06/10/senado-aprova-refis-do-agro-impacto-fiscal-pode-chegar-a-r-140-bilhoes-diz-o-governo/",
+      "source": "CNN Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-11T01:53:03Z",
+      "updatedAt": "2026-06-11T01:53:03Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-97d4e640d3566b4bf15c97df",
+      "title": "TCU aprova com ressalvas as contas do presidente da República de 2025",
+      "summary": "Economista do IIF avalia alta da inflação americana e prevê pressão para o Fed aumentar juros no fim do ano, com reflexos no Brasil",
+      "details": "Economista do IIF avalia alta da inflação americana e prevê pressão para o Fed aumentar juros no fim do ano, com reflexos no Brasil",
+      "url": "https://www.cnnbrasil.com.br/economia/choque-inflacionario-nos-eua-vai-afetar-inflacao-no-brasil-diz-economista/",
+      "source": "Portal TCU",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-11T01:29:35Z",
+      "updatedAt": "2026-06-11T01:29:35Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/05/tagreuters.com2025binary_LYNXNPEL970UU-BASEIMAGE.webp?w=800&h=509&crop=1"
+    },
+    {
+      "id": "macro-8d65047df7c8ac60b6be4324",
+      "title": "Senado aprova ‘Refis do Agro’; impacto fiscal pode chegar a R$ 140 bilhões, diz o governo",
+      "summary": "A analista de Economia da CNN Lucinda Pinto aponta que mudança abrupta no regime de trabalho pressiona custos e deteriora expectativas de juros",
+      "details": "A analista de Economia da CNN Lucinda Pinto aponta que mudança abrupta no regime de trabalho pressiona custos e deteriora expectativas de juros",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/analise-mudanca-acelerada-da-6x1-impactara-inflacao-entenda/",
+      "source": "OpiniãoCE",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-11T01:01:47Z",
+      "updatedAt": "2026-06-11T01:01:47Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/03/02_carteira_de_trabalho.webp?w=1170&h=630&crop=1"
+    },
+    {
+      "id": "macro-1442c30f12162a96bca99f4b",
+      "title": "Relator de contas do governo Lula destaca preocupação com gestão fiscal",
+      "summary": "Ministros apreciaram, nesta quarta-feira (10/6), a prestação de contas do presidente Luiz Inácio Lula da Silva relativa ao exercício de 2025. Parecer prévio será encaminhado ao Congresso Nacional",
+      "details": "Ministros apreciaram, nesta quarta-feira (10/6), a prestação de contas do presidente Luiz Inácio Lula da Silva relativa ao exercício de 2025. Parecer prévio será encaminhado ao Congresso Nacional",
+      "url": "https://portal.tcu.gov.br/imprensa/noticias/tcu-aprova-com-ressalvas-as-contas-do-presidente-da-republica-de-2025",
+      "source": "CNN Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-11T00:55:30Z",
+      "updatedAt": "2026-06-11T00:55:30Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-af52038862b8986bd42d4c5c",
+      "title": "STF pode barrar medidas do Congresso para aumentar gastos, diz Gilmar",
+      "summary": "Lista inicial reúne companhias com R$ 549 milhões em débitos já negociados",
+      "details": "Lista inicial reúne companhias com R$ 549 milhões em débitos já negociados",
+      "url": "https://www1.folha.uol.com.br/mercado/2026/06/sp-cria-cadastro-positivo-para-incentivar-pagamento-de-dividas-tributarias-por-empresas.shtml",
+      "source": "Agência Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-10T23:55:00Z",
+      "updatedAt": "2026-06-10T23:55:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://f.i.uol.com.br/fotografia/2026/06/10/17811239576a29cb75ae0b3_1781123957_3x2_lg.jpg"
+    },
+    {
       "id": "macro-b9d24b59f0cabb7f031ea382",
       "title": "Inflação nos EUA reforça incertezas sobre juros e impactos da guerra",
-      "summary": "Inflação dos Estados Unidos subiu para 4,2% em maio, mais que o dobro da meta de 2% do Federal Reserve, ampliando as incertezas sobre a política monetária",
-      "details": "Inflação dos Estados Unidos subiu para 4,2% em maio, mais que o dobro da meta de 2% do Federal Reserve, ampliando as incertezas sobre a política monetária",
-      "url": "https://timesbrasil.com.br/brasil/economia-brasileira/inflacao-nos-eua-reforca-incertezas-sobre-juros-e-impactos-da-guerra/",
+      "summary": "Ministro defendeu que todos devem \"ter compromisso com responsabilidade fiscal e com o país, com as futuras gerações\"",
+      "details": "Ministro defendeu que todos devem \"ter compromisso com responsabilidade fiscal e com o país, com as futuras gerações\"",
+      "url": "https://valor.globo.com/google/amp/brasil/noticia/2026/06/10/durigan-diz-ter-conversado-com-gilmar-mendes-sobre-pautas-bomba.ghtml",
       "source": "Times Brasil | CNBC",
       "category": "macro",
       "tags": [
@@ -231,14 +426,14 @@
       "updatedAt": "2026-06-10T23:30:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/06/0181e29c-fernando-agra.webp"
+      "imageUrl": "https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png"
     },
     {
       "id": "macro-16fa9d85f9cc0ce01cba5d2f",
       "title": "Durigan diz ter conversado com Gilmar Mendes sobre 'pautas-bomba'",
-      "summary": "Retorno do excepcionalismo americano e avanço da inteligência artificial redirecionam fluxos e pressionam mercados emergentes, diz a gestora",
-      "details": "Retorno do excepcionalismo americano e avanço da inteligência artificial redirecionam fluxos e pressionam mercados emergentes, diz a gestora",
-      "url": "https://euqueroinvestir.com/acoes/veja-por-que-a-verde-asset-zerou-a-exposicao-ao-real",
+      "summary": "Usuários relatam dificuldades em acessar XML/PDF no Portal Nacional da NFS-e desde 01/06, com a Receita Federal alegando instabilidade.",
+      "details": "Usuários relatam dificuldades em acessar XML/PDF no Portal Nacional da NFS-e desde 01/06, com a Receita Federal alegando instabilidade.",
+      "url": "https://www.contabeis.com.br/artigos/77249/portal-nota-fiscal-eletronica-instabilidade-em-acesso-a-documentos/",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -249,33 +444,52 @@
       "publishedAt": "2026-06-10T23:29:31Z",
       "updatedAt": "2026-06-10T23:29:31Z",
       "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.contabeis.com.br/assets/img/news/pexels-markusspiske-8247921.jpg"
     },
     {
-      "id": "macro-5aa6ca40eecab4e7a60c819d",
-      "title": "Trump diz que \"adora\" inflação enquanto preços sobem com a guerra",
-      "summary": "Ministro defendeu que todos devem \"ter compromisso com responsabilidade fiscal e com o país, com as futuras gerações\"",
-      "details": "Ministro defendeu que todos devem \"ter compromisso com responsabilidade fiscal e com o país, com as futuras gerações\"",
-      "url": "https://valor.globo.com/brasil/noticia/2026/06/10/durigan-diz-ter-conversado-com-gilmar-mendes-sobre-pautas-bomba.ghtml",
-      "source": "CNN Brasil",
+      "id": "macro-d72696e642cb43d33974f955",
+      "title": "Inflação dos EUA sobe ao nível mais alto em três anos e pressiona Trump",
+      "summary": "Dólar fechou a R$ 5,1721 e Ibovespa recuou 0,70%, aos 168.619 pontos, com dados de inflação dos EUA e tensões geopolíticas no Oriente Médio influenciando os mercados.",
+      "details": "Dólar fechou a R$ 5,1721 e Ibovespa recuou 0,70%, aos 168.619 pontos, com dados de inflação dos EUA e tensões geopolíticas no Oriente Médio influenciando os mercados.",
+      "url": "https://www.campograndenews.com.br/economia/dolar-fecha-a-r-5-17-e-mercado-reage-a-inflacao-dos-eua",
+      "source": "Folha PE",
       "category": "macro",
       "tags": [
         "macro",
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-06-10T22:53:34Z",
-      "updatedAt": "2026-06-10T22:53:34Z",
+      "publishedAt": "2026-06-10T23:28:14Z",
+      "updatedAt": "2026-06-10T23:28:14Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png"
+      "imageUrl": "https://cdn6.campograndenews.com.br/uploads/noticias/2026/06/10/2yqe3hswlv6sg.png"
+    },
+    {
+      "id": "macro-65857719fdcbc14e1e297e01",
+      "title": "Dólar cai e Ibovespa recua 0,70% com tensões no Oriente Médio",
+      "summary": "Atualizacao de macro capturada em Campo Grande News.",
+      "details": "",
+      "url": "https://www.folhape.com.br/noticia/amp/493189/inflacao-dos-eua-sobe-ao-nivel-mais-alto-em-tres-anos-e-pressiona/",
+      "source": "Campo Grande News",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-10T23:10:00Z",
+      "updatedAt": "2026-06-10T23:10:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-19203382f30520349ead7278",
       "title": "Trump reage a alta de preços nos EUA: 'Eu amo a inflação'",
-      "summary": "Presidente americano foi questionado sobre o índice, que subiu 4,2% no último mês, e afirmou que preços vão cair quando o conflito terminar",
-      "details": "Presidente americano foi questionado sobre o índice, que subiu 4,2% no último mês, e afirmou que preços vão cair quando o conflito terminar",
-      "url": "https://www.cnnbrasil.com.br/internacional/trump-diz-que-adora-inflacao-enquanto-precos-sobem-com-a-guerra/",
+      "summary": "Inflação dos Estados Unidos subiu para 4,2% em maio, mais que o dobro da meta de 2% do Federal Reserve, ampliando as incertezas sobre a política monetária",
+      "details": "Inflação dos Estados Unidos subiu para 4,2% em maio, mais que o dobro da meta de 2% do Federal Reserve, ampliando as incertezas sobre a política monetária",
+      "url": "https://timesbrasil.com.br/brasil/economia-brasileira/inflacao-nos-eua-reforca-incertezas-sobre-juros-e-impactos-da-guerra/",
       "source": "G1",
       "category": "macro",
       "tags": [
@@ -287,14 +501,14 @@
       "updatedAt": "2026-06-10T22:37:39Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/O-presidente-dos-EUA-Donald-Trump-no-Salao-Oval-da-Casa-Branca.jpg?w=1200&h=630&crop=1"
+      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/06/0181e29c-fernando-agra.webp"
     },
     {
       "id": "macro-74eaa92cb26882f4ece4bcbe",
       "title": "Portal Nota Fiscal Eletrônica: instabilidade em acesso a documentos",
-      "summary": "Presidente americano disse que os EUA fizeram missão secreta para liberar passagem de petroleiros pelo Estreito de Ormuz, que está bloqueado pelo Irã e levou ao aumento de preços.",
-      "details": "Presidente americano disse que os EUA fizeram missão secreta para liberar passagem de petroleiros pelo Estreito de Ormuz, que está bloqueado pelo Irã e levou ao aumento de preços.",
-      "url": "https://g1.globo.com/economia/noticia/2026/06/10/trump-inflacao-eua.ghtml",
+      "summary": "Ibovespa caiu 0,70%, a 168.619,26 pontos, mais perto da mínima (168.070,99) do que da máxima da sessão (169.812,46)",
+      "details": "Ibovespa caiu 0,70%, a 168.619,26 pontos, mais perto da mínima (168.070,99) do que da máxima da sessão (169.812,46)",
+      "url": "https://www.jornaldocomercio.com/economia/2026/06/1252072-trump-ameaca-atacar-ira-e-ibovespa-recua-apesar-de-avanco-da-petrobras.html",
       "source": "Portal Contabeis",
       "category": "macro",
       "tags": [
@@ -306,14 +520,14 @@
       "updatedAt": "2026-06-10T22:30:01Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-g1.glbimg.com/UQRxQxNujtBDr3jZHn6f6E8MRvA=/3683x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/D/Q/L4eLHCSP2dwnniTGO35g/2026-06-10t152151z-1882616195-rc23rlahlfz5-rtrmadp-3-usa-trump.jpg"
+      "imageUrl": "https://www.jornaldocomercio.com/_midias/jpg/2023/12/19/artes_materias_site_brasil-10420954.jpg"
     },
     {
       "id": "funds-0a9a5435abb5bf345071fc3a",
       "title": "Veja por que a Verde Asset zerou a exposição ao real",
-      "summary": "O mês de maio foi de recalibragem para o Verde, um dos fundos mais respeitados do Brasil, que virou algumas peças no tabuleiro",
-      "details": "O mês de maio foi de recalibragem para o Verde, um dos fundos mais respeitados do Brasil, que virou algumas peças no tabuleiro",
-      "url": "https://www.seudinheiro.com/2026/bolsa-dolar/adeus-real-verde-de-stuhlberger-zera-posicao-na-moeda-brasileira-e-diz-que-um-fantasma-americano-esta-de-volta-ccgg/",
+      "summary": "Presidente americano disse que os EUA fizeram missão secreta para liberar passagem de petroleiros pelo Estreito de Ormuz, que está bloqueado pelo Irã e levou ao aumento de preços.",
+      "details": "Presidente americano disse que os EUA fizeram missão secreta para liberar passagem de petroleiros pelo Estreito de Ormuz, que está bloqueado pelo Irã e levou ao aumento de preços.",
+      "url": "https://g1.globo.com/economia/noticia/2026/06/10/trump-inflacao-eua.ghtml",
       "source": "EuQueroInvestir",
       "category": "funds",
       "tags": [
@@ -325,14 +539,32 @@
       "updatedAt": "2026-06-10T22:27:08Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.seudinheiro.com/uploads/2026/01/Luis-Stuhlberger-CEO-da-Verde-Asset-Management.-Foto-Divulgacao-2.jpg"
+      "imageUrl": "https://s2-g1.glbimg.com/UQRxQxNujtBDr3jZHn6f6E8MRvA=/3683x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/D/Q/L4eLHCSP2dwnniTGO35g/2026-06-10t152151z-1882616195-rc23rlahlfz5-rtrmadp-3-usa-trump.jpg"
+    },
+    {
+      "id": "latest-79a753eab2aedb3b7dec7d53",
+      "title": "Trump ameaça atacar Irã e Ibovespa recua, apesar de avanço da Petrobras",
+      "summary": "Atualizacao de ultima hora capturada em Jornal do Comércio.",
+      "details": "",
+      "url": "https://veronoticias.com/economia/ouro-cai-ao-menor-nivel-do-ano-apos-dados-de-inflacao-e-tensao-no-oriente-medio/",
+      "source": "Jornal do Comércio",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-06-10T22:26:30Z",
+      "updatedAt": "2026-06-10T22:26:30Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "funds-c936c9be4f261b4fd26fbda2",
       "title": "Adeus, real: Verde, de Stuhlberger, zera posição na moeda brasileira e diz que um 'fantasma' americano está de volta",
-      "summary": "Usuários relatam dificuldades em acessar XML/PDF no Portal Nacional da NFS-e desde 01/06, com a Receita Federal alegando instabilidade.",
-      "details": "Usuários relatam dificuldades em acessar XML/PDF no Portal Nacional da NFS-e desde 01/06, com a Receita Federal alegando instabilidade.",
-      "url": "https://www.contabeis.com.br/artigos/77249/portal-nota-fiscal-eletronica-instabilidade-em-acesso-a-documentos/",
+      "summary": "O mês de maio foi de recalibragem para o Verde, um dos fundos mais respeitados do Brasil, que virou algumas peças no tabuleiro",
+      "details": "O mês de maio foi de recalibragem para o Verde, um dos fundos mais respeitados do Brasil, que virou algumas peças no tabuleiro",
+      "url": "https://www.seudinheiro.com/2026/bolsa-dolar/adeus-real-verde-de-stuhlberger-zera-posicao-na-moeda-brasileira-e-diz-que-um-fantasma-americano-esta-de-volta-ccgg/",
       "source": "Seu Dinheiro",
       "category": "funds",
       "tags": [
@@ -344,33 +576,14 @@
       "updatedAt": "2026-06-10T22:26:13Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.contabeis.com.br/assets/img/news/pexels-markusspiske-8247921.jpg"
-    },
-    {
-      "id": "latest-9f2ce10c03c2cb20b3bb5ed9",
-      "title": "Trump ameaça atacar Irã e Ibovespa recua, apesar de avanço da Petrobras",
-      "summary": "Ibovespa caiu 0,70%, a 168.619,26 pontos, mais perto da mínima (168.070,99) do que da máxima da sessão (169.812,46)",
-      "details": "Ibovespa caiu 0,70%, a 168.619,26 pontos, mais perto da mínima (168.070,99) do que da máxima da sessão (169.812,46)",
-      "url": "https://www.jornaldocomercio.com/economia/2026/06/1252072-trump-ameaca-atacar-ira-e-ibovespa-recua-apesar-de-avanco-da-petrobras.html",
-      "source": "Jornal do Comércio",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-06-10T22:18:45Z",
-      "updatedAt": "2026-06-10T22:18:45Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.jornaldocomercio.com/_midias/jpg/2023/12/19/artes_materias_site_brasil-10420954.jpg"
+      "imageUrl": "https://www.seudinheiro.com/uploads/2026/01/Luis-Stuhlberger-CEO-da-Verde-Asset-Management.-Foto-Divulgacao-2.jpg"
     },
     {
       "id": "macro-c8f2bc104f7b5f77b36c554c",
       "title": "Ouro cai ao menor nível do ano após dados de inflação e tensão no Oriente Médio",
-      "summary": "O metal recuou 3,6% na bolsa de Nova York, pressionado pela valorização do dólar, pela alta do petróleo",
-      "details": "O metal recuou 3,6% na bolsa de Nova York, pressionado pela valorização do dólar, pela alta do petróleo",
-      "url": "https://veronoticias.com/economia/ouro-cai-ao-menor-nivel-do-ano-apos-dados-de-inflacao-e-tensao-no-oriente-medio/",
+      "summary": "Retorno do excepcionalismo americano e avanço da inteligência artificial redirecionam fluxos e pressionam mercados emergentes, diz a gestora",
+      "details": "Retorno do excepcionalismo americano e avanço da inteligência artificial redirecionam fluxos e pressionam mercados emergentes, diz a gestora",
+      "url": "https://euqueroinvestir.com/acoes/veja-por-que-a-verde-asset-zerou-a-exposicao-ao-real",
       "source": "Vero Notícias",
       "category": "macro",
       "tags": [
@@ -381,34 +594,14 @@
       "publishedAt": "2026-06-10T22:16:05Z",
       "updatedAt": "2026-06-10T22:16:05Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://veronoticias.com/wp-content/uploads/2024/11/barras-de-ouro-1.jpg"
-    },
-    {
-      "id": "macro-5f0e377276ee788d51dbd23f",
-      "title": "STJ fixa tese e garante honorários em execução fiscal quitada após ajuizamento",
-      "summary": "STJ garante honorários em execução fiscal quitada após ajuizamento. Entenda a tese repetitiva do Tema 1.413. Clique e saiba mais sobre o impacto desta",
-      "details": "STJ garante honorários em execução fiscal quitada após ajuizamento. Entenda a tese repetitiva do Tema 1.413. Clique e saiba mais sobre o impacto desta",
-      "url": "https://jurinews.com.br/destaque-nacional/stj-fixa-tese-e-garante-honorarios-em-execucao-fiscal-quitada-apos-ajuizamento",
-      "source": "Jurinews",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-10T22:16:00Z",
-      "updatedAt": "2026-06-10T22:16:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://jurinews.com.br/storage/uploads/featured-image-cropped-1781129816.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-727664ce9f6af3863ac31031",
       "title": "Ibovespa hoje: MBRF (MBRF3) sobe 2,7% e lidera altas; Totvs (TOTS3) volta a tombar",
-      "summary": "Conflito prolongado no Oriente Médio, avanço dos custos energéticos e riscos inflacionários colocam bancos centrais diante de um dos cenários mais desafiadores dos últimos anos",
-      "details": "Conflito prolongado no Oriente Médio, avanço dos custos energéticos e riscos inflacionários colocam bancos centrais diante de um dos cenários mais desafiadores dos últimos anos",
-      "url": "https://www.portaldoagronegocio.com.br/economia/mercado-financeiro/noticias/fed-e-copom-enfrentam-decisoes-decisivas-diante-de-pressao-inflacionaria-global-e-alta-do-petroleo",
+      "summary": "Índice terminou em baixa, em dia de alta dos preços do petróleo com escalada das tensões no Oriente Médio",
+      "details": "Índice terminou em baixa, em dia de alta dos preços do petróleo com escalada das tensões no Oriente Médio",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-mbrf-mbrf3-sobe-27-e-lidera-altas-totvs-tots3-volta-a-tombar/",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -420,14 +613,14 @@
       "updatedAt": "2026-06-10T22:07:03Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.portaldoagronegocio.com.br/storage/images/notices/6a297ba5834b5.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/FJW7A32BUJNSRHOZEHXFGDP55M.png?quality=80&auth=f9c54eee930e3887755df8651c7c925fcc6d309b1b96ecc9c72c0fee34d95c37&width=1200&height=630&smart=true"
     },
     {
       "id": "macro-58b3a7f55d74ff5773768771",
       "title": "Taxas de DIs têm leve alta após dados de inflação nos EUA adiar chance de alta nos juros",
-      "summary": "As taxas de juros futuros de curto prazo estenderam os ganhos pelo 7º pregão consecutivo e curva já precifica potencial alta na Selic",
-      "details": "As taxas de juros futuros de curto prazo estenderam os ganhos pelo 7º pregão consecutivo e curva já precifica potencial alta na Selic",
-      "url": "https://www.moneytimes.com.br/taxas-de-dis-juros-futuros-10-6-26-lils/",
+      "summary": "Entre as apostas está a de que o Copom não cortará mais a Selic neste ano",
+      "details": "Entre as apostas está a de que o Copom não cortará mais a Selic neste ano",
+      "url": "https://www.bomdiamercado.com.br/mercado-financeiro/juros/juros-futuros-recuam-com-cpi-dentro-do-esperado-enquanto-mercado-aguarda-ipca/",
       "source": "Money Times",
       "category": "macro",
       "tags": [
@@ -439,14 +632,14 @@
       "updatedAt": "2026-06-10T22:02:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/03/selic-juros-inflacao-.jpg"
+      "imageUrl": "https://uploads.bomdiamercado.com.br/2025/02/mercado22-scaled.jpg"
     },
     {
       "id": "latest-5351f2a2d13c1a48e877be9b",
       "title": "Fed e Copom enfrentam decisões decisivas diante de pressão inflacionária global e alta do petróleo",
-      "summary": "Índice terminou em baixa, em dia de alta dos preços do petróleo com escalada das tensões no Oriente Médio",
-      "details": "Índice terminou em baixa, em dia de alta dos preços do petróleo com escalada das tensões no Oriente Médio",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-mbrf-mbrf3-sobe-27-e-lidera-altas-totvs-tots3-volta-a-tombar/",
+      "summary": "Conflito prolongado no Oriente Médio, avanço dos custos energéticos e riscos inflacionários colocam bancos centrais diante de um dos cenários mais desafiadores dos últimos anos",
+      "details": "Conflito prolongado no Oriente Médio, avanço dos custos energéticos e riscos inflacionários colocam bancos centrais diante de um dos cenários mais desafiadores dos últimos anos",
+      "url": "https://www.portaldoagronegocio.com.br/economia/mercado-financeiro/noticias/fed-e-copom-enfrentam-decisoes-decisivas-diante-de-pressao-inflacionaria-global-e-alta-do-petroleo",
       "source": "Portal do Agronegócio",
       "category": "latest",
       "tags": [
@@ -458,7 +651,7 @@
       "updatedAt": "2026-06-10T22:00:52Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/FJW7A32BUJNSRHOZEHXFGDP55M.png?quality=80&auth=f9c54eee930e3887755df8651c7c925fcc6d309b1b96ecc9c72c0fee34d95c37&width=1200&height=630&smart=true"
+      "imageUrl": "https://www.portaldoagronegocio.com.br/storage/images/notices/6a297ba5834b5.jpg"
     },
     {
       "id": "macro-a51965dffa02d27b4bd66d2d",
@@ -480,30 +673,30 @@
       "imageUrl": "https://www.estadao.com.br/resizer/v2/5F7UXL2UIRGE5JGAR3P6N4753M.png?quality=80&auth=5774b4ab2f507ab84338fe1984a2fc71f5ad39b5de25a32138cf539c7959f1e2&width=1200&height=630&smart=true"
     },
     {
-      "id": "macro-dd306886290c54fc96af02d3",
-      "title": "Thiago Machado: emissão de títulos em yuan pelo Brasil é alternativa à SELIC?",
-      "summary": "Confundir dívida externa com financiamento doméstico obscurece os verdadeiros obstáculos ao desenvolvimento e à soberania econômica do país",
-      "details": "Confundir dívida externa com financiamento doméstico obscurece os verdadeiros obstáculos ao desenvolvimento e à soberania econômica do país",
-      "url": "https://operamundi.uol.com.br/opiniao/emissao-de-titulos-em-yuan-pelo-brasil-e-alternativa-a-selic/",
-      "source": "Opera Mundi",
-      "category": "macro",
+      "id": "latest-d5af114d6e4e36047891c68f",
+      "title": "Juros futuros recuam com CPI dentro do esperado, enquanto mercado aguarda IPCA",
+      "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
+      "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
+      "url": "https://www.tribunadoagreste.com.br/geral/2026/06/10/918878-ibovespa-cai-com-cautela-apos-nova-ameaca-de-trump-ao-ira",
+      "source": "BDM - Bom Dia Mercado",
+      "category": "latest",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
+        "mercado",
+        "bolsa",
+        "macro"
       ],
-      "publishedAt": "2026-06-10T21:41:00Z",
-      "updatedAt": "2026-06-10T21:41:00Z",
+      "publishedAt": "2026-06-10T21:36:42Z",
+      "updatedAt": "2026-06-10T21:36:42Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://operamundi.uol.com.br/wp-content/uploads/2026/06/54155902148_836c85ca70_c.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://img.dhost.cloud/e_EnfI8kmlaNk833dTNVCTKvNw4=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/8fd98/48a50e38139798bb00d01c4c98c15fbf89a.jpg"
     },
     {
       "id": "latest-f7178ef762a1252a697e2b94",
       "title": "Ibovespa cai com cautela após nova ameaça de Trump ao Irã",
       "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
       "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "url": "https://www.tribunadoagreste.com.br/geral/2026/06/10/918878-ibovespa-cai-com-cautela-apos-nova-ameaca-de-trump-ao-ira",
+      "url": "https://www.tribunadoagreste.com.br/geral/2026/06/10/918876-ibovespa-recua-07-e-fecha-aos-168619-pontos",
       "source": "Tribuna do Agreste",
       "category": "latest",
       "tags": [
@@ -515,50 +708,14 @@
       "updatedAt": "2026-06-10T21:33:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://img.dhost.cloud/e_EnfI8kmlaNk833dTNVCTKvNw4=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/8fd98/48a50e38139798bb00d01c4c98c15fbf89a.jpg"
-    },
-    {
-      "id": "macro-a300e7b216edb2f8b6740d33",
-      "title": "Trump diz que adora a inflação e prevê queda do petróleo após guerra",
-      "summary": "Atualizacao de macro capturada em UOL Economia.",
-      "details": "",
-      "url": "https://economia.uol.com.br/noticias/redacao/2026/06/10/trump-diz-que-adora-a-inflacao-e-preve-queda-do-petroleo-apos-guerra.ghtm",
-      "source": "UOL Economia",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-10T21:32:51Z",
-      "updatedAt": "2026-06-10T21:32:51Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "latest-34d0574be26697a127e82548",
-      "title": "Accenture reforça área de Serviços Financeiro com a chegada de Leonardo Grapeia",
-      "summary": "Atualizacao de ultima hora capturada em TI INSIDE Online.",
-      "details": "",
-      "url": "https://tiinside.com.br/10/06/2026/accenture-reforca-area-de-servicos-financeiro-com-a-chegada-de-leonardo-grapeia/",
-      "source": "TI INSIDE Online",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-06-10T21:32:31Z",
-      "updatedAt": "2026-06-10T21:32:31Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "imageUrl": "https://img.dhost.cloud/QIolVw8IdLKl-nzVLjkOmKfhFfQ=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/27653/7b93215403d08bdea7f7d334769b6b00b14.jpg"
     },
     {
       "id": "latest-317cc82b9f18df9af9ca9ffe",
       "title": "Fechamento do mercado financeiro",
-      "summary": "Atualizacao de ultima hora capturada em UOL Economia.",
-      "details": "",
-      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/06/10/fechamento-do-mercado-financeiro.htm",
+      "summary": "As taxas de juros futuros de curto prazo estenderam os ganhos pelo 7º pregão consecutivo e curva já precifica potencial alta na Selic",
+      "details": "As taxas de juros futuros de curto prazo estenderam os ganhos pelo 7º pregão consecutivo e curva já precifica potencial alta na Selic",
+      "url": "https://www.moneytimes.com.br/taxas-de-dis-juros-futuros-10-6-26-lils/",
       "source": "UOL Economia",
       "category": "latest",
       "tags": [
@@ -569,14 +726,15 @@
       "publishedAt": "2026-06-10T21:32:00Z",
       "updatedAt": "2026-06-10T21:32:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/03/selic-juros-inflacao-.jpg"
     },
     {
       "id": "latest-375541bb806dd8d77924382b",
       "title": "Ibovespa recua 0,7% e fecha aos 168.619 pontos",
-      "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "url": "https://www.tribunadoagreste.com.br/geral/2026/06/10/918876-ibovespa-recua-07-e-fecha-aos-168619-pontos",
+      "summary": "Atualizacao de ultima hora capturada em Tribuna do Agreste.",
+      "details": "",
+      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/06/10/fechamento-do-mercado-financeiro.htm",
       "source": "Tribuna do Agreste",
       "category": "latest",
       "tags": [
@@ -587,15 +745,14 @@
       "publishedAt": "2026-06-10T21:32:00Z",
       "updatedAt": "2026-06-10T21:32:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://img.dhost.cloud/QIolVw8IdLKl-nzVLjkOmKfhFfQ=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/27653/7b93215403d08bdea7f7d334769b6b00b14.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-bf4dff32ddf39530ea3d8a38",
       "title": "Dólar: comportamento em 2026 e perspectivas",
-      "summary": "1ª seção decidiu que quitação de débito após o ajuizamento de execução fiscal não afasta condenação ao pagamento de honorários advocatícios.",
-      "details": "1ª seção decidiu que quitação de débito após o ajuizamento de execução fiscal não afasta condenação ao pagamento de honorários advocatícios.",
-      "url": "https://www.migalhas.com.br/quentes/457904/honorario-e-devido-mesmo-quando-divida-fiscal-e-paga-antes-de-citacao",
+      "summary": "Atualizacao de ultima hora capturada em Monitor Mercantil.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORWdsT3duQ0M2Z2FBcFVCdmM4R3R2cmdqazVTXzdjb0VfU3d2cWtkbzNEbTlZY1lCa09MQTh0MlNvWjN2NXVlRERHUnV6aVVBdXhINTUtUkxibmppYjRWdGdBYjNLYVh6WEFNaE5IXzViM0VfeHR3YndrLXR4ZlFMdA?oc=5",
       "source": "Monitor Mercantil",
       "category": "latest",
       "tags": [
@@ -606,34 +763,14 @@
       "publishedAt": "2026-06-10T21:18:33Z",
       "updatedAt": "2026-06-10T21:18:33Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://medproc.migalhas.com.br/https__img5.migalhas.com.br__SL__gf_base__SL__empresas__SL__miga__SL__imagens__SL__2026__SL__06__SL__10__SL__cropped_jglzf43b.tgh.png._PROC_CP75CCH31622400.png"
-    },
-    {
-      "id": "macro-b0371884ecf0e3586d3d8b8c",
-      "title": "STJ: Honorários são devidos mesmo quando dívida fiscal é paga antes de citação",
-      "summary": "Movimento foi atribuído a ajustes técnicos depois de forte alta dos prêmios de risco; cenário externo e incertezas fiscais seguem no radar.",
-      "details": "Movimento foi atribuído a ajustes técnicos depois de forte alta dos prêmios de risco; cenário externo e incertezas fiscais seguem no radar.",
-      "url": "https://www.tribunadosertao.com.br/geral/2026/06/10/918861-juros-futuros-fecham-em-leve-baixa-apos-estresse-recente-no-mercado",
-      "source": "Migalhas",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-10T21:17:00Z",
-      "updatedAt": "2026-06-10T21:17:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://img.dhost.cloud/A0gmR_0UkbA3dbvZXeRsf8RTeos=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/4ee2c/823cbd4fa6c445b9779f46a2146129123f0.webp"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-65467f73dfa35a895f57dc9a",
       "title": "Juros futuros fecham em leve baixa após estresse recente no mercado",
       "summary": "Atualizacao de ultima hora capturada em Tribuna do Sertão.",
       "details": "",
-      "url": "https://monitormercantil.com.br/dolar-comportamento-em-2026-e-perspectivas/",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONGh1R21SSmd5MzlGVEl0aWhhM3hGUnlzN1BCS2ctdGZNYWZwMkl6MURzeVlJTTlvcGpoT1lqcldENmswcnFOYmhyeTNZOHlMM0xTeDFHTFhtSjNOcUcyTDRaWjdfRlBfLXk3M2hfVTJOamxNeXMyWWE5SnY2aTdaQ0l4dm9uRzJCLXlyaVhIRGs1MEYyN196dXdHdFRONVZoclJnT09tVWdoR3B3RDIzMWJ6NzR2dE5VODJiQnZkWkE4cnBa?oc=5",
       "source": "Tribuna do Sertão",
       "category": "latest",
       "tags": [
@@ -649,9 +786,9 @@
     {
       "id": "latest-8dd6bdd2e446aa9449c9d39a",
       "title": "Juros futuros fecham em leve queda após sessão volátil na B3",
-      "summary": "Investidores também repercutiram nível dos estoques de petróleo nos EUA e indicador de preços americano, que mexe com as expectativas globais de juros",
-      "details": "Investidores também repercutiram nível dos estoques de petróleo nos EUA e indicador de preços americano, que mexe com as expectativas globais de juros",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/dow-jones-hoje-novos-ataques-eua-ira-e-dados-da-inflacao-americana-ditam-ritmo-do-mercado/",
+      "summary": "Atualizacao de ultima hora capturada em Tribuna do Agreste.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZnVRdmFUOVFqZ1h5ZTdpbHpzdlZLRld2ZlB3OU13VHUyZ2JzdUNVSFkwakg2dGp4QjR3ZXFyZ0ZIa1d0RncxOHM5bmo2REpTdzNaeUNSTXI4cEd0QmRMRXNrV1ZqZTg5OUpraHlValg2M1pzWE5GMHN6WnVCUnVyTVprNmx1RHR3T1ppc3NIWVJxbzQ2MlExWWhfQkp1LW1WWUlXWFcwVWxWdEp6cUd1NjBLMmp6NWdGN3R0TQ?oc=5",
       "source": "Tribuna do Agreste",
       "category": "latest",
       "tags": [
@@ -662,53 +799,14 @@
       "publishedAt": "2026-06-10T21:08:00Z",
       "updatedAt": "2026-06-10T21:08:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/WI6QGGU5FNMI5LOGCGSL6SKBQQ.png?quality=80&auth=7d23ac16f309a89412f027cfa63301a5e42bf344fe41c46c7021c4369826980f&width=1200&height=630&smart=true"
-    },
-    {
-      "id": "macro-691b55c7f0f2e2ec6b36280b",
-      "title": "Planejamento financeiro ganha espaço diante dos efeitos da inflação",
-      "summary": "Especialistas destacam a importância de investir com objetivos definidos e transformar resultados em patrimônio",
-      "details": "Especialistas destacam a importância de investir com objetivos definidos e transformar resultados em patrimônio",
-      "url": "https://radardigitalbrasilia.com.br/economia/planejamento-financeiro-ganha-espaco-diante-dos-efeitos-da-inflacao/",
-      "source": "RADAR DIGITAL BRASÍLIA",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-10T21:07:47Z",
-      "updatedAt": "2026-06-10T21:07:47Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://radardigitalbrasilia.com.br/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-10-at-17.59.54.jpeg"
-    },
-    {
-      "id": "macro-aa4c5b0706747ba60d7250d9",
-      "title": "Arcabouço fiscal está sendo cumprido com rigor, diz Durigan",
-      "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "url": "https://www.tribunadoagreste.com.br/geral/2026/06/10/918862-juros-futuros-fecham-em-leve-queda-apos-sessao-volatil-na-b3",
-      "source": "Poder360",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-10T20:56:10Z",
-      "updatedAt": "2026-06-10T20:56:10Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://img.dhost.cloud/X1PjQfpizN4nVroz3P3-Tos5kSY=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/c27d3/6f65a77f8bad8299258dfefd49d1e2f6969.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-24ad40592f958c6e53ccd4e2",
       "title": "Ibovespa recua após Trump elevar o tom contra o Irã",
-      "summary": "Ministro afirma que levantamentos que dizem que governo tirou R$ 215 bilhões do teto não procedem. Leia no Poder360.",
-      "details": "Ministro afirma que levantamentos que dizem que governo tirou R$ 215 bilhões do teto não procedem. Leia no Poder360.",
-      "url": "https://www.poder360.com.br/poder-economia/arcabouco-fiscal-esta-sendo-cumprido-com-rigor-diz-durigan/",
+      "summary": "Atualizacao de ultima hora capturada em trademap.com.br.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWmxUTmhGX3N5RFJsLTIxMEdqLUJZcFUxWkJLeEp1cVlOLW9GcWR0SGZ6bVZGQVFvWm12N2ljRTBSUXYxOXpoWFlESWN4X0w3dUE2NE9JX3ppTVYyM21kWVBMdFptdmxsVnVfdnNCUnFEYlFGQjB5c3dtU3llWWNnTWZobkUzOGJHR2lN?oc=5",
       "source": "trademap.com.br",
       "category": "latest",
       "tags": [
@@ -719,45 +817,7 @@
       "publishedAt": "2026-06-10T20:54:00Z",
       "updatedAt": "2026-06-10T20:54:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://static.poder360.com.br/2026/06/dario-durigan-848x477.png"
-    },
-    {
-      "id": "macro-ee2820456c6c9c5fe7ebdf4f",
-      "title": "Dow Jones hoje fecha em queda após Trump afirmar que EUA voltarão a atacar o Irã ainda hoje",
-      "summary": "O Ibovespa encerrou o pregão desta quarta-feira (10) com recuo de 0,70%, aos 168.619 pontos. O desempenho do principal índice da bolsa brasileira refletiu a escalada das tensões geopolíticas no Oriente Médio e o fortalecimento das preocupações com a trajetória da inflação global.",
-      "details": "O Ibovespa encerrou o pregão desta quarta-feira (10) com recuo de 0,70%, aos 168.619 pontos. O desempenho do principal índice da bolsa brasileira refletiu a escalada das tensões geopolíticas no Oriente Médio e o fortalecimento das preocupações com a trajetória da inflação global. No cenário internacional, as atenções p",
-      "url": "https://trademap.com.br/agencia/ibovespa-recua-apos-trump-elevar-o-tom-contra-o-ira",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-10T20:53:55Z",
-      "updatedAt": "2026-06-10T20:53:55Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://trademap.com.br/wp-content/uploads/2026/06/shutterstock_1484411570-8.jpg"
-    },
-    {
-      "id": "macro-87c9392b55416c8a843887a6",
-      "title": "\"Adoro a inflação\", diz Trump, enquanto preços sobem em meio à guerra com o Irã",
-      "summary": "Atualizacao de macro capturada em Money Times.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPS2cxcjNGSnA5V1A1VlJMX29zeElZNnRFN19lU2k0aHJYeVFTaEgxQlp3U0J4YU1XZVhaMGNnQ01PNm9Gd0VpX2tSeXNIc3paZ3V2MkQwVjVCTHNPcUVoSThsME9SellGeGs5S1BWR2pZR2E0RE9tU2ZGbnFNamtOZjROc3BtWEZnbUJIc3hza25EN1R1NVBwMGJpVm1RUGpOaExDQ1VneGZSdXRPVlhydA?oc=5",
-      "source": "Money Times",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-10T20:53:00Z",
-      "updatedAt": "2026-06-10T20:53:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-50016db0c64fc3fe6533e7e6",
@@ -796,25 +856,7 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-f2c78c07817b7ea8aa39c538",
-      "title": "Gilmar alerta Congresso sobre gastos sem previsão fiscal",
-      "summary": "Atualizacao de macro capturada em Vero Notícias.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeDV1b2tHTzFnb1VzRnhyZWZ3SWREc01URGFIekMzamRlLTFiSXg5U1Rxd3RVQ2VuMlNoQm5PTGROOTk5VG93YXdxZl9sSG0ybzEtTjBWQUFCcjVUUlJ6NWMtSWp6ZzF0ckdvdUxJZUZKdEJscjZ1QndrZDdKOGdMeWpLVFdTUF9jcUI5Unk0SmFGbjNXWHc?oc=5",
-      "source": "Vero Notícias",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-10T20:43:48Z",
-      "updatedAt": "2026-06-10T20:43:48Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "funds-67282e25cf3eac1f4274c381",
+      "id": "funds-8e776fba666797dfd04fe4ec",
       "title": "Verde zera posições em real com volta do fluxo para os EUA e dólar forte",
       "summary": "Atualizacao de fundos capturada em Estadão.",
       "details": "",
@@ -826,8 +868,8 @@
         "asset",
         "fiis"
       ],
-      "publishedAt": "2026-06-10T20:42:38Z",
-      "updatedAt": "2026-06-10T20:42:38Z",
+      "publishedAt": "2026-06-10T20:42:00Z",
+      "updatedAt": "2026-06-10T20:42:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
@@ -904,24 +946,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-1f0c04538c4c166bd84185f4",
-      "title": "Juro alto aumenta o risco do crédito? Entenda por que nem sempre",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZkhlZVF6VHlrbTBNbUJmTU1MazlyTlpPLTJWSklFNkMtb1B2NERZSFp6WGE5NWFCZkhPMWlxNHkwSFVjM3dMYWN4OTVqRU5JTENNejJqdF9NcW9uWENXdXg1MHVjUm15NDdLZDVDdGhKa3FHc3Rhd1gwZVpEWmNWMUlhUVBOcXpFcm1BYVNlSHRKbjhsRzNrZzFUQ2tVaDk5UjJidmdYb3hWQ2xlYkhnaXZ0YzV3dWfSAbwBQVVfeXFMTWNRV2pBelRhTkVob3BQWFUxSUNjMGVndWNzMDAwVi0zZVpQbVN1VjZTdG9mMGFkbUNwOWZiaV9paDNDRU1fNHozbmNfWGhDRU9lenRPb0gtajB5VndYNE5WM051OGpXcDBwQXpxVm1iY1RPMUF0eE9EYkdIQ2ZlOE9ZRnk0OUNPTzZwUGl6OGJsTHY4aS12QWJUVkR6clNPMDEtTGNSZW5wRnVxWTRIYUtLdmdtUUQ0TEpINzY?oc=5",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-10T20:34:03Z",
-      "updatedAt": "2026-06-10T20:34:03Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "companies-537ba2f9c8049779bcbe4c5e",
       "title": "Roadshow do Brasil Mais Produtivo será nesta quinta-feira...",
       "summary": "Atualizacao de empresas capturada em Imirante.com.",
@@ -955,24 +979,6 @@
       "publishedAt": "2026-06-10T20:28:38Z",
       "updatedAt": "2026-06-10T20:28:38Z",
       "premium": true,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-e355cbcc0d2db5b687a31183",
-      "title": "Ibovespa cai 0,70% pressionado por tensão entre Trump e Irã e tombo de Wall Street",
-      "summary": "Atualizacao de ultima hora capturada em BPMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQXJ4N25DN1RVOFpleFdmT2xabUowNVZkbXdTUzhjaWx0VU5CclN3VmZCU2dOY0V1M3d4d1huZUxJbFFzajlrWnRBdm5Sdmt1NktHeW1rUndJX3dCUmRJbWZ2QnVtRV9ybDZiQkFKY3ZuTDgwT2hGNzhqUThKMHltdlN5WC10WXYySTEw?oc=5",
-      "source": "BPMoney",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-06-10T20:24:46Z",
-      "updatedAt": "2026-06-10T20:24:46Z",
-      "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
@@ -1048,7 +1054,7 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "funds-d16600f0b8305f7916389bd1",
+      "id": "funds-24a1ee71a54ec51785eaa7a3",
       "title": "Sicredi e Sicredi Asset ficam entre os primeiros colocados no Prêmio Broadcast Projeções Top Geral",
       "summary": "Atualizacao de fundos capturada em O CORREIO NEWS.",
       "details": "",
@@ -1060,8 +1066,8 @@
         "asset",
         "fiis"
       ],
-      "publishedAt": "2026-06-10T17:18:00Z",
-      "updatedAt": "2026-06-10T17:18:00Z",
+      "publishedAt": "2026-06-10T18:18:33Z",
+      "updatedAt": "2026-06-10T18:18:33Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
@@ -1070,7 +1076,7 @@
       "title": "ETF do Itaú Asset anuncia novos dividendos; veja como funciona o DIVD11",
       "summary": "Atualizacao de fundos capturada em suno.com.br.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObmtQeTRiUTk0U3hjeXJrMW1HOGJEU0h6cHdkWkpUWHZGUnhiZmZEX0RuaC16NUNZcGUzUkNfb0t1cWlKTy1LMFcydjF1UGZ4NVFkSDNrOHkwRnJNb2NRVndCS2dPbldqUFg3T1FHS0FrSGprQ2xBOXpDQzVZTThxQnIzY2dSTDI5MFd5Y3RPR0pQSFFWVWfSAZsBQVVfeXFMTUtiNk5EcTJmMG9wRUkwVElWVTRuMWFSUHJKRGM4V0RYajhuYi1IU1ptS2Y3T3pvblA5SU9Pc1MwdDlpUXc5MF95bnVtSEU0V3ZJSGFkbnlZYkZBUFFDbjdkQzVrYklqdklDaGFhMS0xY2RDd3FPRWFXUktFRlQ2elBIcWpHYjdPT2ZZYzNwd19XVXRqOS15X1RhSWM?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObmtQeTRiUTk0U3hjeXJrMW1HOGJEU0h6cHdkWkpUWHZGUnhiZmZEX0RuaC16NUNZcGUzUkNfb0t1cWlKTy1LMFcydjF1UGZ4NVFkSDNrOHkwRnJNb2NRVndCS2dPbldqUFg3T1FHS0FrSGprQ2xBOXpDQzVZTThxQnIzY2dSTDI5MFd5Y3RPR0pQSFFWVWc?oc=5",
       "source": "suno.com.br",
       "category": "funds",
       "tags": [
@@ -1174,7 +1180,7 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-ad90a74e9868b9bba78eb8b3",
+      "id": "companies-5e6ce618eca2723f4b68506f",
       "title": "IA deve liderar transformação competitiva das empresas brasileiras, diz pesquisa",
       "summary": "Atualizacao de empresas capturada em fenati.org.br.",
       "details": "",
@@ -1186,8 +1192,8 @@
         "resultados",
         "m&a"
       ],
-      "publishedAt": "2026-06-10T14:48:39Z",
-      "updatedAt": "2026-06-10T14:48:39Z",
+      "publishedAt": "2026-06-10T14:48:22Z",
+      "updatedAt": "2026-06-10T14:48:22Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
@@ -1228,20 +1234,20 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "companies-37591803ab00d0b0db6a6c53",
+      "id": "companies-c5e73f3ce90a553872d67a6c",
       "title": "Busca por IA muda disputa por fornecedores B2B",
-      "summary": "Atualizacao de empresas capturada em Portal VV8.",
+      "summary": "Atualizacao de empresas capturada em Arena de Notícias.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRHRyZmx5MGtsemZfa2ZYaldrNVJnakZiNTZVUjVwelkwTDRTc1BCV295Tkg4VVU1V3lNTU1KeGJNS0FjQ0I3STE3c3JQOVRQY0xmbkNFdVJqMHRIV1J0c2RXRk82MEc2dm9XUlV0OHV2a0JhZzNFY1NKRmtiZE51dTJXeWJrSXZtVHVyYkZB?oc=5",
-      "source": "Portal VV8",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNU0RybTRNNnYwWFg0MFlnM1lpcElMZVNHcGxERGVnQnZKeVpNR2dZVjVnZFBXUEMtWDNsZy1tTVV5V2kwek5qVzJ4cFdwd0pYcDI1MFFQY2N2dDZ1ZnFmT3gyM1V2VEZIeGF5VUJkWnF4bXpJLUExR3laQzFJS0hvVm9mZEpyMFdBdDRuZW8xRkNHV2dhRGxz?oc=5",
+      "source": "Arena de Notícias",
       "category": "companies",
       "tags": [
         "empresas",
         "resultados",
         "m&a"
       ],
-      "publishedAt": "2026-06-10T12:42:47Z",
-      "updatedAt": "2026-06-10T12:42:47Z",
+      "publishedAt": "2026-06-10T12:41:52Z",
+      "updatedAt": "2026-06-10T12:41:52Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
