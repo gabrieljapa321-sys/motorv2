@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-13T23:14:40Z",
-  "generatedAt": "2026-06-13T23:14:40Z",
+  "updatedAt": "2026-06-14T01:42:37Z",
+  "generatedAt": "2026-06-14T01:42:37Z",
   "categories": [
     {
       "id": "all",
@@ -25,8 +25,8 @@
   ],
   "sources": [
     {
-      "id": "bahia-economica",
-      "label": "- Bahia Economica"
+      "id": "a-tribuna",
+      "label": "A Tribuna"
     },
     {
       "id": "acionista-com-br",
@@ -45,8 +45,8 @@
       "label": "averdade.com"
     },
     {
-      "id": "cidadeverde-com",
-      "label": "CidadeVerde.com"
+      "id": "bitnot-cias",
+      "label": "BitNotícias"
     },
     {
       "id": "cnn-brasil",
@@ -55,10 +55,6 @@
     {
       "id": "cnn-portugal",
       "label": "CNN Portugal"
-    },
-    {
-      "id": "comex-do-brasil",
-      "label": "Comex do Brasil"
     },
     {
       "id": "consultor-jur-dico",
@@ -93,12 +89,24 @@
       "label": "G1"
     },
     {
+      "id": "infomoney",
+      "label": "InfoMoney"
+    },
+    {
       "id": "investing-com-brasil-finan-as-c-mbio-e-investimentos",
       "label": "Investing.com Brasil - Finanças, Câmbio e Investimentos"
     },
     {
+      "id": "jornal-o-sul",
+      "label": "Jornal O Sul"
+    },
+    {
       "id": "kondzilla-com",
       "label": "kondzilla.com"
+    },
+    {
+      "id": "mix-vale",
+      "label": "Mix Vale"
     },
     {
       "id": "monitor-mercantil",
@@ -119,10 +127,6 @@
     {
       "id": "poder360",
       "label": "Poder360"
-    },
-    {
-      "id": "portal-revista-kdea-360",
-      "label": "Portal Revista Kdea 360"
     },
     {
       "id": "portal-tela",
@@ -157,10 +161,6 @@
       "label": "Revista Sociedade Militar"
     },
     {
-      "id": "seu-cr-dito-digital",
-      "label": "Seu Crédito Digital"
-    },
-    {
       "id": "seu-dinheiro",
       "label": "Seu Dinheiro"
     },
@@ -177,8 +177,8 @@
       "label": "Tekimobile"
     },
     {
-      "id": "ti-inside-online",
-      "label": "TI INSIDE Online"
+      "id": "tradingview",
+      "label": "TradingView"
     },
     {
       "id": "tribuna-do-norte",
@@ -193,17 +193,96 @@
       "label": "Valor Econômico"
     },
     {
+      "id": "veja",
+      "label": "VEJA"
+    },
+    {
       "id": "vietnam-vn",
       "label": "Vietnam.vn"
     }
   ],
   "items": [
     {
+      "id": "latest-fdb842b900355348ba501901",
+      "title": "Ações da SpaceX projetam valor de mercado histórico após anúncio de IPO",
+      "summary": "Taxas dos títulos públicos sobem após revisão das expectativas para a Selic e inflação",
+      "details": "Taxas dos títulos públicos sobem após revisão das expectativas para a Selic e inflação",
+      "url": "https://www.atribuna.com.br/opiniao/marcelo-santos/tesouro-direto-bate-recordes-com-juros-altos-e-tens-o-inflacionaria-global-1.517907",
+      "source": "Mix Vale",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-06-14T00:34:07Z",
+      "updatedAt": "2026-06-14T00:34:07Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.atribuna.com.br/image/policy:1.199357:1771637945/image.jpg?f=3x2"
+    },
+    {
+      "id": "macro-17d43f5868453c37bc2cf8ab",
+      "title": "Tesouro Direto bate recordes com juros altos e tensão inflacionária global",
+      "summary": "As ações da SpaceX registraram uma notável ascensão em sua primeira negociação pública na última sexta-feira (12), culminando na elevação do valor da",
+      "details": "As ações da SpaceX registraram uma notável ascensão em sua primeira negociação pública na última sexta-feira (12), culminando na elevação do valor da",
+      "url": "https://www.mixvale.com.br/2026/06/13/acoes-da-spacex-projetam-valor-de-mercado-historico-apos-anuncio-de-ipo/",
+      "source": "A Tribuna",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-14T00:15:00Z",
+      "updatedAt": "2026-06-14T00:15:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.mixvale.com.br/wp-content/uploads/2026/01/SpaceX.jpg"
+    },
+    {
+      "id": "macro-0f0662ed6d4b0adcdc457703",
+      "title": "Inflação brasileira é a maior para maio em 5 anos e ultrapassa teto da meta em 12 meses",
+      "summary": "Atualizacao de macro capturada em Jornal O Sul.",
+      "details": "",
+      "url": "https://www.sociedademilitar.com.br/2026/06/marrocos-parceria-militar-brasil-mercado-defesa-africa-wvt.html",
+      "source": "Jornal O Sul",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-13T23:38:34Z",
+      "updatedAt": "2026-06-13T23:38:34Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-6adabfe63aa1af33b86bbf7d",
+      "title": "Guerra no Oriente Médio, impacto do super El Niño e arsenal de medidas do governo Lula pressionam inflação e reduzem chances de o Banco Central continuar a reduzir a Selic",
+      "summary": "A inflação oficial do Brasil, medida pelo IPCA (Índice Nacional de Preços ao Consumidor Amplo), desacelerou a 0,58% em maio, após marcar 0,67% em abril, disse nesta sexta-feira (12) o IBGE (Instituto Brasileiro de Geografia e Estatística). Apesar da trégua em relação ao mês anter",
+      "details": "A inflação oficial do Brasil, medida pelo IPCA (Índice Nacional de Preços ao Consumidor Amplo), desacelerou a 0,58% em maio, após marcar 0,67% em abril, disse nesta sexta-feira (12) o IBGE (Instituto Brasileiro de Geografia e Estatística). Apesar da trégua em relação ao mês anterior, a taxa de 0,58% é…",
+      "url": "https://www.osul.com.br/inflacao-brasileira-e-a-maior-para-maio-em-5-anos-e-ultrapassa-teto-da-meta-em-12-meses/",
+      "source": "Jornal O Sul",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-13T23:33:56Z",
+      "updatedAt": "2026-06-13T23:33:56Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.osul.com.br/wp-content/uploads/2026/05/gjurossbs-1.jpg"
+    },
+    {
       "id": "companies-920b7d841a72de64e1047790",
       "title": "Rival na Copa, Marrocos fortalece parceria com Forças Armadas brasileiras e amplia mercado para produtos de defesa após se tornar 2º maior investidor militar da África",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLWY1TGhSZUtULXpKWEE4WWx2WENaOGJYVUF4OWp1SDFMamhydFhTYmhJWjVHZ29ET3drSWRxenk4QVpxWjB1eXV5QU9iVmR5UnhuLVlwMFRQS0FQMHFFLWtWSnRYY1hwMVp1ZWxRajlWSXJPVzdFaWxEWmt1M1VsTXZqbDcwaERRTDVaTDVma0NGSFMwWHJoWkxZTGEwcWxJMEV6ZU9mSmcxZ1k?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "As projeções para a inflação deste ano subiram pela 13ª semana consecutiva e atingiram 5,11%, segundo a edição mais recente do Boletim Focus. A mediana das estimativas supera a meta e o limite de tolerância e afasta paulatinamente a chance de o Banco Central (BC) continuar a redu",
+      "details": "As projeções para a inflação deste ano subiram pela 13ª semana consecutiva e atingiram 5,11%, segundo a edição mais recente do Boletim Focus. A mediana das estimativas supera a meta e o limite de tolerância e afasta paulatinamente a chance de o Banco Central (BC) continuar a reduzir os juros…",
+      "url": "https://www.osul.com.br/guerra-no-oriente-medio-impacto-do-super-el-nino-e-arsenal-de-medidas-do-governo-lula-pressionam-inflacao-e-reduzem-chances-de-o-banco-central-continuar-a-reduzir-a-selic/",
       "source": "Revista Sociedade Militar",
       "category": "companies",
       "tags": [
@@ -215,14 +294,14 @@
       "updatedAt": "2026-06-13T22:45:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://www.osul.com.br/wp-content/uploads/2026/06/jbancentrg.jpg"
     },
     {
       "id": "latest-32584aff6d837732849084b3",
       "title": "Erro no Nubank: mensagens de liquidação alarmam clientes",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdHc4ejdZcTBYT0tTXzM2ek84TmpHSFNvZ0h4ZmJMYWlZXzZiU1k4WHA1TnAzcEpmb2dwV1I4Y3c1SlZ6RDlGd3h6Y1k0bzJrMl80TXpsVmtwSGtmV19aT3pYdE1hd1FoM0Ezc1pWeTNvMTc4eUtTbXM5dUpTb2lFTXJWYWVxdHJRcVJLQ0U5U1czZw?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Nubank envia mensagens de liquidação por engano a clientes de seu programa Ultravioleta, causando preocupação.",
+      "details": "Nubank envia mensagens de liquidação por engano a clientes de seu programa Ultravioleta, causando preocupação.",
+      "url": "https://diariodoestadogo.com.br/erro-no-nubank-mensagens-de-liquidacao-alarmam-clientes/",
       "source": "Diário do Estado",
       "category": "latest",
       "tags": [
@@ -234,14 +313,14 @@
       "updatedAt": "2026-06-13T22:10:51Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/06/erro-no-nubank3A-mensagens-de-liquidacao-alarmam-clientes-1200x800.jpg"
     },
     {
       "id": "macro-7d684e6c096a44c25467197c",
       "title": "Dólar opera em queda com inflação e guerra no radar",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWnItZ3NVZEFFeUVXTUJFc1dHeGU1Mk5ibk5lckF3amlpQVlkeGY2Rm5kSTc2WFBVN3c2THd3aVFVMWl2YmU3aEZDN3BMTkxoRTdvME1WVUd4WVUydi1WUVlibXhlaDkzUVl6WlRMNkJYZHNHSllsTU05dDVVbGN1ZnZVVVlXeERUc0JrZm1wRzhlVm0wTF9sWExPZzBWNi1sdmt3VVpzbjg4TFByRTI0WjNrMWJzLXE4MVJtM21n0gHMAUFVX3lxTE1sZjFuenNPZTJmeUY1Vi02V0F1VmltREJyOU9zN0lwZDRyV3NxZHNxYXVObERLX0lwM3pjMEN2Znd6OEVsSXZXNVEzeE1leTJCRmhFUGRzX1ZzeHRXVTdZNFBqZjhjbmN5YUpUSklqX2V5aFdwRUtvV01INFEyWjJlU2FKZUtkSGtjOGNpUGVXazFHcFdDY08tczR5eG9aWmxZWWJWekJvMUNuZ29WSE03bXppMzhyZkVQbFRpY1hNTm52T3pMTmJwOVlrQw?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Sinais de avanço em negociações entre EUA e Irã mexem com o mercado",
+      "details": "Sinais de avanço em negociações entre EUA e Irã mexem com o mercado",
+      "url": "https://g1.globo.com/globonews/conexao-globonews/video/dolar-opera-em-queda-com-inflacao-e-guerra-no-radar-14699496.ghtml",
       "source": "G1",
       "category": "macro",
       "tags": [
@@ -253,33 +332,14 @@
       "updatedAt": "2026-06-13T22:04:17Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-    },
-    {
-      "id": "macro-90074e5f24f83e2fa6ef2eca",
-      "title": "Inflação fica em 0,58% em maio, aponta IBGE",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbHBVRzVzQk13WjhGVXlWNFVfQmRtLXJ4a0lscGw1cS1xd1VUSXpuZU9tRzR1S0VUaEhpWDBzZ2dUYkRoRXhsRWQxT1k3aFZJMzI5YmNILVNkY3o1dUZvemNrVXJPeVMzd2psN3pHMGxWc2xjMHAycmlDMG9lMF9ZVmdKbjZNZTE3cmxUSkwzZUdVYXlXWHRreGRlaXhuS3N5UEgtMmhSanF0SlZrYUJWUl9saDJPdE9ubl9DM1BvWdIBvwFBVV95cUxQbHBVRzVzQk13WjhGVXlWNFVfQmRtLXJ4a0lscGw1cS1xd1VUSXpuZU9tRzR1S0VUaEhpWDBzZ2dUYkRoRXhsRWQxT1k3aFZJMzI5YmNILVNkY3o1dUZvemNrVXJPeVMzd2psN3pHMGxWc2xjMHAycmlDMG9lMF9ZVmdKbjZNZTE3cmxUSkwzZUdVYXlXWHRreGRlaXhuS3N5UEgtMmhSanF0SlZrYUJWUl9saDJPdE9ubl9DM1BvWQ?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
-      "source": "G1",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-13T21:55:49Z",
-      "updatedAt": "2026-06-13T21:55:49Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://s01.video.glbimg.com/x720/14699496.jpg"
     },
     {
       "id": "companies-739079f03c4edf4a67e97839",
       "title": "Empresas brasileiras buscam internacionalização para aumentar valuation",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdGE2ZkRFZEd2cU1fa0xpR3F2bDE0aUFmZmNTTU1KcmVQdXN2d0RoQXdSakE5MVNfMDFUNlJpWmpXSEp6TGs3UGMyMEs2ejBoSFJFQ2tZNi1MZl9YUVJ2STA0YXVybVc4Mm1UX0xnUDlmNVdVdTUwUVVWWkNjVFF6QUY2YXhiT0lHdldMSlN1V29fUUZvbUFHTnJraW14QQ?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Atualizacao de empresas capturada em Acionista.com.br.",
+      "details": "",
+      "url": "https://acionista.com.br/empresas-brasileiras-buscam-internacionalizacao-para-aumentar-valuation/",
       "source": "Acionista.com.br",
       "category": "companies",
       "tags": [
@@ -290,15 +350,14 @@
       "publishedAt": "2026-06-13T21:19:14Z",
       "updatedAt": "2026-06-13T21:19:14Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "latest-1d6cd5c77f2452420e1c6061",
       "title": "Dólar cai para R$ 5,06 com petróleo em baixa e alívio no exterior",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQREFPOUNFemtlSG9xTDdXM0hLOG80bkN4U3NRZ0U0T2hJekxvX0ljSnhQTFcxRW5BUmxaUkZNUXR1bnVtdmxUaVhiSlN3RlU2eDFUUEdnY0hWcS1IZGZ1bUNTekZaa1pTUnFWQ1hER3NQa0lwM2pfUjkwR3hVYkxuYVZCNEhKNE1qM0RkR3NJalJOMFhjNlV1TEhkTlBXZw?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Dólar cai para R$ 5,06 com o petróleo em baixa e menor tensão no exterior, mas juros dos Estados Unidos ainda preocupam o mercado",
+      "details": "Dólar cai para R$ 5,06 com o petróleo em baixa e menor tensão no exterior, mas juros dos Estados Unidos ainda preocupam o mercado",
+      "url": "https://arevista.com.br/mercados/dolar-cai-para-r-506-com-petroleo-em-baixa-e-alivio-no-exterior/",
       "source": "arevista.com.br",
       "category": "latest",
       "tags": [
@@ -310,14 +369,14 @@
       "updatedAt": "2026-06-13T21:12:15Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://arevista.com.br/wp-content/uploads/2026/06/ChatGPT-Image-13-de-jun.-de-2026-18_11_38-1024x614.png"
     },
     {
       "id": "latest-fcc1b981cf074c2c588ec82f",
       "title": "Erro no Nubank: Mensagens Enganosas Alcançam Clientes",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPR3pkZHNrc3JEUjdsbXg5NVdJbFZkRTl2RWRzaXIxcjZqNmJJS21GeXByNXRVa0ZENGRtcnFMb2xLX2lXMzNoWHcyd053MjFwTjVCM25VMUh6VEMtczByWmhfNnJMUXltdEpvUGozYU5MQ1paOUNPbmctQUdGV0VJNE82UDgxR0dkdGR6ajJn?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Nubank enfrenta crise de comunicação após mensagens erradas alertarem clientes sobre liquidação.",
+      "details": "Nubank enfrenta crise de comunicação após mensagens erradas alertarem clientes sobre liquidação.",
+      "url": "https://diariodoestadogo.com.br/erro-no-nubank-mensagens-enganosas-alcancam-clientes/",
       "source": "Diário do Estado",
       "category": "latest",
       "tags": [
@@ -329,14 +388,14 @@
       "updatedAt": "2026-06-13T21:10:50Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/06/erro-no-nubank3A-mensagens-enganosas-alcancam-clientes-1200x800.jpg"
     },
     {
       "id": "macro-2b5e67b409d2782efac0030c",
       "title": "Fiemg alerta que fim da 6x1 pode elevar inflação e reduzir poder de compra",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWUliYzdrMkdXdDloT1VHX2lrU1JCSXBTOWRhU3VkVXJ0RjJLb1A1MVcxc1FQZnAtWDFJNUVaTjBYNzdmM2h4cWNnMWFoZDdiOGRzdzZPME5ZaHRtWmQ4NDFrdm5sWGR2OVYtY2EtLXBud3htNnBTSk9vTjRZZld0QVE2NmpuMUpLOVZReVh4T2ZrcjRkR2dTWEtmVmNmYllxN3ZqYXJGQ3REaTNNMEphMERpUkRBaEMtUjJQcTZBbEY5UzAtTVE?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Cofundadora do Nubank admite erro que alarmou clientes sobre liquidação.",
+      "details": "Cofundadora do Nubank admite erro que alarmou clientes sobre liquidação.",
+      "url": "https://diariodoestadogo.com.br/erro-no-nubank-gera-confusao-entre-clientes-e-esclarecimentos-da-empresa/",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -348,14 +407,14 @@
       "updatedAt": "2026-06-13T20:20:30Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/06/erro-no-nubank-gera-confusao-entre-clientes-e-esclarecimentos-da-empresa.jpg"
     },
     {
       "id": "latest-63e7e96ae4ebaaa642c52161",
       "title": "Erro no Nubank gera confusão entre clientes e esclarecimentos da empresa",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVVRxRjdtdE5XS25LOEhocU1Na3VJR2M3Mm1NV3YxOWxpMDRzZHFRb3JWMldGREVmTTRHbUlnXzk1UnNmR0ZYZGpxM3c5aHlabjEtUE5WZHNxOFN4Unk5bzBuMlM5NU1LN1N4QVVma083enJqc1Nmdk9XakpIeHVlUHpCMUljLUx3N3dyUVdtU0ZZSmgtaGZ1RGtRV2VqWFM4Z2o2bkJ3VXg?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Fernanda Ribas, gerente trabalhista da Federação, projeta aumento da informalidade com eventuais demissões por alta nos custos",
+      "details": "Fernanda Ribas, gerente trabalhista da Federação, projeta aumento da informalidade com eventuais demissões por alta nos custos",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/fiemg-alerta-que-fim-da-6x1-pode-elevar-inflacao-e-reduzir-poder-de-compra/",
       "source": "Diário do Estado",
       "category": "latest",
       "tags": [
@@ -367,14 +426,14 @@
       "updatedAt": "2026-06-13T20:10:49Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/09/aviso-previo-clt.jpg?w=1024&h=630&crop=1"
     },
     {
       "id": "macro-41c48cf27a324a323df9f40a",
       "title": "Concurso Sefaz CE: como será a avaliação de títulos?",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPalZkWG9xYVd6R3pFS3lWNTlkdzJOZVM1UzlYMGs5ZTR0a3JUUGNQdDM1SVE2ZFlCNk1XUVNBM0g0dkhvUWxucmp5SlByd3QwekNSS180dldRQWFTT3h6ZVYxNlIwcWlRRmxDa2hSYm10bUdMYjNtR3JTbERmdl9QbmxzMFBvWENaLVdBYWphNzF0ZFXSAZgBQVVfeXFMTWh2VXBvU0x5VkxVUkJOUDNPTU9TRER2UjJnQUxDV0VXY3loQlhHbVZDaTBQelBWTklQX2d0SHZBd0d0ZU84QkhzR3EzdXR4OGZ2WXZtU3Y4REM5T1B0ekNLdFRGV1RtTWRJOGFnQUpJSDdlcmVIelV0SEI0bGxTNHZjTUd0T1pDcl94akxjMmVVbjdXMXBEbWo?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Confira neste artigo os detalhes da avaliação de títulos; são ofertadas 300 vagas de Auditor Fiscal, que conta com inicial de R$ 16,1 mil!",
+      "details": "Confira neste artigo os detalhes da avaliação de títulos; são ofertadas 300 vagas de Auditor Fiscal, que conta com inicial de R$ 16,1 mil!",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-sefaz-ce-detalhes-avaliacao-titulos/",
       "source": "Estratégia Concursos",
       "category": "macro",
       "tags": [
@@ -386,14 +445,14 @@
       "updatedAt": "2026-06-13T20:09:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2026/03/30213639/imunidades-tributarias-para-o-concurso-da-sefaz-ce.png"
     },
     {
       "id": "latest-2fde8d32ed9dc9c8c329cdac",
       "title": "Galaxy S25 Plus no Mercado Livre sai por menos de R$ 4 mil com 18x sem juros",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbFpJdWdORnJpWi1NRm12R0FpNU5OVFhQV3ZmNU9iMUtaRVNBYi0ybTRSYjJYbGNHclFZUGRwa2FmLXVnOUtNYl9VS0NZemZaQklucFRpM1hHa0ZxNGVCcnNmSVVnTDRlZDRfTmpfejhqNDE5VXMtWGlkcHU0MkV3SlN1MUhOeTBWQkMwQW9LTURERGFoaHQ4emFvellHb05pdWZBU0ZRZHJQcmM?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Atualizacao de ultima hora capturada em Tekimobile.",
+      "details": "",
+      "url": "https://tekimobile.com/noticia/galaxy-s25-plus-no-mercado-livre-sai-por-menos-de-r-4-mil-com-18x-sem-juros/",
       "source": "Tekimobile",
       "category": "latest",
       "tags": [
@@ -404,34 +463,14 @@
       "publishedAt": "2026-06-13T20:06:31Z",
       "updatedAt": "2026-06-13T20:06:31Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
-    },
-    {
-      "id": "companies-8e90cad7fb0490d09634d7be",
-      "title": "OMC destaca protagonismo do Brasil por avanços no Portal Único de Comércio Exterior",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdVVaRTJUUXdlUTJHdHFCakpzWXM4Q3U4X185dEstS18xTHNsclFqUGNPX09xQmtrYW5vWXB6VUU5SHJIb3kwcHpzZmFKelNVT0lfVVN0QkFNd1RTaWhFRkEwbGJXdTk2QnBWUkZVRC0zX2lsMTBZSnQxY1RHN2FHX1BaYVVDenZCNktEUm91Sl9TS2tmbGQza24zTW9SSDUxdmdGbHBZQXVOcFA2c0xR?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
-      "source": "Comex do Brasil",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-06-13T20:02:47Z",
-      "updatedAt": "2026-06-13T20:02:47Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-488765c1255d96ed28bcae28",
       "title": "Insensatez lá e aqui: EUA insiste em tarifas equivocadas; e o Brasil, na irresponsabilidade fiscal",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOYkd1RDllT0V2a2I4Qkd1aE9IakMwVS1pS0paSE5hTlUzdmpmR3FBQnpkemFVb2JKcFp0LVViNjlSNzUyUlJONjJJSURSRG1QVURrblZFenVzWGRtdml6dmVvZGFNRTlyb0tEaU9pR3MyMHJVS0xBYkI0bEpSaFp1RzFVX2hsUlJQV1lET0h5U0NmcVV0VDhfTDhvU2M5SDM4WGxKaEMyT3Z4TGMxdTN2YUIwOU13aEk0QV9rSDI4LTVsbkcyaHVqVTFuRHNIZDFIZGlNcjNiZnRsd3ZkY1VDZUpLRmVrX3pKanV1TlkzcGY2b1hldzJ30gH8AUFVX3lxTE00RFVHd0t1bGtlcEVzUEVxd3ctbVFINEtxUlFhZl9fUHR4cVU1OGZHSWJlTGdNQmI0SGt5ZzVzd0FEX3RtUndCZzlEU0gxdzFyeHN5YThsNm1DRTRubTVoeWQwU0VSSFRxTUNHR0ZwRGFFNWVtaFFVTzFzNnhrLUwtSHZRN3RPMk9QSGR6NERBay1oeWxQM1pRVHVrODk4U0lOZlRaZGxWZ2pZWjlWZVpVcDVMY2V3OXZtdDhCbERheWF3ME81WnVadmF1NHJUUWd1V3BKamZrdy1pNmlaeFJJRVltOXhWcklBZVN1bl9OaWNucEJIc1laUXp1TQ?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Banco do Japão pode elevar juros a 1% em junho e desencadear desmonte do carry trade do iene, ameaçando o preço do Bitcoin",
+      "details": "Banco do Japão pode elevar juros a 1% em junho e desencadear desmonte do carry trade do iene, ameaçando o preço do Bitcoin",
+      "url": "https://bitnoticias.com.br/mercado/bitcoin-banco-japao-juros-carry-trade-iene/amp/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -443,14 +482,14 @@
       "updatedAt": "2026-06-13T20:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://bitnoticias.com.br/wp-content/uploads/2026/06/alta-de-juros-do-boj-ameaca-desencadear-nova-queda.jpg"
     },
     {
       "id": "macro-5ec4c0d9516d4b67eb6f2880",
       "title": "Pré-candidatos ao Governo do RN divergem sobre saída para crise fiscal",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUFM1TllJaEJRRGZGeTFSVkZHSUxiUjd5aUhEckF2dGp6TmF6MXJRT3ZRUXRUS1FFNGZ5aHl5UHlYSWI2T0IxTVB0U0pvaFFmZmVCQ1lYU3Roc3RRaVlwV214bDlNM2s2eTFFVFZ6M1cyYXo1SGp1dXhIUUxTb014dWhvdU5FOG9oSVotbDFqdFZvNmVZQWFwRHRNa1pUQ2cySkFpeDJQb1gyNUx4THJF?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "A preocupação de quem vier a sentar na cadeira de governador do Rio Grande do Norte a partir de janeiro de 2027 é uma só – equilibrar as contas públicas do Estado. Os quatro principais pré-candidatos à sucessão da governadora Fátima Bezerra (PT) até podem discordar da forma, mas ",
+      "details": "A preocupação de quem vier a sentar na cadeira de governador do Rio Grande do Norte a partir de janeiro de 2027 é uma só – equilibrar as contas públicas do Estado. Os quatro principais pré-candidatos à sucessão da governadora Fátima Bezerra (PT) até podem discordar da forma, mas todos concordam sobre a necessidade de [",
+      "url": "https://tribunadonorte.com.br/politica/pre-candidatos-ao-governo-do-rn-divergem-sobre-saida-para-crise-fiscal/",
       "source": "Tribuna do Norte",
       "category": "macro",
       "tags": [
@@ -462,14 +501,33 @@
       "updatedAt": "2026-06-13T20:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://tribunadonorte.com.br/wp-content/uploads/2026/06/20260614_3PO1_FT_MACNUS-NASCIMENTO.jpg"
     },
     {
-      "id": "companies-356036d70f47ab37449c2ccf",
+      "id": "latest-f1a7e7ec876019cb4048251d",
+      "title": "Alta de juros do BoJ ameaça desencadear nova queda do Bitcoin",
+      "summary": "A insensatez não está só nos grandes lances; está na tentativa de salvar uma instituição especializada em entregar cartas que ninguém mais escreve e que só nos últimos meses engoliu R$ 20 bilhões",
+      "details": "A insensatez não está só nos grandes lances; está na tentativa de salvar uma instituição especializada em entregar cartas que ninguém mais escreve e que só nos últimos meses engoliu R$ 20 bilhões",
+      "url": "https://www.estadao.com.br/economia/jose-roberto-mendonca-de-barros/insensatez-la-e-aqui-eua-insiste-em-tarifas-equivocadas-e-o-brasil-na-irresponsabilidade-fiscal/",
+      "source": "BitNotícias",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-06-13T19:30:19Z",
+      "updatedAt": "2026-06-13T19:30:19Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/4KSEIIJEBVOOPDTHUCPPPO2CSE.png?quality=80&auth=1bc54b58c002665913c5fa2aa141c15c65e8601331d75bb34f25ef6dedcf57dd&width=1200&height=630&focal=354,233"
+    },
+    {
+      "id": "companies-804fd3dd9485824e7ffde815",
       "title": "Empresas inadimplentes no Brasil registram maior nível na série histórica, aponta Serasa",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPLVZSdi1GVkF4VnZ2dlFocS1fRUhmREx0MGF6U01XUHpPS1JuZ1FqZnI0Z2g1a0FvbEZnOVlOSEVpOTY2WHRrZmkwUi1CSF92eGRQS3NHXzlMRktPWVo3MmFVdHFfbG5GOXgtM3Y0cjRjcWp3eWZVdXM3d0tqOGlmUFRZOTlUWGF4cktaTUc5TkdXZGN4LVV2bV9FdmNlSER1dHVpb1k1eHhTQVVq?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "A inadimplência empresarial voltou a crescer em abril e atingiu o maior nível da série histórica da Serasa Experian. Pela primeira vez, o país chegou a 9",
+      "details": "A inadimplência empresarial voltou a crescer em abril e atingiu o maior nível da série histórica da Serasa Experian. Pela primeira vez, o país chegou a 9",
+      "url": "https://ajn1.com.br/empresas-inadimplentes-no-brasil-registram-maior-nivel-na-serie-historica-aponta-serasa/",
       "source": "AJN1",
       "category": "companies",
       "tags": [
@@ -477,18 +535,18 @@
         "resultados",
         "m&a"
       ],
-      "publishedAt": "2026-06-13T19:30:18Z",
-      "updatedAt": "2026-06-13T19:30:18Z",
+      "publishedAt": "2026-06-13T19:30:00Z",
+      "updatedAt": "2026-06-13T19:30:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://ajn1.com.br/wp-content/uploads/2026/06/Brasil-712x370-1.webp"
     },
     {
       "id": "latest-ec6b82a9cc580cdc63a751dd",
       "title": "De Cury (CURY3) a Natura (NTCO3): as ações que mais ganharam e perderam no Ibovespa nesta semana",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUXBLZUtXSExiSGljWERlcEdULU9EWEtib2ZKQ0RaMlVpRnN5UUpXVzdmRGkzTWZVYmt1ZWRXRXdYb1FXaDJ2MjNkR25xZVQ4cHZoWHBRWnFKcE9uZ05SRlBxZl85aGFQUWtZNDIySlQ4MDByR0tsdmNRNkVLaXh3aDdWbG1GRkZTaHZSYjJHWHo2ZExzQ2VJeVppeFJoaHg4OEJGU0I4TVBSQVBWZVd5TmxubUE0WkN4eGxybmFmanQyRUJxbW1nbU1pRV9yb0lYbVlMRVRQNkZKR0VDQ0E?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "O Ibovespa avançou 1,25% na semana e encerrou a sexta-feira acima dos 171 mil pontos. Veja os destaques que movimentaram os mercados",
+      "details": "O Ibovespa avançou 1,25% na semana e encerrou a sexta-feira acima dos 171 mil pontos. Veja os destaques que movimentaram os mercados",
+      "url": "https://www.seudinheiro.com/2026/bolsa-dolar/cury-cury3-salta-e-natura-ntco3-lidera-a-ponta-negativa-veja-os-destaque-do-ibovespa-na-semana-lvgb/",
       "source": "Seu Dinheiro",
       "category": "latest",
       "tags": [
@@ -500,14 +558,14 @@
       "updatedAt": "2026-06-13T18:49:16Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://www.seudinheiro.com/uploads/2026/04/Imagens-Larissa-1200x675-66.jpg"
     },
     {
       "id": "companies-f568c8dd0da8d72df0a8c7fa",
       "title": "Cenário de crescimento das empresas no Brasil",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSnp2VUZEbm1RLTJSMEdCN0ZoY2dyaE1xeG5hbnB4dXJlOVkyY1llYUV0X0dZSzZObXN3NFFfUU1wWXpidnRZSHJzRkp3SEJ1eXgwRF9XSy0xVFBSYjZhbjBJVWstR2ZyTXUxYnNydm1IZ3pPSXgwNDBzeG1LWnpoVG00em0?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Atualizacao de empresas capturada em Monitor Mercantil.",
+      "details": "",
+      "url": "https://monitormercantil.com.br/cenario-de-crescimento-das-empresas-no-brasil/",
       "source": "Monitor Mercantil",
       "category": "companies",
       "tags": [
@@ -518,15 +576,14 @@
       "publishedAt": "2026-06-13T18:38:04Z",
       "updatedAt": "2026-06-13T18:38:04Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "funds-7670ec2376e43422e022c9f3",
       "title": "Novo contorno do processo administrativo sancionador da CVM",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcmNqMlBGY0NybkxYTVQtNkdYOWhTRmw2Y2FCSnNabDl0N0V2YURhNzBMNldFdEFWV3k2ekoxZTMzbnZKYkNWY2hza3FGTGc0a21WbE5WbkJ6ZUJqZkZKZVZpNFd1X2NHcnZCU1AxdkVZMUctcEh6WHlsdFQ3Z05wWFU4b2tBNHZYQWJldW05OEY1MlY0bVhfZEZkX0pvZkowTHc?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "A experiência internacional é clara: quando a máquina regulatória americana se move, ela não espera. Ela alcança quem está exposto",
+      "details": "A experiência internacional é clara: quando a máquina regulatória americana se move, ela não espera. Ela alcança quem está exposto",
+      "url": "https://www.estadao.com.br/amp/politica/blog-do-fausto-macedo/pcc-e-comando-vermelho-na-lista-do-terror-o-seu-compliance-esta-preparado/",
       "source": "Consultor Jurídico",
       "category": "funds",
       "tags": [
@@ -538,14 +595,14 @@
       "updatedAt": "2026-06-13T18:17:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/4ON2BDPLUBE7TNQEILBIFQYHT4.jpg?quality=80&auth=0905287d0e216d9d2602b99fb800f5c936a7ef9c55c48a60dd88ff084d75a08d&width=1200"
     },
     {
       "id": "latest-1514442f118e6fca54285722",
       "title": "Erro de comunicação gera confusão no Nubank: impacto para os clientes",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQY3BYT29xYmlmOENmTUtNd01SZ2EwdkhEMEpic05hLTJ1ZFd2UndTWU5oT0dYbDM3VEVoMVN4azRVTkQycFBNNHJUUl9kOW1kaTVKdDJhNy1Hck5mM0o3X3hya0FNMktUeThOQUpSbmlTZnpCOGFEMk9FMmN0TnowZWRCcG5YeWhTVUg0M2dBdVlnSFM0Y01zSEZvcnV5eF9pN05B?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Cofundadora do Nubank explica mensagem falsa sobre liquidação que alarmou clientes; entenda as consequências.",
+      "details": "Cofundadora do Nubank explica mensagem falsa sobre liquidação que alarmou clientes; entenda as consequências.",
+      "url": "https://diariodoestadogo.com.br/erro-de-comunicacao-gera-confusao-no-nubank-impacto-para-os-clientes/",
       "source": "Diário do Estado",
       "category": "latest",
       "tags": [
@@ -557,14 +614,14 @@
       "updatedAt": "2026-06-13T18:00:57Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/06/erro-de-comunicacao-gera-confusao-no-nubank3A-impacto-para-os-clientes.jpg"
     },
     {
       "id": "companies-6ffc91da1e0b44814a2b9bc9",
       "title": "PCC e Comando Vermelho na lista do terror: o seu compliance está preparado?",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOU1JsZHRDVGtWMkJpNDMzRU1DZ1JfMGZlb2lqX2pUNjR3LWEzLUVoQU9aRm41eVdMNjA1ZkpLRGtGMFRnUEpTZUlKWmlGbWp1YXl1VnhMMmphWThjNnBCYXVlbFZiMnB4bTRzeVR2dmRzbVAtV0tkNWdlX2RaeTdXaUFWS2Z4Y3h6bHpIQmlvM0ZnNERlZDl1a2R2YXNieDB1RFhwQTZXS3lmRlVkTHRldEpmMzE3ZHp5NmhaWWszUWc5c2hjQ3BXaUZxSnpFUTU4RFHSAdIBQVVfeXFMTlNSbGR0Q1RrVjJCaTQzM0VNQ2dSXzBmZW9pal9qVDY0dy1hMy1FaEFPWkZuNXlXTDYwNWZKS0RrRjBUZ1BKU2VJSlppRm1qdWF5dVZ4TDJqYVk4YzZwQmF1ZWxWYjJweG00c3lUdnZkc21QLVdLZDVnZV9kWnk3V2lBVktmeGN4emx6SEJpbzNGZzREZWQ5dWtkdmFzYngwdURYcEE2V0t5ZkZVZEx0ZXRKZjMxN2R6eTZoWllrM1FnOXNoY0NwV2lGcUp6RVE1OERR?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Sozinho, o setor do agro corresponde por um quarto de todo o Produto Interno Bruto (PIB) do Brasil, destaca reportagem de Oeste",
+      "details": "Sozinho, o setor do agro corresponde por um quarto de todo o Produto Interno Bruto (PIB) do Brasil, destaca reportagem de Oeste",
+      "url": "https://revistaoeste.com/agronegocio/infografico-a-importancia-do-agro-para-o-pib-brasileiro/",
       "source": "Estadão",
       "category": "companies",
       "tags": [
@@ -576,14 +633,14 @@
       "updatedAt": "2026-06-13T18:00:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://medias.revistaoeste.com/wp-content/uploads/2026/06/agro-agronegocio-pib-dinheiro.jpg"
     },
     {
       "id": "macro-dc8332ae2eb2ba301ba2090c",
       "title": "Infográfico: a importância do agro para o PIB brasileiro",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxON1l2WmxpcVBUSEpFdkJxbzYtRGRTNXJhdmlueFE5clhhbUZ6LVJ1eWJFbjJjMFhDN3hWSVk1S0RsTEY1UEhYdDFJeGtkS3AxSi1XR2UyQ0VqRVpBcFQ5UDRobkw1RkpPTDVPeDNKVEU2UGhwQ09aaE5DSTQ3clJvYVZQMUtSZzU3UHVOUXpOQ0drYlFRTERuNw?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Nova disciplina do processo administrativo sancionador da CVM denota efeitos que vão além da esfera estritamente processual",
+      "details": "Nova disciplina do processo administrativo sancionador da CVM denota efeitos que vão além da esfera estritamente processual",
+      "url": "https://www.conjur.com.br/2026-jun-13/o-novo-contorno-do-pas-cvm-e-o-onus-regulatorio-da-diligencia/",
       "source": "Revista Oeste",
       "category": "macro",
       "tags": [
@@ -595,14 +652,14 @@
       "updatedAt": "2026-06-13T18:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://www.conjur.com.br/wp-content/uploads/2020/11/cvm-logo.jpeg"
     },
     {
       "id": "macro-d6acc354142eafc109795b9b",
       "title": "Inflação de maio supera a meta no acumulado e El Niño acende alerta para BC, apontam economistas",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPNEozd04tQUM2dFdBYkhIMDZYcjJzYnBRQUk1Z3hFeTNZWi1UNU9GNmRXSmc1T2VFZ2loWFRBbExyVkxIM3JFX0xVTjFmM3c2NTZYTHlvSkhSVFdTT2o2V1dabFlHZDJza0xOeW02VVctdVZDRHZxMkNLNE5UYTdRR0FZVUJUdVBjR2JDMWY2UFFnRlhSd3Vob2U3dXRrT0ZoRE4zWmpwMlQwOGw3RnRQaHBZbzBJbVNlaEdZTXBFYXRFbUFtLVJ6cTBLREFxa29hYXU5WVVxem9QalpWZFRkNW44NHBvZ9IB9AFBVV95cUxNamJtM0l1R2tWdmg4aVVxZTN5Unk5Y2x1VGEtVVJJV29kY0tKRDZVZmgwLXBrXy1kRGVIS1pSaExEdTk3UXhrYnhGdmc3UWlEUmttNkdXTFFoUW1JWFROVUxGVjBzTmRFSGl2T0xKNjd4VEJIcmJ3dUJ4cHFnRTRkMkpmajRPdU9MNjBmelJoejR0aHRiZEJTU2kwTFFYNjBHaEJWNFFnelo1OTloYnNQaXJHVTFuT0J1QW02YzZuMVVxS1J1eFFvMDhLMGlNNVg1SEo4YWM2UVdVZVF5a1pTaFVEbkpNUXNYSzZNckF0c3hsWldk?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Fenômeno climático deve ser novo desafio para continuidade do ciclo de corte de juros",
+      "details": "Fenômeno climático deve ser novo desafio para continuidade do ciclo de corte de juros",
+      "url": "https://valor.globo.com/brasil/noticia/2026/06/13/inflacao-de-maio-supera-a-meta-no-acumulado-e-el-nino-acende-alerta-para-bc-apontam-economistas.ghtml",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -614,14 +671,14 @@
       "updatedAt": "2026-06-13T17:38:31Z",
       "premium": true,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://s2-valor.glbimg.com/pN7n_XzZqJMaB9LamNYj9LoXqhE=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2025/U/s/3HcOjfTyS7XkyAZA8b2A/foto31esp-101-braz-a18.jpg"
     },
     {
       "id": "companies-259e11bd2563c8c2204db017",
       "title": "Anthropic chega ao Brasil com IA agêntica voltada para empresas",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPa1RjeldCRUlkMEtpOVViVFJaVkRpM1preWVRd2NVSEtYdE00SUpEaEliWUdIMnRQVE9BczVYVzcxQmpFUUFXNnJlMERJcWdrWGFpWk5oMVlTSHROaTRPOEx2ejEtQVRNdFBQVnpvZzhGRHRQcHFYVFJkVUhDVEVKSS0wMEpXYjJrQlk3Z2JTU19sS3UyMGRRZEVpWGNqbEozazBkYzVpaGhueHh5Z3hkQXBCMk9Xd0g1MWZoUmNRMA?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Veja no Mundo Conectado como a Anthropic e a IA Claude chegam ao mercado corporativo brasileiro com agentes autônomos.",
+      "details": "Veja no Mundo Conectado como a Anthropic e a IA Claude chegam ao mercado corporativo brasileiro com agentes autônomos.",
+      "url": "https://www.mundoconectado.com.br/inteligencia-artificial/anthropic-chega-ao-brasil-com-ia-agentica-voltada-para-empresas/",
       "source": "Mundo Conectado",
       "category": "companies",
       "tags": [
@@ -633,14 +690,14 @@
       "updatedAt": "2026-06-13T17:20:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "imageUrl": "https://www.mundoconectado.com.br/wp-content/uploads/2026/06/Anthropic-brasil.webp"
     },
     {
       "id": "companies-d6c20d106552f39ddf3830d7",
       "title": "Migração de empresas para Paraguai virou um número crítico",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMmktT3JMVUdPRURGbWhtT2tHdDVrbS1jN1hXNElHREp2dlgya1l4NjBCOVRZVmQ2Y1I5MkZvQlN2WFpvemhRRjVHZFdhU2pSMnhvLVRYZHdubFpqNklVMXBNUmdpWk80aGZ3OGhwcFhWeGxIMEZBOHZLYmhzNE9tTTB3Vy1qZVkwZ0NPXw?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Atualizacao de empresas capturada em Acionista.com.br.",
+      "details": "",
+      "url": "https://acionista.com.br/migracao-de-empresas-para-paraguai-virou-um-numero-critico/",
       "source": "Acionista.com.br",
       "category": "companies",
       "tags": [
@@ -651,34 +708,33 @@
       "publishedAt": "2026-06-13T17:12:29Z",
       "updatedAt": "2026-06-13T17:12:29Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "latest-852d74e562a60cd23187961d",
-      "title": "Mercado vê Selic de 13,5% em 2026 após nova revisão",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1xWHZqWE0wYWg5eFRGOWtYTTNsVmxoc0pBRVNFOVQzRDhpVlpoNTNWeV9EVjBUZmFWR2JGTkhwQkJVYmpaRFFDSG1PdmM4dHVVakxfNHEzQzJJajljVnlveVYyMlhHbDJscnlpZ09uSQ?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
-      "source": "Seu Crédito Digital",
-      "category": "latest",
+      "id": "funds-b6255447686a805d68949989",
+      "title": "EMA 22/55/89/100/150/200 — Indicador de gulamambiashaikh",
+      "summary": "This indicator plots six Exponential Moving Averages (EMAs) on the price chart to help identify trend direction, dynamic support and resistance levels, and the overall market structure. Included EMAs: • EMA 22 – Short-term trend • EMA 55 – Medium-term trend • EMA 89 – Intermediat",
+      "details": "This indicator plots six Exponential Moving Averages (EMAs) on the price chart to help identify trend direction, dynamic support and resistance levels, and the overall market structure. Included EMAs: • EMA 22 – Short-term trend • EMA 55 – Medium-term trend • EMA 89 – Intermediate trend • EMA 100 – Long-term trend conf",
+      "url": "https://br.tradingview.com/script/HHLeOs6U-EMA-22-55-89-100-150-200/",
+      "source": "TradingView",
+      "category": "funds",
       "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
+        "fundos",
+        "asset",
+        "fiis"
       ],
-      "publishedAt": "2026-06-13T17:00:00Z",
-      "updatedAt": "2026-06-13T17:00:00Z",
+      "publishedAt": "2026-06-13T17:05:44Z",
+      "updatedAt": "2026-06-13T17:05:44Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://s3.tradingview.com/h/HHLeOs6U_big.png?v=1781370347"
     },
     {
       "id": "macro-6e553ce396e9ccc902335344",
       "title": "El Niño ameaça economia da Paraíba com impacto na agricultura, inflação e energia",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTHQ5MTJhV3lwNmpNRXByREdZYXI3bzNUT1NFdUVOUTJWaHB5VU9pRFBIVTA2UXFzR2l3bko3NU9qTTdKTzlGcGlCcENSM2ZueXZHeUxPMjI5TzEtT2lCQ0xNZkpiVXZ4cWd4aGx0NFdZU3FEaXNWRXJWdXA4aFhNWmdON1h0UTdUbUh2ZFpJVDQ2ejlQM29rczJxcHZBRWpuUGtmZkxzbVhwREcyOUhYM1lB?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Atualizacao de macro capturada em Paraíba Business.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTHQ5MTJhV3lwNmpNRXByREdZYXI3bzNUT1NFdUVOUTJWaHB5VU9pRFBIVTA2UXFzR2l3bko3NU9qTTdKTzlGcGlCcENSM2ZueXZHeUxPMjI5TzEtT2lCQ0xNZkpiVXZ4cWd4aGx0NFdZU3FEaXNWRXJWdXA4aFhNWmdON1h0UTdUbUh2ZFpJVDQ2ejlQM29rczJxcHZBRWpuUGtmZkxzbVhwREcyOUhYM1lB?oc=5",
       "source": "Paraíba Business",
       "category": "macro",
       "tags": [
@@ -689,46 +745,43 @@
       "publishedAt": "2026-06-13T17:00:00Z",
       "updatedAt": "2026-06-13T17:00:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "macro-51272cb0f05a30f8751ee607",
+      "id": "latest-aaed302eca528cd0c04c2384",
       "title": "Dois pesos e duas medidas: como a imprensa e a Faria Lima ignoraram a inflação de Bolsonaro e amplificam a de Lula",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTUJTTjJValBSQjVmTDM0ZzYwVHBGeWd1Z2VTbzhJZGJVVFg0RVVEN0EwV1JBR2dQdk1WdWFyR0VHX2JKU2N1V3VMeXJVdHp6Q2M3Sm9ac2hZdl81Yy1aeVRxcGNQeExVXzVxY09zZ0pJRGFvQm01NE9penVwZ3lNYkY4Q2cyeUh4elhGdlVKckhpUUFlajZ6YXBrb0FKbEhzS2ZWNi1tOVBiWGlrZEJrenlCWjhOdmhRNEdqUzNMR2ZWQW1vTVh5dlpHTWlaSVNiX2szSXZxcWNLNmloOUxuV1E2YUI?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
+      "summary": "Atualizacao de ultima hora capturada em Revista Fórum.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOTUJTTjJValBSQjVmTDM0ZzYwVHBGeWd1Z2VTbzhJZGJVVFg0RVVEN0EwV1JBR2dQdk1WdWFyR0VHX2JKU2N1V3VMeXJVdHp6Q2M3Sm9ac2hZdl81Yy1aeVRxcGNQeExVXzVxY09zZ0pJRGFvQm01NE9penVwZ3lNYkY4Q2cyeUh4elhGdlVKckhpUUFlajZ6YXBrb0FKbEhzS2ZWNi1tOVBiWGlrZEJrenlCWjhOdmhRNEdqUzNMR2ZWQW1vTVh5dlpHTWlaSVNiX2szSXZxcWNLNmloOUxuV1E2YUI?oc=5",
       "source": "Revista Fórum",
-      "category": "macro",
+      "category": "latest",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
+        "mercado",
+        "bolsa",
+        "macro"
       ],
       "publishedAt": "2026-06-13T16:52:21Z",
       "updatedAt": "2026-06-13T16:52:21Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-6efaf3c6f755a71dc1bced59",
-      "title": "Prêmio Nacional de Educação Fiscal abre inscrições; saiba mais sobre cidadania - Viva Educação | CV Play",
-      "summary": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "details": "Cobertura jornalística abrangente e atualizada, agregada de fontes do mundo inteiro pelo Google Notícias.",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQd3BXLTJ2NjkyYmh2eTR6NUlVVXMxZGpLcDUxOG5sb0Jobjh6U0FrWmVPY3QyTmdMTU5nOUI4T092eUwzRmVGaFVOX2hLYXRGcGQ1NFgyMHJkczFrSTJKZTZpdTZpYUdyc28wNzdaMXhrZVNJTklNdmc4NHpDRnEzRE9KZ0xNSTJ1YTZvaW5tOGlZQ3JjSU1xbmtHeXBTYVdWSEJiSUY0QTE5d0tXWHktQVZSWHR1dEtN?oc=5&hl=pt-BR&gl=BR&ceid=BR:pt-419",
-      "source": "CidadeVerde.com",
+      "id": "macro-b80dbe3c65f28859202640b3",
+      "title": "Entrevista: inflação em maio fica acima do teto da meta",
+      "summary": "Atualizacao de macro capturada em G1.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPSnREelNVb1p6empVT1pWbVVnV05ReU1NcWtFMDRSOVpYdGdpTDVKU1NsM01EaHMzZHFNRDZzSW1nWlI0ZXVJVlRtY2gtdDZwNFN0X20yd3YxQmttVGdOM2pEU1QtaDFhOXIxb2h5YzJNTFJJNVl4d25qZTVLcVN2aFBYdWZnMFNHR3hHQVFLU1pvN2JtUnExRy1DTmdPMExPNjR3N3VnMXdZVmpfR1FqUzgwT0tiY1E4VEZjMUFzWnR0bDJLaU5Ld2Z1b3pscGg3d3JN0gHiAUFVX3lxTE1zQnFtRlQ4SVFxenBHVVJUcDVQOXdBanFvLVF3ek45TUJoOExxOFpSVHROWUc0c2ZNenY5M05JalAxcUlxN2Mxem9laW81YS1UQV95NXFvenFYVkJfZS1HNmFmdGl2TUpaWlBqeGNIQXlnSTUzdjlseFFtQWhLeXNXMm5PR2hvT0FEWVMxSlpZMVBNeFFOc1l4aGYtM3hBQnBsY2FiRk1BV0MyVFFlalVKemczcnZGNjhGNnVidXloR3lQNmxpSEl6VkM1bFVFYjNURGIyM3ZpaXNLZTIxV3dWVEE?oc=5",
+      "source": "G1",
       "category": "macro",
       "tags": [
         "macro",
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-06-13T16:00:00Z",
-      "updatedAt": "2026-06-13T16:00:00Z",
+      "publishedAt": "2026-06-13T16:09:37Z",
+      "updatedAt": "2026-06-13T16:09:37Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-6f9da9cf0d9f8d09780c54ec",
@@ -819,24 +872,6 @@
       "updatedAt": "2026-06-13T14:34:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-62ef84f647efe911df0b99aa",
-      "title": "Cibersegurança já entrou na conta do PIB",
-      "summary": "Atualizacao de macro capturada em TI INSIDE Online.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVi1QQWE1N3QxY2VIVm5jcTlqLThMYjJZbDFFZUdicDl3MEhCUGp6TGdHajlvdUUwVDdSMVhOMzVRTmpGeXdGNWs0WDJzeWZBaUNzRTVra0Y1Z3M0OW1sbmpvOERTQzJtN29uOUNNaVVmRXRFQS1tZmVZZjVJQmYwY1Z3?oc=5",
-      "source": "TI INSIDE Online",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-13T14:28:10Z",
-      "updatedAt": "2026-06-13T14:28:10Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-723da9d4e4a196273ee2904f",
@@ -1073,24 +1108,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "macro-3732631eed7f43974ec51ed7",
-      "title": "MERCADO IMOBILIÁRIO EM SALVADOR SUPERA SÃO PAULO E RIO E REGISTRA ALTA ACIMA DA INFLAÇÃO",
-      "summary": "Bahia Economica",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOX283RFNTS3JpbFQyYnRTZ0w2NzF4UHdnUVl6dzJUaFNsSmFZTWtod0sxTnhfdEJqVF9KMDZ2Ulp0UmhwYzFyVnE5cjd6ckYxTlVlLVFPTm92c084LTFjQnQ1djVHdlhuZGtCdmJRcXpjTWNLTGlzMTFJZUtrUkQ4bmdNQ3d1WUFhb19ySjJLaW5YU0NwNGhHcTRsVFo1enEzbVJHaGh4T3B4d0tUYWQ0cEZRU1FrX1RTMHZWOVpzQmZ6OUNCYWYwZ2JubnlFdw?oc=5",
-      "source": "- Bahia Economica",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-13T11:55:00Z",
-      "updatedAt": "2026-06-13T11:55:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "macro-0e275be896eefe9252f6c3f2",
       "title": "Por que um acordo com o Irã pode não ser dovish para o Fed",
       "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
@@ -1107,24 +1124,6 @@
       "updatedAt": "2026-06-13T11:46:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "latest-853f2ad360e2c101a04b6e64",
-      "title": "Taxa de juros superior à média não basta para configurar abuso de banco",
-      "summary": "Atualizacao de ultima hora capturada em Consultor Jurídico.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZUY1TWI5U1JPaDBPU25UNlU0bmNGMHJXcjdKR0NSeDdHTEh1RU9CQmROZmhGVFRDMVBRSkNhYkhXN2pDMGhMMGV6Nnc1bWNHc3dZeXk5bHhFVktwUkktVExlb2Z3d2UtZ0piVnJkU081cjh0V29vMnhuTlFubXVOY3FseHM2WjJBLUlOYm9RSmlSNUJFWVpSRi1BclZNcVdybzFSRG5IdV9qb1RmdUdj?oc=5",
-      "source": "Consultor Jurídico",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-06-13T11:23:00Z",
-      "updatedAt": "2026-06-13T11:23:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-c4d4ee68e6a34e9a2435e9b0",
@@ -1145,6 +1144,24 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
+      "id": "macro-3d04b017ded49ba77adbcaf2",
+      "title": "Em alerta vermelho ao governo, TCU faz críticas contundentes à situação fiscal do país",
+      "summary": "Atualizacao de macro capturada em VEJA.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPU2h5TWFTYnZYWUpZXzM4cEJPUGdSUlY4WEVGMXFMWHRfWEd6TXpZbmo2enNoMUtXQUZPeV9tOExfNEhrM05QMFAtRzdjVkRvMnd5MzEyLW1PMEZTQmsyVE5ESUNqWFlqUEtpa3dnRnc5OTliNmd1Q1pYLWZlRmdhWHFEaUN2VG1zc0xCeVppNUtPLUtlMTdlT1JCX3NQaTNEdWhua0Q3emFoaTd0dFZMdmpOb05qVUFGZk1XQ0pR?oc=5",
+      "source": "VEJA",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-13T11:00:46Z",
+      "updatedAt": "2026-06-13T11:00:46Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
       "id": "funds-b26e416af03dad83d2fc93f8",
       "title": "Mercado escalaria o time titular do Brasil para o jogo de hoje",
       "summary": "Atualizacao de fundos capturada em Portal Tela.",
@@ -1161,24 +1178,6 @@
       "updatedAt": "2026-06-13T10:41:01Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "latest-100cba8d2e4d393ae326a445",
-      "title": "Astros e mercado: previsões financeiras para 13/06",
-      "summary": "Atualizacao de ultima hora capturada em SpaceMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFByRWVEVng3NzJrQUJ0YUVNaWZ6dVFIdlRyQzUxdWoyQlpGZmZBbUdHb1pnYlFjX3ZXbm1OblVuNUZ6TmE5aldma0VuVmZIWGpHRnNRVlBqU3JpQjFYaFlNMXlGQzdRUVVYblUxMEFFY1UxcmM3eHAyNjB3WXQ?oc=5",
-      "source": "SpaceMoney",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-06-13T10:00:42Z",
-      "updatedAt": "2026-06-13T10:00:42Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "funds-5e3d13e53426f2f1071411c3",
@@ -1361,20 +1360,20 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-66766dd504a82a630511cb32",
-      "title": "Acordo de cooperação entre MCTI e Pacto Global da ONU - Rede Brasil fortalece agenda de adaptação climática…",
-      "summary": "Atualizacao de empresas capturada em Portal Revista Kdea 360.",
+      "id": "companies-0e0530d0ec0ddc2ec43b5b68",
+      "title": "Startups: “Geração de startups brasileiras nasce global”, diz Acher, da Monashees",
+      "summary": "Atualizacao de empresas capturada em InfoMoney.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNUVdnTnVYQW91Vk9UT2toTEVPeHIzT1RJLVF4ZVJzV01OUVBka0dJdkh5b2lfcFBiWHBmbW5RQTg2Mi1Udjd3c3Zwa01ybDkyb1JtSjdLeXE1Q2ZKazFKbjJ2N3JqOEU1R1VWdlVSdmJBR01lZ2ZnQ09ncGdDTEdNRHQ1M2R5Rm92VlQ5QnZQSWY2Wi1INjVCTFk0d0sxZjNmWXl1UVNGRVNpUmlTU0FGcldySnQ0Q01DWFZOSWZ3STdiT0l3TlJxeHcxdDN6OVh1dDBIZkQ2Zm1uVzF3anc1SDlYWlFsZ05raGV5QlZpdC1HVVBuRVVrVUcxRGQtU2gwU2hxYg?oc=5",
-      "source": "Portal Revista Kdea 360",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWjdvOVF4R2xRTFBCVFFqNDZveGVsQi1JbnBRVjJNeXVMeEpHMXBNV1ZDTkNTVUNWaHRHSENENmM0ZUZXRXNFMTlQM1VyVkdNZTRTTWd2TDZyWFdHdUZ0RmQ0OHJhRVZienlZOWVrUEpBZUw4REpZel9SYTZmN1hGdUR6YlhFNERyc3N2UDBRZFpRZ1RwUU1iSG5RQWttR3pBR21hc3NiZ0hQczRGSE9ra0hRczZQQdIBuwFBVV95cUxPUjFEalN6TjBRN3FZSzBGcWhDSlE3bld4dkdMNDhJQlpvdHl2dnE5eW8teU1RdGhTaHp5YmIyeVM2d3JKVDU2RE81Nk5vNzUyWUF0VWo2b2hQR3BtenZ5bm5Sc1BHdHJueHlVZG5sUzVjc2dRWkExV1Y0ZHgydWIyaGVkUFd5aDh2ZEI5eTdzM09FUUJSbmVGR0t4Z19GSjdRZ2ZZaXJOQkFyZjlWc2Nvc2tYVGFQYWpIVjBv?oc=5",
+      "source": "InfoMoney",
       "category": "companies",
       "tags": [
         "empresas",
         "resultados",
         "m&a"
       ],
-      "publishedAt": "2026-06-12T21:23:38Z",
-      "updatedAt": "2026-06-12T21:23:38Z",
+      "publishedAt": "2026-06-12T21:00:00Z",
+      "updatedAt": "2026-06-12T21:00:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     }
