@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-20T14:40:24Z",
-  "generatedAt": "2026-06-20T14:40:24Z",
+  "updatedAt": "2026-06-20T16:14:45Z",
+  "generatedAt": "2026-06-20T16:14:45Z",
   "categories": [
     {
       "id": "all",
@@ -24,6 +24,10 @@
     }
   ],
   "sources": [
+    {
+      "id": "a-hora-do-sul",
+      "label": "A Hora do Sul"
+    },
     {
       "id": "agenda-do-poder",
       "label": "Agenda do Poder"
@@ -53,10 +57,6 @@
       "label": "Correio Braziliense"
     },
     {
-      "id": "correio-dos-munic-pios",
-      "label": "Correio dos Municípios"
-    },
-    {
       "id": "defesa-em-foco",
       "label": "Defesa em Foco"
     },
@@ -77,14 +77,6 @@
       "label": "EuQueroInvestir"
     },
     {
-      "id": "folha-pe",
-      "label": "Folha PE"
-    },
-    {
-      "id": "folhaestado-com-br",
-      "label": "folhaestado.com.br"
-    },
-    {
       "id": "icl-not-cias",
       "label": "ICL Notícias"
     },
@@ -93,16 +85,16 @@
       "label": "InfoMoney"
     },
     {
+      "id": "investidor10",
+      "label": "Investidor10"
+    },
+    {
       "id": "investing-com-brasil-finan-as-c-mbio-e-investimentos",
       "label": "Investing.com Brasil - Finanças, Câmbio e Investimentos"
     },
     {
       "id": "jornal-correio",
       "label": "Jornal Correio"
-    },
-    {
-      "id": "jornal-do-vale",
-      "label": "JORNAL DO VALE"
     },
     {
       "id": "jornal-grande-bahia",
@@ -173,12 +165,12 @@
       "label": "SpaceMoney"
     },
     {
-      "id": "tradingkey",
-      "label": "TradingKey"
+      "id": "times-brasil-cnbc",
+      "label": "Times Brasil | CNBC"
     },
     {
-      "id": "tribuna-do-agreste",
-      "label": "Tribuna do Agreste"
+      "id": "tradingkey",
+      "label": "TradingKey"
     },
     {
       "id": "tribuna-do-sert-o",
@@ -187,10 +179,6 @@
     {
       "id": "uol-economia",
       "label": "UOL Economia"
-    },
-    {
-      "id": "uol-not-cias",
-      "label": "UOL Notícias"
     },
     {
       "id": "valor-econ-mico",
@@ -207,11 +195,68 @@
   ],
   "items": [
     {
-      "id": "macro-dd5d8ca8dc701ddbeabac81b",
-      "title": "Diretora do Fed desrespeita quarentena em evento do setor privado. Entenda o caso",
+      "id": "macro-88cbc93711ef9c2af368b3b3",
+      "title": "Ibovespa cai 1,64% na semana com Copom, Fed e quebra do acordo EUA-Irã; veja os destaques",
       "summary": "Michelle Bowman participou de jantar logo depois da reunião do banco central dos EUA sobre juros",
       "details": "Michelle Bowman participou de jantar logo depois da reunião do banco central dos EUA sobre juros",
       "url": "https://oglobo.globo.com/economia/noticia/2026/06/20/diretora-do-fed-desrespeita-quarentena-em-evento-do-setor-privado-entenda-o-caso.ghtml",
+      "source": "Investidor10",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-20T15:42:17Z",
+      "updatedAt": "2026-06-20T15:42:17Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://s2-oglobo.glbimg.com/7BHUVS9Ca2hPcwCmJDoq67i5sU0=/4000x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/0/c/A4U2tHQWi8MCWp4DtNsQ/diretor-do-fed.jpg"
+    },
+    {
+      "id": "latest-43fc472dca31a125713d9ed0",
+      "title": "Taxa de juros no Brasil é alta porque a economia ainda é indexada à inflação, diz Henrique Meirelles",
+      "summary": "...",
+      "details": "...",
+      "url": "https://investidor10.com.br/noticias/ibovespa-cai-1-64-na-semana-com-copom-fed-e-quebra-do-acordo-eua-ira-veja-os-destaques-121006/",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-06-20T15:00:00Z",
+      "updatedAt": "2026-06-20T15:00:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://investidor10.com.br/storage/news/6a36b4807ffae.jpg"
+    },
+    {
+      "id": "macro-9a136c9563c3cdf1f02be165",
+      "title": "Copom completa 3 décadas de mudanças, com turbulências e amadurecimento",
+      "summary": "Ex-presidente do BC afirma que autoridade monetária não tem como interferir em determinadas variáveis e levar a Selic a patamares muito mais baixos do que tivemos nos últimos anos",
+      "details": "Ex-presidente do BC afirma que autoridade monetária não tem como interferir em determinadas variáveis e levar a Selic a patamares muito mais baixos do que tivemos nos últimos anos",
+      "url": "https://www.estadao.com.br/economia/entrevista-bc-copom-henrique-meirelles-selic-alta-indexacao-credito-direcionado/",
+      "source": "Estadão",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-20T15:00:00Z",
+      "updatedAt": "2026-06-20T15:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/HXAUU2UB4ZEURERMQX7XCH66ZQ.jpg?quality=80&auth=032d300cbcd1df15f55299863c48e6ead1e2a3d3365f67e27f80f1b376d02ac8&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "macro-dd5d8ca8dc701ddbeabac81b",
+      "title": "Diretora do Fed desrespeita quarentena em evento do setor privado. Entenda o caso",
+      "summary": "Colegiado tornou-se uma das instituições mais influentes do sistema financeiro brasileiro",
+      "details": "Colegiado tornou-se uma das instituições mais influentes do sistema financeiro brasileiro",
+      "url": "https://www.estadao.com.br/economia/copom-completa-3-decadas-de-mudancas-com-turbulencias-e-amadurecimento/",
       "source": "O Globo",
       "category": "macro",
       "tags": [
@@ -223,14 +268,14 @@
       "updatedAt": "2026-06-20T14:31:53Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-oglobo.glbimg.com/7BHUVS9Ca2hPcwCmJDoq67i5sU0=/4000x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/0/c/A4U2tHQWi8MCWp4DtNsQ/diretor-do-fed.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/BKZMLJJP2BP47NL5XYGNWWCERU.png?quality=80&auth=dfcbf960f6df87253bd5d73cb8a6bb424f4a30c449c81905bd9e956ba8d87801&width=1200&height=630&smart=true"
     },
     {
       "id": "latest-34e2f872dd58b6168713078e",
       "title": "Taxas atingem recorde diante de riscos fiscais",
-      "summary": "Descubra as últimas novidades sobre Wall Street, incluindo ganhos e perdas dos índices de Nova York e declarações de investidores.",
-      "details": "Descubra as últimas novidades sobre Wall Street, incluindo ganhos e perdas dos índices de Nova York e declarações de investidores.",
-      "url": "https://www.moneytimes.com.br/salto-de-wall-street-rasteira-do-federal-reserve-e-falas-do-maior-investidor-da-bolsa-brasileira-veja-as-materias-mais-lidas-no-money-times-rens/",
+      "summary": "Juros futuros de DI com vencimentos mais longos estão próximos de 15% ao ano, destacando o interesse do mercado por renda fixa. Títulos públicos indexados à ...",
+      "details": "Juros futuros de DI com vencimentos mais longos estão próximos de 15% ao ano, destacando o interesse do mercado por renda fixa. Títulos públicos indexados à ...",
+      "url": "https://www.portaltela.com/noticias/economia/2026/06/20/taxas-atingem-recorde-diante-de-riscos-fiscais/",
       "source": "Portal Tela",
       "category": "latest",
       "tags": [
@@ -242,14 +287,14 @@
       "updatedAt": "2026-06-20T14:18:33Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/06/mercado-morning-ibovespa-wall-street.jpg"
+      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/06/ChatGPT-Image-20-de-set.-de-2025-19_18_22.jpg"
     },
     {
       "id": "macro-66b4cd0624f410d7c43c09df",
       "title": "Especialista aponta desafio fiscal para próximo governo",
-      "summary": "Juros futuros de DI com vencimentos mais longos estão próximos de 15% ao ano, destacando o interesse do mercado por renda fixa. Títulos públicos indexados à ...",
-      "details": "Juros futuros de DI com vencimentos mais longos estão próximos de 15% ao ano, destacando o interesse do mercado por renda fixa. Títulos públicos indexados à ...",
-      "url": "https://www.portaltela.com/noticias/economia/2026/06/20/taxas-atingem-recorde-diante-de-riscos-fiscais/",
+      "summary": "O economista defendeu a redução do ritmo de expansão dos gastos obrigatórios e uma avaliação mais rigorosa da efetividade das políticas públicas.",
+      "details": "O economista defendeu a redução do ritmo de expansão dos gastos obrigatórios e uma avaliação mais rigorosa da efetividade das políticas públicas.",
+      "url": "https://veronoticias.com/economia/especialista-aponta-desafio-fiscal-para-proximo-governo/",
       "source": "Vero Notícias",
       "category": "macro",
       "tags": [
@@ -261,33 +306,33 @@
       "updatedAt": "2026-06-20T14:15:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/06/ChatGPT-Image-20-de-set.-de-2025-19_18_22.jpg"
+      "imageUrl": "https://veronoticias.com/wp-content/uploads/2024/12/Banco-Central.jpg"
     },
     {
-      "id": "funds-058d099d4e2181b9cab703df",
-      "title": "PF diz que apartamento para Jaques Wagner seguiu mesmo modelo de propina para ex-presidente do BRB",
-      "summary": "O economista defendeu a redução do ritmo de expansão dos gastos obrigatórios e uma avaliação mais rigorosa da efetividade das políticas públicas.",
-      "details": "O economista defendeu a redução do ritmo de expansão dos gastos obrigatórios e uma avaliação mais rigorosa da efetividade das políticas públicas.",
-      "url": "https://veronoticias.com/economia/especialista-aponta-desafio-fiscal-para-proximo-governo/",
-      "source": "Estadão",
-      "category": "funds",
+      "id": "macro-1456058d076c7729b22db617",
+      "title": "Construção Civil representa 8,1% do PIB de Pelotas",
+      "summary": "Com DI próximo de 15% e títulos indexados à inflação oferecendo ganho real acima de 8%, investidores encontram oportunidades na renda fixa",
+      "details": "Com DI próximo de 15% e títulos indexados à inflação oferecendo ganho real acima de 8%, investidores encontram oportunidades na renda fixa",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/taxas-batem-recorde-em-meio-a-riscos-fiscais/",
+      "source": "A Hora do Sul",
+      "category": "macro",
       "tags": [
-        "fundos",
-        "asset",
-        "fiis"
+        "macro",
+        "juros",
+        "inflacao"
       ],
-      "publishedAt": "2026-06-20T14:08:00Z",
-      "updatedAt": "2026-06-20T14:08:00Z",
+      "publishedAt": "2026-06-20T14:11:00Z",
+      "updatedAt": "2026-06-20T14:11:00Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://veronoticias.com/wp-content/uploads/2024/12/Banco-Central.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/09/ChatGPT-Image-20-de-set.-de-2025-19_18_22.png?w=1200&h=630&crop=1"
     },
     {
       "id": "macro-58f8c02820f2116ecc66a5f8",
       "title": "Salto de Wall Street, ‘rasteira’ do Federal Reserve e falas do maior investidor da bolsa brasileira: Veja as matérias mais lidas no Money Times",
-      "summary": "Pense bem, pense CNN - Notícias ao vivo, fatos da política nacional e internacional no maior canal de notícias do mundo!",
-      "details": "Pense bem, pense CNN - Notícias ao vivo, fatos da política nacional e internacional no maior canal de notícias do mundo!",
-      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/taxas-batem-recorde-em-meio-a-riscos-fiscais/",
+      "summary": "Descubra as últimas novidades sobre Wall Street, incluindo ganhos e perdas dos índices de Nova York e declarações de investidores.",
+      "details": "Descubra as últimas novidades sobre Wall Street, incluindo ganhos e perdas dos índices de Nova York e declarações de investidores.",
+      "url": "https://www.moneytimes.com.br/salto-de-wall-street-rasteira-do-federal-reserve-e-falas-do-maior-investidor-da-bolsa-brasileira-veja-as-materias-mais-lidas-no-money-times-rens/",
       "source": "Money Times",
       "category": "macro",
       "tags": [
@@ -299,14 +344,14 @@
       "updatedAt": "2026-06-20T14:01:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/themes/master-theme/assets/img/fallbackImage.jpg"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/06/mercado-morning-ibovespa-wall-street.jpg"
     },
     {
       "id": "latest-c85272d544629724ae92c5d7",
       "title": "Taxas batem recorde em meio a riscos fiscais",
-      "summary": "Gabrielly Barreto&nbsp;A Secretaria de Estado da Fazenda de Alagoas (Sefaz-AL) realizou, nesta sexta-feira (19), o terceiro sorteio de 2026 da Nota Fiscal Ci...",
-      "details": "Gabrielly Barreto&nbsp;A Secretaria de Estado da Fazenda de Alagoas (Sefaz-AL) realizou, nesta sexta-feira (19), o terceiro sorteio de 2026 da Nota Fiscal Ci...",
-      "url": "https://correiodosmunicipios-al.com.br/geral/2026/06/20/191757-nota-fiscal-cidada-realiza-terceiro-sorteio-de-2026-e-distribui-r-2-milhoes-em-premios",
+      "summary": "Reconduzido à presidência do Sinduscon, Marcos Fontoura aponta o planejamento urbano e segurança jurídica como desafios - A Hora do Sul",
+      "details": "Reconduzido à presidência do Sinduscon, Marcos Fontoura aponta o planejamento urbano e segurança jurídica como desafios - A Hora do Sul",
+      "url": "https://ahoradosul.com.br/conteudos/2026/06/20/construcao-civil-representa-81-do-pib-de-pelotas/",
       "source": "CNN Brasil",
       "category": "latest",
       "tags": [
@@ -318,26 +363,7 @@
       "updatedAt": "2026-06-20T14:00:17Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://img.dhost.cloud/qWNl59WmjtN7DVbskgdHHuECl4o=/825x545/smart/https://correiodosmunicipios.us-east-1.linodeobjects.com/uploads/imagens/nota-fiscal-cidada-realiza-terceiro-sorteio-de-2026-e-distribui-2-milhoes-em-premios.jpeg"
-    },
-    {
-      "id": "macro-eb87df059cd2db61ff967e38",
-      "title": "Nota Fiscal Cidadã realiza terceiro sorteio de 2026 e distribui R$ 2 milhões em prêmios",
-      "summary": "O Comitê de Política Monetária (Copom) do Banco Central (BC) decidiu nesta quarta-feira (17) reduzir a taxa básica de juros",
-      "details": "O Comitê de Política Monetária (Copom) do Banco Central (BC) decidiu nesta quarta-feira (17) reduzir a taxa básica de juros",
-      "url": "https://lealjunior.com.br/copom-reduz-a-taxa-basica-de-juros-da-economia-a-selic-de-1450-para-1425-ao-ano/",
-      "source": "Correio dos Municípios",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-20T13:55:40Z",
-      "updatedAt": "2026-06-20T13:55:40Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://lealjunior.com.br/wp-content/uploads/2026/06/image-2026-06-20T103350.802.webp"
+      "imageUrl": "https://cdn.ahoradosul.com.br/2026/06/JF-0788-scaled.jpg"
     },
     {
       "id": "companies-30e4f240d0dcc56dfa7b6036",
@@ -361,9 +387,9 @@
     {
       "id": "companies-0781f4d3958a05d590fe2f66",
       "title": "Ministério da Defesa leva 23 empresas brasileiras à Eurosatory 2026",
-      "summary": "Investigação aponta que sistemática adotada nos dois casos foi semelhante, com uso de fundos de investimento suspeitos de lavagem de dinheiro; senador negou irregularidades na operação e negou favorecimento indevido ao Master",
-      "details": "Investigação aponta que sistemática adotada nos dois casos foi semelhante, com uso de fundos de investimento suspeitos de lavagem de dinheiro; senador negou irregularidades na operação e negou favorecimento indevido ao Master",
-      "url": "https://www.estadao.com.br/politica/pf-diz-que-apartamento-para-jaques-wagner-seguiu-mesmo-modelo-de-propina-para-ex-presidente-do-brb/",
+      "summary": "O Ministério da Defesa (MD) marcou presença na Eurosatory 2026, uma das maiores feiras internacionais de Defesa e Segurança do mundo, levando uma expressiva",
+      "details": "O Ministério da Defesa (MD) marcou presença na Eurosatory 2026, uma das maiores feiras internacionais de Defesa e Segurança do mundo, levando uma expressiva",
+      "url": "https://www.defesaemfoco.com.br/ministerio-da-defesa-leva-23-empresas-brasileiras-a-eurosatory-2026/",
       "source": "Defesa em Foco",
       "category": "companies",
       "tags": [
@@ -375,14 +401,14 @@
       "updatedAt": "2026-06-20T13:40:12Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/RFU6SFQFAFDCJEUKJ6NK77P3YE.jpg?quality=80&auth=9d60a5712af0f6e0093543ecf5b571c29391f7fc73685d3fc7813f9e8ed13c68&width=1200&height=630&smart=true"
+      "imageUrl": "https://www.defesaemfoco.com.br/wp-content/uploads/2026/06/2026.06.19-Seprod-Eurosatory-2.jpg"
     },
     {
       "id": "latest-bb9e3be6f251d789af2e534f",
       "title": "Copom reduz a taxa básica de juros da economia, a Selic, de 14,50% para 14,25% ao ano",
-      "summary": "O Ministério da Defesa (MD) marcou presença na Eurosatory 2026, uma das maiores feiras internacionais de Defesa e Segurança do mundo, levando uma expressiva",
-      "details": "O Ministério da Defesa (MD) marcou presença na Eurosatory 2026, uma das maiores feiras internacionais de Defesa e Segurança do mundo, levando uma expressiva",
-      "url": "https://www.defesaemfoco.com.br/ministerio-da-defesa-leva-23-empresas-brasileiras-a-eurosatory-2026/",
+      "summary": "Tensões geopolíticas e inflação persistente impulsionam taxas americanas aos maiores níveis em 19 anos",
+      "details": "Tensões geopolíticas e inflação persistente impulsionam taxas americanas aos maiores níveis em 19 anos",
+      "url": "https://www.cnnbrasil.com.br/economia/mercado/juros-altos-nos-eua-preocupam-investidores-e-pressionam-mercados/",
       "source": "portal lj",
       "category": "latest",
       "tags": [
@@ -394,14 +420,14 @@
       "updatedAt": "2026-06-20T13:36:30Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.defesaemfoco.com.br/wp-content/uploads/2026/06/2026.06.19-Seprod-Eurosatory-2.jpg"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/Presidente-dos-EUA-Donald-Trump-na-Casa-Branca.jpg?w=1200&h=630&crop=1"
     },
     {
       "id": "funds-69911046cdfc84610ebad1d3",
       "title": "PF DIZ QUE APT PARA WAGNER SEGUIU MESMO MODELO DO EX-PRESIDENTE DO BRB",
-      "summary": "Tensões geopolíticas e inflação persistente impulsionam taxas americanas aos maiores níveis em 19 anos",
-      "details": "Tensões geopolíticas e inflação persistente impulsionam taxas americanas aos maiores níveis em 19 anos",
-      "url": "https://www.cnnbrasil.com.br/economia/mercado/juros-altos-nos-eua-preocupam-investidores-e-pressionam-mercados/",
+      "summary": "PF aponta que apartamento ligado a Jaques Wagner seguiu modelo semelhante ao investigado no caso Banco Master e BRB",
+      "details": "PF aponta que apartamento ligado a Jaques Wagner seguiu modelo semelhante ao investigado no caso Banco Master e BRB",
+      "url": "https://agendadopoder.com.br/banco-master-pf-ve-esquema-de-imovel-para-jaques-wagner-semelhante-ao-do-brb/",
       "source": "Bahia Já",
       "category": "funds",
       "tags": [
@@ -413,14 +439,14 @@
       "updatedAt": "2026-06-20T13:31:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/Presidente-dos-EUA-Donald-Trump-na-Casa-Branca.jpg?w=1200&h=630&crop=1"
+      "imageUrl": "https://agendadopoder.com.br/wp-content/uploads/2026/04/Jacques-Wagner.jpg"
     },
     {
       "id": "latest-60c86ef7585862b3dfbb44d7",
       "title": "Juros altos nos EUA preocupam investidores e pressionam mercados",
-      "summary": "PF aponta que apartamento ligado a Jaques Wagner seguiu modelo semelhante ao investigado no caso Banco Master e BRB",
-      "details": "PF aponta que apartamento ligado a Jaques Wagner seguiu modelo semelhante ao investigado no caso Banco Master e BRB",
-      "url": "https://agendadopoder.com.br/banco-master-pf-ve-esquema-de-imovel-para-jaques-wagner-semelhante-ao-do-brb/",
+      "summary": "Atualizacao de ultima hora capturada em CNN Brasil.",
+      "details": "",
+      "url": "https://br.investing.com/news/economy-news/bofa-explica-o-basico-sobre-como-monitorar-o-fed-1978687",
       "source": "CNN Brasil",
       "category": "latest",
       "tags": [
@@ -431,8 +457,7 @@
       "publishedAt": "2026-06-20T13:30:37Z",
       "updatedAt": "2026-06-20T13:30:37Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://agendadopoder.com.br/wp-content/uploads/2026/04/Jacques-Wagner.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-8585273f7074bd4fca7c5515",
@@ -458,7 +483,7 @@
       "title": "Banco Master: PF vê esquema de imóvel para Jaques Wagner semelhante ao do BRB",
       "summary": "Atualizacao de fundos capturada em Agenda do Poder.",
       "details": "",
-      "url": "https://br.investing.com/news/economy-news/bofa-explica-o-basico-sobre-como-monitorar-o-fed-1978687",
+      "url": "https://revistaforum.com.br/economia/programa-do-governo-do-brasil-que-colocou-70-bilhoes/",
       "source": "Agenda do Poder",
       "category": "funds",
       "tags": [
@@ -472,11 +497,30 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
+      "id": "macro-688bb27eff8b899c142b25fa",
+      "title": "Nota Fiscal Cidadã realiza terceiro sorteio de 2026 e distribui R$ 2 milhões",
+      "summary": "Com a receita total de prêmios de seguros atingindo VND 1,869 bilhão em 2025, um aumento de 12% em comparação com o ano anterior, o canal Agribank - ABIC Bancassurance continua a afirmar sua posição como um dos modelos de vinculação banco-seguro mais eficazes do mercado. Por trás",
+      "details": "Com a receita total de prêmios de seguros atingindo VND 1,869 bilhão em 2025, um aumento de 12% em comparação com o ano anterior, o canal Agribank - ABIC Bancassurance continua a afirmar sua posição como um dos modelos de vinculação banco-seguro mais eficazes do mercado. Por trás desses números de crescimento, estão nã",
+      "url": "https://www.vietnam.vn/pt/bancassurance-agribank-abic-diem-tua-tai-chinh-cho-khu-vuc-tam-nong-bai-1-khi-bao-hiem-tro-thanh-la-chan",
+      "source": "Tribuna do Sertão",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-20T13:08:00Z",
+      "updatedAt": "2026-06-20T13:08:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/06/20/1781959274753_bao-hiem-agribank-17819259029791334416503.jpeg"
+    },
+    {
       "id": "macro-4b5463c79f2a2cfa38ace5d9",
       "title": "Wall Street sobe, mas Ibovespa afunda: por que a bolsa brasileira andou na contramão do mundo nesta semana",
-      "summary": "Tom duro do Fed e queda do petróleo pressionaram ações do índice; Embraer foi destaque positivo, enquanto Braskem ficou na lanterna",
-      "details": "Tom duro do Fed e queda do petróleo pressionaram ações do índice; Embraer foi destaque positivo, enquanto Braskem ficou na lanterna",
-      "url": "https://www.seudinheiro.com/2026/bolsa-dolar/wall-street-sobe-mas-ibovespa-afunda-por-que-a-bolsa-brasileira-andou-na-contramao-do-mundo-nesta-semana-mlim/",
+      "summary": "O Comitê de Política Monetária (Copom) do Banco Central (BC) decidiu nesta quarta-feira (17) reduzir a taxa básica de juros",
+      "details": "O Comitê de Política Monetária (Copom) do Banco Central (BC) decidiu nesta quarta-feira (17) reduzir a taxa básica de juros",
+      "url": "https://lealjunior.com.br/copom-reduz-a-taxa-basica-de-juros-da-economia-a-selic-de-1450-para-1425-ao-ano/",
       "source": "Seu Dinheiro",
       "category": "macro",
       "tags": [
@@ -488,14 +532,14 @@
       "updatedAt": "2026-06-20T13:02:49Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.seudinheiro.com/uploads/2023/08/ibovespa-queda-acoes-bolsa-brasileira-CAPA-SD.jpg"
+      "imageUrl": "https://lealjunior.com.br/wp-content/uploads/2026/06/image-2026-06-20T103350.802.webp"
     },
     {
       "id": "companies-8c06a06a867f3a58ee55571e",
       "title": "O programa do governo do Brasil que colocou mais de R$ 70 bilhões em setor estratégico da economia em apenas um ano",
-      "summary": "Com a receita total de prêmios de seguros atingindo VND 1,869 bilhão em 2025, um aumento de 12% em comparação com o ano anterior, o canal Agribank - ABIC Bancassurance continua a afirmar sua posição como um dos modelos de vinculação banco-seguro mais eficazes do mercado. Por trás",
-      "details": "Com a receita total de prêmios de seguros atingindo VND 1,869 bilhão em 2025, um aumento de 12% em comparação com o ano anterior, o canal Agribank - ABIC Bancassurance continua a afirmar sua posição como um dos modelos de vinculação banco-seguro mais eficazes do mercado. Por trás desses números de crescimento, estão nã",
-      "url": "https://www.vietnam.vn/pt/bancassurance-agribank-abic-diem-tua-tai-chinh-cho-khu-vuc-tam-nong-bai-1-khi-bao-hiem-tro-thanh-la-chan",
+      "summary": "Mais de 2.690 consumidores foram contemplados com prêmios que variam de R$ 300 a R$ 60 mil; 91 instituições sociais também foram premiadas",
+      "details": "Mais de 2.690 consumidores foram contemplados com prêmios que variam de R$ 300 a R$ 60 mil; 91 instituições sociais também foram premiadas",
+      "url": "https://www.tribunadosertao.com.br/alagoas/2026/06/20/925323-nota-fiscal-cidada-realiza-terceiro-sorteio-de-2026-e-distribui-r-2-milhoes",
       "source": "Revista Fórum",
       "category": "companies",
       "tags": [
@@ -507,14 +551,14 @@
       "updatedAt": "2026-06-20T13:00:09Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/06/20/1781959274753_bao-hiem-agribank-17819259029791334416503.jpeg"
+      "imageUrl": "https://img.dhost.cloud/Agcfvrmz7Jv95q7wr3WcLGqBPQw=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/7675e/2fe52d94f177fccf7cdd65a244d297b5b4b.jpeg"
     },
     {
       "id": "latest-ec7c7fef9c5371acff52716b",
       "title": "Agribank - ABIC Bancassurance: Um pilar financeiro para a área rural - Parte 1: Quando o seguro se torna um \"escudo\"",
-      "summary": "Na renda variável, a redução da Selic tende a favorecer a Bolsa de Valores, já que juros menores costumam aumentar a atratividade das ações.",
-      "details": "Na renda variável, a redução da Selic tende a favorecer a Bolsa de Valores, já que juros menores costumam aumentar a atratividade das ações.",
-      "url": "https://veronoticias.com/economia/especialistas-veem-renda-fixa-atrativa-apos-corte-da-selic/",
+      "summary": "Tom duro do Fed e queda do petróleo pressionaram ações do índice; Embraer foi destaque positivo, enquanto Braskem ficou na lanterna",
+      "details": "Tom duro do Fed e queda do petróleo pressionaram ações do índice; Embraer foi destaque positivo, enquanto Braskem ficou na lanterna",
+      "url": "https://www.seudinheiro.com/2026/bolsa-dolar/wall-street-sobe-mas-ibovespa-afunda-por-que-a-bolsa-brasileira-andou-na-contramao-do-mundo-nesta-semana-mlim/",
       "source": "Vietnam.vn",
       "category": "latest",
       "tags": [
@@ -526,14 +570,14 @@
       "updatedAt": "2026-06-20T12:49:18Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://veronoticias.com/wp-content/uploads/2025/07/mercado-financeiro-5.png"
+      "imageUrl": "https://www.seudinheiro.com/uploads/2023/08/ibovespa-queda-acoes-bolsa-brasileira-CAPA-SD.jpg"
     },
     {
       "id": "macro-2e801217a63e213253d2f539",
       "title": "Especialistas veem renda fixa atrativa após corte da Selic",
-      "summary": "Atualizacao de macro capturada em Vero Notícias.",
-      "details": "",
-      "url": "https://revistaforum.com.br/economia/programa-do-governo-do-brasil-que-colocou-70-bilhoes/",
+      "summary": "Na renda variável, a redução da Selic tende a favorecer a Bolsa de Valores, já que juros menores costumam aumentar a atratividade das ações.",
+      "details": "Na renda variável, a redução da Selic tende a favorecer a Bolsa de Valores, já que juros menores costumam aumentar a atratividade das ações.",
+      "url": "https://veronoticias.com/economia/especialistas-veem-renda-fixa-atrativa-apos-corte-da-selic/",
       "source": "Vero Notícias",
       "category": "macro",
       "tags": [
@@ -544,14 +588,15 @@
       "publishedAt": "2026-06-20T12:45:00Z",
       "updatedAt": "2026-06-20T12:45:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://veronoticias.com/wp-content/uploads/2025/07/mercado-financeiro-5.png"
     },
     {
       "id": "macro-42e3970b346c981aa9f3a80b",
       "title": "Governo aciona Polícia Federal para investigar invasão hacker ao sistema Defesa Civil Alerta",
-      "summary": "Sistema foi retirado do ar preventivamente após acesso indevido que disparou um falso alerta extremo para celulares em diversas regiões do país",
-      "details": "Sistema foi retirado do ar preventivamente após acesso indevido que disparou um falso alerta extremo para celulares em diversas regiões do país",
-      "url": "https://valor.globo.com/brasil/noticia/2026/06/20/governo-aciona-polcia-federal-para-investigar-invaso-hacker-ao-sistema-defesa-civil-alerta.ghtml",
+      "summary": "Atualizacao de macro capturada em Valor Econômico.",
+      "details": "",
+      "url": "https://economia.uol.com.br/mais/colunas/silvio-crespo/2026/06/20/tesouro-ipca-rendendo-inflacao-mais-8-ou-prefixado-a-14-qual-e-melhor.htm",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -562,8 +607,7 @@
       "publishedAt": "2026-06-20T12:39:12Z",
       "updatedAt": "2026-06-20T12:39:12Z",
       "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/eI6Czw--b01YXu5BB_rIomIuKLI=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/9/U/zASds4Tk6Ayt7OkOANtg/glo.png"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "companies-432909e7b0cd728f470ad4aa",
@@ -583,25 +627,6 @@
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
       "imageUrl": "https://i0.wp.com/jornalgrandebahia.com.br/wp-content/uploads/2026/06/Web-Summit-Rio-2026-reune-cerca-de-100-startups-brasileiras-20260618.jpg?fit=1200%2C800&quality=100&ssl=1"
-    },
-    {
-      "id": "macro-f058144daa10d63fb3acdcf7",
-      "title": "BC volta a incluir fiscal no balanço de riscos, diz especialista",
-      "summary": "Arnaldo Lima, da Polo Capital, analisa os desafios das contas públicas e a trajetória da dívida após comunicado do Copom",
-      "details": "Arnaldo Lima, da Polo Capital, analisa os desafios das contas públicas e a trajetória da dívida após comunicado do Copom",
-      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/bc-volta-a-incluir-fiscal-no-balanco-de-riscos-diz-especialista/",
-      "source": "CNN Brasil",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-20T12:30:09Z",
-      "updatedAt": "2026-06-20T12:30:09Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXNPEL8O0JV-BASEIMAGE.jpg?w=800&h=533&crop=1"
     },
     {
       "id": "macro-78aa9106b9d5dbeb5ea16775",
@@ -625,9 +650,9 @@
     {
       "id": "companies-538cb4b746ba3aad8a234848",
       "title": "Mais da metade das empresas brasileiras já adota práticas sustentáveis; veja como pequenas mudanças fazem diferença",
-      "summary": "Atualizacao de empresas capturada em Jornal Correio.",
-      "details": "",
-      "url": "https://www.folhape.com.br/noticia/amp/495346/corte-da-selic-traz-atratividade-aos-pos-fixados-e-melhora-na-renda/",
+      "summary": "Sistema foi retirado do ar preventivamente após acesso indevido que disparou um falso alerta extremo para celulares em diversas regiões do país",
+      "details": "Sistema foi retirado do ar preventivamente após acesso indevido que disparou um falso alerta extremo para celulares em diversas regiões do país",
+      "url": "https://valor.globo.com/brasil/noticia/2026/06/20/governo-aciona-polcia-federal-para-investigar-invaso-hacker-ao-sistema-defesa-civil-alerta.ghtml",
       "source": "Jornal Correio",
       "category": "companies",
       "tags": [
@@ -638,14 +663,53 @@
       "publishedAt": "2026-06-20T12:17:15Z",
       "updatedAt": "2026-06-20T12:17:15Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://s2-valor.glbimg.com/eI6Czw--b01YXu5BB_rIomIuKLI=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/9/U/zASds4Tk6Ayt7OkOANtg/glo.png"
+    },
+    {
+      "id": "macro-7e220922cd72897b72be748e",
+      "title": "Corte da Selic traz atratividade aos pós-fixados e melhora na renda variável",
+      "summary": "O município de Saquarema, situado na Região dos Lagos do estado do Rio de Janeiro, possui o maior PIB per capita do Brasil. Isso corresponde a R$ 722.441,52 por habitante no ano. Os dados de 2023 são do Instituto Brasileiro de Geografia e Estatística (IBGE). Essa posição de desta",
+      "details": "O município de Saquarema, situado na Região dos Lagos do estado do Rio de Janeiro, possui o maior PIB per capita do Brasil. Isso corresponde a R$ 722.441,52 por habitante no ano. Os dados de 2023 são do Instituto Brasileiro de Geografia e Estatística (IBGE). Essa posição de destaque no ranking econômico está diretament",
+      "url": "https://www.correiobraziliense.com.br/webstories/flipar/2026/06/7445167-saquarema-lidera-pib-per-capita-no-brasil-mas-moradores-nao-sentem-os-efeitos-da-riqueza.html",
+      "source": "InfoMoney",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-20T12:16:38Z",
+      "updatedAt": "2026-06-20T12:16:38Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.flipar.com.br/wp-content/uploads/2026/06/saquarema.jpg"
+    },
+    {
+      "id": "macro-460771434ab54ac3176b3d28",
+      "title": "Saquarema lidera PIB per capita no Brasil, mas moradores não sentem os efeitos da riqueza",
+      "summary": "XP busca comprar títulos descontados para maximizar retornos durante estresse no crédito. Entenda a estratégia.",
+      "details": "XP busca comprar títulos descontados para maximizar retornos durante estresse no crédito. Entenda a estratégia.",
+      "url": "https://diariodoestadogo.com.br/como-xp-asset-lucrar-em-cenario-de-crise-no-credito-privado/",
+      "source": "Correio Braziliense",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-20T12:08:00Z",
+      "updatedAt": "2026-06-20T12:08:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/06/como-xp-asset-lucrar-em-cenario-de-crise-no-credito-privado.png"
     },
     {
       "id": "funds-32315bee8a922725d868daca",
       "title": "Como XP Asset Lucrar em Cenário de Crise no Crédito Privado",
-      "summary": "Especialistas avaliam que juros ainda elevados sustentam opções conservadoras, enquanto a Bolsa pode ganhar fôlego com a queda da taxa básica",
-      "details": "Especialistas avaliam que juros ainda elevados sustentam opções conservadoras, enquanto a Bolsa pode ganhar fôlego com a queda da taxa básica",
-      "url": "https://www.tribunadosertao.com.br/geral/2026/06/20/925250-corte-da-selic-mantem-atratividade-dos-pos-fixados-e-favorece-renda-variavel",
+      "summary": "O Comitê de Política Monetária (Copom) do Banco Central anunciou na quarta-feira, 17, um corte de 0,25 ponto porcentual da taxa básica de juros",
+      "details": "O Comitê de Política Monetária (Copom) do Banco Central anunciou na quarta-feira, 17, um corte de 0,25 ponto porcentual da taxa básica de juros",
+      "url": "https://www.infomoney.com.br/economia/corte-da-selic-traz-atratividade-aos-pos-fixados-e-melhora-na-renda-variavel/",
       "source": "Diário do Estado",
       "category": "funds",
       "tags": [
@@ -657,33 +721,14 @@
       "updatedAt": "2026-06-20T12:02:16Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://img.dhost.cloud/lXZ70phTeMluJKAwI5YqHPhkZ0k=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/32aad/21d47a7da39c0276b863ae64e8b61e48d57.png"
-    },
-    {
-      "id": "macro-2a1dabf3ee5d9041791accc2",
-      "title": "Corte da Selic traz atratividade aos pós-fixados e melhora na renda variável",
-      "summary": "Com a Selic em 14,25% ao ano, especialistas apontam os pós-fixados como a melhor opção na renda fixa, mas recomendam diversificação",
-      "details": "Com a Selic em 14,25% ao ano, especialistas apontam os pós-fixados como a melhor opção na renda fixa, mas recomendam diversificação",
-      "url": "https://www.cnnbrasil.com.br/economia/mercado/titulos-pos-fixados-sao-atrativos-apos-corte-da-selic-entenda/",
-      "source": "Folha PE",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-20T12:00:48Z",
-      "updatedAt": "2026-06-20T12:00:48Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXNPEL8N10R-BASEIMAGE.jpg?w=800&h=458&crop=1"
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2025/12/2148783033.jpg?quality=70"
     },
     {
       "id": "macro-09ff5733147e7663d07b81b7",
       "title": "Títulos pós-fixados são atrativos após corte da Selic; entenda",
-      "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "url": "https://www.tribunadoagreste.com.br/geral/2026/06/20/925251-selic-menor-mantem-pos-fixados-no-radar-e-favorece-bolsa-dizem-especialistas",
+      "summary": "Atualizacao de macro capturada em CNN Brasil.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSDBzcnhRbUpienlTQ2NJU2g1TDZPRzNnS2JzZnVkRUllSkMtQkJ3ajJKcjhtYk5BZU9mUHJXcEV4OW5ULXRQd2hrVUp0cENnRTF2V0pEcmJGNUhRcjMwTjJZU1lFbWdBdFVNemJiUXYzWktTZGJCQklHOUw2SnZKbG51QXFJNXBWb05tMjNoVmxoa0kxMlpuUmJsbXJoMzk4WjlWOTMtdVMtZ3Az?oc=5",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -693,44 +738,6 @@
       ],
       "publishedAt": "2026-06-20T11:30:05Z",
       "updatedAt": "2026-06-20T11:30:05Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://img.dhost.cloud/3A0PG6eLifgRd-jkkYrr61QKAP8=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/32aad/21d47a7da39c0276b863ae64e8b61e48d57.png"
-    },
-    {
-      "id": "macro-ff077a3181f18398fa28847e",
-      "title": "Corte da Selic mantém atratividade dos pós-fixados e favorece renda variável",
-      "summary": "XP busca comprar títulos descontados para maximizar retornos durante estresse no crédito. Entenda a estratégia.",
-      "details": "XP busca comprar títulos descontados para maximizar retornos durante estresse no crédito. Entenda a estratégia.",
-      "url": "https://diariodoestadogo.com.br/como-xp-asset-lucrar-em-cenario-de-crise-no-credito-privado/",
-      "source": "Tribuna do Sertão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-20T11:30:00Z",
-      "updatedAt": "2026-06-20T11:30:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/06/como-xp-asset-lucrar-em-cenario-de-crise-no-credito-privado.png"
-    },
-    {
-      "id": "macro-ec74e0763e8f657d4290f4fd",
-      "title": "Selic menor mantém pós-fixados no radar e favorece Bolsa, dizem especialistas",
-      "summary": "Atualizacao de macro capturada em Tribuna do Agreste.",
-      "details": "",
-      "url": "https://economia.uol.com.br/mais/colunas/silvio-crespo/2026/06/20/tesouro-ipca-rendendo-inflacao-mais-8-ou-prefixado-a-14-qual-e-melhor.htm",
-      "source": "Tribuna do Agreste",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-20T11:30:00Z",
-      "updatedAt": "2026-06-20T11:30:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
@@ -751,24 +758,6 @@
       "updatedAt": "2026-06-20T11:24:32Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "macro-489386038964e13fdc0f9784",
-      "title": "A Hora: Crime organizado ameaça um terço do PIB da Amazônia",
-      "summary": "Atualizacao de macro capturada em UOL Notícias.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUDBvYjAzYzhfY1YxcXZOaEhUUm14a1RqYWtHZkRsdjY3bWtXdGpVSm8ySkFRZGo2M3ZKV2J5Ni1fYUd5OVVDcDU3dk0wS3p2cjBNYUxnTFU4ZUR4ZmdVa2hHYmlvUUh1QjdEMDhpU25obWNSTjNraFFiRGU3Q0xyb1ZieEdrSHVtQzBVVS1xVEt5N0JDRk5jaHczeFI4cEtTM0J5QnFpWlByZWlBQ1ZRVU13R3p0SzV4UWc?oc=5",
-      "source": "UOL Notícias",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-20T11:14:43Z",
-      "updatedAt": "2026-06-20T11:14:43Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-8dd8a616ecd91f1c5f68150d",
@@ -823,24 +812,6 @@
       "updatedAt": "2026-06-20T11:02:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "macro-0588b607a58238d3666d8ece",
-      "title": "Selic e “janela rara” para títulos indexados à inflação; veja os destaques da semana",
-      "summary": "Atualizacao de macro capturada em InfoMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS3dKdDZNeTVfM0kwQUZhQkczeWRsQlZ2b0FKM2NkRTFmQWg2SERvSktNM1BWS0RUc2dERkJnUmc4UG5Lak5hWTZTYWdOQjAzZmNlMF9EaVRFYnF5LUpVaG1Bbk5OcnNvaFREMGc4UjJ1Zm9MaDdzRFhHY0p2UzRqNlFTeTNoQzd0VXpNdHdreDhseUpjVjQ0ZXZSNU0wZVFhZVBGN3BvSzk2UGdWTkJWUW94Z1JUY3UtdVV0SE1oYkpBOVHSAcgBQVVfeXFMTmYtSmVSSjNLWVVhbHBVcVRySUkyVkxxZVNSblNSV0hZSzQ5eXZMU05YdFExVUk0LW55a091a3NUblBPbHBkcElnNWV0Y1JWSGx3RUkydnRZYjdFOXJkenlEYWpDR095dHpPVnhKck9vd0U2cGtrdWNZSk1hWUtlV3U1YURNc3UxakxScmhMdTVlNVhyTDFCTE1VM2U5WDl0Zmp1SkNBU3NCOEZ2R3pkSW1CZWFNZWhGbjUtYkx4WXE2R3FXejVCTG0?oc=5",
-      "source": "InfoMoney",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-20T11:00:00Z",
-      "updatedAt": "2026-06-20T11:00:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-21f8f3128678162f86443bfd",
@@ -951,6 +922,24 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
+      "id": "funds-724707b445262b5dea43b238",
+      "title": "PF diz que apartamento para Jaques Wagner seguiu mesmo modelo de propina para ex-presidente do BRB",
+      "summary": "Atualizacao de fundos capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORWxwclBlZEZldXFIcTNrRkh4RG5KQWtBYkViSV9zT1d5cmpQVktTVE9zcUc0ZFVMMGd5X21oNjB6cGhMYXJhUzFHbmNPY0x0WjJBcldTQ1BpQjc2N3I0QU1hbGEzSWdESjFMWEZiT2VVLTBodi1aa1plRUc4Q1pBV1czVzJENUVfVGhqSEJQeU5uaHVvWG9kZVRyTFFobGJsX1FzZzIyTVpQa0t6ZjF2eXE3ZmpOR2hTQ05KYjhtbTZhdjVSOU5LZWRMYlhxTXY50gHWAUFVX3lxTFBkWjhUY1ctYkxISDFmQkQ4RjROZFBhblFDaHFVN09xVEtua21BR09nUENQWm1RM19Va1lQckJ5Uy1aNnV4M0VjdUJibzI2MXBKRmNQaUh4LTNVdnpsRTBUeno4ZzVaQjFXa2xOVTNzV3FqaTNDQTUwWEFSM2lDRlNEVmwyOWZqalB1N01oZ1BHc0Zwbk9VU1EyaGw3ckpSYnI0YU9fYXRacmJIbVQybjNjZGl2S2FyZjdFNjV2ckhSVDBqd0g3YzlmWnZ5cnozVnBBTWROMEE?oc=5",
+      "source": "Estadão",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-06-20T08:30:00Z",
+      "updatedAt": "2026-06-20T08:30:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
       "id": "latest-38c67f7bcbf309aa0f76e766",
       "title": "Guerra no Irã levanta dúvidas sobre fluxo estrangeiro para a Bolsa brasileira",
       "summary": "Atualizacao de ultima hora capturada em Estadão.",
@@ -1001,6 +990,24 @@
       ],
       "publishedAt": "2026-06-20T06:55:00Z",
       "updatedAt": "2026-06-20T06:55:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-d78beb9f2f913ce6d90ff081",
+      "title": "Dario Durigan na China: O que esperar das negociações financeiras?",
+      "summary": "Atualizacao de ultima hora capturada em Diário do Estado.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNY2dIb2U0c0doMEl5QS1EWDhFdHA2TGU3cHZsaHlWZTB4azFwMkdZMHRHa2tXZER3SXk3YktFS1FaTXBndllXR2VzV0hQZ0JTSFlNTWZHb1B5cVVNQU1vLXY0UGcwbEpZYURxM2huc2FIYWVGVXFvQWF5Vk83SmZyZU1CbjA2czFvcE8zWHBVSmlya3BWZ1laU21wU0h6UQ?oc=5",
+      "source": "Diário do Estado",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-06-20T06:02:18Z",
+      "updatedAt": "2026-06-20T06:02:18Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -1059,24 +1066,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-d8d3b92133d66c941d329016",
-      "title": "Ibovespa futuro avança com IPCA abaixo do teto da meta e payroll",
-      "summary": "Atualizacao de ultima hora capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOamNiOGtnemlXSFk4c3p6bEVBOVh1Qk10dWpRRERnRkt6aTB1QjhSOHpvWE9mNTFJLXlFM3NnM29wcEw4aUdDenFLVms1anJuczJpbUIzUzJZam5nYXoweHNzWWtvRVZzcUxoWnNMMUhXRVl6TFdHQVNGV2M4dWQ0NEpGVUxPdFA3RXQzU181ZU5oekE3Tm9XNEgwbEpqU2xycTlVcWNVQUU3b3BVT1dUd2530gG3AUFVX3lxTFB4U0FWWFhJOVEyTExMZXZkU3prQzlFNTV3MloyRlRsRV9IR2RIRXM4STNvYS1lejUzN1NpQUttNC1kRDZLV05PV0RYb0tYN3JXY1I4aVZoYURHeC0tRW9rTUFkS29xbGFpR2d5a3JocjN3M1NOTXp3M09lRXZGS0p4aHJ1a3NUempYSnN3M1RLSmlUblVjVTFaTHhJZjc2ZXhKYThvSjJQdzlOVTlqeHZFTzBzRVZwaw?oc=5",
-      "source": "Estadão",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-06-20T02:30:13Z",
-      "updatedAt": "2026-06-20T02:30:13Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "funds-cdf1850815d4005f6cce32fd",
       "title": "Expansão via administração hoteleira e modelo asset light deve marcar o futuro do Grupo Tauá",
       "summary": "Atualizacao de fundos capturada em Portal Correio.",
@@ -1095,24 +1084,6 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "latest-cdaf64210c174b0cec0144d9",
-      "title": "COPOM e Fed dominam atenções do mercado: decisão sobre juros pode mexer com dólar, Bolsa e crédito no Brasil",
-      "summary": "Atualizacao de ultima hora capturada em JORNAL DO VALE.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORXlsSnJYVW42NElJd1BsbEc5UmVxNzktbmFkNmlPWUJuZjRtNUpXamlZNWpzeEJVUWdSOGljeFpoT3BPZm9Ga2RrWm9EYTFOaFJ6dWM1OTRnM1NvWXRkZ1d4dGlfcWt2eTQ5dEF0TUZwN2J4M2ZIT1l0amxBWmU1V1FyNTlqTXRsSlhLOWJzY0FyUU1sd2FlZUd4UC1oNDNibU9WNklpa1pBWmFBOWtROWJYNU5VTGhULUNiMzNpQ18xeU9yTmRQQUZ1Y0E?oc=5",
-      "source": "JORNAL DO VALE",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-06-20T02:24:09Z",
-      "updatedAt": "2026-06-20T02:24:09Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "companies-7d7019b5c8b7abb001928101",
       "title": "95,7% das empresas brasileiras têm limite estimado de crédito de até R$ 570 mil",
       "summary": "Atualizacao de empresas capturada em Estadão MT.",
@@ -1129,6 +1100,24 @@
       "updatedAt": "2026-06-20T02:02:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "funds-ac862cd4679d550c79a667b7",
+      "title": "Incertezas sobre Fed e comunicação do BC pressionam Ibovespa na semana",
+      "summary": "Atualizacao de fundos capturada em Times Brasil | CNBC.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdDRGN29HNDBQX0NTNVNtb2dUWjZQbGJ6b3FEcDZmaDE4aVJzZWpqVHpRWUhXNlh0S0RxVkZ5MnRzSV9jUHhQTEoyZ0R6YUl6cUtGXzJ5OWd3US1wVkFraHJoZU9OckdHV1h1Ny1QX25tWU9CbXAwd3BDTnEtVzltT0JUZExxU3FBUmpoR1VSNkVIZE1nX0JfMjhwclRKZTBCUmZQM3daNkVxN3dvM1JUb2hnVnlFZjhHRGc?oc=5",
+      "source": "Times Brasil | CNBC",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-06-20T01:58:00Z",
+      "updatedAt": "2026-06-20T01:58:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "companies-f15293de8a5be05ba554cacc",
@@ -1275,24 +1264,6 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-4251c342cbf3493e0a27b88d",
-      "title": "Ministério da Fazenda, MDIC e ABGF lançam FGCE e inauguram nova etapa no apoio às exportações",
-      "summary": "Atualizacao de empresas capturada em folhaestado.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYmMzSFo1b2FPaHVzT1VDMWwyTkMxbzZJQjQwODJFaW1pZG9samoxMU90dHVoWDFwc0EtNEg3dEJSYllpNVRRRktrYjFtb2xhM3lRMnF6TGF1ZVRoYURvT253bFBFM2I3VklOdVFta1dheTl4bEpaVjFPbDU5Uld3NVBHODlLUjlFbExzbURURFFyLTg3S0VQMjFKVkxhYnpTMmNHODRGdk42Q0NwLVRLUTdxdDQ1aHBtMzE1aw?oc=5",
-      "source": "folhaestado.com.br",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-06-19T20:14:00Z",
-      "updatedAt": "2026-06-19T20:14:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
       "id": "companies-2e44a64c6d4b473d7e281dbd",
       "title": "Ministério da Fazenda, MDIC e ABGF lançam FGCE e inauguram nova etapa no apoio às exportações",
       "summary": "Atualizacao de empresas capturada em NOTÍCIA E FATOS.",
@@ -1381,6 +1352,24 @@
       "updatedAt": "2026-06-19T19:09:51Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "funds-632ce2318e18f15ea0027acb",
+      "title": "Tesouro Direto mantém prêmios elevados às vésperas de leilão de títulos atrelados à inflação",
+      "summary": "Atualizacao de fundos capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSFJheDR0cmlyeTY2ZUcyc1FMOUdPZkEzRmw0ckl4V1JrSFd1QkNoNnAyUG0xRUloSEFzRDJablJiWmJwekg1VzQxb205YjdiQ2RoTEZiMWh0ZWlNT1BoODZFYUstaDItcFg0bWpzYW5sRFNNVXNwcnVTUHRQZzRHR0xET3JpdGVXaEZUYmV3NTNJXy1iNzA1WXJ5dHhOUWFLRjNtWktOUWh1V0FIdVFuT0t2Qi02RkJxSlZ6WNIBwgFBVV95cUxNbGhOWk91VlhkaVFPRDdOTmZ3VUFxZ09rMFlhcDhQNjZpakdRUTV4dWpBM3A5TVBJWGl1elBTZk5FRERPUGdCUE5GMUI2Sm9VcXNyTzZfUmhqZjNlbFQ4U1hXS0UwY3RGeEpxNUxkUTBwTGhUa0RvVXdNVTltYjVMZGZadUk1cUVTNDZ1ZXh1NFV2RjVFM1Z4VWg0bGJnQ2E0d2Q4aFRud1czRXJkVF9sZU1PdXFTandTa3puTUVWX0RGQQ?oc=5",
+      "source": "Estadão",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-06-19T18:31:25Z",
+      "updatedAt": "2026-06-19T18:31:25Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
   ]
 }
