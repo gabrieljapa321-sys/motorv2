@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-28T22:03:32Z",
-  "generatedAt": "2026-06-28T22:03:32Z",
+  "updatedAt": "2026-06-28T23:37:05Z",
+  "generatedAt": "2026-06-28T23:37:05Z",
   "categories": [
     {
       "id": "all",
@@ -25,12 +25,16 @@
   ],
   "sources": [
     {
-      "id": "4oito",
-      "label": "4oito"
+      "id": "018-news",
+      "label": "018 News"
     },
     {
       "id": "o-palaciano",
       "label": "[ O PALACIANO ]"
+    },
+    {
+      "id": "a-cr-tica-de-campo-grande",
+      "label": "A Crítica de Campo Grande"
     },
     {
       "id": "alagoas-alerta",
@@ -63,6 +67,10 @@
     {
       "id": "cnn-brasil",
       "label": "CNN Brasil"
+    },
+    {
+      "id": "coinfomania",
+      "label": "Coinfomania"
     },
     {
       "id": "colatina-em-a-o",
@@ -105,6 +113,10 @@
       "label": "Expressão Rondônia"
     },
     {
+      "id": "g1",
+      "label": "G1"
+    },
+    {
       "id": "gazeta-mercantil",
       "label": "Gazeta Mercantil"
     },
@@ -125,16 +137,12 @@
       "label": "Jornal Portuário"
     },
     {
-      "id": "jornal-primeira-p-gina",
-      "label": "Jornal Primeira Página"
+      "id": "jornalmetropolis-com-br",
+      "label": "jornalmetropolis.com.br"
     },
     {
       "id": "mundo-rh",
       "label": "Mundo RH"
-    },
-    {
-      "id": "mundoba",
-      "label": "MundoBA"
     },
     {
       "id": "netvasco",
@@ -165,20 +173,16 @@
       "label": "Portal Engeplus"
     },
     {
+      "id": "portal-tempo-novo",
+      "label": "Portal Tempo Novo"
+    },
+    {
       "id": "rdmonline-com-br",
       "label": "rdmonline.com.br"
     },
     {
       "id": "sb24horas",
       "label": "sb24horas"
-    },
-    {
-      "id": "seu-cr-dito-digital",
-      "label": "Seu Crédito Digital"
-    },
-    {
-      "id": "seu-dinheiro",
-      "label": "Seu Dinheiro"
     },
     {
       "id": "spacemoney",
@@ -189,16 +193,16 @@
       "label": "TC Online"
     },
     {
+      "id": "tecmundo",
+      "label": "TecMundo"
+    },
+    {
       "id": "tradingview",
       "label": "TradingView"
     },
     {
       "id": "tribuna-do-sert-o",
       "label": "Tribuna do Sertão"
-    },
-    {
-      "id": "vero-not-cias",
-      "label": "Vero Notícias"
     },
     {
       "id": "vietnam-vn",
@@ -211,29 +215,125 @@
   ],
   "items": [
     {
-      "id": "funds-a26d58fd7f15f9e95d629477",
-      "title": "Bmg transfere R$ 750 milhões em créditos para FIDC",
-      "summary": "Atualizacao de fundos capturada em Vero Notícias.",
-      "details": "",
-      "url": "https://veronoticias.com/economia/bmg-transfere-r-750-milhoes-em-creditos-para-fidc/",
-      "source": "Vero Notícias",
+      "id": "macro-2d7542356b98a6274c96919a",
+      "title": "Enem abre vagas para fiscal, aplicador e monitor de prova com auxílio de R$ 800 por dia; veja como se inscrever",
+      "summary": "Relatório aponta endividamento elevado no setor privado e vê risco de impacto nas contas públicas em caso de crise",
+      "details": "Relatório aponta endividamento elevado no setor privado e vê risco de impacto nas contas públicas em caso de crise",
+      "url": "https://acritica.net/economia/divida-privada-cresce-no-brasil-e-na-china-e-acende-alerta-fiscal-diz-bis/",
+      "source": "Portal Tempo Novo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-28T23:06:00Z",
+      "updatedAt": "2026-06-28T23:06:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://uploads.acritica.net/2026/06/Cedulas-de-dinheiro-real-espalhadas-sobre-mesa-1536x864.jpg"
+    },
+    {
+      "id": "macro-4316c7cfddac86c0e30d5c4a",
+      "title": "Dívida privada cresce no Brasil e na China e acende alerta fiscal, diz BIS",
+      "summary": "O Enem abriu vagas para fiscal, aplicador e monitor de prova com auxílio de R$ 800 por dia. Veja como se inscrever na seleção.",
+      "details": "O Enem abriu vagas para fiscal, aplicador e monitor de prova com auxílio de R$ 800 por dia. Veja como se inscrever na seleção.",
+      "url": "https://www.portaltemponovo.com.br/enem-abre-vagas-para-fiscal-aplicador-e-monitor-de-prova-com-auxilio-de-800/",
+      "source": "A Crítica de Campo Grande",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-28T22:50:00Z",
+      "updatedAt": "2026-06-28T22:50:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.portaltemponovo.com.br/wp-content/uploads/2026/06/enem-fiscal-monitor-aplicador-prova.jpg"
+    },
+    {
+      "id": "macro-2b7abece7e1ba671890d0418",
+      "title": "O preço da instabilidade",
+      "summary": "Inflação persistente, energia mais cara, alta do dólar e incertezas fiscais formam um ambiente que reduz investimentos, encarece o crédito e afeta diretamente o poder de compra dos brasileiros",
+      "details": "Inflação persistente, energia mais cara, alta do dólar e incertezas fiscais formam um ambiente que reduz investimentos, encarece o crédito e afeta diretamente o poder de compra dos brasileiros",
+      "url": "https://018news.com.br/coluna/direito-poder/o-preco-da-instabilidade",
+      "source": "018 News",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-28T22:44:17Z",
+      "updatedAt": "2026-06-28T22:44:17Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://018news.com.br/controle/arquivo/o-preco-da-instabilidade.jpg"
+    },
+    {
+      "id": "macro-7ae4a1b513aa7ee4703f8828",
+      "title": "Insumo capaz de produzir 22 toneladas de cocaína é apreendido na fronteira com a Bolívia",
+      "summary": "Carga de acetato de etila foi interceptada em Corumbá (MS) após irregularidades na nota fiscal; Receita Federal também apreendeu cerca de 10 toneladas de roupas falsificadas.",
+      "details": "Carga de acetato de etila foi interceptada em Corumbá (MS) após irregularidades na nota fiscal; Receita Federal também apreendeu cerca de 10 toneladas de roupas falsificadas.",
+      "url": "https://g1.globo.com/ms/mato-grosso-do-sul/noticia/2026/06/28/insumo-capaz-de-produzir-22-toneladas-de-cocaina-e-apreendido-na-fronteira-com-a-bolivia.ghtml",
+      "source": "G1",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-28T22:16:26Z",
+      "updatedAt": "2026-06-28T22:16:26Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://s2-g1.glbimg.com/vdfidcB3LrNdXOeEg5u0pLskPfI=/1200x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/H/V/UmGECtTU2SY8pIVAMW8A/design-sem-nome-2026-06-28t181036.640.jpg"
+    },
+    {
+      "id": "funds-a366b942319b18a6cc589f35",
+      "title": "Comissão discute crimes ambientais, agronegócio e fundos de investimento; participe",
+      "summary": "O ponto ideal estaria no chamado “miolo” da curva de Treasuries, ou seja, na faixa de cinco anos, e todos estão aumentando posição nesse trecho",
+      "details": "O ponto ideal estaria no chamado “miolo” da curva de Treasuries, ou seja, na faixa de cinco anos, e todos estão aumentando posição nesse trecho",
+      "url": "https://www.infomoney.com.br/mercados/gigantes-da-renda-fixa-miram-ponto-ideal-do-mercado-para-a-nova-era-warsh/",
+      "source": "jornalmetropolis.com.br",
       "category": "funds",
       "tags": [
         "fundos",
         "asset",
         "fiis"
       ],
-      "publishedAt": "2026-06-28T21:41:21Z",
-      "updatedAt": "2026-06-28T21:41:21Z",
+      "publishedAt": "2026-06-28T22:01:00Z",
+      "updatedAt": "2026-06-28T22:01:00Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/05/Kevin-Warsh.jpg?fit=1920%2C1279&quality=70&strip=all"
+    },
+    {
+      "id": "funds-4297e2ab2b477abc956d6514",
+      "title": "Home office: 44 vagas para trabalho remoto internacional [28/06]",
+      "summary": "Comissão discute crimes ambientais, agronegócio e fundos de investimento; participe",
+      "details": "Comissão discute crimes ambientais, agronegócio e fundos de investimento; participe",
+      "url": "https://www.jornalmetropolis.com.br/noticia/106890/meio-ambiente/comissao-discute-crimes-ambientais-agronegocio-e-fundos-de-investimento-participe.html",
+      "source": "TecMundo",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-06-28T22:00:00Z",
+      "updatedAt": "2026-06-28T22:00:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://www.jornalmetropolis.com.br/arquivos/noticias/106890/thumb/comissao-discute-crimes-ambientais-agronegocio-e-fundos-de-investimento-participe.jpg"
     },
     {
       "id": "latest-e9d0776e510fa193a5b6e854",
       "title": "Payroll, inflação europeia e PMI chinês na mira dos mercados",
-      "summary": "Payroll dos EUA, inflação da Zona do Euro e PMI da China dominam a agenda; Brasil acompanha Focus, produção industrial e balança comercial",
-      "details": "Payroll dos EUA, inflação da Zona do Euro e PMI da China dominam a agenda; Brasil acompanha Focus, produção industrial e balança comercial",
-      "url": "https://www.spacemoney.com.br/investimentos/payroll-inflacao-europeia-pmi-china-mercados/",
+      "summary": "Brasil e China firmam parceria financeira com a emissão de Panda Bonds, impulsionando o mercado internacional.",
+      "details": "Brasil e China firmam parceria financeira com a emissão de Panda Bonds, impulsionando o mercado internacional.",
+      "url": "https://diariodoestadogo.com.br/brasil-e-china-fortalecem-lacos-financeiros-com-emissao-de-panda-bonds/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -245,14 +345,14 @@
       "updatedAt": "2026-06-28T21:11:51Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/06/pexels-photo-7876507-1.webp"
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/06/brasil-e-china-fortalecem-lacos-financeiros-com-emissao-de-panda-bonds.jpg"
     },
     {
       "id": "companies-5cb41fb0f9b04f36d6936e76",
       "title": "Brasil e China fortalecem laços financeiros com emissão de Panda Bonds",
-      "summary": "Brasil e China firmam parceria financeira com a emissão de Panda Bonds, impulsionando o mercado internacional.",
-      "details": "Brasil e China firmam parceria financeira com a emissão de Panda Bonds, impulsionando o mercado internacional.",
-      "url": "https://diariodoestadogo.com.br/brasil-e-china-fortalecem-lacos-financeiros-com-emissao-de-panda-bonds/",
+      "summary": "São vagas nas áreas de Tecnologia, Produto, Marketing, Dados entre outras, para quem está em busca de uma vaga no mercado de trabalho internacional; confira a lista!",
+      "details": "São vagas nas áreas de Tecnologia, Produto, Marketing, Dados entre outras, para quem está em busca de uma vaga no mercado de trabalho internacional; confira a lista!",
+      "url": "https://www.tecmundo.com.br/mercado/414203-home-office-44-vagas-para-trabalho-remoto-internacional-2806.htm",
       "source": "Diário do Estado",
       "category": "companies",
       "tags": [
@@ -264,15 +364,34 @@
       "updatedAt": "2026-06-28T21:10:50Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/06/brasil-e-china-fortalecem-lacos-financeiros-com-emissao-de-panda-bonds.jpg"
+      "imageUrl": "https://tm.ibxk.com.br/2024/08/23/23075628042005.jpg?ims=1600x900/filters:format(jpg)"
     },
     {
       "id": "macro-617ec5a2b97d711526fb500c",
       "title": "Agenda da semana: payroll dos EUA, inflação da Zona do Euro e PMI da China movimentam os mercados",
+      "summary": "Payroll dos EUA, inflação da Zona do Euro e PMI da China dominam a agenda; Brasil acompanha Focus, produção industrial e balança comercial",
+      "details": "Payroll dos EUA, inflação da Zona do Euro e PMI da China dominam a agenda; Brasil acompanha Focus, produção industrial e balança comercial",
+      "url": "https://www.spacemoney.com.br/investimentos/payroll-inflacao-europeia-pmi-china-mercados/",
+      "source": "BPMoney",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-28T21:00:00Z",
+      "updatedAt": "2026-06-28T21:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/06/pexels-photo-7876507-1.webp"
+    },
+    {
+      "id": "macro-2aff444983205488805e9264",
+      "title": "Gigantes da renda fixa miram ponto ideal do mercado para a nova era Warsh",
       "summary": "Os investidores iniciam a última semana de junho atentos a indicadores de atividade, inflação e emprego no Brasil, Estados Unidos, Europa e China, que podem influenciar as expectativas para juros e crescimento econômico.",
       "details": "Os investidores iniciam a última semana de junho atentos a indicadores de atividade, inflação e emprego no Brasil, Estados Unidos, Europa e China, que podem influenciar as expectativas para juros e crescimento econômico.",
       "url": "https://bpmoney.com.br/economia/agenda-da-semana-payroll-dos-eua-inflacao-da-zona-do-euro-e-pmi-da-china-movimentam-os-mercados/",
-      "source": "BPMoney",
+      "source": "InfoMoney",
       "category": "macro",
       "tags": [
         "macro",
@@ -286,30 +405,11 @@
       "imageUrl": "https://bpmoney.com.br/wp-content/uploads/2025/12/agenda_indicadores_-830x553.webp"
     },
     {
-      "id": "macro-2aff444983205488805e9264",
-      "title": "Gigantes da renda fixa miram ponto ideal do mercado para a nova era Warsh",
-      "summary": "O ponto ideal estaria no chamado “miolo” da curva de Treasuries, ou seja, na faixa de cinco anos, e todos estão aumentando posição nesse trecho",
-      "details": "O ponto ideal estaria no chamado “miolo” da curva de Treasuries, ou seja, na faixa de cinco anos, e todos estão aumentando posição nesse trecho",
-      "url": "https://www.infomoney.com.br/mercados/gigantes-da-renda-fixa-miram-ponto-ideal-do-mercado-para-a-nova-era-warsh/",
-      "source": "InfoMoney",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-28T21:00:00Z",
-      "updatedAt": "2026-06-28T21:00:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/05/Kevin-Warsh.jpg?fit=1920%2C1279&quality=70&strip=all"
-    },
-    {
       "id": "macro-b384d09bbc6a14eaf2643a36",
       "title": "Goiás atinge, de novo, Nota A em ranking nacional de qualidade fiscal",
-      "summary": "O Estado de Goiás alcançou 98,985% de conformidade no Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro (Siconfi), segundo avaliação divulgada pela Secretaria do Tesouro Nacional.",
-      "details": "O Estado de Goiás alcançou 98,985% de conformidade no Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro (Siconfi), segundo avaliação divulgada pela Secretaria do Tesouro Nacional.",
-      "url": "https://www.jornalopcao.com.br/economia/goias-mantem-nota-a-em-ranking-nacional-de-qualidade-fiscal-841520/",
+      "summary": "A Receita Federal criou uma inteligência artificial que vai fiscalizar as movimentações bancárias de brasileiros.",
+      "details": "A Receita Federal criou uma inteligência artificial que vai fiscalizar as movimentações bancárias de brasileiros.",
+      "url": "https://www.portaltemponovo.com.br/receita-federal-cria-inteligencia-artificial-para-fiscalizar-movimentacoes-bancarias/",
       "source": "Jornal Opção",
       "category": "macro",
       "tags": [
@@ -321,7 +421,7 @@
       "updatedAt": "2026-06-28T20:59:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://cdn.jornalopcao.com.br/assets/2026/06/12221531/1781302531-10-28goianiageral_pj-1-1024x569-1.webp"
+      "imageUrl": "https://www.portaltemponovo.com.br/wp-content/uploads/2026/06/receita-federal-inteligencia-artificial-movimentacoes-bancarias-fiscalizacao-1.jpg"
     },
     {
       "id": "latest-191b742a4a9fb8c7ce1cbe47",
@@ -343,11 +443,30 @@
       "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/06/brasil-e-china-estreitam-lacos-financeiros-com-emissao-de-panda-bonds.jpg"
     },
     {
-      "id": "macro-ecbf2f20be2b4f653fb4e4b7",
-      "title": "Dólar recua a R$ 5,17, com foco na inflação de Brasil e EUA; Ibovespa avança",
+      "id": "macro-4bab7c3a9cbd527433211536",
+      "title": "Receita Federal cria inteligência artificial para fiscalizar movimentações bancárias de brasileiros",
       "summary": "Entenda o que faz o preço do dólar subir ou cair O dólar encerrou a sessão desta quinta-feira (25) em queda de 0,47%, cotado a R$ 5,1773. Já o Ibovespa, principal índice da bolsa brasileira, avançou 0",
       "details": "Entenda o que faz o preço do dólar subir ou cair O dólar encerrou a sessão desta quinta-feira (25) em queda de 0,47%, cotado a R$ 5,1773. Já o Ibovespa, principal índice da bolsa brasileira, avançou 0",
       "url": "https://expressaorondonia.com.br/dolar-recua-a-r-517-com-foco-na-inflacao-de-brasil-e-eua-ibovespa-avanca/",
+      "source": "Portal Tempo Novo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-06-28T20:44:00Z",
+      "updatedAt": "2026-06-28T20:44:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://expressaorondonia.com.br/wp-content/uploads/2026/06/muitas-nh043915-1024x683.jpg"
+    },
+    {
+      "id": "macro-ecbf2f20be2b4f653fb4e4b7",
+      "title": "Dólar recua a R$ 5,17, com foco na inflação de Brasil e EUA; Ibovespa avança",
+      "summary": "O Estado de Goiás alcançou 98,985% de conformidade no Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro (Siconfi), segundo avaliação divulgada pela Secretaria do Tesouro Nacional.",
+      "details": "O Estado de Goiás alcançou 98,985% de conformidade no Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro (Siconfi), segundo avaliação divulgada pela Secretaria do Tesouro Nacional.",
+      "url": "https://www.jornalopcao.com.br/economia/goias-mantem-nota-a-em-ranking-nacional-de-qualidade-fiscal-841520/",
       "source": "Expressão Rondônia",
       "category": "macro",
       "tags": [
@@ -359,7 +478,7 @@
       "updatedAt": "2026-06-28T20:39:14Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://expressaorondonia.com.br/wp-content/uploads/2026/06/muitas-nh043915-1024x683.jpg"
+      "imageUrl": "https://cdn.jornalopcao.com.br/assets/2026/06/12221531/1781302531-10-28goianiageral_pj-1-1024x569-1.webp"
     },
     {
       "id": "macro-266aec08292dcd379d375fd0",
@@ -402,9 +521,9 @@
     {
       "id": "macro-40efe0f0ad24c4f4c99c1ba8",
       "title": "Inflação global dos eletrônicos: disparada dos preços de iPad e Xbox indica o que vem por aí com a crise dos chips",
-      "summary": "Entenda como o teto para juros do consignado com garantia do FGTS pode afetar bancos, trabalhadores e a oferta de crédito no Brasil.",
-      "details": "Entenda como o teto para juros do consignado com garantia do FGTS pode afetar bancos, trabalhadores e a oferta de crédito no Brasil.",
-      "url": "https://seucreditodigital.com.br/teto-consignado-fgts-impactos/",
+      "summary": "MACEIÓ – O mercado de locação de imóveis segue em forte valorização no Brasil e já provoca reflexos diretos em Alagoas. Com a procura elevada e a oferta limitada, os preços dos alu",
+      "details": "MACEIÓ – O mercado de locação de imóveis segue em forte valorização no Brasil e já provoca reflexos diretos em Alagoas. Com a procura elevada e a oferta limitada, os preços dos alu",
+      "url": "https://www.alagoasalerta.com.br/noticia/alugueis-disparam-acima-da-inflacao-e-pressionam-familias-em-alagoas-com-mercado-imobiliario",
       "source": "O Globo",
       "category": "macro",
       "tags": [
@@ -416,7 +535,7 @@
       "updatedAt": "2026-06-28T20:33:03Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://seucreditodigital.com.br/wp-content/uploads/2026/06/FGTS-1.jpg"
+      "imageUrl": "https://cdn.sanity.io/images/dqacgg2v/production/11a9c2787520178399016023f8b8a72f56c5b7e5-1280x720.jpg"
     },
     {
       "id": "latest-e77353d9a456f9d090bb28c1",
@@ -438,30 +557,11 @@
       "imageUrl": "https://s2-oglobo.glbimg.com/uHwFYVpGI74N1Hx7Bh-v9UmC9Zo=/4000x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/f/2/qhpekvR5SljudjbsyiQw/459405284.jpg"
     },
     {
-      "id": "latest-b7e7323d148aaf822fac430f",
-      "title": "Teto para consignado com FGTS pode mudar oferta de crédito aos trabalhadores",
+      "id": "macro-90e11e477c7d0665d4c95a67",
+      "title": "Aluguéis disparam acima da inflação e pressionam famílias em Alagoas com mercado imobiliário aquecido",
       "summary": "Brasil, Estados Unidos, Reino Unido, União Europeia, Alemanha, México e China concentram os principais indicadores econômicos que podem movimentar os mercados ao longo da semana; confira",
       "details": "Brasil, Estados Unidos, Reino Unido, União Europeia, Alemanha, México e China concentram os principais indicadores econômicos que podem movimentar os mercados ao longo da semana; confira",
       "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/calendario-da-semana-payroll-dos-eua-pmis-globais-inflacao-e-boletim-focus/",
-      "source": "Seu Crédito Digital",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-06-28T20:20:00Z",
-      "updatedAt": "2026-06-28T20:20:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/CNYHFFEO7BMKJLNVWXTNGEQ6FU.png?quality=80&auth=6d1d83caeed9245919e218e4f60f06468eaca9b4efe9541f8e044731e23d2526&width=1200&height=630&smart=true"
-    },
-    {
-      "id": "macro-90e11e477c7d0665d4c95a67",
-      "title": "Aluguéis disparam acima da inflação e pressionam famílias em Alagoas com mercado imobiliário aquecido",
-      "summary": "MACEIÓ – O mercado de locação de imóveis segue em forte valorização no Brasil e já provoca reflexos diretos em Alagoas. Com a procura elevada e a oferta limitada, os preços dos alu",
-      "details": "MACEIÓ – O mercado de locação de imóveis segue em forte valorização no Brasil e já provoca reflexos diretos em Alagoas. Com a procura elevada e a oferta limitada, os preços dos alu",
-      "url": "https://www.alagoasalerta.com.br/noticia/alugueis-disparam-acima-da-inflacao-e-pressionam-familias-em-alagoas-com-mercado-imobiliario",
       "source": "Alagoas Alerta",
       "category": "macro",
       "tags": [
@@ -473,7 +573,7 @@
       "updatedAt": "2026-06-28T20:16:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://cdn.sanity.io/images/dqacgg2v/production/11a9c2787520178399016023f8b8a72f56c5b7e5-1280x720.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/CNYHFFEO7BMKJLNVWXTNGEQ6FU.png?quality=80&auth=6d1d83caeed9245919e218e4f60f06468eaca9b4efe9541f8e044731e23d2526&width=1200&height=630&smart=true"
     },
     {
       "id": "macro-86c8fdb2e26baef9516dc877",
@@ -497,9 +597,9 @@
     {
       "id": "latest-36d9f5625c73b15db1492c65",
       "title": "Agenda econômica: payroll e Caged no centro das atenções",
-      "summary": "Confira a agenda completa da semana com destaque para o payroll americano e o Caged brasileiro, além de outros indicadores macroeconômicos",
-      "details": "Confira a agenda completa da semana com destaque para o payroll americano e o Caged brasileiro, além de outros indicadores macroeconômicos",
-      "url": "https://www.spacemoney.com.br/investimentos/agenda-economica-dados-emprego-brasil-eua/",
+      "summary": "O Renault M&eacute;gane chegou oficialmente ao mercado brasileiro em mar&ccedil;o de 1998, tr&ecirc;s anos depois de ter sido lan&ccedil;ado na Europa. O modelo",
+      "details": "O Renault M&eacute;gane chegou oficialmente ao mercado brasileiro em mar&ccedil;o de 1998, tr&ecirc;s anos depois de ter sido lan&ccedil;ado na Europa. O modelo",
+      "url": "https://canaltech.com.br/carros/quanto-custaria-um-renault-megane-hoje-com-a-inflacao/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -511,14 +611,14 @@
       "updatedAt": "2026-06-28T20:12:21Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/06/pexels-photo-7887850.webp"
+      "imageUrl": "https://t.ctcdn.com.br/IdFW9pveHcZ1PlmJ0sCwCJ240V0=/1200x675/smart/i858971.jpeg"
     },
     {
       "id": "macro-1c97356c1ce9f91ffcdebe00",
       "title": "Presidente do Conselho Fiscal da Vasco SAF renuncia",
       "summary": "Atenção, Vascaínos! @AVascainos PRESIDENTE DO CONSELHO FISCAL DA VASCO SAF RENUNCIA AO CARGO O presidente do Conselho Fiscal da Vasco SAF, Marco Norci Schroeder, oficializou sua renúncia, que terá efeito a partir de 31 de julho de 2026. Na carta, ele afirma que tomou a decisão di",
       "details": "Atenção, Vascaínos! @AVascainos PRESIDENTE DO CONSELHO FISCAL DA VASCO SAF RENUNCIA AO CARGO O presidente do Conselho Fiscal da Vasco SAF, Marco Norci Schroeder, oficializou sua renúncia, que terá efeito a partir de 31 de julho de 2026. Na carta, ele afirma que tomou a decisão diante da",
-      "url": "https://www.netvasco.com.br/n/387472/presidente-do-conselho-fiscal-da-vasco-saf-renuncia",
+      "url": "https://m.netvasco.com.br/n/387472/presidente-do-conselho-fiscal-da-vasco-saf-renuncia",
       "source": "NETVASCO",
       "category": "macro",
       "tags": [
@@ -535,9 +635,9 @@
     {
       "id": "macro-f229aad0eaa03d09cbeb2037",
       "title": "Quanto custaria um Renault Megane hoje, com a inflação?",
-      "summary": "O Renault M&eacute;gane chegou oficialmente ao mercado brasileiro em mar&ccedil;o de 1998, tr&ecirc;s anos depois de ter sido lan&ccedil;ado na Europa. O modelo",
-      "details": "O Renault M&eacute;gane chegou oficialmente ao mercado brasileiro em mar&ccedil;o de 1998, tr&ecirc;s anos depois de ter sido lan&ccedil;ado na Europa. O modelo",
-      "url": "https://canaltech.com.br/carros/quanto-custaria-um-renault-megane-hoje-com-a-inflacao/",
+      "summary": "Atualizacao de macro capturada em Canaltech.",
+      "details": "",
+      "url": "https://exame.com/invest/mercados/craques-da-bolsa-a-escalacao-dos-investidores-para-enfrentar-juros-altos-e-volatilidade/",
       "source": "Canaltech",
       "category": "macro",
       "tags": [
@@ -548,15 +648,14 @@
       "publishedAt": "2026-06-28T20:05:00Z",
       "updatedAt": "2026-06-28T20:05:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://t.ctcdn.com.br/IdFW9pveHcZ1PlmJ0sCwCJ240V0=/1200x675/smart/i858971.jpeg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-482454f013265f9a4a6782c6",
       "title": "Craques da bolsa: a escalação dos investidores para enfrentar juros altos e volatilidade",
-      "summary": "Atualizacao de ultima hora capturada em Exame.",
-      "details": "",
-      "url": "https://exame.com/invest/mercados/craques-da-bolsa-a-escalacao-dos-investidores-para-enfrentar-juros-altos-e-volatilidade/",
+      "summary": "Confira a agenda completa da semana com destaque para o payroll americano e o Caged brasileiro, além de outros indicadores macroeconômicos",
+      "details": "Confira a agenda completa da semana com destaque para o payroll americano e o Caged brasileiro, além de outros indicadores macroeconômicos",
+      "url": "https://www.spacemoney.com.br/investimentos/agenda-economica-dados-emprego-brasil-eua/",
       "source": "Exame",
       "category": "latest",
       "tags": [
@@ -567,33 +666,15 @@
       "publishedAt": "2026-06-28T20:00:59Z",
       "updatedAt": "2026-06-28T20:00:59Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-1684f5aea1eb2ed282999ab1",
-      "title": "Justiça Federal recebeu 53 mil ações contra a União na área de saúde",
-      "summary": "* Reportagem publicada no Anuário da Justiça Saúde Suplementar 2026, lançado neste mês, no STF. A versão impressa está à venda na Livraria ConJur (clique",
-      "details": "* Reportagem publicada no Anuário da Justiça Saúde Suplementar 2026, lançado neste mês, no STF. A versão impressa está à venda na Livraria ConJur (clique",
-      "url": "https://www.conjur.com.br/2026-jun-28/anuario-com-apenas-1-das-acoes-decisoes-da-justica-federal-afetam-planos-de-saude/",
-      "source": "Consultor Jurídico",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-28T20:00:00Z",
-      "updatedAt": "2026-06-28T20:00:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.conjur.com.br/wp-content/uploads/2026/05/PDF-AJ-Saude-2026_CAPA_online-scaled.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/06/pexels-photo-7887850.webp"
     },
     {
       "id": "latest-3c46aee109331f710526172f",
       "title": "Mercado financeiro cresce em MT e atrai investimentos para a capital",
-      "summary": "O Pavilhão Rota dos Móveis, em Lordelo, vai receber, entre os dias 29 de junho e 5 de julho, o Campeonato Nacional de Dança de Patinagem Artística, uma das mais importantes competições da modalidade em Portugal. O evento reunirá cerca de 300 atletas oriundos de vários pontos do p",
-      "details": "O Pavilhão Rota dos Móveis, em Lordelo, vai receber, entre os dias 29 de junho e 5 de julho, o Campeonato Nacional de Dança de Patinagem Artística, uma das mais importantes competições da modalidade em Portugal. O evento reunirá cerca de 300 atletas oriundos de vários pontos do país.",
-      "url": "https://averdade.com/8206369718/paredes-acolhe-campeonato-nacional-de-danca-de-patinagem-artistica-com-cerca-de-300-atletas/",
+      "summary": "Atualizacao de ultima hora capturada em rdmonline.com.br.",
+      "details": "",
+      "url": "https://www.capitalnews.com.br/colunistas/tecnologia/automatizacao-de-processos-ranking-revela-os-10-estados-brasileiros-que-mais-buscam-por-chatbot/442902",
       "source": "rdmonline.com.br",
       "category": "latest",
       "tags": [
@@ -604,15 +685,14 @@
       "publishedAt": "2026-06-28T19:52:00Z",
       "updatedAt": "2026-06-28T19:52:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://asset.skoiy.com/averl1d84frvz2zb/hmclhacvuhkp.jpg?crop=2048,1152,0,107"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-653487a32b804647217ddc60",
       "title": "Automatização de processos: ranking revela os 10 estados brasileiros que mais buscam por “chatbot”",
-      "summary": "Atualizacao de empresas capturada em capitalnews.com.br.",
-      "details": "",
-      "url": "https://www.capitalnews.com.br/colunistas/tecnologia/automatizacao-de-processos-ranking-revela-os-10-estados-brasileiros-que-mais-buscam-por-chatbot/442902",
+      "summary": "O Anuário do Cooperativismo de Mato Grosso 2025 aponta que, até 2027, o setor pode gerar receita equivalente a R$ 100 bilhões. Esse valor corresponde um crescimento de 208% se comparado aos números de 2024. Nesse cenário, a Cresol inaugurou no dia 26 de junho uma agência em Cuiab",
+      "details": "O Anuário do Cooperativismo de Mato Grosso 2025 aponta que, até 2027, o setor pode gerar receita equivalente a R$ 100 bilhões. Esse valor corresponde um crescimento de 208% se comparado aos números de 2024. Nesse cenário, a Cresol inaugurou no dia 26 de junho uma agência em Cuiabá para ampliar o suporte aos cooperados ",
+      "url": "https://rdmonline.com.br/mercado-financeiro-cresce-em-mt-e-atrai-investimentos-para-a-capital/",
       "source": "capitalnews.com.br",
       "category": "companies",
       "tags": [
@@ -623,32 +703,15 @@
       "publishedAt": "2026-06-28T19:44:00Z",
       "updatedAt": "2026-06-28T19:44:00Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "macro-76368499753a896ade4a12e4",
-      "title": "Presidente do conselho fiscal da SAF renuncia e fala de possível revenda: 'Transparência é elemento indispensável'",
-      "summary": "Atualizacao de macro capturada em O Globo.",
-      "details": "",
-      "url": "https://rdmonline.com.br/mercado-financeiro-cresce-em-mt-e-atrai-investimentos-para-a-capital/",
-      "source": "O Globo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-28T19:43:45Z",
-      "updatedAt": "2026-06-28T19:43:45Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://rdmonline.com.br/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-28-at-16.03.40.jpeg"
     },
     {
       "id": "funds-5df7f34eaace6002808c3c2b",
       "title": "Paredes acolhe Campeonato Nacional de Dança de Patinagem Artística com cerca de 300 atletas",
-      "summary": "US$ 1 trilhão de Elon Musk impressiona e levanta debate sobre riqueza, desigualdade e o capitalismo moderno no mundo.",
-      "details": "US$ 1 trilhão de Elon Musk impressiona e levanta debate sobre riqueza, desigualdade e o capitalismo moderno no mundo.",
-      "url": "https://www.diariodocentrodomundo.com.br/quanto-vale-us-1-trilhao-entenda-o-valor-que-colocou-elon-musk-no-topo-da-riqueza-mundial/",
+      "summary": "O Pavilhão Rota dos Móveis, em Lordelo, vai receber, entre os dias 29 de junho e 5 de julho, o Campeonato Nacional de Dança de Patinagem Artística, uma das mais importantes competições da modalidade em Portugal. O evento reunirá cerca de 300 atletas oriundos de vários pontos do p",
+      "details": "O Pavilhão Rota dos Móveis, em Lordelo, vai receber, entre os dias 29 de junho e 5 de julho, o Campeonato Nacional de Dança de Patinagem Artística, uma das mais importantes competições da modalidade em Portugal. O evento reunirá cerca de 300 atletas oriundos de vários pontos do país.",
+      "url": "https://averdade.com/8206369718/paredes-acolhe-campeonato-nacional-de-danca-de-patinagem-artistica-com-cerca-de-300-atletas/",
       "source": "averdade.com",
       "category": "funds",
       "tags": [
@@ -660,14 +723,14 @@
       "updatedAt": "2026-06-28T19:41:05Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.diariodocentrodomundo.com.br/wp-content/uploads/2026/06/gettyimages-2148556867.jpg"
+      "imageUrl": "https://asset.skoiy.com/averl1d84frvz2zb/hmclhacvuhkp.jpg?crop=2048,1152,0,107"
     },
     {
       "id": "latest-33fd1c478f18a55b8e0f35e1",
       "title": "Quanto vale US$ 1 trilhão? Entenda o valor que colocou Elon Musk no topo da riqueza mundial",
-      "summary": "Cidade alcança pela primeira vez a classificação máxima na Capag, indicador que avalia saúde fiscal de estados e munícipios",
-      "details": "Cidade alcança pela primeira vez a classificação máxima na Capag, indicador que avalia saúde fiscal de estados e munícipios",
-      "url": "https://www.4oito.com.br/noticia/criciuma-bate-recorde-fiscal-e-conquista-nota-inedita-do-tesouro-nacional-87598",
+      "summary": "US$ 1 trilhão de Elon Musk impressiona e levanta debate sobre riqueza, desigualdade e o capitalismo moderno no mundo.",
+      "details": "US$ 1 trilhão de Elon Musk impressiona e levanta debate sobre riqueza, desigualdade e o capitalismo moderno no mundo.",
+      "url": "https://www.diariodocentrodomundo.com.br/quanto-vale-us-1-trilhao-entenda-o-valor-que-colocou-elon-musk-no-topo-da-riqueza-mundial/",
       "source": "Diário do Centro do Mundo",
       "category": "latest",
       "tags": [
@@ -679,64 +742,7 @@
       "updatedAt": "2026-06-28T19:33:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.4oito.com.br/image/emM9MSZxPTkwJm9ubGx5X2ltYWdlX25hbWU9MSZzcmM9L21lZGlhL25vdGljaWFzL3ByZWZlaXR1cmEtZm90by1ncmVnb3JpLWZsYXV6aW5vXzEwNzg2OS5qcGcmcj0xNzgyNjc1NzQ1Jnc9NjE1Jmg9MzAw/prefeitura-foto-gregori-flauzino_107869.jpg"
-    },
-    {
-      "id": "macro-3241946d3c0729856bdf8d08",
-      "title": "Criciúma bate recorde fiscal e conquista nota inédita do Tesouro Nacional",
-      "summary": "Marco Schroeder enviou carta de renúncia; parecer do orgão é centro de ação da 777 Carioca que derrubou Pedrinho e outros dois integrantes do conselho de administração do futebol cruz-maltino",
-      "details": "Marco Schroeder enviou carta de renúncia; parecer do orgão é centro de ação da 777 Carioca que derrubou Pedrinho e outros dois integrantes do conselho de administração do futebol cruz-maltino",
-      "url": "https://oglobo.globo.com/blogs/diogo-dantas/post/2026/06/presidente-do-conselho-fiscal-da-saf-renuncia-e-fala-de-possivel-revenda-transparencia-e-elemento-indispensavel.ghtml",
-      "source": "4oito",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-28T19:29:00Z",
-      "updatedAt": "2026-06-28T19:29:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-oglobo.glbimg.com/gFMn4j8ScPEcarOKiNfDbcxohiw=/1024x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/b/5/AIhCx0SBOyn40XcbjVeA/marco-schoroeder-oi-ceo-1.jpg"
-    },
-    {
-      "id": "macro-cc5c85aac3efda0eafbf5161",
-      "title": "Inter vê uma das melhores oportunidades da renda fixa nos títulos IPCA+8%; entenda o que pode turbinar os ganhos",
-      "summary": "No último dia 11, o BCE elevou as taxas de juros em 25 pontos-base - o primeiro aumento desde 2023 - em uma decisão considerada \"preventiva\", para evitar que",
-      "details": "No último dia 11, o BCE elevou as taxas de juros em 25 pontos-base - o primeiro aumento desde 2023 - em uma decisão considerada \"preventiva\", para evitar que",
-      "url": "https://jornalpp.com.br/noticias/internacionais/inflacao-pode-ficar-acima-da-meta-de-2-ate-2027/",
-      "source": "Seu Dinheiro",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-28T19:20:36Z",
-      "updatedAt": "2026-06-28T19:20:36Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://jornalpp.com.br/wp-content/uploads/2025/04/noticia-internacional-jornal-primeira-pagina.jpg"
-    },
-    {
-      "id": "macro-1fbac339e9d89e36fd0fbfac",
-      "title": "Inflação pode ficar acima da meta de 2% até 2027",
-      "summary": "Banco recomenda travar juros reais elevados em papéis de longo prazo e diz que eventual queda da Selic pode ampliar ainda mais o retorno.",
-      "details": "Banco recomenda travar juros reais elevados em papéis de longo prazo e diz que eventual queda da Selic pode ampliar ainda mais o retorno.",
-      "url": "https://www.seudinheiro.com/2026/renda-fixa/inter-ve-uma-das-melhores-oportunidades-da-renda-fixa-nos-titulos-ipca8-entenda-o-que-pode-turbinar-os-ganhos-miql/",
-      "source": "Jornal Primeira Página",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-06-28T18:54:47Z",
-      "updatedAt": "2026-06-28T18:54:47Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.seudinheiro.com/uploads/2024/10/Pictures-Anna-19-1.jpg"
+      "imageUrl": "https://www.diariodocentrodomundo.com.br/wp-content/uploads/2026/06/gettyimages-2148556867.jpg"
     },
     {
       "id": "latest-588d835a240101b0254c136f",
@@ -937,6 +943,24 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
+      "id": "funds-86d06461f6861e21de33e518",
+      "title": "X Trading Auto-Pilot V2.0 — Indicador de EtbAlgo",
+      "summary": "Atualizacao de fundos capturada em TradingView.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1aYk53bDZiM0VLRnFLbUJzcVdGMElJN2hMNElwV1JHR2xNTGNseDFTOVVkczd5aW5LbTlWcEI5TFRjcHppRzI3NXB2MmRHbzVxUXpaUzdPUldvX2hzbzRjZ3VpZm84aUo0Ylh2cFFzVjRxQUF1UkJBRw?oc=5",
+      "source": "TradingView",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-06-28T16:35:02Z",
+      "updatedAt": "2026-06-28T16:35:02Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
       "id": "latest-1d63b70020808a28b9bbe9d5",
       "title": "Resultado do Santander e movimento estratégico no mercado",
       "summary": "Atualizacao de ultima hora capturada em Diário do Estado.",
@@ -973,22 +997,22 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "funds-a5c1d1d410e5045ceaa89767",
-      "title": "X Trading Auto-Pilot V2.0 — Indicador de EtbAlgo",
-      "summary": "Atualizacao de fundos capturada em TradingView.",
+      "id": "latest-8c1f8d4dec4879a0e268688b",
+      "title": "Lula Anuncia Programa Desenrola Para Aliviar Dívidas de Adimplentes",
+      "summary": "Atualizacao de ultima hora capturada em Diário do Estado.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5lNW5lbzc0STlORjR5WFF6M1ZPdExvblZNZEx5Yk9IQWRDbFRJZTgwZFp4NGpVcEEzdVJXSWhaM0xpRlVzNW9uUWxxay0tdzJMdlk2cnNZbzB1bzBzQnNJNHBYN092b2FVR21qQlY5TTBFWjBkUkY3bg?oc=5",
-      "source": "TradingView",
-      "category": "funds",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYURSdkYyLVZBbXUxMlkxY29hbzUxWG5wTWRiQ3hOdTE1ZmM5R1QxUDdTaTZEanM1dFh5VVhSVENydk1KWmNTZnlSRFd4bTExdlhQSFJtd1JvTV9zNUFsTFd1WmxlZ0Y4MWN5NWFSTno4QVBFUlQtVU9KdlgtSHBsZ21TbkJqd01ncUhJUmlqOExyOTVCUjVXWUJrX0tMN1JjTnExSA?oc=5",
+      "source": "Diário do Estado",
+      "category": "latest",
       "tags": [
-        "fundos",
-        "asset",
-        "fiis"
+        "mercado",
+        "bolsa",
+        "macro"
       ],
-      "publishedAt": "2026-06-28T15:48:43Z",
-      "updatedAt": "2026-06-28T15:48:43Z",
+      "publishedAt": "2026-06-28T16:10:50Z",
+      "updatedAt": "2026-06-28T16:10:50Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-99fa7e4efd03f2760e4f7a20",
@@ -1243,6 +1267,24 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
+      "id": "funds-396a70c42195335b4af9c249",
+      "title": "Arthur Hayes é criticado após 4 dólares de cartão de crédito em meio a um despejo de ativos",
+      "summary": "Atualizacao de fundos capturada em Coinfomania.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxON3JOenNUOTF2d1AwMkdqODB2VjY2LTF4cU1jeHhVb3h5c2J2RkFVUE9nRzBjTDRudm4zcXZrNlltNHV0bE9WbExreXlURmdHcGtNTUVUVHhkenFSZnVXNTFiNkw0NHR3cFViQ0Z4SXN2VnhSdzB4Q012UVd5VUNNclpBZmFFQ242LXVfRU1WU0tYNzQ2ZGN3?oc=5",
+      "source": "Coinfomania",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-06-28T10:14:16Z",
+      "updatedAt": "2026-06-28T10:14:16Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
       "id": "funds-3845d14aa2050765e91ac8ae",
       "title": "PF e PGR devem rejeitar delação de cunhado de Vorcaro",
       "summary": "Atualizacao de fundos capturada em Poder360.",
@@ -1329,42 +1371,6 @@
       ],
       "publishedAt": "2026-06-27T23:10:18Z",
       "updatedAt": "2026-06-27T23:10:18Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-b82013220d03b616a8dd19d1",
-      "title": "Dívida pública federal ultrapassa R$ 9 trilhões em maio, informa Tesouro Nacional",
-      "summary": "Atualizacao de fundos capturada em MundoBA.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZVRLeTRIQXNSeGZEMTg2SmVHaE5FamF5OElRd1J1dlRrSFZjM1hEdU1seEdGRVgxQ19kZkU1dktuQXZNTW9SdzBiSUd4V3N4dlVMN3VCa1NzRXdIZzVkNFlvUnA0czNLdHI4dlFrcE1abk8td2hkZEZPWWZINk1SdXE2M29EUVNnMWNBUFlOMnpFYk1rQ1ZqTk9yMzA2T3h2SUVXWnNndzVmM2ZoanVqTW1R?oc=5",
-      "source": "MundoBA",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-06-27T23:00:00Z",
-      "updatedAt": "2026-06-27T23:00:00Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-434479c631a69b0c0b0b9d69",
-      "title": "Dívida federal ultrapassa R$9 tri em maio",
-      "summary": "Atualizacao de fundos capturada em SpaceMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRGdUUXQ3QVptVnpFLWg2YzBncmFzeFhObUZXWVdOZDU4b3hQUVdBN1JTZ1ZyTmY4MEp5LW1MR0gzVEFwcURRSU0wRjBFQVo2eHZKa0Q1bEhpM3pCZjl2OXdmOFJRckNmRXJoWGswZWtOYWgxLTJCVlFlUE5uWDZrSFZzOE9OYnhwWGJmeGdEUQ?oc=5",
-      "source": "SpaceMoney",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-06-27T21:13:00Z",
-      "updatedAt": "2026-06-27T21:13:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
