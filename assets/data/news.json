@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-04T11:24:06Z",
-  "generatedAt": "2026-07-04T11:24:06Z",
+  "updatedAt": "2026-07-04T12:43:02Z",
+  "generatedAt": "2026-07-04T12:43:02Z",
   "categories": [
     {
       "id": "all",
@@ -33,6 +33,10 @@
       "label": "Acionista.com.br"
     },
     {
+      "id": "acirp-associa-o-comercial-e-industrial-de-ribeir-o-preto",
+      "label": "ACIRP - Associação Comercial e Industrial de Ribeirão Preto"
+    },
+    {
       "id": "ajn1",
       "label": "AJN1"
     },
@@ -49,12 +53,8 @@
       "label": "Associação Comercial e Industrial de Araçatuba"
     },
     {
-      "id": "bem-paran",
-      "label": "Bem Paraná"
-    },
-    {
-      "id": "bitget",
-      "label": "Bitget"
+      "id": "boca-com-br",
+      "label": "boca.com.br"
     },
     {
       "id": "bra1-com-br",
@@ -105,6 +105,10 @@
       "label": "Estadão"
     },
     {
+      "id": "estrat-gia-concursos",
+      "label": "Estratégia Concursos"
+    },
+    {
       "id": "euqueroinvestir",
       "label": "EuQueroInvestir"
     },
@@ -125,20 +129,12 @@
       "label": "G1"
     },
     {
-      "id": "gazeta-de-alagoas",
-      "label": "Gazeta de Alagoas"
-    },
-    {
       "id": "gazeta-do-paran",
       "label": "Gazeta do Paraná"
     },
     {
       "id": "gazeta-do-povo",
       "label": "Gazeta do Povo"
-    },
-    {
-      "id": "guarulhos-online",
-      "label": "Guarulhos Online"
     },
     {
       "id": "ig-economia",
@@ -151,6 +147,10 @@
     {
       "id": "letem-sv-tem-applem",
       "label": "Letem světem Applem"
+    },
+    {
+      "id": "migalhas",
+      "label": "Migalhas"
     },
     {
       "id": "money-report",
@@ -181,10 +181,6 @@
       "label": "O TEMPO"
     },
     {
-      "id": "painel-pol-tico",
-      "label": "Painel Político"
-    },
-    {
       "id": "poder360",
       "label": "Poder360"
     },
@@ -193,36 +189,16 @@
       "label": "Portal Tela"
     },
     {
-      "id": "primeirojornal",
-      "label": "PrimeiroJornal"
-    },
-    {
       "id": "spacemoney",
       "label": "SpaceMoney"
-    },
-    {
-      "id": "times-brasil-cnbc",
-      "label": "Times Brasil | CNBC"
     },
     {
       "id": "tmc-com-br",
       "label": "tmc.com.br"
     },
     {
-      "id": "tribuna-do-paran",
-      "label": "Tribuna do Paraná"
-    },
-    {
-      "id": "uol-not-cias",
-      "label": "UOL Notícias"
-    },
-    {
       "id": "valor-econ-mico",
       "label": "Valor Econômico"
-    },
-    {
-      "id": "valor-investe",
-      "label": "Valor Investe"
     },
     {
       "id": "veja",
@@ -235,11 +211,87 @@
   ],
   "items": [
     {
+      "id": "macro-644f4e3705b4df5228352833",
+      "title": "El Niño entra no radar do governo por possível impacto na inflação e nas eleições | Brasil",
+      "summary": "Especialistas consideram que se trata de um choque macroeconômico que pode elevar a necessidade de gastos públicos e dificultar a redução da taxa de juros",
+      "details": "Especialistas consideram que se trata de um choque macroeconômico que pode elevar a necessidade de gastos públicos e dificultar a redução da taxa de juros",
+      "url": "https://valor.globo.com/brasil/noticia/2026/07/04/el-nio-entra-no-radar-do-governo-por-possvel-impacto-na-inflao-e-nas-eleies.ghtml",
+      "source": "Valor Econômico",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-04T11:36:29Z",
+      "updatedAt": "2026-07-04T11:36:29Z",
+      "premium": true,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png"
+    },
+    {
+      "id": "companies-32d92da834e2d38818b2ba48",
+      "title": "Empresas brasileiras vão a Washington para barrar tarifas de 25% dos EUA",
+      "summary": "CNI, WEG e Bauducco levam argumentos econômicos e jurídicos a Washington contra proposta que elevaria custos para empresas e consumidores americanos. Confira na íntegra.",
+      "details": "CNI, WEG e Bauducco levam argumentos econômicos e jurídicos a Washington contra proposta que elevaria custos para empresas e consumidores americanos. Confira na íntegra.",
+      "url": "https://tmc.com.br/economia/brasil-washington-audiencias-ustr-tarifas-weg-bauducco/",
+      "source": "tmc.com.br",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-07-04T11:29:54Z",
+      "updatedAt": "2026-07-04T11:29:54Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://tmc.com.br/wp-content/uploads/2026/05/casa-branca-washington.jpg.optimal.jpg"
+    },
+    {
+      "id": "latest-c37b9a04c8235bed6df76042",
+      "title": "B3 enfrenta saída de capital externo e queda no Ibovespa em junho",
+      "summary": "Investidores retiram R$ 7,7 bilhões enquanto setor de tecnologia atrai atenção.",
+      "details": "Investidores retiram R$ 7,7 bilhões enquanto setor de tecnologia atrai atenção.",
+      "url": "https://boca.com.br/mercado-financeiro/b3-enfrenta-saida-de-capital-externo-e-queda-no-ibovespa-em-junho",
+      "source": "boca.com.br",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-04T11:20:26Z",
+      "updatedAt": "2026-07-04T11:20:26Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/0dbd56fafbc03acc6a3e47e669d893ec_858x483.png"
+    },
+    {
+      "id": "latest-64796749b3ee895d4124e1fe",
+      "title": "Desconfiança fiscal leva mercado a cobrar mais prêmio nos juros longos",
+      "summary": "Mercado avalia que a combinação de incertezas fiscais, comunicação do BC e estratégia do Tesouro pode exigir taxas mais altas no longo prazo",
+      "details": "Mercado avalia que a combinação de incertezas fiscais, comunicação do BC e estratégia do Tesouro pode exigir taxas mais altas no longo prazo",
+      "url": "https://valor.globo.com/financas/intraday/post/2026/07/desconfianca-fiscal-leva-mercado-a-cobrar-mais-premio-nos-juros-longos.ghtml",
+      "source": "Valor Econômico",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-04T11:18:54Z",
+      "updatedAt": "2026-07-04T11:18:54Z",
+      "premium": true,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://s2-valor.glbimg.com/1YiFsEsnRM5HuQOeRAohiPcKP18=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2021/K/v/x2DKGMTsCJLBdBVOkFqA/juros-231020occam12.jpg"
+    },
+    {
       "id": "latest-277ce10588255f172a648b96",
       "title": "Estrangeiro não vê Brasil como prioridade, diz CIO da Nau Capital",
-      "summary": "MACEIÓ – Após um primeiro semestre marcado por volatilidade, recordes históricos e realização de lucros, analistas do mercado financeiro avaliam que o Ibovespa deverá enfrentar um",
-      "details": "MACEIÓ – Após um primeiro semestre marcado por volatilidade, recordes históricos e realização de lucros, analistas do mercado financeiro avaliam que o Ibovespa deverá enfrentar um",
-      "url": "https://www.alagoasalerta.com.br/noticia/mercado-financeiro-projeta-segundo-semestre-mais-desafiador-para-a-bolsa-cenario-exige-cautela",
+      "summary": "Mauricio Valadares aponta juros elevados, composição do índice e incerteza fiscal como principais fatores que restringem mercado brasileiro",
+      "details": "Mauricio Valadares aponta juros elevados, composição do índice e incerteza fiscal como principais fatores que restringem mercado brasileiro",
+      "url": "https://www.cnnbrasil.com.br/economia/mercado/estrangeiro-nao-ve-brasil-como-prioridade-diz-cio-da-nau-capital/",
       "source": "CNN Brasil",
       "category": "latest",
       "tags": [
@@ -251,14 +303,14 @@
       "updatedAt": "2026-07-04T11:12:53Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://cdn.sanity.io/images/dqacgg2v/production/86186c21654e37995adefbdf1d98b78215deedd0-900x675.jpg"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXMPEL6F0ZD-BASEIMAGE.jpg?w=800&h=533&crop=1"
     },
     {
       "id": "macro-a1fc3497875b4a3c0b61f949",
       "title": "FT: Inflação faz americanos pagarem mais para celebrar Dia da Independência",
-      "summary": "Mauricio Valadares aponta juros elevados, composição do índice e incerteza fiscal como principais fatores que restringem mercado brasileiro",
-      "details": "Mauricio Valadares aponta juros elevados, composição do índice e incerteza fiscal como principais fatores que restringem mercado brasileiro",
-      "url": "https://www.cnnbrasil.com.br/economia/mercado/estrangeiro-nao-ve-brasil-como-prioridade-diz-cio-da-nau-capital/",
+      "summary": "Custo de celebrar com cachorros-quentes — e praticamente todos os outros pratos tradicionais — será o mais alto da história",
+      "details": "Custo de celebrar com cachorros-quentes — e praticamente todos os outros pratos tradicionais — será o mais alto da história",
+      "url": "https://valor.globo.com/mundo/noticia/2026/07/04/ft-inflacao-faz-americanos-pagarem-mais-para-celebrar-dia-da-independencia.ghtml",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -270,14 +322,14 @@
       "updatedAt": "2026-07-04T11:00:41Z",
       "premium": true,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXMPEL6F0ZD-BASEIMAGE.jpg?w=800&h=533&crop=1"
+      "imageUrl": "https://s2-valor.glbimg.com/RZ9gU9RuUJ6u0aQ6_xPqxW4k2aM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/H/9/yR6FEWRfKMWN0ZDYNcPw/2026-07-02t115655z-1528199742-rc2n5mab5ams-rtrmadp-3-usa-250.jpg"
     },
     {
       "id": "macro-8d0f912d7feb7006e03e70e4",
       "title": "Bancos não gostam de juros altos",
-      "summary": "Custo de celebrar com cachorros-quentes — e praticamente todos os outros pratos tradicionais — será o mais alto da história",
-      "details": "Custo de celebrar com cachorros-quentes — e praticamente todos os outros pratos tradicionais — será o mais alto da história",
-      "url": "https://valor.globo.com/mundo/noticia/2026/07/04/ft-inflacao-faz-americanos-pagarem-mais-para-celebrar-dia-da-independencia.ghtml",
+      "summary": "Eles tendem a ganhar mais quando as taxas estão baixas",
+      "details": "Eles tendem a ganhar mais quando as taxas estão baixas",
+      "url": "https://veja.abril.com.br/coluna/mailson-da-nobrega/bancos-nao-gostam-de-juros-altos/",
       "source": "VEJA",
       "category": "macro",
       "tags": [
@@ -289,14 +341,14 @@
       "updatedAt": "2026-07-04T11:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/RZ9gU9RuUJ6u0aQ6_xPqxW4k2aM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/H/9/yR6FEWRfKMWN0ZDYNcPw/2026-07-02t115655z-1528199742-rc2n5mab5ams-rtrmadp-3-usa-250.jpg"
+      "imageUrl": "https://veja.abril.com.br/wp-content/uploads/2025/12/PREDIO-DO-BANCO-CENTRAL-2024-54039033717.jpeg.jpg?quality=70&strip=info&resize=1080,565&crop=1"
     },
     {
       "id": "macro-98f6b74c64090e5a81287157",
       "title": "Concurso Receita Federal é autorizado: 146 vagas para analista e auditor!",
-      "summary": "Conta “Trump accounts” abre para crianças nascidas entre janeiro de dois mil e quinze e dezembro de dois mil e vinte e oito, com cem dólares de presente do g...",
-      "details": "Conta “Trump accounts” abre para crianças nascidas entre janeiro de dois mil e quinze e dezembro de dois mil e vinte e oito, com cem dólares de presente do g...",
-      "url": "https://www.portaltela.com/noticias/economia/2026/07/04/fundos-de-investimento-apoiados-por-wall-street-para-criancas-entram-no-ar-com-trump-accounts/",
+      "summary": "A Receta Federal recebeu avala do Ministério da Gestão para abrir concurso para 116 avgas de analista-tributário e 30 de auditor-fiscal, carreiras que exigem nível superior. As remunerações são de R$13.927 e R$24.113, respectivamente.",
+      "details": "A Receta Federal recebeu avala do Ministério da Gestão para abrir concurso para 116 avgas de analista-tributário e 30 de auditor-fiscal, carreiras que exigem nível superior. As remunerações são de R$13.927 e R$24.113, respectivamente.",
+      "url": "https://degraucultural.com.br/noticia/concurso-receita-federal-e-autorizado-146-vagas-para-analista-e-auditor",
       "source": "Degrau Cultural",
       "category": "macro",
       "tags": [
@@ -308,14 +360,33 @@
       "updatedAt": "2026-07-04T10:55:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/07/5417.jpg"
+      "imageUrl": "https://files-producao.s3.us-east-2.amazonaws.com/degrau-cultural/posts/13c23086b-88a2-4ee2-a66f-ce0edc0a2aba.webp"
+    },
+    {
+      "id": "macro-7d5168beede7d44f5df1f547",
+      "title": "Simulado Final EsFCEx: reforce sua preparação!",
+      "summary": "Participe, gratuitamente, do nosso Simulado Final EsFCEx para Dentistas, Farmacêuticos, Enfermagem e Veterinária. É neste sábado, 4!",
+      "details": "Participe, gratuitamente, do nosso Simulado Final EsFCEx para Dentistas, Farmacêuticos, Enfermagem e Veterinária. É neste sábado, 4!",
+      "url": "https://www.estrategiaconcursos.com.br/blog/simulado-final-esfcex-2026/amp/",
+      "source": "Estratégia Concursos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-04T10:39:20Z",
+      "updatedAt": "2026-07-04T10:39:20Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2025/05/09133335/ytb_sims-esfcex-gen.jpg"
     },
     {
       "id": "funds-374adb2585c2ebfeba09d48d",
       "title": "Fundos de investimento apoiados por Wall Street para crianças entram no ar com Trump accounts",
-      "summary": "Eles tendem a ganhar mais quando as taxas estão baixas",
-      "details": "Eles tendem a ganhar mais quando as taxas estão baixas",
-      "url": "https://veja.abril.com.br/coluna/mailson-da-nobrega/bancos-nao-gostam-de-juros-altos/",
+      "summary": "Conta “Trump accounts” abre para crianças nascidas entre janeiro de dois mil e quinze e dezembro de dois mil e vinte e oito, com cem dólares de presente do g...",
+      "details": "Conta “Trump accounts” abre para crianças nascidas entre janeiro de dois mil e quinze e dezembro de dois mil e vinte e oito, com cem dólares de presente do g...",
+      "url": "https://www.portaltela.com/noticias/economia/2026/07/04/fundos-de-investimento-apoiados-por-wall-street-para-criancas-entram-no-ar-com-trump-accounts/",
       "source": "Portal Tela",
       "category": "funds",
       "tags": [
@@ -327,14 +398,14 @@
       "updatedAt": "2026-07-04T10:22:23Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://veja.abril.com.br/wp-content/uploads/2025/12/PREDIO-DO-BANCO-CENTRAL-2024-54039033717.jpeg.jpg?quality=70&strip=info&resize=1080,565&crop=1"
+      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/07/5417.jpg"
     },
     {
       "id": "latest-6021e4309e9fcfb0ba965bd2",
       "title": "Mercado financeiro projeta segundo semestre mais desafiador para a Bolsa; cenário exige cautela de investidores",
-      "summary": "Goldman Sachs estimava que IPOs em 2026 gerariam US$ 225 bilhões para as companhias norte-americanas – isso ainda sem o resultado de US$ 85,7 bilhões da SpaceX no último dia 12",
-      "details": "Goldman Sachs estimava que IPOs em 2026 gerariam US$ 225 bilhões para as companhias norte-americanas – isso ainda sem o resultado de US$ 85,7 bilhões da SpaceX no último dia 12",
-      "url": "https://www.estadao.com.br/amp/einvestidor/cenarios-e-mercado/alta-de-juros-no-radar-empresas-dos-eua-ignoram-ameaca-do-fed-e-captam-bilhoes-de-dolares/",
+      "summary": "Gerente-geral da empresa diz que o setor avança impulsionado por medicamentos para emagrecimento e genéricos e lançamentos. Leia no Poder360.",
+      "details": "Gerente-geral da empresa diz que o setor avança impulsionado por medicamentos para emagrecimento e genéricos e lançamentos. Leia no Poder360.",
+      "url": "https://www.poder360.com.br/poder-economia/mercado-farmaceutico-cresce-11-e-segue-acima-do-pib-diz-teva/",
       "source": "Alagoas Alerta",
       "category": "latest",
       "tags": [
@@ -346,14 +417,14 @@
       "updatedAt": "2026-07-04T10:01:41Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/XGLY3P3GNZJRFGUNKIVXE4E54Q.png?quality=80&auth=f70379061a20e0f4f0889069fd6380c86658b7c76a67e2db6d79f578f619f076&width=1200"
+      "imageUrl": "https://static.poder360.com.br/uploads/2026/07/Roberto-Rocha_logo-Teva-848x477.png"
     },
     {
       "id": "macro-362191281d373a2d51a102d7",
       "title": "Aracaju avança em ranking nacional de qualidade da informação contábil e fiscal em 2026 - AJN1 - Portal de Noticias",
-      "summary": "Saiba mais sobre o relatório da IFI que aponta déficits recorrentes e crescimento da dívida no Brasil, desafios para o próximo mandato presidencial. Leia mais!",
-      "details": "Saiba mais sobre o relatório da IFI que aponta déficits recorrentes e crescimento da dívida no Brasil, desafios para o próximo mandato presidencial. Leia mais!",
-      "url": "https://www.otempo.com.br/opiniao/marcus-pestana/2026/7/4/deficits-recorrentes-divida-crescente",
+      "summary": "MACEIÓ – Após um primeiro semestre marcado por volatilidade, recordes históricos e realização de lucros, analistas do mercado financeiro avaliam que o Ibovespa deverá enfrentar um",
+      "details": "MACEIÓ – Após um primeiro semestre marcado por volatilidade, recordes históricos e realização de lucros, analistas do mercado financeiro avaliam que o Ibovespa deverá enfrentar um",
+      "url": "https://www.alagoasalerta.com.br/noticia/mercado-financeiro-projeta-segundo-semestre-mais-desafiador-para-a-bolsa-cenario-exige-cautela",
       "source": "AJN1",
       "category": "macro",
       "tags": [
@@ -365,14 +436,14 @@
       "updatedAt": "2026-07-04T10:00:11Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.otempo.com.br/content/dam/otempo/imagens-polopoly/editorias/brasil/2022/2/15/brasil-pib-crescimento-brasil-economia-1712100536.jpg"
+      "imageUrl": "https://cdn.sanity.io/images/dqacgg2v/production/86186c21654e37995adefbdf1d98b78215deedd0-900x675.jpg"
     },
     {
       "id": "macro-c2932f060efb3d0315e29feb",
       "title": "Déficits recorrentes, dívida crescente",
-      "summary": "A Receta Federal recebeu avala do Ministério da Gestão para abrir concurso para 116 avgas de analista-tributário e 30 de auditor-fiscal, carreiras que exigem nível superior. As remunerações são de R$13.927 e R$24.113, respectivamente.",
-      "details": "A Receta Federal recebeu avala do Ministério da Gestão para abrir concurso para 116 avgas de analista-tributário e 30 de auditor-fiscal, carreiras que exigem nível superior. As remunerações são de R$13.927 e R$24.113, respectivamente.",
-      "url": "https://degraucultural.com.br/noticia/concurso-receita-federal-e-autorizado-146-vagas-para-analista-e-auditor",
+      "summary": "A Prefeitura de Aracaju, por meio da Secretaria Municipal da Fazenda (Semfaz), avançou no Ranking da Qualidade da Informação Contábil e Fiscal 2026, divulgado",
+      "details": "A Prefeitura de Aracaju, por meio da Secretaria Municipal da Fazenda (Semfaz), avançou no Ranking da Qualidade da Informação Contábil e Fiscal 2026, divulgado",
+      "url": "https://ajn1.com.br/aracaju-avanca-em-ranking-nacional-de-qualidade-da-informacao-contabil-e-fiscal-em-2026/",
       "source": "O TEMPO",
       "category": "macro",
       "tags": [
@@ -384,14 +455,14 @@
       "updatedAt": "2026-07-04T10:00:01Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://files-producao.s3.us-east-2.amazonaws.com/degrau-cultural/posts/13c23086b-88a2-4ee2-a66f-ce0edc0a2aba.webp"
+      "imageUrl": "https://ajn1.com.br/wp-content/uploads/2026/07/aracaju.jpg"
     },
     {
       "id": "latest-8c13daaaaf7a9b7c5bab382e",
       "title": "Alta de juros no radar? Empresas dos EUA ignoram ameaça do Fed e captam bilhões de dólares",
-      "summary": "A Prefeitura de Aracaju, por meio da Secretaria Municipal da Fazenda (Semfaz), avançou no Ranking da Qualidade da Informação Contábil e Fiscal 2026, divulgado",
-      "details": "A Prefeitura de Aracaju, por meio da Secretaria Municipal da Fazenda (Semfaz), avançou no Ranking da Qualidade da Informação Contábil e Fiscal 2026, divulgado",
-      "url": "https://ajn1.com.br/aracaju-avanca-em-ranking-nacional-de-qualidade-da-informacao-contabil-e-fiscal-em-2026/",
+      "summary": "Saiba mais sobre o relatório da IFI que aponta déficits recorrentes e crescimento da dívida no Brasil, desafios para o próximo mandato presidencial. Leia mais!",
+      "details": "Saiba mais sobre o relatório da IFI que aponta déficits recorrentes e crescimento da dívida no Brasil, desafios para o próximo mandato presidencial. Leia mais!",
+      "url": "https://www.otempo.com.br/opiniao/marcus-pestana/2026/7/4/deficits-recorrentes-divida-crescente",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -403,14 +474,14 @@
       "updatedAt": "2026-07-04T10:00:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://ajn1.com.br/wp-content/uploads/2026/07/aracaju.jpg"
+      "imageUrl": "https://www.otempo.com.br/content/dam/otempo/imagens-polopoly/editorias/brasil/2022/2/15/brasil-pib-crescimento-brasil-economia-1712100536.jpg"
     },
     {
       "id": "macro-05c8e040563293a787398146",
       "title": "Veja quais investimentos mais renderam no primeiro semestre e quais decepcionaram",
-      "summary": "Ibovespa e CDI lideram os ganhos, enquanto bitcoin acumula a pior rentabilidade do período",
-      "details": "Ibovespa e CDI lideram os ganhos, enquanto bitcoin acumula a pior rentabilidade do período",
-      "url": "https://www.atribuna.com.br/opiniao/marcelo-santos/veja-quais-investimentos-mais-renderam-no-primeiro-semestre-e-quais-decepcionaram-1.520297",
+      "summary": "Goldman Sachs estimava que IPOs em 2026 gerariam US$ 225 bilhões para as companhias norte-americanas – isso ainda sem o resultado de US$ 85,7 bilhões da SpaceX no último dia 12",
+      "details": "Goldman Sachs estimava que IPOs em 2026 gerariam US$ 225 bilhões para as companhias norte-americanas – isso ainda sem o resultado de US$ 85,7 bilhões da SpaceX no último dia 12",
+      "url": "https://www.estadao.com.br/amp/einvestidor/cenarios-e-mercado/alta-de-juros-no-radar-empresas-dos-eua-ignoram-ameaca-do-fed-e-captam-bilhoes-de-dolares/",
       "source": "A Tribuna",
       "category": "macro",
       "tags": [
@@ -422,14 +493,52 @@
       "updatedAt": "2026-07-04T09:54:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/XGLY3P3GNZJRFGUNKIVXE4E54Q.png?quality=80&auth=f70379061a20e0f4f0889069fd6380c86658b7c76a67e2db6d79f578f619f076&width=1200"
+    },
+    {
+      "id": "macro-7749636282eb955f3b275b17",
+      "title": "Carta Macroeconômica Julho 2026",
+      "summary": "Ibovespa e CDI lideram os ganhos, enquanto bitcoin acumula a pior rentabilidade do período",
+      "details": "Ibovespa e CDI lideram os ganhos, enquanto bitcoin acumula a pior rentabilidade do período",
+      "url": "https://www.atribuna.com.br/opiniao/marcelo-santos/veja-quais-investimentos-mais-renderam-no-primeiro-semestre-e-quais-decepcionaram-1.520297",
+      "source": "ACIRP - Associação Comercial e Industrial de Ribeirão Preto",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-04T09:46:28Z",
+      "updatedAt": "2026-07-04T09:46:28Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://www.atribuna.com.br/image/policy:1.179979:1755298335/image.jpg?f=3x2"
+    },
+    {
+      "id": "funds-7f3f363520f0338c8a0a2cad",
+      "title": "Mercado de neoclouds registra disputa acirrada entre empresas",
+      "summary": "A ACIRP promove o desenvolvimento do comércio e da indústria de Ribeirão Preto, oferecendo benefícios, serviços e representatividade para empresas associadas.",
+      "details": "A ACIRP promove o desenvolvimento do comércio e da indústria de Ribeirão Preto, oferecendo benefícios, serviços e representatividade para empresas associadas.",
+      "url": "https://www.acirp.com.br/noticias/noticia/carta-macroeconomica-julho-2026",
+      "source": "Portal Tela",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-07-04T09:21:47Z",
+      "updatedAt": "2026-07-04T09:21:47Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://www.acirp.com.br/assets/imagens/social-preview.jpg"
     },
     {
       "id": "macro-db6cd73440f164668adf7d55",
       "title": "Brasil é o país do G20 que mais gasta com juros em relação ao PIB",
-      "summary": "Políticos de ambos os partidos dizem e fazem constantemente coisas que não fazem sentido em relação aos objetivos que afirmam publicamente estar buscando. Essa dimensão ilógica da retórica pomposa política corrobora a tese de Ludwig von Mises de que, mesmo deixando de lado argume",
-      "details": "Políticos de ambos os partidos dizem e fazem constantemente coisas que não fazem sentido em relação aos objetivos que afirmam publicamente estar buscando. Essa dimensão ilógica da retórica pomposa política corrobora a tese de Ludwig von Mises de que, mesmo deixando de lado argumentos éticos sobre objetivos finais, uma ",
-      "url": "https://www.moneyreport.com.br/economia/a-estranha-paixao-de-trump-pela-inflacao/",
+      "summary": "País destina 8,8% do seu PIB ao pagamento de juros da dívida pública, maior percentual entre as principais economias do mundo. Leia no Poder360.",
+      "details": "País destina 8,8% do seu PIB ao pagamento de juros da dívida pública, maior percentual entre as principais economias do mundo. Leia no Poder360.",
+      "url": "https://www.poder360.com.br/poder-economia/brasil-e-o-pais-do-g20-que-mais-gasta-com-juros-em-relacao-ao-pib/",
       "source": "Poder360",
       "category": "macro",
       "tags": [
@@ -441,14 +550,14 @@
       "updatedAt": "2026-07-04T09:10:29Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneyreport.com.br/wp-content/uploads/2026/07/Trump_Inflation.webp"
+      "imageUrl": "https://static.poder360.com.br/uploads/2026/07/brasil-paga-g20-29-jun-2026-02-848x477.png"
     },
     {
       "id": "macro-f605e7e70dc3ae296c66910a",
       "title": "Mercado farmacêutico cresce 11% e segue acima do PIB, diz Teva",
-      "summary": "País destina 8,8% do seu PIB ao pagamento de juros da dívida pública, maior percentual entre as principais economias do mundo. Leia no Poder360.",
-      "details": "País destina 8,8% do seu PIB ao pagamento de juros da dívida pública, maior percentual entre as principais economias do mundo. Leia no Poder360.",
-      "url": "https://www.poder360.com.br/poder-economia/brasil-e-o-pais-do-g20-que-mais-gasta-com-juros-em-relacao-ao-pib/",
+      "summary": "A disputa pelo mercado de neoclouds (computação em nuvem de nova geração) aumenta entre grandes players e estreantes, com foco em expansão, consolidação e in...",
+      "details": "A disputa pelo mercado de neoclouds (computação em nuvem de nova geração) aumenta entre grandes players e estreantes, com foco em expansão, consolidação e in...",
+      "url": "https://www.portaltela.com/noticias/economia/2026/07/04/mercado-de-neoclouds-registra-disputa-acirrada-entre-empresas/",
       "source": "Poder360",
       "category": "macro",
       "tags": [
@@ -460,14 +569,14 @@
       "updatedAt": "2026-07-04T09:04:56Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://static.poder360.com.br/uploads/2026/07/brasil-paga-g20-29-jun-2026-02-848x477.png"
+      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/07/cover_546f21b2b277425c821a9b0ea49d1c58.jpg"
     },
     {
       "id": "macro-8a9ff7aaecabbecb710a9b46",
       "title": "A estranha paixão de Trump pela inflação",
-      "summary": "Bitcoin registrou pior mês desde junho de 2022, enquanto Ibovespa recuou 1% em meio a pressões inflacionárias e tensões no Oriente Médio",
-      "details": "Bitcoin registrou pior mês desde junho de 2022, enquanto Ibovespa recuou 1% em meio a pressões inflacionárias e tensões no Oriente Médio",
-      "url": "https://www.cnnbrasil.com.br/economia/mercado/mercado-em-junho-criptomoedas-despencam-e-bolsa-brasileira-fecha-em-baixa/",
+      "summary": "Políticos de ambos os partidos dizem e fazem constantemente coisas que não fazem sentido em relação aos objetivos que afirmam publicamente estar buscando. Essa dimensão ilógica da retórica pomposa política corrobora a tese de Ludwig von Mises de que, mesmo deixando de lado argume",
+      "details": "Políticos de ambos os partidos dizem e fazem constantemente coisas que não fazem sentido em relação aos objetivos que afirmam publicamente estar buscando. Essa dimensão ilógica da retórica pomposa política corrobora a tese de Ludwig von Mises de que, mesmo deixando de lado argumentos éticos sobre objetivos finais, uma ",
+      "url": "https://www.moneyreport.com.br/economia/a-estranha-paixao-de-trump-pela-inflacao/",
       "source": "Money Report",
       "category": "macro",
       "tags": [
@@ -479,14 +588,14 @@
       "updatedAt": "2026-07-04T09:04:23Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXNPEL970MH-BASEIMAGE.jpg?w=800&h=533&crop=1"
+      "imageUrl": "https://www.moneyreport.com.br/wp-content/uploads/2026/07/Trump_Inflation.webp"
     },
     {
       "id": "latest-a8be387778689a41f5cf3521",
       "title": "Mercado em junho: Criptomoedas despencam e Bolsa brasileira fecha em baixa",
-      "summary": "Ibovespa sobe para 174 mil pontos e dólar cai para R$ 5,16 com apostas de queda da taxa Selic na próxima reunião do Copom em agosto.",
-      "details": "Ibovespa sobe para 174 mil pontos e dólar cai para R$ 5,16 com apostas de queda da taxa Selic na próxima reunião do Copom em agosto.",
-      "url": "https://gazetadoparana.com.br/artigo/ibovespa-fecha-acima-dos-174-mil-pontos-e-dolar-cai-com-expectativa-de-reducao-da-selic",
+      "summary": "Bolsas internacionais se ajustam à espera de indicadores. Por aqui, Galípolo fica no radar dos investidores",
+      "details": "Bolsas internacionais se ajustam à espera de indicadores. Por aqui, Galípolo fica no radar dos investidores",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/mercado-financeiro-hoje-agenda-economica-destaques-bce-juros-bolsas-petroleo-fed/",
       "source": "CNN Brasil",
       "category": "latest",
       "tags": [
@@ -498,14 +607,14 @@
       "updatedAt": "2026-07-04T09:00:52Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://gazetadoparana.com.br/images/20250728192853_ogImage_43.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/DIFK2HOEWRNAHJ22WMHEKISQX4.png?quality=80&auth=cb605f4096d5286e1dfe8bd14ff60df174c2fd03a355754ac0b9bfa7ffd956fd&width=1200&height=630&smart=true"
     },
     {
       "id": "latest-2538f7a4d04b6b64a4675cad",
       "title": "Ibovespa fecha acima dos 174 mil pontos e dólar cai com expectativa de redução da Selic",
-      "summary": "Gerente-geral da empresa diz que o setor avança impulsionado por medicamentos para emagrecimento e genéricos e lançamentos. Leia no Poder360.",
-      "details": "Gerente-geral da empresa diz que o setor avança impulsionado por medicamentos para emagrecimento e genéricos e lançamentos. Leia no Poder360.",
-      "url": "https://www.poder360.com.br/poder-economia/mercado-farmaceutico-cresce-11-e-segue-acima-do-pib-diz-teva/",
+      "summary": "Bitcoin registrou pior mês desde junho de 2022, enquanto Ibovespa recuou 1% em meio a pressões inflacionárias e tensões no Oriente Médio",
+      "details": "Bitcoin registrou pior mês desde junho de 2022, enquanto Ibovespa recuou 1% em meio a pressões inflacionárias e tensões no Oriente Médio",
+      "url": "https://www.cnnbrasil.com.br/economia/mercado/mercado-em-junho-criptomoedas-despencam-e-bolsa-brasileira-fecha-em-baixa/",
       "source": "Gazeta do Paraná",
       "category": "latest",
       "tags": [
@@ -517,14 +626,14 @@
       "updatedAt": "2026-07-04T08:30:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://static.poder360.com.br/uploads/2026/07/Roberto-Rocha_logo-Teva-848x477.png"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2025binary_LYNXNPEL970MH-BASEIMAGE.jpg?w=800&h=533&crop=1"
     },
     {
       "id": "macro-3a27b084b401af78d876ab1f",
       "title": "Tudo sobre Federal Reserve (Fed)",
-      "summary": "Conteúdos relevantes, artigos e notícias sobre Federal Reserve (Fed). Acesse a Forbes, a mais conceituada revista de negócios e economia.",
-      "details": "Conteúdos relevantes, artigos e notícias sobre Federal Reserve (Fed). Acesse a Forbes, a mais conceituada revista de negócios e economia.",
-      "url": "https://forbes.com.br/noticias-sobre/federal-reserve-fed/page/6/",
+      "summary": "Ibovespa sobe para 174 mil pontos e dólar cai para R$ 5,16 com apostas de queda da taxa Selic na próxima reunião do Copom em agosto.",
+      "details": "Ibovespa sobe para 174 mil pontos e dólar cai para R$ 5,16 com apostas de queda da taxa Selic na próxima reunião do Copom em agosto.",
+      "url": "https://gazetadoparana.com.br/artigo/ibovespa-fecha-acima-dos-174-mil-pontos-e-dolar-cai-com-expectativa-de-reducao-da-selic",
       "source": "Forbes Brasil",
       "category": "macro",
       "tags": [
@@ -536,14 +645,33 @@
       "updatedAt": "2026-07-04T08:27:23Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://gazetadoparana.com.br/images/20250728192853_ogImage_43.jpg"
+    },
+    {
+      "id": "funds-dabf361d01cf319de094627e",
+      "title": "Tecnologia sozinha não basta para salvar sistemas alimentares falhos",
+      "summary": "Conteúdos relevantes, artigos e notícias sobre Federal Reserve (Fed). Acesse a Forbes, a mais conceituada revista de negócios e economia.",
+      "details": "Conteúdos relevantes, artigos e notícias sobre Federal Reserve (Fed). Acesse a Forbes, a mais conceituada revista de negócios e economia.",
+      "url": "https://forbes.com.br/noticias-sobre/federal-reserve-fed/page/6/",
+      "source": "Portal Tela",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-07-04T08:20:58Z",
+      "updatedAt": "2026-07-04T08:20:58Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
       "imageUrl": "https://forbes.com.br/wp-content/uploads/2026/01/forbes-og-1.png"
     },
     {
       "id": "macro-623e2f0ad117b5b4e4225eb1",
       "title": "Governo anuncia Desenrola MEI com impacto fiscal neutro",
-      "summary": "O governo federal anunciou nesta sexta-feira (3) o programa “Desenrola MEI”, voltado à renegociação de dívidas fiscais de microempreendedores individuais. O ministro Paulo Henrique Pereira garantiu que a medida terá impacto fiscal neutro, com o aumento do teto de faturamento do M",
-      "details": "O governo federal anunciou nesta sexta-feira (3) o programa “Desenrola MEI”, voltado à renegociação de dívidas fiscais de microempreendedores individuais. O ministro Paulo Henrique Pereira garantiu que a medida terá impacto fiscal neutro, com o aumento do teto de faturamento do MEI de R$ 81 mil para R$ 140 mil anuais a",
-      "url": "https://aciara.com.br/desenrola-mei-governo-anuncia-impacto/",
+      "summary": "O setor global de tecnologia agroalimentar passou de US$ 16 bilhões em 2025, com investimentos em maquinário inteligente, tratores automatizados e instalaçõe...",
+      "details": "O setor global de tecnologia agroalimentar passou de US$ 16 bilhões em 2025, com investimentos em maquinário inteligente, tratores automatizados e instalaçõe...",
+      "url": "https://www.portaltela.com/noticias/economia/2026/07/04/tecnologia-sozinha-nao-basta-para-salvar-sistemas-alimentares-falhos/",
       "source": "Associação Comercial e Industrial de Araçatuba",
       "category": "macro",
       "tags": [
@@ -555,14 +683,14 @@
       "updatedAt": "2026-07-04T08:04:32Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://aciara.com.br/wp-content/uploads/2026/07/0d9a7531_d029cd.jpg"
+      "imageUrl": "https://www.portaltela.com/s.01k8r8f7wx8pm/2026/07/agro_toronto_agricultura_urbana_04.07.2026-860x484-1.jpg"
     },
     {
       "id": "macro-7b3ce871415237f53dd88316",
       "title": "A triste vida do Banco Central",
-      "summary": "O problema com o último comunicado do Copom não foi a decisão em si, mas a confusão dos argumentos apresentados",
-      "details": "O problema com o último comunicado do Copom não foi a decisão em si, mas a confusão dos argumentos apresentados",
-      "url": "https://oglobo.globo.com/economia/tony-volpon/coluna/2026/07/a-triste-vida-do-banco-central.ghtml",
+      "summary": "O governo federal anunciou nesta sexta-feira (3) o programa “Desenrola MEI”, voltado à renegociação de dívidas fiscais de microempreendedores individuais. O ministro Paulo Henrique Pereira garantiu que a medida terá impacto fiscal neutro, com o aumento do teto de faturamento do M",
+      "details": "O governo federal anunciou nesta sexta-feira (3) o programa “Desenrola MEI”, voltado à renegociação de dívidas fiscais de microempreendedores individuais. O ministro Paulo Henrique Pereira garantiu que a medida terá impacto fiscal neutro, com o aumento do teto de faturamento do MEI de R$ 81 mil para R$ 140 mil anuais a",
+      "url": "https://aciara.com.br/desenrola-mei-governo-anuncia-impacto/",
       "source": "O GLOBO",
       "category": "macro",
       "tags": [
@@ -574,7 +702,7 @@
       "updatedAt": "2026-07-04T07:00:57Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://ogcss.infoglobo.com.br/9876543210/img/oglobo.jpg"
+      "imageUrl": "https://aciara.com.br/wp-content/uploads/2026/07/0d9a7531_d029cd.jpg"
     },
     {
       "id": "latest-6026101827a49d57b9af32ae",
@@ -596,30 +724,11 @@
       "imageUrl": "https://s2-g1.glbimg.com/r5Wlb0bnYkdwgH-JHyJks1HSqog=/2040x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/G/x/D8DofCRniIHB6Nti0XIg/55371248682-dc417a1a3e-k.jpg"
     },
     {
-      "id": "macro-de388b0a335a34a4c5726e91",
-      "title": "PIB de Alagoas deve atingir R$ 109 bilhões em 2026, aponta estudo",
-      "summary": "Estimativa representa um crescimento de 21,5% em relação a 2023, o resultado oficial mais recente divulgado pelo IBGE",
-      "details": "Estimativa representa um crescimento de 21,5% em relação a 2023, o resultado oficial mais recente divulgado pelo IBGE",
-      "url": "https://www.gazetadealagoas.com.br/economia/920099/pib-de-alagoas-deve-atingir-r-109-bilhoes-em-2026-aponta-estudo?_=amp",
-      "source": "Gazeta de Alagoas",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-04T07:00:25Z",
-      "updatedAt": "2026-07-04T07:00:25Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://cdn.gazetadealagoas.com.br/img/inline/920000/pib-de-alagoas-deve-atingir-r-109-bilhoes-em-2026--00920099-ede432402df1341ebf0bc4b4f5c99077.jpg?xid=2031767"
-    },
-    {
       "id": "latest-667f487761940b43d9fd1c23",
       "title": "Mercado financeiro hoje: ata do BCE e mais 3 assuntos que vão movimentar os negócios nesta quinta-feira",
-      "summary": "Analistas destacam incertezas sobre eleição e fiscal, além de dependência de uma distante queda de juros para favorecer renda variável",
-      "details": "Analistas destacam incertezas sobre eleição e fiscal, além de dependência de uma distante queda de juros para favorecer renda variável",
-      "url": "https://www.cnnbrasil.com.br/economia/mercado/mercado-ve-ibovespa-com-dificuldades-de-retomar-folego-no-2o-semestre/",
+      "summary": "O problema com o último comunicado do Copom não foi a decisão em si, mas a confusão dos argumentos apresentados",
+      "details": "O problema com o último comunicado do Copom não foi a decisão em si, mas a confusão dos argumentos apresentados",
+      "url": "https://oglobo.globo.com/economia/tony-volpon/coluna/2026/07/a-triste-vida-do-banco-central.ghtml",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -631,14 +740,14 @@
       "updatedAt": "2026-07-04T06:52:39Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/07/ChatGPT-Image-3-de-jul.-de-2026-20_46_50_cleanup.png?w=720&h=405&crop=1"
+      "imageUrl": "https://ogcss.infoglobo.com.br/9876543210/img/oglobo.jpg"
     },
     {
       "id": "latest-d144c0d2a905fec10b68e5e3",
       "title": "Mercado vê Ibovespa com dificuldades de retomar fôlego no 2º semestre",
-      "summary": "Bolsas internacionais se ajustam à espera de indicadores. Por aqui, Galípolo fica no radar dos investidores",
-      "details": "Bolsas internacionais se ajustam à espera de indicadores. Por aqui, Galípolo fica no radar dos investidores",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/mercado-financeiro-hoje-agenda-economica-destaques-bce-juros-bolsas-petroleo-fed/",
+      "summary": "Atualizacao de ultima hora capturada em CNN Brasil.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQUlZdERMSEY5aU5QbEt3aHNLNFAtZjM3QlZsczVfTGk3aldrd1JnQzVWVUVDcmRkSVBoOHR5RktUbzNpSVZLVjY2bTFONlh3VzZxWFNmS3hBLXA1bmFHVUlRYVJ6cmVqSWFGVUNnTlF2czg2ZTB4Y0ZPc05yMTJNUktBREJPOTd0cVMtOTVwTGJqbGhBUHZxUzZIS0FLcjJfd3BtOHpEXzZxTEE5YnRsb0J3WV8wVWc?oc=5",
       "source": "CNN Brasil",
       "category": "latest",
       "tags": [
@@ -649,53 +758,14 @@
       "publishedAt": "2026-07-04T06:36:08Z",
       "updatedAt": "2026-07-04T06:36:08Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/DIFK2HOEWRNAHJ22WMHEKISQX4.png?quality=80&auth=cb605f4096d5286e1dfe8bd14ff60df174c2fd03a355754ac0b9bfa7ffd956fd&width=1200&height=630&smart=true"
-    },
-    {
-      "id": "macro-3a384046402a3801af40b790",
-      "title": "CVM: STF homologa plano que moderniza, amplia quadro e adota IA para fiscal",
-      "summary": "Gestora fundada em 2016 é focada em ativos de risco jurídico e de baixa liquidez; acordo prevê pagamento de até R$ 4 bilhões à vista ao BRB",
-      "details": "Gestora fundada em 2016 é focada em ativos de risco jurídico e de baixa liquidez; acordo prevê pagamento de até R$ 4 bilhões à vista ao BRB",
-      "url": "https://www.estadao.com.br/economia/quem-e-a-quadra-capital-que-comprou-r-15-bilhoes-em-ativos-do-master-para-salvar-o-brb/",
-      "source": "CNN Brasil",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-04T05:09:13Z",
-      "updatedAt": "2026-07-04T05:09:13Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/BO7ONVTHCRHTPCJ4DN62BSSIXE.jpeg?quality=80&auth=8e995cb31362fcd83133c0a260febc8b8a36a9243aaea74bbe12de8079c1cec1&width=1200&height=630&smart=true"
-    },
-    {
-      "id": "macro-1a2712008c396b94171e532f",
-      "title": "LDO: texto que vai basear cálculos do Orçamento 2027 do DF não inclui impactos da crise do BRB",
-      "summary": "Autarquia diz que objetivo foi reforço institucional para enfrentar um mercado de capitais cada vez mais complexo e digital",
-      "details": "Autarquia diz que objetivo foi reforço institucional para enfrentar um mercado de capitais cada vez mais complexo e digital",
-      "url": "https://www.cnnbrasil.com.br/politica/cvm-stf-homologa-plano-que-moderniza-amplia-quadro-e-adota-ia-para-fiscalizar-mercado/",
-      "source": "G1",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-04T05:00:19Z",
-      "updatedAt": "2026-07-04T05:00:19Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/09/cvm-e1516210180248-1024x542-1-e1695318942630.webp?w=1021&h=614&crop=1"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-a5389d9ff456cf0e5f1f705e",
       "title": "Ibovespa retoma patamar de 174 mil pontos com otimismo sobre corte na Selic",
-      "summary": "Análise feita pela Secretaria de Economia do DF aponta que",
-      "details": "Análise feita pela Secretaria de Economia do DF aponta que",
-      "url": "https://g1.globo.com/df/distrito-federal/noticia/2026/07/04/ldo-texto-que-vai-basear-calculos-do-orcamento-2027-do-df-nao-inclui-impactos-da-crise-do-brb.ghtml",
+      "summary": "Atualizacao de ultima hora capturada em Fato Paulista.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8zek9BNTZ6bGtyTVU2OHNlUGxaMmZxaDd0bTZSNkJmNDJsVDRsR3M3UVpMSGNCa0NmQjNFTm5KLUx0QmRidzYzZHVnX3M1RkZaa0VfYm0wQUxwanhSeVdYVjExTFhmbWswODd4dWRjbWVuWDA?oc=5",
       "source": "Fato Paulista",
       "category": "latest",
       "tags": [
@@ -706,15 +776,14 @@
       "publishedAt": "2026-07-04T04:59:49Z",
       "updatedAt": "2026-07-04T04:59:49Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s2-g1.glbimg.com/_rUHGWRafr0PVAJhA8PHaLGL5JA=/2047x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/O/V/jB08hsTjaovwyrUPbMYQ/55367762229-278c807369-k.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-51ed2a869224b8cf6a018d1f",
       "title": "Eleição 2026: mercado exagera, diz Norte Asset",
-      "summary": "Ibovespa fecha acima dos 174 mil pontos com aposta em corte da Selic. Dólar recua para R$ 5,16 em dia de liquidez reduzida na B3.",
-      "details": "Ibovespa fecha acima dos 174 mil pontos com aposta em corte da Selic. Dólar recua para R$ 5,16 em dia de liquidez reduzida na B3.",
-      "url": "https://fatopaulista.com.br/ibovespa-retoma-174-mil-pontos-selic/",
+      "summary": "Atualizacao de ultima hora capturada em Associação Comercial e Industrial de Araçatuba.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPOUdPa0Z2dHJ3aDhnVmZuVDY1Tk5Fb0FFeE1kQy1pZG1oRUtGTXdET3F1Q1loUEs2Tmdod3lRc1d6RnpMX1l0OHRCWEJIUzlKbWlKc1pqQVYwNFFKS3dnSkxuQWlIY2J1MXNXQ2h2dw?oc=5",
       "source": "Associação Comercial e Industrial de Araçatuba",
       "category": "latest",
       "tags": [
@@ -725,15 +794,14 @@
       "publishedAt": "2026-07-04T03:34:19Z",
       "updatedAt": "2026-07-04T03:34:19Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://fatopaulista.com.br/wp-content/uploads/2026/07/image_1783121665335.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "funds-fe0d26aceaeb06c93920e864",
       "title": "Quem é a Quadra Capital, que comprou R$ 15 bilhões em ativos do Master para ‘salvar’ o BRB",
-      "summary": "A Norte Asset Management considera que o mercado financeiro exagera ao tratar a eleição de 2026 como definida ou desastrosa. O sócio-fundador Gustavo Salomão afirma que a disputa está 'pau a pau' e que o cenário é mais equilibrado que em 2022.",
-      "details": "A Norte Asset Management considera que o mercado financeiro exagera ao tratar a eleição de 2026 como definida ou desastrosa. O sócio-fundador Gustavo Salomão afirma que a disputa está 'pau a pau' e que o cenário é mais equilibrado que em 2022.",
-      "url": "https://aciara.com.br/eleicao-2026-mercado-financeiro-exagera/",
+      "summary": "Atualizacao de fundos capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTDZZSDExb3ktaW1DclA1NUY2QlV3bnRsM1JXSExTWEFWUnVVamtvNHpaYW9QM18wSnN3MEdLRE1Vdmp3eUprZG1VYjZyRkE4c3B6UkpJdFlWZGFrdmtxTGFiMGpVNm95MnZ0Mnp2dlVzNV9XbWw2cXhtdi1vVXBZYmtPN1FJWHYzaHU2dE5Va0NfdWZlcWU0TU9aZjY4SE9MeGNIdm1Yb2ZWZS1iUmptS1ZocktaR1BOdFphSUY3UTnSAcYBQVVfeXFMUDJ1WFlaRnFrNzZfQnkxcTJpdTNYVS1pakJZblpDSzVTWmx1N1dCUW9FcFE4NWNsak9zbkVmY3F3WTl3djY2dERZdl9SdnFJck5KTnM4NW9yX3FTRDZ1Ui1QaU83SXpjbVR4a0hSVXY3VFhxSmpFbUpxNDVCSlA3dGU1YUg1OUJJLXZ3S1BSWjV2QmJHcTh0ODNFVi0ySUVYR0lWMzRHMnZUM1VPNHpvUjE1aHUxOVN3S2dZb3NSY3hvVS00RGFB?oc=5",
       "source": "Estadão",
       "category": "funds",
       "tags": [
@@ -744,15 +812,32 @@
       "publishedAt": "2026-07-04T03:25:46Z",
       "updatedAt": "2026-07-04T03:25:46Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://aciara.com.br/wp-content/uploads/2026/07/cropped-eleiccca7occ83es-01.jpg"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "latest-c24a0ec41ab5f37e992f888f",
+      "title": "Ibovespa hoje fecha em alta com dados de produção da Vale (VALE3) e temporada de balanços no radar",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPalNzYjVZWUxRVmplMWcyRGlEd240MDFUX3FubmFKUXRXbzFtd0ppWGRoYm1tUV9FVXFDT0ZRSTQ1VVRHNmpGMk0yTlVtS1NWSzI5ejE4Sm1IcTRreFdMbjhUS3REd3JaaGItTGxwWGpEbjZiUDBOWjJydkVGR2dySkh1MTg4NTBseDBxbHRKVmRXSHZ4Y01aNndWQVcwbVo4YktTdTFVZHBzZ0htbU4zcdIBtgFBVV95cUxONUxsSVMzeU9rRXBaZHdyUU1BY3JrbHROX2F3Vm9HRVlnYkpjRGFlUmlJOVJ6Y2ZtcXZ5U3o0ZlZBb24zV0hpamtiRjVxN0FCaVcyakNVZzRPSl9NM0h3ME1aVFRhOTRVeEFJWmdxazlIdVpIczFyYWhXSXVoTHdCUzBwN1pVbXVHVWtOc3ZkVC1tU3g5R2lvaHRpZG1Db2hPMHV4dl9EV1VzZEZ5ZUVUcUhvdFJXUQ?oc=5",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-04T03:04:13Z",
+      "updatedAt": "2026-07-04T03:04:13Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-292903b0d330d99585e88815",
       "title": "Ibovespa sobe e supera 174 mil pontos em dia sem Wall Street",
-      "summary": "Foi a segunda semana consecutiva de alta da Bolsa de Valores brasileira",
-      "details": "Foi a segunda semana consecutiva de alta da Bolsa de Valores brasileira",
-      "url": "https://www.brasil247.com/economia/ibovespa-sobe-e-supera-174-mil-pontos-em-dia-sem-wall-street/",
+      "summary": "Atualizacao de ultima hora capturada em Brasil 247.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTEMycUU4VkI5V0lReWFYeW4wTlJSNkZ0ZnM5VHZxVlYwNC1oZnNpeHNVWUVvOG0zRHIyMDdKLTZwU3FwOG5RaEdUNXhjSVg2Y0l2MkFLdENIUDlEYWw4REtmMmhVS2ZJWGdzWEVhX0VVZFNXZDFKR2l4Zk9iM2dqZnptN1cxWFh3MVk3MUJUU0tFWFhNRTQwRDZXcjc?oc=5",
       "source": "Brasil 247",
       "category": "latest",
       "tags": [
@@ -763,8 +848,25 @@
       "publishedAt": "2026-07-04T01:26:00Z",
       "updatedAt": "2026-07-04T01:26:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.brasil247.com/wp-content/uploads/2025/10/20251028181016_b02b58e1b55b6e910a82067fbe1b72cbcce15809939ae56409f31044971a780d.jpg?w=1200&quality=88&strip=all"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "companies-4e2f639230b8ce2d2a5f8889",
+      "title": "EUA impõe novas regras de transparência a diretores de empresas estrangeiras",
+      "summary": "Atualizacao de empresas capturada em Migalhas.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPemJYVjFqaTVKcXZ2M2EzNjBpbEVhRTE5VzY1Nk9ScTVBdWF2Y0xkLVpPeGtxejhGVFNHeFZ2NFpRR2RkOWE2N3h6Yjd3UDl3NG1IY1lwbVlEQnVtZUVQTjNGSmdPMDNDWG03QWVGbEhqanByZ2YtdkFmZnBWRWw1NXlDck1XNkNFV0NTR1FQTkRaREhaV05MelVObnZrc3R1V3RwQ0RzTmlYNnVNR0oyRmM0cw?oc=5",
+      "source": "Migalhas",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-07-04T00:58:55Z",
+      "updatedAt": "2026-07-04T00:58:55Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "latest-8f077b81ac6c2a90786e2698",
@@ -781,6 +883,24 @@
       ],
       "publishedAt": "2026-07-04T00:55:53Z",
       "updatedAt": "2026-07-04T00:55:53Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-442d9ea587187bc2158677b8",
+      "title": "Juros dos títulos dos EUA batem mínimas, dólar cai e futuros de NY sobem",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQ24zbUtmeW52a1E0V200ekFxaW5uSlI0czdTVjd5ZmlwLVpvY0FPSDRHRmRfSVFLeXdyYU9sdTJScDRWQlhzVXZQdTlHc0h3VW5yVHNuMTIyc3JVVE9lQktDTDZ4U0Mydk56aVY2Vkh2dHVmd2VSYUp0WExNWGZ4Ylo1cU4xOThZSUhjNUtR0gGTAUFVX3lxTE4ycW54OFFiQ3Iya1U2TVd4TkdhaVBrRElJRmpGQWliZGRQRGZQNGVFbjRKblVwOGJBYU1RX2Zuck9iZjA5cWdWNURab2FRb3BuN3MxTXpuRmEzYjJ2NGRYY2dEU2hJUkJXR3FNR0V4SksxWUVmd001eUE2YW51VUhZdE1aczdqYlBTUDJlWmJFQWs4cw?oc=5",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-04T00:14:31Z",
+      "updatedAt": "2026-07-04T00:14:31Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -803,92 +923,20 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-30cd25f00c5de120c94d64c7",
-      "title": "Juros futuros recuam com dados da indústria e sinal de possível ação do Tesouro",
-      "summary": "Atualizacao de ultima hora capturada em Times Brasil | CNBC.",
+      "id": "latest-bff7d6057bca9d4b72bf2b89",
+      "title": "Agenda de dividendos da semana de 6 a 10/04: 9 ações pagam até R$ 0,76 por ação aos investidores",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTjhmNkhBUDZFTnhBNGxaVmk2Rnlva2NRVFlWMU1CQmZzYmVrS0dWZldjeW8yd2ZlSVR1aG5ORG9IUXUxSEVPODBHRGlvV0JBaC1HRlNtREJGM21vaGp4T3dNMW1qSE53cDNrX243OGpJSEc4WWFWdDBaQTBnSEdYbmxCQnNVZDNzN25UZmF5cnNZd0gtMmNWWjd2Ylc3NjdyT2VHcnl2c2NIVDd3aGlIZXk3Mk0?oc=5",
-      "source": "Times Brasil | CNBC",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOd3JVdnd5LW5Uam9ELW5JbG1EQzMxS1ZpcWE3U3NZYlRTSUhtX2t2RkJJQVR1Mk8wbUpBZl9NaTAtUm9DaERFWGpSN2J4WHdEdWk1SmV5WUZpUFdLVExUM1F6Mm84akZHM05sUTM1cVd5VS1YVUk1WFVIa0x0WDFuY1lPaTRIODlGb29rQnFra3ZySTRrM01faWxaekJaZ9IBowFBVV95cUxNZHdzOWVfQ3hJNXRCZjVWYWc4el9lMFZraVdLTTR1Zmx1UEY1a1d2dFRwUG5EejN0WkNCU19iNzlMV3VwTzNMTFN4Z2g4OFRvTjhjRDJQYm4tZU9mcHZfTjNRWi1MeFlLRElvOENYVXZvdlVWV3NnQkpnb0lzMUdQTGw2dzhXMHZxUGVwV3cyY0xfaTVsYzBTQVFhV3otRV9rX1pr?oc=5",
+      "source": "Estadão",
       "category": "latest",
       "tags": [
         "mercado",
         "bolsa",
         "macro"
       ],
-      "publishedAt": "2026-07-03T23:45:00Z",
-      "updatedAt": "2026-07-03T23:45:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-38a688abb2ae50e636b4f02d",
-      "title": "Dólar cai, e Ibovespa volta aos 174 mil pontos com aposta na Selic",
-      "summary": "Atualizacao de ultima hora capturada em Bem Paraná.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONl9VZDdzN3dJbWdvaFNCTFQ3a2JibjdQNENMVzJoVXFCTXBsOXBDbXJ0RlQzNWFMU044Rmd2LWQ5LVY3MTJpVUdEN3BKRHBVR3hBX3JYWk84VW5uTFZqYjNlejZlMGk3dnUzLXh1YmVsVnZZU1lFbE42RVNjM3dwWE5Ob09odE9aR2JlWU9yUzA2bmt2MjMzenZjMDFsdk1Kck50Q0VJd2FvOHBkY2Y0TnU0UdIBuAFBVV95cUxNaDJ2QW5PdzJHWjBKVXJ2OTF4SHhJUEdPYnNtQzJSRzdmYTIyMHhVdndQUnR2d1JNWXlqXzhOOWowMzhIRlowQ1RUb2MyZGhJeHF5V1dha1dWR0NBb3k1TFJLaGxfWGFUblJ6OGdDWVJDeHBLbWlBaWNXVEV4MFNNS2FTTXJrZ2RHbWtkckE1VEVqRTBQcGhldDlDWGEwX2cweV9hZmR3VktmaXVvNm0wUFZxS1kzUUZX?oc=5",
-      "source": "Bem Paraná",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-03T23:38:00Z",
-      "updatedAt": "2026-07-03T23:38:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-770cf45d44a8066370341580",
-      "title": "Ibovespa sobe, dólar recua com apostas de corte na Selic e menor liquidez",
-      "summary": "Atualizacao de ultima hora capturada em Guarulhos Online.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5kRjYwMFNfOElQRlY1dFJWVUxCYlg4ZVhsMkxNQXFCWUNWQ0ZVMmRINm1YWXAxTmZaY0hCUnZTdlFSVl9NRkJZbTQ0Z19sVWdXU0hiSG5UaU42bEtEZG5IaDVyVDRjcTlVZVFDanM0ajJpQ0xUb1FzN2FtSdIBe0FVX3lxTE5kRjYwMFNfOElQRlY1dFJWVUxCYlg4ZVhsMkxNQXFCWUNWQ0ZVMmRINm1YWXAxTmZaY0hCUnZTdlFSVl9NRkJZbTQ0Z19sVWdXU0hiSG5UaU42bEtEZG5IaDVyVDRjcTlVZVFDanM0ajJpQ0xUb1FzN2FtSQ?oc=5",
-      "source": "Guarulhos Online",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-03T23:34:51Z",
-      "updatedAt": "2026-07-03T23:34:51Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-32955edc2d8c92f9f4294f5c",
-      "title": "Ibovespa sobe aos 174 mil pontos com aposta em corte da Selic em agosto",
-      "summary": "Atualizacao de ultima hora capturada em Tribuna do Paraná.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWHNZWVlNbjhNY3R6UXRBejRUSzltaU5Na0huVWd5RHk5Q0I3Skd1RFlfeE0tRnFJSUVrVnFqQmlYekZFMy1VWkd2YjZBLWdtMkRSWmEwVWhrQmdJa3J2UlRaSTJjalpwWUVHQWh0WVh2U01iRG5QUjJfd2JlRWdrc3g2NUJoeHI4WW9ycjU3YmhXTjhuVW04bURPOG5Gek0tSjBLV1hpMktTWi1FcS1yR1doZE50VEdkNjhN0gHAAUFVX3lxTE13UlFLZ0ZKU2g0blRkYm50R2Q2OGR3Unctd1lQbXFXNFlhWDZsTVRWek5tWUF2X1RsalhqNTVLYmVNUDFETlFadGlCT09jY1YxRGFHZjZwYldSOElfSml1dTlrVWRqa25oVm83dF92LUtiYWF5bzBOZkFNaUlDUEZjaFNtd2NTelRzdWwxY21fWGxmYjhoTnJmNUg5MEZxTmNDUUpYaHctQ1U3aTEtMXJBWWdTbE1xNHlKc3g2REVpTg?oc=5",
-      "source": "Tribuna do Paraná",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-03T23:06:00Z",
-      "updatedAt": "2026-07-03T23:06:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-e2f983640a8f4d21b7bed387",
-      "title": "Por que a bolsa sobe e o dólar cai quando a indústria encolhe no Brasil?",
-      "summary": "Atualizacao de ultima hora capturada em Painel Político.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPaS1CVUd0LUFkNjJIVHI3a1MxZmZ6b3ZTOHh4RWExTG04YmRVQlFtaFRTV1hkcEx6cFVodTFtS2FCTmxVTk84ZkNIZlZJcUtMNUh0SWNiQTBVdVduOVloM0NqdGhIejEyRHNpUmRub09WR01WOUdtd19LY1ROVVA5SXlqZ3BIeU9yenk1SF9mcXFzUUU0LU04TFY5eDk2Z00?oc=5",
-      "source": "Painel Político",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-03T23:04:24Z",
-      "updatedAt": "2026-07-03T23:04:24Z",
+      "publishedAt": "2026-07-04T00:06:47Z",
+      "updatedAt": "2026-07-04T00:06:47Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -1163,24 +1211,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "funds-6d0c7e599fa1ca05c07fd78a",
-      "title": "Nas últimas 24 horas, o MarketVectorTM Digital Assets 100 Small Cap Index subiu 2,33%, atualmente em 2.234,25 pontos. Desde o encerramento da negociação na última sexta-feira (7*24), acumulou uma alta de 5,08%. Entre 27 e 30 de junho, manteve-se",
-      "summary": "Atualizacao de fundos capturada em Bitget.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ZV1NBd0ROdk5kN3FZdDQ4YjJMd1h1cEJuNVZld09JS0UxX2FTSFE0c0p4eVBNVUg5MllSMFhqYUtsbjY1SVhsdjZZcFBzT01wQWRYTUdtWENkcGVtVE5pSXo2WE8tQzjSAWdBVV95cUxNWVdTQXdETnZOZDdxWXQ0OGIyTHdYdXBCbjVWZXdPSUtFMV9hU0hRNHNKeHlQTVVIOTJZUjBYamFLbG42NUlYbHY2WXBQc09NcEFkWE1HbVhDZHBlbVROaUl6NlhPLUM4?oc=5",
-      "source": "Bitget",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-07-03T17:37:56Z",
-      "updatedAt": "2026-07-03T17:37:56Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
       "id": "companies-8c735ffcd99b6f18610ece27",
       "title": "Veja pedidos de falência de empresas brasileiras",
       "summary": "Atualizacao de empresas capturada em Folha de S.Paulo.",
@@ -1359,60 +1389,6 @@
       "updatedAt": "2026-07-03T12:15:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "companies-3c021f6bf2c2fcec369cfe03",
-      "title": "Flávio antecipa ida aos EUA e cancela agenda no São João da Paraíba",
-      "summary": "Atualizacao de empresas capturada em UOL Notícias.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQeW5DTWJRYjJhVDh2TkpUQURlUUZUckRJUFBjMFgweV9IbEdyYk9vRTdLeXFTMW0zNmlXM29Va2RZYTVVMkZFSVUzeWUyRHJzQWMtbmQzOW40VW1Ga1NJT0l2bTFBTGpPTGxfZ0VBakN0WU5CWmxYYU1XNURuT2VocGJVa01LTWthTFFWbFE0WHdhWmtsRUMzYllBakNUdTQtQl9FLVdSM0c5TmxlTlpIb292MnAyOTdsLVdIWm5Oc0QxWkFMUllfV1I2bG9pSkJSbzB1QkF5RVdXMWdjRTljbUo2bTV0UDlFdmFqdktMbmNUM2tDWmFMV2dXcFB5cTlmSXpOa2pMVnlyZE1BN1ZWX0xIZlA?oc=5",
-      "source": "UOL Notícias",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-07-03T12:08:10Z",
-      "updatedAt": "2026-07-03T12:08:10Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-f8281e9ba1d6db76457ab7dc",
-      "title": "Estrangeiro amplia interesse por empresas brasileiras",
-      "summary": "Atualizacao de empresas capturada em Valor Investe.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNaXpORlJtZ3JYMGp2M0pJVkY1UGQ2dnhxX3ZTajhyNHJiSVZRRFJidzhZWjVoUndHT3VnaFV1b0h0M1NuNkMzcGQxZ2tLWTA4NkF4REFndXRtRDVzam9CQVVWdlFWV1FuclVYSGR5OE55LXZpQXlvUHNmR1NoRVgtWVBEQzBQNG16UmVVSDYwaHRVb0NnNDJfQVpONXUta3lSLTdici1OeVJSWjdFRkEwM01oT0pzdmFJUi05SkpHbUg1Sy1ZR2lLcnpYWkd2Tzd1UTdGRHRKVnpHUUxYYWtfS0pmdkHSAfMBQVVfeXFMT1c3dGtNejF0UGo4Q1BxSXR1UGFaMEgzcTZFT2Y5eEZTQklGdHkweFFTYWFXaWdJQ2F3dTdkVlU2SHNJLUd1S0J1NjlVc2tXVzF2ZUJySklkT3BTYndNU2haOTBLTWNnWExwWHhnbkp0dGRoaXprNHZlZ09mcC1QeC0yVnlGaU1wX1J3TWRFRmhWWVdhSFVZVzM0YzVSdUxoOUxBTWJRWGJfWHY5NmtOeWhBYWdqMDJDcGlWTERJaThwek43Y2dpbVpWd3JHdHdnLUFoZE9oaTVfUVdFMG96T2E5S3hYQWpWZWNjQnVoSl84U3o4?oc=5",
-      "source": "Valor Investe",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-07-03T11:48:42Z",
-      "updatedAt": "2026-07-03T11:48:42Z",
-      "premium": true,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-f1f66963229b2a3585bc4401",
-      "title": "Novo centro pode transformar plantas brasileiras em futuros medicamentos",
-      "summary": "Atualizacao de empresas capturada em PrimeiroJornal.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNTEpxVnN3LVA2enU0U19NLWdBRFF2ZkNDU2lNSzRTb05FcFpYeVI1MVBqQm9ZYWljaTNsckJNLXdYRERuaDdlU3drVEpfem8wdVpIRXl2ZDNvQWxNTTA5UlBHNXE3NzdZcnNXYllDOGhQaFduc25oUkZqTU1iNzNxUV9qbG9jcmFiRTVET21JT0pFVjk4dk04NGFRdWl0aGJMRTZIS1JuVE1LNHBMWVo2LVdGWmY?oc=5",
-      "source": "PrimeiroJornal",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-07-03T11:34:43Z",
-      "updatedAt": "2026-07-03T11:34:43Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     }
   ]
 }
