@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-05T22:58:41Z",
-  "generatedAt": "2026-07-05T22:58:41Z",
+  "updatedAt": "2026-07-06T00:10:35Z",
+  "generatedAt": "2026-07-06T00:10:35Z",
   "categories": [
     {
       "id": "all",
@@ -25,10 +25,6 @@
   ],
   "sources": [
     {
-      "id": "acessa-com",
-      "label": "Acessa.com"
-    },
-    {
       "id": "acionista-com-br",
       "label": "Acionista.com.br"
     },
@@ -43,6 +39,10 @@
     {
       "id": "blog-do-gustavo-negreiros",
       "label": "Blog do Gustavo Negreiros"
+    },
+    {
+      "id": "blog-do-paulinho",
+      "label": "Blog do Paulinho"
     },
     {
       "id": "bnews",
@@ -185,10 +185,6 @@
       "label": "SBT News"
     },
     {
-      "id": "seu-cr-dito-digital",
-      "label": "Seu Crédito Digital"
-    },
-    {
       "id": "seu-dinheiro",
       "label": "Seu Dinheiro"
     },
@@ -221,6 +217,10 @@
       "label": "Valor Investe"
     },
     {
+      "id": "vgnoticias-com-br",
+      "label": "vgnoticias.com.br"
+    },
+    {
       "id": "vietnam-vn",
       "label": "Vietnam.vn"
     },
@@ -231,11 +231,48 @@
   ],
   "items": [
     {
+      "id": "funds-7b4ad372add3006251b9e28a",
+      "title": "TCE vê falhas em acordo de R$ 308 milhões da Oi; MPC pede arquivamento",
+      "summary": "Itaú finaliza cartão de crédito em meio a crise. Entenda as mudanças e impactos para clientes.",
+      "details": "Itaú finaliza cartão de crédito em meio a crise. Entenda as mudanças e impactos para clientes.",
+      "url": "https://diariodoestadogo.com.br/itau-encerra-cartao-de-credito-apos-crise-de-imagem/",
+      "source": "vgnoticias.com.br",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-07-05T23:58:00Z",
+      "updatedAt": "2026-07-05T23:58:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/07/itau-encerra-cartao-de-credito-apos-crise-de-imagem.jpg"
+    },
+    {
+      "id": "latest-d80fc04276368dcef824e34d",
+      "title": "Itaú encerra cartão de crédito após crise de imagem",
+      "summary": "Atualizacao de ultima hora capturada em Diário do Estado.",
+      "details": "",
+      "url": "https://www.vgnoticias.com.br/cidades/tce-ve-falhas-em-acordo-de-r-308-milhoes-da-oi-mpc-pede-arquivamento/148572",
+      "source": "Diário do Estado",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-05T23:00:49Z",
+      "updatedAt": "2026-07-05T23:00:49Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
       "id": "companies-8f6db85fc2d01c2a8bc8b7bc",
       "title": "Flávio chega aos EUA prometendo lutar contra tarifas",
-      "summary": "Atualizacao de empresas capturada em Diário do Poder.",
-      "details": "",
-      "url": "https://acionista.com.br/ibovespa-recuperacao-marcante-ainda-tem-pontos-de-perigo-iminente/",
+      "summary": "Confira a agenda de indicadores da semana de 6 a 10 de julho, que estará mais enxuta",
+      "details": "Confira a agenda de indicadores da semana de 6 a 10 de julho, que estará mais enxuta",
+      "url": "https://www.seudinheiro.com/2026/economia/agenda-inflacao-ata-do-fed-e-do-bce-confira-a-agenda-desta-semana-cbcb/",
       "source": "Diário do Poder",
       "category": "companies",
       "tags": [
@@ -246,14 +283,15 @@
       "publishedAt": "2026-07-05T22:44:01Z",
       "updatedAt": "2026-07-05T22:44:01Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://www.seudinheiro.com/uploads/2024/10/iStock-899321150.jpg"
     },
     {
       "id": "funds-409ba3565867b652d0f2e446",
       "title": "Home office: 41 vagas abertas para trabalho remoto internacional",
-      "summary": "Confira os principais indicadores econômicos da semana dos países: Brasil, Estados Unidos, Reino Unido, União Europeia, Alemanha, México e China",
-      "details": "Confira os principais indicadores econômicos da semana dos países: Brasil, Estados Unidos, Reino Unido, União Europeia, Alemanha, México e China",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/calendario-da-semana-ipca-e-o-destaque-na-agenda-domestica-focus-e-varejo-tambem-aparecem/",
+      "summary": "O senador e pré-candidato à Presidência da República, Flávio Bolsonaro (PL-RJ), chegou neste domingo (5) em Washington, nos Estados Unidos, onde participará de uma audiência no Escritório do Representante de Comércio dos Estados Unidos (USTR) para discutir as sobretaxas impostas ",
+      "details": "O senador e pré-candidato à Presidência da República, Flávio Bolsonaro (PL-RJ), chegou neste domingo (5) em Washington, nos Estados Unidos, onde participará de uma audiência no Escritório do Representante de Comércio dos Estados Unidos (USTR) para discutir as sobretaxas impostas a produtos brasileiros. Ao chegar ao paí",
+      "url": "https://diariodopoder.com.br/brasil-e-regioes/e01-brasil/flavio-chega-aos-eua-prometendo-lutar-contra-tarifas",
       "source": "TecMundo",
       "category": "funds",
       "tags": [
@@ -265,14 +303,33 @@
       "updatedAt": "2026-07-05T22:30:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/PGPMMNFHXRMJBBLB42KB7HS4FU.png?quality=80&auth=585a97a9542948f1f01e559432d889bfbfca44ac3d9724ca9aeb842b4827c3de&width=1200&height=630&smart=true"
+      "imageUrl": "https://uploads.diariodopoder.com.br/2026/04/22774585-flavio-bolsonaro.-ft-reproducao-redes-sociais.jpeg"
+    },
+    {
+      "id": "latest-740a243283adfee30c72bde3",
+      "title": "Queda nos preços do boi gordo impacta mercado brasileiro em junho",
+      "summary": "...",
+      "details": "...",
+      "url": "https://investidor10.com.br/amp/noticias/agenda-da-semana-tem-inflacao-e-ata-do-fed-como-destaques-confira-121295/",
+      "source": "boca.com.br",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-05T22:15:19Z",
+      "updatedAt": "2026-07-05T22:15:19Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://investidor10.com.br/storage/news/6a4acd8063551.jpg"
     },
     {
       "id": "latest-dc9a06a8da51993f419c8970",
       "title": "Ibovespa: recuperação marcante ainda tem pontos de perigo iminente",
-      "summary": "...",
-      "details": "...",
-      "url": "https://investidor10.com.br/noticias/agenda-da-semana-tem-inflacao-e-ata-do-fed-como-destaques-confira-121295/",
+      "summary": "Confira a nova seleção de vagas remotas em diversas áreas para quem deseja impulsionar a carreira no mercado internacional.",
+      "details": "Confira a nova seleção de vagas remotas em diversas áreas para quem deseja impulsionar a carreira no mercado internacional.",
+      "url": "https://www.tecmundo.com.br/mercado/414346-home-office-41-vagas-para-trabalho-remoto-internacional-0507.htm",
       "source": "Acionista.com.br",
       "category": "latest",
       "tags": [
@@ -284,14 +341,14 @@
       "updatedAt": "2026-07-05T22:05:12Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://investidor10.com.br/storage/news/6a4acd8063551.jpg"
+      "imageUrl": "https://tm.ibxk.com.br/2025/08/19/19112320363035.jpg?ims=1600x900/filters:format(jpg)"
     },
     {
       "id": "macro-6d669395ce1ffc5f727bff4b",
       "title": "Agenda da semana tem inflação e ata do Fed como destaques; confira",
-      "summary": "O senador e pré-candidato à Presidência da República, Flávio Bolsonaro (PL-RJ), chegou neste domingo (5) em Washington, nos Estados Unidos, onde participará de uma audiência no Escritório do Representante de Comércio dos Estados Unidos (USTR) para discutir as sobretaxas impostas ",
-      "details": "O senador e pré-candidato à Presidência da República, Flávio Bolsonaro (PL-RJ), chegou neste domingo (5) em Washington, nos Estados Unidos, onde participará de uma audiência no Escritório do Representante de Comércio dos Estados Unidos (USTR) para discutir as sobretaxas impostas a produtos brasileiros. Ao chegar ao paí",
-      "url": "https://diariodopoder.com.br/brasil-e-regioes/e01-brasil/flavio-chega-aos-eua-prometendo-lutar-contra-tarifas",
+      "summary": "Itaú surpreende clientes ao encerrar cartão de crédito em agosto; entenda as implicações!",
+      "details": "Itaú surpreende clientes ao encerrar cartão de crédito em agosto; entenda as implicações!",
+      "url": "https://diariodoestadogo.com.br/itau-encerra-cartao-de-credito-em-meio-a-crise-de-imagem-2/",
       "source": "Investidor10",
       "category": "macro",
       "tags": [
@@ -303,14 +360,14 @@
       "updatedAt": "2026-07-05T21:34:59Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://uploads.diariodopoder.com.br/2026/04/22774585-flavio-bolsonaro.-ft-reproducao-redes-sociais.jpeg"
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/07/itau-encerra-cartao-de-credito-em-meio-a-crise-de-imagem-1.webp"
     },
     {
       "id": "macro-2da3e61e2d867976136e0d8b",
       "title": "O que acompanhar na agenda desta semana: inflação, Fed, BCE e impacto nos mercados",
-      "summary": "Confira a nova seleção de vagas remotas em diversas áreas para quem deseja impulsionar a carreira no mercado internacional.",
-      "details": "Confira a nova seleção de vagas remotas em diversas áreas para quem deseja impulsionar a carreira no mercado internacional.",
-      "url": "https://www.tecmundo.com.br/mercado/414346-home-office-41-vagas-para-trabalho-remoto-internacional-0507.htm",
+      "summary": "Flávio Bolsonaro critica Lula, alegando que presidente deseja tarifas dos EUA para fortalecer sua posição política.",
+      "details": "Flávio Bolsonaro critica Lula, alegando que presidente deseja tarifas dos EUA para fortalecer sua posição política.",
+      "url": "https://diariodoestadogo.com.br/flavio-bolsonaro-afirma-que-lula-busca-tarifas-de-trump-para-ganho-politico/",
       "source": "Seu Dinheiro",
       "category": "macro",
       "tags": [
@@ -322,14 +379,14 @@
       "updatedAt": "2026-07-05T21:21:25Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://tm.ibxk.com.br/2025/08/19/19112320363035.jpg?ims=1600x900/filters:format(jpg)"
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/07/flavio-bolsonaro-afirma-que-lula-busca-tarifas-de-trump-para-ganho-politico.jpg"
     },
     {
       "id": "companies-1438d0a93c867c20943b8f7f",
       "title": "Flávio Bolsonaro afirma que Lula busca tarifas de Trump para ganho político",
-      "summary": "Itaú surpreende clientes ao encerrar cartão de crédito em agosto; entenda as implicações!",
-      "details": "Itaú surpreende clientes ao encerrar cartão de crédito em agosto; entenda as implicações!",
-      "url": "https://diariodoestadogo.com.br/itau-encerra-cartao-de-credito-em-meio-a-crise-de-imagem-2/",
+      "summary": "Atualizacao de empresas capturada em Diário do Estado.",
+      "details": "",
+      "url": "https://acionista.com.br/ibovespa-recuperacao-marcante-ainda-tem-pontos-de-perigo-iminente/",
       "source": "Diário do Estado",
       "category": "companies",
       "tags": [
@@ -340,15 +397,14 @@
       "publishedAt": "2026-07-05T21:01:30Z",
       "updatedAt": "2026-07-05T21:01:30Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/07/itau-encerra-cartao-de-credito-em-meio-a-crise-de-imagem-1.webp"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "latest-d1d414b35b18bbe9ee44f9d5",
       "title": "Itaú encerra cartão de crédito em meio a crise de imagem",
-      "summary": "Confira a agenda de indicadores da semana de 6 a 10 de julho, que estará mais enxuta",
-      "details": "Confira a agenda de indicadores da semana de 6 a 10 de julho, que estará mais enxuta",
-      "url": "https://www.seudinheiro.com/2026/economia/agenda-inflacao-ata-do-fed-e-do-bce-confira-a-agenda-desta-semana-cbcb/",
+      "summary": "Mercado registra correções significativas nas cotações",
+      "details": "Mercado registra correções significativas nas cotações",
+      "url": "https://boca.com.br/agronegocio/queda-nos-precos-do-boi-gordo-impacta-mercado-brasileiro-em-junho",
       "source": "Diário do Estado",
       "category": "latest",
       "tags": [
@@ -360,14 +416,14 @@
       "updatedAt": "2026-07-05T21:01:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.seudinheiro.com/uploads/2024/10/iStock-899321150.jpg"
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/86e4923e5b7b6a2c8c842dbdf76e93c5_858x483.jpg"
     },
     {
       "id": "macro-0b4d09483604c3d72ef669d8",
       "title": "Calendário da semana: IPCA é o destaque na agenda doméstica; Focus e varejo também aparecem",
-      "summary": "Flávio Bolsonaro critica Lula, alegando que presidente deseja tarifas dos EUA para fortalecer sua posição política.",
-      "details": "Flávio Bolsonaro critica Lula, alegando que presidente deseja tarifas dos EUA para fortalecer sua posição política.",
-      "url": "https://diariodoestadogo.com.br/flavio-bolsonaro-afirma-que-lula-busca-tarifas-de-trump-para-ganho-politico/",
+      "summary": "Confira os principais indicadores econômicos da semana dos países: Brasil, Estados Unidos, Reino Unido, União Europeia, Alemanha, México e China",
+      "details": "Confira os principais indicadores econômicos da semana dos países: Brasil, Estados Unidos, Reino Unido, União Europeia, Alemanha, México e China",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/calendario-da-semana-ipca-e-o-destaque-na-agenda-domestica-focus-e-varejo-tambem-aparecem/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -379,14 +435,14 @@
       "updatedAt": "2026-07-05T20:30:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/07/flavio-bolsonaro-afirma-que-lula-busca-tarifas-de-trump-para-ganho-politico.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/PGPMMNFHXRMJBBLB42KB7HS4FU.png?quality=80&auth=585a97a9542948f1f01e559432d889bfbfca44ac3d9724ca9aeb842b4827c3de&width=1200&height=630&smart=true"
     },
     {
       "id": "macro-9cea5f81a5144afbf038fabc",
       "title": "Quanto custaria um Volkswagen Bora hoje, com a inflação?",
-      "summary": "O Volkswagen Bora ficou pouco mais de 10 anos em linha no Brasil, a partir de 2000, sempre posicionando-se em um segmento de entrada entre os sedans de luxo ofe",
-      "details": "O Volkswagen Bora ficou pouco mais de 10 anos em linha no Brasil, a partir de 2000, sempre posicionando-se em um segmento de entrada entre os sedans de luxo ofe",
-      "url": "https://canaltech.com.br/carros/quanto-custaria-um-volkswagen-bora-hoje-com-a-inflacao/",
+      "summary": "O Brasil precisa sair do círculo vicioso em que juros altos não entregam inflação na meta, elevam a dívida pública e inibem o investimento produtivo",
+      "details": "O Brasil precisa sair do círculo vicioso em que juros altos não entregam inflação na meta, elevam a dívida pública e inibem o investimento produtivo",
+      "url": "https://www.estadao.com.br/economia/claudio-adilson-goncalez/meta-crivel-e-apoiada-por-ancora-fiscal-reduziria-juros-reais-e-melhoraria-politica-monetaria/",
       "source": "Canaltech",
       "category": "macro",
       "tags": [
@@ -398,7 +454,7 @@
       "updatedAt": "2026-07-05T20:05:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://t.ctcdn.com.br/9xuxz8OZujU62-C-kDwZ5nbm8sA=/1200x675/smart/i1138465.jpeg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/Q2ZF336Y4VFORJEPJL5SCRI7R4.jpg?quality=80&auth=9551f55469e1cd2ee4df8f622d124da0f73593ebee6831a3f038fff9102912b1&width=1200&height=630&smart=true"
     },
     {
       "id": "macro-56674435e6bba5357b3eace3",
@@ -422,9 +478,9 @@
     {
       "id": "macro-4e6c8e5a83d839b1d39669f8",
       "title": "Meta crível e apoiada por âncora fiscal reduziria juros reais e melhoraria política monetária",
-      "summary": "O Brasil precisa sair do círculo vicioso em que juros altos não entregam inflação na meta, elevam a dívida pública e inibem o investimento produtivo",
-      "details": "O Brasil precisa sair do círculo vicioso em que juros altos não entregam inflação na meta, elevam a dívida pública e inibem o investimento produtivo",
-      "url": "https://www.estadao.com.br/economia/claudio-adilson-goncalez/meta-crivel-e-apoiada-por-ancora-fiscal-reduziria-juros-reais-e-melhoraria-politica-monetaria/",
+      "summary": "o avanço comercial não está sendo acompanhado por estrutura operacional, disciplina de gestão e segurança jurídica",
+      "details": "o avanço comercial não está sendo acompanhado por estrutura operacional, disciplina de gestão e segurança jurídica",
+      "url": "https://cndl.org.br/varejosa/mais-vendas-menos-lucro-o-gargalo-operacional-das-empresas-brasileiras/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -436,34 +492,15 @@
       "updatedAt": "2026-07-05T20:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/Q2ZF336Y4VFORJEPJL5SCRI7R4.jpg?quality=80&auth=9551f55469e1cd2ee4df8f622d124da0f73593ebee6831a3f038fff9102912b1&width=1200&height=630&smart=true"
+      "imageUrl": "https://cndl.org.br/varejosa/wp-content/uploads/2024/08/Nexialista-o-profissional-do-futuro.jpg"
     },
     {
       "id": "macro-53dde9557acd05942877f3b8",
       "title": "A conta da dívida chegou: atingiu o equivalente a 81,1% do PIB, nível alto para o Brasil",
-      "summary": "Juiz absolveu empresário acusado de sonegar R$ 4 milhões ao concluir que técnica do levantamento financeiro é inadequada para aferição",
-      "details": "Juiz absolveu empresário acusado de sonegar R$ 4 milhões ao concluir que técnica do levantamento financeiro é inadequada para aferição",
-      "url": "https://www.conjur.com.br/2026-jul-05/tecnica-de-levantamento-financeiro-nao-e-adequada-para-identificar-sonegacao-do-icms-st/",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-05T20:00:00Z",
-      "updatedAt": "2026-07-05T20:00:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.conjur.com.br/wp-content/uploads/2026/07/businessman-checking-bills-business-finance-1-scaled-e1783247272334.jpg"
-    },
-    {
-      "id": "macro-a968014fc2d8123acc124964",
-      "title": "Agenda econômica da semana: IPCA, Opep, Fed e BCE movimentam os mercados",
       "summary": "A saída mais racional para esse ciclo é um freio e o controle da despesa pública; está perto o momento de uma ação mais decisiva na política fiscal para estabelecer maior equilíbrio na economia",
       "details": "A saída mais racional para esse ciclo é um freio e o controle da despesa pública; está perto o momento de uma ação mais decisiva na política fiscal para estabelecer maior equilíbrio na economia",
       "url": "https://www.estadao.com.br/economia/henrique-meirelles/a-conta-da-divida-chegou-atingiu-o-equivalente-811-do-pib-nivel-alto-para-o-brasil/",
-      "source": "BPMoney",
+      "source": "Estadão",
       "category": "macro",
       "tags": [
         "macro",
@@ -475,6 +512,25 @@
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://www.estadao.com.br/resizer/v2/VD66HEM3WFA7XDCVCUJ7ZPP3JE.jpeg?quality=80&auth=ddd736fe3e0d3bdf69ef731d195e8b06a9dd55f28e2e80bbdab89784499a1bfb&width=1200&height=630&focal=2426,1350"
+    },
+    {
+      "id": "macro-a968014fc2d8123acc124964",
+      "title": "Agenda econômica da semana: IPCA, Opep, Fed e BCE movimentam os mercados",
+      "summary": "Juiz absolveu empresário acusado de sonegar R$ 4 milhões ao concluir que técnica do levantamento financeiro é inadequada para aferição",
+      "details": "Juiz absolveu empresário acusado de sonegar R$ 4 milhões ao concluir que técnica do levantamento financeiro é inadequada para aferição",
+      "url": "https://www.conjur.com.br/2026-jul-05/tecnica-de-levantamento-financeiro-nao-e-adequada-para-identificar-sonegacao-do-icms-st/",
+      "source": "BPMoney",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-05T20:00:00Z",
+      "updatedAt": "2026-07-05T20:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.conjur.com.br/wp-content/uploads/2026/07/businessman-checking-bills-business-finance-1-scaled-e1783247272334.jpg"
     },
     {
       "id": "macro-914bc84136cbd1bd9a213aad",
@@ -498,9 +554,9 @@
     {
       "id": "companies-28e6a0791a014b44d620fd41",
       "title": "Mais vendas, menos lucro: o gargalo operacional das empresas brasileiras",
-      "summary": "o avanço comercial não está sendo acompanhado por estrutura operacional, disciplina de gestão e segurança jurídica",
-      "details": "o avanço comercial não está sendo acompanhado por estrutura operacional, disciplina de gestão e segurança jurídica",
-      "url": "https://cndl.org.br/varejosa/mais-vendas-menos-lucro-o-gargalo-operacional-das-empresas-brasileiras/",
+      "summary": "Pré-candidato à Presidência da República desembarca no país a 2 dias de reunião com o governo americano; senador assistirá jogo do Brasil em Washington",
+      "details": "Pré-candidato à Presidência da República desembarca no país a 2 dias de reunião com o governo americano; senador assistirá jogo do Brasil em Washington",
+      "url": "https://sbtnews.sbt.com.br/noticia/politica/flavio-bolsonaro-chega-aos-eua-para-audiencia-sobre-tarifas",
       "source": "cndl.org.br",
       "category": "companies",
       "tags": [
@@ -512,14 +568,14 @@
       "updatedAt": "2026-07-05T19:33:48Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://cndl.org.br/varejosa/wp-content/uploads/2024/08/Nexialista-o-profissional-do-futuro.jpg"
+      "imageUrl": "https://sbt-news-assets-prod.s3.sa-east-1.amazonaws.com/flavio_bolsonaro_6d3c24335d.jpg"
     },
     {
       "id": "companies-7d902c9b544fc07d92d9e36f",
       "title": "Sistema de energia por assinatura promete reduzir a conta de luz",
-      "summary": "Pré-candidato à Presidência da República desembarca no país a 2 dias de reunião com o governo americano; senador assistirá jogo do Brasil em Washington",
-      "details": "Pré-candidato à Presidência da República desembarca no país a 2 dias de reunião com o governo americano; senador assistirá jogo do Brasil em Washington",
-      "url": "https://sbtnews.sbt.com.br/noticia/politica/flavio-bolsonaro-chega-aos-eua-para-audiencia-sobre-tarifas",
+      "summary": "Com promessa de economia sem instalação de placas solares, C-LEVE quer ampliar acesso à energia renovável para pessoas físicas, empresas e igrejas.",
+      "details": "Com promessa de economia sem instalação de placas solares, C-LEVE quer ampliar acesso à energia renovável para pessoas físicas, empresas e igrejas.",
+      "url": "https://correiodobrasil.com.br/a/sistema-energia-assinatura-promete-reduzir-conta-luz",
       "source": "correiodobrasil.com.br",
       "category": "companies",
       "tags": [
@@ -531,14 +587,14 @@
       "updatedAt": "2026-07-05T19:27:41Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://sbt-news-assets-prod.s3.sa-east-1.amazonaws.com/flavio_bolsonaro_6d3c24335d.jpg"
+      "imageUrl": "https://correiodobrasil.com.br/img/1809662_big-painel-solar.jpg"
     },
     {
       "id": "companies-eaad76beaca2b67755c03df3",
       "title": "Flávio Bolsonaro chega aos EUA para audiência sobre tarifas",
-      "summary": "Com promessa de economia sem instalação de placas solares, C-LEVE quer ampliar acesso à energia renovável para pessoas físicas, empresas e igrejas.",
-      "details": "Com promessa de economia sem instalação de placas solares, C-LEVE quer ampliar acesso à energia renovável para pessoas físicas, empresas e igrejas.",
-      "url": "https://correiodobrasil.com.br/a/sistema-energia-assinatura-promete-reduzir-conta-luz",
+      "summary": "O Volkswagen Bora ficou pouco mais de 10 anos em linha no Brasil, a partir de 2000, sempre posicionando-se em um segmento de entrada entre os sedans de luxo ofe",
+      "details": "O Volkswagen Bora ficou pouco mais de 10 anos em linha no Brasil, a partir de 2000, sempre posicionando-se em um segmento de entrada entre os sedans de luxo ofe",
+      "url": "https://canaltech.com.br/carros/quanto-custaria-um-volkswagen-bora-hoje-com-a-inflacao/",
       "source": "SBT News",
       "category": "companies",
       "tags": [
@@ -550,7 +606,7 @@
       "updatedAt": "2026-07-05T19:27:36Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://correiodobrasil.com.br/img/1809573_big-painel-solar.jpg"
+      "imageUrl": "https://t.ctcdn.com.br/9xuxz8OZujU62-C-kDwZ5nbm8sA=/1200x675/smart/i1138465.jpeg"
     },
     {
       "id": "macro-aae40ab4d25b0f6e16936550",
@@ -572,30 +628,11 @@
       "imageUrl": "https://crn1.com.br/storage/uploads/2023/10/lula-fazendo-o-ele.social.jpg?v=1776990206"
     },
     {
-      "id": "latest-b4a25f3d5a983e78fd40eab9",
-      "title": "Nubank disputa compra da operação brasileira da Caixa Geral de Depósitos",
-      "summary": "Entenda qual banco o Nubank pretende comprar, por que a negociação não envolve a Caixa Econômica Federal e quais podem ser os impactos da operação.",
-      "details": "Entenda qual banco o Nubank pretende comprar, por que a negociação não envolve a Caixa Econômica Federal e quais podem ser os impactos da operação.",
-      "url": "https://seucreditodigital.com.br/nubank-negocia-compra-banco-caixa/",
-      "source": "Seu Crédito Digital",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-05T19:00:00Z",
-      "updatedAt": "2026-07-05T19:00:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://seucreditodigital.com.br/wp-content/uploads/2026/05/Nubank-7-1.jpg"
-    },
-    {
       "id": "macro-47c75d3ed4538bb763513603",
       "title": "Santa Cruz conquista nota máxima em ranking da qualidade contábil e fiscal",
-      "summary": "Município recebeu conceito A pela sétima vez consecutiva em avaliação do Tesouro Nacional",
-      "details": "Município recebeu conceito A pela sétima vez consecutiva em avaliação do Tesouro Nacional",
-      "url": "https://www.gaz.com.br/santa-cruz-conquista-nota-maxima-em-ranking-da-qualidade-contabil-e-fiscal/",
+      "summary": "Pré-candidato à Presidência participará de audiência nos EUA",
+      "details": "Pré-candidato à Presidência participará de audiência nos EUA",
+      "url": "https://pleno.news/brasil/politica-nacional/flavio-desembarca-nos-eua-para-defender-brasil-de-sobretaxas.html",
       "source": "gaz.com.br",
       "category": "macro",
       "tags": [
@@ -607,14 +644,14 @@
       "updatedAt": "2026-07-05T18:45:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.gaz.com.br/uploads/2024/09/Vista-Panoramica-Santa-Cruz-do-Sul-005-230916.jpg"
+      "imageUrl": "https://static.cdn.pleno.news/2026/07/bc3fdf733c66db68f9a256409f5b5fb4_1689870.png"
     },
     {
       "id": "macro-1977bfd079a57a9b9a22aa18",
       "title": "Dwayne Johnson encanta o Rio de Janeiro com evento de 'Moana' na Ilha Fiscal",
-      "summary": "Astro de Hollywood atendeu os fãs em evento de gala da Disney como parte da turnê do filme",
-      "details": "Astro de Hollywood atendeu os fãs em evento de gala da Disney como parte da turnê do filme",
-      "url": "https://www.correiodamanha.com.br/rio-de-janeiro/2026/07/299374-dwayne-johnson-encanta-o-rio-de-janeiro-com-evento-de-moana-na-ilha-fiscal.html",
+      "summary": "Município recebeu conceito A pela sétima vez consecutiva em avaliação do Tesouro Nacional",
+      "details": "Município recebeu conceito A pela sétima vez consecutiva em avaliação do Tesouro Nacional",
+      "url": "https://www.gaz.com.br/santa-cruz-conquista-nota-maxima-em-ranking-da-qualidade-contabil-e-fiscal/",
       "source": "correiodamanha.com.br",
       "category": "macro",
       "tags": [
@@ -626,7 +663,7 @@
       "updatedAt": "2026-07-05T18:38:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.correiodamanha.com.br/_midias/jpg/2026/07/05/600x378/1_moana_31-636999.jpg"
+      "imageUrl": "https://www.gaz.com.br/uploads/2024/09/Vista-Panoramica-Santa-Cruz-do-Sul-005-230916.jpg"
     },
     {
       "id": "macro-c87f297edf242955255fead7",
@@ -650,9 +687,9 @@
     {
       "id": "companies-3ec335844d640fb2bb3ff080",
       "title": "Flávio desembarca nos EUA para defender Brasil de sobretaxas",
-      "summary": "Ações proporcionaram momentos de aprendizagem, criatividade e protagonismo estudantil",
-      "details": "Ações proporcionaram momentos de aprendizagem, criatividade e protagonismo estudantil",
-      "url": "https://www.clicportela.com.br/noticia/171710/estudantes-de-derrubadas-desenvolvem-atividades-do-programa-de-educacao-fiscal",
+      "summary": "Astro de Hollywood atendeu os fãs em evento de gala da Disney como parte da turnê do filme",
+      "details": "Astro de Hollywood atendeu os fãs em evento de gala da Disney como parte da turnê do filme",
+      "url": "https://www.correiodamanha.com.br/rio-de-janeiro/2026/07/299374-dwayne-johnson-encanta-o-rio-de-janeiro-com-evento-de-moana-na-ilha-fiscal.html",
       "source": "Pleno.News",
       "category": "companies",
       "tags": [
@@ -664,14 +701,14 @@
       "updatedAt": "2026-07-05T18:21:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://www.clicportela.com.br/images/noticias/171710/6e7a13e47a0ba0fc70e2c45bc01cb929.webp"
+      "imageUrl": "https://www.correiodamanha.com.br/_midias/jpg/2026/07/05/600x378/1_moana_31-636999.jpg"
     },
     {
       "id": "macro-7a69ff2c1f7f7434a8454b84",
       "title": "Agenda econômica da semana: inflação e atas do Fed e BCE",
-      "summary": "Pré-candidato à Presidência participará de audiência nos EUA",
-      "details": "Pré-candidato à Presidência participará de audiência nos EUA",
-      "url": "https://pleno.news/brasil/politica-nacional/flavio-desembarca-nos-eua-para-defender-brasil-de-sobretaxas.html",
+      "summary": "Ações proporcionaram momentos de aprendizagem, criatividade e protagonismo estudantil",
+      "details": "Ações proporcionaram momentos de aprendizagem, criatividade e protagonismo estudantil",
+      "url": "https://www.clicportela.com.br/noticia/171710/estudantes-de-derrubadas-desenvolvem-atividades-do-programa-de-educacao-fiscal/amp",
       "source": "Minas Informa",
       "category": "macro",
       "tags": [
@@ -683,14 +720,14 @@
       "updatedAt": "2026-07-05T18:03:26Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://static.cdn.pleno.news/2026/07/bc3fdf733c66db68f9a256409f5b5fb4_1689870.png"
+      "imageUrl": "https://www.clicportela.com.br/images/noticias/171710/6e7a13e47a0ba0fc70e2c45bc01cb929.webp"
     },
     {
       "id": "funds-7f55695c5902f0f43b0e31f6",
       "title": "Marco Brito: A financeirização capitalista e o ataque sistemático ao SUS",
-      "summary": "Críticas internacionais à postura do Paraguai na Copa podem afetar patrocínios e valuation de atletas. Entenda os riscos para investidores do setor",
-      "details": "Críticas internacionais à postura do Paraguai na Copa podem afetar patrocínios e valuation de atletas. Entenda os riscos para investidores do setor",
-      "url": "https://www.spacemoney.com.br/investimentos/controversia-paraguai-franca-riscos-reputacao/",
+      "summary": "Agenda econômica da semana: inflação e atas do Fed e BCE Agenda econômica da semana: inflação e atas do Fed e BCE concentram as atenções dos mercados entre 6 e 10 de julho, período em que indicadores de preços e documentos de bancos centrais podem indicar os próximos rumos da pol",
+      "details": "Agenda econômica da semana: inflação e atas do Fed e BCE Agenda econômica da semana: inflação e atas do Fed e BCE concentram as atenções dos mercados entre 6 e 10 de julho, período em que indicadores de preços e documentos de bancos centrais podem indicar os próximos rumos da política monetária global. Agenda econômica",
+      "url": "https://minasinforma.com/agenda-economica-da-semana-inflacao-atas-fed-bce/",
       "source": "Viomundo",
       "category": "funds",
       "tags": [
@@ -702,10 +739,10 @@
       "updatedAt": "2026-07-05T18:01:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/07/pexels-photo-38401511-2.webp"
+      "imageUrl": "https://minasinforma.com/wp-content/uploads/2026/07/minasinforma-1783274492.jpg"
     },
     {
-      "id": "macro-c3255ee1bc2787eab314f4a0",
+      "id": "macro-43f8ebbadd42992476bda851",
       "title": "Estudantes de Derrubadas desenvolvem atividades do programa de educação fiscal",
       "summary": "Atualizacao de macro capturada em Sistema Província de Comunicação.",
       "details": "",
@@ -717,17 +754,17 @@
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-07-05T17:50:51Z",
-      "updatedAt": "2026-07-05T17:50:51Z",
+      "publishedAt": "2026-07-05T17:50:00Z",
+      "updatedAt": "2026-07-05T17:50:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-5ea4634e7f4764249ca4076b",
       "title": "Florianópolis registra inflação de quase 4% em 2026; veja os produtos que mais subiram e os que ficaram mais baratos",
-      "summary": "Agenda econômica da semana: inflação e atas do Fed e BCE Agenda econômica da semana: inflação e atas do Fed e BCE concentram as atenções dos mercados entre 6 e 10 de julho, período em que indicadores de preços e documentos de bancos centrais podem indicar os próximos rumos da pol",
-      "details": "Agenda econômica da semana: inflação e atas do Fed e BCE Agenda econômica da semana: inflação e atas do Fed e BCE concentram as atenções dos mercados entre 6 e 10 de julho, período em que indicadores de preços e documentos de bancos centrais podem indicar os próximos rumos da política monetária global. Agenda econômica",
-      "url": "https://minasinforma.com/agenda-economica-da-semana-inflacao-atas-fed-bce/",
+      "summary": "Atualizacao de macro capturada em Agora Floripa.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNWTRIOVJ1czg0VjlUNmZ2aGIxOGNIVjRUSTlnYTd6ZXA0azlGWmtZbjhqb1Y1X3ZhN1FSbjBJaE1CdmF0QWhORHRsZncxZ1JFRVZwUkpvX0JyajRKTHltRk5zM0ZHUXlVMkttOEFDby1MVVpCYUZZRDE0UlBDZFRYdi1ka3F5RDgxZm5nLUluTWR6VjFUWFJpUjJ1TFdTeFRWazV1cjVFaGdxNzBzbHJMZG0wUURHLVpid0lhQmhhRkV3dnpIM3U0ZWF2bjlKNlJlWTBMaUlzNHU0U0NHcE5OMQ?oc=5",
       "source": "Agora Floripa",
       "category": "macro",
       "tags": [
@@ -738,15 +775,14 @@
       "publishedAt": "2026-07-05T17:18:04Z",
       "updatedAt": "2026-07-05T17:18:04Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://minasinforma.com/wp-content/uploads/2026/07/minasinforma-1783274492.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-a115a4c5020e17902dcdc8b0",
       "title": "Controvérsia Paraguai-França e riscos de reputação",
-      "summary": "O custo de vida continua em alta para quem mora em Florianópolis. Nos seis primeiros meses de 2026, a inflação",
-      "details": "O custo de vida continua em alta para quem mora em Florianópolis. Nos seis primeiros meses de 2026, a inflação",
-      "url": "https://www.agorafloripa.com.br/florianopolis-registra-inflacao-de-quase-4-em-2026-veja-os-produtos-que-mais-subiram-e-os-que-ficaram-mais-baratos/",
+      "summary": "Atualizacao de ultima hora capturada em SpaceMoney.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZFAzb09PaFh6V2h0ekoyQkh0Zm9PNVpYR2JDcUtVNjQ2S1dmODdwSzBpWHMtZFRNdlpSYk1pRVJsZHBrQVV6YW9kaGUzeDBZZlY4N1UyUkFVWnVkRlF2REg4T2drakJFMjYtZm1vNEhydTZCZ3R4TDhoWnNJcmRPZTE0SWZsLWRmR3hGaXJ5R25ObnpB?oc=5",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -757,11 +793,10 @@
       "publishedAt": "2026-07-05T17:12:04Z",
       "updatedAt": "2026-07-05T17:12:04Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.agorafloripa.com.br/wp-content/uploads/2026/07/422-18-Foto-Divulgacao-Agora-Floripa.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "funds-bcf5b90859301fdc01c11cec",
+      "id": "funds-40bf825790b3741e5d50f41b",
       "title": "Marca hoteleira com ex-XP estreia no Brasil em paraíso do kitesurfe",
       "summary": "Atualizacao de fundos capturada em Portal Tela.",
       "details": "",
@@ -773,8 +808,8 @@
         "asset",
         "fiis"
       ],
-      "publishedAt": "2026-07-05T17:05:31Z",
-      "updatedAt": "2026-07-05T17:05:31Z",
+      "publishedAt": "2026-07-05T17:05:32Z",
+      "updatedAt": "2026-07-05T17:05:32Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
@@ -981,7 +1016,7 @@
       "title": "Ouro vs. Bitcoin: Qual o papel de cada um na sua carteira?",
       "summary": "Atualizacao de ultima hora capturada em Portal do Bitcoin.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUzZrS0FaZHlXT0ljS3JuVmxXNTd4ZzNQR0xkeHFBb1lRRHJjREU2NVFndkhYQWVySWN5ZHFKa3p2OTVEdmw2cHM4R1c1UXdmcUQ4dGkwWWJ2dXpuakJOUVQyMjhGNFYzSm9nNnM1WmpiS2RKM3k1cUg4UktMWnZhNV85S2ZVUThHNjNlcVVGNHBpRTlnM3fSAZsBQVVfeXFMUDM5TnlrSXZZU0tsd2VHRFRzZ25qN0d4Q0N3bkU3WGZ0ajRfQ0RKSlloTUZHTTdMaHZfZ1YxOVVpRnllSWM4bFZrU3dBQkFLdnRNZFJDRXUyMkVPaV8wVENSWWVrZ0p4QzZOOHF5c092OWQwTXBpT2tia3JYRC1VTDhoWVU3MVB1Ulhud2lBMUR0XzU3ck5aRzBIdzQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMzlOeWtJdllTS2x3ZUdEVHNnbmo3R3hDQ3duRTdYZnRqNF9DREpKWWhNRkdNN0xodl9nVjE5VWlGeWVJYzhsVmtTd0FCQUt2dE1kUkNFdTIyRU9pXzBUQ1JZZWtnSnhDNk44cXlzT3Y5ZDBNcGlPa2JrclhELVVMOGhZVTcxUHVSWG53aUExRHRfNTdyTlpHMEh3NNIBmwFBVV95cUxQMzlOeWtJdllTS2x3ZUdEVHNnbmo3R3hDQ3duRTdYZnRqNF9DREpKWWhNRkdNN0xodl9nVjE5VWlGeWVJYzhsVmtTd0FCQUt2dE1kUkNFdTIyRU9pXzBUQ1JZZWtnSnhDNk44cXlzT3Y5ZDBNcGlPa2JrclhELVVMOGhZVTcxUHVSWG53aUExRHRfNTdyTlpHMEh3NA?oc=5",
       "source": "Portal do Bitcoin",
       "category": "latest",
       "tags": [
@@ -1047,6 +1082,24 @@
       "updatedAt": "2026-07-05T14:11:15Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "funds-3a72bcca6830a68985be5abf",
+      "title": "Gestora da Arena de Itaquera desmente presidente do Corinthians",
+      "summary": "Atualizacao de fundos capturada em Blog do Paulinho.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZXN3WC1YaVlsamtlQzJYVjMySktGMDBpbFZnLXJrNy1KeGotUFRwWkRxaGJxWlV2QnU1enJjT2VwVnZNVjNLZlBsa2pYaGRDVWFxbHRkOXV3dXB0RFh6V0dLTkQwS3lfWjg0UFdzd0pHSkU3TDV1b0o3c2pVMW4xOWZaQVRZODNXZzZsaktTakpoN1BsQ2RFWk1DRFlieW5YeHNOT3VkbjY?oc=5",
+      "source": "Blog do Paulinho",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-07-05T13:49:33Z",
+      "updatedAt": "2026-07-05T13:49:33Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "funds-d1c1f293fbe0e0e9eada318d",
@@ -1137,24 +1190,6 @@
       "updatedAt": "2026-07-05T12:36:57Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "latest-648d5673b9dab74c9d5d4c79",
-      "title": "De estudante mediano a bilionário: a jornada de Ray Dalio",
-      "summary": "Atualizacao de ultima hora capturada em Diário do Estado.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZElVeER1V1Npd3VpQlljUWc4YTFzMXk3UFhybUxKLS1kS0FhVWlpQjFYV3lVTXFCYllrcFBoeDRlemlUenJ0TDYyTG1RZTNERDRfdnFVZXQzQVNVTmFmamltUTU3ekpuRzJPeUZqOG4yVkZZc0ctOU9iZ2JXd2pLR0d4OEVuQ2tmZVNRdzFZM2NVdGM?oc=5",
-      "source": "Diário do Estado",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-05T12:35:43Z",
-      "updatedAt": "2026-07-05T12:35:43Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-e6c645fb43d9451c3f1ae66a",
@@ -1369,42 +1404,6 @@
       ],
       "publishedAt": "2026-07-05T00:08:00Z",
       "updatedAt": "2026-07-05T00:08:00Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "companies-de7ed7aed99dd5136f73a4d7",
-      "title": "Senador Flávio Bolsonaro deve falar em audiência pública em Washington nesta terça; dias atrás afirmou que tarifaço de Trump daria vitória a Lula",
-      "summary": "Atualizacao de empresas capturada em Jornal O Sul.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNRU9vak4zQ253MmdBYndsd21qY0hya1FKc2JwYVZ4SktiTHFNSWNFVUVld2RMLUFOSWRUb19BSGdpbnkxUExIOXlpaUZEY0trQ29BZ0lpNWRQX1Jadnk0Q09FMFlTanZ4LTdlQ082QzlsaG40bXowV3k4WHFQVzh4M29YeXJCTHFZUDB6Qmhlb216a3ZOODdDT1JzYTltMkdTWEJCbndfMVFZcGs3M1FaamU1RW9Zd1ZyNHZZLXJJVnBtYUZMazQ2NUFoSG40VEctckd0V2R3Q25MMmpDMklTWGwtZ1U3TklCVmYzNVNuSF9ETW5hUUxxX21LRWllbkNT0gGAAkFVX3lxTE1FT29qTjNDbncyZ0Fid2x3bWpjSHJrUUpzYnBhVnhKS2JMcU1JY0VVRWV3ZEwtQU5JZFRvX0FIZ2lueTFQTEg5eWlpRkRjS2tDb0FnSWk1ZFBfUlp2eTRDT0UwWVNqdngtN2VDTzZDOWxobjRtejBXeThYcVBXOHgzb1h5ckJMcVlQMHpCaGVvbXprdk44N0NPUnNhOW0yR1NYQkJud18xUVlwazczUVpqZTVFb1l3VnI0dlktcklWcG1hRkxrNDY1QWhIbjRURy1yR3RXZHdDbkwyakMySVNYbC1nVTdOSUJWZjM1U25IX0RNbmFRTHFfbUtFaWVuQ1M?oc=5",
-      "source": "Jornal O Sul",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-07-04T23:55:48Z",
-      "updatedAt": "2026-07-04T23:55:48Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "funds-ed1b7f86899d6cecb0e51155",
-      "title": "Junho marca 2º mês de saída de estrangeiro da Bolsa, mas saldo do ano segue maior que o de 2025",
-      "summary": "Atualizacao de fundos capturada em Acessa.com.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZ0dWcXFTZ1VyZldtWXItYkJqZWxiaXhqSWJpcThsQVY4aEw2VFhkeHlTaTloX3FOTXlZTl9lUUJCV25hSnRLa05EQmZSZEduM19FYnBUZmRIT1BUeEt2a2ZDaW1pdTg0ZnhCbDk3Tms2eExTdDNpVUZ1SVJUZk9lMW0tbzczLWNkWXJDX1JldHdmZ09EWHZTLWFWRnFBa0VCSU9vbDFTelN1elEzcE9rc214OVVBUzhqTlVJODZ1eHkxaW5rdHBoWUNvZXBrRVpEcEFDNEtabG5HeHB4YVdXMDVFUdIB4wFBVV95cUxPZ0dWcXFTZ1VyZldtWXItYkJqZWxiaXhqSWJpcThsQVY4aEw2VFhkeHlTaTloX3FOTXlZTl9lUUJCV25hSnRLa05EQmZSZEduM19FYnBUZmRIT1BUeEt2a2ZDaW1pdTg0ZnhCbDk3Tms2eExTdDNpVUZ1SVJUZk9lMW0tbzczLWNkWXJDX1JldHdmZ09EWHZTLWFWRnFBa0VCSU9vbDFTelN1elEzcE9rc214OVVBUzhqTlVJODZ1eHkxaW5rdHBoWUNvZXBrRVpEcEFDNEtabG5HeHB4YVdXMDVFUQ?oc=5",
-      "source": "Acessa.com",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-07-04T23:49:33Z",
-      "updatedAt": "2026-07-04T23:49:33Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
