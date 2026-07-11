@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-11T14:35:17Z",
-  "generatedAt": "2026-07-11T14:35:17Z",
+  "updatedAt": "2026-07-11T15:52:14Z",
+  "generatedAt": "2026-07-11T15:52:14Z",
   "categories": [
     {
       "id": "all",
@@ -25,16 +25,8 @@
   ],
   "sources": [
     {
-      "id": "acionista-com-br",
-      "label": "Acionista.com.br"
-    },
-    {
       "id": "adnews-com-br",
       "label": "adnews.com.br"
-    },
-    {
-      "id": "aeroin",
-      "label": "AEROIN"
     },
     {
       "id": "ajn1",
@@ -61,8 +53,8 @@
       "label": "BPMoney"
     },
     {
-      "id": "broadcast",
-      "label": "Broadcast"
+      "id": "cbnribeirao-com-br",
+      "label": "cbnribeirao.com.br"
     },
     {
       "id": "cnn-brasil",
@@ -75,6 +67,14 @@
     {
       "id": "conex-o-itajub",
       "label": "Conexão Itajubá"
+    },
+    {
+      "id": "cruso",
+      "label": "Crusoé"
+    },
+    {
+      "id": "di-rio-do-estado",
+      "label": "Diário do Estado"
     },
     {
       "id": "economic-news-brasil",
@@ -101,8 +101,8 @@
       "label": "Estratégia Concursos"
     },
     {
-      "id": "exame",
-      "label": "Exame"
+      "id": "euqueroinvestir",
+      "label": "EuQueroInvestir"
     },
     {
       "id": "fiis",
@@ -111,10 +111,6 @@
     {
       "id": "folha-pe",
       "label": "Folha PE"
-    },
-    {
-      "id": "g1",
-      "label": "G1"
     },
     {
       "id": "gazeta-de-limeira",
@@ -127,10 +123,6 @@
     {
       "id": "grupo-lomes-de-comunica-o",
       "label": "Grupo Lomes de Comunicação"
-    },
-    {
-      "id": "infomoney",
-      "label": "InfoMoney"
     },
     {
       "id": "investing-com-brasil-finan-as-c-mbio-e-investimentos",
@@ -157,20 +149,12 @@
       "label": "Money Times"
     },
     {
-      "id": "no-cariri-tem",
-      "label": "No Cariri Tem"
-    },
-    {
       "id": "novarejo",
       "label": "novarejo"
     },
     {
       "id": "o-antagonista",
       "label": "O Antagonista"
-    },
-    {
-      "id": "o-povo",
-      "label": "O POVO+"
     },
     {
       "id": "o-tempo",
@@ -181,8 +165,16 @@
       "label": "Portal Comunique-se"
     },
     {
+      "id": "portal-terra-da-luz",
+      "label": "Portal Terra da Luz"
+    },
+    {
       "id": "radar-digital-bras-lia",
       "label": "RADAR DIGITAL BRASÍLIA"
+    },
+    {
+      "id": "rep-rter-macei",
+      "label": "Repórter Maceió"
     },
     {
       "id": "seu-dinheiro",
@@ -205,10 +197,6 @@
       "label": "Tribuna do Planalto"
     },
     {
-      "id": "tribuna-hoje",
-      "label": "Tribuna Hoje"
-    },
-    {
       "id": "turbo-pt",
       "label": "turbo.pt"
     },
@@ -227,11 +215,144 @@
   ],
   "items": [
     {
+      "id": "latest-a79d534b0879fb046392259b",
+      "title": "ECONOMIA - \"Mercado brasileiro dispara com inflação abaixo do esperado; Ibovespa atinge maior nível desde maio e dólar recua pela terceira vez consecutiva\"",
+      "summary": "Notícias do Ceará",
+      "details": "Notícias do Ceará",
+      "url": "https://portalterradaluz.com.br/principal/economia-inflacao-desacelera-com-queda-dos-alimentos/",
+      "source": "Repórter Maceió",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-11T15:03:00Z",
+      "updatedAt": "2026-07-11T15:03:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://portalterradaluz.com.br/wp-content/uploads/2021/07/icon-portal-terra-da-luz.png"
+    },
+    {
+      "id": "latest-bb6a99a8c7a4da98e8b9e730",
+      "title": "Mercado vê 75,5% de chance de corte da Selic em agosto, aponta B3",
+      "summary": "Opções de Copom negociadas na B3 indicam 75,5% de chance de corte de 0,25 ponto na Selic na reunião de agosto",
+      "details": "Opções de Copom negociadas na B3 indicam 75,5% de chance de corte de 0,25 ponto na Selic na reunião de agosto",
+      "url": "https://bpmoney.com.br/economia/mercado-ve-755-de-chance-de-corte-da-selic-em-agosto-aponta-b3/",
+      "source": "BPMoney",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-11T15:00:00Z",
+      "updatedAt": "2026-07-11T15:00:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://bpmoney.com.br/wp-content/uploads/2025/03/i2pKkHVt-image-1320x880.webp"
+    },
+    {
+      "id": "macro-b03e2d208bf1987a70212a8d",
+      "title": "Economia: Inflação desacelera com queda dos alimentos",
+      "summary": "O mercado financeiro brasileiro teve um dia positivo, com o Ibovespa subindo quase 3% e o dólar caindo para R$ 5,10. A inflação abaixo do esperado fortaleceu as chances de cortes na taxa Selic.",
+      "details": "O mercado financeiro brasileiro teve um dia positivo, com o Ibovespa subindo quase 3% e o dólar caindo para R$ 5,10. A inflação abaixo do esperado fortaleceu as chances de cortes na taxa Selic.",
+      "url": "https://reportermaceio.com.br/economia-mercado-brasileiro-dispara-com-inflacao-abaixo-do-esperado-ibovespa-atinge-maior-nivel-desde-maio-e-dolar-recua-pela-terceira-vez-consecutiva/",
+      "source": "Portal Terra da Luz",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-11T14:55:22Z",
+      "updatedAt": "2026-07-11T14:55:22Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://reportermaceio.com.br/wp-content/uploads/2026/07/1783782244_capaeconomia.jpg"
+    },
+    {
+      "id": "latest-068a1aa8a8092a6d1973c206",
+      "title": "Taxa Selic a 14,25% Redefine Cenário do Mercado Financeiro",
+      "summary": "IPCA medida oficial da inflação, calculado pelo IBGE, ficou em 0,15% na Região Metropolitana de Salvador (RMS). O indicador teve",
+      "details": "IPCA medida oficial da inflação, calculado pelo IBGE, ficou em 0,15% na Região Metropolitana de Salvador (RMS). O indicador teve",
+      "url": "https://glomes.com.br/em-junho-inflacao-na-regiao-de-salvador-tem-terceira-desaceleracao-consecutiva-e-fica-em-015/",
+      "source": "Diário do Estado",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-11T14:46:56Z",
+      "updatedAt": "2026-07-11T14:46:56Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://glomes.com.br/wp-content/uploads/2024/11/IMG_9363site.jpg"
+    },
+    {
+      "id": "macro-2f445aa98a5909bba67f09a3",
+      "title": "Em junho, inflação na região de Salvador tem terceira desaceleração consecutiva e fica em 0,15%",
+      "summary": "Juros altos tornam renda fixa predominante e desestimulam ações.",
+      "details": "Juros altos tornam renda fixa predominante e desestimulam ações.",
+      "url": "https://diariodoestadogo.com.br/taxa-selic-a-1425-redefine-cenario-do-mercado-financeiro/",
+      "source": "Grupo Lomes de Comunicação",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-11T14:45:00Z",
+      "updatedAt": "2026-07-11T14:45:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://diariodoestadogo.com.br/wp-content/uploads/2026/07/taxa-selic-a-142C2525-redefine-cenario-do-mercado-financeiro.jpg"
+    },
+    {
+      "id": "latest-80c929b6203fe483d3cf7b9b",
+      "title": "Juros altos redesenham produtos do mercado financeiro",
+      "summary": "Selic em patamar elevado favorece a renda fixa, reduz o apetite por ativos de risco e desafia fundos e empresas",
+      "details": "Selic em patamar elevado favorece a renda fixa, reduz o apetite por ativos de risco e desafia fundos e empresas",
+      "url": "https://www.cnnbrasil.com.br/economia/mercado/juros-altos-redesenha-produtos-do-mercado-financeiro/",
+      "source": "CNN Brasil",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-11T14:30:42Z",
+      "updatedAt": "2026-07-11T14:30:42Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/05/significado-de-selic.webp?w=876&h=484&crop=1"
+    },
+    {
+      "id": "macro-4264d90b724da382a4256288",
+      "title": "Economista analisa juros, inflação e desafios fiscais da economia brasileira",
+      "summary": "Inflação dos alimentos caiu 0,24% em junho, segundo o IBGE. Recuo ajudou a desacelerar o IPCA para 0,16% e trouxe alívio ao orçamento das famílias.",
+      "details": "Inflação dos alimentos caiu 0,24% em junho, segundo o IBGE. Recuo ajudou a desacelerar o IPCA para 0,16% e trouxe alívio ao orçamento das famílias.",
+      "url": "https://tribunadoplanalto.com.br/inflacao-dos-alimentos-recua-em-junho-e-alivia-o-bolso-do-consumidor/",
+      "source": "cbnribeirao.com.br",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-11T14:30:00Z",
+      "updatedAt": "2026-07-11T14:30:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://tribunadoplanalto.com.br/wp-content/uploads/2025/08/inflacao-supermercado.webp"
+    },
+    {
       "id": "macro-9fc0f6dfddcc2a44991dc9c0",
       "title": "Inflação dos alimentos recua em junho e alivia o bolso do consumidor",
-      "summary": "Santander (SANB11) aprovou R$ 2 bilhões em JCP. Veja quem tem direito, a data-base de 21 de julho e os valores por ação e por unit.",
-      "details": "Santander (SANB11) aprovou R$ 2 bilhões em JCP. Veja quem tem direito, a data-base de 21 de julho e os valores por ação e por unit.",
-      "url": "https://bpmoney.com.br/mercado/acoes/santander-sanb11-aprova-2-bilhoes-jcp-veja-valores-datas/",
+      "summary": "Atualizacao de macro capturada em Tribuna do Planalto.",
+      "details": "",
+      "url": "https://cbnribeirao.com.br/economista-analisa-juros-inflacao-e-desafios-fiscais-da-economia-brasileira/",
       "source": "Tribuna do Planalto",
       "category": "macro",
       "tags": [
@@ -242,34 +363,14 @@
       "publishedAt": "2026-07-11T14:03:00Z",
       "updatedAt": "2026-07-11T14:03:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://bpmoney.com.br/wp-content/uploads/2024/06/i2Te21tJ-Runway-2024-06-03T18_29_27.167Z-Upscale-Image-Upscaled-Image-2000-x-1280-1536x983.webp"
-    },
-    {
-      "id": "macro-4afb41ac92824f35a6808baf",
-      "title": "Concurso São João do Oriente (MG): sem novo edital",
-      "summary": "Último concurso de São Gonçalo do Pará (MG) ofertou 186 vagas para 30 cargos em 2024, com banca própria. Veja histórico e situação atual.",
-      "details": "Último concurso de São Gonçalo do Pará (MG) ofertou 186 vagas para 30 cargos em 2024, com banca própria. Veja histórico e situação atual.",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-prefeitura-sao-goncalo-do-para/amp/",
-      "source": "Estratégia Concursos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-11T13:58:42Z",
-      "updatedAt": "2026-07-11T13:58:42Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2025/03/05201612/concursos-prefeituras-1024x536-1.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-7c687ff0e344a557ca270781",
       "title": "Concurso São Gonçalo do Pará (MG): sem novo edital",
-      "summary": "São João do Oriente (MG) realizou concurso em 2023 com 147 vagas e salários até R$ 5.828,35. Veja histórico e situação atual.",
-      "details": "São João do Oriente (MG) realizou concurso em 2023 com 147 vagas e salários até R$ 5.828,35. Veja histórico e situação atual.",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-prefeitura-sao-joao-do-oriente/amp/",
+      "summary": "Santander (SANB11) aprovou R$ 2 bilhões em JCP. Veja quem tem direito, a data-base de 21 de julho e os valores por ação e por unit.",
+      "details": "Santander (SANB11) aprovou R$ 2 bilhões em JCP. Veja quem tem direito, a data-base de 21 de julho e os valores por ação e por unit.",
+      "url": "https://bpmoney.com.br/mercado/acoes/santander-sanb11-aprova-2-bilhoes-jcp-veja-valores-datas/",
       "source": "Estratégia Concursos",
       "category": "macro",
       "tags": [
@@ -281,14 +382,14 @@
       "updatedAt": "2026-07-11T13:46:38Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2025/03/05201612/concursos-prefeituras-1024x536-1.jpg"
+      "imageUrl": "https://bpmoney.com.br/wp-content/uploads/2024/06/i2Te21tJ-Runway-2024-06-03T18_29_27.167Z-Upscale-Image-Upscaled-Image-2000-x-1280-1536x983.webp"
     },
     {
       "id": "latest-f6bf8da695d9429ca2012791",
       "title": "Santander (SANB11) aprova R$ 2 bilhões em JCP; veja datas e valores por ação",
-      "summary": "Inflação dos alimentos caiu 0,24% em junho, segundo o IBGE. Recuo ajudou a desacelerar o IPCA para 0,16% e trouxe alívio ao orçamento das famílias.",
-      "details": "Inflação dos alimentos caiu 0,24% em junho, segundo o IBGE. Recuo ajudou a desacelerar o IPCA para 0,16% e trouxe alívio ao orçamento das famílias.",
-      "url": "https://tribunadoplanalto.com.br/inflacao-dos-alimentos-recua-em-junho-e-alivia-o-bolso-do-consumidor/",
+      "summary": "Último concurso de São Gonçalo do Pará (MG) ofertou 186 vagas para 30 cargos em 2024, com banca própria. Veja histórico e situação atual.",
+      "details": "Último concurso de São Gonçalo do Pará (MG) ofertou 186 vagas para 30 cargos em 2024, com banca própria. Veja histórico e situação atual.",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-prefeitura-sao-goncalo-do-para/amp/",
       "source": "BPMoney",
       "category": "latest",
       "tags": [
@@ -300,7 +401,7 @@
       "updatedAt": "2026-07-11T13:38:59Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://tribunadoplanalto.com.br/wp-content/uploads/2025/08/inflacao-supermercado.webp"
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2025/03/05201612/concursos-prefeituras-1024x536-1.jpg"
     },
     {
       "id": "macro-566460d987631ffc3b56e934",
@@ -362,9 +463,9 @@
     {
       "id": "latest-de903b6862ff503dca4e3a85",
       "title": "Gazeta de Limeira",
-      "summary": "Dólar cai para R$ 5,10, no valor mais baixo em três semanas.",
-      "details": "Dólar cai para R$ 5,10, no valor mais baixo em três semanas.",
-      "url": "https://marilianoticia.com.br/com-queda-na-inflacao-bolsa-de-valores-tem-maior-alta-desde-maio/",
+      "summary": "Portal de notícias Gazeta de Limeira.",
+      "details": "Portal de notícias Gazeta de Limeira.",
+      "url": "https://www.gazetadelimeira.com.br/noticia/economia/2026/07/bolsa-sobe-quase-3-e-fecha-no-maior-nivel-desde-maio/VEa2?preview=",
       "source": "Gazeta de Limeira",
       "category": "latest",
       "tags": [
@@ -375,15 +476,14 @@
       "publishedAt": "2026-07-11T13:28:37Z",
       "updatedAt": "2026-07-11T13:28:37Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://marilianoticia.com.br/wp-content/uploads/2026/07/bolsa-de-valores.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-b94e58f0fb6009e2c5227ab1",
       "title": "Com queda na inflação, Bolsa de Valores tem maior alta desde maio",
-      "summary": "Portal de notícias Gazeta de Limeira.",
-      "details": "Portal de notícias Gazeta de Limeira.",
-      "url": "https://www.gazetadelimeira.com.br/noticia/economia/2026/07/bolsa-sobe-quase-3-e-fecha-no-maior-nivel-desde-maio/VEa2?preview=",
+      "summary": "Dólar cai para R$ 5,10, no valor mais baixo em três semanas.",
+      "details": "Dólar cai para R$ 5,10, no valor mais baixo em três semanas.",
+      "url": "https://marilianoticia.com.br/com-queda-na-inflacao-bolsa-de-valores-tem-maior-alta-desde-maio/",
       "source": "Marília Notícia",
       "category": "macro",
       "tags": [
@@ -394,7 +494,8 @@
       "publishedAt": "2026-07-11T13:26:32Z",
       "updatedAt": "2026-07-11T13:26:32Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://marilianoticia.com.br/wp-content/uploads/2026/07/bolsa-de-valores.jpg"
     },
     {
       "id": "funds-b0f45de2aac4fed2d2c41317",
@@ -434,11 +535,11 @@
       "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/06/b4773475-como-a-china-pretende-resolver-um-dos-maiores-desafios-da-inteligencia-artificial.webp"
     },
     {
-      "id": "macro-07599471ba572a5c5d8634a4",
-      "title": "5 ações brasileiras 'vencedoras' em tempos de inflação",
-      "summary": "Estabilidade econômica, incentivos fiscais e reforma tributária no Brasil impulsionam planos de expansão industrial no país vizinho",
-      "details": "Estabilidade econômica, incentivos fiscais e reforma tributária no Brasil impulsionam planos de expansão industrial no país vizinho",
-      "url": "https://emtemponoticias.com.br/noticias/brasil/empresas-brasileiras-ampliam-interesse-pelo-paraguai-em-busca-de-menor-carga-tributaria-e-custos-operacionais/",
+      "id": "macro-2919dae9c4d34c4d79405fae",
+      "title": "Essas 5 ações são ‘vencedoras’ na bolsa brasileira para investidores que desejam enfrentar ciclo inflacionário; confira análise",
+      "summary": "Atualizacao de macro capturada em Money Times.",
+      "details": "",
+      "url": "https://www.seudinheiro.com/2026/economia/boa-noticia-para-o-bolso-inflacao-cai-mais-do-que-o-esperado-e-ja-permite-sonhar-com-juros-menores-mlim/",
       "source": "Money Times",
       "category": "macro",
       "tags": [
@@ -449,15 +550,14 @@
       "publishedAt": "2026-07-11T13:00:00Z",
       "updatedAt": "2026-07-11T13:00:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://emtemponoticias.com.br/wp-content/uploads/2026/07/paraguai-1-1114x720-1.jpeg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-62f80ed085662c3ef2488acd",
       "title": "Boa notícia para o bolso: inflação cai mais do que o esperado e já permite sonhar com juros menores",
-      "summary": "Surpresa com inflação de 0,16% em junho leva grandes bancos a projetar novos cortes na taxa Selic em agosto",
-      "details": "Surpresa com inflação de 0,16% em junho leva grandes bancos a projetar novos cortes na taxa Selic em agosto",
-      "url": "https://www.seudinheiro.com/2026/economia/boa-noticia-para-o-bolso-inflacao-cai-mais-do-que-o-esperado-e-ja-permite-sonhar-com-juros-menores-mlim/",
+      "summary": "Atualizacao de macro capturada em Seu Dinheiro.",
+      "details": "",
+      "url": "https://www.moneytimes.com.br/5-acoes-vencedoras-na-bolsa-para-investidores-que-desejam-enfrentar-ciclo-inflacionario-lbrdaz254/",
       "source": "Seu Dinheiro",
       "category": "macro",
       "tags": [
@@ -468,15 +568,14 @@
       "publishedAt": "2026-07-11T12:52:43Z",
       "updatedAt": "2026-07-11T12:52:43Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.seudinheiro.com/uploads/2026/03/inflacao-ipca-alimentos.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-6e44342c0c6a1c541b924635",
       "title": "Haddad diz que Banco Central cria problema desnecessário com Selic a 14,25% e defende corte antecipado de juros",
-      "summary": "Mesmo com economia brasileira sob pressão em 2026, segundo semestre do ano se inicia com janela de oportunidade seleto grupo de ações",
-      "details": "Mesmo com economia brasileira sob pressão em 2026, segundo semestre do ano se inicia com janela de oportunidade seleto grupo de ações",
-      "url": "https://www.moneytimes.com.br/5-acoes-vencedoras-na-bolsa-para-investidores-que-desejam-enfrentar-ciclo-inflacionario-lbrdaz254/",
+      "summary": "Ex-ministro da Fazenda critica manutenção da Selic elevada e diz que juros, não o gasto público, são o principal fator de endividamento do Estado brasileiro.",
+      "details": "Ex-ministro da Fazenda critica manutenção da Selic elevada e diz que juros, não o gasto público, são o principal fator de endividamento do Estado brasileiro.",
+      "url": "https://blocktrends.com.br/haddad-ataca-selic-14-25-debate-fiscal/",
       "source": "BlockTrends",
       "category": "macro",
       "tags": [
@@ -488,14 +587,14 @@
       "updatedAt": "2026-07-11T12:33:18Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/07/juros-bolsa-ibovespa-inflacao-acoes.jpg"
+      "imageUrl": "https://blocktrends.com.br/wp-content/uploads/2026/07/bt-351124-1783773199.jpg"
     },
     {
       "id": "funds-3948f1f0468d254ed3cfc0d2",
       "title": "Governo Ronaldo articula acordos internacionais para impulsionar inovação e novos negócios em Feira de Santana",
-      "summary": "Ex-ministro da Fazenda critica manutenção da Selic elevada e diz que juros, não o gasto público, são o principal fator de endividamento do Estado brasileiro.",
-      "details": "Ex-ministro da Fazenda critica manutenção da Selic elevada e diz que juros, não o gasto público, são o principal fator de endividamento do Estado brasileiro.",
-      "url": "https://blocktrends.com.br/haddad-ataca-selic-14-25-debate-fiscal/",
+      "summary": "Feira de Santana articula acordos internacionais para conectar universidades, empresas e startups e estimular tecnologia, investimentos e empregos.",
+      "details": "Feira de Santana articula acordos internacionais para conectar universidades, empresas e startups e estimular tecnologia, investimentos e empregos.",
+      "url": "https://jornalgrandebahia.com.br/2026/07/governo-ronaldo-articula-acordos-internacionais-para-impulsionar-inovacao-e-novos-negocios-em-feira-de-santana/",
       "source": "Jornal Grande Bahia",
       "category": "funds",
       "tags": [
@@ -507,14 +606,33 @@
       "updatedAt": "2026-07-11T12:31:43Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://blocktrends.com.br/wp-content/uploads/2026/07/bt-351124-1783773199.jpg"
+      "imageUrl": "https://jornalgrandebahia.com.br/wp-content/uploads/2026/07/Governo-Ronaldo-articula-acordos-internacionais-para-impulsionar-inovacao.jpg"
+    },
+    {
+      "id": "macro-b028ea44880e2a1340de9d55",
+      "title": "Concurso Ipixuna do Pará (PA): sem novo edital",
+      "summary": "No Empiricus Podca$t deste sábado (11), Laís Costa e Matheus Spiess explicam como as decisões de juros nos EUA podem afetar o Brasil",
+      "details": "No Empiricus Podca$t deste sábado (11), Laís Costa e Matheus Spiess explicam como as decisões de juros nos EUA podem afetar o Brasil",
+      "url": "https://www.empiricus.com.br/artigos/investimentos/juros-nas-alturas-donald-trump-e-kevin-warsh-podem-mexer-com-o-seu-bolso-em-2026-veja-o-que-esta-em-jogo-lbrdaz255/",
+      "source": "Estratégia Concursos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-11T12:03:49Z",
+      "updatedAt": "2026-07-11T12:03:49Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.empiricus.com.br/uploads/2026/07/juros-estados-unidos-fed-trump-warsh.jpg"
     },
     {
       "id": "latest-0473073edb909d9ac9cda5c9",
       "title": "Juros nas alturas? Donald Trump e Kevin Warsh podem mexer com seu bolso",
-      "summary": "Feira de Santana articula acordos internacionais para conectar universidades, empresas e startups e estimular tecnologia, investimentos e empregos.",
-      "details": "Feira de Santana articula acordos internacionais para conectar universidades, empresas e startups e estimular tecnologia, investimentos e empregos.",
-      "url": "https://jornalgrandebahia.com.br/2026/07/governo-ronaldo-articula-acordos-internacionais-para-impulsionar-inovacao-e-novos-negocios-em-feira-de-santana/",
+      "summary": "Atualizacao de ultima hora capturada em Empiricus.",
+      "details": "",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-prefeitura-ipixuna-do-para/amp/",
       "source": "Empiricus",
       "category": "latest",
       "tags": [
@@ -525,15 +643,14 @@
       "publishedAt": "2026-07-11T12:00:00Z",
       "updatedAt": "2026-07-11T12:00:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://jornalgrandebahia.com.br/wp-content/uploads/2026/07/Governo-Ronaldo-articula-acordos-internacionais-para-impulsionar-inovacao.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-148854037eaaafad07c52acf",
       "title": "Empresas brasileiras ampliam interesse pelo Paraguai em busca de menor carga tributária e custos operacionais",
-      "summary": "No Empiricus Podca$t deste sábado (11), Laís Costa e Matheus Spiess explicam como as decisões de juros nos EUA podem afetar o Brasil",
-      "details": "No Empiricus Podca$t deste sábado (11), Laís Costa e Matheus Spiess explicam como as decisões de juros nos EUA podem afetar o Brasil",
-      "url": "https://www.empiricus.com.br/artigos/investimentos/juros-nas-alturas-donald-trump-e-kevin-warsh-podem-mexer-com-o-seu-bolso-em-2026-veja-o-que-esta-em-jogo-lbrdaz255/",
+      "summary": "Atualizacao de empresas capturada em Em Tempo Notícias.",
+      "details": "",
+      "url": "https://www.seudinheiro.com/2026/bolsa-dolar/csn-mineracao-cmin3-dispara-20-na-semana-e-lidera-ganhos-do-ibovespa-que-tambem-subiu-apos-surpresa-na-inflacao-mlim/",
       "source": "Em Tempo Notícias",
       "category": "companies",
       "tags": [
@@ -544,15 +661,14 @@
       "publishedAt": "2026-07-11T12:00:00Z",
       "updatedAt": "2026-07-11T12:00:00Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://www.empiricus.com.br/uploads/2026/07/juros-estados-unidos-fed-trump-warsh.jpg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "macro-a1d510b0f1db7f65dc158a24",
       "title": "CSN Mineração (CMIN3) dispara 20% na semana e lidera ganhos do Ibovespa, que também subiu após surpresa na inflação",
-      "summary": "Entre surpresa no IPCA, oscilação no preço do petróleo e pressão do Fed, o Ibovespa fechou no azul, com destaque para CSN Mineração.",
-      "details": "Entre surpresa no IPCA, oscilação no preço do petróleo e pressão do Fed, o Ibovespa fechou no azul, com destaque para CSN Mineração.",
-      "url": "https://www.seudinheiro.com/2026/bolsa-dolar/csn-mineracao-cmin3-dispara-20-na-semana-e-lidera-ganhos-do-ibovespa-que-tambem-subiu-apos-surpresa-na-inflacao-mlim/",
+      "summary": "Estabilidade econômica, incentivos fiscais e reforma tributária no Brasil impulsionam planos de expansão industrial no país vizinho",
+      "details": "Estabilidade econômica, incentivos fiscais e reforma tributária no Brasil impulsionam planos de expansão industrial no país vizinho",
+      "url": "https://emtemponoticias.com.br/noticias/brasil/empresas-brasileiras-ampliam-interesse-pelo-paraguai-em-busca-de-menor-carga-tributaria-e-custos-operacionais/",
       "source": "Seu Dinheiro",
       "category": "macro",
       "tags": [
@@ -564,7 +680,25 @@
       "updatedAt": "2026-07-11T11:52:38Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.seudinheiro.com/uploads/2026/02/Mineradora-dinheiro-CSN-mineracao.jpg"
+      "imageUrl": "https://emtemponoticias.com.br/wp-content/uploads/2026/07/paraguai-1-1114x720-1.jpeg"
+    },
+    {
+      "id": "macro-51d57aa5a836242e33ec0400",
+      "title": "Concurso Barcarena (PA): edital em elaboração",
+      "summary": "Atualizacao de macro capturada em Estratégia Concursos.",
+      "details": "",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-prefeitura-barcarena/amp/",
+      "source": "Estratégia Concursos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-11T11:22:12Z",
+      "updatedAt": "2026-07-11T11:22:12Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-421501f8e71ce756a4de3818",
@@ -609,7 +743,7 @@
       "title": "Calendário econômico da semana: IPCA de março, PCE e ata do Fed movimentam a agenda",
       "summary": "Atualizacao de ultima hora capturada em Estadão.",
       "details": "",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-prefeitura-planalto-da-serra/amp/",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPblRNMzlwZTZGYjloaVFDcTkyal9mY3JQaXRkOHJ1azFLUXdpSm1KcUQwbl8zVl85YV9rN0lCNGgyM01TbVRDQUdNVE9FLTVXbWtQNHgzT1d4WW9ITUZQWjB4dUtDQ3dJN2xTdVVjQWpIV0kwanZndG1aeGxMcDM5WjdVU3hrVVBKRHcwUnRDcThTNEZ5RGZtZWhGRzM2LXQ3N2pZUGczRGhVZ9IBrwFBVV95cUxNQU5FNmE1THQzN1NPbmh5dnNIRGxhbU5CQUYyY3NnT18zZUhYOFhRZm04b0NKaTdaWlRRTnhaT0cxUjVrWm1uU0xyMndvMW10SVhwdEhUeXNYRC1FUlNKbnZfZEllZ3g3enVULWlZU01kX3A1elNzS0VDUkdPdE9YVkZILV83cGk4Z1pNT0x4NUhBSl9rTTFVV29rVUVQcGpBVmxENmtUZzFVQS1HOGZn?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -623,67 +757,11 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-40dcbd45f98b3112caa23ed0",
-      "title": "XP mantém otimismo com PIB e prevê dólar a R$ 5,00; veja os destaques da semana",
-      "summary": "Semana reúne dados de inflação no Brasil e no exterior, além da ata do Fed e indicadores de atividade econômica",
-      "details": "Semana reúne dados de inflação no Brasil e no exterior, além da ata do Fed e indicadores de atividade econômica",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/calendario-economico-da-semana-ipca-pce-ata-fed/",
-      "source": "InfoMoney",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-11T10:23:00Z",
-      "updatedAt": "2026-07-11T10:23:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/DYI7SK43ZBPRNINW2XMU2KXOY4.png?quality=80&auth=2f5a8696b7026b0617019533552209f3e353e546d099f5f27b68f07ac6fed173&width=1200&height=630&smart=true"
-    },
-    {
-      "id": "macro-66452ee1038f014c40de421a",
-      "title": "Concurso Prefeitura de Planalto da Serra (MT): vagas e edital",
-      "summary": "Atualizacao de macro capturada em Estratégia Concursos.",
-      "details": "",
-      "url": "https://exame.com/invest/mercados/o-brasileiro-que-esta-entre-os-nomes-do-grupo-de-trabalho-do-fed-nos-eua/",
-      "source": "Estratégia Concursos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-11T10:13:47Z",
-      "updatedAt": "2026-07-11T10:13:47Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-9f89f98634cef84d8660b579",
-      "title": "O brasileiro que está entre os nomes do grupo de trabalho do Fed, nos EUA",
-      "summary": "A XP preservou a projeção de crescimento de 2,0% para o PIB brasileiro em 2026. O cenário é impulsionado por medidas de estímulo à economia.",
-      "details": "A XP preservou a projeção de crescimento de 2,0% para o PIB brasileiro em 2026. O cenário é impulsionado por medidas de estímulo à economia.",
-      "url": "https://www.infomoney.com.br/onde-investir/xp-mantem-otimismo-com-pib-e-preve-dolar-a-r-500-veja-os-destaques-da-semana/",
-      "source": "Exame",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-11T10:01:04Z",
-      "updatedAt": "2026-07-11T10:01:04Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/07/pexels-hoang-nc-483165236-15947457.jpg?quality=70"
-    },
-    {
       "id": "funds-68a5fb298d90172ea758a491",
       "title": "Dólar fecha o último pregão aos R$ 5,10",
-      "summary": "Semana concentra ata do Copom, dados de emprego nos EUA e decisões de juros no México e Chile",
-      "details": "Semana concentra ata do Copom, dados de emprego nos EUA e decisões de juros no México e Chile",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/calendario-economico-semana-copom-emprego-eua-juros-mexico-chile/",
+      "summary": "Atualizacao de fundos capturada em Conexão Itajubá.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNWmNITjBjcjktcHJCMTJCaFlLZTZ0OVd2VEl1WktneFhiLXAyb3QxLVZqTnV2WVVYVE5uZHQ1V2hFQkpGQmZOdEJfQkg2RE13bHJnUnVsMU40M29TM210T0lGYkl2ZVBTc3RMSzZGVWxwZnk0Ym1PNWVhc19ISGdLTzhzRno2TTdzdTE4eQ?oc=5",
       "source": "Conexão Itajubá",
       "category": "funds",
       "tags": [
@@ -694,15 +772,14 @@
       "publishedAt": "2026-07-11T09:59:41Z",
       "updatedAt": "2026-07-11T09:59:41Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/6RCDDBQHEZNYVMVS2OPIYOSUKM.png?quality=80&auth=d798f90901e6af1fe7a8fb31250afeab83e8e26389ab84393bf92ae00bd00260&width=1200&height=630&smart=true"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "latest-a96c7682eb8d7546f4cedd79",
       "title": "Calendário econômico da semana: ata do Copom e dados de serviços nos EUA movimentam a agenda",
-      "summary": "Dólar cai 0,28% e fecha em R$ 5,10.",
-      "details": "Dólar cai 0,28% e fecha em R$ 5,10.",
-      "url": "https://www.conexaoitajuba.com.br/noticia/dolar-fecha-o-ultimo-pregao-aos-r-510-mrfkjonl",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSk5UYUszOFctaW9kY1V1bGxidVBsbVBJYkdETmgyRFJaLTA4Z1UtYkZuNDQ1cmhUMDVuWkoxUEdpWEFvWWVUNmdQMkd0aElPSGFaUDhqMllpVE9rcTRIMVdDUC0xaTNvdFBfUUFUcGVqdk51eWxpdXNaWDN2YmxmTUhzTzlEZFhSWGtZQVZsREtzblM3RUZLSGQ2TGQxQTdiX1pUOVZ3Xy1ZSVFrTDV4T0h3RmJkbDZhWU9uanNabWvSAcYBQVVfeXFMTjV5VUZWaXZBZVAtZE1ON3J4bGVXWEJrX0I2SVJvcGlzMWd3T213TzhrUGNFT0xLc2Vib1RCcHJnMGk2RnBLYVRDLWJPa2M4QXc1YVNxck1GbHdIaVowTXJKNjgwZERVb3V4MXhEVUQtcmVpZXNBaXoza01KbnpuLVJtTjRxNHJhc1Q1eTdaQndHODhLV2NpN2E1MG9zVFVoMjF6OWJ0WkR6SUoxeFhRWDlmVWxySjQ0akZDcVYwM0FYUFJ4ZWpB?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -713,46 +790,7 @@
       "publishedAt": "2026-07-11T09:37:43Z",
       "updatedAt": "2026-07-11T09:37:43Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://conexao.s3.wasabisys.com/images/posts/1783763942248-6292ce716648b3a7.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=9KL9I7NXQB3Q8LZG5SMS%2F20260711%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260711T095903Z&X-Amz-Expires=604800&X-Amz-Signature=94fdfec33d04f7f2f90d69fac3a865f6012c2d08424b918c64756f33fa41a939&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject"
-    },
-    {
-      "id": "macro-303b614bffe2a75ed0049ce0",
-      "title": "Preço de alimentos recua, e inflação oficial de junho fica em 0,16%",
-      "summary": "Os preços dos alimentos registraram queda pela primeira vez desde novembro de 2025 e contribuíram para que a inflação oficial encerrasse junho em 0,16%, de acordo com o Índice Nacional de Preços ao Consumidor Amplo (IPCA). O resultado é o menor para um mês desde outubro de 2025 e",
-      "details": "Os preços dos alimentos registraram queda pela primeira vez desde novembro de 2025 e contribuíram para que a inflação oficial encerrasse junho em 0,16%, de acordo com o Índice Nacional de Preços ao Consumidor Amplo (IPCA). O resultado é o menor para um mês desde outubro de 2025 e representa o quarto recuo consecutivo n",
-      "url": "https://nocariritem.com.br/preco-de-alimentos-recua-e-inflacao-oficial-de-junho-fica-em-016/",
-      "source": "No Cariri Tem",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-11T09:10:15Z",
-      "updatedAt": "2026-07-11T09:10:15Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "http://nocariritem.com.br/wp-content/uploads/2023/06/inflacao-alimentacao.jpg"
-    },
-    {
-      "id": "macro-ae3494388169bbab3e7a93c7",
-      "title": "'PF' mais salgado: prato feito fica mais caro apesar do alívio na inflação dos alimentos",
-      "summary": "Comer fora segue pressionando o orçamento. O prato feito já custa, em média, R$ 31,90 no Brasil e pode registrar novos aumentos nos próximos meses.",
-      "details": "Comer fora segue pressionando o orçamento. O prato feito já custa, em média, R$ 31,90 no Brasil e pode registrar novos aumentos nos próximos meses.",
-      "url": "https://g1.globo.com/economia/agronegocios/noticia/2026/07/11/pf-mais-salgado-prato-feito-fica-mais-caro-apesar-do-alivio-na-inflacao-dos-alimentos.ghtml",
-      "source": "G1",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-11T09:00:30Z",
-      "updatedAt": "2026-07-11T09:00:30Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-g1.glbimg.com/c35qYt1AUr18Fs0N5ltwAvW76uY=/1273x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/m/0/6iRsZSRhKtwJzxUST9Cw/pf.png"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-eb837ca01f8e648cf7c8c4f1",
@@ -935,78 +973,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-6b985f676f2c243535b05948",
-      "title": "Com alimentos em queda, inflação desacelera e Bolsa ganha força",
-      "summary": "Atualizacao de ultima hora capturada em O POVO+.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMUZlX2JvR3FRUl9QbWJYcThKcFRLSDlxdnpIZ09CQzFjQ2Fmc3F5OTBWTVl5V25aUERxM2VxbWkzSjRxcUFxNGpMbk9oSF9rYU5JaTl2Vy1XRFNSQ2xnR181bkc5Y0ZJekN4S2h6OHJ5bFFOaTRwdVJRWUQtZkI5SS1pLWI4ZjFZbjVwbXFVbENEVkhOU0Y0ejNsY3hncHgzbklxNWFWeVQzX1dwVTBLeG1jWmlhdl84YW1QRE1sTEl0RkNIanUtN1l3WU53dGI5QjcwYWlSWVdpZw?oc=5",
-      "source": "O POVO+",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-11T04:15:00Z",
-      "updatedAt": "2026-07-11T04:15:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-2cb1befaaf591f0b419a44a4",
-      "title": "Brasil, Bolsa, Balcão: entenda o que é a B3 e sua função no desenvolvimento econômico",
-      "summary": "Atualizacao de ultima hora capturada em Tribuna Hoje.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZEROdjdvVXZGRGJQcXI0VGhHc1gtRmU2RWlOOUtpclFwdU1lRW5JdEtBXzEyeXVTR2N3UXdVRlprVXJfMlVFam9nWUxhMGZCTDR0eFU1cFl6aVFHRDBweHNuQ18xU3d4WHB5Nl8wQWs3ZGptaEkwdFAySVpZWlBHQlJmcXhIMzlyMkxJc2ZkdjVKckFMRUhGcklFZFpZT0hrQ0d4RUk3UVpUX0prVmI3OG53YkRFTGRYRmgtTmhNcFk1T25YT245LUNhQVdLR2g4RFFZSWhwUDNhdw?oc=5",
-      "source": "Tribuna Hoje",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-11T03:33:00Z",
-      "updatedAt": "2026-07-11T03:33:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-1df9217475c6892e085f588a",
-      "title": "Orquestra Chinesa de Shanghai apresenta “Cores da China”",
-      "summary": "Atualizacao de ultima hora capturada em Broadcast.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQm1HeWtDeXFLYkktWFlqN2FDNUN1QVRVZ0tGaE5EbzR5dFdnM0F2V05Ia0tkV1cwWjFTRnVva0ZhWG12QS1sNmJnaU50VHF5VnhIWkhGdXAxOEVDbjd0enY0VkV4bzdBcFFJWVNsVFZEUFF2UVVtdXVoeUZxejMzbEV4ZFVJbWNsbjlHZnhOaWg4VDVYbXdYZ1FwSnk?oc=5",
-      "source": "Broadcast",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-11T02:59:50Z",
-      "updatedAt": "2026-07-11T02:59:50Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-04cbe0327861fb54ce9f7662",
-      "title": "Ibovespa hoje: Minerva (BEEF3) e MBRF (MBRF3) saltam; Azzas (AZZA3) lidera perdas",
-      "summary": "Atualizacao de ultima hora capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYS1oMTNuVlVJakxrWDBLcmdmS1J4c0JQdTlKQ3k2S3pDeWoxeFJCZEJwQWFiVWpXUElMcEIyYTI4NmRPVlVwVmFITW5uUnZCR0pRSlZ5Y1h6bXZEX1I3enU1WnJjWFN1Qkg2ajhpVHFUSDBDcWtPbjJ4aHpWd05jU183TUllWE9TOTB4SDgyWjUtZFYxTXQtZDhaU09XU0xSdWJZR1NMa2V3YjVEbVZ5cDN0bF9mTmRJZlBBbkZRemlnMjZaWU5TdFZn0gHPAUFVX3lxTE1YWEdiZXZTTWZTSGxzcG1XaFFYWVNaeFZUREJIQmtFdTlaYVJfSGFYbGhra2RRN1RKN0FnczIwbUVPanFtR1dnLWd2aEczbWJxajV6TTBHRGcyM194NEtDNGdxZVBPSjhmOWJzeGVoV0VTVUNpcXBOQ2pGZTBEWkJhb0w3aEpMTDQwbEY1YmpjamxNSDhvcjFlcEJhTHFpbmxpd2JTSTVZNk9xZkpSbzIzYkhlNjRLSGZqaUJDamRUeUE1Q3JkWEdpREZGeERmbw?oc=5",
-      "source": "Estadão",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-11T02:53:59Z",
-      "updatedAt": "2026-07-11T02:53:59Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "companies-80059eea131bfd90e7ecc617",
       "title": "Tarifa de 25% dos EUA exige revisão de custos e mercados pelas empresas brasileiras",
       "summary": "Atualizacao de empresas capturada em Times Brasil | CNBC.",
@@ -1057,6 +1023,24 @@
       ],
       "publishedAt": "2026-07-11T01:50:44Z",
       "updatedAt": "2026-07-11T01:50:44Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "funds-175c613196732ac28c8e2869",
+      "title": "Aumentar significativamente a eficiência na distribuição dos fundos de investimento público é uma tarefa fundamental para o final do ano.",
+      "summary": "Atualizacao de fundos capturada em Vietnam.vn.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWXpOZi04YjNMMTRKRnZqUk82UnBHTUhIV0dHdW9pSEt2VWdNY1lDVjI5bWxyUGlnZ2JUWjlQdzNqRjNDOXNUMm12MlhGVFFlZ3djYy1BTFJYMWg3STJZRGx6eWhfbnRJSXp2Nl9TSVdYSEoxelM0ZldqTUtRUWlySnhydkJiZy1qWFJWMWpScWQ5WFFUaTlCVzZCUGVBa3hxTlBVV3JTTkstajk4SkJLQURB?oc=5",
+      "source": "Vietnam.vn",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-07-11T01:08:32Z",
+      "updatedAt": "2026-07-11T01:08:32Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
@@ -1241,6 +1225,24 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
+      "id": "funds-18b0892d40035e941efbd48a",
+      "title": "Marcos Troyjo na Money Week 2026: a visão global que ajuda a entender os novos rumos da economia",
+      "summary": "Atualizacao de fundos capturada em EuQueroInvestir.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPSnJRdDgxd3FBb1hxVGd3NXRMRkZZWGdLTTY5UldRLVRqdFdxak9QWjFCOTZTM0ROdVh2WHJvT2NZb29fdnVpQ1FjWVh6SjhWVEFQNGhQeENxSWpTUkRNVl8wMFVwWUFfMTVhbDg5Z0JJX19JY0tfZG54aml6bXVXd3dId3JuSWRVY05UMHVSNVlMQ3UtQllkd1BrRkt6UWZSQWpiZEVsVTBoTU5rTkVibUt2cUxUNTR4TFNldG1UckszOGo5eks1QWJDMmVlanM?oc=5",
+      "source": "EuQueroInvestir",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-07-10T20:41:47Z",
+      "updatedAt": "2026-07-10T20:41:47Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
       "id": "funds-22e0a885ce15ffa5056d3fe3",
       "title": "Lula trata minerais críticos como novo pré-sal, e governo avalia entrada de BNDES e Petrobras em empresas do setor",
       "summary": "Atualizacao de fundos capturada em Jornal de Brasília.",
@@ -1255,24 +1257,6 @@
       ],
       "publishedAt": "2026-07-10T20:39:02Z",
       "updatedAt": "2026-07-10T20:39:02Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-8e170987313ea0343df6aab2",
-      "title": "MOSY3 reduz produção de fosfato e afeta oferta de fertilizantes",
-      "summary": "Atualizacao de fundos capturada em Acionista.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTzI2ZERZMW5nUThIWjd6NmhrRDdOekU5X01EMnFMa2kyR3JES2c4bjhxM0V5T1o2LVhKUzI3bVNxNldCZjNWWVNqdUdwSVRCejU1STd3Y2hmVl9YX0pBWDZPYkhqSU9JdndEOFhoZ3FBUF8ybjllUDVJRG16al9fSVRGYU40WEhNMDVqdVdHRU9FMUk?oc=5",
-      "source": "Acionista.com.br",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-07-10T20:34:58Z",
-      "updatedAt": "2026-07-10T20:34:58Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
@@ -1385,22 +1369,22 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "companies-e9c01f9a66c3fba575d82b49",
-      "title": "Lucro das aéreas brasileiras atinge R$ 4,3 bilhões em 2025, apesar da queda no valor das passagens aéreas",
-      "summary": "Atualizacao de empresas capturada em AEROIN.",
+      "id": "funds-141bfd18ba211b7574f4a88f",
+      "title": "\"Prometeram picanha. Entregaram churrasquinho de gato\"",
+      "summary": "Atualizacao de fundos capturada em Crusoé.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWl9kYTh6SFdoQzZRTWQwanNKT2JvVHpBaU5oTTBuOG9RQV9qMUZJeTIyRGZza3JjYUlSaV83MENNNEZCSTNBZVJTLWRjcjlJSlEwUFgzdmh5YkQ0MVRCRjhRRFNieVR5NGUzUlRNdHVNTWFrbFJGSHNPNkR0Mm9fRWFOZ2JkYTJncm5tNUUzdFNHU2VWSFZDcG5HRGhQYWJBTnZOOVJiUzZFOGd6ck1tNHNydnktUy1qdWk0VHVRWdIBvwFBVV95cUxNWl9kYTh6SFdoQzZRTWQwanNKT2JvVHpBaU5oTTBuOG9RQV9qMUZJeTIyRGZza3JjYUlSaV83MENNNEZCSTNBZVJTLWRjcjlJSlEwUFgzdmh5YkQ0MVRCRjhRRFNieVR5NGUzUlRNdHVNTWFrbFJGSHNPNkR0Mm9fRWFOZ2JkYTJncm5tNUUzdFNHU2VWSFZDcG5HRGhQYWJBTnZOOVJiUzZFOGd6ck1tNHNydnktUy1qdWk0VHVRWQ?oc=5",
-      "source": "AEROIN",
-      "category": "companies",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOamQ2Mk1ocmRwWDVTR3pScjJUOGk2cHRzU3pDQVVJT1JTN3VKT3pEUEdFc21IRi1RMlV6Rk44NXdFelNJemlKQk5nYy1hY2xvb3pZWGlWZm5DS3lpZ0JBT19GNWpaY3R1RWpNOWZrZjBkMWI1aE9RXzMwN1d6cnBPZUF1MGZMVktG?oc=5",
+      "source": "Crusoé",
+      "category": "funds",
       "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
+        "fundos",
+        "asset",
+        "fiis"
       ],
-      "publishedAt": "2026-07-10T18:06:07Z",
-      "updatedAt": "2026-07-10T18:06:07Z",
+      "publishedAt": "2026-07-10T18:07:58Z",
+      "updatedAt": "2026-07-10T18:07:58Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
   ]
 }
