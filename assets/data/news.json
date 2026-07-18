@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-18T03:51:58Z",
-  "generatedAt": "2026-07-18T03:51:58Z",
+  "updatedAt": "2026-07-18T06:01:28Z",
+  "generatedAt": "2026-07-18T06:01:28Z",
   "categories": [
     {
       "id": "all",
@@ -29,12 +29,20 @@
       "label": "- Comsefaz"
     },
     {
-      "id": "a-nova-democracia",
-      "label": "A Nova Democracia"
+      "id": "acessa-com",
+      "label": "Acessa.com"
+    },
+    {
+      "id": "acionista-com-br",
+      "label": "Acionista.com.br"
     },
     {
       "id": "associa-o-comercial-e-industrial-de-ara-atuba",
       "label": "Associação Comercial e Industrial de Araçatuba"
+    },
+    {
+      "id": "band-com-br",
+      "label": "band.com.br"
     },
     {
       "id": "boca-com-br",
@@ -77,10 +85,6 @@
       "label": "Estadão Blue Studio"
     },
     {
-      "id": "estrat-gia-concursos",
-      "label": "Estratégia Concursos"
-    },
-    {
       "id": "euqueroinvestir",
       "label": "EuQueroInvestir"
     },
@@ -95,10 +99,6 @@
     {
       "id": "hora-do-povo",
       "label": "Hora do Povo"
-    },
-    {
-      "id": "infomoney",
-      "label": "InfoMoney"
     },
     {
       "id": "inter-american-development-bank",
@@ -121,12 +121,12 @@
       "label": "Jornal O Sul"
     },
     {
-      "id": "metr-poles",
-      "label": "Metrópoles"
-    },
-    {
       "id": "metr-news-jornal",
       "label": "Metrô News Jornal"
+    },
+    {
+      "id": "minuto-mt",
+      "label": "MINUTO MT"
     },
     {
       "id": "money-times",
@@ -217,21 +217,93 @@
       "label": "UOL Economia"
     },
     {
-      "id": "vermelho-org-br",
-      "label": "vermelho.org.br"
-    },
-    {
       "id": "voc-rh",
       "label": "Você RH"
     }
   ],
   "items": [
     {
+      "id": "macro-452bb801d88b61ce323df95b",
+      "title": "Juliana Rosa: alta do petróleo reacende alerta para a inflação",
+      "summary": "Barril do tipo Brent se aproxima de US$ 90, enquanto conflito no Oriente Médio aumenta a preocupação com combustíveis e preços no Brasil.",
+      "details": "Barril do tipo Brent se aproxima de US$ 90, enquanto conflito no Oriente Médio aumenta a preocupação com combustíveis e preços no Brasil.",
+      "url": "https://www.band.com.br/noticias/jornal-da-noite/videos/juliana-rosa-alta-do-petroleo-reacende-alerta-para-a-inflacao-202607180112",
+      "source": "band.com.br",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-18T04:12:12Z",
+      "updatedAt": "2026-07-18T04:12:12Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://assets.spalla.io/019f736c-9635-7731-9401-e576126240f3/thumbnail-1784347931.jpg"
+    },
+    {
+      "id": "macro-7436438a45857e9757ea1f2e",
+      "title": "Juliana Rosa: alta do petróleo reacende o alerta sobre a inflação",
+      "summary": "Barril do tipo Brent saltou cerca de 15% na semana; pressão está contida por enquanto, mas o conflito no Oriente Médio preocupa",
+      "details": "Barril do tipo Brent saltou cerca de 15% na semana; pressão está contida por enquanto, mas o conflito no Oriente Médio preocupa",
+      "url": "https://www.band.com.br/noticias/jornal-da-noite/ultimas/juliana-rosa-alta-do-petroleo-reacende-o-alerta-sobre-a-inflacao-202607180001",
+      "source": "band.com.br",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-18T04:00:14Z",
+      "updatedAt": "2026-07-18T04:00:14Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://img.band.com.br/image/2026/01/20/inflacao-141028.png"
+    },
+    {
+      "id": "latest-81a185291be1ca0ce54b59f9",
+      "title": "Calendário econômico da semana: ata do Copom e dados de serviços nos EUA movimentam a agenda",
+      "summary": "Semana concentra ata do Copom, dados de emprego nos EUA e decisões de juros no México e Chile",
+      "details": "Semana concentra ata do Copom, dados de emprego nos EUA e decisões de juros no México e Chile",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/calendario-economico-semana-copom-emprego-eua-juros-mexico-chile/",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-18T03:23:34Z",
+      "updatedAt": "2026-07-18T03:23:34Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/6RCDDBQHEZNYVMVS2OPIYOSUKM.png?quality=80&auth=d798f90901e6af1fe7a8fb31250afeab83e8e26389ab84393bf92ae00bd00260&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "latest-475cabb17f1e7a7bf2078b1b",
+      "title": "Ibovespa hoje: Ambev (ABEV3) salta 15% após balanço; Braskem (BRKM5) lidera quedas",
+      "summary": "O Índice de Atividade Econômica do Banco Central (IBC-Br) de maio registrou alta de apenas 0,1%, confirmando a perda gradual de potência da economia. Especialistas apontam o varejo como principal freio, enquanto XP e PicPay mantêm projeções de crescimento para 2026.",
+      "details": "O Índice de Atividade Econômica do Banco Central (IBC-Br) de maio registrou alta de apenas 0,1%, confirmando a perda gradual de potência da economia. Especialistas apontam o varejo como principal freio, enquanto XP e PicPay mantêm projeções de crescimento para 2026.",
+      "url": "https://aciara.com.br/previa-pib-maio-2026-indica/",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-18T03:17:54Z",
+      "updatedAt": "2026-07-18T03:17:54Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://aciara.com.br/wp-content/uploads/2026/07/Industria_CNI.jpg"
+    },
+    {
       "id": "macro-0fd115cdd09b3bf38f37933e",
       "title": "Prévia do PIB de maio de 2026 indica perda de força",
-      "summary": "Política, Direito, Economia e Bastidores de Brasília",
-      "details": "Política, Direito, Economia e Bastidores de Brasília",
-      "url": "https://obrasilianista.com.br/camilalutfi/empresas-brasileiras-preparar-mais-taxa-exportacoes-eua/",
+      "summary": "No pregão, mercado acompanhou ata do Copom, queda do petróleo e dólar no menor nível desde janeiro de 2024",
+      "details": "No pregão, mercado acompanhou ata do Copom, queda do petróleo e dólar no menor nível desde janeiro de 2024",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-ambev-abev3-salta-balanco-braskem-brkm5-lidera-quedas/",
       "source": "Associação Comercial e Industrial de Araçatuba",
       "category": "macro",
       "tags": [
@@ -243,14 +315,51 @@
       "updatedAt": "2026-07-18T03:06:46Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://obrasilianista.com.br/wp-content/uploads/2026/07/taxa-trabalho-forcado-eua-1200x630.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/2G5MHFLPZRMGRKYPR37RXKLYHA.png?quality=80&auth=0ad418d740e5c5e6a448b31feac336d7785c6071737c3f79504d00dabc51a742&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "latest-0aa654c8811bef83ab04384f",
+      "title": "Ibovespa hoje fecha em alta com dólar a R$ 4,91, petróleo em forte queda e impacto de balanços",
+      "summary": "Mercado acompanhou sinalizações do Banco Central, temporada de resultados e alívio no petróleo, enquanto tensões no Oriente Médio seguiram no radar",
+      "details": "Mercado acompanhou sinalizações do Banco Central, temporada de resultados e alívio no petróleo, enquanto tensões no Oriente Médio seguiram no radar",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-ata-copom-balancos-1t26-petroleo-mercados-globais-pmis/",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-18T02:51:21Z",
+      "updatedAt": "2026-07-18T02:51:21Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/I2G7ICCVDZPCRD3XCJ4JYYIPXU.png?quality=80&auth=4b0deb5a6ec42bd017ca22acc101b09761b8a40bc359232ee6a5f6757546019a&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "latest-108fb63e5d2048ade96c7b51",
+      "title": "Ibovespa recua com Ambev entre maiores perdas; Cosan sobe",
+      "summary": "Atualizacao de ultima hora capturada em MSN.",
+      "details": "",
+      "url": "https://www.msn.com/pt-br/dinheiro/economia/ibovespa-recua-com-ambev-entre-maiores-perdas-cosan-sobe/ar-AA27kpao",
+      "source": "MSN",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-18T02:04:34Z",
+      "updatedAt": "2026-07-18T02:04:34Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-a2173d1b961eb230ae43d92d",
       "title": "Alta do petróleo sustenta bolsa, mas amplia risco para inflação e juros",
-      "summary": "A combinação entre o tarifaço dos Estados Unidos e a piora da percepção sobre as contas públicas brasileiras pode ampliar a saída de capital estrangeiro",
-      "details": "A combinação entre o tarifaço dos Estados Unidos e a piora da percepção sobre as contas públicas brasileiras pode ampliar a saída de capital estrangeiro",
-      "url": "https://timesbrasil.com.br/investimentos/bolsa/tarifaco-e-risco-fiscal-podem-ampliar-saida-de-capital-estrangeiro-do-brasil/",
+      "summary": "A alta do petróleo ajudou a sustentar a bolsa brasileira nesta sexta-feira (17), mas aumentou os riscos para a inflação, os juros e o câmbio. A avaliação",
+      "details": "A alta do petróleo ajudou a sustentar a bolsa brasileira nesta sexta-feira (17), mas aumentou os riscos para a inflação, os juros e o câmbio. A avaliação",
+      "url": "https://timesbrasil.com.br/investimentos/bolsa/alta-do-petroleo-sustenta-bolsa-mas-amplia-risco-para-inflacao-e-juros/",
       "source": "Times Brasil | CNBC",
       "category": "macro",
       "tags": [
@@ -261,15 +370,14 @@
       "publishedAt": "2026-07-18T01:00:00Z",
       "updatedAt": "2026-07-18T01:00:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2025/09/9a9edcbc-totos-adam-3r8rcsy0ffg-unsplash.webp"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-92d0a4798744dfabcae0b946",
       "title": "Agro e estatais roubam a cena na Bolsa em 2026; veja os índices campeões do ano",
-      "summary": "O Índice de Atividade Econômica do Banco Central (IBC-Br) de maio registrou alta de apenas 0,1%, confirmando a perda gradual de potência da economia. Especialistas apontam o varejo como principal freio, enquanto XP e PicPay mantêm projeções de crescimento para 2026.",
-      "details": "O Índice de Atividade Econômica do Banco Central (IBC-Br) de maio registrou alta de apenas 0,1%, confirmando a perda gradual de potência da economia. Especialistas apontam o varejo como principal freio, enquanto XP e PicPay mantêm projeções de crescimento para 2026.",
-      "url": "https://aciara.com.br/previa-pib-maio-2026-indica/",
+      "summary": "O Ibovespa, principal referência do mercado financeiro, aparece na sexta colocação em meio à invasão de estrangeiros, com alta de 10,26%",
+      "details": "O Ibovespa, principal referência do mercado financeiro, aparece na sexta colocação em meio à invasão de estrangeiros, com alta de 10,26%",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/indices-b3-agro-estatais-lideram-ganhos-2026/",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -281,14 +389,33 @@
       "updatedAt": "2026-07-18T00:56:36Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://aciara.com.br/wp-content/uploads/2026/07/Industria_CNI.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/RTZBDQ5NPRJQXHRR7LYXBU67EY.png?quality=80&auth=a6ca0e95fc1675dc12968edd5af1195f7508fb749f5d49150a23a53577b2a05e&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "macro-006120dc8dd58afa9a9a5639",
+      "title": "PIB do agro pode crescer em R$ 11 bilhões com a agricultura de precisão",
+      "summary": "PIB do agro pode crescer em R$ 11 bilhões com a agricultura de precisão",
+      "details": "PIB do agro pode crescer em R$ 11 bilhões com a agricultura de precisão",
+      "url": "https://minutomt.com.br/agro/pib-do-agro-pode-crescer-em-r-11-bilhoes-com-a-agricultura-de-precisao/",
+      "source": "MINUTO MT",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-18T00:56:15Z",
+      "updatedAt": "2026-07-18T00:56:15Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://minutomt.com.br/wp-content/uploads/2026/07/f0595c556569cf873d9e870fed960dfb.jpeg"
     },
     {
       "id": "macro-6882e16ea9c4556c5e104ae6",
       "title": "Sobretaxa de 25% e risco fiscal podem ampliar saída de capital estrangeiro do Brasil",
-      "summary": "A alta do petróleo ajudou a sustentar a bolsa brasileira nesta sexta-feira (17), mas aumentou os riscos para a inflação, os juros e o câmbio. A avaliação",
-      "details": "A alta do petróleo ajudou a sustentar a bolsa brasileira nesta sexta-feira (17), mas aumentou os riscos para a inflação, os juros e o câmbio. A avaliação",
-      "url": "https://timesbrasil.com.br/investimentos/bolsa/alta-do-petroleo-sustenta-bolsa-mas-amplia-risco-para-inflacao-e-juros/",
+      "summary": "Os dados positivos de inflação não conseguiram superar as notícias ruins que vieram de fora. O tarifaço versão 2026 e a interminável guerra no Irã",
+      "details": "Os dados positivos de inflação não conseguiram superar as notícias ruins que vieram de fora. O tarifaço versão 2026 e a interminável guerra no Irã",
+      "url": "https://timesbrasil.com.br/colunas/raphael-coraccini/tarifaco-e-guerra-anulam-boas-novas-com-inflacao-e-reduzem-folego-do-ibovespa-ao-longo-da-semana/",
       "source": "Times Brasil | CNBC",
       "category": "macro",
       "tags": [
@@ -299,14 +426,15 @@
       "publishedAt": "2026-07-18T00:55:00Z",
       "updatedAt": "2026-07-18T00:55:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/07/fcd86b92-brasil-eua.webp"
     },
     {
       "id": "macro-e08ce037670b163f23fae5c9",
       "title": "Prévia do PIB avança 1,2% nos cinco primeiros meses do ano",
-      "summary": "O Ibovespa, principal referência do mercado financeiro, aparece na sexta colocação em meio à invasão de estrangeiros, com alta de 10,26%",
-      "details": "O Ibovespa, principal referência do mercado financeiro, aparece na sexta colocação em meio à invasão de estrangeiros, com alta de 10,26%",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/indices-b3-agro-estatais-lideram-ganhos-2026/",
+      "summary": "A combinação entre o tarifaço dos Estados Unidos e a piora da percepção sobre as contas públicas brasileiras pode ampliar a saída de capital estrangeiro",
+      "details": "A combinação entre o tarifaço dos Estados Unidos e a piora da percepção sobre as contas públicas brasileiras pode ampliar a saída de capital estrangeiro",
+      "url": "https://timesbrasil.com.br/investimentos/bolsa/tarifaco-e-risco-fiscal-podem-ampliar-saida-de-capital-estrangeiro-do-brasil/",
       "source": "R7",
       "category": "macro",
       "tags": [
@@ -318,7 +446,7 @@
       "updatedAt": "2026-07-18T00:49:45Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/RTZBDQ5NPRJQXHRR7LYXBU67EY.png?quality=80&auth=a6ca0e95fc1675dc12968edd5af1195f7508fb749f5d49150a23a53577b2a05e&width=1200&height=630&smart=true"
+      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2025/09/9a9edcbc-totos-adam-3r8rcsy0ffg-unsplash.webp"
     },
     {
       "id": "latest-a95809e4fb1239cda1b86549",
@@ -342,9 +470,9 @@
     {
       "id": "funds-86482ae8f7a8995ab0d84552",
       "title": "Notícias Cripto: Will Smith na Expert XP, Nu Asset, Foxbit, BingX e outras novidades",
-      "summary": "Os dados positivos de inflação não conseguiram superar as notícias ruins que vieram de fora. O tarifaço versão 2026 e a interminável guerra no Irã",
-      "details": "Os dados positivos de inflação não conseguiram superar as notícias ruins que vieram de fora. O tarifaço versão 2026 e a interminável guerra no Irã",
-      "url": "https://timesbrasil.com.br/colunas/raphael-coraccini/tarifaco-e-guerra-anulam-boas-novas-com-inflacao-e-reduzem-folego-do-ibovespa-ao-longo-da-semana/",
+      "summary": "Confira as novidades do mercado de criptomoedas no Brasil",
+      "details": "Confira as novidades do mercado de criptomoedas no Brasil",
+      "url": "https://cointelegraph.com.br/news/brazilian-crypto-news-53",
       "source": "cointelegraph.com.br",
       "category": "funds",
       "tags": [
@@ -356,14 +484,14 @@
       "updatedAt": "2026-07-18T00:21:24Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/07/fcd86b92-brasil-eua.webp"
+      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/article-covers-75202-axie-infinity-decentraland-and-metaverse-cryptos-rally-after-facebook-rebrands-t.jpg"
     },
     {
       "id": "latest-79a546dea1030d285f20fa05",
       "title": "A economia brasileira cresceu 0,1% em maio, diz o Banco Central",
-      "summary": "Confira as novidades do mercado de criptomoedas no Brasil",
-      "details": "Confira as novidades do mercado de criptomoedas no Brasil",
-      "url": "https://cointelegraph.com.br/news/brazilian-crypto-news-53",
+      "summary": "Atualizacao de ultima hora capturada em Jornal O Sul.",
+      "details": "",
+      "url": "https://www.osul.com.br/a-economia-brasileira-cresceu-01-em-maio-diz-o-banco-central/amp/",
       "source": "Jornal O Sul",
       "category": "latest",
       "tags": [
@@ -374,15 +502,14 @@
       "publishedAt": "2026-07-18T00:08:21Z",
       "updatedAt": "2026-07-18T00:08:21Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s3-images.ctmedia.io/media/article-covers/article-covers-75202-axie-infinity-decentraland-and-metaverse-cryptos-rally-after-facebook-rebrands-t.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-93ab3dce263fd366c22eaa1f",
       "title": "Anbima passa a integrar aliança global de centros financeiros",
       "summary": "Atualizacao de ultima hora capturada em Monitor Mercantil.",
       "details": "",
-      "url": "https://www.osul.com.br/a-economia-brasileira-cresceu-01-em-maio-diz-o-banco-central/amp/",
+      "url": "https://monitormercantil.com.br/anbima-passa-a-integrar-alianca-global-de-centros-financeiros/",
       "source": "Monitor Mercantil",
       "category": "latest",
       "tags": [
@@ -398,9 +525,9 @@
     {
       "id": "companies-67b77401f96adf7e4ade7a3d",
       "title": "Empresas brasileiras devem se preparar para taxa de 37,5% nas exportações para os EUA",
-      "summary": "Atualizacao de empresas capturada em O Brasilianista.",
-      "details": "",
-      "url": "https://monitormercantil.com.br/anbima-passa-a-integrar-alianca-global-de-centros-financeiros/",
+      "summary": "Política, Direito, Economia e Bastidores de Brasília",
+      "details": "Política, Direito, Economia e Bastidores de Brasília",
+      "url": "https://obrasilianista.com.br/camilalutfi/empresas-brasileiras-preparar-mais-taxa-exportacoes-eua/",
       "source": "O Brasilianista",
       "category": "companies",
       "tags": [
@@ -411,14 +538,15 @@
       "publishedAt": "2026-07-18T00:03:27Z",
       "updatedAt": "2026-07-18T00:03:27Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://obrasilianista.com.br/wp-content/uploads/2026/07/taxa-trabalho-forcado-eua-1200x630.jpg"
     },
     {
       "id": "macro-8abecc0a8319e36ccbe70c3b",
       "title": "Fitch reitera rating BB- da Turquia e vê inflação desacelerar a 18% no fim de 2028",
-      "summary": "Confira as principais novidades do mercado de criptomoedas no Brasil: Expert XP com Will Smith, ETFs da Nu Asset, Foxbit B2B, BingX e mais",
-      "details": "Confira as principais novidades do mercado de criptomoedas no Brasil: Expert XP com Will Smith, ETFs da Nu Asset, Foxbit B2B, BingX e mais",
-      "url": "https://www.spacemoney.com.br/investimentos/criptomoedas/expert-xp-nu-asset-foxbit-bingx-novidades-cripto/",
+      "summary": "Atualizacao de macro capturada em UOL Economia.",
+      "details": "",
+      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/07/17/fitch-reitera-rating-bb--da-turquia-e-ve-inflacao-desacelerar-a-18-no-fim-de-2028.htm",
       "source": "UOL Economia",
       "category": "macro",
       "tags": [
@@ -429,15 +557,14 @@
       "publishedAt": "2026-07-17T23:22:00Z",
       "updatedAt": "2026-07-17T23:22:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/07/pexels-photo-29708250.webp"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "funds-aba6048bc5d703d3d1a4ddaa",
       "title": "Will Smith na Expert XP e novos ETFs de inflação",
-      "summary": "Deterioração fiscal, inflação e juros altos deixam o governo politicamente frágil; o problema não se resume à perda do comando sobre a execução orçamentária, hoje arrebatada pelos políticos",
-      "details": "Deterioração fiscal, inflação e juros altos deixam o governo politicamente frágil; o problema não se resume à perda do comando sobre a execução orçamentária, hoje arrebatada pelos políticos",
-      "url": "https://www.estadao.com.br/economia/celso-ming/entenda-por-que-o-brasil-tem-baixo-poder-de-barganha-nas-negociacoes-com-os-eua/",
+      "summary": "Confira as principais novidades do mercado de criptomoedas no Brasil: Expert XP com Will Smith, ETFs da Nu Asset, Foxbit B2B, BingX e mais",
+      "details": "Confira as principais novidades do mercado de criptomoedas no Brasil: Expert XP com Will Smith, ETFs da Nu Asset, Foxbit B2B, BingX e mais",
+      "url": "https://www.spacemoney.com.br/investimentos/criptomoedas/expert-xp-nu-asset-foxbit-bingx-novidades-cripto/",
       "source": "SpaceMoney",
       "category": "funds",
       "tags": [
@@ -449,14 +576,14 @@
       "updatedAt": "2026-07-17T23:07:05Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/7JKS7VCAY5BXVCAXOKSFQLJDYQ.jpg?quality=80&auth=fb4b2aaf5e758ef6fd5de3077b6c064bd7a2e64d815df4c9af29a028db0f0eda&width=1200&height=630&focal=830,484"
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/07/pexels-photo-29708250.webp"
     },
     {
       "id": "latest-97beccae5902bb65a647017c",
       "title": "Ibovespa fecha o último pregão aos 173.714,08 pontos, após queda de 0,05%",
-      "summary": "Atualizacao de ultima hora capturada em SiteBarra.",
-      "details": "",
-      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/07/17/fitch-reitera-rating-bb--da-turquia-e-ve-inflacao-desacelerar-a-18-no-fim-de-2028.htm",
+      "summary": "O Ibovespa fechou o último pregão aos 173.714,08 pontos, após queda de 0,05%. O principal índice da Bolsa brasileira registrou leve baixa em uma sessão marcada pelo avanço das ações da Petrobras, favorecidas pela valorização dos preços do petróleo. Em sentido contrário, os papéis",
+      "details": "O Ibovespa fechou o último pregão aos 173.714,08 pontos, após queda de 0,05%. O principal índice da Bolsa brasileira registrou leve baixa em uma sessão marcada pelo avanço das ações da Petrobras, favorecidas pela valorização dos preços do petróleo. Em sentido contrário, os papéis do setor bancário pesaram sobre o índic",
+      "url": "https://sitebarra.com.br/v8/ibovespa-fecha-o-ultimo-pregao-aos-173-71408-pontos-apos-queda-de-005/",
       "source": "SiteBarra",
       "category": "latest",
       "tags": [
@@ -467,14 +594,15 @@
       "publishedAt": "2026-07-17T23:00:00Z",
       "updatedAt": "2026-07-17T23:00:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://sitebarra.com.br/wp-content/uploads/2026/07/Ibovespa-fecha-o-ultimo-pregao-aos-17371408-pontos-apos-queda.webp"
     },
     {
       "id": "macro-85c332923258df8a5ac56a8e",
       "title": "Entenda por que o Brasil tem baixo poder de barganha nas negociações com os EUA",
-      "summary": "O Ibovespa fechou o último pregão aos 173.714,08 pontos, após queda de 0,05%. O principal índice da Bolsa brasileira registrou leve baixa em uma sessão marcada pelo avanço das ações da Petrobras, favorecidas pela valorização dos preços do petróleo. Em sentido contrário, os papéis",
-      "details": "O Ibovespa fechou o último pregão aos 173.714,08 pontos, após queda de 0,05%. O principal índice da Bolsa brasileira registrou leve baixa em uma sessão marcada pelo avanço das ações da Petrobras, favorecidas pela valorização dos preços do petróleo. Em sentido contrário, os papéis do setor bancário pesaram sobre o índic",
-      "url": "https://sitebarra.com.br/v8/ibovespa-fecha-o-ultimo-pregao-aos-173-71408-pontos-apos-queda-de-005/",
+      "summary": "Deterioração fiscal, inflação e juros altos deixam o governo politicamente frágil; o problema não se resume à perda do comando sobre a execução orçamentária, hoje arrebatada pelos políticos",
+      "details": "Deterioração fiscal, inflação e juros altos deixam o governo politicamente frágil; o problema não se resume à perda do comando sobre a execução orçamentária, hoje arrebatada pelos políticos",
+      "url": "https://www.estadao.com.br/economia/celso-ming/entenda-por-que-o-brasil-tem-baixo-poder-de-barganha-nas-negociacoes-com-os-eua/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -486,7 +614,7 @@
       "updatedAt": "2026-07-17T22:56:05Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://sitebarra.com.br/wp-content/uploads/2026/07/Ibovespa-fecha-o-ultimo-pregao-aos-17371408-pontos-apos-queda.webp"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/7JKS7VCAY5BXVCAXOKSFQLJDYQ.jpg?quality=80&auth=fb4b2aaf5e758ef6fd5de3077b6c064bd7a2e64d815df4c9af29a028db0f0eda&width=1200&height=630&focal=830,484"
     },
     {
       "id": "macro-c19c9f34de667fbc1fea1ec9",
@@ -508,7 +636,7 @@
       "imageUrl": "https://sindicalizi-public.s3.amazonaws.com/sintrajudsp/gerenciadorconteudo/imagens/615_500_apresenta-chapas-candidaturas17843284246a5ab0e8067d6.png"
     },
     {
-      "id": "macro-fd8668561b0dc7554fa27b75",
+      "id": "macro-6e034ee13f20e0f139970cc7",
       "title": "Confira as apresentações das chapas e candidaturas ao conselho fiscal",
       "summary": "O indicador IBC-Br, divulgado nesta sexta-feira (17), indicou estabilidade em relação a abril",
       "details": "O indicador IBC-Br, divulgado nesta sexta-feira (17), indicou estabilidade em relação a abril",
@@ -520,37 +648,18 @@
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-07-17T22:48:23Z",
-      "updatedAt": "2026-07-17T22:48:23Z",
+      "publishedAt": "2026-07-17T22:48:14Z",
+      "updatedAt": "2026-07-17T22:48:14Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://sbt-news-assets-prod.s3.sa-east-1.amazonaws.com/banco_central_f85f8fd9f9.jpg"
     },
     {
-      "id": "latest-05f5a07a5196d9400d323bb1",
-      "title": "Ibovespa hoje fecha em alta com dólar a R$ 4,91, petróleo em forte queda e impacto de balanços",
-      "summary": "Mercado acompanhou sinalizações do Banco Central, temporada de resultados e alívio no petróleo, enquanto tensões no Oriente Médio seguiram no radar",
-      "details": "Mercado acompanhou sinalizações do Banco Central, temporada de resultados e alívio no petróleo, enquanto tensões no Oriente Médio seguiram no radar",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-ata-copom-balancos-1t26-petroleo-mercados-globais-pmis/",
-      "source": "Estadão",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-17T22:41:16Z",
-      "updatedAt": "2026-07-17T22:41:16Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/I2G7ICCVDZPCRD3XCJ4JYYIPXU.png?quality=80&auth=4b0deb5a6ec42bd017ca22acc101b09761b8a40bc359232ee6a5f6757546019a&width=1200&height=630&smart=true"
-    },
-    {
       "id": "macro-ec201d36390dbd91873a7219",
       "title": "Economia deve crescer 2,3%, mas custos e crédito seguem pressionados",
-      "summary": "Ministério da Fazenda divulga projeções econômicas para 2026, mantendo PIB em 2,3% e elevando inflação. Entenda os impactos para empresas.",
-      "details": "Ministério da Fazenda divulga projeções econômicas para 2026, mantendo PIB em 2,3% e elevando inflação. Entenda os impactos para empresas.",
-      "url": "https://www.contabeis.com.br/noticias/78165/economia-deve-crescer-2-3-mas-custos-e-credito-seguem-pressionados/",
+      "summary": "A semana foi marcada pela divulgação de indicadores econômicos relevantes no Brasil e nos Estados Unidos, além da repercussão das novas medidas comerciais anunciadas pelo governo norte-americano. No cenário doméstico, o Índice de Atividade Econômica do Banco Central (IBC-Br) avan",
+      "details": "A semana foi marcada pela divulgação de indicadores econômicos relevantes no Brasil e nos Estados Unidos, além da repercussão das novas medidas comerciais anunciadas pelo governo norte-americano. No cenário doméstico, o Índice de Atividade Econômica do Banco Central (IBC-Br) avançou 0,10% em maio, acima da expectativa ",
+      "url": "https://trademap.com.br/agencia/maiores-altas-e-baixas-do-ibovespa-na-semana-47",
       "source": "Portal Contabeis",
       "category": "macro",
       "tags": [
@@ -562,14 +671,14 @@
       "updatedAt": "2026-07-17T22:30:01Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.contabeis.com.br/assets/img/news/economia-deve-crescer-2-3-mas-custos-e-credito-seguem-pressionados-2.png"
+      "imageUrl": "https://trademap.com.br/wp-content/uploads/2026/07/shutterstock_2244907497-19.jpg"
     },
     {
       "id": "latest-d3703f537cb76f156aece893",
       "title": "Maiores altas e baixas do Ibovespa na semana",
-      "summary": "Ibovespa encerra estável com Petrobras e petróleo em alta, dólar comercial avança a R$5,11 - veja os detalhes",
-      "details": "Ibovespa encerra estável com Petrobras e petróleo em alta, dólar comercial avança a R$5,11 - veja os detalhes",
-      "url": "https://www.spacemoney.com.br/investimentos/ibovespa-estavel-com-petrobras-e-dolar-a-5-11/",
+      "summary": "Ministério da Fazenda divulga projeções econômicas para 2026, mantendo PIB em 2,3% e elevando inflação. Entenda os impactos para empresas.",
+      "details": "Ministério da Fazenda divulga projeções econômicas para 2026, mantendo PIB em 2,3% e elevando inflação. Entenda os impactos para empresas.",
+      "url": "https://www.contabeis.com.br/noticias/78165/economia-deve-crescer-2-3-mas-custos-e-credito-seguem-pressionados/",
       "source": "trademap.com.br",
       "category": "latest",
       "tags": [
@@ -581,14 +690,14 @@
       "updatedAt": "2026-07-17T22:26:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/07/pexels-photo-7567223-10.webp"
+      "imageUrl": "https://www.contabeis.com.br/assets/img/news/economia-deve-crescer-2-3-mas-custos-e-credito-seguem-pressionados-2.png"
     },
     {
       "id": "latest-4b3dc0f8a69bfad482272cc7",
       "title": "Ibovespa estável com Petrobras em alta; dólar firme a R$ 5,11",
-      "summary": "A semana foi marcada pela divulgação de indicadores econômicos relevantes no Brasil e nos Estados Unidos, além da repercussão das novas medidas comerciais anunciadas pelo governo norte-americano. No cenário doméstico, o Índice de Atividade Econômica do Banco Central (IBC-Br) avan",
-      "details": "A semana foi marcada pela divulgação de indicadores econômicos relevantes no Brasil e nos Estados Unidos, além da repercussão das novas medidas comerciais anunciadas pelo governo norte-americano. No cenário doméstico, o Índice de Atividade Econômica do Banco Central (IBC-Br) avançou 0,10% em maio, acima da expectativa ",
-      "url": "https://trademap.com.br/agencia/maiores-altas-e-baixas-do-ibovespa-na-semana-47",
+      "summary": "Ibovespa encerra estável com Petrobras e petróleo em alta, dólar comercial avança a R$5,11 - veja os detalhes",
+      "details": "Ibovespa encerra estável com Petrobras e petróleo em alta, dólar comercial avança a R$5,11 - veja os detalhes",
+      "url": "https://www.spacemoney.com.br/investimentos/ibovespa-estavel-com-petrobras-e-dolar-a-5-11/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -600,14 +709,32 @@
       "updatedAt": "2026-07-17T22:12:42Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://trademap.com.br/wp-content/uploads/2026/07/shutterstock_2244907497-19.jpg"
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/07/pexels-photo-7567223-10.webp"
+    },
+    {
+      "id": "companies-b353f59a7f1686bff134ada8",
+      "title": "Exportações brasileiras enfrentam tarifa de 25% nos EUA",
+      "summary": "Atualizacao de empresas capturada em Acionista.com.br.",
+      "details": "",
+      "url": "https://acionista.com.br/exportacoes-brasileiras-enfrentam-tarifa-de-25-nos-eua/",
+      "source": "Acionista.com.br",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-07-17T22:12:26Z",
+      "updatedAt": "2026-07-17T22:12:26Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "latest-4b08d06c7f6f2699219d468d",
       "title": "Dn’A Women: programa gratuito prepara universitárias para carreiras no mercado financeiro",
-      "summary": "Custos mais altos, inadimplência e desaceleração global pressionam empresas de vários setores no trimestre",
-      "details": "Custos mais altos, inadimplência e desaceleração global pressionam empresas de vários setores no trimestre",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/alavancagem-maior-efeito-guerra-oriente-medio-juros-altos-pesam-balancos-1t26-empresas-brasileiras/",
+      "summary": "Com inscrições abertas até 11 de agosto, iniciativa oferece 60 vagas para estudantes de bacharelado em cursos de exatas ou áreas correlatas.",
+      "details": "Com inscrições abertas até 11 de agosto, iniciativa oferece 60 vagas para estudantes de bacharelado em cursos de exatas ou áreas correlatas.",
+      "url": "https://vocerh.abril.com.br/cursos/dna-women-programa-gratuito-prepara-universitarias-para-carreiras-no-mercado-financeiro/",
       "source": "Você RH",
       "category": "latest",
       "tags": [
@@ -619,14 +746,14 @@
       "updatedAt": "2026-07-17T22:12:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/SPAN6J7SCNJ3PN2IHOROOSBIVU.png?quality=80&auth=2e96d1c928369d7d8de63951e3140fede69415eacf61ff015c92920b50af0f45&width=1200&height=630&smart=true"
+      "imageUrl": "https://vocerh.abril.com.br/wp-content/uploads/2026/07/1707-vcrh-mercado-financeiro-site.jpg?quality=70&strip=info&resize=1080,565&crop=1"
     },
     {
       "id": "latest-8520ca1dd2dac8a3aecee1c4",
       "title": "Balanços do 1ª tri decepcionam sob pressão de juros altos e cenário externo",
-      "summary": "Nu Asset lança três ETFs de renda fixa ligados ao IPCA com duration fixa de dois, cinco e dez anos. Confira taxas, tributação e como funcionam",
-      "details": "Nu Asset lança três ETFs de renda fixa ligados ao IPCA com duration fixa de dois, cinco e dez anos. Confira taxas, tributação e como funcionam",
-      "url": "https://www.nordinvestimentos.com.br/blog/nu-asset-etfs-ipca-nb0211-nb0511-nb1011/",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQWVlYSkdlMkpsQi01djRwV2VxcFZhOWNwaFN6Zm1zVTBIRVloR2RFSXlDdkthTTdzQm5MNHJ6WnpuVDU5V1lSSzEwSEQ2SzV1aWlWTjk4SnJLbmhJa0V0UUNfcld4N016OGkxbm1La0gwZFVWbWlYWjJXWDcxSVRNWDQySUsxVFJNejJjWVVOelJzU3BzcVBJLWVNc00wdE5PUm1nM01WdXFsNmNHbjhYdEVJY2JVR2M4MTFoVlpWeWxqNmhLYW1LSzNTNUd5TDNCZ1FDWENYWUZYOXgxTXRSaVVBd1BVanpHa2V4aFNR0gHzAUFVX3lxTE5jOWhpMUk3VVJMZnhWbWJQdVdtRVVqbXVuWFJWZURmZHZGUTRrQU5MVjBVWjQxMUk5Mk93VExKSGhHYkp1aVpwVVNvaWVjVlc0NE5QTmJnRjVWN1lxV0JFVEc1elBabnQ4WHhEMnpOZkNiNmFyTURfSGZRTk5SQmdybEZxTW1ORTN3Rkg5UkJ0SmRkY1R1TkdvaXpZck44enNOaUdKdGpOTVUwNTNsSDRmRHV6WXVST09jNkI3U2xhZkI1NDZ0cXpjVWdsdjJadlU2bTJxcm5oX1Iyc1A5N0xwODhxbU0yZ3hwYjlzcmVqMWtxdw?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -637,15 +764,14 @@
       "publishedAt": "2026-07-17T22:07:33Z",
       "updatedAt": "2026-07-17T22:07:33Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.nordinvestimentos.com.br/cdn-cgi/imagedelivery/WVyV4OkToIxntlRloKFH7Q/blog/uploads/1a05bdf2-df81-4e24-8d98-66fdf40bc3e1/nord-nu-asset-etfs-ipca-nb0211-nb0511-nb1011.webp/format=auto,fit=cover,w=1280,h=720"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-780e243e0b2e64f0af6382c4",
       "title": "A reforma tributária pode trazer um ganho inesperado: modernizar a tributação imobiliária no Brasil",
-      "summary": "Ao incluir operações imobiliárias no IBS e na CBS, a reforma tributária cria incentivos para modernizar a gestão da tributação imobiliária.",
-      "details": "Ao incluir operações imobiliárias no IBS e na CBS, a reforma tributária cria incentivos para modernizar a gestão da tributação imobiliária.",
-      "url": "https://www.iadb.org/pt-br/blog/modernizacao-do-estado/gestao-fiscal/reforma-tributaria-pode-trazer-um-ganho-inesperado-modernizar-tributacao-imobiliaria-no-brasil",
+      "summary": "Atualizacao de macro capturada em Inter-American Development Bank.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPS2l4clJ3N3FVMG5nWDEyNUFBYUFoU0R5R09JdVVybmpvSS04alZiSUJhTEFUOW5ocjJRdnE1QVlJb09yWXR5bXV3LUptMG1MdkFZd0tkX2ticVFRdjVUb0RoVW41M2NpbGd6U3BkZlJuVmszUTg3WjFCb3VBQTlvNWlhZkFzRFVrODVYSjY2OXdPY1pIeTliWWh4Vm1KTWhwY2FyLUdNbGtLdmlsZEY2YnlqejRXSlNTZElaZE9DRld5MVI2Y0cwVDFveFh1dUlaWnF3M1NNYnoyYzJZdjVITU0yc3lxQlNrbG85VDdIaFlHSlRBZkE?oc=5",
       "source": "Inter-American Development Bank",
       "category": "macro",
       "tags": [
@@ -656,15 +782,14 @@
       "publishedAt": "2026-07-17T22:07:00Z",
       "updatedAt": "2026-07-17T22:07:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.iadb.org/sites/default/files/2026-07/Gestoa-fiscal-Blog-Banner-Panorama-Bairro-Berrini-Tributa%C3%A7%C3%A3o-Imobili%C3%A1ria.png"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-cafa88131c93fd2818c60d8e",
       "title": "IPCA abaixo do esperado faz títulos prefixados dispararem",
-      "summary": "Com inscrições abertas até 11 de agosto, iniciativa oferece 60 vagas para estudantes de bacharelado em cursos de exatas ou áreas correlatas.",
-      "details": "Com inscrições abertas até 11 de agosto, iniciativa oferece 60 vagas para estudantes de bacharelado em cursos de exatas ou áreas correlatas.",
-      "url": "https://vocerh.abril.com.br/cursos/dna-women-programa-gratuito-prepara-universitarias-para-carreiras-no-mercado-financeiro/",
+      "summary": "Atualizacao de macro capturada em CNN Brasil.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNU016bEc1NjhkQkZjcS1UZFoxcDk1QmFhczlYVTFRTjhnNjY4aEc3RHhqQmE3OUVYX3N2dkpDZjdMTGg5cFpFTlF1eVdTbHZDZHVwSjZWUFNvRVVRUjRFTzF6UUN5WHcxa0lwYWdhMExkNm5IOHdaWG9HLWhENDREVFUtMllmMl9CVnh5QXBJbEMzS2hhWFJhbHdPUTZMTEJVMnR3UC1PaEZ0aTdzaldr?oc=5",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -675,15 +800,14 @@
       "publishedAt": "2026-07-17T22:00:25Z",
       "updatedAt": "2026-07-17T22:00:25Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://vocerh.abril.com.br/wp-content/uploads/2026/07/1707-vcrh-mercado-financeiro-site.jpg?quality=70&strip=info&resize=1080,565&crop=1"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "funds-8657e073a6b1812706451f18",
       "title": "Nu Asset lança ETFs de IPCA com taxa de 0,19% ao ano",
-      "summary": "Desaceleração da inflação derruba juros futuros, valoriza títulos prefixados e recoloca renda fixa no radar dos investidores",
-      "details": "Desaceleração da inflação derruba juros futuros, valoriza títulos prefixados e recoloca renda fixa no radar dos investidores",
-      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/ipca-abaixo-do-esperado-faz-titulos-prefixados-dispararem/",
+      "summary": "Atualizacao de fundos capturada em Nord Investimentos.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY2N1WU9pVnRCVi1IZnZ2Z3VtMnN0UTh5RElfYnoxaFM5N0Z2TWVva1NfQTdwZ0NVTUpOMEZRNmMwVGNqaEhFQ09UNGdwRXdBNzdXQlZPMlI3NXNmbm1ON1JUVmNBRWU0TkRxTElmd0tVSHRpaW1kV05YM1F5V0x0SFkzbGZNZi1PdUHSAY8BQVVfeXFMTjVfcFlKWFprbGVMNGp2YTN2QzRacExUV1RDQ05MUENhRmxnbExzYV92WnE2Z2lZcmw4QVVuWFFFYXM5cmlZRkdnVUFpNTFMU0RPY3lhdk95alp6eXY0X24tUVloUmRZbnBpQldyeEgxbFZFQUJ4UlBDZVlWUk9qVV9idHFpMzYyelI3RE5rUk0?oc=5",
       "source": "Nord Investimentos",
       "category": "funds",
       "tags": [
@@ -694,15 +818,14 @@
       "publishedAt": "2026-07-17T21:58:00Z",
       "updatedAt": "2026-07-17T21:58:00Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/10/real_moedadinheiro_jfcrz_abr_1701220044_1.jpg?w=1200&h=630&crop=1"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "latest-f93d69521432d17b1ae33b90",
       "title": "Juros futuros sobem devido a temores inflacionários e geopolíticos",
-      "summary": "Aumento nas taxas reflete pressão externa e elevação do petróleo",
-      "details": "Aumento nas taxas reflete pressão externa e elevação do petróleo",
-      "url": "https://boca.com.br/economia/juros-futuros-sobem-devido-a-temores-inflacionarios-e-geopoliticos",
+      "summary": "Atualizacao de ultima hora capturada em boca.com.br.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPLTMyR3NqS0NlWmpJd2JyUVAtbGN5T0NZNXY1SlhPVEJpWU1DMGczcHlXU1I5UUFoR1F3R05QcGhYY2cySXpTRExoWDN1cmRva2VIc3RwZXVGa0FlclFBWWViNnNqUk5aYmUzU1NuNlJJMVBRVG1aU2JhRjF1RDkyVGVUWWI4QjZjRk1ZMGJSejFjVEFPRHZvMGNrRQ?oc=5",
       "source": "boca.com.br",
       "category": "latest",
       "tags": [
@@ -713,15 +836,14 @@
       "publishedAt": "2026-07-17T21:55:20Z",
       "updatedAt": "2026-07-17T21:55:20Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/66aaba985252a46236514f017b960ccd_858x483.png"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-fe43f41f1a3342e763f71006",
       "title": "Ibovespa hoje: Usiminas (USIM5) salta; Vivara (VIVA3) afunda com avanço dos juros futuros",
-      "summary": "Com alta do petróleo e IBC-Br acima do esperado, principal índice da B3 encerrou em leve baixa nesta sexta-feira (17)",
-      "details": "Com alta do petróleo e IBC-Br acima do esperado, principal índice da B3 encerrou em leve baixa nesta sexta-feira (17)",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-usiminas-usim5-salta-vivara-viva3-afunda-com-avanco-dos-juros-futuros/",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNb05qb2hsNkdwYnppUmNJWWs2ZlZPb2VuWHl0aktYRUdrdWJER3dWMDF4STN3YXJjZ2NmRmRXUlVCNmpLYi0tc1BnNHU2WG9Fam9QWkZ2WFFsZHFHczR2SmZTRmcyYUxadUo5MzJzeWhuY0VPVE1yUEY0TUdnSllHeS1ldVJuREZGRWx3anFxVUJSWUtMTV9hUlVXWmJuTlJNM3NlQUNYUW1MSEtHakNjN0FRSFl1MFVlNUR2SDdNbHVNWm9BZmFGT1FOUlZRWXUwazRVcGxjZFZBUdIB3wFBVV95cUxNWXprWDlveVFMRnNpcThpMlFwM0lrVkZFV0xfU1RaQ1FUQmdLLVhGRFJFLUs3MnhSQVR4RlNsY1h2NWVsSWREU1g4TkZpamhFd0RWTkRqbG9zeWJYSHQzNWUtMG5aVEV2OUdaWm9QRU52ZkFUeERiZVBPUHp4M1VCWGRDWGJ1bjJPOVBWZzFNMnQ5WDBTcUN5N2dYQkUzUmRyQktrUFUwMWJMcWIxcGVmYnNxS3FVTW9oeDVXblRBTU9HdHhzS1lDOERPUmE5aXZRVjV4Z3Y5LTRMenNlSk1V?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -732,15 +854,14 @@
       "publishedAt": "2026-07-17T21:54:00Z",
       "updatedAt": "2026-07-17T21:54:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/O56PVTWB45OYBBT3H5TYP4RTMY.png?quality=80&auth=ed3c398427ea6c914f5dd82ef279534cbce493cceb298717b573c4086c0834af&width=1200&height=630&smart=true"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-cee7edd7d4d4c0ec37645ac0",
       "title": "Gringos impulsionam o Ibovespa, small caps ficam para trás e criam oportunidade",
-      "summary": "Índice de small caps da B3 opera longe da máxima histórica e tem ações com preços atrativos, mas investimento demanda cautela",
-      "details": "Índice de small caps da B3 opera longe da máxima histórica e tem ações com preços atrativos, mas investimento demanda cautela",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/gringos-puxam-ibovespa-small-caps-ficam-para-tras-mercado-ve-oportunidade/",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdmphejBLMktUQmE4dGlaNVl6Zmg4VDd3d1E2OVRIbXd1bnBPREc0TWZ3eDdSX1loU3VkUkdjU2duc1NCbS1wdGlLcUV6SU5zU1ZIX2VKekJZREFpakNoTUdDcmVVM0VzV0NBVG9nTVQtZ1pMWW5LdGhUaUsxYmthZHNOQi1RdTZMVXU0T2prM2VQczBsZkdydzVYdXRRT2RCN0VOaEEzSmlRU2s0MTdCalFCQ2ZCRmJuaUZhb3VhSmh0WnNVcGNNeFRiWC3SAdIBQVVfeXFMTlhidEpudnc0ZDl5dmkyeTBIZXNSZnFxOE44czZfRS1iNGpCTUs2ZElRdjNLNnJUZ3VFS0pfUjNSSi00dndGNEQ1Y01NWmhCdFR3RU5zeklKcE01aVFqeTI1aHhNNG4xMVZhcmdVMUZockRCOGl6YkZNek9UU01fY3M1SC1Jd2E1RjQ4UTQ2dDZXN2R3UGJmeklDN3Y3V2hFZ2RoTDZpempILU10N0lzNUNGVS0zN2ZrZHM3bldHLW5MY0RfYW9HY3Y4UVE1Q1JFaHdR?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -751,8 +872,7 @@
       "publishedAt": "2026-07-17T21:53:29Z",
       "updatedAt": "2026-07-17T21:53:29Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/CHT2LA2OWFNKHDVU6FVR6PE56A.png?quality=80&auth=b2e8fe35bb3906be738e587987346e46ec290db49c673865b7946d4a79ff7c55&width=1200&height=630&smart=true"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-e9465097896d5f5240cb717b",
@@ -845,24 +965,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-a3a74547cec1268e8ba2073d",
-      "title": "Ibovespa hoje recua com prévia do PIB e tarifaço ainda no foco; dólar sobe a R$ 5,13",
-      "summary": "Atualizacao de ultima hora capturada em MSN.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVTNRLTF2MkJUaGwwTmliX0RIR1VQdzA0S3YzNWRfVUhiSUNRSVd5T3lQXzZINFBUbGxCNldJSXhVV2NqNEdGQjcwMThoTGtFalhhZ25Ob2RVZ3VGNVpDcnBkdlBleUtGaGREd2g5UFBuX2JoREt6YndBWnZTeUJXeEQ1cDBKS0ZIbGljRm9aeGRQd1VIcGpaTTRaRlF4RVhiVjc0WUIyUzNkRWU2MXFaQVpkMmdQeTlReDJUQ1NHdkFJSG9yOTdQS0pLWnVXM2JJejhDelRRZTU?oc=5",
-      "source": "MSN",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-17T21:28:38Z",
-      "updatedAt": "2026-07-17T21:28:38Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "macro-9d2d485c9a31ea6c07cf0f39",
       "title": "Inflação desacelera, mas consumidores ainda sentem peso dos preços",
       "summary": "Atualizacao de macro capturada em G1.",
@@ -881,42 +983,6 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "latest-637e284b401df37e5a770d33",
-      "title": "Dólar e Ibovespa fecham semana estável, mas com perdas após tarifaço",
-      "summary": "Atualizacao de ultima hora capturada em Metrópoles.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQXR6aUZwSEhrTXV0VndSQ280czMzZnZjb2Q1SWJfWW5leWdJV2JQdXc2bW1wS0ZjN1FiTHQ4b3NSLXotRjVCVHRKb2JjNFBNNVRGbWJqejY5X005b01SbHMwYnJjQ2dkR2k5bDhGZTJMaDB6MFhiMnpVaHlmdTJMSm9YVzFvT2s5MnNOVkJhaWtIcVl1STR2SngteU1QSzJaWW1kbUJ3?oc=5",
-      "source": "Metrópoles",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-17T21:21:00Z",
-      "updatedAt": "2026-07-17T21:21:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-36c79c1a9b1840f388af505d",
-      "title": "Ibovespa hoje fecha estável com Petrobras e petróleo em alta; dólar sobe a R$ 5,11",
-      "summary": "Atualizacao de ultima hora capturada em InfoMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaUFxN3JVOVhKN3dxM0R3WGFfLXhYVVlCekNHdm14OUpSalJvcXdlNkhaRkhzM2p2ZFB4cG9sOGV1WGQ0Z0VwUHZQWmswSWNWUHBYR1d1NzRmYzlwUDlLSHRKM1VqeFdGclhPNWh0OF9XQ19CVERqclRvM2VOS2JwbHhLNFhUbHRpcmhNRUJHbw?oc=5",
-      "source": "InfoMoney",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-17T21:20:23Z",
-      "updatedAt": "2026-07-17T21:20:23Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "macro-e13d4314a399cd0d427f2511",
       "title": "Fazenda mantém projeção de inflação para 5,1% e crescimento de 2,3% para 2026",
       "summary": "Atualizacao de macro capturada em Jornal GGN.",
@@ -931,60 +997,6 @@
       ],
       "publishedAt": "2026-07-17T21:13:00Z",
       "updatedAt": "2026-07-17T21:13:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-7494c62cb3c2adf7e33b01c9",
-      "title": "Inflação dos alimentos expõe a lógica do latifúndio exportador",
-      "summary": "Atualizacao de macro capturada em A Nova Democracia.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5YR3JQY3Z2UTB2OUQ5NEVRdm51UFZXOWp0bWs1ZlpTVnp3V2E3WjU2Yldzc19nMm1CTU9hd2hoWGROQ0FZaF8wMUFEWDlPLVI4bEpDUUMtNXVJOEdrR0UtSzdULVZtNDlZbEtxYWZoeFdQdnVGVEpIX25kQWI?oc=5",
-      "source": "A Nova Democracia",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-17T21:11:00Z",
-      "updatedAt": "2026-07-17T21:11:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-d2dc8497fbdc9f01bf820d5f",
-      "title": "Redução da jornada de trabalho eleva produtividade, diz Nobel de Economia",
-      "summary": "Atualizacao de macro capturada em vermelho.org.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeFpnR2ExRTJKMUt0U2JiZnRYcEptbENYQzNmODVCaDRQa1ZYMk0xT3hTMG5wLW1zaHlSODVPaDhPbkgyb0Zna1BVMl9QeUV1Y0hWYVM1b3ctdDdKekFkNlhJOVp5Wkhzb190M3I1UWE5VnRhRXdPM0x1QzVyYkxWRDlmRnloU1dOaV8yUFZSblYtd0h1NlpGN0FoMVNGOTBZOHJieWIzemFZRGot?oc=5",
-      "source": "vermelho.org.br",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-17T21:10:00Z",
-      "updatedAt": "2026-07-17T21:10:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-6fa7448bb562455a9e416d86",
-      "title": "Concurso ISS Vitória Santo Antão PE: edital previsto; 7 vagas",
-      "summary": "Atualizacao de macro capturada em Estratégia Concursos.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQcl9icUhSX090TEtUaENVVl94aDA4dFo0cmpBSFNtNEFia1BGTkpMal9sQ0JWREtWY2doTXltWXFHenhwTWFuVzRjR0dXWk1oYjVtcmpSQmVQVHQ3UzRMUjJpU3RwQ2dBcWMwX3Jhek5tNnlNeUlMbE1jSVJBUzFRMEwzUURlU3fSAYwBQVVfeXFMUHJpYlI3OHVPaXhVeHZELXg5dVE4VXBORnlGTkZkQnpOVWJiQmw4QURWMWJ0ZTRZN09aTjUzYWx4MmxKYnlnVkRuTXRSYUxSR0Y3M0RtSmEzdnQ2MTY2Nkh4MG5DSkt6QmNEdW56RGFZSGZ5aVA2TWVnMW43U19VOHUzWTdnZjktenFNcmc?oc=5",
-      "source": "Estratégia Concursos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-17T21:02:00Z",
-      "updatedAt": "2026-07-17T21:02:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
@@ -1023,6 +1035,24 @@
       "updatedAt": "2026-07-17T20:35:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "funds-f2c79348273fa664521053a2",
+      "title": "PGE-RJ ajuíza ações contra gestoras do Master por prejuízo de quase R$ 650 mi ao Rioprevidência",
+      "summary": "Atualizacao de fundos capturada em Acessa.com.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNVXNaWElKNHFmVHIzYkVPMW85c01scHVZTnB3SzZ0NE5HX29FTDNLNnBfY3JmSzJQN3RPbExxSzJ5N3ZUNmtjOUR0Rm4xVy1HeUduZTY3ZnhFMVlwZXowdUIzZ0pZVzB0MFBVeXJXUmlJd2lVM3lMd284V3ljQ00wRjRES19ZQm5nZldqamZZc0lqQ1ktaXUzbi02Y1QzOWRHc0Y5UzlyMDRLVnN5azRldzBQNDdld1ctWUlueEUxZFpNdkNPZjl0Rmd1QkxmaEJqU0VSaDQxbUVGVnh6cWFXNldWRGMtZ9IB5gFBVV95cUxNVXNaWElKNHFmVHIzYkVPMW85c01scHVZTnB3SzZ0NE5HX29FTDNLNnBfY3JmSzJQN3RPbExxSzJ5N3ZUNmtjOUR0Rm4xVy1HeUduZTY3ZnhFMVlwZXowdUIzZ0pZVzB0MFBVeXJXUmlJd2lVM3lMd284V3ljQ00wRjRES19ZQm5nZldqamZZc0lqQ1ktaXUzbi02Y1QzOWRHc0Y5UzlyMDRLVnN5azRldzBQNDdld1ctWUlueEUxZFpNdkNPZjl0Rmd1QkxmaEJqU0VSaDQxbUVGVnh6cWFXNldWRGMtZw?oc=5",
+      "source": "Acessa.com",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-07-17T19:51:24Z",
+      "updatedAt": "2026-07-17T19:51:24Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "companies-f7f2381f08d9c7d357149ca3",
@@ -1277,24 +1307,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "companies-768f542f5cbc2bc6131e1590",
-      "title": "Alckmin critica tarifaço e anuncia medidas em defesa das empresas brasileiras",
-      "summary": "Atualizacao de empresas capturada em Hora do Povo.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbUhKV091M3BlRnNZZ0pOVEh2cHRwaEdZa2RQN2JpV2pDYVdqNldwcXB6amNROTZydkVoWjU0T0ZIZmkxMVlqWHIzZGhSSzBfQ1BqVlUtRHI4UXVCSW96VmxIV3E5bEYyVm5nNDNsT0Z6MmJZUGhOTnEzdG1uTHZ4NlptVjVybFFBZk9MaGJrdDNnRThzVWtwWUFDNWNrQTVpd1pZY242bw?oc=5",
-      "source": "Hora do Povo",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-07-17T16:17:24Z",
-      "updatedAt": "2026-07-17T16:17:24Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
       "id": "funds-62515b84caa0e2fedda4ab37",
       "title": "Horizon Kinetics Asset Management compra US$ 2.283 em ações do RENN Fund (RCG)",
       "summary": "Atualizacao de fundos capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
@@ -1381,24 +1393,6 @@
       ],
       "publishedAt": "2026-07-17T13:00:00Z",
       "updatedAt": "2026-07-17T13:00:00Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-55caf787954b28c3e86cb541",
-      "title": "Por que o Santander Asset reforça aposta nos ativos locais em maio",
-      "summary": "Atualizacao de fundos capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNY1VpSlNRVk9NQVlQRXZlMU55Z0VnWUEwSlNuX3JDSXV6MmtCTnVuWks1X1BWNVp4dTU5UXd6eENaWi1lY1ZCRUZpSnJiNkRNMnkzSE1qWlBKNl96NHZ3YUFGU2NUZHRvWnduelNneW9GRVNvVVczMjZqdmpCVkItZlJXY2pwOXBreFpwR1BST0ExcUdpQ1l0RnBjbmxmaWVfUjU5NUlHdW1VOC1nRDlIYm1iQjF6SHI3MDk2REwtOFpUTUhYWFhKNDRQQ0w5emFjaDJlOdIB2gFBVV95cUxON3BzeWc2OTY2QmVYTU1TMVlIeFpaZ09KSWhPcTB0a1FkYjl4dnY1VU5Cb0U5RzJob1dVSmlGRm1McFoxOTFFSmp2WWxnd2NvOXVrMTl1ZGl5a21lQzZRLVk1UVJjT0xaNWtRTEl3eFZmUVhkQk1WV2NlVTB0WWk1d0N1XzU2YjFFN0hTd2FvdmFta0JLREtWUG1zNndVT1hPdUZ3ZndYREczMXE4ZU03S1g5X2p3RElrNm5Bd0lBeUtoc0FXZlZKX3JfRGFMQjhkaW5qbU12aDdDUQ?oc=5",
-      "source": "Estadão",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-07-17T12:41:02Z",
-      "updatedAt": "2026-07-17T12:41:02Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
