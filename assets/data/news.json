@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-25T03:46:48Z",
-  "generatedAt": "2026-07-25T03:46:48Z",
+  "updatedAt": "2026-07-25T06:13:10Z",
+  "generatedAt": "2026-07-25T06:13:10Z",
   "categories": [
     {
       "id": "all",
@@ -27,6 +27,14 @@
     {
       "id": "a-cr-tica-de-campo-grande",
       "label": "A Crítica de Campo Grande"
+    },
+    {
+      "id": "a-gazeta",
+      "label": "A Gazeta"
+    },
+    {
+      "id": "acre-jornal",
+      "label": "Acre Jornal"
     },
     {
       "id": "al1-com-br",
@@ -77,6 +85,10 @@
       "label": "Debate Jurídico"
     },
     {
+      "id": "diario-de-cuiab",
+      "label": "Diario de Cuiabá"
+    },
+    {
       "id": "e-commerce-brasil",
       "label": "E-Commerce Brasil"
     },
@@ -95,10 +107,6 @@
     {
       "id": "estrat-gia-concursos",
       "label": "Estratégia Concursos"
-    },
-    {
-      "id": "euqueroinvestir",
-      "label": "EuQueroInvestir"
     },
     {
       "id": "fato-paulista",
@@ -141,6 +149,10 @@
       "label": "Jornal O Sul"
     },
     {
+      "id": "jota-info",
+      "label": "JOTA Info"
+    },
+    {
       "id": "mercado-consumo",
       "label": "Mercado&Consumo"
     },
@@ -161,10 +173,6 @@
       "label": "planetaosasco.com"
     },
     {
-      "id": "plat-br",
-      "label": "PlatôBR"
-    },
-    {
       "id": "poder360",
       "label": "Poder360"
     },
@@ -181,20 +189,8 @@
       "label": "Portal do Marcos Santos"
     },
     {
-      "id": "portalviu-com-br",
-      "label": "portalviu.com.br"
-    },
-    {
       "id": "prefeitura-de-angra-dos-reis",
       "label": "Prefeitura de Angra dos Reis"
-    },
-    {
-      "id": "rede-esta-o-democracia",
-      "label": "Rede Estação Democracia"
-    },
-    {
-      "id": "revista-oeste",
-      "label": "Revista Oeste"
     },
     {
       "id": "segs-portal-nacional",
@@ -221,8 +217,8 @@
       "label": "UOL Economia"
     },
     {
-      "id": "valor-econ-mico",
-      "label": "Valor Econômico"
+      "id": "valor-investe",
+      "label": "Valor Investe"
     },
     {
       "id": "veja",
@@ -231,30 +227,87 @@
   ],
   "items": [
     {
-      "id": "macro-63bca20dc1455b809972c2eb",
-      "title": "Ajuste fiscal ou robôs? A maior preocupação do time econômico de Flávio foge do óbvio",
+      "id": "latest-7643407071bfc1be4283dd4d",
+      "title": "Ministro da Fazenda e presidente do BC: para onde vão os juros?",
+      "summary": "O ministro da Fazenda, Dario Durigan, e o presidente do Banco Central, Gabriel Galípolo, participaram, nesta sexta-feira (24), da Expert XP, em São Paulo",
+      "details": "O ministro da Fazenda, Dario Durigan, e o presidente do Banco Central, Gabriel Galípolo, participaram, nesta sexta-feira (24), da Expert XP, em São Paulo",
+      "url": "https://www.agazeta.com.br/colunas/abdo-filho/ministro-da-fazenda-e-presidente-do-bc-para-onde-vao-os-juros-0726",
+      "source": "A Gazeta",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-25T06:00:00Z",
+      "updatedAt": "2026-07-25T06:00:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://netdeal.com.br/api/images/proxy?quality=100&width=1200&src=https://www.netdeal.com.br/api/images/producao.spayce.com.br/1784930878371_whatsapp_image_2026_07_24_at_22.jpeg"
+    },
+    {
+      "id": "macro-5b9c62a6a288d6e16f055bce",
+      "title": "Deliberações sem estimativa de impacto fiscal e a proposta de súmula vinculante 150",
       "summary": "O mercado financeiro encerrou a sexta-feira (24) dividido entre a cautela com as novas tarifas comerciais impostas pelos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar fechou praticamente estável frente ao real, e a bolsa caiu mais de 1,5%, pressionada pel",
       "details": "O mercado financeiro encerrou a sexta-feira (24) dividido entre a cautela com as novas tarifas comerciais impostas pelos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar fechou praticamente estável frente ao real, e a bolsa caiu mais de 1,5%, pressionada pela queda no petróleo, que recuou em meio ",
       "url": "https://ibandce.com.br/dolar-fica-estavel-em-r-508-mas-cai-058-na-semana/",
-      "source": "PlatôBR",
+      "source": "JOTA Info",
       "category": "macro",
       "tags": [
         "macro",
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-07-25T03:37:48Z",
-      "updatedAt": "2026-07-25T03:37:48Z",
+      "publishedAt": "2026-07-25T05:49:11Z",
+      "updatedAt": "2026-07-25T05:49:11Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://ibandce.com.br/wp-content/uploads/2026/07/dolar_moeda_0803221210-1.webp"
     },
     {
+      "id": "latest-2cd218883c38575ae3c895ad",
+      "title": "Dólar fica estável em R$ 5,08, mas cai 0,58% na semana",
+      "summary": "Levantamento é de janeiro de 2025 a 20 de julho de 2026. Policiais também apreenderam drogas e capturaram foragidos da Justiça.",
+      "details": "Levantamento é de janeiro de 2025 a 20 de julho de 2026. Policiais também apreenderam drogas e capturaram foragidos da Justiça.",
+      "url": "https://g1.globo.com/rr/roraima/videos-jornal-de-roraima-2-edicao/video/mais-de-40-periquitos-sao-resgatados-pela-pm-no-posto-fiscal-do-jundia-em-rorainopolis-14810774.ghtml",
+      "source": "Acre Jornal",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-25T04:23:08Z",
+      "updatedAt": "2026-07-25T04:23:08Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://s03.video.glbimg.com/x720/14810774.jpg"
+    },
+    {
+      "id": "macro-0d22c18f9cea5a07d88c2d6a",
+      "title": "Entidades afirmam que Plano Safra perde para inflação e mantém crédito restrito",
+      "summary": "O mercado financeiro encerrou a sexta-feira (24) dividido entre a cautela com as novas tarifas comerciais impostas pelos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar fechou praticamente estável frente ao real, e a bolsa caiu mais de 1,5%, pressionada pel",
+      "details": "O mercado financeiro encerrou a sexta-feira (24) dividido entre a cautela com as novas tarifas comerciais impostas pelos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar fechou praticamente estável frente ao real, e a bolsa caiu mais de 1,5%, pressionada pela queda no petróleo, que recuou em meio ",
+      "url": "https://acrejornal.com.br/dolar-fica-estavel-em-r-508-mas-cai-058-na-semana/",
+      "source": "Diario de Cuiabá",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-25T03:00:00Z",
+      "updatedAt": "2026-07-25T03:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://acrejornal.com.br/wp-content/uploads/2026/07/84668-dolar-fica-estavel-em-r-508-mas-cai-058-na-semana.jpg"
+    },
+    {
       "id": "latest-886cd0c1e816bb3c784dd589",
       "title": "Dólar encerra semana estável em R$ 5,08, enquanto Ibovespa recua com queda do petróleo",
-      "summary": "Dólar fecha estável em R$ 5,08 e recua 0,58% na semana; Ibovespa cai com queda do petróleo e tensões comerciais entre EUA e Brasil.",
-      "details": "Dólar fecha estável em R$ 5,08 e recua 0,58% na semana; Ibovespa cai com queda do petróleo e tensões comerciais entre EUA e Brasil.",
-      "url": "https://portalcambe.com.br/dolar-estavel-ibovespa-queda-petroleo/",
+      "summary": "Atualizacao de ultima hora capturada em portal cambé.",
+      "details": "",
+      "url": "https://www.diariodecuiaba.com.br/economia/entidades-afirmam-que-plano-safra-perde-para-inflacao-e-mantem-credito-restrito/746113",
       "source": "portal cambé",
       "category": "latest",
       "tags": [
@@ -265,15 +318,33 @@
       "publishedAt": "2026-07-25T02:46:15Z",
       "updatedAt": "2026-07-25T02:46:15Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://portalcambe.com.br/wp-content/uploads/dolar_moeda_0803221210.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "macro-d7e0e27282ac37392889e929",
+      "title": "Mais de 40 periquitos são resgatados pela PM no Posto Fiscal do Jundiá, em Rorainópolis",
+      "summary": "Governo apresenta resultados do FNDCT, reforço às universidades e medidas para ampliar o capital privado em pesquisa e inovação",
+      "details": "Governo apresenta resultados do FNDCT, reforço às universidades e medidas para ampliar o capital privado em pesquisa e inovação",
+      "url": "https://www.brasil247.com/brasilia/lula-destaca-r-55-bilhoes-para-ciencia-e-mira-2-do-pib-ate-2034/",
+      "source": "G1",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-25T02:30:40Z",
+      "updatedAt": "2026-07-25T02:30:40Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.brasil247.com/wp-content/uploads/2026/07/55383860845_fa0602bc4c_k-2560x1440-1.jpg?w=1200&quality=88&strip=all"
     },
     {
       "id": "latest-bf71ab4070352097edf7bed5",
       "title": "Dólar fica estável em R$ 5,08, mas cai 0,58% na semana",
-      "summary": "Na última sexta-feira, o mercado financeiro apresentou um cenário misto, marcado pela cautela diante de novas tarifas comerciais dos Estados Unidos e os",
-      "details": "Na última sexta-feira, o mercado financeiro apresentou um cenário misto, marcado pela cautela diante de novas tarifas comerciais dos Estados Unidos e os",
-      "url": "https://planetaosasco.com/economia/896133-mercado-financeiro-fecha-em-baixa-com-tensao-no-petroleo-e-tarifas-eua",
+      "summary": "Nos regimentos internos das Casas Legislativas, não faltam previsões normativas a respeito da matéria",
+      "details": "Nos regimentos internos das Casas Legislativas, não faltam previsões normativas a respeito da matéria",
+      "url": "https://www.jota.info/opiniao-e-analise/colunas/observatorio-constitucional/deliberacoes-sem-estimativa-de-impacto-fiscal-e-a-proposta-de-sumula-vinculante-150",
       "source": "iBand CE",
       "category": "latest",
       "tags": [
@@ -285,14 +356,14 @@
       "updatedAt": "2026-07-25T02:25:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://planetaosasco.com/wp-content/uploads/2023/03/logotipo-23-3.png"
+      "imageUrl": "https://images.jota.info/wp-content/uploads/2026/07/nota-fiscal-magnific.jpg"
     },
     {
       "id": "macro-bb61f709eaf15f8f9f00a635",
       "title": "Lula destaca R$ 55 bilhões para ciência e mira 2% do PIB até 2034",
-      "summary": "Atualizacao de macro capturada em Brasil 247.",
-      "details": "",
-      "url": "https://economia.uol.com.br/noticias/redacao/2026/07/24/subsidio-a-combustivel-cabe-na-meta-fiscal-diz-bruno-moretti.ghtm",
+      "summary": "Dólar fecha estável em R$ 5,08 e recua 0,58% na semana; Ibovespa cai com queda do petróleo e tensões comerciais entre EUA e Brasil.",
+      "details": "Dólar fecha estável em R$ 5,08 e recua 0,58% na semana; Ibovespa cai com queda do petróleo e tensões comerciais entre EUA e Brasil.",
+      "url": "https://portalcambe.com.br/dolar-estavel-ibovespa-queda-petroleo/",
       "source": "Brasil 247",
       "category": "macro",
       "tags": [
@@ -303,14 +374,34 @@
       "publishedAt": "2026-07-25T02:08:00Z",
       "updatedAt": "2026-07-25T02:08:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://portalcambe.com.br/wp-content/uploads/dolar_moeda_0803221210.jpg"
+    },
+    {
+      "id": "latest-f063a622fc7c44fce9b8f64f",
+      "title": "Dólar fecha estável em R$ 5,08, enquanto Ibovespa recua 1,52%",
+      "summary": "Moeda americana caiu 0,58% na semana, e baixa do petróleo pressionou ações de petroleiras",
+      "details": "Moeda americana caiu 0,58% na semana, e baixa do petróleo pressionou ações de petroleiras",
+      "url": "https://acritica.net/economia/dolar-fecha-estavel-em-r-508-enquanto-ibovespa-recua-152/",
+      "source": "A Crítica de Campo Grande",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-25T02:00:00Z",
+      "updatedAt": "2026-07-25T02:00:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://uploads.acritica.net/2026/06/Notas-de-Dolar-na-Mesa.jpg"
     },
     {
       "id": "macro-a0aa0240be18f66be1505cd7",
       "title": "Subsídio a combustível cabe na meta fiscal, diz Bruno Moretti",
-      "summary": "Presidente cobra propostas com metas e prazos capazes de justificar mais investimentos públicos no setor",
-      "details": "Presidente cobra propostas com metas e prazos capazes de justificar mais investimentos públicos no setor",
-      "url": "https://acritica.net/politica/lula-defende-retirar-projetos-cientificos-estrategicos-do-arcabouco-fiscal/",
+      "summary": "Atualizacao de macro capturada em UOL Economia.",
+      "details": "",
+      "url": "https://economia.uol.com.br/noticias/redacao/2026/07/24/subsidio-a-combustivel-cabe-na-meta-fiscal-diz-bruno-moretti.ghtm",
       "source": "UOL Economia",
       "category": "macro",
       "tags": [
@@ -321,15 +412,14 @@
       "publishedAt": "2026-07-25T01:23:28Z",
       "updatedAt": "2026-07-25T01:23:28Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://uploads.acritica.net/2026/06/lula_horizontal_vivo.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-2a07f77542437c5c5d37b775",
       "title": "Mercado financeiro fecha em baixa com tensão no petróleo e tarifas EUA",
-      "summary": "Governo apresenta resultados do FNDCT, reforço às universidades e medidas para ampliar o capital privado em pesquisa e inovação",
-      "details": "Governo apresenta resultados do FNDCT, reforço às universidades e medidas para ampliar o capital privado em pesquisa e inovação",
-      "url": "https://www.brasil247.com/brasilia/lula-destaca-r-55-bilhoes-para-ciencia-e-mira-2-do-pib-ate-2034/",
+      "summary": "O mercado financeiro encerrou a sexta-feira (24) dividido entre a cautela com as novas tarifas comerciais impostas pelos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar fechou praticamente estável frente ao real, e a bolsa caiu mais de 1,5%, pressionada pel",
+      "details": "O mercado financeiro encerrou a sexta-feira (24) dividido entre a cautela com as novas tarifas comerciais impostas pelos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar fechou praticamente estável frente ao real, e a bolsa caiu mais de 1,5%, pressionada pela queda no petróleo, que recuou em meio ",
+      "url": "https://aracajumagazine.com.br/dolar-fica-estavel-em-r-508-mas-cai-058-na-semana/",
       "source": "planetaosasco.com",
       "category": "latest",
       "tags": [
@@ -341,14 +431,14 @@
       "updatedAt": "2026-07-25T01:20:47Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.brasil247.com/wp-content/uploads/2026/07/55383860845_fa0602bc4c_k-2560x1440-1.jpg?w=1200&quality=88&strip=all"
+      "imageUrl": "https://agenciabrasil.ebc.com.br/ebc.png?id=1697514&o=node"
     },
     {
       "id": "macro-f8ac808d55b73ce7a2cbbb71",
       "title": "Lula defende retirar projetos científicos estratégicos do arcabouço fiscal",
-      "summary": "Interlocutores do senador Flávio Bolsonaro (PL-RJ) têm confidenciado, em conversas reservadas, a leitura de que as contas públicas não são o principal",
-      "details": "Interlocutores do senador Flávio Bolsonaro (PL-RJ) têm confidenciado, em conversas reservadas, a leitura de que as contas públicas não são o principal",
-      "url": "https://platobr.com.br/ajuste-fiscal-ou-robos-a-maior-preocupacao-do-time-economico-de-flavio-foge-do-obvio",
+      "summary": "Na última sexta-feira, o mercado financeiro apresentou um cenário misto, marcado pela cautela diante de novas tarifas comerciais dos Estados Unidos e os",
+      "details": "Na última sexta-feira, o mercado financeiro apresentou um cenário misto, marcado pela cautela diante de novas tarifas comerciais dos Estados Unidos e os",
+      "url": "https://planetaosasco.com/economia/896133-mercado-financeiro-fecha-em-baixa-com-tensao-no-petroleo-e-tarifas-eua",
       "source": "A Crítica de Campo Grande",
       "category": "macro",
       "tags": [
@@ -360,14 +450,14 @@
       "updatedAt": "2026-07-25T01:20:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://platobr.com.br/wp-content/uploads/2026/06/55350412967-d2f688c0a6-o-1-1200x630.jpg"
+      "imageUrl": "https://planetaosasco.com/wp-content/uploads/2023/03/logotipo-23-3.png"
     },
     {
       "id": "macro-49ec5dc474135a54c335eb88",
       "title": "Edital ISS Manaus: 108 vagas e inicial de R$ 27,2 mil!",
-      "summary": "Concurso ISS Manaus tem edital publicado com 20 vagas, entre imediatas e CR, e salários de R$ 27 mil. Inscrições a partir de 27/7.",
-      "details": "Concurso ISS Manaus tem edital publicado com 20 vagas, entre imediatas e CR, e salários de R$ 27 mil. Inscrições a partir de 27/7.",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-iss-manaus-2026-edital-publicado/",
+      "summary": "Presidente cobra propostas com metas e prazos capazes de justificar mais investimentos públicos no setor",
+      "details": "Presidente cobra propostas com metas e prazos capazes de justificar mais investimentos públicos no setor",
+      "url": "https://acritica.net/politica/lula-defende-retirar-projetos-cientificos-estrategicos-do-arcabouco-fiscal/",
       "source": "Estratégia Concursos",
       "category": "macro",
       "tags": [
@@ -379,7 +469,7 @@
       "updatedAt": "2026-07-25T01:15:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2022/07/09123420/saiu-edital-1-2-4.jpg"
+      "imageUrl": "https://uploads.acritica.net/2026/06/lula_horizontal_vivo.jpg"
     },
     {
       "id": "latest-55ed8bf461e97acd8cf4f1a3",
@@ -403,9 +493,9 @@
     {
       "id": "latest-db794e55a79475ccba478bed",
       "title": "Dólar mantém estabilidade em R$ 5,08 enquanto mercado reage a tensões globais",
-      "summary": "Atualizacao de ultima hora capturada em Fato Paulista.",
-      "details": "",
-      "url": "https://www.osul.com.br/dolar-e-bolsa-brasileira-recuam-com-petroleo-e-tarifas-dos-estados-unidos-sobre-o-brasil/amp/",
+      "summary": "Concurso ISS Manaus tem edital publicado com 20 vagas, entre imediatas e CR, e salários de R$ 27 mil. Inscrições a partir de 27/7.",
+      "details": "Concurso ISS Manaus tem edital publicado com 20 vagas, entre imediatas e CR, e salários de R$ 27 mil. Inscrições a partir de 27/7.",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-iss-manaus-2026-edital-publicado/",
       "source": "Fato Paulista",
       "category": "latest",
       "tags": [
@@ -416,14 +506,15 @@
       "publishedAt": "2026-07-25T00:45:33Z",
       "updatedAt": "2026-07-25T00:45:33Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2022/07/09123420/saiu-edital-1-2-4.jpg"
     },
     {
       "id": "latest-ed0f7d70056f020bc4b3ce8a",
       "title": "Dólar fica estável em R$ 5,08, mas cai 0,58% na semana",
-      "summary": "O mercado financeiro encerrou a sexta-feira (24) dividido entre a cautela com as novas tarifas comerciais impostas pelos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar fechou praticamente estável frente ao real, e a bolsa caiu mais de 1,5%, pressionada pel",
-      "details": "O mercado financeiro encerrou a sexta-feira (24) dividido entre a cautela com as novas tarifas comerciais impostas pelos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar fechou praticamente estável frente ao real, e a bolsa caiu mais de 1,5%, pressionada pela queda no petróleo, que recuou em meio ",
-      "url": "https://aracajumagazine.com.br/dolar-fica-estavel-em-r-508-mas-cai-058-na-semana/",
+      "summary": "Atualizacao de ultima hora capturada em Aracaju Magazine.",
+      "details": "",
+      "url": "https://www.osul.com.br/dolar-e-bolsa-brasileira-recuam-com-petroleo-e-tarifas-dos-estados-unidos-sobre-o-brasil/amp/",
       "source": "Aracaju Magazine",
       "category": "latest",
       "tags": [
@@ -434,15 +525,14 @@
       "publishedAt": "2026-07-25T00:34:50Z",
       "updatedAt": "2026-07-25T00:34:50Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://agenciabrasil.ebc.com.br/ebc.png?id=1697514&o=node"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-830c88ea7e58acaeb00fd4de",
+      "id": "latest-e6e5eb9d8593e7c83fccbc94",
       "title": "Dólar fica estável em R$ 5,08, mas cai 0,58% na semana",
-      "summary": "Atualizacao de ultima hora capturada em Jornal Correio do Norte.",
-      "details": "",
-      "url": "https://www.jornalcorreiodonorte.com.br/politica-e-economia/2026/07/2603582-dolar-fica-estavel-em-rs-508-mas-cai-058-na-semana.html",
+      "summary": "O mercado financeiro encerrou a sexta-feira (24) dividido entre a cautela com as novas tarifas comerciais impostas pelos Estados Unidos e os desdobramentos da guerra no Oriente M&eacute;dio. O d&oacute;lar fechou praticamente e",
+      "details": "O mercado financeiro encerrou a sexta-feira (24) dividido entre a cautela com as novas tarifas comerciais impostas pelos Estados Unidos e os desdobramentos da guerra no Oriente M&eacute;dio. O d&oacute;lar fechou praticamente e",
+      "url": "https://www.jornalcorreiodonorte.com.br/politica-e-economia/2026/07/amp/2603582-dolar-fica-estavel-em-rs-508-mas-cai-058-na-semana.html",
       "source": "Jornal Correio do Norte",
       "category": "latest",
       "tags": [
@@ -450,36 +540,17 @@
         "bolsa",
         "macro"
       ],
-      "publishedAt": "2026-07-25T00:34:00Z",
-      "updatedAt": "2026-07-25T00:34:00Z",
+      "publishedAt": "2026-07-25T00:34:01Z",
+      "updatedAt": "2026-07-25T00:34:01Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-a4979273557dc7c2ae963e95",
-      "title": "O que a análise dos dados do PIB brasileiro no primeiro trimestre de 2026 revela sobre a qualidade e sustentabilidade do atual padrão de crescimento? | Por José Luis Oreiro - RED",
-      "summary": "NEW YORK, July 24, 2026 (GLOBE NEWSWIRE) -- Flexible Finance, Inc. (Flex), the financial technology company behind Flex Rent, today announced it has submitted application",
-      "details": "NEW YORK, July 24, 2026 (GLOBE NEWSWIRE) -- Flexible Finance, Inc. (Flex), the financial technology company behind Flex Rent, today announced it has submitted application",
-      "url": "https://www.broadcast.com.br/releases/flex-files-application-for-utah-industrial-bank-charter/",
-      "source": "Rede Estação Democracia",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-25T00:33:44Z",
-      "updatedAt": "2026-07-25T00:33:44Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.globenewswire.com/newsroom/ti?nf=OTc2NzQ1NiM3NzIxMjQ1IzUwMDE2NDE4Ng=="
-    },
-    {
       "id": "latest-0de592a1a84852febaa9e202",
       "title": "Mercado financeiro fecha em cautela com dólar estável e queda na bolsa",
-      "summary": "Levantamento é de janeiro de 2025 a 20 de julho de 2026. Policiais também apreenderam drogas e capturaram foragidos da Justiça.",
-      "details": "Levantamento é de janeiro de 2025 a 20 de julho de 2026. Policiais também apreenderam drogas e capturaram foragidos da Justiça.",
-      "url": "https://g1.globo.com/rr/roraima/noticia/2026/07/24/mais-de-40-periquitos-sao-resgatados-pela-pm-no-posto-fiscal-do-jundia-em-rorainopolis.ghtml",
+      "summary": "Na última sexta-feira (24), o mercado financeiro demonstrou um comportamento cauteloso, refletindo as novas tarifas comerciais dos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar encerrou o dia praticamente inalterado em relação ao real, enquanto a bolsa re",
+      "details": "Na última sexta-feira (24), o mercado financeiro demonstrou um comportamento cauteloso, refletindo as novas tarifas comerciais dos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar encerrou o dia praticamente inalterado em relação ao real, enquanto a bolsa registrou uma queda superior a 1,5%, influ",
+      "url": "https://metronews.com.br/mercado-financeiro-dolar-estavel-e-queda-do-ibovespa-em-meio-a-incertezas/",
       "source": "novarejo",
       "category": "latest",
       "tags": [
@@ -491,14 +562,14 @@
       "updatedAt": "2026-07-25T00:15:13Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s2-g1.glbimg.com/b0kPJ4RM2VCPfSzZe1wOqx6txL4=/1280x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/p/t/pNBl0CRAS0cNiEZiqN7g/posto-fiscal-do-jundia.jpeg"
+      "imageUrl": "https://metronews.com.br/wp-content/uploads/2025/09/imagem-padrao-post.png"
     },
     {
       "id": "latest-9fd0cc8e8dce325e1f4e86fa",
       "title": "Mercado Financeiro: Dólar Estável e Queda do Ibovespa em Meio a Incertezas",
-      "summary": "Na última sexta-feira (24), o mercado financeiro demonstrou um comportamento cauteloso, refletindo as novas tarifas comerciais dos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar encerrou o dia praticamente inalterado em relação ao real, enquanto a bolsa re",
-      "details": "Na última sexta-feira (24), o mercado financeiro demonstrou um comportamento cauteloso, refletindo as novas tarifas comerciais dos Estados Unidos e os desdobramentos da guerra no Oriente Médio. O dólar encerrou o dia praticamente inalterado em relação ao real, enquanto a bolsa registrou uma queda superior a 1,5%, influ",
-      "url": "https://metronews.com.br/mercado-financeiro-dolar-estavel-e-queda-do-ibovespa-em-meio-a-incertezas/",
+      "summary": "Na última sexta-feira (24), o mercado financeiro mostrou-se cauteloso devido às novas tarifas comerciais dos Estados Unidos e aos desdobramentos da guerra no Oriente Médio. O dólar terminou o dia praticamente inalterado em relação ao real, enquanto a bolsa de valores registrou um",
+      "details": "Na última sexta-feira (24), o mercado financeiro mostrou-se cauteloso devido às novas tarifas comerciais dos Estados Unidos e aos desdobramentos da guerra no Oriente Médio. O dólar terminou o dia praticamente inalterado em relação ao real, enquanto a bolsa de valores registrou uma queda superior a 1,5%, influenciada pe",
+      "url": "https://portalnovarejo.com.br/economia/mercado-financeiro-fecha-em-cautela-com-dolar-estavel-e-queda-na-bolsa/",
       "source": "Metrô News Jornal",
       "category": "latest",
       "tags": [
@@ -510,14 +581,14 @@
       "updatedAt": "2026-07-25T00:09:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://metronews.com.br/wp-content/uploads/2025/09/imagem-padrao-post.png"
+      "imageUrl": "https://portalnovarejo.com.br/wp-content/uploads/2026/05/imagem-padrao-post.jpeg"
     },
     {
       "id": "latest-d9f306e1ea24d7450ba0fa9f",
       "title": "Flex Files Application for Utah Industrial Bank Charter",
-      "summary": "Dados do PIB do primeiro trimestre de 2026 revelam crescimento mais equilibrado, mas expõem queda do investimento, desaceleração econômica e desafios para a indústria brasileira.",
-      "details": "Dados do PIB do primeiro trimestre de 2026 revelam crescimento mais equilibrado, mas expõem queda do investimento, desaceleração econômica e desafios para a indústria brasileira.",
-      "url": "https://red.org.br/noticias/o-que-a-analise-dos-dados-do-pib-brasileiro-no-primeiro-trimestre-de-2026-revela-sobre-a-qualidade-e-sustentabilidade-do-atual-padrao-de-crescimento-por-jose-luis-oreiro/?nocache=1784710845",
+      "summary": "NEW YORK, July 24, 2026 (GLOBE NEWSWIRE) -- Flexible Finance, Inc. (Flex), the financial technology company behind Flex Rent, today announced it has submitted application",
+      "details": "NEW YORK, July 24, 2026 (GLOBE NEWSWIRE) -- Flexible Finance, Inc. (Flex), the financial technology company behind Flex Rent, today announced it has submitted application",
+      "url": "https://www.broadcast.com.br/releases/flex-files-application-for-utah-industrial-bank-charter/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -529,32 +600,14 @@
       "updatedAt": "2026-07-25T00:08:24Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://red.org.br/wp-content/uploads/2026/06/0f4d41_838cd0637c4447fda375a627b2ec46e6mv2.jpg"
-    },
-    {
-      "id": "macro-d4448bfe076b870d0ee2ca71",
-      "title": "Mais de 40 periquitos são resgatados pela PM no Posto Fiscal do Jundiá, em Rorainópolis",
-      "summary": "Atualizacao de macro capturada em G1.",
-      "details": "",
-      "url": "https://www.guarulhosonline.com.br/mercado-brasileiro-reage-tarifas-eua-oriente-medio/amp/",
-      "source": "G1",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-25T00:07:38Z",
-      "updatedAt": "2026-07-25T00:07:38Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "imageUrl": "https://www.globenewswire.com/newsroom/ti?nf=OTc2NzQ1NiM3NzIxMjQ1IzUwMDE2NDE4Ng=="
     },
     {
       "id": "latest-956525c3b156b9066e2390d7",
       "title": "Dólar fecha estável em R$ 5,08, mas registra queda de 0,58% na semana",
-      "summary": "Na última sexta-feira (24), o mercado financeiro mostrou-se cauteloso devido às novas tarifas comerciais dos Estados Unidos e aos desdobramentos da guerra no Oriente Médio. O dólar terminou o dia praticamente inalterado em relação ao real, enquanto a bolsa de valores registrou um",
-      "details": "Na última sexta-feira (24), o mercado financeiro mostrou-se cauteloso devido às novas tarifas comerciais dos Estados Unidos e aos desdobramentos da guerra no Oriente Médio. O dólar terminou o dia praticamente inalterado em relação ao real, enquanto a bolsa de valores registrou uma queda superior a 1,5%, influenciada pe",
-      "url": "https://portalnovarejo.com.br/economia/mercado-financeiro-fecha-em-cautela-com-dolar-estavel-e-queda-na-bolsa/",
+      "summary": "Mercado financeiro se mostra cauteloso diante de tarifas dos EUA e tensões no Oriente Médio.",
+      "details": "Mercado financeiro se mostra cauteloso diante de tarifas dos EUA e tensões no Oriente Médio.",
+      "url": "https://www.tribunadosertao.com.br/geral/2026/07/24/946549-dolar-permanece-em-r-508-mas-recua-058-na-semana",
       "source": "Portal do Marcos Santos",
       "category": "latest",
       "tags": [
@@ -566,14 +619,14 @@
       "updatedAt": "2026-07-25T00:01:38Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://portalnovarejo.com.br/wp-content/uploads/2026/05/imagem-padrao-post.jpeg"
+      "imageUrl": "https://img.dhost.cloud/jNILvE3aAbxfPBhWwNmzCPYQKXM=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/0096c/12755c564d57cb0779c8226d39a3728ccfa.jpg"
     },
     {
       "id": "latest-74726bd510520b86fa145532",
       "title": "Mercado brasileiro reage a tarifas dos EUA e tensões no Oriente Médio",
-      "summary": "Mercado financeiro se mostra cauteloso diante de tarifas dos EUA e tensões no Oriente Médio.",
-      "details": "Mercado financeiro se mostra cauteloso diante de tarifas dos EUA e tensões no Oriente Médio.",
-      "url": "https://www.tribunadosertao.com.br/geral/2026/07/24/946549-dolar-permanece-em-r-508-mas-recua-058-na-semana",
+      "summary": "Atualizacao de ultima hora capturada em Guarulhos Online.",
+      "details": "",
+      "url": "https://www.guarulhosonline.com.br/mercado-brasileiro-reage-tarifas-eua-oriente-medio/amp/",
       "source": "Guarulhos Online",
       "category": "latest",
       "tags": [
@@ -584,16 +637,34 @@
       "publishedAt": "2026-07-25T00:00:28Z",
       "updatedAt": "2026-07-25T00:00:28Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://img.dhost.cloud/jNILvE3aAbxfPBhWwNmzCPYQKXM=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/0096c/12755c564d57cb0779c8226d39a3728ccfa.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-b0776092234f80cf7c74f60a",
       "title": "Dólar permanece em R$ 5,08, mas recua 0,58% na semana",
+      "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
+      "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
+      "url": "https://www.tribunadoagreste.com.br/geral/2026/07/24/946550-dolar-fecha-em-r-508-mas-apresenta-queda-semanal",
+      "source": "Tribuna do Sertão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-07-24T23:25:00Z",
+      "updatedAt": "2026-07-24T23:25:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://img.dhost.cloud/4c8YdJec2kE-ie3GObajG0p46Wg=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/0096c/12755c564d57cb0779c8226d39a3728ccfa.jpg"
+    },
+    {
+      "id": "latest-70156de4383c371a49618f99",
+      "title": "Dólar fecha em R$ 5,08, mas apresenta queda semanal",
       "summary": "A bolsa caiu mais de 1,5%, pressionada pela queda no petróleo, que recuou em meio a expectativas de retomada das negociações entre EUA e Irã.",
       "details": "A bolsa caiu mais de 1,5%, pressionada pela queda no petróleo, que recuou em meio a expectativas de retomada das negociações entre EUA e Irã.",
       "url": "https://www.portalmarcossantos.com.br/2026/07/24/dolar-fecha-estavel-em-r-508-mas-registra-queda-de-058-na-semana/",
-      "source": "Tribuna do Sertão",
+      "source": "Tribuna do Agreste",
       "category": "latest",
       "tags": [
         "mercado",
@@ -607,30 +678,11 @@
       "imageUrl": "https://img.portalmarcossantos.com.br/wp-content/uploads/2022/06/20073338/dolar_moeda_0803221205-e1657115443279.jpg"
     },
     {
-      "id": "latest-70156de4383c371a49618f99",
-      "title": "Dólar fecha em R$ 5,08, mas apresenta queda semanal",
+      "id": "latest-65bc595140f3509abd69dba8",
+      "title": "O que realmente está por trás da decisão da Nestlé de criar uma nova empresa para o negócio de águas? O acordo bilionário revela uma estratégia que pode mudar o rumo da companhia e surpreendeu até o mercado financeiro",
       "summary": "Entenda por que a Nestlé criou a Peranel em um acordo de 3 bilhões de euros, reorganizou o negócio de águas e elevou sua projeção de crescimento, em uma estratégia que chamou a atenção do mercado financeiro global.",
       "details": "Entenda por que a Nestlé criou a Peranel em um acordo de 3 bilhões de euros, reorganizou o negócio de águas e elevou sua projeção de crescimento, em uma estratégia que chamou a atenção do mercado financeiro global.",
       "url": "https://clickpetroleoegas.com.br/o-que-realmente-esta-por-tras-da-decisao-da-nestle-de-criar-uma-nova-empresa-para-o-negocio-de-aguas-o-acordo-bilionario-revela-uma-estrategia-que-pode-mudar-o-rumo-da-companhia-e-surpr-caes/",
-      "source": "Tribuna do Agreste",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-24T23:25:00Z",
-      "updatedAt": "2026-07-24T23:25:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://clickpetroleoegas.com.br/wp-content/uploads/2026/07/nestle.jpg"
-    },
-    {
-      "id": "latest-65bc595140f3509abd69dba8",
-      "title": "O que realmente está por trás da decisão da Nestlé de criar uma nova empresa para o negócio de águas? O acordo bilionário revela uma estratégia que pode mudar o rumo da companhia e surpreendeu até o mercado financeiro",
-      "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "url": "https://www.tribunadoagreste.com.br/geral/2026/07/24/946550-dolar-fecha-em-r-508-mas-apresenta-queda-semanal",
       "source": "CPG Click Petróleo e Gás",
       "category": "latest",
       "tags": [
@@ -642,7 +694,7 @@
       "updatedAt": "2026-07-24T23:21:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://img.dhost.cloud/4c8YdJec2kE-ie3GObajG0p46Wg=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/0096c/12755c564d57cb0779c8226d39a3728ccfa.jpg"
+      "imageUrl": "https://clickpetroleoegas.com.br/wp-content/uploads/2026/07/nestle.jpg"
     },
     {
       "id": "funds-07152d09d7d56e0de5fe2e7b",
@@ -664,7 +716,7 @@
       "imageUrl": "https://www.estadao.com.br/resizer/v2/NQTFXLVUXRBDTJZL3BHLQOWO6I.jpg?quality=80&auth=3d6e3c584471f830535334157f99b86b1b8ab5cb7659eb15cedebdfc9e0dc3c8&width=1200&height=630&smart=true"
     },
     {
-      "id": "macro-eac10b7efc25490d0bce33a1",
+      "id": "macro-d0bd87ec38f9e6cb10a4b2bd",
       "title": "Lula defende que projetos científicos com ‘sustentação’ possam ser excluídos do arcabouço fiscal",
       "summary": "Presidente afirmou que é preciso apresentar propostas capazes de convencer Congresso e sociedade da necessidade de ampliar os investimentos no setor",
       "details": "Presidente afirmou que é preciso apresentar propostas capazes de convencer Congresso e sociedade da necessidade de ampliar os investimentos no setor",
@@ -676,18 +728,37 @@
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-07-24T23:07:24Z",
-      "updatedAt": "2026-07-24T23:07:24Z",
+      "publishedAt": "2026-07-24T23:08:51Z",
+      "updatedAt": "2026-07-24T23:08:51Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://www.estadao.com.br/resizer/v2/IJWMRAQO2VEL5KALICS3NVDAVQ.jpg?quality=80&auth=0ecd12a765e4678ff663692c3562e0fabb34ef29571e2a73ffa985b0097e3335&width=1200&height=630&smart=true"
     },
     {
+      "id": "funds-b0690ef6917e62febb3eb689",
+      "title": "O tijolo não foi esquecido, apesar de sentir os impactos dos juros elevados, avaliam gestores de FIIs",
+      "summary": "Shoppings, setor logístico e lajes corporativas podem compor um portfólio de FIIs estratégico, segundo eles. Acesse no Bora Investir.",
+      "details": "Shoppings, setor logístico e lajes corporativas podem compor um portfólio de FIIs estratégico, segundo eles. Acesse no Bora Investir.",
+      "url": "https://borainvestir.b3.com.br/tipos-de-investimentos/renda-variavel/fundos-investimento/o-tijolo-nao-foi-esquecido-apesar-de-sentir-os-impactos-dos-juros-elevados-avaliam-gestores-de-fiis/",
+      "source": "Bora Investir",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-07-24T23:01:00Z",
+      "updatedAt": "2026-07-24T23:01:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://cdn.borainvestir.b3.com.br/2024/08/02145125/FIIs-de-tijolo-podem-se-desvalorizar-com-nova-alta-da-selic-1024x675.webp"
+    },
+    {
       "id": "funds-1369b3340a7a5c385794b2ea",
       "title": "Fundos da Suno Asset pagam dividendos nesta sexta; SNME11 distribuiu valor recorde",
-      "summary": "Agentes de mercado acreditam que a supremacia dos Estados Unidos é o principal motivo de crises geopolíticas. Acesse na íntegra no Bora Investir.",
-      "details": "Agentes de mercado acreditam que a supremacia dos Estados Unidos é o principal motivo de crises geopolíticas. Acesse na íntegra no Bora Investir.",
-      "url": "https://borainvestir.b3.com.br/objetivos-financeiros/investir-melhor/ia-eleicoes-e-crise-fiscal-o-xadrez-que-desafia-os-investidores/",
+      "summary": "Atualizacao de fundos capturada em suno.com.br.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVTd3NVhfYVk0QmlwRjEwOGNsbHBzUS1iRmhFNnR1aEdwc2gwWmRlbVNYcjZaMDQwdnVOX2pVQXF3TkpTSkZ5MmFpb3pmbEl1NTlEd2pYZlVtRkNPNHI1dXN2YXk4YVQwZlB5U18ybTh2ckVvaVRKVEtVT1lxQzZEMzdUUHVxNGVYSGswNVRjNVhsT0dyYmUwdXZCWnlPcGVpUS1pMlgyRG16bVFLc3NGY2RFbExqQdIBuwFBVV95cUxQc0E1WUtqODFNQ3RLNXJmeDlVUENDWHRES3YtV1hHWFJoNXRzMFJ1d2dDTEpmRG5iUGhXcWNQT2x1Tmc3WDN2LTRvYmxtTU1MdXdwNFhQT0E3MUtrbWdjX2MtUmw5azdzOUhvX1FhNXhFdGprM2pCM19mTWpyTXBmSVFST2RzZEFCR3RLa0c0M3BacmJYSGI5WXhSN25VbFZKTGxQcHhVMExKUmNjODJFVHBxSkpmUDRnNFFV?oc=5",
       "source": "suno.com.br",
       "category": "funds",
       "tags": [
@@ -698,15 +769,14 @@
       "publishedAt": "2026-07-24T22:55:07Z",
       "updatedAt": "2026-07-24T22:55:07Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://cdn.borainvestir.b3.com.br/2026/07/24194133/FOTOS-PAULO-BARETA20260724_32-618-1200x675.jpg"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "macro-b07b2983bd644fc83b8c860c",
       "title": "IA, eleições e crise fiscal: o xadrez que desafia os investidores",
-      "summary": "Gestores avaliaram cenário durante painel na Expert XP: há chance de recessão e dificuldades para ajustes fiscais em 2027.",
-      "details": "Gestores avaliaram cenário durante painel na Expert XP: há chance de recessão e dificuldades para ajustes fiscais em 2027.",
-      "url": "https://www.infomoney.com.br/onde-investir/juro-precisa-cair-ou-quebramos-gestores-alertam-contra-renda-fixa-atrelada-ao-cdi/",
+      "summary": "Atualizacao de macro capturada em Bora Investir.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNSGRTaVpaUVFkZ09BczVKc3lTSjc0MXJTNFl1VVJUS0Ftam5zQnNGQ3VDcmRFYVRTd25ZY0ZFOUtkQ21OLXN6azB1NDh4el9rN0RTUVp4eE1od0lKZ3ZvSU9Jazk2N0NWNVdzQnVUMGdUUTMwb2ZCS1JjZkRGdWhWeXQ5VFFHeWRZQkR3UUJxcjNLRFU0Q0xXMmNUV1c2b1d4X3VIdmw2MzY2MUJHSVl0bU1YUlJBcGp2THpsNXhzdDdwZnNCa20yMURmdkJPQQ?oc=5",
       "source": "Bora Investir",
       "category": "macro",
       "tags": [
@@ -717,15 +787,14 @@
       "publishedAt": "2026-07-24T22:43:00Z",
       "updatedAt": "2026-07-24T22:43:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/07/expert-xp-20260724-17h20-expert-session-2_316f98.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-6b79ca48eccbf6a1bf23b41a",
       "title": "“Juro precisa cair ou quebramos”: gestores alertam contra renda fixa atrelada ao CDI",
-      "summary": "Os investidores dos fundos listados da Suno Asset receberam nesta sexta-feira (24) uma nova rodada de dividendos referente aos resultados de junho. Os pagamentos abrangem fundos imobiliários, Fiagros e fundos de infraestrutura, com data-base definida para os cotistas posicionados",
-      "details": "Os investidores dos fundos listados da Suno Asset receberam nesta sexta-feira (24) uma nova rodada de dividendos referente aos resultados de junho. Os pagamentos abrangem fundos imobiliários, Fiagros e fundos de infraestrutura, com data-base definida para os cotistas posicionados em 15 de julho. O destaque é o SNME11, ",
-      "url": "https://www.suno.com.br/noticias/fundos-da-suno-asset-pagam-dividendos-nesta-sexta-snme11-distribuiu-valor-recorde/",
+      "summary": "Atualizacao de macro capturada em InfoMoney.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOU2kwMXVGUVphWW5ZYklpemo3SFdDRVlkTGpTaUQ3OE9fVmo0amcwS2NORG5WT0FCT1pWMDNnLTF2VmVrb2R4b1JvN2ZGMHB5M1hnVnlQajFsd2dnczB0MkV2V0VEaXBHeDItOVUyeDhJUGpMYzQzZ0liY1Q2VktTWkl3WnM4NnpQalVmR2tXa3Qzemt6Y1puTVBWRDZsWDhEbk9PS0lLalBTZFNVNnZUTGFkQ2NObTE3Yk5wWXlnWnY4OTDSAcgBQVVfeXFMTWxwbTRPcmdRTnotY0VYSHRfclBwZ1hudDRCX2U1NGt0MHBtVkJwSHdDV0ZVai1tOFpDYXk1cGM0YVE2WEJZZ3Z0aFNZdWtQZTNqNndDcm9yVkd2MEVKMm80OWtFZnpqd0RydHhHZi1vLS1FUkQ2aFVLekRneS15Q1JUS2RxVWRQZVJjSHA2Vmp0aUpSR2hzMGlqRlB3TnJ3N2l4OUY2c0c3Ny1ITktnZDVDcHpFMHBEUHN0VThGX05uLU5mN1FTaUo?oc=5",
       "source": "InfoMoney",
       "category": "macro",
       "tags": [
@@ -735,62 +804,6 @@
       ],
       "publishedAt": "2026-07-24T22:24:08Z",
       "updatedAt": "2026-07-24T22:24:08Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "http://files.sunoresearch.com.br/n/uploads/2026/07/equipe-financeira-tr-1_01.webp"
-    },
-    {
-      "id": "latest-30810c0afd1d92998cb122bc",
-      "title": "Ibovespa na semana: CSN Mineração (CMIN3) e CSN (CSNA3) saltam; Hapvida (HAPV3) cai quase 13%",
-      "summary": "Alta do petróleo e temporada de balanços do segundo trimestre movimentaram os mercados no período",
-      "details": "Alta do petróleo e temporada de balanços do segundo trimestre movimentaram os mercados no período",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-na-semana-csn-mineracao-cmin3-e-csn-csna3-saltam-hapvida-hapv3-cai-quase-13/",
-      "source": "Estadão",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-24T22:24:00Z",
-      "updatedAt": "2026-07-24T22:24:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/WLLVNV6YZFKBDDCU7DP4VAX45E.png?quality=80&auth=ef7b4601cca7a3bd0a83a1c40bafafed3b6c92a913e9e552f984ccd23c268a8b&width=1200&height=630&smart=true"
-    },
-    {
-      "id": "latest-cbc65e31c8bcab51b5bf3ab7",
-      "title": "FMI elogia solidez do sistema financeiro brasileiro e recomenda mais autonomia ao Banco Central",
-      "summary": "Atualizacao de ultima hora capturada em portalviu.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNd2J5SjNMUVZHX3B6bEllX29WVG5fX21PcDhSMDFTTkNMaktBbXdwdktVazB5a0M0cnNFNXhrdk9KRk8wUGFRZ2ZGQ0JpT05RUm5IN0hHVnY5S0FZd0YwYjBBOVlScVlyRTBZbUh3YUZ6VHlnUFZTZHAzWHYxdlNONVJZblV4cmJHZVlHcFJiQ055NEtZUjREbjlNbmJDSXRTcHJpY19KODczM0lzSU5tTWpCT0hXQ1V4Nm9NeXZVYmFxQUdsY1l3ZTZVcw?oc=5",
-      "source": "portalviu.com.br",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-07-24T22:14:00Z",
-      "updatedAt": "2026-07-24T22:14:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-7829f3dc87b6f4efe1e95676",
-      "title": "FCC organiza novo Concurso Sefaz SC para Auditor de Finanças!",
-      "summary": "Atualizacao de macro capturada em Estratégia Concursos.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdzE4Qy1sc3puVE9GVmdZeURKa3FLWkhvcTNRX0ZtTmt5bXhmdFN4c1VZMlg5OUlSVWhYNGpFYWl4UGF1Y20zVDk3VjRQTkJSNjNfdHBySUpjMEJDc0UwUklmUDUyclNTTDRzZDc2WEIxblNmakVGOWVDM3ExTEx2MlBUSXE5aDFTUGhzQ0dTeUtnXzQ2U0s3edIBmAFBVV95cUxPdzE4Qy1sc3puVE9GVmdZeURKa3FLWkhvcTNRX0ZtTmt5bXhmdFN4c1VZMlg5OUlSVWhYNGpFYWl4UGF1Y20zVDk3VjRQTkJSNjNfdHBySUpjMEJDc0UwUklmUDUyclNTTDRzZDc2WEIxblNmakVGOWVDM3ExTEx2MlBUSXE5aDFTUGhzQ0dTeUtnXzQ2U0s3eQ?oc=5",
-      "source": "Estratégia Concursos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-24T22:02:12Z",
-      "updatedAt": "2026-07-24T22:02:12Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
@@ -813,22 +826,22 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "latest-1e380681bf26b0099f3a2c3b",
+      "id": "macro-09fbfd6a3c1c8f8a1c9f8b9a",
       "title": "Juros altos, inflação pressionada e dólar resiliente: o novo cenário para quem busca investir nos próximos meses, segundo gestores",
-      "summary": "Atualizacao de ultima hora capturada em Bora Investir.",
+      "summary": "Atualizacao de macro capturada em Bora Investir.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxOV25UQVBRTzQxZEg5UHFwUWd3ZmlmRVNOOFhnZ0trY083Wmdka3RBbkE1bExTWlNzUS1ySWg3REs3TEthMTR5eDNyanhNWUlmRkVRNkUzNUxFSktQVG5FcDJSdWVDX05hZllOUDhkcVY1UXUzbFRVVTVXNGxUWFRyOXFZVkFlTVFZVVlRN2k3OF9hZTJtblpSU2pwWjc0QWJuQWR5ZXhjdE5WSHh5UDBOblFlNllLcDRoSTZhYzEwV1ZRc0Q5bnE5RUhOMUt3LVJMaDlXZGswczI3RTRCdW8xcnZ2R2VGcE1ST19qdVNYcXlrc1U5c3ZCMEc0RTljZmJzQVRvVC1tU3lXNHFleVp0RTBJeHBVN042MVd1VmQ0OTE1OGc?oc=5",
       "source": "Bora Investir",
-      "category": "latest",
+      "category": "macro",
       "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
+        "macro",
+        "juros",
+        "inflacao"
       ],
       "publishedAt": "2026-07-24T21:59:00Z",
       "updatedAt": "2026-07-24T21:59:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-8aa2e8dfd1d96e9253068a6f",
@@ -847,6 +860,42 @@
       "updatedAt": "2026-07-24T21:41:42Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-4d319ec33873b3f1953daf9f",
+      "title": "FCC organiza novo Concurso Sefaz SC para Auditor de Finanças!",
+      "summary": "Atualizacao de macro capturada em Estratégia Concursos.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQak0tS0tnRmFmdWtwNWU4QmdNQlhPU3prbUZxdzVUdHpoWnI4Qm9IV0RSRjdnV2JPbWlqaFBROUJEU05LbS10dmdUbkY1b1hQUUpaU04tVnp5akN2U3hpbWdJUHdmb182aF8zZUNEajlqLWdCU1BsYXBNWFBtU2tiSndFM0d1UVJDS2tzZjk2WVAwWnfSAZgBQVVfeXFMT3cxOEMtbHN6blRPRlZnWXlESmtxS1pIb3EzUV9GbU5reW14ZnRTeHNVWTJYOTlJUlVoWDRqRWFpeFBhdWNtM1Q5N1Y0UE5CUjYzX3RwcklKYzBCQ3NFMFJJZlA1MnJTU0w0c2Q3NlhCMW5TZmpFRjllQzNxMUxMdjJQVElxOWgxU1Boc0NHU3lLZ180NlNLN3k?oc=5",
+      "source": "Estratégia Concursos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-07-24T21:40:00Z",
+      "updatedAt": "2026-07-24T21:40:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "companies-eaf47a5519bbaba29aa8556f",
+      "title": "Empresas brasileiras já utilizam ativos digitais sem comprar criptomoedas | SEGS Portal Nacional de...",
+      "summary": "Atualizacao de empresas capturada em SEGS Portal Nacional.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZ0J0YnBCZ1QzajJycHVrN3c4bU1Nb1RoRnFwVWtpVUF2MC0xa3N2T2VHOFpKSHZ3V19MSjlQNzBKdUZjcHM5MV8wOXF2TkZqTUNTeHM3RUVnMjBsVjBlTkcxcnFRWC1Uc0swVVQ5TVlJamFpQTY2aHY0WVRva2RQNXFrbl9QSGFVMlEyMmNfYTRVWXAzMDk2eEVPMnU0bW5nOGZhMzE3QXc1bVdjSElWdWRLZW1wWWpKekHSAb8BQVVfeXFMT0Vhb3o1WmNyZlVkYi1HVjlLbWlQV3ZWdldhQ3lBV01ydmh3N0VvU2t3X0I2LUxyT2hwTEE4cE5SaFZMLTZBMVdVNmt6QXV3NkFYaS1SU1E1UG5YT0dHUHVZU193dnQxSHpxUVpnaUVhei1CcXh4SnFMUzc0RmFwZVdXRUlndk1xWUw4bDg4T3ppVlRoSGlBa3lpN2ktX01sSXRrMFplblVtNWpjeGRhc0JXaHA5YnpHLVJKU3V4ODQ?oc=5",
+      "source": "SEGS Portal Nacional",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-07-24T21:35:43Z",
+      "updatedAt": "2026-07-24T21:35:43Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "funds-01a4ea1d529aefcc3466274c",
@@ -975,24 +1024,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "macro-ed0b8c9cf6412cc7e093fedc",
-      "title": "Durigan atribui inflação à guerra no Irã e suaviza impacto dos gastos do governo",
-      "summary": "Atualizacao de macro capturada em Revista Oeste.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMS1KSGlzQlJDa1AwR050T1ljSk5rVDZ0ZVZTeW94RURjRUlDUzI0Z1dGOGhBQVRqbkhIUEdxcnhuNEtITDB4RVh3WWVDNWVwWXpuMlEzdW5iT1ozZExBeF9heDFrNHo0QmhQZTVaWnUtLWpqQjlaOWs5QWpWeHNPNFNKR1VudXZCeEtHeE43blI4RW93WDUxclFBeDhWWFRSV0N6RlA4YkdnNkthTEhmRndHNHZZZw?oc=5",
-      "source": "Revista Oeste",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-07-24T20:38:53Z",
-      "updatedAt": "2026-07-24T20:38:53Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "funds-0bf1a54f0459e10341b2b25c",
       "title": "Política fiscal: ‘Titanic está indo ao iceberg e não dá para tocar violino’, diz ARX",
       "summary": "Atualizacao de fundos capturada em InfoMoney.",
@@ -1008,6 +1039,24 @@
       "publishedAt": "2026-07-24T19:35:13Z",
       "updatedAt": "2026-07-24T19:35:13Z",
       "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "funds-6a3b67c02f485235730958e5",
+      "title": "SPX acha que FIDCs têm montanha para escalar ainda",
+      "summary": "Atualizacao de fundos capturada em Valor Investe.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSWIwY3dXZmgxVGFWaTJhdXVqR0lUdi1YU0ZKVHJ4dmZTaTg2SVRUdXVQblR5ejBzYmxwR0luQy1iajI2VU9iWXNCMDBqMGExYzdfZU1OX3VpMms1bHNHV3kwNjNZRGFoZXpCbXRMbGVWU1EzRDRpRndVVWRDTmVRR3RmSzBuNkFqUmY1YnpHc2p5MU1tMFdYbXI3MnBodkRyTnFwV1Y3X3o2aTFWTnhOdzB2TE1Ha0kzWnRIdHFFOVV6VmVwLW1CbUg0WHFMd9IBzgFBVV95cUxOSWIwY3dXZmgxVGFWaTJhdXVqR0lUdi1YU0ZKVHJ4dmZTaTg2SVRUdXVQblR5ejBzYmxwR0luQy1iajI2VU9iWXNCMDBqMGExYzdfZU1OX3VpMms1bHNHV3kwNjNZRGFoZXpCbXRMbGVWU1EzRDRpRndVVWRDTmVRR3RmSzBuNkFqUmY1YnpHc2p5MU1tMFdYbXI3MnBodkRyTnFwV1Y3X3o2aTFWTnhOdzB2TE1Ha0kzWnRIdHFFOVV6VmVwLW1CbUg0WHFMdw?oc=5",
+      "source": "Valor Investe",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-07-24T18:59:24Z",
+      "updatedAt": "2026-07-24T18:59:24Z",
+      "premium": true,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
@@ -1155,24 +1204,6 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-d09e94bb9eb77e97f6ba924e",
-      "title": "Empresas brasileiras já utilizam ativos digitais sem comprar criptomoedas | SEGS Portal Nacional de...",
-      "summary": "Atualizacao de empresas capturada em SEGS Portal Nacional.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRWFvejVaY3JmVWRiLUdWOUttaVBXdlZ2V2FDeUFXTXJ2aHc3RW9Ta3dfQjYtTHJPaHBMQThwTlJoVkwtNkExV1U2a3pBdXc2QVhpLVJTUTVQblhPR0dQdVlTX3d2dDFIenFRWmdpRWF6LUJxeHhKcUxTNzRGYXBlV1dFSWd2TXFZTDhsODhPemlWVGhIaUFreWk3aS1fTWxJdGswWmVuVW01amN4ZGFzQldocDliekctUkpTdXg4NNIBvwFBVV95cUxPRWFvejVaY3JmVWRiLUdWOUttaVBXdlZ2V2FDeUFXTXJ2aHc3RW9Ta3dfQjYtTHJPaHBMQThwTlJoVkwtNkExV1U2a3pBdXc2QVhpLVJTUTVQblhPR0dQdVlTX3d2dDFIenFRWmdpRWF6LUJxeHhKcUxTNzRGYXBlV1dFSWd2TXFZTDhsODhPemlWVGhIaUFreWk3aS1fTWxJdGswWmVuVW01amN4ZGFzQldocDliekctUkpTdXg4NA?oc=5",
-      "source": "SEGS Portal Nacional",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-07-24T17:10:15Z",
-      "updatedAt": "2026-07-24T17:10:15Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
       "id": "companies-abd844908f8dcb1eb390d2ce",
       "title": "Mapa de Martechs brasileiras da ColetivaTech reúne as principais plataformas do mercado nacional",
       "summary": "Atualizacao de empresas capturada em Coletiva.net.",
@@ -1313,42 +1344,6 @@
       ],
       "publishedAt": "2026-07-24T14:40:03Z",
       "updatedAt": "2026-07-24T14:40:03Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-b28c0797334edfa080806e1a",
-      "title": "BC nega licença para fintech envolvida na operação Fluxo Oculto",
-      "summary": "Atualizacao de fundos capturada em Valor Econômico.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZWRaNktsalRydV9OaFh2Q09fZ1p3MGFaaVIzVldSTU1RYjlWdXFNUTEwYm9vWDhBMEtpcERaNW1qODQtd2hNNVp0RUNEaG1yWjJkTE9nZ0FaRUo5dzNmMkM4TG5zZjNoN1dlOHo1NkxqVXVWOHhEaFNhbHZiM1l5WTF0Y1lJZVBDNTZYYzBZMkRjVlVlZm1lejNNNWEwa1VCS3FFbEhaa2UwOW1HODNid0NjYnV2OURCQjNCYS1wcDl4WGZoRldmM1B1c0nSAcwBQVVfeXFMTmVkWjZLbGpUcnVfTmhYdkNPX2dadzBhWmlSM1ZXUk1NUWI5VnVxTVExMGJvb1g4QTBLaXBEWjVtajg0LXdoTTVadEVDRGhtcloyZExPZ2dBWkVKOXczZjJDOExuc2YzaDdXZTh6NTZMalV1Vjh4RGhTYWx2YjNZeVkxdGNZSWVQQzU2WGMwWTJEY1ZVZWZtZXozTTVhMGtVQktxRWxIWmtlMDltRzgzYndDY2J1djlEQkIzQmEtcHA5eFhmaEZXZjNQdXNJ?oc=5",
-      "source": "Valor Econômico",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-07-24T14:34:02Z",
-      "updatedAt": "2026-07-24T14:34:02Z",
-      "premium": true,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-72b226fd64ad5c5f3398d82e",
-      "title": "Raphael Barcelos na Money Week 2026: Infraestrutura",
-      "summary": "Atualizacao de fundos capturada em EuQueroInvestir.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVUFrYms0SmlPVVhYNVhJQlNPVlYwZFJZT2lfUERpLUtEeUx5Y2o3MllJLUZyUXBwUnA5aXpVeU1fT2dwS2JEX29KdWQwbEY1OHhNMzdNVHo2Z0lxbEkxZ1R4RDJQbzY4TENwZklXS0wyXzM4UGJ0X05iTGRLOTUyWHpJVkFhSTZjSnBpMzBRdDQtWWdGVmp6RFAwOA?oc=5",
-      "source": "EuQueroInvestir",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-07-24T14:20:52Z",
-      "updatedAt": "2026-07-24T14:20:52Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
