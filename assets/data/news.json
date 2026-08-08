@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-08T07:44:57Z",
-  "generatedAt": "2026-08-08T07:44:57Z",
+  "updatedAt": "2026-08-08T08:35:07Z",
+  "generatedAt": "2026-08-08T08:35:07Z",
   "categories": [
     {
       "id": "all",
@@ -29,6 +29,10 @@
       "label": "A Gazeta"
     },
     {
+      "id": "a-verdade",
+      "label": "A Verdade"
+    },
+    {
       "id": "ag-ncia-infra",
       "label": "Agência iNFRA"
     },
@@ -53,6 +57,10 @@
       "label": "bra1.com.br"
     },
     {
+      "id": "brasil-not-cia",
+      "label": "BRASIL NOTÍCIA"
+    },
+    {
       "id": "broadcast-com-br",
       "label": "broadcast.com.br"
     },
@@ -65,8 +73,8 @@
       "label": "CNN Brasil"
     },
     {
-      "id": "conex-o-tocantins",
-      "label": "Conexão Tocantins"
+      "id": "conexaoto-com-br",
+      "label": "conexaoto.com.br"
     },
     {
       "id": "convergenciadigital",
@@ -105,16 +113,16 @@
       "label": "jornalcidade.net.br"
     },
     {
-      "id": "leadersleague-com",
-      "label": "leadersleague.com"
+      "id": "mais-opovo-com-br",
+      "label": "mais.opovo.com.br"
     },
     {
       "id": "money-report",
       "label": "Money Report"
     },
     {
-      "id": "money-times",
-      "label": "Money Times"
+      "id": "moneytimes-com-br",
+      "label": "moneytimes.com.br"
     },
     {
       "id": "monitor-mercantil",
@@ -133,16 +141,8 @@
       "label": "O GLOBO"
     },
     {
-      "id": "o-povo",
-      "label": "O POVO+"
-    },
-    {
       "id": "o-tempo",
       "label": "O TEMPO"
-    },
-    {
-      "id": "okx-com",
-      "label": "okx.com"
     },
     {
       "id": "partido-dos-trabalhadores",
@@ -157,8 +157,8 @@
       "label": "portaldozacarias.com.br"
     },
     {
-      "id": "teles-ntese",
-      "label": "TeleSíntese"
+      "id": "telesintese-com-br",
+      "label": "telesintese.com.br"
     },
     {
       "id": "tempo-real",
@@ -177,8 +177,8 @@
       "label": "turbo.pt"
     },
     {
-      "id": "valor-globo-com",
-      "label": "valor.globo.com"
+      "id": "valor-econ-mico",
+      "label": "Valor Econômico"
     },
     {
       "id": "vero-not-cias",
@@ -195,11 +195,30 @@
   ],
   "items": [
     {
+      "id": "macro-dca5496c35f6163e83b731a7",
+      "title": "Super El Niño deve pressionar inflação dos alimentos em 2027; feijão e arroz lideram alta",
+      "summary": "Plataforma de governo promete manter arcabouço fiscal, afirma que governo Bolsonaro dilapidou os cofres públicos e fala em fazer “firme oposição” a qualquer tentativa de subordinar o Brasil a interesses estrangeiros",
+      "details": "Plataforma de governo promete manter arcabouço fiscal, afirma que governo Bolsonaro dilapidou os cofres públicos e fala em fazer “firme oposição” a qualquer tentativa de subordinar o Brasil a interesses estrangeiros",
+      "url": "https://www.estadao.com.br/politica/programa-de-lula-traz-31-vezes-a-palavra-soberania-e-rejeita-servilismo-a-ideologias-fracassadas/",
+      "source": "G1",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-08T08:00:49Z",
+      "updatedAt": "2026-08-08T08:00:49Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/55WMGO76IVDW7KD3COE76YORRE.JPG?quality=80&auth=c25918d65dc85caebbd03091dfe3584e46bbdac378cae9834ca984c3ae3de9d1&width=1200&height=630&smart=true"
+    },
+    {
       "id": "macro-7b3ca60f3d0d9d5668eaebeb",
       "title": "O capital internacional amplia a sua participação no PIB do ES",
-      "summary": "Chegou a hora. A chegada de novos investimentos internacionais ao ES poderá ter um efeito de ponto de inflexão na incorporação de tecnologia e inovação na base produtiva",
-      "details": "Chegou a hora. A chegada de novos investimentos internacionais ao ES poderá ter um efeito de ponto de inflexão na incorporação de tecnologia e inovação na base produtiva",
-      "url": "https://www.agazeta.com.br/colunas/antonio-carlos-medeiros/o-capital-internacional-amplia-a-sua-participacao-no-pib-do-es-0826",
+      "summary": "Preço da alimentação no domicílio pode fechar o ano entre 7,5% e 9,5%, segundo projeção da MB Associados. Impacto nas gôndolas será gradual e também atingirá as proteínas animais.",
+      "details": "Preço da alimentação no domicílio pode fechar o ano entre 7,5% e 9,5%, segundo projeção da MB Associados. Impacto nas gôndolas será gradual e também atingirá as proteínas animais.",
+      "url": "https://g1.globo.com/economia/agronegocios/noticia/2026/08/08/super-el-nino-deve-pressionar-inflacao-dos-alimentos-em-2027-feijao-e-arroz-lideram-alta.ghtml",
       "source": "A Gazeta",
       "category": "macro",
       "tags": [
@@ -211,14 +230,14 @@
       "updatedAt": "2026-08-08T07:30:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://netdeal.com.br/api/images/proxy?quality=100&width=1200&src=https://www.netdeal.com.br/api/images/producao.spayce.com.br/1777560924595_2019_11_12_perspectiva_do_porto_central_em_presidente_kennedy_sul_do_espirito_santo_126593_article.png"
+      "imageUrl": "https://s2-g1.glbimg.com/q4O8g6WSyQQYqbbytThGWIyfbgU=/1300x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/J/9/foRcVhQYWMAz7VcMJXUg/466916.jfif"
     },
     {
       "id": "macro-8c1ead789c4db1d5aa49d6fe",
       "title": "Selic a 14% e eleições: veja como proteger seu dinheiro da volatilidade eleitoral",
-      "summary": "Atualizacao de macro capturada em Movimento Econômico.",
-      "details": "",
-      "url": "https://br.investing.com/news/economy-news/autoridades-do-reino-unido-temem-que-flexibilidade-fiscal-de-burnham-agite-mercados-2032114",
+      "summary": "Chegou a hora. A chegada de novos investimentos internacionais ao ES poderá ter um efeito de ponto de inflexão na incorporação de tecnologia e inovação na base produtiva",
+      "details": "Chegou a hora. A chegada de novos investimentos internacionais ao ES poderá ter um efeito de ponto de inflexão na incorporação de tecnologia e inovação na base produtiva",
+      "url": "https://www.agazeta.com.br/colunas/antonio-carlos-medeiros/o-capital-internacional-amplia-a-sua-participacao-no-pib-do-es-0826",
       "source": "Movimento Econômico",
       "category": "macro",
       "tags": [
@@ -229,14 +248,15 @@
       "publishedAt": "2026-08-08T07:12:00Z",
       "updatedAt": "2026-08-08T07:12:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://netdeal.com.br/api/images/proxy?quality=100&width=1200&src=https://www.netdeal.com.br/api/images/producao.spayce.com.br/1777560924595_2019_11_12_perspectiva_do_porto_central_em_presidente_kennedy_sul_do_espirito_santo_126593_article.png"
     },
     {
       "id": "macro-ba673d64f0e02741957c779f",
       "title": "Com IR e IOF, carga tributária bate recorde e chega a 32,4% do PIB",
-      "summary": "Arrecadação cresce acima da economia, impulsionada por tributos sobre renda, consumo e folha de pagamentos",
-      "details": "Arrecadação cresce acima da economia, impulsionada por tributos sobre renda, consumo e folha de pagamentos",
-      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/com-ir-e-iof-carga-tributaria-bate-recorde-e-chega-a-324-do-pib/",
+      "summary": "Com juro acima de 8% ao ano e inflação pressionada, especialista explica como proteger as economias do \"efeito urna\" em um cenário de alta volatilidade.",
+      "details": "Com juro acima de 8% ao ano e inflação pressionada, especialista explica como proteger as economias do \"efeito urna\" em um cenário de alta volatilidade.",
+      "url": "https://movimentoeconomico.com.br/financas/2026/08/08/selic-a-14-e-eleicoes-veja-como-proteger-seu-dinheiro-da-volatilidade-eleitoral/",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -248,14 +268,14 @@
       "updatedAt": "2026-08-08T07:10:46Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/ChatGPT-Image-22-de-jun.-de-2026-18_03_58.png?w=1200&h=630&crop=1"
+      "imageUrl": "https://movimentoeconomico.com.br/wp-content/uploads/2026/08/Gemini_Generated_Image_66lffi66lffi66lf.jpg"
     },
     {
       "id": "macro-2bf38e1fb9563cba6bd4dd82",
       "title": "Inflação constitucional",
-      "summary": "Plataforma de governo promete manter arcabouço fiscal, afirma que governo Bolsonaro dilapidou os cofres públicos e fala em fazer “firme oposição” a qualquer tentativa de subordinar o Brasil a interesses estrangeiros",
-      "details": "Plataforma de governo promete manter arcabouço fiscal, afirma que governo Bolsonaro dilapidou os cofres públicos e fala em fazer “firme oposição” a qualquer tentativa de subordinar o Brasil a interesses estrangeiros",
-      "url": "https://www.estadao.com.br/politica/programa-de-lula-traz-31-vezes-a-palavra-soberania-e-rejeita-servilismo-a-ideologias-fracassadas/",
+      "summary": "Arrecadação cresce acima da economia, impulsionada por tributos sobre renda, consumo e folha de pagamentos",
+      "details": "Arrecadação cresce acima da economia, impulsionada por tributos sobre renda, consumo e folha de pagamentos",
+      "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/com-ir-e-iof-carga-tributaria-bate-recorde-e-chega-a-324-do-pib/",
       "source": "O GLOBO",
       "category": "macro",
       "tags": [
@@ -267,14 +287,14 @@
       "updatedAt": "2026-08-08T07:01:20Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/55WMGO76IVDW7KD3COE76YORRE.JPG?quality=80&auth=c25918d65dc85caebbd03091dfe3584e46bbdac378cae9834ca984c3ae3de9d1&width=1200&height=630&smart=true"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/ChatGPT-Image-22-de-jun.-de-2026-18_03_58.png?w=1200&h=630&crop=1"
     },
     {
       "id": "macro-8814d70eaff60cad1f2e88ff",
       "title": "GDF prevê superavit em 2026 após conjunto de medidas de ajuste fiscal",
-      "summary": "A inteligência artificial já faz parte da rotina de 92% das instituições financeiras brasileiras, mas seu uso ainda está concentrado em ganhos de eficiência operacional. Pesquisa da Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (Anbima) mostra que apen",
-      "details": "A inteligência artificial já faz parte da rotina de 92% das instituições financeiras brasileiras, mas seu uso ainda está concentrado em ganhos de eficiência operacional. Pesquisa da Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (Anbima) mostra que apenas 6% das empresas utilizam a tecnologia",
-      "url": "https://www.portalin.com.br/negocios/uso-de-ia-chega-a-92-das-instituicoes-financeiras-mas-so-6-transformam-seus-modelos-de-negocios/",
+      "summary": "No lugar de um texto permanente, construímos uma Constituição permanentemente emendada. O custo político aumentou, e a rigidez das regras se ampliou",
+      "details": "No lugar de um texto permanente, construímos uma Constituição permanentemente emendada. O custo político aumentou, e a rigidez das regras se ampliou",
+      "url": "https://oglobo.globo.com/economia/ana-carla-abrao/coluna/2026/08/inflacao-constitucional.ghtml",
       "source": "Correio Braziliense",
       "category": "macro",
       "tags": [
@@ -286,14 +306,14 @@
       "updatedAt": "2026-08-08T07:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.portalin.com.br/wp-content/uploads/2026/01/bancos-tecnologia-bancaria-fintech-inteligencia-artificial-foto-freepik.jpg"
+      "imageUrl": "https://ogcss.infoglobo.com.br/9876543210/img/oglobo.jpg"
     },
     {
       "id": "macro-b536bfae634efda2abb792b8",
       "title": "Autoridades do Reino Unido temem que flexibilidade fiscal de Burnham agite mercados",
-      "summary": "Proposta ainda em análise na Câmara dos Deputados prevê informar custos, impostos e margem de lucro na distribuição e venda de gasolina, etanol, diesel e gás.",
-      "details": "Proposta ainda em análise na Câmara dos Deputados prevê informar custos, impostos e margem de lucro na distribuição e venda de gasolina, etanol, diesel e gás.",
-      "url": "https://g1.globo.com/carros/noticia/2026/08/08/projeto-de-lei-quer-obrigar-postos-de-combustivel-a-detalhar-lucro-na-nota-fiscal-ao-consumidor.ghtml",
+      "summary": "A governadora Celina Leão e o secretário de Economia, Valdivino de Oliveira, afirmaram que governo do DF reverteu deficit de quase R$ 6 bilhões herdados da gestão anterior e projetam superavit entre R$ 3 bilhões e R$ 5 bilhões no final do ano",
+      "details": "A governadora Celina Leão e o secretário de Economia, Valdivino de Oliveira, afirmaram que governo do DF reverteu deficit de quase R$ 6 bilhões herdados da gestão anterior e projetam superavit entre R$ 3 bilhões e R$ 5 bilhões no final do ano",
+      "url": "https://www.correiobraziliense.com.br/cidades-df/2026/08/7475822-gdf-preve-superavit-em-2026-apos-conjunto-de-medidas-de-ajuste-fiscal.html",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -305,14 +325,14 @@
       "updatedAt": "2026-08-08T06:02:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-g1.glbimg.com/iDnKFD8mNRMctC1_M2jJkPr4xwc=/6000x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/6/O/6MlCqWSJWNfk7eOIbPJg/dia-livre-de-impostos-mcamgo-abr-06062024-10.jpg"
+      "imageUrl": "https://midias.correiobraziliense.com.br/_midias/jpg/2026/08/07/675x450/1_dsc-8861-67359435.jpg"
     },
     {
       "id": "macro-779830175c346d92d9882a2b",
       "title": "Projeto de lei quer obrigar postos de combustível a detalhar lucro na nota fiscal ao consumidor",
-      "summary": "A governadora Celina Leão e o secretário de Economia, Valdivino de Oliveira, afirmaram que governo do DF reverteu deficit de quase R$ 6 bilhões herdados da gestão anterior e projetam superavit entre R$ 3 bilhões e R$ 5 bilhões no final do ano",
-      "details": "A governadora Celina Leão e o secretário de Economia, Valdivino de Oliveira, afirmaram que governo do DF reverteu deficit de quase R$ 6 bilhões herdados da gestão anterior e projetam superavit entre R$ 3 bilhões e R$ 5 bilhões no final do ano",
-      "url": "https://www.correiobraziliense.com.br/cidades-df/2026/08/7475822-gdf-preve-superavit-em-2026-apos-conjunto-de-medidas-de-ajuste-fiscal.html",
+      "summary": "Atualizacao de macro capturada em G1.",
+      "details": "",
+      "url": "https://br.investing.com/news/economy-news/autoridades-do-reino-unido-temem-que-flexibilidade-fiscal-de-burnham-agite-mercados-2032114",
       "source": "G1",
       "category": "macro",
       "tags": [
@@ -323,15 +343,14 @@
       "publishedAt": "2026-08-08T06:00:32Z",
       "updatedAt": "2026-08-08T06:00:32Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://midias.correiobraziliense.com.br/_midias/jpg/2026/08/07/675x450/1_dsc-8861-67359435.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-ebcda0ade65d6f1bb18b9e8f",
       "title": "Programa de Lula traz 31 vezes a palavra soberania e rejeita ‘servilismo’ a ideologias fracassadas",
-      "summary": "No lugar de um texto permanente, construímos uma Constituição permanentemente emendada. O custo político aumentou, e a rigidez das regras se ampliou",
-      "details": "No lugar de um texto permanente, construímos uma Constituição permanentemente emendada. O custo político aumentou, e a rigidez das regras se ampliou",
-      "url": "https://oglobo.globo.com/economia/ana-carla-abrao/coluna/2026/08/inflacao-constitucional.ghtml",
+      "summary": "Proposta ainda em análise na Câmara dos Deputados prevê informar custos, impostos e margem de lucro na distribuição e venda de gasolina, etanol, diesel e gás.",
+      "details": "Proposta ainda em análise na Câmara dos Deputados prevê informar custos, impostos e margem de lucro na distribuição e venda de gasolina, etanol, diesel e gás.",
+      "url": "https://g1.globo.com/carros/noticia/2026/08/08/projeto-de-lei-quer-obrigar-postos-de-combustivel-a-detalhar-lucro-na-nota-fiscal-ao-consumidor.ghtml",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -343,15 +362,15 @@
       "updatedAt": "2026-08-08T04:59:26Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://ogcss.infoglobo.com.br/9876543210/img/oglobo.jpg"
+      "imageUrl": "https://s2-g1.glbimg.com/iDnKFD8mNRMctC1_M2jJkPr4xwc=/6000x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/6/O/6MlCqWSJWNfk7eOIbPJg/dia-livre-de-impostos-mcamgo-abr-06062024-10.jpg"
     },
     {
-      "id": "macro-54e37200d8cb7138d4fed633",
+      "id": "macro-bdc1f2279328ff72175ffa00",
       "title": "Os juros da Selic precisam cair mais",
-      "summary": "Com juro acima de 8% ao ano e inflação pressionada, especialista explica como proteger as economias do \"efeito urna\" em um cenário de alta volatilidade.",
-      "details": "Com juro acima de 8% ao ano e inflação pressionada, especialista explica como proteger as economias do \"efeito urna\" em um cenário de alta volatilidade.",
-      "url": "https://movimentoeconomico.com.br/financas/2026/08/08/selic-a-14-e-eleicoes-veja-como-proteger-seu-dinheiro-da-volatilidade-eleitoral/",
-      "source": "O POVO+",
+      "summary": "Comunicado emitido pelo Comitê de Política Monetária (Copom) é cauteloso e não deixa pistas sobre qual será a decisão do próximo encontro em setembro, quando nova decisão será tomada sobre a taxa de juros",
+      "details": "Comunicado emitido pelo Comitê de Política Monetária (Copom) é cauteloso e não deixa pistas sobre qual será a decisão do próximo encontro em setembro, quando nova decisão será tomada sobre a taxa de juros",
+      "url": "https://mais.opovo.com.br/colunistas/editorial/2026/08/08/os-juros-da-selic-precisam-cair-mais.html",
+      "source": "mais.opovo.com.br",
       "category": "macro",
       "tags": [
         "macro",
@@ -362,14 +381,14 @@
       "updatedAt": "2026-08-08T04:15:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://movimentoeconomico.com.br/wp-content/uploads/2026/08/Gemini_Generated_Image_66lffi66lffi66lf.jpg"
+      "imageUrl": "https://mais.opovo.com.br/includes/assets/opovomais/imgs/og-image.jpg"
     },
     {
       "id": "latest-422855852b84eccab3286e89",
       "title": "Uso de IA chega a 92% das instituições financeiras, mas só 6% transformam seus modelos de negócios",
-      "summary": "Comunicado emitido pelo Comitê de Política Monetária (Copom) é cauteloso e não deixa pistas sobre qual será a decisão do próximo encontro em setembro, quando nova decisão será tomada sobre a taxa de juros",
-      "details": "Comunicado emitido pelo Comitê de Política Monetária (Copom) é cauteloso e não deixa pistas sobre qual será a decisão do próximo encontro em setembro, quando nova decisão será tomada sobre a taxa de juros",
-      "url": "https://mais.opovo.com.br/colunistas/editorial/2026/08/08/os-juros-da-selic-precisam-cair-mais.html",
+      "summary": "A inteligência artificial já faz parte da rotina de 92% das instituições financeiras brasileiras, mas seu uso ainda está concentrado em ganhos de eficiência operacional. Pesquisa da Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (Anbima) mostra que apen",
+      "details": "A inteligência artificial já faz parte da rotina de 92% das instituições financeiras brasileiras, mas seu uso ainda está concentrado em ganhos de eficiência operacional. Pesquisa da Associação Brasileira das Entidades dos Mercados Financeiro e de Capitais (Anbima) mostra que apenas 6% das empresas utilizam a tecnologia",
+      "url": "https://www.portalin.com.br/negocios/uso-de-ia-chega-a-92-das-instituicoes-financeiras-mas-so-6-transformam-seus-modelos-de-negocios/",
       "source": "Balada IN",
       "category": "latest",
       "tags": [
@@ -381,14 +400,14 @@
       "updatedAt": "2026-08-08T03:01:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://mais.opovo.com.br/includes/assets/opovomais/imgs/og-image.jpg"
+      "imageUrl": "https://www.portalin.com.br/wp-content/uploads/2026/01/bancos-tecnologia-bancaria-fintech-inteligencia-artificial-foto-freepik.jpg"
     },
     {
       "id": "macro-4ef7d8875c659af61df5f47d",
       "title": "PIB do agronegócio recua no início de 2026",
-      "summary": "Mesmo diante de um cenário econômico desafiador, as empresas não reduziram seus investimentos em tecnologia. Pelo contrário. O mais recente CFO Survey Q2 2026, da Grant Thornton, mostra que, mesmo diante da pior percepção econômica dos últimos cinco anos, os diretores financeiros",
-      "details": "Mesmo diante de um cenário econômico desafiador, as empresas não reduziram seus investimentos em tecnologia. Pelo contrário. O mais recente CFO Survey Q2 2026, da Grant Thornton, mostra que, mesmo diante da pior percepção econômica dos últimos cinco anos, os diretores financeiros seguem priorizando investimentos em tec",
-      "url": "https://www.broadcast.com.br/knewin-dino/cfos-priorizam-tecnologia-e-ia-aponta-grant-thornton/",
+      "summary": "Encontrar novos fornecedores internacionais, ampliar o portfólio de produtos ou identificar oportunidades para importar e representar marcas no Brasil. Essas são algumas das possibilidades que a Home Show Brazil 2026 pretende colocar à disposição de empresários e compradores prof",
+      "details": "Encontrar novos fornecedores internacionais, ampliar o portfólio de produtos ou identificar oportunidades para importar e representar marcas no Brasil. Essas são algumas das possibilidades que a Home Show Brazil 2026 pretende colocar à disposição de empresários e compradores profissionais entre os dias 11 e 13 de agost",
+      "url": "https://www.broadcast.com.br/knewin-dino/feira-reune-oportunidades-de-negocios-com-a-asia/",
       "source": "jornalcidade.net.br",
       "category": "macro",
       "tags": [
@@ -400,14 +419,14 @@
       "updatedAt": "2026-08-08T02:14:18Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K4Qrtaghc34tPzQ2YVeXS7Uo6tT5Twrj2BA-WMjR4qi-Gv15iuVEOLBd8ha4_P2lh10FAem8tH9db-21afpFX3ciNF5dRBL9TXcjdj1Pl_ub7MZJhtfCcY7bdhJca3d_D01.png"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K7aPlMWFJl6Ydiv7JbMyONLlRXpNzgnA_30LccmjIikhSVzWXejdRsYtGiOMg6BQVA4jwX-8mrAdswybPBLhO_idgKxkY9_W-Lg4FZCmr-eSrpSSTeqXr_mZD3j-Y4lmaE1.png"
     },
     {
       "id": "macro-297fdf92c80fd33abfbc6479",
       "title": "Custos de credibilidade do BC não compensam possíveis ganhos decorrentes da redução da Selic",
-      "summary": "Encontrar novos fornecedores internacionais, ampliar o portfólio de produtos ou identificar oportunidades para importar e representar marcas no Brasil. Essas são algumas das possibilidades que a Home Show Brazil 2026 pretende colocar à disposição de empresários e compradores prof",
-      "details": "Encontrar novos fornecedores internacionais, ampliar o portfólio de produtos ou identificar oportunidades para importar e representar marcas no Brasil. Essas são algumas das possibilidades que a Home Show Brazil 2026 pretende colocar à disposição de empresários e compradores profissionais entre os dias 11 e 13 de agost",
-      "url": "https://www.broadcast.com.br/knewin-dino/feira-reune-oportunidades-de-negocios-com-a-asia/",
+      "summary": "O 55content, maior portal de notícias sobre aplicativos de mobilidade e delivery, abriu as pré-inscrições para o Prêmio 55content, uma iniciativa criada para reconhecer os maiores aplicativos regionais de mobilidade urbana do Brasil. O cadastro é feito unicamente no site: premio.",
+      "details": "O 55content, maior portal de notícias sobre aplicativos de mobilidade e delivery, abriu as pré-inscrições para o Prêmio 55content, uma iniciativa criada para reconhecer os maiores aplicativos regionais de mobilidade urbana do Brasil. O cadastro é feito unicamente no site: premio.55content.com.br. A participação é desti",
+      "url": "https://www.broadcast.com.br/knewin-dino/premio-55content-abre-pre-inscricao-para-apps-regionais/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -419,14 +438,14 @@
       "updatedAt": "2026-08-08T02:01:38Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K7aPlMWFJl6Ydiv7JbMyONLlRXpNzgnA_30LccmjIikhSVzWXejdRsYtGiOMg6BQVA4jwX-8mrAdswybPBLhO_idgKxkY9_W-Lg4FZCmr-eSrpSSTeqXr_mZD3j-Y4lmaE1.png"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K4Qrtaghc34tPzQ2YVeXS7Uo6tT5Twrj2BA-WMjR4qi-Gv15iuVEOLBd8ha4_P2lh10FAem8tH9db-21afpFX3ciNF5dRBL9TXcjdj1Pl_ubwIkkm09zZHiuyQ8Tn7-n9E1.png"
     },
     {
       "id": "latest-4ab65d8d95b619bea03f033b",
       "title": "Prêmio 55content abre pré-inscrição para apps regionais",
-      "summary": "O Copom justificou o recente corte com o fato de que os dois mais recentes números de taxa de inflação surpreenderam para baixo e a taxa de juros está em nível bastante elevado",
-      "details": "O Copom justificou o recente corte com o fato de que os dois mais recentes números de taxa de inflação surpreenderam para baixo e a taxa de juros está em nível bastante elevado",
-      "url": "https://www.estadao.com.br/em-alta/economia/jose-marcio-camargo/custos-de-credibilidade-do-bc-nao-compensam-possiveis-ganhos-decorrentes-da-reducao-da-selic/",
+      "summary": "O agronegócio brasileiro começou 2026 em baixa. Depois de encerrar o ano passado com crescimento superior a 12%, o setor registrou retração de 2,01% no...",
+      "details": "O agronegócio brasileiro começou 2026 em baixa. Depois de encerrar o ano passado com crescimento superior a 12%, o setor registrou retração de 2,01% no...",
+      "url": "https://jornalcidade.net.br/negocios/pib-do-agronegocio-recua-no-inicio-de-2026/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -438,14 +457,14 @@
       "updatedAt": "2026-08-08T01:50:19Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/GQDZKXAKZFLEJFF57LXGEBYVSQ.jpg?quality=80&auth=910c5673ffe93f3d8e02577ee14fe7865baa707c609dd25400ed5fe17ecac7b0&width=1200&height=630&smart=true"
+      "imageUrl": "https://jornalcidade.net.br/wp-content/uploads/2026/08/73-Ilustracao-Pexels-1024x768.jpg"
     },
     {
       "id": "latest-35124e7f98004dd2e456f3a8",
       "title": "CFOs priorizam tecnologia e IA, aponta Grant Thornton",
-      "summary": "O 55content, maior portal de notícias sobre aplicativos de mobilidade e delivery, abriu as pré-inscrições para o Prêmio 55content, uma iniciativa criada para reconhecer os maiores aplicativos regionais de mobilidade urbana do Brasil. O cadastro é feito unicamente no site: premio.",
-      "details": "O 55content, maior portal de notícias sobre aplicativos de mobilidade e delivery, abriu as pré-inscrições para o Prêmio 55content, uma iniciativa criada para reconhecer os maiores aplicativos regionais de mobilidade urbana do Brasil. O cadastro é feito unicamente no site: premio.55content.com.br. A participação é desti",
-      "url": "https://www.broadcast.com.br/knewin-dino/premio-55content-abre-pre-inscricao-para-apps-regionais/",
+      "summary": "O Copom justificou o recente corte com o fato de que os dois mais recentes números de taxa de inflação surpreenderam para baixo e a taxa de juros está em nível bastante elevado",
+      "details": "O Copom justificou o recente corte com o fato de que os dois mais recentes números de taxa de inflação surpreenderam para baixo e a taxa de juros está em nível bastante elevado",
+      "url": "https://www.estadao.com.br/em-alta/economia/jose-marcio-camargo/custos-de-credibilidade-do-bc-nao-compensam-possiveis-ganhos-decorrentes-da-reducao-da-selic/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -457,7 +476,7 @@
       "updatedAt": "2026-08-08T01:50:16Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K4Qrtaghc34tPzQ2YVeXS7Uo6tT5Twrj2BA-WMjR4qi-Gv15iuVEOLBd8ha4_P2lh10FAem8tH9db-21afpFX3ciNF5dRBL9TXcjdj1Pl_ubwIkkm09zZHiuyQ8Tn7-n9E1.png"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/GQDZKXAKZFLEJFF57LXGEBYVSQ.jpg?quality=80&auth=910c5673ffe93f3d8e02577ee14fe7865baa707c609dd25400ed5fe17ecac7b0&width=1200&height=630&smart=true"
     },
     {
       "id": "latest-eac3819d497153161f805e0f",
@@ -481,9 +500,9 @@
     {
       "id": "latest-0780aba20e4599efc100e676",
       "title": "Feira reúne oportunidades de negócios com a Ásia",
-      "summary": "As inscrições para a 14ª Caminhada pela Paz foram prorrogadas e poderão ser feitas até 16 de agosto, data da realização da iniciativa gratuita na Praça Pádua Salles, em Amparo (SP). A edição deste ano busca ampliar a participação do público após reunir cerca de 5 mil pessoas em 2",
-      "details": "As inscrições para a 14ª Caminhada pela Paz foram prorrogadas e poderão ser feitas até 16 de agosto, data da realização da iniciativa gratuita na Praça Pádua Salles, em Amparo (SP). A edição deste ano busca ampliar a participação do público após reunir cerca de 5 mil pessoas em 2025, […]",
-      "url": "https://www.broadcast.com.br/knewin-dino/caminhada-pela-paz-prorroga-inscricoes-em-amparo/",
+      "summary": "Mesmo diante de um cenário econômico desafiador, as empresas não reduziram seus investimentos em tecnologia. Pelo contrário. O mais recente CFO Survey Q2 2026, da Grant Thornton, mostra que, mesmo diante da pior percepção econômica dos últimos cinco anos, os diretores financeiros",
+      "details": "Mesmo diante de um cenário econômico desafiador, as empresas não reduziram seus investimentos em tecnologia. Pelo contrário. O mais recente CFO Survey Q2 2026, da Grant Thornton, mostra que, mesmo diante da pior percepção econômica dos últimos cinco anos, os diretores financeiros seguem priorizando investimentos em tec",
+      "url": "https://www.broadcast.com.br/knewin-dino/cfos-priorizam-tecnologia-e-ia-aponta-grant-thornton/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -495,14 +514,14 @@
       "updatedAt": "2026-08-08T01:50:01Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K7aPlMWFJl6Ydiv7JbMyONLlRXpNzgnA_30LccmjIikhSVzWXejdRsYtGiOMg6BQVA4jwX-8mrAdswybPBLhO_idgKxkY9_W-Lg4FZCmr-eSjAdtR_tb8gm_s5Y-ofJE9w1.png"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K4Qrtaghc34tPzQ2YVeXS7Uo6tT5Twrj2BA-WMjR4qi-Gv15iuVEOLBd8ha4_P2lh10FAem8tH9db-21afpFX3ciNF5dRBL9TXcjdj1Pl_ub7MZJhtfCcY7bdhJca3d_D01.png"
     },
     {
       "id": "latest-b92ec75371d670ea5d3fbb88",
       "title": "Caminhada pela Paz prorroga inscrições em Amparo",
-      "summary": "O agronegócio brasileiro começou 2026 em baixa. Depois de encerrar o ano passado com crescimento superior a 12%, o setor registrou retração de 2,01% no...",
-      "details": "O agronegócio brasileiro começou 2026 em baixa. Depois de encerrar o ano passado com crescimento superior a 12%, o setor registrou retração de 2,01% no...",
-      "url": "https://jornalcidade.net.br/negocios/pib-do-agronegocio-recua-no-inicio-de-2026/",
+      "summary": "As inscrições para a 14ª Caminhada pela Paz foram prorrogadas e poderão ser feitas até 16 de agosto, data da realização da iniciativa gratuita na Praça Pádua Salles, em Amparo (SP). A edição deste ano busca ampliar a participação do público após reunir cerca de 5 mil pessoas em 2",
+      "details": "As inscrições para a 14ª Caminhada pela Paz foram prorrogadas e poderão ser feitas até 16 de agosto, data da realização da iniciativa gratuita na Praça Pádua Salles, em Amparo (SP). A edição deste ano busca ampliar a participação do público após reunir cerca de 5 mil pessoas em 2025, […]",
+      "url": "https://www.broadcast.com.br/knewin-dino/caminhada-pela-paz-prorroga-inscricoes-em-amparo/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -514,7 +533,7 @@
       "updatedAt": "2026-08-08T01:50:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://jornalcidade.net.br/wp-content/uploads/2026/08/73-Ilustracao-Pexels-1024x768.jpg"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K7aPlMWFJl6Ydiv7JbMyONLlRXpNzgnA_30LccmjIikhSVzWXejdRsYtGiOMg6BQVA4jwX-8mrAdswybPBLhO_idgKxkY9_W-Lg4FZCmr-eSjAdtR_tb8gm_s5Y-ofJE9w1.png"
     },
     {
       "id": "latest-db908c57a045e8c8ba214872",
@@ -557,9 +576,9 @@
     {
       "id": "macro-290d16d40a514b1ebb3d4233",
       "title": "Na economia, crescimento com responsabilidade fiscal e inflação controlada",
-      "summary": "Programa com diretrizes para os próximos 4 anos propõe um modelo de desenvolvimento inclusivo, que combina crescimento com geração de empregos, investimentos públicos e privados",
-      "details": "Programa com diretrizes para os próximos 4 anos propõe um modelo de desenvolvimento inclusivo, que combina crescimento com geração de empregos, investimentos públicos e privados",
-      "url": "https://pt.org.br/na-economia-crescimento-com-responsabilidade-fiscal-e-inflacao-controlada/",
+      "summary": "Proposta fala que resultado fiscal virá com crescimento econômico e controle de aumento do gasto primário",
+      "details": "Proposta fala que resultado fiscal virá com crescimento econômico e controle de aumento do gasto primário",
+      "url": "https://www.estadao.com.br/economia/plano-de-governo-de-lula-promete-manter-arcabouco-fiscal-e-enfrentar-emendas-parlamentares/",
       "source": "Partido dos Trabalhadores",
       "category": "macro",
       "tags": [
@@ -571,14 +590,14 @@
       "updatedAt": "2026-08-08T01:48:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://pt.org.br/wp-content/uploads/2026/08/pres-lula-convencao-federacao-brasil-da-esperanca-sao-paulo-ricardostuckert-36-2.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/PHFWJBEV3RGCXHNYBL5PRXDR44.JPG?quality=80&auth=a05b469071abf93289770c2191774f11da14fb485de5ca9626374f0cb2a71f83&width=1200&height=630&smart=true"
     },
     {
       "id": "macro-b8e675b4235418959bae970c",
       "title": "Plano de governo de Lula promete manter arcabouço fiscal e enfrentar emendas parlamentares",
-      "summary": "O Copom justificou o recente corte com o fato de que os dois mais recentes números de taxa de inflação surpreenderam para baixo e a taxa de juros está em nível bastante elevado",
-      "details": "O Copom justificou o recente corte com o fato de que os dois mais recentes números de taxa de inflação surpreenderam para baixo e a taxa de juros está em nível bastante elevado",
-      "url": "https://www.estadao.com.br/economia/jose-marcio-camargo/custos-de-credibilidade-do-bc-nao-compensam-possiveis-ganhos-decorrentes-da-reducao-da-selic/",
+      "summary": "Programa com diretrizes para os próximos 4 anos propõe um modelo de desenvolvimento inclusivo, que combina crescimento com geração de empregos, investimentos públicos e privados",
+      "details": "Programa com diretrizes para os próximos 4 anos propõe um modelo de desenvolvimento inclusivo, que combina crescimento com geração de empregos, investimentos públicos e privados",
+      "url": "https://pt.org.br/na-economia-crescimento-com-responsabilidade-fiscal-e-inflacao-controlada/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -590,25 +609,7 @@
       "updatedAt": "2026-08-08T01:31:27Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/GQDZKXAKZFLEJFF57LXGEBYVSQ.jpg?quality=80&auth=910c5673ffe93f3d8e02577ee14fe7865baa707c609dd25400ed5fe17ecac7b0&width=1200&height=630&focal=397,463"
-    },
-    {
-      "id": "macro-78daf392cfaf183d691fc51c",
-      "title": "Opinião | Custos de credibilidade do BC não compensam possíveis ganhos decorrentes da redução da Selic",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://monitormercantil.com.br/assai-reporta-receita-bruta-de-r-214-bi-no-2t26/",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-08T01:00:00Z",
-      "updatedAt": "2026-08-08T01:00:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "imageUrl": "https://pt.org.br/wp-content/uploads/2026/08/pres-lula-convencao-federacao-brasil-da-esperanca-sao-paulo-ricardostuckert-36-2.jpg"
     },
     {
       "id": "latest-535a640abb65f89c361d557f",
@@ -630,12 +631,12 @@
       "imageUrl": "https://www.otempo.com.br/content/dam/otempo/editorias/economia/2026/7/14/economia-dolar-bolsa_de_valores-mercado_financeiro-1784074114.jpg"
     },
     {
-      "id": "macro-fa99a5ff9484b46c906a42ea",
+      "id": "macro-82b32b48d156df96eed85795",
       "title": "Exclusivo: Plano de governo de Lula promete manter arcabouço fiscal e controlar inflação",
-      "summary": "Proposta fala que resultado fiscal virá com crescimento econômico e controle de aumento do gasto primário",
-      "details": "Proposta fala que resultado fiscal virá com crescimento econômico e controle de aumento do gasto primário",
-      "url": "https://www.estadao.com.br/economia/plano-de-governo-de-lula-promete-manter-arcabouco-fiscal-e-enfrentar-emendas-parlamentares/",
-      "source": "valor.globo.com",
+      "summary": "Atualizacao de macro capturada em Valor Econômico.",
+      "details": "",
+      "url": "https://monitormercantil.com.br/assai-reporta-receita-bruta-de-r-214-bi-no-2t26/",
+      "source": "Valor Econômico",
       "category": "macro",
       "tags": [
         "macro",
@@ -645,8 +646,7 @@
       "publishedAt": "2026-08-08T00:36:12Z",
       "updatedAt": "2026-08-08T00:36:12Z",
       "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/PHFWJBEV3RGCXHNYBL5PRXDR44.JPG?quality=80&auth=a05b469071abf93289770c2191774f11da14fb485de5ca9626374f0cb2a71f83&width=1200&height=630&smart=true"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-fda01ef7071a1045105564e5",
@@ -670,9 +670,9 @@
     {
       "id": "latest-e9cd8019737518e2d27e5c57",
       "title": "Assaí reporta receita bruta de R$ 21,4 bi no 2T26",
-      "summary": "José Roberto Arruda criticou a situação fiscal do Governo do Distrito Federal e contestou declarações sobre a avaliação das contas públicas.",
-      "details": "José Roberto Arruda criticou a situação fiscal do Governo do Distrito Federal e contestou declarações sobre a avaliação das contas públicas.",
-      "url": "https://veronoticias.com/politica/arruda-critica-contas-do-gdf-e-aponta-pedalada-fiscal/",
+      "summary": "Novo índice promete ajustes mais previsíveis para investidores",
+      "details": "Novo índice promete ajustes mais previsíveis para investidores",
+      "url": "https://boca.com.br/mercado-financeiro/b3-lanca-indice-small-cap-smart-rebal-com-foco-em-acoes-de-baixo-valor",
       "source": "Monitor Mercantil",
       "category": "latest",
       "tags": [
@@ -684,14 +684,14 @@
       "updatedAt": "2026-08-07T23:48:45Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://veronoticias.com/wp-content/uploads/2024/10/Jose-Roberto-A.jpg"
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/eaa843bed709f514c3e555f48f158d0a_858x483.jpg"
     },
     {
       "id": "macro-a3a1ce0a4d0be10e60ad1dde",
       "title": "Arruda critica contas do GDF e aponta “pedalada fiscal”",
-      "summary": "Novo índice promete ajustes mais previsíveis para investidores",
-      "details": "Novo índice promete ajustes mais previsíveis para investidores",
-      "url": "https://boca.com.br/mercado-financeiro/b3-lanca-indice-small-cap-smart-rebal-com-foco-em-acoes-de-baixo-valor",
+      "summary": "José Roberto Arruda criticou a situação fiscal do Governo do Distrito Federal e contestou declarações sobre a avaliação das contas públicas.",
+      "details": "José Roberto Arruda criticou a situação fiscal do Governo do Distrito Federal e contestou declarações sobre a avaliação das contas públicas.",
+      "url": "https://veronoticias.com/politica/arruda-critica-contas-do-gdf-e-aponta-pedalada-fiscal/",
       "source": "Vero Notícias",
       "category": "macro",
       "tags": [
@@ -703,7 +703,7 @@
       "updatedAt": "2026-08-07T23:48:04Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/eaa843bed709f514c3e555f48f158d0a_858x483.jpg"
+      "imageUrl": "https://veronoticias.com/wp-content/uploads/2024/10/Jose-Roberto-A.jpg"
     },
     {
       "id": "latest-cb95d81176c4582f2a699ca5",
@@ -977,6 +977,24 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
+      "id": "funds-eadf182833ca0dbcc1b6c035",
+      "title": "Aeronaves, imóveis e embarcações; veja lista de bens bloqueados na Operação Heritage",
+      "summary": "Atualizacao de fundos capturada em BRASIL NOTÍCIA.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUUdLRENJc2xTaTdZb1FlQ0IxRW41RlUwaDFUR3V5UG1JU2lvVk5hOTZmcElmT3RycWZ1ZWRxVHR4bzJDZnhsd2NpNUtTcjhoVHpyYnlwaVhaWDdEaDZaaU5BZkZkTGdKZHMzMzBqdGMtN2VVUjJJWE52SXFQSmlsbkRKMGg1bVl2UG94cVdnZ003bGNtTHhzcXpOOF9jTURpQWZvekVVZlVVZi1MNmp5Wll6VlRHcTkyOXRvckNXSnlLdw?oc=5",
+      "source": "BRASIL NOTÍCIA",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-07T19:18:00Z",
+      "updatedAt": "2026-08-07T19:18:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
       "id": "companies-138516489effca5005e8a684",
       "title": "Preço do QAV para empresas brasileiras subiu 50% em dois anos, diz Qive",
       "summary": "Atualizacao de empresas capturada em Agência iNFRA.",
@@ -1049,12 +1067,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-fcf1bea1ee537e108912e003",
+      "id": "funds-5818e1d384bc58c80caa65a0",
       "title": "BCDI11: Analistas da Empiricus recomendam FI-Infra atrelado ao CDI e com 'perfil defensivo'; veja os motivos",
-      "summary": "Atualizacao de fundos capturada em Money Times.",
+      "summary": "Atualizacao de fundos capturada em moneytimes.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVS03YVY5X2QxSExkYjlfeWdvaXFnb1YtMlg4Z3FZRUZrQjZMcGV5UWJ3bHNScU82N1JTOUtlOGlRLXN2VERGQ21LQk00cFdYVllGMmxocktlTHNzTExuWUdVcFVKVkU1a1gwWXRpaFY0d0d0WDVZSVlPMkxRcFNBd0UtenVfQ3REMGtxOVlpa0J3SXV6MjVnY2ZqVU1kUkxMczFWRzdCMkVlbnlHMmxQdA?oc=5",
-      "source": "Money Times",
+      "source": "moneytimes.com.br",
       "category": "funds",
       "tags": [
         "fundos",
@@ -1067,12 +1085,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-7647903ee97e8727d685ecbf",
+      "id": "funds-9d53299c483055dca9b5fd64",
       "title": "XP Asset mira carteira administrada no varejo ao bater R$ 300 bilhões | Finanças",
-      "summary": "Atualizacao de fundos capturada em valor.globo.com.",
+      "summary": "Atualizacao de fundos capturada em Valor Econômico.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPLUxxRGtqc19OY3FPOUVzQmc4UlgxZlVxWDZ6dVgxQklod2tHRXBvMmRJemNWeFdOYUNkOHhweHRranVKZWdic2JaLWExdXlKcldYS0FCNlZNVmVwc0NtR3VPVWlOOG5UT3E3cWFqcVBjNkRjWHJrcjVRYUc4R2xUWWZjWmFuWHBIR1Z3dDc2MTRSTElraW9UVHZ5Q0hMRHJpcFFWVWN2WVlSNzc1LTBTajFsUC1OTGFPYjlfdldQZllfbjJH?oc=5",
-      "source": "valor.globo.com",
+      "source": "Valor Econômico",
       "category": "funds",
       "tags": [
         "fundos",
@@ -1137,6 +1155,24 @@
       "updatedAt": "2026-08-07T17:42:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "funds-d681b9b9556129efbad5485b",
+      "title": "Espetáculo de 200 drones e música assinalam inauguração da Praça da Democracia perante milhares de pessoas em Valongo",
+      "summary": "Atualizacao de fundos capturada em A Verdade.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMXpGVUlod1R4cG1uS2RDM1JNZ2lrSWIwYjFJbDFPR0FMQ2NSLWRjb3RnLWJRbm5NajVwdG1UZ0puc0FVRTNmWFJlVzBadXhnU1Y2YUdHUHk3ckJnQzBxUm15R2ZSSU1MUTBVV3pha003ZUJZOF9IR3JLbXVsY0VFM2xBbUdUSlhUaFIxUm9Ib3hURkRXbW9lZzdlVTdJZmgyVnA4UXNsWmVZNDRMdXV1RlMzOW5ETWYyWjlPSTRkS25POF9LZGVtanpkNWdjQ013UFI1aGhsdmtObWp4bWFlemlvMGM?oc=5",
+      "source": "A Verdade",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-07T17:36:39Z",
+      "updatedAt": "2026-08-07T17:36:39Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "funds-fe233a481b1857300097271a",
@@ -1229,12 +1265,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-8d418596c5bbad23db0c50f6",
+      "id": "companies-f32f63b71ccd5e806e81a9d7",
       "title": "AI Act pode alcançar empresas brasileiras sem operação na Europa",
-      "summary": "Atualizacao de empresas capturada em TeleSíntese.",
+      "summary": "Atualizacao de empresas capturada em telesintese.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdjdQMVU1d3YycnUxa2lvaXpqUVMwc09IY05jU2F2WDVPVkluMVR1dXFld0VWNE85RGRmdTJEVGZQeGlVX0FKQXBscnJQVFBIUjExTjZWM0F0eFgteTRkVHFaTHI4YkM1NnNOSFE3OVlFNEFLMjE3ZWNEYk1acnIwY2xHaWQxanhZY3BXMGNfbHBFR3ZHaTlJ?oc=5",
-      "source": "TeleSíntese",
+      "source": "telesintese.com.br",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1283,30 +1319,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-e026d095ea38d2d58002f3e2",
-      "title": "Edmond de Rothschild Asset Management - Gestão de ativos - França",
-      "summary": "Atualizacao de fundos capturada em leadersleague.com.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPaXhLOW5hTXhwMXN3eHhQYWd1Z0ctRHdSRWFtbjRQaGpOc2w0R2lQTHZYVjB3OWZ3V3k4dlphd2NyaS1jY2pVWEx0bjV0WGU1LWROa1BKUGRGejdXRjI3ellvY2ZBRkN3ZXdia3dxVEJDdnVWQkVKUmkyWGlkRmdRdXc5eFVpaEVPazZWa3JSUTIyTV8tc1EwcldrUnJhV01BZjF2YnIyeVQ4eUZuaGd5cThGWkJ1ZWJZcElBNU9keTlwZWNxbl84eTRQOWN6R3Z6TFU1Q0dmTVhmQWtzdTBncUhZLXlVWnd2SktrcjM2R0syNWRYSFRmVWFB?oc=5",
-      "source": "leadersleague.com",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-07T13:46:02Z",
-      "updatedAt": "2026-08-07T13:46:02Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "companies-dbb220cc03c82cdf7f697c6d",
+      "id": "companies-499318fb2acdf237687b8d7c",
       "title": "Queda de 5% das exportações brasileiras para os EUA em julho confirma efeitos das novas tarifas",
-      "summary": "Atualizacao de empresas capturada em Conexão Tocantins.",
+      "summary": "Atualizacao de empresas capturada em conexaoto.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNYTJQa2NBNzhMMHJnS0R5Sm9XbGo0ZmVFUVR5cHpZYUt2cmx5S1lBYUR1a0c4REZfNU55UjFmbXRPS05SS3NTT3A5em8tckdWaVZMNksxRUs5Ylo4LTVhN0R1X3pXTnQzanZ0amtVdngxZmZqNlBlalhqTFdpbzctbkFoNS1QSzFjQkFDV2kyVjZneWgtZWRicnJkWE1SWnVPU3B6dFVGQjNTb2w1VjFWSWlkRktyR215cmN4ODJiamVwODg2ZHNIbW93?oc=5",
-      "source": "Conexão Tocantins",
+      "source": "conexaoto.com.br",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1353,24 +1371,6 @@
       "updatedAt": "2026-08-07T12:42:27Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "funds-3d11f04f536aed801a732744",
-      "title": "Preços Strategic American Asset Supply | Índice de preços SAAS, gráfico ao vivo e cap. do mercado de mercado (USD)",
-      "summary": "Atualizacao de fundos capturada em okx.com.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpU0c2dGFrNncwSnhHbW9hV3dMSDVCRDNBd3B3UlIxa0FiZUhwZWpmZVFuTmRTX0RsNFFjcDRvY0E2aXZwNDZ6Y3o2cVF0d2duY29FeWVrN0RJQ2pqVnNPZjZsTXF1TlBhYk82NEcyOTE4aUNDUVZr?oc=5",
-      "source": "okx.com",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-07T12:24:27Z",
-      "updatedAt": "2026-08-07T12:24:27Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
   ]
 }
