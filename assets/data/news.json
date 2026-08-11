@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-11T10:26:38Z",
-  "generatedAt": "2026-08-11T10:26:38Z",
+  "updatedAt": "2026-08-11T11:14:16Z",
+  "generatedAt": "2026-08-11T11:14:16Z",
   "categories": [
     {
       "id": "all",
@@ -25,6 +25,14 @@
   ],
   "sources": [
     {
+      "id": "a-nova-democracia",
+      "label": "A Nova Democracia"
+    },
+    {
+      "id": "a-verdade",
+      "label": "A Verdade"
+    },
+    {
       "id": "acontecendo-aqui",
       "label": "Acontecendo Aqui"
     },
@@ -39,10 +47,6 @@
     {
       "id": "alagoas-not-cia-boa",
       "label": "Alagoas Notícia Boa"
-    },
-    {
-      "id": "averdade-com",
-      "label": "averdade.com"
     },
     {
       "id": "bbc",
@@ -97,16 +101,12 @@
       "label": "Estadão"
     },
     {
-      "id": "exame",
-      "label": "Exame"
+      "id": "folhamax",
+      "label": "FOLHAMAX"
     },
     {
-      "id": "folhamax-com",
-      "label": "folhamax.com"
-    },
-    {
-      "id": "infomoney-com-br",
-      "label": "infomoney.com.br"
+      "id": "infomoney",
+      "label": "InfoMoney"
     },
     {
       "id": "inforchannel",
@@ -137,12 +137,12 @@
       "label": "Maringá Post"
     },
     {
-      "id": "metr-poles",
-      "label": "Metrópoles"
+      "id": "metropoles-com",
+      "label": "metropoles.com"
     },
     {
-      "id": "midianews",
-      "label": "MidiaNews"
+      "id": "midianews-com-br",
+      "label": "midianews.com.br"
     },
     {
       "id": "mirian-gasparin",
@@ -153,8 +153,16 @@
       "label": "Money Times"
     },
     {
+      "id": "o-globo",
+      "label": "O GLOBO"
+    },
+    {
       "id": "olhar-direto",
       "label": "Olhar Direto"
+    },
+    {
+      "id": "opini-o-em-pauta",
+      "label": "Opinião em Pauta"
     },
     {
       "id": "portal-da-propaganda",
@@ -181,16 +189,20 @@
       "label": "Tribuna do Sertão"
     },
     {
-      "id": "updateordie-com",
-      "label": "updateordie.com"
+      "id": "uol-economia",
+      "label": "UOL Economia"
+    },
+    {
+      "id": "updateordie",
+      "label": "Updateordie"
     },
     {
       "id": "valor-econ-mico",
       "label": "Valor Econômico"
     },
     {
-      "id": "vero-not-cias",
-      "label": "Vero Notícias"
+      "id": "veronoticias-com",
+      "label": "veronoticias.com"
     },
     {
       "id": "vit-ria-news",
@@ -203,11 +215,162 @@
   ],
   "items": [
     {
+      "id": "macro-03ae8911ff71eb844205c7c7",
+      "title": "Bom dia, bitcoin (BTC): Criptomoeda sustenta os US$ 64 mil antes da inflação dos EUA; veja o que mexe com o mercado nesta terça-feira (11)",
+      "summary": "O bitcoin está cotado a US$ 64 mil, apresentando uma queda de 1% nas últimas 24 horas. Entenda o desempenho do mercado.",
+      "details": "O bitcoin está cotado a US$ 64 mil, apresentando uma queda de 1% nas últimas 24 horas. Entenda o desempenho do mercado.",
+      "url": "https://www.moneytimes.com.br/bom-dia-bitcoin-btc-criptomoeda-preco-hoje-rens-110826/",
+      "source": "Money Times",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-11T11:04:00Z",
+      "updatedAt": "2026-08-11T11:04:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/07/mt-robo-bitcoin-btc-cripto-criptomoeda.jpg"
+    },
+    {
+      "id": "macro-2932969c7bea88bd84a79f97",
+      "title": "Banco Central publica ata do Copom que baixou taxa Selic de 14,25% para 14% ao ano",
+      "summary": "Com a queda, juros básicos estão no menor patamar desde março de 2025",
+      "details": "Com a queda, juros básicos estão no menor patamar desde março de 2025",
+      "url": "https://oglobo.globo.com/economia/noticia/2026/08/11/banco-central-publica-ata-do-copom-que-baixou-taxa-selic-de-1425percent-para-14percent-ao-ano.ghtml",
+      "source": "O GLOBO",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-11T11:01:11Z",
+      "updatedAt": "2026-08-11T11:01:11Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://s2-oglobo.glbimg.com/0PuJtxZYbxPjVnHzWAxCvzShYwo=/802x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2022/B/Y/g0BnCBTPqf3XidiFjk8g/98918392-edificio-sede-do-banco-central-no-setor-bancario-norte-em-lote-doado-pela-prefeitura-de-bra.jpg"
+    },
+    {
+      "id": "latest-c92c200e18e3b37bede3e7d9",
+      "title": "Inflação para 2026: expectativa do mercado cai para 5,02%",
+      "summary": "Atualizacao de ultima hora capturada em Opinião em Pauta.",
+      "details": "",
+      "url": "https://br.investing.com/news/economy-news/por-que-o-relatorio-de-inflacao-desta-quartafeira-pode-ser-o-proximo-catalisador-dovish-2034427",
+      "source": "Opinião em Pauta",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-11T10:59:00Z",
+      "updatedAt": "2026-08-11T10:59:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "macro-c5c9c5fcd4577393d5def150",
+      "title": "IPC-Fipe: Inflação em São Paulo sobe 0,05% no início de agosto",
+      "summary": "Pela sexta semana seguida, o setor financeiro ajusta suas previsões para a inflação de 2026 em baixa. Conforma o Boletim Focus, publicado nesta segunda-feira (10) pelo Banco Central (BC), o Índice Nacional de Preços ao Consumidor Amplo (IPCA), que é a medida oficial da inflação n",
+      "details": "Pela sexta semana seguida, o setor financeiro ajusta suas previsões para a inflação de 2026 em baixa. Conforma o Boletim Focus, publicado nesta segunda-feira (10) pelo Banco Central (BC), o Índice Nacional de Preços ao Consumidor Amplo (IPCA), que é a medida oficial da inflação no Brasil, deve encerrar o ano com uma ta",
+      "url": "https://opiniaoempauta.com.br/inflacao-para-2026-expectativa-do-mercado-cai-para-502/",
+      "source": "Money Times",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-11T10:49:00Z",
+      "updatedAt": "2026-08-11T10:49:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://opiniaoempauta.com.br/wp-content/uploads/2026/08/Inflacao.jpg"
+    },
+    {
+      "id": "latest-560fe769c5a69e899663cac9",
+      "title": "Mercado espera nova redução da Selic após decisão do Copom",
+      "summary": "O IPC-Fipe em São Paulo mostra alta de 0,05% na primeira quadrissemana de agosto, com habitação e despesas pessoais acelerando após recuo em julho.",
+      "details": "O IPC-Fipe em São Paulo mostra alta de 0,05% na primeira quadrissemana de agosto, com habitação e despesas pessoais acelerando após recuo em julho.",
+      "url": "https://www.moneytimes.com.br/ipc-fipe-sobe-005-na-1a-quadrissemana-de-agosto-apos-cair-003-em-julho/",
+      "source": "veronoticias.com",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-11T10:40:00Z",
+      "updatedAt": "2026-08-11T10:40:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/07/porcentagem.jpg"
+    },
+    {
+      "id": "macro-83fe497c51c8d0d179b0d5bb",
+      "title": "SP: Camponeses são resgatados de trabalho servil em sítio de Cotia",
+      "summary": "Analistas avaliam que a ata poderá detalhar a avaliação do Banco Central sobre o cenário econômico e indicar se ainda há espaço para novos cortes na Selic",
+      "details": "Analistas avaliam que a ata poderá detalhar a avaliação do Banco Central sobre o cenário econômico e indicar se ainda há espaço para novos cortes na Selic",
+      "url": "https://veronoticias.com/economia/mercado-espera-nova-reducao-da-selic-apos-decisao-do-copom/",
+      "source": "A Nova Democracia",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-11T10:25:00Z",
+      "updatedAt": "2026-08-11T10:25:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://veronoticias.com/wp-content/uploads/2024/11/BANCO-cENTRAL.jpg"
+    },
+    {
+      "id": "macro-a4dee780fe93701445a107c9",
+      "title": "Por que o relatório de inflação desta quarta-feira pode ser o próximo catalisador dovish",
+      "summary": "Auditoria-Fiscal do Trabalho encontrou dois trabalhadores rurais vivendo em barracos sem banheiro, camas ou armários, e recebendo até R$ 50 por semana.",
+      "details": "Auditoria-Fiscal do Trabalho encontrou dois trabalhadores rurais vivendo em barracos sem banheiro, camas ou armários, e recebendo até R$ 50 por semana.",
+      "url": "https://anovademocracia.com.br/camponeses-resgatados-sitio-cotia/",
+      "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-11T10:24:00Z",
+      "updatedAt": "2026-08-11T10:24:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://anovademocracia.com.br/wp-content/uploads/2026/08/image-8.png"
+    },
+    {
+      "id": "funds-09a54402a85be6c1ae5a6ec9",
+      "title": "BTG Pactual registra lucro líquido ajustado de R$ 5,1 bilhões no 2º trimestre (+23% em 12 meses)",
+      "summary": "Receitas totais do banco chegam a R$ 10,4 bilhões, com alta de 16%.",
+      "details": "Receitas totais do banco chegam a R$ 10,4 bilhões, com alta de 16%.",
+      "url": "https://www.tribunadosertao.com.br/geral/2026/08/11/957121-btg-pactual-registra-lucro-liquido-ajustado-de-r-51-bilhoes-no-2o-trimestre-23-em-12-meses",
+      "source": "Tribuna do Sertão",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-11T10:19:00Z",
+      "updatedAt": "2026-08-11T10:19:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://tribunadosertao.com.br/img/share.png"
+    },
+    {
       "id": "funds-3ae45e7f226883b4af1ed842",
       "title": "Cobas Asset Management passa a deter cerca de 3,27% da Brava Energia após venda de ações à Ecopetrol",
-      "summary": "O Banco Central da Austrália (RBA) decidiu manter a taxa básica de juros em 4,35% na terça-feira (11/08). A decisão veio em linha com o esperado...",
-      "details": "O Banco Central da Austrália (RBA) decidiu manter a taxa básica de juros em 4,35% na terça-feira (11/08). A decisão veio em linha com o esperado...",
-      "url": "https://br.advfn.com/jornal/2026/08/o-banco-central-da-australia-mantem-juros-em-4-35-e-sinaliza-novas-altas-se-inflacao-continuar-elevada",
+      "summary": "Brava Energia S.A. BMFBOVESPA:BRAV3:Fonte do documento:Para mais notícias sobre a empresa, clique em",
+      "details": "Brava Energia S.A. BMFBOVESPA:BRAV3:Fonte do documento:Para mais notícias sobre a empresa, clique em",
+      "url": "https://br.tradingview.com/news/reuters.com,2026:newsml_S8N42X05Q:0/",
       "source": "TradingView",
       "category": "funds",
       "tags": [
@@ -219,14 +382,32 @@
       "updatedAt": "2026-08-11T10:13:11Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://br.advfn.com/jornal/files/2025/11/dolar-australiano1.jpg"
+      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
+    },
+    {
+      "id": "macro-a2512257afd9a5672e066cec",
+      "title": "BC da Austrália mantém taxa básica de juros em 4,35% ao ano e alerta para a inflação",
+      "summary": "Atualizacao de macro capturada em UOL Economia.",
+      "details": "",
+      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/08/11/bc-da-australia-mantem-taxa-basica-de-juros-em-435-ao-ano-e-alerta-para-a-inflacao.htm",
+      "source": "UOL Economia",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-11T10:12:00Z",
+      "updatedAt": "2026-08-11T10:12:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-e126062197c38500e9dacacd",
       "title": "O Banco Central da Austrália mantém juros em 4,35% e sinaliza novas altas se inflação continuar elevada",
-      "summary": "Brava Energia S.A. BMFBOVESPA:BRAV3:Fonte do documento:Para mais notícias sobre a empresa, clique em",
-      "details": "Brava Energia S.A. BMFBOVESPA:BRAV3:Fonte do documento:Para mais notícias sobre a empresa, clique em",
-      "url": "https://br.tradingview.com/news/reuters.com,2026:newsml_S8N42X05Q:0/",
+      "summary": "A ata do Copom detalha a decisão de reduzir juros para 14%, enquanto o IPCA de julho deve mostrar desaceleração da inflação no Brasil.",
+      "details": "A ata do Copom detalha a decisão de reduzir juros para 14%, enquanto o IPCA de julho deve mostrar desaceleração da inflação no Brasil.",
+      "url": "https://www.moneytimes.com.br/dia-d-dos-juros-ata-do-copom-e-ipca-mexem-com-o-mercado-ibovespa-em-dolar-cai-hoje-11/",
       "source": "ADVFN",
       "category": "macro",
       "tags": [
@@ -238,33 +419,14 @@
       "updatedAt": "2026-08-11T10:01:10Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
-    },
-    {
-      "id": "macro-d73ce6e411df9bf608dc1535",
-      "title": "Ata do Copom e IPCA: veja o que deve mexer com o mercado nesta terça",
-      "summary": "Plano do Ministério dos Transportes prevê aporte em ferrovias para reduzir custo logístico de 15% para até 6% do PIB até 2050",
-      "details": "Plano do Ministério dos Transportes prevê aporte em ferrovias para reduzir custo logístico de 15% para até 6% do PIB até 2050",
-      "url": "https://www.brasil247.com/industria/governo-projeta-reduzir-custo-logistico-do-brasil-para-ate-6-do-pib-com-forte-expansao-das-ferrovias-ate-2050/",
-      "source": "BPMoney",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-11T10:00:00Z",
-      "updatedAt": "2026-08-11T10:00:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.brasil247.com/wp-content/uploads/2026/08/Captura-de-tela-2026-08-06-142747.png?w=1200&quality=88&strip=all"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/07/mercado-mercados-wall-street-ibovespa-ibov-bolsas-morning.png"
     },
     {
       "id": "latest-f81d782bfc10c621f7eb7497",
       "title": "Dia D dos juros: ata do Copom e IPCA mexem com o mercado; Ibovespa em dólar cai hoje (11)",
-      "summary": "Novas exigências do presidente Donald Trump ao Irã obscureceram as perspectivas de um acordo para reabrir o Estreito de Ormuz e levaram o petróleo a subir pelo quinto dia consecutivo",
-      "details": "Novas exigências do presidente Donald Trump ao Irã obscureceram as perspectivas de um acordo para reabrir o Estreito de Ormuz e levaram o petróleo a subir pelo quinto dia consecutivo",
-      "url": "https://www.bloomberglinea.com.br/mercados/acoes-globais-oscilam-apos-alta-do-petroleo-alimentar-preocupacoes-com-inflacao/",
+      "summary": "O Banco Central da Austrália (RBA) decidiu manter a taxa básica de juros em 4,35% na terça-feira (11/08). A decisão veio em linha com o esperado...",
+      "details": "O Banco Central da Austrália (RBA) decidiu manter a taxa básica de juros em 4,35% na terça-feira (11/08). A decisão veio em linha com o esperado...",
+      "url": "https://br.advfn.com/jornal/2026/08/o-banco-central-da-australia-mantem-juros-em-4-35-e-sinaliza-novas-altas-se-inflacao-continuar-elevada",
       "source": "Money Times",
       "category": "latest",
       "tags": [
@@ -276,14 +438,14 @@
       "updatedAt": "2026-08-11T09:59:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.bloomberglinea.com/resizer/v2/XUZPOHPGAZH75EFDQFVIOPI4UY.png?auth=0112926b3d7b6d5aa3f086e30a424e458cb8f4cc8b39127a9a89f83f80bef30e&width=1200&height=675&quality=80&smart=true"
+      "imageUrl": "https://br.advfn.com/jornal/files/2025/11/dolar-australiano1.jpg"
     },
     {
       "id": "macro-9954bf100f787e7d5b1a6d9e",
       "title": "Ações globais oscilam após alta do petróleo alimentar preocupações com inflação",
-      "summary": "Acompanhe a ata do Copom e fique informado sobre a nova taxa Selic e seus efeitos na economia.",
-      "details": "Acompanhe a ata do Copom e fique informado sobre a nova taxa Selic e seus efeitos na economia.",
-      "url": "https://www.moneytimes.com.br/agenda-economica-ata-do-copom-e-ipca-sao-destaques-desta-terca-feira-11-confira-os-horarios-jvka/",
+      "summary": "Novas exigências do presidente Donald Trump ao Irã obscureceram as perspectivas de um acordo para reabrir o Estreito de Ormuz e levaram o petróleo a subir pelo quinto dia consecutivo",
+      "details": "Novas exigências do presidente Donald Trump ao Irã obscureceram as perspectivas de um acordo para reabrir o Estreito de Ormuz e levaram o petróleo a subir pelo quinto dia consecutivo",
+      "url": "https://www.bloomberglinea.com.br/mercados/acoes-globais-oscilam-apos-alta-do-petroleo-alimentar-preocupacoes-com-inflacao/",
       "source": "Bloomberg Línea Brasil",
       "category": "macro",
       "tags": [
@@ -295,15 +457,15 @@
       "updatedAt": "2026-08-11T09:42:49Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/07/banco-central-bc-copom-selic-4.jpg"
+      "imageUrl": "https://www.bloomberglinea.com/resizer/v2/XUZPOHPGAZH75EFDQFVIOPI4UY.png?auth=0112926b3d7b6d5aa3f086e30a424e458cb8f4cc8b39127a9a89f83f80bef30e&width=1200&height=675&quality=80&smart=true"
     },
     {
-      "id": "funds-5797b5b9e768ef2613b2bbae",
+      "id": "funds-94fbdebe2fa79c1e4665b234",
       "title": "Fundação Mata do Bussaco: a história de uma árvore de 1880",
-      "summary": "Atualizacao de fundos capturada em updateordie.com.",
+      "summary": "Atualizacao de fundos capturada em Updateordie.",
       "details": "",
       "url": "https://updateordie.com/2026/08/11/fundacao-mata-do-bussaco-a-historia-de-uma-arvore-de-1880/",
-      "source": "updateordie.com",
+      "source": "Updateordie",
       "category": "funds",
       "tags": [
         "fundos",
@@ -318,9 +480,9 @@
     {
       "id": "macro-960f5d304b3a5c0251b75076",
       "title": "Inflação de julho pode repetir surpresa positiva e colocar uma pitada de bom humor no mercado; o que esperar do IPCA hoje?",
-      "summary": "Consolide seus investimentos e acompanhe seu patrimônio com o Kinvo App. Tenha todo o controle das suas finanças em um único lugar. Use o Kinvo agora.",
-      "details": "Consolide seus investimentos e acompanhe seu patrimônio com o Kinvo App. Tenha todo o controle das suas finanças em um único lugar. Use o Kinvo agora.",
-      "url": "https://kinvo.com.br/noticia/inflacao-de-julho-pode-repetir-surpresa-positiva-e-colocar-uma-pitada-de-bom-humor-no-mercado-o-que-esperar-do-ipca-hoje-",
+      "summary": "Nesta terça-feira (10), os investidores recebem os dados do Índice de Preços ao Consumidor Amplo (IPCA) referentes ao mês de julho.",
+      "details": "Nesta terça-feira (10), os investidores recebem os dados do Índice de Preços ao Consumidor Amplo (IPCA) referentes ao mês de julho.",
+      "url": "https://www.moneytimes.com.br/inflacao-de-julho-pode-repetir-surpresa-positiva-o-que-esperar-do-ipca-jcav/",
       "source": "Money Times",
       "category": "macro",
       "tags": [
@@ -332,14 +494,14 @@
       "updatedAt": "2026-08-11T09:30:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://d2hme8z1miz6cd.cloudfront.net/media/money-times/1384771.jpg"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/08/inflacao-ipca-brasil-3.jpg"
     },
     {
       "id": "macro-cc7d5b1bbec654b868696101",
       "title": "Governo projeta reduzir custo logístico do Brasil para até 6% do PIB com forte expansão das ferrovias até 2050",
-      "summary": "Nesta terça-feira (10), os investidores recebem os dados do Índice de Preços ao Consumidor Amplo (IPCA) referentes ao mês de julho.",
-      "details": "Nesta terça-feira (10), os investidores recebem os dados do Índice de Preços ao Consumidor Amplo (IPCA) referentes ao mês de julho.",
-      "url": "https://www.moneytimes.com.br/inflacao-de-julho-pode-repetir-surpresa-positiva-o-que-esperar-do-ipca-jcav/",
+      "summary": "Acompanhe a ata do Copom e fique informado sobre a nova taxa Selic e seus efeitos na economia.",
+      "details": "Acompanhe a ata do Copom e fique informado sobre a nova taxa Selic e seus efeitos na economia.",
+      "url": "https://www.moneytimes.com.br/agenda-economica-ata-do-copom-e-ipca-sao-destaques-desta-terca-feira-11-confira-os-horarios-jvka/",
       "source": "Brasil 247",
       "category": "macro",
       "tags": [
@@ -351,14 +513,14 @@
       "updatedAt": "2026-08-11T09:22:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/08/inflacao-ipca-brasil-3.jpg"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/07/banco-central-bc-copom-selic-4.jpg"
     },
     {
       "id": "macro-89451223f1e9b63de166f294",
       "title": "Agenda econômica: Ata do Copom e IPCA são destaques desta terça-feira (11); confira os horários",
-      "summary": "A ata do Copom detalha a decisão de reduzir juros para 14%, enquanto o IPCA de julho deve mostrar desaceleração da inflação no Brasil.",
-      "details": "A ata do Copom detalha a decisão de reduzir juros para 14%, enquanto o IPCA de julho deve mostrar desaceleração da inflação no Brasil.",
-      "url": "https://www.moneytimes.com.br/dia-d-dos-juros-ata-do-copom-e-ipca-mexem-com-o-mercado-ibovespa-em-dolar-cai-hoje-11/",
+      "summary": "Plano do Ministério dos Transportes prevê aporte em ferrovias para reduzir custo logístico de 15% para até 6% do PIB até 2050",
+      "details": "Plano do Ministério dos Transportes prevê aporte em ferrovias para reduzir custo logístico de 15% para até 6% do PIB até 2050",
+      "url": "https://www.brasil247.com/industria/governo-projeta-reduzir-custo-logistico-do-brasil-para-ate-6-do-pib-com-forte-expansao-das-ferrovias-ate-2050/",
       "source": "Money Times",
       "category": "macro",
       "tags": [
@@ -370,14 +532,14 @@
       "updatedAt": "2026-08-11T09:17:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/07/mercado-mercados-wall-street-ibovespa-ibov-bolsas-morning.png"
+      "imageUrl": "https://www.brasil247.com/wp-content/uploads/2026/08/Captura-de-tela-2026-08-06-142747.png?w=1200&quality=88&strip=all"
     },
     {
       "id": "macro-b0b43fd59dad99a4c16f3f4d",
       "title": "Notícia Inflação de julho pode repetir surpresa positiva e colocar uma pitada de bom humor no mercado; o que esperar do IPCA hoje?",
-      "summary": "Ata do Copom, IPCA de julho, vendas de casas usadas nos EUA e estoques de petróleo estão entre os destaques do mercado nesta terça (11)",
-      "details": "Ata do Copom, IPCA de julho, vendas de casas usadas nos EUA e estoques de petróleo estão entre os destaques do mercado nesta terça (11)",
-      "url": "https://bpmoney.com.br/mercado/ata-do-copom-e-ipca-veja-o-que-deve-mexer-com-o-mercado-nesta-terca/",
+      "summary": "Consolide seus investimentos e acompanhe seu patrimônio com o Kinvo App. Tenha todo o controle das suas finanças em um único lugar. Use o Kinvo agora.",
+      "details": "Consolide seus investimentos e acompanhe seu patrimônio com o Kinvo App. Tenha todo o controle das suas finanças em um único lugar. Use o Kinvo agora.",
+      "url": "https://kinvo.com.br/noticia/inflacao-de-julho-pode-repetir-surpresa-positiva-e-colocar-uma-pitada-de-bom-humor-no-mercado-o-que-esperar-do-ipca-hoje-",
       "source": "Kinvo",
       "category": "macro",
       "tags": [
@@ -389,7 +551,7 @@
       "updatedAt": "2026-08-11T09:08:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://bpmoney.com.br/wp-content/uploads/2025/11/NOTAS-2025-11-25T152057.890-1366x768.png"
+      "imageUrl": "https://d2hme8z1miz6cd.cloudfront.net/media/money-times/1384771.jpg"
     },
     {
       "id": "macro-9dbd9cce4a27bc5e4ff612a7",
@@ -413,9 +575,9 @@
     {
       "id": "latest-3a2515182f442f9223250bbd",
       "title": "Mercado financeiro inicia terça-feira sob pressão e de olho na inflação e nos juros",
-      "summary": "Nvidia negoceia um mega financiamento de 432 mil milhões de euros com gigantes norte‑americanos como BlackRock, Blackstone e Goldman Sachs para impulsionar projetos de inteligência artificial e capacidade de computação em larga escala, incluindo um complexo de 10 gigawatts no Ohi",
-      "details": "Nvidia negoceia um mega financiamento de 432 mil milhões de euros com gigantes norte‑americanos como BlackRock, Blackstone e Goldman Sachs para impulsionar projetos de inteligência artificial e capacidade de computação em larga escala, incluindo um complexo de 10 gigawatts no Ohio ligado à SB Energy e potenciais arrend",
-      "url": "https://dinheirovivo.dn.pt/empresas/nvidia-negocia-financiamento-de-432-mil-milhes-com-grandes-investidores-norteamericanos",
+      "summary": "Tempo de leitura: 2 minIbovespa, dólar e juros devem ter um dia de volatilidade, enquanto investidores acompanham cenário externo, petróleo e novas projeções para a inflação",
+      "details": "Tempo de leitura: 2 minIbovespa, dólar e juros devem ter um dia de volatilidade, enquanto investidores acompanham cenário externo, petróleo e novas projeções para a inflação",
+      "url": "https://maringapost.com.br/2026/08/11/mercado-financeiro-inicia-terca-feira-sob-pressao-e-de-olho-na-inflacao-e-nos-juros/",
       "source": "Maringá Post",
       "category": "latest",
       "tags": [
@@ -427,14 +589,14 @@
       "updatedAt": "2026-08-11T09:03:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://media.assettype.com/dn%2F2025-12-11%2Fra14op5q%2FHuang.jpg?rect=0%2C0%2C1600%2C840&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
+      "imageUrl": "https://maringapost.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-11-at-06.02.17.jpeg"
     },
     {
       "id": "macro-2988c7ab0d3cc7d0c00ff9a2",
       "title": "Do DN Business aos presidenciáveis: ajuste fiscal é a prioridade",
-      "summary": "Acompanhe o Ibovespa e os demais mercados em tempo real.",
-      "details": "Acompanhe o Ibovespa e os demais mercados em tempo real.",
-      "url": "https://www.moneytimes.com.br/tempo-real-ibovespa-hoje-mercado-ao-vivo-11-08-2026-jals-lils-apsa/",
+      "summary": "Com endividamento equivalente a 77,2% do PIB, Estado amplia participação no acesso a recursos financeiros",
+      "details": "Com endividamento equivalente a 77,2% do PIB, Estado amplia participação no acesso a recursos financeiros",
+      "url": "https://valor.globo.com/google/amp/impresso/noticia/2026/08/11/divida-publica-supera-o-credito-privado-e-acende-alerta-sobre-investimento.ghtml",
       "source": "Diário do Nordeste",
       "category": "macro",
       "tags": [
@@ -446,14 +608,14 @@
       "updatedAt": "2026-08-11T09:00:18Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/07/ibovespa-acoes.png"
+      "imageUrl": "https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png"
     },
     {
       "id": "macro-4f7e438b6a75c1b650695720",
       "title": "Tempo real: Ibovespa monitora inflação no Brasil e ata do Copom",
-      "summary": "Preços do petróleo avançam pelo quinto dia, enquanto investidores aguardam o CPI de quarta-feira em busca de sinais sobre os próximos passos do Fed",
-      "details": "Preços do petróleo avançam pelo quinto dia, enquanto investidores aguardam o CPI de quarta-feira em busca de sinais sobre os próximos passos do Fed",
-      "url": "https://www.infomoney.com.br/mercados/dow-jones-futuro-cai-com-petroleo-em-alta-antes-de-inflacao-nos-eua/",
+      "summary": "Agentes do mercado financeiro apoiam o candidato de direita radical com doações e contatos, e veem no Missão semelhanças com o PT dos anos 1980 e uma alternativa de poder para 2030.",
+      "details": "Agentes do mercado financeiro apoiam o candidato de direita radical com doações e contatos, e veem no Missão semelhanças com o PT dos anos 1980 e uma alternativa de poder para 2030.",
+      "url": "https://www.bbc.com/portuguese/articles/cvg9j2qjp4no",
       "source": "Money Times",
       "category": "macro",
       "tags": [
@@ -465,33 +627,14 @@
       "updatedAt": "2026-08-11T09:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/01/wall-street-7661685_1280.jpg"
-    },
-    {
-      "id": "macro-583f3562d740cfe45211f62b",
-      "title": "Dow Jones Futuro cai com petróleo em alta antes de inflação nos EUA",
-      "summary": "Como se transmitissem uma carta aberta verbal aos presidenciáveis, quatro dos maiores e mais respeitados economistas do país – Ana Paula Vescovi, Caio Megale, Fernando Gonçalves e Eduardo Gianett",
-      "details": "Como se transmitissem uma carta aberta verbal aos presidenciáveis, quatro dos maiores e mais respeitados economistas do país – Ana Paula Vescovi, Caio Megale, Fernando Gonçalves e Eduardo Gianett",
-      "url": "https://diariodonordeste.verdesmares.com.br/opiniao/colunistas/egidio-serpa/do-dn-business-aos-presidenciaveis-ajuste-fiscal-e-a-prioridade-1.3783212",
-      "source": "infomoney.com.br",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-11T08:45:11Z",
-      "updatedAt": "2026-08-11T08:45:11Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3783213:1786433562/image.webp?h=630&q=0.6&w=1200&$p$h$q$w=c1d035a"
+      "imageUrl": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/ad91/live/16f51400-9282-11f1-b2ab-0dd01740f9f6.jpg"
     },
     {
       "id": "funds-f6a21631445f3ada1753086a",
       "title": "Nvidia negocia financiamento de 432 mil milhões com grandes investidores norte‑americanos",
-      "summary": "Atualizacao de fundos capturada em Dinheiro Vivo.",
-      "details": "",
-      "url": "https://exame.com/invest/mercados/ata-do-copom-inflacao-brasileira-e-balancos-o-que-move-os-mercados/",
+      "summary": "Nvidia negoceia um mega financiamento de 432 mil milhões de euros com gigantes norte‑americanos como BlackRock, Blackstone e Goldman Sachs para impulsionar projetos de inteligência artificial e capacidade de computação em larga escala, incluindo um complexo de 10 gigawatts no Ohi",
+      "details": "Nvidia negoceia um mega financiamento de 432 mil milhões de euros com gigantes norte‑americanos como BlackRock, Blackstone e Goldman Sachs para impulsionar projetos de inteligência artificial e capacidade de computação em larga escala, incluindo um complexo de 10 gigawatts no Ohio ligado à SB Energy e potenciais arrend",
+      "url": "https://dinheirovivo.dn.pt/empresas/nvidia-negocia-financiamento-de-432-mil-milhes-com-grandes-investidores-norteamericanos",
       "source": "Dinheiro Vivo",
       "category": "funds",
       "tags": [
@@ -502,33 +645,15 @@
       "publishedAt": "2026-08-11T08:41:54Z",
       "updatedAt": "2026-08-11T08:41:54Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "macro-ff229614b421a84d6c3a7054",
-      "title": "Ata do Copom, inflação brasileira e balanços: o que move os mercados",
-      "summary": "Tempo de leitura: 2 minIbovespa, dólar e juros devem ter um dia de volatilidade, enquanto investidores acompanham cenário externo, petróleo e novas projeções para a inflação",
-      "details": "Tempo de leitura: 2 minIbovespa, dólar e juros devem ter um dia de volatilidade, enquanto investidores acompanham cenário externo, petróleo e novas projeções para a inflação",
-      "url": "https://maringapost.com.br/2026/08/11/mercado-financeiro-inicia-terca-feira-sob-pressao-e-de-olho-na-inflacao-e-nos-juros/",
-      "source": "Exame",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-11T08:31:43Z",
-      "updatedAt": "2026-08-11T08:31:43Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://maringapost.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-11-at-06.02.17.jpeg"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://media.assettype.com/dn%2F2025-12-11%2Fra14op5q%2FHuang.jpg?rect=0%2C0%2C1600%2C840&w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100"
     },
     {
       "id": "latest-67bb7541c0663d765562978d",
       "title": "Renan Santos: por que parte da Faria Lima embarcou no discurso radical do candidato estreante em eleições",
-      "summary": "Agentes do mercado financeiro apoiam o candidato de direita radical com doações e contatos, e veem no Missão semelhanças com o PT dos anos 1980 e uma alternativa de poder para 2030.",
-      "details": "Agentes do mercado financeiro apoiam o candidato de direita radical com doações e contatos, e veem no Missão semelhanças com o PT dos anos 1980 e uma alternativa de poder para 2030.",
-      "url": "https://www.bbc.com/portuguese/articles/cvg9j2qjp4no",
+      "summary": "Como se transmitissem uma carta aberta verbal aos presidenciáveis, quatro dos maiores e mais respeitados economistas do país – Ana Paula Vescovi, Caio Megale, Fernando Gonçalves e Eduardo Gianett",
+      "details": "Como se transmitissem uma carta aberta verbal aos presidenciáveis, quatro dos maiores e mais respeitados economistas do país – Ana Paula Vescovi, Caio Megale, Fernando Gonçalves e Eduardo Gianett",
+      "url": "https://diariodonordeste.verdesmares.com.br/opiniao/colunistas/egidio-serpa/do-dn-business-aos-presidenciaveis-ajuste-fiscal-e-a-prioridade-1.3783212",
       "source": "BBC",
       "category": "latest",
       "tags": [
@@ -540,14 +665,33 @@
       "updatedAt": "2026-08-11T08:23:05Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/ad91/live/16f51400-9282-11f1-b2ab-0dd01740f9f6.jpg"
+      "imageUrl": "https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3783213:1786433562/image.webp?h=630&q=0.6&w=1200&$p$h$q$w=c1d035a"
+    },
+    {
+      "id": "latest-5f51b2f932c356e3c5ef61e7",
+      "title": "Dívida pública reduz espaço do crédito privado e pressiona investimentos",
+      "summary": "Acompanhe o Ibovespa e os demais mercados em tempo real.",
+      "details": "Acompanhe o Ibovespa e os demais mercados em tempo real.",
+      "url": "https://www.moneytimes.com.br/tempo-real-ibovespa-hoje-mercado-ao-vivo-11-08-2026-jals-lils-apsa/",
+      "source": "Valor Econômico",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-11T08:02:38Z",
+      "updatedAt": "2026-08-11T08:02:38Z",
+      "premium": true,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/07/ibovespa-acoes.png"
     },
     {
       "id": "latest-12f66307b04aa7baa610dd40",
       "title": "Ex-CVM busca ‘anatomia’ do crime financeiro",
-      "summary": "Segundo Teixeira da Costa, crises ajudam a aperfeiçoar regras",
-      "details": "Segundo Teixeira da Costa, crises ajudam a aperfeiçoar regras",
-      "url": "https://valor.globo.com/google/amp/financas/noticia/2026/08/11/ex-cvm-busca-anatomia-do-crime-financeiro.ghtml",
+      "summary": "Cenário diminui e encarece recursos disponíveis para o mercado de capitais",
+      "details": "Cenário diminui e encarece recursos disponíveis para o mercado de capitais",
+      "url": "https://valor.globo.com/google/amp/financas/noticia/2026/08/11/divida-publica-reduz-espaco-do-credito-privado-e-pressiona-investimentos.ghtml",
       "source": "Valor Econômico",
       "category": "latest",
       "tags": [
@@ -559,70 +703,14 @@
       "updatedAt": "2026-08-11T08:02:31Z",
       "premium": true,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s2-valor.glbimg.com/SY06pnyCO0G7XTv6k3mB5ByiRss=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/V/7/KjhNOIRXWWbnA9DmEBeQ/foto11fin-201-teixeira-c6.jpg"
-    },
-    {
-      "id": "macro-f34d9095bdc249ab261e7d00",
-      "title": "Cartas de Leitores",
-      "summary": "Cartas de Leitores",
-      "details": "Cartas de Leitores",
-      "url": "https://valor.globo.com/opiniao/noticia/2026/08/11/ea11e02c-cartas-de-leitores.ghtml",
-      "source": "Valor Econômico",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-11T08:01:57Z",
-      "updatedAt": "2026-08-11T08:01:57Z",
-      "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png"
-    },
-    {
-      "id": "macro-6774036c598397a369bc9276",
-      "title": "Previsões do PIB recuam sob peso de inadimplência e juros",
-      "summary": "Nada de bom proviria de uma política fiscal e parafiscal expansionista convivendo e antagonizando com um extraordinário aperto dos juros",
-      "details": "Nada de bom proviria de uma política fiscal e parafiscal expansionista convivendo e antagonizando com um extraordinário aperto dos juros",
-      "url": "https://valor.globo.com/opiniao/coluna/previsoes-do-pib-recuam-sob-peso-de-inadimplencia-e-juros.ghtml",
-      "source": "Valor Econômico",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-11T08:01:55Z",
-      "updatedAt": "2026-08-11T08:01:55Z",
-      "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png"
-    },
-    {
-      "id": "macro-93172612847bc098ea4a5186",
-      "title": "Interpretação alternativa à tradicional visão fiscalista",
-      "summary": "Atualizacao de macro capturada em Valor Econômico.",
-      "details": "",
-      "url": "https://www.metropoles.com/brasil/mercado-espera-por-sinalizacao-sobre-futuro-dos-juros-em-ata-do-copom",
-      "source": "Valor Econômico",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-11T08:01:21Z",
-      "updatedAt": "2026-08-11T08:01:21Z",
-      "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "imageUrl": "https://s2-valor.glbimg.com/zc7BEPITOryVgwlOG2aMOiUXea0=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/H/R/b3OVRQRfaoRNJEBpHL4A/foto11fin-101-cefeb-c1.jpg"
     },
     {
       "id": "latest-8239d279221ce992841d3568",
       "title": "Dívida pública supera o crédito privado e acende alerta sobre investimento",
-      "summary": "Mesmo com esforço fiscal, o elevado custo financeiro continua impulsionando a expansão da dívida",
-      "details": "Mesmo com esforço fiscal, o elevado custo financeiro continua impulsionando a expansão da dívida",
-      "url": "https://valor.globo.com/brasil/coluna/interpretacao-alternativa-a-tradicional-visao-fiscalista.ghtml",
+      "summary": "Notícia ME, 11 de agosto (UTC+8), segundo dados da SoSoValue, ontem (horário da costa leste dos EUA, 10 de agosto), os ETFs de bitcoin spot tiveram um fluxo líq",
+      "details": "Notícia ME, 11 de agosto (UTC+8), segundo dados da SoSoValue, ontem (horário da costa leste dos EUA, 10 de agosto), os ETFs de bitcoin spot tiveram um fluxo líq",
+      "url": "https://www.kucoin.com/pt/news/flash/bitcoin-spot-etfs-see-145m-net-outflow-on-august-10-blackrock-s-ibit-leads-with-53-56m-exit",
       "source": "Valor Econômico",
       "category": "latest",
       "tags": [
@@ -634,33 +722,14 @@
       "updatedAt": "2026-08-11T08:00:21Z",
       "premium": true,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png"
-    },
-    {
-      "id": "macro-51dd61f172f92f41965e5075",
-      "title": "Após render 255%, Tesouro IPCA+ devolve R$ 260 bi nesta semana, veja onde reinvestir",
-      "summary": "Vencimento de duas séries de NTN-B abre janela de realocação com juro real entre 7% e 8% ao ano",
-      "details": "Vencimento de duas séries de NTN-B abre janela de realocação com juro real entre 7% e 8% ao ano",
-      "url": "https://www.infomoney.com.br/onde-investir/apos-render-255-tesouro-ipca-devolve-r-260-bi-nesta-semana-veja-onde-reinvestir/",
-      "source": "infomoney.com.br",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-11T08:00:00Z",
-      "updatedAt": "2026-08-11T08:00:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2025/07/2148783058-e1786389537775.jpg?fit=1150%2C825&quality=70&strip=all"
+      "imageUrl": "https://assets.staticimg.com/@kudos/runtime/0.6.6/assets/tw-ea52b6f9440e857c.jpg"
     },
     {
       "id": "funds-dcaab6beadbfd9aa2cd4ab6e",
       "title": "Os ETFs de bitcoin à vista registram saída líquida de US$ 145 milhões em 10 de agosto, com o IBIT da BlackRock liderando com saída de US$ 53,56 milhões",
-      "summary": "Com endividamento equivalente a 77,2% do PIB, Estado amplia participação no acesso a recursos financeiros",
-      "details": "Com endividamento equivalente a 77,2% do PIB, Estado amplia participação no acesso a recursos financeiros",
-      "url": "https://valor.globo.com/google/amp/impresso/noticia/2026/08/11/divida-publica-supera-o-credito-privado-e-acende-alerta-sobre-investimento.ghtml",
+      "summary": "Segundo Teixeira da Costa, crises ajudam a aperfeiçoar regras",
+      "details": "Segundo Teixeira da Costa, crises ajudam a aperfeiçoar regras",
+      "url": "https://valor.globo.com/google/amp/financas/noticia/2026/08/11/ex-cvm-busca-anatomia-do-crime-financeiro.ghtml",
       "source": "KuCoin",
       "category": "funds",
       "tags": [
@@ -672,14 +741,14 @@
       "updatedAt": "2026-08-11T07:55:24Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png"
+      "imageUrl": "https://s2-valor.glbimg.com/SY06pnyCO0G7XTv6k3mB5ByiRss=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/V/7/KjhNOIRXWWbnA9DmEBeQ/foto11fin-201-teixeira-c6.jpg"
     },
     {
       "id": "latest-f6df8997afcac2a58739df28",
       "title": "Ibovespa hoje: IPCA e ata do Copom comandam o dia com petróleo em alta",
-      "summary": "Mercado busca sinais sobre os próximos cortes da Selic e acompanha balanços de BTG, B3 e Taesa",
-      "details": "Mercado busca sinais sobre os próximos cortes da Selic e acompanha balanços de BTG, B3 e Taesa",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-ipca-e-ata-do-copom-comandam-o-dia-com-petroleo-em-alta/",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNSGVPVlc0TUY1V0tiRXBIQjlMbWtwMnZCMFpYMWxWS1d6d3RQLTNQc1EyVXdUWEtxRTFqTlp1RG5ndHlidmFCS3lMazZNVlpxUlF5cGFqQzQzX3kyTEhiVjdlb05lYkVlU3ZPbjZNMWxMQVF4bTRJYXhlcUJ6MlAwUnR0Sm5Kc2VrUll5MFo3SGd2RjNUQlpRUlEzU3pUSDVLQ1pocUhHRmVKUnFkTXBJdkxpTUw1dWhiMktFWW9ZWUE1LUFDeFh30gHMAUFVX3lxTE1yeEZKTV9ab3lBaWtiVWdmV2J0bHU1aVZkY1dIS0JJdWtjU05XNWVxR1hJQ2JRckhqbVJVU3RnT1Vud2ozeHJJZlJjQjRJY0RQdk0yX0NZRnVObERsakxTR3NKeEx5dVE0TzZZT0hldHVVRFBrNjdpSGRWLVBDdng0QlZyMlVQQjlwekYwcHl3RFgwbzVJenQ3OWN4OTVuRWJEWUZHVlpicWRjNkhva0hFN3VOMG44Z2hkejRRX3N3Ujd6YmttckVtcXY2MA?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -690,16 +759,15 @@
       "publishedAt": "2026-08-11T07:30:00Z",
       "updatedAt": "2026-08-11T07:30:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/A66IE2Q3WBJUJCIEIBG7VM7XEI.png?quality=80&auth=886eb6b59c5f51619fb29283408d9c12483919a683c814f07a5bf40dad1fdf57&width=1200&height=630&smart=true"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-7d4469df87d1a4b3ffb3e851",
+      "id": "latest-5c0dd165f51feb1bbf7d5fec",
       "title": "Mercado espera por sinalização sobre futuro dos juros em ata do Copom",
-      "summary": "Boletim Focus também aponta leve corte na expectativa para o PIB, enquanto projeções para dólar e Selic permanecem estáveis",
-      "details": "Boletim Focus também aponta leve corte na expectativa para o PIB, enquanto projeções para dólar e Selic permanecem estáveis",
-      "url": "https://vitorianews.com.br/mercado-reduz-projecao-da-inflacao-de-2026-para-502-pela-sexta-semana-seguida",
-      "source": "Metrópoles",
+      "summary": "Atualizacao de ultima hora capturada em metropoles.com.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPQ0oxbldJOEoxS2ZJRXFBMXpiOE9OSk5WekFSam13c3RkQkE4WThXa3JKNmtMZVBxV2JZelFhaUdyWTdUeGRJdUtNMmdBeXYyaE5aTFAxR1FmbDZERDBpUnJkUHRXWURZZUQ5S0tUMEVSMlJNRWxIcnBGUldrZ3JPMG5MWWNXMGU5OTRGSFVRY0ZIcE5tTzBKbW5XM0hlVGhzb1VRZnd3?oc=5",
+      "source": "metropoles.com",
       "category": "latest",
       "tags": [
         "mercado",
@@ -709,15 +777,14 @@
       "publishedAt": "2026-08-11T07:30:00Z",
       "updatedAt": "2026-08-11T07:30:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://vitorianews.com.br/storage/noticias/news_6a79cce7873c8.webp"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-e149b3736598f611bd7863a1",
       "title": "Mercado reduz projeção da inflação de 2026 para 5,02% pela sexta semana seguida",
-      "summary": "Notícia ME, 11 de agosto (UTC+8), segundo dados da SoSoValue, ontem (horário da costa leste dos EUA, 10 de agosto), os ETFs de bitcoin spot tiveram um fluxo líq",
-      "details": "Notícia ME, 11 de agosto (UTC+8), segundo dados da SoSoValue, ontem (horário da costa leste dos EUA, 10 de agosto), os ETFs de bitcoin spot tiveram um fluxo líq",
-      "url": "https://www.kucoin.com/pt/news/flash/bitcoin-spot-etfs-see-145m-net-outflow-on-august-10-blackrock-s-ibit-leads-with-53-56m-exit",
+      "summary": "Atualizacao de ultima hora capturada em Vitória News.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMm44dExTUlB4Q3JXa3RSVmFDamhqeEpiUXJwMVhwd0lTV2FxZEVnTnlPVjB2dlEyNDBULWQ4RndmRm9fZV9qdUI5WFlIa3AyeTVxNnpFa2hORThQX1RYVXBQUklZVFZ3VFo4YjU2TldtSzBiLWdWYWxvNDJ6ZG11THdLcmw1dlZINHQ2SUhSYUpENXRCU3RDUWtyU2U2c05SWHdMYWVqTQ?oc=5",
       "source": "Vitória News",
       "category": "latest",
       "tags": [
@@ -728,8 +795,7 @@
       "publishedAt": "2026-08-11T07:13:41Z",
       "updatedAt": "2026-08-11T07:13:41Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://assets.staticimg.com/@kudos/runtime/0.6.6/assets/tw-ea52b6f9440e857c.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-e3331b8764464d26bd19d066",
@@ -804,12 +870,12 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-763659dc41719b419594ef21",
+      "id": "latest-a2e318a197fb7517775dcf03",
       "title": "Dólar fecha em R$ 5,111 e Ibovespa recua 0,19%",
-      "summary": "Atualizacao de ultima hora capturada em Vero Notícias.",
+      "summary": "Atualizacao de ultima hora capturada em veronoticias.com.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVUE3Ri1GZWFQYWJncHp2R3BTSFdneS0xbmVMOGdOdDVXYW5CLWJzOXN1VGN5UWNpM05RU1M0R3FqS01sZ2pGalI1LXppVUN0ekN5Y2pDZWp1UVdQT0lTekdFMEhLVk1BbWNiVHZmVjdWeEd0azBHUERHQ1YwVGhiWVVvVQ?oc=5",
-      "source": "Vero Notícias",
+      "source": "veronoticias.com",
       "category": "latest",
       "tags": [
         "mercado",
@@ -858,60 +924,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-369398a4b0d1f94d0db3f80f",
-      "title": "Diagnóstico tardio aumenta risco no diabetes tipo 1",
-      "summary": "Atualizacao de ultima hora capturada em broadcast.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOc1dJRnhGUFNibUJuaGZLRGFCdGxKOXg1VVZNaER3MEg1MHp4RlNGLUhQU3V6THBSa1poTUdiUXV3R25KeWU1QmhWWjMyRU5WaGlnT2diZmxmbHZGam1fQ0VMNzFxdUtXOVphY0ZaOHBRaW9ZemlLXzE4RFZMcHVzQXEyZ05jbHR1UWZ0U2xpQlRSUEIwd0l2Ug?oc=5",
-      "source": "broadcast.com.br",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-11T01:41:09Z",
-      "updatedAt": "2026-08-11T01:41:09Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-a25ff6e2dbef8af889e463e0",
-      "title": "Imóveis sustentáveis ganham valor e mercado",
-      "summary": "Atualizacao de ultima hora capturada em broadcast.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaThvX0JhRnlhaU1QaUZaMjJUSFgxUzhFMFAxcWV6eTdEWVBCV05wRkZzQnRsNVFBZ2Y0MWJQS0JXbHA5YnF4SDFfOEZwUVNXNU5nVWJTdTdhM2NEdElXbWdxYmJYTldzUXVIbVhkSkEzc1d3LUhDQ0JLeHlIMmtGMC1FRlRfdVJvVVFrR0hR?oc=5",
-      "source": "broadcast.com.br",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-11T01:41:06Z",
-      "updatedAt": "2026-08-11T01:41:06Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-bfbc77fc174c66e021072818",
-      "title": "Correspondente Dinâmico supera 3,2 milhões de conexões",
-      "summary": "Atualizacao de ultima hora capturada em broadcast.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPOHBPV24tNWI5Ul9sUGp2cUpCYS10bHk2dE1QLXR6bEtWVXNubUxwbW95bDI3aHJJdWY3Rm8zdzV3elRkY2lxTjVocnNabHBSQjhzMU9Dc3hlcjN1WVl5Z3Y1SWN5Tkx2eWFDbTRUVmU3Q0IzYnNZQXMtR095NGZ5RllMNVd6Z3hGU2NNWXRLWGRYcThEVkIxOS1Bbw?oc=5",
-      "source": "broadcast.com.br",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-11T01:41:01Z",
-      "updatedAt": "2026-08-11T01:41:01Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "funds-c516251150e132996765a7c3",
       "title": "Tribunal de Contas e MPs investigam R$ 185 milhões de dinheiro de aposentadoria em fundo imobiliário",
       "summary": "Atualizacao de fundos capturada em Estadão.",
@@ -948,12 +960,12 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "funds-9c668c6e4a18f8cbeef843d9",
+      "id": "funds-3296fd0e17a6938118feb95f",
       "title": "Alvo de operação da PF, Grupo Piccini nega participação em fundos",
-      "summary": "Atualizacao de fundos capturada em MidiaNews.",
+      "summary": "Atualizacao de fundos capturada em midianews.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNM1JBYVU0eE9Yb25PcUJVdGc5VW1MRWQyYkZiMVdNX3ZKeTVGaVlmd1BpTFhvOGVObkk3bm9sSzRIVFM3U3lFeWN1dldtckRJTXhpSW95b0ptQkVmSzBVam15eFdhTkh0cm5ySHBjYUU1aUNjUm5MRmlkQ294UjFNdnBNYm5HN056a2g4Uk52UzF3Y2V4dG50c094eEJENlNudDBqVUlIQlFiOXBGZnc?oc=5",
-      "source": "MidiaNews",
+      "source": "midianews.com.br",
       "category": "funds",
       "tags": [
         "fundos",
@@ -1002,12 +1014,12 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "funds-d8d8bc4a49a67db652b5e57f",
+      "id": "funds-32ee89de18a291946f3dca95",
       "title": "Grupo do agro nega fraude em compra de créditos da OI e colabora com PF",
-      "summary": "Atualizacao de fundos capturada em folhamax.com.",
+      "summary": "Atualizacao de fundos capturada em FOLHAMAX.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWXEwRXF0NG5wdmRabUZyVVdMb2NRUjRUeEozdVdNUlI3cjlBcFF2Tm5rZi0wRENwWTNvaTZmRV9jaWdNM0J2VDIzSGR6U09ucFhyTzRiYjdyclpjY1NkMGtlUGdaVXZjeW1zaWJSUV90SzhBd0tBYld1dzZ2Z3JtaHdRMzdqRWp3T0dzcjB0Z0pzWWtUN3FqRzJ1U2wwTDRZbk9JT3k2WW91SUVFWFNmdXFsLUIzMmM?oc=5",
-      "source": "folhamax.com",
+      "source": "FOLHAMAX",
       "category": "funds",
       "tags": [
         "fundos",
@@ -1020,12 +1032,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-cd76b3f44b62418043d32190",
+      "id": "funds-559f84d906484eb182049551",
       "title": "Startups: Nvidia negocia pacote de US$ 500B para infraestrutura de IA",
-      "summary": "Atualizacao de fundos capturada em infomoney.com.br.",
+      "summary": "Atualizacao de fundos capturada em InfoMoney.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOTQzQ3hyNnJPMHhvTVRCYXY1WTRVTGs4Vm5pOG0tcEpzTHVLclZadlBBLUtuZFY4VVpxakNzRVdwUmgtbTRocFMxcS02dUg1ekw1Tl9KcmNfWWlmckJmUXFlRVozbFdKbHJEelAtUXVKYjFSbndzSTlLNnJJOEpRQUh3Uk5RYmJuYmY3QnUybEJ1RWtzNVZrdURmOTlhMVZlZnFxUWFnYkc0QdIBrwFBVV95cUxNSUlTOEs3M3UwWG9NeDlsSzhYT2lqWXFWRTlhTTVHMW1yYVIwQTRnSGJzWlZCZGJHWTRfTGNaLW9aWUFHS3R5TTk1WDNINnhuajNSc0w1all1ajVvdFRkSk5hMF9rZzE1QmVZcFRNM3h4MFhGMEFYZHhoSm9XMHZkd051eVUzVFJwVjRPRFh2Tlh0RWtmenNYbDk4d2oyUjhXblV1TDdsNDcyVWwtU3dF?oc=5",
-      "source": "infomoney.com.br",
+      "source": "InfoMoney",
       "category": "funds",
       "tags": [
         "fundos",
@@ -1326,12 +1338,12 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "funds-575fcb0844c45dac272c689c",
+      "id": "funds-59e73ff5992c71ee056777b4",
       "title": "Iniciativa 'Inter Gerações' reúne comunidade de Ferreiros de Tendais em Cinfães num dia de tradição e partilha",
-      "summary": "Atualizacao de fundos capturada em averdade.com.",
+      "summary": "Atualizacao de fundos capturada em A Verdade.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPcmdhWGJDWjNsM3hvZGV3OFpOaWZRc2pmb3dIZFpSUEM1dVlxak9wVWlDaUlFeWtMem8xVXg0cm8zaUZwR0w2YTBua01jQmF5b09ON1JvY3NVdDlQNm1DN3Jwenl5SFhHSEVmRGNIN2N6XzdoMmUtWU56RXAwb2ZKRkpSME9NR1RTLUYwcFZjN0QwQXlINTd0REdXS2pnSHlWLXJFN19wSWNOdHY0RVlfZWRjT1VqZVdwNkd0N3NQTVJKSVBMQUpYanB5X3lWY3VyWW9HbzRWdTE?oc=5",
-      "source": "averdade.com",
+      "source": "A Verdade",
       "category": "funds",
       "tags": [
         "fundos",
