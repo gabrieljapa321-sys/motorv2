@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-13T01:29:34Z",
-  "generatedAt": "2026-08-13T01:29:34Z",
+  "updatedAt": "2026-08-13T03:51:33Z",
+  "generatedAt": "2026-08-13T03:51:33Z",
   "categories": [
     {
       "id": "all",
@@ -25,14 +25,6 @@
   ],
   "sources": [
     {
-      "id": "misto-brasil",
-      "label": "- Misto Brasil"
-    },
-    {
-      "id": "binance",
-      "label": "Binance"
-    },
-    {
       "id": "blocktrends",
       "label": "BlockTrends"
     },
@@ -41,20 +33,24 @@
       "label": "Blog do BG"
     },
     {
-      "id": "bpmoney",
-      "label": "BPMoney"
+      "id": "blog-do-caminhoneiro",
+      "label": "Blog do Caminhoneiro"
     },
     {
       "id": "bra1-com-br",
       "label": "bra1.com.br"
     },
     {
+      "id": "broadcast-com-br",
+      "label": "broadcast.com.br"
+    },
+    {
       "id": "cnn-brasil",
       "label": "CNN Brasil"
     },
     {
-      "id": "consultor-jur-dico",
-      "label": "Consultor Jurídico"
+      "id": "conjur-com-br",
+      "label": "conjur.com.br"
     },
     {
       "id": "di-rio-do-igua-u",
@@ -125,32 +121,28 @@
       "label": "Monitor Mercantil"
     },
     {
-      "id": "o-globo",
-      "label": "O GLOBO"
-    },
-    {
       "id": "o-hoje",
       "label": "O Hoje"
+    },
+    {
+      "id": "o-tempo",
+      "label": "O TEMPO"
     },
     {
       "id": "poder360",
       "label": "Poder360"
     },
     {
-      "id": "revista-forca-a-rea",
-      "label": "Revista Forca Aérea"
-    },
-    {
-      "id": "revista-f-rum",
-      "label": "Revista Fórum"
+      "id": "portal-contabeis",
+      "label": "Portal Contabeis"
     },
     {
       "id": "revista-lide",
       "label": "Revista LIDE"
     },
     {
-      "id": "rtp",
-      "label": "RTP"
+      "id": "revistaforum-com-br",
+      "label": "revistaforum.com.br"
     },
     {
       "id": "senado",
@@ -163,6 +155,10 @@
     {
       "id": "sintrajud",
       "label": "Sintrajud"
+    },
+    {
+      "id": "sobral-online",
+      "label": "Sobral Online"
     },
     {
       "id": "spacemoney",
@@ -206,16 +202,167 @@
     },
     {
       "id": "vietnam-vn",
-      "label": "vietnam.vn"
+      "label": "Vietnam.vn"
     }
   ],
   "items": [
     {
+      "id": "funds-93ed6529102788bb19788e58",
+      "title": "Novas regulamentações sobre a percentagem de fundos alocados a fundos de investimento e desenvolvimento e fundos de remuneração em instituições de crédito.",
+      "summary": "Por Satoshi SugiyamaAs ações asiáticas subiram nesta quinta-feira depois que os dados de inflação dos EUA ficaram dentro das expectativas, atenuando as expectativas de novos aumentos das taxas de juros pelo Federal Reserve no curto prazo , enquanto o petróleo se manteve próximo d",
+      "details": "Por Satoshi SugiyamaAs ações asiáticas subiram nesta quinta-feira depois que os dados de inflação dos EUA ficaram dentro das expectativas, atenuando as expectativas de novos aumentos das taxas de juros pelo Federal Reserve no curto prazo , enquanto o petróleo se manteve próximo dos US$ 80 por barri…",
+      "url": "https://br.tradingview.com/news/reuters.com,2026:newsml_L1N44A015:0/",
+      "source": "Vietnam.vn",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-13T03:17:23Z",
+      "updatedAt": "2026-08-13T03:17:23Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
+    },
+    {
+      "id": "macro-cb3e3320f2477c4b042dbafa",
+      "title": "Aluguel sobe dez vezes mais que a inflação em julho, segundo FipeZAP",
+      "summary": "Acompanhe em vídeo: Levar inflação à meta é ponto crucial para o equilíbrio das contas públicas e não depende só do BC | Estadão",
+      "details": "Acompanhe em vídeo: Levar inflação à meta é ponto crucial para o equilíbrio das contas públicas e não depende só do BC | Estadão",
+      "url": "https://www.estadao.com.br/tv/economia/levar-inflacao-a-meta-e-ponto-crucial-para-o-equilibrio-das-contas-publicas-e-nao-depende-so-do-bc/",
+      "source": "Exame",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-13T02:10:16Z",
+      "updatedAt": "2026-08-13T02:10:16Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://d32dgtrnmhd45e.cloudfront.net/08-13-2026/t_c36d804208a44d4f81bacd3bd1facaf6_name_LULA_104_scaled.jpg"
+    },
+    {
+      "id": "macro-7be2da6a91077251c3a0390e",
+      "title": "Levar inflação à meta é ponto crucial para o equilíbrio das contas públicas e não depende só do BC",
+      "summary": "Atualizacao de macro capturada em Estadão.",
+      "details": "",
+      "url": "https://exame.com/mercado-imobiliario/aluguel-sobe-dez-vezes-mais-que-a-inflacao-em-julho-segundo-fipezap/",
+      "source": "Estadão",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-13T01:43:56Z",
+      "updatedAt": "2026-08-13T01:43:56Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "latest-fa425687ed8649c4085cfe0f",
+      "title": "Dólar sobe a R$ 5,17, e Bolsa recua sob influência da divulgação da inflação dos EUA",
+      "summary": "O Decreto 316/2026/ND-CP altera e complementa diversos artigos do Decreto 135/2025/ND-CP, incluindo vários ajustes na percentagem de dotação para o fundo de investimento para o desenvolvimento e na criação e utilização do fundo de recompensas e do fundo de assistência social.",
+      "details": "O Decreto 316/2026/ND-CP altera e complementa diversos artigos do Decreto 135/2025/ND-CP, incluindo vários ajustes na percentagem de dotação para o fundo de investimento para o desenvolvimento e na criação e utilização do fundo de recompensas e do fundo de assistência social.",
+      "url": "https://www.vietnam.vn/pt/quy-dinh-moi-ve-ty-le-trich-quy-dau-tu-phat-trien-quy-khen-thuong-tai-to-chuc-tin-dung",
+      "source": "O TEMPO",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-13T01:40:44Z",
+      "updatedAt": "2026-08-13T01:40:44Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/13/1786586612653_quy-dinh-moi-ve-ty-le-trich-quy-dau-tu-phat-trien-quy-khen-thuong-tai-to-chuc-tin-dung1786585129.jpeg"
+    },
+    {
+      "id": "latest-648632515cf0a9ec67a86865",
+      "title": "Arena Cross Brasil disputa Super Final em Interlagos",
+      "summary": "Saiba mais sobre a alta do dólar e a queda da Bolsa influenciadas pelos dados de inflação dos Estados Unidos",
+      "details": "Saiba mais sobre a alta do dólar e a queda da Bolsa influenciadas pelos dados de inflação dos Estados Unidos",
+      "url": "https://www.otempo.com.br/economia/2026/8/12/dolar-sobe-a-r-5-17-e-bolsa-recua-sob-influencia-da-divulgacao-da-inflacao-dos-eua.amp",
+      "source": "broadcast.com.br",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-13T01:34:00Z",
+      "updatedAt": "2026-08-13T01:34:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.otempo.com.br/content/dam/otempo/editorias/economia/2026/7/14/economia-dolar-bolsa_de_valores-mercado_financeiro-1784074114.jpg"
+    },
+    {
+      "id": "latest-72b7f7f700d2ebdbbd000189",
+      "title": "Grupo Riopae promove homenagem no Dia dos Pais",
+      "summary": "O Arena Cross Brasil chega à etapa decisiva da temporada 2026 com um cenário de equilíbrio na principal categoria e participação de pilotos de diferentes nacionalidades. A Super Final será disputada nos dias 14 e 15 de agosto, no Autódromo José Carlos Pace, em Interlagos, São Pau",
+      "details": "O Arena Cross Brasil chega à etapa decisiva da temporada 2026 com um cenário de equilíbrio na principal categoria e participação de pilotos de diferentes nacionalidades. A Super Final será disputada nos dias 14 e 15 de agosto, no Autódromo José Carlos Pace, em Interlagos, São Paulo, dentro da programação […]",
+      "url": "https://www.broadcast.com.br/knewin-dino/arena-cross-brasil-disputa-super-final-em-interlagos/",
+      "source": "broadcast.com.br",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-13T01:33:40Z",
+      "updatedAt": "2026-08-13T01:33:40Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K4iQz5owDJvh7CmAJwmgg6rYWqvGtBCipzdGFqF8mrSxOAds_z30GOU5l7rbYHhy3szw0Qk7KSYHRCikLEPDOUNAiMLLFJWMETxpFYx2r4uZqN4RFvcXfGIQ9SOCu6_GkI1.png"
+    },
+    {
+      "id": "companies-0a2a7ac4b18221964136fc04",
+      "title": "Corredor Atlântico: Câmara Portuguesa explora Portugal como destino estratégico para empresas do Brasil",
+      "summary": "O Grupo Riopae promoveu, em suas unidades de atendimento ao luto, uma homenagem especial ao Dia dos Pais, dedicada a famílias que perderam pais, avôs ou figuras paternas. A iniciativa reuniu apresentação de violinistas, celebrações religiosas, um espaço voltado a homenagens e a t",
+      "details": "O Grupo Riopae promoveu, em suas unidades de atendimento ao luto, uma homenagem especial ao Dia dos Pais, dedicada a famílias que perderam pais, avôs ou figuras paternas. A iniciativa reuniu apresentação de violinistas, celebrações religiosas, um espaço voltado a homenagens e a tradicional cerimônia da Árvore da Saudad",
+      "url": "https://www.broadcast.com.br/knewin-dino/grupo-riopae-promove-homenagem-no-dia-dos-pais/",
+      "source": "Sobral Online",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-13T01:29:17Z",
+      "updatedAt": "2026-08-13T01:29:17Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K4iQz5owDJvh7CmAJwmgg6rYWqvGtBCipzdGFqF8mrSxOAds_z30GOU5l7rbYHhy3szw0Qk7KSYHRCikLEPDOUNAiMLLFJWMETxpFYx2r4uZnSgWevmHYqsgtPdKmQpM2w1.png"
+    },
+    {
+      "id": "macro-163518d0bd49a21ce507fa0d",
+      "title": "Opinião | A disparada assustadora do desastre fiscal brasileiro",
+      "summary": "investimento - Câmara Portuguesa debate em São Paulo as vantagens de Portugal como porta para a Europa, destacando oportunidades de negócios e o ajuste",
+      "details": "investimento - Câmara Portuguesa debate em São Paulo as vantagens de Portugal como porta para a Europa, destacando oportunidades de negócios e o ajuste",
+      "url": "https://sobralonline.com.br/investimento-portugal-empresas-brasileiras/",
+      "source": "Estadão",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-13T01:09:11Z",
+      "updatedAt": "2026-08-13T01:09:11Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://sobralonline.com.br/wp-content/uploads/2026/08/corredor-atlantico-camara-portuguesa-explora-portugal-co-1786584551710.jpg"
+    },
+    {
       "id": "macro-b0ad69bc196cf6ee501d0d57",
       "title": "Posse da nova diretoria e conselho fiscal acontece no próximo dia 20",
-      "summary": "Atualizacao de macro capturada em Sintrajud.",
-      "details": "",
-      "url": "https://veronoticias.com/politica/senado-aprova-pacote-fiscal-para-combustiveis-e-outros-setores/",
+      "summary": "Nenhum dos candidatos à Presidência parece empenhado em partir para um programa intenso de ajuste fiscal",
+      "details": "Nenhum dos candidatos à Presidência parece empenhado em partir para um programa intenso de ajuste fiscal",
+      "url": "https://www.estadao.com.br/em-alta/economia/raul-velloso/a-disparada-assustadora-do-desastre-fiscal-brasileiro/",
       "source": "Sintrajud",
       "category": "macro",
       "tags": [
@@ -226,14 +373,15 @@
       "publishedAt": "2026-08-13T01:05:36Z",
       "updatedAt": "2026-08-13T01:05:36Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/PJM45N2LEVG7PJL7DDM6LNTABU.jpeg?quality=80&auth=69b93361d3d243c3d70f5e0a9849498ce3aaa4768006c30e2c5b2ab3ed15bd9c&width=1200&height=630&smart=true"
     },
     {
       "id": "macro-185d3c1e28f3a7869c9148bf",
       "title": "Ações asiáticas sobem à medida que dados sobre a inflação nos EUA enfraquecem as expectativas de um aumento das taxas pelo Fed em setembro",
-      "summary": "Por Satoshi SugiyamaAs ações asiáticas subiram nesta quinta-feira depois que os dados de inflação dos EUA ficaram dentro das expectativas, atenuando as expectativas de novos aumentos das taxas de juros pelo Federal Reserve no curto prazo , enquanto o petróleo se manteve próximo d",
-      "details": "Por Satoshi SugiyamaAs ações asiáticas subiram nesta quinta-feira depois que os dados de inflação dos EUA ficaram dentro das expectativas, atenuando as expectativas de novos aumentos das taxas de juros pelo Federal Reserve no curto prazo , enquanto o petróleo se manteve próximo dos US$ 80 por barri…",
-      "url": "https://br.tradingview.com/news/reuters.com,2026:newsml_L1N44A015:0/",
+      "summary": "Encerrados todos os prazos recursais das Eleições Sintrajud 2026 sem nenhum questionamento à lisura do processo e aos resultados, é hora de preparar o coroamento do pleito. E na quinta-feira (20 de...",
+      "details": "Encerrados todos os prazos recursais das Eleições Sintrajud 2026 sem nenhum questionamento à lisura do processo e aos resultados, é hora de preparar o coroamento do pleito. E na quinta-feira (20 de...",
+      "url": "https://sintrajud.org.br/conteudo/16305/posse-da-nova-diretoria-e-conselho-fiscal-acontece-no-proximo-dia-20",
       "source": "TradingView",
       "category": "macro",
       "tags": [
@@ -245,14 +393,14 @@
       "updatedAt": "2026-08-13T01:01:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
+      "imageUrl": "https://sindicalizi-public.s3.amazonaws.com/sintrajudsp/gerenciadorconteudo/imagens/615_500_17865831006a7d183c71180.jpg"
     },
     {
       "id": "macro-41e3b6821c0d2b64e98e62d4",
       "title": "A disparada assustadora do desastre fiscal brasileiro",
       "summary": "Nenhum dos candidatos à Presidência parece empenhado em partir para um programa intenso de ajuste fiscal",
       "details": "Nenhum dos candidatos à Presidência parece empenhado em partir para um programa intenso de ajuste fiscal",
-      "url": "https://www.estadao.com.br/economia/raul-velloso/a-disparada-assustadora-do-desastre-fiscal-brasileiro/",
+      "url": "https://www.estadao.com.br/amp/economia/raul-velloso/a-disparada-assustadora-do-desastre-fiscal-brasileiro/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -264,33 +412,33 @@
       "updatedAt": "2026-08-13T01:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/PJM45N2LEVG7PJL7DDM6LNTABU.jpeg?quality=80&auth=69b93361d3d243c3d70f5e0a9849498ce3aaa4768006c30e2c5b2ab3ed15bd9c&width=1200&height=630&focal=430,294"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/PJM45N2LEVG7PJL7DDM6LNTABU.jpeg?quality=80&auth=69b93361d3d243c3d70f5e0a9849498ce3aaa4768006c30e2c5b2ab3ed15bd9c&width=1200"
     },
     {
-      "id": "macro-264616282caf5db43e08426e",
-      "title": "S&P 500 e Nasdaq fecham em alta impulsionados por resultados a CoreWeave",
-      "summary": "Encerrados todos os prazos recursais das Eleições Sintrajud 2026 sem nenhum questionamento à lisura do processo e aos resultados, é hora de preparar o coroamento do pleito. E na quinta-feira (20 de...",
-      "details": "Encerrados todos os prazos recursais das Eleições Sintrajud 2026 sem nenhum questionamento à lisura do processo e aos resultados, é hora de preparar o coroamento do pleito. E na quinta-feira (20 de...",
-      "url": "https://sintrajud.org.br/conteudo/16305/posse-da-nova-diretoria-e-conselho-fiscal-acontece-no-proximo-dia-20",
-      "source": "CNN Brasil",
+      "id": "macro-54b2623e7c1f81dc9c4c2f9b",
+      "title": "Plano de governo de Flávio prevê nova regra fiscal e revisão de exceções da tributária",
+      "summary": "Diretrizes econômicas devem ser apresentadas na live semanal pelas plataformas digitais",
+      "details": "Diretrizes econômicas devem ser apresentadas na live semanal pelas plataformas digitais",
+      "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/08/12/programa-de-flavio-prioriza-controle-da-divida-revisao-da-reforma-tributaria-e-combate-a-inflacao-de-alimentos.ghtml",
+      "source": "Valor Econômico",
       "category": "macro",
       "tags": [
         "macro",
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-08-13T00:37:59Z",
-      "updatedAt": "2026-08-13T00:37:59Z",
-      "premium": false,
+      "publishedAt": "2026-08-13T00:53:47Z",
+      "updatedAt": "2026-08-13T00:53:47Z",
+      "premium": true,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://sindicalizi-public.s3.amazonaws.com/sintrajudsp/gerenciadorconteudo/imagens/615_500_17865831006a7d183c71180.jpg"
+      "imageUrl": "https://s2-valor.glbimg.com/732YdODZnV_gPZJuPE4kFCB84BA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/B/5/CamRk1TyWAqG1YXvS2Rw/foto06pol-101-flavio-a8.jpg"
     },
     {
       "id": "macro-719e9d9f4f1a1926e6da68bd",
       "title": "Senado aprova projetos da pauta fiscal após acordo com governo",
-      "summary": "Além disso, ados de inflação moderada reforçaram as ⁠expectativas de ​que o Fed dos EUA ​deixará as taxas de juros inalteradas em ⁠setembro",
-      "details": "Além disso, ados de inflação moderada reforçaram as ⁠expectativas de ​que o Fed dos EUA ​deixará as taxas de juros inalteradas em ⁠setembro",
-      "url": "https://www.cnnbrasil.com.br/economia/mercado/sp-500-e-nasdaq-fecham-em-alta-impulsionados-por-resultados-a-coreweave/",
+      "summary": "Após reunião entre o presidente do Senado, Davi Alcolumbre, com lideranças do governo e o presidente Lula, nesta quarta (12), foi feito um acordo que destravou pautas fiscais. Entre elas, compensações para desonerações, isenção para a Copa Feminina de 2027 e minerais críticos.",
+      "details": "Após reunião entre o presidente do Senado, Davi Alcolumbre, com lideranças do governo e o presidente Lula, nesta quarta (12), foi feito um acordo que destravou pautas fiscais. Entre elas, compensações para desonerações, isenção para a Copa Feminina de 2027 e minerais críticos.",
+      "url": "https://www12.senado.leg.br/tv/programas/noticias-1/2026/08/senado-aprova-projetos-da-pauta-fiscal-apos-acordo-com-governo",
       "source": "Senado",
       "category": "macro",
       "tags": [
@@ -302,14 +450,14 @@
       "updatedAt": "2026-08-13T00:33:41Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2026binary_LYNXMPEM7B1J5-BASEIMAGE.jpg?w=800&h=533&crop=1"
+      "imageUrl": "https://www12.senado.leg.br/tv/programas/noticias-1/2026/08/senado-aprova-projetos-da-pauta-fiscal-apos-acordo-com-governo/@@images/image/preview"
     },
     {
       "id": "macro-c6082d0d2f2c20890847ef19",
       "title": "Senado aprova pacote fiscal para combustíveis e outros setores",
-      "summary": "Após reunião entre o presidente do Senado, Davi Alcolumbre, com lideranças do governo e o presidente Lula, nesta quarta (12), foi feito um acordo que destravou pautas fiscais. Entre elas, compensações para desonerações, isenção para a Copa Feminina de 2027 e minerais críticos.",
-      "details": "Após reunião entre o presidente do Senado, Davi Alcolumbre, com lideranças do governo e o presidente Lula, nesta quarta (12), foi feito um acordo que destravou pautas fiscais. Entre elas, compensações para desonerações, isenção para a Copa Feminina de 2027 e minerais críticos.",
-      "url": "https://www12.senado.leg.br/tv/programas/noticias-1/2026/08/senado-aprova-projetos-da-pauta-fiscal-apos-acordo-com-governo",
+      "summary": "O Senado aprovou por 61 votos a 2 o PLP 114/2026, que permite usar receitas extras do petróleo para compensar reduções de tributos sobre combustíveis.",
+      "details": "O Senado aprovou por 61 votos a 2 o PLP 114/2026, que permite usar receitas extras do petróleo para compensar reduções de tributos sobre combustíveis.",
+      "url": "https://veronoticias.com/politica/senado-aprova-pacote-fiscal-para-combustiveis-e-outros-setores/",
       "source": "Vero Notícias",
       "category": "macro",
       "tags": [
@@ -321,14 +469,14 @@
       "updatedAt": "2026-08-13T00:33:11Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www12.senado.leg.br/tv/programas/noticias-1/2026/08/senado-aprova-projetos-da-pauta-fiscal-apos-acordo-com-governo/@@images/image/preview"
+      "imageUrl": "https://veronoticias.com/wp-content/uploads/2024/08/53923700020_d55e519cd6_o-scaled.jpg"
     },
     {
       "id": "latest-a31e8c6511fe97df8f88742c",
       "title": "Pagamento instantâneo poderá ser submetido a espera de até 24 horas",
-      "summary": "Atualizacao de ultima hora capturada em Monitor Mercantil.",
-      "details": "",
-      "url": "https://monitormercantil.com.br/pagamento-instantaneo-podera-ser-submetido-a-espera-de-ate-24-horas/",
+      "summary": "Dispositivo incluído no projeto aprovado antecipa parte da estratégia de ajuste fiscal defendida pela equipe econômica para 2027",
+      "details": "Dispositivo incluído no projeto aprovado antecipa parte da estratégia de ajuste fiscal defendida pela equipe econômica para 2027",
+      "url": "https://valor.globo.com/google/amp/brasil/noticia/2026/08/12/durigan-gasto-obrigatorio-crescera-em-torno-de-r-10-bi-a-menos-com-projeto-dos-combustiveis.ghtml",
       "source": "Monitor Mercantil",
       "category": "latest",
       "tags": [
@@ -339,32 +487,15 @@
       "publishedAt": "2026-08-13T00:26:27Z",
       "updatedAt": "2026-08-13T00:26:27Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-6214e25ccb928de14c7d370d",
-      "title": "Inflação do IPP do Japão fica abaixo do esperado em julho",
-      "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
-      "details": "",
-      "url": "https://br.investing.com/news/economic-indicators/inflacao-do-ipp-do-japao-fica-abaixo-do-esperado-em-julho-2037433",
-      "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-13T00:18:00Z",
-      "updatedAt": "2026-08-13T00:18:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://s2-valor.glbimg.com/mamzSdMQCYumzZ-dDH845T-SODg=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/O/E/dgDEhtQgGhq9xmqpmjEw/03bra-100-durigan-a4-img01.jpg"
     },
     {
       "id": "macro-561b81435acc7fcea9efe404",
       "title": "Durigan: Gasto obrigatório crescerá em torno de R$ 10 bi a menos com Projeto dos Combustíveis",
       "summary": "Atualizacao de macro capturada em Valor Econômico.",
       "details": "",
-      "url": "https://economia.uol.com.br/noticias/redacao/2026/08/12/camara-aprova-projeto-guarda-chuva-que-corta-tributo-de-combustivel.ghtm",
+      "url": "https://monitormercantil.com.br/pagamento-instantaneo-podera-ser-submetido-a-espera-de-ate-24-horas/",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -378,11 +509,11 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "macro-594bd1b56ed6f092e24db738",
-      "title": "Câmara aprova projeto 'guarda-chuva' que corta tributo de combustível",
-      "summary": "Dispositivo incluído no projeto aprovado antecipa parte da estratégia de ajuste fiscal defendida pela equipe econômica para 2027",
-      "details": "Dispositivo incluído no projeto aprovado antecipa parte da estratégia de ajuste fiscal defendida pela equipe econômica para 2027",
-      "url": "https://valor.globo.com/google/amp/brasil/noticia/2026/08/12/durigan-gasto-obrigatorio-crescera-em-torno-de-r-10-bi-a-menos-com-projeto-dos-combustiveis.ghtml",
+      "id": "macro-e908bd0ff7049e67e9ffb83b",
+      "title": "PLP dos combustíveis vai a sanção e abre R$ 10 bi de espaço fiscal em 2027",
+      "summary": "Atualizacao de macro capturada em UOL Economia.",
+      "details": "",
+      "url": "https://economia.uol.com.br/noticias/redacao/2026/08/12/camara-aprova-projeto-guarda-chuva-que-corta-tributo-de-combustivel.ghtm",
       "source": "UOL Economia",
       "category": "macro",
       "tags": [
@@ -393,34 +524,33 @@
       "publishedAt": "2026-08-12T23:51:00Z",
       "updatedAt": "2026-08-12T23:51:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/mamzSdMQCYumzZ-dDH845T-SODg=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/O/E/dgDEhtQgGhq9xmqpmjEw/03bra-100-durigan-a4-img01.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "macro-cafc62c13ee9bd8af73eab64",
-      "title": "Levar inflação à meta é ponto crucial para o equilíbrio das contas públicas e não depende só do BC",
-      "summary": "Metade da dívida pública já está indexada à taxa Selic, e equipe econômica precisa ajudar no controle dos preços cortando gastos",
-      "details": "Metade da dívida pública já está indexada à taxa Selic, e equipe econômica precisa ajudar no controle dos preços cortando gastos",
-      "url": "https://www.estadao.com.br/economia/alvaro-gribel/levar-inflacao-a-meta-e-ponto-crucial-para-o-equilibrio-das-contas-publicas-e-nao-depende-so-do-bc/",
+      "id": "latest-a154c7e07011b690c50adef2",
+      "title": "Copasa (CSMG3): lucro ajustado atinge R$ 275,5 milhões, queda anual de 4,8%",
+      "summary": "A receita líquida da empresa de saneamento, por outro lado, totalizou R$ 2 bilhões no segundo trimestre, avanço de 8,9% em um ano",
+      "details": "A receita líquida da empresa de saneamento, por outro lado, totalizou R$ 2 bilhões no segundo trimestre, avanço de 8,9% em um ano",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/copasa-csmg3-lucro-ajustado-atinge-r-2755-milhoes-queda-anual-de-48/",
       "source": "Estadão",
-      "category": "macro",
+      "category": "latest",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
+        "mercado",
+        "bolsa",
+        "macro"
       ],
-      "publishedAt": "2026-08-12T23:49:33Z",
-      "updatedAt": "2026-08-12T23:49:33Z",
+      "publishedAt": "2026-08-12T23:45:17Z",
+      "updatedAt": "2026-08-12T23:45:17Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/KGLE6HHFTZK4LLTKNPLUCL5SO4.png?quality=80&auth=5d4b2a84d651f184b8c4ddb5fff623e2e056a98c2ffa4777ffeb775b9c7f5968&width=1200&height=630&focal=1020,859"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/GWL4KC3NMVIKBFFNCEVFPQZLSY.png?quality=80&auth=5b66b28a6cada9423ca49241740c9f2123dfaa9ea9bcb8ad03ae22dd07f6d5cd&width=1200&height=630&smart=true"
     },
     {
       "id": "macro-10f1532e2802b009c399daff",
       "title": "Vai à sanção PLP dos combustíveis com trava fiscal e jabutis",
-      "summary": "Proposta permite usar arrecadação extra com petróleo para reduzir tributos, cria limite para despesas em caso de déficit e inclui benefícios para etanol, fertilizantes, minerais críticos e Copa Feminina",
-      "details": "Proposta permite usar arrecadação extra com petróleo para reduzir tributos, cria limite para despesas em caso de déficit e inclui benefícios para etanol, fertilizantes, minerais críticos e Copa Feminina",
-      "url": "https://www.cnnbrasil.com.br/noticias/senado-aprova-do-plp-dos-combustiveis-com-trava-fiscal-e-jabutis/",
+      "summary": "O 15º Congresso Andav reuniu especialistas para discutir o aumento de 22% nos pedidos de recuperação judicial, crédito mais caro e as ...",
+      "details": "O 15º Congresso Andav reuniu especialistas para discutir o aumento de 22% nos pedidos de recuperação judicial, crédito mais caro e as ...",
+      "url": "https://www.bra1.com.br/economia/id-678062/congresso_do_agronegocio_debate_recuperacao_judicial_e_mercado_financeiro",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -432,14 +562,14 @@
       "updatedAt": "2026-08-12T23:30:53Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/plenario-senado-federal.jpg?w=1200&h=630&crop=1"
+      "imageUrl": "https://cdn.conexaohost.com.br/img/500x500/1/0/webp/arquivos/1918/conteudo/posts/678062.jpg"
     },
     {
       "id": "latest-f46d987b1e8626a1fe60ea38",
       "title": "Congresso do Agronegócio debate recuperação judicial e mercado financeiro",
-      "summary": "O 15º Congresso Andav reuniu especialistas para discutir o aumento de 22% nos pedidos de recuperação judicial, crédito mais caro e as ...",
-      "details": "O 15º Congresso Andav reuniu especialistas para discutir o aumento de 22% nos pedidos de recuperação judicial, crédito mais caro e as ...",
-      "url": "https://www.bra1.com.br/economia/id-678062/congresso_do_agronegocio_debate_recuperacao_judicial_e_mercado_financeiro",
+      "summary": "Proposta permite usar arrecadação extra com petróleo para reduzir tributos, cria limite para despesas em caso de déficit e inclui benefícios para etanol, fertilizantes, minerais críticos e Copa Feminina",
+      "details": "Proposta permite usar arrecadação extra com petróleo para reduzir tributos, cria limite para despesas em caso de déficit e inclui benefícios para etanol, fertilizantes, minerais críticos e Copa Feminina",
+      "url": "https://www.cnnbrasil.com.br/noticias/senado-aprova-do-plp-dos-combustiveis-com-trava-fiscal-e-jabutis/",
       "source": "bra1.com.br",
       "category": "latest",
       "tags": [
@@ -451,14 +581,14 @@
       "updatedAt": "2026-08-12T23:17:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://cdn.conexaohost.com.br/img/500x500/1/0/webp/arquivos/1918/conteudo/posts/678062.jpg"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/06/plenario-senado-federal.jpg?w=1200&h=630&crop=1"
     },
     {
       "id": "companies-7f871b396716e95b501be5e4",
       "title": "Gestão de riscos financeiros ganha peso entre empresas em cenário de juros altos, aponta Valdoir Slapak",
-      "summary": "Conteúdo estratégico para engajar seu público com a expertise do Estadão.",
-      "details": "Conteúdo estratégico para engajar seu público com a expertise do Estadão.",
-      "url": "https://bluestudio.estadao.com.br/agencia-de-comunicacao/saftec-digital/gestao-de-riscos-financeiros-ganha-peso-entre-empresas-em-cenario-de-juros-altos-aponta-valdoir-slapak/",
+      "summary": "Medidas previstas em proposta devem conter em aproximadamente R$ 10 bilhões o avanço das despesas obrigatórias em 2027",
+      "details": "Medidas previstas em proposta devem conter em aproximadamente R$ 10 bilhões o avanço das despesas obrigatórias em 2027",
+      "url": "https://valor.globo.com/google/amp/politica/noticia/2026/08/12/apos-pressao-da-esquerda-governo-ajusta-gatilho-fiscal-em-plp-dos-combustiveis.ghtml",
       "source": "Estadão Blue Studio",
       "category": "companies",
       "tags": [
@@ -470,7 +600,7 @@
       "updatedAt": "2026-08-12T23:15:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://bluestudio.estadao.com.br/agencia-de-comunicacao/wp-content/uploads/2026/08/SFT20260812154008_390727.jpg"
+      "imageUrl": "https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png"
     },
     {
       "id": "latest-74aa21778166d6555464b803",
@@ -494,9 +624,9 @@
     {
       "id": "companies-3e7be7e2174fc45844db5503",
       "title": "Câmara aprova criação de fundo de crédito para financiar exportações",
-      "summary": "Mercado repercutiu ata do Copom, inflação no Brasil e nos EUA e redução da recomendação do JPMorgan para o Ibovespa. Confira na íntegra.",
-      "details": "Mercado repercutiu ata do Copom, inflação no Brasil e nos EUA e redução da recomendação do JPMorgan para o Ibovespa. Confira na íntegra.",
-      "url": "https://tmc.com.br/economia/dolar-sobe-a-r-518-e-bolsa-cai-com-mercado-atento-a-juros-e-cenario-fiscal/",
+      "summary": "Fundo terá recursos para capital de giro, compra de máquinas e investimentos produtivos de empresas brasileiras",
+      "details": "Fundo terá recursos para capital de giro, compra de máquinas e investimentos produtivos de empresas brasileiras",
+      "url": "https://www.tribunadosertao.com.br/politica/2026/08/12/958718-camara-aprova-criacao-de-fundo-de-credito-para-financiar-exportacoes",
       "source": "Tribuna do Sertão",
       "category": "companies",
       "tags": [
@@ -508,14 +638,33 @@
       "updatedAt": "2026-08-12T23:13:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://tmc.com.br/wp-content/uploads/2026/08/dolar-mercado-financeiro.jpg.optimal.jpg"
+      "imageUrl": "https://img.dhost.cloud/aG22s7wRn-5ZDUYtRr1HNP76mQ4=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/17c51/a75e93368dde156684ed1c845b6e1492ee1.jpg"
+    },
+    {
+      "id": "macro-5f47422c97a1e67b2d37040e",
+      "title": "Senado aprova projeto que reduz preço do combustível; texto amplia gastos fora do teto em 2026 e prevê ajuste fiscal em 2027",
+      "summary": "Conteúdo estratégico para engajar seu público com a expertise do Estadão.",
+      "details": "Conteúdo estratégico para engajar seu público com a expertise do Estadão.",
+      "url": "https://bluestudio.estadao.com.br/agencia-de-comunicacao/saftec-digital/gestao-de-riscos-financeiros-ganha-peso-entre-empresas-em-cenario-de-juros-altos-aponta-valdoir-slapak/",
+      "source": "G1",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-12T22:56:40Z",
+      "updatedAt": "2026-08-12T22:56:40Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://bluestudio.estadao.com.br/agencia-de-comunicacao/wp-content/uploads/2026/08/SFT20260812154008_390727.jpg"
     },
     {
       "id": "latest-2227da7bccee8b11ea0625b7",
       "title": "Dólar sobe a R$ 5,18 e Bolsa cai com mercado atento a juros e cenário fiscal",
-      "summary": "Fundo terá recursos para capital de giro, compra de máquinas e investimentos produtivos de empresas brasileiras",
-      "details": "Fundo terá recursos para capital de giro, compra de máquinas e investimentos produtivos de empresas brasileiras",
-      "url": "https://www.tribunadosertao.com.br/politica/2026/08/12/958718-camara-aprova-criacao-de-fundo-de-credito-para-financiar-exportacoes",
+      "summary": "O projeto aprovado pelo Senado reduz o preço dos combustíveis e garante subsídios para fertilizantes e para a Copa do Mundo Feminina de 2027.",
+      "details": "O projeto aprovado pelo Senado reduz o preço dos combustíveis e garante subsídios para fertilizantes e para a Copa do Mundo Feminina de 2027.",
+      "url": "https://g1.globo.com/economia/noticia/2026/08/12/senado-aprova-projeto-que-reduz-preco-do-combustivel-com-dinheiro-da-alta-do-petroleo-texto-amplia-gastos-fora-do-teto.ghtml",
       "source": "tmc.com.br",
       "category": "latest",
       "tags": [
@@ -527,14 +676,14 @@
       "updatedAt": "2026-08-12T22:45:15Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://img.dhost.cloud/aG22s7wRn-5ZDUYtRr1HNP76mQ4=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/17c51/a75e93368dde156684ed1c845b6e1492ee1.jpg"
+      "imageUrl": "https://s2-g1.glbimg.com/KCcFEMBZELFThM_z_5PFb4c16yI=/3416x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2026/E/4/h4BIndRUARJArOdRtwkw/2026-04-09t210339z-1-lynxmpem381c6-rtroptp-4-brazil-energy-fuel.jpg"
     },
     {
       "id": "macro-e9e5f3c06f00628c9b13665a",
       "title": "Após pressão da esquerda, governo ajusta gatilho fiscal em PLP dos combustíveis",
-      "summary": "Melhor acordo não é necessariamente aquele que oferece o maior desconto, mas aquele que apresenta a solução mais adequada",
-      "details": "Melhor acordo não é necessariamente aquele que oferece o maior desconto, mas aquele que apresenta a solução mais adequada",
-      "url": "https://conjur.com.br/2026-ago-12/1956922/",
+      "summary": "Mercado repercutiu ata do Copom, inflação no Brasil e nos EUA e redução da recomendação do JPMorgan para o Ibovespa. Confira na íntegra.",
+      "details": "Mercado repercutiu ata do Copom, inflação no Brasil e nos EUA e redução da recomendação do JPMorgan para o Ibovespa. Confira na íntegra.",
+      "url": "https://tmc.com.br/economia/dolar-sobe-a-r-518-e-bolsa-cai-com-mercado-atento-a-juros-e-cenario-fiscal/",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -546,15 +695,15 @@
       "updatedAt": "2026-08-12T22:38:23Z",
       "premium": true,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://conjur.com.br/wp-content/uploads/2024/09/empresarios-em-ternos-elegantes-em-uma-reuniao-de-negocios-discutindo-um-novo-projeto-no-escritorio-300x200-1.jpg"
+      "imageUrl": "https://tmc.com.br/wp-content/uploads/2026/08/dolar-mercado-financeiro.jpg.optimal.jpg"
     },
     {
-      "id": "macro-1edd159057b778b468c2e0f0",
+      "id": "macro-e9ebcf08e0619ef5d88f096b",
       "title": "Transação tributária: nova oportunidade exige análise além dos descontos",
-      "summary": "Medidas previstas em proposta devem conter em aproximadamente R$ 10 bilhões o avanço das despesas obrigatórias em 2027",
-      "details": "Medidas previstas em proposta devem conter em aproximadamente R$ 10 bilhões o avanço das despesas obrigatórias em 2027",
-      "url": "https://valor.globo.com/politica/noticia/2026/08/12/apos-pressao-da-esquerda-governo-ajusta-gatilho-fiscal-em-plp-dos-combustiveis.ghtml",
-      "source": "Consultor Jurídico",
+      "summary": "Melhor acordo não é necessariamente aquele que oferece o maior desconto, mas aquele que apresenta a solução mais adequada",
+      "details": "Melhor acordo não é necessariamente aquele que oferece o maior desconto, mas aquele que apresenta a solução mais adequada",
+      "url": "https://conjur.com.br/2026-ago-12/1956922/",
+      "source": "conjur.com.br",
       "category": "macro",
       "tags": [
         "macro",
@@ -565,7 +714,7 @@
       "updatedAt": "2026-08-12T22:27:54Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/public/fb_marca.png"
+      "imageUrl": "https://conjur.com.br/wp-content/uploads/2024/09/empresarios-em-ternos-elegantes-em-uma-reuniao-de-negocios-discutindo-um-novo-projeto-no-escritorio-300x200-1.jpg"
     },
     {
       "id": "companies-bdffd09eab83a8b34568015f",
@@ -587,11 +736,29 @@
       "imageUrl": "https://assets.blogdobg.com.br/uploads/2026/08/corr.png"
     },
     {
+      "id": "macro-7a710c45699e7adf82697f83",
+      "title": "IPCA desacelera em julho, mas composição da inflação mostra pressões diferentes sobre custos empresariais",
+      "summary": "Atualizacao de macro capturada em Portal Contabeis.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPVUJiZ3dIWE9GTXpIbGs5bnlRX3FwbWoxVnFxdXY3Rk8yTDVCTC0xZW9mNXBYaVdVdUFXS2lnb1ltQWtXUTdYZmk1bl9IN2QyV3c5LTFKbWs2SjBNa1haSThzZm5sQk9HbkdFWkw4TXZuc0tQUlhzTk80WGY3RWNMQUotVTZYUEI4NGYyaVZ4bk02ZFJpaGVEVEN5LTVCUWl1UDJMWjNUcmYtRVU5ZHZvUVNJV3hSMHRpeTcyLThiLUdvdmx1R1IzMjdBZ1o5OWtNdG1GMi1BQWtHUy1jR2pzUWgyZw?oc=5",
+      "source": "Portal Contabeis",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-12T22:15:01Z",
+      "updatedAt": "2026-08-12T22:15:01Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
       "id": "macro-d7983ef929c0b832c763c23a",
       "title": "Nikolas apresenta PEC que vincula salários de políticos à meta fiscal",
-      "summary": "A solução não é exclusivamente técnica, mas também política, pois exige que o Congresso esteja disposto a aceitar sacrifícios impopulares que tiram voto",
-      "details": "A solução não é exclusivamente técnica, mas também política, pois exige que o Congresso esteja disposto a aceitar sacrifícios impopulares que tiram voto",
-      "url": "https://www.estadao.com.br/em-alta/economia/celso-ming/o-custo-do-consumismo-e-do-rombo-nao-pode-ser-ignorado-por-uma-politica-fiscal-responsavel/",
+      "summary": "Atualizacao de macro capturada em Poder360.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOEJSZURQZy1HZTJMTTBKaG5ON2d4WGJhalNfMDc5WXNNcnhMSkwyc1NBQmVUc3F3Wm9lZFQwdTdGTkVxNEFQTGdQeVEzR1c1bVZsZ0dteG5RU2R4Q0Z2cDVhVnNuOUJXajQ0Ulg0NFRuU05uZ0RvN0NuWnR0YzYtQmZKWFJBa1JzUWFaMFl5cllYMDdPdlJLc0F0SGxNbVgycXd6YmRLZHZHWnJDelBNRUhDZUI?oc=5",
       "source": "Poder360",
       "category": "macro",
       "tags": [
@@ -602,91 +769,14 @@
       "publishedAt": "2026-08-12T22:14:22Z",
       "updatedAt": "2026-08-12T22:14:22Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/XWOIZFOYQRKS7AG5SBJHEFYY3A.jpg?quality=80&auth=fb51457dd97713d329bdefd11d7eede9ef30ba9236c93ea88169009bbd1c4200&width=1200&height=630&smart=true"
-    },
-    {
-      "id": "macro-cb96dda153689eb4a78d8ca9",
-      "title": "O custo do consumismo e do rombo não pode ser ignorado por uma política fiscal responsável",
-      "summary": "Proposta prevê corte de 25% a 50% nos subsídios políticos por descumprimento fiscal; serviços essenciais ficam protegidos. Leia no Poder360.",
-      "details": "Proposta prevê corte de 25% a 50% nos subsídios políticos por descumprimento fiscal; serviços essenciais ficam protegidos. Leia no Poder360.",
-      "url": "https://www.poder360.com.br/poder-congresso/nikolas-apresenta-pec-que-vincula-salarios-de-politicos-a-meta-fiscal/",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-12T22:09:40Z",
-      "updatedAt": "2026-08-12T22:09:40Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://static.poder360.com.br/uploads/2026/08/Nikolas-Ferreira-Camara-jul-2026-848x477.jpg"
-    },
-    {
-      "id": "macro-46af8274d1301c09907f6c60",
-      "title": "Câmara aprova PLP dos combustíveis com jabutis e medidas de ajuste fiscal",
-      "summary": "Banco do Brasil (BBAS3) aprovou R$ 584,9 milhões em JCP complementar do 2º trimestre. Pagamento aos acionistas está marcado para 11 de setembro de 2026.",
-      "details": "Banco do Brasil (BBAS3) aprovou R$ 584,9 milhões em JCP complementar do 2º trimestre. Pagamento aos acionistas está marcado para 11 de setembro de 2026.",
-      "url": "https://bpmoney.com.br/mercado/acoes/banco-do-brasil-jcp-complementar-584-milhoes-segundo-trimestre/",
-      "source": "O GLOBO",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-12T22:09:21Z",
-      "updatedAt": "2026-08-12T22:09:21Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://bpmoney.com.br/wp-content/uploads/2024/04/image-640x847.png"
-    },
-    {
-      "id": "latest-58458d7f118a274a85fec1a3",
-      "title": "Banco do Brasil (BBAS3) vai pagar R$ 584,9 milhões em JCP complementar do 2º trimestre",
-      "summary": "STJ vai definir se empréstimos de Banco do Povo, feitos por entes públicos, podem ser cobrados pela via da execução fiscal.",
-      "details": "STJ vai definir se empréstimos de Banco do Povo, feitos por entes públicos, podem ser cobrados pela via da execução fiscal.",
-      "url": "https://conjur.com.br/2026-ago-12/stj-julga-se-ente-publico-pode-cobrar-emprestimo-por-execucao-fiscal/",
-      "source": "BPMoney",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-12T21:56:14Z",
-      "updatedAt": "2026-08-12T21:56:14Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://conjur.com.br/wp-content/uploads/2025/02/businessmen-with-bills-300x200-1.jpg"
-    },
-    {
-      "id": "macro-2731a2141cea83289953a5ac",
-      "title": "STJ julga se Banco do Povo cobra empréstimo por execução fiscal",
-      "summary": "Câmara aprova PLP dos combustíveis com jabutis e medidas de ajuste fiscal",
-      "details": "Câmara aprova PLP dos combustíveis com jabutis e medidas de ajuste fiscal",
-      "url": "https://oglobo.globo.com/google/amp/blogs/miriam-leitao/post/2026/08/camara-aprova-plp-dos-combustiveis-com-jabutis-e-medidas-de-ajuste-fiscal.ghtml",
-      "source": "Consultor Jurídico",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-12T21:41:13Z",
-      "updatedAt": "2026-08-12T21:41:13Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-oglobo.glbimg.com/VRsloNP-bZGaSwNBN7Dk9mxF3bY=/5472x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/r/Q/ixT0KPT3Se0R3cT2JwTA/6p3a9406.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-f7d889efd0eec1c63a66f868",
       "title": "Ibovespa hoje: Embraer (EMBJ3) salta 4%; Direcional (DIRR3) afunda após balanço",
-      "summary": "Temporada de resultados corporativos continuou no radar dos investidores, assim como dados de inflação dos Estados Unidos",
-      "details": "Temporada de resultados corporativos continuou no radar dos investidores, assim como dados de inflação dos Estados Unidos",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-embraer-embj3-salta-4-direcional-dirr3-afunda-apos-balanco/",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNaElkTC1MQXI3cS1Vc2k4anUtM2VqTjZCNHZ1ZW4zUHZ4WmFJSzRELW81OFRSTW1qXzhoMVFyQ1pUY0FIek9teUVqVGQ1SUF3eWF2dDY2OGp0WURLNkJZZnV0SWtNamNkRW4tZHd1VHdPRE1KaHdjdS1VVkNRdjFveTZzYVBNd1YwOEhjVjViLVl1b0h1NjRCR3pzYjFqcm55WEtlcV9QV2hVRnNzaDNCaHBPNVhhaGRmT2ZVLXJmc1I4SHlVZVdadEVtb9IB0AFBVV95cUxQZk1MOVFEQkxvQmt6d094clNEXzRwV3hjSzhnNWtVZFVEWU1pWEJiY3RxVHJiZGhYOV9MVlg5NXFBLVlYQXlXUEJZTDc2Z0JnX0gwLUd0SzVZcmFtZ0pmbUpmSmVtWWtfVUs5b0pMdXNNYldMNF96VVVKQ21rZEp4cUFEaXduOWl0ZUlyWkk2VkpvX2hDLTdDRWlLS2VWdmRXeVFWNVI2VE1CaVpuTWtFWlp1d3hmYndWWEpCczBBRzRjMFAzdDdaMFFJaDNhN3dS?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -697,15 +787,32 @@
       "publishedAt": "2026-08-12T21:41:00Z",
       "updatedAt": "2026-08-12T21:41:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/ZLNWLA7TVRP4DG7LTAOA37YVMY.png?quality=80&auth=57fd8c092debe90dfd73984507b5b246c243c1bf21a6a6c2fae6905b690f8380&width=1200&height=630&smart=true"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-a36a7067c4e01cbc11df3ec5",
+      "title": "Ibovespa recua pela 7ª vez consecutiva com nova saída de estrangeiros",
+      "summary": "Atualizacao de ultima hora capturada em Jornal do Comércio.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNY1k2R29acmlxUGFUT2o4b0JUOUFTRkZWYkZHWi1TaVNaZEVfc19OWEZaeVJwSVZfRUVNTWpCQ2FxaDQtangwc1dZdlFYTWJDZVVPNnQ2N0M3aTFzVmZwOEkzaFhOMWc0WEQ4QnRtM01oTkZFaVFUVGRIZy1RWm9MS0RkUDhjU0pqak9nai1xNXZKdUpsaGVBdjhpRHdMREZFM0dvVW5UdGV5TDFZM3A3bDBHUjhBTVV4MWpjTDBkNmJQNDhjMDhfX2w0TQ?oc=5",
+      "source": "Jornal do Comércio",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-12T21:37:35Z",
+      "updatedAt": "2026-08-12T21:37:35Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "funds-80bc0e7809e73d77da60dc21",
       "title": "Vitória sedia Adit Invest, fórum nacional de investimento imobiliário",
-      "summary": "Evento reúne especialistas do mercado imobiliário em Vitória para discutir financiamento, investimentos, governança e novas oportunidades.",
-      "details": "Evento reúne especialistas do mercado imobiliário em Vitória para discutir financiamento, investimentos, governança e novas oportunidades.",
-      "url": "https://www.folhavitoria.com.br/economia/vitoria-sedia-adit-invest-forum-nacional-de-investimento-imobiliario/",
+      "summary": "Atualizacao de fundos capturada em Folha Vitória.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWVVWVTFTbmJXS2ZpZHBlWjh4ZmJMOEE2N2J6djUtcnptNjZDYkhTU1NOSmFSR2NxLWFnZTJURElfZVM0LVJLeF9Yc3VRaU9nWGxDRHVNbUZKRlE4Zmt2YkxoNU9wTWpQbjBkNmFtUGlHMUdoSkdXdlZwckFxZDVnYVRDWGNxa3RTVmprVEttQjlXdTQ4cGJnMVRVb2tBNUh3VGpZSFFlbG5RTXo4d2RZ?oc=5",
       "source": "Folha Vitória",
       "category": "funds",
       "tags": [
@@ -716,15 +823,14 @@
       "publishedAt": "2026-08-12T21:35:38Z",
       "updatedAt": "2026-08-12T21:35:38Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://uploads.folhavitoria.com.br/2026/03/Chaves-da-casa-nova-mercado-imobiliario.jpg"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "latest-ced3c4088ce130b7af37bb7f",
       "title": "Fechamento do mercado financeiro",
       "summary": "Atualizacao de ultima hora capturada em UOL Economia.",
       "details": "",
-      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/08/12/fechamento-do-mercado-financeiro.htm",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaE91c25lZEpwTGU2WFJadkxKS3dfS0s0cFlQVDl0VDF2Y0VOVnk1bk91M1RqekpiSjMtbHI5c3pmQnhvRFlsOTJRbXBpUzYtVzdqV0hfblFSaEtuOHJVQTdWTEczb0RUMGRMX2JmbV9MOEhMMlJVcF9NU0dYN29CUV9ydmRmNlBZY0JtcEdDdFl0cl94VmpCcS0zeDNUZENWVklF?oc=5",
       "source": "UOL Economia",
       "category": "latest",
       "tags": [
@@ -752,24 +858,6 @@
       ],
       "publishedAt": "2026-08-12T21:34:00Z",
       "updatedAt": "2026-08-12T21:34:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-12d5d3e2d263eaa4d479626a",
-      "title": "Ibovespa recua pela 7ª vez consecutiva com nova saída de estrangeiros",
-      "summary": "Atualizacao de ultima hora capturada em Jornal do Comércio.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNY1k2R29acmlxUGFUT2o4b0JUOUFTRkZWYkZHWi1TaVNaZEVfc19OWEZaeVJwSVZfRUVNTWpCQ2FxaDQtangwc1dZdlFYTWJDZVVPNnQ2N0M3aTFzVmZwOEkzaFhOMWc0WEQ4QnRtM01oTkZFaVFUVGRIZy1RWm9MS0RkUDhjU0pqak9nai1xNXZKdUpsaGVBdjhpRHdMREZFM0dvVW5UdGV5TDFZM3A3bDBHUjhBTVV4MWpjTDBkNmJQNDhjMDhfX2w0TQ?oc=5",
-      "source": "Jornal do Comércio",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-12T21:33:45Z",
-      "updatedAt": "2026-08-12T21:33:45Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -810,6 +898,24 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
+      "id": "companies-6db49e87afe23761aa7f8079",
+      "title": "Pequenas e médias empresas brasileiras não pretendem contratar nos próximos 12 meses",
+      "summary": "Atualizacao de empresas capturada em bra1.com.br.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUWJDdXA2eW1iQlZDdUJUSnVncVBhbE5Gb1ZWUV9oVnM4M1kybFdPdVJQaFhLcXFka19rOVpnTm9rTUhTZ2xzWFZyMURYN3lVYlZmQjJZR2ROYkFiOHEtaXc2cGt5UVMtdmFKMlBnWHdySVdkeUNkb2N1VE9fTVFHUjAxR0I5VjJRZnZwTmNadFJBUjNEZ0RhMTM3Y3dOZGRoaEJRcl9IS1hyMERVaW5vTnVKSFpEWVJQZUp6cEZ0SFZtUQ?oc=5",
+      "source": "bra1.com.br",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-12T21:32:00Z",
+      "updatedAt": "2026-08-12T21:32:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
       "id": "latest-164899d46b7ca6ebfdcc2cdf",
       "title": "Tokenização do mercado financeiro deve avançar aos poucos, diz executivo da CVM",
       "summary": "Atualizacao de ultima hora capturada em bra1.com.br.",
@@ -842,6 +948,24 @@
       ],
       "publishedAt": "2026-08-12T21:29:55Z",
       "updatedAt": "2026-08-12T21:29:55Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-8824c14ddf15b65be5d93b8a",
+      "title": "No mercado de juros, DIs intermediários e longos sobem com risco fiscal-eleitoral",
+      "summary": "Atualizacao de ultima hora capturada em Money Times.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZlRHdHRsaTFzU1pzY0t6UHRNYmNSRDhNZkppQTZKZ09HQTRYa1dDcVQ1ZWZaUlExSWtPNm0yZ2w5eWNTMXJYRHJGanBvaDE2c1pQOGlqdWtxSzN0dnRtejRNOFdBV1dnMWhma2g1V3J1cEF1T0x6eVFaNVk5ak44QmZwTVVBZEE2MWtSUmJHNXhuQndlZVFWWjNUOVZORVRmNjFGOGFuSUJKWjAxTVNpRVVSUW9TRnM?oc=5",
+      "source": "Money Times",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-12T21:29:00Z",
+      "updatedAt": "2026-08-12T21:29:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -898,78 +1022,6 @@
       "updatedAt": "2026-08-12T21:16:45Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "latest-24b7d1fc408ad1b08aed5ccb",
-      "title": "Ibovespa fecha estável e o dólar em alta",
-      "summary": "Misto Brasil",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOdWh4ampWVFRjWFNRM0JON3dfNDdiWF9ZdlpBTkN1THpSeEZQUE9LX3VzLU40eVRCSEthdU9IcjEyb1ozNTNaWW9Cdl9DMzlGa2V2d0JhN0dXV1VkekJNMEswUG5qcG5TRU0tT1pZN040Rnp5R2dYSFlhNWJ5Y1UzMzliZ2Y5TVVpOEHSAYoBQVVfeXFMTnVoeGpqVlRUY1hTUTNCTjd3XzQ3YlhfWXZaQU5DdUx6UnhGUFBPS191cy1ONHlUQkhLYXVPSHIxMm9aMzUzWllvQnZfQzM5RmtldndCYTdHV1dVZHpCTTBLMFBuanBuU0VNLU9aWTdONEZ6eUdnWEhZYTVieWNVMzM5YmdmOU1VaThB?oc=5",
-      "source": "- Misto Brasil",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-12T21:16:36Z",
-      "updatedAt": "2026-08-12T21:16:36Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-ca5b0e4dcda1f1c2c9825ae4",
-      "title": "Radar das Eleições: Flávio Bolsonaro é o candidato, mas Renan Santos é o 'sonho' do mercado",
-      "summary": "Atualizacao de ultima hora capturada em Money Times.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbThPWmp2bFg0QlhrckNYU2RTN01TNEFRakVPS09qblNtMUVuaWV4b2R1WVd3T1lSMExCVjY4c3M4VGMyd25VOGVWT1FSVW40MEQzR1R2M19sMWVmdlAzQWtLc1JKSDU4WFlPNzlFS1dGeU1HUGhvWm5ybXExZ0RHM1MzMkdOWUkxdWI1c0I1d2dBX0xCS05QcXV3d0JTM3Y2aUZhOHg3T1dBclBfZk05c1RvbmgzUzJoZnoydFotSng?oc=5",
-      "source": "Money Times",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-12T21:09:00Z",
-      "updatedAt": "2026-08-12T21:09:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-b81882a1093c53ecf4c6ae53",
-      "title": "No mercado de juros, DIs intermediários e longos sobem com risco fiscal-eleitoral",
-      "summary": "Atualizacao de ultima hora capturada em UOL Economia.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPXzhORmp1Z2JtRWM0dHhQYWlHbkhOS0s5TzJkUDhLdWNJSHlmTjBiVlhyS1hwVFkxWlVhU21GU0ZrYzBfN3ZNYnRKUm9xbmg2OE5pNDlHbU55WnRHeGhLekhYcVE4SG56V1ktYmU4anYxWGVoeVphVlREa3lZeGFHX1dseFpLblhpc2tPeEh1TkNiZmU4TzNBVEdLY1pWVEo2Yy1aUDV1Y1lscE5VME9PWHNFUjVEc2YwSzh5eWEyRnpveTRaZHhaZC11Z201Vkg2YlkyQ2wySnEwQ3NqQ3JMWXp4MA?oc=5",
-      "source": "UOL Economia",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-12T21:07:00Z",
-      "updatedAt": "2026-08-12T21:07:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-ad993dd9b49be4ab1a225d1f",
-      "title": "No mercado de juros, DIs intermediários e longos sobem com risco fiscal-eleitoral",
-      "summary": "Atualizacao de ultima hora capturada em Tribuna do Sertão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOQXo5OEhFejNHNU5WbW1FcDAtYVl5Q0hSQUNBYWFqdnBzMHg5NjN6ZjV4ODZ0a2JHZUdacTI0aTJCS2MzQzRUNlBUVTlpVFI2a18xdnJidmJuTmFQVVdOUnVPeFI3Z0ZoWVctakdMVS14d3FlVU5rRTFiRWFhMDNDeGpDa3p3ZTFlZk1qcm94Nml3SUF1YXA4ZlE2MTNIcXQyRUp6d3hzMi02MVBCYXoxbEVtdVp6WFB6X0t3UTdGS1J2T1RwSF9GX0JtRUVFNlNnWmtPWGZR?oc=5",
-      "source": "Tribuna do Sertão",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-12T21:07:00Z",
-      "updatedAt": "2026-08-12T21:07:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-ad38b9ef899e424525b04a27",
@@ -1062,12 +1114,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-0fa68948a4c83c94ca30e236",
+      "id": "companies-9c411346d999de37e5e2bc30",
       "title": "Casa Branca amplia ofensiva contra o Brasil e acusa frigoríficos de esquema com chineses",
-      "summary": "Atualizacao de empresas capturada em Revista Fórum.",
+      "summary": "Atualizacao de empresas capturada em revistaforum.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5FNlQtQVRwMGJFdWhKbnF2bHEzcG53NzVnWnduOTFFLXdQa3c5VDlPbWduT01DcHpfTzdLVmFuVmIxOVRVNUJWQ0tnZXB1VnFRNDFBdVlKVVBubFhkeDk4eFBhWXhadkdrVjZTZy16ZnpTLUFmS1E?oc=5",
-      "source": "Revista Fórum",
+      "source": "revistaforum.com.br",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1114,24 +1166,6 @@
       "updatedAt": "2026-08-12T19:00:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "funds-98fc660fd96e1bbcfe8f3c86",
-      "title": "Lamborghini Diablo Roadster renasce com restomod de 550 cv",
-      "summary": "Atualizacao de fundos capturada em turbo.pt.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAtYWFSNVBKSVNqWUQxdnU2WWtsYmZjVkZhMFJwT1V0VGhiVS1sRVpadVR5OE4zQVlTcmdsUzlqdFpvVG5UX19jWFFDOXpnRGRLc3JfNEo0bndLREliTm1aSUxUaTU3NF95R0Z2WUVYOGstLWRXdjdz?oc=5",
-      "source": "turbo.pt",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-12T18:33:31Z",
-      "updatedAt": "2026-08-12T18:33:31Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "companies-8c17b9a431d51213d72a0373",
@@ -1242,12 +1276,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-55f96013e68bc9f24e7a2359",
+      "id": "funds-1e838fcbc800abe28ea4fe20",
       "title": "Quang Ngai: Após 7 meses, 2 investidores ainda não desembolsaram os fundos de investimento público.",
-      "summary": "Atualizacao de fundos capturada em vietnam.vn.",
+      "summary": "Atualizacao de fundos capturada em Vietnam.vn.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTHdJOGkxMGRYS1BxeUV4ajNNSV90VTBzSEpoZ0NxdFc5U3pIbU5lYlIzWG5oelFmaS1XVUFwY1JzRDFNSGkxTkU2WkNGcGNONzAtYVdESmpvV1V2djNYV0d4SUswX2NYSHVQbFBYWlFsNlZPX2dpN2ptOEwyZlQ4MFZEb2xMSXNHQU51MWZLNzgzcXVET01UU0N2OXB2S0k4REE?oc=5",
-      "source": "vietnam.vn",
+      "source": "Vietnam.vn",
       "category": "funds",
       "tags": [
         "fundos",
@@ -1296,6 +1330,42 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
+      "id": "companies-35c3c2007b6693d929571ee5",
+      "title": "NEVASCAS: Bloqueio na fronteira entre Chile e Argentina gera prejuízo de US$ 10 milhões e impacta empresas brasileiras de transporte de cargas",
+      "summary": "Atualizacao de empresas capturada em Blog do Caminhoneiro.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNbkE5RzI0RXQtc29Mcjd0bmxhQXZCaF8wX0tneWtDMmRBMnRGdFRYcFljZXVIZVZfc19NMFF1NVRlMUNjdk5GQjl5clduUkdvR0dFZF9iQlJlaGVtVkw2bXpSazZteWhvOFIxbGdqeTcxMVZKSmVIczZGQjVwU1ZjbFdBcGg0c016TkhQLUhRVG9RNzF6Zm1nMTg5ZkhiTlUxY0NqOVlsaW1nNjBNRWxKd3VianUtVEU3UDEtYnJVVXBIZTVtclNfLWt2Z0hwLWs1d0R0WjFLNWZGZ2hKYzI1UVVTaXVWaHQ4LWp4ZUV0eVpnSGdpV3ZwM2NVdnN0UndtNWxCTHpmN19RQXN4SkVpQURB?oc=5",
+      "source": "Blog do Caminhoneiro",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-12T15:16:09Z",
+      "updatedAt": "2026-08-12T15:16:09Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "funds-421160196c163681da71e7f2",
+      "title": "Lamborghini Diablo Roadster renasce com restomod de 550 cv",
+      "summary": "Atualizacao de fundos capturada em turbo.pt.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYm9lYk00V2N6OVlYVG5SRWl6TUVILXU1XzFBXzhVYnFkcUtLbXJLaUVWaE1FUndjYmY0SFZqZjZNbW9VcnA0RUZxRlAxZjYwaVVYVHRjTGJYUnBpalp6X0lDUFlqT0FPU1RVY1lPUXZ6aEpKSU90OE82SnVDRjlibkRaTVZCT0J2U2JwdUNMN2xlX1At?oc=5",
+      "source": "turbo.pt",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-12T15:14:29Z",
+      "updatedAt": "2026-08-12T15:14:29Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
       "id": "funds-da422acee599a2b88cdd8ad0",
       "title": "Novo ETF do BTG investe na Amazônia a partir de R$ 10",
       "summary": "Atualizacao de fundos capturada em SpaceMoney.",
@@ -1312,78 +1382,6 @@
       "updatedAt": "2026-08-12T15:13:32Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-a179ec182ccef20b2f176bae",
-      "title": "Preço de REAL hoje | Preço de ASSET em tempo real, gráfico e dados de mercado",
-      "summary": "Atualizacao de fundos capturada em Binance.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE91TjRYMElQRGJ6d2loVi10MEtmYkhyZlB6dDMwdTA0ZXVudzJGX3pzZXhIQ0ZBQWVBbHRiVE5nX1FxdFNWNVpiZjBRZWNyMXpWQWhBUkI4VnpFNjRYdFNZVlpadHpJcGJhaEE?oc=5",
-      "source": "Binance",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-12T14:48:00Z",
-      "updatedAt": "2026-08-12T14:48:00Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-e9b2f6ab762b31d0627fa5a8",
-      "title": "Investimento sustentável com R$ 10: BTG lança primeiro ETF voltado para o desenvolvimento da Amazônia",
-      "summary": "Atualizacao de fundos capturada em Seu Dinheiro.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNU1pGQnFsVHJqMGNIdmJuZGZuVFdLUXdCbHBwTi1ZUmRFMFlwMXdjd2U4MTB5NU5pQmliMVloOXd4TmFLeF83aWFTRnZYd3BFTUd3UV9RUDJKNFgyOTVEUzNobFN3TTJPc1RLSjROWnQzSDR6NzlyU1JPMTRSSXBjSXE3bzM2VjF0b1BQb29jaEdYT2xpNzRpNG5RSkJ0cjhBemhtYTc3Zmt0UTF2RWhyQl8xekZjeV9xY0hiU3ZjYy0zY1pBdzdoaGFhYi1sVjNWRVhPWHhoV0s0N0w1TlloemtySWROVFhnV1ZqWA?oc=5",
-      "source": "Seu Dinheiro",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-12T14:07:19Z",
-      "updatedAt": "2026-08-12T14:07:19Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "companies-92fecdb8fdda05326f950708",
-      "title": "AEL Sistemas é destaque no principal prêmio de exportação do RS",
-      "summary": "Atualizacao de empresas capturada em Revista Forca Aérea.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVEdYV3I4akl3QzZKcWhfRGd4cG9KX1ExRWdUd09PRURFdU11QTUxeXB0Si1kMjBrRDg0ZVVjZ1lhUmcwNC04V2JHTGV6LURFcnV0dFRPcVVpdHdqc0V3TldZYTl6eEdzdGxPZmhyc0pOaXRlNml3V0ZVeUh4cmxpT1JaUzZCcU53VThpQmYyRDMxdjBY?oc=5",
-      "source": "Revista Forca Aérea",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-12T13:59:24Z",
-      "updatedAt": "2026-08-12T13:59:24Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-c9e4b37b9a31e7c5a2607fc5",
-      "title": "Brasil lança plano para abrir mercados a empresas afetadas por tarifas de Trump",
-      "summary": "Atualizacao de empresas capturada em RTP.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNY005RDFOSlBhMWhZTURGeWt0dWZYdk9JRDRha0ZLNUp3TzVjaFJvakp3SVE1Sk9INElKUVVEUS04cFJicU9KcUhQZ2tDMHlDMnJqaUNQRlUzWTZDelVIX1VpUl9ObXhTU3BXUlR2cXdyMTg5d2Q0MXVvb3RqTG4wSFJhaUJ1VXZWaDJNanlTRTBCRVBXU05MeFFJTXpUaExzTFBPU1Bfa2J1WmloWjI4SWdsOW1SZHJvbkNvZ0FmZlRNU1k?oc=5",
-      "source": "RTP",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-12T13:44:24Z",
-      "updatedAt": "2026-08-12T13:44:24Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     }
   ]
 }
