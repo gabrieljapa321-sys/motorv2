@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-14T22:17:41Z",
-  "generatedAt": "2026-08-14T22:17:41Z",
+  "updatedAt": "2026-08-14T22:48:14Z",
+  "generatedAt": "2026-08-14T22:48:14Z",
   "categories": [
     {
       "id": "all",
@@ -25,8 +25,8 @@
   ],
   "sources": [
     {
-      "id": "banco-inter",
-      "label": "Banco Inter"
+      "id": "misto-brasil",
+      "label": "- Misto Brasil"
     },
     {
       "id": "band-news-fm-curitiba",
@@ -35,6 +35,10 @@
     {
       "id": "blog-do-amarildo",
       "label": "Blog do Amarildo"
+    },
+    {
+      "id": "bmcnews-com-br",
+      "label": "bmcnews.com.br"
     },
     {
       "id": "boca-com-br",
@@ -73,8 +77,8 @@
       "label": "CenárioMT"
     },
     {
-      "id": "cnnbrasil-com-br",
-      "label": "cnnbrasil.com.br"
+      "id": "cnn-brasil",
+      "label": "CNN Brasil"
     },
     {
       "id": "debate-jur-dico",
@@ -109,16 +113,16 @@
       "label": "InvesTalk"
     },
     {
+      "id": "investidor10",
+      "label": "Investidor10"
+    },
+    {
       "id": "investing-com-brasil-finan-as-c-mbio-e-investimentos",
       "label": "Investing.com Brasil - Finanças, Câmbio e Investimentos"
     },
     {
       "id": "isto-dinheiro",
       "label": "ISTOÉ DINHEIRO"
-    },
-    {
-      "id": "jornal-bom-dia",
-      "label": "Jornal Bom Dia"
     },
     {
       "id": "meio-news",
@@ -153,12 +157,16 @@
       "label": "Portal ABC do ABC"
     },
     {
-      "id": "portal-comunique-se",
-      "label": "Portal Comunique-se"
+      "id": "portal-uai",
+      "label": "Portal UAI"
     },
     {
       "id": "r7",
       "label": "R7"
+    },
+    {
+      "id": "radiosobradinho-com-br",
+      "label": "radiosobradinho.com.br"
     },
     {
       "id": "rede-esta-o-democracia",
@@ -173,12 +181,16 @@
       "label": "SpaceMoney"
     },
     {
+      "id": "ti-inside-online",
+      "label": "TI INSIDE Online"
+    },
+    {
       "id": "times-brasil-cnbc",
       "label": "Times Brasil | CNBC"
     },
     {
-      "id": "tnonline",
-      "label": "TNOnline"
+      "id": "tribunadosertao-com-br",
+      "label": "tribunadosertao.com.br"
     },
     {
       "id": "uol-economia",
@@ -189,21 +201,74 @@
       "label": "Valor Econômico"
     },
     {
-      "id": "veja",
-      "label": "VEJA"
-    },
-    {
       "id": "vietnam-vn",
       "label": "Vietnam.vn"
     }
   ],
   "items": [
     {
-      "id": "latest-ecfb79bac3e8992629938df2",
-      "title": "Petrobras anuncia nova descoberta em poço no Amapá",
+      "id": "macro-7abbb088097eb56c471272b4",
+      "title": "Bitcoin opera em queda após dados de inflação mais brandos",
+      "summary": "Entenda, pela visão de Saravalle, como inadimplência pressiona lucros dos bancos, trava crédito e ajuda a explicar a fraqueza da Bolsa.",
+      "details": "Entenda, pela visão de Saravalle, como inadimplência pressiona lucros dos bancos, trava crédito e ajuda a explicar a fraqueza da Bolsa.",
+      "url": "https://bmcnews.com.br/economia/inadimplencia-bancos-e-bolsa-o-alerta-de-saravalle/",
+      "source": "CNN Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-14T22:44:28Z",
+      "updatedAt": "2026-08-14T22:44:28Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://bmcnews.com.br/wp-content/uploads/2024/06/taxa-de-inadimplencia-como-descobrir.jpg"
+    },
+    {
+      "id": "macro-020eb0d55be4fd814db14977",
+      "title": "Estudantes de Estrela Velha participam de Concurso de Fotografia sobre Educação Fiscal",
+      "summary": "Criptomoeda operava em baixa de 0,70%, a US$ 62.885,86, enquanto o Ethereum tinha queda de 0,54%, a US$ 1.875,71",
+      "details": "Criptomoeda operava em baixa de 0,70%, a US$ 62.885,86, enquanto o Ethereum tinha queda de 0,54%, a US$ 1.875,71",
+      "url": "https://www.cnnbrasil.com.br/economia/money/mercado/bitcoin-opera-em-queda-apos-dados-de-inflacao-mais-brandos/",
+      "source": "radiosobradinho.com.br",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-14T22:34:06Z",
+      "updatedAt": "2026-08-14T22:34:06Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/12/bitcoin-e1764615069276.jpg?w=800&h=451&crop=1"
+    },
+    {
+      "id": "latest-f5b28f926ca9bc66bc0daaa4",
+      "title": "Inadimplência, bancos e Bolsa: o alerta de Saravalle",
       "summary": "Petrobras identifica hidrocarbonetos em poço no bloco FZA-M-59, no Amapá, sem estimativa de volume nem viabilidade comercial",
       "details": "Petrobras identifica hidrocarbonetos em poço no bloco FZA-M-59, no Amapá, sem estimativa de volume nem viabilidade comercial",
       "url": "https://www.spacemoney.com.br/investimentos/acoes/petrobras-descoberta-no-amapa/",
+      "source": "bmcnews.com.br",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-14T22:29:36Z",
+      "updatedAt": "2026-08-14T22:29:36Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-34442635-5.webp"
+    },
+    {
+      "id": "latest-ecfb79bac3e8992629938df2",
+      "title": "Petrobras anuncia nova descoberta em poço no Amapá",
+      "summary": "Os participantes poderão fotografar espaços e serviços públicos, como obras, prédios, praças e demais estruturas do município. | As Secretarias Municipais de Educação e da Fazenda e Planejamento de Estrela Velha lançaram o Concurso de Fotografia: Educação Fiscal em Estrela Velha,",
+      "details": "Os participantes poderão fotografar espaços e serviços públicos, como obras, prédios, praças e demais estruturas do município. | As Secretarias Municipais de Educação e da Fazenda e Planejamento de Estrela Velha lançaram o Concurso de Fotografia: Educação Fiscal em Estrela Velha, durante atividades desenvolvidas nas es",
+      "url": "https://www.radiosobradinho.com.br/estudantes-de-estrela-velha-participam-de-concurso-de-fotografia-sobre-educacao-fiscal/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -215,14 +280,14 @@
       "updatedAt": "2026-08-14T22:12:41Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-34442635-5.webp"
+      "imageUrl": "https://www.radiosobradinho.com.br/wp-content/uploads/2026/08/Estudantes-de-Estrela-Velha-participam-de-Concurso-de-Fotografia-sobre-Educacao-Fiscal-e1786746692665.png"
     },
     {
       "id": "latest-e68e9187e619cc4d82373aca",
       "title": "Ibovespa acumula nona queda e opera aos 166 mil pontos",
-      "summary": "Ibovespa fecha em leve baixa de 0,1% com dólar a R$ 5,22; confira os destaques do mercado e o desempenho das ações",
-      "details": "Ibovespa fecha em leve baixa de 0,1% com dólar a R$ 5,22; confira os destaques do mercado e o desempenho das ações",
-      "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/ibovespa-cai-dolar-sobe-fechamento/",
+      "summary": "Ibovespa cai 0,10%, aos 166.934 pontos, e acumula nona queda seguida, com saída de estrangeiros e tensões comerciais",
+      "details": "Ibovespa cai 0,10%, aos 166.934 pontos, e acumula nona queda seguida, com saída de estrangeiros e tensões comerciais",
+      "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/ibovespa-nine-queda-166-mil-pontos/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -234,14 +299,14 @@
       "updatedAt": "2026-08-14T22:10:57Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-35118208-23.webp"
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-38412413-9.webp"
     },
     {
       "id": "latest-901be4472c407b81ce40f34e",
       "title": "Bolsa cai 0,1% e dólar sobe a R$ 5,22 em dia de cautela",
-      "summary": "Consultoria cita risco político, eleições e forte exposição a commodities como fatores que podem pressionar a Bolsa brasileira nos próximos meses",
-      "details": "Consultoria cita risco político, eleições e forte exposição a commodities como fatores que podem pressionar a Bolsa brasileira nos próximos meses",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-barato-risco-politico-pode-manter-bolsa-atras-de-emergentes-diz-capital-economics/",
+      "summary": "Atualizacao de ultima hora capturada em SpaceMoney.",
+      "details": "",
+      "url": "https://monitormercantil.com.br/durigan-rebate-criticas-de-inercia-sobre-crise-do-brb/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -252,15 +317,14 @@
       "publishedAt": "2026-08-14T22:05:13Z",
       "updatedAt": "2026-08-14T22:05:13Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/6PYNPKFUNRKXXM3IEZFPHM4VUE.png?quality=80&auth=123a2dfd6fa0e7a0829be998168c643cb63e406f440ba2fd2fbb08b1d2c38346&width=1200&height=630&smart=true"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-c3b2cee1d3dae7a21ad408d6",
       "title": "Durigan rebate críticas de inércia sobre crise do BRB",
-      "summary": "Atualizacao de ultima hora capturada em Monitor Mercantil.",
-      "details": "",
-      "url": "https://www.canalrural.com.br/economia/ibovespa-fecha-em-baixa-de-01-e-dolar-comercial-sobe-052/",
+      "summary": "Ibovespa fecha em leve baixa de 0,1% com dólar a R$ 5,22; confira os destaques do mercado e o desempenho das ações",
+      "details": "Ibovespa fecha em leve baixa de 0,1% com dólar a R$ 5,22; confira os destaques do mercado e o desempenho das ações",
+      "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/ibovespa-cai-dolar-sobe-fechamento/",
       "source": "Monitor Mercantil",
       "category": "latest",
       "tags": [
@@ -271,14 +335,15 @@
       "publishedAt": "2026-08-14T21:49:46Z",
       "updatedAt": "2026-08-14T21:49:46Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-35118208-23.webp"
     },
     {
       "id": "latest-c5f4fc13dac1a3292ca77a97",
       "title": "Ibovespa barato: risco político pode manter Bolsa atrás de emergentes, diz Capital Economics",
-      "summary": "Ibovespa cai 0,10%, aos 166.934 pontos, e acumula nona queda seguida, com saída de estrangeiros e tensões comerciais",
-      "details": "Ibovespa cai 0,10%, aos 166.934 pontos, e acumula nona queda seguida, com saída de estrangeiros e tensões comerciais",
-      "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/ibovespa-nine-queda-166-mil-pontos/",
+      "summary": "Trigo e soja se destacam em altas nos contratos de grãos",
+      "details": "Trigo e soja se destacam em altas nos contratos de grãos",
+      "url": "https://boca.com.br/mercado-financeiro/mercados-agricolas-fecham-em-alta-trigo-lidera-ganhos",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -290,14 +355,14 @@
       "updatedAt": "2026-08-14T21:49:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-38412413-9.webp"
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/fbb2e708ae9b797d79c2de38a4a56693_858x483.jpg"
     },
     {
       "id": "latest-862ed9e6a0ce9668d0b6d947",
       "title": "Mercados agrícolas fecham em alta; trigo lidera ganhos",
-      "summary": "Trigo e soja se destacam em altas nos contratos de grãos",
-      "details": "Trigo e soja se destacam em altas nos contratos de grãos",
-      "url": "https://boca.com.br/mercado-financeiro/mercados-agricolas-fecham-em-alta-trigo-lidera-ganhos",
+      "summary": "Consultoria cita risco político, eleições e forte exposição a commodities como fatores que podem pressionar a Bolsa brasileira nos próximos meses",
+      "details": "Consultoria cita risco político, eleições e forte exposição a commodities como fatores que podem pressionar a Bolsa brasileira nos próximos meses",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-barato-risco-politico-pode-manter-bolsa-atras-de-emergentes-diz-capital-economics/",
       "source": "boca.com.br",
       "category": "latest",
       "tags": [
@@ -309,14 +374,14 @@
       "updatedAt": "2026-08-14T21:45:28Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/fbb2e708ae9b797d79c2de38a4a56693_858x483.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/6PYNPKFUNRKXXM3IEZFPHM4VUE.png?quality=80&auth=123a2dfd6fa0e7a0829be998168c643cb63e406f440ba2fd2fbb08b1d2c38346&width=1200&height=630&smart=true"
     },
     {
       "id": "latest-501d3688d52a0ca5150934da",
       "title": "Ibovespa fecha em baixa de 0,1% e dólar comercial sobe 0,52%",
       "summary": "Atualizacao de ultima hora capturada em Canal Rural.",
       "details": "",
-      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/08/14/fechamento-do-mercado-financeiro.htm",
+      "url": "https://www.canalrural.com.br/economia/ibovespa-fecha-em-baixa-de-01-e-dolar-comercial-sobe-052/",
       "source": "Canal Rural",
       "category": "latest",
       "tags": [
@@ -334,7 +399,7 @@
       "title": "Fechamento do mercado financeiro",
       "summary": "Atualizacao de ultima hora capturada em UOL Economia.",
       "details": "",
-      "url": "https://monitormercantil.com.br/durigan-rebate-criticas-de-inercia-sobre-crise-do-brb/",
+      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/08/14/fechamento-do-mercado-financeiro.htm",
       "source": "UOL Economia",
       "category": "latest",
       "tags": [
@@ -348,30 +413,30 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-5e57f9c6b08e8dc00a829cbb",
-      "title": "Nubank Aumenta Concessão de Créditos e Ações Disparam",
-      "summary": "Crescimento dos empréstimos contribui para valorização do banco digital",
-      "details": "Crescimento dos empréstimos contribui para valorização do banco digital",
-      "url": "https://boca.com.br/economia/nubank-aumenta-concessao-creditos",
-      "source": "boca.com.br",
-      "category": "latest",
+      "id": "companies-0891c12514da149d75adba3f",
+      "title": "37 executivos de grandes empresas revelam como experiência, dados e IA estão transformando os negócios no Brasil",
+      "summary": "Agenda de indicadores de hoje trouxe números de vendas no varejo nos EUA e confiança do consumidor",
+      "details": "Agenda de indicadores de hoje trouxe números de vendas no varejo nos EUA e confiança do consumidor",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/dow-jones-hoje-bolsas-de-wall-street-operam-perto-da-estabilidade-de-olho-em-petroleo-e-juros/",
+      "source": "TI INSIDE Online",
+      "category": "companies",
       "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
+        "empresas",
+        "resultados",
+        "m&a"
       ],
-      "publishedAt": "2026-08-14T21:30:24Z",
-      "updatedAt": "2026-08-14T21:30:24Z",
+      "publishedAt": "2026-08-14T21:32:05Z",
+      "updatedAt": "2026-08-14T21:32:05Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/92f5c316772d687eda1f471818f79a7b_858x483.jpg"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/YCPTUAYDGFKVBNW7UKQRYQG3UU.jpg?quality=80&auth=e56debb295704368425231a3f08f02a648f0bb719bce1ffe75107c3aed7412fe&width=1200&height=630&smart=true"
     },
     {
       "id": "macro-d5e73323dc17a2e051ef1f25",
       "title": "Dow Jones hoje: Bolsas de NY recuam pressionadas por volatilidade do petróleo",
-      "summary": "Agenda de indicadores de hoje trouxe números de vendas no varejo nos EUA e confiança do consumidor",
-      "details": "Agenda de indicadores de hoje trouxe números de vendas no varejo nos EUA e confiança do consumidor",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/dow-jones-hoje-bolsas-de-wall-street-operam-perto-da-estabilidade-de-olho-em-petroleo-e-juros/",
+      "summary": "Atualizacao de macro capturada em Estadão.",
+      "details": "",
+      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/08/14/no-mercado-de-juros-dis-longos-sobem-cerca-de-40-pontos-base-na-semana-com-atencao-a-fiscal.htm",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -382,15 +447,14 @@
       "publishedAt": "2026-08-14T21:25:14Z",
       "updatedAt": "2026-08-14T21:25:14Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/YCPTUAYDGFKVBNW7UKQRYQG3UU.jpg?quality=80&auth=e56debb295704368425231a3f08f02a648f0bb719bce1ffe75107c3aed7412fe&width=1200&height=630&smart=true"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-dda5b38ab35ad82935b6fb81",
       "title": "Mercado eleva projeção de deficit primário para R$ 59,1 bi em 2026",
-      "summary": "Atualizacao de macro capturada em Poder360.",
-      "details": "",
-      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/08/14/no-mercado-de-juros-dis-longos-sobem-cerca-de-40-pontos-base-na-semana-com-atencao-a-fiscal.htm",
+      "summary": "A mediana das projeções do mercado para o deficit primário do governo central em 2026 subiu de R$ 58,077 bilhões para R$ 59,145 bilhões. Leia no Poder360.",
+      "details": "A mediana das projeções do mercado para o deficit primário do governo central em 2026 subiu de R$ 58,077 bilhões para R$ 59,145 bilhões. Leia no Poder360.",
+      "url": "https://www.poder360.com.br/poder-economia/mercado-eleva-projecao-de-deficit-primario-para-r-591-bi-em-2026/",
       "source": "Poder360",
       "category": "macro",
       "tags": [
@@ -401,14 +465,15 @@
       "publishedAt": "2026-08-14T21:15:35Z",
       "updatedAt": "2026-08-14T21:15:35Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://static.poder360.com.br/uploads/2026/06/dinheiro-joel-santana-pixabay-848x477.jpg"
     },
     {
       "id": "latest-be301d58a35493edc52593af",
       "title": "No mercado de juros, DIs longos sobem cerca de 40 pontos-base na semana com atenção a fiscal",
-      "summary": "BCA Research rebaixa bolsa brasileira para venda, criticando gastos do governo, juros politicamente motivados e riscos para a dívida pública",
-      "details": "BCA Research rebaixa bolsa brasileira para venda, criticando gastos do governo, juros politicamente motivados e riscos para a dívida pública",
-      "url": "https://www.spacemoney.com.br/economia/macroeconomia/bca-rebaixa-bolsa-brasileira/",
+      "summary": "Acumulação de prêmios nos juros futuros é influenciada por fatores externos e políticos.",
+      "details": "Acumulação de prêmios nos juros futuros é influenciada por fatores externos e políticos.",
+      "url": "https://www.tribunadosertao.com.br/geral/2026/08/14/960203-no-mercado-de-juros-dis-longos-sobem-com-atencao-a-fiscal",
       "source": "UOL Economia",
       "category": "latest",
       "tags": [
@@ -420,14 +485,32 @@
       "updatedAt": "2026-08-14T21:13:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-7948055-2.webp"
+      "imageUrl": "https://img.dhost.cloud/x2ff5hZaf0e9O46UEWoaHXmnHHE=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/c6dda/ba19064b3aa2d4fe192593a23e1632be8c2.jpg"
+    },
+    {
+      "id": "macro-01159ed98f0d4b4710374f27",
+      "title": "No mercado de juros, DIs longos sobem com atenção a fiscal",
+      "summary": "Atualizacao de macro capturada em tribunadosertao.com.br.",
+      "details": "",
+      "url": "https://tiinside.com.br/14/08/2026/37-executivos-de-grandes-empresas-revelam-como-experiencia-dados-e-ia-estao-transformando-os-negocios-no-brasil/",
+      "source": "tribunadosertao.com.br",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-14T21:13:00Z",
+      "updatedAt": "2026-08-14T21:13:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-c400552d113d3d7563b5bcbf",
       "title": "Bolsas de NY fecham em leve baixa olhando perspectivas para inflação e gastos com IA",
-      "summary": "A mediana das projeções do mercado para o deficit primário do governo central em 2026 subiu de R$ 58,077 bilhões para R$ 59,145 bilhões. Leia no Poder360.",
-      "details": "A mediana das projeções do mercado para o deficit primário do governo central em 2026 subiu de R$ 58,077 bilhões para R$ 59,145 bilhões. Leia no Poder360.",
-      "url": "https://www.poder360.com.br/poder-economia/mercado-eleva-projecao-de-deficit-primario-para-r-591-bi-em-2026/",
+      "summary": "Ibovespa cai 0,10% e acumula perda de 3,27% na semana, com nona queda seguida; dólar sobe 2,68% no período",
+      "details": "Ibovespa cai 0,10% e acumula perda de 3,27% na semana, com nona queda seguida; dólar sobe 2,68% no período",
+      "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/ibovespa-pior-sequencia-desde-2023/",
       "source": "InfoMoney",
       "category": "macro",
       "tags": [
@@ -439,11 +522,30 @@
       "updatedAt": "2026-08-14T21:11:56Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://static.poder360.com.br/uploads/2026/06/dinheiro-joel-santana-pixabay-848x477.jpg"
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-10628029-36.webp"
     },
     {
       "id": "latest-47a72f738b4f14bac3fa8a2e",
       "title": "Ibovespa engata nona queda e tem pior sequência desde 2023",
+      "summary": "BCA Research rebaixa bolsa brasileira para venda, criticando gastos do governo, juros politicamente motivados e riscos para a dívida pública",
+      "details": "BCA Research rebaixa bolsa brasileira para venda, criticando gastos do governo, juros politicamente motivados e riscos para a dívida pública",
+      "url": "https://www.spacemoney.com.br/economia/macroeconomia/bca-rebaixa-bolsa-brasileira/",
+      "source": "SpaceMoney",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-14T21:11:45Z",
+      "updatedAt": "2026-08-14T21:11:45Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-7948055-2.webp"
+    },
+    {
+      "id": "latest-8c004bed5875bc3bf7cc2757",
+      "title": "BCA recomenda vender bolsa brasileira e cita risco fiscal",
       "summary": "O Dow Jones caiu 0,20%%, aos 53732,41 pontos. O S&P 500 fechou em baixa de 0,17%, a 7785,76 pontos, e o Nasdaq recuou 0,28%, encerrando aos 26729,16 pontos",
       "details": "O Dow Jones caiu 0,20%%, aos 53732,41 pontos. O S&P 500 fechou em baixa de 0,17%, a 7785,76 pontos, e o Nasdaq recuou 0,28%, encerrando aos 26729,16 pontos",
       "url": "https://www.infomoney.com.br/mercados/bolsas-de-ny-fecham-em-leve-baixa-olhando-perspectivas-para-inflacao-e-gastos-com-ia/",
@@ -461,42 +563,42 @@
       "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/01/wall-street-bloomberg-1.jpg"
     },
     {
-      "id": "latest-8c004bed5875bc3bf7cc2757",
-      "title": "BCA recomenda vender bolsa brasileira e cita risco fiscal",
-      "summary": "Ibovespa cai 0,10% e acumula perda de 3,27% na semana, com nona queda seguida; dólar sobe 2,68% no período",
-      "details": "Ibovespa cai 0,10% e acumula perda de 3,27% na semana, com nona queda seguida; dólar sobe 2,68% no período",
-      "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/ibovespa-pior-sequencia-desde-2023/",
-      "source": "SpaceMoney",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-14T21:11:45Z",
-      "updatedAt": "2026-08-14T21:11:45Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-10628029-36.webp"
-    },
-    {
-      "id": "companies-6d2fe832649387af923da04e",
+      "id": "companies-e0fd0b0087330418753d9da9",
       "title": "Seis em cada dez empresas sofreram ataques cibernéticos",
       "summary": "Levantamento mostra que 62% das organizações no Brasil registraram incidentes de segurança em 2025, percentual superior à média latino-americana (52,7%). Além disso, 14,7% afirmam não conseguir dizer se foram alvo de ataques, evidenciando desafios na capacidade de monitoramento e",
       "details": "Levantamento mostra que 62% das organizações no Brasil registraram incidentes de segurança em 2025, percentual superior à média latino-americana (52,7%). Além disso, 14,7% afirmam não conseguir dizer se foram alvo de ataques, evidenciando desafios na capacidade de monitoramento e detecção",
-      "url": "https://portal.comunique-se.com.br/335582-seis-em-cada-dez-empresas-sofreram-ataques-ciberneticos/",
-      "source": "Portal Comunique-se",
+      "url": "https://www.uai.com.br/app/noticia/mundo-corporativo/2026/08/14/noticia-mundo-corporativo,388972/seis-em-cada-dez-empresas-sofreram-ataques-ciberneticos.shtml",
+      "source": "Portal UAI",
       "category": "companies",
       "tags": [
         "empresas",
         "resultados",
         "m&a"
       ],
-      "publishedAt": "2026-08-14T21:10:13Z",
-      "updatedAt": "2026-08-14T21:10:13Z",
+      "publishedAt": "2026-08-14T20:59:00Z",
+      "updatedAt": "2026-08-14T20:59:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://api.dino.com.br/v2/news/tr/335582?partnerId=33"
+      "imageUrl": "https://i.uai.com.br/5gWQWrLLUDq7BAqz6mfZML_01Bc=/800x533/smart/imgsapp2.uai.com.br/app/noticia_133890394703/2026/08/14/388972/seis-em-cada-dez-empresas-sofreram-ataques-ciberneticos_1_57583.jpg"
+    },
+    {
+      "id": "latest-b5c9c735facad59668e52148",
+      "title": "Ibovespa cai 3,27% na semana com pior sequência desde 2023 e dólar dispara 2,68%",
+      "summary": "...",
+      "details": "...",
+      "url": "https://investidor10.com.br/amp/noticias/ibovespa-cai-3-27-na-semana-com-pior-sequencia-desde-2023-e-dolar-dispara-2-68-122076/",
+      "source": "Investidor10",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-14T20:56:49Z",
+      "updatedAt": "2026-08-14T20:56:49Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://investidor10.com.br/storage/news/6a7f804c91551.jpg"
     },
     {
       "id": "latest-21d7ab421050aad1109eea1e",
@@ -575,30 +677,11 @@
       "imageUrl": "https://media.gazetadopovo.com.br/2026/08/14174230/oab-nacional.jpg"
     },
     {
-      "id": "macro-7f03ab78b33561e46d13905e",
-      "title": "B5P211: uma forma simples de investir em títulos públicos atrelados à inflação",
-      "summary": "Mercado segue de olho em risco fiscal brasileiro e principal índice da B3 sofre fuga de capital estrangeiro",
-      "details": "Mercado segue de olho em risco fiscal brasileiro e principal índice da B3 sofre fuga de capital estrangeiro",
-      "url": "https://veja.abril.com.br/economia/ibovespa-encerra-em-queda-pelo-9-pregao-consecutivo-entenda/",
-      "source": "Banco Inter",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-14T20:39:48Z",
-      "updatedAt": "2026-08-14T20:39:48Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://veja.abril.com.br/wp-content/uploads/2025/01/b3-ibovespa-alta-acumulada-janeiro-205-tendencia-onde-investir-acoes-renda-variavel-1.jpg?quality=70&strip=info&resize=1080,565&crop=1"
-    },
-    {
       "id": "latest-af19325e67a8f094d5a26890",
       "title": "A tokenização do impossível: como blockchain e IA podem criar investimentos que hoje não existem",
-      "summary": "Dólar sobe a R$ 5,22 e Ibovespa cai pelo 9º pregão seguido com saída de estrangeiros, risco eleitoral e tensões no Oriente Médio",
-      "details": "Dólar sobe a R$ 5,22 e Ibovespa cai pelo 9º pregão seguido com saída de estrangeiros, risco eleitoral e tensões no Oriente Médio",
-      "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/dolar-alta-ibovespa-queda-14-agosto/",
+      "summary": "Investidores avaliaram a notícia de que o governo brasileiro iniciou o processo de análise de possíveis medidas de reciprocidade aos EUA.",
+      "details": "Investidores avaliaram a notícia de que o governo brasileiro iniciou o processo de análise de possíveis medidas de reciprocidade aos EUA.",
+      "url": "https://mistobrasil.com/2026/08/14/ouro-e-dolar-fecham-o-dia-em-alta-bolsa-em-queda/?amp=1",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -610,23 +693,23 @@
       "updatedAt": "2026-08-14T20:39:09Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-5980800.webp"
+      "imageUrl": "https://mistobrasil.com/wp-content/uploads/2026/08/bolsa-de-valores-ibovespa.jpg"
     },
     {
-      "id": "latest-b71820a090c0b29ef53c7b16",
-      "title": "Ibovespa hoje: dólar a R$ 5,22 e bolsa em queda pelo 9º dia",
-      "summary": "Automação pode tornar viáveis produtos financeiros antes caros, pulverizados ou complexos demais para o mercado tradicional",
+      "id": "latest-d4e343740aa71f8aba29e1c4",
+      "title": "Ouro e dólar fecham o dia em alta. Bolsa em queda",
+      "summary": "Misto Brasil",
       "details": "Automação pode tornar viáveis produtos financeiros antes caros, pulverizados ou complexos demais para o mercado tradicional",
       "url": "https://www.estadao.com.br/einvestidor/fabricio-tota/a-tokenizacao-do-impossivel-como-blockchain-e-ia-podem-criar-investimentos-que-hoje-nao-existem/",
-      "source": "SpaceMoney",
+      "source": "- Misto Brasil",
       "category": "latest",
       "tags": [
         "mercado",
         "bolsa",
         "macro"
       ],
-      "publishedAt": "2026-08-14T20:37:24Z",
-      "updatedAt": "2026-08-14T20:37:24Z",
+      "publishedAt": "2026-08-14T20:38:57Z",
+      "updatedAt": "2026-08-14T20:38:57Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
       "imageUrl": "https://www.estadao.com.br/resizer/v2/GE3HTHYHVRPE5MUOWVP3SIRLTY.jpg?quality=80&auth=ae6f61e8cfeb258efb9d0954a88c9ec77c42dde179ababe82b699cbf05eb59b2&width=1200&height=630&smart=true"
@@ -634,9 +717,9 @@
     {
       "id": "macro-c807367b2a842e3b95218857",
       "title": "Defesa do arcabouço, ‘tesouraço’, remédio amargo e choque fiscal: veja propostas dos presidenciáveis",
-      "summary": "ETF negociado na B3 que permite investir em uma cesta de títulos públicos brasileiros indexados à inflação por meio de uma única cota",
-      "details": "ETF negociado na B3 que permite investir em uma cesta de títulos públicos brasileiros indexados à inflação por meio de uma única cota",
-      "url": "https://interinvest.inter.co/renda-fixa/etfs/b5p211-uma-forma-simples-de-investir-em-titulos-publicos-atrelados-a-inflacao",
+      "summary": "‘Estadão’ mapeou o que os postulantes ao Planalto planejavam fazer na economia: de ajuste nas contas públicas a terras raras, passando por mercado de trabalho, privatizações e reforma administrativa",
+      "details": "‘Estadão’ mapeou o que os postulantes ao Planalto planejavam fazer na economia: de ajuste nas contas públicas a terras raras, passando por mercado de trabalho, privatizações e reforma administrativa",
+      "url": "https://www.estadao.com.br/em-alta/economia/defesa-do-arcabouco-tesouraco-remedio-amargo-e-choque-fiscal-veja-propostas-dos-presidenciaveis/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -648,34 +731,15 @@
       "updatedAt": "2026-08-14T20:34:08Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://d9hzq3shxgvwu.cloudfront.net/news/home-images/ac0b6f673b234051a67f150ce4e316a9_qual-a-diferenca-entre-prefixado-e-pos-fixado-1.jpg"
-    },
-    {
-      "id": "latest-117facfe0f20f7a0169cf605",
-      "title": "Ibovespa encerra em queda pelo 9° pregão consecutivo; entenda",
-      "summary": "‘Estadão’ mapeou o que os postulantes ao Planalto planejavam fazer na economia: de ajuste nas contas públicas a terras raras, passando por mercado de trabalho, privatizações e reforma administrativa",
-      "details": "‘Estadão’ mapeou o que os postulantes ao Planalto planejavam fazer na economia: de ajuste nas contas públicas a terras raras, passando por mercado de trabalho, privatizações e reforma administrativa",
-      "url": "https://www.estadao.com.br/em-alta/economia/defesa-do-arcabouco-tesouraco-remedio-amargo-e-choque-fiscal-veja-propostas-dos-presidenciaveis/",
-      "source": "VEJA",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-14T20:32:56Z",
-      "updatedAt": "2026-08-14T20:32:56Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
       "imageUrl": "https://www.estadao.com.br/resizer/v2/3B5UUEMFANGS7KYKN23QI4O5GI.jpg?quality=80&auth=02e7b8d7634602d33ba3258d6bd61596a0e7cf70ceb2fbc110e3da38b3b3e757&width=1200&height=630&smart=true"
     },
     {
-      "id": "macro-adddab2321ba613c7321babd",
+      "id": "macro-57fc00fd03c6a98d1b92f879",
       "title": "Mercado prevê crescimento de déficit primário em 2026, mostra Prisma Fiscal",
-      "summary": "Expectativa para a dívida bruta do governo geral permanece em 83% do PIB",
-      "details": "Expectativa para a dívida bruta do governo geral permanece em 83% do PIB",
-      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/mercado-preve-crescimento-de-deficit-primario-em-2026-mostra-prisma-fiscal/",
-      "source": "cnnbrasil.com.br",
+      "summary": "Atualizacao de macro capturada em CNN Brasil.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRGV5TmJZcnplZjJqWGFBRTQ5WG85NWJKODFKdXp6dTJ4MUZvVHZrd3hfRjR4Tl9PYTJpR2VfYjZxRTBBNU05RkJUbEgza2E3VFN5aVR6OWdfY05PQlV2dXcyVzQ1VjJyOGIybndLWXdKZ2hzcDJKN0VnLWhyTFljWFFGa3MyMUhwbHlZZHRmWW9UMXZSSkR3X2JnRWVWSDhycmNUNzBBeTY4VHJxUW1GTndpN29rTUo4VW9hZXpSSDNkeFoweE9zMGpRQnNyUQ?oc=5",
+      "source": "CNN Brasil",
       "category": "macro",
       "tags": [
         "macro",
@@ -685,15 +749,14 @@
       "publishedAt": "2026-08-14T20:29:06Z",
       "updatedAt": "2026-08-14T20:29:06Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportBusinessNews/tagreuters.com2026binary_LYNXMPEM150ZP-BASEIMAGE.jpg?w=800&h=534&crop=1"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-1464474dc4217965ddde7c99",
       "title": "Choque fiscal, arcabouço, ‘tesouraço’: veja as propostas dos presidenciáveis para a economia",
-      "summary": "‘Estadão’ mapeou o que os postulantes ao Planalto planejavam fazer na economia: de ajuste nas contas públicas a terras raras, passando por mercado de trabalho, privatizações e reforma administrativa",
-      "details": "‘Estadão’ mapeou o que os postulantes ao Planalto planejavam fazer na economia: de ajuste nas contas públicas a terras raras, passando por mercado de trabalho, privatizações e reforma administrativa",
-      "url": "https://www.estadao.com.br/economia/defesa-do-arcabouco-tesouraco-remedio-amargo-e-choque-fiscal-veja-propostas-dos-presidenciaveis/",
+      "summary": "Atualizacao de macro capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUXBRSkwxQlpqeU5iQTlsd0VfdFZrSzJmVjluMlV4b1pucnkzaHQ4ZWxqcFV2eGljU1liZE9SOE5oaVllNTZpY3BSLTZjcnJXd3NtbDQ0bkxmRzBXNG8xTTRJR1BhUERuWFp3T25CVEVaVGdJYnpRMTNWVDJtMXJZSVFwV0ZoTjAxczlDTThmU09Zbk1USXFyX3FPbjV3eGdZYnRQZ1hUeDBXUVVvQS1VUjNoSjJLdjk1cktrdVZKTGh0S21aOVd4VktNM2rSAdIBQVVfeXFMUDVUbXZSUUN1LWI1aU00c0dmQ09fdDA4dS0tM1M0LUtlWkZwZHlJRUotQmJWb2ZfTnhhWGFIN2xReE9UdjJJeUtIUUpSZEctdUpodzQ5Y3ljelM0Q0VYVFlBOG5fTDRZYXM3ZlhXekxlY2FZNm41Q0ZSdkNhSklydGtzajZtclhsSmFQeC1YaFY5elVqUGVSVlVUd1Z4d2Z6VnppVG10RmNFUVg1T3FpVFFsd2NlaTdxWHFzVW5MNjRCTEhJNkp5Y29hdjdIWkFFQVlR?oc=5",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -704,15 +767,14 @@
       "publishedAt": "2026-08-14T20:29:00Z",
       "updatedAt": "2026-08-14T20:29:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/3B5UUEMFANGS7KYKN23QI4O5GI.jpg?quality=80&auth=02e7b8d7634602d33ba3258d6bd61596a0e7cf70ceb2fbc110e3da38b3b3e757&width=1200&height=630&focal=570,763"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "funds-ef3d8f1fa0a906575d9bc92b",
       "title": "Preços de commodities agrícolas dependem de fatores financeiros",
-      "summary": "Visão de economista revela complexidade na formação de preços",
-      "details": "Visão de economista revela complexidade na formação de preços",
-      "url": "https://boca.com.br/agronegocio/precos-de-commodities-agricolas-dependem-de-fatores-financeiros",
+      "summary": "Atualizacao de fundos capturada em boca.com.br.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPV3l6MDJuM2tIOHRRUW0tc2Rnc1JoZXZ6a2tKb2ZnT0FobFgwOXdwMzFwR2dhNzFsTGx5bmtvaGN2amRJZHIwUWZZSzJzc0RnaHJoYVBfTDhNcFl6eW16YkNPdjhOVHJoaG1kazRheGVWbGI0UWdDM0o3ckowZXV4U05rY3VzTDU5alpIcjhlM1lDLUdxMWlVWlZNUQ?oc=5",
       "source": "boca.com.br",
       "category": "funds",
       "tags": [
@@ -723,8 +785,7 @@
       "publishedAt": "2026-08-14T20:15:35Z",
       "updatedAt": "2026-08-14T20:15:35Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/171df3b405edf40575b948cfb18dbd10_858x483.jpg"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "macro-4fef65bb53dccc2324aeac40",
@@ -835,24 +896,6 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "macro-cff58dbaf175da933bcfb3c1",
-      "title": "Projeto economiza R$ 10 bi em 2027, mas aumenta gastos em 2026 e reduz receitas durante 5 anos",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPblRQeDVLdVVra2xfV0Rka1d5WFJETkNiQ0xLM2x5eWx2eUJLb0RyUXNRN1FNYXBic0xlZlpTWmludk9reEJScXJjVm1hMHkzakFweWE0d28xNFpVY2J6ZDJmakcydFh5R2QzT3I4TTl3OGtaQ01xcnJ1ZmQzT0RtUndidGZmc3dobXFmYk1qUkJQdDQxd0daaTk5c2h4eFhJcTJVWVVVeUxObkUyUmRBUE5tQ0RlOEhOQTE5OUVLR0YtNWo0d3kySU12UlpKQ0XSAdQBQVVfeXFMTlE0cFpMUndXd0RzVjBnOTBCVk82Z3NucHRONHkyaEs3eXNPZk8xNV8zX2ZCWjdUVTc2N3MtS3NodHBKV2Q2MTQtNnp3MzhnT0lySnBrQ2lpRDg5NlV5b1R6c0tYQ1BmT1lGazFoMGpLNGNrQlpLRjA2THFYLXpKb2JMNTdCQUQtbENZXzUxZlJ5bUVqT0d1TGhIUzdtZmhoLTFPZ2JmVXJ1WlNvSmJHTDNtVGRTQ1NXSWR0RWNoQUNiSHIyUkY3UnJhbFJBU3JhdXhRVS0?oc=5",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-14T19:42:00Z",
-      "updatedAt": "2026-08-14T19:42:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "companies-57f9d519cc77f63bc74a3bcc",
       "title": "Reciprocidade contra EUA pode ampliar custos para empresas e consumidores no Brasil",
       "summary": "Atualizacao de empresas capturada em Times Brasil | CNBC.",
@@ -869,24 +912,6 @@
       "updatedAt": "2026-08-14T19:32:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "macro-c626b94ca3ddd08a52267a81",
-      "title": "Estudantes de Erebango participam de palestra sobre Educação Fiscal",
-      "summary": "Atualizacao de macro capturada em Jornal Bom Dia.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPaE52UGVOZnRnR1d0czhsYXA1TXYxNFhsMnBBa2gtRmJvLVlGV0lJQXZ0bmd2MWwyV0wtQ2hTdUROTl9EcUIwN0JRQ3E5aElweDJYVDBERXN0cnl6NlRPMWtoaVFFNXlfRzFWR3BOYmVuZllMSTJLMVYySTh3MjFILUhYaVhRNUZ3NHJLZVV3NUdBQTFpazA3NFR2cnd2V2VUZ0pxb3VXZTVpQjVYWFNrQ1h3VQ?oc=5",
-      "source": "Jornal Bom Dia",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-14T19:30:00Z",
-      "updatedAt": "2026-08-14T19:30:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "companies-7f3fccdd98a970059c4f24aa",
@@ -957,24 +982,6 @@
       ],
       "publishedAt": "2026-08-14T18:18:00Z",
       "updatedAt": "2026-08-14T18:18:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-9f3fa5f2ed8282eee23eecc0",
-      "title": "Mercadante rebate Flávio Bolsonaro sobre proposta de usar BNDES para internacionalizar empresas - TNOnline",
-      "summary": "Atualizacao de empresas capturada em TNOnline.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPXzZWd3BxU2ttN0RNaHRKaTEtN3hmZUFQZWhLa040T0Z6Q0l0MUZpWlF2U0Z3anpMQTNQZTBRaHFPWkhMT3NVcHBzeXE3cmhXSGNDNVFBeHl4blNpdFlRaHlRaTR1NDFuN1J4dG16SXpWWXRLOXdCd29lZzVrcDY0b2E1ZERXMzdSWDhDclZoQU5pX2Y4RUpnTVR1Mi1INTFucUV2eGwyemNLQjhyT3lsQnkwVGd2ZzJjT3JkZXhGR0RwX1c4cHdpaWl5MzhIbWtsSnFXRnJWSzZSbzBybjdfOXVGZkkxQ2ZxQ0RMa2dn0gHuAUFVX3lxTE9fNlZ3cHFTa203RE1odEppMS03eGZlQVBlaEtrTjRPRnpDSXQxRmlaUXZTRndqekxBM1BlMFFocU9aSExPc1VwcHN5cTdyaFdIY0M1UUF4eXhuU2l0WVFoeVFpNHU0MW43Unh0bXpJelZZdEs5d0J3b2VnNWtwNjRvYTVkRFczN1JYOENyVmhBTmlfZjhFSmdNVHUyLUg1MW5xRXZ4bDJ6Y0tCOHJPeWxCeTBUZ3ZnMmNPcmRleEZHRHBfVzhwd2lpaXkzOEhta2xKcVdGclZLNlJvMHJuN185dUZmSTFDZnFDRExrZ2c?oc=5",
-      "source": "TNOnline",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-14T17:59:00Z",
-      "updatedAt": "2026-08-14T17:59:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
@@ -1105,7 +1112,7 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "companies-7d59f616b07d34a5fa964d2f",
+      "id": "companies-62c080f9eb07476485a4a6e2",
       "title": "Empresas brasileiras no Paraguai têm redução de custos",
       "summary": "Atualizacao de empresas capturada em Band News FM Curitiba.",
       "details": "",
@@ -1117,8 +1124,8 @@
         "resultados",
         "m&a"
       ],
-      "publishedAt": "2026-08-14T16:31:55Z",
-      "updatedAt": "2026-08-14T16:31:55Z",
+      "publishedAt": "2026-08-14T16:32:40Z",
+      "updatedAt": "2026-08-14T16:32:40Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
@@ -1175,24 +1182,6 @@
       "updatedAt": "2026-08-14T15:28:18Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "companies-b084c7416ec64f86ad746be0",
-      "title": "Lei de Reciprocidade pode elevar inflação no Brasil, diz economista",
-      "summary": "Atualizacao de empresas capturada em BPMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNzJ2aE5JQ1NZQmZGbnM1SnIzdkU1dmpjU3VFMGZpaUJmcThIdndtR21aUGRZeUNzdDdyVmxiS2pwcUYxVVhUa1Y3LTJpd2ZMQnViMHdFc3dfeVEtbExZWnE1MWpxTjRac0YyX3IxUEVyYVpXdW9vZVAtb0lGRjJpVmgtUW53SEFQVG1SYnA1U29yckdBWml6TlB1T2d6TXM?oc=5",
-      "source": "BPMoney",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-14T14:39:52Z",
-      "updatedAt": "2026-08-14T14:39:52Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "funds-dff5c3a79b194db321302143",
@@ -1373,6 +1362,24 @@
       "updatedAt": "2026-08-14T10:42:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "funds-5fe0c0fe6b3f56a95e5afafd",
+      "title": "Quatro ministérios e agências centrais têm taxas de desembolso abaixo de 6% ou não desembolsaram fundos de investimento público.",
+      "summary": "Atualizacao de fundos capturada em Vietnam.vn.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYXBmUGdHWEFRUjFQdi1meVBPeVM2MWpvUGEtbnVJSzVscWhHR1JwTG1fdkxWOVJhZ09zbUFmVldqM1ZJWmJ6TUgzdi1QSGQ4NHJxYWpNcVRicXhzV19RYmZiaVRIN3lRaG9Nd3QyRE9OZ0pXSlAxX05jWjdJdDcwWk9lRktoeDdDXzk1YmRGWEN2MEpiX1Z0Q1UzdFhxTVpDVU45QmZGcDRGREx1X2l3?oc=5",
+      "source": "Vietnam.vn",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-14T10:35:42Z",
+      "updatedAt": "2026-08-14T10:35:42Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
   ]
 }
