@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-15T00:59:07Z",
-  "generatedAt": "2026-08-15T00:59:07Z",
+  "updatedAt": "2026-08-15T02:15:01Z",
+  "generatedAt": "2026-08-15T02:15:01Z",
   "categories": [
     {
       "id": "all",
@@ -61,10 +61,6 @@
       "label": "Capital Aberto"
     },
     {
-      "id": "cen-riomt",
-      "label": "CenárioMT"
-    },
-    {
       "id": "cnn-brasil",
       "label": "CNN Brasil"
     },
@@ -81,6 +77,10 @@
       "label": "Estúdio Folha"
     },
     {
+      "id": "extra-online",
+      "label": "Extra online"
+    },
+    {
       "id": "fiis",
       "label": "Fiis"
     },
@@ -89,24 +89,20 @@
       "label": "Folha de S.Paulo"
     },
     {
-      "id": "folha-pe",
-      "label": "Folha PE"
-    },
-    {
-      "id": "gazeta-do-povo",
-      "label": "Gazeta do Povo"
+      "id": "folhape-com-br",
+      "label": "folhape.com.br"
     },
     {
       "id": "infomoney",
       "label": "InfoMoney"
     },
     {
-      "id": "inforchannel",
-      "label": "Inforchannel"
+      "id": "inforchannel-com-br",
+      "label": "inforchannel.com.br"
     },
     {
-      "id": "investalk",
-      "label": "InvesTalk"
+      "id": "investalk-bb-com-br",
+      "label": "investalk.bb.com.br"
     },
     {
       "id": "investing-com-brasil-finan-as-c-mbio-e-investimentos",
@@ -149,6 +145,10 @@
       "label": "Portal ABC do ABC"
     },
     {
+      "id": "portal-chapada-grande",
+      "label": "Portal Chapada Grande"
+    },
+    {
       "id": "radiosobradinho-com-br",
       "label": "radiosobradinho.com.br"
     },
@@ -157,12 +157,16 @@
       "label": "Rede Estação Democracia"
     },
     {
-      "id": "spacemoney",
-      "label": "SpaceMoney"
+      "id": "r-dio-pampa",
+      "label": "Rádio Pampa"
     },
     {
-      "id": "s-o-gon-alo-agora",
-      "label": "São Gonçalo Agora"
+      "id": "segs-portal-nacional",
+      "label": "SEGS Portal Nacional"
+    },
+    {
+      "id": "spacemoney",
+      "label": "SpaceMoney"
     },
     {
       "id": "ti-inside-online",
@@ -171,6 +175,10 @@
     {
       "id": "uol-economia",
       "label": "UOL Economia"
+    },
+    {
+      "id": "valor-investe",
+      "label": "Valor Investe"
     },
     {
       "id": "vietnam-vn",
@@ -183,11 +191,49 @@
   ],
   "items": [
     {
+      "id": "macro-88d6cdfc480cbc89fb328fb6",
+      "title": "Alta do PIB acima de 2% se torna mais difícil em 2026, dizem economistas",
+      "summary": "Cosan anuncia reestruturação societária, cisão de R$ 2,6 bi da Radar II e deslistagem de ADS na NYSE",
+      "details": "Cosan anuncia reestruturação societária, cisão de R$ 2,6 bi da Radar II e deslistagem de ADS na NYSE",
+      "url": "https://www.spacemoney.com.br/investimentos/acoes/cosan-reestruturacao-radar-nyse/",
+      "source": "Folha de S.Paulo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-15T02:00:00Z",
+      "updatedAt": "2026-08-15T02:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-12911215.webp"
+    },
+    {
+      "id": "macro-0ed00624fea0fac60e950225",
+      "title": "Inflação no País desacelera em julho, mas preço de serviços ainda preocupa",
+      "summary": "Dados do IBGE reforçam cenário de perda de ritmo da economia no 2º trimestre, conforme analistas",
+      "details": "Dados do IBGE reforçam cenário de perda de ritmo da economia no 2º trimestre, conforme analistas",
+      "url": "https://www1.folha.uol.com.br/mercado/2026/08/alta-do-pib-acima-de-2-se-torna-mais-dificil-em-2026-dizem-economistas.shtml",
+      "source": "Rádio Pampa",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-15T01:33:26Z",
+      "updatedAt": "2026-08-15T01:33:26Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://f.i.uol.com.br/fotografia/2026/08/13/17866363456a7de8390303c_1786636345_3x2_rt.jpg"
+    },
+    {
       "id": "latest-e84904851e4f97e45be224d8",
       "title": "Cosan anuncia cisão de R$ 2,6 bi e saída da NYSE",
-      "summary": "Ranking mostra as maiores perdas de valor de mercado do Ibovespa em nove pregões de queda; Itaú, bancos e Petrobras concentram as baixas",
-      "details": "Ranking mostra as maiores perdas de valor de mercado do Ibovespa em nove pregões de queda; Itaú, bancos e Petrobras concentram as baixas",
-      "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/bancos-perdas-ibovespa-nove-quedas/",
+      "summary": "Atualizacao de ultima hora capturada em SpaceMoney.",
+      "details": "",
+      "url": "https://monitormercantil.com.br/mercado-de-capitais-r-679-bi-em-ofertas-em-julho/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -198,15 +244,14 @@
       "publishedAt": "2026-08-15T00:11:42Z",
       "updatedAt": "2026-08-15T00:11:42Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-17977103-2.webp"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-39faf6467ed9c4139dc5a824",
       "title": "Bancos perdem R$ 96,7 bi em 9 quedas do Ibovespa",
-      "summary": "Cosan anuncia reestruturação societária, cisão de R$ 2,6 bi da Radar II e deslistagem de ADS na NYSE",
-      "details": "Cosan anuncia reestruturação societária, cisão de R$ 2,6 bi da Radar II e deslistagem de ADS na NYSE",
-      "url": "https://www.spacemoney.com.br/investimentos/acoes/cosan-reestruturacao-radar-nyse/",
+      "summary": "Ranking mostra as maiores perdas de valor de mercado do Ibovespa em nove pregões de queda; Itaú, bancos e Petrobras concentram as baixas",
+      "details": "Ranking mostra as maiores perdas de valor de mercado do Ibovespa em nove pregões de queda; Itaú, bancos e Petrobras concentram as baixas",
+      "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/bancos-perdas-ibovespa-nove-quedas/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -218,14 +263,14 @@
       "updatedAt": "2026-08-15T00:04:54Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-12911215.webp"
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-17977103-2.webp"
     },
     {
       "id": "latest-7049a7c5d403ca829d966af6",
       "title": "Mercado de capitais: R$ 67,9 bi em ofertas em julho",
-      "summary": "Atualizacao de ultima hora capturada em Monitor Mercantil.",
-      "details": "",
-      "url": "https://monitormercantil.com.br/mercado-de-capitais-r-679-bi-em-ofertas-em-julho/",
+      "summary": "Indicador oficial da inflação no País, o IPCA teve variação de 0,07% em julho, ante 0,16% em junho, na menor taxa para o mês desde 2022 (quando houve deflação",
+      "details": "Indicador oficial da inflação no País, o IPCA teve variação de 0,07% em julho, ante 0,16% em junho, na menor taxa para o mês desde 2022 (quando houve deflação",
+      "url": "https://www.radiopampa.com.br/inflacao-no-pais-desacelera-em-julho-mas-preco-de-servicos-ainda-preocupa/",
       "source": "Monitor Mercantil",
       "category": "latest",
       "tags": [
@@ -236,7 +281,8 @@
       "publishedAt": "2026-08-15T00:03:54Z",
       "updatedAt": "2026-08-15T00:03:54Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.radiopampa.com.br/wp-content/uploads/2026/08/jfinflaskg.jpg"
     },
     {
       "id": "latest-086245e3453d547ec26381e7",
@@ -391,9 +437,9 @@
     {
       "id": "latest-43ee8e7e9ca6a9d4b7d71362",
       "title": "Bitcoin e Ethereum enfrentam quedas no mercado de criptomoedas",
-      "summary": "Atualizacao de ultima hora capturada em boca.com.br.",
-      "details": "",
-      "url": "https://www.canalrural.com.br/videos/mercado-financeiro-reduz-estimativa-da-inflacao-pela-sexta-semana-consecutiva/",
+      "summary": "Desempenho das criptomoedas é afetado por baixa liquidez e ausências legislativas",
+      "details": "Desempenho das criptomoedas é afetado por baixa liquidez e ausências legislativas",
+      "url": "https://boca.com.br/mercado-financeiro/bitcoin-e-ethereum-enfrentam-quedas-no-mercado-de-criptomoedas",
       "source": "boca.com.br",
       "category": "latest",
       "tags": [
@@ -404,14 +450,15 @@
       "publishedAt": "2026-08-14T23:05:31Z",
       "updatedAt": "2026-08-14T23:05:31Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/ac1b56b26cc311545e9c9a26e2b5dfe7_858x483.jpg"
     },
     {
       "id": "latest-c27df4107dc057d7bd17064b",
       "title": "Mercado financeiro reduz estimativa da inflação pela sexta semana consecutiva",
-      "summary": "Desempenho das criptomoedas é afetado por baixa liquidez e ausências legislativas",
-      "details": "Desempenho das criptomoedas é afetado por baixa liquidez e ausências legislativas",
-      "url": "https://boca.com.br/mercado-financeiro/bitcoin-e-ethereum-enfrentam-quedas-no-mercado-de-criptomoedas",
+      "summary": "Atualizacao de ultima hora capturada em Canal Rural.",
+      "details": "",
+      "url": "https://www.canalrural.com.br/videos/mercado-financeiro-reduz-estimativa-da-inflacao-pela-sexta-semana-consecutiva/",
       "source": "Canal Rural",
       "category": "latest",
       "tags": [
@@ -422,8 +469,7 @@
       "publishedAt": "2026-08-14T23:05:29Z",
       "updatedAt": "2026-08-14T23:05:29Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/ac1b56b26cc311545e9c9a26e2b5dfe7_858x483.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-ab6b02ede24a6213ba5e016f",
@@ -445,11 +491,29 @@
       "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/28b90dc9d9f91dd7bf8017f42cecbd5e_858x483.jpg"
     },
     {
+      "id": "companies-596e5b6502dbecc7b08dd99c",
+      "title": "Seis em cada dez empresas sofreram ataques cibernéticos",
+      "summary": "Atualizacao de empresas capturada em Portal Chapada Grande.",
+      "details": "",
+      "url": "https://www.chapadagrande.com/noticia/203855/seis-em-cada-dez-empresas-sofreram-ataques-ciberneticos/amp",
+      "source": "Portal Chapada Grande",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-14T23:04:25Z",
+      "updatedAt": "2026-08-14T23:04:25Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
       "id": "latest-061602dd32f3f31708750823",
       "title": "Ibovespa cai 3,23% na semana com preocupação sobre tarifas dos EUA e balanços",
-      "summary": "Atualizacao de ultima hora capturada em Estadão.",
-      "details": "",
-      "url": "https://monitormercantil.com.br/bc-decreta-liquidacao-extrajudicial-de-instituicoes-do-grupo-simpala/",
+      "summary": "Hapvida (HAPV3) liderou quedas ao derreter 37,88%; Embraer (EMBJ3) registrou a maior alta",
+      "details": "Hapvida (HAPV3) liderou quedas ao derreter 37,88%; Embraer (EMBJ3) registrou a maior alta",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-cai-323-na-semana-com-preocupacao-sobre-tarifas-dos-eua-e-balancos/",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -460,14 +524,15 @@
       "publishedAt": "2026-08-14T22:57:08Z",
       "updatedAt": "2026-08-14T22:57:08Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/6DII55F7BVK3TNJHJ5C6XDUT2I.png?quality=80&auth=b309ce2dcbeab218fddb23e54e79cbcc7882c923ed94cf24ab0787a46e7611fa&width=1200&height=630&smart=true"
     },
     {
       "id": "latest-05ff9f6f9852b4e7b77efeaa",
       "title": "BC decreta liquidação extrajudicial de instituições do Grupo Simpala",
-      "summary": "Hapvida (HAPV3) liderou quedas ao derreter 37,88%; Embraer (EMBJ3) registrou a maior alta",
-      "details": "Hapvida (HAPV3) liderou quedas ao derreter 37,88%; Embraer (EMBJ3) registrou a maior alta",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-cai-323-na-semana-com-preocupacao-sobre-tarifas-dos-eua-e-balancos/",
+      "summary": "Dólar fecha em R$ 5,21 e Ibovespa renova sequencia de perdas",
+      "details": "Dólar fecha em R$ 5,21 e Ibovespa renova sequencia de perdas",
+      "url": "https://www.meon.com.br/noticias/mundo/dolar-atinge-r-521-e-ibovespa-registra-9a-queda-consecutiva",
       "source": "Monitor Mercantil",
       "category": "latest",
       "tags": [
@@ -479,14 +544,14 @@
       "updatedAt": "2026-08-14T22:57:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/6DII55F7BVK3TNJHJ5C6XDUT2I.png?quality=80&auth=b309ce2dcbeab218fddb23e54e79cbcc7882c923ed94cf24ab0787a46e7611fa&width=1200&height=630&smart=true"
+      "imageUrl": "https://media.meon.com.br/meon-media/wp-content/uploads/2026/08/gemini-generated-image-9yr7wv9yr7wv9yr7-1024x559.avif"
     },
     {
       "id": "latest-3976fc67c0eec57158b36540",
       "title": "Dólar atinge R$ 5,21 e Ibovespa registra 9ª queda consecutiva",
-      "summary": "Criptomoeda operava em baixa de 0,70%, a US$ 62.885,86, enquanto o Ethereum tinha queda de 0,54%, a US$ 1.875,71",
-      "details": "Criptomoeda operava em baixa de 0,70%, a US$ 62.885,86, enquanto o Ethereum tinha queda de 0,54%, a US$ 1.875,71",
-      "url": "https://www.cnnbrasil.com.br/economia/money/mercado/bitcoin-opera-em-queda-apos-dados-de-inflacao-mais-brandos/",
+      "summary": "Atualizacao de ultima hora capturada em MEON.",
+      "details": "",
+      "url": "https://monitormercantil.com.br/bc-decreta-liquidacao-extrajudicial-de-instituicoes-do-grupo-simpala/",
       "source": "MEON",
       "category": "latest",
       "tags": [
@@ -497,15 +562,14 @@
       "publishedAt": "2026-08-14T22:50:00Z",
       "updatedAt": "2026-08-14T22:50:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/12/bitcoin-e1764615069276.jpg?w=800&h=451&crop=1"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-7abbb088097eb56c471272b4",
       "title": "Bitcoin opera em queda após dados de inflação mais brandos",
-      "summary": "Dólar fecha em R$ 5,21 e Ibovespa renova sequencia de perdas",
-      "details": "Dólar fecha em R$ 5,21 e Ibovespa renova sequencia de perdas",
-      "url": "https://www.meon.com.br/noticias/mundo/dolar-atinge-r-521-e-ibovespa-registra-9a-queda-consecutiva",
+      "summary": "Petrobras identifica hidrocarbonetos em poço no bloco FZA-M-59, no Amapá, sem estimativa de volume nem viabilidade comercial",
+      "details": "Petrobras identifica hidrocarbonetos em poço no bloco FZA-M-59, no Amapá, sem estimativa de volume nem viabilidade comercial",
+      "url": "https://www.spacemoney.com.br/investimentos/acoes/petrobras-descoberta-no-amapa/",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -517,7 +581,7 @@
       "updatedAt": "2026-08-14T22:44:28Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://media.meon.com.br/meon-media/wp-content/uploads/2026/08/gemini-generated-image-9yr7wv9yr7wv9yr7-1024x559.avif"
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-34442635-5.webp"
     },
     {
       "id": "macro-020eb0d55be4fd814db14977",
@@ -537,6 +601,25 @@
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://www.radiosobradinho.com.br/wp-content/uploads/2026/08/Estudantes-de-Estrela-Velha-participam-de-Concurso-de-Fotografia-sobre-Educacao-Fiscal-e1786746692665.png"
+    },
+    {
+      "id": "latest-ecfb79bac3e8992629938df2",
+      "title": "Petrobras anuncia nova descoberta em poço no Amapá",
+      "summary": "Criptomoeda operava em baixa de 0,70%, a US$ 62.885,86, enquanto o Ethereum tinha queda de 0,54%, a US$ 1.875,71",
+      "details": "Criptomoeda operava em baixa de 0,70%, a US$ 62.885,86, enquanto o Ethereum tinha queda de 0,54%, a US$ 1.875,71",
+      "url": "https://www.cnnbrasil.com.br/economia/money/mercado/bitcoin-opera-em-queda-apos-dados-de-inflacao-mais-brandos/",
+      "source": "SpaceMoney",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-14T22:12:41Z",
+      "updatedAt": "2026-08-14T22:12:41Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/12/bitcoin-e1764615069276.jpg?w=800&h=451&crop=1"
     },
     {
       "id": "latest-e68e9187e619cc4d82373aca",
@@ -577,29 +660,11 @@
       "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-35118208-23.webp"
     },
     {
-      "id": "companies-4071ba5d61c8400236008120",
-      "title": "Seis em cada dez empresas sofreram ataques cibernéticos",
-      "summary": "Atualizacao de empresas capturada em São Gonçalo Agora.",
-      "details": "",
-      "url": "https://monitormercantil.com.br/durigan-rebate-criticas-de-inercia-sobre-crise-do-brb/",
-      "source": "São Gonçalo Agora",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-14T22:01:00Z",
-      "updatedAt": "2026-08-14T22:01:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
       "id": "macro-4c507511fbe9f174078bc5e2",
       "title": "Dow Jones hoje: Bolsas de NY recuam pressionadas pela volatilidade do petróleo",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://www.saogoncaloagora.com.br/noticia/241330/seis-em-cada-dez-empresas-sofreram-ataques-ciberneticos/amp",
+      "summary": "Agenda de indicadores de hoje trouxe números de vendas no varejo nos EUA e confiança do consumidor",
+      "details": "Agenda de indicadores de hoje trouxe números de vendas no varejo nos EUA e confiança do consumidor",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/dow-jones-hoje-bolsas-de-wall-street-operam-perto-da-estabilidade-de-olho-em-petroleo-e-juros/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -610,25 +675,7 @@
       "publishedAt": "2026-08-14T22:00:35Z",
       "updatedAt": "2026-08-14T22:00:35Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "latest-c3b2cee1d3dae7a21ad408d6",
-      "title": "Durigan rebate críticas de inércia sobre crise do BRB",
-      "summary": "Agenda de indicadores de hoje trouxe números de vendas no varejo nos EUA e confiança do consumidor",
-      "details": "Agenda de indicadores de hoje trouxe números de vendas no varejo nos EUA e confiança do consumidor",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/dow-jones-hoje-bolsas-de-wall-street-operam-perto-da-estabilidade-de-olho-em-petroleo-e-juros/",
-      "source": "Monitor Mercantil",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-14T21:49:46Z",
-      "updatedAt": "2026-08-14T21:49:46Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://www.estadao.com.br/resizer/v2/YCPTUAYDGFKVBNW7UKQRYQG3UU.jpg?quality=80&auth=e56debb295704368425231a3f08f02a648f0bb719bce1ffe75107c3aed7412fe&width=1200&height=630&smart=true"
     },
     {
@@ -652,9 +699,9 @@
     {
       "id": "macro-e9494b12236c87e03cf0a0a6",
       "title": "Simples Nacional: NFS-e Nacional será obrigatória para ME e EPP a partir de 1º de novembro de 2026",
-      "summary": "A mediana das projeções do mercado para o deficit primário do governo central em 2026 subiu de R$ 58,077 bilhões para R$ 59,145 bilhões. Leia no Poder360.",
-      "details": "A mediana das projeções do mercado para o deficit primário do governo central em 2026 subiu de R$ 58,077 bilhões para R$ 59,145 bilhões. Leia no Poder360.",
-      "url": "https://www.poder360.com.br/poder-economia/mercado-eleva-projecao-de-deficit-primario-para-r-591-bi-em-2026/",
+      "summary": "A Resolução CGSN nº 191/2026 prorroga o prazo de obrigatoriedade para 1º de novembro de 2026 e esclarece que as regras relativas à CBS e ao IBS para os optantes do Simples Nacional passam a produzir efeitos somente a partir de 1º de janeiro de 2027.",
+      "details": "A Resolução CGSN nº 191/2026 prorroga o prazo de obrigatoriedade para 1º de novembro de 2026 e esclarece que as regras relativas à CBS e ao IBS para os optantes do Simples Nacional passam a produzir efeitos somente a partir de 1º de janeiro de 2027.",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/simples-nacional-nfs-e-nacional-sera-obrigatoria-para-me-e-epp-a-partir-de-1o-de-novembro-de-2026",
       "source": "www.gov.br",
       "category": "macro",
       "tags": [
@@ -666,14 +713,14 @@
       "updatedAt": "2026-08-14T21:24:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://static.poder360.com.br/uploads/2026/06/dinheiro-joel-santana-pixabay-848x477.jpg"
+      "imageUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/simples-nacional-nfs-e-nacional-sera-obrigatoria-para-me-e-epp-a-partir-de-1o-de-novembro-de-2026/image-8.png/@@images/3b58a1ff-3959-4d99-9824-7247f4dc71a8.png"
     },
     {
       "id": "macro-dda5b38ab35ad82935b6fb81",
       "title": "Mercado eleva projeção de deficit primário para R$ 59,1 bi em 2026",
-      "summary": "A Resolução CGSN nº 191/2026 prorroga o prazo de obrigatoriedade para 1º de novembro de 2026 e esclarece que as regras relativas à CBS e ao IBS para os optantes do Simples Nacional passam a produzir efeitos somente a partir de 1º de janeiro de 2027.",
-      "details": "A Resolução CGSN nº 191/2026 prorroga o prazo de obrigatoriedade para 1º de novembro de 2026 e esclarece que as regras relativas à CBS e ao IBS para os optantes do Simples Nacional passam a produzir efeitos somente a partir de 1º de janeiro de 2027.",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/simples-nacional-nfs-e-nacional-sera-obrigatoria-para-me-e-epp-a-partir-de-1o-de-novembro-de-2026",
+      "summary": "Atualizacao de macro capturada em Poder360.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWFFQbUMwNzdVSnFMZnQ1U1VFYUNDR2dxLTZWanJhLWZqVGZNTlZTRU9mb00xV0ltS3doVUNueXA4aG9zNHpjZE12ZFVxODVVOXVwZjVhV1lkbVNJS1gyZ3RLOTh4N2MwSUhFcGVWcDhnNVFFbFRrSjVVSHR0ZjZGQkFHT0F4UVJRbFgyUV8tTVE5TzRhX2hPQ1F1SGNLaFpJWk1reEFWOTZfOXE3?oc=5",
       "source": "Poder360",
       "category": "macro",
       "tags": [
@@ -684,15 +731,14 @@
       "publishedAt": "2026-08-14T21:15:35Z",
       "updatedAt": "2026-08-14T21:15:35Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/simples-nacional-nfs-e-nacional-sera-obrigatoria-para-me-e-epp-a-partir-de-1o-de-novembro-de-2026/image-8.png/@@images/3b58a1ff-3959-4d99-9824-7247f4dc71a8.png"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-a86a4ef5d30ffecdaf26f240",
       "title": "No mercado de juros, DIs longos sobem cerca de 40 pontos-base na semana com atenção a fiscal",
       "summary": "Atualizacao de macro capturada em UOL Economia.",
       "details": "",
-      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/08/14/no-mercado-de-juros-dis-longos-sobem-cerca-de-40-pontos-base-na-semana-com-atencao-a-fiscal.htm",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQWkVIREh0X2ctT1hrVDNTbl9TbE02S1Z4TkM4SHBNdGlZZTl4SmxXOWJ4clhEN05JRnFEbV9Fc0d4aEd1bVJtR0EzQXYtSW40c1JnQms3NHRCZ3NPZkV4cDBmRWlmU3hLQkwyNWo4cG9BcmowaVAtLUVPRGZPUFpYbHNnRUVLYTJmcFN0dlN0UHRWUE9jS1lkZlQzRU9jQzZWbTlMRm1HRWgxc3E2YmRkT3owOGJTOGF6Z3B6dkdlZEt4dHNWaS0tckxEaVRCM2FrT1NKSVVLVjNBUUljVEVKLWVuRTdQMU5YcUYxb2N5ZUM2Zw?oc=5",
       "source": "UOL Economia",
       "category": "macro",
       "tags": [
@@ -720,6 +766,42 @@
       ],
       "publishedAt": "2026-08-14T21:11:56Z",
       "updatedAt": "2026-08-14T21:11:56Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-c654c7e3d46c75073b8c6c86",
+      "title": "Nota fiscal deixa de ser rejeitada, mas risco permanece no contrato | SEGS Portal Nacional de Seguros,...",
+      "summary": "Atualizacao de macro capturada em SEGS Portal Nacional.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcW1WLXFXRkNJbHNVUFA4dC1XajhTNFY4aFd2bDlXT1BIbXBMcV93S1ZVWVR6ZHhMWC1WYXBLNEQ5NExaZ1ppRUoyREItejh3dVBSajlFNDdKMjVIUnVVdElxOXBkSFNrbUU4NlVRRVpVT0NSWTlUTHpEU1kzYzVGcUhGM01jeWJlQ2w5M3c3cGdCeXBjRXhPU0tIU3VheWZqSFZ1aWRKaVZpZi00QnfSAa4BQVVfeXFMUHFtVi1xV0ZDSWxzVVBQOHQtV2o4UzRWOGhXdmw5V09QSG1wTHFfd0tWVVlUemR4TFgtVmFwSzREOTRMWmdaaUVKMkRCLXo4d3VQUmo5RTQ3SjI1SFJ1VXRJcTlwZEhTa21FODZVUUVaVU9DUlk5VEx6RFNZM2M1RnFIRjNNY3liZUNsOTN3N3BnQnlwY0V4T1NLSFN1YXlmakhWdWlkSmlWaWYtNEJ3?oc=5",
+      "source": "SEGS Portal Nacional",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-14T21:09:15Z",
+      "updatedAt": "2026-08-14T21:09:15Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-10bad6b535c40806f7b15ae1",
+      "title": "Governo eleva projeção do salário mínimo para R$ 1.741",
+      "summary": "Atualizacao de macro capturada em Extra online.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNQThZSDlrN1VxVTlCdmxlNy01Tk5kMTZwdXVmdDRXY3VxbW5ESFBzb3hSc1Rqb1JVTmk0VEZUS2FGcFk2TjdObU9DVjFrU1I3Q3MyYmpzaFNRRXk5cDZZbXRUcDBxREhnX1lHcHJ0OWx4RkZvR3E2a0hzbUp0bXV3R3FjOUtweXJSVk9yaExnemptdkdjbmI1UUt3WXhQaUtHOElrWXQzVWg1TE9QcXZ0Qk1QX2E4YklZQnfSAboBQVVfeXFMTUE4WUg5azdVcVU5QnZsZTctNU5OZDE2cHV1ZnQ0V2N1cW1uREhQc294UnNUam9SVU5pNFRGVEthRnBZNk43Tm1PQ1Yxa1NSN0NzMmJqc2hTUUV5OXA2WW10VHAwcURIZ19ZR3BydDlseEZGb0dxNmtIc21KdG11d0dxYzlLcHlyUlZPcmhMZ3pqbXZHY25iNVFLd1l4UGlLRzhJa1l0M1VoNUxPUHF2dEJNUF9hOGJJWUJ3?oc=5",
+      "source": "Extra online",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-14T21:02:54Z",
+      "updatedAt": "2026-08-14T21:02:54Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
@@ -756,24 +838,6 @@
       ],
       "publishedAt": "2026-08-14T20:45:44Z",
       "updatedAt": "2026-08-14T20:45:44Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-b9ef374932edf84c6b99fc8f",
-      "title": "OAB pede que Lula vete projeto que aumenta custas na Justiça Federal",
-      "summary": "Atualizacao de macro capturada em Gazeta do Povo.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQS055ZEJYbTByaUI4MVhLQ1hmc0ozb1RYU0ZUQ1ZvZXBiSlRSeUNGRUw5RmVLODJSWGoxUTRqSFMzNjR0eG5rajIxT21RdGJMazJ2ck1qb1JyT0RxOVV4MlhIZ1F6djZlNkpCcDJxV0FwTUpuWHdGLVdXeEFTNmRwdi1JZC1rb0psYy0yS3FCZTJ3aEM4Y3hkbmt6Q185NU9odURrd2VZbk1oRUw2cWkzZA?oc=5",
-      "source": "Gazeta do Povo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-14T20:43:00Z",
-      "updatedAt": "2026-08-14T20:43:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
@@ -832,24 +896,6 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "macro-1464474dc4217965ddde7c99",
-      "title": "Choque fiscal, arcabouço, ‘tesouraço’: veja as propostas dos presidenciáveis para a economia",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUXBRSkwxQlpqeU5iQTlsd0VfdFZrSzJmVjluMlV4b1pucnkzaHQ4ZWxqcFV2eGljU1liZE9SOE5oaVllNTZpY3BSLTZjcnJXd3NtbDQ0bkxmRzBXNG8xTTRJR1BhUERuWFp3T25CVEVaVGdJYnpRMTNWVDJtMXJZSVFwV0ZoTjAxczlDTThmU09Zbk1USXFyX3FPbjV3eGdZYnRQZ1hUeDBXUVVvQS1VUjNoSjJLdjk1cktrdVZKTGh0S21aOVd4VktNM2rSAdIBQVVfeXFMUDVUbXZSUUN1LWI1aU00c0dmQ09fdDA4dS0tM1M0LUtlWkZwZHlJRUotQmJWb2ZfTnhhWGFIN2xReE9UdjJJeUtIUUpSZEctdUpodzQ5Y3ljelM0Q0VYVFlBOG5fTDRZYXM3ZlhXekxlY2FZNm41Q0ZSdkNhSklydGtzajZtclhsSmFQeC1YaFY5elVqUGVSVlVUd1Z4d2Z6VnppVG10RmNFUVg1T3FpVFFsd2NlaTdxWHFzVW5MNjRCTEhJNkp5Y29hdjdIWkFFQVlR?oc=5",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-14T20:29:00Z",
-      "updatedAt": "2026-08-14T20:29:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "funds-ef3d8f1fa0a906575d9bc92b",
       "title": "Preços de commodities agrícolas dependem de fatores financeiros",
       "summary": "Atualizacao de fundos capturada em boca.com.br.",
@@ -866,42 +912,6 @@
       "updatedAt": "2026-08-14T20:15:35Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "macro-4fef65bb53dccc2324aeac40",
-      "title": "Dólar sobe 2% na semana com eleições e fiscal no radar",
-      "summary": "Atualizacao de macro capturada em Money Times.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5qdHZXdU95UGJ1TXpVUlJLNEVOcU1hQ3FsZUZVTHM3Zm0zX210Qll2SWZ5Tmh2OFVwaDNsMXNxYlFrRTJnaUhWbWwxUWxGZXFJSndmazVmUThDVW9waFE?oc=5",
-      "source": "Money Times",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-14T20:11:00Z",
-      "updatedAt": "2026-08-14T20:11:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-f671d3d46f258a40f21f826e",
-      "title": "Flavio Bolsonaro sinaliza em programa de governo que dívida pode ser sua âncora fiscal",
-      "summary": "Atualizacao de macro capturada em O GLOBO.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNYmlkcU1IR0tYQUxiWnhhc3k4TC15eXI5WnkzblY0bDFsaHhFeTd5VnQzTHYyeWdqRm5YVGsxWVJ1VFo4OTgxMGdVZjBjdEdHYkhKZ0pkMzM0djF5MmtZUjdnTWFOb2x5SVJEYkZsLWw2aHhXeElZM3F0VXdJQnBycEFJaEZxWENjVkowMmtLWF82amEzdjdNdkFNR1pySnVMeWUyU21wRVVDYmlGaHc2Q3FzWWg4RE5IRjRFNlNXVjNVZDVnOGVxNUNBeEx4YjRHeFlablI1cmNNS1A4ZktuYVdza09pOVRGN3pvVGhSem5ZUS1CMnfSAfYBQVVfeXFMTWJpZHFNSEdLWEFMYlp4YXN5OEwteXlyOVp5M25WNGwxbGh4RXk3eVZ0M0x2MnlnakZuWFRrMVlSdVRaODk4MTBnVWYwY3RHR2JISmdKZDMzNHYxeTJrWVI3Z01hTm9seUlSRGJGbC1sNmh4V3hJWTNxdFV3SUJwcnBBSWhGcVhDY1ZKMDJrS1hfNmphM3Y3TXZBTUdackp1THllMlNtcEVVQ2JpRmh3NkNxc1loOEROSEY0RTZTV1YzVWQ1ZzhlcTVDQXhMeGI0R3hZWm5SNXJjTUtQOGZLbmFXc2tPaTlURjd6b1RoUnpuWVEtQjJ3?oc=5",
-      "source": "O GLOBO",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-14T20:05:53Z",
-      "updatedAt": "2026-08-14T20:05:53Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "companies-7f3fccdd98a970059c4f24aa",
@@ -922,12 +932,12 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "companies-7117233729243ba2eb9e10c9",
+      "id": "companies-e221726993f7fccad11e9748",
       "title": "Marco Legal da Cibersegurança deve aumentar a proteção das empresas brasileiras",
-      "summary": "Atualizacao de empresas capturada em Inforchannel.",
+      "summary": "Atualizacao de empresas capturada em inforchannel.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcXR2NDBOV2Q5TS10Tzh1d2VKeUFvS3llQ3g1RjB6VmM4RmdBTndvenZVQWlpN1YtS0tVT0F2aVA3b2FjNnF4b29ocE5EUi1HQmVzMmpaRnpkSFQ5T0d1UGRQVTIwU0hhaXM0QUo1Yy1qSmY4MTdfWFcwZVhlVWlMNldrYk9KWkxqUXJJZ2puXzlySC1YaVk2aEx2ek9WMjVyRUMzTlJuSk9MQXFTZ2pwTXFHaG1hbWczZ1Fv?oc=5",
-      "source": "Inforchannel",
+      "source": "inforchannel.com.br",
       "category": "companies",
       "tags": [
         "empresas",
@@ -940,12 +950,12 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "companies-c095660c37ac05eaf6ebef75",
+      "id": "companies-ee8abbc4c87b69c5795394dd",
       "title": "Mercadante rebate Flávio Bolsonaro sobre proposta de usar BNDES para internacionalizar empresas",
-      "summary": "Atualizacao de empresas capturada em Folha PE.",
+      "summary": "Atualizacao de empresas capturada em folhape.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSVlkWlB4VDZFRk4tMk56Qkd0bTA1Rnhkdk5LWFRWaDdzRUYwQlVHUE1qYjZKRkp2N3VOMTU1Mk5DN3ZsRVZ1aFkzbV9ETmQxam94dFZtNURybkZmUWhmWWctWmxPc0lQN2prX3lzUTk1MlZOcjRQTTBFME1Ha08tLWF3ekFFTGpJdGVrYWFFRHB6Q2pzV01aYW1fMkstcmtzMUpFekd5Y1dPUGNhd1VoMkZJN0FLQdIBtgFBVV95cUxOSVlkWlB4VDZFRk4tMk56Qkd0bTA1Rnhkdk5LWFRWaDdzRUYwQlVHUE1qYjZKRkp2N3VOMTU1Mk5DN3ZsRVZ1aFkzbV9ETmQxam94dFZtNURybkZmUWhmWWctWmxPc0lQN2prX3lzUTk1MlZOcjRQTTBFME1Ha08tLWF3ekFFTGpJdGVrYWFFRHB6Q2pzV01aYW1fMkstcmtzMUpFekd5Y1dPUGNhd1VoMkZJN0FLQQ?oc=5",
-      "source": "Folha PE",
+      "source": "folhape.com.br",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1030,12 +1040,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-462eb324f829d6539ae717d8",
+      "id": "funds-d071bcf407764a194977e957",
       "title": "BB Asset - Destaques do mês de julho 2026",
-      "summary": "Atualizacao de fundos capturada em InvesTalk.",
+      "summary": "Atualizacao de fundos capturada em investalk.bb.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUlJnV1FrdExQVHNMNVdIMmlJMURWazNBZW52ekl1LXY3ZE8zMTJJbTY1dEJMeFpFN21ZZ0ZsTlgzaF8wLUYtMTdjNHpsaHJ5SFdxLWg2c19kZ2dyeWlNYjl2a0E1cnQxWWo4THdaeTZHWDVkVjNld2JDSTVLMkNUTzdBUHplWDV2a1NydA?oc=5",
-      "source": "InvesTalk",
+      "source": "investalk.bb.com.br",
       "category": "funds",
       "tags": [
         "fundos",
@@ -1210,24 +1220,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "funds-ac6d07b690f13ad1836982ab",
-      "title": "Pivetta declara mais de R$ 575 milhões em bens e aponta crescimento patrimonial de 52% em quatro anos",
-      "summary": "Atualizacao de fundos capturada em CenárioMT.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQZjM4akh1cF90VGplamRXM2E3ZFlFbUZ3RDU3YUp6T1RtcUIwdm5MenJVN2ptZWN6Y2VwQ2FUcGRiSWprMnFnTlZOazVrV2RGQXU2U09tcThHU0FSNDNmN2Z2RWlXaUczNnJhMHIwdzVLczNsZC1rWGhkblVXb1pUZnYzZlVHOTFIa3dZcnVaT3J2VDRCdjlOUVYzdnFuWHF4VzVVTzYtOWRNZks0SWpfWTlMVUVoeWhNeEkzdjhTek9VUkYxb3JYNGlGQW5DNUszbTZzY2RRUXFhUQ?oc=5",
-      "source": "CenárioMT",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-14T13:02:48Z",
-      "updatedAt": "2026-08-14T13:02:48Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
       "id": "companies-fd40a417c2abfdcb84bc79f5",
       "title": "Brasil supera EUA na adoção de agentes de IA pelas empresas",
       "summary": "Atualizacao de empresas capturada em Olhar Digital.",
@@ -1282,12 +1274,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-74b9ea542eaca6a443b769a5",
+      "id": "companies-1ccbbc58c8d3798de36033a7",
       "title": "39% das empresas brasileiras apontam que IA aumentou a eficácia dos ciberataques sofridos",
-      "summary": "Atualizacao de empresas capturada em Inforchannel.",
+      "summary": "Atualizacao de empresas capturada em inforchannel.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNUG9JNTh1RDEyaW1Wc09hZ3d3Zld0OFFrNWFmVjd3dWdDZXZmLVJnbnJvX2J5cDVPcWJtcWEyaVh0LVZ5MlUyVmpwMjIzc3pmZ1FoNDJTMVdtYXpLQlZ6SXBTQlpFU3N2b0s1LXRnMXVnRllLalJRck9LbHR0bHhmd3lIYWpqa3U1QUtnc01XbU55WklUVHhwSDJkNXFnM2c0R2x4d20zMTZ2dlNTRTZlS2gxdk1VUVpNVHE1Wi13ZTdhVTZwdFNB?oc=5",
-      "source": "Inforchannel",
+      "source": "inforchannel.com.br",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1351,6 +1343,24 @@
       "publishedAt": "2026-08-14T10:35:42Z",
       "updatedAt": "2026-08-14T10:35:42Z",
       "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "funds-c52a1a3455c69019651af4fb",
+      "title": "O que está por trás dos ETFs mais rentáveis da B3? Tecnologia e Brasil explicam os destaques",
+      "summary": "Atualizacao de fundos capturada em Valor Investe.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPbVJkVUtyV0xfanEwNnZSRWFEOGpfM3ZBODdva2g4aDNTRXE3NGozTFBSNnpjOEttNjF6STVfTVFVcUZZNnUtamxnSmhHZF93LWVhbVhIT1FRc1hlVml6dXNSZGlFaE1fWGMtU3NtQmlkTEFKT1lyWkFDMnVTdUUyaHNFRXVpZFZwdGpGNXdFZjRUODZDVTB6RTFTNHVkN2g3OHMyMnNJS2xiUlpaV2d0QlNsZnR1b1AyV1RScmROajJySVZqdXZUU2k4c18xenprUGpWNFdiUGNndGIwMmU1YWVuYktVSGVpcHpsUWVrbEZFXzFsTHpOdU0wZzc3aUFoTnlCRtIBhAJBVV95cUxPbVJkVUtyV0xfanEwNnZSRWFEOGpfM3ZBODdva2g4aDNTRXE3NGozTFBSNnpjOEttNjF6STVfTVFVcUZZNnUtamxnSmhHZF93LWVhbVhIT1FRc1hlVml6dXNSZGlFaE1fWGMtU3NtQmlkTEFKT1lyWkFDMnVTdUUyaHNFRXVpZFZwdGpGNXdFZjRUODZDVTB6RTFTNHVkN2g3OHMyMnNJS2xiUlpaV2d0QlNsZnR1b1AyV1RScmROajJySVZqdXZUU2k4c18xenprUGpWNFdiUGNndGIwMmU1YWVuYktVSGVpcHpsUWVrbEZFXzFsTHpOdU0wZzc3aUFoTnlCRg?oc=5",
+      "source": "Valor Investe",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-14T10:06:38Z",
+      "updatedAt": "2026-08-14T10:06:38Z",
+      "premium": true,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
   ]
