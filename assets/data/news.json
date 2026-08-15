@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-15T09:21:29Z",
-  "generatedAt": "2026-08-15T09:21:29Z",
+  "updatedAt": "2026-08-15T09:49:03Z",
+  "generatedAt": "2026-08-15T09:49:03Z",
   "categories": [
     {
       "id": "all",
@@ -31,10 +31,6 @@
     {
       "id": "boca-com-br",
       "label": "boca.com.br"
-    },
-    {
-      "id": "borainvestir-b3-com-br",
-      "label": "borainvestir.b3.com.br"
     },
     {
       "id": "bra1-com-br",
@@ -125,10 +121,6 @@
       "label": "Jornal O Sul"
     },
     {
-      "id": "metr-poles",
-      "label": "Metrópoles"
-    },
-    {
       "id": "money-times",
       "label": "Money Times"
     },
@@ -169,6 +161,10 @@
       "label": "red.org.br"
     },
     {
+      "id": "segs-portal-nacional",
+      "label": "SEGS Portal Nacional"
+    },
+    {
       "id": "spacemoney",
       "label": "SpaceMoney"
     },
@@ -197,9 +193,9 @@
     {
       "id": "latest-02957bc7ccb61e34abd9ce58",
       "title": "Preço da soja no Brasil tem alta com vínculos internacionais",
-      "summary": "Atualizacao de ultima hora capturada em boca.com.br.",
-      "details": "",
-      "url": "https://br.investing.com/news/insider-trading-news/empery-asset-management-adquire-us-407-milhoes-em-acoes-da-empery-digital-93CH-2040247",
+      "summary": "Especialistas veem risco eleitoral como um dos motivos para o mau humor dos investidores",
+      "details": "Especialistas veem risco eleitoral como um dos motivos para o mau humor dos investidores",
+      "url": "https://www.correiobraziliense.com.br/economia/2026/08/7480605-bolsa-cai-por-nove-pregoes-seguidos-e-dolar-sobe-acima-de-rs-520.html",
       "source": "boca.com.br",
       "category": "latest",
       "tags": [
@@ -210,14 +206,15 @@
       "publishedAt": "2026-08-15T09:15:22Z",
       "updatedAt": "2026-08-15T09:15:22Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://midias.correiobraziliense.com.br/_midias/jpg/2026/03/02/675x450/1_cbifot010620211080bolsa-64873287.jpg?20260424090605?20260424090605"
     },
     {
       "id": "macro-75922311e5a8f4fb177a7814",
       "title": "PIB de Alagoas deverá crescer 1,7% em 2026 e 1,2% em 2027",
-      "summary": "Cotação chega a R$ 148,95, refletindo aumento nas compras da China",
-      "details": "Cotação chega a R$ 148,95, refletindo aumento nas compras da China",
-      "url": "https://boca.com.br/agronegocio/preco-da-soja-no-brasil-tem-alta-com-vinculos-internacionais",
+      "summary": "Atualizacao de macro capturada em Jornal Extra de Alagoas.",
+      "details": "",
+      "url": "https://br.investing.com/news/insider-trading-news/empery-asset-management-adquire-us-407-milhoes-em-acoes-da-empery-digital-93CH-2040247",
       "source": "Jornal Extra de Alagoas",
       "category": "macro",
       "tags": [
@@ -228,15 +225,14 @@
       "publishedAt": "2026-08-15T09:05:19Z",
       "updatedAt": "2026-08-15T09:05:19Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/59cea7d7f661683b20dd602c5629deca_858x483.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "funds-b363ce81a5d4a99345cd694b",
       "title": "Empery Asset Management adquire US$ 4,07 milhões em ações da Empery Digital",
-      "summary": "Atualizacao de fundos capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
-      "details": "",
-      "url": "https://www.metropoles.com/brasil/governo-gastos-enfraquece-meta-em-2026",
+      "summary": "Em uma reunião com unidades e localidades da região oeste, o camarada Ho Van Muoi, membro do Comitê Central do Partido e presidente do Comitê Popular da província de Lam Dong, solicitou que a taxa de desembolso de capital de investimento público seja usada como critério para aval",
+      "details": "Em uma reunião com unidades e localidades da região oeste, o camarada Ho Van Muoi, membro do Comitê Central do Partido e presidente do Comitê Popular da província de Lam Dong, solicitou que a taxa de desembolso de capital de investimento público seja usada como critério para avaliar a qualidade e o nível de conclusão d",
+      "url": "https://www.vietnam.vn/pt/lam-dong-lay-giai-ngan-von-dau-tu-cong-la-tieu-chi-danh-gia-can-bo",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "funds",
       "tags": [
@@ -247,33 +243,34 @@
       "publishedAt": "2026-08-15T08:02:00Z",
       "updatedAt": "2026-08-15T08:02:00Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/15/1786776900598_giai-ngan-von-11.jpeg"
     },
     {
-      "id": "macro-37390396680a4ec0babc0d9c",
-      "title": "Governo amplia gastos fora do teto e enfraquece meta fiscal em 2026",
-      "summary": "Serviços e indústria sustentam perspectiva positiva, enquanto agropecuária alagoana tem desempenho acima da média regional",
-      "details": "Serviços e indústria sustentam perspectiva positiva, enquanto agropecuária alagoana tem desempenho acima da média regional",
-      "url": "https://ojornalextra.com.br/impresso/2026/08/1391-pib-de-alagoas-devera-crescer-17-em-2026-e-12-em-2027",
-      "source": "Metrópoles",
-      "category": "macro",
+      "id": "funds-bbbc36e6301847cbfcb4e695",
+      "title": "A província de Lam Dong utiliza a distribuição de fundos de investimento público como critério para avaliar os funcionários.",
+      "summary": "Cotação chega a R$ 148,95, refletindo aumento nas compras da China",
+      "details": "Cotação chega a R$ 148,95, refletindo aumento nas compras da China",
+      "url": "https://boca.com.br/agronegocio/preco-da-soja-no-brasil-tem-alta-com-vinculos-internacionais",
+      "source": "Vietnam.vn",
+      "category": "funds",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
+        "fundos",
+        "asset",
+        "fiis"
       ],
-      "publishedAt": "2026-08-15T07:30:00Z",
-      "updatedAt": "2026-08-15T07:30:00Z",
+      "publishedAt": "2026-08-15T08:00:59Z",
+      "updatedAt": "2026-08-15T08:00:59Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://img.dhost.cloud/QGyCxxmcJrTr8JpTy9hDWgyhdAM=/572x297/smart/https://ojornalextra.us-east-1.linodeobjects.com/uploads/imagens/2026/08/captura-de-tela-2026-08-14-193225-1.png"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/59cea7d7f661683b20dd602c5629deca_858x483.jpg"
     },
     {
       "id": "latest-af5f99be794df256596a4a64",
       "title": "Bolsa cai por nove pregões seguidos e dólar sobe acima de R$ 5,20",
-      "summary": "Especialistas veem risco eleitoral como um dos motivos para o mau humor dos investidores",
-      "details": "Especialistas veem risco eleitoral como um dos motivos para o mau humor dos investidores",
-      "url": "https://www.correiobraziliense.com.br/economia/2026/08/7480605-bolsa-cai-por-nove-pregoes-seguidos-e-dolar-sobe-acima-de-rs-520.html",
+      "summary": "Serviços e indústria sustentam perspectiva positiva, enquanto agropecuária alagoana tem desempenho acima da média regional",
+      "details": "Serviços e indústria sustentam perspectiva positiva, enquanto agropecuária alagoana tem desempenho acima da média regional",
+      "url": "https://ojornalextra.com.br/impresso/2026/08/1391-pib-de-alagoas-devera-crescer-17-em-2026-e-12-em-2027",
       "source": "Correio Braziliense",
       "category": "latest",
       "tags": [
@@ -285,7 +282,7 @@
       "updatedAt": "2026-08-15T07:23:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://midias.correiobraziliense.com.br/_midias/jpg/2026/03/02/675x450/1_cbifot010620211080bolsa-64873287.jpg?20260424090605?20260424090605"
+      "imageUrl": "https://img.dhost.cloud/QGyCxxmcJrTr8JpTy9hDWgyhdAM=/572x297/smart/https://ojornalextra.us-east-1.linodeobjects.com/uploads/imagens/2026/08/captura-de-tela-2026-08-14-193225-1.png"
     },
     {
       "id": "funds-3a34b5572e740d0301a09915",
@@ -328,9 +325,9 @@
     {
       "id": "macro-dcc4d92bdeaf3ca96e65a26d",
       "title": "Mercado se preocupa com controle da inflação após corte da Selic",
-      "summary": "Atualizacao de macro capturada em CNN Brasil.",
-      "details": "",
-      "url": "https://gazetadasemana.com.br/noticia/294166/maqstone-transforma-rochas-naturais-brasileiras-em-materiais-exclusivos-para-a-arquitetura-de-alto-padrao/amp",
+      "summary": "Sinalização sobre próximos passos do Copom aumenta cautela dos investidores e pressiona juros de longo prazo",
+      "details": "Sinalização sobre próximos passos do Copom aumenta cautela dos investidores e pressiona juros de longo prazo",
+      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/mercado-se-preocupa-com-controle-da-inflacao-apos-corte-da-selic/",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -341,14 +338,15 @@
       "publishedAt": "2026-08-15T05:55:20Z",
       "updatedAt": "2026-08-15T05:55:20Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/03/economia_renda_dinheiro.jpg?w=1200&h=630&crop=1"
     },
     {
       "id": "companies-7ed90e13fa7ca8ed6818c007",
       "title": "MAQSTONE transforma rochas naturais brasileiras em materiais exclusivos para a arquitetura de alto padrão",
-      "summary": "Sinalização sobre próximos passos do Copom aumenta cautela dos investidores e pressiona juros de longo prazo",
-      "details": "Sinalização sobre próximos passos do Copom aumenta cautela dos investidores e pressiona juros de longo prazo",
-      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/mercado-se-preocupa-com-controle-da-inflacao-apos-corte-da-selic/",
+      "summary": "Atualizacao de empresas capturada em Gazeta da Semana.",
+      "details": "",
+      "url": "https://gazetadasemana.com.br/noticia/294166/maqstone-transforma-rochas-naturais-brasileiras-em-materiais-exclusivos-para-a-arquitetura-de-alto-padrao/amp",
       "source": "Gazeta da Semana",
       "category": "companies",
       "tags": [
@@ -359,8 +357,7 @@
       "publishedAt": "2026-08-15T03:30:29Z",
       "updatedAt": "2026-08-15T03:30:29Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/03/economia_renda_dinheiro.jpg?w=1200&h=630&crop=1"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "macro-88c5fd668b562074d15e2be8",
@@ -384,9 +381,9 @@
     {
       "id": "latest-8ff7f6f4efee387546e8ec2a",
       "title": "Blockchain.Rio debate regulação e avanço de stablecoins",
-      "summary": "Dados do IBGE reforçam cenário de perda de ritmo da economia no 2º trimestre, conforme analistas",
-      "details": "Dados do IBGE reforçam cenário de perda de ritmo da economia no 2º trimestre, conforme analistas",
-      "url": "https://www1.folha.uol.com.br/mercado/2026/08/alta-do-pib-acima-de-2-se-torna-mais-dificil-em-2026-dizem-economistas.shtml",
+      "summary": "Evento no Rio reúne reguladores e bancos para discutir tokenização, stablecoins e o futuro do sistema financeiro",
+      "details": "Evento no Rio reúne reguladores e bancos para discutir tokenização, stablecoins e o futuro do sistema financeiro",
+      "url": "https://www.cnnbrasil.com.br/economia/money/mercado/blockchain-rio-debate-regulacao-e-avanco-de-stablecoins/",
       "source": "CNN Brasil",
       "category": "latest",
       "tags": [
@@ -398,14 +395,14 @@
       "updatedAt": "2026-08-15T02:23:30Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://f.i.uol.com.br/fotografia/2026/08/13/17866363456a7de8390303c_1786636345_3x2_rt.jpg"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/08/EDC_MNY_120826_IL_BLOCKCHAIN_frame_23.jpeg?w=1200&h=630&crop=1"
     },
     {
       "id": "macro-88d6cdfc480cbc89fb328fb6",
       "title": "Alta do PIB acima de 2% se torna mais difícil em 2026, dizem economistas",
-      "summary": "O modelo tradicional de saúde, baseado em consultas apenas quando surgem sintomas, vem sendo questionado por especialistas e pela própria população. Uma pesquisa divulgada pelo portal g1 mostra que 62,3% dos brasileiros não buscam atendimento médico quando precisam. Entre os prin",
-      "details": "O modelo tradicional de saúde, baseado em consultas apenas quando surgem sintomas, vem sendo questionado por especialistas e pela própria população. Uma pesquisa divulgada pelo portal g1 mostra que 62,3% dos brasileiros não buscam atendimento médico quando precisam. Entre os principais motivos estão a superlotação e de",
-      "url": "https://www.broadcast.com.br/knewin-dino/saude-preventiva-ganha-forca-com-inteligencia-artificial/",
+      "summary": "Dados do IBGE reforçam cenário de perda de ritmo da economia no 2º trimestre, conforme analistas",
+      "details": "Dados do IBGE reforçam cenário de perda de ritmo da economia no 2º trimestre, conforme analistas",
+      "url": "https://www1.folha.uol.com.br/mercado/2026/08/alta-do-pib-acima-de-2-se-torna-mais-dificil-em-2026-dizem-economistas.shtml",
       "source": "Folha de S.Paulo",
       "category": "macro",
       "tags": [
@@ -417,7 +414,7 @@
       "updatedAt": "2026-08-15T02:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K43Fuhz14gY6IWI-Gxgl8yT5gJWm6cTkEMYeA360p7whEh3RQ0zKMBGXdb4cPMOEkuEndxi9cUK01tLelQcFMUNtDa9AMHOKbi18-jWYH7C2SerGpl20sRojZEIAC7uzAA1.png"
+      "imageUrl": "https://f.i.uol.com.br/fotografia/2026/08/13/17866363456a7de8390303c_1786636345_3x2_rt.jpg"
     },
     {
       "id": "latest-2e9d0f73732ec38ffe21630d",
@@ -460,9 +457,9 @@
     {
       "id": "latest-1ee6c64363c20c2c0901afd2",
       "title": "Diagnóstico digital ganha espaço na rotina odontológica",
-      "summary": "Evento no Rio reúne reguladores e bancos para discutir tokenização, stablecoins e o futuro do sistema financeiro",
-      "details": "Evento no Rio reúne reguladores e bancos para discutir tokenização, stablecoins e o futuro do sistema financeiro",
-      "url": "https://www.cnnbrasil.com.br/economia/money/mercado/blockchain-rio-debate-regulacao-e-avanco-de-stablecoins/",
+      "summary": "A incorporação de tecnologias digitais vem transformando diferentes etapas do atendimento odontológico, do diagnóstico ao planejamento e acompanhamento dos tratamentos. Scanners intraorais, tomógrafos computadorizados, sensores digitais e equipamentos portáteis de raio-X estão en",
+      "details": "A incorporação de tecnologias digitais vem transformando diferentes etapas do atendimento odontológico, do diagnóstico ao planejamento e acompanhamento dos tratamentos. Scanners intraorais, tomógrafos computadorizados, sensores digitais e equipamentos portáteis de raio-X estão entre os recursos que ampliam as possibili",
+      "url": "https://www.broadcast.com.br/knewin-dino/diagnostico-digital-ganha-espaco-na-rotina-odontologica/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -474,14 +471,14 @@
       "updatedAt": "2026-08-15T01:26:07Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/08/EDC_MNY_120826_IL_BLOCKCHAIN_frame_23.jpeg?w=1200&h=630&crop=1"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K5loAHPBXcG06twv4omNLKIf9KN6XtW6VChau3jLnBm53V_jQfDPzVxMMQo-hfa3EMvSYwaEgfpBc7LwLkQX4ymnKYhaJhtODLBVWHrz87_WxATgY5R2gpj8wGj7gcZcW01.png"
     },
     {
       "id": "latest-77f3bc95fc90ee486d989282",
       "title": "Saúde preventiva ganha força com Inteligência Artificial",
-      "summary": "A incorporação de tecnologias digitais vem transformando diferentes etapas do atendimento odontológico, do diagnóstico ao planejamento e acompanhamento dos tratamentos. Scanners intraorais, tomógrafos computadorizados, sensores digitais e equipamentos portáteis de raio-X estão en",
-      "details": "A incorporação de tecnologias digitais vem transformando diferentes etapas do atendimento odontológico, do diagnóstico ao planejamento e acompanhamento dos tratamentos. Scanners intraorais, tomógrafos computadorizados, sensores digitais e equipamentos portáteis de raio-X estão entre os recursos que ampliam as possibili",
-      "url": "https://www.broadcast.com.br/knewin-dino/diagnostico-digital-ganha-espaco-na-rotina-odontologica/",
+      "summary": "O modelo tradicional de saúde, baseado em consultas apenas quando surgem sintomas, vem sendo questionado por especialistas e pela própria população. Uma pesquisa divulgada pelo portal g1 mostra que 62,3% dos brasileiros não buscam atendimento médico quando precisam. Entre os prin",
+      "details": "O modelo tradicional de saúde, baseado em consultas apenas quando surgem sintomas, vem sendo questionado por especialistas e pela própria população. Uma pesquisa divulgada pelo portal g1 mostra que 62,3% dos brasileiros não buscam atendimento médico quando precisam. Entre os principais motivos estão a superlotação e de",
+      "url": "https://www.broadcast.com.br/knewin-dino/saude-preventiva-ganha-forca-com-inteligencia-artificial/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -493,7 +490,7 @@
       "updatedAt": "2026-08-15T01:26:04Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K5loAHPBXcG06twv4omNLKIf9KN6XtW6VChau3jLnBm53V_jQfDPzVxMMQo-hfa3EMvSYwaEgfpBc7LwLkQX4ymnKYhaJhtODLBVWHrz87_WxATgY5R2gpj8wGj7gcZcW01.png"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K43Fuhz14gY6IWI-Gxgl8yT5gJWm6cTkEMYeA360p7whEh3RQ0zKMBGXdb4cPMOEkuEndxi9cUK01tLelQcFMUNtDa9AMHOKbi18-jWYH7C2SerGpl20sRojZEIAC7uzAA1.png"
     },
     {
       "id": "macro-eeac819d98823e3e8c60299c",
@@ -516,9 +513,9 @@
     {
       "id": "funds-c2e5e202a00c94ea987397eb",
       "title": "Na contramão do IFIX, fundos da Suno Asset fecham em alta de até 4%",
-      "summary": "Os fundos da Suno Asset encerraram a sessão desta sexta-feira (14) em alta, na contramão do mercado de FIIs. Enquanto os veículos da gestora avançaram, o IFIX, principal índice de fundos imobiliários da B3, recuou 0,17%, aos 3.686,34 pontos. O melhor desempenho entre os fundos da",
-      "details": "Os fundos da Suno Asset encerraram a sessão desta sexta-feira (14) em alta, na contramão do mercado de FIIs. Enquanto os veículos da gestora avançaram, o IFIX, principal índice de fundos imobiliários da B3, recuou 0,17%, aos 3.686,34 pontos. O melhor desempenho entre os fundos da casa foi o do SNID11, que registrou val",
-      "url": "https://www.suno.com.br/noticias/na-contramao-do-ifix-fundos-da-suno-asset-fecham-em-alta-de-ate-4/amp/",
+      "summary": "Ranking mostra as maiores perdas de valor de mercado do Ibovespa em nove pregões de queda; Itaú, bancos e Petrobras concentram as baixas",
+      "details": "Ranking mostra as maiores perdas de valor de mercado do Ibovespa em nove pregões de queda; Itaú, bancos e Petrobras concentram as baixas",
+      "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/bancos-perdas-ibovespa-nove-quedas/",
       "source": "suno.com.br",
       "category": "funds",
       "tags": [
@@ -530,14 +527,14 @@
       "updatedAt": "2026-08-15T00:15:05Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "http://files.sunoresearch.com.br/n/uploads/2026/08/29_Mesa_de_escrit_rio_c_1_2026017_16335-1-jpg.webp"
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-17977103-2.webp"
     },
     {
       "id": "latest-39faf6467ed9c4139dc5a824",
       "title": "Bancos perdem R$ 96,7 bi em 9 quedas do Ibovespa",
-      "summary": "Ranking mostra as maiores perdas de valor de mercado do Ibovespa em nove pregões de queda; Itaú, bancos e Petrobras concentram as baixas",
-      "details": "Ranking mostra as maiores perdas de valor de mercado do Ibovespa em nove pregões de queda; Itaú, bancos e Petrobras concentram as baixas",
-      "url": "https://www.spacemoney.com.br/investimentos/acoes/ibovespa-hoje/bancos-perdas-ibovespa-nove-quedas/",
+      "summary": "Os fundos da Suno Asset encerraram a sessão desta sexta-feira (14) em alta, na contramão do mercado de FIIs. Enquanto os veículos da gestora avançaram, o IFIX, principal índice de fundos imobiliários da B3, recuou 0,17%, aos 3.686,34 pontos. O melhor desempenho entre os fundos da",
+      "details": "Os fundos da Suno Asset encerraram a sessão desta sexta-feira (14) em alta, na contramão do mercado de FIIs. Enquanto os veículos da gestora avançaram, o IFIX, principal índice de fundos imobiliários da B3, recuou 0,17%, aos 3.686,34 pontos. O melhor desempenho entre os fundos da casa foi o do SNID11, que registrou val",
+      "url": "https://www.suno.com.br/noticias/na-contramao-do-ifix-fundos-da-suno-asset-fecham-em-alta-de-ate-4/amp/",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -549,7 +546,7 @@
       "updatedAt": "2026-08-15T00:04:54Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-17977103-2.webp"
+      "imageUrl": "http://files.sunoresearch.com.br/n/uploads/2026/08/29_Mesa_de_escrit_rio_c_1_2026017_16335-1-jpg.webp"
     },
     {
       "id": "latest-7049a7c5d403ca829d966af6",
@@ -574,7 +571,7 @@
       "title": "Selic em 14% mantém indústria em alerta e exige cautela para o 2º semestre",
       "summary": "Atualizacao de macro capturada em Monitor Mercantil.",
       "details": "",
-      "url": "https://monitormercantil.com.br/petrobras-descobre-petroleo-na-foz-do-amazonas/",
+      "url": "https://monitormercantil.com.br/selic-em-14-mantem-industria-em-alerta-e-exige-cautela-para-o-2o-semestre/",
       "source": "Monitor Mercantil",
       "category": "macro",
       "tags": [
@@ -592,7 +589,7 @@
       "title": "Petrobras descobre petróleo na Foz do Amazonas",
       "summary": "Atualizacao de ultima hora capturada em Monitor Mercantil.",
       "details": "",
-      "url": "https://monitormercantil.com.br/selic-em-14-mantem-industria-em-alerta-e-exige-cautela-para-o-2o-semestre/",
+      "url": "https://monitormercantil.com.br/atraso-em-constituicao-de-garantia-nao-afeta-488a-emissao-de-cris-da-opea/",
       "source": "Monitor Mercantil",
       "category": "latest",
       "tags": [
@@ -610,7 +607,7 @@
       "title": "Atraso em Constituição de Garantia não afeta 488ª emissão de CRIs da Opea",
       "summary": "Atualizacao de ultima hora capturada em Monitor Mercantil.",
       "details": "",
-      "url": "https://monitormercantil.com.br/atraso-em-constituicao-de-garantia-nao-afeta-488a-emissao-de-cris-da-opea/",
+      "url": "https://monitormercantil.com.br/petrobras-descobre-petroleo-na-foz-do-amazonas/",
       "source": "Monitor Mercantil",
       "category": "latest",
       "tags": [
@@ -988,6 +985,24 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
+      "id": "macro-c654c7e3d46c75073b8c6c86",
+      "title": "Nota fiscal deixa de ser rejeitada, mas risco permanece no contrato | SEGS Portal Nacional de Seguros,...",
+      "summary": "Atualizacao de macro capturada em SEGS Portal Nacional.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcW1WLXFXRkNJbHNVUFA4dC1XajhTNFY4aFd2bDlXT1BIbXBMcV93S1ZVWVR6ZHhMWC1WYXBLNEQ5NExaZ1ppRUoyREItejh3dVBSajlFNDdKMjVIUnVVdElxOXBkSFNrbUU4NlVRRVpVT0NSWTlUTHpEU1kzYzVGcUhGM01jeWJlQ2w5M3c3cGdCeXBjRXhPU0tIU3VheWZqSFZ1aWRKaVZpZi00QnfSAa4BQVVfeXFMUHFtVi1xV0ZDSWxzVVBQOHQtV2o4UzRWOGhXdmw5V09QSG1wTHFfd0tWVVlUemR4TFgtVmFwSzREOTRMWmdaaUVKMkRCLXo4d3VQUmo5RTQ3SjI1SFJ1VXRJcTlwZEhTa21FODZVUUVaVU9DUlk5VEx6RFNZM2M1RnFIRjNNY3liZUNsOTN3N3BnQnlwY0V4T1NLSFN1YXlmakhWdWlkSmlWaWYtNEJ3?oc=5",
+      "source": "SEGS Portal Nacional",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-14T21:09:15Z",
+      "updatedAt": "2026-08-14T21:09:15Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
       "id": "funds-ef3d8f1fa0a906575d9bc92b",
       "title": "Preços de commodities agrícolas dependem de fatores financeiros",
       "summary": "Atualizacao de fundos capturada em boca.com.br.",
@@ -1346,24 +1361,6 @@
       "updatedAt": "2026-08-14T12:52:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "funds-32d1246ff84b50ca64ea9a7c",
-      "title": "Itaú Asset: O que os índices tradicionais continuam nos ensinando",
-      "summary": "Atualizacao de fundos capturada em borainvestir.b3.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNV0xzUVlnZ0Z6UkNnblo1U2dwTW5SRWhkb0F3a0syNFhPemVBTGhGYVM1SHk4cTFtekc2ejVaRjkzNkZPdlB2YlctZ20xaDJWdWJsLVBld3h0TVdDYjNndmhzam5IaGJpdXloaER2UW9zUTRCQXlwM2tscmRPaVNwVy1iMGFYTWxwUUlHbGoxSWhkQ2dpdkxKUUlmalFPOFNHV2M3NmVhS3VCWjZSdlM4al9fbHp0NG5yeVE?oc=5",
-      "source": "borainvestir.b3.com.br",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-14T12:48:50Z",
-      "updatedAt": "2026-08-14T12:48:50Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
   ]
 }
