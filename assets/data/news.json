@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-15T19:17:58Z",
-  "generatedAt": "2026-08-15T19:17:58Z",
+  "updatedAt": "2026-08-15T19:43:32Z",
+  "generatedAt": "2026-08-15T19:43:32Z",
   "categories": [
     {
       "id": "all",
@@ -37,16 +37,12 @@
       "label": "bra1.com.br"
     },
     {
-      "id": "canal-rural",
-      "label": "Canal Rural"
-    },
-    {
       "id": "capital-aberto",
       "label": "Capital Aberto"
     },
     {
-      "id": "cnnbrasil-com-br",
-      "label": "cnnbrasil.com.br"
+      "id": "cnn-brasil",
+      "label": "CNN Brasil"
     },
     {
       "id": "coinfomania",
@@ -57,12 +53,16 @@
       "label": "Conexão Tocantins"
     },
     {
-      "id": "di-rio-carioca",
-      "label": "Diário Carioca"
+      "id": "diarioesp-com-br",
+      "label": "diarioesp.com.br"
     },
     {
-      "id": "di-rio-ind-stria-com-rcio",
-      "label": "Diário Indústria & Comércio"
+      "id": "diarioinduscom-com-br",
+      "label": "diarioinduscom.com.br"
+    },
+    {
+      "id": "di-rio-carioca",
+      "label": "Diário Carioca"
     },
     {
       "id": "empiricus",
@@ -97,8 +97,12 @@
       "label": "Folhaonline.es"
     },
     {
-      "id": "gazetadasemana-com-br",
-      "label": "gazetadasemana.com.br"
+      "id": "gazeta-da-semana",
+      "label": "Gazeta da Semana"
+    },
+    {
+      "id": "gazeta-do-paran",
+      "label": "Gazeta do Paraná"
     },
     {
       "id": "h2foz-com-br",
@@ -125,16 +129,16 @@
       "label": "Jornal Dia Dia"
     },
     {
-      "id": "jornal-op-o",
-      "label": "Jornal Opção"
-    },
-    {
       "id": "jornaldodiase-com-br",
       "label": "jornaldodiase.com.br"
     },
     {
       "id": "jornalggn-com-br",
       "label": "jornalggn.com.br"
+    },
+    {
+      "id": "metr-poles",
+      "label": "Metrópoles"
     },
     {
       "id": "money-times",
@@ -147,10 +151,6 @@
     {
       "id": "portal-chapada-grande",
       "label": "Portal Chapada Grande"
-    },
-    {
-      "id": "portal-piau-hoje",
-      "label": "Portal Piauí Hoje"
     },
     {
       "id": "qconcursos-folha-dirigida",
@@ -173,8 +173,8 @@
       "label": "suno.com.br"
     },
     {
-      "id": "tiinside-com-br",
-      "label": "tiinside.com.br"
+      "id": "ti-inside-online",
+      "label": "TI INSIDE Online"
     },
     {
       "id": "times-brasil-cnbc",
@@ -199,12 +199,49 @@
   ],
   "items": [
     {
-      "id": "macro-1fc413741f8d910386388caf",
+      "id": "latest-6d428a726ba101861a1b8a72",
+      "title": "Executivo do mercado financeiro é preso em São Paulo por agredir esposa",
+      "summary": "Atualizacao de ultima hora capturada em diarioesp.com.br.",
+      "details": "",
+      "url": "https://www.folhaonline.es/tesouro-nacional-classifica-es-com-nota-a-em-gestao-fiscal/",
+      "source": "diarioesp.com.br",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-15T19:29:00Z",
+      "updatedAt": "2026-08-15T19:29:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-fb37f0379ed4ec496ff6cf4b",
+      "title": "Quem é Ivo Kos, empresário do ramo financeiro preso por agredir esposa",
+      "summary": "Ivo Kos, sócio-fundador da securitizadora Virgo, foi detido em flagrante após agredir a cirurgiã dentista Giullia Kos. Ele também é alvo de investigação da CVM.",
+      "details": "Ivo Kos, sócio-fundador da securitizadora Virgo, foi detido em flagrante após agredir a cirurgiã dentista Giullia Kos. Ele também é alvo de investigação da CVM.",
+      "url": "https://www.diarioesp.com.br/sao-paulo/2026/08/15/executivo-do-mercado-financeiro-e-preso-em-sao-paulo-por-agredir-esposa.html",
+      "source": "Metrópoles",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-15T19:25:00Z",
+      "updatedAt": "2026-08-15T19:25:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://post.hel1.your-objectstorage.com/diario/uploads/post-22df24bd8b5c4883.webp"
+    },
+    {
+      "id": "macro-155612f711766fa5cdbfabd4",
       "title": "Economistas veem déficit primário maior em 2026 e 2027 e dívida mais alta ano que vem, mostra Prisma",
-      "summary": "No debate macroeconômico, a expectativa é tratada como observadora da realidade, e não como uma variável capaz de modificá-la.",
-      "details": "No debate macroeconômico, a expectativa é tratada como observadora da realidade, e não como uma variável capaz de modificá-la.",
-      "url": "https://jornalggn.com.br/artigos/a-profecia-fiscal-autorrealizavel-por-mauricio-luperi/",
-      "source": "Diário Indústria & Comércio",
+      "summary": "Atualizacao de macro capturada em diarioinduscom.com.br.",
+      "details": "",
+      "url": "https://www.metropoles.com/sao-paulo/quem-ivo-kos-empresario-ramo-financeiro-preso-agredir-esposa",
+      "source": "diarioinduscom.com.br",
       "category": "macro",
       "tags": [
         "macro",
@@ -214,8 +251,7 @@
       "publishedAt": "2026-08-15T18:27:00Z",
       "updatedAt": "2026-08-15T18:27:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://jornalggn.com.br/wp-content/uploads/2026/08/profecia1.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-3bc1997d2b17678a544b3993",
@@ -239,9 +275,9 @@
     {
       "id": "macro-59d3b5a1454d72754cf409e2",
       "title": "Receita Federal sinaliza que será solidária ao contribuinte em fase de adaptação à Reforma Tributária",
-      "summary": "A Receita Federal adotará uma nova postura com empresas que estão se esforçando para se adaptar às regras da Reforma Tributária...",
-      "details": "A Receita Federal adotará uma nova postura com empresas que estão se esforçando para se adaptar às regras da Reforma Tributária...",
-      "url": "https://conexaoto.com.br/2026/08/15/receita-federal-sinaliza-que-sera-solidaria-ao-contribuinte-em-fase-de-adaptacao-a-reforma-tributaria",
+      "summary": "No debate macroeconômico, a expectativa é tratada como observadora da realidade, e não como uma variável capaz de modificá-la.",
+      "details": "No debate macroeconômico, a expectativa é tratada como observadora da realidade, e não como uma variável capaz de modificá-la.",
+      "url": "https://jornalggn.com.br/artigos/a-profecia-fiscal-autorrealizavel-por-mauricio-luperi/",
       "source": "Conexão Tocantins",
       "category": "macro",
       "tags": [
@@ -253,14 +289,14 @@
       "updatedAt": "2026-08-15T18:11:08Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://conexaoto.nyc3.digitaloceanspaces.com/images/Z8GQbtVY1NmeBv57evOGEkk4EL4EhWtN.jpg"
+      "imageUrl": "https://jornalggn.com.br/wp-content/uploads/2026/08/profecia1.jpg"
     },
     {
       "id": "macro-6e5c4bcc48604c5b99e23bb7",
       "title": "Tesouro Nacional classifica ES com Nota A+ em gestão fiscal",
-      "summary": "Atualizacao de macro capturada em Folhaonline.es.",
-      "details": "",
-      "url": "https://www.folhaonline.es/tesouro-nacional-classifica-es-com-nota-a-em-gestao-fiscal/",
+      "summary": "A Receita Federal adotará uma nova postura com empresas que estão se esforçando para se adaptar às regras da Reforma Tributária...",
+      "details": "A Receita Federal adotará uma nova postura com empresas que estão se esforçando para se adaptar às regras da Reforma Tributária...",
+      "url": "https://conexaoto.com.br/2026/08/15/receita-federal-sinaliza-que-sera-solidaria-ao-contribuinte-em-fase-de-adaptacao-a-reforma-tributaria",
       "source": "Folhaonline.es",
       "category": "macro",
       "tags": [
@@ -271,7 +307,8 @@
       "publishedAt": "2026-08-15T18:00:00Z",
       "updatedAt": "2026-08-15T18:00:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://conexaoto.nyc3.digitaloceanspaces.com/images/Z8GQbtVY1NmeBv57evOGEkk4EL4EhWtN.jpg"
     },
     {
       "id": "latest-d82e887e3d74963e062382af",
@@ -352,9 +389,9 @@
     {
       "id": "latest-9ec10f1fd5c86c831456867e",
       "title": "Bitcoin recua e volta aos US$ 62 mil: o que está pressionando a criptomoeda",
-      "summary": "Bitcoin perde força após negociar perto de US$ 65 mil no início da semana; saída de recursos de ETFs e incertezas regulatórias nos Estados Unidos entram no rada",
-      "details": "Bitcoin perde força após negociar perto de US$ 65 mil no início da semana; saída de recursos de ETFs e incertezas regulatórias nos Estados Unidos entram no rada",
-      "url": "https://boca.com.br/bitcoin/bitcoin-recua-volta-62-mil-dolares-mercado-criptomoedas",
+      "summary": "Retificação do concurso da Prefeitura de Ribeira do Pombal BA altera data da prova e conteúdo do cargo de guarda municipal.",
+      "details": "Retificação do concurso da Prefeitura de Ribeira do Pombal BA altera data da prova e conteúdo do cargo de guarda municipal.",
+      "url": "https://folha.qconcursos.com/n/prefeitura-de-ribeira-do-pombal-ba-retifica-concurso-e-atualiza-conteudo-de-guarda-municipal",
       "source": "boca.com.br",
       "category": "latest",
       "tags": [
@@ -366,14 +403,14 @@
       "updatedAt": "2026-08-15T17:15:02Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/fa9e59cbda5336192362db4265c053cb_858x483.png"
+      "imageUrl": "https://imagedelivery.net/ZwI98Xzesy9y5C72ogEH0A/24bda88c-2383-412e-da16-46802db1ca00/public"
     },
     {
       "id": "macro-e7cd024c668027905b6bb598",
       "title": "Prefeitura de Ribeira do Pombal BA retifica concurso e atualiza conteúdo de guarda municipal",
-      "summary": "Retificação do concurso da Prefeitura de Ribeira do Pombal BA altera data da prova e conteúdo do cargo de guarda municipal.",
-      "details": "Retificação do concurso da Prefeitura de Ribeira do Pombal BA altera data da prova e conteúdo do cargo de guarda municipal.",
-      "url": "https://folha.qconcursos.com/n/prefeitura-de-ribeira-do-pombal-ba-retifica-concurso-e-atualiza-conteudo-de-guarda-municipal",
+      "summary": "Bitcoin perde força após negociar perto de US$ 65 mil no início da semana; saída de recursos de ETFs e incertezas regulatórias nos Estados Unidos entram no rada",
+      "details": "Bitcoin perde força após negociar perto de US$ 65 mil no início da semana; saída de recursos de ETFs e incertezas regulatórias nos Estados Unidos entram no rada",
+      "url": "https://boca.com.br/bitcoin/bitcoin-recua-volta-62-mil-dolares-mercado-criptomoedas",
       "source": "Qconcursos Folha Dirigida",
       "category": "macro",
       "tags": [
@@ -385,14 +422,14 @@
       "updatedAt": "2026-08-15T17:05:56Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://imagedelivery.net/ZwI98Xzesy9y5C72ogEH0A/24bda88c-2383-412e-da16-46802db1ca00/public"
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/fa9e59cbda5336192362db4265c053cb_858x483.png"
     },
     {
       "id": "funds-5121c849b94aa1a3c1929f82",
       "title": "Horizon Kinetics Asset Management compra US$ 2.260 em ações do RENN Fund",
-      "summary": "Terra Investimentos substitui Sabesp por WEG na carteira semanal. Seleção cai 1,92%, mas supera Ibovespa, que recuou 4,81%",
-      "details": "Terra Investimentos substitui Sabesp por WEG na carteira semanal. Seleção cai 1,92%, mas supera Ibovespa, que recuou 4,81%",
-      "url": "https://www.spacemoney.com.br/investimentos/carteiras-recomendadas/weg-sabesp-carteira-terra/",
+      "summary": "Atualizacao de fundos capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
+      "details": "",
+      "url": "https://br.investing.com/news/insider-trading-news/horizon-kinetics-asset-management-compra-us-2260-em-acoes-do-renn-fund-93CH-2040348",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "funds",
       "tags": [
@@ -403,15 +440,14 @@
       "publishedAt": "2026-08-15T17:01:00Z",
       "updatedAt": "2026-08-15T17:01:00Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-6120177-1.webp"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "funds-9d887b2fc749b57dbc8213e6",
       "title": "Novas regras abrem espaço para short selling em crédito privado; Bradesco Asset estreia operação",
-      "summary": "Atualizacao de fundos capturada em Times Brasil | CNBC.",
-      "details": "",
-      "url": "https://jornaldiadia.com.br/tarifaco-pode-empurrar-empresas-brasileiras-para-dentro-dos-estados-unidos/",
+      "summary": "Bradesco Asset realizou operação de teste que permite assumir posição vendida em ativos de crédito privado no mercado brasileiro.",
+      "details": "Bradesco Asset realizou operação de teste que permite assumir posição vendida em ativos de crédito privado no mercado brasileiro.",
+      "url": "https://timesbrasil.com.br/investimentos/bradesco-asset-faz-operacao-inedita-com-credito-privado/",
       "source": "Times Brasil | CNBC",
       "category": "funds",
       "tags": [
@@ -422,14 +458,34 @@
       "publishedAt": "2026-08-15T16:52:00Z",
       "updatedAt": "2026-08-15T16:52:00Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/08/c7a88c8f-14.webp"
+    },
+    {
+      "id": "macro-4e82277bd070acfbd7df3154",
+      "title": "Economistas veem PIB abaixo de 2% em 2026 após sinais de desaceleração",
+      "summary": "Dados de varejo, serviços e indústria indicam perda de ritmo da economia com impacto dos juros elevados sobre consumo e atividade",
+      "details": "Dados de varejo, serviços e indústria indicam perda de ritmo da economia com impacto dos juros elevados sobre consumo e atividade",
+      "url": "https://gazetadoparana.com.br/artigo/economistas-veem-pib-abaixo-de-2-em-2026-apos-sinais-de-desaceleracao",
+      "source": "Gazeta do Paraná",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-15T16:30:00Z",
+      "updatedAt": "2026-08-15T16:30:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://gazetadoparana.com.br/images/20250322085249_ogImage_16.jpg"
     },
     {
       "id": "companies-0aa0a55003efd78b3adea5f6",
       "title": "Tarifaço pode empurrar empresas brasileiras para dentro dos Estados Unidos",
       "summary": "Atualizacao de empresas capturada em Jornal Dia Dia.",
       "details": "",
-      "url": "https://br.investing.com/news/insider-trading-news/horizon-kinetics-asset-management-compra-us-2260-em-acoes-do-renn-fund-93CH-2040348",
+      "url": "https://jornaldiadia.com.br/tarifaco-pode-empurrar-empresas-brasileiras-para-dentro-dos-estados-unidos/",
       "source": "Jornal Dia Dia",
       "category": "companies",
       "tags": [
@@ -445,9 +501,9 @@
     {
       "id": "macro-f7c8a20e0e19432b7fba969f",
       "title": "Como serão as provas do Concurso TCDF?",
-      "summary": "Bradesco Asset realizou operação de teste que permite assumir posição vendida em ativos de crédito privado no mercado brasileiro.",
-      "details": "Bradesco Asset realizou operação de teste que permite assumir posição vendida em ativos de crédito privado no mercado brasileiro.",
-      "url": "https://timesbrasil.com.br/investimentos/bradesco-asset-faz-operacao-inedita-com-credito-privado/",
+      "summary": "Saiba como serão aplicadas as provas do Concurso TCDF; salários podem chegar a R$ 14,9 mil. Todos os detalhes estão no blog!",
+      "details": "Saiba como serão aplicadas as provas do Concurso TCDF; salários podem chegar a R$ 14,9 mil. Todos os detalhes estão no blog!",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-tcdf-2026-detalhes-provas/amp/",
       "source": "Estratégia Concursos",
       "category": "macro",
       "tags": [
@@ -459,14 +515,14 @@
       "updatedAt": "2026-08-15T16:07:49Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/08/c7a88c8f-14.webp"
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2021/04/23155112/tcdf.jpg"
     },
     {
       "id": "latest-c648a78dd8d133545f984146",
       "title": "O primeiro-ministro ordenou uma redução nas taxas de juros dos empréstimos e medidas contra as instituições de crédito que não cumprirem a determinação.",
-      "summary": "Saiba como serão aplicadas as provas do Concurso TCDF; salários podem chegar a R$ 14,9 mil. Todos os detalhes estão no blog!",
-      "details": "Saiba como serão aplicadas as provas do Concurso TCDF; salários podem chegar a R$ 14,9 mil. Todos os detalhes estão no blog!",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-tcdf-2026-detalhes-provas/amp/",
+      "summary": "(CLO) O primeiro-ministro Le Minh Hung solicitou ao Banco Estatal do Vietnã que instrua as instituições de crédito a continuarem reduzindo custos, estabilizando as taxas de juros e diminuindo as taxas de empréstimo; e que tome as medidas apropriadas, dentro de sua autoridade e de",
+      "details": "(CLO) O primeiro-ministro Le Minh Hung solicitou ao Banco Estatal do Vietnã que instrua as instituições de crédito a continuarem reduzindo custos, estabilizando as taxas de juros e diminuindo as taxas de empréstimo; e que tome as medidas apropriadas, dentro de sua autoridade e de acordo com os regulamentos, contra as i",
+      "url": "https://www.vietnam.vn/pt/thu-tuong-yeu-cau-giam-lai-suat-cho-vay-xu-ly-to-chuc-tin-dung-khong-chap-hanh",
       "source": "Vietnam.vn",
       "category": "latest",
       "tags": [
@@ -478,14 +534,14 @@
       "updatedAt": "2026-08-15T15:49:38Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2021/04/23155112/tcdf.jpg"
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/15/1786800308467_images-jpg.webp"
     },
     {
       "id": "macro-371341a3626a083008635417",
       "title": "Equipe de Lula prepara pacote de ajuste fiscal em 4 eixos caso se reeleja",
-      "summary": "(CLO) O primeiro-ministro Le Minh Hung solicitou ao Banco Estatal do Vietnã que instrua as instituições de crédito a continuarem reduzindo custos, estabilizando as taxas de juros e diminuindo as taxas de empréstimo; e que tome as medidas apropriadas, dentro de sua autoridade e de",
-      "details": "(CLO) O primeiro-ministro Le Minh Hung solicitou ao Banco Estatal do Vietnã que instrua as instituições de crédito a continuarem reduzindo custos, estabilizando as taxas de juros e diminuindo as taxas de empréstimo; e que tome as medidas apropriadas, dentro de sua autoridade e de acordo com os regulamentos, contra as i",
-      "url": "https://www.vietnam.vn/pt/thu-tuong-yeu-cau-giam-lai-suat-cho-vay-xu-ly-to-chuc-tin-dung-khong-chap-hanh",
+      "summary": "Campanha à reeleição quer rever despesas obrigatórias, benefícios sociais e regras tributárias sem detalhar propostas antes do pleito",
+      "details": "Campanha à reeleição quer rever despesas obrigatórias, benefícios sociais e regras tributárias sem detalhar propostas antes do pleito",
+      "url": "https://www.band.com.br/noticias/campanha-de-lula-evita-cascas-de-banana-mas-ajustes-economicos-devem-vir-ja-em-2026-202608150903",
       "source": "band.com.br",
       "category": "macro",
       "tags": [
@@ -497,30 +553,11 @@
       "updatedAt": "2026-08-15T15:38:02Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/15/1786800308467_images-jpg.webp"
+      "imageUrl": "https://img.band.com.br/image/2026/07/22/lula-durante-lancamento-do-plano-brasi-l-soberano-iii-175141.jpg"
     },
     {
       "id": "latest-8f5bcb7587593cf6a3842f81",
       "title": "Semana tem JCP do BB, dividendos da Caixa Seguridade e queda do Ibovespa",
-      "summary": "Campanha à reeleição quer rever despesas obrigatórias, benefícios sociais e regras tributárias sem detalhar propostas antes do pleito",
-      "details": "Campanha à reeleição quer rever despesas obrigatórias, benefícios sociais e regras tributárias sem detalhar propostas antes do pleito",
-      "url": "https://www.band.com.br/noticias/campanha-de-lula-evita-cascas-de-banana-mas-ajustes-economicos-devem-vir-ja-em-2026-202608150903",
-      "source": "SpaceMoney",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-15T15:10:59Z",
-      "updatedAt": "2026-08-15T15:10:59Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://img.band.com.br/image/2026/07/22/lula-durante-lancamento-do-plano-brasi-l-soberano-iii-175141.jpg"
-    },
-    {
-      "id": "latest-d80601b0879bf1359f26910e",
-      "title": "WEG substitui Sabesp em carteira semanal da Terra",
       "summary": "Banco do Brasil paga R$ 584,9 mi em JCP; Caixa Seguridade anuncia lucro e dividendos; Ibovespa cai 2% e HJCT11 preocupa investidores",
       "details": "Banco do Brasil paga R$ 584,9 mi em JCP; Caixa Seguridade anuncia lucro e dividendos; Ibovespa cai 2% e HJCT11 preocupa investidores",
       "url": "https://www.spacemoney.com.br/investimentos/acoes/proventos/jcp/jcp-banco-brasil-caixa-seguridade-ibovespa/",
@@ -538,11 +575,30 @@
       "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-37201891-29.webp"
     },
     {
+      "id": "latest-d80601b0879bf1359f26910e",
+      "title": "WEG substitui Sabesp em carteira semanal da Terra",
+      "summary": "Terra Investimentos substitui Sabesp por WEG na carteira semanal. Seleção cai 1,92%, mas supera Ibovespa, que recuou 4,81%",
+      "details": "Terra Investimentos substitui Sabesp por WEG na carteira semanal. Seleção cai 1,92%, mas supera Ibovespa, que recuou 4,81%",
+      "url": "https://www.spacemoney.com.br/investimentos/carteiras-recomendadas/weg-sabesp-carteira-terra/",
+      "source": "SpaceMoney",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-15T15:10:59Z",
+      "updatedAt": "2026-08-15T15:10:59Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-6120177-1.webp"
+    },
+    {
       "id": "macro-57eb84f07d67b95c4b887cae",
       "title": "Concurso Transpetro: como pedir isenção da taxa de inscrição",
-      "summary": "Veja o passo a passo para solicitar a isenção taxa no Concurso Transpetro 2026 e não perca a oportunidade de se inscrever gratuitamente.",
-      "details": "Veja o passo a passo para solicitar a isenção taxa no Concurso Transpetro 2026 e não perca a oportunidade de se inscrever gratuitamente.",
-      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-transpetro-isencao-da-taxa-de-inscricao/amp/",
+      "summary": "Com 83% das empresas do STOXX 600 divulgando balanços, lucros sobem 20% e energia avança 124%; veja os destaques",
+      "details": "Com 83% das empresas do STOXX 600 divulgando balanços, lucros sobem 20% e energia avança 124%; veja os destaques",
+      "url": "https://www.spacemoney.com.br/investimentos/acoes/temporada-de-resultados-na-europa-energia/",
       "source": "Estratégia Concursos",
       "category": "macro",
       "tags": [
@@ -554,14 +610,14 @@
       "updatedAt": "2026-08-15T15:03:40Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2026/08/13135213/concurso-transpetro-2026-cargos-e-vagas.jpeg"
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-5717809-4.webp"
     },
     {
       "id": "latest-3d142eb065905719124ef7f1",
       "title": "Resultados na Europa crescem 20% e setor de energia dispara",
-      "summary": "Com 83% das empresas do STOXX 600 divulgando balanços, lucros sobem 20% e energia avança 124%; veja os destaques",
-      "details": "Com 83% das empresas do STOXX 600 divulgando balanços, lucros sobem 20% e energia avança 124%; veja os destaques",
-      "url": "https://www.spacemoney.com.br/investimentos/acoes/temporada-de-resultados-na-europa-energia/",
+      "summary": "Na opinião do economista, um dos problemas fiscais do país é que, apesar de muito se falar em austeridade e ajustes, na prática isso não aconteceu",
+      "details": "Na opinião do economista, um dos problemas fiscais do país é que, apesar de muito se falar em austeridade e ajustes, na prática isso não aconteceu",
+      "url": "https://valor.globo.com/google/amp/brasil/noticia/2026/08/15/arminio-fraga-diz-que-brasil-repete-erros-e-compara-cenrio-econmico-ao-pr-crise-do-governo-dilma.ghtml",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -573,14 +629,14 @@
       "updatedAt": "2026-08-15T15:02:24Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-5717809-4.webp"
+      "imageUrl": "https://s2-valor.glbimg.com/NwMgaQfBb1fqrbsOzaB0dG4NX40=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/U/0/RmQZATTdWuYEepcJxq5w/foto05fin-101-gavea-c1.jpg"
     },
     {
       "id": "macro-68392cfe9aa78fea9dde4bcd",
       "title": "Arminio Fraga diz que Brasil repete erros e compara cenário econômico ao pré-crise do governo Dilma",
-      "summary": "Na opinião do economista, um dos problemas fiscais do país é que, apesar de muito se falar em austeridade e ajustes, na prática isso não aconteceu",
-      "details": "Na opinião do economista, um dos problemas fiscais do país é que, apesar de muito se falar em austeridade e ajustes, na prática isso não aconteceu",
-      "url": "https://valor.globo.com/google/amp/brasil/noticia/2026/08/15/arminio-fraga-diz-que-brasil-repete-erros-e-compara-cenrio-econmico-ao-pr-crise-do-governo-dilma.ghtml",
+      "summary": "Veja o passo a passo para solicitar a isenção taxa no Concurso Transpetro 2026 e não perca a oportunidade de se inscrever gratuitamente.",
+      "details": "Veja o passo a passo para solicitar a isenção taxa no Concurso Transpetro 2026 e não perca a oportunidade de se inscrever gratuitamente.",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-transpetro-isencao-da-taxa-de-inscricao/amp/",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -592,7 +648,7 @@
       "updatedAt": "2026-08-15T14:59:39Z",
       "premium": true,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/NwMgaQfBb1fqrbsOzaB0dG4NX40=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/U/0/RmQZATTdWuYEepcJxq5w/foto05fin-101-gavea-c1.jpg"
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2026/08/13135213/concurso-transpetro-2026-cargos-e-vagas.jpeg"
     },
     {
       "id": "macro-8e1c061395626c5720d274e4",
@@ -673,9 +729,9 @@
     {
       "id": "macro-c83ee4882e6cdc313e55daa0",
       "title": "Arminio Fraga vê risco de nova crise e critica cenário fiscal",
-      "summary": "O economista afirmou que o país não passou por um período de austeridade, destacando o aumento do gasto público em relação ao PIB nas últimas décadas.",
-      "details": "O economista afirmou que o país não passou por um período de austeridade, destacando o aumento do gasto público em relação ao PIB nas últimas décadas.",
-      "url": "https://veronoticias.com/economia/arminio-fraga-ve-risco-de-nova-crise-e-critica-cenario-fiscal/",
+      "summary": "Atualizacao de macro capturada em Vero Notícias.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPY1lxdDFSQ0xlUk9ENTZrbVFlMUJ4Nk5IXzRXYlBCMVZOWlJyS0xMX2xCWmFTRU5EUEZVa1RxQXVSNjA4Z1NLLVdidkhBNXFEeFFxbVgyLTkzUXdYdGVON1lTZEZiNC16YWllVlFKRm1tdnRUTjk2XzZjNmpkZE1uZ0I4aGJUUkwycmRqb3BJYnNFNXY1RlpnUlBJMjE?oc=5",
       "source": "Vero Notícias",
       "category": "macro",
       "tags": [
@@ -686,15 +742,14 @@
       "publishedAt": "2026-08-15T14:30:00Z",
       "updatedAt": "2026-08-15T14:30:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://veronoticias.com/wp-content/uploads/2025/02/Arminio-Fraga-Getty-Images.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-2e95d789bca306802680f92e",
       "title": "Real perde fôlego e mercado embute prêmio eleitoral",
-      "summary": "Com risco de reeleição de Lula, investidores reduzem posições compradas em real e precificam prêmio eleitoral maior",
-      "details": "Com risco de reeleição de Lula, investidores reduzem posições compradas em real e precificam prêmio eleitoral maior",
-      "url": "https://www.spacemoney.com.br/economia/macroeconomia/premio-eleitoral-real/",
+      "summary": "Atualizacao de ultima hora capturada em SpaceMoney.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZWNXN2lucUhscHZfRjFQcVZBNWgxQUw4eVNHdFJIdlR2MW5iaGlBeWQxUTZaRlVaeDJVa2poOHlsSDhIRGs3ZUZUbmF0aGxQaHNNN01PaDRuVVdjRWJMZlR4VjR2c2Npa2g4azd6WWRscHJ4ZVB5UUhtcGJLQndZNQ?oc=5",
       "source": "SpaceMoney",
       "category": "latest",
       "tags": [
@@ -705,15 +760,14 @@
       "publishedAt": "2026-08-15T14:13:08Z",
       "updatedAt": "2026-08-15T14:13:08Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-27797871-6.webp"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-33392a6fa6751449e3b12f11",
       "title": "Como a orquestração logística está entregando os benefícios que 4PL prometia",
       "summary": "Atualizacao de empresas capturada em Fator Brasil.",
       "details": "",
-      "url": "https://www.revistafatorbrasil.com.br/2026/08/15/como-a-orquestracao-logistica-esta-entregando-os-beneficios-que-4pl-prometia/",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNkpaZ1FZQmh5b2hvbXdjWm9VQlAyWmFHUDJwdFVnbmNvVm9EdzNQU2pXS2hqeG5HY1lpM2FPbFRIVGdhOGNMZTdiTUo2aVhFVHZ1YlRrelJfU0dGbWRIMXA4QWNUaHRHQ2hFX3BYdi0tRjJYTF9mYzlaUWg5TlRwNVRHNTdEN1JDWmRFY1FTSS14b01HN2VUOGlxbjZ1eHhqelhyVi00ZDRyUE9Bb1JTczA2X0E0c2ppZWltbFJ1c1N0Q0RU?oc=5",
       "source": "Fator Brasil",
       "category": "companies",
       "tags": [
@@ -853,24 +907,6 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "macro-c24e8a1fc2b54ad389c4e396",
-      "title": "Governo Federal eleva a previsão do salário mínimo para 2027; saiba qual será o valor",
-      "summary": "Atualizacao de macro capturada em Jornal Opção.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPRGpIeWNmYUE2ajRBdnBfWEZTc3BWR3AxSl9YdHFKZGFNLU1uYXk3bndBc3p2VWNXVlFZQ1VqUEl0NWpMSWwzOVB5YnJ3bDR2U3NobTVCaDB2aktYSlI2dUhqajM5NmZIRl9tUHdWTVJiNmZmbVVHbWlHckZpZ2duaEVwWmMteW01bTA2ZGh2Wi1xR2VBamoyU1R4Vllkd1pTcU4wLS1wWG1UcHF1OTNtZENBQU1YbHFRLUR2ejBZM2lnRDYyb3hGSXpuWFl6MWxTRUNXRVVIcw?oc=5",
-      "source": "Jornal Opção",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-15T12:30:00Z",
-      "updatedAt": "2026-08-15T12:30:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "latest-331cd065af26be8299f6f77f",
       "title": "Mercado reduz exposição ao real com risco eleitoral",
       "summary": "Atualizacao de ultima hora capturada em SpaceMoney.",
@@ -939,42 +975,6 @@
       ],
       "publishedAt": "2026-08-15T11:55:18Z",
       "updatedAt": "2026-08-15T11:55:18Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-297e4c4827e0c043a5e48fa8",
-      "title": "Mercado passa a embutir prêmio eleitoral no real com avanço da campanha",
-      "summary": "Atualizacao de ultima hora capturada em Canal Rural.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQaXdSb01zOVd0QndIbXVMWTJCbHpaUktiTm1mRTRmSUhNclhScVRLdlhmOFJveV94bTJiSUZPNzJ1dWNweFNMZmY3bzFRSkdFNTBiamtIVUdxVnBMVTVTSUEyM1JweGlySkExTDdod3BMOTRHOWlJd2pfbVlXVHVnejB4MV96aVVWTWFYcWNxUzZVcEMtdkN6V0RaS0NpSk1MQ21saTB4MXNVZU1FcTZpUQ?oc=5",
-      "source": "Canal Rural",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-15T11:42:24Z",
-      "updatedAt": "2026-08-15T11:42:24Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-334fdaa7dffb8e5fcbd39eb2",
-      "title": "Juros do Tesouro Direto disparam e IPCA+ chega a 8,19%",
-      "summary": "Atualizacao de ultima hora capturada em Portal Piauí Hoje.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQR1dla1BBc0VUcDNjaU9meW1hLVhOa1hKQ0ladDVLZVAxdWRDV0wzYXZIREZxdzhobEdoNWZ1T1c1TjlKZUhBNkJZem5yYklQOEhaSHZFS181TXl4aGQwZVhXMWZKSjM4Rmh2anNZUTRjdVNKSUozR2pRLTgtTXhSUlZoZHdJbDRtblA3aTBHSzBlZ3J0S1YtcjJnd0txWm55RjQ0TldR0gGrAUFVX3lxTE9DdkJEZy1jbE42d1BycTJQd2NzVnhzUFNOdE5wdFktTzZIQ1dnV1BvRk5FNkl3XzhtYzNma1dqcVJOdFZvYzBmcUN2MTU3MDFQWkRHdDQ2MkJrSUVCQ0V0U3VnQkpnQ3hDV195NzJFV19UdmRWTjd0bGctOVZhOFZ2bl9HVGJlQUNpM3NQRGtFZl81ZlB2amg3VFJhaUZ1SFY0SkJfSlItUTdubw?oc=5",
-      "source": "Portal Piauí Hoje",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-15T11:05:22Z",
-      "updatedAt": "2026-08-15T11:05:22Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -1069,12 +1069,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-a43d617cf2f8e6242249baf5",
+      "id": "companies-7ed90e13fa7ca8ed6818c007",
       "title": "MAQSTONE transforma rochas naturais brasileiras em materiais exclusivos para a arquitetura de alto padrão",
-      "summary": "Atualizacao de empresas capturada em gazetadasemana.com.br.",
+      "summary": "Atualizacao de empresas capturada em Gazeta da Semana.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQQXhxOXdvYVdVZE50b1VkM1NCUERzbkE2bHVvREJBQk5qdThVMndUQW5OV3FfNUpYVE54ZDRjTkNoWjRrenZ0RHkwYXFXbHF1c0ptMmoyaXFPYUpBS2VvLTNISV9rcTZaQlBOUWs0cTZlM0ZqNnhIbEhONWZrOXpKalZTMkhtLVREVWJFVkQ1em5Tc2xJdkdzS0FHNG5uNndkdDJTS2tDMVNZSzk5RzV1V2EzSExLVmtYcU5TYkMzVTNoYmN4d0dUNl83NXdMaHBMa01zM2VyY3ktVHdoeXZtcTdGR3ZHVEtsTmc?oc=5",
-      "source": "gazetadasemana.com.br",
+      "source": "Gazeta da Semana",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1213,12 +1213,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-18391a4bed9a43b7ee227eb0",
+      "id": "companies-0891c12514da149d75adba3f",
       "title": "37 executivos de grandes empresas revelam como experiência, dados e IA estão transformando os negócios no Brasil",
-      "summary": "Atualizacao de empresas capturada em tiinside.com.br.",
+      "summary": "Atualizacao de empresas capturada em TI INSIDE Online.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQeWhtMFBVM2VhY01fbzF6TThYc2hhTEFzUGd5SGJkUDVyQ0tudmRiTV9wbGJSQWxadUtMT0hVaVpJSjRYTy01ckFqRTF0c3dJV2Q2YmFSdkFkbldlNzdHdEQtUks1M3owWDJmNXFJbHlwX2wwVHpMd3lLb0JZbUh2c2VpWDlFMEdkZVRaV3pfS1BmeEtDb3RiNmRPY3hENDIxVjdWb2RPbzdLY1F0TFYzYWhnaENFMVhtUW1wejlVelY0eXpPMlgtSllZZlhtQnEyLWZadVV4UUdGczV6RldQYg?oc=5",
-      "source": "tiinside.com.br",
+      "source": "TI INSIDE Online",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1249,12 +1249,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-59dde2ebbb107fc9a9009dc6",
+      "id": "funds-82ac9db7aec5aeb33159a4be",
       "title": "FGC orienta 21 mil credores da Simpala após liquidação pelo Banco Central",
-      "summary": "Atualizacao de fundos capturada em cnnbrasil.com.br.",
+      "summary": "Atualizacao de fundos capturada em CNN Brasil.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOaC1xUldxZEdlZ2prczJEQ2tPdDVsVURUV2Rya2NoMENLdGwwYzU5YTB0Qkk3WjBiNU1rZUNmT1BjS2VpVWh1QmxabGxhaGtyV3RJSjNDVkh2M1ZFaFhMVk80M0lMcjl4Rk9DVzAtSjRuYTViN0c1VmxVZ200OWtuT3lDcEhtckdTN3lJanBpRzZUYnJlQjlDOGE0ODhNRWVaeU9kQ3FHSlo2bTZQQzJFcnpWajZ2bjVDUzNFZ3lUMA?oc=5",
-      "source": "cnnbrasil.com.br",
+      "source": "CNN Brasil",
       "category": "funds",
       "tags": [
         "fundos",
