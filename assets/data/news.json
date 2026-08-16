@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-16T22:15:51Z",
-  "generatedAt": "2026-08-16T22:15:51Z",
+  "updatedAt": "2026-08-16T22:45:48Z",
+  "generatedAt": "2026-08-16T22:45:48Z",
   "categories": [
     {
       "id": "all",
@@ -24,6 +24,10 @@
     }
   ],
   "sources": [
+    {
+      "id": "acessa-com",
+      "label": "Acessa.com"
+    },
     {
       "id": "acionista-com-br",
       "label": "Acionista.com.br"
@@ -65,8 +69,8 @@
       "label": "BPMoney"
     },
     {
-      "id": "canaltech",
-      "label": "Canaltech"
+      "id": "canaltech-com-br",
+      "label": "canaltech.com.br"
     },
     {
       "id": "capitalnews-com-br",
@@ -81,28 +85,12 @@
       "label": "CNN Brasil"
     },
     {
-      "id": "coinfomania",
-      "label": "Coinfomania"
-    },
-    {
-      "id": "contilnet-not-cias",
-      "label": "ContilNet Notícias"
+      "id": "coindesk",
+      "label": "CoinDesk"
     },
     {
       "id": "correio-de-corumb",
       "label": "Correio de Corumbá"
-    },
-    {
-      "id": "correiopaulista-com",
-      "label": "correiopaulista.com"
-    },
-    {
-      "id": "di-rio-do-centro-do-mundo",
-      "label": "Diário do Centro do Mundo"
-    },
-    {
-      "id": "e-global-pt",
-      "label": "e-global.pt"
     },
     {
       "id": "em-tempo-not-cias",
@@ -111,6 +99,10 @@
     {
       "id": "enfoco",
       "label": "Enfoco"
+    },
+    {
+      "id": "engeplus-com-br",
+      "label": "engeplus.com.br"
     },
     {
       "id": "estado-de-minas",
@@ -129,52 +121,44 @@
       "label": "Folha BV"
     },
     {
-      "id": "folhavitoria-com-br",
-      "label": "folhavitoria.com.br"
+      "id": "folha-vit-ria",
+      "label": "Folha Vitória"
     },
     {
-      "id": "gazetadopovo-com-br",
-      "label": "gazetadopovo.com.br"
+      "id": "gauchazh-clicrbs-com-br",
+      "label": "gauchazh.clicrbs.com.br"
+    },
+    {
+      "id": "gazeta-do-povo",
+      "label": "Gazeta do Povo"
     },
     {
       "id": "gp1",
       "label": "GP1"
     },
     {
-      "id": "gzh",
-      "label": "GZH"
-    },
-    {
-      "id": "imdb",
-      "label": "IMDb"
+      "id": "imdb-com",
+      "label": "imdb.com"
     },
     {
       "id": "infomoney",
       "label": "InfoMoney"
     },
     {
-      "id": "moneytimes-com-br",
-      "label": "moneytimes.com.br"
-    },
-    {
-      "id": "nord-investimentos",
-      "label": "Nord Investimentos"
+      "id": "money-times",
+      "label": "Money Times"
     },
     {
       "id": "o-globo",
       "label": "O GLOBO"
     },
     {
+      "id": "o-rebate",
+      "label": "O Rebate"
+    },
+    {
       "id": "okx",
       "label": "OKX"
-    },
-    {
-      "id": "por-dentro-de-tudo",
-      "label": "Por Dentro de Tudo"
-    },
-    {
-      "id": "portal-engeplus",
-      "label": "Portal Engeplus"
     },
     {
       "id": "povo-na-rua",
@@ -205,16 +189,16 @@
       "label": "Terra Brasil Notícias"
     },
     {
-      "id": "tnsul-com",
-      "label": "tnsul.com"
-    },
-    {
       "id": "tribuna-do-paran",
       "label": "Tribuna do Paraná"
     },
     {
-      "id": "valor-globo-com",
-      "label": "valor.globo.com"
+      "id": "uol-not-cias",
+      "label": "UOL Notícias"
+    },
+    {
+      "id": "valor-econ-mico",
+      "label": "Valor Econômico"
     },
     {
       "id": "vanity-brasil",
@@ -227,15 +211,38 @@
     {
       "id": "vtvnews-com-br",
       "label": "vtvnews.com.br"
+    },
+    {
+      "id": "nica-news",
+      "label": "Única News"
     }
   ],
   "items": [
     {
+      "id": "latest-6a75647be1fe9baf225b17cc",
+      "title": "Marabraz pede recuperação judicial com dívida de R$ 140 milhões",
+      "summary": "A empresária Elizabete Fontenele de Oliveira Pacheco foi condenada a mais de 2 anos de reclusão por crimes contra a ordem tributária praticados entre os anos d…",
+      "details": "A empresária Elizabete Fontenele de Oliveira Pacheco foi condenada a mais de 2 anos de reclusão por crimes contra a ordem tributária praticados entre os anos d…",
+      "url": "https://www.gp1.com.br/piaui/noticia/2026/8/16/empresaria-e-condenada-a-mais-de-2-anos-de-prisao-por-sonegacao-fiscal-no-piaui-629307.html",
+      "source": "BPMoney",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-16T22:24:41Z",
+      "updatedAt": "2026-08-16T22:24:41Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.gp1.com.br/media/watermarks/629307_515885.jpg?1786920317.964206"
+    },
+    {
       "id": "macro-aa2b952dfbc9ed2fef4a4797",
       "title": "Empresária é condenada a mais de 2 anos de prisão por sonegação fiscal no Piauí",
-      "summary": "Desenvolvida com IA proprietária, tecnologia amplia a experiência dentro do aplicativo ao organizar as finanças, simplificar tarefas.",
-      "details": "Desenvolvida com IA proprietária, tecnologia amplia a experiência dentro do aplicativo ao organizar as finanças, simplificar tarefas.",
-      "url": "https://bitnoticias.com.br/noticias/mercado-pago-agente-de-ia/",
+      "summary": "Marabraz pede recuperação judicial em São Paulo com dívida de R$ 140 milhões; empresa cita juros altos, disputas e crise no varejo.",
+      "details": "Marabraz pede recuperação judicial em São Paulo com dívida de R$ 140 milhões; empresa cita juros altos, disputas e crise no varejo.",
+      "url": "https://bpmoney.com.br/mercado/marabraz-pede-recuperacao-judicial-com-divida-de-r-140-milhoes/",
       "source": "GP1",
       "category": "macro",
       "tags": [
@@ -247,14 +254,14 @@
       "updatedAt": "2026-08-16T21:26:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://bitnoticias.com.br/wp-content/uploads/2026/08/Mercado-pago-Mago.png"
+      "imageUrl": "https://bpmoney.com.br/wp-content/uploads/2025/04/OX770pF3-Marabraz.webp"
     },
     {
       "id": "latest-beb997042237b37738620be7",
       "title": "Criptomoedas: Mercado Pago lança assistente financeiro com IA",
-      "summary": "A empresária Elizabete Fontenele de Oliveira Pacheco foi condenada a mais de 2 anos de reclusão por crimes contra a ordem tributária praticados entre os anos d…",
-      "details": "A empresária Elizabete Fontenele de Oliveira Pacheco foi condenada a mais de 2 anos de reclusão por crimes contra a ordem tributária praticados entre os anos d…",
-      "url": "https://www.gp1.com.br/piaui/noticia/2026/8/16/empresaria-e-condenada-a-mais-de-2-anos-de-prisao-por-sonegacao-fiscal-no-piaui-629307.html",
+      "summary": "Fortaleza desponta entre os mercados imobiliários de maior valorização do Nordeste. A capital cearense registrou alta de 9,7% nos preços dos imóveis em 12 meses, ritmo superior tanto ao avanço de 5,4% do Índice FipeZAP quanto à inflação de 4,4% medida pelo IPCA no mesmo período. ",
+      "details": "Fortaleza desponta entre os mercados imobiliários de maior valorização do Nordeste. A capital cearense registrou alta de 9,7% nos preços dos imóveis em 12 meses, ritmo superior tanto ao avanço de 5,4% do Índice FipeZAP quanto à inflação de 4,4% medida pelo IPCA no mesmo período. O movimento coloca a cidade entre os des",
+      "url": "https://www.portalin.com.br/negocios/imoveis-no-nordeste-disparam-acima-da-inflacao-e-metro-quadrado-ja-supera-r-13-mil/",
       "source": "BitNotícias",
       "category": "latest",
       "tags": [
@@ -266,14 +273,14 @@
       "updatedAt": "2026-08-16T21:04:23Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.gp1.com.br/media/watermarks/629307_515885.jpg?1786918514.406874"
+      "imageUrl": "https://www.portalin.com.br/wp-content/uploads/2026/08/mercado-imobiliario.webp"
     },
     {
       "id": "macro-cddb6c3f122914ca0ea51e02",
       "title": "Horário eleitoral obrigatório pode gerar quase R$ 1 bilhão em renúncia fiscal",
-      "summary": "Os dados da agenda econômica podem ajudar o mercado a calibrar as apostas para os próximos passos da política monetária",
-      "details": "Os dados da agenda econômica podem ajudar o mercado a calibrar as apostas para os próximos passos da política monetária",
-      "url": "https://www.seudinheiro.com/2026/economia/agenda-economica-tem-previa-do-pib-reuniao-do-cmn-e-ata-do-fed-confira-os-indicadores-que-mexem-com-o-mercado-nesta-semana-davs/",
+      "summary": "O horário obrigatório de propaganda eleitoral no rádio e na televisão começa em 28 de agosto de 2026 e, apesar de ser conhecido como “gratuito”, gera um custo indireto para os cofres públicos. As emissoras recebem compensação fiscalpelo espaço cedido à propaganda eleitoral. Para ",
+      "details": "O horário obrigatório de propaganda eleitoral no rádio e na televisão começa em 28 de agosto de 2026 e, apesar de ser conhecido como “gratuito”, gera um custo indireto para os cofres públicos. As emissoras recebem compensação fiscalpelo espaço cedido à propaganda eleitoral. Para as eleições deste ano, a estimativa...",
+      "url": "https://gustavonegreiros.com.br/2026/8/16/horario-eleitoral-obrigatorio-pode-gerar-quase-r-1-bilhao-em-renuncia-fiscal/166396",
       "source": "Blog do Gustavo Negreiros",
       "category": "macro",
       "tags": [
@@ -285,14 +292,14 @@
       "updatedAt": "2026-08-16T20:40:11Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.seudinheiro.com/uploads/2026/07/Calendario-balancas.jpg"
+      "imageUrl": "https://gustavonegreiros.com.br/storage/2026/08/16/492x326-01M05ZACPZ2YB51RCVX92FKFT9.jpeg"
     },
     {
       "id": "macro-51cfa581d26bf9a0d3a78f3e",
       "title": "Agenda econômica tem prévia do PIB, reunião do CMN e ata do Fed; confira os indicadores que mexem com o mercado nesta semana",
-      "summary": "O horário obrigatório de propaganda eleitoral no rádio e na televisão começa em 28 de agosto de 2026 e, apesar de ser conhecido como “gratuito”, gera um custo indireto para os cofres públicos. As emissoras recebem compensação fiscalpelo espaço cedido à propaganda eleitoral. Para ",
-      "details": "O horário obrigatório de propaganda eleitoral no rádio e na televisão começa em 28 de agosto de 2026 e, apesar de ser conhecido como “gratuito”, gera um custo indireto para os cofres públicos. As emissoras recebem compensação fiscalpelo espaço cedido à propaganda eleitoral. Para as eleições deste ano, a estimativa...",
-      "url": "https://gustavonegreiros.com.br/2026/8/16/horario-eleitoral-obrigatorio-pode-gerar-quase-r-1-bilhao-em-renuncia-fiscal/166396",
+      "summary": "Desenvolvida com IA proprietária, tecnologia amplia a experiência dentro do aplicativo ao organizar as finanças, simplificar tarefas.",
+      "details": "Desenvolvida com IA proprietária, tecnologia amplia a experiência dentro do aplicativo ao organizar as finanças, simplificar tarefas.",
+      "url": "https://bitnoticias.com.br/noticias/mercado-pago-agente-de-ia/",
       "source": "Seu Dinheiro",
       "category": "macro",
       "tags": [
@@ -304,7 +311,7 @@
       "updatedAt": "2026-08-16T20:39:08Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://gustavonegreiros.com.br/storage/2026/08/16/492x326-01M05ZACPZ2YB51RCVX92FKFT9.jpeg"
+      "imageUrl": "https://bitnoticias.com.br/wp-content/uploads/2026/08/Mercado-pago-Mago.png"
     },
     {
       "id": "macro-553275d5309eb15efd6b71a2",
@@ -328,9 +335,9 @@
     {
       "id": "macro-e2697edaa59397a3d3c7aca4",
       "title": "Imóveis no Nordeste disparam acima da inflação e metro quadrado já supera R$ 13 mil",
-      "summary": "Fortaleza desponta entre os mercados imobiliários de maior valorização do Nordeste. A capital cearense registrou alta de 9,7% nos preços dos imóveis em 12 meses, ritmo superior tanto ao avanço de 5,4% do Índice FipeZAP quanto à inflação de 4,4% medida pelo IPCA no mesmo período. ",
-      "details": "Fortaleza desponta entre os mercados imobiliários de maior valorização do Nordeste. A capital cearense registrou alta de 9,7% nos preços dos imóveis em 12 meses, ritmo superior tanto ao avanço de 5,4% do Índice FipeZAP quanto à inflação de 4,4% medida pelo IPCA no mesmo período. O movimento coloca a cidade entre os des",
-      "url": "https://www.portalin.com.br/negocios/imoveis-no-nordeste-disparam-acima-da-inflacao-e-metro-quadrado-ja-supera-r-13-mil/",
+      "summary": "Os dados da agenda econômica podem ajudar o mercado a calibrar as apostas para os próximos passos da política monetária",
+      "details": "Os dados da agenda econômica podem ajudar o mercado a calibrar as apostas para os próximos passos da política monetária",
+      "url": "https://www.seudinheiro.com/2026/economia/agenda-economica-tem-previa-do-pib-reuniao-do-cmn-e-ata-do-fed-confira-os-indicadores-que-mexem-com-o-mercado-nesta-semana-davs/",
       "source": "Balada IN",
       "category": "macro",
       "tags": [
@@ -342,34 +349,15 @@
       "updatedAt": "2026-08-16T20:30:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.portalin.com.br/wp-content/uploads/2026/08/mercado-imobiliario.webp"
+      "imageUrl": "https://www.seudinheiro.com/uploads/2026/07/Calendario-balancas.jpg"
     },
     {
-      "id": "latest-19c35368e82de35bb8ab46e0",
-      "title": "Quem é Ivo Kos, ex-sócio da Virgo preso por suspeita de agredir a esposa?",
-      "summary": "Empresário foi preso em flagrante neste sábado, e teve a prisão convertida em preventiva, suspeito de agredir a esposa com socos e um taco de beisebol",
-      "details": "Empresário foi preso em flagrante neste sábado, e teve a prisão convertida em preventiva, suspeito de agredir a esposa com socos e um taco de beisebol",
-      "url": "https://valor.globo.com/financas/noticia/2026/08/16/quem-ivo-kos-ex-scio-da-virgo-preso-aps-agredir-esposa.ghtml",
-      "source": "valor.globo.com",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-16T20:28:47Z",
-      "updatedAt": "2026-08-16T20:28:47Z",
-      "premium": true,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s2-valor.glbimg.com/i1q53ZnOSL4lYmZ1R49ODfpsmvU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/Y/7/LJufVMQzyA1GiydVNCTQ/ivo-kos.jpg"
-    },
-    {
-      "id": "macro-0afb80652817c8c7e3dddf4e",
+      "id": "macro-aea04bd1e70e685c7985fbcc",
       "title": "Cidade de 18 mil habitantes chama atenção com investimento privado de R$ 70 milhões",
       "summary": "Nova operação de atacarejo será instalada em Cocal do Sul, com previsão de 150 empregos",
       "details": "Nova operação de atacarejo será instalada em Cocal do Sul, com previsão de 150 empregos",
       "url": "https://engeplus.com.br/noticia/geral/233650/cidade-de-18-mil-habitantes-chama-atencao-com-investimento-privado-de-r-70-milhoes",
-      "source": "Portal Engeplus",
+      "source": "engeplus.com.br",
       "category": "macro",
       "tags": [
         "macro",
@@ -440,12 +428,12 @@
       "imageUrl": "https://tl.ctcdn.com.br/I4JWCEUqzs1kgOV_OOkuWBVAywI=/1200x675/smart/filters:format(webp):quality(85)/36dfec44-f74a-4891-95c6-8b271006de87.JPG"
     },
     {
-      "id": "macro-39bae052b258b23294857621",
+      "id": "macro-c1a0055f4decd889ca20dcb2",
       "title": "Quanto custaria um Citroën Xsara Picasso hoje, com a inflação?",
       "summary": "O problema é que cortar benefícios fiscais é politicamente muito mais difícil do que anunciar seu corte em campanha",
       "details": "O problema é que cortar benefícios fiscais é politicamente muito mais difícil do que anunciar seu corte em campanha",
-      "url": "https://www.estadao.com.br/em-alta/economia/claudio-adilson-goncalez/cortar-gastos-tributarios-nao-e-bala-de-prata-do-ajuste-fiscal/",
-      "source": "Canaltech",
+      "url": "https://www.estadao.com.br/economia/claudio-adilson-goncalez/cortar-gastos-tributarios-nao-e-bala-de-prata-do-ajuste-fiscal/",
+      "source": "canaltech.com.br",
       "category": "macro",
       "tags": [
         "macro",
@@ -456,14 +444,14 @@
       "updatedAt": "2026-08-16T20:03:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/PGZ4HRSW3VI53BXCHE2BEIU3EM.png?quality=80&auth=824cc48393b1243dc5d62d3be3866be7fdb24eaea21978106d4194434c538dca&width=1200&height=630&smart=true"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/PGZ4HRSW3VI53BXCHE2BEIU3EM.png?quality=80&auth=824cc48393b1243dc5d62d3be3866be7fdb24eaea21978106d4194434c538dca&width=1200&height=630&focal=281,198"
     },
     {
       "id": "macro-83bb4274665c5b43a17569c0",
       "title": "Cortar gastos tributários não é bala de prata do ajuste fiscal",
       "summary": "O problema é que cortar benefícios fiscais é politicamente muito mais difícil do que anunciar seu corte em campanha",
       "details": "O problema é que cortar benefícios fiscais é politicamente muito mais difícil do que anunciar seu corte em campanha",
-      "url": "https://www.estadao.com.br/economia/claudio-adilson-goncalez/cortar-gastos-tributarios-nao-e-bala-de-prata-do-ajuste-fiscal/",
+      "url": "https://www.estadao.com.br/em-alta/economia/claudio-adilson-goncalez/cortar-gastos-tributarios-nao-e-bala-de-prata-do-ajuste-fiscal/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -475,14 +463,14 @@
       "updatedAt": "2026-08-16T20:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/PGZ4HRSW3VI53BXCHE2BEIU3EM.png?quality=80&auth=824cc48393b1243dc5d62d3be3866be7fdb24eaea21978106d4194434c538dca&width=1200&height=630&focal=281,198"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/PGZ4HRSW3VI53BXCHE2BEIU3EM.png?quality=80&auth=824cc48393b1243dc5d62d3be3866be7fdb24eaea21978106d4194434c538dca&width=1200&height=630&smart=true"
     },
     {
       "id": "macro-ae9837deef7d9419c7ada58f",
       "title": "Agenda econômica da semana: veja os principais indicadores de 16 a 21 de agosto,",
-      "summary": "Atualizacao de macro capturada em BPMoney.",
-      "details": "",
-      "url": "https://www.capitalnews.com.br/nacional/mesmo-com-queda-da-selic-juros-seguem-freando-investimentos-diz-cni/445490",
+      "summary": "Confira a agenda econômica da semana de 16 a 21 de agosto, com Focus, IBC-Br, atas do FOMC, inflação e PMIs no Brasil e exterior.",
+      "details": "Confira a agenda econômica da semana de 16 a 21 de agosto, com Focus, IBC-Br, atas do FOMC, inflação e PMIs no Brasil e exterior.",
+      "url": "https://bpmoney.com.br/mercado/agenda-economica-da-semana-veja-os-principais-indicadores-de-16-a-21-de-agosto/",
       "source": "BPMoney",
       "category": "macro",
       "tags": [
@@ -493,14 +481,15 @@
       "publishedAt": "2026-08-16T20:00:00Z",
       "updatedAt": "2026-08-16T20:00:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://uploads.bpmoney.com.br/2026/07/14778-1320x880.jpg"
     },
     {
       "id": "macro-63523de8b841186cb7ae3ab4",
       "title": "Mesmo com queda da Selic, juros seguem freando investimentos, diz CNI",
-      "summary": "Confira a agenda econômica da semana de 16 a 21 de agosto, com Focus, IBC-Br, atas do FOMC, inflação e PMIs no Brasil e exterior.",
-      "details": "Confira a agenda econômica da semana de 16 a 21 de agosto, com Focus, IBC-Br, atas do FOMC, inflação e PMIs no Brasil e exterior.",
-      "url": "https://bpmoney.com.br/mercado/agenda-economica-da-semana-veja-os-principais-indicadores-de-16-a-21-de-agosto/",
+      "summary": "Atualizacao de macro capturada em capitalnews.com.br.",
+      "details": "",
+      "url": "https://www.capitalnews.com.br/nacional/mesmo-com-queda-da-selic-juros-seguem-freando-investimentos-diz-cni/445490",
       "source": "capitalnews.com.br",
       "category": "macro",
       "tags": [
@@ -511,16 +500,15 @@
       "publishedAt": "2026-08-16T19:51:00Z",
       "updatedAt": "2026-08-16T19:51:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://uploads.bpmoney.com.br/2026/07/14778-1320x880.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "funds-7c1b01c43f00e1a15c7b37f1",
+      "id": "funds-151d3fb6dc358a815fc7cfd2",
       "title": "Michelle Bolsonaro inicia campanha e declara patrimônio de R$ 4,4 milhões",
       "summary": "Michelle afirmou que candidatura ao Senado pelo DF é uma “missão” confiada a ela pelo ex-presidente Jair Bolsonaro.",
       "details": "Michelle afirmou que candidatura ao Senado pelo DF é uma “missão” confiada a ela pelo ex-presidente Jair Bolsonaro.",
       "url": "https://www.gazetadopovo.com.br/eleicoes/2026/distrito-federal/michelle-bolsonaro-inicia-campanha-e-declara-patrimonio-de-r-44-milhoes/",
-      "source": "gazetadopovo.com.br",
+      "source": "Gazeta do Povo",
       "category": "funds",
       "tags": [
         "fundos",
@@ -536,9 +524,9 @@
     {
       "id": "macro-d4e1fd80cfaad94af084c52b",
       "title": "Rio tem nota máxima na classificação de risco após recuperação fiscal",
-      "summary": "Semana traz IBC-Br, ata do Fomc e PMIs globais. Entenda como esses dados podem recalibrar apostas sobre juros no Brasil e nos EUA.",
-      "details": "Semana traz IBC-Br, ata do Fomc e PMIs globais. Entenda como esses dados podem recalibrar apostas sobre juros no Brasil e nos EUA.",
-      "url": "https://blocktrends.com.br/ibc-br-ata-fed-agenda-economica-semana-17-21-agosto/",
+      "summary": "Atualizacao de macro capturada em Enfoco.",
+      "details": "",
+      "url": "https://enfoco.com.br/noticias/regiao/rio/rio-eleva-nota-de-credito/",
       "source": "Enfoco",
       "category": "macro",
       "tags": [
@@ -549,15 +537,14 @@
       "publishedAt": "2026-08-16T19:14:43Z",
       "updatedAt": "2026-08-16T19:14:43Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://blocktrends.com.br/wp-content/uploads/2026/08/bt-371006-1786905148.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-54b3fd18b390503e284cd41a",
       "title": "Bradesco entra ‘de cabeça’ em cripto e lança compra e custódia de Bitcoin",
-      "summary": "Invasores tiveram acesso a informações como renda tributável, alíquota de retenção, endereços e dados de imóveis; governo notificará os afetados",
-      "details": "Invasores tiveram acesso a informações como renda tributável, alíquota de retenção, endereços e dados de imóveis; governo notificará os afetados",
-      "url": "https://www.infomoney.com.br/mundo/franca-sofre-ataque-hacker-e-dados-de-678-mil-contas-sao-extraidos-de-sistema-fiscal/",
+      "summary": "Bradesco estreia custódia institucional de ativos digitais, com Foxbit como primeiro cliente e foco em stablecoins, tokens e investidores.",
+      "details": "Bradesco estreia custódia institucional de ativos digitais, com Foxbit como primeiro cliente e foco em stablecoins, tokens e investidores.",
+      "url": "https://bitnoticias.com.br/noticias/bradesco-compra-e-custodia-de-bitcoin/",
       "source": "BitNotícias",
       "category": "latest",
       "tags": [
@@ -569,14 +556,14 @@
       "updatedAt": "2026-08-16T19:00:02Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2019/06/paris-bloomberg.jpg"
+      "imageUrl": "https://bitnoticias.com.br/wp-content/uploads/2026/08/Bradesco-bitcoin.png"
     },
     {
       "id": "macro-138bd126eea2f158861bac2b",
       "title": "Prévia do PIB, ata do Fed e PMIs: os indicadores que movem os mercados na semana de 17 a 21 de agosto",
-      "summary": "Atualizacao de macro capturada em BlockTrends.",
-      "details": "",
-      "url": "https://enfoco.com.br/noticias/regiao/rio/rio-eleva-nota-de-credito/",
+      "summary": "Semana traz IBC-Br, ata do Fomc e PMIs globais. Entenda como esses dados podem recalibrar apostas sobre juros no Brasil e nos EUA.",
+      "details": "Semana traz IBC-Br, ata do Fomc e PMIs globais. Entenda como esses dados podem recalibrar apostas sobre juros no Brasil e nos EUA.",
+      "url": "https://blocktrends.com.br/ibc-br-ata-fed-agenda-economica-semana-17-21-agosto/",
       "source": "BlockTrends",
       "category": "macro",
       "tags": [
@@ -587,14 +574,15 @@
       "publishedAt": "2026-08-16T18:32:22Z",
       "updatedAt": "2026-08-16T18:32:22Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://blocktrends.com.br/wp-content/uploads/2026/08/bt-371006-1786905148.jpg"
     },
     {
       "id": "macro-6749a08bf5abe7d1dcfcff96",
       "title": "França sofre ataque hacker e dados de 678 mil contas são extraídos de sistema fiscal",
-      "summary": "Bradesco estreia custódia institucional de ativos digitais, com Foxbit como primeiro cliente e foco em stablecoins, tokens e investidores.",
-      "details": "Bradesco estreia custódia institucional de ativos digitais, com Foxbit como primeiro cliente e foco em stablecoins, tokens e investidores.",
-      "url": "https://bitnoticias.com.br/noticias/bradesco-compra-e-custodia-de-bitcoin/",
+      "summary": "Invasores tiveram acesso a informações como renda tributável, alíquota de retenção, endereços e dados de imóveis; governo notificará os afetados",
+      "details": "Invasores tiveram acesso a informações como renda tributável, alíquota de retenção, endereços e dados de imóveis; governo notificará os afetados",
+      "url": "https://www.infomoney.com.br/mundo/franca-sofre-ataque-hacker-e-dados-de-678-mil-contas-sao-extraidos-de-sistema-fiscal/",
       "source": "InfoMoney",
       "category": "macro",
       "tags": [
@@ -606,14 +594,14 @@
       "updatedAt": "2026-08-16T18:13:06Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://bitnoticias.com.br/wp-content/uploads/2026/08/Bradesco-bitcoin.png"
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2019/06/paris-bloomberg.jpg"
     },
     {
       "id": "macro-288c3144bf6e0440053fc8d4",
       "title": "O impacto fiscal na locação imobiliária",
-      "summary": "O impacto fiscal na locação imobiliária",
-      "details": "O impacto fiscal na locação imobiliária",
-      "url": "https://fococidade.com.br/materia/71878/o-impacto-fiscal-na-locacao-imobiliaria",
+      "summary": "Candidato ao governo de Minas ele diz manter apoio à Flávio Bolsonaro, mas afirma que postergação da candidatura inviabilizou palanque",
+      "details": "Candidato ao governo de Minas ele diz manter apoio à Flávio Bolsonaro, mas afirma que postergação da candidatura inviabilizou palanque",
+      "url": "https://www.em.com.br/politica/2026/08/7481023-na-largada-cleitinho-defende-cortar-gastos-e-acabar-com-isencao-fiscal.html",
       "source": "Foco Cidade",
       "category": "macro",
       "tags": [
@@ -625,14 +613,14 @@
       "updatedAt": "2026-08-16T18:04:22Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://painel.fococidade.com.br/storage/photos/4362ccf13a3c91fac0950dbf7f3bc4c2.jpg"
+      "imageUrl": "https://midias.em.com.br/_midias/jpg/2026/08/16/1000x1000/1_whatsapp-image-2026-08-16-at-14-37-30-67431241.jpeg"
     },
     {
       "id": "funds-64f81a510c0dd3d57bdc71f1",
       "title": "Candidato à Presidência Pablo Marçal declara patrimônio de R$ 7,4 bilhões e detalhes de bens e aplicações financeiras",
-      "summary": "Candidato ao governo de Minas ele diz manter apoio à Flávio Bolsonaro, mas afirma que postergação da candidatura inviabilizou palanque",
-      "details": "Candidato ao governo de Minas ele diz manter apoio à Flávio Bolsonaro, mas afirma que postergação da candidatura inviabilizou palanque",
-      "url": "https://www.em.com.br/politica/2026/08/7481023-na-largada-cleitinho-defende-cortar-gastos-e-acabar-com-isencao-fiscal.html",
+      "summary": "O candidato do PRTB à presidência da República, Pablo Marçal, revelou possuir um patrimônio declarado de aproximadamente R$ 7,4 bilhões, conforme registros apresentados ao Tribunal Superior Eleitoral (TSE). Dentre seus bens e aplicações, destaca-se uma significativa concentração ",
+      "details": "O candidato do PRTB à presidência da República, Pablo Marçal, revelou possuir um patrimônio declarado de aproximadamente R$ 7,4 bilhões, conforme registros apresentados ao Tribunal Superior Eleitoral (TSE). Dentre seus bens e aplicações, destaca-se uma significativa concentração de recursos em investimentos financeiros",
+      "url": "https://bh24horas.com.br/politica/candidato-a-presidencia-pablo-marcal-declara-patrimonio-de-r-74-bilhoes-e-detalhes-de-bens-e-aplicacoes-financeiras/",
       "source": "BH 24 Horas",
       "category": "funds",
       "tags": [
@@ -644,14 +632,14 @@
       "updatedAt": "2026-08-16T18:04:18Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://midias.em.com.br/_midias/jpg/2026/08/16/1000x1000/1_whatsapp-image-2026-08-16-at-14-37-30-67431241.jpeg"
+      "imageUrl": "https://i0.wp.com/bh24horas.com.br/wp-content/uploads/2026/08/cover-1128.jpg?fit=450%2C300&ssl=1"
     },
     {
       "id": "macro-4a7259ba78202380f4acb3cb",
       "title": "Na largada, Cleitinho defende cortar gastos e acabar com isenção fiscal",
-      "summary": "O candidato do PRTB à presidência da República, Pablo Marçal, revelou possuir um patrimônio declarado de aproximadamente R$ 7,4 bilhões, conforme registros apresentados ao Tribunal Superior Eleitoral (TSE). Dentre seus bens e aplicações, destaca-se uma significativa concentração ",
-      "details": "O candidato do PRTB à presidência da República, Pablo Marçal, revelou possuir um patrimônio declarado de aproximadamente R$ 7,4 bilhões, conforme registros apresentados ao Tribunal Superior Eleitoral (TSE). Dentre seus bens e aplicações, destaca-se uma significativa concentração de recursos em investimentos financeiros",
-      "url": "https://bh24horas.com.br/politica/candidato-a-presidencia-pablo-marcal-declara-patrimonio-de-r-74-bilhoes-e-detalhes-de-bens-e-aplicacoes-financeiras/",
+      "summary": "Empresário foi preso em flagrante neste sábado, e teve a prisão convertida em preventiva, suspeito de agredir a esposa com socos e um taco de beisebol",
+      "details": "Empresário foi preso em flagrante neste sábado, e teve a prisão convertida em preventiva, suspeito de agredir a esposa com socos e um taco de beisebol",
+      "url": "https://valor.globo.com/financas/noticia/2026/08/16/quem-ivo-kos-ex-scio-da-virgo-preso-aps-agredir-esposa.ghtml",
       "source": "Estado de Minas",
       "category": "macro",
       "tags": [
@@ -663,15 +651,15 @@
       "updatedAt": "2026-08-16T17:56:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://i0.wp.com/bh24horas.com.br/wp-content/uploads/2026/08/cover-1128.jpg?fit=450%2C300&ssl=1"
+      "imageUrl": "https://s2-valor.glbimg.com/i1q53ZnOSL4lYmZ1R49ODfpsmvU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/Y/7/LJufVMQzyA1GiydVNCTQ/ivo-kos.jpg"
     },
     {
-      "id": "funds-4e4c0b0437254b7bc7c22a63",
+      "id": "funds-b1cf2eb904d336d57f7a7240",
       "title": "New ‘Lioness’ Star Elizaveta Neretin Reveals a Personal Connection to Her Character",
-      "summary": "Atualizacao de fundos capturada em IMDb.",
+      "summary": "Atualizacao de fundos capturada em imdb.com.",
       "details": "",
       "url": "https://www.imdb.com/pt/news/ni65974413/?ref_=nwc_art_perm",
-      "source": "IMDb",
+      "source": "imdb.com",
       "category": "funds",
       "tags": [
         "fundos",
@@ -686,9 +674,9 @@
     {
       "id": "latest-2ab94e5f667036cc7b99a196",
       "title": "Ibovespa e Carteiras ESG: como superar a média do mercado?",
-      "summary": "Atualizacao de ultima hora capturada em Acionista.com.br.",
-      "details": "",
-      "url": "https://acionista.com.br/ibovespa-e-carteiras-esg-como-superar-a-media-do-mercado/",
+      "summary": "O impacto fiscal na locação imobiliária",
+      "details": "O impacto fiscal na locação imobiliária",
+      "url": "https://fococidade.com.br/materia/71878/o-impacto-fiscal-na-locacao-imobiliaria",
       "source": "Acionista.com.br",
       "category": "latest",
       "tags": [
@@ -699,26 +687,26 @@
       "publishedAt": "2026-08-16T17:03:25Z",
       "updatedAt": "2026-08-16T17:03:25Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://painel.fococidade.com.br/storage/photos/4362ccf13a3c91fac0950dbf7f3bc4c2.jpg"
     },
     {
-      "id": "macro-9ff4cb013258e1285e7b7d72",
-      "title": "Bets fazem famílias brasileiras perderem valor maior que o PIB do Acre",
-      "summary": "Dados do Comitê Nacional de Secretários da Fazenda dos Estados (Comsefaz) apontam que as famílias brasileiras perderam R$ 62,5 bilhões com plataformas",
-      "details": "Dados do Comitê Nacional de Secretários da Fazenda dos Estados (Comsefaz) apontam que as famílias brasileiras perderam R$ 62,5 bilhões com plataformas",
-      "url": "https://contilnetnoticias.com.br/destaque-2/apostas-fazem-familias-brasileiras-perderem-valor-maior-que-pib-do-acre-em-2025/",
-      "source": "ContilNet Notícias",
-      "category": "macro",
+      "id": "latest-c65b0e63ef5556f200162dea",
+      "title": "Quem é Ivo Kos, ex-sócio da Virgo preso por suspeita de agredir a esposa?",
+      "summary": "Atualizacao de ultima hora capturada em Valor Econômico.",
+      "details": "",
+      "url": "https://acionista.com.br/ibovespa-e-carteiras-esg-como-superar-a-media-do-mercado/",
+      "source": "Valor Econômico",
+      "category": "latest",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
+        "mercado",
+        "bolsa",
+        "macro"
       ],
-      "publishedAt": "2026-08-16T16:53:40Z",
-      "updatedAt": "2026-08-16T16:53:40Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://contilnetnoticias.com.br/wp-content/uploads/2025/10/bets.webp"
+      "publishedAt": "2026-08-16T16:58:04Z",
+      "updatedAt": "2026-08-16T16:58:04Z",
+      "premium": true,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-ada6bf1f3f618084ca10d6e5",
@@ -759,6 +747,42 @@
       "imageUrl": "https://cdn1.correiodecorumbapantanal.com.br/ui/app/site/assets/img/img-default.jpg"
     },
     {
+      "id": "companies-d9581e3ae28290c9a08c4ab6",
+      "title": "Projeto mapeia oportunidades para economia verde e empregos sustentáveis no Nordeste",
+      "summary": "Atualizacao de empresas capturada em O Rebate.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQYUpqM3dwZFA4a1VXV1B3enlDSHpBTmE3S08tN1djQWlzYlJEdW9udlVoWG13bEQ3cTM2aWEybHZPQjJvVWtOU3lVQzQxTENOQmdpZW1RRmFXaE5ZVEVyUHE4YUM2bnh3azgyc2VvOER4YjNoQ0VpeXFwdTZzQ012ZzBuRndsSFl5NGlyQU0zS0JFeU5tNEFHbnZ6U2JaOXVYVTkwMFFxbDBxcVF2QU1zNHlUeTliRGwzS1MyUNIBvAFBVV95cUxQYUpqM3dwZFA4a1VXV1B3enlDSHpBTmE3S08tN1djQWlzYlJEdW9udlVoWG13bEQ3cTM2aWEybHZPQjJvVWtOU3lVQzQxTENOQmdpZW1RRmFXaE5ZVEVyUHE4YUM2bnh3azgyc2VvOER4YjNoQ0VpeXFwdTZzQ012ZzBuRndsSFl5NGlyQU0zS0JFeU5tNEFHbnZ6U2JaOXVYVTkwMFFxbDBxcVF2QU1zNHlUeTliRGwzS1MyUA?oc=5",
+      "source": "O Rebate",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-16T16:15:49Z",
+      "updatedAt": "2026-08-16T16:15:49Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "macro-2c8ae6195449911e0ab5f585",
+      "title": "O ORÇAMENTO DEVE SER LIDO À LUZ DA CONSTITUIÇÃO FEDERAL",
+      "summary": "Atualizacao de macro capturada em Correio de Corumbá.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYTBhSUV4aUVqRXYxeE9VVHR5V1lXVHNPTzhqaDR3Wi1BbUpYSXI4OURHVHhheGNhbG5jU2kxLVg1anpvdUFKS1ljRG1rc1BMWkdpdjY3enFQaUttUnpCdG9WNEFxaHp2bGJyV2t5QTFPWUZVbE1lWDY3X3YwaGdXdjhvdW9hbzJpNWJkS3VNMVBzS0h1SzlkUUhicWNHXzQyYUFtZzF2eHfSAagBQVVfeXFMTWd5NVl0WHN2eWsxXzRsUkhBSDZuNWtLT1dCNWZKc0NjR0phVHVTRHBPWGFjMmVHR0gyZWhzTTBwOW1BSk80T0lidkVFMjQwLXVpZV9TTm80RjM2SzlYOWhDMFU3aFZmdHJhZFgyV2ptRnBoOWREY2Fkd280OEdzREhjVTVXODFRa0R6ODJZWmpMQU42bmZNWFJYcVl3V19nUHMxQWU3elBm?oc=5",
+      "source": "Correio de Corumbá",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-16T16:15:00Z",
+      "updatedAt": "2026-08-16T16:15:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
       "id": "latest-0cf0f725eefc16bddee0300b",
       "title": "Empresário do mercado financeiro tem prisão preventiva decretada após agredir esposa em São Paulo",
       "summary": "Atualizacao de ultima hora capturada em Vanity Brasil.",
@@ -795,6 +819,24 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
+      "id": "funds-fa510d32a149c47bc3ce29fe",
+      "title": "Pivetta é o candidato a governador mais rico do Brasil | Única News - Notícias e Fatos com Credibilidade",
+      "summary": "Atualizacao de fundos capturada em Única News.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbmYwZHVBTVE0X3ZWTWpCbTZjUzRMQ29MZl9CZE1qY1kwdnBsclM2cnNfWl9ZeWRaM2JEcWxIS3VNSmZiZXd6bkd4cy1KQ3kyT3g3SkF6bDJmdkxfZ0FlZlZGS1NRQzVoNlhzNFZ3UTROZ29IWVE3cVAyRHlaWU1wSlBrOEM4ajlOcDdEd2pBbVVxT3VnLTFHdVpjdFhNS3BI?oc=5",
+      "source": "Única News",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-16T16:00:00Z",
+      "updatedAt": "2026-08-16T16:00:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
       "id": "latest-6597b5772228be75021b83a1",
       "title": "Garantia do FGC não pode virar subsídio à má gestão dos bancos, alerta Acrefi",
       "summary": "Atualizacao de ultima hora capturada em Estadão.",
@@ -813,12 +855,12 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-03797d3837766996d5648e17",
+      "id": "latest-87c5625a7586e3958daa25a3",
       "title": "Ibovespa deve ficar atrás de pares emergentes em 2026 — e risco político está por trás disso, diz consultoria",
-      "summary": "Atualizacao de ultima hora capturada em moneytimes.com.br.",
+      "summary": "Atualizacao de ultima hora capturada em Money Times.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNLU5BQzBuXzVNSnlFZE1lYmdobXQxZXBlYndyZUM1eEQ4UkUtNEhrZnhDQkJPQmRiYmRKSkRaTXMwOW9zRDloel9HU1VmQmc4dkpqT0s2RzIybVJBel9TQmd6M2NEdGdJSnozdVBhdk1zSUNVSnpiamJscGxKY0U1X3hBYzhORlZWMlVyQldEdmozckFZSDlJTURoRXNZdXB0aTVBZUdRWHFaSG82a2lQUjg0aTFYRVB1UnNKaE54Q1dKaGhwVktNNGROS195VGlTNVl0WVJLM1JIUQ?oc=5",
-      "source": "moneytimes.com.br",
+      "source": "Money Times",
       "category": "latest",
       "tags": [
         "mercado",
@@ -993,12 +1035,30 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-30e540975353bd40f1cb13d2",
+      "id": "funds-89a9e853e190a3432213437b",
+      "title": "O conflito de rendimentos das stablecoins que não desaparece coloca bancos e cripto em disputa pela tradição",
+      "summary": "Atualizacao de fundos capturada em CoinDesk.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObTh5RGt0QnRib01WTlFZTHd6alFhVDN4ZGZwOGJwaVRYSUxZZTV0THN3cDNuUGo0a1FGM1pCWUtVMHpSVlRXNTZSOXVjclZGMG1RMWpuSWwwUC0tWmM1a0VjSEdQY2VyMHpjNDNjdlRyODVGRl9qNWhvVXk1bEVnTDgweGZWdW1UWWl6VFM4ODdDNjUza0g0c0c4ajlKQjh3ZUpaRnJQbG9GNVBlU3dVTjhZZXdieFg2ZGFaTTd2STlpbmNFdVphaDU1U093eWcyUFVEVjFyNEF2QQ?oc=5",
+      "source": "CoinDesk",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-16T13:00:00Z",
+      "updatedAt": "2026-08-16T13:00:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "companies-65683db6168835759c8eee6c",
       "title": "Como transformar a conta de luz em vantagem competitiva",
-      "summary": "Atualizacao de empresas capturada em folhavitoria.com.br.",
+      "summary": "Atualizacao de empresas capturada em Folha Vitória.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWVJLTHNJVjRSS25qZ0pLNWFYSlU2Rnk0aUQ0R21iRFRGZTN2amJuemh4dGFJNGxpWkhyMkxENWNVWDJvRldNUDZsYWV1QjZuZjdwWFZ6bGg0Y3RCeHQyWXp2eFZTMFVfR0hWeWpuYnlYdWxxUVJycTRJYnJHZUJPeFlyRHVyOFBGOFVrc09JckNWNjVYSklaYWoydWVOaGJfRHM1WA?oc=5",
-      "source": "folhavitoria.com.br",
+      "source": "Folha Vitória",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1083,12 +1143,12 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-e06b84beed2fad12d0425dd8",
+      "id": "latest-eeddba777ee3c6f6b3ac49c0",
       "title": "Quem é Ivo Kos, empresário do mercado financeiro preso acusado de agredir a mulher em SP",
-      "summary": "Atualizacao de ultima hora capturada em folhavitoria.com.br.",
+      "summary": "Atualizacao de ultima hora capturada em Folha Vitória.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObll1Q0ktdGo0bmc0V3FDUmFEQlp4Sk1DVEpIcVpTTkhjQXE0TG5rTHFBaVF3SkRkeG5SUDZ3U2F0ZVFuU3V5QVN1Qk1NazA0NnFPTk01NlVBRzVBNzRvaVU0VWNScFlHYXhjcmRjNnJrYkRVbnUtWGJKaktfaG1pSHVhVkZnUG54RXhsWlREOHFnWmZBTWxabmxRQUxHcHhlT3JycmZXWERvekc3ODJxN3lwWEF1ZHRpY2VxVUxteHo1X3J4UkVJ?oc=5",
-      "source": "folhavitoria.com.br",
+      "source": "Folha Vitória",
       "category": "latest",
       "tags": [
         "mercado",
@@ -1119,22 +1179,22 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-12b968523a4707d4a646a01b",
-      "title": "S&P 500, juros do Fed e Colômbia: 3 sinais para o investidor ficar de olho",
-      "summary": "Atualizacao de ultima hora capturada em Nord Investimentos.",
+      "id": "funds-e02655d6774926ac997cedaf",
+      "title": "Quem é Ivo Kos, empresário do mercado financeiro preso acusado de agredir a mulher em SP",
+      "summary": "Atualizacao de fundos capturada em UOL Notícias.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbWZjS2g1UGxKRjRMNVQyLURPQzdnc3FaMkVvZzFvdGIzeV93QTl1ZUpCQmp1SnppQmxhb0NqWTdSM281RHJ0Qkt4ay1FQzk3RTJsckpnYzF3OEFuUllsaU1WUVlwNlVBbUVrRXlqNUkxeVVZVG1JT2U4LTRMOE1ETjNIb3RndVNtbEp4ZU5OcXh2MzhoZ1ow0gGcAUFVX3lxTE1RVXBzdmZ4b2FtbGpIc3oyZUYwSnFaQmtaSTRGckNTbTJQbzB3bURqUVJ5VUhHbl9ZMl9wYXFKQjVydmxOUEJUMGVaeVlsNXNlbkdUdnE2UE9HOVhVSUU1ZDJxVmxxNmNfREpRMFdsaGdXcHZKWVFyTlpISGxhdGxRQ2VmN2IyWHNBNWFkS2wxVlFpNVFLUlQ0OEhCUQ?oc=5",
-      "source": "Nord Investimentos",
-      "category": "latest",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNNEJDNzNLNzBEeWhQdVJMaXFYQVJaaElSa28xSHJqTjhyNlFzZjZfSjRMMTIwUXMyYzM3YTN5VURnU3hpQjFZVzZqMEpsMGFnb0tmTHhsMEtjNjYwTlU1TkxrOXZiMWJmbUxsWnhBQTI5eHN3UXpHLUFFOTdMd3VnaHdkUm5VMjhOR1ZTaXBuSDQ2R3lrY0NQZ0p2QVBvc3Z5ODh6VHpXODNCdEI1OVJyckQyZG94aW1vWmhjZ0QtVVRWMGV5SWFrYmF5ZHprdllGUHRoek9FaVdfTS12Ul9QangzNjZ6aG53MjZHa0diWU1yVDkx?oc=5",
+      "source": "UOL Notícias",
+      "category": "funds",
       "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
+        "fundos",
+        "asset",
+        "fiis"
       ],
-      "publishedAt": "2026-08-16T11:10:00Z",
-      "updatedAt": "2026-08-16T11:10:00Z",
+      "publishedAt": "2026-08-16T11:26:00Z",
+      "updatedAt": "2026-08-16T11:26:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "funds-4b360d98996122b69ef57315",
@@ -1191,22 +1251,40 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-36fd38ea4f320184e9eaac5d",
-      "title": "Otacílio Soares: “Acordo Mercosul-União Europeia poderá abrir uma nova etapa nas relações económicas entre Portugal e o Brasil”",
-      "summary": "Atualizacao de empresas capturada em e-global.pt.",
+      "id": "companies-711c4e5f7de0bde7dac2a295",
+      "title": "Mercadante rebate Flávio Bolsonaro sobre proposta de usar BNDES para internacionalizar empresas",
+      "summary": "Atualizacao de empresas capturada em Acessa.com.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPOXo3Yy1ZMlliWWJxT3hPMi0zRmRnSUoxR1JNS0V2NE5kTUZtY2F1ZDZCS0xrRVpZeVRzZ1ZoTFVCTnlRaWZyUmlYUTVZTDBfZjQ4YWw2ZnVkeWpYbmRiV1A1NGVkSVZaN1lxbmFud24teVhXNWU1Z19lVUUyYks0ZmZJRkxIbkw5MWFUdVNHVVIwYVY4aGV3YnBYeHZOZmhKUktlbEMtcER0ckd3TkhmZHJXLU1TV0hoaUczXzdvYkZjbjlMTWV3TzU5UkVfS1JnMmJoVmozWEZJUHlzWW01VjBfLTllWEhSQ1JNemZHR1FtRUJEMndoV19Gb0lQRTA3WE96UWRxMGdoUk3SAYsCQVVfeXFMTzl6N2MtWTJZYllicU94TzItM0ZkZ0lKMUdSTUtFdjROZE1GbWNhdWQ2QktMa0VaWXlUc2dWaExVQk55UWlmclJpWFE1WUwwX2Y0OGFsNmZ1ZHlqWG5kYldQNTRlZElWWjdZcW5hbnduLXlYVzVlNWdfZVVFMmJLNGZmSUZMSG5MOTFhVHVTR1VSMGFWOGhld2JwWHh2TmZoSlJLZWxDLXBEdHJHd05IZmRyVy1NU1dIaGlHM183b2JGY245TE1ld081OVJFX0tSZzJiaFZqM1hGSVB5c1ltNVYwXy05ZVhIUkNSTXpmR0dRbUVCRDJ3aFdfRm9JUEUwN1hPelFkcTBnaFJN?oc=5",
-      "source": "e-global.pt",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPR1dGX01tOFNvMkRvdEE2N2RsM19iUTFpSzNaWFVRU0tkd2N1R0N3YWQyWFFLSThoNnlDeUd2bW91bXBrSDhhQ0RwWC1yN3JQWWNxbi1RdHZ6aUU5bXcwXzBWVXVHakpIc3YwMjhRWFV3a2dfd182U0JzYjhaMVpGdFRHcnZhelkzTlFMVVBGbDVCQWgzMFdHWEY5Nnp3b2w1WE81VThuQ3ZmbHNzZklWOUN2LUdVWUtwckJLdkNQV3UwQlJSWmpTcjZyRXBLSkhJRHpoaFAwak9KM3BLa1luVmJSYUdQZ9IB5gFBVV95cUxPR1dGX01tOFNvMkRvdEE2N2RsM19iUTFpSzNaWFVRU0tkd2N1R0N3YWQyWFFLSThoNnlDeUd2bW91bXBrSDhhQ0RwWC1yN3JQWWNxbi1RdHZ6aUU5bXcwXzBWVXVHakpIc3YwMjhRWFV3a2dfd182U0JzYjhaMVpGdFRHcnZhelkzTlFMVVBGbDVCQWgzMFdHWEY5Nnp3b2w1WE81VThuQ3ZmbHNzZklWOUN2LUdVWUtwckJLdkNQV3UwQlJSWmpTcjZyRXBLSkhJRHpoaFAwak9KM3BLa1luVmJSYUdQZw?oc=5",
+      "source": "Acessa.com",
       "category": "companies",
       "tags": [
         "empresas",
         "resultados",
         "m&a"
       ],
-      "publishedAt": "2026-08-16T07:30:00Z",
-      "updatedAt": "2026-08-16T07:30:00Z",
+      "publishedAt": "2026-08-16T06:35:51Z",
+      "updatedAt": "2026-08-16T06:35:51Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "funds-309a76bf53bb9d7ff6bb3689",
+      "title": "Ibovespa cai 3,23% na semana com eleições e saída de estrangeiros no foco",
+      "summary": "Atualizacao de fundos capturada em Acessa.com.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOYjFnUnZuZmtHdE5oV25Mb19IbldwTFVQRlViZHh5ejZpc042LWgyaGlmWS1Uak5jbDY5MUF4MnVibVBlcjNWVlo3WFBCVmpVTW5HbjR4NFFVSEcyWFB3U3J1YUpTeDNSeXB6QS1Ddkt3RHZFcUVQazdvWDJaWlVYNXdETE9OX1dDTkx5cGRkVnFtZ3JSU19wWXpRLXpVY0VQOHl2dU1DN2tUVW5VaHUzcERGbGVMdUxtazd3MlUzWkViWHAtTmfSAcYBQVVfeXFMTmIxZ1J2bmZrR3ROaFduTG9fSG5XcExVUEZVYmR4eXo2aXNONi1oMmhpZlktVGpOY2w2OTFBeDJ1Ym1QZXIzVlZaN1hQQlZqVU1uR240eDRRVUhHMlhQd1NydWFKU3gzUnlwekEtQ3ZLd0R2RXFFUGs3b1gyWlpVWDV3RExPTl9XQ05MeXBkZFZxbWdyUlNfcFl6US16VWNFUDh5dnVNQzdrVFVuVWh1M3BERmxlTHVMbWs3dzJVM1pFYlhwLU5n?oc=5",
+      "source": "Acessa.com",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-16T06:34:45Z",
+      "updatedAt": "2026-08-16T06:34:45Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "funds-edf20b5020b100ab68216950",
@@ -1245,12 +1323,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-f752c811cbcba17ea1ee51bb",
+      "id": "companies-6ec950e8fa42d8b8d663c947",
       "title": "Como aumentar o faturamento da empresa com estratégias para 2027",
-      "summary": "Atualizacao de empresas capturada em GZH.",
+      "summary": "Atualizacao de empresas capturada em gauchazh.clicrbs.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNQ3hORHRTVEhlMHh2ZG9fT21QUWdmWjZqTXlUN0pLZXAwMG93MUtiV0lKZXI4MUZHODlfdGtLczk3T2FkT1I5eUNLbWJwd3NoN3EwS0tHWDRuQmQwSVMydi1qRE9sdTFHbWxxRnQ3dEY1Snc3RHF5eGc3TzFHcmZlODA2SlFWbTB3eXY2dEhRbjJCMy1mRUdwNzl4Sk1JdEd4aUVuUzJlT3diSHpDbVhWN1RHcVFXSXlqeUttdGtiM2UxRDVaTWthdVpOelQ1RU5GcnhZNlRObnNxVkZTTkhKUTkzcw?oc=5",
-      "source": "GZH",
+      "source": "gauchazh.clicrbs.com.br",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1281,12 +1359,12 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "companies-33c99d46df0dffc4c0675722",
+      "id": "companies-0d7ebe19268008a4ddab3d22",
       "title": "Adaptação à reforma tributária: empresas correm para ajustar sistemas até 2027",
-      "summary": "Atualizacao de empresas capturada em gazetadopovo.com.br.",
+      "summary": "Atualizacao de empresas capturada em Gazeta do Povo.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNVHhqSHlDYkNqaUJfXzhiWUp0TTZwUEpMVVhRcmo4czVneFRtanVDUEtEMjM0QldPd2thM2VxUmR5NDlYYzVueFFqcExsX3JlcGFCbFBhT1FjRjBuNHdPRDkydEl2MU9QRXZUdkpYaVZMeHdvdENOTkVhNkxfd3NwZTFLeVVmZUJNZmt2LXlpZk55NW1ZZ0tIc0E4OWsxT20wcUtRdWJuWng1YUw4NXlRQWtSME5kT1c5bmo4?oc=5",
-      "source": "gazetadopovo.com.br",
+      "source": "Gazeta do Povo",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1313,96 +1391,6 @@
       ],
       "publishedAt": "2026-08-16T03:26:08Z",
       "updatedAt": "2026-08-16T03:26:08Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "companies-44977b9c059cc6a9a3288ed7",
-      "title": "Osasco debate oportunidades econômicas do acordo União Europeia-Mercosul",
-      "summary": "Atualizacao de empresas capturada em correiopaulista.com.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPT05GZUJUeUtZZHozLTlMdlRjaTdHS0owZGlrVDB1WWRVRkpHNXo0dnhqVEtyNjBmdkxTY2hWQlNWdTFCNDM3VTh4dlFscnVINFozck9JTkgwNjZKTUZzYU9rVWh5bTlqbWRTWmlhbmx1NnZjbmRYZkh0clA3ZGhKaUszTXNsTDllZ1gtUHRIdDdqR3pERnowYW9ORFRfdk0yYktZ?oc=5",
-      "source": "correiopaulista.com",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-16T03:04:00Z",
-      "updatedAt": "2026-08-16T03:04:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-5230d1a3ca125d91fc750040",
-      "title": "Tarifaço pode empurrar empresas brasileiras para dentro dos Estados Unidos",
-      "summary": "Atualizacao de empresas capturada em tnsul.com.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQc3F1N1g0SEZWWGFmTzRnVUFPVi01UmhGajVES3lPV0JuNTNaUDViNWxEbXJibFRnR09KY2FKTDlrd3BDOXkxS0JBalNOVHdGQmYycFJzWnRZODFjdDl5bk5CelJieHU0UVQzR1JUczR6anpPbVB1d3FCUWlRYlQwN3BzdmZnLUtUbFVHODdfanFJQ1g3cEN5eWpBc3hZb2VtbDBKYzd4dw?oc=5",
-      "source": "tnsul.com",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-16T02:00:00Z",
-      "updatedAt": "2026-08-16T02:00:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "funds-ab0164ca4237e0cdde0867db",
-      "title": "10.14% Surge for CSPR as Institutional Interest Grows",
-      "summary": "Atualizacao de fundos capturada em Coinfomania.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTkFJV0NFYWRCOEFNdFFjc2RBWVhLb0hpR0pYa1J2MkhzWUVHWVZiSmhrM052Sno3Sm5yWDRiOVpETktxbDlDNlBWdXZzd1ZhQUEwMkl4dHNTUWcyS2hfcFhQN2wyN29mOFpuWFdqLUp4Wk03WjBOUlViN1ZtOGZWdXVsT1JNMTQ?oc=5",
-      "source": "Coinfomania",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-16T01:26:34Z",
-      "updatedAt": "2026-08-16T01:26:34Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-ff6f584926503cb57fc8688f",
-      "title": "Inelegível, Pablo Marçal declara R$ 7,4 bilhões ao registrar candidatura",
-      "summary": "Atualizacao de fundos capturada em Diário do Centro do Mundo.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRGZsMEZ4WldrU3hmLXVCX3U5MWQ5aFZOeU9HeWROS3FFZXJCSkY0RldfTVpJa1pPQWxnbV9IOWs3OXcwNlFZQ0NyZF9GZnFqQV9VNDRQb3BNaUc2MmhlakdXRjdxbTQwWXI0VXZmUDNIZFBtelhyTU1MMThNeU1YV253YTBCWk1oWXRaeWxHV0xySnJkLUhGdWV4Z2huUVFrclE?oc=5",
-      "source": "Diário do Centro do Mundo",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-16T00:29:00Z",
-      "updatedAt": "2026-08-16T00:29:00Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-868f3012ed0778d026fc8f9d",
-      "title": "Mercado de Capitais no Brasil: novas profissões e como se preparar?",
-      "summary": "Atualizacao de fundos capturada em Por Dentro de Tudo.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNM3oxdm1nbDY2eHRLUng5RU5Hbi1aZF8tMlpmcjZHem9sbEM4dHJta1UwTi1fOFpFVGRkbld5Rkk4VVlJX2ZXWTFnSU94Rmc2RnlmUm9NUE1Zb1M0Y0hfZlRIY2MyV2xHVmNtNGs4WUpyVDlnUGxQX2s1MUdGNTJ5azdTNmk1ajVabGNGNi0yU0F6c1JTTGRHTFNCbXJTZw?oc=5",
-      "source": "Por Dentro de Tudo",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-16T00:08:00Z",
-      "updatedAt": "2026-08-16T00:08:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
