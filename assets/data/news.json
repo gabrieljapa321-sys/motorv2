@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-17T05:06:53Z",
-  "generatedAt": "2026-08-17T05:06:53Z",
+  "updatedAt": "2026-08-17T05:58:55Z",
+  "generatedAt": "2026-08-17T05:58:55Z",
   "categories": [
     {
       "id": "all",
@@ -25,6 +25,10 @@
   ],
   "sources": [
     {
+      "id": "93-not-cias",
+      "label": "93 Notícias"
+    },
+    {
       "id": "acionista-com-br",
       "label": "Acionista.com.br"
     },
@@ -37,16 +41,16 @@
       "label": "BitNotícias"
     },
     {
-      "id": "blog-do-chico-pereira",
-      "label": "Blog do Chico Pereira"
-    },
-    {
       "id": "blogdosilvalima-com-br",
       "label": "blogdosilvalima.com.br"
     },
     {
       "id": "bpmoney",
       "label": "BPMoney"
+    },
+    {
+      "id": "br-tradingview-com",
+      "label": "br.tradingview.com"
     },
     {
       "id": "capitalnews-com-br",
@@ -57,8 +61,8 @@
       "label": "CartaCapital"
     },
     {
-      "id": "coindesk-com",
-      "label": "coindesk.com"
+      "id": "coindesk",
+      "label": "CoinDesk"
     },
     {
       "id": "correio-de-corumb",
@@ -71,6 +75,10 @@
     {
       "id": "di-rio-do-com-rcio",
       "label": "Diário do Comércio"
+    },
+    {
+      "id": "ebc-financial-group",
+      "label": "EBC Financial Group"
     },
     {
       "id": "em-tempo-not-cias",
@@ -93,28 +101,24 @@
       "label": "Fiis"
     },
     {
-      "id": "fococidade-com-br",
-      "label": "fococidade.com.br"
+      "id": "folha-bv",
+      "label": "Folha BV"
     },
     {
       "id": "folha-vit-ria",
       "label": "Folha Vitória"
     },
     {
-      "id": "folhabv-com-br",
-      "label": "folhabv.com.br"
-    },
-    {
       "id": "g1",
       "label": "G1"
     },
     {
-      "id": "gamevicio-com",
-      "label": "gamevicio.com"
+      "id": "gamevicio",
+      "label": "GameVicio"
     },
     {
-      "id": "gazetadopovo-com-br",
-      "label": "gazetadopovo.com.br"
+      "id": "gazeta-do-povo",
+      "label": "Gazeta do Povo"
     },
     {
       "id": "hora-do-povo",
@@ -137,12 +141,12 @@
       "label": "Jornal O Sul"
     },
     {
-      "id": "money-times",
-      "label": "Money Times"
-    },
-    {
       "id": "noticenter-com-br",
       "label": "noticenter.com.br"
+    },
+    {
+      "id": "o-cafezinho",
+      "label": "O Cafezinho"
     },
     {
       "id": "o-globo",
@@ -159,10 +163,6 @@
     {
       "id": "pe-not-cias",
       "label": "PE Notícias"
-    },
-    {
-      "id": "revista-empreende",
-      "label": "Revista Empreende"
     },
     {
       "id": "r-dio-itatiaia",
@@ -201,22 +201,74 @@
       "label": "Valor Econômico"
     },
     {
-      "id": "vanitybrasil-com-br",
-      "label": "vanitybrasil.com.br"
-    },
-    {
       "id": "vietnam-vn",
-      "label": "Vietnam.vn"
+      "label": "vietnam.vn"
     }
   ],
   "items": [
     {
-      "id": "latest-30ed66fbac520fbc6c2778a4",
-      "title": "Investidores estrangeiros retiram R$ 11,9 bilhões da B3 e pressionam o Ibovespa",
-      "summary": "Atualizacao de ultima hora capturada em Seu Crédito Digital.",
+      "id": "macro-7c1cb380fadb063742a9e86c",
+      "title": "Ações asiáticas sobem e dólar recua, à medida que os mercados minimizam os riscos relacionados às taxas do Fed",
+      "summary": "Aeronave foi encontrada em Assunção e chegou ao Aeroporto Internacional de Brasília neste domingo",
+      "details": "Aeronave foi encontrada em Assunção e chegou ao Aeroporto Internacional de Brasília neste domingo",
+      "url": "https://www.tribunadosertao.com.br/poder-e-governo/2026/08/17/961055-pf-traz-ao-brasil-aviao-de-daniel-vorcaro-localizado-no-paraguai",
+      "source": "br.tradingview.com",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-17T05:29:00Z",
+      "updatedAt": "2026-08-17T05:29:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://tribunadosertao.com.br/img/share.png"
+    },
+    {
+      "id": "macro-046a21306dcb8564210d10a9",
+      "title": "PIB da Tailândia cresce 1,9% no 2º tri, acima do esperado",
+      "summary": "Por Stella QiuAs ações asiáticas registraram ligeira alta nesta segunda-feira, lideradas pelas ações chinesas antes da divulgação de dados econômicos importantes, enquanto os investidores mantinham um olhar cauteloso sobre os preços do petróleo após ganhos consideráveis na semana",
+      "details": "Por Stella QiuAs ações asiáticas registraram ligeira alta nesta segunda-feira, lideradas pelas ações chinesas antes da divulgação de dados econômicos importantes, enquanto os investidores mantinham um olhar cauteloso sobre os preços do petróleo após ganhos consideráveis na semana passada, em meio a…",
+      "url": "https://br.tradingview.com/news/reuters.com,2026:newsml_L1N44E035:0/",
+      "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-17T05:27:00Z",
+      "updatedAt": "2026-08-17T05:27:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
+    },
+    {
+      "id": "macro-e757599aec216c4265d59881",
+      "title": "Candidatos ao governo de MG focam em crise fiscal do estado em 1º debate",
+      "summary": "Atualizacao de macro capturada em UOL Notícias.",
       "details": "",
-      "url": "https://br.investing.com/news/stock-market-news/bolsas-asiaticas-mistas-pib-do-japao-decepciona-china-e-tecnologia-em-foco-2040795",
-      "source": "Seu Crédito Digital",
+      "url": "https://br.investing.com/news/stock-market-news/pib-da-tailandia-cresce-19-no-2o-tri-acima-do-esperado-93CH-2040817",
+      "source": "UOL Notícias",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-17T05:12:10Z",
+      "updatedAt": "2026-08-17T05:12:10Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "latest-2a53a20e4bf3d383d8011320",
+      "title": "Banco do Brasil puxa semana de proventos na bolsa",
+      "summary": "Atualizacao de ultima hora capturada em O Cafezinho.",
+      "details": "",
+      "url": "https://noticias.uol.com.br/eleicoes/2026/08/16/candidatos-ao-governo-de-mg-focam-em-crise-fiscal-do-estado-em-1-debate.ghtm",
+      "source": "O Cafezinho",
       "category": "latest",
       "tags": [
         "mercado",
@@ -227,6 +279,25 @@
       "updatedAt": "2026-08-17T05:00:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "latest-30ed66fbac520fbc6c2778a4",
+      "title": "Investidores estrangeiros retiram R$ 11,9 bilhões da B3 e pressionam o Ibovespa",
+      "summary": "Banco do Brasil, Itaúsa e Caixa Seguridade anunciaram proventos, enquanto queda de 2% do Ibovespa e risco em fundo imobiliário limitaram o tom positivo da semana.",
+      "details": "Banco do Brasil, Itaúsa e Caixa Seguridade anunciaram proventos, enquanto queda de 2% do Ibovespa e risco em fundo imobiliário limitaram o tom positivo da semana.",
+      "url": "https://www.ocafezinho.com/2026/08/17/banco-do-brasil-puxa-semana-de-proventos-na-bolsa/",
+      "source": "Seu Crédito Digital",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-17T05:00:00Z",
+      "updatedAt": "2026-08-17T05:00:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.ocafezinho.com/wp-content/uploads/2026/08/1920px-fachada-do-edifc3adcio-sede-do-banco-do-brasil-em-brasc3adlia.jpg"
     },
     {
       "id": "macro-439af6a150b1cc32cc81c6bb",
@@ -250,9 +321,9 @@
     {
       "id": "funds-ae5afc529d7ef51e7c234695",
       "title": "PF traz ao Brasil avião de Daniel Vorcaro localizado no Paraguai",
-      "summary": "Iene avança enquanto mercado reduz apostas de alta dos juros nos EUA",
-      "details": "Iene avança enquanto mercado reduz apostas de alta dos juros nos EUA",
-      "url": "https://valor.globo.com/financas/noticia/2026/08/17/iene-avana-enquanto-mercado-reduz-apostas-de-alta-dos-juros-nos-eua.ghtml",
+      "summary": "Atualizacao de fundos capturada em Tribuna do Sertão.",
+      "details": "",
+      "url": "https://br.investing.com/news/stock-market-news/bolsas-asiaticas-mistas-pib-do-japao-decepciona-china-e-tecnologia-em-foco-2040795",
       "source": "Tribuna do Sertão",
       "category": "funds",
       "tags": [
@@ -263,15 +334,14 @@
       "publishedAt": "2026-08-17T04:23:04Z",
       "updatedAt": "2026-08-17T04:23:04Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/aoua-6zrgWmaLTouhXCvGWproOg=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/F/I/NjruE4RLSK6GKFwX8nmw/462266889.jpg"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
       "id": "latest-f18cc4b7addc03f89d09dd11",
       "title": "Iene avança enquanto mercado reduz apostas de alta dos juros nos EUA",
-      "summary": "O governo federal vai elevar a projeção do salário mínimo para R$ 1.741 em 2027. O valor representa um acréscimo de R$ 24 em relação à estimativa feita em abril, que era de R$ 1.717. A nova previsão constará do Projeto de Lei Orçamentária Anual (PLOA) do ano que vem, que será env",
-      "details": "O governo federal vai elevar a projeção do salário mínimo para R$ 1.741 em 2027. O valor representa um acréscimo de R$ 24 em relação à estimativa feita em abril, que era de R$ 1.717. A nova previsão constará do Projeto de Lei Orçamentária Anual (PLOA) do ano que vem, que será enviado ao Congresso ... Ler mais",
-      "url": "https://penoticias.com.br/blog/governo-eleva-previsao-de-salario-minimo-para-r-1-741-em-2027/",
+      "summary": "Iene avança enquanto mercado reduz apostas de alta dos juros nos EUA",
+      "details": "Iene avança enquanto mercado reduz apostas de alta dos juros nos EUA",
+      "url": "https://valor.globo.com/financas/noticia/2026/08/17/iene-avana-enquanto-mercado-reduz-apostas-de-alta-dos-juros-nos-eua.ghtml",
       "source": "Valor Econômico",
       "category": "latest",
       "tags": [
@@ -283,14 +353,14 @@
       "updatedAt": "2026-08-17T04:16:47Z",
       "premium": true,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://penoticias.com.br/blog/wp-content/uploads/2025/11/Dinheiro-Trabalho.jpg"
+      "imageUrl": "https://s2-valor.glbimg.com/aoua-6zrgWmaLTouhXCvGWproOg=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/F/I/NjruE4RLSK6GKFwX8nmw/462266889.jpg"
     },
     {
       "id": "macro-ae05372078f93d54a08dee11",
       "title": "Moedas asiáticas sobem com apostas menores no Fed; iene avança apesar do PIB fraco do Japão",
-      "summary": "Aeronave foi encontrada em Assunção e chegou ao Aeroporto Internacional de Brasília neste domingo",
-      "details": "Aeronave foi encontrada em Assunção e chegou ao Aeroporto Internacional de Brasília neste domingo",
-      "url": "https://www.tribunadosertao.com.br/poder-e-governo/2026/08/17/961055-pf-traz-ao-brasil-aviao-de-daniel-vorcaro-localizado-no-paraguai",
+      "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
+      "details": "",
+      "url": "https://br.investing.com/news/forex-news/moedas-asiaticas-sobem-com-apostas-menores-no-fed-iene-avanca-apesar-do-pib-fraco-do-japao-2040790",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -301,33 +371,33 @@
       "publishedAt": "2026-08-17T04:13:00Z",
       "updatedAt": "2026-08-17T04:13:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://tribunadosertao.com.br/img/share.png"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "macro-7e566e92919b30bc81f99bcb",
-      "title": "Candidatos ao governo de MG focam em crise fiscal do estado em 1º debate",
-      "summary": "Atualizacao de macro capturada em UOL Notícias.",
-      "details": "",
-      "url": "https://br.investing.com/news/forex-news/moedas-asiaticas-sobem-com-apostas-menores-no-fed-iene-avanca-apesar-do-pib-fraco-do-japao-2040790",
-      "source": "UOL Notícias",
-      "category": "macro",
+      "id": "latest-0ece75953da197c8fb28fe49",
+      "title": "Reestruturação do mercado e expansão da captação de recursos multicanal.",
+      "summary": "Para alcançar um crescimento do PIB de dois dígitos por vários anos consecutivos, o Vietnã precisará de investimentos maciços em infraestrutura, tecnologia, transformação digital, transformação verde e inovação. Essa escala ultrapassou a capacidade de crédito bancário, tornando n",
+      "details": "Para alcançar um crescimento do PIB de dois dígitos por vários anos consecutivos, o Vietnã precisará de investimentos maciços em infraestrutura, tecnologia, transformação digital, transformação verde e inovação. Essa escala ultrapassou a capacidade de crédito bancário, tornando necessário o desenvolvimento de um sistem",
+      "url": "https://www.vietnam.vn/pt/tai-cau-truc-thi-truong-mo-rong-da-kenh-huy-dong-von",
+      "source": "vietnam.vn",
+      "category": "latest",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
+        "mercado",
+        "bolsa",
+        "macro"
       ],
-      "publishedAt": "2026-08-17T03:30:22Z",
-      "updatedAt": "2026-08-17T03:30:22Z",
+      "publishedAt": "2026-08-17T03:30:23Z",
+      "updatedAt": "2026-08-17T03:30:23Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/17/1786920425483_chu-de-4050-4345-jpg.webp"
     },
     {
       "id": "macro-79c963aa52fc26062678bedb",
       "title": "Ações da JB Hi-Fi caem após alerta sobre início fraco do ano fiscal",
       "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
       "details": "",
-      "url": "https://noticias.uol.com.br/eleicoes/2026/08/16/candidatos-ao-governo-de-mg-focam-em-crise-fiscal-do-estado-em-1-debate.ghtm",
+      "url": "https://br.investing.com/news/stock-market-news/acoes-da-jb-hifi-caem-apos-alerta-sobre-inicio-fraco-do-ano-fiscal-2040779",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -341,12 +411,12 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "latest-11b5f6c19b75957e438522ff",
+      "id": "latest-658c7b18683c7853decd3812",
       "title": "As altas taxas de juros estão levando o mercado imobiliário ao fundo do poço?",
-      "summary": "Atualizacao de ultima hora capturada em Vietnam.vn.",
-      "details": "",
-      "url": "https://br.investing.com/news/stock-market-news/acoes-da-jb-hifi-caem-apos-alerta-sobre-inicio-fraco-do-ano-fiscal-2040779",
-      "source": "Vietnam.vn",
+      "summary": "EURUSD testa 1,16 com chance de alta do Fed em setembro em 33%. Foco na SMA de 100 dias, resistência em 1,1630, RSI e possível rompimento.",
+      "details": "EURUSD testa 1,16 com chance de alta do Fed em setembro em 33%. Foco na SMA de 100 dias, resistência em 1,1630, RSI e possível rompimento.",
+      "url": "https://www.ebc.com/pt/forex/o-eur-usd-testa-1-16-com-apostas-em-recuo-do-fed-em-relacao-ao-aumento-das-taxas-de-juros-sera-que-a-europa-tem-crescimento-suficiente-para-romper-esse-patamar",
+      "source": "vietnam.vn",
       "category": "latest",
       "tags": [
         "mercado",
@@ -356,14 +426,53 @@
       "publishedAt": "2026-08-17T03:16:18Z",
       "updatedAt": "2026-08-17T03:16:18Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.ebc.com/upload/portal/20260817/b1e6d3b8b20081eb87953fa5edfaf637.png"
+    },
+    {
+      "id": "macro-d079811a6985160cf00cf145",
+      "title": "O EUR/USD testa 1,16 com apostas em recuo do Fed em relação ao aumento das taxas de juros. Será que a Europa tem crescimento suficiente para romper esse patamar?",
+      "summary": "As altas taxas de juros para empréstimos, aliadas a um mercado lento, estão exercendo uma pressão significativa sobre os investidores imobiliários que dependem de capital financiado por empréstimos.",
+      "details": "As altas taxas de juros para empréstimos, aliadas a um mercado lento, estão exercendo uma pressão significativa sobre os investidores imobiliários que dependem de capital financiado por empréstimos.",
+      "url": "https://www.vietnam.vn/pt/lai-suat-cao-ep-bat-dong-san-cham-day",
+      "source": "EBC Financial Group",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-17T03:14:59Z",
+      "updatedAt": "2026-08-17T03:14:59Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/17/1786919500526_lai-suat-bat-dong-san-1-1.jpeg"
+    },
+    {
+      "id": "latest-7599763615d7d1f600078ec3",
+      "title": "Prevê-se uma forte alta nos preços do ouro esta semana.",
+      "summary": "A maioria dos especialistas de Wall Street prevê que os preços do ouro continuarão a subir em meio às menores expectativas do mercado quanto a um aumento da taxa de juros do Fed, enquanto os investidores individuais permanecem otimistas antes da divulgação da ata da reunião do Fe",
+      "details": "A maioria dos especialistas de Wall Street prevê que os preços do ouro continuarão a subir em meio às menores expectativas do mercado quanto a um aumento da taxa de juros do Fed, enquanto os investidores individuais permanecem otimistas antes da divulgação da ata da reunião do Fed.",
+      "url": "https://www.vietnam.vn/pt/gia-vang-tuan-nay-du-bao-tang-manh",
+      "source": "vietnam.vn",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-17T03:09:42Z",
+      "updatedAt": "2026-08-17T03:09:42Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/17/1786924067822_rvysue2zxzikhhc5672otfqt2i_11zon-8cee.jpeg"
     },
     {
       "id": "macro-9fa288e0105b2386bf7e9564",
       "title": "Governo eleva previsão de salário mínimo para R$ 1.741 em 2027",
-      "summary": "Durigan terá reuniões em meio a preocupação com cenário fiscal e mau humor dos agentes",
-      "details": "Durigan terá reuniões em meio a preocupação com cenário fiscal e mau humor dos agentes",
-      "url": "https://oglobo.globo.com/economia/noticia/2026/08/17/ministro-da-fazenda-participa-de-encontros-com-mercado-financeiro-nesta-semana.ghtml",
+      "summary": "O governo federal vai elevar a projeção do salário mínimo para R$ 1.741 em 2027. O valor representa um acréscimo de R$ 24 em relação à estimativa feita em abril, que era de R$ 1.717. A nova previsão constará do Projeto de Lei Orçamentária Anual (PLOA) do ano que vem, que será env",
+      "details": "O governo federal vai elevar a projeção do salário mínimo para R$ 1.741 em 2027. O valor representa um acréscimo de R$ 24 em relação à estimativa feita em abril, que era de R$ 1.717. A nova previsão constará do Projeto de Lei Orçamentária Anual (PLOA) do ano que vem, que será enviado ao Congresso ... Ler mais",
+      "url": "https://penoticias.com.br/blog/governo-eleva-previsao-de-salario-minimo-para-r-1-741-em-2027/",
       "source": "PE Notícias",
       "category": "macro",
       "tags": [
@@ -375,14 +484,14 @@
       "updatedAt": "2026-08-17T03:07:13Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-oglobo.glbimg.com/tD-VAlkkcxqAYQiohWRgdvnqnGo=/3230x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/t/I/yBbTLASUK4YAS9H8JRdg/whatsapp-image-2026-07-22-at-16.48.43-3-.jpeg"
+      "imageUrl": "https://penoticias.com.br/blog/wp-content/uploads/2025/11/Dinheiro-Trabalho.jpg"
     },
     {
       "id": "latest-3066d065f78581f2df8f9727",
       "title": "Ministro da Fazenda participa de encontros com mercado financeiro nesta semana",
-      "summary": "As altas taxas de juros para empréstimos, aliadas a um mercado lento, estão exercendo uma pressão significativa sobre os investidores imobiliários que dependem de capital financiado por empréstimos.",
-      "details": "As altas taxas de juros para empréstimos, aliadas a um mercado lento, estão exercendo uma pressão significativa sobre os investidores imobiliários que dependem de capital financiado por empréstimos.",
-      "url": "https://www.vietnam.vn/pt/lai-suat-cao-ep-bat-dong-san-cham-day",
+      "summary": "Juntamente com as reformas do mercado financeiro, melhorar o acesso e a absorção de capital é uma condição crucial para transformar recursos em crescimento sustentável.",
+      "details": "Juntamente com as reformas do mercado financeiro, melhorar o acesso e a absorção de capital é uma condição crucial para transformar recursos em crescimento sustentável.",
+      "url": "https://www.vietnam.vn/pt/nang-cao-nang-luc-tiep-can-va-hap-thu-von",
       "source": "O GLOBO",
       "category": "latest",
       "tags": [
@@ -394,15 +503,15 @@
       "updatedAt": "2026-08-17T03:00:39Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/17/1786919500526_lai-suat-bat-dong-san-1-1.jpeg"
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/17/1786920432930_sxcn-5026jpeg-3503-9719-jpg.webp"
     },
     {
-      "id": "funds-2806637209c5c4518debd618",
+      "id": "funds-3dcd3723d677c9a624eaf14a",
       "title": "Aumentar o acesso e a absorção de capital",
-      "summary": "A ex-primeira-dama e candidata ao Senado Federal, Michelle Bolsonaro, declarou R$ 4,48 milhões ao Tribunal Superior Eleitoral. A declaração inclui aplicações financeiras e um veículo.",
-      "details": "A ex-primeira-dama e candidata ao Senado Federal, Michelle Bolsonaro, declarou R$ 4,48 milhões ao Tribunal Superior Eleitoral. A declaração inclui aplicações financeiras e um veículo.",
-      "url": "https://blogdosilvalima.com.br/michelle-bolsonaro-registra-patrimonio-de-r-448-milhoes-ao-tse/",
-      "source": "Vietnam.vn",
+      "summary": "Durigan terá reuniões em meio a preocupação com cenário fiscal e mau humor dos agentes",
+      "details": "Durigan terá reuniões em meio a preocupação com cenário fiscal e mau humor dos agentes",
+      "url": "https://oglobo.globo.com/economia/noticia/2026/08/17/ministro-da-fazenda-participa-de-encontros-com-mercado-financeiro-nesta-semana.ghtml",
+      "source": "vietnam.vn",
       "category": "funds",
       "tags": [
         "fundos",
@@ -413,15 +522,15 @@
       "updatedAt": "2026-08-17T02:55:12Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://blogdosilvalima.com.br/wp-content/uploads/2026/08/michelle-bolsonaro-2jul26-848x477-1.jpg"
+      "imageUrl": "https://s2-oglobo.glbimg.com/tD-VAlkkcxqAYQiohWRgdvnqnGo=/3230x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/t/I/yBbTLASUK4YAS9H8JRdg/whatsapp-image-2026-07-22-at-16.48.43-3-.jpeg"
     },
     {
-      "id": "funds-aaa3510339a283ac9ee28d0f",
+      "id": "funds-bbb6589a97d69bf6b046105f",
       "title": "Aumentar a acessibilidade para empresas privadas.",
-      "summary": "TradingKey - No início do pregão asiático desta segunda-feira (17 de agosto), o ouro à vista (XAUUSD) registrou alta, sendo negociado atualmente perto de US$ 4.406 por onça. Na semana anterior, os preços do ouro acumularam alta de cerca de 0,8% no geral, embora a volatilidade int",
-      "details": "TradingKey - No início do pregão asiático desta segunda-feira (17 de agosto), o ouro à vista (XAUUSD) registrou alta, sendo negociado atualmente perto de US$ 4.406 por onça. Na semana anterior, os preços do ouro acumularam alta de cerca de 0,8% no geral, embora a volatilidade intradiária tenha aumentado significativame",
-      "url": "https://www.tradingkey.com/pt/analysis/commodities/metal/262110583-spot-gold-rises-4400-fed-policy-middle-east-risks-tradingkey",
-      "source": "Vietnam.vn",
+      "summary": "(DTTC) - Juntamente com as reformas do mercado financeiro, melhorar o acesso e a absorção de capital é uma condição crucial para transformar recursos em crescimento sustentável.",
+      "details": "(DTTC) - Juntamente com as reformas do mercado financeiro, melhorar o acesso e a absorção de capital é uma condição crucial para transformar recursos em crescimento sustentável.",
+      "url": "https://www.vietnam.vn/pt/tang-kha-nang-tiep-can-cho-doanh-nghiep-tu-nhan",
+      "source": "vietnam.vn",
       "category": "funds",
       "tags": [
         "fundos",
@@ -432,14 +541,14 @@
       "updatedAt": "2026-08-17T02:35:06Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://resource.tradingkey.com/cms_uploads/img/20240507/03bac7e5af514b3ddeffbbfa3da4aded.jpg"
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/17/1786924985616_img-3012-996-5978-jpeg.webp"
     },
     {
       "id": "macro-196f32a54a1b18828d48c8f9",
       "title": "Ouro à vista ultrapassa US$ 4.400 enquanto riscos do Fed e do Oriente Médio influenciam os preços do ouro",
-      "summary": "(DTTC) - Juntamente com as reformas do mercado financeiro, melhorar o acesso e a absorção de capital é uma condição crucial para transformar recursos em crescimento sustentável.",
-      "details": "(DTTC) - Juntamente com as reformas do mercado financeiro, melhorar o acesso e a absorção de capital é uma condição crucial para transformar recursos em crescimento sustentável.",
-      "url": "https://www.vietnam.vn/pt/tang-kha-nang-tiep-can-cho-doanh-nghiep-tu-nhan",
+      "summary": "TradingKey - No início do pregão asiático desta segunda-feira (17 de agosto), o ouro à vista (XAUUSD) registrou alta, sendo negociado atualmente perto de US$ 4.406 por onça. Na semana anterior, os preços do ouro acumularam alta de cerca de 0,8% no geral, embora a volatilidade int",
+      "details": "TradingKey - No início do pregão asiático desta segunda-feira (17 de agosto), o ouro à vista (XAUUSD) registrou alta, sendo negociado atualmente perto de US$ 4.406 por onça. Na semana anterior, os preços do ouro acumularam alta de cerca de 0,8% no geral, embora a volatilidade intradiária tenha aumentado significativame",
+      "url": "https://www.tradingkey.com/pt/analysis/commodities/metal/262110583-spot-gold-rises-4400-fed-policy-middle-east-risks-tradingkey",
       "source": "TradingKey",
       "category": "macro",
       "tags": [
@@ -451,14 +560,14 @@
       "updatedAt": "2026-08-17T02:23:58Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/17/1786924985616_img-3012-996-5978-jpeg.webp"
+      "imageUrl": "https://resource.tradingkey.com/cms_uploads/img/20240507/03bac7e5af514b3ddeffbbfa3da4aded.jpg"
     },
     {
       "id": "funds-979aee586d8bef54794d6dbf",
       "title": "Michelle Bolsonaro registra patrimônio de R$ 4,48 milhões ao TSE",
-      "summary": "(CLO) Os preços do ouro permaneceram estáveis ​​em torno de US$ 4.400 por onça no início da semana, enquanto os investidores avaliavam os sinais de arrefecimento da economia americana em relação ao risco de aumento da inflação devido à instabilidade no mercado de energia.",
-      "details": "(CLO) Os preços do ouro permaneceram estáveis ​​em torno de US$ 4.400 por onça no início da semana, enquanto os investidores avaliavam os sinais de arrefecimento da economia americana em relação ao risco de aumento da inflação devido à instabilidade no mercado de energia.",
-      "url": "https://www.vietnam.vn/pt/gia-vang-on-dinh-quanh-4-400-usd-khi-thi-truong-cho-tin-hieu-tu-fed",
+      "summary": "A ex-primeira-dama e candidata ao Senado Federal, Michelle Bolsonaro, declarou R$ 4,48 milhões ao Tribunal Superior Eleitoral. A declaração inclui aplicações financeiras e um veículo.",
+      "details": "A ex-primeira-dama e candidata ao Senado Federal, Michelle Bolsonaro, declarou R$ 4,48 milhões ao Tribunal Superior Eleitoral. A declaração inclui aplicações financeiras e um veículo.",
+      "url": "https://blogdosilvalima.com.br/michelle-bolsonaro-registra-patrimonio-de-r-448-milhoes-ao-tse/",
       "source": "blogdosilvalima.com.br",
       "category": "funds",
       "tags": [
@@ -470,15 +579,15 @@
       "updatedAt": "2026-08-17T02:15:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/17/1786928710085_4417b625-7d6d-4561-92d2-12ca607396dd-13e2c6f3-jpg.webp"
+      "imageUrl": "https://blogdosilvalima.com.br/wp-content/uploads/2026/08/michelle-bolsonaro-2jul26-848x477-1.jpg"
     },
     {
-      "id": "macro-c6531424953c4b6924d839da",
+      "id": "macro-1885d3affaf414198dc36cd5",
       "title": "Os preços do ouro permaneceram estáveis ​​em torno de US$ 4.400 enquanto o mercado aguardava sinais do Fed.",
-      "summary": "Juntamente com as reformas do mercado financeiro, melhorar o acesso e a absorção de capital é uma condição crucial para transformar recursos em crescimento sustentável.",
-      "details": "Juntamente com as reformas do mercado financeiro, melhorar o acesso e a absorção de capital é uma condição crucial para transformar recursos em crescimento sustentável.",
-      "url": "https://www.vietnam.vn/pt/nang-cao-nang-luc-tiep-can-va-hap-thu-von",
-      "source": "Vietnam.vn",
+      "summary": "(Inspeção) - Com o corte de mais de 3.600 unidades organizacionais (equivalente a 37%), o setor financeiro marca uma transformação histórica. A racionalização da estrutura, aliada à transformação digital, contribui para melhorar a eficiência da gestão e atender de forma eficaz as",
+      "details": "(Inspeção) - Com o corte de mais de 3.600 unidades organizacionais (equivalente a 37%), o setor financeiro marca uma transformação histórica. A racionalização da estrutura, aliada à transformação digital, contribui para melhorar a eficiência da gestão e atender de forma eficaz as pessoas e as empresas.",
+      "url": "https://www.vietnam.vn/pt/nganh-tai-chinh-thay-doi-nhu-the-nao-sau-khi-tinh-gon-3-600-dau-moi",
+      "source": "vietnam.vn",
       "category": "macro",
       "tags": [
         "macro",
@@ -489,15 +598,15 @@
       "updatedAt": "2026-08-17T01:59:33Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/17/1786920432930_sxcn-5026jpeg-3503-9719-jpg.webp"
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/07/17/1784285508616_6a579ec659f2759131cc002b.jpeg"
     },
     {
-      "id": "latest-5995bdd437f2b16af849c9d3",
+      "id": "latest-9cf6806ba0babe53b07385ed",
       "title": "Como o setor financeiro mudou após a reestruturação de 3.600 departamentos?",
-      "summary": "(Inspeção) - Com o corte de mais de 3.600 unidades organizacionais (equivalente a 37%), o setor financeiro marca uma transformação histórica. A racionalização da estrutura, aliada à transformação digital, contribui para melhorar a eficiência da gestão e atender de forma eficaz as",
-      "details": "(Inspeção) - Com o corte de mais de 3.600 unidades organizacionais (equivalente a 37%), o setor financeiro marca uma transformação histórica. A racionalização da estrutura, aliada à transformação digital, contribui para melhorar a eficiência da gestão e atender de forma eficaz as pessoas e as empresas.",
-      "url": "https://www.vietnam.vn/pt/nganh-tai-chinh-thay-doi-nhu-the-nao-sau-khi-tinh-gon-3-600-dau-moi",
-      "source": "Vietnam.vn",
+      "summary": "(CLO) Os preços do ouro permaneceram estáveis ​​em torno de US$ 4.400 por onça no início da semana, enquanto os investidores avaliavam os sinais de arrefecimento da economia americana em relação ao risco de aumento da inflação devido à instabilidade no mercado de energia.",
+      "details": "(CLO) Os preços do ouro permaneceram estáveis ​​em torno de US$ 4.400 por onça no início da semana, enquanto os investidores avaliavam os sinais de arrefecimento da economia americana em relação ao risco de aumento da inflação devido à instabilidade no mercado de energia.",
+      "url": "https://www.vietnam.vn/pt/gia-vang-on-dinh-quanh-4-400-usd-khi-thi-truong-cho-tin-hieu-tu-fed",
+      "source": "vietnam.vn",
       "category": "latest",
       "tags": [
         "mercado",
@@ -508,7 +617,7 @@
       "updatedAt": "2026-08-17T01:55:17Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/07/17/1784285508616_6a579ec659f2759131cc002b.jpeg"
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/17/1786928710085_4417b625-7d6d-4561-92d2-12ca607396dd-13e2c6f3-jpg.webp"
     },
     {
       "id": "macro-1cb5e7d215fabf0659f5232c",
@@ -547,12 +656,12 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "latest-417aea63d3d992b86db0a26c",
+      "id": "latest-26068dd03994d9160213160f",
       "title": "A FINMA alerta para os riscos da IA ​​para os bancos.",
       "summary": "A Autoridade Supervisora ​​do Mercado Financeiro Suíço alertou para os crescentes riscos representados pela inteligência artificial e pelos ciberataques, instando os bancos a gerir os riscos e a prepararem-se para a nova tecnologia.",
       "details": "A Autoridade Supervisora ​​do Mercado Financeiro Suíço alertou para os crescentes riscos representados pela inteligência artificial e pelos ciberataques, instando os bancos a gerir os riscos e a prepararem-se para a nova tecnologia.",
       "url": "https://www.vietnam.vn/pt/finma-canh-bao-nguy-co-tu-ai-cho-cac-ngan-hang",
-      "source": "Vietnam.vn",
+      "source": "vietnam.vn",
       "category": "latest",
       "tags": [
         "mercado",
@@ -566,12 +675,12 @@
       "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/17/1786926912911_ai-tri-tue-nhan-tao-jpg.webp"
     },
     {
-      "id": "funds-722720524152bc4716310010",
+      "id": "funds-0f3c886cd2eb0595ce5443fc",
       "title": "1666: Amsterdam responde críticas e garante que jogo não terá nenhum asset gerado por IA na versão final - GameVicio",
       "summary": "Após polêmica envolvendo pinturas geradas por IA na demo, Patrice Désilets afirma que todo o conteúdo foi removido do jogo.",
       "details": "Após polêmica envolvendo pinturas geradas por IA na demo, Patrice Désilets afirma que todo o conteúdo foi removido do jogo.",
       "url": "https://www.gamevicio.com/noticias/2026/08/1666-amsterdam-pinturas-reais/amp/",
-      "source": "gamevicio.com",
+      "source": "GameVicio",
       "category": "funds",
       "tags": [
         "fundos",
@@ -587,9 +696,9 @@
     {
       "id": "macro-beb3430af6421f33977b566f",
       "title": "Roscoe defende modelo de renúncia fiscal: ‘Atacar os incentivos é falta de conhecimento’",
-      "summary": "TradingKey - Os dados do Índice de Preços ao Consumidor de julho, divulgados em 12 de agosto no horário da Costa Leste, subiram 0,1% na comparação mensal e 3,4% na comparação anual, enquanto os dados do Índice de Preços ao Produtor de julho, divulgados em 13 de agosto no horário ",
-      "details": "TradingKey - Os dados do Índice de Preços ao Consumidor de julho, divulgados em 12 de agosto no horário da Costa Leste, subiram 0,1% na comparação mensal e 3,4% na comparação anual, enquanto os dados do Índice de Preços ao Produtor de julho, divulgados em 13 de agosto no horário da Costa Leste, ficaram estáveis em 0,0%",
-      "url": "https://www.tradingkey.com/pt/analysis/stocks/us-stocks/262110309-ppi-cpi-retail-sales-inflation-fed-stocks-gains-tradingkey",
+      "summary": "Atualizacao de macro capturada em Rádio Itatiaia.",
+      "details": "",
+      "url": "https://www.osul.com.br/instituicao-fiscal-independente-ve-economia-brasileira-aquecida/amp/",
       "source": "Rádio Itatiaia",
       "category": "macro",
       "tags": [
@@ -600,15 +709,14 @@
       "publishedAt": "2026-08-17T00:45:01Z",
       "updatedAt": "2026-08-17T00:45:01Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://resource.tradingkey.com/uploads/20260119/weekly-report-en-89947268a9bb41aebda980aef134ae25.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-be2b35074f33777703bd19ef",
       "title": "Instituição Fiscal Independente vê economia brasileira aquecida",
-      "summary": "O governo da Austrália aprovou um reajuste de 4,75% para milhões de trabalhadores que recebem salários definidos por acordos mínimos",
-      "details": "O governo da Austrália aprovou um reajuste de 4,75% para milhões de trabalhadores que recebem salários definidos por acordos mínimos",
-      "url": "https://diariodocomercio.com.br/mix/governo-reajusta-o-salario-minimo-em-475-para-o-restante-de-2026/?utm_source=al_leiamais",
+      "summary": "Candidato do PL ao Governo de Minas teve posição contrária a de adersários no debate da Band",
+      "details": "Candidato do PL ao Governo de Minas teve posição contrária a de adersários no debate da Band",
+      "url": "https://www.itatiaia.com.br/politica/eleicoes/roscoe-defende-modelo-de-renuncia-fiscal-atacar-os-incentivos-e-falta-de-conhecimento/",
       "source": "Jornal O Sul",
       "category": "macro",
       "tags": [
@@ -620,14 +728,14 @@
       "updatedAt": "2026-08-17T00:44:01Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diariodocomercio.com.br/mix/wp-content/uploads/2026/01/image-153.png"
+      "imageUrl": "https://admin.itatiaia.com.br/wp-content/uploads/sites/27/2026/08/IMAGENS-PORTAL-ITATIAIA-28-2.jpg?resize=1280%2C720&w=1280&h=720&quality=75&crop=1"
     },
     {
       "id": "macro-c11c62cd32faca5b47d36948",
       "title": "Relatório Semanal de Wall Street da TradingKey: IPP moderado e IPC em linha atendem às expectativas, mas vendas no varejo fracas limitam ganhos das ações dos EUA",
       "summary": "Atualizacao de macro capturada em TradingKey.",
       "details": "",
-      "url": "https://www.osul.com.br/instituicao-fiscal-independente-ve-economia-brasileira-aquecida/amp/",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTXlFSnFQVEVTX0cxVDZNMzVZRDNKeDF2M3JoM2NVNVcyTDYwNURnckJCelo4OWd0dko3NGFORXJsVEs4YmZ2OEdBSnAzNHFkWFk3aF84SUR6d0psOHhnTXMzRDYxUnB6bFp1NzlVWG80M0xkZExBRWNvZ19kdlFFZE5xU1dnTUxFMllEUmtpZFM3UXZYRmN5T2x6VWdpWHJPS00tRXlDaGhESmloaVA3emgwMXBPcHktdU5ZUnhqV0lhdw?oc=5",
       "source": "TradingKey",
       "category": "macro",
       "tags": [
@@ -643,9 +751,9 @@
     {
       "id": "macro-54d8ccf9168be7a2f5fffd58",
       "title": "Governo reajusta o salário mínimo em 4,75% para o restante de 2026",
-      "summary": "Candidato do PL ao Governo de Minas teve posição contrária a de adersários no debate da Band",
-      "details": "Candidato do PL ao Governo de Minas teve posição contrária a de adersários no debate da Band",
-      "url": "https://www.itatiaia.com.br/politica/eleicoes/roscoe-defende-modelo-de-renuncia-fiscal-atacar-os-incentivos-e-falta-de-conhecimento/",
+      "summary": "Atualizacao de macro capturada em Diário do Comércio.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPallRWWRBSVZiQi1wNldXXzdLbWtOUG9FaXFkM2ZiZFkxTHRtUEtZaTEtalJ1T1pDMDB0emFPc2NIbnA5OERxWkZlYTAyTlRpeUFVb0FXTi0tTVFJdHo0dGJSOHVDLTNJWmtUUklPZ1A3QldMbVg4VXlVak5zSEE0X3VfbXpZOGlIQnI5RnFqWTFKTm5rVUdRVDNZdV9EYjRXLUM3SFhSLXJ0X2sxbDJRdk44WTh1S1d4dmdjWDBVVkFFdw?oc=5",
       "source": "Diário do Comércio",
       "category": "macro",
       "tags": [
@@ -656,15 +764,14 @@
       "publishedAt": "2026-08-17T00:31:00Z",
       "updatedAt": "2026-08-17T00:31:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.itatiaia.com.br/wp-content/uploads/sites/27/2026/08/IMAGENS-PORTAL-ITATIAIA-28-2.jpg?resize=1280%2C720&w=1280&h=720&quality=75&crop=1"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-718e89aec5290014612bc602",
       "title": "PIB do Japão no 2º tri decepciona com queda em investimentos e consumo",
       "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
       "details": "",
-      "url": "https://br.investing.com/news/economic-indicators/pib-do-japao-no-2o-tri-decepciona-com-queda-em-investimentos-e-consumo-2040733",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZFFtLVBZM2t0bndZQ2VwMWVlMzV1S09OQktBUW00TllLUEJTYkt3eVhLaUF5bHYxR1FMQzBoaTVNS1c1aWtVa2RoQV9XV1J3TFhUWkRPeWZtSDNkRVpGYy1JazdMc2owZFZFSVFsMVZJdGo1U3JMUmN5RnFlTzdKWjhld3VCYUR2VWRnYXpGUFpOWFRmUHpxRjVydFN3dDJBb2dfOENhQTI0ZlVrMWlxZnVBZGFRWnhRRGJ0Rm9fQlBJS1RDX0dz?oc=5",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -678,49 +785,11 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "macro-46ff8d65584f6e826542c70e",
-      "title": "O impacto fiscal na locação imobiliária",
-      "summary": "Gravataí alcançou, pelo quinto ano consecutivo, o conceito máximo “A” no Ranking de Qualidade da Informação Contábil e Fiscal, elaborado pela Secretaria do Tesouro Nacional (STN). O resultado coloca o município como o segundo melhor da Região Sul entre as cidades com mais de 100 ",
-      "details": "Gravataí alcançou, pelo quinto ano consecutivo, o conceito máximo “A” no Ranking de Qualidade da Informação Contábil e Fiscal, elaborado pela Secretaria do Tesouro Nacional (STN). O resultado coloca o município como o segundo melhor da Região Sul entre as cidades com mais de 100 mil habitantes. O município também regis",
-      "url": "https://blogdochicopereira.com/gravatai-recebe-nota-maxima-em-ranking-fiscal-do-tesouro-nacional-pelo-quinto-ano-consecutivo/",
-      "source": "fococidade.com.br",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-17T00:04:22Z",
-      "updatedAt": "2026-08-17T00:04:22Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://blogdochicopereira.com/wp-content/uploads/2026/08/IMG-7111.jpeg"
-    },
-    {
-      "id": "macro-6b8a57e01d57677ebd9a1096",
-      "title": "Gravataí recebe nota máxima em ranking fiscal do Tesouro Nacional pelo quinto ano consecutivo",
-      "summary": "O empresário Ivo Kos foi preso em São Paulo após Giullia Falcão Kos relatar agressões. Caso inclui lesão corporal, ameaça e violência doméstica.",
-      "details": "O empresário Ivo Kos foi preso em São Paulo após Giullia Falcão Kos relatar agressões. Caso inclui lesão corporal, ameaça e violência doméstica.",
-      "url": "https://www.diariodocentrodomundo.com.br/ivo-kos-preso-agressao-mulher-sao-paulo/",
-      "source": "Blog do Chico Pereira",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-16T23:43:50Z",
-      "updatedAt": "2026-08-16T23:43:50Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.diariodocentrodomundo.com.br/wp-content/uploads/2026/08/imagem-principal-ivo-kos-preso-agressao-mulher-sao-paulo-fotojet-2026-08-15t175903-291.jpg"
-    },
-    {
       "id": "latest-1a72eb212f552fd128a5c507",
       "title": "Empresário Ivo Kos é preso em São Paulo após mulher relatar agressões",
-      "summary": "O impacto fiscal na locação imobiliária",
-      "details": "O impacto fiscal na locação imobiliária",
-      "url": "https://fococidade.com.br/materia/71878/o-impacto-fiscal-na-locacao-imobiliaria",
+      "summary": "Atualizacao de ultima hora capturada em Diário do Centro do Mundo.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNHZKNFl6VXY0YnR5QXZVUmEwamdieUV3QlRaSjlndTBvUjd1SnNNa2NlZVl3M1VIVHQtYzgzdlZ6SWxtN1RielNQQVZNYVo5TDZwaHFGRXkwbmQySmpUOGJjQkp6UHkzRmliMnp1U2hlaXdPVHp2dFh4dVZNTWRfMnZSVno1cHNw?oc=5",
       "source": "Diário do Centro do Mundo",
       "category": "latest",
       "tags": [
@@ -731,26 +800,7 @@
       "publishedAt": "2026-08-16T23:42:00Z",
       "updatedAt": "2026-08-16T23:42:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://painel.fococidade.com.br/storage/photos/4362ccf13a3c91fac0950dbf7f3bc4c2.jpg"
-    },
-    {
-      "id": "macro-12e17771bc406b02f38afaa1",
-      "title": "Ajuste no custo de vida no Reino Unido: energia em alta deve empurrar inflação para cerca de 2,9% em julho",
-      "summary": "Atualizacao de macro capturada em Revista Empreende.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQVTlpVkU0RDFsYXhpRllIMVBCdXdXSTBKQ0REdzNNWlFtX2k0VGhDSHFqd2lnQ0paeDY3Ty1nTVhTZ3lkcm1PMmNFaTZ1UGFSVmhRc3JxTjhWRDhvalU3ejZiNHdOME5KRTZGeUwwSkk2d0JQVzJjbTJRMlRnSHJYMzNOYmVqMlRSYmlpbTh0ekZ6SUdpMURtSTVPd2xzeVhXbU9yNW5KUkZfb1dseS02OVFyNnB3SFNJQnl2bHR3bWNiOU02S1lqVGdpa1VmTHFGM2lyc1JndjVxTExYdnQ3VHBubWt6UFZ6ckdqcFpyMGRmN3o5eTh1S0Z6RTJfZ3VkemVEOFl6Um9jN0k?oc=5",
-      "source": "Revista Empreende",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-16T23:37:16Z",
-      "updatedAt": "2026-08-16T23:37:16Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-888cf02b8c4669c840450adb",
@@ -843,12 +893,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-73405cc402f9c4af85252b26",
+      "id": "companies-4ae87859f1f7b4273102b2db",
       "title": "Brasil tem vagas, mas falta quem saiba ocupá-las: déficit de qualificação custa R$ 335 bilhões para empresas",
-      "summary": "Atualizacao de empresas capturada em folhabv.com.br.",
+      "summary": "Atualizacao de empresas capturada em Folha BV.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPc09zaEdmTlByNllzN243WmRaQnIzTTM1YnJDc1htRUktS0VxWUh4MkE1aXVxVnFDZXBUUFlBa2ZPWVpVbzdPVkh6UE1leHdFVUs4LVJhMUFhX1FTOThCcXE2eHY1ajlLSDNnd1VTRS01RG5hZ21CaVNta2ZRaEFuR2YtREJERXVDSlM4ajZwNnI4RVRuSWMxbXlWU2s1RExlMjVZUFNPTUhwTklJMDAwRFJVek9EQlFHX1RIVkNobFJYUVhEaGJJQw?oc=5",
-      "source": "folhabv.com.br",
+      "source": "Folha BV",
       "category": "companies",
       "tags": [
         "empresas",
@@ -897,12 +947,12 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "funds-7c1b01c43f00e1a15c7b37f1",
+      "id": "funds-151d3fb6dc358a815fc7cfd2",
       "title": "Michelle Bolsonaro inicia campanha e declara patrimônio de R$ 4,4 milhões",
-      "summary": "Atualizacao de fundos capturada em gazetadopovo.com.br.",
+      "summary": "Atualizacao de fundos capturada em Gazeta do Povo.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcEt0UHR1WXRLWjREMjh1Rm5zenZuVVU2VTFYbzdqbXp2c1JHcmIyYWZWNXdLYVVSbFdYUVRQSVFvRktjeTNQZUlXNHpOeU5jUG93TXJ3bVVlbjRfYmhXMUg1MTR6UFUxNVBFR3hoMFRPRHQ0dFVUU0tBYmZkOGk3N3d6ZjcwOUVPSUNYTWh3d2JJNjA5TDZ2eUJrTGJrNW9LRmUwSW5KRG9WVFl6bWd4WkNYSTFSTmNzcU5aYTdySXdxUlJvdjZkSmJYRDhyNW9K?oc=5",
-      "source": "gazetadopovo.com.br",
+      "source": "Gazeta do Povo",
       "category": "funds",
       "tags": [
         "fundos",
@@ -1059,78 +1109,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "latest-94c205ebb3fc9b9069531e77",
-      "title": "Empresário do mercado financeiro tem prisão preventiva decretada após agredir esposa em São Paulo",
-      "summary": "Atualizacao de ultima hora capturada em vanitybrasil.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbkRaRHFxcnpsaGtfRkpBYXVXV1ozWGd6ZlNOcnlVZ24yRVVOdXpmSG0zQ0cyUVB4dXNYSnNnc3BmWTczVnJJTlQ5OWJOcTZpQVZGSlpzcjNNN0dPU2RNUlJ5bGcxOGlyVDZjcTB3cUZsS1E1UDFxVElNbTVGMy0zMmdOMTNYMUJyTGZxWkhNSjhyYkR3REUxZXU0cFV6RG1CbVJWak5yZmp1S3hFZVZVYjc1Y09IRDFkelVYdTd1WUdyRHJ2?oc=5",
-      "source": "vanitybrasil.com.br",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-16T16:13:26Z",
-      "updatedAt": "2026-08-16T16:13:26Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-1af9a9d5f720cbc14081f88c",
-      "title": "Risco político tende a limitar Ibovespa em 2026",
-      "summary": "Atualizacao de ultima hora capturada em SpaceMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaHQwVE9zaXB1N1Rfdm1LWnpTX1BBeG4yRVloZDctbHBhM2oxaGhQVXctR25KVVhxREl3bXk0b0VhX0N2cEdaRXo4enMxaF9IYThJZmxDaHduS1FiRzNQYWd0MzdRLWdCM3lnSGFMQlZrZmRROW0xbnlpc3VVUXJRQXpjazAwN1hLVWhIUXViejFFc1pwZVI2SA?oc=5",
-      "source": "SpaceMoney",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-16T16:11:29Z",
-      "updatedAt": "2026-08-16T16:11:29Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-8c3a33cc9fa1dcb29fd32543",
-      "title": "Banco do Brasil (BBAS3): queda sugere compra, mas existem perigos",
-      "summary": "Atualizacao de ultima hora capturada em Acionista.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZWFUVkhOUkpvRGFsczlIdE5jcklJVnBFRElXWEh1aTZxMmhZRlo3c1FycnRRVWdpOENwRDN3TXBEUE41QURsMUNTdnB5Ymx5TWk4cTNWOHQxR0hXZTVudGFMVnZIbEwwZ1FleXBLb2x2Uk5DS3B5aDJyUU5Xc3ZNOU5SWDJ3UzNoNW9sek8tUEg?oc=5",
-      "source": "Acionista.com.br",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-16T16:03:22Z",
-      "updatedAt": "2026-08-16T16:03:22Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-87c5625a7586e3958daa25a3",
-      "title": "Ibovespa deve ficar atrás de pares emergentes em 2026 — e risco político está por trás disso, diz consultoria",
-      "summary": "Atualizacao de ultima hora capturada em Money Times.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNLU5BQzBuXzVNSnlFZE1lYmdobXQxZXBlYndyZUM1eEQ4UkUtNEhrZnhDQkJPQmRiYmRKSkRaTXMwOW9zRDloel9HU1VmQmc4dkpqT0s2RzIybVJBel9TQmd6M2NEdGdJSnozdVBhdk1zSUNVSnpiamJscGxKY0U1X3hBYzhORlZWMlVyQldEdmozckFZSDlJTURoRXNZdXB0aTVBZUdRWHFaSG82a2lQUjg0aTFYRVB1UnNKaE54Q1dKaGhwVktNNGROS195VGlTNVl0WVJLM1JIUQ?oc=5",
-      "source": "Money Times",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-16T15:48:00Z",
-      "updatedAt": "2026-08-16T15:48:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "companies-b1910a6de0ff934dea8b0d09",
       "title": "Ação em Osasco destaca oportunidades econômicas no acordo UE-Mercosul",
       "summary": "Atualizacao de empresas capturada em O Repórter Regional.",
@@ -1181,6 +1159,24 @@
       ],
       "publishedAt": "2026-08-16T15:09:00Z",
       "updatedAt": "2026-08-16T15:09:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "companies-577fde67f6c83c8b30abab9e",
+      "title": "Exportações do agronegócio: Mapa mira abertura de 700 mercados",
+      "summary": "Atualizacao de empresas capturada em 93 Notícias.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8wdzZ2ajdvWVZkc0V5VGhjRl8xV1NtdXlnZFE3LWhIalRpcUh6cVo1RHpuMUJlcHh4RmZEa29iczBwN1RRT1pxSHZBdWVrQkJvZFE0ZjlpQU5qTUoyMS15WHVQOW1uSXUxdzFyNFc2VXpkU245YW5sYkMzc0I?oc=5",
+      "source": "93 Notícias",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-16T14:58:00Z",
+      "updatedAt": "2026-08-16T14:58:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
@@ -1257,12 +1253,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-9e1ebecf57a35174dea3aa70",
+      "id": "funds-89a9e853e190a3432213437b",
       "title": "O conflito de rendimentos das stablecoins que não desaparece coloca bancos e cripto em disputa pela tradição",
-      "summary": "Atualizacao de fundos capturada em coindesk.com.",
+      "summary": "Atualizacao de fundos capturada em CoinDesk.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObTh5RGt0QnRib01WTlFZTHd6alFhVDN4ZGZwOGJwaVRYSUxZZTV0THN3cDNuUGo0a1FGM1pCWUtVMHpSVlRXNTZSOXVjclZGMG1RMWpuSWwwUC0tWmM1a0VjSEdQY2VyMHpjNDNjdlRyODVGRl9qNWhvVXk1bEVnTDgweGZWdW1UWWl6VFM4ODdDNjUza0g0c0c4ajlKQjh3ZUpaRnJQbG9GNVBlU3dVTjhZZXdieFg2ZGFaTTd2STlpbmNFdVphaDU1U093eWcyUFVEVjFyNEF2QQ?oc=5",
-      "source": "coindesk.com",
+      "source": "CoinDesk",
       "category": "funds",
       "tags": [
         "fundos",
@@ -1329,12 +1325,12 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "funds-4b360d98996122b69ef57315",
+      "id": "funds-a0b5c609225098d5684a37e0",
       "title": "Fundos de investimento estão interessados ​​no projeto de produção de aço ferroviário de 700.000 toneladas/ano da Hoa Phat.",
-      "summary": "Atualizacao de fundos capturada em Vietnam.vn.",
+      "summary": "Atualizacao de fundos capturada em vietnam.vn.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYXpTWElOQm40VHhYZWFMc2dZZW4zZDI3VDhYM0djVFBhMUMyUHlzUzZjSXIxWG1weWpfd3JoWWQtaXU1YmFEcGhiWDk2STZmSGZBM1IzMkpoRGNoNXVjT1VGUW9vd1FpZ0lWNXdnWFh6Wm9fRDhwTTBmU3o4Y3pSMUI5d1NCTlljTkVKU0x1UG1UYXZJc2kxSg?oc=5",
-      "source": "Vietnam.vn",
+      "source": "vietnam.vn",
       "category": "funds",
       "tags": [
         "fundos",
