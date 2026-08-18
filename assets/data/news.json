@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-18T10:30:03Z",
-  "generatedAt": "2026-08-18T10:30:03Z",
+  "updatedAt": "2026-08-18T10:57:05Z",
+  "generatedAt": "2026-08-18T10:57:05Z",
   "categories": [
     {
       "id": "all",
@@ -41,16 +41,8 @@
       "label": "Agrolink"
     },
     {
-      "id": "agrorevenda",
-      "label": "AgroRevenda"
-    },
-    {
       "id": "al1-com-br",
       "label": "al1.com.br"
-    },
-    {
-      "id": "bdm-bom-dia-mercado",
-      "label": "BDM - Bom Dia Mercado"
     },
     {
       "id": "boca-com-br",
@@ -59,6 +51,10 @@
     {
       "id": "bol",
       "label": "BOL"
+    },
+    {
+      "id": "bomdiamercado-com-br",
+      "label": "bomdiamercado.com.br"
     },
     {
       "id": "bora-investir",
@@ -81,28 +77,28 @@
       "label": "Correio Braziliense"
     },
     {
-      "id": "di-rio-do-poder",
-      "label": "Diário do Poder"
+      "id": "diariodopoder-com-br",
+      "label": "diariodopoder.com.br"
     },
     {
       "id": "estad-o",
       "label": "Estadão"
     },
     {
-      "id": "financefeeds",
-      "label": "FinanceFeeds"
+      "id": "euqueroinvestir",
+      "label": "EuQueroInvestir"
     },
     {
-      "id": "folha-de-cianorte",
-      "label": "Folha de Cianorte"
+      "id": "financefeeds",
+      "label": "FinanceFeeds"
     },
     {
       "id": "folha-vit-ria",
       "label": "Folha Vitória"
     },
     {
-      "id": "fundspeople-espa-a",
-      "label": "FundsPeople España"
+      "id": "folhadecianorte-com",
+      "label": "folhadecianorte.com"
     },
     {
       "id": "gazeta-do-povo",
@@ -117,12 +113,12 @@
       "label": "Investing.com Brasil - Finanças, Câmbio e Investimentos"
     },
     {
-      "id": "jornal-o-sul",
-      "label": "Jornal O Sul"
+      "id": "investnews",
+      "label": "InvestNews"
     },
     {
-      "id": "migalhas",
-      "label": "Migalhas"
+      "id": "jornal-o-sul",
+      "label": "Jornal O Sul"
     },
     {
       "id": "money-times",
@@ -187,12 +183,30 @@
   ],
   "items": [
     {
-      "id": "macro-ff6a9eff1fd361ad3a1f6b9c",
-      "title": "PIB desacelera e cresce 0,3% no 2º trimestre, estima FGV",
-      "summary": "Atualizacao de macro capturada em Folha de Cianorte.",
+      "id": "macro-37b58e9eedcb8eaa8c030f62",
+      "title": "Bolsas mundiais recuam com petróleo acima de US$ 90 e temor por inflação",
+      "summary": "Atualizacao de macro capturada em UOL Economia.",
       "details": "",
-      "url": "https://br.investing.com/news/earnings/home-depot-supera-estimativas-e-reafirma-guidance-para-o-ano-fiscal-de-2026-2042426",
-      "source": "Folha de Cianorte",
+      "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/08/18/bolsas-mundiais---18-de-agosto-de-2026.ghtm",
+      "source": "UOL Economia",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-18T10:23:31Z",
+      "updatedAt": "2026-08-18T10:23:31Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-7a61329b21f0ddef9c85806c",
+      "title": "PIB desacelera e cresce 0,3% no 2º trimestre, estima FGV",
+      "summary": "Atualizacao de macro capturada em folhadecianorte.com.",
+      "details": "",
+      "url": "https://folhadecianorte.com/2026/08/pib-desacelera-e-cresce-03-no-2o-trimestre-estima-fgv/",
+      "source": "folhadecianorte.com",
       "category": "macro",
       "tags": [
         "macro",
@@ -209,7 +223,7 @@
       "title": "Home Depot supera estimativas e reafirma guidance para o ano fiscal de 2026",
       "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
       "details": "",
-      "url": "https://br.investing.com/news/economy-news/azerbaijao-eleva-previsao-de-inflacao-para-2026-a-57-93CH-2042411",
+      "url": "https://br.investing.com/news/earnings/home-depot-supera-estimativas-e-reafirma-guidance-para-o-ano-fiscal-de-2026-2042426",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -225,9 +239,9 @@
     {
       "id": "macro-d899e8c8a0d7bf191a3e07fc",
       "title": "Azerbaijão eleva previsão de inflação para 2026 a 5,7%",
-      "summary": "Veja o que irá movimentar o mercado",
-      "details": "Veja o que irá movimentar o mercado",
-      "url": "https://www.bomdiamercado.com.br/mercado-financeiro/giro-dos-mercados/vai-rolar-petroleo-complica-alivio-dos-juros/",
+      "summary": "Os economistas Tiago Berriel e Mateus Della, do BTG, fizeram as contas e concluíram que as causas internas responderam por 63% da alta nos juros dos títulos",
+      "details": "Os economistas Tiago Berriel e Mateus Della, do BTG, fizeram as contas e concluíram que as causas internas responderam por 63% da alta nos juros dos títulos",
+      "url": "https://braziljournal.com/impulso-fiscal-eleva-a-taxa-neutra-e-empurra-os-juros-longos-diz-o-btg/",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -239,15 +253,15 @@
       "updatedAt": "2026-08-18T10:11:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://uploads.bomdiamercado.com.br/2024/02/petroleo-commodity-brent-wti.jpg"
+      "imageUrl": "https://braziljournal.com/wp-content/uploads/2026/08/GettyImages-1209640454-635x357.jpg"
     },
     {
-      "id": "latest-778be299e9f510069755c7b7",
+      "id": "latest-f9bd94e249233f7117143f01",
       "title": "Vai rolar: Petróleo complica alívio dos juros",
-      "summary": "Atualizacao de ultima hora capturada em BDM - Bom Dia Mercado.",
-      "details": "",
-      "url": "https://folhadecianorte.com/2026/08/pib-desacelera-e-cresce-03-no-2o-trimestre-estima-fgv/",
-      "source": "BDM - Bom Dia Mercado",
+      "summary": "Entenda como funciona a modalidade de investimento, seus principais tipos e que estratégias usar para escolher suas aplicações financeiras",
+      "details": "Entenda como funciona a modalidade de investimento, seus principais tipos e que estratégias usar para escolher suas aplicações financeiras",
+      "url": "https://www.itatiaia.com.br/economia/negocios/fundos-de-investimento-o-que-e-e-como-investir/",
+      "source": "bomdiamercado.com.br",
       "category": "latest",
       "tags": [
         "mercado",
@@ -257,14 +271,15 @@
       "publishedAt": "2026-08-18T10:10:22Z",
       "updatedAt": "2026-08-18T10:10:22Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://admin.itatiaia.com.br/wp-content/uploads/sites/27/2026/08/fundos-investimento-oq-e-pvproductionsmagnific.jpg?resize=1280%2C720&w=1280&h=720&quality=75&crop=1"
     },
     {
       "id": "macro-2fbb12a8d8423d03abfec49d",
       "title": "Impulso fiscal eleva a taxa neutra e empurra os juros longos, diz o BTG",
-      "summary": "Os economistas Tiago Berriel e Mateus Della, do BTG, fizeram as contas e concluíram que as causas internas responderam por 63% da alta nos juros dos títulos",
-      "details": "Os economistas Tiago Berriel e Mateus Della, do BTG, fizeram as contas e concluíram que as causas internas responderam por 63% da alta nos juros dos títulos",
-      "url": "https://braziljournal.com/impulso-fiscal-eleva-a-taxa-neutra-e-empurra-os-juros-longos-diz-o-btg/",
+      "summary": "Atualizacao de macro capturada em Brazil Journal.",
+      "details": "",
+      "url": "https://br.investing.com/news/economy-news/azerbaijao-eleva-previsao-de-inflacao-para-2026-a-57-93CH-2042411",
       "source": "Brazil Journal",
       "category": "macro",
       "tags": [
@@ -275,34 +290,14 @@
       "publishedAt": "2026-08-18T10:09:53Z",
       "updatedAt": "2026-08-18T10:09:53Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://braziljournal.com/wp-content/uploads/2026/08/GettyImages-1209640454-635x357.jpg"
-    },
-    {
-      "id": "macro-fc00fa9d1fedd34d1d37a937",
-      "title": "Rejeição adiada não prorrogou os prazos para informar IBS e CBS na nota fiscal",
-      "summary": "Por Eduardo Souza Weyll. A autorização do documento fiscal sem os campos exigidos de IBS e CBS não afasta a obrigação de preenchê-los. A omissão pode afetar a dispensa do recolhimento e gerar ...",
-      "details": "Por Eduardo Souza Weyll. A autorização do documento fiscal sem os campos exigidos de IBS e CBS não afasta a obrigação de preenchê-los. A omissão pode afetar a dispensa do recolhimento e gerar ...",
-      "url": "https://www.migalhas.com.br/depeso/462498/rejeicao-adiada-nao-prorrogou-os-prazos-para-informar-ibs-e-cbs",
-      "source": "Migalhas",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-18T10:02:30Z",
-      "updatedAt": "2026-08-18T10:02:30Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://medproc.migalhas.com.br/author.jpg._PROC_AC462498AT1AP11.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "funds-b76227b5de1babcc3777c14f",
       "title": "Fundos de investimento: o que é e como investir",
-      "summary": "Entenda como funciona a modalidade de investimento, seus principais tipos e que estratégias usar para escolher suas aplicações financeiras",
-      "details": "Entenda como funciona a modalidade de investimento, seus principais tipos e que estratégias usar para escolher suas aplicações financeiras",
-      "url": "https://www.itatiaia.com.br/economia/negocios/fundos-de-investimento-o-que-e-e-como-investir/",
+      "summary": "Confirmado no Pacífico, o fenômeno climático deve se intensificar nos próximos meses e pode influenciar desde a safra agrícola até as decisões do BC.",
+      "details": "Confirmado no Pacífico, o fenômeno climático deve se intensificar nos próximos meses e pode influenciar desde a safra agrícola até as decisões do BC.",
+      "url": "https://www.moneytimes.com.br/safra-inflacao-e-juros-o-efeito-domino-que-coloca-o-el-nino-no-radar-do-mercado/",
       "source": "Rádio Itatiaia",
       "category": "funds",
       "tags": [
@@ -314,14 +309,14 @@
       "updatedAt": "2026-08-18T10:00:58Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://admin.itatiaia.com.br/wp-content/uploads/sites/27/2026/08/fundos-investimento-oq-e-pvproductionsmagnific.jpg?resize=1280%2C720&w=1280&h=720&quality=75&crop=1"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2024/03/la-nina-el-nino-.jpg"
     },
     {
       "id": "macro-3d84245bfd117b5f0dc369e4",
       "title": "El Niño ‘muito forte’: o que está em jogo para a safra, a inflação e os juros no Brasil",
-      "summary": "Confirmado no Pacífico, o fenômeno climático deve se intensificar nos próximos meses e pode influenciar desde a safra agrícola até as decisões do BC.",
-      "details": "Confirmado no Pacífico, o fenômeno climático deve se intensificar nos próximos meses e pode influenciar desde a safra agrícola até as decisões do BC.",
-      "url": "https://www.moneytimes.com.br/safra-inflacao-e-juros-o-efeito-domino-que-coloca-o-el-nino-no-radar-do-mercado/",
+      "summary": "As bolsas da Ásia e do Pacífico fecharam majoritariamente em baixa nesta terça (18) com alta do petróleo e inflação.",
+      "details": "As bolsas da Ásia e do Pacífico fecharam majoritariamente em baixa nesta terça (18) com alta do petróleo e inflação.",
+      "url": "https://timesbrasil.com.br/investimentos/bolsa/petroleo-e-inflacao-pesam-sobre-mercados-asiaticos-nikkei-registra-o-maior-recuo-da-regiao/",
       "source": "Money Times",
       "category": "macro",
       "tags": [
@@ -333,7 +328,7 @@
       "updatedAt": "2026-08-18T10:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2024/03/la-nina-el-nino-.jpg"
+      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2025/06/7c98fb37-apf20250620005.jpg"
     },
     {
       "id": "macro-e3e5ff7bf38e94043614396b",
@@ -357,9 +352,9 @@
     {
       "id": "macro-30f1d1b26085e567b51a3f0a",
       "title": "Bolsas da Ásia caem com petróleo e inflação no radar, apesar de balanços",
-      "summary": "As bolsas da Ásia e do Pacífico fecharam majoritariamente em baixa nesta terça (18) com alta do petróleo e inflação.",
-      "details": "As bolsas da Ásia e do Pacífico fecharam majoritariamente em baixa nesta terça (18) com alta do petróleo e inflação.",
-      "url": "https://timesbrasil.com.br/investimentos/bolsa/petroleo-e-inflacao-pesam-sobre-mercados-asiaticos-nikkei-registra-o-maior-recuo-da-regiao/",
+      "summary": "Veja o que irá movimentar o mercado",
+      "details": "Veja o que irá movimentar o mercado",
+      "url": "https://www.bomdiamercado.com.br/mercado-financeiro/giro-dos-mercados/vai-rolar-petroleo-complica-alivio-dos-juros/",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -371,10 +366,10 @@
       "updatedAt": "2026-08-18T09:36:15Z",
       "premium": true,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2025/06/7c98fb37-apf20250620005.jpg"
+      "imageUrl": "https://uploads.bomdiamercado.com.br/2024/02/petroleo-commodity-brent-wti.jpg"
     },
     {
-      "id": "macro-619f43177717be3c5a3d57c9",
+      "id": "macro-8129f69aab6a901eb454bb62",
       "title": "Bolsas da Ásia e do Pacífico recuam com petróleo e inflação; Nikkei lidera perdas",
       "summary": "Alta do petróleo e preocupações com a inflação se sobrepõem ao desempenho positivo sustentado por balanços corporativos sólidos",
       "details": "Alta do petróleo e preocupações com a inflação se sobrepõem ao desempenho positivo sustentado por balanços corporativos sólidos",
@@ -386,8 +381,8 @@
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-08-18T09:35:08Z",
-      "updatedAt": "2026-08-18T09:35:08Z",
+      "publishedAt": "2026-08-18T09:35:12Z",
+      "updatedAt": "2026-08-18T09:35:12Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://www.estadao.com.br/resizer/v2/AKZFF5EMF5KDJBXFYWN33PR6MA.png?quality=80&auth=50fb3f082096c01ffb395f0451efbb725090ca751ed834682af574d1c623332d&width=1200&height=630&smart=true"
@@ -395,9 +390,9 @@
     {
       "id": "macro-cf299b6a4052b91342196263",
       "title": "Inflação desacelera e atividade econômica perde ritmo",
-      "summary": "O fundo da Square Asset Management continua destacado no topo do ranking em maio de 2026, num top 10 marcado pela subida do Fundimo ao segundo lugar e pelo avanço de vários fundos fechados.",
-      "details": "O fundo da Square Asset Management continua destacado no topo do ranking em maio de 2026, num top 10 marcado pela subida do Fundimo ao segundo lugar e pelo avanço de vários fundos fechados.",
-      "url": "https://fundspeople.com/pt/quem-lidera-o-imobiliario-estes-sao-os-10-maiores-fii-em-portugal/",
+      "summary": "Para a Faria Lima, pouco importa se o candidato é de esquerda ou direita. Por ora, o mercado financeiro parece preferir o que já conhece.",
+      "details": "Para a Faria Lima, pouco importa se o candidato é de esquerda ou direita. Por ora, o mercado financeiro parece preferir o que já conhece.",
+      "url": "https://www.gazetadopovo.com.br/vozes/luciano-trigo/por-que-a-faria-lima-prefere-lula/",
       "source": "Agrolink",
       "category": "macro",
       "tags": [
@@ -409,26 +404,7 @@
       "updatedAt": "2026-08-18T09:27:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://fundspeople-multisite.s3.eu-west-1.amazonaws.com/wp-content/uploads/sites/3/2022/01/18154438/imobiliario-construcao-lego-pecas-fundos-gestao-de-ativos-pensoes-alternativos-e1786703134282.jpg"
-    },
-    {
-      "id": "funds-829ae813752deaee08b5c22e",
-      "title": "Quem lidera o imobiliário? Estes são os 10 maiores FII em Portugal",
-      "summary": "Essa narrativa, embalada por jargões técnicos para impressionar o leigo, tenta convencer a opinião pública de que o remédio amargo dos juros reais mais altos do mundo é a única alternativa para conter os preços",
-      "details": "Essa narrativa, embalada por jargões técnicos para impressionar o leigo, tenta convencer a opinião pública de que o remédio amargo dos juros reais mais altos do mundo é a única alternativa para conter os preços",
-      "url": "https://www.correiobraziliense.com.br/opiniao/2026/08/7481110-por-que-juros-extorsivos-e-metas-irrealistas-destroem-o-brasil-sem-baixar-a-inflacao.html",
-      "source": "FundsPeople España",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-18T09:22:01Z",
-      "updatedAt": "2026-08-18T09:22:01Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://midias.correiobraziliense.com.br/_midias/jpg/2026/08/16/675x450/1_pri-1808-opini-67436817.jpg"
+      "imageUrl": "https://media.gazetadopovo.com.br/2026/08/17203718/ChatGPT-Image-17-de-ago.-de-2026-20_17_42.jpg"
     },
     {
       "id": "macro-dde4b7eb1be217687d212879",
@@ -452,9 +428,9 @@
     {
       "id": "macro-9e8d64fb7a96cdbc6c5dd53f",
       "title": "Por que juros extorsivos e metas irrealistas destroem o Brasil sem baixar a inflação",
-      "summary": "Atualizacao de macro capturada em Correio Braziliense.",
-      "details": "",
-      "url": "https://br.investing.com/news/economy-news/macau-quer-que-setores-nao-relacionados-ao-jogo-representem-60-do-pib-ate-2030-93CH-2042337",
+      "summary": "Essa narrativa, embalada por jargões técnicos para impressionar o leigo, tenta convencer a opinião pública de que o remédio amargo dos juros reais mais altos do mundo é a única alternativa para conter os preços",
+      "details": "Essa narrativa, embalada por jargões técnicos para impressionar o leigo, tenta convencer a opinião pública de que o remédio amargo dos juros reais mais altos do mundo é a única alternativa para conter os preços",
+      "url": "https://www.correiobraziliense.com.br/opiniao/2026/08/7481110-por-que-juros-extorsivos-e-metas-irrealistas-destroem-o-brasil-sem-baixar-a-inflacao.html",
       "source": "Correio Braziliense",
       "category": "macro",
       "tags": [
@@ -465,34 +441,16 @@
       "publishedAt": "2026-08-18T09:01:00Z",
       "updatedAt": "2026-08-18T09:01:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://midias.correiobraziliense.com.br/_midias/jpg/2026/08/16/675x450/1_pri-1808-opini-67436817.jpg"
     },
     {
       "id": "latest-f9fa6648bd237fb0352f5bd9",
       "title": "Por que a Faria Lima prefere Lula?",
-      "summary": "Para a Faria Lima, pouco importa se o candidato é de esquerda ou direita. Por ora, o mercado financeiro parece preferir o que já conhece.",
-      "details": "Para a Faria Lima, pouco importa se o candidato é de esquerda ou direita. Por ora, o mercado financeiro parece preferir o que já conhece.",
-      "url": "https://www.gazetadopovo.com.br/vozes/luciano-trigo/por-que-a-faria-lima-prefere-lula/",
-      "source": "Gazeta do Povo",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-18T09:00:00Z",
-      "updatedAt": "2026-08-18T09:00:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://media.gazetadopovo.com.br/2026/08/17203718/ChatGPT-Image-17-de-ago.-de-2026-20_17_42.jpg"
-    },
-    {
-      "id": "latest-7e7853758de4fd1da499412a",
-      "title": "Tempo real: Ibovespa monitora mercado de trabalho e atividade global",
       "summary": "Acompanhe o Ibovespa e os demais mercados em tempo real.",
       "details": "Acompanhe o Ibovespa e os demais mercados em tempo real.",
       "url": "https://www.moneytimes.com.br/tempo-real-ibovespa-hoje-mercado-ao-vivo-18-08-2026-jals-lils-apsa/",
-      "source": "Money Times",
+      "source": "Gazeta do Povo",
       "category": "latest",
       "tags": [
         "mercado",
@@ -506,10 +464,47 @@
       "imageUrl": "https://www.moneytimes.com.br/uploads/2026/07/ibovespa-acoes.png"
     },
     {
+      "id": "latest-7e7853758de4fd1da499412a",
+      "title": "Tempo real: Ibovespa monitora mercado de trabalho e atividade global",
+      "summary": "Atualizacao de ultima hora capturada em Money Times.",
+      "details": "",
+      "url": "https://br.investing.com/news/economy-news/macau-quer-que-setores-nao-relacionados-ao-jogo-representem-60-do-pib-ate-2030-93CH-2042337",
+      "source": "Money Times",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-18T09:00:00Z",
+      "updatedAt": "2026-08-18T09:00:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "companies-99e125abbfa0549478849538",
+      "title": "Casas Bahia dá impulso para nova onda de reestruturação de empresas",
+      "summary": "Juros altos, crédito restrito e caixa abaixo do previsto colocam em xeque acordos fechados desde 2023, que somam centenas de bilhões",
+      "details": "Juros altos, crédito restrito e caixa abaixo do previsto colocam em xeque acordos fechados desde 2023, que somam centenas de bilhões",
+      "url": "https://investnews.com.br/negocios/casas-bahia-reestruturacao-tendencia/amp/",
+      "source": "InvestNews",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-18T09:00:00Z",
+      "updatedAt": "2026-08-18T09:00:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://media.investnews.com.br/uploads/2026/08/investnewsrenegociacaodividas.jpg"
+    },
+    {
       "id": "latest-510cfd31e57e01753d865e11",
       "title": "Mercado mantém projeções para inflação, juros, PIB e dólar em 2026",
-      "summary": "Atualizacao de ultima hora capturada em NoPontoSC.",
-      "details": "",
+      "summary": "Boletim Focus desta segunda-feira (17) mantém estimativas de IPCA em 5,02%, Selic em 13,75%, PIB em 1,98% e dólar em R$ 5,20",
+      "details": "Boletim Focus desta segunda-feira (17) mantém estimativas de IPCA em 5,02%, Selic em 13,75%, PIB em 1,98% e dólar em R$ 5,20",
       "url": "https://nopontosc.com.br/2026/08/18/mercado-mantem-projecoes-para-inflacao-juros-pib-e-dolar-em-2026/",
       "source": "NoPontoSC",
       "category": "latest",
@@ -521,7 +516,8 @@
       "publishedAt": "2026-08-18T08:34:37Z",
       "updatedAt": "2026-08-18T08:34:37Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://nopontosc.com.br/wp-content/uploads/2026/08/img_7609_1.jpg"
     },
     {
       "id": "funds-311cc9bf5876b897a662c8d4",
@@ -582,9 +578,9 @@
     {
       "id": "macro-c0f0ce9b1af61187a754db05",
       "title": "Perda de fôlego da economia abre espaço para corte maior dos juros em 2026",
-      "summary": "Estrutura da dívida pública brasileira cria um canal endógeno de retroalimentação fiscal de choques de juros excepcionalmente forte, que eleva o prêmio de risco do Tesouro para todas as maturidades",
-      "details": "Estrutura da dívida pública brasileira cria um canal endógeno de retroalimentação fiscal de choques de juros excepcionalmente forte, que eleva o prêmio de risco do Tesouro para todas as maturidades",
-      "url": "https://valor.globo.com/google/amp/opiniao/coluna/curando-a-doenca-infantil-do-real.ghtml",
+      "summary": "RNS Number : 1250R PSquared Asset Management AG 18 August 2026 FORM 8.3PUBLIC OPENING POSITION DISCLOSURE/DEALING DISCLOSURE BYA PERSON WITH INTERESTS IN RELEVANT SECURITIES REPRESENTING 1% OR MORERule 8.3 of the Takeover Code (the \"Code\")1. KEY INFORMATION2. POSITIONS OF THE PE…",
+      "details": "RNS Number : 1250R PSquared Asset Management AG 18 August 2026 FORM 8.3PUBLIC OPENING POSITION DISCLOSURE/DEALING DISCLOSURE BYA PERSON WITH INTERESTS IN RELEVANT SECURITIES REPRESENTING 1% OR MORERule 8.3 of the Takeover Code (the \"Code\")1. KEY INFORMATION2. POSITIONS OF THE PE…",
+      "url": "https://br.tradingview.com/news/reuters.com,2026-08-18:newsml_RSR1250Ra:0-reg-psquared-asset-mgmt-adv-medical-solutns-form-8-3_advanced-medical-solutions-group-plc/",
       "source": "UOL Economia",
       "category": "macro",
       "tags": [
@@ -596,7 +592,7 @@
       "updatedAt": "2026-08-18T08:30:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/I6-gAUFdJ1G3IrC6nUY4EgimRNU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/W/k/xlMFDnQvuyIPVxVJOADg/foto18opin-201-col-op1-a16.jpg"
+      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
     },
     {
       "id": "macro-e13cb2e2693598d2dbe06219",
@@ -622,7 +618,7 @@
       "title": "BofA upgrades earnings estimates for Nifty companies, shifts preference among financials to mid-sized lenders and NBFCs",
       "summary": "Atualizacao de fundos capturada em TradingView.",
       "details": "",
-      "url": "https://economia.uol.com.br/noticias/redacao/2026/08/18/ibc-br-x-selic.ghtm",
+      "url": "https://economia.uol.com.br/noticias/redacao/2026/08/18/ibc-br-x-selic.amp.htm",
       "source": "TradingView",
       "category": "funds",
       "tags": [
@@ -657,9 +653,9 @@
     {
       "id": "funds-c134e769d5ae3386f8093f47",
       "title": "Fundos de investimento crescem 12,9% e diversificam aplicações",
-      "summary": "RNS Number : 1250R PSquared Asset Management AG 18 August 2026 FORM 8.3PUBLIC OPENING POSITION DISCLOSURE/DEALING DISCLOSURE BYA PERSON WITH INTERESTS IN RELEVANT SECURITIES REPRESENTING 1% OR MORERule 8.3 of the Takeover Code (the \"Code\")1. KEY INFORMATION2. POSITIONS OF THE PE…",
-      "details": "RNS Number : 1250R PSquared Asset Management AG 18 August 2026 FORM 8.3PUBLIC OPENING POSITION DISCLOSURE/DEALING DISCLOSURE BYA PERSON WITH INTERESTS IN RELEVANT SECURITIES REPRESENTING 1% OR MORERule 8.3 of the Takeover Code (the \"Code\")1. KEY INFORMATION2. POSITIONS OF THE PE…",
-      "url": "https://br.tradingview.com/news/reuters.com,2026-08-18:newsml_RSR1250Ra:0-reg-psquared-asset-mgmt-adv-medical-solutns-form-8-3_advanced-medical-solutions-group-plc/",
+      "summary": "Estrutura da dívida pública brasileira cria um canal endógeno de retroalimentação fiscal de choques de juros excepcionalmente forte, que eleva o prêmio de risco do Tesouro para todas as maturidades",
+      "details": "Estrutura da dívida pública brasileira cria um canal endógeno de retroalimentação fiscal de choques de juros excepcionalmente forte, que eleva o prêmio de risco do Tesouro para todas as maturidades",
+      "url": "https://valor.globo.com/google/amp/opiniao/coluna/curando-a-doenca-infantil-do-real.ghtml",
       "source": "boca.com.br",
       "category": "funds",
       "tags": [
@@ -671,14 +667,14 @@
       "updatedAt": "2026-08-18T08:13:08Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://s.tradingview.com/static/images/illustrations/news-story.jpg"
+      "imageUrl": "https://s2-valor.glbimg.com/I6-gAUFdJ1G3IrC6nUY4EgimRNU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/W/k/xlMFDnQvuyIPVxVJOADg/foto18opin-201-col-op1-a16.jpg"
     },
     {
       "id": "companies-02e5da37792842e3731ee738",
       "title": "A ciência dos resultados das empresas inovadoras",
-      "summary": "Entenda como funcionam e descubra estratégias eficazes.",
-      "details": "Entenda como funcionam e descubra estratégias eficazes.",
-      "url": "https://boca.com.br/economia/fundos-de-investimento-crescem-12-9-e-diversificam-aplicacoes",
+      "summary": "Depois de analisar centenas de casos, os jurados da pesquisa Valor Inovação Brasil apontam os principais traços das empresas vencedoras",
+      "details": "Depois de analisar centenas de casos, os jurados da pesquisa Valor Inovação Brasil apontam os principais traços das empresas vencedoras",
+      "url": "https://valor.globo.com/inovacao/noticia/2026/08/18/a-ciencia-dos-resultados-das-empresas-inovadoras.ghtml",
       "source": "Valor Econômico",
       "category": "companies",
       "tags": [
@@ -690,14 +686,14 @@
       "updatedAt": "2026-08-18T08:12:34Z",
       "premium": true,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/05bcb3ccb60caa027ae604ef230176cf_858x483.jpg"
+      "imageUrl": "https://s2-valor.glbimg.com/pQa5CgXoMfxrIBCAq-4G_NP96Eo=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/z/h/OH3vRGSaKU40HSbp9Zcg/017-amandagracianoeconomista-fdc-foto-flavioferreira-divulgacao.jpg"
     },
     {
       "id": "macro-e95bbf1871a1d2f3c83be0d5",
       "title": "Curando a doença infantil do Real",
-      "summary": "Depois de analisar centenas de casos, os jurados da pesquisa Valor Inovação Brasil apontam os principais traços das empresas vencedoras",
-      "details": "Depois de analisar centenas de casos, os jurados da pesquisa Valor Inovação Brasil apontam os principais traços das empresas vencedoras",
-      "url": "https://valor.globo.com/inovacao/noticia/2026/08/18/a-ciencia-dos-resultados-das-empresas-inovadoras.ghtml",
+      "summary": "Entenda como funcionam e descubra estratégias eficazes.",
+      "details": "Entenda como funcionam e descubra estratégias eficazes.",
+      "url": "https://boca.com.br/economia/fundos-de-investimento-crescem-12-9-e-diversificam-aplicacoes",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -709,7 +705,7 @@
       "updatedAt": "2026-08-18T08:02:23Z",
       "premium": true,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/pQa5CgXoMfxrIBCAq-4G_NP96Eo=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/z/h/OH3vRGSaKU40HSbp9Zcg/017-amandagracianoeconomista-fdc-foto-flavioferreira-divulgacao.jpg"
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/05bcb3ccb60caa027ae604ef230176cf_858x483.jpg"
     },
     {
       "id": "funds-26f67ac082b57dd305fb392e",
@@ -1270,24 +1266,6 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-0dd50525ed5d926951de0148",
-      "title": "AgroBR traz compradores de 10 países à Expointer",
-      "summary": "Atualizacao de empresas capturada em AgroRevenda.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNVJqR3hHR3d0dXZTT3o2Q3Q2RGxUTFI0eHJrNWo5N1E1MnduMDZ6cnVGTlZobXE2Y0RqeDlWM0xIb2VFZl9tcVExRFpfM3N1azRYVDdLM1lIcklXSjVaS2s2cnYxVkFkbjB6SUw4aGtMOWt1bi1ZVGhLYWJwekl5THlDTmRWUWt5WXc4MDlkdw?oc=5",
-      "source": "AgroRevenda",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-17T20:35:20Z",
-      "updatedAt": "2026-08-17T20:35:20Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
       "id": "funds-c029c5fdb283ebf2681a32f9",
       "title": "Fitness Brasil Expo espera movimentar R$ 1 bilhão e reforça avanço do mercado fitness no país",
       "summary": "Atualizacao de fundos capturada em Times Brasil | CNBC.",
@@ -1306,12 +1284,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "companies-2d0e45edf5b93ddcf98a7f0f",
+      "id": "companies-63fd8b14179167238f279d46",
       "title": "Inadimplência empresarial bate recorde e chega a 9,1 milhões de CNPJs",
-      "summary": "Atualizacao de empresas capturada em Diário do Poder.",
+      "summary": "Atualizacao de empresas capturada em diariodopoder.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbDZKaDdoaFJrWl9mcTREclFRTnJtVXp0MHBsQ1dPVmRHak1Fbnd3VkNqNDFUT1VQUDFVcVdVTTNDNWRCQnBQUHJic2FMdnV0M2t5TnVwMHlRMHg4V1lUUnpEemlZd1k1SFlQak5ZMHdpTFFFZGVqdUgxTGc5NXpqNEJ1ZmllWF9vX2M5YjY5OU9JVEc5ODZrTnJmMFBIdm5waDVaT2lFXy1KOFZRWXlBMjFpdHhMUldNZnFjM0xsbXA0eDlQR2N6Q9IByAFBVV95cUxPbDZKaDdoaFJrWl9mcTREclFRTnJtVXp0MHBsQ1dPVmRHak1Fbnd3VkNqNDFUT1VQUDFVcVdVTTNDNWRCQnBQUHJic2FMdnV0M2t5TnVwMHlRMHg4V1lUUnpEemlZd1k1SFlQak5ZMHdpTFFFZGVqdUgxTGc5NXpqNEJ1ZmllWF9vX2M5YjY5OU9JVEc5ODZrTnJmMFBIdm5waDVaT2lFXy1KOFZRWXlBMjFpdHhMUldNZnFjM0xsbXA0eDlQR2N6Qw?oc=5",
-      "source": "Diário do Poder",
+      "source": "diariodopoder.com.br",
       "category": "companies",
       "tags": [
         "empresas",
@@ -1356,6 +1334,24 @@
       ],
       "publishedAt": "2026-08-17T19:40:00Z",
       "updatedAt": "2026-08-17T19:40:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "funds-8abb7f9d693432f9229529fb",
+      "title": "Na Money Week 2026, SRM Asset reforça papel do crédito estruturado no financiamento das empresas",
+      "summary": "Atualizacao de fundos capturada em EuQueroInvestir.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYnppNXdqMnVUdjZUc092QWtrZXplVHJTaE5MVERZU0tlUUZOaVVaaExTb2tOZW5KM01GV0twYlJaNC16NnJleUV4LVktY1V5UmVrY1AxLXBVdVFOa0RROVVudWN5VnNKRnJMbFJEcUtFNHRTeGZmNVFjSTZLdE9tZTZ4WUVJMzZBZ2JabQ?oc=5",
+      "source": "EuQueroInvestir",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-17T19:34:02Z",
+      "updatedAt": "2026-08-17T19:34:02Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
