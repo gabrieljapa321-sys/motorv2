@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-19T15:57:01Z",
-  "generatedAt": "2026-08-19T15:57:01Z",
+  "updatedAt": "2026-08-19T16:28:27Z",
+  "generatedAt": "2026-08-19T16:28:27Z",
   "categories": [
     {
       "id": "all",
@@ -25,6 +25,10 @@
   ],
   "sources": [
     {
+      "id": "a-gazeta",
+      "label": "A Gazeta"
+    },
+    {
       "id": "acheiusa",
       "label": "AcheiUSA"
     },
@@ -39,6 +43,10 @@
     {
       "id": "bnamericas",
       "label": "BNamericas"
+    },
+    {
+      "id": "boca-com-br",
+      "label": "boca.com.br"
     },
     {
       "id": "bpmoney",
@@ -89,8 +97,8 @@
       "label": "G1"
     },
     {
-      "id": "icl-not-cias",
-      "label": "ICL Notícias"
+      "id": "iclnoticias-com-br",
+      "label": "iclnoticias.com.br"
     },
     {
       "id": "idealista",
@@ -109,6 +117,14 @@
       "label": "ISTOÉ DINHEIRO"
     },
     {
+      "id": "jornal-de-bras-lia",
+      "label": "Jornal de Brasília"
+    },
+    {
+      "id": "jornal-ggn",
+      "label": "Jornal GGN"
+    },
+    {
       "id": "meio-news",
       "label": "Meio News"
     },
@@ -117,8 +133,8 @@
       "label": "Ministério Público do Estado do Maranhão"
     },
     {
-      "id": "money-times",
-      "label": "Money Times"
+      "id": "moneytimes-com-br",
+      "label": "moneytimes.com.br"
     },
     {
       "id": "monitor-mercantil",
@@ -141,10 +157,6 @@
       "label": "Portal ERP"
     },
     {
-      "id": "portal-lago-sul",
-      "label": "Portal Lago Sul"
-    },
-    {
       "id": "radar-digital-bras-lia",
       "label": "RADAR DIGITAL BRASÍLIA"
     },
@@ -157,20 +169,20 @@
       "label": "Seu Dinheiro"
     },
     {
+      "id": "sincovaga-not-cias",
+      "label": "Sincovaga Notícias"
+    },
+    {
       "id": "ti-inside-online",
       "label": "TI INSIDE Online"
     },
     {
-      "id": "tradingkey-com",
-      "label": "tradingkey.com"
+      "id": "tradingkey",
+      "label": "TradingKey"
     },
     {
       "id": "tradingview",
       "label": "TradingView"
-    },
-    {
-      "id": "transporte-moderno",
-      "label": "Transporte Moderno"
     },
     {
       "id": "tribuna-do-agreste",
@@ -185,8 +197,8 @@
       "label": "Valor Econômico"
     },
     {
-      "id": "valor-investe",
-      "label": "Valor Investe"
+      "id": "valorinveste-globo-com",
+      "label": "valorinveste.globo.com"
     },
     {
       "id": "vietnam-vn",
@@ -199,11 +211,180 @@
   ],
   "items": [
     {
-      "id": "funds-5342a1bea56a788154890e0a",
-      "title": "Itaú Asset fecha parceria com Vanguard, gigante dos ETFs, e mexe no SPXI11; veja o que muda para o investidor",
-      "summary": "Atualizacao de fundos capturada em Seu Dinheiro.",
+      "id": "latest-9ed77ffd9456bb5267357662",
+      "title": "Taxas de juros caem com redução de pressões do governo dos EUA",
+      "summary": "Juros altos, crédito restrito e famílias endividadas pressionam redes tradicionais, enquanto grandes plataformas digitais ganham espaço. Especialistas veem uma espécie de “seleção empresarial” nos próximos anos. Os pedidos de recuperação judicial da Casas Bahia e da Marabraz, anu",
+      "details": "Juros altos, crédito restrito e famílias endividadas pressionam redes tradicionais, enquanto grandes plataformas digitais ganham espaço. Especialistas veem uma espécie de “seleção empresarial” nos próximos anos. Os pedidos de recuperação judicial da Casas Bahia e da Marabraz, anunciados no último domingo (16), são novo",
+      "url": "https://www.sincovaganoticias.com.br/crise-do-varejo-por-que-algumas-gigantes-enfrentam-dificuldades-e-outras-seguem-crescendo/",
+      "source": "boca.com.br",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-19T16:20:07Z",
+      "updatedAt": "2026-08-19T16:20:07Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.sincovaganoticias.com.br/wp-content/uploads/2026/03/95128.jpg"
+    },
+    {
+      "id": "latest-ffe6ac88c45335fbc61c613d",
+      "title": "Crise do varejo? Por que algumas gigantes enfrentam dificuldades e outras seguem crescendo",
+      "summary": "O ES pode ser visto como um exemplo expressivo da forma como segmentos da sociedade brasileira aderiram ao ideário neoliberal.",
+      "details": "O ES pode ser visto como um exemplo expressivo da forma como segmentos da sociedade brasileira aderiram ao ideário neoliberal.",
+      "url": "https://jornalggn.com.br/artigos/villaschi-equilibrio-fiscal-sem-coesao-social-a-gestao-capixaba/",
+      "source": "Sincovaga Notícias",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-19T16:18:00Z",
+      "updatedAt": "2026-08-19T16:18:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://jornalggn.com.br/wp-content/uploads/2026/08/henri-matisse-natureza_morta_com_tapete_vermelho_matisse_c.jpg"
+    },
+    {
+      "id": "macro-c3fe309219e282c724e8a2e1",
+      "title": "Villaschi: Equilíbrio fiscal sem coesão social, a gestão capixaba?",
+      "summary": "Venilton Tadini, presidente executivo da ABDIB foi um dos palestrantes do quarto encontro do ‘Brasil Adiante’ realizado nesta quarta-feira, 19",
+      "details": "Venilton Tadini, presidente executivo da ABDIB foi um dos palestrantes do quarto encontro do ‘Brasil Adiante’ realizado nesta quarta-feira, 19",
+      "url": "https://www.estadao.com.br/em-alta/economia/regulacao-energetica-e-a-questao-fiscal-precisam-ser-tratadas-pelo-proximo-presidente-diz-tadini/",
+      "source": "Jornal GGN",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T16:17:00Z",
+      "updatedAt": "2026-08-19T16:17:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/EBMSVIB4DVCBFITP2M7MOJEWHM.jpeg?quality=80&auth=a13d86099ff8afdb2684907fb760b82c791a1b117922c569c285604f19d07224&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "macro-3fc65f26b8b5fe8b513ae780",
+      "title": "Quando o risco fiscal vira certeza para a mineração do Chile",
+      "summary": "Governo americano sinaliza tolerância a juros elevados.",
+      "details": "Governo americano sinaliza tolerância a juros elevados.",
+      "url": "https://boca.com.br/mercado-financeiro/taxas-de-juros-caem-com-reducao-de-pressoes-do-governo-dos-eua",
+      "source": "BNamericas",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T16:16:17Z",
+      "updatedAt": "2026-08-19T16:16:17Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/2667eccd170c6fe7078549fe4eb05ca1_858x483.jpg"
+    },
+    {
+      "id": "macro-e7378a6a2f5346c39bdf1296",
+      "title": "Dólar cai a R$ 5,17 e Bolsa sobe 2%, com apoio de ações de Petrobras e Vale",
+      "summary": "Atualizacao de macro capturada em UOL Economia.",
       "details": "",
-      "url": "https://monitormercantil.com.br/tesouro-dos-eua-vai-dobrar-suas-recompras-de-titulos-de-longo-prazo/",
+      "url": "https://www.bnamericas.com/pt/noticias/quando-o-risco-fiscal-vira-certeza-para-a-mineracao-do-chile",
+      "source": "UOL Economia",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T16:08:25Z",
+      "updatedAt": "2026-08-19T16:08:25Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-f88086e1e7574e8c91582191",
+      "title": "‘Regulação energética e a questão fiscal precisam ser tratadas pelo próximo presidente’, diz Tadini",
+      "summary": "Atualizacao de macro capturada em Estadão.",
+      "details": "",
+      "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/08/19/dolar-bolsa-abre-hoje-19-de-agosto-de-2026.ghtm",
+      "source": "Estadão",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T16:04:14Z",
+      "updatedAt": "2026-08-19T16:04:14Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "funds-501f9c9cd8dadf9e6af34fcf",
+      "title": "Itaú se une à gigante Vanguard e muda ETF que segue o S&P 500; o que acontece com o SPXI11?",
+      "summary": "Gestora brasileira busca ampliar as estratégias de diversificação internacional disponíveis ao investidor brasileiro",
+      "details": "Gestora brasileira busca ampliar as estratégias de diversificação internacional disponíveis ao investidor brasileiro",
+      "url": "https://www.estadao.com.br/einvestidor/direto-da-faria-lima/itau-se-une-a-gigante-vanguard-e-muda-etf-que-segue-o-sp-500-o-que-acontece-com-o-spxi11/",
+      "source": "Estadão",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-19T16:02:00Z",
+      "updatedAt": "2026-08-19T16:02:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/ZIRZ4U74OJJCFI24LEKQJEQ6BI.jpg?quality=80&auth=8a06be5028c3da83388df26163fb9f3d0c0699b5e0c746330a3bb5e5749b7686&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "companies-afa752cf1a8ff7a3fe7b2a3f",
+      "title": "Antes das ferramentas, vem o diagnóstico: por que a maioria das empresas inverte esta ordem?",
+      "summary": "Empresas brasileiras investem em cibersegurança sem diagnóstico prévio, resultando em ineficácia e vulnerabilidades. Apenas 5% atingem maturidade.",
+      "details": "Empresas brasileiras investem em cibersegurança sem diagnóstico prévio, resultando em ineficácia e vulnerabilidades. Apenas 5% atingem maturidade.",
+      "url": "https://bpmoney.com.br/bpm-escuta/antes-das-ferramentas-vem-o-diagnostico-por-que-a-maioria-das-empresas-inverte-esta-ordem/",
+      "source": "BPMoney",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-19T16:00:59Z",
+      "updatedAt": "2026-08-19T16:00:59Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://uploads.bpmoney.com.br/2026/08/2151998495-1320x924.jpg"
+    },
+    {
+      "id": "macro-b3088dc9d603630370947559",
+      "title": "15 anos de solidez fiscal: o valor da gestão pública profissional no ES",
+      "summary": "Segurança institucional é o que credencia o Espírito Santo perante órgãos de controle, instituições financeiras e o setor produtivo, consolidando o Estado como um ambiente seguro e atraente para novos investimentos",
+      "details": "Segurança institucional é o que credencia o Espírito Santo perante órgãos de controle, instituições financeiras e o setor produtivo, consolidando o Estado como um ambiente seguro e atraente para novos investimentos",
+      "url": "https://www.agazeta.com.br/artigos/15-anos-de-solidez-fiscal-o-valor-da-gestao-publica-profissional-no-es-0826",
+      "source": "A Gazeta",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T16:00:00Z",
+      "updatedAt": "2026-08-19T16:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://netdeal.com.br/api/images/proxy?quality=100&width=1200&src=https://www.netdeal.com.br/api/images/producao.spayce.com.br/1774912453837_2019_10_16_calculadora_79021_article.jpg"
+    },
+    {
+      "id": "funds-9154b0c1cf10cc4482555723",
+      "title": "Itaú Asset fecha parceria com Vanguard, gigante dos ETFs, e mexe no SPXI11; veja o que muda para o investidor",
+      "summary": "Aliança estratégica da Itaú Asset já traz mudanças ao SPXI11 e pode resultar em novos produtos para o investidor brasileiro",
+      "details": "Aliança estratégica da Itaú Asset já traz mudanças ao SPXI11 e pode resultar em novos produtos para o investidor brasileiro",
+      "url": "https://www.seudinheiro.com/2026/economia/itau-asset-fecha-parceria-com-vanguard-gigante-dos-etfs-e-mexe-no-spxi11-veja-o-que-muda-para-o-investidor-miql/",
       "source": "Seu Dinheiro",
       "category": "funds",
       "tags": [
@@ -211,18 +392,38 @@
         "asset",
         "fiis"
       ],
-      "publishedAt": "2026-08-19T15:54:52Z",
-      "updatedAt": "2026-08-19T15:54:52Z",
+      "publishedAt": "2026-08-19T15:54:36Z",
+      "updatedAt": "2026-08-19T15:54:36Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://www.seudinheiro.com/uploads/2026/08/etf-fundo-de-indice-investimentos.jpg"
     },
     {
-      "id": "latest-747688c2a7e771424afa3769",
-      "title": "Mercado pressiona com bolsa, dólar e juros, e trabalhador paga a conta. Confira por Deborah Magagna",
-      "summary": "Atualizacao de ultima hora capturada em ICL Notícias.",
+      "id": "latest-b0e72c33877cb908ae7a99b0",
+      "title": "O que está por trás do salto de 2% do Ibovespa?",
+      "summary": "Atualizacao de ultima hora capturada em moneytimes.com.br.",
       "details": "",
       "url": "https://iclnoticias.com.br/video/mercado-pressiona-com-bolsa-dolar-e-juros-e-trabalhador-paga-a-conta-confira-por-deborah-magagna/",
-      "source": "ICL Notícias",
+      "source": "moneytimes.com.br",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-19T15:51:00Z",
+      "updatedAt": "2026-08-19T15:51:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://iclnoticias.com.br/api/ajax/"
+    },
+    {
+      "id": "latest-0377828f18df5cc71de7d0e0",
+      "title": "Mercado pressiona com bolsa, dólar e juros, e trabalhador paga a conta. Confira por Deborah Magagna",
+      "summary": "Ibovespa sobe mais de 2% e ganh 4 mil pontos com sinais de volta do investidor estrangeiro após medida do governo dos EUA",
+      "details": "Ibovespa sobe mais de 2% e ganh 4 mil pontos com sinais de volta do investidor estrangeiro após medida do governo dos EUA",
+      "url": "https://www.moneytimes.com.br/o-que-esta-por-tras-do-salto-de-2-do-ibovespa-lils/",
+      "source": "iclnoticias.com.br",
       "category": "latest",
       "tags": [
         "mercado",
@@ -233,14 +434,14 @@
       "updatedAt": "2026-08-19T15:50:25Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://iclnoticias.com.br/api/ajax/"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/02/mercado-alta.jpg"
     },
     {
       "id": "companies-08b2a878ddc4efc26ca6e85c",
       "title": "Plano de diversificação busca novos mercados para empresas afetadas pelo tarifaço",
-      "summary": "Aliança estratégica da Itaú Asset já traz mudanças ao SPXI11 e pode resultar em novos produtos para o investidor brasileiro",
-      "details": "Aliança estratégica da Itaú Asset já traz mudanças ao SPXI11 e pode resultar em novos produtos para o investidor brasileiro",
-      "url": "https://www.seudinheiro.com/2026/economia/itau-asset-fecha-parceria-com-vanguard-gigante-dos-etfs-e-mexe-no-spxi11-veja-o-que-muda-para-o-investidor-miql/",
+      "summary": "Plano de R$ 210 milhões da ApexBrasil vai auxiliar empresas brasileiras a expandir para novos mercados após as tarifas dos EUA.",
+      "details": "Plano de R$ 210 milhões da ApexBrasil vai auxiliar empresas brasileiras a expandir para novos mercados após as tarifas dos EUA.",
+      "url": "https://diariodocomercio.com.br/economia/plano-diversificacao-exportacoes-apexbrasil/",
       "source": "Diário do Comércio",
       "category": "companies",
       "tags": [
@@ -252,14 +453,14 @@
       "updatedAt": "2026-08-19T15:47:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://www.seudinheiro.com/uploads/2026/08/etf-fundo-de-indice-investimentos.jpg"
+      "imageUrl": "https://diariodocomercio.com.br/wp-content/uploads/2026/05/porto-exportacoes.jpg"
     },
     {
       "id": "macro-314db2231e75c0c4ab04ff9f",
       "title": "Actionsys leva SAP Cloud ERP, SAP Business One e automação fiscal ao ERP Summit Brasil 2027",
-      "summary": "Plano de R$ 210 milhões da ApexBrasil vai auxiliar empresas brasileiras a expandir para novos mercados após as tarifas dos EUA.",
-      "details": "Plano de R$ 210 milhões da ApexBrasil vai auxiliar empresas brasileiras a expandir para novos mercados após as tarifas dos EUA.",
-      "url": "https://diariodocomercio.com.br/economia/plano-diversificacao-exportacoes-apexbrasil/",
+      "summary": "Doglas Almeida conta como deixou a indústria automotiva após 15 anos para seguir carreira como assessor de investimentos na SVN",
+      "details": "Doglas Almeida conta como deixou a indústria automotiva após 15 anos para seguir carreira como assessor de investimentos na SVN",
+      "url": "https://bpmoney.com.br/mercado/de-executivo-da-industria-a-assessor-de-investimentos-doglas-almeida-conta-como-mudou-de-carreira/",
       "source": "Portal ERP",
       "category": "macro",
       "tags": [
@@ -271,7 +472,7 @@
       "updatedAt": "2026-08-19T15:46:11Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://diariodocomercio.com.br/wp-content/uploads/2026/05/porto-exportacoes.jpg"
+      "imageUrl": "https://uploads.bpmoney.com.br/2026/08/social-chatgpt-image-19-de-ago-de-2026-12_21_13-417938.jpg"
     },
     {
       "id": "macro-d2ef2da71d19d30386ca69c0",
@@ -293,29 +494,11 @@
       "imageUrl": "https://portalerp.com/uploads/articles/uGH1di2XEDk8UffSdi8l6.webp"
     },
     {
-      "id": "macro-d4c294dd4c9124a22de957a9",
-      "title": "Quando o risco fiscal vira certeza para a mi...",
-      "summary": "Atualizacao de macro capturada em BNamericas.",
-      "details": "",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/prazo-para-solicitacao-pelo-simples-nacional-sera-em-setembro-de-2026",
-      "source": "BNamericas",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T15:37:15Z",
-      "updatedAt": "2026-08-19T15:37:15Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "macro-748abbe62a2f0d04533e5d0e",
       "title": "‘Se juros caírem, é possível dobrar o investimento em infraestrutura’, diz diretora do BNDES",
-      "summary": "Atualizacao de macro capturada em Estadão.",
-      "details": "",
-      "url": "https://www.bnamericas.com/pt/noticias/quando-o-risco-fiscal-vira-certeza-para-a-mineracao-do-chile",
+      "summary": "Durante o quarto encontro do ‘Brasil Adiante’ realizado nesta quarta-feira, 19, Luciana Costa defendeu ainda a importância de fortalecer Marco e agências regulatórias, fazer o ajuste fiscal e reduzir juros e atrair equity",
+      "details": "Durante o quarto encontro do ‘Brasil Adiante’ realizado nesta quarta-feira, 19, Luciana Costa defendeu ainda a importância de fortalecer Marco e agências regulatórias, fazer o ajuste fiscal e reduzir juros e atrair equity",
+      "url": "https://www.estadao.com.br/economia/se-juros-cairem-e-possivel-dobrar-o-investimento-em-infraestrutura-diz-diretora-do-bndes/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -326,14 +509,15 @@
       "publishedAt": "2026-08-19T15:35:00Z",
       "updatedAt": "2026-08-19T15:35:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/EBMSVIB4DVCBFITP2M7MOJEWHM.jpeg?quality=80&auth=a13d86099ff8afdb2684907fb760b82c791a1b117922c569c285604f19d07224&width=1200&height=630&focal=728,781"
     },
     {
       "id": "latest-7d7abf640cb01bd6fca264b2",
       "title": "Tesouro dos EUA vai dobrar suas recompras de títulos de longo prazo",
-      "summary": "Durante o quarto encontro do ‘Brasil Adiante’ realizado nesta quarta-feira, 19, Luciana Costa defendeu ainda a importância de fortalecer Marco e agências regulatórias, fazer o ajuste fiscal e reduzir juros e atrair equity",
-      "details": "Durante o quarto encontro do ‘Brasil Adiante’ realizado nesta quarta-feira, 19, Luciana Costa defendeu ainda a importância de fortalecer Marco e agências regulatórias, fazer o ajuste fiscal e reduzir juros e atrair equity",
-      "url": "https://www.estadao.com.br/economia/se-juros-cairem-e-possivel-dobrar-o-investimento-em-infraestrutura-diz-diretora-do-bndes/",
+      "summary": "Regulamentação da Lei Complementar nº 214/2025 trouxe mudanças importantes nas regras de opção pelo Simples Nacional, que NÃO SERÁ MAIS REALIZADA NO MÊS DE JANEIRO.",
+      "details": "Regulamentação da Lei Complementar nº 214/2025 trouxe mudanças importantes nas regras de opção pelo Simples Nacional, que NÃO SERÁ MAIS REALIZADA NO MÊS DE JANEIRO.",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/prazo-para-solicitacao-pelo-simples-nacional-sera-em-setembro-de-2026",
       "source": "Monitor Mercantil",
       "category": "latest",
       "tags": [
@@ -345,14 +529,14 @@
       "updatedAt": "2026-08-19T15:25:53Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/EBMSVIB4DVCBFITP2M7MOJEWHM.jpeg?quality=80&auth=a13d86099ff8afdb2684907fb760b82c791a1b117922c569c285604f19d07224&width=1200&height=630&focal=728,781"
+      "imageUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/prazo-para-solicitacao-pelo-simples-nacional-sera-em-setembro-de-2026/image-8.png/@@images/ebf06032-aa16-4662-8955-53c30869ab34.png"
     },
     {
       "id": "latest-1c59305cf78164287c3e58c3",
       "title": "De executivo da indústria a assessor de investimentos: Doglas Almeida conta como mudou de carreira",
-      "summary": "Doglas Almeida conta como deixou a indústria automotiva após 15 anos para seguir carreira como assessor de investimentos na SVN",
-      "details": "Doglas Almeida conta como deixou a indústria automotiva após 15 anos para seguir carreira como assessor de investimentos na SVN",
-      "url": "https://bpmoney.com.br/mercado/de-executivo-da-industria-a-assessor-de-investimentos-doglas-almeida-conta-como-mudou-de-carreira/",
+      "summary": "Atualizacao de ultima hora capturada em BPMoney.",
+      "details": "",
+      "url": "https://monitormercantil.com.br/tesouro-dos-eua-vai-dobrar-suas-recompras-de-titulos-de-longo-prazo/",
       "source": "BPMoney",
       "category": "latest",
       "tags": [
@@ -363,8 +547,7 @@
       "publishedAt": "2026-08-19T15:22:43Z",
       "updatedAt": "2026-08-19T15:22:43Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://uploads.bpmoney.com.br/2026/08/social-chatgpt-image-19-de-ago-de-2026-12_21_13-417938.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-bdc3a332e910a6f0bcd48672",
@@ -384,6 +567,25 @@
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
       "imageUrl": "https://bpmoney.com.br/wp-content/uploads/2025/01/YEg7xqum-jbs-1.webp"
+    },
+    {
+      "id": "latest-f8a8dd26eb88f348d6eeb09b",
+      "title": "US$ 9,6 trilhões por dia: O mercado gigantesco que poucos brasileiros conhecem",
+      "summary": "O mercado internacional de câmbio movimentou, em média, US$9,6 trilhões por dia em abril de 2025, acima dos US$7,5 trilhões registrados em 2022",
+      "details": "O mercado internacional de câmbio movimentou, em média, US$9,6 trilhões por dia em abril de 2025, acima dos US$7,5 trilhões registrados em 2022",
+      "url": "https://jornaldebrasilia.com.br/noticias/economia/us-96-trilhoes-por-dia-o-mercado-gigantesco-que-poucos-brasileiros-conhecem/",
+      "source": "Jornal de Brasília",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-19T15:16:54Z",
+      "updatedAt": "2026-08-19T15:16:54Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2026/08/19121537/Captura-de-Tela-2026-08-19-as-12.15.14.png"
     },
     {
       "id": "macro-ae8d83358611867a0044e052",
@@ -407,9 +609,9 @@
     {
       "id": "latest-a0cd8c4aed692b09e3c73152",
       "title": "Evento debate eficiência e tecnologia no mercado financeiro",
-      "summary": "Atualizacao de ultima hora capturada em RADAR DIGITAL BRASÍLIA.",
-      "details": "",
-      "url": "https://economia.uol.com.br/cotacoes/noticias/redacao/2026/08/19/dolar-bolsa-abre-hoje-19-de-agosto-de-2026.ghtm",
+      "summary": "Futuro das aposentadorias passou a depender do humor do mercado financeiro. Foto: Reprodução Por José Menezes Gomes, Maria Lucia Fattorelli e Rodrigo Ávila A privatização da Previdência Social na América Latina e a submissão ao regime de capitalização individual tiveram início no",
+      "details": "Futuro das aposentadorias passou a depender do humor do mercado financeiro. Foto: Reprodução Por José Menezes Gomes, Maria Lucia Fattorelli e Rodrigo Ávila A privatização da Previdência Social na América Latina e a submissão ao regime de capitalização individual tiveram início nos anos 1970, no Chile, durante a ditadur",
+      "url": "https://pontodepauta.com/2026/08/19/a-crise-do-banco-master-e-sua-repercussao-sobre-os-regimes-proprios-de-previdencia/",
       "source": "RADAR DIGITAL BRASÍLIA",
       "category": "latest",
       "tags": [
@@ -420,32 +622,15 @@
       "publishedAt": "2026-08-19T15:01:29Z",
       "updatedAt": "2026-08-19T15:01:29Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-9bb408e3ddb9e45919b313f0",
-      "title": "Dólar cai a R$ 5,17 e Bolsa sobe 2%, com apoio de ações de Petrobras e Vale",
-      "summary": "Atualizacao de macro capturada em UOL Economia.",
-      "details": "",
-      "url": "https://portal.comunique-se.com.br/335111-evento-debate-eficiencia-e-tecnologia-no-mercado-financeiro/",
-      "source": "UOL Economia",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T14:59:28Z",
-      "updatedAt": "2026-08-19T14:59:28Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://pontodepauta.com/wp-content/uploads/2026/08/Atricon-2025-11-23T074359.647-1.jpg"
     },
     {
       "id": "latest-ebd10ece887c0d61b9cb07d5",
       "title": "Evento debate eficiência e tecnologia no mercado financeiro",
-      "summary": "Atualizacao de ultima hora capturada em Portal Comunique-se.",
-      "details": "",
-      "url": "https://radardigitalbrasilia.com.br/noticias-corporativas-dino/335111-evento-debate-eficiencia-e-tecnologia-no-mercado-financeiro/",
+      "summary": "O Cuore Day, realizado em 18 de agosto no State Innovation Center, em São Paulo, reuniu clientes, parceiros e especialistas da Cuore Labs para analisar a modernização dos fluxos operacionais e jurídicos do mercado de capitais, apresentando duas novas ferramentas de gestão documen",
+      "details": "O Cuore Day, realizado em 18 de agosto no State Innovation Center, em São Paulo, reuniu clientes, parceiros e especialistas da Cuore Labs para analisar a modernização dos fluxos operacionais e jurídicos do mercado de capitais, apresentando duas novas ferramentas de gestão documental e debatendo tendências de automação ",
+      "url": "https://portal.comunique-se.com.br/335111-evento-debate-eficiencia-e-tecnologia-no-mercado-financeiro/",
       "source": "Portal Comunique-se",
       "category": "latest",
       "tags": [
@@ -456,14 +641,15 @@
       "publishedAt": "2026-08-19T14:56:56Z",
       "updatedAt": "2026-08-19T14:56:56Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://api.dino.com.br/v2/news/tr/335111?partnerId=33"
     },
     {
       "id": "latest-222907727f2e40cbf3ce7c7e",
       "title": "A crise do Banco Master e sua repercussão sobre os regimes próprios de previdência",
-      "summary": "Futuro das aposentadorias passou a depender do humor do mercado financeiro. Foto: Reprodução Por José Menezes Gomes, Maria Lucia Fattorelli e Rodrigo Ávila A privatização da Previdência Social na América Latina e a submissão ao regime de capitalização individual tiveram início no",
-      "details": "Futuro das aposentadorias passou a depender do humor do mercado financeiro. Foto: Reprodução Por José Menezes Gomes, Maria Lucia Fattorelli e Rodrigo Ávila A privatização da Previdência Social na América Latina e a submissão ao regime de capitalização individual tiveram início nos anos 1970, no Chile, durante a ditadur",
-      "url": "https://pontodepauta.com/2026/08/19/a-crise-do-banco-master-e-sua-repercussao-sobre-os-regimes-proprios-de-previdencia/",
+      "summary": "O Cuore Day, realizado em 18 de agosto no State Innovation Center, em São Paulo, reuniu clientes, parceiros e especialistas da Cuore Labs para analisar a modernização dos fluxos operacionais e jurídicos do mercado de capitais, apresentando duas novas ferramentas de gestão documen",
+      "details": "O Cuore Day, realizado em 18 de agosto no State Innovation Center, em São Paulo, reuniu clientes, parceiros e especialistas da Cuore Labs para analisar a modernização dos fluxos operacionais e jurídicos do mercado de capitais, apresentando duas novas ferramentas de gestão documental e debatendo tendências de automação ",
+      "url": "https://radardigitalbrasilia.com.br/noticias-corporativas-dino/335111-evento-debate-eficiencia-e-tecnologia-no-mercado-financeiro/",
       "source": "ponto de pauta - pará",
       "category": "latest",
       "tags": [
@@ -475,7 +661,7 @@
       "updatedAt": "2026-08-19T14:45:51Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://pontodepauta.com/wp-content/uploads/2026/08/Atricon-2025-11-23T074359.647-1.jpg"
+      "imageUrl": "https://api.dino.com.br/v2/news/tr/335111?partnerId=3677"
     },
     {
       "id": "latest-68e26d13ee327f8e9bd000e8",
@@ -537,9 +723,9 @@
     {
       "id": "macro-6ffec06221f1dfe2f8df7263",
       "title": "Dívida do Brasil sobe: juros pesam quase o dobro do efeito do PIB",
-      "summary": "Juros com vencimento acima de 10 anos nos EUA haviam atingido o maior nível em anos. Agora, as taxas recuam em um só dia a maior parte do que ganharam no mês de agosto",
-      "details": "Juros com vencimento acima de 10 anos nos EUA haviam atingido o maior nível em anos. Agora, as taxas recuam em um só dia a maior parte do que ganharam no mês de agosto",
-      "url": "https://valorinveste.globo.com/produtos/renda-fixa/tesouro-direto/noticia/2026/08/19/taxas-do-tesouro-direto-recuam-com-intervencao-do-governo-americano-no-mercado-de-juros-futuros.ghtml",
+      "summary": "Juros ampliam dívida no Brasil e pesam quase o dobro do efeito redutor do PIB. Dívida bruta chegou a 81,9% do PIB em junho de 2026.",
+      "details": "Juros ampliam dívida no Brasil e pesam quase o dobro do efeito redutor do PIB. Dívida bruta chegou a 81,9% do PIB em junho de 2026.",
+      "url": "https://economicnewsbrasil.com.br/2026/08/19/juros-ampliam-divida-brasil/",
       "source": "Economic News Brasil",
       "category": "macro",
       "tags": [
@@ -551,15 +737,15 @@
       "updatedAt": "2026-08-19T14:29:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor-investe.glbimg.com/hUhkHkhb7SiWRFwDtlcnzAapK6A=/2121x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_f035dd6fd91c438fa04ab718d608bbaa/internal_photos/bs/2026/C/l/nH8js9STe4wTWp5hBTpA/gettyimages-184972125.jpg"
+      "imageUrl": "https://economicnewsbrasil.com.br/wp-content/uploads/2026/08/Juros-e-divida-publica-brasileira.png"
     },
     {
-      "id": "latest-2282644986dae8620d55fe4f",
+      "id": "latest-e9b077f2a6f21fb679e517bc",
       "title": "Taxas do Tesouro Direto recuam com intervenção do governo americano no mercado de juros futuros",
-      "summary": "Juros ampliam dívida no Brasil e pesam quase o dobro do efeito redutor do PIB. Dívida bruta chegou a 81,9% do PIB em junho de 2026.",
-      "details": "Juros ampliam dívida no Brasil e pesam quase o dobro do efeito redutor do PIB. Dívida bruta chegou a 81,9% do PIB em junho de 2026.",
-      "url": "https://economicnewsbrasil.com.br/2026/08/19/juros-ampliam-divida-brasil/",
-      "source": "Valor Investe",
+      "summary": "Atualizacao de ultima hora capturada em valorinveste.globo.com.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxONWMwQ3N2N3lLOXQ5RHVFaFhWOG9NUDlQYzNxVFB1YS1vT0Z3cEJXb2N1bWtUU2I5QnZBd0YwdmFlei1lb3BPeWNSZGJCMUJ3Mi1Hd1JVd3Zrdm1jWkpDUDJYeHR5TTFIR0RndERLYWExWHV5SkpMVDZMcDUtVHRzWVV1V2J6SXdtdkhXNk5qVVZmZWMxS216RjZvaGx4TW1ZaXRub1RsMWVlZzVSUVFTcGlpWmZZMmRwWWVYekRqTzNXQ1FEZGpReElPUFhhTllTS0p6aWY2NlNENHpoSmVJWHl1cllhT1FOeWJzRHhWV1hjVF9fX2I5bnpDWG55TlB4bFRKT3cybXo4MlVWclRfeHY0TXXSAaMCQVVfeXFMTkRCTXNnejNDX19OdUdlRkgxbzhDU2F1LVFGSmxiUHZkRGI1OTMyaDB3c00tSC1uSnZRSHVjd25SaFFzUEtRYVlkQmVDbVJpeVU3UXVIS0VmWGhHTjZ0Y2NROTBtSm0wOHRqVU14NURaSEllaGpWcXRaYVBwMkRTckhnVDVMWGV4R0VjTVFyckFzNHI0MGdwdlJKQnE0eUY2U3M5VzZySzA5bVpacm43eTV4ZVY0bmhxYmV5b01oUFhqTWhtWlQyai1zT21iLXVmVjkzQUl3ZHNxMFdvelYtTUFKNWlQT2NqbU9kaWl1Y1NXdFdOdGg3eFYtbnhoY1ZIRFhJZGw3RlNJNHVmWWQzNDgtX2hlT2J4MVlsYVQ2TEJ6X05R?oc=5",
+      "source": "valorinveste.globo.com",
       "category": "latest",
       "tags": [
         "mercado",
@@ -569,15 +755,14 @@
       "publishedAt": "2026-08-19T14:27:34Z",
       "updatedAt": "2026-08-19T14:27:34Z",
       "premium": true,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://economicnewsbrasil.com.br/wp-content/uploads/2026/08/Juros-e-divida-publica-brasileira.png"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-e904b4cb13018e19f314583b",
       "title": "IPCA+ Pagando Até 11%: Vale a Pena Investir com a Selic em 14%?",
-      "summary": "Portal de notícias e análises de economia, negócios, finanças, tecnologia e investimentos",
-      "details": "Portal de notícias e análises de economia, negócios, finanças, tecnologia e investimentos",
-      "url": "https://istoedinheiro.com.br/ipca-pagando-11-vale-investir-com-a-selic",
+      "summary": "Atualizacao de macro capturada em ISTOÉ DINHEIRO.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8xazFWTGJKUzVOcTFkRWZsdk9WVGh4NlJEbFdSTDFlU1ZlVm1vR3lMbHZrR2tPeWlTZkFfTUFmTHhuWGp3ek84Vno0T3VuaFZSQ3FCRklUeUFEdGhLOWZaYnRmdmVKbHlsMnkwOHpXVUNnYm10NkMwY0JR?oc=5",
       "source": "ISTOÉ DINHEIRO",
       "category": "macro",
       "tags": [
@@ -588,15 +773,14 @@
       "publishedAt": "2026-08-19T14:23:20Z",
       "updatedAt": "2026-08-19T14:23:20Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://istoedinheiro.com.br/wp-content/uploads/sites/17/2025/08/tesouro-ipca-lidera-vendas-no-primeiro-mes-do-gift-card-b3jpg-1.png"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-bffff51b2405195cfeb9fee6",
       "title": "Tesouro IPCA+ ainda paga acima de 8% sob influência de dois fatores externos nesta quarta-feira",
-      "summary": "Estudo do Fed mostra vantagens de nova abordagem para estimar taxa de juros neutra, que não estimula nem desestimula a economia: nem de curtíssimo nem de longo prazo, mas algo intermediário.",
-      "details": "Estudo do Fed mostra vantagens de nova abordagem para estimar taxa de juros neutra, que não estimula nem desestimula a economia: nem de curtíssimo nem de longo prazo, mas algo intermediário.",
-      "url": "https://www.estadao.com.br/economia/fernando-dantas/a-taxa-de-juros-neutra-de-medio-prazo/",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTVZ3TE1jVkd4Q0hOTWtyNXhZbFVjVi1DUDBJQVNRb2d1Y3Vka08yRmltTVllQWRQajNSQ0ZQdUt2MzYwRWpTdFdwTHJTUlcybUtWWFhST3FSekVKejEyZ0Q1anF3ZEt5M3dNRm1MNHcyTTJNa3dEWmt6Y3BnQzlJdnd4NkVSbmNzdV9kWWpTQ0dtT29jLWQwRFhrLW4xdzR2SzBYU1RhRXc5bDhRZmJsMGZzZWpsRXYwSDhXSlJHVk1uOWlsRk5pQWtvZDM1RzIwcV91YndSejFqZDRWSHk2dXdjR3BvRVnSAewBQVVfeXFMTkhIaGR5NGVCREU5U2NkN2dBejRaXy0wNV9FQlNmZGlGalVkVHlzOU5jb0E0NXJuMGpDSm1PbF96LUVoRVpJNDByUk1VZWh2c1puTmFHSnJPeTVLSjV1M2dXN2toZkpPRG1JaW5IWVlqakpoMWcwTTBrRk42M0VIanp6Zk1ySjhMd01lc2xBcXZFT0JQc2lNS09CVTNITXUzajJSUEJuMm1QNFNjNGpTSWI2bDFCbVQ1eFNkdmk3TEkxNTVIcEx3bTZLc0VNejRucmw0S19oU1dRdDY2M09BaHN4QlprZW00SnlIeGE?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -607,15 +791,14 @@
       "publishedAt": "2026-08-19T14:23:00Z",
       "updatedAt": "2026-08-19T14:23:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/5F7UXL2UIRGE5JGAR3P6N4753M.png?quality=80&auth=5774b4ab2f507ab84338fe1984a2fc71f5ad39b5de25a32138cf539c7959f1e2&width=1200&height=630&smart=true"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-e2a3cd97633483c88e4ee2e2",
       "title": "A taxa de juros neutra de médio prazo",
-      "summary": "Queda dos Treasuries e dos juros futuros reduz taxas dos títulos, mas petróleo acima de US$ 90 mantém cautela no mercado",
-      "details": "Queda dos Treasuries e dos juros futuros reduz taxas dos títulos, mas petróleo acima de US$ 90 mantém cautela no mercado",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/tesouro-ipca-ainda-paga-acima-de-8-sob-influencia-de-dois-fatores-externos-nesta-quarta-feira/",
+      "summary": "Atualizacao de macro capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaWlXUlk5akFONFd0bXBVY3dudzZIWGYyUUtHZEM5dWZuNDZLTmM0amRtY2ZaNVFFb3lhQ3BNQ29UbWJQM0I4VXNqMU1WMFVjN3VvY2JDYnVNR1BBeTR5VElDY2VBa1RsU3FxNHlOMWlxYkFqbTB3enlEUDY5Y3dwNF94XzlvbnJHN1ZuV1YwT2h2ZGd00gGaAUFVX3lxTFBDeV9KNEQ4QktZX08yOHZ1UXViX2xhRDNTS2ptdzZGbDI4b21oU08zbDZTSHY3eUp0TWtPblpMZ3o5eFNhZWluZDkxWmZGTzYwZGFRYW5KM3FEMlBlX25nM2FaNXdCNEVEaXBENThtR2ZsQlVvd0Y1dlNUZ2haS2lqb1h1VFRla2lzdk1wb292UFhXblozd2FtSUE?oc=5",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -626,15 +809,14 @@
       "publishedAt": "2026-08-19T14:21:25Z",
       "updatedAt": "2026-08-19T14:21:25Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/ICS6ICQHQBJD3EOML6CTPERK3Q.png?quality=80&auth=5c2e4ccdc230434eef2bcf5c36d6cb8ba57f76a5038b6921320033e183824d74&width=1200&height=630&smart=true"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-ae8ad6048785edec4a2a1ebc",
       "title": "Ibovespa se valoriza após anúncio do Tesouro dos EUA, mercado espera ata do Fed",
-      "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "url": "https://www.tribunadoagreste.com.br/geral/2026/08/19/962887-ibovespa-se-valoriza-apos-anuncio-do-tesouro-dos-eua-mercado-espera-ata-do-fed",
+      "summary": "Atualizacao de ultima hora capturada em Tribuna do Agreste.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOT09wYk5yZlAzWHRCNkhPOWV3MXUwZHdkS3dBMlJHb1NkTjViZWVVSFlQUnd4NmFveXdhckwzU0NwZU1nSnU3bHNoR0RldnFLaGhlTDlyeEUwODZUUG5xZnIyOC04OV9RbGk2Szk4Um80UExFR05YZ0xiWkp4N0Jyb21UQlJQeUUzSGJ1bWlfY1p6cWpqcDJVWW10eEdDU25MNWFkZ3pSZ1NHM1ZJSVAwWkpVdTJGRF80RkZNdHN1NmF3NDlPWkVjMTNXVUU1ZWh6VzNINw?oc=5",
       "source": "Tribuna do Agreste",
       "category": "latest",
       "tags": [
@@ -645,15 +827,14 @@
       "publishedAt": "2026-08-19T14:21:00Z",
       "updatedAt": "2026-08-19T14:21:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://img.dhost.cloud/QIolVw8IdLKl-nzVLjkOmKfhFfQ=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/27653/7b93215403d08bdea7f7d334769b6b00b14.jpg?name=ibovespa.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-5aa09321c05c95e5a1ac542c",
       "title": "Inflação desacelera no Brasil, mas dólar e cenário fiscal mantêm pressão sobre preços",
       "summary": "Atualizacao de ultima hora capturada em Portal do Agronegócio.",
       "details": "",
-      "url": "https://br.investing.com/news/economy-news/pesquisa-do-fed-aponta-que-ganhos-de-produtividade-limitaram-inflacao-das-tarifas-93CH-2044299",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOS2wzSUx4Y01RU3VKSGRwZEc1NnVzMHprM2czenFQS2NXUzY3MzdxSFJGTTVkZTdZLTJxaUNIMmRTbTliSHlGQXZJaFVSRmtDcVU3NUJFN2N2dkJfNjdDZ2VJZWt5R2tTWFZfS3ZTNnE0QThPaUtUbXRxWkVCczNaWUg0bFNhN19WZU1xSm1wOVcwLTV5RE5FVGJMUmt0LUx5bW1hYXpPODVBOXU5M0lDemRTYjBSMzFueTdnMTRQMXZXbzlvd1hGaVZBRkgybGdBYTVQM3JrRi0yZlhva3RLelR5emxpS2xhTGpOZWpJSmVEdw?oc=5",
       "source": "Portal do Agronegócio",
       "category": "latest",
       "tags": [
@@ -669,9 +850,9 @@
     {
       "id": "macro-d195338a3a8aaa58eb00aeb6",
       "title": "SÃO LUÍS – Mantida prisão preventiva de empresário investigado por sonegação fiscal",
-      "summary": "IPCA sobe 0,07% em julho e taxa acumulada em 12 meses recua para 4,4%; Rabobank avalia que câmbio, riscos fiscais e ambiente externo ainda exigem cautela na condução dos juros",
-      "details": "IPCA sobe 0,07% em julho e taxa acumulada em 12 meses recua para 4,4%; Rabobank avalia que câmbio, riscos fiscais e ambiente externo ainda exigem cautela na condução dos juros",
-      "url": "https://www.portaldoagronegocio.com.br/economia/mercado-financeiro/noticias/inflacao-desacelera-no-brasil-mas-dolar-e-cenario-fiscal-mantem-pressao-sobre-precos",
+      "summary": "Atualizacao de macro capturada em Ministério Público do Estado do Maranhão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORTZKd19laFRNRU5NQ1BMMjdGd0tfQkp1WHBJcHMyNjUwQ3I0UU5NSmo0SFlzUUVlZm1WemFIQVpoZWxPcTVsQWFEcUJURlpyTFdqSDJIaTNyVUNPc0tKOFNtRDhKT1VXLVVLOGRndnNxY1VIczNfZmJldFlGSVRuRHl3TGt6ZFBfeXZYRThDaDYycE5GMkUwNmtYUEFLdUVBdU05a2VPZHY?oc=5",
       "source": "Ministério Público do Estado do Maranhão",
       "category": "macro",
       "tags": [
@@ -682,15 +863,14 @@
       "publishedAt": "2026-08-19T14:16:00Z",
       "updatedAt": "2026-08-19T14:16:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.portaldoagronegocio.com.br/storage/images/notices/6a85b9f82dcf5.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-71d9357dca6e3d7af1cc30f7",
       "title": "Pesquisa do Fed aponta que ganhos de produtividade limitaram inflação das tarifas",
       "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
       "details": "",
-      "url": "https://lagosul.com.br/jovens-investem-mais-velhos-lutam-para-poupar-o-contraste-financeiro-que-aparece-no-df/",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOc2NZWUdtR3hVZUVLaDM2OWFNdHFSbEhmTFhLQWRQaWZpMjgxdkpOeXd4UUhfU0ZsSHZhcXhJeGEtYVAyNWdRRmo3VEtIMFRPcHNiakVUSWNQM0hDZDZzNzJYS2lUa2dQV1M3eTlDb1NVSlA0RW96NmY3SFhCNmpFMFBScFAtN08tWjdHQ3JER2x3NXJiTzFVMHk5QVhvMEJWblowczEzX28xYlYyM0JvcWdxbGlyLTl4cUhxQ3ZkUktIR1Y3b3BDTnRTQkZMWU9ldjF3?oc=5",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -702,25 +882,6 @@
       "updatedAt": "2026-08-19T14:14:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "latest-b890e5970a43c253c506459d",
-      "title": "Jovens investem, mais velhos lutam para poupar: o contraste financeiro que aparece no DF",
-      "summary": "Atualizacao de ultima hora capturada em Portal Lago Sul.",
-      "details": "",
-      "url": "https://www.mpma.mp.br/sao-luis-mantida-prisao-preventiva-de-empresario-investigado-por-sonegacao-fiscal/",
-      "source": "Portal Lago Sul",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-19T14:10:04Z",
-      "updatedAt": "2026-08-19T14:10:04Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.mpma.mp.br/wp-content/uploads/2026/08/DINHEIRO-PUBLICO-1.jpg"
     },
     {
       "id": "macro-22a66c63bb4dca9ef1048a3d",
@@ -741,24 +902,6 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "latest-3a2fadb8f92ed2b9d737be67",
-      "title": "Dólar cai para R$ 5,17 e Ibovespa sobe forte com ata do Fed e petróleo no radar",
-      "summary": "Atualizacao de ultima hora capturada em Portal do Agronegócio.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQR0dzNExlbnJ3Q1oxSWItUDd5bjBXM2R0TkZTZ2wxdkhsZkxTQzFMX3V1cm82a0hIbGVGeFZxV0xDN1pYeEFPd3Fhbzh0QzltSlBrV0ZxOTM4NjNmSUdKRnhZaGdpdXN6bFpUWGstVmNyd3dwNDIxZ3dFWm5uN0l6Q2lER1RHYjB6Mi0weGpON0NqQTFmUmdtOGllY29ZeVRzU0RDcEc3MzFmTXVPNDZhVU80UzVlZUxGa2JvQW16ZnNNVnZlaGlKNTBCYzhKSUdPTG14bXF5SnZIbFZsdlNoQTRsdnJ5LTFMSHc?oc=5",
-      "source": "Portal do Agronegócio",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-19T14:05:00Z",
-      "updatedAt": "2026-08-19T14:05:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "macro-a642c32e2b3d8e96631dc5bb",
       "title": "Luciana: Precisamos fortalecer Marco e agências regulatórias, fazer o ajuste fiscal e reduzir juros",
       "summary": "Atualizacao de macro capturada em Estadão.",
@@ -773,114 +916,6 @@
       ],
       "publishedAt": "2026-08-19T14:00:43Z",
       "updatedAt": "2026-08-19T14:00:43Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "latest-f19b320726dba44bf9b6422f",
-      "title": "Ibovespa avança com dólar em queda, enquanto bolsas da Ásia despencam e petróleo supera US$ 91",
-      "summary": "Atualizacao de ultima hora capturada em Portal do Agronegócio.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQNHFFT3VxbU9CeXhIcEVBeFV3alYzMHVCZFp6cExTQTJpT3hSLVF3RkdGVFdBT05jTXJrUDdycWNKQmN3anVTcmEyczdCVUZRdm9FQ0pELTQ2WjJoUC1LYUJ1bFFFVllxNGF6eW1XVU50UnVHMk9VQjZseVlYVGZkYS0yRFptMU1MTUhGWk9XdmV5WS1JaVp6VmRBUmJvV043cDJlZE1KUXpfdGJmR3JVWE9DQllwYUJsRUJ1b3hrbEJpOEZ2MnpFR2FQOTBqZjU0YTBvbldmOTdWODVka2FQbTlzckxGRjFacW50UG45TVRNYlduREV4b1UtSFY?oc=5",
-      "source": "Portal do Agronegócio",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-19T14:00:00Z",
-      "updatedAt": "2026-08-19T14:00:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-1566b2988369659f95d910fc",
-      "title": "Bitcoin sobe para US$ 65 mil com ata do Fed e regulação dos EUA no radar",
-      "summary": "Atualizacao de macro capturada em Valor Econômico.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPT1JReEVOaVBjT0ZScjA1VmppRHR2VENTV2E4VFJGbXhJdk1FS1hPUmtvTXBxUV9xaXVod1l1MTVDYWZPVmVWOGxsOHBFcU9XZVEtbGx6cmtZaWZyTVVfemppQld6bjdXVVlwX2ZxanBqRUdMNjd6V1ZMdDl3d2E0QjI0Sl9uZUZDUU52cS1xaTBNTHlXdVhPYy12Z01MOFZaWjhBUTNOVDdXdjNwZnpYU04tNmNRcnVCRThfLUpIQUYyLXV2V1ZVbG5MYmg0clJjZ0lMV0pNTEdKd9IB6AFBVV95cUxNaDhJbmU3Q2R5eU9jWUdkN09CNVljM19HUjF4d005ZWw1a19CYmEyMlJIV1Y5Y0tEWGFob1c2cHQ0bjFHczRZSXRkaVpTRE9BYmxRZGdCU0Z2dGdhVXNUMndZeGswdjRnU3FTRUdGQXk5Z1d0Q1ZGSWZUbkp3bzg4cWpIRjB0eFo1X0NFd2QtY3Bsc1pYamlzRlF1RVRpU3cyZUNwTzhwX20yNTY4MEhkQ1VnTDFiSGVhemhtcTNGRW1DYmRQMmRLaFFDNFNzZXJZRURXQmxMQ053djA1YUhENlMzVXpJV2My?oc=5",
-      "source": "Valor Econômico",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T13:48:43Z",
-      "updatedAt": "2026-08-19T13:48:43Z",
-      "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "latest-9325a6a41a1a967870cb32b5",
-      "title": "IBC-Br cai 0,6% em junho e sinaliza perda de ritmo da economia brasileira",
-      "summary": "Atualizacao de ultima hora capturada em Portal do Agronegócio.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNR19KTW9rQWFtbmVySko5UmFUSXJXLU1FT29lYjNIUkpkVkpMSzFmdEhVdmY5RzVRNllZcFdyUlVjUF9YMzV4UFBQYlJpM244SUlaaXBiUXpSRzlEci0zWHo5bk1pZGtRaXpESDNxY25CbHZSVnY2SjVtSjlmejc1UERPTnRXYkl0Q1E3Nk4wbWgwNy13ekZuLTZLS0xpUWEtSGlZY2hkZTdLRmlwS3lZZndXcFlxdlkyeVctQmhESldPN1ZBdTluUmR2eVFDTGx5RXZXUGNnbVc5WlRkanpocG5n?oc=5",
-      "source": "Portal do Agronegócio",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-19T13:45:00Z",
-      "updatedAt": "2026-08-19T13:45:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-6505c4b5ed9782f3aed1ba14",
-      "title": "Wall Street mostra recuperação à espera de ata do Fed, mas tech ainda pesa",
-      "summary": "Atualizacao de macro capturada em Money Times.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBTZVlFVWFHejdzMEZ1VTg4MFJqSE9FSG5WOF9zRFZVNndPTVVyV1lJSVdoQjFUOVlqNXJGUFBHNENyendfbFlGX3lINEIxcHRtbm05enU5NERPMnhlaHBiVjVVS2RNZTZyd0dfem56T2hmdw?oc=5",
-      "source": "Money Times",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T13:44:00Z",
-      "updatedAt": "2026-08-19T13:44:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-b8dead549eaf816fbd422cc0",
-      "title": "PF deflagra operação contra comércio ilegal de produtos injetáveis para emagrecimento — Polícia Federal",
-      "summary": "Atualizacao de macro capturada em www.gov.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOWWFKbDF3U0w0WkdnZXlsOGxpWFF6em1OT01hX0xhcUxWeWhFQVVwakdlTGdMMU5uLUoyUUZqYU4tTmRtWnUwd1F0Y2pJMk1Hc09KMzVpend1Ymc3ZHZBcmFRZDdLZnNaaVp6LU1FLWRTeVhaR3lGT25PejVWRVB5Qks1MGNOb1RGSUEyMnN2cHJYYmFxY1BJVFFKRHRPbWNvd3BIVlJvUjRrbTFmVnRoNXZfeFlkU1o2R2FLQ2NPeVB2OElGVnRpWDNTcTVyOEdPOWVLU21n?oc=5",
-      "source": "www.gov.br",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T13:39:35Z",
-      "updatedAt": "2026-08-19T13:39:35Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-9948be67fb2f81d0e62240ff",
-      "title": "Nova regra muda devolução de cargas e exige adaptação",
-      "summary": "Atualizacao de macro capturada em Transporte Moderno.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNVk9sOHBPc2RHUkVvbXJVel9IX3hzeDA3eUR2NGx2bm44SkFORGhYUVhObVd0b21pRTFKZU4wckxVMjcxQlY3Y2t4djVaeWhacHh2U3plbHN0Z2F3MG5fRTRob0dUUGpsZ2U0b0w2MFA4UGNsTVNuQ180QXVzUWViNnhaaGswNDRXd25PbkN4cXlpTEJsZmxIck9nUy1YNW8?oc=5",
-      "source": "Transporte Moderno",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T13:36:00Z",
-      "updatedAt": "2026-08-19T13:36:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
@@ -921,12 +956,12 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "funds-b0ab33f158f39feb247c3aca",
+      "id": "funds-66b356b51f1f85567fe0c070",
       "title": "Fundo imobiliário da XP quer arrecadar até R$ 1 bilhão com novas emissões; veja as condições",
-      "summary": "Atualizacao de fundos capturada em Money Times.",
+      "summary": "Atualizacao de fundos capturada em moneytimes.com.br.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOWUg3R3hlejFUTTNTd09ER3VHNmRwTnBSN0VGazBjVGJWcEhtZW56dkM2QlFjR3ZZV1VNOFotM2luVnlfYXdrUmNqNmxwcFR4Zkd3MU12RWd2YjNOeXlld0FaOTJTMFJzbi1RVmdLUGJEdy05cW85UE9aRFl3eE5HeERQU215clpjVnh2WWh3elZyWEhYRUF4OWxmNzJHdG9Ncjhoc2xlUHZWNXNtRFNPZVdVMEV5QUFfbkFILURIcTNpRFha?oc=5",
-      "source": "Money Times",
+      "source": "moneytimes.com.br",
       "category": "funds",
       "tags": [
         "fundos",
@@ -939,12 +974,12 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-bab9efcb195d2d1ad1d1e147",
+      "id": "funds-d63a3abd5ec795d6f4b3e852",
       "title": "Painel da SEC dos EUA aprova proposta de 'Regulamentação de Criptoativos' enquanto Bitcoin avança rumo aos US$ 65.000",
-      "summary": "Atualizacao de fundos capturada em tradingkey.com.",
+      "summary": "Atualizacao de fundos capturada em TradingKey.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQW9MMkNzdWV6d0pHeVptZzNGVHNBYUJvQXRkMDlGZmt5dG5DM2NVN2F5UV85VmlaZDVmdVZPWGNKODFHU1pMMWlISm5RVjFGc1NId1J1VWVvNHl6RkxHTkdnVVVrbUlHNlotaHcxeDZBT3VvYTNKeXlaMFZsWGxoS21UaEV1Q2dTekZPNHpTcUFvb05QNmJITWR1TVNLQ1R2NlhoOVctZ3UzMU11SEg5aVZCUnhPRlBXVFcyYVNnM09zUjZ4cGc?oc=5",
-      "source": "tradingkey.com",
+      "source": "TradingKey",
       "category": "funds",
       "tags": [
         "fundos",
@@ -953,6 +988,24 @@
       ],
       "publishedAt": "2026-08-19T11:50:36Z",
       "updatedAt": "2026-08-19T11:50:36Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "funds-72628aaebb519ae2676eb1bf",
+      "title": "O distrito de Long My Ward está acelerando o desembolso de fundos de investimento público e o andamento de projetos importantes.",
+      "summary": "Atualizacao de fundos capturada em Vietnam.vn.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQUE5d3hkSkl3cWhFV3pzeE0zYkxzSlo5YzV1ZFhUSGlQUEdUV2ItdXlmMTlhTURUSzdCazFFWnBSYnctdF9JaXlWSlVRa2JRdmhQVzJDNkQyd1V0UUpiMTdwdm9pQjZ4cDBEVldqUWNtQTVzVWpRT25FZ29CbjJ3UFo5SmgtOExHdndDc1dNbGxaYU9LMXlZZU41NmNTZktwVGktajN1N194UUU?oc=5",
+      "source": "Vietnam.vn",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-19T11:39:32Z",
+      "updatedAt": "2026-08-19T11:39:32Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
@@ -1331,42 +1384,6 @@
       ],
       "publishedAt": "2026-08-18T22:08:42Z",
       "updatedAt": "2026-08-18T22:08:42Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "companies-71da91d587177ac67afad2fd",
-      "title": "Think Plastic Brazil leva inovação e design ao Congresso do Plástico 2026",
-      "summary": "Atualizacao de empresas capturada em bra1.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVF81SmtXcDNWS3BCTVVxSzBVSlVTYnVCRHBGNG82SlVCVHJlamhHN24xMXdDbjBUOEpVYjRaLVJ4Mm9HdWdvcXk4cC1aZkhGMklSd2gzWDNnYlU3Uml1cW00dE4wb19WVmx5TGZmdTdrQ25qaklxUURnRk9kRUFnanNPZ2czcVp5NDdEQW1JUm1GN3Z2azM0WEtQQU9YdjhvcFFFMlk4aFUtNTJPUmY1MU5MSQ?oc=5",
-      "source": "bra1.com.br",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-18T21:51:00Z",
-      "updatedAt": "2026-08-18T21:51:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "funds-0dd5b1a89392f2acf43ed97d",
-      "title": "Casas Bahia concentra R$ 3,64 bi em debêntures com vencimento em 2050, diz pesquisa",
-      "summary": "Atualizacao de fundos capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQUZadnNDU0REU2g5aFJsRldNcTFGalFLQ2d0WlhWT1JmQTgxUEh3d1lNS1JVbmY2bC1zcFkwaXpkRndlaFhpdUx4S3RnSGNBUEU0TGNLQ3dEOGRFUlpzb0tOVm5aNXJLYzk5clRwRmd4dHNFeXFUUVFQd2RpVlJ3V0NTcGp0LWNYMXJaV1FMT1ptalpRMUFlWGtNeWhWUXl5VExXS2ZPcXZCemxjZmhvRTVnNXpFNkNZNHh5MnRQZnRsanQ20gHKAUFVX3lxTE8yMFhHRndZOXNMZ3J1THlKRHNiUkZfSTJ0M3pmNzRIeWFJak5LRWkwYjFCeXBrWWdKWFpTcnZPRi1aTE95Rk5HOFZWcVhfZlRNYU1GVGRjU0JlX1BNSENINS1TVFh2OGtlSUJzMXJId2ljbHp1ODUzMm5Sc1U0WHNaZ1pCbFhKM08yemZwU1RBLV9lLW9RUDA3NzU2NG9qbFBhckMzcmV3RkVZSzEtaG83YmxlTU9GdnNCM3lXQmlCV2h3UHRyOHBBa0E?oc=5",
-      "source": "Estadão",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-18T21:45:00Z",
-      "updatedAt": "2026-08-18T21:45:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
