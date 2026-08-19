@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-19T22:19:41Z",
-  "generatedAt": "2026-08-19T22:19:41Z",
+  "updatedAt": "2026-08-19T22:50:08Z",
+  "generatedAt": "2026-08-19T22:50:08Z",
   "categories": [
     {
       "id": "all",
@@ -25,6 +25,10 @@
   ],
   "sources": [
     {
+      "id": "a-cr-tica-de-campo-grande",
+      "label": "A Crítica de Campo Grande"
+    },
+    {
       "id": "a-verdade",
       "label": "A Verdade"
     },
@@ -41,12 +45,8 @@
       "label": "Bloomberg Línea Brasil"
     },
     {
-      "id": "boca-com-br",
-      "label": "boca.com.br"
-    },
-    {
-      "id": "borainvestir-b3-com-br",
-      "label": "borainvestir.b3.com.br"
+      "id": "bora-investir",
+      "label": "Bora Investir"
     },
     {
       "id": "bpmoney",
@@ -59,10 +59,6 @@
     {
       "id": "cnn-brasil",
       "label": "CNN Brasil"
-    },
-    {
-      "id": "computer-weekly",
-      "label": "Computer Weekly"
     },
     {
       "id": "dcomercio",
@@ -87,10 +83,6 @@
     {
       "id": "fato-paulista",
       "label": "Fato Paulista"
-    },
-    {
-      "id": "folha-de-s-paulo",
-      "label": "Folha de S.Paulo"
     },
     {
       "id": "forbes-brasil",
@@ -129,8 +121,20 @@
       "label": "Monitor Mercantil"
     },
     {
+      "id": "neofeed",
+      "label": "NeoFeed"
+    },
+    {
+      "id": "not-cias-can-o-nova",
+      "label": "Notícias - Canção Nova"
+    },
+    {
       "id": "o-globo",
       "label": "O GLOBO"
+    },
+    {
+      "id": "poder360",
+      "label": "Poder360"
     },
     {
       "id": "portal-agora-tocantins",
@@ -143,6 +147,10 @@
     {
       "id": "ric-com-br",
       "label": "Ric.com.br"
+    },
+    {
+      "id": "seu-cr-dito-digital",
+      "label": "Seu Crédito Digital"
     },
     {
       "id": "seu-dinheiro",
@@ -193,25 +201,150 @@
       "label": "VEJA"
     },
     {
-      "id": "vermelho-org-br",
-      "label": "vermelho.org.br"
-    },
-    {
       "id": "vietnam-vn",
       "label": "Vietnam.vn"
-    },
-    {
-      "id": "www-gov-br",
-      "label": "www.gov.br"
     }
   ],
   "items": [
     {
+      "id": "latest-269e12b74bb6ef10dce4471a",
+      "title": "Eleição já cobra prêmio nos juros, mas pressão pode aumentar, diz J.P. Morgan",
+      "summary": "Veja quais gestoras aparecem entre as mais expostas aos títulos da Casas Bahia e entenda o impacto da recuperação judicial nos fundos.",
+      "details": "Veja quais gestoras aparecem entre as mais expostas aos títulos da Casas Bahia e entenda o impacto da recuperação judicial nos fundos.",
+      "url": "https://seucreditodigital.com.br/casas-bahia-fundos-expostos-titulos/",
+      "source": "Valor Econômico",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-19T22:38:23Z",
+      "updatedAt": "2026-08-19T22:38:23Z",
+      "premium": true,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://seucreditodigital.com.br/wp-content/uploads/2026/08/casas-bahia-3.webp"
+    },
+    {
+      "id": "macro-6f0195b4f04449cb41fb9aaa",
+      "title": "Trump cita Suíça para cobrar corte de juros e critica Fed por manter taxas altas",
+      "summary": "Banco projeta aumento da inclinação da curva de juros, independentemente do cenário",
+      "details": "Banco projeta aumento da inclinação da curva de juros, independentemente do cenário",
+      "url": "https://valor.globo.com/financas/noticia/2026/08/19/eleio-j-cobra-prmio-nos-juros-mas-presso-pode-aumentar-diz-jp-morgan.ghtml",
+      "source": "InfoMoney",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T22:32:19Z",
+      "updatedAt": "2026-08-19T22:32:19Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://s2-valor.glbimg.com/hLy0dWcZr6GnFcxPxBLSNG_JkRc=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/Z/D/Lj6i6BRMAhOnwxy7XmNg/451807669.jpg"
+    },
+    {
+      "id": "funds-a0cf865d9d940f3220593d5e",
+      "title": "Casas Bahia deve R$ 17,3 bilhões e exposição de fundos preocupa investidores",
+      "summary": "Presidente afirma que a maior economia do mundo deveria ter taxas mais baixas que as suíças e diz que juros elevados custam centenas de bilhões de dólares aos americanos",
+      "details": "Presidente afirma que a maior economia do mundo deveria ter taxas mais baixas que as suíças e diz que juros elevados custam centenas de bilhões de dólares aos americanos",
+      "url": "https://www.infomoney.com.br/mundo/trump-cita-suica-para-cobrar-corte-de-juros-e-critica-fed-por-manter-taxas-altas/",
+      "source": "Seu Crédito Digital",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-19T22:30:00Z",
+      "updatedAt": "2026-08-19T22:30:00Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/08/2026-08-12T000331Z_1603220559_RC2MWMAQQQE0_RTRMADP_3_USA-TRUMP.jpg"
+    },
+    {
+      "id": "macro-fb9006b1e2c63a4553330370",
+      "title": "Reforma Tributária traz mudanças na rotina fiscal das empresas",
+      "summary": "A Receita Federal e o Comitê Gestor do Imposto sobre Bens e Serviços divulgaram o cronograma de implantação dos documentos fiscais eletrônicos",
+      "details": "A Receita Federal e o Comitê Gestor do Imposto sobre Bens e Serviços divulgaram o cronograma de implantação dos documentos fiscais eletrônicos",
+      "url": "https://noticias.cancaonova.com/brasil/reforma-tributaria-traz-mudancas-na-rotina-fiscal-das-empresas/",
+      "source": "Notícias - Canção Nova",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T22:26:42Z",
+      "updatedAt": "2026-08-19T22:26:42Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://img.cancaonova.com/cnimages/canais/uploads/sites/11/2026/08/04-reforma-tributaria-traz-mudancas-na-rotina-fiscal-das-empresas.jpg"
+    },
+    {
+      "id": "latest-d145855720bfdf5813350962",
+      "title": "Tesouro dos EUA amplia recompra de títulos; entenda reação dos mercados",
+      "summary": "Medida busca dar suporte à liquidez dos Treasuries e foi interpretada de forma positiva pelos investidores. Leia no Poder360.",
+      "details": "Medida busca dar suporte à liquidez dos Treasuries e foi interpretada de forma positiva pelos investidores. Leia no Poder360.",
+      "url": "https://www.poder360.com.br/poder-economia/tesouro-dos-eua-amplia-recompra-de-titulos-entenda-reacao-dos-mercados/",
+      "source": "Poder360",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-19T22:22:53Z",
+      "updatedAt": "2026-08-19T22:22:53Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://static.poder360.com.br/uploads/2025/07/Tabela-Grafico-Bolsa-B3-Indice-Papel-Anotacao-Pesquisa-Monitor-Computador-57-848x477-1.webp"
+    },
+    {
+      "id": "macro-125157830ace29ef03473c23",
+      "title": "J.P. Morgan vê real frágil e projeta dólar a R$ 5,50 em cenário eleitoral desfavorável no lado fiscal",
+      "summary": "Candidato do PSD à Presidência criticou reação brasileira às tarifas americanas e apresentou propostas para o setor de transportes",
+      "details": "Candidato do PSD à Presidência criticou reação brasileira às tarifas americanas e apresentou propostas para o setor de transportes",
+      "url": "https://acritica.net/eleicoes-2026/caiado-chama-reciprocidade-contra-eua-de-blefe-e-defende-ajuste-fiscal/",
+      "source": "Valor Econômico",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T22:21:58Z",
+      "updatedAt": "2026-08-19T22:21:58Z",
+      "premium": true,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://uploads.acritica.net/2026/05/Retrato-Profissional-Horizontal-1.jpg"
+    },
+    {
+      "id": "macro-5f01f8ff02296c9c95ba23dc",
+      "title": "Caiado chama reciprocidade contra EUA de 'blefe' e defende ajuste fiscal",
+      "summary": "Banco vê espaço para aumento da volatilidade no mercado de câmbio com as eleições",
+      "details": "Banco vê espaço para aumento da volatilidade no mercado de câmbio com as eleições",
+      "url": "https://valor.globo.com/financas/noticia/2026/08/19/jp-morgan-ve-real-fragil-e-projeta-dolar-a-r-550-em-cenario-eleitoral-desfavoravel-no-lado-fiscal.ghtml",
+      "source": "A Crítica de Campo Grande",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T22:20:00Z",
+      "updatedAt": "2026-08-19T22:20:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://s2-valor.glbimg.com/JmVjEdchrw1Euw5CVAklaBDnfZM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/Y/P/XjxJePQMGnSDNnXFBHmQ/raf1006-1.jpg"
+    },
+    {
       "id": "macro-423a4005de51cc7ae256810e",
       "title": "Dívida dos EUA ultrapassa os US$ 40 trilhões pela 1ª vez, diz Tesouro",
-      "summary": "Atualizacao de macro capturada em moneytimes.com.br.",
-      "details": "",
-      "url": "https://www.moneytimes.com.br/divida-dos-eua-ultrapassa-os-us-40-trilhoes-pela-1a-vez-diz-tesouro-apsa/",
+      "summary": "Em artigo à CNN Infra, Daniel Maia explica como calor extremo torna urgente a energia descentralizada, e como o Brasil pode liderar essa transformação",
+      "details": "Em artigo à CNN Infra, Daniel Maia explica como calor extremo torna urgente a energia descentralizada, e como o Brasil pode liderar essa transformação",
+      "url": "https://www.cnnbrasil.com.br/infra/clima-pressiona-pib-e-exige-avanco-imediato-de-geracao-distribuida/",
       "source": "moneytimes.com.br",
       "category": "macro",
       "tags": [
@@ -222,14 +355,15 @@
       "publishedAt": "2026-08-19T22:02:00Z",
       "updatedAt": "2026-08-19T22:02:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/35071_8E43638784CE8C86-2.jpeg?w=1200&h=630&crop=1"
     },
     {
       "id": "macro-86a54c3e4add045f5d4b56b5",
       "title": "Clima pressiona PIB e exige avanço imediato de geração distribuída",
-      "summary": "Em artigo à CNN Infra, Daniel Maia explica como calor extremo torna urgente a energia descentralizada, e como o Brasil pode liderar essa transformação",
-      "details": "Em artigo à CNN Infra, Daniel Maia explica como calor extremo torna urgente a energia descentralizada, e como o Brasil pode liderar essa transformação",
-      "url": "https://www.cnnbrasil.com.br/infra/clima-pressiona-pib-e-exige-avanco-imediato-de-geracao-distribuida/",
+      "summary": "A dívida pública dos EUA atinge US$ 40 trilhões, duplicando em uma década. Entenda o impacto disso na economia.",
+      "details": "A dívida pública dos EUA atinge US$ 40 trilhões, duplicando em uma década. Entenda o impacto disso na economia.",
+      "url": "https://www.moneytimes.com.br/divida-dos-eua-ultrapassa-os-us-40-trilhoes-pela-1a-vez-diz-tesouro-apsa/",
       "source": "CNN Brasil",
       "category": "macro",
       "tags": [
@@ -241,7 +375,26 @@
       "updatedAt": "2026-08-19T22:00:35Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/35071_8E43638784CE8C86-2.jpeg?w=1200&h=630&crop=1"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/07/pib-eua-inflacao.jpg"
+    },
+    {
+      "id": "macro-c67286aebfcf1783e30fdef9",
+      "title": "Com Redata empacado no Senado, \"sobra\" de R$ 5,2 bilhões pode virar alívio para a meta fiscal",
+      "summary": "O setor, porém, ainda nutre uma última esperança de que o Legislativo aprove PL e fará pressão até com Lula para tentar incluir proposta no último esforço concentrado",
+      "details": "O setor, porém, ainda nutre uma última esperança de que o Legislativo aprove PL e fará pressão até com Lula para tentar incluir proposta no último esforço concentrado",
+      "url": "https://neofeed.com.br/poder/com-redata-empacado-no-senado-sobra-de-r-52-bilhoes-pode-virar-alivio-para-a-meta-fiscal/",
+      "source": "NeoFeed",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T21:59:00Z",
+      "updatedAt": "2026-08-19T21:59:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://neofeed.com.br/wp-content/uploads/2020/01/inteligencia-artificial-data-center-1.jpg"
     },
     {
       "id": "macro-71cc399d40e2833c1bc903c2",
@@ -264,9 +417,9 @@
     {
       "id": "latest-f1259ded4828cd4068771bad",
       "title": "EXCLUSIVO CNBC: CEO da Robinhood prevê avanço da tokenização e blockchain transformando o mercado financeiro",
-      "summary": "Crescimento acelerado da dívida e aumento do custo dos juros alimentam preocupações sobre a sustentabilidade das contas públicas americanas",
-      "details": "Crescimento acelerado da dívida e aumento do custo dos juros alimentam preocupações sobre a sustentabilidade das contas públicas americanas",
-      "url": "https://www.infomoney.com.br/economia/eua-cruzam-marca-historica-de-us-40-trilhoes-em-divida-publica/",
+      "summary": "A tokenização de ativos pode transformar a estrutura do sistema financeiro global ao ampliar o acesso, a liquidez e a velocidade das negociações. É o que",
+      "details": "A tokenização de ativos pode transformar a estrutura do sistema financeiro global ao ampliar o acesso, a liquidez e a velocidade das negociações. É o que",
+      "url": "https://timesbrasil.com.br/empresas-e-negocios/exclusivo-cnbc-ceo-da-robinhood-preve-avanco-da-tokenizacao-e-blockchain-transformando-o-mercado-financeiro/",
       "source": "Times Brasil | CNBC",
       "category": "latest",
       "tags": [
@@ -278,14 +431,14 @@
       "updatedAt": "2026-08-19T21:52:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/08/2026-08-19T214116Z_1_LYNXMPEM7I19C_RTROPTP_4_USA-BONDS.jpg"
+      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/08/1bd2db72-videoframe_32612.webp"
     },
     {
       "id": "latest-d75baf07a78068870c2e7862",
       "title": "Cosan lidera ganhos na 1ª sessão positiva do Ibovespa em agosto; veja maiores altas e quedas do dia",
-      "summary": "A tokenização de ativos pode transformar a estrutura do sistema financeiro global ao ampliar o acesso, a liquidez e a velocidade das negociações. É o que",
-      "details": "A tokenização de ativos pode transformar a estrutura do sistema financeiro global ao ampliar o acesso, a liquidez e a velocidade das negociações. É o que",
-      "url": "https://timesbrasil.com.br/empresas-e-negocios/exclusivo-cnbc-ceo-da-robinhood-preve-avanco-da-tokenizacao-e-blockchain-transformando-o-mercado-financeiro/",
+      "summary": "Bolsa foi impulsionada por sinalização do Tesouro americano sobre recompras de títulos públicos",
+      "details": "Bolsa foi impulsionada por sinalização do Tesouro americano sobre recompras de títulos públicos",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/cosan-lidera-ganhos-na-1-sessao-positiva-do-ibovespa-em-agosto-veja-maiores-altas-e-quedas-do-dia/",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -297,33 +450,14 @@
       "updatedAt": "2026-08-19T21:51:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/08/1bd2db72-videoframe_32612.webp"
-    },
-    {
-      "id": "macro-3f929cbf143d53f66f175897",
-      "title": "EUA: Dívida ultrapassa US$ 40 trilhões e mais que dobra em menos dez anos",
-      "summary": "Bolsa foi impulsionada por sinalização do Tesouro americano sobre recompras de títulos públicos",
-      "details": "Bolsa foi impulsionada por sinalização do Tesouro americano sobre recompras de títulos públicos",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/cosan-lidera-ganhos-na-1-sessao-positiva-do-ibovespa-em-agosto-veja-maiores-altas-e-quedas-do-dia/",
-      "source": "vermelho.org.br",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T21:47:00Z",
-      "updatedAt": "2026-08-19T21:47:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://www.estadao.com.br/resizer/v2/VSOPSSFCANIN7JGYWAO4XAJOMI.png?quality=80&auth=bee33a9b42cfa6f2ffc8b9054c2cc2f05109430aac45d6b1669f9b9123039f93&width=1200&height=630&smart=true"
     },
     {
       "id": "latest-01249fe4dc6c2ba393707bfd",
       "title": "Fechamento do mercado financeiro",
-      "summary": "Marca histórica pode deixar os Estados Unidos mais vulneráveis a emergências internas e a instabilidades no exterior.",
-      "details": "Marca histórica pode deixar os Estados Unidos mais vulneráveis a emergências internas e a instabilidades no exterior.",
-      "url": "https://vermelho.org.br/2026/08/19/eua-divida-ultrapassa-us-40-trilhoes-e-mais-que-dobra-em-menos-dez-anos/",
+      "summary": "Traders buscam pistas sobre a trajetória das taxas de juros após a queda generalizada dos títulos globais na terça-feira",
+      "details": "Traders buscam pistas sobre a trajetória das taxas de juros após a queda generalizada dos títulos globais na terça-feira",
+      "url": "https://www.infomoney.com.br/mercados/dolar-hoje-abertura-fechamento-comercial-turismo-19082026/",
       "source": "UOL Economia",
       "category": "latest",
       "tags": [
@@ -335,14 +469,14 @@
       "updatedAt": "2026-08-19T21:32:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://vermelho.org.br/wp-content/uploads/2026/08/Departamento-do-tesouro.jpg"
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/06/Cedulas-de-dolares-norte-americanos.jpg"
     },
     {
       "id": "latest-0f56b8677361c2d18aeb99e9",
       "title": "Setor financeiro enfrentou alta de quase 10% nas tentativas de fraude no 1º semestre",
-      "summary": "Ideia é impor uma trava que pode ir de 40% a 50% do aumento do PIB",
-      "details": "Ideia é impor uma trava que pode ir de 40% a 50% do aumento do PIB",
-      "url": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/08/19/caiado-diz-que-se-eleito-vai-enviar-pec-que-limita-despesas-ao-crescimento-do-pib.ghtml",
+      "summary": "Crescimento acelerado da dívida e aumento do custo dos juros alimentam preocupações sobre a sustentabilidade das contas públicas americanas",
+      "details": "Crescimento acelerado da dívida e aumento do custo dos juros alimentam preocupações sobre a sustentabilidade das contas públicas americanas",
+      "url": "https://www.infomoney.com.br/economia/eua-cruzam-marca-historica-de-us-40-trilhoes-em-divida-publica/",
       "source": "TI INSIDE Online",
       "category": "latest",
       "tags": [
@@ -354,14 +488,33 @@
       "updatedAt": "2026-08-19T21:21:45Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/08/2026-08-19T214116Z_1_LYNXMPEM7I19C_RTROPTP_4_USA-BONDS.jpg"
+    },
+    {
+      "id": "macro-1c5fec0e77b43c6004457fea",
+      "title": "Dólar hoje cai a R$ 5,17 após Tesouro dos EUA ampliar recompra de títulos",
+      "summary": "Ideia é impor uma trava que pode ir de 40% a 50% do aumento do PIB",
+      "details": "Ideia é impor uma trava que pode ir de 40% a 50% do aumento do PIB",
+      "url": "https://oglobo.globo.com/politica/eleicoes-2026/noticia/2026/08/19/caiado-diz-que-se-eleito-vai-enviar-pec-que-limita-despesas-ao-crescimento-do-pib.ghtml",
+      "source": "InfoMoney",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T21:21:34Z",
+      "updatedAt": "2026-08-19T21:21:34Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://s2-oglobo.glbimg.com/yN27raFbM7Xno1fpQZSyXwY17qc=/1600x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/s/O/5dhwj8T7aaHVWEmcFJZQ/whatsapp-image-2026-07-29-at-13.02.40.jpeg"
     },
     {
       "id": "macro-179374dce3a4937406bd30e9",
       "title": "Caiado diz que se eleito vai enviar PEC que limita despesas ao crescimento do PIB",
-      "summary": "Atualizacao de macro capturada em O GLOBO.",
-      "details": "",
-      "url": "https://tiinside.com.br/19/08/2026/setor-financeiro-enfrentou-alta-de-quase-10-nas-tentativas-de-fraude-no-1o-semestre/",
+      "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
+      "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
+      "url": "https://www.tribunadoagreste.com.br/geral/2026/08/19/963214-queda-nas-taxas-de-juros-reflete-acao-do-tesouro-dos-eua",
       "source": "O GLOBO",
       "category": "macro",
       "tags": [
@@ -372,32 +525,15 @@
       "publishedAt": "2026-08-19T21:19:38Z",
       "updatedAt": "2026-08-19T21:19:38Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-709a6ffe51e84b4c37a7e170",
-      "title": "Curva de juros acompanha Treasuries e recua mais de 10 pontos-base nos vértices intermediários",
-      "summary": "Atualizacao de macro capturada em moneytimes.com.br.",
-      "details": "",
-      "url": "https://www.moneytimes.com.br/curva-de-juros-acompanha-treasuries-e-recua-mais-de-10-pontos-base-nos-vertices-intermediarios-lils/",
-      "source": "moneytimes.com.br",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T21:18:00Z",
-      "updatedAt": "2026-08-19T21:18:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://img.dhost.cloud/6blptaooeGsA5NwJE87DYVvjHDg=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/b318e/6262e1b4af979e456d46e71468e3e811644.jpg"
     },
     {
       "id": "latest-75deb2c6f742ecb06f6553f4",
       "title": "Queda nas taxas de juros reflete ação do Tesouro dos EUA",
-      "summary": "Após sequência de 11 quedas, Bolsa reage ao alívio nos Treasuries, mas investidores ainda monitoram cenário eleitoral, fiscal e saída de estrangeiros",
-      "details": "Após sequência de 11 quedas, Bolsa reage ao alívio nos Treasuries, mas investidores ainda monitoram cenário eleitoral, fiscal e saída de estrangeiros",
-      "url": "https://forbes.com.br/forbes-money/2026/08/ibovespa-saida-capital-estrangeiro/",
+      "summary": "Veja como se comportaram o Ibovespa B3 e o dólar nesta quarta-feira (19) e o que movimentou os ativos. Acesse na íntegra no Bora Investir.",
+      "details": "Veja como se comportaram o Ibovespa B3 e o dólar nesta quarta-feira (19) e o que movimentou os ativos. Acesse na íntegra no Bora Investir.",
+      "url": "https://borainvestir.b3.com.br/noticias/mercado/ibovespa-b3-sobe-090-puxado-por-vale-e-petrobras-dolar-cai-a-r-517/",
       "source": "Tribuna do Agreste",
       "category": "latest",
       "tags": [
@@ -409,15 +545,15 @@
       "updatedAt": "2026-08-19T21:09:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://forbes.com.br/wp-content/uploads/2026/02/00x0-1200x675.png"
+      "imageUrl": "https://cdn.borainvestir.b3.com.br/2026/08/19180319/ibovespa-b3-sobe-090-puxado-por-vale-e-petrobras-dolar-cai-a-r-517.webp"
     },
     {
-      "id": "latest-08af38c72b2335bf9856b748",
+      "id": "latest-6d28298a3c24d05756e5bcb0",
       "title": "Ibovespa B3 sobe 0,90%, puxado por Vale e Petrobras; dólar cai a R$ 5,17",
-      "summary": "Veja como se comportaram o Ibovespa B3 e o dólar nesta quarta-feira (19) e o que movimentou os ativos. Acesse na íntegra no Bora Investir.",
-      "details": "Veja como se comportaram o Ibovespa B3 e o dólar nesta quarta-feira (19) e o que movimentou os ativos. Acesse na íntegra no Bora Investir.",
-      "url": "https://borainvestir.b3.com.br/noticias/mercado/ibovespa-b3-sobe-090-puxado-por-vale-e-petrobras-dolar-cai-a-r-517/",
-      "source": "borainvestir.b3.com.br",
+      "summary": "Atualizacao de ultima hora capturada em Bora Investir.",
+      "details": "",
+      "url": "https://tiinside.com.br/19/08/2026/setor-financeiro-enfrentou-alta-de-quase-10-nas-tentativas-de-fraude-no-1o-semestre/",
+      "source": "Bora Investir",
       "category": "latest",
       "tags": [
         "mercado",
@@ -427,15 +563,14 @@
       "publishedAt": "2026-08-19T21:05:00Z",
       "updatedAt": "2026-08-19T21:05:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://cdn.borainvestir.b3.com.br/2026/08/19180319/ibovespa-b3-sobe-090-puxado-por-vale-e-petrobras-dolar-cai-a-r-517.webp"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-3b3f4b06544930f48452ce6c",
       "title": "Ibovespa Fecha em Alta e Encerra Maior Série de Perdas desde 2023",
-      "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "url": "https://www.tribunadoagreste.com.br/geral/2026/08/19/963214-queda-nas-taxas-de-juros-reflete-acao-do-tesouro-dos-eua",
+      "summary": "Após sequência de 11 quedas, Bolsa reage ao alívio nos Treasuries, mas investidores ainda monitoram cenário eleitoral, fiscal e saída de estrangeiros",
+      "details": "Após sequência de 11 quedas, Bolsa reage ao alívio nos Treasuries, mas investidores ainda monitoram cenário eleitoral, fiscal e saída de estrangeiros",
+      "url": "https://forbes.com.br/forbes-money/2026/08/ibovespa-saida-capital-estrangeiro/",
       "source": "Forbes Brasil",
       "category": "latest",
       "tags": [
@@ -447,14 +582,14 @@
       "updatedAt": "2026-08-19T21:03:14Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://img.dhost.cloud/6blptaooeGsA5NwJE87DYVvjHDg=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/b318e/6262e1b4af979e456d46e71468e3e811644.jpg"
+      "imageUrl": "https://forbes.com.br/wp-content/uploads/2026/02/00x0-1200x675.png"
     },
     {
       "id": "macro-67dcd7da49916e24250eac6e",
       "title": "IPC-Viçosa de julho registra a menor inflação do ano",
-      "summary": "Atualizacao de macro capturada em UFV – Universidade Federal de Viçosa.",
-      "details": "",
-      "url": "https://www2.dti.ufv.br/noticias/scripts/exibeNoticiaMulti.php?codNot=45959",
+      "summary": "Mercado reage positivamente ao anúncio do Tesouro dos EUA sobre recompras de títulos",
+      "details": "Mercado reage positivamente ao anúncio do Tesouro dos EUA sobre recompras de títulos",
+      "url": "https://www.tribunadosertao.com.br/geral/2026/08/19/963198-ibovespa-rompe-sequencia-de-quedas-e-sobe-com-fluxo-global-para-ativos-de-risco",
       "source": "UFV – Universidade Federal de Viçosa",
       "category": "macro",
       "tags": [
@@ -466,14 +601,33 @@
       "updatedAt": "2026-08-19T21:02:58Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://img.dhost.cloud/psgNDzFZ93b2-rPkZn9gj4Po4uo=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/f662c/34434ff47cbd6ec1c1390c14e6a3a5f1a3d.jpg?name=ibovespa.jpg"
+    },
+    {
+      "id": "macro-0c78d6fcb07aebd077498722",
+      "title": "Do \"tesouraço\" de Flávio Bolsonaro ao corte de R$ 3 trilhões de Renan Santos: as visões dos candidatos ao ajuste fiscal \"inevitável\"",
+      "summary": "Atualizacao de macro capturada em moneytimes.com.br.",
+      "details": "",
+      "url": "https://www2.dti.ufv.br/noticias/scripts/exibeNoticiaMulti.php?codNot=45959",
+      "source": "moneytimes.com.br",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-19T21:00:00Z",
+      "updatedAt": "2026-08-19T21:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://www2.dti.ufv.br/noticias/files/fotos/1787165507.png"
     },
     {
       "id": "latest-6930f46cee311b94ce0fb7ea",
       "title": "Ibovespa avança após 11 pregões em baixa; veja motivos",
-      "summary": "Tesouro Americano e ata do Fed são principais catalisadores nesta quarta-feira",
-      "details": "Tesouro Americano e ata do Fed são principais catalisadores nesta quarta-feira",
-      "url": "https://veja.abril.com.br/economia/ibovespa-avanca-apos-11-pregoes-em-baixa-veja-motivos/",
+      "summary": "A edição desta semana do Radar das Eleições mostra a importância do ajuste fiscal em 2027 e seu efeito sobre a disputa presidencial de 2026.",
+      "details": "A edição desta semana do Radar das Eleições mostra a importância do ajuste fiscal em 2027 e seu efeito sobre a disputa presidencial de 2026.",
+      "url": "https://www.moneytimes.com.br/radar-das-eleicoes-ajuste-fiscal-inevitavel-vira-divisor-de-aguas-entre-lula-flavio-bolsonaro-e-renan-santos-gaep/",
       "source": "VEJA",
       "category": "latest",
       "tags": [
@@ -485,14 +639,14 @@
       "updatedAt": "2026-08-19T20:55:37Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://veja.abril.com.br/wp-content/uploads/2025/01/b3-ibovespa-alta-acumulada-janeiro-205-tendencia-onde-investir-acoes-renda-variavel-1.jpg?quality=70&strip=info&resize=1080,565&crop=1"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/08/edit.00-28-49-04.quadro012-e1787166333521.jpg"
     },
     {
       "id": "latest-a37747d7355575d011fa6a47",
       "title": "Ibovespa rompe sequência de quedas e sobe com fluxo global para ativos de risco",
-      "summary": "Mercado reage positivamente ao anúncio do Tesouro dos EUA sobre recompras de títulos",
-      "details": "Mercado reage positivamente ao anúncio do Tesouro dos EUA sobre recompras de títulos",
-      "url": "https://www.tribunadosertao.com.br/geral/2026/08/19/963198-ibovespa-rompe-sequencia-de-quedas-e-sobe-com-fluxo-global-para-ativos-de-risco",
+      "summary": "Tesouro Americano e ata do Fed são principais catalisadores nesta quarta-feira",
+      "details": "Tesouro Americano e ata do Fed são principais catalisadores nesta quarta-feira",
+      "url": "https://veja.abril.com.br/economia/ibovespa-avanca-apos-11-pregoes-em-baixa-veja-motivos/",
       "source": "Tribuna do Sertão",
       "category": "latest",
       "tags": [
@@ -504,13 +658,13 @@
       "updatedAt": "2026-08-19T20:55:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://img.dhost.cloud/psgNDzFZ93b2-rPkZn9gj4Po4uo=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/f662c/34434ff47cbd6ec1c1390c14e6a3a5f1a3d.jpg?name=ibovespa.jpg"
+      "imageUrl": "https://veja.abril.com.br/wp-content/uploads/2025/01/b3-ibovespa-alta-acumulada-janeiro-205-tendencia-onde-investir-acoes-renda-variavel-1.jpg?quality=70&strip=info&resize=1080,565&crop=1"
     },
     {
       "id": "latest-299e9430e2a4c3a04d14b27a",
       "title": "A Selic não é a única vilã: Caixa, Itaú, BB e outros bancos revelam o que falta para destravar o crédito imobiliário no Brasil",
-      "summary": "Atualizacao de ultima hora capturada em Seu Dinheiro.",
-      "details": "",
+      "summary": "Segundo os executivos, os juros estão mais relacionados com um momento de mercado, mas há pontos estruturais que precisam de atenção",
+      "details": "Segundo os executivos, os juros estão mais relacionados com um momento de mercado, mas há pontos estruturais que precisam de atenção",
       "url": "https://www.seudinheiro.com/2026/economia/a-selic-nao-e-a-unica-vila-caixa-itau-bb-e-outros-bancos-revelam-o-que-falta-para-destravar-o-credito-imobiliario-no-brasil-davs/",
       "source": "Seu Dinheiro",
       "category": "latest",
@@ -522,7 +676,8 @@
       "publishedAt": "2026-08-19T20:54:50Z",
       "updatedAt": "2026-08-19T20:54:50Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.seudinheiro.com/uploads/2026/08/Abecip-Summit-2026.jpg"
     },
     {
       "id": "macro-b66c7d2a5a9563b9a9fbb10f",
@@ -565,8 +720,8 @@
     {
       "id": "macro-97961357bd40c3dea843204b",
       "title": "Ata do Fed tem tom duro, mas cenário ainda não justifica alta de juros, diz ING",
-      "summary": "Atualizacao de macro capturada em moneytimes.com.br.",
-      "details": "",
+      "summary": "A ata do Fed revela preocupação com a inflação, mas dados recentes indicam menor pressão para alta de juros, mantendo a expectativa de estabilidade.",
+      "details": "A ata do Fed revela preocupação com a inflação, mas dados recentes indicam menor pressão para alta de juros, mantendo a expectativa de estabilidade.",
       "url": "https://www.moneytimes.com.br/ata-do-fed-tem-tom-duro-mas-cenario-ainda-nao-justifica-alta-de-juros-diz-ing/",
       "source": "moneytimes.com.br",
       "category": "macro",
@@ -578,14 +733,15 @@
       "publishedAt": "2026-08-19T20:46:00Z",
       "updatedAt": "2026-08-19T20:46:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/07/federal-reserve-fed-fomc-eua-estados-unidos-4.jpg"
     },
     {
       "id": "latest-6f987c7d2f65a7e63a87b3fb",
       "title": "Ata do FOMC: Apoio para alta de juros dos EUA foi maior que os três votos dissidentes",
-      "summary": "Decisão sobre juros teve amplo debate sobre rumo da inflação e apoio para alta incluiu diversos participantes sem voto na reunião, já que direito é alternado a cada encontro; há intenção de reduzir número de reuniões no ano",
-      "details": "Decisão sobre juros teve amplo debate sobre rumo da inflação e apoio para alta incluiu diversos participantes sem voto na reunião, já que direito é alternado a cada encontro; há intenção de reduzir número de reuniões no ano",
-      "url": "https://www.infomoney.com.br/economia/ata-fomc-juros-eua-impacto-brasil/",
+      "summary": "Atualizacao de ultima hora capturada em InfoMoney.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0tWDdURUtxbE9aZW5rWndFOEwyR2h2NzRuNWljUHpGZkNORkRGVVN3bXZmRjdQSTBUbFBLVzYzbV9jRnZRSjBoX0JIaDctZURZRFZjbF9wVU1kT1czMF9LV2dHVWtLSHREWW8waWhtNFl5ZDBhV0c0UnVVembSAYIBQVVfeXFMTWRPdENQX0xZWEZNcllBSGVTWHpyUFQwQTZ6NDNLRVFvVG11VnhOSGE1SktYTV9zOTM2TmVFcTVqbWJaRndsN3hha3NqR0RUV0wxYjdQU21peGRsdGZYMVFaNGZzOUphTDFNdGpGZ3Uzcmp5MF9PTHRtUGU3RDFkYUl5UQ?oc=5",
       "source": "InfoMoney",
       "category": "latest",
       "tags": [
@@ -596,15 +752,14 @@
       "publishedAt": "2026-08-19T20:35:14Z",
       "updatedAt": "2026-08-19T20:35:14Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/01/2026-01-19T132403Z_1_LYNXMPEM0I0S1_RTROPTP_4_USA-FED.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-87b19630ef7a12e9621b0dc4",
       "title": "Nordeste se fortalece economicamente e Faria Lima ganha novo sotaque",
       "summary": "Atualizacao de ultima hora capturada em TrendsCE.",
       "details": "",
-      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/08/19/trump-fed-deveria-cortar-juros-com-sucesso-da-economia-nao-subir-por-medo-da-inflacao.htm",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUExFU252OWtwdVRoMVhTQUJwRUtIOUdGcG5tTmRtdkVnSHg2b0hYdnVBVDlSNUtxUzlJbUIyMGU0ZVJsenJPU21zZ1JFNldrZEN4cFFQRjlSeE1Ga3l2QzJGTjI5cUNPQV95WkwtX042TTZmLXo5VjFSSWhzS2plNWxMUDNyWGZodldULWRKRUo4YnN0Tl81MWRrNFY5SWpvaG5QOVZIcks0SllS?oc=5",
       "source": "TrendsCE",
       "category": "latest",
       "tags": [
@@ -620,9 +775,9 @@
     {
       "id": "latest-9e0a6e51c265e2a969a7941a",
       "title": "Ibovespa sobe com recompra de títulos pelo Tesouro dos EUA; dólar cai a R$ 5,17",
-      "summary": "Além do aumento do patrimônio, a região registra uma expansão significativa da base de investidores.",
-      "details": "Além do aumento do patrimônio, a região registra uma expansão significativa da base de investidores.",
-      "url": "https://www.trendsce.com.br/2026/08/19/nordeste-se-fortalece-economicamente-e-faria-lima-ganha-novo-sotaque/",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSlN5T1FNZ1lSMk9MM3c1ZlpSMi1ZU1Z3NlVzcDZtWE1rLVBISHhzUmdXMmszTGdQeE5xT3VVTGlWbTUxeWxSaXFDcElsNHJuN1lrYVRjdjk4aDgtS2laRnlhY2RvNW5fZS1JVmJSUE5fTUNTSy1EVkVId0VaRERhVjg3dGlQamQwTXFCUG5ibHJqSDJ6NnRQZFQ3b2ZVWFVDc0pnV0tyUmtMb3dsUVJ4TGdEemVKY0NkOGZGNHptb0hWbS14a3lhamNoZU1CM1UxU2I2VmkwSkY5X1FLWmfSAeMBQVVfeXFMT1h4UEZaUzNXN04tYXRIaWl0Q0c0enR5ekVJVXFuVzJjekJBQTBxWVY1R1FuVVdlaFZSbHBRUjFLYVZFMUYtQk9vWlNMbXZ1c0NtcWRYR2hIRVFlNDBLOWdaOF9GTV95S3VLRnNGYS10UFpVbGJGdEltR3FFX1hOT0daQzdZNk5tblBBWUxNQ1ViUTV3dG5lVlExVXNvRHpaV1JwbWdpUDhZQzlCaUZ2bi1VMW5OaVR3OFpHNjZuUVBWdE1nQmpsQmRJNE5hLUw4Z0MxWGpZd0NxWmlGd28tR05yZ1E?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -633,53 +788,14 @@
       "publishedAt": "2026-08-19T20:25:27Z",
       "updatedAt": "2026-08-19T20:25:27Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.trendsce.com.br/wp-content/uploads/2026/08/nordeste-se-fortalece-economicamente-e-faria-lima-ganha-novo-sotaque-trends-ce.webp"
-    },
-    {
-      "id": "macro-202c45150c00190ce994adab",
-      "title": "Trump: Fed deveria cortar juros com 'sucesso' da economia, não subir por medo da inflação",
-      "summary": "Bolsa brasileira tem correção após ter registrado a maior sequência de baixas desde 2023",
-      "details": "Bolsa brasileira tem correção após ter registrado a maior sequência de baixas desde 2023",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-hoje-tenta-evitar-12-queda-seguida-com-ata-do-fed-e-petroleo-a-us-90-no-radar/",
-      "source": "UOL Economia",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T20:25:00Z",
-      "updatedAt": "2026-08-19T20:25:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/GAP7U2RK3FORFCSH5U4RAR425I.jpg?quality=80&auth=d8bff9925f10d114f3af53be6d5869d6c6cc58d152eae913354625c6a97e5908&width=1200&height=630&smart=true"
-    },
-    {
-      "id": "latest-87d547a383cd1060ff686f6a",
-      "title": "Fluxo cambial do Brasil registra superávit de US$ 21,2 bilhões em 2026",
-      "summary": "Canais financeiro e comercial mostram desempenho misto até agosto",
-      "details": "Canais financeiro e comercial mostram desempenho misto até agosto",
-      "url": "https://boca.com.br/mercado-financeiro/fluxo-cambial-do-brasil-registra-superavit-de-us-21-2-bilhoes-em-2026",
-      "source": "boca.com.br",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-19T20:20:55Z",
-      "updatedAt": "2026-08-19T20:20:55Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/7beff131aac3017615dd8475a775178b_858x483.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-359892d5479bd1c03359022a",
       "title": "Ibovespa sobe 0,90% e fecha aos 167,8 mil pontos com dólar em queda",
-      "summary": "Ibovespa sobe 0,90% aos 167.830 pontos, enquanto dólar cai 0,87% a R$ 5,176. Petróleo e bolsas de Nova York também avançam",
-      "details": "Ibovespa sobe 0,90% aos 167.830 pontos, enquanto dólar cai 0,87% a R$ 5,176. Petróleo e bolsas de Nova York também avançam",
-      "url": "https://bpmoney.com.br/economia/ibovespa-sobe-090-e-fecha-aos-1678-mil-pontos-com-dolar-em-queda/",
+      "summary": "Atualizacao de ultima hora capturada em BPMoney.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPS3lGVnJ5dTFQSV9kOExPdHNrVmFvb1RnODZmVDctSmQycDF1V0g2ZFIzQlotUEdfVVpqRHJvSG9qR0ZNQWFiY2t5LVBodTZaU0N1LVJnSFA5ZWh5eWtSdE5lRzYtX3NPYUItbHNhMXZieUdsNGhMZEhVcklUNURTUndzNnI5SEZ3S0xEU0pjQzNuQlpxRk1XMHBrUG1SQQ?oc=5",
       "source": "BPMoney",
       "category": "latest",
       "tags": [
@@ -690,15 +806,14 @@
       "publishedAt": "2026-08-19T20:20:39Z",
       "updatedAt": "2026-08-19T20:20:39Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://bpmoney.com.br/wp-content/uploads/2024/08/y5oQ93Tg-image-768x432.png"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-8de85adc7a41c04cf106ca33",
       "title": "Empresas são condenadas após mandarem fiscal negro cortar o cabelo em SP",
       "summary": "Atualizacao de macro capturada em UOL Notícias.",
       "details": "",
-      "url": "https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/08/19/empresas-sao-condenadas-apos-mandarem-fiscal-negro-cortar-o-cabelo-em-sp.amp.htm",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQRGtaUDBGalY4NUxvQllyc0FyUjN6OERLSUhZTUtnN3lvY3RGWFpCdnF1RHNDM3dmS1ZwY0dBWnZTdk5oaGw3T0pVVWU4d0dMTHFORzZaNTVQZkhnei0yTzBsX2s5dmJVODVMYnd3Q19fYkJuX0drbFRoRHdKMDNoQkpQS1dMSDF2cmlzS1dvck5EYlRVME81ODZtTmV1WERYdnpsYTNobzU2QlNRbEVQeGliRC05SDh4ZWtURkwxSDR6VWpweXlVelc4MHMzMVo1Y2hPYUhoeEZ2ZWxQTFNn?oc=5",
       "source": "UOL Notícias",
       "category": "macro",
       "tags": [
@@ -708,43 +823,6 @@
       ],
       "publishedAt": "2026-08-19T20:19:55Z",
       "updatedAt": "2026-08-19T20:19:55Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-9bfc7bddd4ed84714a13b68e",
-      "title": "Dow Jones hoje: ata do Fed coloca juros dos EUA no radar de Wall Street; petróleo em 4ª alta seguida",
-      "summary": "Confira os principais eventos econômicos que impactam Wall Street nesta quarta-feira (19)",
-      "details": "Confira os principais eventos econômicos que impactam Wall Street nesta quarta-feira (19)",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/dow-jones-hoje-futuros-de-ny-operam-mistos-com-expectativa-por-ata-do-fed-e-o-futuro-dos-juros/",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T20:19:41Z",
-      "updatedAt": "2026-08-19T20:19:41Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/EYZSUNT5BVL43FAPRVHSV7CEHQ.png?quality=80&auth=21d6a58eed2d8ce6f3d731d33bd63fa40e372a68f7ba95915897cb47943f09b8&width=1200&height=630&smart=true"
-    },
-    {
-      "id": "macro-91d3f2930a309f5ecb4fae3f",
-      "title": "Painel S.A.: Ministérios defendem revisão de exigência de CNPJ para nanoempreendedores",
-      "summary": "Atualizacao de macro capturada em Folha de S.Paulo.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNZWd1bXQ0LUZIY2JNV0puX1JmWVJWdjdBbloyd0NpeWhsUzZjTUVkN1VRY0k2b09YNVRJbkpLcy13SDRVOGlDdXA3Q0JsSzhhNGhlN3JOYjNkYlY1NEZfWTR1SmhNZHREMWhzNnM0cDdlaFpsR2FWLXY5Uk1Gb3NWb3FaMDhDTkxyOFVlNW5Tb21KUC1HSjN1cXZQTHp3SXB4WVBva3plMldubGJIMTh1VzlRMU9YSnNqN0Z5cUpMRXFvZmRZTVV6R0dqaUdFTHM?oc=5",
-      "source": "Folha de S.Paulo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T20:15:00Z",
-      "updatedAt": "2026-08-19T20:15:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
@@ -763,42 +841,6 @@
       ],
       "publishedAt": "2026-08-19T20:14:41Z",
       "updatedAt": "2026-08-19T20:14:41Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-04ecefcea909384a7dce1403",
-      "title": "Nota à Imprensa — Receita Federal",
-      "summary": "Atualizacao de macro capturada em www.gov.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTE1oZFlsdk9EaDZRWk1WRGwyeEdkS01vaGdnLUhzWEtqYTY3dU9Mck5xcUFFemVrTEJId1RpdzhmWkUxMHg1Z2RHWVprdFJ6OXF2SXBsWmFnUDRDbDkweC1KTm1vRk1OZHJQVU5uSEF6emRPVnVaNlAtRW1IaWJkZl9RS1dSQldHWjg1UE1R?oc=5",
-      "source": "www.gov.br",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-19T20:13:50Z",
-      "updatedAt": "2026-08-19T20:13:50Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "latest-66c64f24494dd3111950e7ff",
-      "title": "Dirigentes discutiram riscos financeiros ligados a Treasuries e IA, revela ata do Fed",
-      "summary": "Atualizacao de ultima hora capturada em InfoMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRk9YdzhBd01leGxaZFBMQ0R2RnFQbUU2dEtUaldRMG9sVHN1eGU2LTFlMlNKZDQxR05pVVYwRGtSOUV4bVBaSGNoQm9WNXoyaE1wVUVoSnZVVTZJQml0MGlsalhHSWEyck5jcjYxWjNINlRjSFRkMURqaUhRNlVCSnBzZElRTnlOSHJwYlZfNEF3OXpKRzVWM0tWdGxveVBiZ3AwTGNzUGhFNGJtMXE0d3pQdE9SRWY5U2dRa195ZTTSAcYBQVVfeXFMUHlpZ25YU1pOU25VX2ZZVkpKQ0lTXzF5YUhsdmttUnFzZm93akNZQno3WVFhd2ZoTE0zQTZfWDFoaVJyVFBjck1kdGRsRXFZZm1BdFA0MjVPWnM0Rkl0MXRpY0UzWllhNWpBMEc3OHJJTkt6TWtBbFhDcjB5RW9jTW14cnNaVGhZNDZBMkpSaXZXb2tFUEJoWldncFZEckFDLXRENHJqN2M2NGlwUjNfcVN4S3hnNG1JU0xKWXl5ZjRPWENTNW5R?oc=5",
-      "source": "InfoMoney",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-19T20:07:19Z",
-      "updatedAt": "2026-08-19T20:07:19Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -1235,24 +1277,6 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "funds-b816d012efaf1f03bdac6aa5",
-      "title": "Vértis Torres: o novo nome da IHS Towers no Brasil e na Colômbia",
-      "summary": "Atualizacao de fundos capturada em Computer Weekly.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZmowSFVzR0xWVEVMZnAwaFB3ZGtiN3QtUFE4OC1hT2dUNzZGNG03WWRhRVZ3dXNQNjd0TnJCQ1ZDazFlREk0VnE1WldIQ0UtLWtYdXJFU3ktcWZ5em9QWnZ0MHRtMWl6bmFDekdod2NybUFPMi1xeVRBbkJTNzhBVE8tb2MyUUdQTFJfWG9FbnZPUF9HdUw5ZUxtSHFsNGZUZzlTU3ZscjBwWF91NXVzNE5sM09HRjA?oc=5",
-      "source": "Computer Weekly",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-19T01:38:10Z",
-      "updatedAt": "2026-08-19T01:38:10Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
       "id": "companies-4ebae5130f295cd7f33fd8b8",
       "title": "No segundo trimestre de 2026, número de empresas que pediram recuperação judicial aumenta 20% em relação a 2025",
       "summary": "Atualizacao de empresas capturada em G1.",
@@ -1357,24 +1381,6 @@
       ],
       "publishedAt": "2026-08-18T22:20:00Z",
       "updatedAt": "2026-08-18T22:20:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-71da91d587177ac67afad2fd",
-      "title": "Think Plastic Brazil leva inovação e design ao Congresso do Plástico 2026",
-      "summary": "Atualizacao de empresas capturada em bra1.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVF81SmtXcDNWS3BCTVVxSzBVSlVTYnVCRHBGNG82SlVCVHJlamhHN24xMXdDbjBUOEpVYjRaLVJ4Mm9HdWdvcXk4cC1aZkhGMklSd2gzWDNnYlU3Uml1cW00dE4wb19WVmx5TGZmdTdrQ25qaklxUURnRk9kRUFnanNPZ2czcVp5NDdEQW1JUm1GN3Z2azM0WEtQQU9YdjhvcFFFMlk4aFUtNTJPUmY1MU5MSQ?oc=5",
-      "source": "bra1.com.br",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-18T21:51:00Z",
-      "updatedAt": "2026-08-18T21:51:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     }
