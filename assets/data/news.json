@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-20T19:55:03Z",
-  "generatedAt": "2026-08-20T19:55:03Z",
+  "updatedAt": "2026-08-20T20:22:45Z",
+  "generatedAt": "2026-08-20T20:22:45Z",
   "categories": [
     {
       "id": "all",
@@ -41,16 +41,16 @@
       "label": "ADVFN"
     },
     {
+      "id": "afnoticias-com-br",
+      "label": "afnoticias.com.br"
+    },
+    {
       "id": "agronews-tv-br",
       "label": "agronews.tv.br"
     },
     {
       "id": "ag-ncia-brasil-china",
       "label": "Agência Brasil China"
-    },
-    {
-      "id": "balada-in",
-      "label": "Balada IN"
     },
     {
       "id": "band-news-fm-curitiba",
@@ -165,10 +165,6 @@
       "label": "Monitor Mercantil"
     },
     {
-      "id": "mpam",
-      "label": "MPAM"
-    },
-    {
       "id": "mundocoop",
       "label": "MundoCoop"
     },
@@ -187,6 +183,10 @@
     {
       "id": "r-dio-gua-ba",
       "label": "Rádio Guaíba"
+    },
+    {
+      "id": "safra",
+      "label": "Safra"
     },
     {
       "id": "segs-portal-nacional",
@@ -239,11 +239,67 @@
   ],
   "items": [
     {
+      "id": "macro-8490a18323f948696a7bd868",
+      "title": "A economia começou a perder fôlego e a eleição vai sentir",
+      "summary": "O mercado reage a tensões entre EUA e Irã e conflitos na Ucrânia",
+      "details": "O mercado reage a tensões entre EUA e Irã e conflitos na Ucrânia",
+      "url": "https://boca.com.br/mercado-financeiro/petroleo-sobe-apos-eua-reforcarem-sancoes-ao-ira",
+      "source": "Money Times",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-20T20:14:00Z",
+      "updatedAt": "2026-08-20T20:14:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/ec8dc81ad6175e662ffb7997957b423a_858x483.png"
+    },
+    {
+      "id": "latest-cf56b35d537f6bf94b7cb48a",
+      "title": "Petróleo sobe após EUA reforçarem sanções ao Irã",
+      "summary": "Atualizacao de ultima hora capturada em boca.com.br.",
+      "details": "",
+      "url": "https://oespecialista.safra.com.br/fed-alerta-risco-frustracao-investimentos-ia-acoes/",
+      "source": "boca.com.br",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-20T20:11:10Z",
+      "updatedAt": "2026-08-20T20:11:10Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "macro-5c51249dac418e0bc5977af6",
+      "title": "Fed teme impacto de frustração com IA nas ações",
+      "summary": "Entenda como o Brasil impacta o mercado de commodities em 2026 com estímulos fiscais e um cenário econômico desafiador.",
+      "details": "Entenda como o Brasil impacta o mercado de commodities em 2026 com estímulos fiscais e um cenário econômico desafiador.",
+      "url": "https://www.moneytimes.com.br/a-economia-comecou-a-perder-folego-e-a-eleicao-vai-sentir-rnda/",
+      "source": "Safra",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-20T20:10:16Z",
+      "updatedAt": "2026-08-20T20:10:16Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/10/brasil.jpg"
+    },
+    {
       "id": "macro-a0402716e6a3aa5a1c0ff471",
       "title": "Só é possível redirecionar execução fiscal se falecido já foi citado, decide STJ",
       "summary": "Atualizacao de macro capturada em Migalhas.",
       "details": "",
-      "url": "https://monitormercantil.com.br/b3-registra-recorde-de-operacoes-de-titulos-publicos-federais/",
+      "url": "https://portal.fgv.br/noticias/fgv-promove-debate-sobre-responsabilidade-fiscal-e-sustentabilidade-das-contas-publicas-do-estado-do-rio-de-janeiro",
       "source": "Migalhas",
       "category": "macro",
       "tags": [
@@ -261,7 +317,7 @@
       "title": "Fed pode defender alta de juros em setembro",
       "summary": "Para 1ª seção, sem citação válida, relação processual não chega a se aperfeiçoar.",
       "details": "Para 1ª seção, sem citação válida, relação processual não chega a se aperfeiçoar.",
-      "url": "https://www.migalhas.com.br/quentes/462879/so-e-possivel-redirecionar-execucao-fiscal-se-falecido-ja-foi-citado-decide-stj",
+      "url": "https://www.migalhas.com.br/quentes/462879/so-e-possivel-redirecionar-execucao-fiscal-se-falecido-ja-foi-citado",
       "source": "Vero Notícias",
       "category": "macro",
       "tags": [
@@ -295,11 +351,29 @@
       "imageUrl": "https://veronoticias.com/wp-content/uploads/2024/10/united-states-federal-reserve-building-washington-dc-usa-699686820-4fe8a5acea0b451b8998d683dfcd87db.webp"
     },
     {
+      "id": "macro-a838f38025cc86bebeaebe36",
+      "title": "Concurso CGE AL: Cebraspe divulga os locais de prova",
+      "summary": "Atualizacao de macro capturada em Estratégia Concursos.",
+      "details": "",
+      "url": "https://monitormercantil.com.br/b3-registra-recorde-de-operacoes-de-titulos-publicos-federais/",
+      "source": "Estratégia Concursos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-20T19:20:57Z",
+      "updatedAt": "2026-08-20T19:20:57Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
       "id": "latest-fea99dcdbb1d1e9484d7fe75",
       "title": "Cacau tem alta na bolsa de Nova York com projeções preocupantes",
-      "summary": "Preços se firmam diante de previsões de safras menores em produtores-chave",
-      "details": "Preços se firmam diante de previsões de safras menores em produtores-chave",
-      "url": "https://boca.com.br/mercado-financeiro/cacau-tem-alta-na-bolsa-de-nova-york-com-projecoes-preocupantes",
+      "summary": "Verifique os locais de prova do Concurso CGE AL e evite surpresas no dia da aplicação. Acesse o site da Cebraspe.",
+      "details": "Verifique os locais de prova do Concurso CGE AL e evite surpresas no dia da aplicação. Acesse o site da Cebraspe.",
+      "url": "https://www.estrategiaconcursos.com.br/blog/concurso-cge-al-cebraspe-divulga-locais-de-prova/amp/",
       "source": "boca.com.br",
       "category": "latest",
       "tags": [
@@ -311,14 +385,14 @@
       "updatedAt": "2026-08-20T18:56:06Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/533fd30b3afba38170c1b0079ee91a11_858x483.jpg"
+      "imageUrl": "https://dhg1h5j42swfq.cloudfront.net/2022/02/21100653/cge_al.jpg"
     },
     {
       "id": "macro-dc0b256394b8645da860efef",
       "title": "FGV promove debate sobre responsabilidade fiscal e sustentabilidade das contas públicas do estado do Rio de Janeiro",
-      "summary": "Atualizacao de macro capturada em Fundação Getulio Vargas.",
-      "details": "",
-      "url": "https://portal.fgv.br/noticias/fgv-promove-debate-sobre-responsabilidade-fiscal-e-sustentabilidade-das-contas-publicas-do-estado-do-rio-de-janeiro",
+      "summary": "Preços se firmam diante de previsões de safras menores em produtores-chave",
+      "details": "Preços se firmam diante de previsões de safras menores em produtores-chave",
+      "url": "https://boca.com.br/mercado-financeiro/cacau-tem-alta-na-bolsa-de-nova-york-com-projecoes-preocupantes",
       "source": "Fundação Getulio Vargas",
       "category": "macro",
       "tags": [
@@ -329,7 +403,8 @@
       "publishedAt": "2026-08-20T18:55:09Z",
       "updatedAt": "2026-08-20T18:55:09Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/533fd30b3afba38170c1b0079ee91a11_858x483.jpg"
     },
     {
       "id": "macro-1882016ad05e9cc2a58b39fe",
@@ -372,9 +447,9 @@
     {
       "id": "macro-ac646408ae442cd6dd9dd8b8",
       "title": "Operação Zero KM identifica pedidos de ressarcimento e compensação relacionados a créditos de PIS/Cofins em concessionárias",
-      "summary": "180 Cast terá conversas rápidas sobre mercado financeiro, seguros, novas receitas e growth Principal ponto de encontro entre bancos, fintechs, empresas de tecnologia e provedores de serviços para o mercado financeiro, a Febraban Tech se consolidou como o espaço onde são discutida",
-      "details": "180 Cast terá conversas rápidas sobre mercado financeiro, seguros, novas receitas e growth Principal ponto de encontro entre bancos, fintechs, empresas de tecnologia e provedores de serviços para o mercado financeiro, a Febraban Tech se consolidou como o espaço onde são discutidas as tendências que...",
-      "url": "https://www.segs.com.br/seguros/453985-180-seguros-leva-videocast-a-febraban-tech-com-executivos-de-grandes-empresas",
+      "summary": "Economista-chefe do BTG Pactual aponta que frear as despesas públicas é essencial para a queda dos juros e a retomada de \"crescimento sustentável\"",
+      "details": "Economista-chefe do BTG Pactual aponta que frear as despesas públicas é essencial para a queda dos juros e a retomada de \"crescimento sustentável\"",
+      "url": "https://forbes.com.br/forbes-money/2026/08/mansueto-almeida-potencia-brasil-fiscal/",
       "source": "www.gov.br",
       "category": "macro",
       "tags": [
@@ -385,14 +460,15 @@
       "publishedAt": "2026-08-20T18:43:34Z",
       "updatedAt": "2026-08-20T18:43:34Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://forbes.com.br/wp-content/uploads/2026/08/Novo-Tamanho-Site-57-1200x675.jpg"
     },
     {
-      "id": "latest-fbccd32bb22d8ab1dd54f369",
+      "id": "latest-311d4102e8115dcbbcf43d87",
       "title": "180 Seguros leva videocast à Febraban Tech com executivos de grandes empresas | SEGS Portal Nacional de...",
-      "summary": "Fiscalização da Receita Federal analisou pedidos de ressarcimento e compensação em diferentes estados e identificou créditos considerados incompatíveis com a legislação tributária.",
-      "details": "Fiscalização da Receita Federal analisou pedidos de ressarcimento e compensação em diferentes estados e identificou créditos considerados incompatíveis com a legislação tributária.",
-      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/operacao-zero-km-identifica-pedidos-de-ressarcimento-e-compensacao-relacionados-a-creditos-de-pis-cofins-em-concessionarias",
+      "summary": "180 Seguros leva videocast à Febraban Tech com executivos de grandes empresas Quinta, 20 Agosto 2026 16:35 Crédito de Imagens:Divulgação - Escrito ou enviado por&nbsp; Base Comunica SEGS.com.br - Categoria: Seguros Imprimir 180 Cast terá conversas rápidas sobre mercado financeiro",
+      "details": "180 Seguros leva videocast à Febraban Tech com executivos de grandes empresas Quinta, 20 Agosto 2026 16:35 Crédito de Imagens:Divulgação - Escrito ou enviado por&nbsp; Base Comunica SEGS.com.br - Categoria: Seguros Imprimir 180 Cast terá conversas rápidas sobre mercado financeiro, seguros, novas...",
+      "url": "https://www.segs.com.br/seguros/453985-180-seguros-leva-videocast-a-febraban-tech-com-executivos-de-grandes-empresas/amp",
       "source": "SEGS Portal Nacional",
       "category": "latest",
       "tags": [
@@ -400,18 +476,18 @@
         "bolsa",
         "macro"
       ],
-      "publishedAt": "2026-08-20T18:41:48Z",
-      "updatedAt": "2026-08-20T18:41:48Z",
+      "publishedAt": "2026-08-20T18:41:56Z",
+      "updatedAt": "2026-08-20T18:41:56Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/operacao-zero-km-identifica-pedidos-de-ressarcimento-e-compensacao-relacionados-a-creditos-de-pis-cofins-em-concessionarias/logo-defeso-site.jpeg/@@images/387e57fa-f418-43d6-8d60-0f2ae8a5c825.jpeg"
+      "imageUrl": "https://www.segs.com.br/images/jamp/page/logosegs20_1000.png"
     },
     {
       "id": "funds-8fac65880a7c73a16228b7fd",
       "title": "Horizon Kinetics Asset Management compra US$ 2.177 em ações do fundo RENN",
-      "summary": "Atualizacao de fundos capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
-      "details": "",
-      "url": "https://br.investing.com/news/insider-trading-news/horizon-kinetics-asset-management-compra-us-2177-em-acoes-do-fundo-renn-93CH-2045766",
+      "summary": "Fiscalização da Receita Federal analisou pedidos de ressarcimento e compensação em diferentes estados e identificou créditos considerados incompatíveis com a legislação tributária.",
+      "details": "Fiscalização da Receita Federal analisou pedidos de ressarcimento e compensação em diferentes estados e identificou créditos considerados incompatíveis com a legislação tributária.",
+      "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/operacao-zero-km-identifica-pedidos-de-ressarcimento-e-compensacao-relacionados-a-creditos-de-pis-cofins-em-concessionarias",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "funds",
       "tags": [
@@ -422,14 +498,15 @@
       "publishedAt": "2026-08-20T18:31:00Z",
       "updatedAt": "2026-08-20T18:31:00Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/agosto/operacao-zero-km-identifica-pedidos-de-ressarcimento-e-compensacao-relacionados-a-creditos-de-pis-cofins-em-concessionarias/logo-defeso-site.jpeg/@@images/387e57fa-f418-43d6-8d60-0f2ae8a5c825.jpeg"
     },
     {
       "id": "macro-7a1c04d387b305e65075c3c6",
       "title": "Intervenção de Bessent nos Treasuries é mais uma complicação para o Fed",
-      "summary": "Analistas dizem que atuação do Tesouro americano para reduzir custo de empréstimos de longo prazo pode confundir o sinal que os mercados enviam ao banco central americano",
-      "details": "Analistas dizem que atuação do Tesouro americano para reduzir custo de empréstimos de longo prazo pode confundir o sinal que os mercados enviam ao banco central americano",
-      "url": "https://valor.globo.com/financas/noticia/2026/08/20/intervencao-de-bessent-nos-treasuries-e-mais-uma-complicacao-para-o-fed.ghtml",
+      "summary": "Atualizacao de macro capturada em Valor Econômico.",
+      "details": "",
+      "url": "https://br.investing.com/news/insider-trading-news/horizon-kinetics-asset-management-compra-us-2177-em-acoes-do-fundo-renn-93CH-2045766",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -440,15 +517,14 @@
       "publishedAt": "2026-08-20T18:30:28Z",
       "updatedAt": "2026-08-20T18:30:28Z",
       "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/09mDVHvR5akS7CbmHtrFyluihaY=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/k/F/MqBOzsSgaArFxacyH4Xg/461748354.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-1065eafc3834c31221ca667f",
       "title": "Mulheres ocupam só um terço dos cargos C-Level no mercado financeiro, mostra estudo",
-      "summary": "O Brasil terá um 2027 difícil para a atividade econômica e pode registrar o pior crescimento desde a pandemia, segundo Mansueto.",
-      "details": "O Brasil terá um 2027 difícil para a atividade econômica e pode registrar o pior crescimento desde a pandemia, segundo Mansueto.",
-      "url": "https://www.moneytimes.com.br/mansueto-faz-alerta-2027-pode-ser-o-pior-ano-da-economia-brasileira-desde-a-pandemia/",
+      "summary": "Atualizacao de ultima hora capturada em Exame.",
+      "details": "",
+      "url": "https://exame.com/carreira/mulheres-ocupam-so-um-terco-dos-cargos-c-level-no-mercado-financeiro-mostra-estudo/",
       "source": "Exame",
       "category": "latest",
       "tags": [
@@ -459,15 +535,14 @@
       "publishedAt": "2026-08-20T18:18:36Z",
       "updatedAt": "2026-08-20T18:18:36Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/02/fiscal-inflacao-mansueto-almeida-btg-pactual.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-75e9d3b6fb8b6019cc701568",
       "title": "Brasil 'Tem Tudo para Ser Potência', Mas Precisa Vencer Desafio Fiscal, Diz Mansueto Almeida",
-      "summary": "Portal de notícias e análises de economia, negócios, finanças, tecnologia e investimentos",
-      "details": "Portal de notícias e análises de economia, negócios, finanças, tecnologia e investimentos",
-      "url": "https://istoedinheiro.com.br/scott-bessent-anuncia-expansao-na-recompra-de-titulos-do-tesouro-dos-eua-acima-de-us-4-bilhoes",
+      "summary": "O Brasil terá um 2027 difícil para a atividade econômica e pode registrar o pior crescimento desde a pandemia, segundo Mansueto.",
+      "details": "O Brasil terá um 2027 difícil para a atividade econômica e pode registrar o pior crescimento desde a pandemia, segundo Mansueto.",
+      "url": "https://www.moneytimes.com.br/mansueto-faz-alerta-2027-pode-ser-o-pior-ano-da-economia-brasileira-desde-a-pandemia/",
       "source": "Forbes Brasil",
       "category": "macro",
       "tags": [
@@ -479,14 +554,14 @@
       "updatedAt": "2026-08-20T18:16:16Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://istoedinheiro.com.br/wp-content/uploads/sites/17/2025/07/2025-07-21t125851z-1-lynxmpel6k0n8-rtroptp-4-eua-fed-bessent.jpg"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2025/02/fiscal-inflacao-mansueto-almeida-btg-pactual.jpg"
     },
     {
       "id": "macro-e3a1cb33ecb2014cf9f840a5",
       "title": "Mansueto faz alerta: 2027 pode ser o pior ano da economia brasileira desde a pandemia",
-      "summary": "Famem, Federação, Municípios, Maranhão",
-      "details": "Famem, Federação, Municípios, Maranhão",
-      "url": "https://famem.org.br/noticias/noticias/exibe/0046021-auditores-municipais-participam-de-homologacao-do-pgdas-d-para-adequacao-a-reforma-tributaria",
+      "summary": "Analistas dizem que atuação do Tesouro americano para reduzir custo de empréstimos de longo prazo pode confundir o sinal que os mercados enviam ao banco central americano",
+      "details": "Analistas dizem que atuação do Tesouro americano para reduzir custo de empréstimos de longo prazo pode confundir o sinal que os mercados enviam ao banco central americano",
+      "url": "https://valor.globo.com/financas/noticia/2026/08/20/intervencao-de-bessent-nos-treasuries-e-mais-uma-complicacao-para-o-fed.ghtml",
       "source": "Money Times",
       "category": "macro",
       "tags": [
@@ -498,14 +573,14 @@
       "updatedAt": "2026-08-20T18:12:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://painel.siganet.net.br/upload/0000000002/cms/images/thumbs/570x471_fac44a2c7693363a345136bacf636cc3.jpeg"
+      "imageUrl": "https://s2-valor.glbimg.com/09mDVHvR5akS7CbmHtrFyluihaY=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/k/F/MqBOzsSgaArFxacyH4Xg/461748354.jpg"
     },
     {
       "id": "macro-4408bde076e54cef5cec39bc",
       "title": "Auditores municipais participam de homologação do PGDAS-D para adequação à Reforma Tributária",
-      "summary": "O setor de suinocultura no Brasil atravessa um momento crítico no percurso de 2026, veja mais informações a seguir Até o mês de julho, os produtores vêm enfrentando uma",
-      "details": "O setor de suinocultura no Brasil atravessa um momento crítico no percurso de 2026, veja mais informações a seguir Até o mês de julho, os produtores vêm enfrentando uma",
-      "url": "https://www.agronews.tv.br/mercado-do-suino-vivo-em-2026-repete-pior-cenario-entenda-os-impactos",
+      "summary": "Portal de notícias e análises de economia, negócios, finanças, tecnologia e investimentos",
+      "details": "Portal de notícias e análises de economia, negócios, finanças, tecnologia e investimentos",
+      "url": "https://istoedinheiro.com.br/scott-bessent-anuncia-expansao-na-recompra-de-titulos-do-tesouro-dos-eua-acima-de-us-4-bilhoes",
       "source": "Federação dos Municípios do Estado do Maranhão",
       "category": "macro",
       "tags": [
@@ -517,14 +592,14 @@
       "updatedAt": "2026-08-20T18:07:08Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.agronews.tv.br/wp-content/uploads/2022/03/suino-7-1-615x410.jpg"
+      "imageUrl": "https://istoedinheiro.com.br/wp-content/uploads/sites/17/2025/07/2025-07-21t125851z-1-lynxmpel6k0n8-rtroptp-4-eua-fed-bessent.jpg"
     },
     {
       "id": "latest-671215139333c1fb4978a89c",
       "title": "Scott Bessent Anuncia Expansão na Recompra de Títulos do Tesouro dos EUA Acima de US$ 4 Bilhões",
-      "summary": "Petista também criticou benefícios fiscais em São Paulo e prometeu priorizar ensino médio, infraestrutura escolar e distinção entre usuários e traficant…",
-      "details": "Petista também criticou benefícios fiscais em São Paulo e prometeu priorizar ensino médio, infraestrutura escolar e distinção entre usuários e traficant…",
-      "url": "https://www.brasil247.com/sudeste/haddad-acusa-tarcisio-de-fazer-privatizacoes-para-agradar-o-mercado-financeiro/",
+      "summary": "Famem, Federação, Municípios, Maranhão",
+      "details": "Famem, Federação, Municípios, Maranhão",
+      "url": "https://famem.org.br/noticias/noticias/exibe/0046021-auditores-municipais-participam-de-homologacao-do-pgdas-d-para-adequacao-a-reforma-tributaria",
       "source": "ISTOÉ DINHEIRO",
       "category": "latest",
       "tags": [
@@ -536,14 +611,14 @@
       "updatedAt": "2026-08-20T18:06:10Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.brasil247.com/wp-content/uploads/2022/02/20220219100248_85e815fb93b0072bdd4605cefa37466d851e37cdba5ec80a301111dbb4250447.jpg?w=1200&quality=88&strip=all"
+      "imageUrl": "https://painel.siganet.net.br/upload/0000000002/cms/images/thumbs/570x471_fac44a2c7693363a345136bacf636cc3.jpeg"
     },
     {
       "id": "latest-e91f6ef54766db4cf3ff72a3",
       "title": "Mercado do suíno vivo em 2026 repete pior cenário, entenda os impactos",
-      "summary": "A dívida pública cresce mais pelos juros elevados do que pelo déficit primário, questionando o discurso de uma crise fiscal iminente.",
-      "details": "A dívida pública cresce mais pelos juros elevados do que pelo déficit primário, questionando o discurso de uma crise fiscal iminente.",
-      "url": "https://jornalggn.com.br/artigos/gabrielli-as-contas-fiscais-ha-ou-nao-um-precipicio-a-nossa-frente/",
+      "summary": "Mudanças nos sistemas, no fluxo de caixa e na gestão dos créditos tributários já exigem planejamento.",
+      "details": "Mudanças nos sistemas, no fluxo de caixa e na gestão dos créditos tributários já exigem planejamento.",
+      "url": "https://afnoticias.com.br/estado/reforma-tributaria-ja-comeca-a-impactar-empresas-antes-mesmo-do-fim-da-transicao-entenda",
       "source": "agronews.tv.br",
       "category": "latest",
       "tags": [
@@ -555,14 +630,33 @@
       "updatedAt": "2026-08-20T18:00:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://jornalggn.com.br/wp-content/uploads/2026/08/depositphotos_148467295-stock-photo-female-legs-on-mountain-peak.jpg"
+      "imageUrl": "https://afnoticias.com.br/static/cache/2026/d0c882d0ae5b0cc95a1c20f82dbb31c6.jpg"
+    },
+    {
+      "id": "companies-189735ad6c9eb6fb5f355ea3",
+      "title": "Reforma Tributária já começa a impactar empresas antes mesmo do fim da transição; entenda",
+      "summary": "O setor de suinocultura no Brasil atravessa um momento crítico no percurso de 2026, veja mais informações a seguir Até o mês de julho, os produtores vêm enfrentando uma",
+      "details": "O setor de suinocultura no Brasil atravessa um momento crítico no percurso de 2026, veja mais informações a seguir Até o mês de julho, os produtores vêm enfrentando uma",
+      "url": "https://www.agronews.tv.br/mercado-do-suino-vivo-em-2026-repete-pior-cenario-entenda-os-impactos",
+      "source": "afnoticias.com.br",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-20T18:00:00Z",
+      "updatedAt": "2026-08-20T18:00:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://www.agronews.tv.br/wp-content/uploads/2022/03/suino-7-1-615x410.jpg"
     },
     {
       "id": "latest-0dc46c028e808d49a1220f3a",
       "title": "As contas fiscais: há ou não há um precipício à nossa frente?, por José Sergio Gabrielli",
-      "summary": "Economista-chefe do BTG Pactual aponta que frear as despesas públicas é essencial para a queda dos juros e a retomada de \"crescimento sustentável\"",
-      "details": "Economista-chefe do BTG Pactual aponta que frear as despesas públicas é essencial para a queda dos juros e a retomada de \"crescimento sustentável\"",
-      "url": "https://forbes.com.br/forbes-money/2026/08/mansueto-almeida-potencia-brasil-fiscal/",
+      "summary": "A dívida pública cresce mais pelos juros elevados do que pelo déficit primário, questionando o discurso de uma crise fiscal iminente.",
+      "details": "A dívida pública cresce mais pelos juros elevados do que pelo déficit primário, questionando o discurso de uma crise fiscal iminente.",
+      "url": "https://jornalggn.com.br/artigos/gabrielli-as-contas-fiscais-ha-ou-nao-um-precipicio-a-nossa-frente/",
       "source": "Jornal GGN",
       "category": "latest",
       "tags": [
@@ -574,14 +668,14 @@
       "updatedAt": "2026-08-20T17:59:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://forbes.com.br/wp-content/uploads/2026/08/Novo-Tamanho-Site-57-1200x675.jpg"
+      "imageUrl": "https://jornalggn.com.br/wp-content/uploads/2026/08/depositphotos_148467295-stock-photo-female-legs-on-mountain-peak.jpg"
     },
     {
       "id": "latest-17077919ec5a09fa76dad851",
       "title": "Haddad acusa Tarcísio de fazer privatizações para agradar o mercado financeiro",
-      "summary": "Alberto Musalem, do Fed de St. Louis, disse à CNBC que recomendaria elevar juros em setembro se a inflação seguir acima da meta de 2%.",
-      "details": "Alberto Musalem, do Fed de St. Louis, disse à CNBC que recomendaria elevar juros em setembro se a inflação seguir acima da meta de 2%.",
-      "url": "https://bpmoney.com.br/politica/banco-central/membro-fed-musalem-recomendaria-elevar-juros-setembro/",
+      "summary": "Petista também criticou benefícios fiscais em São Paulo e prometeu priorizar ensino médio, infraestrutura escolar e distinção entre usuários e traficant…",
+      "details": "Petista também criticou benefícios fiscais em São Paulo e prometeu priorizar ensino médio, infraestrutura escolar e distinção entre usuários e traficant…",
+      "url": "https://www.brasil247.com/sudeste/haddad-acusa-tarcisio-de-fazer-privatizacoes-para-agradar-o-mercado-financeiro/",
       "source": "Brasil 247",
       "category": "latest",
       "tags": [
@@ -593,14 +687,14 @@
       "updatedAt": "2026-08-20T17:58:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://uploads.bpmoney.com.br/2026/08/social-federal-reserve-fed-418006.jpg"
+      "imageUrl": "https://www.brasil247.com/wp-content/uploads/2022/02/20220219100248_85e815fb93b0072bdd4605cefa37466d851e37cdba5ec80a301111dbb4250447.jpg?w=1200&quality=88&strip=all"
     },
     {
       "id": "macro-8f2674030e9ea3766697411a",
       "title": "Por que um membro do Fed quer elevar os juros já em setembro",
-      "summary": "Atualizacao de macro capturada em BPMoney.",
-      "details": "",
-      "url": "https://exame.com/carreira/mulheres-ocupam-so-um-terco-dos-cargos-c-level-no-mercado-financeiro-mostra-estudo/",
+      "summary": "Alberto Musalem, do Fed de St. Louis, disse à CNBC que recomendaria elevar juros em setembro se a inflação seguir acima da meta de 2%.",
+      "details": "Alberto Musalem, do Fed de St. Louis, disse à CNBC que recomendaria elevar juros em setembro se a inflação seguir acima da meta de 2%.",
+      "url": "https://bpmoney.com.br/politica/banco-central/membro-fed-musalem-recomendaria-elevar-juros-setembro/",
       "source": "BPMoney",
       "category": "macro",
       "tags": [
@@ -611,14 +705,15 @@
       "publishedAt": "2026-08-20T17:57:58Z",
       "updatedAt": "2026-08-20T17:57:58Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://uploads.bpmoney.com.br/2026/08/social-federal-reserve-fed-418006.jpg"
     },
     {
       "id": "macro-0969d1194db1afa897664db7",
       "title": "Musalem, do Fed: Seria bom aumentar as taxas de juros agora",
-      "summary": "O Brasil ganhou 2.023 novos assessores de investimento nos sete primeiros meses de 2026, segundo a Ancord.",
-      "details": "O Brasil ganhou 2.023 novos assessores de investimento nos sete primeiros meses de 2026, segundo a Ancord.",
-      "url": "https://www.infomoney.com.br/advisor/brasil-ganha-2-023-novos-assessores-de-investimento-ate-julho-veja-os-numeros/",
+      "summary": "O presidente do Banco da Reserva Federal de St. Louis, Alberto Musalem, voltou a colocar a trajetória dos juros norte-americanos no centro das...",
+      "details": "O presidente do Banco da Reserva Federal de St. Louis, Alberto Musalem, voltou a colocar a trajetória dos juros norte-americanos no centro das...",
+      "url": "https://br.advfn.com/jornal/2026/08/musalem-do-fed-seria-bom-aumentar-as-taxas-de-juros-agora",
       "source": "ADVFN",
       "category": "macro",
       "tags": [
@@ -630,14 +725,14 @@
       "updatedAt": "2026-08-20T17:57:34Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/08/pexels-rdne-7414212.jpg"
+      "imageUrl": "https://br.advfn.com/jornal/files/2025/12/federal-reserve.jpg"
     },
     {
       "id": "funds-57e0653c55acc86094a08e5f",
       "title": "Por que o PL quer Michelle nas agendas com Flávio Bolsonaro",
-      "summary": "Sugestão considera probabilidade de a inflação permanecer elevada",
-      "details": "Sugestão considera probabilidade de a inflação permanecer elevada",
-      "url": "https://www.infomoney.com.br/economia/membro-do-fed-diz-que-recomendaria-elevar-juros-em-setembro/",
+      "summary": "Ex-primeira-dama é vista como asset positivo pela campanha do primogêntio de Jair",
+      "details": "Ex-primeira-dama é vista como asset positivo pela campanha do primogêntio de Jair",
+      "url": "https://www.correiobraziliense.com.br/politica/2026/08/7483942-por-que-o-pl-quer-michelle-nas-agendas-com-flavio-bolsonaro.html",
       "source": "Correio Braziliense",
       "category": "funds",
       "tags": [
@@ -649,14 +744,14 @@
       "updatedAt": "2026-08-20T17:56:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/01/2026-01-19T132403Z_1_LYNXMPEM0I0S1_RTROPTP_4_USA-FED.jpg"
+      "imageUrl": "https://midias.correiobraziliense.com.br/_midias/jpg/2026/06/25/675x450/1_page-67023620.jpg?20260701120317?20260701120317"
     },
     {
       "id": "macro-3074ec929f669c7725ca1837",
       "title": "Membro do Fed diz que recomendaria elevar juros em setembro",
-      "summary": "Ex-primeira-dama é vista como asset positivo pela campanha do primogêntio de Jair",
-      "details": "Ex-primeira-dama é vista como asset positivo pela campanha do primogêntio de Jair",
-      "url": "https://www.correiobraziliense.com.br/politica/2026/08/7483942-por-que-o-pl-quer-michelle-nas-agendas-com-flavio-bolsonaro.html",
+      "summary": "Sugestão considera probabilidade de a inflação permanecer elevada",
+      "details": "Sugestão considera probabilidade de a inflação permanecer elevada",
+      "url": "https://www.infomoney.com.br/economia/membro-do-fed-diz-que-recomendaria-elevar-juros-em-setembro/",
       "source": "InfoMoney",
       "category": "macro",
       "tags": [
@@ -668,14 +763,14 @@
       "updatedAt": "2026-08-20T17:50:21Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://midias.correiobraziliense.com.br/_midias/jpg/2026/06/25/675x450/1_page-67023620.jpg?20260701120317?20260701120317"
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/01/2026-01-19T132403Z_1_LYNXMPEM0I0S1_RTROPTP_4_USA-FED.jpg"
     },
     {
       "id": "latest-7347243437462f2c7c1fcdcd",
       "title": "São Paulo tem feito privatizações açodadas para agradar o mercado financeiro, diz Haddad",
-      "summary": "O presidente do Banco da Reserva Federal de St. Louis, Alberto Musalem, voltou a colocar a trajetória dos juros norte-americanos no centro das...",
-      "details": "O presidente do Banco da Reserva Federal de St. Louis, Alberto Musalem, voltou a colocar a trajetória dos juros norte-americanos no centro das...",
-      "url": "https://br.advfn.com/jornal/2026/08/musalem-do-fed-seria-bom-aumentar-as-taxas-de-juros-agora",
+      "summary": "Atualizacao de ultima hora capturada em UOL Notícias.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPVHZzV3dCbmtxTWYxeXVQN29TUEoyc1lQVHRKMy1jUjRvd0FOR1RjbHhsSUVWcWNSODlVcEhucDVqeGF2T1dneU4ydVdZdWIwUTB6N1hNY0RLNUdUVkNDUEkzZkJULXJxcU13NWJrNlQ0U2JaY3JnNzU3cWc0S0RKa25XbkVWazhYTUdrWktPLXRoc3l2TnE4NHpFUlVUWGM5dHY1N2Y4dnNNVHh3V0ZackZfZFpfM0xnUmU5NjJnb194bTU2aF9zaGs0UzlBY0EzdXNnTUFLTERhSmZBNlRGZV9xWm9xTTJDQmhudTNyX0QtVk1z?oc=5",
       "source": "UOL Notícias",
       "category": "latest",
       "tags": [
@@ -686,15 +781,14 @@
       "publishedAt": "2026-08-20T17:36:00Z",
       "updatedAt": "2026-08-20T17:36:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://br.advfn.com/jornal/files/2025/12/federal-reserve.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-5aa8f026f648d62ddc5781da",
       "title": "Juros nas alturas: Tesouro Prefixado oferece 14,73% ao ano",
       "summary": "Atualizacao de ultima hora capturada em Acionista.com.br.",
       "details": "",
-      "url": "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/08/20/sao-paulo-tem-feito-privatizacoes-acodadas-para-agradar-o-mercado-financeiro-diz-haddad.htm",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcy03UHJfemdrUk9TdzAxN2RYT1FycmF2X2VaUFIzQTJjTU0xaUoySFQ4Q2dzUGdBR0FabkYtYjc5WDZMTk0yN0FVcE1SeGpDeE16OUtWY0VpV2FfRHA3UC1FZHRmY3k3ZTVyamxCcTlvNnk0YnZJdDZXdFlwVWFfeGlVMkdEZWZI?oc=5",
       "source": "Acionista.com.br",
       "category": "latest",
       "tags": [
@@ -712,7 +806,7 @@
       "title": "Nanoempreendedor não precisará de CNPJ e nota fiscal em 2027?",
       "summary": "Atualizacao de macro capturada em Portal Contabeis.",
       "details": "",
-      "url": "https://acionista.com.br/juros-nas-alturas-tesouro-prefixado-oferece-1473-ao-ano/",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVlJzZVZRZ04zMHJuOVY4dFpQdzlmNXF0a19reWdPVlRndGtqdmZIX2x6bTEtTzJmajZtTjU1NVFvUmctQWJKMDhvTUZLeVlRbDZ3NW9hYkxaVm5qckU2UkYzaW1QSVoyWFg1N25ZV29fb2hBSTBNZThhaXRFRkduMU11RV9zU2ZvZnR3cUk0MldDMlRhbWlKdFhQOHI1WndYTFJsTE9lQU0?oc=5",
       "source": "Portal Contabeis",
       "category": "macro",
       "tags": [
@@ -728,9 +822,9 @@
     {
       "id": "latest-2e21808a74a2db707c9178f0",
       "title": "Brasil ganha 2.023 novos assessores de investimento até julho; veja os números",
-      "summary": "Receita Federal comunica mudança para nanoempreendedores, que poderão ficar dispensados de CNPJ e nota fiscal a partir de 2027.",
-      "details": "Receita Federal comunica mudança para nanoempreendedores, que poderão ficar dispensados de CNPJ e nota fiscal a partir de 2027.",
-      "url": "https://www.contabeis.com.br/noticias/78900/nanoempreendedor-nao-precisara-de-cnpj-e-nota-fiscal-em-2027/",
+      "summary": "Atualizacao de ultima hora capturada em InfoMoney.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNU1KOG8xMnNCQWxKMDZWSFAwUDQ0azhLRmdQeFk0b0VlRU1vMXZRaHpwd0hHZFBxUWlCLTNib0lvOXB6TENGREJtMGc5MkFNTklySnpMMi1jSTRGWlVkMGpaYkZaeFhSQlpJRFhySC1oLW1SSzlvbUZEYXFpUjAwSG1MbVdNUl9oU2JqbHZiWGxreWoyYmxoRXVhREc4VFp4ZU9meEtCZWIyUUI1LWxwQ292VWdudm15V09v0gG7AUFVX3lxTE81TUo4bzEyc0JBbEowNlZIUDBQNDRrOEtGZ1B4WTRvRWVFTW8xdlFoenB3SEdkUHFRaUItM2JvSW85cHpMQ0ZEQm0wZzkyQU1OSXJKekwyLWNJNEZaVWQwalpiRlp4WFJCWklEWHJILWgtbVJLOW9tRkRhcWlSMDBIbUxtV01SX2hTYmpsdmJYbGt5ajJibGhFdWFERzhUWnhlT2Z4S0JlYjJRQjUtbHBDb3ZVZ252bXlXT28?oc=5",
       "source": "InfoMoney",
       "category": "latest",
       "tags": [
@@ -741,15 +835,14 @@
       "publishedAt": "2026-08-20T17:29:34Z",
       "updatedAt": "2026-08-20T17:29:34Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.contabeis.com.br/assets/img/news/nanoempreendedor-nao-precisara-de-cnpj-e-nota-fiscal-em-2027.png"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-f3e8e68fbc3a07ebff5da3f5",
       "title": "Ibovespa perde fôlego e passa a cair; Petrobras sobe com petróleo em alta",
-      "summary": "Bolsa brasileira tem pregão marcado por oscilações após novas medidas de Trump contra Teerã; juros americanos e fluxo estrangeiro também pesam",
-      "details": "Bolsa brasileira tem pregão marcado por oscilações após novas medidas de Trump contra Teerã; juros americanos e fluxo estrangeiro também pesam",
-      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-tenta-sustentar-reacao-apos-nova-escalada-entre-eua-e-ira/",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaTVlV0FNRjhNT05qbkQ0V3VLWjJRbUZVV2tUclFMMHZ4TnBWZ2NiZzhhdzNjSE9URFRQTkMyTlYyMS1oS3pyaThFRTBvRTdFTUJGNy1nLVJuRlgxdWpFT095VjBrTEZDSU5RX1U5ZGdESVBQekpfZEVwVW9SUmtxTE9udFVlYmxKMVpVdDVXdm5XSFV1QXI0ZzNUZXB2Tnh4ZEtScVFpRk5SdXlaVUtySUowUmJselJMUmVrNjJQUjI4VmvSAcgBQVVfeXFMTU9zckd3RmJXZk43eDdJdkdZeXpWcktZM21UZTVHWWtNNmZtQ25Qd19fYnh5QUFqalp4UWFwcmN5OW1Sekxvak5IMXBuanIybE8zZDV4V2Zmek5lQnJJeHpzMkpCelFqcWRpc043YTZtWERZN09qLUlsNUh2U2pEZVhLSHRDY0VoSGNuWi15Q1BWckZHVy04czkxYld2c1Q1YUNOSjg3a2hZLUZIeW5BcVI2bWFCVy1tMkF2Y1FobF9WZ0d0Ry1NczA?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -760,8 +853,7 @@
       "publishedAt": "2026-08-20T17:22:00Z",
       "updatedAt": "2026-08-20T17:22:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/Z5AJP323DRPU7JQXR72CVZTAUY.png?quality=80&auth=0cd8a504c1f6ff5c26a774b3e0c326f24853baab89a4e568b2dea95b6a920978&width=1200&height=630&focal=876,698"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-ea9506bb65f316d65620b7b9",
@@ -800,22 +892,22 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
-      "id": "macro-fd134629a182d2e9519eb149",
-      "title": "MPAM atua em apoio à operação Labirinto Fiscal, do MPSC, que investiga fraude tributária milionária em Manaus",
-      "summary": "Atualizacao de macro capturada em MPAM.",
+      "id": "latest-e489dd10f6a05b2a397bbf17",
+      "title": "Tecnologia acelera escurecimento gradual de cabelos brancos",
+      "summary": "Atualizacao de ultima hora capturada em broadcast.com.br.",
       "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQN28wWXE4SkhzZktlNXRQX2Z1NzNLRi1xY19meElxVDk1MWhoZWZ5cmdBNGR6LThMMHlvLWVFY1ozVWVwMUFGMkw0U1otMnJuaEZfNm81UG5la2lYWEdUMnlwRTVlSWVqdnprbzU5Q3B5QjZOV09QY01CLTNOZGtHTzAtbHN2RVduM0VLVUJyMVF3c0hYazhncFhlQy0tREZtbC1ZZXptZ0tkdWdTNWtKZjJlLWJuQTVZNVQ3eVZLZEtEY3J1N0VSUjdZR2FFeFdKM2t3Z2N4VlVsUEZDU25za3FQaDJQZw?oc=5",
-      "source": "MPAM",
-      "category": "macro",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcFFISFFNbmRPTDBsNWktdVVMeUNFdmFEX1ZRUkZGaUVCSDdWbEJyTTdYS1RDZTRsRmJqalVGY0ZwakF3aUd2VHVVd3dtR3g0ck9SYzhkVkVUNHJFWHdGdDhiNm5DOEUtM3BqYTRRTEhCWHZwMk04MUN1V0RfYUpEQTM3eW9CREEtNU9xd0RzcldrXzRnRnFYazU3a29WM3dLQTZR?oc=5",
+      "source": "broadcast.com.br",
+      "category": "latest",
       "tags": [
-        "macro",
-        "juros",
-        "inflacao"
+        "mercado",
+        "bolsa",
+        "macro"
       ],
-      "publishedAt": "2026-08-20T17:13:32Z",
-      "updatedAt": "2026-08-20T17:13:32Z",
+      "publishedAt": "2026-08-20T17:13:24Z",
+      "updatedAt": "2026-08-20T17:13:24Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-848f00ee3995179c58bb9e6f",
@@ -854,42 +946,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-ccf436ca0e298e71f8a1dbed",
-      "title": "Harmonização de glúteos ganha espaço entre famosas",
-      "summary": "Atualizacao de ultima hora capturada em broadcast.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWGtiaV9yZWYyd2QwSEVsWm1SVTRVMDRwN0dZTXl2YnlkS1c5Vmg4RXRhLU9qcTg0VE80SzRadlJ1QXAxRS05cXFtSWF4TE83TjJmdDZOb3ZQc3pPSFhTWXJ2cEFzWVJIaTlwMUxPeEJYUDJmSVNmNEgzYUlTNTBfaWhVUTdDdURWSkU2Y1MyQjdRSDd6UzBN?oc=5",
-      "source": "broadcast.com.br",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-20T17:13:08Z",
-      "updatedAt": "2026-08-20T17:13:08Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-e16c3b9276a93bbbae156ec8",
-      "title": "Encontro de RI debate investidor em transformação",
-      "summary": "Atualizacao de ultima hora capturada em broadcast.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQd2NYR2phaU53Z1dFTkptWGtJTWVrVWctQWg4WV9SamVFMWoyM29HdC1jaGFVNTNxMFZsUWNNd2N3MUpiWEQtSWo2akpncWpqMUxzeGxEd2c3aU9CWXRBXzlaeTFBM0hlcWtXNWFaY3R2eG92MlE3Q3ZvaDE0c0g4YWxEZW1HZk5QdWFxZnJoYnpWLUV3NkE?oc=5",
-      "source": "broadcast.com.br",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-20T17:13:05Z",
-      "updatedAt": "2026-08-20T17:13:05Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "macro-f18c66ecaeaf5b1169a1c6fa",
       "title": "Concurso TCE SP: últimas horas de inscrição; não perca!",
       "summary": "Atualizacao de macro capturada em Estratégia Concursos.",
@@ -904,24 +960,6 @@
       ],
       "publishedAt": "2026-08-20T17:11:57Z",
       "updatedAt": "2026-08-20T17:11:57Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-b05f28f6db2193aeba9d34f9",
-      "title": "Índice STOXX 600 recua com temores de inflação",
-      "summary": "Atualizacao de macro capturada em TradingView.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB5OFNVNlA0XzNVTXJSNDl4U040VEFMLWZaaDJzUHBFTVRzY2R0U0NVc2d0UXI5VTdOWEhRcGMxdURXSXM4bEcxS2RmSDF2WWpQSDBpUm9SdTlqc094Q1ZHX1NWY3hnbWo1VldCaGNBSnpndVZSTzFB?oc=5",
-      "source": "TradingView",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-20T16:58:38Z",
-      "updatedAt": "2026-08-20T16:58:38Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
@@ -942,24 +980,6 @@
       "updatedAt": "2026-08-20T16:57:19Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "macro-d7de1f358fc09a3b88cb6252",
-      "title": "Dívida dos EUA bate recorde de US$ 40 trilhões e aumenta pressão sobre contas públicas",
-      "summary": "Atualizacao de macro capturada em Balada IN.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUU1QNTJPVU5UTlF0UHg0Mjl1UnFTdXhpcFlkclV4amFFWG1pRHhiNW9yVGVpQ3R2VTR6YnRYU1p5YWxDX1pVRmVrZlZMWmdNVHNVLUtaRDRzb0NaZWdRcHlIOEs2OHFvVUNkbm4tMEp4S0VqVFFaenNWSTZrQUhOOER2UFlKV0YxQ2ZQRXhmbXcwOTZqb1NKdTZBbkE2RTVwdl9manRNY2djT3JkdFVmdVZQMzUyb3Ayd2VIVGItaGw?oc=5",
-      "source": "Balada IN",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-20T16:57:00Z",
-      "updatedAt": "2026-08-20T16:57:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "companies-0edeadda600d2e13d186533f",
@@ -1392,24 +1412,6 @@
       "updatedAt": "2026-08-20T06:00:54Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "funds-e6d48c6b084e49984e7ce086",
-      "title": "Tomar medidas decisivas para remover os obstáculos e acelerar o desembolso de fundos de investimento público.",
-      "summary": "Atualizacao de fundos capturada em Vietnam.vn.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcERzMlItSmpMck5GaUpqXzFmVnNpUWowU21TcTM3WEVnamRHaFN6dHBlc0pqc2R3SE53ZHpJSFdmSGd4VU9CanZoZkJid3FuSkRCY2dzZkNLU2RmU3dzd1ZoaTFYRjBhb3FzS0I2SFhIM3M1VWN4TEU1bjlfd3l6QlQ5aS0zYlR2TlRidUhn?oc=5",
-      "source": "Vietnam.vn",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-20T05:43:41Z",
-      "updatedAt": "2026-08-20T05:43:41Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
   ]
 }
