@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-24T05:34:09Z",
-  "generatedAt": "2026-08-24T05:34:09Z",
+  "updatedAt": "2026-08-24T06:47:36Z",
+  "generatedAt": "2026-08-24T06:47:36Z",
   "categories": [
     {
       "id": "all",
@@ -25,6 +25,10 @@
   ],
   "sources": [
     {
+      "id": "a-gazeta",
+      "label": "A Gazeta"
+    },
+    {
       "id": "acionista-com-br",
       "label": "Acionista.com.br"
     },
@@ -33,8 +37,28 @@
       "label": "AM POST"
     },
     {
+      "id": "binance",
+      "label": "Binance"
+    },
+    {
+      "id": "bitget",
+      "label": "Bitget"
+    },
+    {
       "id": "boca-com-br",
       "label": "boca.com.br"
+    },
+    {
+      "id": "bpmoney",
+      "label": "BPMoney"
+    },
+    {
+      "id": "brazileconomy-com-br",
+      "label": "brazileconomy.com.br"
+    },
+    {
+      "id": "cnn-brasil",
+      "label": "CNN Brasil"
     },
     {
       "id": "coinfomania",
@@ -49,8 +73,8 @@
       "label": "Correio Braziliense"
     },
     {
-      "id": "correio-de-corumb",
-      "label": "Correio de Corumbá"
+      "id": "d24am",
+      "label": "D24AM"
     },
     {
       "id": "defesa-em-foco",
@@ -69,6 +93,10 @@
       "label": "Estadão"
     },
     {
+      "id": "fashionnetwork-portugal",
+      "label": "FashionNetwork Portugal"
+    },
+    {
       "id": "fato-paulista",
       "label": "Fato Paulista"
     },
@@ -79,10 +107,6 @@
     {
       "id": "financenews-com-br",
       "label": "financenews.com.br"
-    },
-    {
-      "id": "folha-de-s-paulo",
-      "label": "Folha de S.Paulo"
     },
     {
       "id": "g1",
@@ -113,8 +137,16 @@
       "label": "InfoMoney"
     },
     {
+      "id": "jc",
+      "label": "JC"
+    },
+    {
       "id": "jornal-dia-dia",
       "label": "Jornal Dia Dia"
+    },
+    {
+      "id": "jornal-grande-bahia",
+      "label": "Jornal Grande Bahia"
     },
     {
       "id": "lula-site-oficial",
@@ -125,16 +157,8 @@
       "label": "Money Report"
     },
     {
-      "id": "ncnews-com-br",
-      "label": "ncnews.com.br"
-    },
-    {
       "id": "nord-investimentos",
       "label": "Nord Investimentos"
-    },
-    {
-      "id": "noticenter-com-br",
-      "label": "noticenter.com.br"
     },
     {
       "id": "o-cafezinho",
@@ -147,6 +171,10 @@
     {
       "id": "partido-dos-trabalhadores",
       "label": "Partido dos Trabalhadores"
+    },
+    {
+      "id": "poder360",
+      "label": "Poder360"
     },
     {
       "id": "portalcripto-com-br",
@@ -167,10 +195,6 @@
     {
       "id": "r-dio-itatiaia",
       "label": "Rádio Itatiaia"
-    },
-    {
-      "id": "sem-pauta-news",
-      "label": "Sem Pauta News"
     },
     {
       "id": "spacemoney",
@@ -207,11 +231,86 @@
   ],
   "items": [
     {
+      "id": "macro-004435a6bcafb0142c71c0d5",
+      "title": "Lula diz que seu deficit fiscal é melhor que o de Bolsonaro",
+      "summary": "Presidente não citou endividamento e afirmou que os demais dados econômicos da sua gestão são melhores do que os do seu antecessor. Leia no Poder360.",
+      "details": "Presidente não citou endividamento e afirmou que os demais dados econômicos da sua gestão são melhores do que os do seu antecessor. Leia no Poder360.",
+      "url": "https://www.poder360.com.br/poder-eleicoes-2026/lula-diz-que-seu-deficit-fiscal-e-melhor-que-o-de-bolsonaro/",
+      "source": "Poder360",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-24T06:30:25Z",
+      "updatedAt": "2026-08-24T06:30:25Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://static.poder360.com.br/uploads/2026/08/lula-entrevista-record-trump-lulinha-marcola-inflacao-e-taxa-das-blusinhas-23.ago_.2026-3-1200x675.jpg"
+    },
+    {
+      "id": "macro-6e78e06a9bba40a36acd132e",
+      "title": "Lacoste alvo de uma correção fiscal de quase 10 milhões de euros",
+      "summary": "IFI aponta alta real de 6,3% nas despesas, déficit de R$ 81,2 bilhões até julho e alerta para pressão estrutural sobre as contas públicas em 2027.",
+      "details": "IFI aponta alta real de 6,3% nas despesas, déficit de R$ 81,2 bilhões até julho e alerta para pressão estrutural sobre as contas públicas em 2027.",
+      "url": "https://jornalgrandebahia.com.br/2026/08/ifi-alerta-para-alta-de-63-nas-despesas-deficit-de-r-812-bilhoes-e-pressao-fiscal-sobre-2027/",
+      "source": "FashionNetwork Portugal",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-24T06:09:29Z",
+      "updatedAt": "2026-08-24T06:09:29Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://i0.wp.com/jornalgrandebahia.com.br/wp-content/uploads/2026/08/IFI-alerta-para-alta-de-63-nas-despesas-deficit-de-R-812-bilhoes-e-pressao-fiscal-sobre-2027.jpg?fit=1200%2C800&quality=30&ssl=1"
+    },
+    {
+      "id": "macro-37c8258d449703637f7ae3db",
+      "title": "IFI alerta para alta de 6,3% nas despesas, déficit de R$ 81,2 bilhões e pressão fiscal sobre 2027",
+      "summary": "O videocast da coluna conversa com Rafael Furlanetti, sócio e diretor Institucional da XP. Ele é capixaba, de São Gabriel da Palha",
+      "details": "O videocast da coluna conversa com Rafael Furlanetti, sócio e diretor Institucional da XP. Ele é capixaba, de São Gabriel da Palha",
+      "url": "https://www.agazeta.com.br/colunas/abdo-filho/papo-de-valor-20-voce-nao-controla-os-juros-mas-controla-a-operacao-da-sua-empresa-pense-nisso-0826",
+      "source": "Jornal Grande Bahia",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-24T06:00:24Z",
+      "updatedAt": "2026-08-24T06:00:24Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://netdeal.com.br/api/images/proxy?quality=100&width=1200&src=https://www.netdeal.com.br/api/images/producao.spayce.com.br/1787335933342_papo_de_valor_19.jpeg"
+    },
+    {
+      "id": "latest-2c17d0e138e2035e7a7c8ce3",
+      "title": "Papo de Valor #20: \"Você não controla os juros, mas controla a operação da sua empresa. Pense nisso\"",
+      "summary": "Atualizacao de ultima hora capturada em A Gazeta.",
+      "details": "",
+      "url": "https://pt.fashionnetwork.com/news/Lacoste-alvo-de-uma-correcao-fiscal-de-quase-10-milhoes-de-euros,1858616.html",
+      "source": "A Gazeta",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-24T06:00:00Z",
+      "updatedAt": "2026-08-24T06:00:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
       "id": "latest-854f0d0ccc8eaf923364663b",
       "title": "Mercados de grãos enfrentam desafios e buscam novas oportunidades",
-      "summary": "A Squadra elevou MELI e Nubank ao topo da carteira, converteu um short histórico no Nubank e aposta em IA, crédito e expansão nos EUA",
-      "details": "A Squadra elevou MELI e Nubank ao topo da carteira, converteu um short histórico no Nubank e aposta em IA, crédito e expansão nos EUA",
-      "url": "https://www.spacemoney.com.br/investimentos/fundos-de-investimentos/squadra-meli-nubank-carteira/",
+      "summary": "Produção elevada e crises geopolíticas impactam o setor agrícola",
+      "details": "Produção elevada e crises geopolíticas impactam o setor agrícola",
+      "url": "https://boca.com.br/agronegocio/mercados-de-graos-enfrentam-desafios-e-buscam-novas-oportunidades",
       "source": "boca.com.br",
       "category": "latest",
       "tags": [
@@ -223,14 +322,14 @@
       "updatedAt": "2026-08-24T05:18:11Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-6801650.webp"
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/196ff97b918a41fc357dbee8b327d749_858x483.jpg"
     },
     {
       "id": "funds-5d78895dacdb3fec424f2d0e",
       "title": "Squadra aposta em MELI e Nubank e converte short em compra",
-      "summary": "Produção elevada e crises geopolíticas impactam o setor agrícola",
-      "details": "Produção elevada e crises geopolíticas impactam o setor agrícola",
-      "url": "https://boca.com.br/agronegocio/mercados-de-graos-enfrentam-desafios-e-buscam-novas-oportunidades",
+      "summary": "A Squadra elevou MELI e Nubank ao topo da carteira, converteu um short histórico no Nubank e aposta em IA, crédito e expansão nos EUA",
+      "details": "A Squadra elevou MELI e Nubank ao topo da carteira, converteu um short histórico no Nubank e aposta em IA, crédito e expansão nos EUA",
+      "url": "https://www.spacemoney.com.br/investimentos/fundos-de-investimentos/squadra-meli-nubank-carteira/",
       "source": "SpaceMoney",
       "category": "funds",
       "tags": [
@@ -242,7 +341,7 @@
       "updatedAt": "2026-08-24T04:03:02Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/196ff97b918a41fc357dbee8b327d749_858x483.jpg"
+      "imageUrl": "https://www.spacemoney.com.br/wp-content/uploads/2026/08/pexels-photo-6801650.webp"
     },
     {
       "id": "latest-feba4b46413ee3ca5e5cbf8b",
@@ -266,9 +365,9 @@
     {
       "id": "macro-cb0ac5620e359e21540e811c",
       "title": "‘Esfinge’ do Fed, Warsh fala nesta semana em Jackson Hole: veja por que investidores estão ansiosos por mais uma chance de decifrá-lo",
-      "summary": "Novo presidente do banco central americano, que tem marcado a gestão por falar pouco e não estimular previsões, fará primeiro discurso no tradicional evento de líderes de autoridades monetárias",
-      "details": "Novo presidente do banco central americano, que tem marcado a gestão por falar pouco e não estimular previsões, fará primeiro discurso no tradicional evento de líderes de autoridades monetárias",
-      "url": "https://oglobo.globo.com/economia/financas/noticia/2026/08/24/esfinge-do-fed-warsh-fala-nesta-semana-em-jackson-hole-veja-por-que-investidores-estao-ansiosos-por-mais-uma-chance-de-decifra-lo.ghtml",
+      "summary": "Os rendimentos sobem, o dólar fica para trás e ativos tangíveis como ouro e cripto atraem capital.",
+      "details": "Os rendimentos sobem, o dólar fica para trás e ativos tangíveis como ouro e cripto atraem capital.",
+      "url": "https://www.bitget.com/pt/academy/why-us-dollar-index-dxy-weakening",
       "source": "O GLOBO",
       "category": "macro",
       "tags": [
@@ -278,6 +377,25 @@
       ],
       "publishedAt": "2026-08-24T03:36:54Z",
       "updatedAt": "2026-08-24T03:36:54Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://img.bgstatic.com/multiLang/web/0193d5b7b22069000c7201df6f277640.jpeg"
+    },
+    {
+      "id": "macro-d6e9cde3a18eb9f174ee8d6a",
+      "title": "Por que o Índice do Dólar dos EUA está enfraquecendo?",
+      "summary": "Novo presidente do banco central americano, que tem marcado a gestão por falar pouco e não estimular previsões, fará primeiro discurso no tradicional evento de líderes de autoridades monetárias",
+      "details": "Novo presidente do banco central americano, que tem marcado a gestão por falar pouco e não estimular previsões, fará primeiro discurso no tradicional evento de líderes de autoridades monetárias",
+      "url": "https://oglobo.globo.com/economia/financas/noticia/2026/08/24/esfinge-do-fed-warsh-fala-nesta-semana-em-jackson-hole-veja-por-que-investidores-estao-ansiosos-por-mais-uma-chance-de-decifra-lo.ghtml",
+      "source": "Bitget",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-24T03:13:00Z",
+      "updatedAt": "2026-08-24T03:13:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://s2-oglobo.glbimg.com/mjJJXcM_52CKjxI_6CRumYdYj-M=/4000x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/u/7/RaGRiwQruKLTEdB9nUqg/454812940.jpg"
@@ -304,9 +422,9 @@
     {
       "id": "macro-b63ec86a874bdea805c9a485",
       "title": "Os temores no BC com a atividade econômica e as dúvidas sobre projeção da inflação",
-      "summary": "Em conversas reservadas, técnicos e diretores da autoridade monetária têm feito ponderações o efeito dos juros no crescimento econômico e apontado",
-      "details": "Em conversas reservadas, técnicos e diretores da autoridade monetária têm feito ponderações o efeito dos juros no crescimento econômico e apontado",
-      "url": "https://www.em.com.br/politica/platobr/2026/08/7485691-os-temores-no-bc-com-a-atividade-economica-e-as-duvidas-sobre-projecao-da-inflacao.html",
+      "summary": "Atualizacao de macro capturada em Estado de Minas.",
+      "details": "",
+      "url": "https://www.binance.com/pt-BR/square/post/358999205091397",
       "source": "Estado de Minas",
       "category": "macro",
       "tags": [
@@ -317,15 +435,51 @@
       "publishedAt": "2026-08-24T03:06:00Z",
       "updatedAt": "2026-08-24T03:06:00Z",
       "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-98d6a77dd8a979162c7ac477",
+      "title": "Brasil teve retrocesso na gestão da política fiscal, afirma Zeina Latif",
+      "summary": "Sócia-diretora da Gibraltar Consulting, economista afirmou que taxa de juros está \"alta e muito instável para ambiente de negócios\"",
+      "details": "Sócia-diretora da Gibraltar Consulting, economista afirmou que taxa de juros está \"alta e muito instável para ambiente de negócios\"",
+      "url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/ww-especial-peso-divida-brasil-zeina-latif/",
+      "source": "CNN Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-24T03:00:45Z",
+      "updatedAt": "2026-08-24T03:00:45Z",
+      "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://midias.em.com.br/_midias/jpg/2026/08/24/1000x1000/1_untitled-1-990x557-67495133.jpg"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/04/ChatGPT-Image-15-de-abr.-de-2026-21_32_44.png?w=1200&h=630&crop=1"
+    },
+    {
+      "id": "macro-6ded27647866542e3d8ccc2f",
+      "title": "Insights do ManuelRD(@Square-Creator-797a0339ab22)",
+      "summary": "Atualizacao de macro capturada em Binance.",
+      "details": "",
+      "url": "https://lula.com.br/lula-inflacao-de-alimentos-com-bolsonaro-foi-de-56-na-atual-gestao-quatro-vezes-menor/",
+      "source": "Binance",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-24T02:11:30Z",
+      "updatedAt": "2026-08-24T02:11:30Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-29473e8ebb2fc19e07cb8986",
       "title": "Lula: inflação de alimentos com Bolsonaro foi de 56%. Na atual gestão, quatro vezes menor",
       "summary": "Lula | Site oficial",
-      "details": "",
-      "url": "https://lula.com.br/lula-inflacao-de-alimentos-com-bolsonaro-foi-de-56-na-atual-gestao-quatro-vezes-menor/",
+      "details": "IPCA-15, desemprego, Novo Caged, PCE americano e Jackson Hole concentram a agenda econômica entre 24 e 29 de agosto.",
+      "url": "https://www.ocafezinho.com/2026/08/23/inflacao-domina-agenda-economica-da-ultima-semana-de-agosto/",
       "source": "Lula | Site oficial -",
       "category": "macro",
       "tags": [
@@ -336,14 +490,15 @@
       "publishedAt": "2026-08-24T01:51:33Z",
       "updatedAt": "2026-08-24T01:51:33Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.ocafezinho.com/wp-content/uploads/2026/08/Jackson_Lake_Lodge_west-scaled.jpg"
     },
     {
       "id": "latest-efd5757bb14beee5a1e1b587",
       "title": "São Paulo: presidente do conselho abre o jogo sobre dívida bilionária e estudo para SAF",
-      "summary": "A 151ª edição do CNN Esportes S/A conta com a apresentação de João Vitor Xavier e Olten Ayres como convidado",
-      "details": "A 151ª edição do CNN Esportes S/A conta com a apresentação de João Vitor Xavier e Olten Ayres como convidado",
-      "url": "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-paulista/sao-paulo-fc/sao-paulo-presidente-do-conselho-abre-o-jogo-sobre-divida-bilionaria-e-estudo-para-saf/",
+      "summary": "Em conversas reservadas, técnicos e diretores da autoridade monetária têm feito ponderações o efeito dos juros no crescimento econômico e apontado",
+      "details": "Em conversas reservadas, técnicos e diretores da autoridade monetária têm feito ponderações o efeito dos juros no crescimento econômico e apontado",
+      "url": "https://www.em.com.br/politica/platobr/2026/08/7485691-os-temores-no-bc-com-a-atividade-economica-e-as-duvidas-sobre-projecao-da-inflacao.html",
       "source": "Rádio Itatiaia",
       "category": "latest",
       "tags": [
@@ -355,14 +510,14 @@
       "updatedAt": "2026-08-24T01:35:40Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://admin.itatiaia.com.br/wp-content/uploads/sites/27/2026/08/IMAGENS-PORTAL-ITATIAIA-3-20.png?resize=1280%2C720&w=1280&h=720&quality=75&crop=1"
+      "imageUrl": "https://midias.em.com.br/_midias/jpg/2026/08/24/1000x1000/1_untitled-1-990x557-67495133.jpg"
     },
     {
       "id": "macro-6da5a04266bd5071d08f7df2",
       "title": "Inflação domina agenda econômica da última semana de agosto",
-      "summary": "IPCA-15, desemprego, Novo Caged, PCE americano e Jackson Hole concentram a agenda econômica entre 24 e 29 de agosto.",
-      "details": "IPCA-15, desemprego, Novo Caged, PCE americano e Jackson Hole concentram a agenda econômica entre 24 e 29 de agosto.",
-      "url": "https://www.ocafezinho.com/2026/08/23/inflacao-domina-agenda-economica-da-ultima-semana-de-agosto/",
+      "summary": "A 151ª edição do CNN Esportes S/A conta com a apresentação de João Vitor Xavier e Olten Ayres como convidado",
+      "details": "A 151ª edição do CNN Esportes S/A conta com a apresentação de João Vitor Xavier e Olten Ayres como convidado",
+      "url": "https://www.itatiaia.com.br/esportes/futebol/futebol-nacional/futebol-paulista/sao-paulo-fc/sao-paulo-presidente-do-conselho-abre-o-jogo-sobre-divida-bilionaria-e-estudo-para-saf/",
       "source": "O Cafezinho",
       "category": "macro",
       "tags": [
@@ -374,7 +529,7 @@
       "updatedAt": "2026-08-24T01:28:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.ocafezinho.com/wp-content/uploads/2026/08/Jackson_Lake_Lodge_west-scaled.jpg"
+      "imageUrl": "https://admin.itatiaia.com.br/wp-content/uploads/sites/27/2026/08/IMAGENS-PORTAL-ITATIAIA-3-20.png?resize=1280%2C720&w=1280&h=720&quality=75&crop=1"
     },
     {
       "id": "macro-cecfbe7c10acff8e9b6e0d31",
@@ -398,9 +553,9 @@
     {
       "id": "macro-ecf9dc503a6a2ea76096209e",
       "title": "Presidente Lula destaca queda do desemprego e inflação, mas admite desafio dos juros altos",
-      "summary": "Publicado às 21h43 Eventos no radar do mercado nesta semana: Prévia da inflação oficial no […]",
-      "details": "Publicado às 21h43 Eventos no radar do mercado nesta semana: Prévia da inflação oficial no […]",
-      "url": "https://financenews.com.br/2026/08/eventos-que-podem-impactar-a-bolsa-nesta-semana-179/",
+      "summary": "Atualizacao de macro capturada em R7.",
+      "details": "",
+      "url": "https://guiadoinvestidor.com.br/noticias/mercado-pode-estar-subestimando-chances-de-flavio-bolsonaro-vencer-em-2026-aponta-consultoria/",
       "source": "R7",
       "category": "macro",
       "tags": [
@@ -411,15 +566,14 @@
       "publishedAt": "2026-08-24T01:17:33Z",
       "updatedAt": "2026-08-24T01:17:33Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://financenews.com.br/wp-content/uploads/2020/06/IMG-4893-scaled.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-e412b6b80eb9249ddd3e1a04",
       "title": "Em entrevista, Lula afirma que vai anunciar o fim da taxa das blusinhas",
-      "summary": "Atualizacao de macro capturada em Terra.",
-      "details": "",
-      "url": "https://www.correiobraziliense.com.br/cbradar/uma-inscricao-de-1-500-anos-revelou-um-esquema-de-corrupcao-fiscal-no-imperio-romano/",
+      "summary": "Ao comparar seu governo com administrações anteriores, o presidente apresentou dados sobre inflação alimentar e crescimento econômico",
+      "details": "Ao comparar seu governo com administrações anteriores, o presidente apresentou dados sobre inflação alimentar e crescimento econômico",
+      "url": "https://record.r7.com/domingo-espetacular/video/presidente-lula-destaca-queda-do-desemprego-e-inflacao-mas-admite-desafio-dos-juros-altos-24082026/",
       "source": "Terra",
       "category": "macro",
       "tags": [
@@ -430,33 +584,15 @@
       "publishedAt": "2026-08-24T01:10:00Z",
       "updatedAt": "2026-08-24T01:10:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-2bc0a3d93234183580b2760f",
-      "title": "Número de brasileiros desistindo do Brasil dispara e acende alerta sobre rumo do país",
-      "summary": "O presidente da República, Luiz Inácio Lula da Silva, afirmou, em entrevista gravada à TV Record ...",
-      "details": "O presidente da República, Luiz Inácio Lula da Silva, afirmou, em entrevista gravada à TV Record ...",
-      "url": "https://www.terra.com.br/noticias/brasil/politica/em-entrevista-lula-afirma-que-vai-anunciar-o-fim-da-taxa-das-blusinhas,ca5043852b184de1de21b6763fc1c3ae0ajb0py5.html",
-      "source": "Guia do Investidor",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-24T01:08:20Z",
-      "updatedAt": "2026-08-24T01:08:20Z",
-      "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s1.trrsf.com/update-1698692222/fe/zaz-mod-t360-icons/svg/logos/terra-16x9-borda.png"
+      "imageUrl": "https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/https%3A%2F%2Fd22yf0mxeu0gma.cloudfront.net%2F08-24-2026%2Ft_95893e1d5b284077ac81ebc332fdf127_name_file_960x540_1600_v4_.jpg?smart=true&auth=9dd743c2983dfde0776490e72144be5900f4f7d2b0a4bddbf4888966186a5acf&width=1200&height=630"
     },
     {
       "id": "latest-51044ef0db892b64fa6114d6",
       "title": "Mercado pode estar subestimando chances de Flávio Bolsonaro vencer em 2026, aponta consultoria",
-      "summary": "Ao comparar seu governo com administrações anteriores, o presidente apresentou dados sobre inflação alimentar e crescimento econômico",
-      "details": "Ao comparar seu governo com administrações anteriores, o presidente apresentou dados sobre inflação alimentar e crescimento econômico",
-      "url": "https://record.r7.com/domingo-espetacular/video/presidente-lula-destaca-queda-do-desemprego-e-inflacao-mas-admite-desafio-dos-juros-altos-24082026/",
+      "summary": "O presidente da República, Luiz Inácio Lula da Silva, afirmou, em entrevista gravada à TV Record ...",
+      "details": "O presidente da República, Luiz Inácio Lula da Silva, afirmou, em entrevista gravada à TV Record ...",
+      "url": "https://www.terra.com.br/noticias/brasil/politica/em-entrevista-lula-afirma-que-vai-anunciar-o-fim-da-taxa-das-blusinhas,ca5043852b184de1de21b6763fc1c3ae0ajb0py5.html",
       "source": "Guia do Investidor",
       "category": "latest",
       "tags": [
@@ -468,14 +604,14 @@
       "updatedAt": "2026-08-24T00:52:56Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/https%3A%2F%2Fd22yf0mxeu0gma.cloudfront.net%2F08-24-2026%2Ft_95893e1d5b284077ac81ebc332fdf127_name_file_960x540_1600_v4_.jpg?smart=true&auth=9dd743c2983dfde0776490e72144be5900f4f7d2b0a4bddbf4888966186a5acf&width=1200&height=630"
+      "imageUrl": "https://s1.trrsf.com/update-1698692222/fe/zaz-mod-t360-icons/svg/logos/terra-16x9-borda.png"
     },
     {
       "id": "macro-df413b165e7afa0e157b1165",
       "title": "Eventos que podem impactar a Bolsa nesta semana",
       "summary": "Atualizacao de macro capturada em financenews.com.br.",
       "details": "",
-      "url": "https://guiadoinvestidor.com.br/noticias/mercado-pode-estar-subestimando-chances-de-flavio-bolsonaro-vencer-em-2026-aponta-consultoria/",
+      "url": "https://jornaldiadia.com.br/reinaldo-diz-que-crise-agravada-pelo-governo-fecha-1-700-empresas-e-lojas-das-casas-bahia/",
       "source": "financenews.com.br",
       "category": "macro",
       "tags": [
@@ -491,9 +627,9 @@
     {
       "id": "macro-616d112b804cae5e88edf780",
       "title": "Uma inscrição de 1.500 anos revelou um esquema de corrupção fiscal no Império Romano",
-      "summary": "Criptomoeda negociava próxima de US$ 77,6 mil nesta segunda‑feira; investidores acompanham entradas e saídas de ETFs, movimentos de 'whales' e sinais do Federal Reserve.",
-      "details": "Criptomoeda negociava próxima de US$ 77,6 mil nesta segunda‑feira; investidores acompanham entradas e saídas de ETFs, movimentos de 'whales' e sinais do Federal Reserve.",
-      "url": "https://boca.com.br/economia/bitcoin/bitcoin-77k-etfs-fluxos",
+      "summary": "Publicado às 21h43 Eventos no radar do mercado nesta semana: Prévia da inflação oficial no […]",
+      "details": "Publicado às 21h43 Eventos no radar do mercado nesta semana: Prévia da inflação oficial no […]",
+      "url": "https://financenews.com.br/2026/08/eventos-que-podem-impactar-a-bolsa-nesta-semana-179/",
       "source": "Correio Braziliense",
       "category": "macro",
       "tags": [
@@ -505,14 +641,14 @@
       "updatedAt": "2026-08-24T00:52:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/f992092d24043566b42f76b160452506_858x483.jpg"
+      "imageUrl": "https://financenews.com.br/wp-content/uploads/2020/06/IMG-4893-scaled.jpg"
     },
     {
       "id": "latest-7926bbd0f946a752a940f2e0",
       "title": "Bitcoin avança enquanto mercado digere fluxos de ETFs e grandes movimentações on‑chain",
-      "summary": "Atualizacao de ultima hora capturada em boca.com.br.",
-      "details": "",
-      "url": "https://guiadoinvestidor.com.br/economia/numero-de-brasileiros-desistindo-do-brasil-dispara-e-acende-alerta-sobre-rumo-do-pais/",
+      "summary": "Recibos de impostos sem o valor pago ajudaram um esquema a durar anos no Império Romano. A corrupção fiscal romana",
+      "details": "Recibos de impostos sem o valor pago ajudaram um esquema a durar anos no Império Romano. A corrupção fiscal romana",
+      "url": "https://www.correiobraziliense.com.br/cbradar/uma-inscricao-de-1-500-anos-revelou-um-esquema-de-corrupcao-fiscal-no-imperio-romano/",
       "source": "boca.com.br",
       "category": "latest",
       "tags": [
@@ -523,14 +659,34 @@
       "publishedAt": "2026-08-24T00:46:59Z",
       "updatedAt": "2026-08-24T00:46:59Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.correiobraziliense.com.br/cbradar/wp-content/uploads/2026/08/Roman_official_holds_imperial_de…_202608231621_1280x720.jpg"
+    },
+    {
+      "id": "latest-d709108f1208ccc3e0297ab4",
+      "title": "Crédito alcança 122,8 milhões de brasileiros, mas inadimplência avança",
+      "summary": "Criptomoeda negociava próxima de US$ 77,6 mil nesta segunda‑feira; investidores acompanham entradas e saídas de ETFs, movimentos de 'whales' e sinais do Federal Reserve.",
+      "details": "Criptomoeda negociava próxima de US$ 77,6 mil nesta segunda‑feira; investidores acompanham entradas e saídas de ETFs, movimentos de 'whales' e sinais do Federal Reserve.",
+      "url": "https://boca.com.br/economia/bitcoin/bitcoin-77k-etfs-fluxos",
+      "source": "brazileconomy.com.br",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-24T00:20:56Z",
+      "updatedAt": "2026-08-24T00:20:56Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://images.boca.com.br/upload/imagens-resizes/f992092d24043566b42f76b160452506_858x483.jpg"
     },
     {
       "id": "macro-468e198975b50b083627a35d",
       "title": "Os preços do ouro podem sofrer flutuações acentuadas, aguardando sinais do Fed.",
-      "summary": "Os preços do ouro iniciaram a nova semana com os investidores aguardando uma série de dados econômicos dos EUA e sinais de política do Fed, principalmente o índice de inflação PCE e o discurso do presidente do Fed, Kevin Warsh, na conferência de Jackson Hole.",
-      "details": "Os preços do ouro iniciaram a nova semana com os investidores aguardando uma série de dados econômicos dos EUA e sinais de política do Fed, principalmente o índice de inflação PCE e o discurso do presidente do Fed, Kevin Warsh, na conferência de Jackson Hole.",
-      "url": "https://www.vietnam.vn/pt/gia-vang-co-the-bien-dong-manh-cho-tin-hieu-tu-fed",
+      "summary": "Atualizacao de macro capturada em Vietnam.vn.",
+      "details": "",
+      "url": "https://brazileconomy.com.br/financas/2026/08/credito-alcanca-1228-milhoes-de-brasileiros-mas-inadimplencia-avanca/",
       "source": "Vietnam.vn",
       "category": "macro",
       "tags": [
@@ -541,15 +697,14 @@
       "publishedAt": "2026-08-24T00:10:43Z",
       "updatedAt": "2026-08-24T00:10:43Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/24/1787528806918_4366b44c9f97e0e7c960e0a964a2bf13fb4dd05f_11zon-b62f.jpeg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "companies-2b2806909e839060cda69f99",
       "title": "Avibras Aeroco recebe Ministério da Defesa para ampliar exportações de defesa",
-      "summary": "Atualizacao de empresas capturada em Defesa em Foco.",
-      "details": "",
-      "url": "https://www.defesaemfoco.com.br/webstories/avibras-aeroco-recebe-ministerio-da-defesa-para-ampliar-exportacoes-de-defesa/",
+      "summary": "Os preços do ouro iniciaram a nova semana com os investidores aguardando uma série de dados econômicos dos EUA e sinais de política do Fed, principalmente o índice de inflação PCE e o discurso do presidente do Fed, Kevin Warsh, na conferência de Jackson Hole.",
+      "details": "Os preços do ouro iniciaram a nova semana com os investidores aguardando uma série de dados econômicos dos EUA e sinais de política do Fed, principalmente o índice de inflação PCE e o discurso do presidente do Fed, Kevin Warsh, na conferência de Jackson Hole.",
+      "url": "https://www.vietnam.vn/pt/gia-vang-co-the-bien-dong-manh-cho-tin-hieu-tu-fed",
       "source": "Defesa em Foco",
       "category": "companies",
       "tags": [
@@ -561,14 +716,14 @@
       "updatedAt": "2026-08-24T00:00:25Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://www.defesaemfoco.com.br/wp-content/uploads/2026/08/2026-08-21_08-13-22-defesaemfoco-720x646.jpg"
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/24/1787528806918_4366b44c9f97e0e7c960e0a964a2bf13fb4dd05f_11zon-b62f.jpeg"
     },
     {
       "id": "companies-b96003fceb8ce41374f0af86",
       "title": "Reinaldo diz que crise agravada pelo Governo fecha 1.700 empresas e lojas das Casas Bahia",
       "summary": "Atualizacao de empresas capturada em Jornal Dia Dia.",
       "details": "",
-      "url": "https://jornaldiadia.com.br/reinaldo-diz-que-crise-agravada-pelo-governo-fecha-1-700-empresas-e-lojas-das-casas-bahia/",
+      "url": "https://www.defesaemfoco.com.br/webstories/avibras-aeroco-recebe-ministerio-da-defesa-para-ampliar-exportacoes-de-defesa/",
       "source": "Jornal Dia Dia",
       "category": "companies",
       "tags": [
@@ -579,7 +734,8 @@
       "publishedAt": "2026-08-23T23:55:28Z",
       "updatedAt": "2026-08-23T23:55:28Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://www.defesaemfoco.com.br/wp-content/uploads/2026/08/2026-08-21_08-13-22-defesaemfoco-720x646.jpg"
     },
     {
       "id": "macro-c66f1a1129c8df0e8e367286",
@@ -603,9 +759,9 @@
     {
       "id": "macro-4d0de235dae4b204ddf2a2c5",
       "title": "FT: Warsh tenta acalmar investidores em meio a sinais de pressão sobre a economia",
-      "summary": "Namorado de Mariana Ximenes revela planos e nova fase aos 45 anos, compartilhando detalhes sobre o relacionamento e futuro.",
-      "details": "Namorado de Mariana Ximenes revela planos e nova fase aos 45 anos, compartilhando detalhes sobre o relacionamento e futuro.",
-      "url": "https://ncnews.com.br/2026/08/23/namorado-mariana-ximenes-revela-planos-nova-fase-45-anos/",
+      "summary": "Atualizacao de macro capturada em Valor Econômico.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOTFhkdkt0aTFtenN6T2JNbjFqWmdEUkM2Z3kzNXF6d0xxZzlCQ1BZUEU4b0p1dk83OVRrMFh3a19XWUNQM25EMFIzc0ZpS3c1NDdtRlFzcDVEUVhXNFZlWGYtSmpjdTNZNG1iU3ltdGR1TjYtdHlpa3FpaktZTXZmUzRvZTJZTmk1SWpiLTJZYnczNlp1TjBiSE56N2c5ODZqNnp4ek5tZnR6U3V2d2FyTUU3MnFaVFczSmZWOFg0QTRIaEdkTk5oY2RWWWU4N2ZTQ2dEY2RwdEl2YkpfdklPS1VB0gHiAUFVX3lxTE5MWGR2S3RpMW16c3pPYk1uMWpaZ0RSQzZneTM1cXp3THFnOUJDUFlQRThvSnV2Tzc5VGswWHdrX1dZQ1AzbkQwUjNzRmlLdzU0N21GUXNwNURRWFc0VmVYZi1KamN1M1k0bWJTeW10ZHVONi10eWlrcWlqS1lNdmZTNG9lMllOaTVJamItMllidzM2WnVOMGJITno3Zzk4Nmo2enh6Tm1mdHpTdXZ3YXJNRTcycVpUVzNKZlY4WDRBNEhoR2ROTmhjZFZZZTg3ZlNDZ0RjZHB0SXZiSl92SU9LVUE?oc=5",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -616,90 +772,14 @@
       "publishedAt": "2026-08-23T23:46:46Z",
       "updatedAt": "2026-08-23T23:46:46Z",
       "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://ncnews.com.br/app/uploads/2026/08/marixi-0637-1.webp"
-    },
-    {
-      "id": "macro-6137ab263186ac1c846f5aa7",
-      "title": "Caiado afirma que falta de moral do governo Lula afeta inflação de alimentos",
-      "summary": "Atualizacao de macro capturada em Rádio Itatiaia.",
-      "details": "",
-      "url": "https://valor.globo.com/google/amp/financas/noticia/2026/08/23/ft-warsh-tenta-acalmar-investidores-em-meio-a-sinais-de-presso-sobre-a-economia.ghtml",
-      "source": "Rádio Itatiaia",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-23T23:22:18Z",
-      "updatedAt": "2026-08-23T23:22:18Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/VkECHH6NLihMNhuBFVGK965QTd4=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/C/P/MhY9ASRqGBABh5YvkbOw/foto07fin-101-ft-c2.jpg"
-    },
-    {
-      "id": "macro-22c52ec49ef782a109f3a020",
-      "title": "A DÍVIDA QUE EXCLUI - COMO O ENDIVIDAMENTO PÚBLICO BRASILEIRO SUFOCA CRESCIMENTO, ALIMENTA VIOLÊNCIA E LIMITA INCLUSÃO",
-      "summary": "Atualizacao de macro capturada em Correio de Corumbá.",
-      "details": "",
-      "url": "https://amp.correiodecorumbapantanal.com.br/economia/a-divida-que-exclui-como-o-endividamento-publico-brasileiro-sufoca-crescimento-alimenta-violencia-e-limita-inclusao",
-      "source": "Correio de Corumbá",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-23T23:07:00Z",
-      "updatedAt": "2026-08-23T23:07:00Z",
-      "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "latest-ad77dc23c4e73e8cd86a3596",
-      "title": "Namorado de Mariana Ximenes revela planos e nova fase aos 45 anos",
-      "summary": "Declaração ocorreu durante debate da Band, na noite deste domingo (23)",
-      "details": "Declaração ocorreu durante debate da Band, na noite deste domingo (23)",
-      "url": "https://www.itatiaia.com.br/politica/eleicoes/caiado-afirma-que-falta-de-moral-do-governo-lula-afeta-inflacao-de-alimentos/",
-      "source": "ncnews.com.br",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-23T23:00:58Z",
-      "updatedAt": "2026-08-23T23:00:58Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://admin.itatiaia.com.br/wp-content/uploads/sites/27/2026/08/Captura-de-Tela-2026-08-23-as-20.21.41.png?resize=1280%2C720&w=1280&h=720&quality=75&crop=1"
-    },
-    {
-      "id": "funds-e3e9a64de7d068c7ed573e7f",
-      "title": "Aplicativo de mobilidade urbana para mulheres começa a operar em Joinville",
-      "summary": "Descubra 4 opções de cartão de crédito acessíveis para quem está com o nome sujo no Brasil, facilitando a retomada do controle financeiro.",
-      "details": "Descubra 4 opções de cartão de crédito acessíveis para quem está com o nome sujo no Brasil, facilitando a retomada do controle financeiro.",
-      "url": "https://fatopaulista.com.br/superando-restricoes-cartao-credito-nome-sujo/",
-      "source": "noticenter.com.br",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-23T22:22:44Z",
-      "updatedAt": "2026-08-23T22:22:44Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://fatopaulista.com.br/wp-content/uploads/2026/08/quatro-alternativas-de-cartao-de-credito-para-negativado-1787523015233.jpg"
     },
     {
       "id": "latest-9cc63e745f271c0cb4b0b94a",
       "title": "Quatro alternativas de cartão de crédito para negativados recuperarem o controle financeiro",
-      "summary": "Atriz foi",
-      "details": "Atriz foi",
-      "url": "https://gshow.globo.com/tv/domingao-com-huck/danca-dos-famosos/2026/noticia/mariana-ximenes-troca-mensagem-com-namorado-durante-o-domingao.ghtml",
+      "summary": "Atualizacao de ultima hora capturada em Fato Paulista.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SVEZESHdhVkFXZVR4QXFuR1hyN1NxMmZFY1U4MS1tNDZyTjk5UjlEMWY3Skt0dUdYMWxNOC1FSzMxZC1tcThRVGk4bnZ1bVZlUmpvYlV6SVJjeWpzUHc0QU5Uc29pdWwzMXNEZEpuMU1LcGdFRmlIdWFLdzJQWUE?oc=5",
       "source": "Fato Paulista",
       "category": "latest",
       "tags": [
@@ -710,15 +790,14 @@
       "publishedAt": "2026-08-23T22:11:32Z",
       "updatedAt": "2026-08-23T22:11:32Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s2-gshow.glbimg.com/BCG_elNEUe98ntl06neUsiH1tBs=/1920x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2026/o/M/2qtlC9RumHiMlrfHqGsA/domingao-com-huck.00-04-15-10.still012.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-91f24889c339f15d9e2007ba",
       "title": "Mariana Ximenes troca mensagem com namorado durante o Domingão",
       "summary": "Atualizacao de ultima hora capturada em Gshow.",
       "details": "",
-      "url": "https://www.noticenter.com.br/noticia/34986/aplicativo-de-mobilidade-urbana-para-mulheres-comeca-a-operar-em-joinville",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQS2tLNG50Qk0tY2otd0piZ1V1Z2p2aDlwdDVFSXBmakw4elRYN2R6TUJpTzlEZWU1QzVacDdQOVJQYkhVcko5RjlKcmVmd1lpdnNtSGtQU0NUbnJIdHQzNm9ac2pxeF9PMHhHcmRyUFdlbHQ4c0REdERPOTUxRndzQjJIU0xEbU5HQlRLNGUtQTZMU1dTT0lXN1kwVDhuVExSQmVHUjBJVHhlMkdjYVJ6c3BWV29NRExXT1o4eUhkempIQ0hmQk1IY1NXeGt6d2wtU1hGR1B3X2hSdW1a0gHrAUFVX3lxTE8yc2hCdU5vejZNdEsteHdOTEhVZTFUQjFoclJpNTVtZFhLY18tZm1PWGFYcUc4NDg1S0xlQ2wyTHdFaEFJNUUxQ093QXl1Z1pDNFdMeHotU21oZTg3LXhOT1ZQTDRJd3BHOVJRZGpSd3J6WUdJX2pPcHowc1djLXVIYnNtOHBPbUMxRW5Senl4azFWWUdGN1Ewa1ZheHl4OGZ3VkVadUY5TGdPOEJETjF1eGJzRlNnd0xRSXpaSkRfWnE1ck55SEttZ3p0dFczU2YyTnYwYkdWZGtaV3Q1M1Bab3FZaTZTR3Jvc1E?oc=5",
       "source": "Gshow",
       "category": "latest",
       "tags": [
@@ -729,26 +808,7 @@
       "publishedAt": "2026-08-23T22:00:52Z",
       "updatedAt": "2026-08-23T22:00:52Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.noticenter.com.br/noticias/64e3a599d1cc9.jpg"
-    },
-    {
-      "id": "macro-458d334102a9c50509bf8c85",
-      "title": "Mônica Bergamo: Fiocruz propõe 7% do PIB para a saúde no próximo mandato em carta a candidatos",
-      "summary": "Atualizacao de macro capturada em Folha de S.Paulo.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOVVVwNWhLZ1kzbEhwLTJZc2ZFeHJDVkhZcUJLVVE2VGVYelRRNmR2TTAxZWJNREpJZVM2N0l2dkJoQ3FpUEN0cFRuWkEzUGwwYkFmS0R4OXZsaUxvZ1F3SHpJVmFFeGNaTXZaVHBPRm0wY01BMEpWWDdxR1VLeVM1MDVjczZmS1ZIcVo5QlpHVTFqd1hmVjd2NVRNNEFaT185NjNkTnFlZzByM3VoS3NTLW5hWUVxT1Vnbm9acTY5UjNoTUpoakRPcGhTcmFzTzlGQVdCQjdNQnducW8?oc=5",
-      "source": "Folha de S.Paulo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-23T22:00:00Z",
-      "updatedAt": "2026-08-23T22:00:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-b47c498a9f716f825fdeb667",
@@ -769,24 +829,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-56d456d99831139bc37006e6",
-      "title": "Juros altos não decorrem de lobby do mercado, e sim de ineficiência monetária e frouxidão fiscal",
-      "summary": "Atualizacao de macro capturada em Sem Pauta News.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQQ0RwQWZTNUVxbWdadzE4YmlFd19pdG02bUw3SFc1WWVPNlBZQU9sQW9jWWNjdXM0aS1Td3J2OHBUeWozSU9HOGV5Rm5aYXAwSmpta1VsQTNIczR3RjVPOGJsSkE4T2FqeUtyMmVQdEZOcnFtVzJ0My1ZeXBpVFg4WHd0Um82MkVLRkhaMlBWcXB5ZkJGVC1CQThhYjhIaEJvX3YwQ25pVHRCZldnVWl0QjZvdzYtOEM2b1dPSXlEbzRxVUFfZW1WMVlLRW1vMURHRE9R?oc=5",
-      "source": "Sem Pauta News",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-23T21:38:13Z",
-      "updatedAt": "2026-08-23T21:38:13Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "companies-0175e9171a4611aa96054ee8",
       "title": "Brasil está entre emergentes com empresas mais endividadas, aponta UBS BB",
       "summary": "Atualizacao de empresas capturada em Estadão.",
@@ -805,24 +847,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "macro-218fb885463e924b1912ab12",
-      "title": "Títulos longos dos EUA podem cair mais sem sinalização clara de Warsh",
-      "summary": "Atualizacao de macro capturada em InfoMoney.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNEhUN1NidWY4ZUZVMTFKZUU2N2ZYb1JPX2d2TzlzSG9BTkJuanAzY0EzT3RBakxrbDg4X0hBWHdqUVJhdVZKeGRLUUhtRzU3TGRfYlRCSDVUb1hVMXVJYVd1SnBiV2xZWmktX0M0d3ZBNjdhVG42TjFwT0IxZ3p1WmswUWt6V3dsbmZnODZON1M3VnJNX3RjSXh6ZkdQMktiTElrUnJGcVZVZXYz0gGyAUFVX3lxTE5FZERWdGlUMDdmcUJlNkVPNy1fWWRQWmFIbnBPclVNZXlybHRNSmVqNEVZMWdwVVlRamNvZlhPN1F3a1hMeVFmTVphOGhDR2U4N1BHc2RWRlJqaXJCWUZqcW5UbEg1U0I3VXBnRC1IOWlyVWVNZnJCeXZjZDdKQktJRHhkZHQzbU5hTWdqVWJPMGlmajlvYTF5Zm13dTFuVUgzTU43QmNoZUhqVlRrZ1BveFE?oc=5",
-      "source": "InfoMoney",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-23T21:14:57Z",
-      "updatedAt": "2026-08-23T21:14:57Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "funds-8ed693a878fa4557d89384f2",
       "title": "Juros compostos: como o dinheiro cresce",
       "summary": "Atualizacao de fundos capturada em SpaceMoney.",
@@ -839,6 +863,24 @@
       "updatedAt": "2026-08-23T21:01:40Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "latest-25d41225dff2665b6ce94e12",
+      "title": "Agenda da semana: IPCA-15, dados de trabalho no Brasil e Jackson Hole movimentam os mercados",
+      "summary": "Atualizacao de ultima hora capturada em BPMoney.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMGhRUTU0dEhlY21TMmxBQ1Zyak5Wb25MQ3JGVElTeGVjNi1CX2l4bW9oRXI4VHdad191Vms2SnVkYTJaRWpNRzF6cXFPaFlLQkE4dlVhdkItZHI5QUg5cE5ZSTlic0NaR1NyNjU4OV9DemdhRVlib2lWRHlpWThqclRiM2dNeXNiamk3S2FDOFZwZWlDemhGLVRNeENnX3Jh?oc=5",
+      "source": "BPMoney",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-23T21:00:00Z",
+      "updatedAt": "2026-08-23T21:00:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "funds-107dfcfcf3152b2d4841089b",
@@ -1003,42 +1045,6 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
-      "id": "latest-64cd8c6658d225a26e78dc8a",
-      "title": "Do like ao lucro: Como transformar métricas de vaidade em impacto financeiro real",
-      "summary": "Atualizacao de ultima hora capturada em Propmark.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRmt6R29qRVV6aFQ1VFR4MFhnZWdOeDcwd0lVRWtkMU9zd0JtR0V5dDJvVzdxeTEzU3F3N0RvRXVtN3NWVWhudEF0MDlGd0tqYTRfYW40V20tbUVsVldVX19oM2MySzRHUlFVdkJDTXBXdk9WZ1hHM19hUGxDeEpZczRRR0lfdVduT2tfN2tzYWR0RGpEdTZRa0w0QmtZN1JmX3lkd3d0ei11bnlob01ial9B?oc=5",
-      "source": "Propmark",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-23T18:47:13Z",
-      "updatedAt": "2026-08-23T18:47:13Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-bfe090542fa4b8f998234ecf",
-      "title": "Brand intelligence e a construção de valor no setor financeiro",
-      "summary": "Atualizacao de ultima hora capturada em Propmark.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOU1hZeHFBdzlMOVg5SEFNSDN6OHltYk5ORU5xeFFHNktHUFFCdElQeXI2eWI2N3BZOWs1d0k5R3BxR2dUYjlvME1pbWVGc09OVmlGT3ZyaHh4aXphY2dGNWtLQm1VZmM2RWJSOXJNM01fei1aRXpUclNFS3UzdTZTLWItdHFyXzYtNU5QMXFVWEx6WW9jejJRV3VkMA?oc=5",
-      "source": "Propmark",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-23T18:47:10Z",
-      "updatedAt": "2026-08-23T18:47:10Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "companies-2b6db5e1777b05c468959e93",
       "title": "Empresários argentinos aceleram compra de empresas brasileiras",
       "summary": "Atualizacao de empresas capturada em redeutv.com.br.",
@@ -1197,24 +1203,6 @@
       ],
       "publishedAt": "2026-08-23T15:00:07Z",
       "updatedAt": "2026-08-23T15:00:07Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-abbf8ff8765ba0d5f4102331",
-      "title": "Por que investidores argentinos estão comprando empresas brasileiras",
-      "summary": "Atualizacao de empresas capturada em redeutv.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVzJ0dEE3cl9NVWVkZ0FSY29xT2JXMUFQbDNMU0VvcFMzazI4c1h6Z1kyS0p3aENsaHpqLTdiSHhhNWdLa1lwS1JHa21Rd2U1UHdqdU0xRlg4U3l1Q2ZsWTlid0xfb3NEVTRKZzFGYnQyNUl3aURxSl9IOWMyZS1vem1NNTFBQWNLUTVYWFRpTFp6M1A2bWc?oc=5",
-      "source": "redeutv.com.br",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-23T14:30:00Z",
-      "updatedAt": "2026-08-23T14:30:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
@@ -1379,6 +1367,42 @@
       "updatedAt": "2026-08-23T11:38:46Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "companies-5d6637ffd156c59bce0c1120",
+      "title": "Saiba como empresas devem prevenir riscos à saúde mental no trabalho",
+      "summary": "Atualizacao de empresas capturada em D24AM.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOazN3cFB0SmhWMlRjTkNfWTh3bi1ob2d6TEd5S0V3cWZpWHZUWm1GTFlFeHRIOXcwSW1BUkNjWlFlN0NXZFV2QkJsbmROLVJnOTZDNFhGN3BkNVF6YlBKZkxOd0hzaXZOck9jQ1hzSS13dXB1Wl9mc05YUzJtSEhBR25NMm44NmJ2cmM0cHZvdE9kLWdUMEpRZ29B?oc=5",
+      "source": "D24AM",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-23T11:00:09Z",
+      "updatedAt": "2026-08-23T11:00:09Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "companies-8b7eb36cb189f5cd36a1e7b1",
+      "title": "Ecio Costa: Inadimplência de famílias e empresas alimenta o sufoco do setor produtivo",
+      "summary": "Atualizacao de empresas capturada em JC.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNZktVanlkUk9QNEpkTW1LeHEtQW5FY0p2WnA0QVVLd2xjUmE5c0o2SXVTWEZxRmx2MlpMQlhkamJNV2ZqWUlvZ1NJSmNCUXJVS2Y3TVhFeC1XSk8ybGJoZTJhSmk5X1BpSkkzNkxGVDI2RXgyeGREdEFCYl9STnJXOGdERUtoZlkzTkxGYVQtWGlvUXl3cGRza3haNDQ3ZHY1WV9Rdm9ubkZFQTNkUVA0MmFKemMtaDBFWkdBaW1oSFZMZzlWSDQ2MktNMzRGOHFJdm5neE0tUEt1R211elQ3Z096WTA?oc=5",
+      "source": "JC",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-23T10:02:00Z",
+      "updatedAt": "2026-08-23T10:02:00Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     }
   ]
 }
