@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-24T22:52:45Z",
-  "generatedAt": "2026-08-24T22:52:45Z",
+  "updatedAt": "2026-08-24T23:18:45Z",
+  "generatedAt": "2026-08-24T23:18:45Z",
   "categories": [
     {
       "id": "all",
@@ -24,6 +24,10 @@
     }
   ],
   "sources": [
+    {
+      "id": "bahia-economica",
+      "label": "- Bahia Economica"
+    },
     {
       "id": "misto-brasil",
       "label": "- Misto Brasil"
@@ -109,10 +113,6 @@
       "label": "Economic News Brasil"
     },
     {
-      "id": "empiricus",
-      "label": "Empiricus"
-    },
-    {
       "id": "estad-o",
       "label": "Estadão"
     },
@@ -123,10 +123,6 @@
     {
       "id": "fog-onet",
       "label": "FogãoNET"
-    },
-    {
-      "id": "forbes-brasil",
-      "label": "Forbes Brasil"
     },
     {
       "id": "gps-bras-lia-portal-de-not-cias-do-df",
@@ -145,16 +141,8 @@
       "label": "Jornal do Brasil"
     },
     {
-      "id": "meon",
-      "label": "MEON"
-    },
-    {
       "id": "mercado-e-eventos",
       "label": "Mercado e Eventos"
-    },
-    {
-      "id": "meugamer",
-      "label": "MeUGamer"
     },
     {
       "id": "monitor-do-mercado",
@@ -197,6 +185,10 @@
       "label": "SEGS Portal Nacional"
     },
     {
+      "id": "senado-federal",
+      "label": "Senado Federal"
+    },
+    {
       "id": "seu-dinheiro",
       "label": "Seu Dinheiro"
     },
@@ -213,6 +205,10 @@
       "label": "suno.com.br"
     },
     {
+      "id": "teletime-news",
+      "label": "TELETIME News"
+    },
+    {
       "id": "term-metro-da-pol-tica",
       "label": "Termômetro da Política"
     },
@@ -227,6 +223,10 @@
     {
       "id": "tribuna-do-agreste",
       "label": "Tribuna do Agreste"
+    },
+    {
+      "id": "tribuna-do-sert-o",
+      "label": "Tribuna do Sertão"
     },
     {
       "id": "uol-economia",
@@ -251,11 +251,68 @@
   ],
   "items": [
     {
+      "id": "companies-f0024a05531a7daf7d85a5ed",
+      "title": "NORDESTE CONCENTRA 16,1% DAS EMPRESAS BRASILEIRAS E TEM FATURAMENTO MÉDIO DE R$ 377,1 MIL, APONTA SERASA EXPERIAN",
+      "summary": "Bahia Economica",
+      "details": "O maior portal de Economia da Bahia ECONOMIA / POLÍTICA, NORDESTE INVEST Bahia Economica O Nordeste concentra 16,1% das empresas brasileiras analisadas pela Serasa Experian e apresenta faturamento médio estimado de R$ 377,1 mil por ano, segundo levantamento da empresa.",
+      "url": "https://bahiaeconomica.com.br/wp/2026/08/24/nordeste-concentra-161-das-empresas-analisadas-e-tem-faturamento-medio-de-r-3771-mil-aponta-serasa-experian/",
+      "source": "- Bahia Economica",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-08-24T23:06:46Z",
+      "updatedAt": "2026-08-24T23:06:46Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://bahiaeconomica.com.br/wp/wp-content/uploads/2026/03/rio_tem_primeiro_dia_util_de_reabertura_do_comercio_de_rua2906200458.jpg"
+    },
+    {
+      "id": "latest-c8c7f76d5e87b3297c234298",
+      "title": "Claro aposta em demanda do setor financeiro por uso de GPUs como serviço",
+      "summary": "Papéis da empresa registraram forte queda ao longo do dia após a companhia anunciar que havia protocolado formalmente o pedido de recuperação extrajudicial",
+      "details": "Papéis da empresa registraram forte queda ao longo do dia após a companhia anunciar que havia protocolado formalmente o pedido de recuperação extrajudicial",
+      "url": "https://www.correiobraziliense.com.br/economia/2026/08/7486289-braskem-lidera-perdas-na-b3-apos-pedido-de-recuperacao-extrajudicial.html",
+      "source": "TELETIME News",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-24T23:05:31Z",
+      "updatedAt": "2026-08-24T23:05:31Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://midias.correiobraziliense.com.br/_midias/jpg/2026/01/27/675x450/1_1535-63691348.jpg?20260321002519?20260321002519"
+    },
+    {
+      "id": "macro-02a062e47f6ca3bcb8bbae06",
+      "title": "STF cria penduricalho e pagará adicional de até 22,5% do salário para assessores de ministros",
+      "summary": "Claro está apostando no setor financeiro como um dos grandes demandantes de GPUs como serviço e acaba de lançar um produto de atendimento baseado em inteligência artificial (IA) e nos chips avançados, após sucesso no uso interno da solução. #teletime #teletimenews",
+      "details": "Claro está apostando no setor financeiro como um dos grandes demandantes de GPUs como serviço e acaba de lançar um produto de atendimento baseado em inteligência artificial (IA) e nos chips avançados, após sucesso no uso interno da solução. #teletime #teletimenews",
+      "url": "https://teletime.com.br/24/08/2026/claro-gpus-financeiro/",
+      "source": "Estadão",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-24T22:45:48Z",
+      "updatedAt": "2026-08-24T22:45:48Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://cdn.teletime.com.br/wp-content/uploads/2026/08/Design-sem-nome-2026-08-24T194621.763.webp"
+    },
+    {
       "id": "latest-79aca2f31f053aa95cff6dd6",
       "title": "Visibilidade em tempo real vira peça central da segurança no setor financeiro",
-      "summary": "Termômetro da Política - Notícia quente. Opinião com tempero.",
-      "details": "Termômetro da Política - Notícia quente. Opinião com tempero.",
-      "url": "https://www.termometrodapolitica.com.br/economia/noticia/2026/08/24/boletim-focus-mercado-reduz-previsao-para-o-pib-de-2026-e-eleva-estimativa-para-2028/",
+      "summary": "O benefício contempla elite de servidores que ocupa cargos comissionados; STJ, TSE, TST e STM aprovaram mesmo privilégio; STF diz que medida está amparada em estudo orçamentário; tribunais dizem que benefício é legal",
+      "details": "O benefício contempla elite de servidores que ocupa cargos comissionados; STJ, TSE, TST e STM aprovaram mesmo privilégio; STF diz que medida está amparada em estudo orçamentário; tribunais dizem que benefício é legal",
+      "url": "https://www.estadao.com.br/politica/stf-cria-penduricalho-e-pagara-adicional-de-ate-225-do-salario-para-assessores-de-ministros/",
       "source": "TI INSIDE Online",
       "category": "latest",
       "tags": [
@@ -267,7 +324,7 @@
       "updatedAt": "2026-08-24T22:44:07Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.termometrodapolitica.com.br/base/wp-content/uploads/937dfb9b11daedd78acf40b686100909.jpg"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/WHMJWFR27RBTZBNDGJMP6U6GWY.jpg?quality=80&auth=124ddfe4f6f38ea33b1d520e1036421d27177154b0df032b214456d1aa0b0e7e&width=1200&height=630&smart=true"
     },
     {
       "id": "funds-e910326536ef7d0e747cce73",
@@ -290,9 +347,9 @@
     {
       "id": "macro-4b4fe4b4b7fe7c6a0ef40299",
       "title": "Boletim Focus: mercado reduz previsão para o PIB de 2026 e eleva estimativa para 2028",
-      "summary": "A Moody's considera fatores além do retorno para ranquear as principais casas do mercado financeiro; confira os rankings",
-      "details": "A Moody's considera fatores além do retorno para ranquear as principais casas do mercado financeiro; confira os rankings",
-      "url": "https://www.seudinheiro.com/2026/bolsa-dolar/moodys-elege-as-gestoras-mais-consistentes-nos-ultimos-tres-anos-veja-quem-entregou-resultado-sem-exagerar-no-risco-mlim/",
+      "summary": "Atualizacao de macro capturada em Termômetro da Política.",
+      "details": "",
+      "url": "https://monitormercantil.com.br/sonegacao-fiscal-das-empresas-e-de-r-27-tri-por-ano/",
       "source": "Termômetro da Política",
       "category": "macro",
       "tags": [
@@ -303,15 +360,14 @@
       "publishedAt": "2026-08-24T22:43:00Z",
       "updatedAt": "2026-08-24T22:43:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.seudinheiro.com/uploads/2025/01/dividendos-2024-pagadoras-dy-ranking.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-65f9c38772ddd1c4a6601722",
       "title": "Sonegação fiscal das empresas é de R$ 2,7 tri por ano",
-      "summary": "Atualizacao de macro capturada em Monitor Mercantil.",
-      "details": "",
-      "url": "https://monitormercantil.com.br/sonegacao-fiscal-das-empresas-e-de-r-27-tri-por-ano/",
+      "summary": "A Moody's considera fatores além do retorno para ranquear as principais casas do mercado financeiro; confira os rankings",
+      "details": "A Moody's considera fatores além do retorno para ranquear as principais casas do mercado financeiro; confira os rankings",
+      "url": "https://www.seudinheiro.com/2026/bolsa-dolar/moodys-elege-as-gestoras-mais-consistentes-nos-ultimos-tres-anos-veja-quem-entregou-resultado-sem-exagerar-no-risco-mlim/",
       "source": "Monitor Mercantil",
       "category": "macro",
       "tags": [
@@ -322,33 +378,15 @@
       "publishedAt": "2026-08-24T22:06:10Z",
       "updatedAt": "2026-08-24T22:06:10Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-a7b5b8717bff677bd1483fca",
-      "title": "STF cria penduricalho e pagará adicional de até 22,5% do salário para assessores de ministros",
-      "summary": "O benefício contempla elite de servidores que ocupa cargos comissionados; STJ, TSE, TST e STM aprovaram mesmo privilégio; STF não se manifestou; tribunais dizem que benefício é legal",
-      "details": "O benefício contempla elite de servidores que ocupa cargos comissionados; STJ, TSE, TST e STM aprovaram mesmo privilégio; STF não se manifestou; tribunais dizem que benefício é legal",
-      "url": "https://www.estadao.com.br/politica/stf-cria-penduricalho-e-pagara-adicional-de-ate-225-do-salario-para-assessores-de-ministros/",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-24T22:05:26Z",
-      "updatedAt": "2026-08-24T22:05:26Z",
-      "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/WHMJWFR27RBTZBNDGJMP6U6GWY.jpg?quality=80&auth=124ddfe4f6f38ea33b1d520e1036421d27177154b0df032b214456d1aa0b0e7e&width=1200&height=630&smart=true"
+      "imageUrl": "https://www.seudinheiro.com/uploads/2025/01/dividendos-2024-pagadoras-dy-ranking.jpg"
     },
     {
       "id": "latest-5d4b8e1020436c6520361b8d",
       "title": "Braskem lidera perdas na B3 após pedido de recuperação extrajudicial",
-      "summary": "Alimentos subiram quatro vezes menos, desemprego recuou e crescimento dobrou; entregas em educação, infraestrutura e combate ao crime também são maiores",
-      "details": "Alimentos subiram quatro vezes menos, desemprego recuou e crescimento dobrou; entregas em educação, infraestrutura e combate ao crime também são maiores",
-      "url": "https://pt.org.br/da-inflacao-a-seguranca-numeros-mostram-brasil-melhor-com-lula-do-que-com-bolsonaro/",
+      "summary": "Termômetro da Política - Notícia quente. Opinião com tempero.",
+      "details": "Termômetro da Política - Notícia quente. Opinião com tempero.",
+      "url": "https://www.termometrodapolitica.com.br/economia/noticia/2026/08/24/boletim-focus-mercado-reduz-previsao-para-o-pib-de-2026-e-eleva-estimativa-para-2028/",
       "source": "Correio Braziliense",
       "category": "latest",
       "tags": [
@@ -360,14 +398,14 @@
       "updatedAt": "2026-08-24T22:03:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://pt.org.br/wp-content/uploads/2026/08/pres-lula-lancamentocampanha-2026-abc-vila-euclides-sp-ricardostuckert-19.jpg"
+      "imageUrl": "https://www.termometrodapolitica.com.br/base/wp-content/uploads/937dfb9b11daedd78acf40b686100909.jpg"
     },
     {
       "id": "funds-e3bdedb34354ee46d28964a9",
       "title": "As gestoras que lideram o ranking da Moody’s em 12 categorias de fundos",
-      "summary": "Papéis da empresa registraram forte queda ao longo do dia após a companhia anunciar que havia protocolado formalmente o pedido de recuperação extrajudicial",
-      "details": "Papéis da empresa registraram forte queda ao longo do dia após a companhia anunciar que havia protocolado formalmente o pedido de recuperação extrajudicial",
-      "url": "https://www.correiobraziliense.com.br/economia/2026/08/7486289-braskem-lidera-perdas-na-b3-apos-pedido-de-recuperacao-extrajudicial.html",
+      "summary": "Levantamento avalia 72 casas por risco, retorno e habilidade de gestão; Safra, SPX, Santander e Daycoval estão entre os destaques",
+      "details": "Levantamento avalia 72 casas por risco, retorno e habilidade de gestão; Safra, SPX, Santander e Daycoval estão entre os destaques",
+      "url": "https://www.estadao.com.br/einvestidor/onde-investir/as-gestoras-que-lideram-o-ranking-da-moodys-em-12-categorias-de-fundos/",
       "source": "Estadão",
       "category": "funds",
       "tags": [
@@ -379,14 +417,14 @@
       "updatedAt": "2026-08-24T22:02:38Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://midias.correiobraziliense.com.br/_midias/jpg/2026/01/27/675x450/1_1535-63691348.jpg?20260321002519?20260321002519"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/J5I3ZK5CMJOEXKVBN6VS4QZSDU.jpg?quality=80&auth=d461ebd1ddf6659e88be56d6e2db1051f464b188f004ecae7c79950fa6565c26&width=1200&height=630&smart=true"
     },
     {
       "id": "latest-2ebb13fd8a42e021f5a68515",
       "title": "Mercado financeiro corta projeção de crescimento do PIB para 2026, veja números do Focus",
-      "summary": "O Ibovespa encerrou esta segunda-feira (24) em alta pelo quarto pregão consecutivo, sustentado principalmente pela valorização da Vale (VALE3) e pelo avanço das ações do setor financeiro. O principal índice da B3 subiu 0,51%, aos 171.906 pontos, apesar da pressão negativa da Petr",
-      "details": "O Ibovespa encerrou esta segunda-feira (24) em alta pelo quarto pregão consecutivo, sustentado principalmente pela valorização da Vale (VALE3) e pelo avanço das ações do setor financeiro. O principal índice da B3 subiu 0,51%, aos 171.906 pontos, apesar da pressão negativa da Petrobras (PETR3; PETR4) e do mau humor em p",
-      "url": "https://www.suno.com.br/noticias/ibovespa-hoje-24-agosto-2026-vale3-brkm5-mt/",
+      "summary": "Relatório do Banco Central mostra ritmo de expansão mais tímido para o país este ano, enquanto taxa Selic deve seguir elevada",
+      "details": "Relatório do Banco Central mostra ritmo de expansão mais tímido para o país este ano, enquanto taxa Selic deve seguir elevada",
+      "url": "https://omatogrosso.com/mercado-financeiro-corta-projecao-de-crescimento-do-pib-para-2026-veja-numeros-do-focus/",
       "source": "O Mato Grosso",
       "category": "latest",
       "tags": [
@@ -398,14 +436,14 @@
       "updatedAt": "2026-08-24T22:00:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://files.sunoresearch.com.br/n/uploads/2022/06/Modelo2.jpg"
+      "imageUrl": "https://omatogrosso.com/wp-content/uploads/2026/07/dinheiro-1-800x500.jpg"
     },
     {
       "id": "macro-71a6b4a4a28608e95a9d6708",
       "title": "Da inflação à segurança: números mostram Brasil melhor com Lula do que com Bolsonaro",
-      "summary": "Levantamento avalia 72 casas por risco, retorno e habilidade de gestão; Safra, SPX, Santander e Daycoval estão entre os destaques",
-      "details": "Levantamento avalia 72 casas por risco, retorno e habilidade de gestão; Safra, SPX, Santander e Daycoval estão entre os destaques",
-      "url": "https://www.estadao.com.br/einvestidor/onde-investir/as-gestoras-que-lideram-o-ranking-da-moodys-em-12-categorias-de-fundos/",
+      "summary": "Alimentos subiram quatro vezes menos, desemprego recuou e crescimento dobrou; entregas em educação, infraestrutura e combate ao crime também são maiores",
+      "details": "Alimentos subiram quatro vezes menos, desemprego recuou e crescimento dobrou; entregas em educação, infraestrutura e combate ao crime também são maiores",
+      "url": "https://pt.org.br/da-inflacao-a-seguranca-numeros-mostram-brasil-melhor-com-lula-do-que-com-bolsonaro/",
       "source": "Partido dos Trabalhadores",
       "category": "macro",
       "tags": [
@@ -417,14 +455,14 @@
       "updatedAt": "2026-08-24T21:48:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/J5I3ZK5CMJOEXKVBN6VS4QZSDU.jpg?quality=80&auth=d461ebd1ddf6659e88be56d6e2db1051f464b188f004ecae7c79950fa6565c26&width=1200&height=630&smart=true"
+      "imageUrl": "https://pt.org.br/wp-content/uploads/2026/08/pres-lula-lancamentocampanha-2026-abc-vila-euclides-sp-ricardostuckert-19.jpg"
     },
     {
       "id": "latest-51eadf96532b340b95e023a2",
       "title": "Ibovespa sobe pela 4ª vez seguida com Vale (VALE3); Braskem (BRKM5) despenca",
-      "summary": "Relatório do Banco Central mostra ritmo de expansão mais tímido para o país este ano, enquanto taxa Selic deve seguir elevada",
-      "details": "Relatório do Banco Central mostra ritmo de expansão mais tímido para o país este ano, enquanto taxa Selic deve seguir elevada",
-      "url": "https://omatogrosso.com/mercado-financeiro-corta-projecao-de-crescimento-do-pib-para-2026-veja-numeros-do-focus/",
+      "summary": "Atualizacao de ultima hora capturada em suno.com.br.",
+      "details": "",
+      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/08/24/fechamento-do-mercado-financeiro.htm",
       "source": "suno.com.br",
       "category": "latest",
       "tags": [
@@ -435,15 +473,14 @@
       "publishedAt": "2026-08-24T21:45:04Z",
       "updatedAt": "2026-08-24T21:45:04Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://omatogrosso.com/wp-content/uploads/2026/07/dinheiro-1-800x500.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-03906bdd700df1ebe1aafa5f",
       "title": "Fechamento do mercado financeiro",
-      "summary": "Atualizacao de ultima hora capturada em UOL Economia.",
-      "details": "",
-      "url": "https://economia.uol.com.br/noticias/estadao-conteudo/2026/08/24/fechamento-do-mercado-financeiro.htm",
+      "summary": "O Ibovespa encerrou esta segunda-feira (24) em alta pelo quarto pregão consecutivo, sustentado principalmente pela valorização da Vale (VALE3) e pelo avanço das ações do setor financeiro. O principal índice da B3 subiu 0,51%, aos 171.906 pontos, apesar da pressão negativa da Petr",
+      "details": "O Ibovespa encerrou esta segunda-feira (24) em alta pelo quarto pregão consecutivo, sustentado principalmente pela valorização da Vale (VALE3) e pelo avanço das ações do setor financeiro. O principal índice da B3 subiu 0,51%, aos 171.906 pontos, apesar da pressão negativa da Petrobras (PETR3; PETR4) e do mau humor em p",
+      "url": "https://www.suno.com.br/noticias/ibovespa-hoje-24-agosto-2026-vale3-brkm5-mt/",
       "source": "UOL Economia",
       "category": "latest",
       "tags": [
@@ -454,14 +491,34 @@
       "publishedAt": "2026-08-24T21:33:00Z",
       "updatedAt": "2026-08-24T21:33:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://files.sunoresearch.com.br/n/uploads/2022/06/Modelo2.jpg"
+    },
+    {
+      "id": "latest-5a501764abaf0c02cf68d1a4",
+      "title": "Ibovespa fecha em alta impulsionado por bancos e Vale, apesar da queda da Petrobras",
+      "summary": "A Braskem protocolou hoje, 24, à tarde um pedido de recuperação extrajudicial na 2ª Vara de Falências e Recuperações Judiciais de São Paulo.",
+      "details": "A Braskem protocolou hoje, 24, à tarde um pedido de recuperação extrajudicial na 2ª Vara de Falências e Recuperações Judiciais de São Paulo.",
+      "url": "https://www.broadcast.com.br/news/braskem-apresenta-pedido-de-recuperacao-extrajudicial/",
+      "source": "Tribuna do Agreste",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-24T21:20:00Z",
+      "updatedAt": "2026-08-24T21:20:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2025/08/braskem-divulgacao-09.09.15.jpg"
     },
     {
       "id": "latest-a73679d74fb040e774556f21",
       "title": "Ibovespa renova alta com Vale e bancos; dólar sobe",
-      "summary": "O Ibovespa registrou sua quarta alta consecutiva nesta segunda-feira (24), impulsionado por ações ligadas a commodities, como Vale, e pelo setor bancário...",
-      "details": "O Ibovespa registrou sua quarta alta consecutiva nesta segunda-feira (24), impulsionado por ações ligadas a commodities, como Vale, e pelo setor bancário...",
-      "url": "https://gpsbrasilia.com.br/ibovespa-renova-alta-com-vale-e-bancos-dolar-sobe/",
+      "summary": "Atualizacao de ultima hora capturada em GPS Brasília Portal de Notícias do DF.",
+      "details": "",
+      "url": "https://cbnparaiba.com.br/colunas/cotidiano-economico-mercado-interrompe-queda-na-projecao-da-inflacao-e-ipca-segue-acima-do-teto-da-meta-para-2026/",
       "source": "GPS Brasília Portal de Notícias do DF",
       "category": "latest",
       "tags": [
@@ -473,15 +530,15 @@
       "updatedAt": "2026-08-24T21:17:30Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://gpsbrasilia.com.br/wp-content/uploads/2023/12/dinheiro1-.jpg"
+      "imageUrl": "https://cbnparaiba.com.br/wp-content/uploads/2023/12/WhatsApp-Image-2023-10-16-at-16.16.20-1024x841.jpeg"
     },
     {
-      "id": "latest-c6863da7634f5524e92e383b",
-      "title": "Taxas de juros têm leve alta em dia de baixa liquidez",
-      "summary": "Atualizacao de ultima hora capturada em Tribuna do Agreste.",
+      "id": "latest-e6bf55240be625e0f0b4de23",
+      "title": "Em sessão de baixa liquidez, taxas de juros contrariam Treasuries e têm leve alta",
+      "summary": "Atualizacao de ultima hora capturada em Tribuna do Sertão.",
       "details": "",
-      "url": "https://cbnparaiba.com.br/colunas/cotidiano-economico-mercado-interrompe-queda-na-projecao-da-inflacao-e-ipca-segue-acima-do-teto-da-meta-para-2026/",
-      "source": "Tribuna do Agreste",
+      "url": "https://cryptoid.com.br/inteligencia-artificial/claro-empresas-apresenta-gpuaas-e-ia-no-mercado-financeiro/",
+      "source": "Tribuna do Sertão",
       "category": "latest",
       "tags": [
         "mercado",
@@ -491,15 +548,14 @@
       "publishedAt": "2026-08-24T21:13:00Z",
       "updatedAt": "2026-08-24T21:13:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://cbnparaiba.com.br/wp-content/uploads/2023/12/WhatsApp-Image-2023-10-16-at-16.16.20-1024x841.jpeg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-cad7d4a020d790376ab70a12",
       "title": "Braskem apresenta pedido de recuperação extrajudicial",
-      "summary": "A Braskem protocolou hoje, 24, à tarde um pedido de recuperação extrajudicial na 2ª Vara de Falências e Recuperações Judiciais de São Paulo.",
-      "details": "A Braskem protocolou hoje, 24, à tarde um pedido de recuperação extrajudicial na 2ª Vara de Falências e Recuperações Judiciais de São Paulo.",
-      "url": "https://www.broadcast.com.br/news/braskem-apresenta-pedido-de-recuperacao-extrajudicial/",
+      "summary": "O dólar à vista ganhou força ante o real com as sanções dos Estados Unidos contra o Irã e seus parceiros econômicos no radar dos mercados.",
+      "details": "O dólar à vista ganhou força ante o real com as sanções dos Estados Unidos contra o Irã e seus parceiros econômicos no radar dos mercados.",
+      "url": "https://mistobrasil.com/2026/08/24/ibovespa-avancou-com-a-ajuda-de-acoes-ligadas-a-commodities/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -511,14 +567,14 @@
       "updatedAt": "2026-08-24T21:04:02Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2025/08/braskem-divulgacao-09.09.15.jpg"
+      "imageUrl": "https://mistobrasil.com/wp-content/uploads/2026/04/mercado-financeiro-bolsa-numeros.webp"
     },
     {
       "id": "macro-2c76341e3f9c8a69dfcbc62e",
       "title": "Cotidiano Econômico: Mercado interrompe queda na projeção da inflação e IPCA segue acima do teto da meta para 2026",
       "summary": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
       "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui",
-      "url": "https://www.tribunadoagreste.com.br/geral/2026/08/24/966163-taxas-de-juros-tem-leve-alta-em-dia-de-baixa-liquidez",
+      "url": "https://www.tribunadoagreste.com.br/geral/2026/08/24/966170-ibovespa-fecha-em-alta-impulsionado-por-bancos-e-vale-apesar-da-queda-da-petrobras",
       "source": "CBN Paraíba",
       "category": "macro",
       "tags": [
@@ -530,14 +586,14 @@
       "updatedAt": "2026-08-24T21:01:31Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://img.dhost.cloud/A0gmR_0UkbA3dbvZXeRsf8RTeos=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/4ee2c/823cbd4fa6c445b9779f46a2146129123f0.webp?name=juros.webp"
+      "imageUrl": "https://img.dhost.cloud/HylHQl1DuYORsnC92o8sYi68vn0=/1200x630/smart/https://tdan.nyc3.digitaloceanspaces.com/images/8cb3a/53935fc4017dc8587415ff42f06ed0c81b1.jpg"
     },
     {
       "id": "latest-17e2c33195830da0ca439189",
       "title": "Ibovespa avançou com a ajuda de ações ligadas a commodities",
       "summary": "Misto Brasil",
-      "details": "O dólar à vista ganhou força ante o real com as sanções dos Estados Unidos contra o Irã e seus parceiros econômicos no radar dos mercados.",
-      "url": "https://mistobrasil.com/2026/08/24/ibovespa-avancou-com-a-ajuda-de-acoes-ligadas-a-commodities/",
+      "details": "Notícias de Alagoas, do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, celebridades, ciência. Saiba tudo em tempo real aqui.",
+      "url": "https://www.tribunadosertao.com.br/geral/2026/08/24/966162-em-sessao-de-baixa-liquidez-taxas-de-juros-contrariam-treasuries-e-tem-leve-alta",
       "source": "- Misto Brasil",
       "category": "latest",
       "tags": [
@@ -549,14 +605,14 @@
       "updatedAt": "2026-08-24T20:56:18Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://mistobrasil.com/wp-content/uploads/2026/04/mercado-financeiro-bolsa-numeros.webp"
+      "imageUrl": "https://img.dhost.cloud/ubgCc89HRJpDvvCzonc4oIcGPM8=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/4ee2c/823cbd4fa6c445b9779f46a2146129123f0.webp?name=juros.webp"
     },
     {
       "id": "latest-fb7043b37ca0f0a87fb4422a",
       "title": "Claro Empresas apresenta GPUaaS e solução de IA para o mercado financeiro no Febraban Tech 2026",
-      "summary": "Atualizacao de ultima hora capturada em cryptoid.com.br.",
-      "details": "",
-      "url": "https://cryptoid.com.br/inteligencia-artificial/claro-empresas-apresenta-gpuaas-e-ia-no-mercado-financeiro/",
+      "summary": "O Ibovespa registrou sua quarta alta consecutiva nesta segunda-feira (24), impulsionado por ações ligadas a commodities, como Vale, e pelo setor bancário...",
+      "details": "O Ibovespa registrou sua quarta alta consecutiva nesta segunda-feira (24), impulsionado por ações ligadas a commodities, como Vale, e pelo setor bancário...",
+      "url": "https://gpsbrasilia.com.br/ibovespa-renova-alta-com-vale-e-bancos-dolar-sobe/",
       "source": "cryptoid.com.br",
       "category": "latest",
       "tags": [
@@ -567,14 +623,15 @@
       "publishedAt": "2026-08-24T20:56:11Z",
       "updatedAt": "2026-08-24T20:56:11Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://gpsbrasilia.com.br/wp-content/uploads/2023/12/dinheiro1-.jpg"
     },
     {
       "id": "companies-3255e4124531c2dea75441ae",
       "title": "Fluxo Instantâneo: Empresas Brasileiras Lutam com Decisões Financeiras Atrasadas em Meio ao Crescimento do Pix e Open Finance",
-      "summary": "O Brasil vive uma revolução financeira com o Pix e Open Finance, mas muitas empresas ainda têm decisões lentas. A tesouraria inteligente, ao conectar dados, transforma essa gestão, permitindo decisões estratégicas e aumento da eficiência.",
-      "details": "O Brasil vive uma revolução financeira com o Pix e Open Finance, mas muitas empresas ainda têm decisões lentas. A tesouraria inteligente, ao conectar dados, transforma essa gestão, permitindo decisões estratégicas e aumento da eficiência.",
-      "url": "https://reportermaceio.com.br/fluxo-instantaneo-empresas-brasileiras-lutam-com-decisoes-financeiras-atrasadas-em-meio-ao-crescimento-do-pix-e-open-finance/amp/",
+      "summary": "Mercado opera influenciado por altos e baixos das ações corporativas nesta segunda-feira",
+      "details": "Mercado opera influenciado por altos e baixos das ações corporativas nesta segunda-feira",
+      "url": "https://veja.abril.com.br/economia/ibovespa-sobe-051-de-olho-em-braskem-boletim-focus-e-cenario-geopolitico/",
       "source": "Repórter Maceió",
       "category": "companies",
       "tags": [
@@ -586,14 +643,14 @@
       "updatedAt": "2026-08-24T20:54:53Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://reportermaceio.com.br/wp-content/uploads/2026/04/qqOPYfpd-bancos_adobe.webp"
+      "imageUrl": "https://veja.abril.com.br/wp-content/uploads/2025/11/GettyImages-1236444882-e1764968991535.jpg?quality=70&strip=info&resize=1080,565&crop=1"
     },
     {
       "id": "latest-d26b29e12b29c961c67fb9f7",
       "title": "Ibovespa sobe 0,51% de olho em Braskem, Boletim Focus e cenário geopolítico",
-      "summary": "Entre a proteção legítima do patrimônio e os limites da lei, planejamento patrimonial, compliance e gestão de investimentos exigem transparência e atenção às re",
-      "details": "Entre a proteção legítima do patrimônio e os limites da lei, planejamento patrimonial, compliance e gestão de investimentos exigem transparência e atenção às re",
-      "url": "https://www.meon.com.br/noticias/meon/blog-e-colunas/entre-a-protecao-e-o-delito-os-limites-do-planejamento-patrimonial",
+      "summary": "O Brasil vive uma revolução financeira com o Pix e Open Finance, mas muitas empresas ainda têm decisões lentas. A tesouraria inteligente, ao conectar dados, transforma essa gestão, permitindo decisões estratégicas e aumento da eficiência.",
+      "details": "O Brasil vive uma revolução financeira com o Pix e Open Finance, mas muitas empresas ainda têm decisões lentas. A tesouraria inteligente, ao conectar dados, transforma essa gestão, permitindo decisões estratégicas e aumento da eficiência.",
+      "url": "https://reportermaceio.com.br/fluxo-instantaneo-empresas-brasileiras-lutam-com-decisoes-financeiras-atrasadas-em-meio-ao-crescimento-do-pix-e-open-finance/amp/",
       "source": "VEJA",
       "category": "latest",
       "tags": [
@@ -605,26 +662,7 @@
       "updatedAt": "2026-08-24T20:52:30Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://media.meon.com.br/meon-media/wp-content/uploads/2026/08/whatsapp-image-2026-08-24-at-15-22-52-1024x699.avif"
-    },
-    {
-      "id": "funds-93e4b03055701f4af994553c",
-      "title": "Entre a proteção e o delito: Os limites do planejamento patrimonial",
-      "summary": "Mercado opera influenciado por altos e baixos das ações corporativas nesta segunda-feira",
-      "details": "Mercado opera influenciado por altos e baixos das ações corporativas nesta segunda-feira",
-      "url": "https://veja.abril.com.br/economia/ibovespa-sobe-051-de-olho-em-braskem-boletim-focus-e-cenario-geopolitico/",
-      "source": "MEON",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-24T20:52:28Z",
-      "updatedAt": "2026-08-24T20:52:28Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://veja.abril.com.br/wp-content/uploads/2025/11/GettyImages-1236444882-e1764968991535.jpg?quality=70&strip=info&resize=1080,565&crop=1"
+      "imageUrl": "https://reportermaceio.com.br/wp-content/uploads/2026/04/qqOPYfpd-bancos_adobe.webp"
     },
     {
       "id": "latest-f2faaaab993c7c7ae9525a6c",
@@ -648,9 +686,9 @@
     {
       "id": "latest-14cc064ea57851c6eed2f3a8",
       "title": "Crédito caro leva empresas a buscar alternativas, mas mercado também sente pressão dos juros",
-      "summary": "Projeto do governo cria regras permanentes para as contas públicas, impede que royalties e venda de ativos financiem gastos do dia a dia e prevê diretrizes para a transição energética.",
-      "details": "Projeto do governo cria regras permanentes para as contas públicas, impede que royalties e venda de ativos financiem gastos do dia a dia e prevê diretrizes para a transição energética.",
-      "url": "https://oglobo.globo.com/google/amp/rio/noticia/2026/08/24/rio-tera-primeira-lei-de-responsabilidade-fiscal-estadual-proposta-da-sefaz-vai-a-alerj-nas-proximas-semanas.ghtml",
+      "summary": "Os juros elevados estão mudando a forma como as empresas brasileiras buscam recursos para financiar investimentos, expansão e capital de giro. Com o",
+      "details": "Os juros elevados estão mudando a forma como as empresas brasileiras buscam recursos para financiar investimentos, expansão e capital de giro. Com o",
+      "url": "https://timesbrasil.com.br/brasil/credito-caro-leva-empresas-a-buscar-alternativas-mas-mercado-tambem-sente-pressao-dos-juros/",
       "source": "Times Brasil | CNBC",
       "category": "latest",
       "tags": [
@@ -662,14 +700,14 @@
       "updatedAt": "2026-08-24T20:46:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s2-oglobo.glbimg.com/-WWVAOnhF10uVvTiLupYGR0xQn4=/1280x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/s/4/a2HQTpQmGmdpdDMOe8kw/whatsapp-image-2026-08-24-at-19.30.01.jpeg"
+      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/08/ec929f38-videoframe_49804-e1787604264413.webp"
     },
     {
       "id": "macro-b95d23d911be18b9ebe9d18d",
       "title": "Rio terá primeira Lei de Responsabilidade Fiscal estadual; proposta da Sefaz vai à Alerj nas próximas semanas",
-      "summary": "Os juros elevados estão mudando a forma como as empresas brasileiras buscam recursos para financiar investimentos, expansão e capital de giro. Com o",
-      "details": "Os juros elevados estão mudando a forma como as empresas brasileiras buscam recursos para financiar investimentos, expansão e capital de giro. Com o",
-      "url": "https://timesbrasil.com.br/brasil/credito-caro-leva-empresas-a-buscar-alternativas-mas-mercado-tambem-sente-pressao-dos-juros/",
+      "summary": "Projeto do governo cria regras permanentes para as contas públicas, impede que royalties e venda de ativos financiem gastos do dia a dia e prevê diretrizes para a transição energética.",
+      "details": "Projeto do governo cria regras permanentes para as contas públicas, impede que royalties e venda de ativos financiem gastos do dia a dia e prevê diretrizes para a transição energética.",
+      "url": "https://oglobo.globo.com/google/amp/rio/noticia/2026/08/24/rio-tera-primeira-lei-de-responsabilidade-fiscal-estadual-proposta-da-sefaz-vai-a-alerj-nas-proximas-semanas.ghtml",
       "source": "O GLOBO",
       "category": "macro",
       "tags": [
@@ -681,7 +719,7 @@
       "updatedAt": "2026-08-24T20:45:09Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/08/ec929f38-videoframe_49804-e1787604264413.webp"
+      "imageUrl": "https://s2-oglobo.glbimg.com/-WWVAOnhF10uVvTiLupYGR0xQn4=/1280x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/s/4/a2HQTpQmGmdpdDMOe8kw/whatsapp-image-2026-08-24-at-19.30.01.jpeg"
     },
     {
       "id": "macro-a88632ea88633d137f033dc1",
@@ -743,9 +781,9 @@
     {
       "id": "latest-9e3ef5f233de4c9ac955b248",
       "title": "2ª edição do Inter Invest Summit tem Primo Pobre, Morgan Housel e muitos outros convidados",
-      "summary": "O Ibovespa (BOV:IBOV) encerrou o pregão desta segunda-feira (24/08) em alta de 0,86%, aos 171.906 pontos, depois de passar boa parte da sessão sob...",
-      "details": "O Ibovespa (BOV:IBOV) encerrou o pregão desta segunda-feira (24/08) em alta de 0,86%, aos 171.906 pontos, depois de passar boa parte da sessão sob...",
-      "url": "https://br.advfn.com/jornal/2026/08/ibovespa-avanca-impulsionado-pela-vale-com-cenario-politico-e-cautela-externa-no-radar",
+      "summary": "Atualizacao de ultima hora capturada em BHAZ.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMGtNZ0k4RWZvVWQyUWJGTzVBTjBKa0ZtdGsyU3JuMmxZMUt0SXpYeEdpLUlSd1JrTDlVdU0ySVgyVnRFcmtETXZ6eWFMcHlVTXNCeEcydmJsajBpd0ZmbTJ3blFxVnNIY2RxNVlranF3aTIzN1FIV3dxUDJrQW0wQkpOZWlNUU5Iakl0d0tpZWFFTU40c04yaW0yT21lZjFEZ3JMdWxWd3JkbzNuWTlwZGN3WXpGNmt5bnZ0QzdTVQ?oc=5",
       "source": "BHAZ",
       "category": "latest",
       "tags": [
@@ -756,15 +794,14 @@
       "publishedAt": "2026-08-24T20:35:00Z",
       "updatedAt": "2026-08-24T20:35:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://br.advfn.com/jornal/files/2025/10/ibovespa-B3158.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-034c7be620c3f65e80512e49",
       "title": "Ibovespa avança impulsionado pela Vale, com cenário político e cautela externa no radar",
-      "summary": "Realizado na Arena MRV, o Inter Summit terá mais de oito horas de programação em torno do mundo de investimentos. Confira!",
-      "details": "Realizado na Arena MRV, o Inter Summit terá mais de oito horas de programação em torno do mundo de investimentos. Confira!",
-      "url": "https://bhaz.com.br/patrocinado/2a-edicao-do-inter-invest-summit-tem-primo-pobre-morgan-housel-e-muitos-outros-convidados/",
+      "summary": "Atualizacao de ultima hora capturada em ADVFN.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcUJCZUx1T1J2bEJYaUlEV3JUUExxdE5YczNJLTJ3cGt1bHBvOC1mZGx0cFZmS0J6OFBnMzhEUlFVakllcmJGZDBNV2JEamhfeFlNX1BtdDYwa2tZTGpGaGg3bmY0OHo1RVVKYnZKc2ZyU2lHdmJ1eVlkY2EzZ3BhQmRLbUd2b1hESzdnZXNuVmRzS3ZWVG5WUFA1SGZpUHZSbnEwM19Vb1B0UGtsMFNTUHdZS29TdTZIaWhmd0VIcw?oc=5",
       "source": "ADVFN",
       "category": "latest",
       "tags": [
@@ -775,8 +812,7 @@
       "publishedAt": "2026-08-24T20:32:24Z",
       "updatedAt": "2026-08-24T20:32:24Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://bhaz.com.br/wp-content/uploads/2026/08/FotoJet-9-fotor-20260824145053.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "funds-02c14908af110d1075755758",
@@ -815,6 +851,24 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
+      "id": "latest-cf07084d833265c79752d8da",
+      "title": "Ibovespa tem quarta alta seguida, puxada por Vale e bancos; dólar sobe a R$ 5,15",
+      "summary": "Atualizacao de ultima hora capturada em InfoMoney.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNWjN4WTk0TndrY09OZWNDaHpOVHB0WlVIbXo5V2hYdG1BVlhYVTVyUkZPdk1ZRFFWc0pjSDBGazBHT0NuMmF1blFMMV82Y3VOZzFqWkllMHpGcHdpREdrMW5WZF9DREZEZHZvMWFrN3M0YTZPVHU0Rjl5NE1ldEdXWllQUGQtSHRiV1JBR0VEVQ?oc=5",
+      "source": "InfoMoney",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-24T20:30:03Z",
+      "updatedAt": "2026-08-24T20:30:03Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
       "id": "companies-7a38baf7b2d06081bf186a3d",
       "title": "Setor de Serviços concentra 63% das empresas, mas fatura 17% abaixo da média",
       "summary": "Atualizacao de empresas capturada em InfoMoney.",
@@ -833,58 +887,22 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "latest-11cdb3efbc4a2e0774e9d130",
-      "title": "Eleições 2026: O que realmente preocupa o mercado financeiro na disputa presidencial?",
-      "summary": "Atualizacao de ultima hora capturada em Empiricus.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNWxDOHBUUnVSbjAyX0loMlc4VDJKRzJvM1dTdGFVWFRreXRNNng1R2JqLXVMUDFWdEVac24zRjhiV3d4RkVwRkZ0eFd4Y0p4UWVaMDNkSHQ4MVRFZFBLbWx4RnpINk8wUW1mWEhRMC1hTTBJcEhJSUJZZzdnWWZ0NmZxY2pqMlp4bEVqb2xlQVIyVno1aEIzOFhDaHFBam8xVjdFb1lVRlZ2b2d1WlRLbnNaYkJGbTBORXpxWkJldUFPbEFNTHFKMFRxbDZuSkV4M1ZzWVdNOTVOUkZScWc?oc=5",
-      "source": "Empiricus",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-24T20:28:06Z",
-      "updatedAt": "2026-08-24T20:28:06Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-c93fd143557c470e12b473b6",
+      "id": "macro-7d53a637c7b381aea1433612",
       "title": "Mercado reduz projeção para crescimento da economia em 2026 e mantém inflação em 5,02%",
-      "summary": "Atualizacao de ultima hora capturada em URB News.",
+      "summary": "Atualizacao de macro capturada em URB News.",
       "details": "",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRmU0SUZhWFF5T1RkN3lUZXVCNjJJeV9Tek1aOEpNaDA4ZTVhbmYtR3FwMXg5ZWUtNEtldmVfWUZQQWZDeWVwM05HWGRnYTFwVU1LTVY5WV9QQ3ByM3JBeS1YaUlpSTlMS2d4dC1NbV9Fc0l1QzZJOWFFMEFtRHZKa3ZLTFZNUEFfSHBMdlA0YmVsQUZlSy1kelh3WElXRHVpRGY5Y0ZucFJ5bEF2VEs1Vm9OempGZFYteDM0?oc=5",
       "source": "URB News",
-      "category": "latest",
+      "category": "macro",
       "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
+        "macro",
+        "juros",
+        "inflacao"
       ],
       "publishedAt": "2026-08-24T20:27:00Z",
       "updatedAt": "2026-08-24T20:27:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-a3229445a1b3e3bb1318369b",
-      "title": "Ibovespa sobe com impulso da Vale e Braskem tomba 6% com recuperação extrajudicial; dólar tem alta",
-      "summary": "Atualizacao de ultima hora capturada em Estadão.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTmhBYzJPSXpVYU9HRzdGSFdvVmFhMklBNmdiUWdjVnZneTVrSGIzUTQ4Zjk0a21oU1o5NHhxNTJqUTlzR3QzdkFxMG9EaU5ISGZtN010QzlIV3ZjNkJsWGJnYjFPX1JnS1NFTERyLXkwdm9TX195dEJzbU8tVFUzUGxYOGdBZGxZYzlRX2JEWUpoa25YWGo0LWJaNnMzQkwweVVDQXV0UFZ3am5ZMTdxOXRqdXZXclVS0gG-AUFVX3lxTE43OUFDd3puWF94V0VjN1pyMVF2cld4UFFJaWtSbnhmNWdVelRWMXdZYnNLbUpMUlVYWkxocnB3eDBpSm9SeFJEaVpLTU9lVkZqRUN2ZXNIUDVVQUUxNDFoZ0x3UEpnM2JjV3hnaURvMGNPczdjZEFZWThIbkFfUy10RFFMRzJZUHdoOXUtcFNjQzI1Mkk3QTlTVFllREx4OHgxZFh2SXVESjE1UEM0Q3ZRQmRRdWtpc3VrWHByUnc?oc=5",
-      "source": "Estadão",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-24T20:25:29Z",
-      "updatedAt": "2026-08-24T20:25:29Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-3c26c36c732e3095b2ffdecf",
@@ -977,24 +995,6 @@
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
-      "id": "macro-c6f544ef88406e39820dbd4e",
-      "title": "Selic Alta Preocupa Mais a Construção Civil do Que Carga Tributária e Custo de Mão de Obra",
-      "summary": "Atualizacao de macro capturada em Forbes Brasil.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZ3NzVk1FWDhJLWxHRlhydGlQQ05OZ0RWLTdaRGw5azFhOTUyZHBKZmNJQXE1Qlk5S0pqZUlCckNTUm9MQjd5SWhJY3BvV0Vsc19sTTRFREZHcURYMVBZU1RTQWtvMVh3ZGQtRkxIWGFwV3UwVTJmSFBQMHBaRkIyaVpYVndITHA2U2lhR0poc05TaUJJQnU4c2E1RDRUNzBDdE96Yk9R?oc=5",
-      "source": "Forbes Brasil",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-24T19:57:07Z",
-      "updatedAt": "2026-08-24T19:57:07Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "companies-7e746beafd4f8b743bb6e54d",
       "title": "Brasil está entre emergentes com empresas mais endividadas, aponta UBS BB",
       "summary": "Atualizacao de empresas capturada em Estadão.",
@@ -1083,6 +1083,24 @@
       "updatedAt": "2026-08-24T19:39:27Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
+      "id": "macro-37867672fbd9f5f51d11679a",
+      "title": "CAS discute projeto de fiscalização de políticas sociais do governo federal",
+      "summary": "Atualizacao de macro capturada em Senado Federal.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNWFZ1WGtFc2ZvQWQwWWd5N1c4Y05uZTN4MktrWWx3dUZrR0V0NGhwTHNrT3hpWFB2VFpUQ1hqa3J0UEhVRkpTamR6UzczX2dCakx6V1JHVmhWbkJnTklnYjhEb3lYMkVtR1lHcHNRa1VKSjUwdGJ3VW5TbTJ2U0VweDlhdHA0SEVfTWUxRjlJejhBX3lIYkU0Y1loaW1UOHU0Z2VQQ20zS1dlS0tzSXdZX29XQ2VEcXkyeVZqNVc2cDFUbjlqZmNNY3U1dV8?oc=5",
+      "source": "Senado Federal",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-24T19:39:17Z",
+      "updatedAt": "2026-08-24T19:39:17Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "companies-80fcc777382d73bef0825964",
@@ -1353,24 +1371,6 @@
       "updatedAt": "2026-08-24T17:31:09Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "companies-893a3dcc736ab1475b160669",
-      "title": "Farming Simulator 25 ganha máquinas brasileiras para colheita de amendoim no Cerrado Edition",
-      "summary": "Atualizacao de empresas capturada em MeUGamer.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBFTGoydlAxc242Q2FDak5teEpXNG1qblNwTmIyVlQtUVp2RTE1b05yXzlybXVLb0hWUDJVdGozcjhUMFAxakRYU0I2QkJBaF9jcHNjZ19QTVlhWnZEYWdoODk1VFJualQ5MFlpRDVWWGtTNUloa0dxbVNURQ?oc=5",
-      "source": "MeUGamer",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-08-24T17:27:02Z",
-      "updatedAt": "2026-08-24T17:27:02Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
     {
       "id": "funds-e83520e34f491ef85d1cd3b4",
