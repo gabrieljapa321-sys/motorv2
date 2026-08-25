@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-25T05:57:28Z",
-  "generatedAt": "2026-08-25T05:57:28Z",
+  "updatedAt": "2026-08-25T06:47:13Z",
+  "generatedAt": "2026-08-25T06:47:13Z",
   "categories": [
     {
       "id": "all",
@@ -57,10 +57,6 @@
       "label": "bra1.com.br"
     },
     {
-      "id": "brazileconomy-com-br",
-      "label": "brazileconomy.com.br"
-    },
-    {
       "id": "broadcast-com-br",
       "label": "broadcast.com.br"
     },
@@ -85,12 +81,12 @@
       "label": "CNDL - Confederação Nacional de Dirigentes Lojistas"
     },
     {
-      "id": "coinmarketcap",
-      "label": "CoinMarketCap"
+      "id": "coinfomania",
+      "label": "Coinfomania"
     },
     {
-      "id": "comprerural",
-      "label": "CompreRural"
+      "id": "coinmarketcap",
+      "label": "CoinMarketCap"
     },
     {
       "id": "correio-de-corumb",
@@ -121,10 +117,6 @@
       "label": "Gazeta do Povo"
     },
     {
-      "id": "hoje-em-dia",
-      "label": "Hoje em Dia"
-    },
-    {
       "id": "imirante-com",
       "label": "Imirante.com"
     },
@@ -135,10 +127,6 @@
     {
       "id": "investing-com-brasil-finan-as-c-mbio-e-investimentos",
       "label": "Investing.com Brasil - Finanças, Câmbio e Investimentos"
-    },
-    {
-      "id": "money-report",
-      "label": "Money Report"
     },
     {
       "id": "monitor-do-mercado",
@@ -155,10 +143,6 @@
     {
       "id": "notisul",
       "label": "Notisul"
-    },
-    {
-      "id": "o-globo",
-      "label": "O GLOBO"
     },
     {
       "id": "o-mato-grosso",
@@ -223,15 +207,75 @@
     {
       "id": "valor-econ-mico",
       "label": "Valor Econômico"
+    },
+    {
+      "id": "vietnam-vn",
+      "label": "Vietnam.vn"
     }
   ],
   "items": [
     {
+      "id": "macro-532b0f169b18cfd26aa1a19f",
+      "title": "PIB da Alemanha supera previsões com exportações impulsionando crescimento",
+      "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
+      "details": "",
+      "url": "https://br.investing.com/news/economic-indicators/pib-da-alemanha-supera-previsoes-com-exportacoes-impulsionando-crescimento-2048343",
+      "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-25T06:27:00Z",
+      "updatedAt": "2026-08-25T06:27:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-fa93abfc01215d4db429fada",
+      "title": "Cinismo petista",
+      "summary": "Para ajudar Lula a seduzir o eleitor de centro, Durigan diz que quer se reunir com Arminio e Malan. Será útil se conversarem sobre a ‘herança maldita’ que Lula legará ao sucessor",
+      "details": "Para ajudar Lula a seduzir o eleitor de centro, Durigan diz que quer se reunir com Arminio e Malan. Será útil se conversarem sobre a ‘herança maldita’ que Lula legará ao sucessor",
+      "url": "https://www.estadao.com.br/opiniao/cinismo-petista/",
+      "source": "Estadão",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-25T06:02:00Z",
+      "updatedAt": "2026-08-25T06:02:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/QFXAXZ3VOBH4TLR7DN2TAOVTKM.png?quality=80&auth=ca8e9ecd2c3e9968b8fde9b794b41d3281176ee0d66e69b213f10b315fef7fba&width=1200&height=630&smart=true"
+    },
+    {
+      "id": "macro-a7440d74d3b08953c8118292",
+      "title": "Opinião | Benefício fiscal ao refino não pode virar privilégio concorrencial",
+      "summary": "O ponto é assegurar neutralidade, previsibilidade e isonomia",
+      "details": "O ponto é assegurar neutralidade, previsibilidade e isonomia",
+      "url": "https://www.estadao.com.br/opiniao/espaco-aberto/beneficio-fiscal-ao-refino-nao-pode-virar-privilegio-concorrencial/",
+      "source": "Estadão",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-25T06:00:00Z",
+      "updatedAt": "2026-08-25T06:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/MEXCC2GR4NGFZORL23U4G6QQQA.png?quality=80&auth=cd21c70faa09c15d623466b3d86fbe305c1b53ac15b84672b00068f3c5093a35&width=1200&height=630&smart=true"
+    },
+    {
       "id": "latest-f0ac6afe5a1afc4af79b1a70",
       "title": "CEO do BTG afirma que uso de IA no setor financeiro é amplo",
-      "summary": "Candidato do Novo diz que pode preservar política atual se contas estiverem equilibradas e adia mudanças na idade mínima da aposentadoria",
-      "details": "Candidato do Novo diz que pode preservar política atual se contas estiverem equilibradas e adia mudanças na idade mínima da aposentadoria",
-      "url": "https://www.infomoney.com.br/politica/zema-admite-flexibilizar-ajuste-fiscal-e-manter-regra-de-ganho-real-do-salario-minimo/",
+      "summary": "Ibovespa futuro abriu em queda nesta segunda-feira, 24. O contrato INDV26, com vencimento em outubro de 2026, recuou no início do pregão. Dólar, Braskem e outros temas corporativos estão entre os destaques, sem detalhes adicionais.",
+      "details": "Ibovespa futuro abriu em queda nesta segunda-feira, 24. O contrato INDV26, com vencimento em outubro de 2026, recuou no início do pregão. Dólar, Braskem e outros temas corporativos estão entre os destaques, sem detalhes adicionais.",
+      "url": "https://aciara.com.br/ibovespa-futuro-dolar-braskem-destaques/",
       "source": "Associação Comercial e Industrial de Araçatuba",
       "category": "latest",
       "tags": [
@@ -243,14 +287,14 @@
       "updatedAt": "2026-08-25T03:56:38Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/08/Captura-de-tela-2026-08-24-222327.png"
+      "imageUrl": "https://aciara.com.br/wp-content/uploads/2026/08/IMG_3928-1-scaled.jpg"
     },
     {
       "id": "latest-a64177b758521bb5b1cdffa1",
       "title": "Futuro do Ibovespa, dólar, Braskem e destaques corporativos",
-      "summary": "Ibovespa futuro abriu em queda nesta segunda-feira, 24. O contrato INDV26, com vencimento em outubro de 2026, recuou no início do pregão. Dólar, Braskem e outros temas corporativos estão entre os destaques, sem detalhes adicionais.",
-      "details": "Ibovespa futuro abriu em queda nesta segunda-feira, 24. O contrato INDV26, com vencimento em outubro de 2026, recuou no início do pregão. Dólar, Braskem e outros temas corporativos estão entre os destaques, sem detalhes adicionais.",
-      "url": "https://aciara.com.br/ibovespa-futuro-dolar-braskem-destaques/",
+      "summary": "O CEO do BTG Pactual, Roberto Sallouti, afirmou que o setor financeiro está preparado para usar a inteligência artificial em benefício dos clientes. Ele destacou que a IA é usada em todas as áreas do banco e que a falta de atualização tecnológica pode comprometer eficiência e com",
+      "details": "O CEO do BTG Pactual, Roberto Sallouti, afirmou que o setor financeiro está preparado para usar a inteligência artificial em benefício dos clientes. Ele destacou que a IA é usada em todas as áreas do banco e que a falta de atualização tecnológica pode comprometer eficiência e competição. As declarações foram feitas no ",
+      "url": "https://aciara.com.br/ia-setor-financeiro-ceo-btg/",
       "source": "Associação Comercial e Industrial de Araçatuba",
       "category": "latest",
       "tags": [
@@ -262,14 +306,14 @@
       "updatedAt": "2026-08-25T03:41:30Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://aciara.com.br/wp-content/uploads/2026/08/IMG_3928-1-scaled.jpg"
+      "imageUrl": "https://aciara.com.br/wp-content/uploads/2026/08/190529btg537.jpg"
     },
     {
       "id": "latest-890915785a77107e5996a461",
       "title": "Mercado financeiro precifica vitória de Lula e debate ajuste fiscal",
-      "summary": "O CEO do BTG Pactual, Roberto Sallouti, afirmou que o setor financeiro está preparado para usar a inteligência artificial em benefício dos clientes. Ele destacou que a IA é usada em todas as áreas do banco e que a falta de atualização tecnológica pode comprometer eficiência e com",
-      "details": "O CEO do BTG Pactual, Roberto Sallouti, afirmou que o setor financeiro está preparado para usar a inteligência artificial em benefício dos clientes. Ele destacou que a IA é usada em todas as áreas do banco e que a falta de atualização tecnológica pode comprometer eficiência e competição. As declarações foram feitas no ",
-      "url": "https://aciara.com.br/ia-setor-financeiro-ceo-btg/",
+      "summary": "Reajuste de 7,4% eleva despesas públicas, mas aumenta poder de compra",
+      "details": "Reajuste de 7,4% eleva despesas públicas, mas aumenta poder de compra",
+      "url": "https://www.paginadepolicia.com.br/noticia/120007/salario-minimo-devera-subir-para-r-1-741-em-2027/amp",
       "source": "Tribuna do Paraná",
       "category": "latest",
       "tags": [
@@ -281,7 +325,7 @@
       "updatedAt": "2026-08-25T03:07:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://aciara.com.br/wp-content/uploads/2026/08/190529btg537.jpg"
+      "imageUrl": "https://str1.lnmimg.net/img/2026/08/25/0b085190441c4fd15acb0ebf01f6d65e.webp?w=700&h=418"
     },
     {
       "id": "latest-2616c78a3cbccd58dd424ec5",
@@ -324,9 +368,9 @@
     {
       "id": "latest-23673e502b2947b73210298a",
       "title": "Mercado financeiro corta projeção de crescimento do PIB para 2026, veja números do Focus",
-      "summary": "Reajuste de 7,4% eleva despesas públicas, mas aumenta poder de compra",
-      "details": "Reajuste de 7,4% eleva despesas públicas, mas aumenta poder de compra",
-      "url": "https://www.paginadepolicia.com.br/noticia/120007/salario-minimo-devera-subir-para-r-1-741-em-2027/amp",
+      "summary": "QTO - Graças aos esforços e ao envolvimento de todo o sistema político, a taxa de desembolso do plano de investimento público da província para 2026, de junho até o momento, é superior à média nacional (em 31 de julho, 2.390.125 milhões de VND do plano de investimento público for",
+      "details": "QTO - Graças aos esforços e ao envolvimento de todo o sistema político, a taxa de desembolso do plano de investimento público da província para 2026, de junho até o momento, é superior à média nacional (em 31 de julho, 2.390.125 milhões de VND do plano de investimento público foram desembolsados, atingindo 42,54% do pl",
+      "url": "https://www.vietnam.vn/pt/giao-chi-tieu-giai-ngan-von-dau-tu-cong-cu-the-trong-thang-8-2026",
       "source": "O Mato Grosso",
       "category": "latest",
       "tags": [
@@ -338,14 +382,33 @@
       "updatedAt": "2026-08-25T03:00:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://str1.lnmimg.net/img/2026/08/25/0b085190441c4fd15acb0ebf01f6d65e.webp?w=700&h=418"
+      "imageUrl": "https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2026/08/25/1787615991221_ven_bien_2_20260824214221.jpeg"
+    },
+    {
+      "id": "funds-f6c9631bff866ac70efe9afe",
+      "title": "Estabelecer metas específicas para o desembolso de fundos de investimento público em agosto de 2026.",
+      "summary": "Relatório do Banco Central mostra ritmo de expansão mais tímido para o país este ano, enquanto taxa Selic deve seguir elevada",
+      "details": "Relatório do Banco Central mostra ritmo de expansão mais tímido para o país este ano, enquanto taxa Selic deve seguir elevada",
+      "url": "https://omatogrosso.com/mercado-financeiro-corta-projecao-de-crescimento-do-pib-para-2026-veja-numeros-do-focus/",
+      "source": "Vietnam.vn",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-25T02:44:11Z",
+      "updatedAt": "2026-08-25T02:44:11Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://omatogrosso.com/wp-content/uploads/2026/07/dinheiro-1-800x500.jpg"
     },
     {
       "id": "latest-56567101ab459a8ac115fca2",
       "title": "Ibovespa avançou com a ajuda de ações ligadas a commodities",
       "summary": "Misto Brasil",
-      "details": "Relatório do Banco Central mostra ritmo de expansão mais tímido para o país este ano, enquanto taxa Selic deve seguir elevada",
-      "url": "https://omatogrosso.com/mercado-financeiro-corta-projecao-de-crescimento-do-pib-para-2026-veja-numeros-do-focus/",
+      "details": "A Tecban participará da 16ª edição do Congresso Brasileiro do Cooperativismo de Crédito (Concred), considerado um dos maiores encontros do cooperativismo financeiro do mundo. O evento será realizado nos dias 26 a 28 de agosto, em Goiânia (GO), reunindo lideranças e especialistas para debater perspectivas do setor. Dura",
+      "url": "https://www.broadcast.com.br/knewin-dino/errata-tecban-participa-do-concred-2026/",
       "source": "- Misto Brasil",
       "category": "latest",
       "tags": [
@@ -357,7 +420,7 @@
       "updatedAt": "2026-08-25T01:37:09Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://omatogrosso.com/wp-content/uploads/2026/07/dinheiro-1-800x500.jpg"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K4MycivhK_A2A86abbVjBSTE74eCEF_sk_AfsW3PsA6ao5nHhuJXCyBrqJ4z2Uh7mxa3aZordz-IFnhcKH74DkSieT_gjG4DslZys8ed49FeIWvLsHAD5lQF1Dx1PWfZIY1.png"
     },
     {
       "id": "macro-4533b44c6dce56021508d11a",
@@ -381,9 +444,9 @@
     {
       "id": "latest-d9f635d596debab9517631a3",
       "title": "Mercado reduz projeção de crescimento da economia em 2026",
-      "summary": "| Competitividade | Sem benefícios fiscais como atrativos, os estados nordestinos precisam reforçar potenciais para captar novas empresas enquanto sofrem com a desigualdade histórica e descaso de políticas públicas federais",
-      "details": "| Competitividade | Sem benefícios fiscais como atrativos, os estados nordestinos precisam reforçar potenciais para captar novas empresas enquanto sofrem com a desigualdade histórica e descaso de políticas públicas federais",
-      "url": "https://mais.opovo.com.br/jornal/reportagem/2026/08/24/reforma-tributaria-poe-fim-a-guerra-fiscal-e-exige-mais-do-nordeste.html",
+      "summary": "Candidato do Novo diz que pode preservar política atual se contas estiverem equilibradas e adia mudanças na idade mínima da aposentadoria",
+      "details": "Candidato do Novo diz que pode preservar política atual se contas estiverem equilibradas e adia mudanças na idade mínima da aposentadoria",
+      "url": "https://www.infomoney.com.br/politica/zema-admite-flexibilizar-ajuste-fiscal-e-manter-regra-de-ganho-real-do-salario-minimo/",
       "source": "Imirante.com",
       "category": "latest",
       "tags": [
@@ -395,7 +458,7 @@
       "updatedAt": "2026-08-25T01:16:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.opovo.com.br/_midias/jpg/2026/08/24/gemini-42214979.jpg"
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/08/Captura-de-tela-2026-08-24-222327.png"
     },
     {
       "id": "macro-86719822155ca23c78db70bb",
@@ -419,9 +482,9 @@
     {
       "id": "macro-c0290b6deb713a5c030b7e73",
       "title": "Futuros de Wall St estáveis antes dos resultados da Nvidia e sinais do Fed",
-      "summary": "A Agência Nacional de Saúde Suplementar (ANS) disponibilizou em 9 de julho de 2026 a atualização do Painel de Contratantes de Planos de Saúde Coletivos, que passou a incorporar informações sobre as empresas que contratam assistência médica e planos exclusivamente odontológicos pa",
-      "details": "A Agência Nacional de Saúde Suplementar (ANS) disponibilizou em 9 de julho de 2026 a atualização do Painel de Contratantes de Planos de Saúde Coletivos, que passou a incorporar informações sobre as empresas que contratam assistência médica e planos exclusivamente odontológicos para seus funcionários, com dados referent",
-      "url": "https://www.broadcast.com.br/knewin-dino/planos-empresariais-concentram-73-da-saude-privada/",
+      "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
+      "details": "",
+      "url": "https://br.investing.com/news/stock-market-news/futuros-de-wall-st-estaveis-antes-dos-resultados-da-nvidia-e-sinais-do-fed-2048268",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -432,15 +495,14 @@
       "publishedAt": "2026-08-25T01:05:00Z",
       "updatedAt": "2026-08-25T01:05:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K6KgBo3OuAKAVKwDEXZ5wKbulbV1HvUn8rL-DvOvWpxuqazU6kvZawVKyYkidt0qzgA4XL8rFLLmQLJ-r4vRroMdX7PW3zsA66geVDvo76vlSnV0wv3uFnHx3x_niOT3141.png"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "macro-635d3b2726f2f2f54a98678f",
       "title": "Estimativa da inflação fica estável; PIB cai",
-      "summary": "Atualizacao de macro capturada em Bem Paraná.",
-      "details": "",
-      "url": "https://br.investing.com/news/stock-market-news/futuros-de-wall-st-estaveis-antes-dos-resultados-da-nvidia-e-sinais-do-fed-2048268",
+      "summary": "A estimativa para a inflação oficial medida pelo Índice Nacional de Preços ao Consumidor Amplo (IPCA) permaneceu em 5,02% para 2026, mesma projeção da",
+      "details": "A estimativa para a inflação oficial medida pelo Índice Nacional de Preços ao Consumidor Amplo (IPCA) permaneceu em 5,02% para 2026, mesma projeção da",
+      "url": "https://www.bemparana.com.br/noticias/economia/estimativa-da-inflacao-fica-estavel-pib-cai/",
       "source": "Bem Paraná",
       "category": "macro",
       "tags": [
@@ -451,14 +513,15 @@
       "publishedAt": "2026-08-25T01:00:00Z",
       "updatedAt": "2026-08-25T01:00:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.bemparana.com.br/wp-content/uploads/2026/03/inflacao.jpg?v=25.08.5.46.11"
     },
     {
       "id": "latest-40cb5d5ebb02fa829f0d6adb",
       "title": "Errata: Tecban participa do Concred 2026",
-      "summary": "A estimativa para a inflação oficial medida pelo Índice Nacional de Preços ao Consumidor Amplo (IPCA) permaneceu em 5,02% para 2026, mesma projeção da",
-      "details": "A estimativa para a inflação oficial medida pelo Índice Nacional de Preços ao Consumidor Amplo (IPCA) permaneceu em 5,02% para 2026, mesma projeção da",
-      "url": "https://www.bemparana.com.br/noticias/economia/estimativa-da-inflacao-fica-estavel-pib-cai/",
+      "summary": "| Competitividade | Sem benefícios fiscais como atrativos, os estados nordestinos precisam reforçar potenciais para captar novas empresas enquanto sofrem com a desigualdade histórica e descaso de políticas públicas federais",
+      "details": "| Competitividade | Sem benefícios fiscais como atrativos, os estados nordestinos precisam reforçar potenciais para captar novas empresas enquanto sofrem com a desigualdade histórica e descaso de políticas públicas federais",
+      "url": "https://mais.opovo.com.br/jornal/reportagem/2026/08/24/reforma-tributaria-poe-fim-a-guerra-fiscal-e-exige-mais-do-nordeste.html",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -470,14 +533,14 @@
       "updatedAt": "2026-08-25T00:59:44Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.bemparana.com.br/wp-content/uploads/2026/03/inflacao.jpg?v=25.08.5.46.11"
+      "imageUrl": "https://www.opovo.com.br/_midias/jpg/2026/08/24/gemini-42214979.jpg"
     },
     {
       "id": "latest-7897cbeb229732a5bb530bbb",
       "title": "Tecnologia de WFM ajuda empresas a otimizar escalas",
-      "summary": "A Tecban participará da 16ª edição do Congresso Brasileiro do Cooperativismo de Crédito (Concred), considerado um dos maiores encontros do cooperativismo financeiro do mundo. O evento será realizado nos dias 26 a 28 de agosto, em Goiânia (GO), reunindo lideranças e especialistas ",
-      "details": "A Tecban participará da 16ª edição do Congresso Brasileiro do Cooperativismo de Crédito (Concred), considerado um dos maiores encontros do cooperativismo financeiro do mundo. O evento será realizado nos dias 26 a 28 de agosto, em Goiânia (GO), reunindo lideranças e especialistas para debater perspectivas do setor. Dura",
-      "url": "https://www.broadcast.com.br/knewin-dino/errata-tecban-participa-do-concred-2026/",
+      "summary": "A gestão de escalas de trabalho deixou de ser tarefa apenas administrativa para se tornar decisão estratégica dentro das empresas. Em operações com centenas ou milhares de colaboradores distribuídos em múltiplos turnos, unidades e níveis de qualificação, montar horários com base ",
+      "details": "A gestão de escalas de trabalho deixou de ser tarefa apenas administrativa para se tornar decisão estratégica dentro das empresas. Em operações com centenas ou milhares de colaboradores distribuídos em múltiplos turnos, unidades e níveis de qualificação, montar horários com base em planilhas ou na experiência do gestor",
+      "url": "https://www.broadcast.com.br/knewin-dino/tecnologia-de-wfm-ajuda-empresas-a-otimizar-escalas/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -489,14 +552,14 @@
       "updatedAt": "2026-08-25T00:59:41Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K4MycivhK_A2A86abbVjBSTE74eCEF_sk_AfsW3PsA6ao5nHhuJXCyBrqJ4z2Uh7mxa3aZordz-IFnhcKH74DkSieT_gjG4DslZys8ed49FeIWvLsHAD5lQF1Dx1PWfZIY1.png"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K6KgBo3OuAKAVKwDEXZ5wKbulbV1HvUn8rL-DvOvWpxuqazU6kvZawVKyYkidt0qzgA4XL8rFLLmQLJ-r4vRroMdX7PW3zsA66geVDvo76vle_ULcPvP_bLGlY60emczgc1.png"
     },
     {
       "id": "latest-d3ab5ba9e6010ffde973dcda",
       "title": "Hospital do Marajó renova certificado ONA",
-      "summary": "A gestão de escalas de trabalho deixou de ser tarefa apenas administrativa para se tornar decisão estratégica dentro das empresas. Em operações com centenas ou milhares de colaboradores distribuídos em múltiplos turnos, unidades e níveis de qualificação, montar horários com base ",
-      "details": "A gestão de escalas de trabalho deixou de ser tarefa apenas administrativa para se tornar decisão estratégica dentro das empresas. Em operações com centenas ou milhares de colaboradores distribuídos em múltiplos turnos, unidades e níveis de qualificação, montar horários com base em planilhas ou na experiência do gestor",
-      "url": "https://www.broadcast.com.br/knewin-dino/tecnologia-de-wfm-ajuda-empresas-a-otimizar-escalas/",
+      "summary": "O Hospital Regional Público do Marajó (Breves/PA), com 70 leitos, administrado pelo Instituto Nacional de Desenvolvimento Social e Humano (INDSH) desde 2010, renovou sua certificação pela Organização Nacional de Acreditação (ONA) e mantém o selo de Acreditado Pleno – Nível 2, rec",
+      "details": "O Hospital Regional Público do Marajó (Breves/PA), com 70 leitos, administrado pelo Instituto Nacional de Desenvolvimento Social e Humano (INDSH) desde 2010, renovou sua certificação pela Organização Nacional de Acreditação (ONA) e mantém o selo de Acreditado Pleno – Nível 2, reconhecimento que reafirma o compromisso d",
+      "url": "https://www.broadcast.com.br/knewin-dino/hospital-do-marajo-renova-certificado-ona/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -508,14 +571,14 @@
       "updatedAt": "2026-08-25T00:59:39Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K6KgBo3OuAKAVKwDEXZ5wKbulbV1HvUn8rL-DvOvWpxuqazU6kvZawVKyYkidt0qzgA4XL8rFLLmQLJ-r4vRroMdX7PW3zsA66geVDvo76vle_ULcPvP_bLGlY60emczgc1.png"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K4MycivhK_A2A86abbVjBSTE74eCEF_sk_AfsW3PsA6ao5nHhuJXCyBrqJ4z2Uh7mxa3aZordz-IFnhcKH74DkSieT_gjG4DslZys8ed49FeDrndJoqw0pu38ZxvCeGL7Q1.png"
     },
     {
       "id": "latest-e055cac40c4d5c1c8a18cdfd",
       "title": "Planos empresariais concentram 73% da saúde privada",
-      "summary": "O Hospital Regional Público do Marajó (Breves/PA), com 70 leitos, administrado pelo Instituto Nacional de Desenvolvimento Social e Humano (INDSH) desde 2010, renovou sua certificação pela Organização Nacional de Acreditação (ONA) e mantém o selo de Acreditado Pleno – Nível 2, rec",
-      "details": "O Hospital Regional Público do Marajó (Breves/PA), com 70 leitos, administrado pelo Instituto Nacional de Desenvolvimento Social e Humano (INDSH) desde 2010, renovou sua certificação pela Organização Nacional de Acreditação (ONA) e mantém o selo de Acreditado Pleno – Nível 2, reconhecimento que reafirma o compromisso d",
-      "url": "https://www.broadcast.com.br/knewin-dino/hospital-do-marajo-renova-certificado-ona/",
+      "summary": "A Agência Nacional de Saúde Suplementar (ANS) disponibilizou em 9 de julho de 2026 a atualização do Painel de Contratantes de Planos de Saúde Coletivos, que passou a incorporar informações sobre as empresas que contratam assistência médica e planos exclusivamente odontológicos pa",
+      "details": "A Agência Nacional de Saúde Suplementar (ANS) disponibilizou em 9 de julho de 2026 a atualização do Painel de Contratantes de Planos de Saúde Coletivos, que passou a incorporar informações sobre as empresas que contratam assistência médica e planos exclusivamente odontológicos para seus funcionários, com dados referent",
+      "url": "https://www.broadcast.com.br/knewin-dino/planos-empresariais-concentram-73-da-saude-privada/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -527,14 +590,14 @@
       "updatedAt": "2026-08-25T00:59:31Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K4MycivhK_A2A86abbVjBSTE74eCEF_sk_AfsW3PsA6ao5nHhuJXCyBrqJ4z2Uh7mxa3aZordz-IFnhcKH74DkSieT_gjG4DslZys8ed49FeDrndJoqw0pu38ZxvCeGL7Q1.png"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K6KgBo3OuAKAVKwDEXZ5wKbulbV1HvUn8rL-DvOvWpxuqazU6kvZawVKyYkidt0qzgA4XL8rFLLmQLJ-r4vRroMdX7PW3zsA66geVDvo76vlSnV0wv3uFnHx3x_niOT3141.png"
     },
     {
       "id": "latest-040b81af79822003a10e17e5",
       "title": "Endocrinologista explica emagrecimento após os 40 anos",
-      "summary": "A partir dos 40 anos, as mulheres começam a vivenciar um envelhecimento mais intenso, que acompanha as alterações hormonais típicas da menopausa e frequentemente vem junto a um aumento nas responsabilidades e mudanças na vida tanto pessoal quanto profissional. Ademais, depois des",
-      "details": "A partir dos 40 anos, as mulheres começam a vivenciar um envelhecimento mais intenso, que acompanha as alterações hormonais típicas da menopausa e frequentemente vem junto a um aumento nas responsabilidades e mudanças na vida tanto pessoal quanto profissional. Ademais, depois desta idade, o processo de emagrecimento de",
-      "url": "https://www.broadcast.com.br/knewin-dino/endocrinologista-explica-emagrecimento-apos-os-40-anos/",
+      "summary": "A Dr. Estética apresentou uma nova identidade de marca que inaugurou um novo ciclo para a instituição, mais de duas décadas após sua fundação, em 2003. O reposicionamento traduz a evolução de um empreendimento que começou como um negócio familiar e passou a reunir, além do atendi",
+      "details": "A Dr. Estética apresentou uma nova identidade de marca que inaugurou um novo ciclo para a instituição, mais de duas décadas após sua fundação, em 2003. O reposicionamento traduz a evolução de um empreendimento que começou como um negócio familiar e passou a reunir, além do atendimento clínico em harmonização […]",
+      "url": "https://www.broadcast.com.br/knewin-dino/dr-estetica-lanca-nova-identidade-e-projeta-expansao/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -546,14 +609,14 @@
       "updatedAt": "2026-08-25T00:59:26Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K6KgBo3OuAKAVKwDEXZ5wKbulbV1HvUn8rL-DvOvWpxuqazU6kvZawVKyYkidt0qzgA4XL8rFLLmQLJ-r4vRroMdX7PW3zsA66geVDvo76vle6E6yJjZFrGoLp_QNTXQzo1.png"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K6KgBo3OuAKAVKwDEXZ5wKbulbV1HvUn8rL-DvOvWpxuqazU6kvZawVKyYkidt0qzgA4XL8rFLLmQLJ-r4vRroMdX7PW3zsA66geVDvo76vldNDKVxA00cZp3Mcrj4aF141.png"
     },
     {
       "id": "latest-53b930f3d06d07332638a051",
       "title": "Dr. Estética lança nova identidade e projeta expansão",
-      "summary": "A Dr. Estética apresentou uma nova identidade de marca que inaugurou um novo ciclo para a instituição, mais de duas décadas após sua fundação, em 2003. O reposicionamento traduz a evolução de um empreendimento que começou como um negócio familiar e passou a reunir, além do atendi",
-      "details": "A Dr. Estética apresentou uma nova identidade de marca que inaugurou um novo ciclo para a instituição, mais de duas décadas após sua fundação, em 2003. O reposicionamento traduz a evolução de um empreendimento que começou como um negócio familiar e passou a reunir, além do atendimento clínico em harmonização […]",
-      "url": "https://www.broadcast.com.br/knewin-dino/dr-estetica-lanca-nova-identidade-e-projeta-expansao/",
+      "summary": "A partir dos 40 anos, as mulheres começam a vivenciar um envelhecimento mais intenso, que acompanha as alterações hormonais típicas da menopausa e frequentemente vem junto a um aumento nas responsabilidades e mudanças na vida tanto pessoal quanto profissional. Ademais, depois des",
+      "details": "A partir dos 40 anos, as mulheres começam a vivenciar um envelhecimento mais intenso, que acompanha as alterações hormonais típicas da menopausa e frequentemente vem junto a um aumento nas responsabilidades e mudanças na vida tanto pessoal quanto profissional. Ademais, depois desta idade, o processo de emagrecimento de",
+      "url": "https://www.broadcast.com.br/knewin-dino/endocrinologista-explica-emagrecimento-apos-os-40-anos/",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -565,7 +628,7 @@
       "updatedAt": "2026-08-25T00:59:22Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K6KgBo3OuAKAVKwDEXZ5wKbulbV1HvUn8rL-DvOvWpxuqazU6kvZawVKyYkidt0qzgA4XL8rFLLmQLJ-r4vRroMdX7PW3zsA66geVDvo76vldNDKVxA00cZp3Mcrj4aF141.png"
+      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K6KgBo3OuAKAVKwDEXZ5wKbulbV1HvUn8rL-DvOvWpxuqazU6kvZawVKyYkidt0qzgA4XL8rFLLmQLJ-r4vRroMdX7PW3zsA66geVDvo76vle6E6yJjZFrGoLp_QNTXQzo1.png"
     },
     {
       "id": "latest-9684ba108d51be52fb38b012",
@@ -627,29 +690,10 @@
     {
       "id": "macro-b74df754d5a618dbafbf3f41",
       "title": "Zema, sobre salário mínimo: Garanto que ninguém vai ter perda; se tiver inflação, nós daremos",
-      "summary": "Candidato do Novo diz que aposentados não terão perda e mantém promessa de privatizar Petrobras, BB e Caixa",
-      "details": "Candidato do Novo diz que aposentados não terão perda e mantém promessa de privatizar Petrobras, BB e Caixa",
-      "url": "https://www.infomoney.com.br/politica/zema-promete-reposicao-da-inflacao-no-salario-minimo-se-for-eleito/",
-      "source": "UOL Notícias",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-25T00:56:00Z",
-      "updatedAt": "2026-08-25T00:56:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/08/Captura-de-tela-2026-08-24-221810.png"
-    },
-    {
-      "id": "macro-1d191a0e070e06cedf2206c5",
-      "title": "Zema promete reposição da inflação no salário mínimo se for eleito",
-      "summary": "Atualizacao de macro capturada em InfoMoney.",
+      "summary": "Atualizacao de macro capturada em UOL Notícias.",
       "details": "",
       "url": "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/08/24/zema-sobre-salario-minimo-garanto-que-ninguem-vai-ter-perda-se-tiver-inflacao-nos-daremos.htm",
-      "source": "InfoMoney",
+      "source": "UOL Notícias",
       "category": "macro",
       "tags": [
         "macro",
@@ -662,11 +706,30 @@
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
+      "id": "macro-1d191a0e070e06cedf2206c5",
+      "title": "Zema promete reposição da inflação no salário mínimo se for eleito",
+      "summary": "Em entrevista à TV Globo, candidato fala em anistia a condenados por atos golpistas",
+      "details": "Em entrevista à TV Globo, candidato fala em anistia a condenados por atos golpistas",
+      "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/08/24/zema-diz-que-vai-manter-correo-do-salrio-mnimo-mas-no-garante-ganho-real.ghtml",
+      "source": "InfoMoney",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-25T00:56:00Z",
+      "updatedAt": "2026-08-25T00:56:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://s2-valor.glbimg.com/4Uj1OIFO8cH37imHJQ14AjDJKv8=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/u/i/DWc3GfSQmWYhyRZskiIQ/zema-entrevista-tv-globo.jpeg"
+    },
+    {
       "id": "macro-f3385ffece62d5f63b016655",
       "title": "Zema diz que salário mínimo terá correção pela inflação, mas não garante ganho real",
-      "summary": "Em entrevista à TV Globo, candidato do Novo afirma que em anistiará condenados por atos golpistas",
-      "details": "Em entrevista à TV Globo, candidato do Novo afirma que em anistiará condenados por atos golpistas",
-      "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/08/24/zema-diz-que-vai-manter-correo-do-salrio-mnimo-mas-no-garante-ganho-real.ghtml",
+      "summary": "Candidato do Novo diz que aposentados não terão perda e mantém promessa de privatizar Petrobras, BB e Caixa",
+      "details": "Candidato do Novo diz que aposentados não terão perda e mantém promessa de privatizar Petrobras, BB e Caixa",
+      "url": "https://www.infomoney.com.br/politica/zema-promete-reposicao-da-inflacao-no-salario-minimo-se-for-eleito/",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -678,14 +741,14 @@
       "updatedAt": "2026-08-25T00:52:01Z",
       "premium": true,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/4Uj1OIFO8cH37imHJQ14AjDJKv8=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/u/i/DWc3GfSQmWYhyRZskiIQ/zema-entrevista-tv-globo.jpeg"
+      "imageUrl": "https://www.infomoney.com.br/wp-content/uploads/2026/08/Captura-de-tela-2026-08-24-221810.png"
     },
     {
       "id": "macro-f95e228d98bc31d4e463f46c",
       "title": "MAGM11: diante da Selic em 14%, gestor vê oportunidade na volatilidade",
       "summary": "Atualizacao de macro capturada em suno.com.br.",
       "details": "",
-      "url": "https://www.c6bank.com.br/blog/divida-amarrada-a-selic",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRmthOERnaFM1XzdfMTRwWnRyLWgxZ0FGcjhFc000N0VSY0xyMk9oaWktbV82STY2VlpOUVBhMWgyNGdhUFlDRzJJUGhZR1FMTW55TTBNWkxmRUlNYWhOZGQ1a21wNUtyUWQ4QWY0dWItdUpRZjJrRjhwU0pYQ3IzeEY4aXB2U3BucHB1TzZnY0o5U2ljb3JDRHoxbDdsWTNBMkpR0gGoAUFVX3lxTE1sU2lMa29PTVJiUVhJVm9GSjU4RllqMW4zRFkyS2dfWkVWejJENzN3WjJwaGw5MzB1TFRxVFVUZlhxcGZnb2txRzRNYV95RG80V1VkWERPZFNjb3FqN0ZFQWVORFNPLXJXM1lUcEE0aktXYURkbTlXSEdfTTdHNE90cWZuQUJ6bGdocWt4dTA1Z3Y0ejhHNTJsQXZjM1hQMi1Bak1XN1IzVQ?oc=5",
       "source": "suno.com.br",
       "category": "macro",
       "tags": [
@@ -701,9 +764,9 @@
     {
       "id": "macro-c11e725548995f25f4197f60",
       "title": "Dívida pública mais amarrada à Selic | Podcast Macro Review",
-      "summary": "O mercado de fundos imobiliários atravessa um ciclo de forte oscilação, em meio a juros ainda altos, incertezas fiscais e o calendário eleitoral. Para Tomas Gouvêa, gestor do MAGM11, a taxa de juros segue como o vetor central da reprecificação das cotas, embora o ambiente também ",
-      "details": "O mercado de fundos imobiliários atravessa um ciclo de forte oscilação, em meio a juros ainda altos, incertezas fiscais e o calendário eleitoral. Para Tomas Gouvêa, gestor do MAGM11, a taxa de juros segue como o vetor central da reprecificação das cotas, embora o ambiente também gere janelas para quem investe com horiz",
-      "url": "https://www.suno.com.br/noticias/magm11-diante-da-selic-em-14-gestor-ve-oportunidade-na-volatilidade/",
+      "summary": "Atualizacao de macro capturada em C6 Bank.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5QZmphckphMUhNN1RFZzQ4NHJVM1R4TnhfSkt6UUw2enVYUHBqWHkyUk10UE9memxGbkxOY29pd05RYXN2SE5rUVg0T2FQbW8yb0JLeGJCQUx4SmdhMHg3RGZIOXU?oc=5",
       "source": "C6 Bank",
       "category": "macro",
       "tags": [
@@ -714,15 +777,14 @@
       "publishedAt": "2026-08-25T00:40:50Z",
       "updatedAt": "2026-08-25T00:40:50Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://files.sunoresearch.com.br/n/uploads/2022/06/Modelo2.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-49b143de5b6e6699fbc19380",
       "title": "As duas “Faria Lima”: mercado precifica Lula, mas vê mais chances de ajuste com Flávio",
-      "summary": "Faria Lima já precifica reeleição e se protege de possível vitória de Lula, mas vê em Flávio maior chance de ajuste fiscal.",
-      "details": "Faria Lima já precifica reeleição e se protege de possível vitória de Lula, mas vê em Flávio maior chance de ajuste fiscal.",
-      "url": "https://www.gazetadopovo.com.br/eleicoes/2026/duas-faria-lima-mercado-precifica-lula-mas-ve-mais-chances-de-ajuste-com-flavio/",
+      "summary": "Atualizacao de ultima hora capturada em Gazeta do Povo.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYlRETGJVMWcwN0VnX2NPY21tb0hlOUtsY1BOUlRNZWI2ZTVFcTJNODNFeFNfQ3U2d3RtVmZzRi01bVoxYm5hMnlRcTkwY2hfVEsxUUpzZVFiX0hBNW9PaUtIU0d4S21jejFiTlFzVHFmRE5aMXVlc0dfaDhOUGhqck1OVzRTYWNQcXdSalJkMVRUeTQ1Y1MtUHhLT1FybFFMaGFYZU5WS0JxY3p6ektpTGhtTXByMTdUa0xvRXlBekdjNTlZ?oc=5",
       "source": "Gazeta do Povo",
       "category": "latest",
       "tags": [
@@ -733,15 +795,14 @@
       "publishedAt": "2026-08-25T00:35:00Z",
       "updatedAt": "2026-08-25T00:35:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://media.gazetadopovo.com.br/2026/08/07141335/flavio-bolsonaro-lula-pesquisas-google-flow.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "macro-51ca1af052e8f1d2da7fcc4f",
       "title": "Salário mínimo deverá subir para R$ 1.741 em 2027, diz Durigan",
       "summary": "Atualizacao de macro capturada em CartaCapital.",
       "details": "",
-      "url": "https://www.cartacapital.com.br/economia/salario-minimo-devera-subir-para-r-1-741-em-2027-diz-durigan/",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVWpzblI5Q0N1a1dVVWY1STNiUFJhSi14cmdZTXNvTFphUEZLbjVKVzVVQ2k2cVFyX3FHajhhWE9pNUhEeHdEUnphTk9hbXBpRXRLRTltZjA3ZjVIeDhKeXNDQVBGbmFvZlhXYjBiakZUM2tySzM5eGlqdTl3Y0NOVl9LQmZNRWF3YWJDdEJWcTZBaDhMRUVLLWtlU24tMkRldXgtbg?oc=5",
       "source": "CartaCapital",
       "category": "macro",
       "tags": [
@@ -773,24 +834,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-f51cd80ff368cfa8fb86f045",
-      "title": "Zema promete reduzir Selic à metade e condiciona aumento do salário mínimo ao desempenho da economia",
-      "summary": "Atualizacao de macro capturada em Hoje em Dia.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOYVlDcjNBQzRJUUVsVVNTU1NuNEk4OU45bzFseUxGNy1pTXc4UHFlM3hRazgzdldWVVVCRVFOeFh1dmY0SVVGLVB3cVJZRWwyNlphVVRDQlRaUmVmNHdwWEhSdXdWTWdfNC1VcU9LV0R1YTRyb09LckZKcHp1WVFuZGg1OE1idkowU3BlWWk2NElPY2tZaklxWGpzVmxvWHJjeHYtSDhXaU80RVpUSnB2UlFSMzVheFItSDAtUDU2alFSdjNKVEZTUWNLSVJrM2VwR0hybmN1ekxYMmdTcGhQU0l3?oc=5",
-      "source": "Hoje em Dia",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-25T00:30:00Z",
-      "updatedAt": "2026-08-25T00:30:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
       "id": "macro-3958fd9ec0e76dd045c202de",
       "title": "Economia: Focus reduz projeção do PIB brasileiro em 2026",
       "summary": "Atualizacao de macro capturada em Portal Terra da Luz.",
@@ -805,42 +848,6 @@
       ],
       "publishedAt": "2026-08-25T00:24:36Z",
       "updatedAt": "2026-08-25T00:24:36Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-0ab71dc590fb68f044b678ca",
-      "title": "Zema na TV Globo: candidato minimiza situação fiscal de MG, ataca o governo federal e critica STF por condenações do 8/1",
-      "summary": "Atualizacao de macro capturada em O GLOBO.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPQXRCTldCWkJ4aUpGaUFPVFpNZFdwbWtmUFdsUlpPbFNncTRBWk92UG80VmVmRjZjMS1wSDNNT2tMZ2pkMnFlbHNwdXJVdUhKUER3b3FNb2NhSlpXZGZpZUF2cldVcTZNVkhXSV9QYnZEM1p1TlBsN3B4VFlZTmdha0dhclI4QVg0OE5OM2Q0ZVBJSmh1NTJJbmtSS2VwOXViemxxOHJiOTdjMkQwNl82dElfRDdZNzduVTVhaDBRdmZkNExxSnJEM0pmcTVLUm1hMnpfcFd5OXJ1MlF1ZHhhN2xFbldndktCdkxyNWx5Y0lBV3VZTmh0bTlIQzdaSnotZTBaMGdyVU94azRhdm41c0RLZ0hFanPSAaYCQVVfeXFMUE5wYmJ1eGtPUzhmM3dUYjdERDZYeVY5SzhRS05pU0NRVDYxdS1laG9TbjRyVnIxQk9vRzhGb21lS0VSZjY3RXhtRGhGODdEY2d2dGc3SmoyRXJyVktGOG15QzJLTkExVVNfcWdEczFFdW1kUWJVdS1CeXZCS1EtNjkxY0c4bzdfZjFQQ1hTYk1mbHdvZ2lwOXJlYml1d01tTjhreTZwQ0MyVzVkcEhyWTh0OVBCdm5tMlVDRldCTl92MndrNzFxNmRPS21GaTVDSGMzdWJWTHg5STluVURhLVJzUTdpc3RjeVY4U2tJMnBDNDlhN0g2V3lzRjRDcHpsVV9yelZ5NTA1SXBjSFk4REx3RHdjbGtCRUd6TjdxcktYOUN0czln?oc=5",
-      "source": "O GLOBO",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-25T00:16:11Z",
-      "updatedAt": "2026-08-25T00:16:11Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
-    },
-    {
-      "id": "macro-9e99eb7424480e4b738bb6ae",
-      "title": "Receita Federal amplia o cerco fiscal sobre mercado de infoprodutos",
-      "summary": "Atualizacao de macro capturada em brazileconomy.com.br.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRllrT2ZiXzE0bmk1SloyVDNIbEtEb242VzFtd1ZYa0xKQ3VSRHZieklmOUp1bkstRUJGSGZVcElWQkJSdnNicmpETlAxNGFtcG1tVEhBLVdPc3Z5MjFmOXJXNjZ2WjZwcEp4bXdaLTRiWm4zZ3N1U0dWYmNITjJSbmVRNENNVFdnc0RKWUhWYWdOQ25sU0I1ek8yZEtrdXJ1aXdxZ1RDX1ktajNRTTM0NHB1YUw?oc=5",
-      "source": "brazileconomy.com.br",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-25T00:10:49Z",
-      "updatedAt": "2026-08-25T00:10:49Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
@@ -1331,6 +1338,24 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
+      "id": "funds-04bd7492b1bfe3194b0d6d3b",
+      "title": "FireblocksHQ Addresses Capital Management Issues",
+      "summary": "Atualizacao de fundos capturada em Coinfomania.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdUt6Qm52Y2dLZnlQaVJZR21KM29UMjkwVjBBR1g0Q0doLWtIZG5pa1RyQllJcGYyUTYzQ3Qzdk5sQUdaYjk3c3NTeks2QUFEc0l1T19TUjEwT2ptaGpYSU4zeHg3Z20wcXR3LThfdWhva1pvR1lNUldCWlFWeXRwaWtn?oc=5",
+      "source": "Coinfomania",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-08-24T16:42:09Z",
+      "updatedAt": "2026-08-24T16:42:09Z",
+      "premium": false,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
       "id": "funds-54d03461ac9c7dcb422a7d50",
       "title": "Agência de Comunicação - ID CTVM avalia a maior presença de fundos de pensão no crédito privado estruturado",
       "summary": "Atualizacao de fundos capturada em Estadão Blue Studio.",
@@ -1363,42 +1388,6 @@
       ],
       "publishedAt": "2026-08-24T15:28:00Z",
       "updatedAt": "2026-08-24T15:28:00Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-29837b7fd149a89e00800f2c",
-      "title": "As melhores gestoras de recursos do Brasil, segundo a Moody’s",
-      "summary": "Atualizacao de fundos capturada em Money Report.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPRzI1Zkp6c21xZVJ5azlqYnJudGhBR05HTlFBc3R1Z19QRjBXVXpuNERxdGNYdFpLUy16NkFZbUtDbEpTVmhpNFhxRk42MVZNTl81bzhBYk9oWHJQUk9MWGJnLTJJSVBVSW5vOHpidFV3VDNmbGRYWDRPVTVJbmNwZ0pVUVFMc0dHbTFaaU14YTd5cUZnZHhndEJGVnVyUWx4bnptdw?oc=5",
-      "source": "Money Report",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-24T14:35:07Z",
-      "updatedAt": "2026-08-24T14:35:07Z",
-      "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
-    },
-    {
-      "id": "funds-b1935c433665a3faf77d40a0",
-      "title": "Fundos elevam apostas na alta da soja na CBOT na semana até 18 de agosto",
-      "summary": "Atualizacao de fundos capturada em CompreRural.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaHJZeUgzUzBKamltR3M4RHZ0OEd3UGc0THh2SXBaU2ZlSHVxTVliTGdFVVhxYVJsT1ppOElCaFR0QmkyTmF4eHNCeXJrc0VGeTNJcU9PU2FSVjItTkxBem5DN1BzRGZua1FlWFNibW9hdVFrbFNJNmRsWk1LZHRlb042a0JMVUc0aS03aUpFQ192eGxwNHhoRkxBMFZleWtDQzlr?oc=5",
-      "source": "CompreRural",
-      "category": "funds",
-      "tags": [
-        "fundos",
-        "asset",
-        "fiis"
-      ],
-      "publishedAt": "2026-08-24T14:35:00Z",
-      "updatedAt": "2026-08-24T14:35:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     }
