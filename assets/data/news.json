@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-26T07:24:44Z",
-  "generatedAt": "2026-08-26T07:24:44Z",
+  "updatedAt": "2026-08-26T08:06:56Z",
+  "generatedAt": "2026-08-26T08:06:56Z",
   "categories": [
     {
       "id": "all",
@@ -41,6 +41,10 @@
       "label": "autodata.com.br"
     },
     {
+      "id": "bitget",
+      "label": "Bitget"
+    },
+    {
       "id": "bom-dia-mercado",
       "label": "Bom Dia Mercado"
     },
@@ -59,10 +63,6 @@
     {
       "id": "comex-do-brasil",
       "label": "Comex do Brasil"
-    },
-    {
-      "id": "consultor-jur-dico",
-      "label": "Consultor Jurídico"
     },
     {
       "id": "correio-braziliense",
@@ -95,6 +95,10 @@
     {
       "id": "folha-pe",
       "label": "Folha PE"
+    },
+    {
+      "id": "forbes-brasil",
+      "label": "Forbes Brasil"
     },
     {
       "id": "g1",
@@ -161,6 +165,10 @@
       "label": "plantaobrasil.net"
     },
     {
+      "id": "poder360",
+      "label": "Poder360"
+    },
+    {
       "id": "portal-flagrante",
       "label": "Portal Flagrante"
     },
@@ -203,11 +211,105 @@
   ],
   "items": [
     {
+      "id": "macro-4b7c912d913275269e187eb9",
+      "title": "IPCA-15, inflação nos EUA e balanço da Nvidia: o que mexe com os mercados hoje",
+      "summary": "Atualizacao de macro capturada em Exame.",
+      "details": "",
+      "url": "https://exame.com/invest/mercados/ipca-15-inflacao-nos-eua-e-balanco-da-nvidia-o-que-mexe-com-os-mercados-hoje/",
+      "source": "Exame",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-26T08:04:28Z",
+      "updatedAt": "2026-08-26T08:04:28Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+    },
+    {
+      "id": "macro-0e9a3d22ab4c6f0125ce0f3f",
+      "title": "“Emendas são extravagância fiscal”, diz coordenador de Caiado",
+      "summary": "O gradualismo no ajuste, proposto pelo atual time econômico, poderá se mostrar tímido à luz da corrosão de credibilidade na gestão fiscal",
+      "details": "O gradualismo no ajuste, proposto pelo atual time econômico, poderá se mostrar tímido à luz da corrosão de credibilidade na gestão fiscal",
+      "url": "https://oglobo.globo.com/google/amp/economia/zeina-latif/coluna/2026/08/luzes-de-alerta.ghtml",
+      "source": "Poder360",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-26T07:58:25Z",
+      "updatedAt": "2026-08-26T07:58:25Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://ogcss.infoglobo.com.br/9876543210/img/oglobo.jpg"
+    },
+    {
+      "id": "macro-8ade98d33fb0e6bd415a2851",
+      "title": "O Próximo Choque da Inflação dos Alimentos nos EUA Está Sendo Construído e a Caminho",
+      "summary": "Roberto Brant também fala sobre supersalários e propõe freio temporário ao crescimento das despesas. Leia no Poder360.",
+      "details": "Roberto Brant também fala sobre supersalários e propõe freio temporário ao crescimento das despesas. Leia no Poder360.",
+      "url": "https://www.poder360.com.br/poder-eleicoes-2026/emendas-sao-extravagancia-fiscal-diz-coordenador-de-caiado/",
+      "source": "Forbes Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-26T07:57:00Z",
+      "updatedAt": "2026-08-26T07:57:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://static.poder360.com.br/uploads/2026/08/Ronaldo-Caiado-1080-848x477-1.png"
+    },
+    {
+      "id": "latest-782ab945d5c6b86b4227df8e",
+      "title": "Ibovespa tenta estender sequência de altas com IPCA-15 e petróleo no radar",
+      "summary": "Alta dos grãos, clima extremo, guerra no Mar Negro e margens apertadas em restaurantes aumentam o risco de novas pressões sobre custos e preços ao consumidor",
+      "details": "Alta dos grãos, clima extremo, guerra no Mar Negro e margens apertadas em restaurantes aumentam o risco de novas pressões sobre custos e preços ao consumidor",
+      "url": "https://forbes.com.br/forbes-agro/2026/08/o-proximo-choque-da-inflacao-dos-alimentos-nos-eua-esta-sendo-construido-e-a-caminho/",
+      "source": "Estadão",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-26T07:30:00Z",
+      "updatedAt": "2026-08-26T07:30:00Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://forbes.com.br/wp-content/uploads/2026/08/divida-publica_Gety-3-1200x675.jpg"
+    },
+    {
+      "id": "macro-37b906f9b3b268cca96b0c1c",
+      "title": "Luzes de alerta",
+      "summary": "Bolsa vem de cinco avanços seguidos; prévia do IPCA pode mostrar deflação, enquanto Brent caiu abaixo de US$ 90",
+      "details": "Bolsa vem de cinco avanços seguidos; prévia do IPCA pode mostrar deflação, enquanto Brent caiu abaixo de US$ 90",
+      "url": "https://www.estadao.com.br/einvestidor/cenarios-e-mercado/ibovespa-tenta-estender-sequencia-de-altas-com-ipca-15-e-petroleo-no-radar/",
+      "source": "O GLOBO",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-08-26T07:00:44Z",
+      "updatedAt": "2026-08-26T07:00:44Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/BPA7YNUNRBNU3J4QOH5PAPBDEY.png?quality=80&auth=0117c9b935fdcabbc5066ff4ed10a8d16d924d45d6183b74ee5f0cfcb4d0385a&width=1200&height=630&smart=true"
+    },
+    {
       "id": "macro-54a739039347dafee9a0308d",
       "title": "Bitcoin recua para US$ 79 mil antes dos dados de inflação dos EUA",
       "summary": "Atualizacao de macro capturada em Investing.com Brasil - Finanças, Câmbio e Investimentos.",
       "details": "",
-      "url": "https://br.investing.com/news/cryptocurrency-news/bitcoin-recua-para-us-79-mil-antes-dos-dados-de-inflacao-dos-eua-2049436",
+      "url": "https://alagoasalerta.com.br/noticia/parceria-do-governo-federal-busca-ampliar-lideranca-feminina-no-setor-financeiro-iniciativa-pode",
       "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
       "category": "macro",
       "tags": [
@@ -225,7 +327,7 @@
       "title": "Parceria do Governo Federal busca ampliar liderança feminina no setor financeiro; iniciativa pode abrir oportunidades em Alagoas",
       "summary": "Atualizacao de ultima hora capturada em Alagoas Alerta.",
       "details": "",
-      "url": "https://alagoasalerta.com.br/noticia/parceria-do-governo-federal-busca-ampliar-lideranca-feminina-no-setor-financeiro-iniciativa-pode",
+      "url": "https://br.investing.com/news/cryptocurrency-news/bitcoin-recua-para-us-79-mil-antes-dos-dados-de-inflacao-dos-eua-2049436",
       "source": "Alagoas Alerta",
       "category": "latest",
       "tags": [
@@ -260,9 +362,9 @@
     {
       "id": "funds-1740008e167cbd8087307632",
       "title": "Gaja Alternative Asset, da Índia, registra alta de 20% em sua estreia na bolsa e atinge avaliação de US$ 261 milhões",
-      "summary": "Entenda como a tributação no destino na Reforma Tributária acaba com os incentivos estaduais de ICMS e veja como blindar o lucro e a eficiência da sua empresa.",
-      "details": "Entenda como a tributação no destino na Reforma Tributária acaba com os incentivos estaduais de ICMS e veja como blindar o lucro e a eficiência da sua empresa.",
-      "url": "https://www.omie.com.br/blog/reforma-tributaria-fim-da-guerra-fiscal/",
+      "summary": "Atualizacao de fundos capturada em TradingView.",
+      "details": "",
+      "url": "https://br.investing.com/news/economic-indicators/inflacao-persistente-na-australia-aumenta-risco-de-alta-de-juros-em-novembro-2049403",
       "source": "TradingView",
       "category": "funds",
       "tags": [
@@ -273,15 +375,33 @@
       "publishedAt": "2026-08-26T05:36:00Z",
       "updatedAt": "2026-08-26T05:36:00Z",
       "premium": false,
-      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.omie.com.br/uploads/reforma_tributaria_poe_fim_a_guerra_fiscal_entenda_o_impacto_pratico.png"
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
+    },
+    {
+      "id": "latest-b79b8097960683d4c6ed38b4",
+      "title": "Dívida dos EUA atinge US$ 40 trilhões: o que isso significa para as taxas",
+      "summary": "Para os traders, essa não é apenas uma questão fiscal. Isso também pode afetar as taxas de juros dos EUA, o dólar americano",
+      "details": "Para os traders, essa não é apenas uma questão fiscal. Isso também pode afetar as taxas de juros dos EUA, o dólar americano",
+      "url": "https://www.bitget.com/pt/academy/us-debt-40-trillion-interest-rates-dollar-gold",
+      "source": "Bitget",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-08-26T05:09:40Z",
+      "updatedAt": "2026-08-26T05:09:40Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://img.bgstatic.com/multiLang/web/77aa52cc152c7a63067c1bff9f9dd5e6.jpeg"
     },
     {
       "id": "companies-7bb02ee77e58ee05a1dc2ce3",
       "title": "Empresas brasileiras enfrentam alta recorde no endividamento tributário",
       "summary": "Percentual de empresas na dívida ativa triplica em seis anos. Entenda como juros e impostos afetam o caixa dos negócios e o impacto da reforma tributária.",
       "details": "Percentual de empresas na dívida ativa triplica em seis anos. Entenda como juros e impostos afetam o caixa dos negócios e o impacto da reforma tributária.",
-      "url": "https://www.gazetadopovo.com.br/economia/empresas-brasileiras-enfrentam-alta-recorde-no-endividamento-tributario/",
+      "url": "https://redeutv.com.br/empresas-brasileiras-enfrentam-alta-recorde-no-endividamento-tributario",
       "source": "redeutv.com.br",
       "category": "companies",
       "tags": [
@@ -293,14 +413,14 @@
       "updatedAt": "2026-08-26T05:00:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://media.gazetadopovo.com.br/2026/08/26013826/divida-ativa-empresas-ilustracao-1.jpg"
+      "imageUrl": "https://media.gazetadopovo.com.br/2026/08/26013826/divida-ativa-empresas-ilustracao-1-960x540.jpg"
     },
     {
       "id": "macro-84bc43b15de2bed3a3f64fdd",
       "title": "Reforma Tributária põe fim à guerra fiscal: entenda o impacto",
-      "summary": "A startup brasileira VAAS apresentou oficialmente durante a Febraban Tech 2026, no Distrito Anhembi, em São Paulo (SP), a plataforma AI Risk Suite, um",
-      "details": "A startup brasileira VAAS apresentou oficialmente durante a Febraban Tech 2026, no Distrito Anhembi, em São Paulo (SP), a plataforma AI Risk Suite, um",
-      "url": "https://brasilinovador.com.br/vaas-lanca-suite-de-ia-para-combater-fraudes-digitais-no-setor-financeiro-durante-a-febraban-tech/",
+      "summary": "Entenda como a tributação no destino na Reforma Tributária acaba com os incentivos estaduais de ICMS e veja como blindar o lucro e a eficiência da sua empresa.",
+      "details": "Entenda como a tributação no destino na Reforma Tributária acaba com os incentivos estaduais de ICMS e veja como blindar o lucro e a eficiência da sua empresa.",
+      "url": "https://www.omie.com.br/blog/reforma-tributaria-fim-da-guerra-fiscal/",
       "source": "OMIE",
       "category": "macro",
       "tags": [
@@ -312,14 +432,14 @@
       "updatedAt": "2026-08-26T04:53:27Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://brasilinovador.com.br/wp-content/uploads/2026/08/brasil-inovador-ecossistema-inovacao-startup-vaas-ia-febraban.jpg"
+      "imageUrl": "https://www.omie.com.br/uploads/reforma_tributaria_poe_fim_a_guerra_fiscal_entenda_o_impacto_pratico.png"
     },
     {
       "id": "latest-97d262b7ad3554c5e8ec9d32",
       "title": "VAAS lança suíte de IA para combater fraudes digitais no setor financeiro durante a Febraban Tech",
-      "summary": "Atualizacao de ultima hora capturada em Brasil Inovador.",
-      "details": "",
-      "url": "https://br.investing.com/news/economic-indicators/inflacao-persistente-na-australia-aumenta-risco-de-alta-de-juros-em-novembro-2049403",
+      "summary": "Percentual de empresas na dívida ativa triplica em seis anos. Entenda como juros e impostos afetam o caixa dos negócios e o impacto da reforma tributária.",
+      "details": "Percentual de empresas na dívida ativa triplica em seis anos. Entenda como juros e impostos afetam o caixa dos negócios e o impacto da reforma tributária.",
+      "url": "https://www.gazetadopovo.com.br/economia/empresas-brasileiras-enfrentam-alta-recorde-no-endividamento-tributario/",
       "source": "Brasil Inovador",
       "category": "latest",
       "tags": [
@@ -330,14 +450,15 @@
       "publishedAt": "2026-08-26T04:42:44Z",
       "updatedAt": "2026-08-26T04:42:44Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://media.gazetadopovo.com.br/2026/08/26013826/divida-ativa-empresas-ilustracao-1.jpg"
     },
     {
       "id": "companies-575e936f4f10ddb85ee48d56",
       "title": "Dívida ativa atinge 20% das empresas em 2026 e bate recorde de inadimplência",
-      "summary": "Após o fechamento de Wall Street, o balanço da Nvidia mede novamente a confiança pela inteligência artificial",
-      "details": "Após o fechamento de Wall Street, o balanço da Nvidia mede novamente a confiança pela inteligência artificial",
-      "url": "https://www.bomdiamercado.com.br/morning-call/inflacao-domina-agenda-aqui-e-nos-eua/",
+      "summary": "RÁDIO NEWS -",
+      "details": "RÁDIO NEWS -",
+      "url": "https://www.sapicua.com.br/exportadoras-brasileiras-afetadas-pelas-tarifas-dos-eua-tem-prorrogacao-dos-prazos-de-suspensao-de",
       "source": "Gazeta do Povo",
       "category": "companies",
       "tags": [
@@ -349,14 +470,14 @@
       "updatedAt": "2026-08-26T04:38:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://uploads.bomdiamercado.com.br/2024/10/MC-5aF.png"
+      "imageUrl": "https://www.sapicua.com.br/sites/default/files/articles/04%20Exportadoras%20brasileiras%20afetadas%20pelas%20tarifas%20dos%20EUA%20t%C3%AAm%20prorroga%C3%A7%C3%A3o%20dos%20prazos%20de%20suspens%C3%A3o%20de%20tributos.jpg"
     },
     {
       "id": "macro-472dfe45d87fe89560f0f5f1",
       "title": "Inflação domina agenda aqui e nos EUA",
-      "summary": "Se aprovada, proposta contribuirá para governo fluminense sanear finanças cronicamente em crise",
-      "details": "Se aprovada, proposta contribuirá para governo fluminense sanear finanças cronicamente em crise",
-      "url": "https://oglobo.globo.com/opiniao/editorial/coluna/2026/08/lei-estadual-de-responsabilidade-fiscal-e-vital-para-o-futuro-do-rio.ghtml",
+      "summary": "Após o fechamento de Wall Street, o balanço da Nvidia mede novamente a confiança pela inteligência artificial",
+      "details": "Após o fechamento de Wall Street, o balanço da Nvidia mede novamente a confiança pela inteligência artificial",
+      "url": "https://www.bomdiamercado.com.br/morning-call/inflacao-domina-agenda-aqui-e-nos-eua/",
       "source": "Bom Dia Mercado",
       "category": "macro",
       "tags": [
@@ -368,14 +489,14 @@
       "updatedAt": "2026-08-26T04:13:39Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-oglobo.glbimg.com/BhY26y7QhphzKufphljHsXMU2BY=/800x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/x/t/YdItMuQkWn4Dt59PAYYw/getimagecontent.jpg"
+      "imageUrl": "https://uploads.bomdiamercado.com.br/2024/10/MC-5aF.png"
     },
     {
       "id": "macro-86fcdf411fc67182e098a155",
       "title": "Lei estadual de responsabilidade fiscal é vital para o futuro do Rio",
-      "summary": "Percentual de empresas na dívida ativa triplica em seis anos. Entenda como juros e impostos afetam o caixa dos negócios e o impacto da reforma tributária.",
-      "details": "Percentual de empresas na dívida ativa triplica em seis anos. Entenda como juros e impostos afetam o caixa dos negócios e o impacto da reforma tributária.",
-      "url": "https://redeutv.com.br/empresas-brasileiras-enfrentam-alta-recorde-no-endividamento-tributario",
+      "summary": "A startup brasileira VAAS apresentou oficialmente durante a Febraban Tech 2026, no Distrito Anhembi, em São Paulo (SP), a plataforma AI Risk Suite, um",
+      "details": "A startup brasileira VAAS apresentou oficialmente durante a Febraban Tech 2026, no Distrito Anhembi, em São Paulo (SP), a plataforma AI Risk Suite, um",
+      "url": "https://brasilinovador.com.br/vaas-lanca-suite-de-ia-para-combater-fraudes-digitais-no-setor-financeiro-durante-a-febraban-tech/",
       "source": "O GLOBO",
       "category": "macro",
       "tags": [
@@ -387,14 +508,14 @@
       "updatedAt": "2026-08-26T03:09:15Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://media.gazetadopovo.com.br/2026/08/26013826/divida-ativa-empresas-ilustracao-1-960x540.jpg"
+      "imageUrl": "https://brasilinovador.com.br/wp-content/uploads/2026/08/brasil-inovador-ecossistema-inovacao-startup-vaas-ia-febraban.jpg"
     },
     {
       "id": "companies-da117be7a53f9aa70cf517ab",
       "title": "Exportadoras brasileiras afetadas pelas tarifas dos EUA têm prorrogação dos prazos de suspensão de tributos",
-      "summary": "RÁDIO NEWS -",
-      "details": "RÁDIO NEWS -",
-      "url": "https://www.sapicua.com.br/exportadoras-brasileiras-afetadas-pelas-tarifas-dos-eua-tem-prorrogacao-dos-prazos-de-suspensao-de",
+      "summary": "Se aprovada, proposta contribuirá para governo fluminense sanear finanças cronicamente em crise",
+      "details": "Se aprovada, proposta contribuirá para governo fluminense sanear finanças cronicamente em crise",
+      "url": "https://oglobo.globo.com/opiniao/editorial/coluna/2026/08/lei-estadual-de-responsabilidade-fiscal-e-vital-para-o-futuro-do-rio.ghtml",
       "source": "Sapicuá",
       "category": "companies",
       "tags": [
@@ -406,7 +527,7 @@
       "updatedAt": "2026-08-26T03:04:55Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://www.sapicua.com.br/sites/default/files/articles/04%20Exportadoras%20brasileiras%20afetadas%20pelas%20tarifas%20dos%20EUA%20t%C3%AAm%20prorroga%C3%A7%C3%A3o%20dos%20prazos%20de%20suspens%C3%A3o%20de%20tributos.jpg"
+      "imageUrl": "https://s2-oglobo.glbimg.com/BhY26y7QhphzKufphljHsXMU2BY=/800x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2026/x/t/YdItMuQkWn4Dt59PAYYw/getimagecontent.jpg"
     },
     {
       "id": "macro-8c5a453732db06a13d2395da",
@@ -469,7 +590,7 @@
       "title": "Caiado evita detalhar propostas para reforma da Previdência e ajuste fiscal em sabatina",
       "summary": "Atualizacao de macro capturada em Folha PE.",
       "details": "",
-      "url": "https://www.folhape.com.br/noticia/amp/508746/caiado-evita-detalhar-propostas-para-reforma-da-previdencia-e-ajuste/",
+      "url": "https://exame.com/brasil/queremos-a-aprovacao-no-inicio-do-governo-diz-campanha-de-flavio-sobre-pec-do-ajuste-fiscal/",
       "source": "Folha PE",
       "category": "macro",
       "tags": [
@@ -487,7 +608,7 @@
       "title": "‘Queremos a aprovação no início do governo’, diz campanha de Flávio sobre PEC do ajuste fiscal",
       "summary": "Atualizacao de macro capturada em Exame.",
       "details": "",
-      "url": "https://exame.com/brasil/queremos-a-aprovacao-no-inicio-do-governo-diz-campanha-de-flavio-sobre-pec-do-ajuste-fiscal/",
+      "url": "https://www.folhape.com.br/noticia/amp/508746/caiado-evita-detalhar-propostas-para-reforma-da-previdencia-e-ajuste/",
       "source": "Exame",
       "category": "macro",
       "tags": [
@@ -503,9 +624,9 @@
     {
       "id": "macro-735e1b5d6811ac3c0c9acd8b",
       "title": "Caiado evita detalhar propostas para Previdência e ajuste fiscal em sabatina",
-      "summary": "Ronaldo Caiado não anunciou medidas concretas sobre Previdência e ajuste fiscal em sabatina e repetiu medidas para Segurança Pública",
-      "details": "Ronaldo Caiado não anunciou medidas concretas sobre Previdência e ajuste fiscal em sabatina e repetiu medidas para Segurança Pública",
-      "url": "https://www.moneytimes.com.br/caiado-evita-detalhar-propostas-para-reforma-da-previdencia-e-ajuste-fiscal-em-sabatina-gaep/",
+      "summary": "Transformação foi impulsionada por uma agenda consistente da CVM e do Banco Central",
+      "details": "Transformação foi impulsionada por uma agenda consistente da CVM e do Banco Central",
+      "url": "https://www.estadao.com.br/em-alta/economia/mercado-financeiro-passou-por-transformacao-silenciosa/",
       "source": "Money Times",
       "category": "macro",
       "tags": [
@@ -517,14 +638,14 @@
       "updatedAt": "2026-08-26T01:49:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/08/caiado-g4-antagonista-4-e1785854536401.png"
+      "imageUrl": "https://www.estadao.com.br/resizer/v2/N36X6LCXR5HNVDH37F3ERVT2E4.jpg?quality=80&auth=bac9477cb953507e9a05605433df25bb25c7501c7498d580f9244ccdf45101e7&width=1200&height=630&smart=true"
     },
     {
       "id": "macro-1001825c1aab8a6bfc2d6d4f",
       "title": "Lucro líquido da australiana Lynas Terras Raras salta 27 vezes no ano fiscal encerrado em junho",
-      "summary": "Lucro líquido da australiana Lynas Terras Raras salta 27 vezes no ano fiscal encerrado em junho",
-      "details": "Lucro líquido da australiana Lynas Terras Raras salta 27 vezes no ano fiscal encerrado em junho",
-      "url": "https://valor.globo.com/empresas/noticia/2026/08/25/lucro-lquido-da-australiana-lynas-terras-raras-salta-27-vezes-no-ano-fiscal-encerrado-em-junho.ghtml",
+      "summary": "Ronaldo Caiado não anunciou medidas concretas sobre Previdência e ajuste fiscal em sabatina e repetiu medidas para Segurança Pública",
+      "details": "Ronaldo Caiado não anunciou medidas concretas sobre Previdência e ajuste fiscal em sabatina e repetiu medidas para Segurança Pública",
+      "url": "https://www.moneytimes.com.br/caiado-evita-detalhar-propostas-para-reforma-da-previdencia-e-ajuste-fiscal-em-sabatina-gaep/",
       "source": "Valor Econômico",
       "category": "macro",
       "tags": [
@@ -536,7 +657,7 @@
       "updatedAt": "2026-08-26T01:44:38Z",
       "premium": true,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://s2-valor.glbimg.com/8U5n_LCHSU_HTin15HSo5Xq3OL4=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/s/V/X7HtOCSdO9qqrMBRTf5g/2026-05-26t052746z-1565550418-rc2sglaaewg2-rtrmadp-3-critical-minerals-stockpiles.jpg"
+      "imageUrl": "https://www.moneytimes.com.br/uploads/2026/08/caiado-g4-antagonista-4-e1785854536401.png"
     },
     {
       "id": "macro-6dbca32aa1e25bd4dcbdc45d",
@@ -560,9 +681,9 @@
     {
       "id": "latest-0cf10810195e765e1bfee47f",
       "title": "Juros altos e menos compras governamentais freiam mercado de ônibus",
-      "summary": "Mercado de ônibus enfrenta queda em 2026, enquanto juros altos, crédito restrito e eletrificação pressionam o setor.",
-      "details": "Mercado de ônibus enfrenta queda em 2026, enquanto juros altos, crédito restrito e eletrificação pressionam o setor.",
-      "url": "https://www.autodata.com.br/noticias/2026/08/25/juros-altos-e-menos-compras-governamentais-freiam-mercado-de-onibus/133803/",
+      "summary": "Lucro líquido da australiana Lynas Terras Raras salta 27 vezes no ano fiscal encerrado em junho",
+      "details": "Lucro líquido da australiana Lynas Terras Raras salta 27 vezes no ano fiscal encerrado em junho",
+      "url": "https://valor.globo.com/empresas/noticia/2026/08/25/lucro-lquido-da-australiana-lynas-terras-raras-salta-27-vezes-no-ano-fiscal-encerrado-em-junho.ghtml",
       "source": "autodata.com.br",
       "category": "latest",
       "tags": [
@@ -574,14 +695,14 @@
       "updatedAt": "2026-08-26T01:22:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.autodata.com.br/wp-content/uploads/2026/08/forum-veiculos-comerciais-autodata-onibus.jpeg"
+      "imageUrl": "https://s2-valor.glbimg.com/8U5n_LCHSU_HTin15HSo5Xq3OL4=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/s/V/X7HtOCSdO9qqrMBRTf5g/2026-05-26t052746z-1565550418-rc2sglaaewg2-rtrmadp-3-critical-minerals-stockpiles.jpg"
     },
     {
       "id": "macro-bee64588431dd94639c94099",
       "title": "Caiado evita detalhar propostas para reforma da Previdência e ajuste fiscal em sabatina",
-      "summary": "Transformação foi impulsionada por uma agenda consistente da CVM e do Banco Central",
-      "details": "Transformação foi impulsionada por uma agenda consistente da CVM e do Banco Central",
-      "url": "https://www.estadao.com.br/em-alta/economia/mercado-financeiro-passou-por-transformacao-silenciosa/",
+      "summary": "Mercado de ônibus enfrenta queda em 2026, enquanto juros altos, crédito restrito e eletrificação pressionam o setor.",
+      "details": "Mercado de ônibus enfrenta queda em 2026, enquanto juros altos, crédito restrito e eletrificação pressionam o setor.",
+      "url": "https://www.autodata.com.br/noticias/2026/08/25/juros-altos-e-menos-compras-governamentais-freiam-mercado-de-onibus/133803/",
       "source": "Estadão",
       "category": "macro",
       "tags": [
@@ -593,14 +714,14 @@
       "updatedAt": "2026-08-26T01:17:29Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/N36X6LCXR5HNVDH37F3ERVT2E4.jpg?quality=80&auth=bac9477cb953507e9a05605433df25bb25c7501c7498d580f9244ccdf45101e7&width=1200&height=630&smart=true"
+      "imageUrl": "https://www.autodata.com.br/wp-content/uploads/2026/08/forum-veiculos-comerciais-autodata-onibus.jpeg"
     },
     {
       "id": "latest-27f19723dedb9a230841c57f",
       "title": "Opinião | Mercado financeiro passou por transformação silenciosa",
-      "summary": "Em entrevista à Globo, o candidato do PSD afirmou que, se eleito, concederá anistia ampla e irrestrita aos condenados pelos atos golpistas de 8 de janeiro de 2023",
-      "details": "Em entrevista à Globo, o candidato do PSD afirmou que, se eleito, concederá anistia ampla e irrestrita aos condenados pelos atos golpistas de 8 de janeiro de 2023",
-      "url": "https://valor.globo.com/noticia/2026/08/25/caiado-defende-pec-para-ajuste-fiscal-mas-nao-explica-como-formar-maioria-para-aprovar-no-congresso.ghtml",
+      "summary": "Candidato do PSD foi pressionado a apontar cortes e planos para a economia, mas respondeu com metas genéricas",
+      "details": "Candidato do PSD foi pressionado a apontar cortes e planos para a economia, mas respondeu com metas genéricas",
+      "url": "https://www.estadao.com.br/em-alta/politica/eleicoes/caiado-evita-detalhar-propostas-para-reforma-da-previdencia-e-ajuste-fiscal-em-sabatina/",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -612,52 +733,14 @@
       "updatedAt": "2026-08-26T01:09:29Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://s2-valor.glbimg.com/kawi0LwXXOvbHMtTUj2yOa_NG-M=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2026/U/k/EunkInQuS0XK1soXaTBQ/ronaldo-caiado-globo.jpeg"
-    },
-    {
-      "id": "macro-32089b70badab26d40dae77a",
-      "title": "Inflação de serviços corporativos do Japão sobe mais que o esperado em julho",
-      "summary": "Candidato do PSD foi pressionado a apontar cortes e planos para a economia, mas respondeu com metas genéricas",
-      "details": "Candidato do PSD foi pressionado a apontar cortes e planos para a economia, mas respondeu com metas genéricas",
-      "url": "https://www.estadao.com.br/em-alta/politica/eleicoes/caiado-evita-detalhar-propostas-para-reforma-da-previdencia-e-ajuste-fiscal-em-sabatina/",
-      "source": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-26T01:09:00Z",
-      "updatedAt": "2026-08-26T01:09:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://www.estadao.com.br/resizer/v2/LO4CHWKUPZB7FOGTDL7HIBR3AA.jpeg?quality=80&auth=aaef3396d4ddb993d5a9e8141b541aa4709dea56173b0988c25edb3c638619dc&width=1200&height=630&smart=true"
-    },
-    {
-      "id": "macro-c1dbd16a5fcc6825306824b9",
-      "title": "Agenda Brasil: especialistas defendem revisão do arcabouço fiscal",
-      "summary": "Transformação foi impulsionada por uma agenda consistente da CVM e do Banco Central",
-      "details": "Transformação foi impulsionada por uma agenda consistente da CVM e do Banco Central",
-      "url": "https://www.estadao.com.br/economia/mercado-financeiro-passou-por-transformacao-silenciosa/",
-      "source": "Estadão",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-26T01:02:38Z",
-      "updatedAt": "2026-08-26T01:02:38Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/N36X6LCXR5HNVDH37F3ERVT2E4.jpg?quality=80&auth=bac9477cb953507e9a05605433df25bb25c7501c7498d580f9244ccdf45101e7&width=1200&height=630&focal=1124,1269"
     },
     {
       "id": "latest-47e014c4cc5acf05b293e9f3",
       "title": "Mercado financeiro passou por transformação silenciosa",
       "summary": "Atualizacao de ultima hora capturada em Estadão.",
       "details": "",
-      "url": "https://br.investing.com/news/stock-market-news/inflacao-de-servicos-corporativos-do-japao-sobe-mais-que-o-esperado-em-julho-93CH-2049345",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZW1JaXZtcE00cEhBbXpzY0stMlZjOWdPU2VoYzJ2R1EwdFhRNFBHa0Y4eTU0ZzdrTjhjQnZYSHUzMjBFNW5RdF9ZZ3RXVGVwanNjS3hFai1RZHVKZ3VGVzRlZzNJOTE3U2o4LTRzODU1bE96clFrZnBCblZIVnBjWHhBbjI1c2MwYXVmbGZpbllDZ2prNEHSAZsBQVVfeXFMUFVTMWNSX3BBbU1UZFhoSjgyN0x3ZDJnWWVsajNmUV91STNWMTdSRnRSdkFMaHN1OGo0QzZKdkQ5bTRCa2pDaXhMQWt0MmprUjk4cnNwS2xRcHJtV2lwTXVjZk1TY1UzVEs0MFE2aFRINlI2Rkh6ay12YmtMNUItcm5EWS04SnJxUnpYNlFTaFZWY0NNWUQ5MWptT28?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -671,30 +754,11 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-8efc067181ae908f91171728",
-      "title": "Caiado defende PEC para ajuste fiscal, mas não explica como formar maioria para aprovação no Congresso",
-      "summary": "Empresa brasileira de tecnologia para o setor financeiro foi comprada pela Visa em 2023",
-      "details": "Empresa brasileira de tecnologia para o setor financeiro foi comprada pela Visa em 2023",
-      "url": "https://www.estadao.com.br/economia/coluna-do-broad/pismo-avanca-em-internacionalizacao-e-chega-a-30-paises/",
-      "source": "Valor Econômico",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-26T00:59:38Z",
-      "updatedAt": "2026-08-26T00:59:38Z",
-      "premium": true,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/QDCW5BCGSZDJXD5AK5IN3FIDS4.jpg?quality=80&auth=24c399d2dd8fa57b67c36c26247445d8831b370011038642718888d572a78698&width=1200&height=630&focal=1253,450"
-    },
-    {
       "id": "latest-be9c99fa2cdec33f94c8600a",
       "title": "Pismo avança em internacionalização e chega a 30 países",
-      "summary": "Participantes do evento destacam a necessidade de um ajuste com foco nas despesas, acompanhado de mudanças institucionais que elevem a eficiência do gasto e sustentem o crescimento",
-      "details": "Participantes do evento destacam a necessidade de um ajuste com foco nas despesas, acompanhado de mudanças institucionais que elevem a eficiência do gasto e sustentem o crescimento",
-      "url": "https://www.estadao.com.br/em-alta/economia/agronegocios/agenda-brasil-especialistas-defendem-revisao-do-arcabouco-fiscal/",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWTVxVnJhdFhFS1NROGZxYTJFT3pjd2tzeVVrUHNoMkNwbVNuREtxejZQdGIwdGlqN1ZRa0M4RHJuS0hpVmF1ZnBESjNpT1ZnazlPVXhkbHVnSTl6LWdZNXB5UXhjMzA1ZktEVEI3dkF4OEVOaGI3dWxuOXJSM050aV9yci1aX01CenJRc1VINkljSnZTREZRM2xFdTNuWjMxbDRUTUFhRktFTUlo?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -705,15 +769,14 @@
       "publishedAt": "2026-08-26T00:58:00Z",
       "updatedAt": "2026-08-26T00:58:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/NYBXTFNNAJDK7DJE73M63JPTTU.jpg?quality=80&auth=583b45ebb7ff64537a312eec91f196e7a7cba347674a5a28ac9e80b9df38ba8e&width=1200&height=630&smart=true"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-614029a6eadec30a9e6fb5fc",
       "title": "Varejo digital brasileiro amplia pagamentos e logística",
-      "summary": "A Associação Brasileira de Inteligência Artificial e E-commerce (Abiacom) divulgou que o comércio eletrônico no Brasil faturou R$ 235,5 bilhões em 2025, representando alta de 15,3% em relação a 2024. O setor registrou 438,9 milhões de pedidos, ticket médio de R$ 536,6 e 94,2 milh",
-      "details": "A Associação Brasileira de Inteligência Artificial e E-commerce (Abiacom) divulgou que o comércio eletrônico no Brasil faturou R$ 235,5 bilhões em 2025, representando alta de 15,3% em relação a 2024. O setor registrou 438,9 milhões de pedidos, ticket médio de R$ 536,6 e 94,2 milhões de consumidores ativos; a projeção [",
-      "url": "https://www.broadcast.com.br/knewin-dino/varejo-digital-brasileiro-amplia-pagamentos-e-logistica/",
+      "summary": "Atualizacao de ultima hora capturada em broadcast.com.br.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUUFKUTZuNGZkNkhIbU16aW9hSEk5bmxYR1A3Y2gtUDNOaWtGZ2kxYU9PVnZjMjJWWVVCUmtHaUJxRWFwMVUwMjdHVkU3V2hCNXo4SmVuTDlpV2JPcHdZcnhrWFNWTWtZbENKVVFVY0FObXYxaDF2RGthR0gyQ3dhRDQ4TXpkWExrSmlGOGRfbk9qVzhoVmt5amZ4YUxTZw?oc=5",
       "source": "broadcast.com.br",
       "category": "latest",
       "tags": [
@@ -724,8 +787,7 @@
       "publishedAt": "2026-08-26T00:57:47Z",
       "updatedAt": "2026-08-26T00:57:47Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.broadcast.com.br/wp-content/uploads/2026/08/sVfSvE6YnZ7vn2xoYPOGLtcdZsa2_-aTJA8voakW3K43Fuhz14gY6IWI-Gxgl8yT0CZKodx7c_p7RbwV5TZPRXOCyJxH0ESEM8r9iVQxpkF5Hptq-cGV711pgVXWUqYRL2by8Kgz-oT3wpafrfCl3lVc1pyhrdaKWaRJ3dwEfPM1.png"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-01e6dc6b9e0ca4eb205c4523",
@@ -798,24 +860,6 @@
       "updatedAt": "2026-08-26T00:57:20Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-599c9cf13387e13959c891f1",
-      "title": "Ronaldo Caiado (PSD) responde sobre ajuste fiscal",
-      "summary": "Atualizacao de macro capturada em G1.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSHNOMENKNUFoRVdRMWZ0Nl9tdFJsNm1wYWtVVGJnQmJVXzl4bHZ3R0FFQUhyOWgyTXkwaEx3Z1ZhNTFpTXh3SGh5anlCMkxzVXNuMTFyaEI4VGxNcVdpQVlPQ0RwT1JFRWJMdGVTME50ZTNVMEVOY3JoVll6bllBVUwtb180WVhOZjRTVGFaQU54NGxfTU1WYkl2dS10eVNyVU9rTmkyZ1YxdC1GMTUxZl9ZSTZuWTdhamI3QTMzVDTSAcABQVVfeXFMUEhzTjBDSjVBaEVXUTFmdDZfbXRSbDZtcGFrVVRiZ0JiVV85eGx2d0dBRUFIcjloMk15MGhMd2dWYTUxaU14d0hoeWp5QjJMc1VzbjExcmhCOFRsTXFXaUFZT0NEcE9SRUViTHRlUzBOdGUzVTBFTmNyaFZZem5ZQVVMLW9fNFlYTmY0U1RhWkFOeDRsX01NVmJJdnUtdHlTclVPa05pMmdWMXQtRjE1MWZfWUk2blk3YWpiN0EzM1Q0?oc=5",
-      "source": "G1",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-08-26T00:57:03Z",
-      "updatedAt": "2026-08-26T00:57:03Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-80f5758470db69bb55296b36",
@@ -962,24 +1006,6 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-dca7d380ad3cf72168b80664",
-      "title": "STJ sedia III Seminário Nacional sobre Crédito em setembro",
-      "summary": "Atualizacao de ultima hora capturada em Consultor Jurídico.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNU3BiZTNBNlcybDd0RW00bkdQVnROQ3NJbXlzUWY3LW8yS0o1VjJfbllhdjk0VEs3NWE1TVdfczhKRTA5dlRtLThaalh4dHdZdlU3LVJ1ZklsODVvdXktU2d5RVh0UzBHMkJpWnB2VXZhMUVFYXBERDVBY084Y0V1WUQ4VHpydVJRbUlHLXQ2VHpvbThvWUgwZnpFY2U4eGNqMEwwcV9SeXI?oc=5",
-      "source": "Consultor Jurídico",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-25T22:51:25Z",
-      "updatedAt": "2026-08-25T22:51:25Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
       "id": "companies-2d14347607ba7a48b4c5b8f4",
       "title": "Tarifaço: governo prorroga suspensão de tributos para empresas afetadas",
       "summary": "Atualizacao de empresas capturada em Correio Braziliense.",
@@ -1122,24 +1148,6 @@
       "updatedAt": "2026-08-25T21:58:08Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "latest-31f103d0d0a572b1a0b3921a",
-      "title": "Tecnologia do mercado cripto começa a ser incorporada pelo sistema financeiro tradicional",
-      "summary": "Atualizacao de ultima hora capturada em Valor Econômico.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQbDN2Y0FvUks0NHhlNWd0UHM0cDBkai1MQ1F5VHVMQ0xzRVRjQjRpSktLWjZtYkZXX2VqRWFxRzFoOUJxeWpwOWFIWFJydDE0NjhXc2wtbmhXMDUwLUpuQW02VU93QkR2SDQtM2FlMXdobXJ1eUdPNW0yaHdZUHB2cmtYc2hoTHpLN1pLUlNMcWM2dThtekpCSVI4ZzVTYjFmSm9RUTJPYUhNRVZEX3RiZXZ3M3BNYWM3cC1HdWxiRFEyUHNvMXV1YVYtVWZ3cFBnZmUxVXNNeE15QV9TZ0VOdmFrQzgyTkhfWUE?oc=5",
-      "source": "Valor Econômico",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-08-25T21:50:18Z",
-      "updatedAt": "2026-08-25T21:50:18Z",
-      "premium": true,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "companies-800f054de9bc49c1931e6661",
