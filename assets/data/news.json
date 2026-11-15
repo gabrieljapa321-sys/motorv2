@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-14T22:51:22Z",
-  "generatedAt": "2026-11-14T22:51:22Z",
+  "updatedAt": "2026-11-15T02:21:17Z",
+  "generatedAt": "2026-11-15T02:21:17Z",
   "categories": [
     {
       "id": "all",
@@ -41,20 +41,16 @@
       "label": "Achei Sudoeste"
     },
     {
+      "id": "aeroin",
+      "label": "AEROIN"
+    },
+    {
       "id": "agronews-brasil",
       "label": "Agronews Brasil"
     },
     {
-      "id": "aqui-not-cias",
-      "label": "Aqui Notícias"
-    },
-    {
-      "id": "arena-de-not-cias",
-      "label": "Arena de Notícias"
-    },
-    {
-      "id": "blog-milton-figueiredo",
-      "label": "Blog Milton Figueiredo"
+      "id": "bbc",
+      "label": "BBC"
     },
     {
       "id": "bra1-com-br",
@@ -69,8 +65,8 @@
       "label": "Brasil Inovador"
     },
     {
-      "id": "circuitomt",
-      "label": "CircuitoMT"
+      "id": "cidadeverde-com",
+      "label": "CidadeVerde.com"
     },
     {
       "id": "cnn-brasil",
@@ -79,10 +75,6 @@
     {
       "id": "coinfomania",
       "label": "Coinfomania"
-    },
-    {
-      "id": "correio-do-povo",
-      "label": "Correio do Povo"
     },
     {
       "id": "editora-brasil-energia",
@@ -101,20 +93,12 @@
       "label": "Finsiders Brasil"
     },
     {
-      "id": "foco-cidade",
-      "label": "Foco Cidade"
-    },
-    {
       "id": "folha-de-s-paulo",
       "label": "Folha de S.Paulo"
     },
     {
       "id": "folhamax",
       "label": "FOLHAMAX"
-    },
-    {
-      "id": "gaz",
-      "label": "GAZ"
     },
     {
       "id": "hora-do-povo",
@@ -169,10 +153,6 @@
       "label": "O GLOBO"
     },
     {
-      "id": "panrotas",
-      "label": "Panrotas"
-    },
-    {
       "id": "poder360",
       "label": "Poder360"
     },
@@ -183,6 +163,10 @@
     {
       "id": "portal-ju-na-mais",
       "label": "Portal Juína Mais"
+    },
+    {
+      "id": "regi-o-em-destake",
+      "label": "Região em Destake"
     },
     {
       "id": "rep-rter-macei",
@@ -225,12 +209,20 @@
       "label": "Times Brasil | CNBC"
     },
     {
+      "id": "tv-sim-brasil",
+      "label": "TV Sim Brasil"
+    },
+    {
       "id": "uol",
       "label": "UOL"
     },
     {
       "id": "uol-not-cias",
       "label": "UOL Notícias"
+    },
+    {
+      "id": "valor-econ-mico",
+      "label": "Valor Econômico"
     },
     {
       "id": "veja",
@@ -243,11 +235,124 @@
   ],
   "items": [
     {
-      "id": "macro-3eb49bfc6b234fae7b3348f5",
+      "id": "macro-ed071ac93cef8e6ecd8738c2",
+      "title": "Por que o Bitcoin despenca e o que muda para o investidor brasileiro",
+      "summary": "O Bitcoin caiu 6% em 24 horas e está 49% abaixo da máxima histórica, pressionado por expectativa de juros mais altos nos EUA e pela maior saída de stablecoins",
+      "details": "O Bitcoin caiu 6% em 24 horas e está 49% abaixo da máxima histórica, pressionado por expectativa de juros mais altos nos EUA e pela maior saída de stablecoins",
+      "url": "https://tvsimbrasil.com.br/brasil/economia/noticia/2026/11/14/por-que-bitcoin-despenca-muda-investidor-brasileiro",
+      "source": "TV Sim Brasil",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-11-15T01:56:00Z",
+      "updatedAt": "2026-11-15T01:56:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://tvsimbrasil.com.br/_next/image?url=https%3A%2F%2Fapi-news.tvsimbrasil.com.br%2Fstorage%2Farticles%2Fad552b9e-94fb-497b-a864-f202d86e07a4.webp&w=1200&q=75"
+    },
+    {
+      "id": "funds-2f64863eb285e1f855006005",
+      "title": "Banco ABC Brasil chega a acordo para comprar gestora Angá Asset",
+      "summary": "Aquisição começa com fatia de 40% e evolui com novos tranches nos próximos anos até chegar ao total em 2031",
+      "details": "Aquisição começa com fatia de 40% e evolui com novos tranches nos próximos anos até chegar ao total em 2031",
+      "url": "https://valor.globo.com/financas/noticia/2026/11/14/banco-abc-brasil-chega-a-acordo-para-comprar-gestora-ang-asset.ghtml",
+      "source": "Valor Econômico",
+      "category": "funds",
+      "tags": [
+        "fundos",
+        "asset",
+        "fiis"
+      ],
+      "publishedAt": "2026-11-15T01:08:18Z",
+      "updatedAt": "2026-11-15T01:08:18Z",
+      "premium": true,
+      "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
+      "imageUrl": "https://s2-valor.glbimg.com/P5JU7_4JMQWrW20CNEIXzkGlRA4=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2025/j/e/mdkc6DSUKhJEtUjo0Waw/abcbrasil-hall-novalogo-2024.jpg"
+    },
+    {
+      "id": "latest-da815342c876de156cf992f3",
+      "title": "Ibovespa encerrou o pregão desta sexta-feira (13) aos 172.457 pontos",
+      "summary": "Atualizacao de ultima hora capturada em Região em Destake.",
+      "details": "",
+      "url": "https://noticias.uol.com.br/internacional/ultimas-noticias/2026/11/14/economia-disputa-interna-e-papa-expoem-crises-que-pressionam-milei.ghtm",
+      "source": "Região em Destake",
+      "category": "latest",
+      "tags": [
+        "mercado",
+        "bolsa",
+        "macro"
+      ],
+      "publishedAt": "2026-11-15T01:02:28Z",
+      "updatedAt": "2026-11-15T01:02:28Z",
+      "premium": false,
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+    },
+    {
+      "id": "macro-4ef5ddaff861517d7ba3477a",
+      "title": "O que a Folha pensa: Combate à pobreza só é efetivo com equilíbrio fiscal",
+      "summary": "Volume total negociado na B3 foi de R$ 27.724.815.289, em meio a 4.107.592 de negócios",
+      "details": "Volume total negociado na B3 foi de R$ 27.724.815.289, em meio a 4.107.592 de negócios",
+      "url": "https://regiaoemdestake.com.br/ibovespa-encerrou-o-pregao-desta-sexta-feira-13-aos-172-457-pontos/",
+      "source": "Folha de S.Paulo",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-11-15T01:00:00Z",
+      "updatedAt": "2026-11-15T01:00:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://regiaoemdestake.com.br/wp-content/uploads/2026/11/Ibovespaencerrouopregodestasexta-feira13aos172.457pontos_0222707001794701453.jpeg"
+    },
+    {
+      "id": "macro-a90f03714d89212f7a541de9",
+      "title": "Inflação, disputa interna e papa expõem crises de Milei, diz jornal argentino",
+      "summary": "Lula não faz ajuste por crer equivocadamente que isso minaria a política social",
+      "details": "Lula não faz ajuste por crer equivocadamente que isso minaria a política social",
+      "url": "https://www1.folha.uol.com.br/opiniao/2026/11/combate-a-pobreza-so-e-efetivo-com-equilibrio-fiscal.shtml",
+      "source": "UOL Notícias",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-11-14T23:53:39Z",
+      "updatedAt": "2026-11-14T23:53:39Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://f.i.uol.com.br/fotografia/2026/11/14/17947026006af8fd081c41e_1794702600_3x2_rt.jpg"
+    },
+    {
+      "id": "companies-f8857c4126b5f96124744e1d",
+      "title": "IA será principal motor de competitividade para 88% das empresas até 2030",
+      "summary": "Deputados querem taxar grandes fortunas, instituir alíquota sobre LCA e LCI e elevar imposto sobre lucros. Leia no Poder360.",
+      "details": "Deputados querem taxar grandes fortunas, instituir alíquota sobre LCA e LCI e elevar imposto sobre lucros. Leia no Poder360.",
+      "url": "https://www.poder360.com.br/poder-congresso/ala-do-pt-defende-ajuste-fiscal-com-mais-impostos/",
+      "source": "CNN Brasil",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-11-14T23:36:36Z",
+      "updatedAt": "2026-11-14T23:36:36Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
+      "imageUrl": "https://static.poder360.com.br/uploads/2026/11/entenda-4-propostas-tributarias-ala-pt-14-nov-2026-card-1200x675.png"
+    },
+    {
+      "id": "macro-d3cfcb76063c440339ad1ba8",
       "title": "As gravíssimas consequências do ajuste fiscal",
-      "summary": "Atos reúnem estudantes, sindicatos e movimento dos Coletes Amarelos; adesão foi menor desta vez",
-      "details": "Atos reúnem estudantes, sindicatos e movimento dos Coletes Amarelos; adesão foi menor desta vez",
-      "url": "https://www1.folha.uol.com.br/mundo/2026/11/manifestantes-tomam-ruas-da-franca-e-protestam-contra-inflacao-e-policia-pelo-quinto-sabado-seguido.shtml",
+      "summary": "Pesquisa da IDC, comissionada pela Microsoft, mostra avanço da adoção da tecnologia e aumento dos investimentos em inteligência artificial",
+      "details": "Pesquisa da IDC, comissionada pela Microsoft, mostra avanço da adoção da tecnologia e aumento dos investimentos em inteligência artificial",
+      "url": "https://www.cnnbrasil.com.br/economia/money/inteligencia-artificial/ia-sera-principal-motor-de-competitividade-para-88-das-empresas-ate-2030/",
       "source": "Hora do Povo",
       "category": "macro",
       "tags": [
@@ -255,18 +360,18 @@
         "juros",
         "inflacao"
       ],
-      "publishedAt": "2026-11-14T22:45:23Z",
-      "updatedAt": "2026-11-14T22:45:23Z",
+      "publishedAt": "2026-11-14T22:46:24Z",
+      "updatedAt": "2026-11-14T22:46:24Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://f.i.uol.com.br/fotografia/2026/11/14/17946882386af8c4ee96209_1794688238_3x2_rt.jpg"
+      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportTechnologyNews/tagreuters.com2024binary_LYNXMPEK550LC-FILEDIMAGE.jpg?w=1200&h=630&crop=1"
     },
     {
       "id": "macro-f0e299f48343c850a765c07e",
       "title": "Ala do PT defende ajuste fiscal com mais impostos",
-      "summary": "Deputados querem taxar grandes fortunas, instituir alíquota sobre LCA e LCI e elevar imposto sobre lucros. Leia no Poder360.",
-      "details": "Deputados querem taxar grandes fortunas, instituir alíquota sobre LCA e LCI e elevar imposto sobre lucros. Leia no Poder360.",
-      "url": "https://www.poder360.com.br/poder-congresso/ala-do-pt-defende-ajuste-fiscal-com-mais-impostos/",
+      "summary": "Programa de adaptação ARISE, lançado na COP30 em Belém, escolhe na COP31 Haiti, Bangladesh, Marrocos, Serra Leoa, Quirguistão e Malawi-Moçambique. Veja.",
+      "details": "Programa de adaptação ARISE, lançado na COP30 em Belém, escolhe na COP31 Haiti, Bangladesh, Marrocos, Serra Leoa, Quirguistão e Malawi-Moçambique. Veja.",
+      "url": "https://revistaamazonia.com.br/arise-cif-adaptacao-cop30-belem-haiti-bangladesh-mocambique-cop31/",
       "source": "Poder360",
       "category": "macro",
       "tags": [
@@ -278,14 +383,14 @@
       "updatedAt": "2026-11-14T22:12:35Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://static.poder360.com.br/uploads/2026/11/entenda-4-propostas-tributarias-ala-pt-14-nov-2026-card-1200x675.png"
+      "imageUrl": "https://revistaamazonia.com.br/wp-content/uploads/2026/11/capa-1794519578629-84911.jpg"
     },
     {
       "id": "macro-acd1bdb1a740daa0242cf248",
       "title": "Em ensaio, Gabrielli afirma que ajuste fiscal não terá impacto sobre os juros",
-      "summary": "O ajuste fiscal (Projeto de Lei Complementar 299), em discussão no Congresso Nacional, e já aprovado no Senado, pretende, em princípio, cortar 80 bilhões de reais do Orçamento. Estranhamente, nada disso, nada do que ele significa, foi discutido nem aprovado nas eleições. Pelo con",
-      "details": "O ajuste fiscal (Projeto de Lei Complementar 299), em discussão no Congresso Nacional, e já aprovado no Senado, pretende, em princípio, cortar 80 bilhões de reais do Orçamento. Estranhamente, nada disso, nada do que ele significa, foi discutido nem aprovado nas eleições. Pelo contrário. Os milhões que se mobilizaram pa",
-      "url": "https://horadopovo.com.br/as-gravissimas-consequencias-do-ajuste-fiscal/",
+      "summary": "Ex-presidente da Petrobras critica novas restrições aos gastos públicos e alerta que combinação de austeridade fiscal e juros elevados ameaça o crescimento eco…",
+      "details": "Ex-presidente da Petrobras critica novas restrições aos gastos públicos e alerta que combinação de austeridade fiscal e juros elevados ameaça o crescimento eco…",
+      "url": "https://www.brasil247.com/economia/em-ensaio-gabrielli-afirma-que-ajuste-fiscal-nao-tera-impacto-sobre-os-juros/",
       "source": "Brasil 247",
       "category": "macro",
       "tags": [
@@ -297,14 +402,14 @@
       "updatedAt": "2026-11-14T21:59:43Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://horadopovo.com.br/wp-content/uploads/2026/11/Senado-Ton-Molina-Agencia-Senado.jpg"
+      "imageUrl": "https://www.brasil247.com/wp-content/uploads/2026/11/sergio-gabrielli-1-1.jpg?w=1200&quality=88&strip=all"
     },
     {
       "id": "funds-8f0d829b236285e4f78956e5",
       "title": "Programa de adaptação lançado em Belém na COP30 escolhe Haiti, Bangladesh, Marrocos e Moçambique para receber até US$ 40 milhões",
-      "summary": "Ex-presidente da Petrobras critica novas restrições aos gastos públicos e alerta que combinação de austeridade fiscal e juros elevados ameaça o crescimento eco…",
-      "details": "Ex-presidente da Petrobras critica novas restrições aos gastos públicos e alerta que combinação de austeridade fiscal e juros elevados ameaça o crescimento eco…",
-      "url": "https://www.brasil247.com/economia/em-ensaio-gabrielli-afirma-que-ajuste-fiscal-nao-tera-impacto-sobre-os-juros/",
+      "summary": "O ajuste fiscal (Projeto de Lei Complementar 299), em discussão no Congresso Nacional, e já aprovado no Senado, pretende, em princípio, cortar 80 bilhões de reais do Orçamento. Estranhamente, nada disso, nada do que ele significa, foi discutido nem aprovado nas eleições. Pelo con",
+      "details": "O ajuste fiscal (Projeto de Lei Complementar 299), em discussão no Congresso Nacional, e já aprovado no Senado, pretende, em princípio, cortar 80 bilhões de reais do Orçamento. Estranhamente, nada disso, nada do que ele significa, foi discutido nem aprovado nas eleições. Pelo contrário. Os milhões que se mobilizaram pa",
+      "url": "https://horadopovo.com.br/as-gravissimas-consequencias-do-ajuste-fiscal/",
       "source": "Revista Amazônia",
       "category": "funds",
       "tags": [
@@ -316,14 +421,14 @@
       "updatedAt": "2026-11-14T21:25:00Z",
       "premium": false,
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d",
-      "imageUrl": "https://www.brasil247.com/wp-content/uploads/2026/11/sergio-gabrielli-1-1.jpg?w=1200&quality=88&strip=all"
+      "imageUrl": "https://horadopovo.com.br/wp-content/uploads/2026/11/Senado-Ton-Molina-Agencia-Senado.jpg"
     },
     {
       "id": "latest-9d799b1c5162c6908ec981d7",
       "title": "União Nacional dos Estudantes convoca manifestação contra juros altos e ajuste fiscal",
-      "summary": "Programa de adaptação ARISE, lançado na COP30 em Belém, escolhe na COP31 Haiti, Bangladesh, Marrocos, Serra Leoa, Quirguistão e Malawi-Moçambique. Veja.",
-      "details": "Programa de adaptação ARISE, lançado na COP30 em Belém, escolhe na COP31 Haiti, Bangladesh, Marrocos, Serra Leoa, Quirguistão e Malawi-Moçambique. Veja.",
-      "url": "https://revistaamazonia.com.br/arise-cif-adaptacao-cop30-belem-haiti-bangladesh-mocambique-cop31/",
+      "summary": "A União Nacional dos Estudantes (UNE) está mobilizando estudantes e diferentes setores da sociedade para uma manifestação contra os juros elevados e as medidas de ajuste fiscal defendidas pelo mercado financeiro. O protesto está marcado para a próxima terça-feira (17), às 17h, na",
+      "details": "A União Nacional dos Estudantes (UNE) está mobilizando estudantes e diferentes setores da sociedade para uma manifestação contra os juros elevados e as medidas de ajuste fiscal defendidas pelo mercado financeiro. O protesto está marcado para a próxima terça-feira (17), às 17h, na Avenida Faria Lima, em São Paulo, nas p",
+      "url": "https://horanews.net/uniao-nacional-dos-estudantes-convoca-manifestacao-contra-juros-altos-e-ajuste-fiscal/",
       "source": "Hora News",
       "category": "latest",
       "tags": [
@@ -335,14 +440,14 @@
       "updatedAt": "2026-11-14T21:24:48Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://revistaamazonia.com.br/wp-content/uploads/2026/11/capa-1794519578629-84911.jpg"
+      "imageUrl": "https://horanews.net/wp-content/uploads/2019/09/foto-economia-e1567524657194.jpg"
     },
     {
       "id": "macro-17255a5e3eeac49d0f5a36e6",
       "title": "Distrito Federal: aposta na continuidade e punição adiada",
-      "summary": "A União Nacional dos Estudantes (UNE) está mobilizando estudantes e diferentes setores da sociedade para uma manifestação contra os juros elevados e as medidas de ajuste fiscal defendidas pelo mercado financeiro. O protesto está marcado para a próxima terça-feira (17), às 17h, na",
-      "details": "A União Nacional dos Estudantes (UNE) está mobilizando estudantes e diferentes setores da sociedade para uma manifestação contra os juros elevados e as medidas de ajuste fiscal defendidas pelo mercado financeiro. O protesto está marcado para a próxima terça-feira (17), às 17h, na Avenida Faria Lima, em São Paulo, nas p",
-      "url": "https://horanews.net/uniao-nacional-dos-estudantes-convoca-manifestacao-contra-juros-altos-e-ajuste-fiscal/",
+      "summary": "Atos reúnem estudantes, sindicatos e movimento dos Coletes Amarelos; adesão foi menor desta vez",
+      "details": "Atos reúnem estudantes, sindicatos e movimento dos Coletes Amarelos; adesão foi menor desta vez",
+      "url": "https://www1.folha.uol.com.br/mundo/2026/11/manifestantes-tomam-ruas-da-franca-e-protestam-contra-inflacao-e-policia-pelo-quinto-sabado-seguido.shtml",
       "source": "Nexo Jornal",
       "category": "macro",
       "tags": [
@@ -354,7 +459,7 @@
       "updatedAt": "2026-11-14T21:24:26Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://horanews.net/wp-content/uploads/2019/09/foto-economia-e1567524657194.jpg"
+      "imageUrl": "https://f.i.uol.com.br/fotografia/2026/11/14/17946882386af8c4ee96209_1794688238_3x2_rt.jpg"
     },
     {
       "id": "macro-0d038c4a85c26c63b1b22b74",
@@ -378,9 +483,9 @@
     {
       "id": "macro-3521e78220cdfcba8f562284",
       "title": "4ª economia do País: PIB do Paraná cresce 3,4% e alcança R$ 726,63 bilhões em 2024",
-      "summary": "Janones chama de covardes os críticos do ajuste fiscal e acusa militantes de boicotar o canal Exército do Lula no WhatsApp.",
-      "details": "Janones chama de covardes os críticos do ajuste fiscal e acusa militantes de boicotar o canal Exército do Lula no WhatsApp.",
-      "url": "https://acritica.net/politica/janones-criticas-ajuste-fiscal/",
+      "summary": "O Produto Interno Bruto (PIB) do Paraná alcançou R$ 726,63 bilhões em 2024, um crescimento real (sem inflação) de 3,4% em relação a 2023.",
+      "details": "O Produto Interno Bruto (PIB) do Paraná alcançou R$ 726,63 bilhões em 2024, um crescimento real (sem inflação) de 3,4% em relação a 2023.",
+      "url": "https://www.jornaldooeste.com.br/4a-economia-do-pais-pib-do-parana-cresce-34-e-alcanca-r-72663-bilhoes-em-2024/",
       "source": "Jornal do Oeste",
       "category": "macro",
       "tags": [
@@ -392,14 +497,14 @@
       "updatedAt": "2026-11-14T21:00:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://uploads.acritica.net/2026/10/HU1MWgPXkAAjW60.webp"
+      "imageUrl": "https://www.jornaldooeste.com.br/wp-content/uploads/2026/11/colheitasoja_019.jpg"
     },
     {
       "id": "macro-6e6565435e0766d987b5b885",
       "title": "Manifestantes tomam ruas da França e protestam contra inflação e polícia pelo quinto sábado seguido",
-      "summary": "O Produto Interno Bruto (PIB) do Paraná alcançou R$ 726,63 bilhões em 2024, um crescimento real (sem inflação) de 3,4% em relação a 2023.",
-      "details": "O Produto Interno Bruto (PIB) do Paraná alcançou R$ 726,63 bilhões em 2024, um crescimento real (sem inflação) de 3,4% em relação a 2023.",
-      "url": "https://www.jornaldooeste.com.br/4a-economia-do-pais-pib-do-parana-cresce-34-e-alcanca-r-72663-bilhoes-em-2024/",
+      "summary": "Banqueiro buscou desmistificar o conceito de \"mercado financeiro\" e comparou a situação fiscal brasileira ao cenário global pós-pandemia",
+      "details": "Banqueiro buscou desmistificar o conceito de \"mercado financeiro\" e comparou a situação fiscal brasileira ao cenário global pós-pandemia",
+      "url": "https://www.jornalopcao.com.br/ultimas-noticias/dono-do-btg-pactual-andre-esteves-defende-ajuste-fiscal-e-diz-que-governo-lula-pode-cumprir-promessas-de-campanha-888774/",
       "source": "Folha de S.Paulo",
       "category": "macro",
       "tags": [
@@ -411,14 +516,33 @@
       "updatedAt": "2026-11-14T20:55:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.jornaldooeste.com.br/wp-content/uploads/2026/11/colheitasoja_019.jpg"
+      "imageUrl": "https://cdn.jornalopcao.com.br/assets/2026/11/14212008/1794691207-socio.webp"
+    },
+    {
+      "id": "macro-6896322ae4729fe041450f16",
+      "title": "PIB per capita do Piauí cresce 961% em 22 anos e chega a R$ 25,9 mil",
+      "summary": "Janones chama de covardes os críticos do ajuste fiscal e acusa militantes de boicotar o canal Exército do Lula no WhatsApp.",
+      "details": "Janones chama de covardes os críticos do ajuste fiscal e acusa militantes de boicotar o canal Exército do Lula no WhatsApp.",
+      "url": "https://acritica.net/politica/janones-criticas-ajuste-fiscal/",
+      "source": "CidadeVerde.com",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-11-14T20:50:00Z",
+      "updatedAt": "2026-11-14T20:50:00Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://uploads.acritica.net/2026/10/HU1MWgPXkAAjW60.webp"
     },
     {
       "id": "latest-6e75a56f2a30d8db8a70c576",
       "title": "Dono do BTG Pactual, André Esteves defende ajuste fiscal e diz que governo Lula pode cumprir promessas de campanha",
-      "summary": "Banqueiro buscou desmistificar o conceito de \"mercado financeiro\" e comparou a situação fiscal brasileira ao cenário global pós-pandemia",
-      "details": "Banqueiro buscou desmistificar o conceito de \"mercado financeiro\" e comparou a situação fiscal brasileira ao cenário global pós-pandemia",
-      "url": "https://www.jornalopcao.com.br/ultimas-noticias/dono-do-btg-pactual-andre-esteves-defende-ajuste-fiscal-e-diz-que-governo-lula-pode-cumprir-promessas-de-campanha-888774/",
+      "summary": "Quando os juros se elevam e o crescimento desacelera, aumenta o esforço primário necessário para estabilizar a relação dívida/PIB.",
+      "details": "Quando os juros se elevam e o crescimento desacelera, aumenta o esforço primário necessário para estabilizar a relação dívida/PIB.",
+      "url": "https://jornalggn.com.br/artigos/duas-rotas-para-a-austeridade-fiscal-e-sua-dimensao-ideologica-por-henrique-morrone/",
       "source": "Jornal Opção",
       "category": "latest",
       "tags": [
@@ -430,14 +554,14 @@
       "updatedAt": "2026-11-14T20:20:00Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://cdn.jornalopcao.com.br/assets/2026/11/14212008/1794691207-socio.webp"
+      "imageUrl": "https://jornalggn.com.br/wp-content/uploads/2026/11/magritte4.jpg"
     },
     {
       "id": "macro-303a93d8c19e00c259c23454",
       "title": "França tem protestos contra inflação e ação policial - 14/11/2026 - Mundo",
-      "summary": "Atos reúnem estudantes, sindicatos e Coletes Amarelos pelo quinto sábado",
-      "details": "Atos reúnem estudantes, sindicatos e Coletes Amarelos pelo quinto sábado",
-      "url": "https://fotografia.folha.uol.com.br/galerias/1881865800286099-franca-tem-protestos-contra-inflacao-e-acao-policial",
+      "summary": "Foto: Tarcio Cruz/Cidadeverde.com O Produto Interno Bruto (PIB) per capita do Piauí acumulou crescimento nominal de 961,25% entre 2002 e 2024, passando de R$ 2.440,70 para R$ 25.902,69, em 22 anos",
+      "details": "Foto: Tarcio Cruz/Cidadeverde.com O Produto Interno Bruto (PIB) per capita do Piauí acumulou crescimento nominal de 961,25% entre 2002 e 2024, passando de R$ 2.440,70 para R$ 25.902,69, em 22 anos",
+      "url": "https://cidadeverde.com/ultimas/466341/pib-per-capita-do-piaui-cresce-961-em-22-anos-e-chega-a-r-259-mil",
       "source": "UOL",
       "category": "macro",
       "tags": [
@@ -449,14 +573,14 @@
       "updatedAt": "2026-11-14T20:16:57Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://f.i.uol.com.br/fotografia/2026/11/14/17946871266af8c096c4041_1794687126_3x2_rt.jpg"
+      "imageUrl": "https://cidadeverde.com/imgproxy/NCHbiSXQtEWma1S8AjSiUl2bUJ5Q4gdzIZzaIFbuAC8/rs:fill:1200:630:1/c:0.75:0:fp:0.487873:0.5/g:ce/q:90/bG9jYWw6Ly8vdXBsb2Fkcy9jb2xlY29lcy8yLzIwMjYvMTEvcGliLWliZ2Utc2VwbGFuLmpwZWc.jpg"
     },
     {
       "id": "macro-60fdfc1f5cc82e287417d941",
       "title": "Duas rotas para a austeridade fiscal e sua dimensão ideológica, por Henrique Morrone",
-      "summary": "Atualizacao de macro capturada em Jornal GGN.",
-      "details": "",
-      "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/14/ajuste-fiscal-divide-esquerda-exercito-lula-critica-janones.ghtm",
+      "summary": "Atos reúnem estudantes, sindicatos e Coletes Amarelos pelo quinto sábado",
+      "details": "Atos reúnem estudantes, sindicatos e Coletes Amarelos pelo quinto sábado",
+      "url": "https://fotografia.folha.uol.com.br/galerias/1881865800286099-franca-tem-protestos-contra-inflacao-e-acao-policial",
       "source": "Jornal GGN",
       "category": "macro",
       "tags": [
@@ -467,14 +591,34 @@
       "publishedAt": "2026-11-14T19:35:00Z",
       "updatedAt": "2026-11-14T19:35:00Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://f.i.uol.com.br/fotografia/2026/11/14/17946871266af8c096c4041_1794687126_3x2_rt.jpg"
+    },
+    {
+      "id": "macro-8ae798f8abc053a4a20fb7c4",
+      "title": "Por que o México arrecada tão poucos impostos (e como financia seus crescentes benefícios sociais)",
+      "summary": "O México é um dos países que menos arrecadam impostos na América Latina, mas os gastos públicos impulsionam seu consumo interno e são fundamentais no combate à pobreza. Como o governo do país pode solucionar as \"anomalias fiscais\" mexicanas?",
+      "details": "O México é um dos países que menos arrecadam impostos na América Latina, mas os gastos públicos impulsionam seu consumo interno e são fundamentais no combate à pobreza. Como o governo do país pode solucionar as \"anomalias fiscais\" mexicanas?",
+      "url": "https://www.bbc.com/portuguese/articles/cmn8077z3xl6o",
+      "source": "BBC",
+      "category": "macro",
+      "tags": [
+        "macro",
+        "juros",
+        "inflacao"
+      ],
+      "publishedAt": "2026-11-14T19:23:55Z",
+      "updatedAt": "2026-11-14T19:23:55Z",
+      "premium": false,
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
+      "imageUrl": "https://ichef.bbci.co.uk/news/1200/branded_portuguese/e566/live/fb7c3080-e058-11f1-9e26-b3b65586122f.jpg"
     },
     {
       "id": "macro-3dd6fc23bfadb09bdd30c322",
       "title": "Sergipe registra crescimento de 4,2% no PIB em 2024",
-      "summary": "Segundo as informações, o resultado foi puxado pelos três grandes setores da economia, que cresceram em volume. O setor de Serviços apresentou crescimento de 4,0%, a Agropecuária 3,8% e a Indústria 2,9%. Na Indústria, o destaque foi a indústria extrativa, com alta de 48,6%, impul",
-      "details": "Segundo as informações, o resultado foi puxado pelos três grandes setores da economia, que cresceram em volume. O setor de Serviços apresentou crescimento de 4,0%, a Agropecuária 3,8% e a Indústria 2,9%. Na Indústria, o destaque foi a indústria extrativa, com alta de 48,6%, impulsionada pela retomada da produção de pet",
-      "url": "https://www.sergipenoticias.com/economia/2026/11/45379/sergipe-registra-crescimento-de-42-no-pib-em-2024.html",
+      "summary": "Plataforma do MDIC reúne informações e usa inteligência artificial para orientar empresas brasileiras interessadas no mercado europeu",
+      "details": "Plataforma do MDIC reúne informações e usa inteligência artificial para orientar empresas brasileiras interessadas no mercado europeu",
+      "url": "https://timesbrasil.com.br/mundo/como-funciona-a-plataforma-do-governo-que-facilita-exportacoes-brasileiras-a-europa/",
       "source": "sergipenoticias.com",
       "category": "macro",
       "tags": [
@@ -486,14 +630,14 @@
       "updatedAt": "2026-11-14T19:12:00Z",
       "premium": false,
       "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.sergipenoticias.com/uploads/2026/11/14/noticias/45379.jpg"
+      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/11/83cce904-sem-titulo.webp"
     },
     {
       "id": "companies-dae4f58d32443602801d7359",
       "title": "Como funciona a plataforma do governo que facilita exportações brasileiras à Europa?",
-      "summary": "Plataforma do MDIC reúne informações e usa inteligência artificial para orientar empresas brasileiras interessadas no mercado europeu",
-      "details": "Plataforma do MDIC reúne informações e usa inteligência artificial para orientar empresas brasileiras interessadas no mercado europeu",
-      "url": "https://timesbrasil.com.br/mundo/como-funciona-a-plataforma-do-governo-que-facilita-exportacoes-brasileiras-a-europa/",
+      "summary": "Segundo as informações, o resultado foi puxado pelos três grandes setores da economia, que cresceram em volume. O setor de Serviços apresentou crescimento de 4,0%, a Agropecuária 3,8% e a Indústria 2,9%. Na Indústria, o destaque foi a indústria extrativa, com alta de 48,6%, impul",
+      "details": "Segundo as informações, o resultado foi puxado pelos três grandes setores da economia, que cresceram em volume. O setor de Serviços apresentou crescimento de 4,0%, a Agropecuária 3,8% e a Indústria 2,9%. Na Indústria, o destaque foi a indústria extrativa, com alta de 48,6%, impulsionada pela retomada da produção de pet",
+      "url": "https://www.sergipenoticias.com/economia/2026/11/45379/sergipe-registra-crescimento-de-42-no-pib-em-2024.html",
       "source": "Times Brasil | CNBC",
       "category": "companies",
       "tags": [
@@ -505,14 +649,14 @@
       "updatedAt": "2026-11-14T19:00:00Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://storage.googleapis.com/bucket.timesbrasil.com.br/sites/2026/11/83cce904-sem-titulo.webp"
+      "imageUrl": "https://www.sergipenoticias.com/uploads/2026/11/14/noticias/45379.jpg"
     },
     {
       "id": "macro-53607cc0799ef4c6cfd4a500",
       "title": "Ajuste fiscal divide esquerda, e 'Exército do Lula' perde seguidores",
-      "summary": "Quando os juros se elevam e o crescimento desacelera, aumenta o esforço primário necessário para estabilizar a relação dívida/PIB.",
-      "details": "Quando os juros se elevam e o crescimento desacelera, aumenta o esforço primário necessário para estabilizar a relação dívida/PIB.",
-      "url": "https://jornalggn.com.br/artigos/duas-rotas-para-a-austeridade-fiscal-e-sua-dimensao-ideologica-por-henrique-morrone/",
+      "summary": "Atualizacao de macro capturada em UOL Notícias.",
+      "details": "",
+      "url": "https://www.folhamax.com/amp/mundo/mercado-financeiro-preve-juros-de-dois-digitos-ate-2030/582022",
       "source": "UOL Notícias",
       "category": "macro",
       "tags": [
@@ -523,15 +667,14 @@
       "publishedAt": "2026-11-14T18:54:27Z",
       "updatedAt": "2026-11-14T18:54:27Z",
       "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://jornalggn.com.br/wp-content/uploads/2026/11/magritte4.jpg"
+      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d"
     },
     {
       "id": "latest-0bd242b765937667ae731ccf",
       "title": "O mercado virou o bolsonarismo institucional contra o governo Lula",
       "summary": "Atualizacao de ultima hora capturada em Portal Fala News.",
       "details": "",
-      "url": "https://www.falanews.com.br/2026/11/mercado-financeiro-bolsonarismo-institucional-lula.html",
+      "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/14/ajuste-fiscal-divide-esquerda-exercito-lula-critica-janones.ghtm",
       "source": "Portal Fala News",
       "category": "latest",
       "tags": [
@@ -545,11 +688,11 @@
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "latest-68e75ec9b9966c72decdde22",
+      "id": "latest-6d929abc4d576d6f31a55b7a",
       "title": "Mercado financeiro prevê juros de dois dígitos até 2030",
-      "summary": "Atualizacao de ultima hora capturada em Achei Sudoeste.",
-      "details": "",
-      "url": "https://www.acheisudoeste.com.br/noticias/economia/mercado-financeiro-preve-juros-de-dois-digitos-ate-2030",
+      "summary": "Mercado pressiona Lula por austeridade e juros altos. Até quando os interesses financeiros vão se sobrepor às prioridades da população?",
+      "details": "Mercado pressiona Lula por austeridade e juros altos. Até quando os interesses financeiros vão se sobrepor às prioridades da população?",
+      "url": "https://www.falanews.com.br/2026/11/mercado-financeiro-bolsonarismo-institucional-lula.html",
       "source": "Achei Sudoeste",
       "category": "latest",
       "tags": [
@@ -557,17 +700,18 @@
         "bolsa",
         "macro"
       ],
-      "publishedAt": "2026-11-14T18:32:20Z",
-      "updatedAt": "2026-11-14T18:32:20Z",
+      "publishedAt": "2026-11-14T18:34:42Z",
+      "updatedAt": "2026-11-14T18:34:42Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
+      "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEif_ENPOiCwRnsiR1uxSh38tB__3fyv2xD5xaH6n2HkJVwEhHc_58m9joF_Z0K3IfGm8Mxy1qzlaeqK98ojLox5UlWle587iR6eQv-jaM6_AqfwWJTpYMJoxAt0nDH9Ag4DZZlmEXVWU7YFniLuHeOBT-oX5sbhD5j6nsWxPxVGkpNm9pFC7KQAf1TB0b8/w1200-h630-p-k-no-nu/faria-lima-3a342cac-1536x865.webp"
     },
     {
       "id": "latest-8b8c1d53abb738133e9a169b",
       "title": "A distopia da Selic a 13,75%, por Ítalo de Aquino",
-      "summary": "E o pior: o mercado financeiro já precifica que poderá ser mantida nesse nível ao longo de 2027.",
-      "details": "E o pior: o mercado financeiro já precifica que poderá ser mantida nesse nível ao longo de 2027.",
-      "url": "https://jornalggn.com.br/opiniao/a-distopia-da-selic-a-1375-por-italo-de-aquino/",
+      "summary": "Atualizacao de ultima hora capturada em Jornal GGN.",
+      "details": "",
+      "url": "https://www.acheisudoeste.com.br/noticias/economia/mercado-financeiro-preve-juros-de-dois-digitos-ate-2030",
       "source": "Jornal GGN",
       "category": "latest",
       "tags": [
@@ -578,72 +722,33 @@
       "publishedAt": "2026-11-14T18:32:00Z",
       "updatedAt": "2026-11-14T18:32:00Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://jornalggn.com.br/wp-content/uploads/2026/11/wassily-kandinsky4.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "macro-48d5fc56553519ad990c94d1",
-      "title": "Governo federal apresenta projeto de ajuste fiscal brando - GAZ - Notícias de Santa Cruz do Sul e Região",
-      "summary": "Projeto apresentado pelo governo federal, nesta semana, teve a aprovação do Senado e irá à votação nos próximos dias na Câmara",
-      "details": "Projeto apresentado pelo governo federal, nesta semana, teve a aprovação do Senado e irá à votação nos próximos dias na Câmara",
-      "url": "https://www.gaz.com.br/governo-federal-apresenta-projeto-de-ajuste-fiscal-brando/",
-      "source": "GAZ",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-11-14T18:21:00Z",
-      "updatedAt": "2026-11-14T18:21:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.gaz.com.br/uploads/2026/07/Palacio-do-Planalto.jpg"
-    },
-    {
-      "id": "latest-a88f35cb5cd5792bd37e1955",
-      "title": "Os mercenários do câmbio",
-      "summary": "DAVI MOLINARI Economia costuma ser um território abstrato, povoado por siglas frias e analogias difíceis de engolir. Para tentar traduzir o que realmente está em jogo numa economia de mercado aberto com regime de câmbio flutuante, quando se discute taxa de juros, inflação, Selic ",
-      "details": "DAVI MOLINARI Economia costuma ser um território abstrato, povoado por siglas frias e analogias difíceis de engolir. Para tentar traduzir o que realmente está em jogo numa economia de mercado aberto com regime de câmbio flutuante, quando se discute taxa de juros, inflação, Selic e produção, vale a pena apelar a outras ",
-      "url": "https://horadopovo.com.br/os-mercenarios-do-cambio/",
-      "source": "Hora do Povo",
+      "id": "latest-25c38ee2d3499af714a11427",
+      "title": "Mercado financeiro prevê juros de dois dígitos até 2030",
+      "summary": "E o pior: o mercado financeiro já precifica que poderá ser mantida nesse nível ao longo de 2027.",
+      "details": "E o pior: o mercado financeiro já precifica que poderá ser mantida nesse nível ao longo de 2027.",
+      "url": "https://jornalggn.com.br/opiniao/a-distopia-da-selic-a-1375-por-italo-de-aquino/",
+      "source": "FOLHAMAX",
       "category": "latest",
       "tags": [
         "mercado",
         "bolsa",
         "macro"
       ],
-      "publishedAt": "2026-11-14T18:20:33Z",
-      "updatedAt": "2026-11-14T18:20:33Z",
+      "publishedAt": "2026-11-14T18:21:15Z",
+      "updatedAt": "2026-11-14T18:21:15Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://horadopovo.com.br/wp-content/uploads/2026/11/CAMBIO.jpg"
-    },
-    {
-      "id": "macro-f07a5f454397900e4875afc6",
-      "title": "Desaceleração e inflação desafiam economia em governo Lula",
-      "summary": "Economistas e indicadores macroeconômicos apontam para um quadro de desaceleração e pressão inflacionária no quarto governo Lula",
-      "details": "Economistas e indicadores macroeconômicos apontam para um quadro de desaceleração e pressão inflacionária no quarto governo Lula",
-      "url": "https://www.correiodopovo.com.br/not%C3%ADcias/economia/desaceleracao-e-inflacao-desafiam-economia-em-governo-lula-1.1764794",
-      "source": "Correio do Povo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-11-14T18:18:52Z",
-      "updatedAt": "2026-11-14T18:18:52Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://www.correiodopovo.com.br/image/contentid/policy:1.1764793:1794679727/AFP__20261111__D76A86X__v1__HighRes__TurkeyAustraliaUnCop31Climate%20(1).jpg?a=191%3A100&q=0.6&w=1200&$p$a$q$w=cc8febb"
+      "imageUrl": "https://jornalggn.com.br/wp-content/uploads/2026/11/wassily-kandinsky4.jpg"
     },
     {
       "id": "latest-55d2c08ead658b87a5faaa81",
       "title": "Banco Central tira instituições do mercado, Banco do Brasil (BBAS3) decepciona no 3T26 e renda fixa volta a brilhar: veja o que bombou na semana",
-      "summary": "Presidente reiterou compromisso com responsabilidade fiscal, mas não apresentou medidas concretas para conter a dívida pública",
-      "details": "Presidente reiterou compromisso com responsabilidade fiscal, mas não apresentou medidas concretas para conter a dívida pública",
-      "url": "https://www.estadao.com.br/em-alta/einvestidor/cenarios-e-mercado/discurso-de-lula-deixa-duvidas-sobre-ajuste-fiscal-veja-como-o-mercado-financeiro-pode-reagir/",
+      "summary": "Os investidores acompanharam no Seu Dinheiro a liquidação de instituições pelo Banco Central, mudanças na Smart Fit e muito mais",
+      "details": "Os investidores acompanharam no Seu Dinheiro a liquidação de instituições pelo Banco Central, mudanças na Smart Fit e muito mais",
+      "url": "https://www.seudinheiro.com/2026/economia/banco-central-tira-instituicoes-do-mercado-banco-do-brasil-bbas3-decepciona-no-3t26-e-renda-fixa-volta-a-brilhar-veja-o-que-bombou-na-semana-davs/",
       "source": "Seu Dinheiro",
       "category": "latest",
       "tags": [
@@ -655,89 +760,14 @@
       "updatedAt": "2026-11-14T18:16:49Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://www.estadao.com.br/resizer/v2/KPPTAYQWX5ATZOJYEAG6D5J27E.jpg?quality=80&auth=29b41ddf2393ffcf9e7d8baa0e0fb49856b42ba085e18ce5ac7e6415065e3593&width=1200&height=630&smart=true"
-    },
-    {
-      "id": "macro-afb7cc771b21ec623aa694f6",
-      "title": "Ajuste fiscal exige equilíbrio entre contas públicas e segurança jurídica",
-      "summary": "Ajuste fiscal exige equilíbrio entre contas públicas e segurança jurídica",
-      "details": "Ajuste fiscal exige equilíbrio entre contas públicas e segurança jurídica",
-      "url": "https://fococidade.com.br/materia/72295/ajuste-fiscal-exige-equilibrio-entre-contas-publicas-e-seguranca-juridica",
-      "source": "Foco Cidade",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-11-14T18:16:03Z",
-      "updatedAt": "2026-11-14T18:16:03Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://painel.fococidade.com.br/storage/photos/a0958496-94a7-47e7-aa7f-54044ccd62aa.jpg"
-    },
-    {
-      "id": "macro-f77fc62ceb4095e41f110665",
-      "title": "A Paraíba teve o maior crescimento de PIB no Brasil",
-      "summary": "Os investidores acompanharam no Seu Dinheiro a liquidação de instituições pelo Banco Central, mudanças na Smart Fit e muito mais",
-      "details": "Os investidores acompanharam no Seu Dinheiro a liquidação de instituições pelo Banco Central, mudanças na Smart Fit e muito mais",
-      "url": "https://www.seudinheiro.com/2026/economia/banco-central-tira-instituicoes-do-mercado-banco-do-brasil-bbas3-decepciona-no-3t26-e-renda-fixa-volta-a-brilhar-veja-o-que-bombou-na-semana-davs/",
-      "source": "Blog Milton Figueiredo",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-11-14T18:06:26Z",
-      "updatedAt": "2026-11-14T18:06:26Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
       "imageUrl": "https://www.seudinheiro.com/uploads/2024/06/sd-ipca-inflacao-renda-fixa-e1794680117802.jpg"
-    },
-    {
-      "id": "latest-bd7c15ebf5ce05d29fa16e95",
-      "title": "Mercado financeiro prevê juros de dois dígitos até 2030",
-      "summary": "Atualizacao de ultima hora capturada em FOLHAMAX.",
-      "details": "",
-      "url": "https://www.folhamax.com/mundo/mercado-financeiro-preve-juros-de-dois-digitos-ate-2030/582022",
-      "source": "FOLHAMAX",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-11-14T18:00:00Z",
-      "updatedAt": "2026-11-14T18:00:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "macro-8a679d0ff0613d8fa52aacb7",
-      "title": "Uruguai anuncia incentivo fiscal para enoturismo e celebra aumento de brasileiros",
-      "summary": "A Paraíba teve o maior crescimento de PIB no Brasil",
-      "details": "A Paraíba teve o maior crescimento de PIB no Brasil",
-      "url": "https://blogdomiltonfigueiredo.com.br/noticias/geral/a-paraiba-teve-o-maior-crescimento-de-pib-no-brasil/",
-      "source": "Panrotas",
-      "category": "macro",
-      "tags": [
-        "macro",
-        "juros",
-        "inflacao"
-      ],
-      "publishedAt": "2026-11-14T17:56:00Z",
-      "updatedAt": "2026-11-14T17:56:00Z",
-      "premium": false,
-      "sourceQuery": "inflacao OR fiscal OR selic OR fed OR pib when:2d",
-      "imageUrl": "https://blogdomiltonfigueiredo.com.br/assets/images/uploads/thumbs/a-paraiba-teve-o-maior-crescimento-de-pib-no-brasil.webp"
     },
     {
       "id": "latest-c22aaf91c082318aacabddb2",
       "title": "Discurso de Lula deixa dúvidas sobre ajuste fiscal; veja como o mercado financeiro pode reagir",
-      "summary": "Destino anunciou isenção do IVA em experiências que envolvem degustações de vinhos e visitas a vinícolas - Confira na íntegra no Portal PANROTAS!",
-      "details": "Destino anunciou isenção do IVA em experiências que envolvem degustações de vinhos e visitas a vinícolas - Confira na íntegra no Portal PANROTAS!",
-      "url": "https://www.panrotas.com.br/destinos/comer-e-beber/2026/11/uruguai-anuncia-incentivo-fiscal-para-enoturismo-e-celebra-aumento-de-brasileiros_233666.html",
+      "summary": "Atualizacao de ultima hora capturada em Estadão.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPZEVzaGY0Y0NFRHJxUlhEcWNFZzRmZWM3X3hDSnJuRk1jUzlrbnB0NFI5NW9WUldDdHYwQjlNS3NqVkJTX1lESF9mcjVqd0xEVUpvekh0bTBDcGg3YUNERVl2ZEU5eTZiendNSU53MDVhZTJFZ2hOMnduQm9qRkFiWnhkRFFYc1N6SzA4eDZKNFg3WWRtOTlsTnpUR1FFUkNOSWxaY2t6UVE0SGotSEJMbGNnZ1RLQlE5YzU1RHRfVGx3V0VUb3NwQ2NWYi1YNlRyQ01pTXB6NE94MzN0X05qSC04WW5DeXpnMjZmRktOUnFTZw?oc=5",
       "source": "Estadão",
       "category": "latest",
       "tags": [
@@ -748,27 +778,25 @@
       "publishedAt": "2026-11-14T17:33:15Z",
       "updatedAt": "2026-11-14T17:33:15Z",
       "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d",
-      "imageUrl": "https://admin.panrotas.com.br/media/thumb/cropper/permalink/fix/1200,675/?source=media-files-original/2026/11/14/b3d4ab07b482097473a5305ee3d6df4e-rem4467.jpg"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
-      "id": "companies-2227a3f0e8cdba5f291692db",
-      "title": "IA será principal motor de competitividade para 88% das empresas até 2030",
-      "summary": "Pesquisa da IDC, comissionada pela Microsoft, mostra avanço da adoção da tecnologia e aumento dos investimentos em inteligência artificial",
-      "details": "Pesquisa da IDC, comissionada pela Microsoft, mostra avanço da adoção da tecnologia e aumento dos investimentos em inteligência artificial",
-      "url": "https://www.cnnbrasil.com.br/economia/money/inteligencia-artificial/ia-sera-principal-motor-de-competitividade-para-88-das-empresas-ate-2030/",
-      "source": "CNN Brasil",
-      "category": "companies",
+      "id": "latest-ebd7939b5341e6dc447a9369",
+      "title": "Frango avança nas exportações, enquanto ovos perdem espaço",
+      "summary": "Atualizacao de ultima hora capturada em Agronews Brasil.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE14NklOejVHV2w5YTZPS3N5b3JuTm5Fd1pDMTlCWnpqaEhsVmtOa05MdGJRSVN0a1RnbnIyOTFCMGdod2tjU3RQMVVmSXprRjBuTDdoT1lSQ3Z1UFdWZlB1RVlNMUFFZTNvYlJRRDJ5ZjB1cDJi?oc=5",
+      "source": "Agronews Brasil",
+      "category": "latest",
       "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
+        "mercado",
+        "bolsa",
+        "macro"
       ],
-      "publishedAt": "2026-11-14T17:01:44Z",
-      "updatedAt": "2026-11-14T17:01:44Z",
+      "publishedAt": "2026-11-14T17:15:05Z",
+      "updatedAt": "2026-11-14T17:15:05Z",
       "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d",
-      "imageUrl": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportTechnologyNews/tagreuters.com2024binary_LYNXMPEK550LC-FILEDIMAGE.jpg?w=1200&h=630&crop=1"
+      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
     {
       "id": "latest-739d6aef4ab2900ae2aa852c",
@@ -911,24 +939,6 @@
       ],
       "publishedAt": "2026-11-14T15:04:00Z",
       "updatedAt": "2026-11-14T15:04:00Z",
-      "premium": false,
-      "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
-    },
-    {
-      "id": "latest-647252d9421babcaa5d1d33e",
-      "title": "Índices de consumo, imóveis e Small Caps tombam até 14% em 2026 e mercado cobra sinalização fiscal de Lula",
-      "summary": "Atualizacao de ultima hora capturada em CircuitoMT.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTVVRX0RuZXFkbnI2bGxDdzlhXzFzN01KUmtNdGVXcm0yWXRUbWpwRVVuQXptUklSSXJUQ2Z0elJvVkVfNHVkZldFVjVpTGhCTWdXOW05S1JSY1liM2tqVmRTQWRwTVpiSUJuQTBNemQxTVFRTmFDTXB0RmN1RTI0NlRnbllBYUZwNV91czZmSG92V1BoaGFfcUdyVjZBYTZISUYxeWxadmg3SGJDdWZPdnQ2THBhaFZrcXNwWm1NYjM0UDV0bTRQSzQydw?oc=5",
-      "source": "CircuitoMT",
-      "category": "latest",
-      "tags": [
-        "mercado",
-        "bolsa",
-        "macro"
-      ],
-      "publishedAt": "2026-11-14T14:32:46Z",
-      "updatedAt": "2026-11-14T14:32:46Z",
       "premium": false,
       "sourceQuery": "mercado financeiro OR ibovespa OR dolar OR juros when:1d"
     },
@@ -1221,6 +1231,24 @@
       "sourceQuery": "\"fundos de investimento\" OR \"fundo imobiliario\" OR asset when:2d"
     },
     {
+      "id": "companies-f54e1763d7634543bdadf1e0",
+      "title": "Nova jornada de trabalho vai gerar atrasos nos aeroportos, segundo associação de empresas de serviços de solo",
+      "summary": "Atualizacao de empresas capturada em AEROIN.",
+      "details": "",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUGgxb0FrSTRsZExVeFlQbWpWTGpBTURvdXlLTThwR3ZBenI2eVBXV280S2pfWU5hanV5S0xUY2VKN2pNYlJTSXFDQnZENjB5WklkYXJGRDFBenVCMjFSMThiNkRmYmhDeGg2MXFwOGo2dHNWVWhRcHRVSWdVWjQ3RXhYcVl6X0lVRC1SaTNRalAyTGhwUDZ6YXVyaFBkckZVWklpUUlzNnBfQWpDcTd3WG41WDBzOVRpYW5IYUVhWFBhX0E4YzRz0gHHAUFVX3lxTE5QaDFvQWtJNGxkTFV4WVBtalZMakFNRG91eUtNOHBHdkF6cjZ5UFdXbzRLal9ZTmFqdXlLTFRjZUo3ak1iUlNJcUNCdkQ2MHlaSWRhckZEMUF6dUIyMVIxOGI2RGZiaEN4aDYxcXA4ajZ0c1ZVaFFwdFVJZ1VaNDdFeFhxWXpfSVVELVJpM1FqUDJMaHBQNnphdXJoUGRyRlVaSWlRSXM2cF9BakNxN3dYbjVYMHM5VGlhbkhhRWFYUGFfQThjNHM?oc=5",
+      "source": "AEROIN",
+      "category": "companies",
+      "tags": [
+        "empresas",
+        "resultados",
+        "m&a"
+      ],
+      "publishedAt": "2026-11-13T21:17:11Z",
+      "updatedAt": "2026-11-13T21:17:11Z",
+      "premium": false,
+      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
+    },
+    {
       "id": "companies-081d91063c8cdf57b3956907",
       "title": "COP31: grupo que reúne mais de 110 empresas brasileiras entra em rede global para acelerar soluções climáticas",
       "summary": "Atualizacao de empresas capturada em O GLOBO.",
@@ -1289,24 +1317,6 @@
       ],
       "publishedAt": "2026-11-13T18:00:00Z",
       "updatedAt": "2026-11-13T18:00:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-2bfefdcc832166d3796427ab",
-      "title": "Brasil leva empresas de rochas naturais à Austrália para rodada de negócios",
-      "summary": "Atualizacao de empresas capturada em Aqui Notícias.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQjVOMTBNZGhsRUJEWkZITjl2UGtuVnBGTlJzRVlTNDhiUGs4cmdfUE1rcEN6WHZ1Ujk1UVVPRV9uTEk0VTZ5WmxzVzhMLUg3bG9BSHFsT1FwREVwTmJaU29rd0JkTW1BWkloaGN2aUVXaWpJMU5LcTdYZG1CaHJaMUFPOEJSVEV6SUpkeEFveUtuTFB0NndVa3dKcjZwZmp5aVdOVXJ5anM3VlF0RERTYkxPQmMtRUZNeE1JZ2QwcXhNNXpYb0c2eg?oc=5",
-      "source": "Aqui Notícias",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-11-13T17:31:45Z",
-      "updatedAt": "2026-11-13T17:31:45Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     },
@@ -1397,24 +1407,6 @@
       ],
       "publishedAt": "2026-11-13T16:32:00Z",
       "updatedAt": "2026-11-13T16:32:00Z",
-      "premium": false,
-      "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
-    },
-    {
-      "id": "companies-aa5b7d560dc73200661ddefd",
-      "title": "Gestão comercial pesa na sobrevivência de empresas",
-      "summary": "Atualizacao de empresas capturada em Arena de Notícias.",
-      "details": "",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSmR1N0FCdzM5WnVJbXFFZVpZTjZvNkxpMnJvcnplLVpUXzdUbTBPdHV5R3paMGhPLTNRS0NjTXJzdWxPaDloQXU4NVg4Rl9BU212d0ZhXzFOTWpZSFZsZGFNT21kTFlWc0llQ19fbTkwQjNjNk1xc2hfbndnejcyZURPOGFTbjdyUU5OU0hMeFo2TmQtaXQ5cWFQZ3M?oc=5",
-      "source": "Arena de Notícias",
-      "category": "companies",
-      "tags": [
-        "empresas",
-        "resultados",
-        "m&a"
-      ],
-      "publishedAt": "2026-11-13T16:05:23Z",
-      "updatedAt": "2026-11-13T16:05:23Z",
       "premium": false,
       "sourceQuery": "empresas brasileiras OR balanco OR guidance OR fusao when:2d"
     }
